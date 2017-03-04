@@ -14,17 +14,17 @@
         "languages": [{
             "id": "gml-gm81",
             "aliases": ["GameMaker Language(GameMaker 8.1)", "gml-gm81"],
-            "extensions": ["gml"],
+            "extensions": [".gml"],
             "configuration": "./language-configuration.json"
         },{
             "id": "gml-gms",
             "aliases": ["GameMaker Language(GameMaker Studio)", "gml-gms"],
-            "extensions": ["gml"],
+            "extensions": [".gml"],
             "configuration": "./language-configuration.json"
         },{
             "id": "gml-gms2",
             "aliases": ["GameMaker Language(GameMaker Studio 2)", "gml-gms2"],
-            "extensions": ["gml"],
+            "extensions": [".gml"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
