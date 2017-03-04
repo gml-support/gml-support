@@ -1,8 +1,8 @@
 {
     "name": "gml-support",
     "displayName": "GML Support",
-    "description": "GameMaker Language for GameMaker 8.1 or GameMaker Studio in Visual Studio Code.",
-    "version": "0.0.1",
+    "description": "GameMaker Language Support  in Visual Studio Code.",
+    "version": "1.0.0",
     "publisher": "LiarOnce",
     "engines": {
         "vscode": "^1.10.0"
