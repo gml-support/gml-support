@@ -1,0 +1,44 @@
+{
+    "name": "gml-support",
+    "displayName": "GML Support",
+    "description": "GameMaker Language for GameMaker 8.1 or GameMaker Studio in Visual Studio Code.",
+    "version": "0.0.1",
+    "publisher": "LiarOnce",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gml-gm81",
+            "aliases": ["GameMaker Language(GameMaker 8.1)", "gml-gm81"],
+            "extensions": ["gml"],
+            "configuration": "./language-configuration.json"
+        },{
+            "id": "gml-gms",
+            "aliases": ["GameMaker Language(GameMaker Studio)", "gml-gms"],
+            "extensions": ["gml"],
+            "configuration": "./language-configuration.json"
+        },{
+            "id": "gml-gms2",
+            "aliases": ["GameMaker Language(GameMaker Studio 2)", "gml-gms2"],
+            "extensions": ["gml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gml-gm81",
+            "scopeName": "source.gml-gm81",
+            "path": "./syntaxes/gml-gm81.tmLanguage.json"
+        },{
+            "language": "gml-gms",
+			"scopeName": "source.gml-gms",
+			"path": "./syntaxes/gml-gms.tmLanguage.json"
+		},{
+            "language": "gml-gms2",
+			"scopeName": "source.gml-gms2",
+			"path": "./syntaxes/gml-gms2.tmLanguage.json"
+		}]
+    }
+}

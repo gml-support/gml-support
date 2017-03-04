@@ -1,0 +1,110 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "GameMaker Language(GameMaker 8.1)",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.gml-gm81",
+				"match": "\\b(globalvar|var|if|then|else|for|while|do|until|repeat|switch|case|break|continue|with|exit|return|self|other|noone|all|global|local)\\b"
+			}]
+		},
+		"strings": {
+{
+      "match": "^///.*$",
+      "name": "comment.block.documentation.gml"
+    },
+    {
+      "comment": "Matches single line comments",
+      "match": "//.*$",
+      "name": "comment.line.double-slash.gml"
+    },
+    {
+      "begin": "/\\*",
+      "comment": "Matches block comments",
+      "end": "\\*/",
+      "name": "comment.block.gml"
+    },
+    {
+      "begin": "\\'",
+      "comment": "Match singlequote",
+      "end": "\\'",
+      "name": "string.quoted.single.gml"
+    },
+    {
+      "begin": "\\\"",
+      "comment": "Match doublequote",
+      "end": "\\\"",
+      "name": "string.quoted.double.gml"
+    },
+    {
+      "comment": "Argument keywords",
+      "match": "\\b(argument_relitive|argument_count|argument9|argument8|argument7|argument6|argument5|argument4|argument3|argument2|argument15|argument14|argument13|argument12|argument11|argument10|argument1|argument0|argument)\\b",
+      "name": "variable.parameter.gml"
+    },
+    {
+      "comment": "Hex",
+      "match": "\\b(\\$[0-9]*)\\b",
+      "name": "constant.numeric.hex.gml"
+    },
+    {
+      "comment": "Real",
+      "match": "\\b([0-9]+[.][0-9]+)\\b",
+      "name": "constant.numeric.real.gml"
+    },
+    {
+      "comment": "Ints",
+      "match": "\\b([0-9]+)\\b",
+      "name": "constant.numeric.gml"
+    },
+    {
+      "comment": "Flow Control",
+      "match": "\\b(if|else|switch|case|default|break|for|repeat|while|do|until|continue|exit|return|with)\\b",
+      "name": "keyword.control.gml"
+    },
+    {
+      "comment": "Character operators",
+      "match": "\\[\\#|\\[\\?|\\[@|\\[|\\]|\\-|\\+|\\||=|%|\\^|&|\\*|!|<|>|:|/",
+      "name": "keyword.operator.character.gml"
+    },
+    {
+      "comment": "Word operators",
+      "match": "\\b(and|or|xor|not)\\b",
+      "name": "keyword.operator.word.gml"
+    },
+    {
+      "comment": "Comma and the like",
+      "match": ";|,|\\(|\\)|\\{|\\}|\\.",
+      "name": "keyword.other.gml"
+    },
+    {
+      "comment": "Keyword constants",
+      "match": "\\b(all|noone|true|false|undefined)\\b",
+      "name": "constant.language.gml"
+    },
+    {
+      "comment": "Type operators",
+      "match": "\\b((global)?var)|(enum)\\b",
+      "name": "storage.type.gml"
+    },
+    {
+      "comment": "Autovarables",
+      "match": "\\b(global|local|self|other)\\b",
+      "name": "varable.language.gml"
+    },
+    {
+      "comment": "Common naming convention (prefixes like obj_player)",
+      "match": "\\b((obj|scr|spr|rm)_\\w+)\\b",
+      "name": "variable.other.gml"
+    },
+		}
+	},
+	"scopeName": "source.gml-gm81"
+}
