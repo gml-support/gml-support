@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "publisher": "LiarOnce",
     "icon": "icon.png",
+    "license": "LICENSE"
     "engines": {
         "vscode": "^1.10.0"
     },
