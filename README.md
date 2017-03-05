@@ -6,14 +6,9 @@ GameMaker Language对Visual Studio Code的支持。
 
 GitHub: [https://github.com/LiarOnce/gml-support](https://github.com/LiarOnce/gml-support)
 
-##Thanks
+#Thanks
 
 GameMaker Syntax：[YellowAfterlife](https://yal.cc/notepad-syntax-highlighting-for-gamemaker-81/)
 
 GameMaker Studio Syntax：[Everspace/Sublime_GameMakerStudio](https://github.com/Everspace/Sublime_GameMakerStudio)
 
-## Release Notes
-
-### 1.0.0
-
-Initial release

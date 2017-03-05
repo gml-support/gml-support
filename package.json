@@ -3,9 +3,9 @@
     "displayName": "GML Support",
     "description": "GameMaker Language Support  in Visual Studio Code.",
     "version": "1.0.0",
-    "publisher": "LiarOnce",
+    "publisher": "liaronce",
     "icon": "icon.png",
-    "license": "LICENSE",
+    "license": "SEE LICENSE IN LICENSE",
     "engines": {
         "vscode": "^1.10.0"
     },
