@@ -2,15 +2,17 @@
     "name": "gml-support",
     "displayName": "GML Support",
     "description": "GameMaker Language Support in Visual Studio Code.",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "publisher": "liaronce",
+    "publisherName": "LiarOnce",
     "icon": "icon.png",
     "license": "SEE LICENSE IN LICENSE",
     "engines": {
-        "vscode": "^1.10.0"
+        "vscode": "^1.8.0"
     },
     "categories": [
-        "Languages"
+        "Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -32,6 +34,16 @@
             "language": "gml-gms",
 			"scopeName": "source.gml-gms",
 			"path": "./syntaxes/gml-gms.tmLanguage.json"
-		}]
+		}],
+        "snippets": [
+			{
+				"language": "gml-gm81",
+				"path": "./snippets/gml.json"
+			},
+            {
+				"language": "gml-gms",
+				"path": "./snippets/gml.json"
+			}
+		]
     }
 }

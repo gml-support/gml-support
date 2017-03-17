@@ -1,0 +1,92 @@
+{
+    "if ...": {
+        "prefix": "if",
+        "body": [
+	    	"if (${1:CONDITION}) {",
+			"\t${0:STATEMENT}",
+			"}"
+		],
+		"description": "If block"
+    },
+    "if … else …": {
+		"prefix": "ifelse",
+		"body": [
+			"if (${1:CONDITION}) {",
+			"\t${2:STATEMENT}",
+			"} else {",
+			"\t${3:STATEMENT}",
+			"}",
+			"$0"
+		],
+		"description": "If Else block"
+	},
+    "switch …": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:CONDITION}) {",
+			"\tcase '${2:EXPRESSION}':",
+			"\t\t${3:STATEMENT}",
+			"\t\tbreak;",
+			"\t$0",
+			"\tdefault:",
+			"\t\t${4:STATEMENT}",
+			"\t\tbreak;",
+			"}"
+		],
+		"description": "Switch block"
+	},
+    "do … until …": {
+		"prefix": "do",
+		"body": [
+			"do {",
+			"\t${0:STATEMENT}",
+			"} until (${1:${2:$a} <= ${3:10}});"
+		],
+		"description": "Do-until loop"
+	},
+    "for …": {
+		"prefix": "for",
+		"body": [
+        "for (${1:INITIALISATION}; ${2:CONDITION}; ${3:INCREMENT}) { ",
+			"\t${0:STATEMENT}",
+			"}"
+		],
+		"description": "For-loop"
+	},
+    "for … i": {
+		"prefix": "fori",
+		"body": [
+			"for (${1:i}=${2:0}; ${1:i} < ${2:CONDITION}; ${1:i}++) { ",
+			"\t${0:STATEMENT}",
+			"}"
+		],
+		"description": "For-i-loop"
+	},
+    "while …": {
+		"prefix": "while",
+		"body": [
+			"while (${1:$a <= 10}) {",
+			"\t${0:STATEMENT}",
+			"}"
+		],
+		"description": "While-loop"
+	},
+    "repeat …": {
+		"prefix": "repeat",
+		"body": [
+	    	"repeat (${1:EXPRESSION}) {",
+			"\t${0:STATEMENT}",
+			"}"
+		],
+		"description": "Repeat-loop"
+	},
+    "with ...": {
+        "prefix": "with",
+        "body": [
+            "with (${1:EXPRESSION}) {",
+            "\t${0:STATEMENT}",
+            "}"
+        ],
+        "description": "With structure"
+    }
+}
