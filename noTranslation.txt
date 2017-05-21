@@ -1,0 +1,1 @@
+New in GameMaker 8.1:
