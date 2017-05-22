@@ -303,42 +303,42 @@
 	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
 		],
 		"description": "draw_background_part(x,y,r,outline) \n绘制背景部分，以左上为原点的x，y。"
+    },
+	"draw_sprite_ext": {
+        "prefix": "draw_sprite_ext",
+        "body": [
+	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${0:alpha})"
+		],
+		"description": "draw_sprite_ext(sprite,subimg,x,y,xscale,yscale,rot,color,alpha) \n 代表所要绘制的精灵，subimg 代表要绘制的具体子图像，(x,y) 代表绘制的坐标，(xscale,yscale) 代表要绘制的具体缩放尺寸， rot 代表图像逆时针旋转绘制的角度，color 代表需要混合的颜色（c_white 为默认值），alpha 代表要绘制的阿尔法透明通道数值（1 代表完全不透明， 0 代表完全透明）。这个函数可以创造很多的效果（比如部分透明的爆炸效果）。"
+    },
+	"draw_sprite_stretched_ext": {
+        "prefix": "draw_sprite_stretched_ext",
+        "body": [
+	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${0:alpha})"
+		],
+		"description": "draw_sprite_stretched_ext(sprite,subimg,x,y,w,h,color,alpha) \n绘制精灵拉伸如此精灵填充在x，y，宽，高的区域里，color是混合色，alpha是透明度。"
+    },
+	"draw_sprite_tiled_ext": {
+        "prefix": "draw_sprite_tiled_ext",
+        "body": [
+	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${0:alpha})"
+		],
+		"description": "draw_circle(sprite,subimg,x,y,xscale,yscale,color,alpha) \n绘制精灵贴图，精灵填充整个房间但是以scale比例，color颜色，alpha透明度。"
+    },
+	"draw_sprite_part_ext": {
+        "prefix": "draw_sprite_part_ext",
+        "body": [
+	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${0:alpha})"
+		],
+		"description": "draw_sprite_part_ext(sprite,subimg,left,top,width,height,x,y,xscale,yscale,color,alpha) \n绘制精灵子图的部分（-1为当前子图）按照left,top,width,height尺寸，以scale比例，color颜色，alpha透明度。"
+    },
+	"draw_sprite_general": {
+        "prefix": "draw_sprite_general",
+        "body": [
+	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${0:alpha})"
+		],
+		"description": "draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n常规绘制函数，它绘制精灵子图的部分（－1＝当前子图）按照left,top,width,height尺寸，以scale比例，rot旋转角度，四角混合颜色（左上，右上，右下，左下），alpha透明度。"
     },/*
-	"draw_circle": {
-        "prefix": "draw_circle",
-        "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
-		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
-    },
-	"draw_circle": {
-        "prefix": "draw_circle",
-        "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
-		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
-    },
-	"draw_circle": {
-        "prefix": "draw_circle",
-        "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
-		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
-    },
-	"draw_circle": {
-        "prefix": "draw_circle",
-        "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
-		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
-    },
-	"draw_circle": {
-        "prefix": "draw_circle",
-        "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
-		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
-    },
 	"draw_circle": {
         "prefix": "draw_circle",
         "body": [
