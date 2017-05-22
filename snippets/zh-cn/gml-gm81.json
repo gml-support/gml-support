@@ -352,64 +352,184 @@
         "body": [
 	    	"draw_set_font(${0:font})"
 		],
-		"description": "draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
     },
 	"draw_set_halign": {
         "prefix": "draw_set_halign",
         "body": [
 	    	"draw_set_halign(${0:halign})"
 		],
-		"description": "draw_set_halign(halign) \n设定绘制文本的水平坐标参数。选择下面三个中的一个作为值： \nfa_left 左 \nfa_center 中 \nfa_right 右"
+		"description": "[Function]draw_set_halign(halign) \n设定绘制文本的水平坐标参数。选择下面三个中的一个作为值： \nfa_left 左 \nfa_center 中 \nfa_right 右"
     },
 	"draw_set_valign": {
         "prefix": "draw_set_valign",
         "body": [
 	    	"draw_set_valign(${0:valign})"
 		],
-		"description": "draw_set_valign(valign) \n设定绘制文本的垂直坐标参数。选择下面三个中的一个作为值: \nfa_top 上 \nfa_middle 中 \nfa_bottom 下 "
+		"description": "[Function]draw_set_valign(valign) \n设定绘制文本的垂直坐标参数。选择下面三个中的一个作为值: \nfa_top 上 \nfa_middle 中 \nfa_bottom 下 "
     },
 	"draw_text_transformed": {
         "prefix": "draw_text_transformed",
         "body": [
 	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${0:angle})"
 		],
-		"description": "draw_text_transformed(x,y,string,xscale,yscale,angle) \n在坐标(x,y)，以 xscale, yscale指定的缩放尺寸和逆时针旋转 angle 角度的方式绘制文本 string。"
+		"description": "[Function]draw_text_transformed(x,y,string,xscale,yscale,angle) \n在坐标(x,y)，以 xscale, yscale指定的缩放尺寸和逆时针旋转 angle 角度的方式绘制文本 string。"
     },
 	"draw_text_ext_transformed": {
         "prefix": "draw_text_ext_transformed",
         "body": [
 	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${0:angle})"
 		],
-		"description": "draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \n功能与draw_text_transformed()类似， 但加入了行间距 sep 和 行宽 w 。可以绘制多行文本。"
+		"description": "[Function]draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \n功能与draw_text_transformed()类似， 但加入了行间距 sep 和 行宽 w 。可以绘制多行文本。"
     },
 	"draw_text_color": {
         "prefix": "draw_text_color",
         "body": [
 	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${0:alpha})"
 		],
-		"description": "draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \n在坐标(x,y)，左上，右上，右下，左 下四个地方指定文本颜色，以阿尔法透明通道值 alpha （0到1之间）绘制文本 string。"
+		"description": "[Function]draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \n在坐标(x,y)，左上，右上，右下，左 下四个地方指定文本颜色，以阿尔法透明通道值 alpha （0到1之间）绘制文本 string。"
     },
 	"draw_text_ext_color": {
         "prefix": "draw_text_ext_color",
         "body": [
 	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${0:alpha})"
 		],
-		"description": "draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \ndraw_text_color()函数的多行显示变体。"
+		"description": "[Function]draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \ndraw_text_color()函数的多行显示变体。"
     },
 	"draw_text_transformed_color": {
         "prefix": "draw_circle",
         "body": [
 	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${0:alpha})"
 		],
-		"description": "draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_transformed() 相同，但是多了颜色渐变。"
+		"description": "[Function]draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_transformed() 相同，但是多了颜色渐变。"
     },
 	"draw_text_ext_transformed_color": {
         "prefix": "draw_text_transformed_color",
         "body": [
 	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
 		],
-		"description": "draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_ext_transformed()相同 但是多了颜色渐变。"
-    }
+		"description": "[Function]draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_ext_transformed()相同 但是多了颜色渐变。"
+    },
+	"draw_point_color": {
+        "prefix": "draw_point_color",
+        "body": [
+	    	"draw_point_color(${1:x},${2:y},${0:col1})"
+		],
+		"description": "[Function]draw_point_color(x,y,col1) \n在坐标(x,y)处以指定颜色 col1 绘制点。"
+    },
+	"draw_line_color": {
+        "prefix": "draw_line_color",
+        "body": [
+	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${0:col2})"
+		],
+		"description": "[Function]draw_line_color(x1,y1,x2,y2,col1,col2) \n从坐标(x1,y1)到(x2,y2) 之间绘制一条指定颜色 col1 过渡到 col2 的直线。"
+    },
+	"draw_line_width_color": {
+        "prefix": "draw_line_width_color",
+        "body": [
+	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${0:col2})"
+		],
+		"description": "[Function]draw_line_width_color(x1,y1,x2,y2,w,col1,col2) \n从坐标(x1,y1)到(x2,y2) 之间绘制一条宽为w指定颜色 col1 过渡到 col2 的直线。"
+    },
+	"draw_rectangle_color": {
+        "prefix": "draw_rectangle_color",
+        "body": [
+	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${0:outline})"
+		],
+		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline) \n 绘制矩形。"
+    },
+	"draw_roundrect_color": {
+        "prefix": "draw_roundrect_color",
+        "body": [
+	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+		],
+		"description": "[Function]draw_roundrect_color(x1,y1,x2,y2,col1,col2,outline) \n绘制圆角矩形。"
+    },
+	"draw_triangle_color": {
+        "prefix": "draw_triangle_color",
+        "body": [
+	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${0:outline})"
+		],
+		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline) \n 绘制三角形。"
+    },
+	"draw_circle_color": {
+        "prefix": "draw_circle_color",
+        "body": [
+	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${0:outline})"
+		],
+		"description": "[Function]draw_circle_color(x,y,r,col1,col2,outline) \n绘制圆形。"
+    },
+	"draw_ellipse_color": {
+        "prefix": "draw_ellipse_color",
+        "body": [
+	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+		],
+		"description": "[Function]draw_ellipse_color(x1,y1,x2,y2,col1,col2,outline) \n绘制椭圆。"
+    },
+	"draw_primitive_begin": {
+        "prefix": "draw_primitive_begin",
+        "body": [
+	    	"draw_primitive_begin(${0:kind})"
+		],
+		"description": "[Function]draw_primitive_begin(kind) \n开始一个原始显示类型。"
+    },
+	"draw_vertex": {
+        "prefix": "draw_vertex",
+        "body": [
+	    	"draw_vertex(${1:x},${0:y})"
+		],
+		"description": "[Function]draw_vertex(x,y) \n 增加顶点 (x,y)到原始表中,使用之前设定的颜色和透明度。"
+    },
+	"draw_vertex_color": {
+        "prefix": "draw_vertex_color",
+        "body": [
+	    	"draw_vertex_color(${1:x},${2:y},${3:col},${0:alpha})"
+		],
+		"description": "[Function]draw_vertex_color(x,y,col,alpha) \n增加顶点 (x,y)到原始表中,使用自定义颜色和透明度，这样允许你创造原始绘制平滑改变颜色和透明度。"
+    },/*
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_set_font": {
+        "prefix": "draw_set_font",
+        "body": [
+	    	"draw_set_font(${0:font})"
+		],
+		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+    },
+	"draw_set_font": {
+        "prefix": "draw_set_font",
+        "body": [
+	    	"draw_set_font(${0:font})"
+		],
+		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+    },
+	"draw_set_font": {
+        "prefix": "draw_set_font",
+        "body": [
+	    	"draw_set_font(${0:font})"
+		],
+		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+    },
+	"draw_set_font": {
+        "prefix": "draw_set_font",
+        "body": [
+	    	"draw_set_font(${0:font})"
+		],
+		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+    },
+	"draw_set_font": {
+        "prefix": "draw_set_font",
+        "body": [
+	    	"draw_set_font(${0:font})"
+		],
+		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+    },
+	*/
 	//Draw Event Functions End
 	//Draw Event End
 }

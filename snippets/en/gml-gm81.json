@@ -332,84 +332,84 @@
 	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${0:alpha})"
 		],
 		"description": "[Function]draw_circle(sprite,subimg,x,y,xscale,yscale,color,alpha) \nDraws the sprite tiled so that it fills the entire room but now with scale factors and a color and transparency setting."
-    },/*
+    },
 	"draw_sprite_part_ext": {
         "prefix": "draw_sprite_part_ext",
         "body": [
 	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${0:alpha})"
 		],
-		"description": "[Function]draw_sprite_part_ext(sprite,subimg,left,top,width,height,x,y,xscale,yscale,color,alpha) \n绘制精灵子图的部分（-1为当前子图）按照left,top,width,height尺寸，以scale比例，color颜色，alpha透明度。"
+		"description": "[Function]draw_sprite_part_ext(sprite,subimg,left,top,width,height,x,y,xscale,yscale,color,alpha) \nDraws the indicated part of subimage subimg (-1 = current) of the sprite with the top-left corner of the part at position (x,y) but now with scale factors and a color and transparency setting."
     },
 	"draw_sprite_general": {
         "prefix": "draw_sprite_general",
         "body": [
 	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${0:alpha})"
 		],
-		"description": "[Function]draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n常规绘制函数，它绘制精灵子图的部分（－1＝当前子图）按照left,top,width,height尺寸，以scale比例，rot旋转角度，四角混合颜色（左上，右上，右下，左下），alpha透明度。"
+		"description": "[Function]draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \nThe most general drawing function. It draws the indicated part of subimage subimg (-1 = current) of the sprite with the top-left corner of the part at position (x,y) but now with scale factors, a rotation angle, a color for each of the four vertices (top-left, top-right, bottom-right, and bottom-left), and an alpha transparency value. Note that rotation takes place around the top-left corner of the part."
     },
 	"draw_set_font": {
         "prefix": "draw_set_font",
         "body": [
 	    	"draw_set_font(${0:font})"
 		],
-		"description": "draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_set_font(font) \nSets the font that will be used when drawing text. Use -1 to set the default font (Arial 12)."
     },
 	"draw_set_halign": {
         "prefix": "draw_set_halign",
         "body": [
 	    	"draw_set_halign(${0:halign})"
 		],
-		"description": "draw_set_halign(halign) \n设定绘制文本的水平坐标参数。选择下面三个中的一个作为值： \nfa_left 左 \nfa_center 中 \nfa_right 右"
+		"description": "[Function]draw_set_halign(halign) \nSets the horizontal alignment used when drawing text. Choose one of the following constants as values: \nfa_left \nfa_center \nfa_right "
     },
 	"draw_set_valign": {
         "prefix": "draw_set_valign",
         "body": [
 	    	"draw_set_valign(${0:valign})"
 		],
-		"description": "draw_set_valign(valign) \n设定绘制文本的垂直坐标参数。选择下面三个中的一个作为值: \nfa_top 上 \nfa_middle 中 \nfa_bottom 下 "
+		"description": "[Function]draw_set_valign(valign) \nSets the vertical alignment used when drawing text. Choose one of the following constants as values: \nfa_top \nfa_middle \nfa_bottom "
     },
 	"draw_text_transformed": {
         "prefix": "draw_text_transformed",
         "body": [
 	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${0:angle})"
 		],
-		"description": "draw_text_transformed(x,y,string,xscale,yscale,angle) \n在坐标(x,y)，以 xscale, yscale指定的缩放尺寸和逆时针旋转 angle 角度的方式绘制文本 string。"
+		"description": "[Function]draw_text_transformed(x,y,string,xscale,yscale,angle) \nDraws the string at position (x,y) in the same way as above, but scale it horizontally and vertically with the indicated factors and rotate it counter-clockwise over angle degrees."
     },
 	"draw_text_ext_transformed": {
         "prefix": "draw_text_ext_transformed",
         "body": [
 	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${0:angle})"
 		],
-		"description": "draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \n功能与draw_text_transformed()类似， 但加入了行间距 sep 和 行宽 w 。可以绘制多行文本。"
+		"description": "[Function]draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \nCombines the function draw_text_ext and draw_text_transformed. It makes it possible to draw a multi-line text rotated and scaled."
     },
 	"draw_text_color": {
         "prefix": "draw_text_color",
         "body": [
 	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${0:alpha})"
 		],
-		"description": "draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \n在坐标(x,y)，左上，右上，右下，左 下四个地方指定文本颜色，以阿尔法透明通道值 alpha （0到1之间）绘制文本 string。"
+		"description": "[Function]draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \nDraws the string at position (x,y) like above. The four colors specify the colors of the top-left, top-right, bottom-right, and bottom-left corner of the text. alpha is the alpha transparency to be used (0-1)."
     },
 	"draw_text_ext_color": {
         "prefix": "draw_text_ext_color",
         "body": [
 	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${0:alpha})"
 		],
-		"description": "draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \ndraw_text_color()函数的多行显示变体。"
+		"description": "[Function]draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \nSimilar to draw_text_ext() but with colored vertices."
     },
 	"draw_text_transformed_color": {
         "prefix": "draw_circle",
         "body": [
 	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${0:alpha})"
 		],
-		"description": "draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_transformed() 相同，但是多了颜色渐变。"
+		"description": "[Function]draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \nSimilar to draw_text_transformed() but with colored vertices."
     },
 	"draw_text_ext_transformed_color": {
         "prefix": "draw_text_transformed_color",
         "body": [
 	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
 		],
-		"description": "draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_ext_transformed()相同 但是多了颜色渐变。"
-    }*/
+		"description": "[Function]draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \nSimilar to draw_text_ext_transformed() but with colored vertices."
+    }
 	//Draw Event Functions End
 	//Draw Event End
 }

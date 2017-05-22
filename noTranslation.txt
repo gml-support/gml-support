@@ -1,1 +1,3 @@
 New in GameMaker 8.1:
+
+draw_self() This command is exactly the same as draw_sprite_ext() except it will use the instances own variables to draw itself (x,y, scale, angle etc.) This provides the same action as if the instance was draw without a script.
