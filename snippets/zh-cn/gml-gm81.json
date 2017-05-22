@@ -101,6 +101,7 @@
     //GameMaker Language Lists
 	//GameMaker 8.1
 	//Draw Event Start
+	//Draw Event Functions Start
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
@@ -113,7 +114,7 @@
         "body": [
 	    	"draw_text_ext(${1:x},${2:y},${0:string})"
 		],
-		"description": "[Function]draw_text_ext(x,y,string) \n基本与上面的函数作用相同，但增加了两个功能。首先 sep 代表行间距，设成 －1 代表使用默认值。 w 代表行宽，单位像素。超出行宽的部分 会以空格或'-'进行分行。设为 -1 代表不换行。"
+		"description": "[Function]draw_text_ext(x,y,string) \n基本与draw_text()的函数作用相同，但增加了两个功能。首先 sep 代表行间距，设成 －1 代表使用默认值。 w 代表行宽，单位像素。超出行宽的部分 会以空格或'-'进行分行。设为 -1 代表不换行。"
     },
 	"draw_arrow": {
         "prefix": "draw_arrow",
@@ -345,7 +346,7 @@
 	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${0:alpha})"
 		],
 		"description": "[Function]draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n常规绘制函数，它绘制精灵子图的部分（－1＝当前子图）按照left,top,width,height尺寸，以scale比例，rot旋转角度，四角混合颜色（左上，右上，右下，左下），alpha透明度。"
-    },/*
+    },
 	"draw_set_font": {
         "prefix": "draw_set_font",
         "body": [
@@ -360,54 +361,55 @@
 		],
 		"description": "draw_set_halign(halign) \n设定绘制文本的水平坐标参数。选择下面三个中的一个作为值： \nfa_left 左 \nfa_center 中 \nfa_right 右"
     },
-	"draw_circle": {
-        "prefix": "draw_circle",
+	"draw_set_valign": {
+        "prefix": "draw_set_valign",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_set_valign(${0:valign})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
+		"description": "draw_set_valign(valign) \n设定绘制文本的垂直坐标参数。选择下面三个中的一个作为值: \nfa_top 上 \nfa_middle 中 \nfa_bottom 下 "
     },
-	"draw_circle": {
-        "prefix": "draw_circle",
+	"draw_text_transformed": {
+        "prefix": "draw_text_transformed",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${0:angle})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
+		"description": "draw_text_transformed(x,y,string,xscale,yscale,angle) \n在坐标(x,y)，以 xscale, yscale指定的缩放尺寸和逆时针旋转 angle 角度的方式绘制文本 string。"
     },
-	"draw_circle": {
-        "prefix": "draw_circle",
+	"draw_text_ext_transformed": {
+        "prefix": "draw_text_ext_transformed",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${0:angle})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
+		"description": "draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \n功能与draw_text_transformed()类似， 但加入了行间距 sep 和 行宽 w 。可以绘制多行文本。"
     },
-	"draw_circle": {
-        "prefix": "draw_circle",
+	"draw_text_color": {
+        "prefix": "draw_text_color",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${0:alpha})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
+		"description": "draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \n在坐标(x,y)，左上，右上，右下，左 下四个地方指定文本颜色，以阿尔法透明通道值 alpha （0到1之间）绘制文本 string。"
     },
-	"draw_circle": {
-        "prefix": "draw_circle",
+	"draw_text_ext_color": {
+        "prefix": "draw_text_ext_color",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${0:alpha})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
+		"description": "draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \ndraw_text_color()函数的多行显示变体。"
     },
-	"draw_circle": {
+	"draw_text_transformed_color": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${0:alpha})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
+		"description": "draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_transformed() 相同，但是多了颜色渐变。"
     },
-	"draw_circle": {
-        "prefix": "draw_circle",
+	"draw_text_ext_transformed_color": {
+        "prefix": "draw_text_transformed_color",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
 		],
-		"description": "draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
-    }*/
+		"description": "draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_ext_transformed()相同 但是多了颜色渐变。"
+    }
+	//Draw Event Functions End
 	//Draw Event End
 }
