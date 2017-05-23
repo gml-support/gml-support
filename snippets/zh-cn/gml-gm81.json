@@ -591,70 +591,70 @@
 	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${0:alpha})"
 		],
 		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n表面常规绘制函数.它绘制表面原点为 (x,y) 但是按照设定比例,旋转角度,四角颜色(左上,右上,右下,左下)和透明度。"
+    },
+	"make_color_rgb": {
+        "prefix": "make_color_rgb",
+        "body": [
+	    	"make_color_rgb(${1:red},${2:green},${0:blue})"
+		],
+		"description": "[Function]make_color_rgb(red,green,blue) \n返回一个指定RGB值的颜色。red,green,blue 三个参数 必须为0到255的数值。"
+    },
+	"make_color_hsv": {
+        "prefix": "make_color_hsv",
+        "body": [
+	    	"make_color_hsv(${1:hue},${2:saturation},${0:value})"
+		],
+		"description": "[Function]make_color_hsv(hue,saturation,value) \n回指定色调 hue ，饱和度 saturation，以及 明暗度 value 的颜色（所有参数都必须在0到255之间）。"
+    },
+	"color_get_red": {
+        "prefix": "color_get_red",
+        "body": [
+	    	"color_get_red(${0:col})"
+		],
+		"description": "[Function]color_get_red(col) \n返回指定红色值 col 的颜色。"
+    },
+	"color_get_green": {
+        "prefix": "color_get_green",
+        "body": [
+	    	"color_get_green(${0:col})"
+		],
+		"description": "[Function]color_get_green(col) \n返回指定绿色值 col 的颜色。"
+    },
+	"color_get_blue": {
+        "prefix": "color_get_blue",
+        "body": [
+	    	"color_get_blue(${0:col})"
+		],
+		"description": "[Function]color_get_blue(col) \n返回指定蓝色值 col 的颜色。"
+    },
+	"color_get_hue": {
+        "prefix": "color_get_hue",
+        "body": [
+	    	"color_get_hue(${0:col})"
+		],
+		"description": "[Function]color_get_hue(col) \n返回指定色调值 col 的颜色。"
+    },
+	"color_get_saturation": {
+        "prefix": "color_get_saturation",
+        "body": [
+	    	"color_get_saturation(${0:col})"
+		],
+		"description": "[Function]color_get_saturation(col) \n返回指定饱和度 col 的颜色。"
+    },
+	"color_get_value": {
+        "prefix": "color_get_value",
+        "body": [
+	    	"color_get_value(${0:col})"
+		],
+		"description": "[Function]color_get_value(col) \n返回指定明暗度 col 的颜色。"
+    },
+	"merge_color": {
+        "prefix": "merge_color",
+        "body": [
+	    	"merge_color(${1:col1},${2:col2},${0:amount})"
+		],
+		"description": "[Function]merge_color(col1,col2,amount) \n结束描述原始绘制，这个函数是马上绘制它。"
     }/*,
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
-    },
 	"draw_primitive_end": {
         "prefix": "draw_primitive_end",
         "body": [
