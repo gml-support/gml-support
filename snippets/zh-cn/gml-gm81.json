@@ -436,7 +436,7 @@
         "body": [
 	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${0:outline})"
 		],
-		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline) \n 绘制矩形。"
+		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline) \n绘制矩形。"
     },
 	"draw_roundrect_color": {
         "prefix": "draw_roundrect_color",
@@ -450,7 +450,7 @@
         "body": [
 	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${0:outline})"
 		],
-		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline) \n 绘制三角形。"
+		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline) \n绘制三角形。"
     },
 	"draw_circle_color": {
         "prefix": "draw_circle_color",
@@ -478,7 +478,7 @@
         "body": [
 	    	"draw_vertex(${1:x},${0:y})"
 		],
-		"description": "[Function]draw_vertex(x,y) \n 增加顶点 (x,y)到原始表中,使用之前设定的颜色和透明度。"
+		"description": "[Function]draw_vertex(x,y) \n增加顶点 (x,y)到原始表中,使用之前设定的颜色和透明度。"
     },
 	"draw_vertex_color": {
         "prefix": "draw_vertex_color",
@@ -486,7 +486,7 @@
 	    	"draw_vertex_color(${1:x},${2:y},${3:col},${0:alpha})"
 		],
 		"description": "[Function]draw_vertex_color(x,y,col,alpha) \n增加顶点 (x,y)到原始表中,使用自定义颜色和透明度，这样允许你创造原始绘制平滑改变颜色和透明度。"
-    },/*
+    },
 	"draw_primitive_end": {
         "prefix": "draw_primitive_end",
         "body": [
@@ -494,40 +494,208 @@
 		],
 		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
     },
-	"draw_set_font": {
-        "prefix": "draw_set_font",
+	"draw_primitive_begin_texture": {
+        "prefix": "draw_primitive_begin_texture",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_primitive_begin_texture(${1:kind},${0:texid})"
 		],
-		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_primitive_begin_texture(kind,texid) \n开始原始绘制设定类型和贴图。"
     },
-	"draw_set_font": {
-        "prefix": "draw_set_font",
+	"draw_vertex_texture": {
+        "prefix": "draw_vertex_texture",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${0:ytex})"
 		],
-		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_vertex_texture(x,y,xtex,ytex) \n增加顶点 (x,y) 到原始绘制对应纹理坐标 (xtex,ytex) ,并且颜色和透明度为之前设定的。 xtex 和 ytex 为 0 或者 1 但是也能使用更大的值，致使重复纹理（见下文）。"
     },
-	"draw_set_font": {
-        "prefix": "draw_set_font",
+	"draw_vertex_texture_color": {
+        "prefix": "draw_vertex_texture_color",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${0:alpha})"
 		],
-		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_vertex_texture_color(x,y,xtex,ytex,col,alpha) \n增加顶点 (x,y) 到原始绘制对应纹理坐标 (xtex,ytex) ,并且设定颜色和透明度为。"
     },
-	"draw_set_font": {
-        "prefix": "draw_set_font",
+	"draw_set_blend_mode": {
+        "prefix": "draw_set_blend_mode",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_set_blend_mode(${0:mode})"
 		],
-		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_set_blend_mode(mode) \n使用显示混合模式。有如下值： bm_normal, bm_add, bm_subtract, 和 bm_max. 不要忘记在使用后重置为一般模式因为其他精灵和背景都按照新的模式绘制。"
     },
-	"draw_set_font": {
-        "prefix": "draw_set_font",
+	"draw_set_blend_mode_ext": {
+        "prefix": "draw_set_blend_mode_ext",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_set_blend_mode_ext(${1:src},${0:dest})"
 		],
-		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
+		"description": "[Function]draw_set_blend_mode_ext(font) \n所谓混合模式,以利用双方的来源及目的地的颜色. 新的颜色,是一些因素倍源与另一个因素倍的目的地. 这些因素都设定此功能. 了解这一点,来源地和目的地都为红色,绿色,蓝色和alpha分量.  因此源地为 (Rs, Gs, Bs, As) 目的地为 (Rd, Gd, Bd, Ad). 所有被视为介于0和1 .混合因素,你可以选择源和目的地是: \nbm_zero: 混合因素是 (0, 0, 0, 0). \nbm_one: 混合因素是 (1, 1, 1, 1). \nbm_src_color: 混合因素是 (Rs, Gs, Bs, As). \nbm_inv_src_color: 混合因素是 (1–Rs, 1–Gs, 1–Bs, 1–As). \nbm_src_alpha: 混合因素是 (As, As, As, As). \nbm_inv_src_alpha: 混合因素是 (1–As, 1–As, 1–As, 1–As). \nbm_dest_alpha: 混合因素是 (Ad, Ad, Ad, Ad). \nbm_inv_dest_alpha: 混合因素是 (1–Ad, 1–Ad, 1–Ad, 1–Ad). \nbm_dest_color: 混合因素是 (Rd, Gd, Bd, Ad). \nbm_inv_dest_color: 混合因素是 (1–Rd, 1–Gd, 1–Bd, 1–Ad). \nbm_src_alpha_sat: 混合因素是 (f, f, f, 1); f = min(As, 1–Ad). \n例如,正常的混色模式设置源地混合bm_src_alpha和目的地混合bm_inv_src_alpha . 别忘了复位模式后正常使用,因为还另有其他精灵和背景在新的混合模式下绘制."
+    },
+	"draw_surface": {
+        "prefix": "draw_surface",
+        "body": [
+	    	"draw_surface(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]draw_surface(id,x,y) \n在坐标(x,y) 绘制指定 id 的表面。（不包含颜色混合及阿尔法通 道设置）。"
+    },
+	"draw_surface_stretched": {
+        "prefix": "draw_surface_stretched",
+        "body": [
+	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]draw_surface_stretched(id,x,y,w,h) \n在坐标(x,y)的宽高分别为 w 、h 的矩形范围内填 充绘制表面。"
+    },
+	"draw_surface_tiled": {
+        "prefix": "draw_surface_tiled",
+        "body": [
+	    	"draw_surface_tiled(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]draw_surface_tiled(id,x,y) \n将表面作为图块填充绘制至整个房间。"
+    },
+	"draw_surface_part": {
+        "prefix": "draw_surface_part",
+        "body": [
+	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+		],
+		"description": "[Function]draw_surface_part(id,left,top,width,height,x,y) \n绘制表面的一部分。"
+    },
+	"draw_surface_ext": {
+        "prefix": "draw_surface_ext",
+        "body": [
+	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_ext(id,x,y,xscale,yscale,rot,color,alpha) \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_surface_stretched_ext": {
+        "prefix": "draw_surface_stretched_ext",
+        "body": [
+	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_stretched_ext(id,x,y,w,h,color,alpha) \n绘制表面拉伸到显示范围,按照设定的宽高,颜色,透明度。"
+    },
+	"draw_surface_tiled_ext": {
+        "prefix": "draw_surface_tiled_ext",
+        "body": [
+	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度。"
+    },
+	"draw_surface_part_ext": {
+        "prefix": "draw_surface_part_ext",
+        "body": [
+	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_part_ext(id,left,top,width,height,x,y,xscale,yscale,color,alpha) \n绘制表面部分,原点在 (x,y)但是按照设定的比例,颜色和透明度."
+    },
+	"draw_surface_general": {
+        "prefix": "draw_surface_general",
+        "body": [
+	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n表面常规绘制函数.它绘制表面原点为 (x,y) 但是按照设定比例,旋转角度,四角颜色(左上,右上,右下,左下)和透明度。"
+    }/*,
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
     },
 	*/
 	//Draw Event Functions End

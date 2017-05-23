@@ -1,0 +1,9 @@
+{
+    "mm_init": {
+        "prefix": "mm_init",
+        "body": [
+	    	"mm_init(${0:path})"
+		],
+		"description": "[Function]mm_init(path) \n用于初始化MaizeMusic音乐插件，返回插件初始化是否成功。使用MaizeMusic插件之前必须执行这一步！否则无法使用本插件。"
+    }
+}

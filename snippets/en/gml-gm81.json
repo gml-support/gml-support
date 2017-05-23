@@ -409,6 +409,188 @@
 	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \nSimilar to draw_text_ext_transformed() but with colored vertices."
+    },
+	"draw_point_color": {
+        "prefix": "draw_point_color",
+        "body": [
+	    	"draw_point_color(${1:x},${2:y},${0:col1})"
+		],
+		"description": "[Function]draw_point_color(x,y,col1) \nDraws a point at (x,y) in the given color."
+    },
+	"draw_line_color": {
+        "prefix": "draw_line_color",
+        "body": [
+	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${0:col2})"
+		],
+		"description": "[Function]draw_line_color(x1,y1,x2,y2,col1,col2) \nDraws a line from (x1,y1) to (x2,y2), interpolating the color between col1 and col2."
+    },
+	"draw_line_width_color": {
+        "prefix": "draw_line_width_color",
+        "body": [
+	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${0:col2})"
+		],
+		"description": "[Function]draw_line_width_color(x1,y1,x2,y2,w,col1,col2) \nDraws a line from (x1,y1) to (x2,y2) with width w interpolating the color between col1 and col2."
+    },
+	"draw_rectangle_color": {
+        "prefix": "draw_rectangle_color",
+        "body": [
+	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${0:outline})"
+		],
+		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline) \nDraws a rectangle. The four colors indicated the colors at the top-left, top-right, bottom-right, and bottom-left vertex. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
+    },
+	"draw_roundrect_color": {
+        "prefix": "draw_roundrect_color",
+        "body": [
+	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+		],
+		"description": "[Function]draw_roundrect_color(x1,y1,x2,y2,col1,col2,outline) \nDraws a rounded rectangle. col1 is the color in the middle and col2 the color at the boundary. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
+    },
+	"draw_triangle_color": {
+        "prefix": "draw_triangle_color",
+        "body": [
+	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${0:outline})"
+		],
+		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline) \nDraws a triangle. The three colors are the colors of the three vertices which is interpolated over the triangle. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
+    },
+	"draw_circle_color": {
+        "prefix": "draw_circle_color",
+        "body": [
+	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${0:outline})"
+		],
+		"description": "[Function]draw_circle_color(x,y,r,col1,col2,outline) \nDraws a circle at (x,y) with radius r. col1 is the color in the middle and col2 the color at the boundary. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
+    },
+	"draw_ellipse_color": {
+        "prefix": "draw_ellipse_color",
+        "body": [
+	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+		],
+		"description": "[Function]draw_ellipse_color(x1,y1,x2,y2,col1,col2,outline) \nDraws an ellipse. col1 is the color in the middle and col2 the color at the boundary. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
+    },
+	"draw_primitive_begin": {
+        "prefix": "draw_primitive_begin",
+        "body": [
+	    	"draw_primitive_begin(${0:kind})"
+		],
+		"description": "[Function]draw_primitive_begin(kind) \nStart a primitive of the indicated kind."
+    },
+	"draw_vertex": {
+        "prefix": "draw_vertex",
+        "body": [
+	    	"draw_vertex(${1:x},${0:y})"
+		],
+		"description": "[Function]draw_vertex(x,y) \nAdd vertex (x,y) to the primitive, using the color and alpha value set before."
+    },
+	"draw_vertex_color": {
+        "prefix": "draw_vertex_color",
+        "body": [
+	    	"draw_vertex_color(${1:x},${2:y},${3:col},${0:alpha})"
+		],
+		"description": "[Function]draw_vertex_color(x,y,col,alpha) \nAdd vertex (x,y) to the primitive, with its own color and alpha value. This allows you to create primitives with smoothly changing color and alpha values."
+    },
+	"draw_primitive_end": {
+        "prefix": "draw_primitive_end",
+        "body": [
+	    	"draw_primitive_end()"
+		],
+		"description": "[Function]draw_primitive_end() \nEnd the description of the primitive. This function actually draws it."
+    },
+	"draw_primitive_begin_texture": {
+        "prefix": "draw_primitive_begin_texture",
+        "body": [
+	    	"draw_primitive_begin_texture(${1:kind},${0:texid})"
+		],
+		"description": "[Function]draw_primitive_begin_texture(kind,texid) \nStart a primitive of the indicated kind with the given texture."
+    },
+	"draw_vertex_texture": {
+        "prefix": "draw_vertex_texture",
+        "body": [
+	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${0:ytex})"
+		],
+		"description": "[Function]draw_vertex_texture(x,y,xtex,ytex) \nAdd vertex (x,y) to the primitive with position (xtex,ytex) in the texture, blending with the color and alpha value set before. xtex and ytex should normally lie between 0 and 1 but also larger values can be used, leading to a repetition of the texture (see below)."
+    },
+	"draw_vertex_texture_color": {
+        "prefix": "draw_vertex_texture_color",
+        "body": [
+	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${0:alpha})"
+		],
+		"description": "[Function]draw_vertex_texture_color(x,y,xtex,ytex,col,alpha) \nAdd vertex (x,y) to the primitive with position (xtex,ytex) in the texture, blending with its own color and alpha value."
+    },
+	"draw_set_blend_mode": {
+        "prefix": "draw_set_blend_mode",
+        "body": [
+	    	"draw_set_blend_mode(${0:mode})"
+		],
+		"description": "[Function]draw_set_blend_mode(mode) \nIndicates what blend mode to use. The following values are possible: bm_normal, bm_add, bm_subtract, and bm_max. Don't forget to reset the mode to normal after use because otherwise also other sprites and even the backgrounds are drawn with the new blend mode."
+    },
+	"draw_set_blend_mode_ext": {
+        "prefix": "draw_set_blend_mode_ext",
+        "body": [
+	    	"draw_set_blend_mode_ext(${1:src},${0:dest})"
+		],
+		"description": "[Function]draw_set_blend_mode_ext(font) \nIndicates what blend mode to use for both the source and destination color. The new color is some factor times the source and another factor times the destination. These factors are set with this function. To understand this, the source and destination both have a red, green, blue, and alpha component. So the source is (Rs, Gs, Bs, As) and the destination is (Rd, Gd, Bd, Ad). All are considered to lie between 0 and 1. The blend factors you can choose for source and destination are:  \nbm_zero: Blend factor is  (0, 0, 0, 0). \nbm_one: Blend factor is  (1, 1, 1, 1). \nbm_src_color: Blend factor is (Rs, Gs, Bs, As). \nbm_inv_src_color: Blend factor is (1–Rs, 1–Gs, 1–Bs, 1–As). \nbm_src_alpha: Blend factor is (As, As, As, As). \nbm_inv_src_alpha: Blend factor is (1–As, 1–As, 1–As, 1–As). \nbm_dest_alpha: Blend factor is (Ad, Ad, Ad, Ad). \nbm_inv_dest_alpha: Blend factor is (1–Ad, 1–Ad, 1–Ad, 1–Ad). \nbm_dest_color: Blend factor is (Rd, Gd, Bd, Ad). \nbm_inv_dest_color: Blend factor is (1–Rd, 1–Gd, 1–Bd, 1–Ad). \nbm_src_alpha_sat: Blend factor is (f, f, f, 1); f = min(As, 1–Ad). \nFor example, the normal blending mode sets the source blending to bm_src_alpha and the destination blending to bm_inv_src_alpha. Don't forget to reset the mode to normal after use because otherwise also other sprites and even the backgrounds are drawn with the new blend mode."
+    },
+	"draw_surface": {
+        "prefix": "draw_surface",
+        "body": [
+	    	"draw_surface(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]draw_surface(id,x,y) \nDraws the surface at position (x,y). (Without color blending and no alpha transparency.)"
+    },
+	"draw_surface_stretched": {
+        "prefix": "draw_surface_stretched",
+        "body": [
+	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]draw_surface_stretched(id,x,y,w,h) \nDraws the surface stretched to the indicated region."
+    },
+	"draw_surface_tiled": {
+        "prefix": "draw_surface_tiled",
+        "body": [
+	    	"draw_surface_tiled(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]draw_surface_tiled(id,x,y) \nDraws the surface tiled so that it fills the entire room."
+    },
+	"draw_surface_part": {
+        "prefix": "draw_surface_part",
+        "body": [
+	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+		],
+		"description": "[Function]draw_surface_part(id,left,top,width,height,x,y) \nDraws the indicated part of the surface with its origin at position (x,y)."
+    },
+	"draw_surface_ext": {
+        "prefix": "draw_surface_ext",
+        "body": [
+	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_ext(id,x,y,xscale,yscale,rot,color,alpha) \nDraws the surface scaled and rotated with blending color (use c_white for no blending) and transparency alpha (0-1)."
+    },
+	"draw_surface_stretched_ext": {
+        "prefix": "draw_surface_stretched_ext",
+        "body": [
+	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_stretched_ext(id,x,y,w,h,color,alpha) \nDraws the surface stretched to the indicated region. color is the blending color and alpha indicates the transparency setting."
+    },
+	"draw_surface_tiled_ext": {
+        "prefix": "draw_surface_tiled_ext",
+        "body": [
+	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度。"
+    },
+	"draw_surface_part_ext": {
+        "prefix": "draw_surface_part_ext",
+        "body": [
+	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_part_ext(id,left,top,width,height,x,y,xscale,yscale,color,alpha) \nDraws the surface tiled so that it fills the entire room but now with scale factors and a color and transparency setting."
+    },
+	"draw_surface_general": {
+        "prefix": "draw_surface_general",
+        "body": [
+	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${0:alpha})"
+		],
+		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \nThe most general drawing function. It draws the indicated part of the surface with its origin at position (x,y) but now with scale factors, a rotation angle, a color for each of the four vertices (top-left, top-right, bottom-right, and bottom-left), and an alpha transparency value."
     }
 	//Draw Event Functions End
 	//Draw Event End

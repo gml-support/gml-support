@@ -74,8 +74,5 @@
         "path": "%gms.snippet%"
       }
     ]
-  },
-  "dependencies": {
-    "vscode-nls": "^2.0.2"
   }
 }
