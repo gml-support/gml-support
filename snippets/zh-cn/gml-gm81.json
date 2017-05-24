@@ -653,51 +653,51 @@
         "body": [
 	    	"merge_color(${1:col1},${2:col2},${0:amount})"
 		],
-		"description": "[Function]merge_color(col1,col2,amount) \n结束描述原始绘制，这个函数是马上绘制它。"
-    }/*,
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
-        "body": [
-	    	"draw_primitive_end()"
-		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+		"description": "[Function]merge_color(col1,col2,amount) \n返回颜色 col1，和col2 的混合颜色。混合程度由 amount 决定。0 代表完全混合为颜色 col1 ，1 代表完全混合为颜色 col2。"
     },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
+	"screen_save": {
+        "prefix": "screen_save",
         "body": [
-	    	"draw_primitive_end()"
+	    	"screen_save(${0:fname})"
 		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+		"description": "[Function]screen_save(fname) \n以给定的文件名 fname 保存屏幕截图为 bmp 文件。常用来截屏。"
     },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
+	"screen_save_part": {
+        "prefix": "screen_save_part",
         "body": [
-	    	"draw_primitive_end()"
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
 		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
     },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
+	"string_width": {
+        "prefix": "string_width",
         "body": [
-	    	"draw_primitive_end()"
+	    	"string_width(${0:string})"
 		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+		"description": "[Function]string_width(string) \n当前字体及将要通过 draw_text () 函数绘制的字符串 string 的 宽度。可以用来精确定位图像位置。"
     },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
+	"string_height": {
+        "prefix": "string_height",
         "body": [
-	    	"draw_primitive_end()"
+	    	"string_height(${0:string})"
 		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+		"description": "[Function]string_height(string) \n当前字体及将要通过 draw_text () 函数绘制的字符串 string 的 高度。可以用来精确定位图像位置。"
     },
-	"draw_primitive_end": {
-        "prefix": "draw_primitive_end",
+	"string_width_ext": {
+        "prefix": "string_width_ext",
         "body": [
-	    	"draw_primitive_end()"
+	    	"string_width_ext(${1:string},${2:sep},${0:w})"
 		],
-		"description": "[Function]draw_primitive_end() \n结束描述原始绘制，这个函数是马上绘制它。"
+		"description": "[Function]string_width_ext(string,sep,w) \n当前字体及将要通过 draw_text_ext () 函数绘制的字 符串 string 的宽度。可以用来精确定位图像位置。sep 代表行间距， w 代表行宽。"
     },
-	*/
+	"string_height_ext": {
+        "prefix": "string_height_ext",
+        "body": [
+	    	"string_height_ext(${1:string},${2:sep},${0:w})"
+		],
+		"description": "[Function]string_height_ext(string,sep,w) \n当前字体及将要通过 draw_text_ext () 函数绘制的字 符串 string 的高度。可以用来精确定位图像位置。sep 代表行间距， w 代表行宽。"
+    },
+	
 	//Draw Event Functions End
 	//Draw Event End
 }
