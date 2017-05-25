@@ -609,42 +609,42 @@
 	"color_get_red": {
         "prefix": "color_get_red",
         "body": [
-	    	"color_get_red(${0:col})"
+	    	"color_get_red()"
 		],
 		"description": "[Function]color_get_red(col) \n返回指定红色值 col 的颜色。"
     },
 	"color_get_green": {
         "prefix": "color_get_green",
         "body": [
-	    	"color_get_green(${0:col})"
+	    	"color_get_green()"
 		],
 		"description": "[Function]color_get_green(col) \n返回指定绿色值 col 的颜色。"
     },
 	"color_get_blue": {
         "prefix": "color_get_blue",
         "body": [
-	    	"color_get_blue(${0:col})"
+	    	"color_get_blue()"
 		],
 		"description": "[Function]color_get_blue(col) \n返回指定蓝色值 col 的颜色。"
     },
 	"color_get_hue": {
         "prefix": "color_get_hue",
         "body": [
-	    	"color_get_hue(${0:col})"
+	    	"color_get_hue()"
 		],
 		"description": "[Function]color_get_hue(col) \n返回指定色调值 col 的颜色。"
     },
 	"color_get_saturation": {
         "prefix": "color_get_saturation",
         "body": [
-	    	"color_get_saturation(${0:col})"
+	    	"color_get_saturation()"
 		],
 		"description": "[Function]color_get_saturation(col) \n返回指定饱和度 col 的颜色。"
     },
 	"color_get_value": {
         "prefix": "color_get_value",
         "body": [
-	    	"color_get_value(${0:col})"
+	    	"color_get_value()"
 		],
 		"description": "[Function]color_get_value(col) \n返回指定明暗度 col 的颜色。"
     },
@@ -696,8 +696,309 @@
 	    	"string_height_ext(${1:string},${2:sep},${0:w})"
 		],
 		"description": "[Function]string_height_ext(string,sep,w) \n当前字体及将要通过 draw_text_ext () 函数绘制的字 符串 string 的高度。可以用来精确定位图像位置。sep 代表行间距， w 代表行宽。"
+    }/*,
+	"texture_preload": {
+        "prefix": "texture_preload",
+        "body": [
+	    	"texture_preload(${0:texid})"
+		],
+		"description": "[Function]texture_preload(texid) \n把纹理立即存入显存。"
     },
-	
+	"texture_set_priority": {
+        "prefix": "texture_set_priority",
+        "body": [
+	    	"texture_set_priority(${1:texid},${0:prio})"
+		],
+		"description": "[Function]texture_set_priority(texid,prio) \n当显存太少需要删除部分在开始其他房间产生时。这时优先级低的先被删除。默认全部优先为0，你不能改变优先计算（使用正数值）。"
+    },
+	"texture_get_width": {
+        "prefix": "texture_get_width",
+        "body": [
+	    	"texture_get_width()"
+		],
+		"description": "[Function]texture_get_width(texid) \n返回纹理id的宽，返回0－1。"
+    },
+	"texture_get_height": {
+        "prefix": "texture_get_height",
+        "body": [
+	    	"texture_get_height()"
+		],
+		"description": "[Function]texture_get_height(texid) \n返回纹理id的高，返回0－1。"
+    },
+	"texture_set_interpolation": {
+        "prefix": "texture_set_interpolation",
+        "body": [
+	    	"texture_set_interpolation(${0:linear})"
+		],
+		"description": "[Function]texture_set_interpolation(linear) \n表明是否使用线性插值(true) ,或选择就近像素(假) . 线性插值使纹理顺畅,但也感到有点模糊,有时候额外成本时间. 此设定也影响到绘画精灵和背景. 默认值是FALSE . (这也可以改变,在全局游戏设定)。"
+    },
+	"texture_set_blending": {
+        "prefix": "texture_set_blending",
+        "body": [
+	    	"texture_set_blending(${0:blend})"
+		],
+		"description": "[Function]texture_set_blending(blend) \n表明是否使用混合颜色和透明值. 这个开关可能在旧硬件上更块. 此设定也影响到绘画精灵和背景. 默认是真。"
+    },
+	"texture_set_repeat": {
+        "prefix": "texture_set_repeat",
+        "body": [
+	    	"texture_set_repeat(${0:repeat})"
+		],
+		"description": "[Function]texture_set_repeat(repeat) \n表明是否重复使用的纹理. 这项工程如下. 如上所述纹理坐标所在的范围0-1 . 如果你指定了一个值大于1 ,则默认休息时不绘制. 设置重复为真时纹理是重复. 注意精灵和背景总是不重复绘制. 一旦你绘制一个精灵背景此值复位为false. 默认值是FALSE。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+    },
+	*/
 	//Draw Event Functions End
 	//Draw Event End
 }

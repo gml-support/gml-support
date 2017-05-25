@@ -1,0 +1,10 @@
+The following functions are temporarily not added:
+
+New in GameMaker 8.1:
+
+draw_self() This command is exactly the same as draw_sprite_ext() except it will use the instances own variables to draw itself (x,y, scale, angle etc.) This provides the same action as if the instance was draw without a script.
+
+在游戏绘制——高级绘制函数中的函数（这些函数将在后续版本中添加）：
+
+sprite_get_texture(spr,subimg) 返回纹理id对应于精灵子图。
+background_get_texture(back) 返回纹理id对应于背景。
