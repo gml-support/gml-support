@@ -592,6 +592,420 @@
 		],
 		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \nThe most general drawing function. It draws the indicated part of the surface with its origin at position (x,y) but now with scale factors, a rotation angle, a color for each of the four vertices (top-left, top-right, bottom-right, and bottom-left), and an alpha transparency value."
     }
+	,
+	"make_color_rgb": {
+        "prefix": "make_color_rgb",
+        "body": [
+	    	"make_color_rgb(${1:red},${2:green},${0:blue})"
+		],
+		"description": "[Function]make_color_rgb(red,green,blue) \n Returns a color with the indicated red, green, and blue components, where red, green and blue must be values between 0 and 255."
+    },
+	"make_color_hsv": {
+        "prefix": "make_color_hsv",
+        "body": [
+	    	"make_color_hsv(${1:hue},${2:saturation},${0:value})"
+		],
+		"description": "[Function]make_color_hsv(hue,saturation,value) \nReturns a color with the indicated hue, saturation and value components (each between 0 and 255)."
+    },
+	"color_get_red": {
+        "prefix": "color_get_red",
+        "body": [
+	    	"color_get_red(${0:col})"
+		],
+		"description": "[Function]color_get_red(col) \nReturns the red component of the color."
+    },
+	"color_get_green": {
+        "prefix": "color_get_green",
+        "body": [
+	    	"color_get_green(${0:col})"
+		],
+		"description": "[Function]color_get_green(col) \nReturns the green component of the color."
+    },
+	"color_get_blue": {
+        "prefix": "color_get_blue",
+        "body": [
+	    	"color_get_blue(${0:col})"
+		],
+		"description": "[Function]color_get_blue(col) \nReturns the blue component of the color."
+    },
+	"color_get_hue": {
+        "prefix": "color_get_hue",
+        "body": [
+	    	"color_get_hue(${0:col})"
+		],
+		"description": "[Function]color_get_hue(col) \nReturns the hue component of the color."
+    },
+	"color_get_saturation": {
+        "prefix": "color_get_saturation",
+        "body": [
+	    	"color_get_saturation(${0:col})"
+		],
+		"description": "[Function]color_get_saturation(col) \nReturns the saturation component of the color."
+    },
+	"color_get_value": {
+        "prefix": "color_get_value",
+        "body": [
+	    	"color_get_value(${0:col})"
+		],
+		"description": "[Function]color_get_value(col) \nReturns the value component of the color."
+    },
+	"merge_color": {
+        "prefix": "merge_color",
+        "body": [
+	    	"merge_color(${1:col1},${2:col2},${0:amount})"
+		],
+		"description": "[Function]merge_color(col1,col2,amount) \nReturns a merged color of col1 and col2. The merging is determined by amount. A value of 0 corresponds to col1, a value of 1 to col2, and values in between to merged values."
+    },
+	"screen_save": {
+        "prefix": "screen_save",
+        "body": [
+	    	"screen_save(${0:fname})"
+		],
+		"description": "[Function]screen_save(fname) \nSaves a png image of the screen in the given filename. Useful for making screenshots."
+    },
+	"screen_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(fname,x,y,w,h) \nSaves part of the screen in the given png filename."
+    },
+	"string_width": {
+        "prefix": "string_width",
+        "body": [
+	    	"string_width(${0:string})"
+		],
+		"description": "[Function]string_width(string) \nWidth of the string in the current font as it would be drawn using the draw_text() function. Can be used for precisely positioning graphics."
+    },
+	"string_height": {
+        "prefix": "string_height",
+        "body": [
+	    	"string_height(${0:string})"
+		],
+		"description": "[Function]string_height(string) \nHeight of the string in the current font as it would be drawn using the draw_text() function."
+    },
+	"string_width_ext": {
+        "prefix": "string_width_ext",
+        "body": [
+	    	"string_width_ext(${1:string},${2:sep},${0:w})"
+		],
+		"description": "[Function]string_width_ext(string,sep,w) \nWidth of the string in the current font as it would be drawn using the draw_text_ext() function. Can be used for precisely positioning graphics."
+    },
+	"string_height_ext": {
+        "prefix": "string_height_ext",
+        "body": [
+	    	"string_height_ext(${1:string},${2:sep},${0:w})"
+		],
+		"description": "[Function]string_height_ext(string,sep,w) \nHeight of the string in the current font as it would be drawn using the draw_text_ext() function."
+    },
+	"texture_preload": {
+        "prefix": "texture_preload",
+        "body": [
+	    	"texture_preload(${0:texid})"
+		],
+		"description": "[Function]texture_preload(texid) \nPuts the texture immediately into video memory."
+    },
+	"texture_set_priority": {
+        "prefix": "texture_set_priority",
+        "body": [
+	    	"texture_set_priority(${1:texid},${0:prio})"
+		],
+		"description": "[Function]texture_set_priority(texid,prio) \nWhen there is too little video memory some will be removed temporarily to make room for others that are needed. The ones with lowest priority are removed first. Default, all have priority 0 but you can change the priority here. (Use positive values!)"
+    },
+	"texture_get_width": {
+        "prefix": "texture_get_width",
+        "body": [
+	    	"texture_get_width(${0:texid})"
+		],
+		"description": "[Function]texture_get_width(texid) \nReturns the width of the texture with the given id. The width lies in the range 0-1."
+    },
+	"texture_get_height": {
+        "prefix": "texture_get_height",
+        "body": [
+	    	"texture_get_height(${0:texid})"
+		],
+		"description": "[Function]texture_get_height(texid) \nReturns the height of the texture with the given id. The height lies in the range 0-1."
+    },
+	"texture_set_interpolation": {
+        "prefix": "texture_set_interpolation",
+        "body": [
+	    	"texture_set_interpolation(${0:linear})"
+		],
+		"description": "[Function]texture_set_interpolation(linear) \nIndicates whether to use linear interpolation (true) or pick the nearest pixel (false). Linear interpolation gives smoother textures but can also be a bit blurry and sometimes costs extra time. This setting also influence the drawing of sprites and background. Default is false. (This can also be changed in the global game settings.)"
+    },
+	"texture_set_blending": {
+        "prefix": "texture_set_blending",
+        "body": [
+	    	"texture_set_blending(${0:blend})"
+		],
+		"description": "[Function]texture_set_blending(blend) \nIndicates whether to use blending with colors and alpha values. Switching this off might be faster on old hardware. This setting also influence the drawing of sprites and background. Default is true."
+    },
+	"texture_set_repeat": {
+        "prefix": "texture_set_repeat",
+        "body": [
+	    	"texture_set_repeat(${0:repeat})"
+		],
+		"description": "[Function]texture_set_repeat(repeat) \nIndicates whether to use repeat the texture. This works as follows. As indicated above texture coordinates lie in the range 0-1. If you specify a value larger than 1, default the rest is not drawn. By setting repeat to true the texture is repeated. Note that sprites and backgrounds are always drawn without repeating. So once you draw a sprite of background this value is reset to false. Default is false."
+    },
+	"surface_create": {
+        "prefix": "surface_create",
+        "body": [
+	    	"surface_create(${1:w},${0:h})"
+		],
+		"description": "[Function]surface_create(w,h) \nCreates a surface of the indicated width and height. Returns the id of the surface, which must be used in all further calls. Note that the surface will not be cleared. This is the responsibility of the user. (Set it as a target and call the appropriate clear function.)"
+    },
+	"surface_free": {
+        "prefix": "surface_free",
+        "body": [
+	    	"surface_free(${0:id})"
+		],
+		"description": "[Function]surface_free(id) \nFrees the memory used by the surface."
+    },
+	"surface_exists": {
+        "prefix": "surface_exists",
+        "body": [
+	    	"surface_exists(${0:id})"
+		],
+		"description": "[Function]surface_exists(id) \nReturns whether the surface with the indicated id exists."
+    },
+	"surface_get_width": {
+        "prefix": "surface_get_width",
+        "body": [
+	    	"surface_get_width(${0:id})"
+		],
+		"description": "[Function]surface_get_width(id) \nReturns the width of the surface."
+    },
+	"surface_get_height": {
+        "prefix": "surface_get_height",
+        "body": [
+	    	"surface_get_height(${0:id})"
+		],
+		"description": "[Function]surface_get_height(id) \nReturns the height of the surface."
+    },
+	"surface_get_texture": {
+        "prefix": "surface_get_texture",
+        "body": [
+	    	"surface_get_texture(${0:id})"
+		],
+		"description": "[Function]surface_get_texture(id) \nReturns the texture corresponding to the surface. This can be used to draw textured objects with the image of the surface."
+    },
+	"surface_set_target": {
+        "prefix": "surface_set_target",
+        "body": [
+	    	"surface_set_target(${0:id})"
+		],
+		"description": "[Function]surface_set_target(id) \nSets the indicated surface as the drawing target. All subsequent drawing happens on this surface. It resets the projection to simply cover the surface."
+    },
+	"surface_reset_target": {
+        "prefix": "surface_reset_target",
+        "body": [
+	    	"surface_reset_target()"
+		],
+		"description": "[Function]surface_reset_target() \nResets the drawing target to the normal screen."
+    },
+	"surface_getpixel": {
+        "prefix": "surface_getpixel",
+        "body": [
+	    	"surface_getpixel(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]surface_getpixel(id,x,y) \nReturns the color of the pixel corresponding to position (x,y) in the surface. This is not very fast, so use with care."
+    },
+	"surface_save": {
+        "prefix": "surface_save",
+        "body": [
+	    	"surface_save(${1:id},${0:fname})"
+		],
+		"description": "[Function]surface_save(id,fname) \nSaves a png image of the surface in the given filename. Useful for making screenshots."
+    },
+	"surface_save_part": {
+        "prefix": "screen_save_part",
+        "body": [
+	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${0:h})"
+		],
+		"description": "[Function]screen_save_part(id,fname,x,y,w,h) \nSaves part of the surface in the given png filename."
+    },
+	"surface_copy": {
+        "prefix": "surface_copy",
+        "body": [
+	    	"surface_copy(${1:destination},${2:x},${3:y},${0:source})"
+		],
+		"description": "[Function]surface_copy(destination,x,y,source) \nCopies the source surface at position (x,y) in the destination surface. (Without any form of blending.)"
+    },
+	"surface_copy_part": {
+        "prefix": "surface_copy_part",
+        "body": [
+	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${0:hs})"
+		],
+		"description": "[Function]surface_copy_part(destination,x,y,source,xs,ys,ws,hs) \nCopies the indicated part of the source surface at position (x,y) in the destination surface. (Without any form of blending.)"
+    },
+	"tile_add": {
+        "prefix": "tile_add",
+        "body": [
+	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${0:depth})"
+		],
+		"description": "[Function]tile_add(background,left,top,width,height,x,y,depth) \nAdds a new tile to the room with the indicated values (see above for their meaning). The function returns the id of the tile that can be used later on."
+    },
+	"tile_delete": {
+        "prefix": "tile_delete",
+        "body": [
+	    	"tile_delete(${0:id})"
+		],
+		"description": "[Function]tile_delete(id) \nDeletes the tile with the given id."
+    },
+	"tile_exists": {
+        "prefix": "tile_exists",
+        "body": [
+	    	"tile_exists(${0:id})"
+		],
+		"description": "[Function]tile_exists(id) \nReturns whether a tile with the given id exists."
+    },
+	"tile_get_x": {
+        "prefix": "tile_get_x",
+        "body": [
+	    	"tile_get_x(${0:id})"
+		],
+		"description": "[Function]tile_get_x(id) \nReturns the x-position of the tile with the given id."
+    },
+	"tile_get_y": {
+        "prefix": "tile_get_y",
+        "body": [
+	    	"tile_get_y(${0:id})"
+		],
+		"description": "[Function]tile_get_y(id) \nReturns the y-position of the tile with the given id."
+    },
+	"tile_get_left": {
+        "prefix": "tile_get_left",
+        "body": [
+	    	"tile_get_left(${0:id})"
+		],
+		"description": "[Function]tile_get_left(id) \nReturns the left value of the tile with the given id."
+    },
+	"tile_get_top": {
+        "prefix": "tile_get_top",
+        "body": [
+	    	"tile_get_top(${0:id})"
+		],
+		"description": "[Function]tile_get_top(id) \nReturns the top value of the tile with the given id."
+    },
+	"tile_get_width": {
+        "prefix": "tile_get_width",
+        "body": [
+	    	"tile_get_width(${0:id})"
+		],
+		"description": "[Function]tile_get_width(id) \nReturns the width of the tile with the given id."
+    },
+	"tile_get_height": {
+        "prefix": "tile_get_height",
+        "body": [
+	    	"tile_get_height(${0:id})"
+		],
+		"description": "[Function]tile_get_height(id) \nReturns the height of the tile with the given id."
+    },
+	"tile_get_depth": {
+        "prefix": "tile_get_depth",
+        "body": [
+	    	"tile_get_depth(${0:id})"
+		],
+		"description": "[Function]tile_get_depth(id) \nReturns the depth of the tile with the given id."
+    },
+	"tile_get_visible": {
+        "prefix": "tile_get_visible",
+        "body": [
+	    	"tile_get_visible(${0:id})"
+		],
+		"description": "[Function]tile_get_visible(id) \nReturns whether the tile with the given id is visible."
+    },
+	"tile_get_xscale": {
+        "prefix": "tile_get_xscale",
+        "body": [
+	    	"tile_get_xscale(${0:id})"
+		],
+		"description": "[Function]tile_get_xscale(id) \nReturns the xscale of the tile with the given id."
+    },
+	"tile_get_yscale": {
+        "prefix": "tile_get_yscale",
+        "body": [
+	    	"tile_get_yscale(${0:id})"
+		],
+		"description": "[Function]tile_get_yscale(id) \nReturns the yscale of the tile with the given id."
+    },
+	"tile_get_background": {
+        "prefix": "tile_get_background",
+        "body": [
+	    	"tile_get_background(${0:id})"
+		],
+		"description": "[Function]tile_get_background(id) \nReturns the background of the tile with the given id."
+    },
+	"tile_get_blend": {
+        "prefix": "tile_get_blend",
+        "body": [
+	    	"tile_get_blend(${0:id})"
+		],
+		"description": "[Function]tile_get_blend(id) \nReturns the blending color of the tile with the given id."
+    },
+	"tile_get_alpha": {
+        "prefix": "tile_get_alpha",
+        "body": [
+	    	"tile_get_alpha(${0:id})"
+		],
+		"description": "[Function]tile_get_alpha(id) \nReturns the alpha value of the tile with the given id."
+    },
+	"tile_set_position": {
+        "prefix": "tile_set_position",
+        "body": [
+	    	"tile_set_position(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_set_position(id,x,y) \nSets the position of the tile with the given id."
+    },
+	"tile_set_region": {
+        "prefix": "tile_set_region",
+        "body": [
+	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${0:height})"
+		],
+		"description": "[Function]tile_set_region(id,left,right,width,height) \nSets the region of the tile with the given id in its background."
+    },
+	"tile_set_background": {
+        "prefix": "tile_set_background",
+        "body": [
+	    	"tile_set_background(${1:id},${0:background})"
+		],
+		"description": "[Function]tile_set_background((id,background) \nSets the background for the tile with the given id."
+    },
+	"tile_set_visible": {
+        "prefix": "tile_set_visible",
+        "body": [
+	    	"tile_set_visible(${${1:id},${0:visible})"
+		],
+		"description": "[Function]tile_set_visible(id,visible) \nSets whether the tile with the given id is visible."
+    },
+	"tile_set_depth": {
+        "prefix": "tile_set_depth",
+        "body": [
+	    	"tile_set_depth(${${1:id},${0:depth})"
+		],
+		"description": "[Function]tile_set_depth(id,depth) \nSets the depth of the tile with the given id."
+    },
+	"tile_set_scale": {
+        "prefix": "tile_set_scale",
+        "body": [
+	    	"tile_set_scale(${${1:id},${2:xscale},${0:yscale})"
+		],
+		"description": "[Function]tile_set_scale(id,xscale,yscale) \nSets the scaling of the tile with the given id."
+    },
+	"tile_set_blend": {
+        "prefix": "tile_set_blend",
+        "body": [
+	    	"tile_set_blend(${${1:id},${0:blend})"
+		],
+		"description": "[Function]tile_set_blend(id,color) \nSets the blending color of the tile with the given id."
+    },
+	"tile_set_alpha": {
+        "prefix": "tile_set_alpha",
+        "body": [
+	    	"tile_set_alpha(${${1:id},${0:alpha})"
+		],
+		"description": "[Function]tile_set_alpha(id,alpha) \nSets the alpha value of the tile with the given id."
+    }
 	//Draw Event Functions End
 	//Draw Event End
 }

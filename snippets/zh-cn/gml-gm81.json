@@ -604,47 +604,47 @@
         "body": [
 	    	"make_color_hsv(${1:hue},${2:saturation},${0:value})"
 		],
-		"description": "[Function]make_color_hsv(hue,saturation,value) \n回指定色调 hue ，饱和度 saturation，以及 明暗度 value 的颜色（所有参数都必须在0到255之间）。"
+		"description": "[Function]make_color_hsv(hue,saturation,value) \n返回指定色调 hue ，饱和度 saturation，以及 明暗度 value 的颜色（所有参数都必须在0到255之间）。"
     },
 	"color_get_red": {
         "prefix": "color_get_red",
         "body": [
-	    	"color_get_red()"
+	    	"color_get_red(${0:col})"
 		],
 		"description": "[Function]color_get_red(col) \n返回指定红色值 col 的颜色。"
     },
 	"color_get_green": {
         "prefix": "color_get_green",
         "body": [
-	    	"color_get_green()"
+	    	"color_get_green(${0:col})"
 		],
 		"description": "[Function]color_get_green(col) \n返回指定绿色值 col 的颜色。"
     },
 	"color_get_blue": {
         "prefix": "color_get_blue",
         "body": [
-	    	"color_get_blue()"
+	    	"color_get_blue(${0:col})"
 		],
 		"description": "[Function]color_get_blue(col) \n返回指定蓝色值 col 的颜色。"
     },
 	"color_get_hue": {
         "prefix": "color_get_hue",
         "body": [
-	    	"color_get_hue()"
+	    	"color_get_hue(${0:col})"
 		],
 		"description": "[Function]color_get_hue(col) \n返回指定色调值 col 的颜色。"
     },
 	"color_get_saturation": {
         "prefix": "color_get_saturation",
         "body": [
-	    	"color_get_saturation()"
+	    	"color_get_saturation(${0:col})"
 		],
 		"description": "[Function]color_get_saturation(col) \n返回指定饱和度 col 的颜色。"
     },
 	"color_get_value": {
         "prefix": "color_get_value",
         "body": [
-	    	"color_get_value()"
+	    	"color_get_value(${0:col})"
 		],
 		"description": "[Function]color_get_value(col) \n返回指定明暗度 col 的颜色。"
     },
@@ -696,7 +696,7 @@
 	    	"string_height_ext(${1:string},${2:sep},${0:w})"
 		],
 		"description": "[Function]string_height_ext(string,sep,w) \n当前字体及将要通过 draw_text_ext () 函数绘制的字 符串 string 的高度。可以用来精确定位图像位置。sep 代表行间距， w 代表行宽。"
-    }/*,
+    },
 	"texture_preload": {
         "prefix": "texture_preload",
         "body": [
@@ -746,258 +746,265 @@
 		],
 		"description": "[Function]texture_set_repeat(repeat) \n表明是否重复使用的纹理. 这项工程如下. 如上所述纹理坐标所在的范围0-1 . 如果你指定了一个值大于1 ,则默认休息时不绘制. 设置重复为真时纹理是重复. 注意精灵和背景总是不重复绘制. 一旦你绘制一个精灵背景此值复位为false. 默认值是FALSE。"
     },
-	"screen_save_part": {
+	"surface_create": {
+        "prefix": "surface_create",
+        "body": [
+	    	"surface_create(${1:w},${0:h})"
+		],
+		"description": "[Function]surface_create(w,h) \n创建一个表面，w，h 分别代表宽度，高度。返回表面的 id ，后面 会用到它。要注意表面是不会被自动清除的，需要用户负责清除。（先设置表面为操作目标， 然后调用清除函数）。"
+    },
+	"surface_free": {
+        "prefix": "surface_free",
+        "body": [
+	    	"surface_free(${0:id})"
+		],
+		"description": "[Function]surface_free(id) \n清除指定 id 的表面占用的内存。"
+    },
+	"surface_exists": {
+        "prefix": "surface_exists",
+        "body": [
+	    	"surface_exists(${0:id})"
+		],
+		"description": "[Function]surface_exists(id) \n返回指定 id 的表面是否存在。"
+    },
+	"surface_get_width": {
+        "prefix": "surface_get_width",
+        "body": [
+	    	"surface_get_width(${0:id})"
+		],
+		"description": "[Function]surface_get_width(id) \n返回指定 id 的表面的宽。"
+    },
+	"surface_get_height": {
+        "prefix": "surface_get_height",
+        "body": [
+	    	"surface_get_height(${0:id})"
+		],
+		"description": "[Function]surface_get_height(id) \n返回指定 id 的表面的高度。"
+    },
+	"surface_get_texture": {
+        "prefix": "surface_get_texture",
+        "body": [
+	    	"surface_get_texture(${0:id})"
+		],
+		"description": "[Function]surface_get_texture(id) \n回与指定 id 的表面对应的材质。可以在表面图像的材质对象中使用。"
+    },
+	"surface_set_target": {
+        "prefix": "surface_set_target",
+        "body": [
+	    	"surface_set_target(${0:id})"
+		],
+		"description": "[Function]surface_set_target(id) \n将绘图目标指定为 id 的表面。其后的所有绘图操作都将在指定 表面上进行。这个函数只是简单的将指针覆盖至表面。"
+    },
+	"surface_reset_target": {
+        "prefix": "surface_reset_target",
+        "body": [
+	    	"surface_reset_target()"
+		],
+		"description": "[Function]surface_reset_target() \n重置绘图目标到普通屏幕上。"
+    },
+	"surface_getpixel": {
+        "prefix": "surface_getpixel",
+        "body": [
+	    	"surface_getpixel(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]surface_getpixel(id,x,y) \n返回指定 id 的表面上坐标为 (x,y) 的像素的颜色。速度不是 很快，所以要谨慎使用。"
+    },
+	"surface_save": {
+        "prefix": "surface_save",
+        "body": [
+	    	"surface_save(${1:id},${0:fname})"
+		],
+		"description": "[Function]surface_save(id,fname) \n保存指定 id 的表面到名为 fname 的BMP图像文件中。常用来进行截屏。"
+    },
+	"surface_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${0:h})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]screen_save_part(id,fname,x,y,w,h) \n保存指定 id 的表面上一部分（(x,y)为坐标， w、h为宽度、高度）到指定的文件名。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"surface_copy": {
+        "prefix": "surface_copy",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"surface_copy(${1:destination},${2:x},${3:y},${0:source})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]surface_copy(destination,x,y,source) \n复制原表面的位置(x,y)到一表面上(没有任何混合)。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"surface_copy_part": {
+        "prefix": "surface_copy_part",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${0:hs})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]surface_copy_part(destination,x,y,source,xs,ys,ws,hs) \n保复制原表面的位置(x,y)部分尺寸(xs,ys,ws,hs)到一表面上(没有任何混合)。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_add": {
+        "prefix": "tile_add",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${0:depth})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_add(background,left,top,width,height,x,y,depth) \n在房间中添加新的贴图。函数 返回生成贴图的 id 。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_delete": {
+        "prefix": "tile_delete",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_delete(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_delete(id) \n删除指定 id 的贴图。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_exists": {
+        "prefix": "tile_exists",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_exists(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_exists(id) \n返回指定 id 的贴图是否存在。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_x": {
+        "prefix": "tile_get_x",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_x(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_x(id) \n返回指定 id 的贴图的 x 横坐标。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_y": {
+        "prefix": "tile_get_y",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_y(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_y(id) \n返回指定 id 的贴图的 y 纵坐标。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_left": {
+        "prefix": "tile_get_left",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_left(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_left(id) \n返回指定 id 的贴图的 left 左边属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_top": {
+        "prefix": "tile_get_top",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_top(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_top(id) \n返回指定 id 的贴图的 top 顶边属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_width": {
+        "prefix": "tile_get_width",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_width(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_width(id) \n返回指定 id 的贴图的 width 宽属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_height": {
+        "prefix": "tile_get_height",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_height(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_height(id) \n返回指定 id 的贴图的 height 高属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_depth": {
+        "prefix": "tile_get_depth",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_depth(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_depth(id) \n返回指定 id 的贴图的 depth 深属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_visible": {
+        "prefix": "tile_get_visible",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_visible(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_visible(id) \n返回指定 id 的贴图的 visible 可视属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_xscale": {
+        "prefix": "tile_get_xscale",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_xscale(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_xscale(id) \n返回指定 id 的贴图的 xscale x比例属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_yscale": {
+        "prefix": "tile_get_yscale",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_yscale(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_yscale(id) \n返回指定 id 的贴图的 yscale y比例属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_background": {
+        "prefix": "tile_get_background",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_background(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_background(id) \n返回指定 id 的贴图的 background 背景属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_blend": {
+        "prefix": "tile_get_blend",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_blend(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_blend(id) \n返回指定 id 的贴图的 blend 混合属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_get_alpha": {
+        "prefix": "tile_get_alpha",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_get_alpha(${0:id})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_get_alpha(id) \n返回指定 id 的贴图的 alpha 透明度属性值。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_position": {
+        "prefix": "tile_set_position",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_position(${1:id},${2:x},${0:y})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_position(id,x,y) \n设置指定 id 的贴图的坐标为(x,y)。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_region": {
+        "prefix": "tile_set_region",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${0:height})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_region(id,left,right,width,height) \n设定指定 id 的贴图在背景上的矩形区域。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_background": {
+        "prefix": "tile_set_background",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_background(${1:id},${0:background})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_background((id,background) \n设定指定 id 的贴图的背景 background。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_visible": {
+        "prefix": "tile_set_visible",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_visible(${${1:id},${0:visible})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_visible(id,visible) \n设定指定 id 的贴图是否可见。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_depth": {
+        "prefix": "tile_set_depth",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_depth(${${1:id},${0:depth})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_depth(id,depth) \n设定指定 id 的贴图的深度。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_scale": {
+        "prefix": "tile_set_scale",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_scale(${${1:id},${2:xscale},${0:yscale})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_scale(id,xscale,yscale) \n设定指定 id 的贴图的缩放比。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_blend": {
+        "prefix": "tile_set_blend",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_blend(${${1:id},${0:blend})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
+		"description": "[Function]tile_set_blend(id,color) \n设定指定 id 的贴图的混合颜色。"
     },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
+	"tile_set_alpha": {
+        "prefix": "tile_set_alpha",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"tile_set_alpha(${${1:id},${0:alpha})"
 		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
-	"screen_save_part": {
-        "prefix": "screen_save_part",
-        "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
-		],
-		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
-    },
+		"description": "[Function]tile_set_alpha(id,alpha) \n设定指定 id 的贴图的阿尔法透明通道值。"
+    }/*,
 	*/
 	//Draw Event Functions End
 	//Draw Event End
