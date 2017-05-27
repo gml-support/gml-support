@@ -973,38 +973,430 @@
 	"tile_set_visible": {
         "prefix": "tile_set_visible",
         "body": [
-	    	"tile_set_visible(${${1:id},${0:visible})"
+	    	"tile_set_visible(${1:id},${0:visible})"
 		],
 		"description": "[Function]tile_set_visible(id,visible) \n设定指定 id 的贴图是否可见。"
     },
 	"tile_set_depth": {
         "prefix": "tile_set_depth",
         "body": [
-	    	"tile_set_depth(${${1:id},${0:depth})"
+	    	"tile_set_depth(${1:id},${0:depth})"
 		],
 		"description": "[Function]tile_set_depth(id,depth) \n设定指定 id 的贴图的深度。"
     },
 	"tile_set_scale": {
         "prefix": "tile_set_scale",
         "body": [
-	    	"tile_set_scale(${${1:id},${2:xscale},${0:yscale})"
+	    	"tile_set_scale(${1:id},${2:xscale},${0:yscale})"
 		],
 		"description": "[Function]tile_set_scale(id,xscale,yscale) \n设定指定 id 的贴图的缩放比。"
     },
 	"tile_set_blend": {
         "prefix": "tile_set_blend",
         "body": [
-	    	"tile_set_blend(${${1:id},${0:blend})"
+	    	"tile_set_blend(${1:id},${0:blend})"
 		],
 		"description": "[Function]tile_set_blend(id,color) \n设定指定 id 的贴图的混合颜色。"
     },
 	"tile_set_alpha": {
         "prefix": "tile_set_alpha",
         "body": [
-	    	"tile_set_alpha(${${1:id},${0:alpha})"
+	    	"tile_set_alpha(${1:id},${0:alpha})"
 		],
 		"description": "[Function]tile_set_alpha(id,alpha) \n设定指定 id 的贴图的阿尔法透明通道值。"
+    },
+	"tile_layer_hide": {
+        "prefix": "tile_layer_hide",
+        "body": [
+	    	"tile_layer_hide(${0:depth})"
+		],
+		"description": "[Function]tile_layer_hide(depth) \n隐藏指定深度 depth 的所有贴图。"
+    },
+	"tile_layer_show": {
+        "prefix": "tile_layer_show",
+        "body": [
+	    	"tile_layer_show(${0:depth})"
+		],
+		"description": "[Function]tile_layer_show(depth) \n显示指定深度 depth 的所有贴图。"
+    },
+	"tile_layer_delete": {
+        "prefix": "tile_layer_delete",
+        "body": [
+	    	"tile_layer_delete(${0:depth})"
+		],
+		"description": "[Function]tile_layer_delete(depth) \n删除指定深度 depth 的所有贴图。"
+    },
+	"tile_layer_shift": {
+        "prefix": "tile_layer_shift",
+        "body": [
+	    	"tile_layer_shift(${1:depth},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_layer_shift(depth,x,y) \n移动指定深度 depth 下的所有贴图向坐标(x,y)移动。可以 用来搭建卷轴移动的贴图层。"
+    },
+	"tile_layer_find": {
+        "prefix": "tile_layer_find",
+        "body": [
+	    	"tile_layer_find(${1:depth},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_layer_find(depth,x,y) \n返回给定深度 depth 下，坐标(x,y) 的贴图 id 。如果没有 找到则返回 -1 。如果有多个结果则返回第一个的 id 。"
+    },
+	"tile_layer_delete_at": {
+        "prefix": "tile_layer_delete_at",
+        "body": [
+	    	"tile_layer_delete_at(${1:depth},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_layer_delete_at(depth,x,y) \n删除指定深度 depth 下，坐标(x,y) 的贴图。如果有 多个结果则全部删除。"
+    },
+	"tile_layer_depth": {
+        "prefix": "tile_layer_depth",
+        "body": [
+	    	"tile_layer_depth(${${1:depth},${0:newdepth})"
+		],
+		"description": "[Function]tile_layer_depth(depth,newdepth) \n将指定深度 depth 下的所有贴图的深度更改为新的深 度 newdepth。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_height": {
+        "prefix": "display_get_height",
+        "body": [
+	    	"display_get_height()"
+		],
+		"description": "[Function]display_get_height() \n返回显示的像素高度。"
+    },
+	"display_get_colordepth": {
+        "prefix": "display_get_colordepth",
+        "body": [
+	    	"display_get_colordepth()"
+		],
+		"description": "[Function]display_get_colordepth() \n返回显示的色深。"
+    },
+	"display_get_frequency": {
+        "prefix": "display_get_frequency",
+        "body": [
+	    	"display_get_frequency()"
+		],
+		"description": "[Function]display_get_frequency() \n返回显示的刷新率。"
+    },
+	"display_set_size": {
+        "prefix": "display_set_size",
+        "body": [
+	    	"display_set_size(${1:w},${0:h})"
+		],
+		"description": "[Function]display_set_size(w,h) \n设定显示的宽度和高度，单位像素。返回是否成功。（记住只有正确的组合才被允许）。"
+    },
+	"display_set_colordepth": {
+        "prefix": "display_set_colordepth",
+        "body": [
+	    	"display_set_colordepth(${0:coldepth})"
+		],
+		"description": "[Function]display_set_colordepth(coldepth) \n设置色深。通常只有16和32两种允许值。返回是否成 功。"
+    },
+	"display_set_frequency": {
+        "prefix": "display_set_frequency",
+        "body": [
+	    	"display_set_frequency(${0:frequency})"
+		],
+		"description": "[Function]display_set_frequency(frequency) \n设置刷新率。通常只有很少的几个允许值（ 比如60、75、85等等）。返回是否成功。"
+    },
+	"display_set_all": {
+        "prefix": "display_set_all",
+        "body": [
+	    	"display_set_all(${1:w},${2:h},${3:frequency},${0:coldepth})"
+		],
+		"description": "[Function]display_set_all(w,h,frequency,coldepth) \n一次性设置。-1 代表不更改。返回是否成功。"
+    },
+	"display_test_all": {
+        "prefix": "display_test_all",
+        "body": [
+	    	"display_test_allh(${1:w},${2:h},${3:frequency},${0:coldepth})"
+		],
+		"description": "[Function]display_test_all(w,h,frequency,coldepth) \n返回给定的设置是否允许。-1 代表不更改。"
+    },
+	"display_reset": {
+        "prefix": "display_reset",
+        "body": [
+	    	"display_reset()"
+		],
+		"description": "[Function]display_reset() \n返回设置到程序初始状态。"
+    },
+	"display_mouse_get_x": {
+        "prefix": "display_mouse_get_x",
+        "body": [
+	    	"display_mouse_get_x()"
+		],
+		"description": "[Function]display_mouse_get_x() \n返回鼠标在屏幕上位置的横坐标。"
+    },
+	"display_mouse_get_y": {
+        "prefix": "display_mouse_get_y",
+        "body": [
+	    	"display_mouse_get_y()"
+		],
+		"description": "[Function]display_mouse_get_y() \n返回鼠标在屏幕上位置的纵坐标。"
+    },
+	"display_mouse_set": {
+        "prefix": "display_mouse_set",
+        "body": [
+	    	"display_mouse_set()"
+		],
+		"description": "[Function]display_mouse_set(${1:x},${0:y}) \n设置鼠标位置到指定的坐标(x,y)。"
+    },
+	"window_set_visible": {
+        "prefix": "window_set_visible",
+        "body": [
+	    	"window_set_visible(${0:visible})"
+		],
+		"description": "[Function]window_set_visible(visible) \n设置游戏窗口是否可见。当然通常状况下你会希望游戏窗口 一直可见。处于不可见状态的窗口不会对任何键盘事件产生反应。"
+    },
+	"window_get_visible": {
+        "prefix": "window_get_visible",
+        "body": [
+	    	"window_get_visible()"
+		],
+		"description": "[Function]window_get_visible() \n返回游戏窗口是否可见。"
+    },
+	"window_set_fullscreen": {
+        "prefix": "window_set_fullscreen",
+        "body": [
+	    	"window_set_fullscreen(${0:full})"
+		],
+		"description": "[Function]window_set_fullscreen(full) \n设置窗口为全屏模式。"
+    },
+	"window_get_fullscreen": {
+        "prefix": "window_get_fullscreen",
+        "body": [
+	    	"window_get_fullscreen()"
+		],
+		"description": "[Function]window_get_fullscreen() \n返回窗口是否处于全屏模式。"
+    },
+	"window_set_showborder": {
+        "prefix": "window_set_showborder",
+        "body": [
+	    	"window_set_showborder(${0:show})"
+		],
+		"description": "[Function]window_set_showborder(show) \n设置是否显示窗口的边框（全屏模式下不会显示边框）。"
+    },
+	"window_get_showborder": {
+        "prefix": "window_get_showborder",
+        "body": [
+	    	"window_get_showborder()"
+		],
+		"description": "[Function]window_get_showborder() \n返回窗口是否显示边框。"
+    },
+	"window_set_showicons": {
+        "prefix": "window_set_showicons",
+        "body": [
+	    	"window_set_showicons(${0:show})"
+		],
+		"description": "[Function]window_set_showicons(show) \n设置窗口图标（最小化，最大化，关闭）是否显示（全屏模 式下不会显示）。"
+    },
+	"window_get_showicons": {
+        "prefix": "window_get_showicons",
+        "body": [
+	    	"window_get_showicons()"
+		],
+		"description": "[Function]window_get_showicons() \n返回窗口是否显示边框图标。"
+    },
+	"window_set_stayontop": {
+        "prefix": "window_set_stayontop",
+        "body": [
+	    	"window_set_stayontop(${0:stay})"
+		],
+		"description": "[Function]window_set_stayontop(stay) \n设置窗口是否一直处于最前。"
+    },
+	"window_get_stayontop": {
+        "prefix": "window_get_stayontop",
+        "body": [
+	    	"window_get_stayontop()"
+		],
+		"description": "[Function]window_get_stayontop() \n返回窗口是否处于最前。"
+    },
+	"window_set_sizeable": {
+        "prefix": "window_set_sizeable",
+        "body": [
+	    	"window_set_sizeable(${0:sizeable})"
+		],
+		"description": "[Function]window_set_sizeable(sizeable) \n设置窗口是否可以被用户调整。（玩家只能在边框被显示 的非全屏模式下调整窗口大小）。"
+    },
+	"window_get_sizeable": {
+        "prefix": "window_get_sizeable",
+        "body": [
+	    	"window_get_sizeable()"
+		],
+		"description": "[Function]window_get_sizeable() \n返回窗口是否可以被玩家调整大小。"
+    },
+	"window_set_caption": {
+        "prefix": "window_set_caption",
+        "body": [
+	    	"window_set_caption(${0:caption})"
+		],
+		"description": "[Function]window_set_caption(caption) \n设置窗口标题。通常玩家在设计房间的时候都会自己改动房间标题。所以这个函数不是很有用，除非你不想通过 Game Maker 完成这个操作。标题只有在窗口显示边框并且未处于全屏模式时可见。"
+    },
+	"window_get_caption": {
+        "prefix": "window_get_caption",
+        "body": [
+	    	"window_get_caption()"
+		],
+		"description": "[Function]window_get_caption() \n返回窗口的标题。"
+    },
+	"window_set_cursor": {
+        "prefix": "window_set_cursor",
+        "body": [
+	    	"window_set_cursor(${0:curs})"
+		],
+		"description": "[Function]window_set_cursor() \n设置窗口内鼠标指针的类型。你可以使用如下几种鼠标指针类型 : \ncr_default 默认\ncr_none 无\ncr_arrow 箭头\ncr_cross 十字\ncr_beam 工形\ncr_size_nesw 右斜双箭头\ncr_size_ns 垂直双箭头\ncr_size_nwse 左斜双箭头\ncr_size_we 水平双箭头\ncr_uparrow 上箭头\ncr_hourglass 沙漏\ncr_drag 拖拽\ncr_nodrop 不能拖拽\ncr_hsplit 水平分离\ncr_vsplit 垂直分离\ncr_multidrag 复数拖拽选中\ncr_sqlwait SQL等待\ncr_no 拒绝\ncr_appstart 载入\ncr_help 帮助\ncr_handpoint 手指\ncr_size_all 全向箭头\n特别指出，要想隐藏鼠标指针呢，使用 cr_none 这个值。"
+    },
+	"window_get_cursor": {
+        "prefix": "window_get_cursor",
+        "body": [
+	    	"window_get_cursor()"
+		],
+		"description": "[Function]window_get_cursor() \n返回窗口中使用的鼠标指针类型。"
+    },
+	"window_set_color": {
+        "prefix": "window_set_color",
+        "body": [
+	    	"window_set_color(${0:color})"
+		],
+		"description": "[Function]window_set_color(color) \n设置窗口未用来绘制房间的部分的颜色。"
+    },
+	"window_get_color": {
+        "prefix": "window_get_color",
+        "body": [
+	    	"window_get_color()"
+		],
+		"description": "[Function]window_get_color() \n返回窗口颜色。"
+    },
+	"window_set_region_scale": {
+        "prefix": "window_set_region_scale",
+        "body": [
+	    	"window_set_region_scale(${1:scale},${0:adaptwindow})"
+		],
+		"description": "[Function]window_set_region_scale(scale,adaptwindow) \n如果窗口比当前房间大，通常房间就会显 示在窗口的中心位置。这里你可以指定房间自动缩放以适应窗口大小。设为 1 代表不进行 缩放。如果你使用 0 作为参数则代表伸展填充全部窗口区域。如果你设置为一个负值则代 表在窗口内维持高宽比的最大尺寸（通常也是你希望的模式）。adaptwindow 指定窗口尺寸 是否根据房间尺寸进行适应调整。只在缩放值为正值时起作用。"
+    },
+	"window_get_region_scale": {
+        "prefix": "window_get_region_scale",
+        "body": [
+	    	"window_get_region_scale()"
+		],
+		"description": "[Function]window_get_region_scale() \n返回绘图区域的缩放值。"
     }/*,
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+    },
 	*/
 	//Draw Event Functions End
 	//Draw Event End

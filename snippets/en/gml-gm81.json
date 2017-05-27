@@ -1005,6 +1005,286 @@
 	    	"tile_set_alpha(${${1:id},${0:alpha})"
 		],
 		"description": "[Function]tile_set_alpha(id,alpha) \nSets the alpha value of the tile with the given id."
+    },
+	"tile_layer_hide": {
+        "prefix": "tile_layer_hide",
+        "body": [
+	    	"tile_layer_hide(${0:depth})"
+		],
+		"description": "[Function]tile_layer_hide(depth) \nHides all tiles at the indicated depth layer."
+    },
+	"tile_layer_show": {
+        "prefix": "tile_layer_show",
+        "body": [
+	    	"tile_layer_show(${0:depth})"
+		],
+		"description": "[Function]tile_layer_show(depth) \nShows all tiles at the indicated depth layer."
+    },
+	"tile_layer_delete": {
+        "prefix": "tile_layer_delete",
+        "body": [
+	    	"tile_layer_delete(${0:depth})"
+		],
+		"description": "[Function]tile_layer_delete(depth) \nDeletes all tiles at the indicated depth layer."
+    },
+	"tile_layer_shift": {
+        "prefix": "tile_layer_shift",
+        "body": [
+	    	"tile_layer_shift(${1:depth},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_layer_shift(depth,x,y) \nShifts all tiles at the indicated depth layer over the vector x,y. Can be used to create scrolling layers of tiles."
+    },
+	"tile_layer_find": {
+        "prefix": "tile_layer_find",
+        "body": [
+	    	"tile_layer_find(${1:depth},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_layer_find(depth,x,y) \nReturns the id of the tile with the given depth at position (x,y). When no tile exists at the position -1 is returned. When multiple tiles with the given depth exist at the position the first one is returned."
+    },
+	"tile_layer_delete_at": {
+        "prefix": "tile_layer_delete_at",
+        "body": [
+	    	"tile_layer_delete_at(${1:depth},${2:x},${0:y})"
+		],
+		"description": "[Function]tile_layer_delete_at(depth,x,y) \nDeletes the tile with the given depth at position (x,y). When multiple tiles with the given depth exist at the position they are all deleted."
+    },
+	"tile_layer_depth": {
+        "prefix": "tile_layer_depth",
+        "body": [
+	    	"tile_layer_depth(${${1:depth},${0:newdepth})"
+		],
+		"description": "[Function]tile_layer_depth(depth,newdepth) \nChanges the depth of all tiles at the indicated depth to the new depth. With this function you can move whole tile layers to a new depth."
+    },
+	"display_get_width": {
+        "prefix": "display_get_width",
+        "body": [
+	    	"display_get_width()"
+		],
+		"description": "[Function]display_get_width() \nReturns the width of the display in pixels."
+    },
+	"display_get_height": {
+        "prefix": "display_get_height",
+        "body": [
+	    	"display_get_height()"
+		],
+		"description": "[Function]display_get_height() \nReturns the height of the display in pixels."
+    },
+	"display_get_colordepth": {
+        "prefix": "display_get_colordepth",
+        "body": [
+	    	"display_get_colordepth()"
+		],
+		"description": "[Function]display_get_colordepth() \nReturns the color depth in bits."
+    },
+	"display_get_frequency": {
+        "prefix": "display_get_frequency",
+        "body": [
+	    	"display_get_frequency()"
+		],
+		"description": "[Function]display_get_frequency() \nReturns the refresh frequency of the display."
+    },
+	"display_set_size": {
+        "prefix": "display_set_size",
+        "body": [
+	    	"display_set_size(${1:w},${0:h})"
+		],
+		"description": "[Function]display_set_size(w,h) \nSets the width and height of the display in pixels. Returns whether this was successful. (Realize that only certain combinations are allowed.)"
+    },
+	"display_set_colordepth": {
+        "prefix": "display_set_colordepth",
+        "body": [
+	    	"display_set_colordepth(${0:coldepth})"
+		],
+		"description": "[Function]display_set_colordepth(coldepth) \nSets the color depth. In general only 16 and 32 are allowed values. Returns whether successful."
+    },
+	"display_set_frequency": {
+        "prefix": "display_set_frequency",
+        "body": [
+	    	"display_set_frequency(${0:frequency})"
+		],
+		"description": "[Function]display_set_frequency(frequency) \nSets the refresh frequency for the display. Only few frequencies are allowed. Typically you could set this to 60 with a same room speed to get smooth 60 frames per second motion. Returns whether successful."
+    },
+	"display_set_all": {
+        "prefix": "display_set_all",
+        "body": [
+	    	"display_set_all(${1:w},${2:h},${3:frequency},${0:coldepth})"
+		],
+		"description": "[Function]display_set_all(w,h,frequency,coldepth) \nSets all at once. Use -1 for values you do not want to change. Returns whether successful."
+    },
+	"display_test_all": {
+        "prefix": "display_test_all",
+        "body": [
+	    	"display_test_allh(${1:w},${2:h},${3:frequency},${0:coldepth})"
+		],
+		"description": "[Function]display_test_all(w,h,frequency,coldepth) \nTests whether the indicated settings are allowed. It does not change the settings. Use -1 for values you do not want to change. Returns whether the settings are allowed."
+    },
+	"display_reset": {
+        "prefix": "display_reset",
+        "body": [
+	    	"display_reset()"
+		],
+		"description": "[Function]display_reset() \nResets the display settings to the ones when the program was started, and also allow you to change the current level of Full Screen Anti-Aliasing being used. Available levels are 0,2,4 and 8. GameMaker start up with 0."
+    },
+	"display_mouse_get_x": {
+        "prefix": "display_mouse_get_x",
+        "body": [
+	    	"display_mouse_get_x()"
+		],
+		"description": "[Function]display_mouse_get_x() \nReturns the x-coordinate of the mouse on the display."
+    },
+	"display_mouse_get_y": {
+        "prefix": "display_mouse_get_y",
+        "body": [
+	    	"display_mouse_get_y()"
+		],
+		"description": "[Function]display_mouse_get_y() \nReturns the y-coordinate of the mouse on the display."
+    },
+	"display_mouse_set": {
+        "prefix": "display_mouse_set",
+        "body": [
+	    	"display_mouse_set()"
+		],
+		"description": "[Function]display_mouse_set(${1:x},${0:y}) \nSets the position of the mouse on the display to the indicated values."
+    },
+	"window_set_visible": {
+        "prefix": "window_set_visible",
+        "body": [
+	    	"window_set_visible(${0:visible})"
+		],
+		"description": "[Function]window_set_visible(visible) \nSets whether the game window is visible. Clearly you normally want the window to remain visible during the whole game. The program will not receive keyboard events when the window is invisible."
+    },
+	"window_get_visible": {
+        "prefix": "window_get_visible",
+        "body": [
+	    	"window_get_visible()"
+		],
+		"description": "[Function]window_get_visible() \nReturns whether the game window is visible."
+    },
+	"window_set_fullscreen": {
+        "prefix": "window_set_fullscreen",
+        "body": [
+	    	"window_set_fullscreen(${0:full})"
+		],
+		"description": "[Function]window_set_fullscreen(full) \nSets whether the window is shown in full screen mode."
+    },
+	"window_get_fullscreen": {
+        "prefix": "window_get_fullscreen",
+        "body": [
+	    	"window_get_fullscreen()"
+		],
+		"description": "[Function]window_get_fullscreen() \nReturns whether the window is shown in full screen mode."
+    },
+	"window_set_showborder": {
+        "prefix": "window_set_showborder",
+        "body": [
+	    	"window_set_showborder(${0:show})"
+		],
+		"description": "[Function]window_set_showborder(show) \nSets whether the border around the window is shown. (In full screen mode it is never shown.)"
+    },
+	"window_get_showborder": {
+        "prefix": "window_get_showborder",
+        "body": [
+	    	"window_get_showborder()"
+		],
+		"description": "[Function]window_get_showborder() \nReturns whether the border around the window is shown in windowed mode."
+    },
+	"window_set_showicons": {
+        "prefix": "window_set_showicons",
+        "body": [
+	    	"window_set_showicons(${0:show})"
+		],
+		"description": "[Function]window_set_showicons(show) \nSets whether the border icons (iconize, maximize, close) are shown. (In full screen mode these are never shown.)"
+    },
+	"window_get_showicons": {
+        "prefix": "window_get_showicons",
+        "body": [
+	    	"window_get_showicons()"
+		],
+		"description": "[Function]window_get_showicons() \nReturns whether the border icons are shown in windowed mode."
+    },
+	"window_set_stayontop": {
+        "prefix": "window_set_stayontop",
+        "body": [
+	    	"window_set_stayontop(${0:stay})"
+		],
+		"description": "[Function]window_set_stayontop(stay) \nSets whether the window must always stay on top of other windows."
+    },
+	"window_get_stayontop": {
+        "prefix": "window_get_stayontop",
+        "body": [
+	    	"window_get_stayontop()"
+		],
+		"description": "[Function]window_get_stayontop() \nReturns whether the window always stays on top of other windows."
+    },
+	"window_set_sizeable": {
+        "prefix": "window_set_sizeable",
+        "body": [
+	    	"window_set_sizeable(${0:sizeable})"
+		],
+		"description": "[Function]window_set_sizeable(sizeable) \nSets whether the window is sizeable by the player. (The player can only size it when the border is shown and the window is not in full screen mode.)"
+    },
+	"window_get_sizeable": {
+        "prefix": "window_get_sizeable",
+        "body": [
+	    	"window_get_sizeable()"
+		],
+		"description": "[Function]window_get_sizeable() \nReturns whether the window is sizeable by the player."
+    },
+	"window_set_caption": {
+        "prefix": "window_set_caption",
+        "body": [
+	    	"window_set_caption(${0:caption})"
+		],
+		"description": "[Function]window_set_caption(caption) \nSets the caption string for the window. Normally you specify this when defining the room and it can be changed using the variable room_caption. So this function is normally not useful, unless you draw the room yourself rather than letting GameMaker do it. The caption is only visible when the window has a border and when it is not in full screen mode."
+    },
+	"window_get_caption": {
+        "prefix": "window_get_caption",
+        "body": [
+	    	"window_get_caption()"
+		],
+		"description": "[Function]window_get_caption() \nReturns the window caption."
+    },
+	"window_set_cursor": {
+        "prefix": "window_set_cursor",
+        "body": [
+	    	"window_set_cursor(${0:curs})"
+		],
+		"description": "[Function]window_set_cursor() \nSets the mouse cursor used in the window. You can use the following constant: \ncr_default\ncr_none\ncr_arrow\ncr_cross\ncr_beam\ncr_size_nesw\ncr_size_ns\ncr_size_nwse\ncr_size_we\ncr_uparrow\ncr_hourglass\ncr_drag\ncr_nodrop\ncr_hsplit\ncr_vsplit\ncr_multidrag\ncr_sqlwait\ncr_no\ncr_appstart\ncr_help\ncr_handpoint\ncr_size_all\nIn particular, to hide the mouse cursor, use cr_none as value."
+    },
+	"window_get_cursor": {
+        "prefix": "window_get_cursor",
+        "body": [
+	    	"window_get_cursor()"
+		],
+		"description": "[Function]window_get_cursor() \n返回窗口中使用的鼠标指针类型。"
+    },
+	"window_set_color": {
+        "prefix": "window_set_color",
+        "body": [
+	    	"window_set_color(${0:color})"
+		],
+		"description": "[Function]window_set_color(color) \n设置窗口未用来绘制房间的部分的颜色。"
+    },
+	"window_get_color": {
+        "prefix": "window_get_color",
+        "body": [
+	    	"window_get_color()"
+		],
+		"description": "[Function]window_get_color() \n返回窗口颜色。"
+    },
+	"window_set_region_scale": {
+        "prefix": "window_set_region_scale",
+        "body": [
+	    	"window_set_region_scale(${1:scale},${0:adaptwindow})"
+		],
+		"description": "[Function]window_set_region_scale(scale,adaptwindow) \n如果窗口比当前房间大，通常房间就会显 示在窗口的中心位置。这里你可以指定房间自动缩放以适应窗口大小。设为 1 代表不进行 缩放。如果你使用 0 作为参数则代表伸展填充全部窗口区域。如果你设置为一个负值则代 表在窗口内维持高宽比的最大尺寸（通常也是你希望的模式）。adaptwindow 指定窗口尺寸 是否根据房间尺寸进行适应调整。只在缩放值为正值时起作用。"
+    },
+	"window_get_region_scale": {
+        "prefix": "window_get_region_scale",
+        "body": [
+	    	"window_get_region_scale()"
+		],
+		"description": "[Function]window_get_region_scale() \n返回绘图区域的缩放值。"
     }
 	//Draw Event Functions End
 	//Draw Event End
