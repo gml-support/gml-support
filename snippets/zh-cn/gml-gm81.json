@@ -1284,20 +1284,125 @@
 	    	"window_get_region_scale()"
 		],
 		"description": "[Function]window_get_region_scale() \n返回绘图区域的缩放值。"
-    }/*,
-	"display_get_width": {
-        "prefix": "display_get_width",
-        "body": [
-	    	"display_get_width()"
-		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"window_set_position": {
+        "prefix": "window_set_position",
         "body": [
-	    	"display_get_width()"
+	    	"window_set_position(${1:x},${0:y})"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]window_set_position(x,y) \n设置窗口界面的位置。"
+    },
+	"window_set_size": {
+        "prefix": "window_set_size",
+        "body": [
+	    	"window_set_size(${1:w},${0:h})"
+		],
+		"description": "[Function]window_set_size(w,h) \n设置窗口界面的尺寸。记住如果这个尺寸比绘图区域小的多它会自 动扩大以适应绘图区域的大小。"
+    },
+	"window_set_rectangle": {
+        "prefix": "window_set_rectangle",
+        "body": [
+	    	"window_set_rectangle(${1:x},${2:y},${3:w},${0:h})"
+		],
+		"description": "[Function]window_set_rectangle(x,y,w,h) \n设置窗口矩形区域的位置和尺寸。"
+    },
+	"window_center": {
+        "prefix": "window_center",
+        "body": [
+	    	"window_center()"
+		],
+		"description": "[Function]window_center() \n将窗口移动至屏幕正中。"
+    },
+	"window_default": {
+        "prefix": "window_default",
+        "body": [
+	    	"window_default()"
+		],
+		"description": "[Function]window_default() \n将窗口设置为默认尺寸和位置（居中）。"
+    },
+	"window_get_x": {
+        "prefix": "window_get_x",
+        "body": [
+	    	"window_get_x()"
+		],
+		"description": "[Function]window_get_x() \n返回窗口当前位置的横坐标。"
+    },
+	"window_get_y": {
+        "prefix": "window_get_y",
+        "body": [
+	    	"window_get_y()"
+		],
+		"description": "[Function]window_get_y() \n返回窗口当前位置的纵坐标。"
+    },
+	"window_get_width": {
+        "prefix": "window_get_width",
+        "body": [
+	    	"window_get_width()"
+		],
+		"description": "[Function]window_get_width() \n返回窗口当前宽度。"
+    },
+	"window_get_height": {
+        "prefix": "window_get_height",
+        "body": [
+	    	"window_get_height()"
+		],
+		"description": "[Function]window_get_height() \n返回窗口当前高度。"
+    },
+	"window_mouse_get_x": {
+        "prefix": "window_mouse_get_x",
+        "body": [
+	    	"window_mouse_get_x()"
+		],
+		"description": "[Function]window_mouse_get_x() \n返回鼠标在窗口内的横坐标。"
+    },
+	"window_mouse_get_y": {
+        "prefix": "window_mouse_get_y",
+        "body": [
+	    	"window_mouse_get_y()"
+		],
+		"description": "[Function]window_mouse_get_y() \n返回鼠标在窗口内的纵坐标。"
+    },
+	"window_mouse_set": {
+        "prefix": "window_mouse_set",
+        "body": [
+	    	"window_mouse_set(￥{1:x},${0:y})"
+		],
+		"description": "[Function]window_mouse_set(x,y) \n设置鼠标在窗口内的位置，坐标(x,y)。"
+    },
+	"window_set_region_size": {
+        "prefix": "window_set_region_size",
+        "body": [
+	    	"window_set_region_size(${1:w},${2:h},${0:adaptwindow})"
+		],
+		"description": "[Function]window_set_region_size(w,h,adaptwindow) \n设置窗口中的绘图区域宽度和高度。 adaptwindow 参数指定窗口尺寸是否一定要适应绘图区域大小。窗口尺寸在你使用固定缩放比例时将总是适应。（请看函数window_set_region_scale()相关内容。）"
+    },
+	"window_get_region_width": {
+        "prefix": "window_get_region_width",
+        "body": [
+	    	"window_get_region_width()"
+		],
+		"description": "[Function]window_get_region_width() \n返回当前绘图区域的宽度。"
+    },
+	"window_get_region_height": {
+        "prefix": "window_get_region_height",
+        "body": [
+	    	"window_get_region_height()"
+		],
+		"description": "[Function]window_get_region_height() \n返回当前绘图区域的高度。"
+    }/*,
+	"window_view_mouse_get_x": {
+        "prefix": "window_view_mouse_get_x",
+        "body": [
+	    	"window_view_mouse_get_x(${0:id})"
+		],
+		"description": "[Function]window_view_mouse_get_x(id) \n返回显示的像素宽度。"
+    },
+	"window_view_mouse_get_y": {
+        "prefix": "window_view_mouse_get_y",
+        "body": [
+	    	"window_view_mouse_get_y(${0:id})"
+		],
+		"description": "[Function]window_view_mouse_get_y(id) \n返回显示的像素宽度。"
     },
 	"display_get_width": {
         "prefix": "display_get_width",

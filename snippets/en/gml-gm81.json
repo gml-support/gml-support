@@ -1256,35 +1256,140 @@
         "body": [
 	    	"window_get_cursor()"
 		],
-		"description": "[Function]window_get_cursor() \n返回窗口中使用的鼠标指针类型。"
+		"description": "[Function]window_get_cursor() \nReturns the cursor used in the window."
     },
 	"window_set_color": {
         "prefix": "window_set_color",
         "body": [
 	    	"window_set_color(${0:color})"
 		],
-		"description": "[Function]window_set_color(color) \n设置窗口未用来绘制房间的部分的颜色。"
+		"description": "[Function]window_set_color(color) \nSets the color of the part of the window that is not used for displaying the room."
     },
 	"window_get_color": {
         "prefix": "window_get_color",
         "body": [
 	    	"window_get_color()"
 		],
-		"description": "[Function]window_get_color() \n返回窗口颜色。"
+		"description": "[Function]window_get_color() \nReturns the window color."
     },
 	"window_set_region_scale": {
         "prefix": "window_set_region_scale",
         "body": [
 	    	"window_set_region_scale(${1:scale},${0:adaptwindow})"
 		],
-		"description": "[Function]window_set_region_scale(scale,adaptwindow) \n如果窗口比当前房间大，通常房间就会显 示在窗口的中心位置。这里你可以指定房间自动缩放以适应窗口大小。设为 1 代表不进行 缩放。如果你使用 0 作为参数则代表伸展填充全部窗口区域。如果你设置为一个负值则代 表在窗口内维持高宽比的最大尺寸（通常也是你希望的模式）。adaptwindow 指定窗口尺寸 是否根据房间尺寸进行适应调整。只在缩放值为正值时起作用。"
+		"description": "[Function]window_set_region_scale(scale,adaptwindow) \nIf the window is larger than the actual room normally the room is displayed in a region centered in the window. It is though possible to indicate that it must be scaled to fill the whole or part of the window. A value of 1 is no scaling. If you use a value of 0 the region will be scaled to fill the whole window. If you set it to a negative value it will be scaled to the maximal size inside the window while maintaining the aspect ratio (this is often what you want). adaptwindow indicates whether the window size must be adapted if the scaled room does not fit in. Adapting the window is only effective when the scale factor is positive."
     },
 	"window_get_region_scale": {
         "prefix": "window_get_region_scale",
         "body": [
 	    	"window_get_region_scale()"
 		],
-		"description": "[Function]window_get_region_scale() \n返回绘图区域的缩放值。"
+		"description": "[Function]window_get_region_scale() \nReturns the scale factor for the drawing region."
+    },
+	"window_set_position": {
+        "prefix": "window_set_position",
+        "body": [
+	    	"window_set_position(${1:x},${0:y})"
+		],
+		"description": "[Function]window_set_position(x,y) \nSets the position of the (client part of the) window to the indicated position."
+    },
+	"window_set_size": {
+        "prefix": "window_set_size",
+        "body": [
+	    	"window_set_size(${1:w},${0:h})"
+		],
+		"description": "[Function]window_set_size(w,h) \nSets the size of the (client part of the) window to the indicated size. Note that is the indicated size is too small to fit the drawing region it is kept large enough for the region to fit it."
+    },
+	"window_set_rectangle": {
+        "prefix": "window_set_rectangle",
+        "body": [
+	    	"window_set_rectangle(${1:x},${2:y},${3:w},${0:h})"
+		],
+		"description": "[Function]window_set_rectangle(x,y,w,h) \nSets the position and size of the window rectangle."
+    },
+	"window_center": {
+        "prefix": "window_center",
+        "body": [
+	    	"window_center()"
+		],
+		"description": "[Function]window_center() \nCenters the window on the screen."
+    },
+	"window_default": {
+        "prefix": "window_default",
+        "body": [
+	    	"window_default()"
+		],
+		"description": "[Function]window_default() \nGives the window the default size and position (centered) on the screen."
+    },
+	"window_get_x": {
+        "prefix": "window_get_x",
+        "body": [
+	    	"window_get_x()"
+		],
+		"description": "[Function]window_get_x() \nReturns the current x-coordinate of the window."
+    },
+	"window_get_y": {
+        "prefix": "window_get_y",
+        "body": [
+	    	"window_get_y()"
+		],
+		"description": "[Function]window_get_y() \nReturns the current y-coordinate of the window."
+    },
+	"window_get_width": {
+        "prefix": "window_get_width",
+        "body": [
+	    	"window_get_width()"
+		],
+		"description": "[Function]window_get_width() \nReturns the current width of the window."
+    },
+	"window_get_height": {
+        "prefix": "window_get_height",
+        "body": [
+	    	"window_get_height()"
+		],
+		"description": "[Function]window_get_height() \nReturns the current height of the window."
+    },
+	"window_mouse_get_x": {
+        "prefix": "window_mouse_get_x",
+        "body": [
+	    	"window_mouse_get_x()"
+		],
+		"description": "[Function]window_mouse_get_x() \nReturns the x-coordinate of the mouse in the window."
+    },
+	"window_mouse_get_y": {
+        "prefix": "window_mouse_get_y",
+        "body": [
+	    	"window_mouse_get_y()"
+		],
+		"description": "[Function]window_mouse_get_y() \nReturns the y-coordinate of the mouse in the window."
+    },
+	"window_mouse_set": {
+        "prefix": "window_mouse_set",
+        "body": [
+	    	"window_mouse_set(￥{1:x},${0:y})"
+		],
+		"description": "[Function]window_mouse_set(x,y) \nSets the position of the mouse in the window to the indicated values."
+    },
+	"window_set_region_size": {
+        "prefix": "window_set_region_size",
+        "body": [
+	    	"window_set_region_size(${1:w},${2:h},${0:adaptwindow})"
+		],
+		"description": "[Function]window_set_region_size(w,h,adaptwindow) \nSet the width and height of the drawing region in the window. adaptwindow indicates whether the window size must be adapted if the region does not fit in. The window size will always be adapted if you use fixed scaling. (See the function window_set_region_scale().)"
+    },
+	"window_get_region_width": {
+        "prefix": "window_get_region_width",
+        "body": [
+	    	"window_get_region_width()"
+		],
+		"description": "[Function]window_get_region_width() \nReturns the current width of the drawing region."
+    },
+	"window_get_region_height": {
+        "prefix": "window_get_region_height",
+        "body": [
+	    	"window_get_region_height()"
+		],
+		"description": "[Function]window_get_region_height() \nReturns the current height of the drawing region."
     }
 	//Draw Event Functions End
 	//Draw Event End
