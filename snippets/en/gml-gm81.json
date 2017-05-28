@@ -100,8 +100,8 @@
     },
     //GameMaker Language Lists
 	//GameMaker 8.1
-	//Draw Event Start
-	//Draw Event Functions Start
+	//Game graphics Event Start
+	//Game graphics Event Functions Start
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
@@ -1390,7 +1390,345 @@
 	    	"window_get_region_height()"
 		],
 		"description": "[Function]window_get_region_height() \nReturns the current height of the drawing region."
+    },
+	"window_view_mouse_get_x": {
+        "prefix": "window_view_mouse_get_x",
+        "body": [
+	    	"window_view_mouse_get_x(${0:id})"
+		],
+		"description": "[Function]window_view_mouse_get_x(id) \nReturns the x-coordinate of the mouse with respect to the view with index id."
+    },
+	"window_view_mouse_get_y": {
+        "prefix": "window_view_mouse_get_y",
+        "body": [
+	    	"window_view_mouse_get_y(${0:id})"
+		],
+		"description": "[Function]window_view_mouse_get_y(id) \nReturns the y-coordinate of the mouse with respect to the view with index id."
+    },
+	"window_view_mouse_set": {
+        "prefix": "window_view_mouse_set",
+        "body": [
+	    	"window_view_mouse_set(${1:id},${2:x},${0:y})"
+		],
+		"description": "[Function]window_view_mouse_set(id,x,y) \nSets the position of the mouse with respect to the view with index id."
+    },
+	"window_views_mouse_get_x": {
+        "prefix": "window_views_mouse_get_x",
+        "body": [
+	    	"window_views_mouse_get_x()"
+		],
+		"description": "[Function]window_views_mouse_get_x() \nReturns the x-coordinate of the mouse with respect to the view it is in (same as mouse_x)."
+    },
+	"window_views_mouse_get_y": {
+        "prefix": "window_views_mouse_get_y",
+        "body": [
+	    	"window_views_mouse_get_y()"
+		],
+		"description": "[Function]window_views_mouse_get_y() \nReturns the y-coordinate of the mouse with respect to the view it is in (same as mouse_y)."
+    },
+	"window_views_mouse_set": {
+        "prefix": "window_views_mouse_set",
+        "body": [
+	    	"window_views_mouse_set(${1:x},${0:y})"
+		],
+		"description": "[Function]window_views_mouse_set() \nSets the position of the mouse with respect to the first view that is visible."
+    },
+	"screen_redraw": {
+        "prefix": "screen_redraw",
+        "body": [
+	    	"screen_redraw()"
+		],
+		"description": "[Function]screen_redraw() \nRedraws the room by calling all draw events."
+    },
+	"screen_refresh": {
+        "prefix": "screen_refresh",
+        "body": [
+	    	"screen_refresh()"
+		],
+		"description": "[Function]screen_refresh() \nRefreshes the screen using the current room image (not performing drawing events)."
+    },
+	"set_automatic_draw": {
+        "prefix": "set_automatic_draw",
+        "body": [
+	    	"set_automatic_draw(${0:value})"
+		],
+		"description": "[Function]display_get_width(value) \nIndicates whether to automatically redraw the room (true, default) or not (false)."
+    },
+	"set_synchronization": {
+        "prefix": "set_synchronization",
+        "body": [
+	    	"set_synchronization(${0:value})"
+		],
+		"description": "[Function]set_synchronization(value) \nIndicates whether to synchronize the drawing with the refresh frequency of the monitor."
+    },
+	"screen_wait_vsync": {
+        "prefix": "screen_wait_vsync",
+        "body": [
+	    	"screen_wait_vsync()"
+		],
+		"description": "[Function]screen_wait_vsync() \nWaits for the next vertical synchronization of the monitor."
+    },
+	//Game graphics Event Functions End
+	//Game graphics Event Variable Start
+	"visible": {
+        "prefix": "visible",
+        "body": [
+	    	"visible"
+		],
+		"description": "[Variable]visible \nIf visible is true (1) the image is drawn, otherwise it is not drawn. Invisible instances are still active and create collision events; only you don't see them. Setting the visibility to false is useful for e.g. controller objects (make them non-solid to avoid collision events) or hidden switches."
+    },
+	"sprite_index": {
+        "prefix": "sprite_index",
+        "body": [
+	    	"sprite_index"
+		],
+		"description": "[Variable]sprite_index \nThis is the index of the current sprite for the instance. You can change it to give the instance a different sprite. As value you can use the names of the different sprites you defined. Changing the sprite does not change the index of the currently visible subimage."
+    },
+	"sprite_width": {
+        "prefix": "sprite_width",
+        "body": [
+	    	"sprite_width"
+		],
+		"description": "[Variable]sprite_width* \nIndicates the width of the sprite. This value cannot be changed but you might want to use it."
+    },
+	"sprite_height": {
+        "prefix": "sprite_height",
+        "body": [
+	    	"sprite_height"
+		],
+		"description": "[Variable]sprite_height* \nIndicates the height of the sprite. This value cannot be changed but you might want to use it."
+    },
+	"sprite_xoffset": {
+        "prefix": "sprite_xoffset",
+        "body": [
+	    	"sprite_xoffset"
+		],
+		"description": "[Variable]sprite_xoffset* \nIndicates the horizontal offset of the sprite as defined in the sprite properties. This value cannot be changed but you might want to use it."
+    },
+	"sprite_yoffset": {
+        "prefix": "sprite_yoffset",
+        "body": [
+	    	"sprite_yoffset"
+		],
+		"description": "[Variable]sprite_yoffset* \nIndicates the vertical offset of the sprite as defined in the sprite properties. This value cannot be changed but you might want to use it."
+    },
+	"image_number": {
+        "prefix": "image_number",
+        "body": [
+	    	"image_number"
+		],
+		"description": "[Variable]image_number* \nThe number of subimages for the current sprite for the instance (cannot be changed)."
+    },
+	"image_index": {
+        "prefix": "image_index",
+        "body": [
+	    	"image_index"
+		],
+		"description": "[Variable]image_index \nWhen the image has multiple subimages the program cycles through them. This variable indicates the currently drawn subimage (they are numbered starting from 0). You can change the current image by changing this variable. The program will continue cycling, starting at this new index. (The value can have a fractional part. In this case it is always rounded down to obtain the subimage that is drawn.)"
+    },
+	"image_speed": {
+        "prefix": "image_speed",
+        "body": [
+	    	"image_speed"
+		],
+		"description": "[Variable]image_speed \nThe speed with which we cycle through the subimages. A value of 1 indicates that each step we get the next image. Smaller values will switch subimages slower, drawing each subimage multiple times. Larger values will skip subimages to make the motion faster. Sometimes you want a particular subimage to be visible and don't want the program to cycle through all of them. This can be achieved by setting the speed to 0 and choosing the correct subimage."
+    },
+	"depth": {
+        "prefix": "depth",
+        "body": [
+	    	"depth"
+		],
+		"description": "[Variable]depth \nNormally images are drawn in the order in which the instances are created. You can change this by setting the image depth. The default value is 0, unless you set it to a different value in the object properties. The higher the value the further the instance is away. (You can also use negative values.) Instances with higher depth will lie behind instances with a lower depth. Setting the depth will guarantee that the instances are drawn in the order you want (e.g. the plane in front of the cloud). Background instances should have a high (positive) depth, and foreground instances should have a low (negative) depth."
+    },
+	"image_xscale": {
+        "prefix": "image_xscale",
+        "body": [
+	    	"image_xscale"
+		],
+		"description": "[Variable]image_xscale \nA scale factor to make larger or smaller images. A value of 1 indicates the normal size. You must separately set the horizontal xscale and vertical yscale. Changing the scale also changes the values for the image width and height and influences collision events as you might expect. Changing the scale can be used to get a 3-D effect. You can use a value of -1 to mirror the sprite horizontally."
+    },
+	"image_yscale": {
+        "prefix": "image_yscale",
+        "body": [
+	    	"image_yscale"
+		],
+		"description": "[Variable]image_yscale \nThe vertical yscale. 1 is no scaling. You can use a value of -1 to flip the sprite vertically."
+    },
+	"image_angle": {
+        "prefix": "image_angle",
+        "body": [
+	    	"image_angle"
+		],
+		"description": "[Variable]image_angle \nThe angle with which the sprite is rotated. You specify this in degrees, counterclockwise. A value of 0 indicates no rotation."
+    },
+	"image_blend": {
+        "prefix": "image_blend",
+        "body": [
+	    	"image_blend"
+		],
+		"description": "[Variable]image_blend \nBlending color used when drawing the sprite. A value of c_white is the default. When you specify a different value the image is blended with this color. This can be used to colorize the sprite on the fly."
+    },
+	"bbox_left": {
+        "prefix": "bbox_left",
+        "body": [
+	    	"bbox_left"
+		],
+		"description": "[Variable]bbox_left* \nLeft side of the bounding box of the instance in the room, as defined by its image (taking scaling into account)."
+    },
+	"bbox_right": {
+        "prefix": "bbox_right",
+        "body": [
+	    	"bbox_right"
+		],
+		"description": "[Variable]bbox_right* \nRight side of the bounding box of the instance in the room."
+    },
+	"bbox_top": {
+        "prefix": "bbox_top",
+        "body": [
+	    	"bbox_top"
+		],
+		"description": "[Variable]bbox_top* \nTop side of the bounding box of the instance in the room."
+    },
+	"bbox_bottom": {
+        "prefix": "bbox_bottom",
+        "body": [
+	    	"bbox_bottom"
+		],
+		"description": "[Variable]bbox_bottom* \nBottom side of the bounding box of the instance in the room."
+    },
+	"background_color": {
+        "prefix": "background_color",
+        "body": [
+	    	"background_color"
+		],
+		"description": "[Variable]background_color \nBackground color for the room."
+    },
+	"background_showcolor": {
+        "prefix": "background_showcolor",
+        "body": [
+	    	"background_showcolor"
+		],
+		"description": "[Variable]background_showcolor \nWhether to clear the window in the background color."
+    },
+	"background_visible": {
+        "prefix": "background_visible",
+        "body": [
+	    	"background_visible"
+		],
+		"description": "[Variable]background_visible[0..7] \n指定背景图像是否为前景。"
+    },
+	"background_foreground": {
+        "prefix": "background_foreground",
+        "body": [
+	    	"background_foreground"
+		],
+		"description": "[Variable]background_foreground[0..7] \nWhether the particular background image is visible."
+    },
+	"background_index": {
+        "prefix": "background_index",
+        "body": [
+	    	"background_index"
+		],
+		"description": "[Variable]background_index[0..7] \nBackground image index for the background."
+    },
+	"background_x": {
+        "prefix": "background_x",
+        "body": [
+	    	"background_x"
+		],
+		"description": "[Variable]background_x[0..7] \nX position of the background image."
+    },
+	"background_y": {
+        "prefix": "background_y",
+        "body": [
+	    	"background_y"
+		],
+		"description": "[Variable]background_y[0..7] \nY position of the background image."
+    },
+	"background_width": {
+        "prefix": "background_width",
+        "body": [
+	    	"background_width"
+		],
+		"description": "[Variable]background_width[0..7]* \nWidth of the background image."
+    },
+	"background_height": {
+        "prefix": "background_height",
+        "body": [
+	    	"background_height"
+		],
+		"description": "[Variable]background_height[0..7]* \nHeight of the background image."
+    },
+	"background_htiled": {
+        "prefix": "background_htiled",
+        "body": [
+	    	"background_htiled"
+		],
+		"description": "[Variable]background_htiled[0..7] \nWhether horizontally tiled."
+    },
+	"background_vtiled": {
+        "prefix": "background_vtiled",
+        "body": [
+	    	"background_vtiled"
+		],
+		"description": "[Variable]background_vtiled[0..7] \nWhether vertically tiled."
+    },
+	"background_xscale": {
+        "prefix": "background_xscale",
+        "body": [
+	    	"background_xscale"
+		],
+		"description": "[Variable]background_xscale[0..7] \nHorizontal scaling factor for the background. (This must be positive; you cannot use a negative value to mirror the background.)"
+    },
+	"background_yscale": {
+        "prefix": "background_yscale",
+        "body": [
+	    	"background_yscale"
+		],
+		"description": "[Variable]background_yscale[0..7] \nVertical scaling factor for the background. (This must be positive; you cannot use a negative value to flip the background.)"
+    },
+	"background_hspeed": {
+        "prefix": "background_hspeed",
+        "body": [
+	    	"background_hspeed"
+		],
+		"description": "[Variable]background_hspeed[0..7] \nHorizontal scrolling speed of the background (pixels per step)."
+    },
+	"background_vspeed": {
+        "prefix": "background_vspeed",
+        "body": [
+	    	"background_vspeed"
+		],
+		"description": "[Variable]background_vspeed[0..7] \nVertical scrolling speed of the background (pixels per step)."
+    },
+	"background_blend": {
+        "prefix": "background_blend",
+        "body": [
+	    	"background_blend"
+		],
+		"description": "[Variable]background_blend[0..7] \nBlending color to use when drawing the background. A value of c_white is the default."
+    },
+	"background_alpha": {
+        "prefix": "background_alpha",
+        "body": [
+	    	"background_alpha"
+		],
+		"description": "[Variable]background_alpha[0..7] \nTransparency (alpha) value to use when drawing the background. A value of 1 is the normal setting; a value of 0 is completely transparent."
+    },
+	"view_enabled": {
+        "prefix": "view_enabled",
+        "body": [
+	    	"view_enabled"
+		],
+		"description": "[Variable]view_enabled \nWhether views are enabled or not."
+    },
+	"view_current": {
+        "prefix": "view_current",
+        "body": [
+	    	"view_current"
+		],
+		"description": "[Variable]view_current* \nThe currently drawn view (0-7). Use this only in the drawing event. You can for example check this variable to draw certain things in only one view. Variable cannot be changed."
     }
-	//Draw Event Functions End
-	//Draw Event End
+	//Game graphics Event Variable End
+	//Game graphics Event End
 }

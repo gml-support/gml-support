@@ -100,8 +100,8 @@
     },
     //GameMaker Language Lists
 	//GameMaker 8.1
-	//Draw Event Start
-	//Draw Event Functions Start
+	//Game graphics Event Start
+	//Game graphics Event Functions Start
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
@@ -1389,120 +1389,346 @@
 	    	"window_get_region_height()"
 		],
 		"description": "[Function]window_get_region_height() \n返回当前绘图区域的高度。"
-    }/*,
+    },
 	"window_view_mouse_get_x": {
         "prefix": "window_view_mouse_get_x",
         "body": [
 	    	"window_view_mouse_get_x(${0:id})"
 		],
-		"description": "[Function]window_view_mouse_get_x(id) \n返回显示的像素宽度。"
+		"description": "[Function]window_view_mouse_get_x(id) \n返回鼠标在编号为 id 的视角内的横坐标。"
     },
 	"window_view_mouse_get_y": {
         "prefix": "window_view_mouse_get_y",
         "body": [
 	    	"window_view_mouse_get_y(${0:id})"
 		],
-		"description": "[Function]window_view_mouse_get_y(id) \n返回显示的像素宽度。"
+		"description": "[Function]window_view_mouse_get_y(id) \n返回鼠标在编号为 id 的视角内的纵坐标。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"window_view_mouse_set": {
+        "prefix": "window_view_mouse_set",
         "body": [
-	    	"display_get_width()"
+	    	"window_view_mouse_set(${1:id},${2:x},${0:y})"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]window_view_mouse_set(id,x,y) \n在编号为 id 的视角内设置鼠标坐标为(x,y)。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"window_views_mouse_get_x": {
+        "prefix": "window_views_mouse_get_x",
         "body": [
-	    	"display_get_width()"
+	    	"window_views_mouse_get_x()"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]window_views_mouse_get_x() \n功用同 mouse_x。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"window_views_mouse_get_y": {
+        "prefix": "window_views_mouse_get_y",
         "body": [
-	    	"display_get_width()"
+	    	"window_views_mouse_get_y()"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]window_views_mouse_get_y() \n功用同 mouse_y。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"window_views_mouse_set": {
+        "prefix": "window_views_mouse_set",
         "body": [
-	    	"display_get_width()"
+	    	"window_views_mouse_set(${1:x},${0:y})"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]window_views_mouse_set() \n设置当前可见的第一个视角内的鼠标坐标为(x,y)。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"screen_redraw": {
+        "prefix": "screen_redraw",
         "body": [
-	    	"display_get_width()"
+	    	"screen_redraw()"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]screen_redraw() \n调用绘图事件重绘房间。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"screen_refresh": {
+        "prefix": "screen_refresh",
         "body": [
-	    	"display_get_width()"
+	    	"screen_refresh()"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]screen_refresh() \n使用当前房间图像刷新显示（而不是使用绘图事件）。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"set_automatic_draw": {
+        "prefix": "set_automatic_draw",
         "body": [
-	    	"display_get_width()"
+	    	"set_automatic_draw(${0:value})"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]display_get_width(value) \n指定是否自动重绘房间（设为 true 则为真，默认。或者 false 为否）。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"set_synchronization": {
+        "prefix": "set_synchronization",
         "body": [
-	    	"display_get_width()"
+	    	"set_synchronization(${0:value})"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]set_synchronization(value) \n指定是否根据屏幕刷新率同步绘制屏幕。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"screen_wait_vsync": {
+        "prefix": "screen_wait_vsync",
         "body": [
-	    	"display_get_width()"
+	    	"screen_wait_vsync()"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Function]screen_wait_vsync() \n等待至下一次的显示器垂直同步。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	//Game graphics Event Functions End
+	//Game graphics Event Variable Start
+	"visible": {
+        "prefix": "visible",
         "body": [
-	    	"display_get_width()"
+	    	"visible"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Variable]visible \n如果 visible 为真（1），则图像就被绘制出来，否则就不予绘制。不可见的实例 仍然是活动的并可以触发碰撞事件；只是你看不到而已。将 visible 设置为假可以用在例 如手柄对象中（将他们设置为非固态形式以避免碰撞事件）或者隐藏的机关等。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"sprite_index": {
+        "prefix": "sprite_index",
         "body": [
-	    	"display_get_width()"
+	    	"sprite_index"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Variable]sprite_index \n实例的当前精灵索引编号。你可以更改它使实例更换另一个精灵。根据不同 的值你可以设定显示你所指定的不同的精灵。更改精灵并不会更改当前可见的子图像索引编号。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"sprite_width": {
+        "prefix": "sprite_width",
         "body": [
-	    	"display_get_width()"
+	    	"sprite_width"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Variable]sprite_width* \n指定精灵的宽度。这个值无法更改但你可能会用到它。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"sprite_height": {
+        "prefix": "sprite_height",
         "body": [
-	    	"display_get_width()"
+	    	"sprite_height"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Variable]sprite_height* \n指定精灵的高度。这个值无法更改但你可能会用到它。"
     },
-	"display_get_width": {
-        "prefix": "display_get_width",
+	"sprite_xoffset": {
+        "prefix": "sprite_xoffset",
         "body": [
-	    	"display_get_width()"
+	    	"sprite_xoffset"
 		],
-		"description": "[Function]display_get_width() \n返回显示的像素宽度。"
+		"description": "[Variable]sprite_xoffset* \n在精灵属性中设定的精灵水平偏移。这个值无法更改但你可能会用到它。"
     },
+	"sprite_yoffset": {
+        "prefix": "sprite_yoffset",
+        "body": [
+	    	"sprite_yoffset"
+		],
+		"description": "[Variable]sprite_yoffset* \n在精灵属性中设定的精灵垂直偏移。这个值无法更改但你可能会用到它。"
+    },
+	"image_number": {
+        "prefix": "image_number",
+        "body": [
+	    	"image_number"
+		],
+		"description": "[Variable]image_number* \n当前实例内的精灵包含的子图像数量（无法更改）。"
+    },
+	"image_index": {
+        "prefix": "image_index",
+        "body": [
+	    	"image_index"
+		],
+		"description": "[Variable]image_index \n当图像包含多个子图像的时候程序会反复循环显示他们。这个变量决定了当前将要绘制的子图像编号（从0开始）。你可以更改这个变量以改变当前图像。程序会按照新的索引编号继续循环绘制图像。"
+    },
+	"image_speed": {
+        "prefix": "image_speed",
+        "body": [
+	    	"image_speed"
+		],
+		"description": "[Variable]image_speed \n循环绘制子图像的速度。为 1 的时候表示每走一步绘制一次子图像。更小的数值代表更慢的绘制速度，同一子图像可以重复多次绘制。更大的数值下会忽略若干子图像的绘制，让精灵看起来动作更快。有些时候你只想让某一幅子图像显示出来而不是绘制所有的子图像。你可以设置速度为 0 并选择正确的子图像就可以了。"
+    },
+	"depth": {
+        "prefix": "depth",
+        "body": [
+	    	"depth"
+		],
+		"description": "[Variable]depth \n通常图像会在你放置实例的图层上进行绘制。你可以通过设定图像深度来改变位置。默认值是 0 ，除非你在对象属性中设置了其他数值。深度值越高代表实例在较小深度值的实例后面。（当然你也可以使用负值）。设定深度值可以确保实例以你指定的方式被绘制出来（比如让飞机在云层前面显示）。背景实例应该有比较高的深度值（正值），而前景实例则应当有比较低的深度值（或者是负值）。"
+    },
+	"image_xscale": {
+        "prefix": "image_xscale",
+        "body": [
+	    	"image_xscale"
+		],
+		"description": "[Variable]image_xscale \n放大或缩小图像。为 1 的时候代表正常尺寸。你需要分别设置水平尺寸和垂直尺寸。改变尺寸的同时也会改变图像的宽度和高度，并可能影响你原先预计的碰撞事件的结果。更改尺寸可以造成3D效果。你可以设置值为-1来水平反转精灵图像。"
+    },
+	"image_yscale": {
+        "prefix": "image_yscale",
+        "body": [
+	    	"image_yscale"
+		],
+		"description": "[Variable]image_yscale \n垂直缩放。1 为原尺寸。你可以设为 -1 来垂直反转精灵图像。"
+    },
+	"image_angle": {
+        "prefix": "image_angle",
+        "body": [
+	    	"image_angle"
+		],
+		"description": "[Variable]image_angle \n设定图像绘制的阿尔法透明通道的值。设为 1 代表常用的不透明状态。设为 0 代表完全透明。"
+    },
+	"image_blend": {
+        "prefix": "image_blend",
+        "body": [
+	    	"image_blend"
+		],
+		"description": "[Variable]image_blend \n绘制精灵时混合颜色。c_white 是默认设置。当你指定一个不同的数值时，图像就会与这个颜色混合。这个可以在需要给精灵快速上色的时候使用。"
+    },
+	"bbox_left": {
+        "prefix": "bbox_left",
+        "body": [
+	    	"bbox_left"
+		],
+		"description": "[Variable]bbox_left* \n在房间中的实例的碰撞盒子左侧，默认是它的图片（缩放比加入计算）。"
+    },
+	"bbox_right": {
+        "prefix": "bbox_right",
+        "body": [
+	    	"bbox_right"
+		],
+		"description": "[Variable]bbox_right* \n在房间中的实例的碰撞盒的右侧。"
+    },
+	"bbox_top": {
+        "prefix": "bbox_top",
+        "body": [
+	    	"bbox_top"
+		],
+		"description": "[Variable]bbox_top* \n在房间中的实例的碰撞盒的顶部。"
+    },
+	"bbox_bottom": {
+        "prefix": "bbox_bottom",
+        "body": [
+	    	"bbox_bottom"
+		],
+		"description": "[Variable]bbox_bottom* \n在房间中的实例的碰撞盒的底部。"
+    },
+	"background_color": {
+        "prefix": "background_color",
+        "body": [
+	    	"background_color"
+		],
+		"description": "[Variable]background_color \n房间的背景颜色。"
+    },
+	"background_showcolor": {
+        "prefix": "background_showcolor",
+        "body": [
+	    	"background_showcolor"
+		],
+		"description": "[Variable]background_showcolor \n指定是否以背景色清除窗口。"
+    },
+	"background_visible": {
+        "prefix": "background_visible",
+        "body": [
+	    	"background_visible"
+		],
+		"description": "[Variable]background_visible[0..7] \n指定背景图像是否为前景。"
+    },
+	"background_foreground": {
+        "prefix": "background_foreground",
+        "body": [
+	    	"background_foreground"
+		],
+		"description": "[Variable]background_foreground[0..7] \n指定背景图像是否为前景。"
+    },
+	"background_index": {
+        "prefix": "background_index",
+        "body": [
+	    	"background_index"
+		],
+		"description": "[Variable]background_index[0..7] \n背景图像的索引编号。"
+    },
+	"background_x": {
+        "prefix": "background_x",
+        "body": [
+	    	"background_x"
+		],
+		"description": "[Variable]background_x[0..7] \n背景图像的 X 坐标。"
+    },
+	"background_y": {
+        "prefix": "background_y",
+        "body": [
+	    	"background_y"
+		],
+		"description": "[Variable]background_y[0..7] \n背景图像的 Y 坐标。"
+    },
+	"background_width": {
+        "prefix": "background_width",
+        "body": [
+	    	"background_width"
+		],
+		"description": "[Variable]background_width[0..7]* \n背景图像的宽度。"
+    },
+	"background_height": {
+        "prefix": "background_height",
+        "body": [
+	    	"background_height"
+		],
+		"description": "[Variable]background_height[0..7]* \n背景图像的高度。"
+    },
+	"background_htiled": {
+        "prefix": "background_htiled",
+        "body": [
+	    	"background_htiled"
+		],
+		"description": "[Variable]background_htiled[0..7] \n是否水平图块。"
+    },
+	"background_vtiled": {
+        "prefix": "background_vtiled",
+        "body": [
+	    	"background_vtiled"
+		],
+		"description": "[Variable]background_vtiled[0..7] \n是否垂直图块。"
+    },
+	"background_xscale": {
+        "prefix": "background_xscale",
+        "body": [
+	    	"background_xscale"
+		],
+		"description": "[Variable]background_xscale[0..7] \n背景水平缩放。（必须为正值；无法使用负值来反转背景）。"
+    },
+	"background_yscale": {
+        "prefix": "background_yscale",
+        "body": [
+	    	"background_yscale"
+		],
+		"description": "[Variable]background_yscale[0..7] \n背景垂直缩放。（必须为正值；无法使用负值来反转背景）。"
+    },
+	"background_hspeed": {
+        "prefix": "background_hspeed",
+        "body": [
+	    	"background_hspeed"
+		],
+		"description": "[Variable]background_hspeed[0..7] \n背景水平卷动速度（单位 像素/步）。"
+    },
+	"background_vspeed": {
+        "prefix": "background_vspeed",
+        "body": [
+	    	"background_vspeed"
+		],
+		"description": "[Variable]background_vspeed[0..7] \n背景垂直卷动速度（单位 像素/步）。"
+    },
+	"background_blend": {
+        "prefix": "background_blend",
+        "body": [
+	    	"background_blend"
+		],
+		"description": "[Variable]background_blend[0..7] \n使用混合颜色绘制背景。默认值为 c_white 。"
+    },
+	"background_alpha": {
+        "prefix": "background_alpha",
+        "body": [
+	    	"background_alpha"
+		],
+		"description": "[Variable]background_alpha[0..7] \n在绘制背景的时候设置阿尔法透明通道数值。 1 代表完全不透明 ；0 代表完全透明。"
+    },
+	"view_enabled": {
+        "prefix": "view_enabled",
+        "body": [
+	    	"view_enabled"
+		],
+		"description": "[Variable]view_enabled \n返回视角是否启用。"
+    },
+	"view_current": {
+        "prefix": "view_current",
+        "body": [
+	    	"view_current"
+		],
+		"description": "[Variable]view_current* \n回当前使用的视角（编号0到7）。只在绘图事件中使用。你可以检查这个 变量以确保在某一个视角中进行绘图。变量无法改动。"
+    }/*
 	*/
-	//Draw Event Functions End
-	//Draw Event End
+	//Game graphics Event Variable End
+	//Game graphics Event End
 }
