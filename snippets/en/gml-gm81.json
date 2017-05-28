@@ -576,7 +576,7 @@
         "body": [
 	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
 		],
-		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度。"
+		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度."
     },
 	"draw_surface_part_ext": {
         "prefix": "draw_surface_part_ext",
@@ -1615,7 +1615,7 @@
         "body": [
 	    	"background_visible"
 		],
-		"description": "[Variable]background_visible[0..7] \n指定背景图像是否为前景。"
+		"description": "[Variable]background_visible[0..7] \n指定背景图像是否为前景."
     },
 	"background_foreground": {
         "prefix": "background_foreground",
@@ -1728,7 +1728,464 @@
 	    	"view_current"
 		],
 		"description": "[Variable]view_current* \nThe currently drawn view (0-7). Use this only in the drawing event. You can for example check this variable to draw certain things in only one view. Variable cannot be changed."
-    }
+    },
+	"view_visible": {
+        "prefix": "view_visible",
+        "body": [
+	    	"view_visible"
+		],
+		"description": "[Variable]view_visible[0..7] \nWhether the particular view is visible on the screen."
+    },
+	"view_xview": {
+        "prefix": "view_xview",
+        "body": [
+	    	"view_xview"
+		],
+		"description": "[Variable]view_xview[0..7] \nX position of the view in the room."
+    },
+	"view_yview": {
+        "prefix": "view_yview",
+        "body": [
+	    	"view_yview"
+		],
+		"description": "[Variable]view_yview[0..7] \nY position of the view in the room."
+    },
+	"view_wview": {
+        "prefix": "view_wview",
+        "body": [
+	    	"view_wview"
+		],
+		"description": "[Variable]view_wview[0..7] \nWidth of the view in the room."
+    },
+	"view_hview": {
+        "prefix": "view_hview",
+        "body": [
+	    	"view_hview"
+		],
+		"description": "[Variable]view_hview[0..7] \nHeight of the view in the room."
+    },
+	"view_xport": {
+        "prefix": "view_xport",
+        "body": [
+	    	"view_xport"
+		],
+		"description": "[Variable]view_xport[0..7] \nX-position of the viewport in the drawing region."
+    },
+	"view_yport": {
+        "prefix": "view_yport",
+        "body": [
+	    	"view_yport"
+		],
+		"description": "[Variable]view_yport[0..7] \nY-position of the viewport in the drawing region."
+    },
+	"view_wport": {
+        "prefix": "view_wport",
+        "body": [
+	    	"view_wport"
+		],
+		"description": "[Variable]view_wport[0..7] \nWidth of the viewport in the drawing region."
+    },
+	"view_hport": {
+        "prefix": "view_hport",
+        "body": [
+	    	"view_hport"
+		],
+		"description": "[Variable]view_hport[0..7] \nHeight of the viewport in the drawing region."
+    },
+	"view_angle": {
+        "prefix": "view_angle",
+        "body": [
+	    	"view_angle"
+		],
+		"description": "[Variable]view_angle[0..7] \nRotation angle used for the view in the room (counter-clockwise in degrees)."
+    },
+	"view_hborder": {
+        "prefix": "view_hborder",
+        "body": [
+	    	"view_hborder"
+		],
+		"description": "[Variable]view_hborder[0..7] \nSize of horizontal border around the visible object (in pixels)."
+    },
+	"view_vborder": {
+        "prefix": "view_vborder",
+        "body": [
+	    	"view_vborder"
+		],
+		"description": "[Variable]view_vborder[0..7] \nSize of vertical border around visible object (in pixels)."
+    },
+	"view_hspeed": {
+        "prefix": "view_hspeed",
+        "body": [
+	    	"view_hspeed"
+		],
+		"description": "[Variable]view_hspeed[0..7] \nMaximal horizontal speed of the view."
+    },
+	"view_vspeed": {
+        "prefix": "view_vspeed",
+        "body": [
+	    	"view_vspeed"
+		],
+		"description": "[Variable]view_vspeed[0..7] \nMaximal vertical speed of the view."
+    },
+	"view_object": {
+        "prefix": "view_object",
+        "body": [
+	    	"view_object"
+		],
+		"description": "[Variable]view_object[0..7] \nObject whose instance must remain visible in the view. If there are multiple instances of this object only the first one is followed. You can also assign an instance id to this variable. In that case the particular instance is followed."
+    },
 	//Game graphics Event Variable End
+	//Game graphics Event Constant Start
+	"c_aqua": {
+        "prefix": "c_aqua",
+        "body": [
+	    	"c_aqua"
+		],
+		"description": "[Constant]c_aqua"
+    },
+	"c_black": {
+        "prefix": "c_black",
+        "body": [
+	    	"c_black"
+		],
+		"description": "[Constant]c_black"
+    },
+	"c_dkgray": {
+        "prefix": "c_dkgray",
+        "body": [
+	    	"c_dkgray"
+		],
+		"description": "[Constant]c_dkgray"
+    },
+	"c_fuchsia": {
+        "prefix": "c_fuchsia",
+        "body": [
+	    	"c_fuchsia"
+		],
+		"description": "[Constant]c_fuchsia"
+    },
+	"c_gray": {
+        "prefix": "c_gray",
+        "body": [
+	    	"c_gray"
+		],
+		"description": "[Constant]c_gray"
+    },
+	"c_green": {
+        "prefix": "c_green",
+        "body": [
+	    	"c_green"
+		],
+		"description": "[Constant]c_green"
+    },
+	"c_lime": {
+        "prefix": "c_lime",
+        "body": [
+	    	"c_lime"
+		],
+		"description": "[Constant]c_lime"
+    },
+	"c_ltgray": {
+        "prefix": "c_ltgray",
+        "body": [
+	    	"c_ltgray"
+		],
+		"description": "[Constant]c_ltgray"
+    },
+	"c_maroon": {
+        "prefix": "c_maroon",
+        "body": [
+	    	"c_maroon"
+		],
+		"description": "[Constant]c_maroon"
+    },
+	"c_navy": {
+        "prefix": "c_navy",
+        "body": [
+	    	"c_navy"
+		],
+		"description": "[Constant]c_navy"
+    },
+	"c_olive": {
+        "prefix": "c_olive",
+        "body": [
+	    	"c_olive"
+		],
+		"description": "[Constant]c_olive"
+    },
+	"c_orange": {
+        "prefix": "c_orange",
+        "body": [
+	    	"c_orange"
+		],
+		"description": "[Constant]c_orange"
+    },
+	"c_purple": {
+        "prefix": "c_purple",
+        "body": [
+	    	"c_purple"
+		],
+		"description": "[Constant]c_purple"
+    },
+	"c_red": {
+        "prefix": "c_red",
+        "body": [
+	    	"c_red"
+		],
+		"description": "[Constant]c_red"
+    },
+	"c_silver": {
+        "prefix": "c_silver",
+        "body": [
+	    	"c_silver"
+		],
+		"description": "[Constant]c_silver"
+    },
+	"c_teal": {
+        "prefix": "c_teal",
+        "body": [
+	    	"c_teal"
+		],
+		"description": "[Constant]c_teal"
+    },
+	"c_white": {
+        "prefix": "c_white",
+        "body": [
+	    	"c_white"
+		],
+		"description": "[Constant]c_white"
+    },
+	"c_yellow": {
+        "prefix": "c_yellow",
+        "body": [
+	    	"c_yellow"
+		],
+		"description": "[Constant]c_yellow"
+    },
+	"fa_left": {
+        "prefix": "fa_left",
+        "body": [
+	    	"fa_left"
+		],
+		"description": "[Constant]fa_left"
+    },
+	"fa_center": {
+        "prefix": "fa_center",
+        "body": [
+	    	"fa_center"
+		],
+		"description": "[Constant]fa_center"
+    },
+	"fa_right": {
+        "prefix": "fa_right",
+        "body": [
+	    	"fa_right"
+		],
+		"description": "[Constant]fa_right"
+    },
+	"fa_top": {
+        "prefix": "fa_top",
+        "body": [
+	    	"fa_top"
+		],
+		"description": "[Constant]fa_top"
+    },
+	"fa_middle": {
+        "prefix": "fa_middle",
+        "body": [
+	    	"fa_middle"
+		],
+		"description": "[Constant]fa_middle"
+    },
+	"fa_bottomk": {
+        "prefix": "fa_bottom",
+        "body": [
+	    	"fa_bottom"
+		],
+		"description": "[Constant]fa_bottom"
+    },
+	"pr_pointlist": {
+        "prefix": "pr_pointlist",
+        "body": [
+	    	"pr_pointlist"
+		],
+		"description": "[Constant]pr_pointlist The vertices are a set of points."
+    },
+	"pr_linelist": {
+        "prefix": "pr_linelist",
+        "body": [
+	    	"pr_linelist"
+		],
+		"description": "[Constant]pr_linelist The vertices are a set of line segments. Each pair of vertices forms a line segment. So there must be an even set of vertices."
+    },
+	"pr_linestrip": {
+        "prefix": "pr_linestrip",
+        "body": [
+	    	"pr_linestrip"
+		],
+		"description": "[Constant]pr_linestrip \nThe vertices form a polyline with the first connected to the second, the second to the third, etc. The last one is not connected to the first one. You have to specify an extra copy of the first vertex for this."
+    },
+	"pr_trianglelist": {
+        "prefix": "pr_trianglelist",
+        "body": [
+	    	"pr_trianglelist"
+		],
+		"description": "[Constant]pr_trianglelist \nThe vertices are a set of triangles. Each triple of vertices forms a triangle. So the number of vertices must be a multiple of 3."
+    },
+	"pr_trianglestrip": {
+        "prefix": "pr_trianglestrip",
+        "body": [
+	    	"pr_trianglestrip"
+		],
+		"description": "[Constant]pr_trianglestrip \nThe vertices again form triangles but this time it works slightly different. The first three form the first triangle. The last two of these vertices, together with the next vertex, form the second triangle, etc. So each new vertex specifies a new triangle, connected to the previous one."
+    },
+	"pr_trianglefan": {
+        "prefix": "pr_trianglefan",
+        "body": [
+	    	"pr_trianglefan"
+		],
+		"description": "[Constant]pr_trianglefan \nSimilar to a triangle list but this time the first vertex is part of all the triangles. Again, each new vertex specifies a new triangle, connected to the previous vertex and the first vertex."
+    },
+	"bm_add": {
+        "prefix": "bm_add",
+        "body": [
+	    	"bm_add"
+		],
+		"description": "[Constant]bm_add"
+    },
+	"bm_normal": {
+        "prefix": "bm_normal",
+        "body": [
+	    	"bm_normal"
+		],
+		"description": "[Constant]bm_normal"
+    },
+	"bm_subtract": {
+        "prefix": "bm_subtract",
+        "body": [
+	    	"bm_subtract"
+		],
+		"description": "[Constant]bm_subtract"
+    },
+	"bm_max": {
+        "prefix": "bm_max",
+        "body": [
+	    	"bm_max"
+		],
+		"description": "[Constant]bm_max"
+    },
+	"bm_zero": {
+        "prefix": "bm_zero",
+        "body": [
+	    	"bm_zero"
+		],
+		"description": "[Constant]bm_zero"
+    },
+	"bm_one": {
+        "prefix": "bm_one",
+        "body": [
+	    	"bm_one"
+		],
+		"description": "[Constant]bm_max"
+    },
+	"bm_src_color": {
+        "prefix": "bm_src_color",
+        "body": [
+	    	"bm_src_color"
+		],
+		"description": "[Constant]bm_src_color"
+    },
+	"bm_inv_src_color": {
+        "prefix": "bm_inv_src_color",
+        "body": [
+	    	"bm_inv_src_color"
+		],
+		"description": "[Constant]bm_inv_src_color"
+    },
+	"bm_src_alpha": {
+        "prefix": "bm_src_alpha",
+        "body": [
+	    	"bm_src_alpha"
+		],
+		"description": "[Constant]bm_src_alpha"
+    },
+	"bm_inv_src_alpha": {
+        "prefix": "bm_inv_src_alpha",
+        "body": [
+	    	"bm_inv_src_alpha"
+		],
+		"description": "[Constant]bm_inv_src_alpha"
+    },
+	"bm_dest_alpha": {
+        "prefix": "bm_dest_alpha",
+        "body": [
+	    	"bm_dest_alpha"
+		],
+		"description": "[Constant]bm_dest_alpha"
+    },
+	"bm_inv_dest_alpha": {
+        "prefix": "bm_inv_dest_alpha",
+        "body": [
+	    	"bm_inv_dest_alpha"
+		],
+		"description": "[Constant]bm_inv_dest_alpha"
+    },
+	"bm_dest_color": {
+        "prefix": "bm_dest_color",
+        "body": [
+	    	"bm_dest_color"
+		],
+		"description": "[Constant]bm_dest_color"
+    },
+	"bm_inv_dest_color": {
+        "prefix": "bm_inv_dest_color",
+        "body": [
+	    	"bm_inv_dest_color"
+		],
+		"description": "[Constant]bm_inv_dest_color"
+    },
+	"bm_src_alpha_sat": {
+        "prefix": "bm_src_alpha_sat",
+        "body": [
+	    	"bm_src_alpha_sat"
+		],
+		"description": "[Constant]bm_src_alpha_sat"
+    },
+	"cr_default": {
+        "prefix": "cr_default",
+        "body": [
+	    	"cr_default"
+		],
+		"description": "[Constant]cr_default"
+    },
+	"cr_none": {
+        "prefix": "cr_none",
+        "body": [
+	    	"cr_none"
+		],
+		"description": "[Constant]cr_none"
+    },
+	"cr_arrow": {
+        "prefix": "cr_arrow",
+        "body": [
+	    	"cr_arrow"
+		],
+		"description": "[Constant]cr_arrow"
+    },
+	"cr_cross": {
+        "prefix": "cr_cross",
+        "body": [
+	    	"cr_cross"
+		],
+		"description": "[Constant]cr_cross"
+    },
+	"cr_beam": {
+        "prefix": "cr_beam",
+        "body": [
+	    	"cr_beam"
+		],
+		"description": "[Constant]cr_beam"
+    }
+	//Game graphics Event Constant End
 	//Game graphics Event End
 }

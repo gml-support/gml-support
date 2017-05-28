@@ -1712,7 +1712,7 @@
         "body": [
 	    	"background_alpha"
 		],
-		"description": "[Variable]background_alpha[0..7] \n在绘制背景的时候设置阿尔法透明通道数值。 1 代表完全不透明 ；0 代表完全透明。"
+		"description": "[Variable]background_alpha[0..7] \n在绘制背景的时候设置阿尔法透明通道数值。1 代表完全不透明 ；0 代表完全透明。"
     },
 	"view_enabled": {
         "prefix": "view_enabled",
@@ -1726,9 +1726,466 @@
         "body": [
 	    	"view_current"
 		],
-		"description": "[Variable]view_current* \n回当前使用的视角（编号0到7）。只在绘图事件中使用。你可以检查这个 变量以确保在某一个视角中进行绘图。变量无法改动。"
-    }/*
-	*/
+		"description": "[Variable]view_current* \n回当前使用的视角（编号0到7）。只在绘图事件中使用。你可以检查这个变量以确保在某一个视角中进行绘图。变量无法改动。"
+    },
+	"view_visible": {
+        "prefix": "view_visible",
+        "body": [
+	    	"view_visible"
+		],
+		"description": "[Variable]view_visible[0..7] \n返回指定的视角是否在屏幕上可见。"
+    },
+	"view_xview": {
+        "prefix": "view_xview",
+        "body": [
+	    	"view_xview"
+		],
+		"description": "[Variable]view_xview[0..7] \n返回视角在房间的横坐标位置。"
+    },
+	"view_yview": {
+        "prefix": "view_yview",
+        "body": [
+	    	"view_yview"
+		],
+		"description": "[Variable]view_yview[0..7] \n返回视角在房间的纵坐标位置。"
+    },
+	"view_wview": {
+        "prefix": "view_wview",
+        "body": [
+	    	"view_wview"
+		],
+		"description": "[Variable]view_wview[0..7] \n返回视角在房间的宽度。"
+    },
+	"view_hview": {
+        "prefix": "view_hview",
+        "body": [
+	    	"view_hview"
+		],
+		"description": "[Variable]view_hview[0..7] \n返回视角在房间的高度。"
+    },
+	"view_xport": {
+        "prefix": "view_xport",
+        "body": [
+	    	"view_xport"
+		],
+		"description": "[Variable]view_xport[0..7] \n返回绘图区域内视点的横坐标。"
+    },
+	"view_yport": {
+        "prefix": "view_yport",
+        "body": [
+	    	"view_yport"
+		],
+		"description": "[Variable]view_yport[0..7] \n返回绘图区域内视点的纵坐标。"
+    },
+	"view_wport": {
+        "prefix": "view_wport",
+        "body": [
+	    	"view_wport"
+		],
+		"description": "[Variable]view_wport[0..7] \n返回绘图区域内视点的宽度。"
+    },
+	"view_hport": {
+        "prefix": "view_hport",
+        "body": [
+	    	"view_hport"
+		],
+		"description": "[Variable]view_hport[0..7] \n返回绘图区域内视点的高度。"
+    },
+	"view_angle": {
+        "prefix": "view_angle",
+        "body": [
+	    	"view_angle"
+		],
+		"description": "[Variable]view_angle[0..7] \n房间内视角的旋转角度。（逆时针，单位角度）。"
+    },
+	"view_hborder": {
+        "prefix": "view_hborder",
+        "body": [
+	    	"view_hborder"
+		],
+		"description": "[Variable]view_hborder[0..7] \n可见对象周围边框的水平尺寸（单位像素）。"
+    },
+	"view_vborder": {
+        "prefix": "view_vborder",
+        "body": [
+	    	"view_vborder"
+		],
+		"description": "[Variable]view_vborder[0..7] \n可见对象周围边框的垂直尺寸（单位像素）。"
+    },
+	"view_hspeed": {
+        "prefix": "view_hspeed",
+        "body": [
+	    	"view_hspeed"
+		],
+		"description": "[Variable]view_hspeed[0..7] \n视角的最大水平速度。"
+    },
+	"view_vspeed": {
+        "prefix": "view_vspeed",
+        "body": [
+	    	"view_vspeed"
+		],
+		"description": "[Variable]view_vspeed[0..7] \n视角的最大垂直速度。"
+    },
+	"view_object": {
+        "prefix": "view_object",
+        "body": [
+	    	"view_object"
+		],
+		"description": "[Variable]view_object[0..7] \n视角中必须保持可见的对象实例。如果有多个实例则只有第一个算数。你可以分配一个实例 id 到这个变量上。这样特定的实例就被指定。"
+    },
 	//Game graphics Event Variable End
+	//Game graphics Event Constant Start
+	"c_aqua": {
+        "prefix": "c_aqua",
+        "body": [
+	    	"c_aqua"
+		],
+		"description": "[Constant]c_aqua 水色"
+    },
+	"c_black": {
+        "prefix": "c_black",
+        "body": [
+	    	"c_black"
+		],
+		"description": "[Constant]c_black 黑色"
+    },
+	"c_dkgray": {
+        "prefix": "c_dkgray",
+        "body": [
+	    	"c_dkgray"
+		],
+		"description": "[Constant]c_dkgray 深灰"
+    },
+	"c_fuchsia": {
+        "prefix": "c_fuchsia",
+        "body": [
+	    	"c_fuchsia"
+		],
+		"description": "[Constant]c_fuchsia 紫红"
+    },
+	"c_gray": {
+        "prefix": "c_gray",
+        "body": [
+	    	"c_gray"
+		],
+		"description": "[Constant]c_gray 灰色"
+    },
+	"c_green": {
+        "prefix": "c_green",
+        "body": [
+	    	"c_green"
+		],
+		"description": "[Constant]c_green 绿色"
+    },
+	"c_lime": {
+        "prefix": "c_lime",
+        "body": [
+	    	"c_lime"
+		],
+		"description": "[Constant]c_lime 石灰色"
+    },
+	"c_ltgray": {
+        "prefix": "c_ltgray",
+        "body": [
+	    	"c_ltgray"
+		],
+		"description": "[Constant]c_ltgray 浅灰"
+    },
+	"c_maroon": {
+        "prefix": "c_maroon",
+        "body": [
+	    	"c_maroon"
+		],
+		"description": "[Constant]c_maroon 赤褐色"
+    },
+	"c_navy": {
+        "prefix": "c_navy",
+        "body": [
+	    	"c_navy"
+		],
+		"description": "[Constant]c_navy 深蓝"
+    },
+	"c_olive": {
+        "prefix": "c_olive",
+        "body": [
+	    	"c_olive"
+		],
+		"description": "[Constant]c_olive 茶青色"
+    },
+	"c_orange": {
+        "prefix": "c_orange",
+        "body": [
+	    	"c_orange"
+		],
+		"description": "[Constant]c_orange 橙色"
+    },
+	"c_purple": {
+        "prefix": "c_purple",
+        "body": [
+	    	"c_purple"
+		],
+		"description": "[Constant]c_purple 紫色"
+    },
+	"c_red": {
+        "prefix": "c_red",
+        "body": [
+	    	"c_red"
+		],
+		"description": "[Constant]c_red 红色"
+    },
+	"c_silver": {
+        "prefix": "c_silver",
+        "body": [
+	    	"c_silver"
+		],
+		"description": "[Constant]c_silver 银色"
+    },
+	"c_teal": {
+        "prefix": "c_teal",
+        "body": [
+	    	"c_teal"
+		],
+		"description": "[Constant]c_teal 茶绿色"
+    },
+	"c_white": {
+        "prefix": "c_white",
+        "body": [
+	    	"c_white"
+		],
+		"description": "[Constant]c_white 白色"
+    },
+	"c_yellow": {
+        "prefix": "c_yellow",
+        "body": [
+	    	"c_yellow"
+		],
+		"description": "[Constant]c_yellow 黄色"
+    },
+	"fa_left": {
+        "prefix": "fa_left",
+        "body": [
+	    	"fa_left"
+		],
+		"description": "[Constant]fa_left 左"
+    },
+	"fa_center": {
+        "prefix": "fa_center",
+        "body": [
+	    	"fa_center"
+		],
+		"description": "[Constant]fa_center 中"
+    },
+	"fa_right": {
+        "prefix": "fa_right",
+        "body": [
+	    	"fa_right"
+		],
+		"description": "[Constant]fa_right 右"
+    },
+	"fa_top": {
+        "prefix": "fa_top",
+        "body": [
+	    	"fa_top"
+		],
+		"description": "[Constant]fa_top 上"
+    },
+	"fa_middle": {
+        "prefix": "fa_middle",
+        "body": [
+	    	"fa_middle"
+		],
+		"description": "[Constant]fa_middle 中"
+    },
+	"fa_bottomk": {
+        "prefix": "fa_bottom",
+        "body": [
+	    	"fa_bottom"
+		],
+		"description": "[Constant]fa_bottom 下"
+    },
+	"pr_pointlist": {
+        "prefix": "pr_pointlist",
+        "body": [
+	    	"pr_pointlist"
+		],
+		"description": "[Constant]pr_pointlist 一组点。"
+    },
+	"pr_linelist": {
+        "prefix": "pr_linelist",
+        "body": [
+	    	"pr_linelist"
+		],
+		"description": "[Constant]pr_linelist 一组直线。"
+    },
+	"pr_linestrip": {
+        "prefix": "pr_linestrip",
+        "body": [
+	    	"pr_linestrip"
+		],
+		"description": "[Constant]pr_linestrip \n一组连续线，从第一个点到第二个点，再到第三个点，等等。最后一个没有 和第一个点连接。你需要指定一个额外的第一顶点拷贝。"
+    },
+	"pr_trianglelist": {
+        "prefix": "pr_trianglelist",
+        "body": [
+	    	"pr_trianglelist"
+		],
+		"description": "[Constant]pr_trianglelist \n设置为三角形的顶点。每三个顶点定义一个三角形。所以顶点的数目必须 为3的倍数。"
+    },
+	"pr_trianglestrip": {
+        "prefix": "pr_trianglestrip",
+        "body": [
+	    	"pr_trianglestrip"
+		],
+		"description": "[Constant]pr_trianglestrip \n同样也是设置三角形的顶点，但这次有些不同。前三个顶点定义第一个 三角形。第二、三个顶点和后面的一个顶点组成下一个三角形的三个顶点，以此类推。所以 每个新的顶点定义一个新的三角形，与前一个相连接。"
+    },
+	"pr_trianglefan": {
+        "prefix": "pr_trianglefan",
+        "body": [
+	    	"pr_trianglefan"
+		],
+		"description": "[Constant]pr_trianglefan \n同样对于三角列表但是这时第一顶点是整个三角的一部分，同样每个新顶点指明一个新的三角形，连接先前的顶点和第一顶点。"
+    },
+	"bm_add": {
+        "prefix": "bm_add",
+        "body": [
+	    	"bm_add"
+		],
+		"description": "[Constant]bm_add"
+    },
+	"bm_normal": {
+        "prefix": "bm_normal",
+        "body": [
+	    	"bm_normal"
+		],
+		"description": "[Constant]bm_normal"
+    },
+	"bm_subtract": {
+        "prefix": "bm_subtract",
+        "body": [
+	    	"bm_subtract"
+		],
+		"description": "[Constant]bm_subtract"
+    },
+	"bm_max": {
+        "prefix": "bm_max",
+        "body": [
+	    	"bm_max"
+		],
+		"description": "[Constant]bm_max"
+    },
+	"bm_zero": {
+        "prefix": "bm_zero",
+        "body": [
+	    	"bm_zero"
+		],
+		"description": "[Constant]bm_zero"
+    },
+	"bm_one": {
+        "prefix": "bm_one",
+        "body": [
+	    	"bm_one"
+		],
+		"description": "[Constant]bm_max"
+    },
+	"bm_src_color": {
+        "prefix": "bm_src_color",
+        "body": [
+	    	"bm_src_color"
+		],
+		"description": "[Constant]bm_src_color"
+    },
+	"bm_inv_src_color": {
+        "prefix": "bm_inv_src_color",
+        "body": [
+	    	"bm_inv_src_color"
+		],
+		"description": "[Constant]bm_inv_src_color"
+    },
+	"bm_src_alpha": {
+        "prefix": "bm_src_alpha",
+        "body": [
+	    	"bm_src_alpha"
+		],
+		"description": "[Constant]bm_src_alpha"
+    },
+	"bm_inv_src_alpha": {
+        "prefix": "bm_inv_src_alpha",
+        "body": [
+	    	"bm_inv_src_alpha"
+		],
+		"description": "[Constant]bm_inv_src_alpha"
+    },
+	"bm_dest_alpha": {
+        "prefix": "bm_dest_alpha",
+        "body": [
+	    	"bm_dest_alpha"
+		],
+		"description": "[Constant]bm_dest_alpha"
+    },
+	"bm_inv_dest_alpha": {
+        "prefix": "bm_inv_dest_alpha",
+        "body": [
+	    	"bm_inv_dest_alpha"
+		],
+		"description": "[Constant]bm_inv_dest_alpha"
+    },
+	"bm_dest_color": {
+        "prefix": "bm_dest_color",
+        "body": [
+	    	"bm_dest_color"
+		],
+		"description": "[Constant]bm_dest_color"
+    },
+	"bm_inv_dest_color": {
+        "prefix": "bm_inv_dest_color",
+        "body": [
+	    	"bm_inv_dest_color"
+		],
+		"description": "[Constant]bm_inv_dest_color"
+    },
+	"bm_src_alpha_sat": {
+        "prefix": "bm_src_alpha_sat",
+        "body": [
+	    	"bm_src_alpha_sat"
+		],
+		"description": "[Constant]bm_src_alpha_sat"
+    }/*,
+	"cr_default": {
+        "prefix": "cr_default",
+        "body": [
+	    	"cr_default"
+		],
+		"description": "[Constant]cr_default 默认"
+    },
+	"cr_none": {
+        "prefix": "cr_none",
+        "body": [
+	    	"cr_none"
+		],
+		"description": "[Constant]cr_none 无"
+    },
+	"cr_arrow": {
+        "prefix": "cr_arrow",
+        "body": [
+	    	"cr_arrow"
+		],
+		"description": "[Constant]cr_arrow 箭头"
+    },
+	"cr_cross": {
+        "prefix": "cr_cross",
+        "body": [
+	    	"cr_cross"
+		],
+		"description": "[Constant]cr_cross 十字"
+    },
+	"cr_beam": {
+        "prefix": "cr_beam",
+        "body": [
+	    	"cr_beam"
+		],
+		"description": "[Constant]cr_beam 工形"
+    },
+	*/
+	//Game graphics Event Constant End
 	//Game graphics Event End
 }
