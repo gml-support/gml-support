@@ -15,7 +15,11 @@ Syntax Highlignting may require theme support.
 
 # Screenshot
 
-![screenshot.png](https://ooo.0o0.ooo/2017/03/05/58bbe42cc88d8.png)
+![screenshot1](https://ooo.0o0.ooo/2017/05/29/592bb111b28f4.gif)
+
+Now it also support English!
+
+![screenshot2](https://ooo.0o0.ooo/2017/05/29/592bb10e83c41.gif)
 
 # Thanks
 
