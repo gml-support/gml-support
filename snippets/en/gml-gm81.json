@@ -156,14 +156,14 @@
         "body": [
 	    	"draw_clear_alpha(${1:col},${0:alpha})"
 		],
-		"description": "[Function]draw_clear_alpha(col,alpha)\nClears the entire room in the given color and alpha value (in particular useful for surfaces)."
+		"description": "[Function]draw_clear_alpha(col,alpha) \nClears the entire room in the given color and alpha value (in particular useful for surfaces)."
     },
 	"draw_point": {
         "prefix": "draw_point",
         "body": [
 	    	"draw_point(${1:x},${0:y})"
 		],
-		"description": "[Function]draw_point(x,y) nDraws a point at (x,y) in the current color."
+		"description": "[Function]draw_point(x,y) \nDraws a point at (x,y) in the current color."
     },
 	"draw_line": {
         "prefix": "draw_line",
@@ -576,7 +576,7 @@
         "body": [
 	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
 		],
-		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度."
+		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \nDraws the surface tiled so that it fills the entire room but now with scale factors and a color and transparency setting."
     },
 	"draw_surface_part_ext": {
         "prefix": "draw_surface_part_ext",
@@ -598,7 +598,7 @@
         "body": [
 	    	"make_color_rgb(${1:red},${2:green},${0:blue})"
 		],
-		"description": "[Function]make_color_rgb(red,green,blue) \n Returns a color with the indicated red, green, and blue components, where red, green and blue must be values between 0 and 255."
+		"description": "[Function]make_color_rgb(red,green,blue) \nReturns a color with the indicated red, green, and blue components, where red, green and blue must be values between 0 and 255."
     },
 	"make_color_hsv": {
         "prefix": "make_color_hsv",
@@ -1249,7 +1249,7 @@
         "body": [
 	    	"window_set_cursor(${0:curs})"
 		],
-		"description": "[Function]window_set_cursor() \nSets the mouse cursor used in the window. You can use the following constant: \ncr_default\ncr_none\ncr_arrow\ncr_cross\ncr_beam\ncr_size_nesw\ncr_size_ns\ncr_size_nwse\ncr_size_we\ncr_uparrow\ncr_hourglass\ncr_drag\ncr_nodrop\ncr_hsplit\ncr_vsplit\ncr_multidrag\ncr_sqlwait\ncr_no\ncr_appstart\ncr_help\ncr_handpoint\ncr_size_all\nIn particular, to hide the mouse cursor, use cr_none as value."
+		"description": "[Function]window_set_cursor(curs) \nSets the mouse cursor used in the window. You can use the following constant: \ncr_default\ncr_none\ncr_arrow\ncr_cross\ncr_beam\ncr_size_nesw\ncr_size_ns\ncr_size_nwse\ncr_size_we\ncr_uparrow\ncr_hourglass\ncr_drag\ncr_nodrop\ncr_hsplit\ncr_vsplit\ncr_multidrag\ncr_sqlwait\ncr_no\ncr_appstart\ncr_help\ncr_handpoint\ncr_size_all\nIn particular, to hide the mouse cursor, use cr_none as value."
     },
 	"window_get_cursor": {
         "prefix": "window_get_cursor",
@@ -1615,7 +1615,7 @@
         "body": [
 	    	"background_visible"
 		],
-		"description": "[Variable]background_visible[0..7] \n指定背景图像是否为前景."
+		"description": "[Variable]background_visible[0..7] \nWhether the particular background image is visible."
     },
 	"background_foreground": {
         "prefix": "background_foreground",
@@ -2185,7 +2185,202 @@
 	    	"cr_beam"
 		],
 		"description": "[Constant]cr_beam"
-    }
+    },
+	"cr_size_nesw": {
+        "prefix": "cr_size_nesw",
+        "body": [
+	    	"cr_size_nesw"
+		],
+		"description": "[Constant]cr_size_nesw"
+    },
+	"cr_size_ns": {
+        "prefix": "cr_size_ns",
+        "body": [
+	    	"cr_size_ns"
+		],
+		"description": "[Constant]cr_size_ns"
+    },
+	"cr_size_nwse": {
+        "prefix": "cr_size_nwse",
+        "body": [
+	    	"cr_size_nwse"
+		],
+		"description": "[Constant]cr_size_nwse"
+    },
+	"cr_size_we": {
+        "prefix": "cr_size_we",
+        "body": [
+	    	"cr_size_we"
+		],
+		"description": "[Constant]cr_size_we"
+    },
+	"cr_uparrow": {
+        "prefix": "cr_uparrow",
+        "body": [
+	    	"cr_uparrow"
+		],
+		"description": "[Constant]cr_uparrow"
+    },
+	"cr_hourglass": {
+        "prefix": "cr_hourglass",
+        "body": [
+	    	"cr_hourglass"
+		],
+		"description": "[Constant]cr_hourglass"
+    },
+	"cr_drag": {
+        "prefix": "cr_drag",
+        "body": [
+	    	"cr_drag"
+		],
+		"description": "[Constant]cr_drag"
+    },
+	"cr_nodrop": {
+        "prefix": "cr_nodrop",
+        "body": [
+	    	"cr_nodrop"
+		],
+		"description": "[Constant]cr_nodrop"
+    },
+	"cr_hsplit": {
+        "prefix": "cr_hsplit",
+        "body": [
+	    	"cr_hsplit"
+		],
+		"description": "[Constant]cr_hsplit"
+    },
+	"cr_vsplit": {
+        "prefix": "cr_vsplit",
+        "body": [
+	    	"cr_vsplit"
+		],
+		"description": "[Constant]cr_vsplit"
+    },
+	"cr_multidrag": {
+        "prefix": "cr_multidrag",
+        "body": [
+	    	"cr_multidrag"
+		],
+		"description": "[Constant]cr_multidrag"
+    },
+	"cr_sqlwait": {
+        "prefix": "cr_sqlwait",
+        "body": [
+	    	"cr_sqlwait"
+		],
+		"description": "[Constant]cr_sqlwait"
+    },
+	"cr_no": {
+        "prefix": "cr_no",
+        "body": [
+	    	"cr_no"
+		],
+		"description": "[Constant]cr_no"
+    },
+	"cr_appstart": {
+        "prefix": "cr_appstart",
+        "body": [
+	    	"cr_appstart"
+		],
+		"description": "[Constant]cr_appstart"
+    },
+	"cr_help": {
+        "prefix": "cr_help",
+        "body": [
+	    	"cr_help"
+		],
+		"description": "[Constant]cr_help"
+    },
+	"cr_handpoint": {
+        "prefix": "cr_handpoint",
+        "body": [
+	    	"cr_handpoint"
+		],
+		"description": "[Constant]cr_handpoint"
+    },
+	"cr_size_all": {
+        "prefix": "cr_size_all",
+        "body": [
+	    	"cr_size_all"
+		],
+		"description": "[Constant]cr_size_all"
+    },
 	//Game graphics Event Constant End
 	//Game graphics Event End
+	//Using DLL's Event Start
+	//Using DLL's Event Functions Start
+	"external_define": {
+        "prefix": "external_define",
+        "body": [
+	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${0:arg2tupe}, ...)"
+		],
+		"description": "[Function]external_define(dll,name,calltype,restype,argnumb,arg1type,arg2type, ...) \nDefines an external function. dll is the name of the dll file. name is the name of the functions. calltype is the calling convention used. For this use either dll_cdecl or dll_stdcall. restype is the type of the result. For this use either ty_real or ty_string. argnumb is the number of arguments (0-16). Next, for each argument you must specify its type. For this again use either ty_real or ty_string. When there are more than 4 arguments all of them must be of type ty_real."
+    },
+	"external_call": {
+        "prefix": "external_call",
+        "body": [
+	    	"external_call(${1:id},${2:arg1},${0:arg2}, ...)"
+		],
+		"description": "[Function]external_call(id,arg1,arg2, ...) \nCalls the external function with the given id, and the given arguments. You need to provide the correct number of arguments of the correct type (real or string). The function returns the result of the external function."
+    },
+	"external_free": {
+        "prefix": "external_free",
+        "body": [
+	    	"external_free(${0:dll})"
+		],
+		"description": "[Function]external_free(dll) \nFrees the DLL with the given name. This is in particular necessary if the game should remove the DLL. As long as the DLL is not freed it cannot be removed. Best do this e.g. in an end of game event."
+    },
+	"execute_string": {
+        "prefix": "execute_string",
+        "body": [
+	    	"execute_string(${1:str},${2:arg1},${0:arg2}, ...)"
+		],
+		"description": "[Function]execute_string(str,arg0,arg1, ...) \nExecute the piece of code in the string str with the indicated arguments."
+    },
+	"execute_file": {
+        "prefix": "execute_file",
+        "body": [
+	    	"execute_file(${0:fname})"
+		],
+		"description": "[Function]execute_file(fname) \nExecute the piece of code in the file."
+    },
+	"window_handle": {
+        "prefix": "window_handle",
+        "body": [
+	    	"window_handle()"
+		],
+		"description": "[Function]window_handle() \nReturns the window handle for the main window."
+    },
+	//Using DLL's Event Functions End
+	//Using DLL's Event Constant Start
+	"dll_cdel": {
+        "prefix": "dll_cdel",
+        "body": [
+	    	"dll_cdel"
+		],
+		"description": "[Constant]dll_cdel"
+    },
+	"dll_stdcall": {
+        "prefix": "dll_stdcall",
+        "body": [
+	    	"dll_stdcall"
+		],
+		"description": "[Constant]dll_stdcall"
+    },
+	"ty_real": {
+        "prefix": "ty_real",
+        "body": [
+	    	"ty_real"
+		],
+		"description": "[Constant]ty_real"
+    },
+	"ty_string": {
+        "prefix": "ty_string",
+        "body": [
+	    	"ty_string"
+		],
+		"description": "[Constant]ty_string"
+    }
+	//Using DLL's Event Constant End
+	//Using DLL's Event End
 }
