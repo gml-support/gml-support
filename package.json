@@ -16,6 +16,13 @@
   "dependencies": {
 		"vscode-nls": "^2.0.2"
   },
+  "bugs": {
+      "url": "https://github.com/LiarOnce/gml-support/issues"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/LiarOnce/gml-support.git"
+  },
   "contributes": {
     "languages": [
       {
