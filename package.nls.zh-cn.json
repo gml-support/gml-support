@@ -1,4 +1,6 @@
 {
+    "gm81.syntax": "./syntaxes/zh-cn/gml-gm81.tmLanguage.json",
     "gm81.snippet": "./snippets/zh-cn/gml-gm81.json",
+    "gms.syntax": "./syntaxes/zh-cn/gml-gms.tmLanguage.json",
     "gms.snippet": "./snippets/zh-cn/gml-gm81.json"
 }

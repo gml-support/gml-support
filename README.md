@@ -8,6 +8,10 @@ GitHub: [https://github.com/LiarOnce/gml-support](https://github.com/LiarOnce/gm
 Visual Studio Code version should be higher than 1.8.0.    
 Visual Studio Code版本需高于1.8.0。  
 
+## 使用了MaizeMusic插件?
+
+按下Ctrl+Shift+P，输入`GML Support Info for MaizeMusic`查看相关信息。
+
 # Known Issue
 
 Syntax Highlignting may require theme support.  

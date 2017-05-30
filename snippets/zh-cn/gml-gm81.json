@@ -444,8 +444,49 @@
 	    	"mm_effect_set_equalizer(${1:effectID},${2:center},${3:bandwidth},${0:gain})"
 		],
 		"description": "[Function]mm_effect_set_equalizer(effectID,center,bandwidth,gain) \n(v3.0新增) 为指定声音效果设置均衡器效果参数。"
-    },/*
-	*/
+    },
+	"mm_get_cpu": {
+        "prefix": "mm_get_cpu",
+        "body": [
+	    	"mm_get_cpu()"
+		],
+		"description": "[Function]mm_get_cpu() \n获取插件的CPU使用率。"
+    },
+	"mm_get_music_cpu": {
+        "prefix": "mm_get_music_cpu",
+        "body": [
+	    	"mm_get_music_cpu(${0:musicID})"
+		],
+		"description": "[Function]mm_get_music_cpu() \n获取单个音乐的CPU使用率。"
+    },
+	"mm_device_get_number": {
+        "prefix": "mm_device_get_number",
+        "body": [
+	    	"mm_device_get_number()"
+		],
+		"description": "[Function]mm_device_get_number() \n获取本台电脑的播放设备数量。"
+    },
+	"mm_device_get_name": {
+        "prefix": "mm_device_get_name",
+        "body": [
+	    	"mm_device_get_name(${0:device})"
+		],
+		"description": "[Function]mm_device_get_name(device) \n获取播放设备的名字。"
+    },
+	"mm_device_set": {
+        "prefix": "mm_device_set",
+        "body": [
+	    	"mm_device_set(${0:device})"
+		],
+		"description": "[Function]mm_device_set(device) \n设置MM插件使用的播放设备。"
+    },
+	"mm_slider_volume": {
+        "prefix": "mm_slider_volume",
+        "body": [
+	    	"mm_slider_volume(${1:musicID},${2:tar_vol},${0:time})"
+		],
+		"description": "[Function]mm_slider_volume(musicID,tar_vol,time) \n用于缓动某id音乐的音量（从当前音量开始向目标音量缓动）。"
+    },
 	//MaizeMusic List Plugin End
 	//Game graphics Event Start
 	//Game graphics Event Functions Start
