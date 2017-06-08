@@ -2,7 +2,7 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
@@ -58,6 +58,17 @@
         "configuration": "./language-configuration.json"
       },
       {
+        "id": "gml-gmx",
+        "aliases": [
+          "GameMaker Studio GMX Project",
+          "gml-gmx"
+        ],
+        "extensions": [
+          ".gmx"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
         "id": "gml-gms2",
         "aliases": [
           "GameMaker Language(GameMaker Studio 2)",
@@ -65,6 +76,17 @@
         ],
         "extensions": [
           ".gml"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "gml-yyp",
+        "aliases": [
+          "GameMaker Studio 2 YY Config",
+          "gml-yyp","gml-yy"
+        ],
+        "extensions": [
+          ".yyp",".yy"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -79,6 +101,21 @@
         "language": "gml-gms",
         "scopeName": "source.gml-gms",
         "path": "%gms.syntax%"
+      },
+      {
+        "language": "gml-gms2",
+        "scopeName": "source.gml-gms2",
+        "path": "%gms2.syntax%"
+      },
+      {
+        "language": "gml-gmx",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/gmx.json"
+      },
+      {
+        "language": "gml-yyp",
+        "scopeName": "source.yyp",
+        "path": "./syntaxes/yyp.json"
       }
     ],
     "snippets": [

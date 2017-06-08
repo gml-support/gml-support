@@ -32,5 +32,5 @@ Now it also support English!
 # Thanks
 
 GameMaker Syntax：[YellowAfterlife](https://yal.cc/notepad-syntax-highlighting-for-gamemaker-81/)  
-GameMaker Studio Syntax：[Everspace/Sublime_GameMakerStudio](https://github.com/Everspace/Sublime_GameMakerStudio)
-
+GameMaker Studio Syntax：[Everspace/Sublime_GameMakerStudio](https://github.com/Everspace/Sublime_GameMakerStudio)  
+GameMaker Studio 2 Syntax：[OinkIguana/language-gml2](https://github.com/OinkIguana/language-gml2)

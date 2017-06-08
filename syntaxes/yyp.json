@@ -1,0 +1,12 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "source.yyp",
+    "fileTypes": ["yy","yyp"],
+    "name": "GameMaker Studio 2 YY Config",
+    "patterns": [
+        {
+            "name": "source.json.yyp",
+            "include": "source.json"
+        }
+    ]
+}
