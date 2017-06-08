@@ -8,7 +8,7 @@ GameMaker Language Support in Visual Studio Code.
 GameMaker Language对Visual Studio Code的支持。  
 
 GitHub: [https://github.com/LiarOnce/gml-support](https://github.com/LiarOnce/gml-support)  
-It is recommended to use the [vscode-icons](https://github.com/vscode-icons/vscode-icons) plugin (7.9.0 and later) in Visual Studio Code.  
+It is recommended to use the [vscode-icons](https://github.com/vscode-icons/vscode-icons) (7.9.0 and later) with this extension in Visual Studio Code.  
 
 Visual Studio Code version should be higher than 1.8.0.    
 Visual Studio Code版本需高于1.8.0。  
