@@ -3,7 +3,7 @@
         "prefix": "n",
         "body": [
 	    	"{",
-			"\t${0:STATEMENT}",
+			"\t${1:STATEMENT}",
 			"}"
 		],
 		"description": "Normal block"
@@ -12,7 +12,7 @@
         "prefix": "if",
         "body": [
 	    	"if (${1:CONDITION}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "If block"
@@ -48,8 +48,8 @@
 		"prefix": "do",
 		"body": [
 			"do {",
-			"\t${0:STATEMENT}",
-			"} until (${1:${2:$a} <= ${3:10}});"
+			"\t${1:STATEMENT}",
+			"} until (${2:${3:$a} <= ${4:10}});"
 		],
 		"description": "Do-until loop"
 	},
@@ -57,7 +57,7 @@
 		"prefix": "for",
 		"body": [
         "for (${1:INITIALISATION}; ${2:CONDITION}; ${3:INCREMENT}) { ",
-			"\t${0:STATEMENT}",
+			"\t${4:STATEMENT}",
 			"}"
 		],
 		"description": "For-loop"
@@ -66,7 +66,7 @@
 		"prefix": "fori",
 		"body": [
 			"for (${1:i}=${2:0}; ${1:i} < ${2:CONDITION}; ${1:i}++) { ",
-			"\t${0:STATEMENT}",
+			"\t${3:STATEMENT}",
 			"}"
 		],
 		"description": "For-i-loop"
@@ -75,7 +75,7 @@
 		"prefix": "while",
 		"body": [
 			"while (${1:$a <= 10}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "While-loop"
@@ -84,7 +84,7 @@
 		"prefix": "repeat",
 		"body": [
 	    	"repeat (${1:EXPRESSION}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "Repeat-loop"
@@ -93,7 +93,7 @@
         "prefix": "with",
         "body": [
             "with (${1:EXPRESSION}) {",
-            "\t${0:STATEMENT}",
+            "\t${2:STATEMENT}",
             "}"
         ],
         "description": "With structure"
@@ -103,133 +103,133 @@
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
-	    	"draw_text(${1:x},${2:y},${0:string})"
+	    	"draw_text(${1:x},${2:y},${3:string})"
 		],
 		"description": "[Function]draw_text(x,y,string)"
     },
 	"draw_text_ext": {
         "prefix": "draw_text_ext",
         "body": [
-	    	"draw_text_ext(${1:x},${2:y},${0:string})"
+	    	"draw_text_ext(${1:x},${2:y},${3:string})"
 		],
 		"description": "[Function]draw_text_ext(x,y,string)"
     },
 	"draw_arrow": {
         "prefix": "draw_arrow",
         "body": [
-	    	"draw_arrow(${1:x1},${2:y1},${3:x2},${4:y2},${0:size})"
+	    	"draw_arrow(${1:x1},${2:y1},${3:x2},${4:y2},${5:size})"
 		],
 		"description": "[Function]draw_arrow(x1,y1,x2,y2,size)"
     },
 	"draw_button": {
         "prefix": "draw_button",
         "body": [
-	    	"draw_button(${1:x1},${2:y1},${3:x2},${4:y2},${0:up})"
+	    	"draw_button(${1:x1},${2:y1},${3:x2},${4:y2},${5:up})"
 		],
 		"description": "[Function]draw_button(x1,y1,x2,y2,up)"
     },
 	"draw_path": {
         "prefix": "draw_path",
         "body": [
-	    	"draw_path(${1:path},${2:x},${3:y},${0:absolute})"
+	    	"draw_path(${1:path},${2:x},${3:y},${4:absolute})"
 		],
 		"description": "[Function]draw_path(path,x,y,absolute)"
     },
 	"draw_healthbar": {
         "prefix": "draw_healthbar",
         "body": [
-	    	"draw_healthbar(${1:x1},${2:y1},${3:x2},${4:y2},${5:amount},${6:backcol},${7:mincol},${8:maxcol},${9:direction},${10:showback},${0:showborder})"
+	    	"draw_healthbar(${1:x1},${2:y1},${3:x2},${4:y2},${5:amount},${6:backcol},${7:mincol},${8:maxcol},${9:direction},${10:showback},${11:showborder})"
 		],
 		"description": "[Function]draw_healthbar(x1,y1,x2,y2,amount,backcol,mincol,maxcol,direction,showback,showborder)"
     },
 	"draw_clear": {
         "prefix": "draw_clear",
         "body": [
-	    	"draw_clear(${0:col})"
+	    	"draw_clear(${1:col})"
 		],
 		"description": "[Function]draw_clear(col) \nClears the entire room in the given color (no alpha blending)."
     },
 	"draw_clear_alpha": {
         "prefix": "draw_clear_alpha",
         "body": [
-	    	"draw_clear_alpha(${1:col},${0:alpha})"
+	    	"draw_clear_alpha(${1:col},${2:alpha})"
 		],
 		"description": "[Function]draw_clear_alpha(col,alpha)"
     },
 	"draw_point": {
         "prefix": "draw_point",
         "body": [
-	    	"draw_point(${1:x},${0:y})"
+	    	"draw_point(${1:x},${3:y})"
 		],
 		"description": "[Function]draw_point(x,y)"
     },
 	"draw_line": {
         "prefix": "draw_line",
         "body": [
-	    	"draw_line(${1:x1},${2:y1},${3:x2},${0:y2})"
+	    	"draw_line(${1:x1},${2:y1},${3:x2},${4:y2})"
 		],
 		"description": "[Function]draw_line(x1,y1,x2,y2)"
     },
 	"draw_line_width": {
         "prefix": "draw_line_width(x1,y1,x2,y2)",
         "body": [
-	    	"draw_line_width(${1:x1},${2:y1},${3:x2},${4:y2},${0:w})"
+	    	"draw_line_width(${1:x1},${2:y1},${3:x2},${4:y2},${5:w})"
 		],
 		"description": "[Function]draw_line_width(x1,y1,x2,y2,w)"
     },
 	"draw_rectangle": {
         "prefix": "draw_rectangle",
         "body": [
-	    	"draw_rectangle(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_rectangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_rectanglet(x1,y1,x2,y2,outline)"
     },
 	"draw_roundrect": {
         "prefix": "draw_roundrect",
         "body": [
-	    	"draw_roundrect(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_roundrect(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_roundrect(x1,y1,x2,y2,outline)"
     },
 	"draw_triangle": {
         "prefix": "draw_triangle",
         "body": [
-	    	"draw_triangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3},${0:outline})"
+	    	"draw_triangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3},${7:outline})"
 		],
 		"description": "[Function]draw_triangle(x1,y1,x2,y2,x3,y3,outline)"
     },
 	"draw_circle": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_circle(${1:x},${2:y},${3:r},${4:outline})"
 		],
 		"description": "[Function]draw_circle(x,y,r,outline)"
     },
 	"draw_ellipse": {
         "prefix": "draw_ellipse",
         "body": [
-	    	"draw_ellipse(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_ellipse(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_ellipse(x1,y1,x2,y2,outline)"
     },
 	"draw_set_circle_precision": {
         "prefix": "draw_set_circle_precision",
         "body": [
-	    	"draw_set_circle_precision(${0:precision})"
+	    	"draw_set_circle_precision(${1:precision})"
 		],
 		"description": "[Function]draw_set_circle_precision(precision)"
     },
 	"draw_set_color": {
         "prefix": "draw_set_color",
         "body": [
-	    	"draw_set_color(${0:col})"
+	    	"draw_set_color(${1:col})"
 		],
 		"description": "[Function]draw_set_color(col)"
     },
 	"draw_set_alpha": {
         "prefix": "draw_set_alpha",
         "body": [
-	    	"draw_set_alpha(${0:alpha})"
+	    	"draw_set_alpha(${1:alpha})"
 		],
 		"description": "[Function]draw_set_alpha(alpha)"
     },
@@ -250,238 +250,238 @@
 	"draw_getpixel": {
         "prefix": "draw_getpixel",
         "body": [
-	    	"draw_getpixel(${1:x},${0:y})"
+	    	"draw_getpixel(${1:x},${1:y})"
 		],
 		"description": "[Function]draw_getpixel(x,y)"
     },
 	"draw_sprite": {
         "prefix": "draw_sprite",
         "body": [
-	    	"draw_sprite(${1:sprite},${2:subimg},${3:x},${0:y})"
+	    	"draw_sprite(${1:sprite},${2:subimg},${3:x},${4:y})"
 		],
 		"description": "[Function]draw_sprite(sprite,subimg,x,y)"
     },
 	"draw_sprite_stretched": {
         "prefix": "draw_sprite_stretched",
         "body": [
-	    	"draw_sprite_stretched(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${0:h})"
+	    	"draw_sprite_stretched(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h})"
 		],
 		"description": "[Function]draw_sprite_stretched(sprite,subimg,x,y,w,h)"
     },
 	"draw_sprite_tiled": {
         "prefix": "draw_sprite_tiled",
         "body": [
-	    	"draw_sprite_tiled(${1:sprite},${2:subimg},${3:x},${0:y})"
+	    	"draw_sprite_tiled(${1:sprite},${2:subimg},${3:x},${4:y})"
 		],
 		"description": "[Function]draw_sprite_tiled(sprite,subimg,x,y)"
     },
 	"draw_sprite_part": {
         "prefix": "draw_sprite_part",
         "body": [
-	    	"draw_sprite_part(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${0:y})"
+	    	"draw_sprite_part(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y})"
 		],
 		"description": "[Function]draw_sprite_part(sprite,subimg,left,top,width,height,x,y)"
     },
 	"draw_background": {
         "prefix": "draw_background",
         "body": [
-	    	"draw_background(${1:back},${2:x},${0:y})"
+	    	"draw_background(${1:back},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_background(back,x,y)"
     },
 	"draw_background_stretched": {
         "prefix": "draw_background_stretched",
         "body": [
-	    	"draw_background_stretched(${1:back},${2:x},${3:y},${4:w},${0:h})"
+	    	"draw_background_stretched(${1:back},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]draw_background_stretched(back,x,y,w,h)"
     },
 	"draw_background_tiled": {
         "prefix": "draw_background_tiled",
         "body": [
-	    	"draw_background_tiled(${1:back},${2:x},${0:y})"
+	    	"draw_background_tiled(${1:back},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_background_tiled(back,x,y)"
     },
 	"draw_background_part": {
         "prefix": "draw_background_part",
         "body": [
-	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y})"
 		],
 		"description": "[Function]draw_background_part(x,y,r,outline)"
     },
 	"draw_sprite_ext": {
         "prefix": "draw_sprite_ext",
         "body": [
-	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${0:alpha})"
+	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${9:alpha})"
 		],
 		"description": "[Function]draw_sprite_ext(sprite,subimg,x,y,xscale,yscale,rot,color,alpha)"
     },
 	"draw_sprite_stretched_ext": {
         "prefix": "draw_sprite_stretched_ext",
         "body": [
-	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${0:alpha})"
+	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_sprite_stretched_ext(sprite,subimg,x,y,w,h,color,alpha)"
     },
 	"draw_sprite_tiled_ext": {
         "prefix": "draw_sprite_tiled_ext",
         "body": [
-	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${0:alpha})"
+	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_circle(sprite,subimg,x,y,xscale,yscale,color,alpha)"
     },
 	"draw_sprite_part_ext": {
         "prefix": "draw_sprite_part_ext",
         "body": [
-	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${0:alpha})"
+	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${12:alpha})"
 		],
 		"description": "[Function]draw_sprite_part_ext(sprite,subimg,left,top,width,height,x,y,xscale,yscale,color,alpha)"
     },
 	"draw_sprite_general": {
         "prefix": "draw_sprite_general",
         "body": [
-	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${0:alpha})"
+	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${16:alpha})"
 		],
 		"description": "[Function]draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha)"
     },
 	"draw_set_font": {
         "prefix": "draw_set_font",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_set_font(${1:font})"
 		],
 		"description": "[Function]draw_set_font(font)"
     },
 	"draw_set_halign": {
         "prefix": "draw_set_halign",
         "body": [
-	    	"draw_set_halign(${0:halign})"
+	    	"draw_set_halign(${1:halign})"
 		],
 		"description": "[Function]draw_set_halign(halign)"
     },
 	"draw_set_valign": {
         "prefix": "draw_set_valign",
         "body": [
-	    	"draw_set_valign(${0:valign})"
+	    	"draw_set_valign(${1:valign})"
 		],
 		"description": "[Function]draw_set_valign(valign)"
     },
 	"draw_text_transformed": {
         "prefix": "draw_text_transformed",
         "body": [
-	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${0:angle})"
+	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle})"
 		],
 		"description": "[Function]draw_text_transformed(x,y,string,xscale,yscale,angle)"
     },
 	"draw_text_ext_transformed": {
         "prefix": "draw_text_ext_transformed",
         "body": [
-	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${0:angle})"
+	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle})"
 		],
 		"description": "[Function]draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle)"
     },
 	"draw_text_color": {
         "prefix": "draw_text_color",
         "body": [
-	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${0:alpha})"
+	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${8:alpha})"
 		],
 		"description": "[Function]draw_text_color(x,y,string,c1,c2,c3,c4,alpha)"
     },
 	"draw_text_ext_color": {
         "prefix": "draw_text_ext_color",
         "body": [
-	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${0:alpha})"
+	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${10:alpha})"
 		],
 		"description": "[Function]draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha)"
     },
 	"draw_text_transformed_color": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${0:alpha})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${11:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha)"
     },
 	"draw_text_ext_transformed_color": {
         "prefix": "draw_text_transformed_color",
         "body": [
-	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${13:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha)"
     },
 	"draw_point_color": {
         "prefix": "draw_point_color",
         "body": [
-	    	"draw_point_color(${1:x},${2:y},${0:col1})"
+	    	"draw_point_color(${1:x},${2:y},${3:col1})"
 		],
 		"description": "[Function]draw_point_color(x,y,col1)"
     },
 	"draw_line_color": {
         "prefix": "draw_line_color",
         "body": [
-	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${0:col2})"
+	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2})"
 		],
 		"description": "[Function]draw_line_color(x1,y1,x2,y2,col1,col2)"
     },
 	"draw_line_width_color": {
         "prefix": "draw_line_width_color",
         "body": [
-	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${0:col2})"
+	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${7:col2})"
 		],
 		"description": "[Function]draw_line_width_color(x1,y1,x2,y2,w,col1,col2)"
     },
 	"draw_rectangle_color": {
         "prefix": "draw_rectangle_color",
         "body": [
-	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${0:outline})"
+	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${9:outline})"
 		],
 		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline)"
     },
 	"draw_roundrect_color": {
         "prefix": "draw_roundrect_color",
         "body": [
-	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:outline})"
 		],
 		"description": "[Function]draw_roundrect_color(x1,y1,x2,y2,col1,col2,outline)"
     },
 	"draw_triangle_color": {
         "prefix": "draw_triangle_color",
         "body": [
-	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${0:outline})"
+	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${10:outline})"
 		],
 		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline)"
     },
 	"draw_circle_color": {
         "prefix": "draw_circle_color",
         "body": [
-	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${0:outline})"
+	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${5:outline})"
 		],
 		"description": "[Function]draw_circle_color(x,y,r,col1,col2,outline)"
     },
 	"draw_ellipse_color": {
         "prefix": "draw_ellipse_color",
         "body": [
-	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:outline})"
 		],
 		"description": "[Function]draw_ellipse_color(x1,y1,x2,y2,col1,col2,outline)"
     },
 	"draw_primitive_begin": {
         "prefix": "draw_primitive_begin",
         "body": [
-	    	"draw_primitive_begin(${0:kind})"
+	    	"draw_primitive_begin(${1:kind})"
 		],
 		"description": "[Function]draw_primitive_begin(kind)"
     },
 	"draw_vertex": {
         "prefix": "draw_vertex",
         "body": [
-	    	"draw_vertex(${1:x},${0:y})"
+	    	"draw_vertex(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_vertex(x,y)"
     },
 	"draw_vertex_color": {
         "prefix": "draw_vertex_color",
         "body": [
-	    	"draw_vertex_color(${1:x},${2:y},${3:col},${0:alpha})"
+	    	"draw_vertex_color(${1:x},${2:y},${3:col},${4:alpha})"
 		],
 		"description": "[Function]draw_vertex_color(x,y,col,alpha)"
     },
@@ -495,98 +495,98 @@
 	"draw_primitive_begin_texture": {
         "prefix": "draw_primitive_begin_texture",
         "body": [
-	    	"draw_primitive_begin_texture(${1:kind},${0:texid})"
+	    	"draw_primitive_begin_texture(${1:kind},${2:texid})"
 		],
 		"description": "[Function]draw_primitive_begin_texture(kind,texid)"
     },
 	"draw_vertex_texture": {
         "prefix": "draw_vertex_texture",
         "body": [
-	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${0:ytex})"
+	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${4:ytex})"
 		],
 		"description": "[Function]draw_vertex_texture(x,y,xtex,ytex)"
     },
 	"draw_vertex_texture_color": {
         "prefix": "draw_vertex_texture_color",
         "body": [
-	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${0:alpha})"
+	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${6:alpha})"
 		],
 		"description": "[Function]draw_vertex_texture_color(x,y,xtex,ytex,col,alpha)"
     },
 	"draw_set_blend_mode": {
         "prefix": "draw_set_blend_mode",
         "body": [
-	    	"draw_set_blend_mode(${0:mode})"
+	    	"draw_set_blend_mode(${1:mode})"
 		],
 		"description": "[Function]draw_set_blend_mode(mode)"
     },
 	"draw_set_blend_mode_ext": {
         "prefix": "draw_set_blend_mode_ext",
         "body": [
-	    	"draw_set_blend_mode_ext(${1:src},${0:dest})"
+	    	"draw_set_blend_mode_ext(${1:src},${2:dest})"
 		],
 		"description": "[Function]draw_set_blend_mode_ext(font)"
     },
 	"draw_surface": {
         "prefix": "draw_surface",
         "body": [
-	    	"draw_surface(${1:id},${2:x},${0:y})"
+	    	"draw_surface(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_surface(id,x,y)"
     },
 	"draw_surface_stretched": {
         "prefix": "draw_surface_stretched",
         "body": [
-	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${0:h})"
+	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]draw_surface_stretched(id,x,y,w,h)"
     },
 	"draw_surface_tiled": {
         "prefix": "draw_surface_tiled",
         "body": [
-	    	"draw_surface_tiled(${1:id},${2:x},${0:y})"
+	    	"draw_surface_tiled(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_surface_tiled(id,x,y)"
     },
 	"draw_surface_part": {
         "prefix": "draw_surface_part",
         "body": [
-	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y})"
 		],
 		"description": "[Function]draw_surface_part(id,left,top,width,height,x,y)"
     },
 	"draw_surface_ext": {
         "prefix": "draw_surface_ext",
         "body": [
-	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${0:alpha})"
+	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_surface_ext(id,x,y,xscale,yscale,rot,color,alpha)"
     },
 	"draw_surface_stretched_ext": {
         "prefix": "draw_surface_stretched_ext",
         "body": [
-	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${0:alpha})"
+	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${7:alpha})"
 		],
 		"description": "[Function]draw_surface_stretched_ext(id,x,y,w,h,color,alpha)"
     },
 	"draw_surface_tiled_ext": {
         "prefix": "draw_surface_tiled_ext",
         "body": [
-	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
+	    	"draw_surface_tiled_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${7:alpha})"
 		],
 		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha)"
     },
 	"draw_surface_part_ext": {
         "prefix": "draw_surface_part_ext",
         "body": [
-	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${0:alpha})"
+	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${11:alpha})"
 		],
 		"description": "[Function]draw_surface_part_ext(id,left,top,width,height,x,y,xscale,yscale,color,alpha)"
     },
 	"draw_surface_general": {
         "prefix": "draw_surface_general",
         "body": [
-	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${0:alpha})"
+	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${15:alpha})"
 		],
 		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha)"
     }
@@ -594,203 +594,203 @@
 	"make_color_rgb": {
         "prefix": "make_color_rgb",
         "body": [
-	    	"make_color_rgb(${1:red},${2:green},${0:blue})"
+	    	"make_color_rgb(${1:red},${2:green},${3:blue})"
 		],
 		"description": "[Function]make_color_rgb(red,green,blue)"
     },
 	"make_color_hsv": {
         "prefix": "make_color_hsv",
         "body": [
-	    	"make_color_hsv(${1:hue},${2:saturation},${0:value})"
+	    	"make_color_hsv(${1:hue},${2:saturation},${3:value})"
 		],
 		"description": "[Function]make_color_hsv(hue,saturation,value)"
     },
 	"color_get_red": {
         "prefix": "color_get_red",
         "body": [
-	    	"color_get_red(${0:col})"
+	    	"color_get_red(${1:col})"
 		],
 		"description": "[Function]color_get_red(col)"
     },
 	"color_get_green": {
         "prefix": "color_get_green",
         "body": [
-	    	"color_get_green(${0:col})"
+	    	"color_get_green(${1:col})"
 		],
 		"description": "[Function]color_get_green(col)"
     },
 	"color_get_blue": {
         "prefix": "color_get_blue",
         "body": [
-	    	"color_get_blue(${0:col})"
+	    	"color_get_blue(${1:col})"
 		],
 		"description": "[Function]color_get_blue(col)"
     },
 	"color_get_hue": {
         "prefix": "color_get_hue",
         "body": [
-	    	"color_get_hue(${0:col})"
+	    	"color_get_hue(${1:col})"
 		],
 		"description": "[Function]color_get_hue(col)"
     },
 	"color_get_saturation": {
         "prefix": "color_get_saturation",
         "body": [
-	    	"color_get_saturation(${0:col})"
+	    	"color_get_saturation(${1:col})"
 		],
 		"description": "[Function]color_get_saturation(col)"
     },
 	"color_get_value": {
         "prefix": "color_get_value",
         "body": [
-	    	"color_get_value(${0:col})"
+	    	"color_get_value(${1:col})"
 		],
 		"description": "[Function]color_get_value(col)"
     },
 	"merge_color": {
         "prefix": "merge_color",
         "body": [
-	    	"merge_color(${1:col1},${2:col2},${0:amount})"
+	    	"merge_color(${1:col1},${2:col2},${3:amount})"
 		],
 		"description": "[Function]merge_color(col1,col2,amount)"
     },
 	"screen_save": {
         "prefix": "screen_save",
         "body": [
-	    	"screen_save(${0:fname})"
+	    	"screen_save(${1:fname})"
 		],
 		"description": "[Function]screen_save(fname)"
     },
 	"screen_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]screen_save_part(fname,x,y,w,h)"
     },
 	"string_width": {
         "prefix": "string_width",
         "body": [
-	    	"string_width(${0:string})"
+	    	"string_width(${1:string})"
 		],
 		"description": "[Function]string_width(string)"
     },
 	"string_height": {
         "prefix": "string_height",
         "body": [
-	    	"string_height(${0:string})"
+	    	"string_height(${1:string})"
 		],
 		"description": "[Function]string_height(string)"
     },
 	"string_width_ext": {
         "prefix": "string_width_ext",
         "body": [
-	    	"string_width_ext(${1:string},${2:sep},${0:w})"
+	    	"string_width_ext(${1:string},${2:sep},${3:w})"
 		],
 		"description": "[Function]string_width_ext(string,sep,w)"
     },
 	"string_height_ext": {
         "prefix": "string_height_ext",
         "body": [
-	    	"string_height_ext(${1:string},${2:sep},${0:w})"
+	    	"string_height_ext(${1:string},${2:sep},${3:w})"
 		],
 		"description": "[Function]string_height_ext(string,sep,w)"
     },
 	"texture_preload": {
         "prefix": "texture_preload",
         "body": [
-	    	"texture_preload(${0:texid})"
+	    	"texture_preload(${1:texid})"
 		],
 		"description": "[Function]texture_preload(texid)"
     },
 	"texture_set_priority": {
         "prefix": "texture_set_priority",
         "body": [
-	    	"texture_set_priority(${1:texid},${0:prio})"
+	    	"texture_set_priority(${1:texid},${2:prio})"
 		],
 		"description": "[Function]texture_set_priority(texid,prio)"
     },
 	"texture_get_width": {
         "prefix": "texture_get_width",
         "body": [
-	    	"texture_get_width(${0:texid})"
+	    	"texture_get_width(${1:texid})"
 		],
 		"description": "[Function]texture_get_width(texid)"
     },
 	"texture_get_height": {
         "prefix": "texture_get_height",
         "body": [
-	    	"texture_get_height(${0:texid})"
+	    	"texture_get_height(${1:texid})"
 		],
 		"description": "[Function]texture_get_height(texid)"
     },
 	"texture_set_interpolation": {
         "prefix": "texture_set_interpolation",
         "body": [
-	    	"texture_set_interpolation(${0:linear})"
+	    	"texture_set_interpolation(${1:linear})"
 		],
 		"description": "[Function]texture_set_interpolation(linear)"
     },
 	"texture_set_blending": {
         "prefix": "texture_set_blending",
         "body": [
-	    	"texture_set_blending(${0:blend})"
+	    	"texture_set_blending(${1:blend})"
 		],
 		"description": "[Function]texture_set_blending(blend)"
     },
 	"texture_set_repeat": {
         "prefix": "texture_set_repeat",
         "body": [
-	    	"texture_set_repeat(${0:repeat})"
+	    	"texture_set_repeat(${1:repeat})"
 		],
 		"description": "[Function]texture_set_repeat(repeat)"
     },
 	"surface_create": {
         "prefix": "surface_create",
         "body": [
-	    	"surface_create(${1:w},${0:h})"
+	    	"surface_create(${1:w},${2:h})"
 		],
 		"description": "[Function]surface_create(w,h)"
     },
 	"surface_free": {
         "prefix": "surface_free",
         "body": [
-	    	"surface_free(${0:id})"
+	    	"surface_free(${1:id})"
 		],
 		"description": "[Function]surface_free(id)"
     },
 	"surface_exists": {
         "prefix": "surface_exists",
         "body": [
-	    	"surface_exists(${0:id})"
+	    	"surface_exists(${1:id})"
 		],
 		"description": "[Function]surface_exists(id)"
     },
 	"surface_get_width": {
         "prefix": "surface_get_width",
         "body": [
-	    	"surface_get_width(${0:id})"
+	    	"surface_get_width(${1:id})"
 		],
 		"description": "[Function]surface_get_width(id)"
     },
 	"surface_get_height": {
         "prefix": "surface_get_height",
         "body": [
-	    	"surface_get_height(${0:id})"
+	    	"surface_get_height(${1:id})"
 		],
 		"description": "[Function]surface_get_height(id)"
     },
 	"surface_get_texture": {
         "prefix": "surface_get_texture",
         "body": [
-	    	"surface_get_texture(${0:id})"
+	    	"surface_get_texture(${1:id})"
 		],
 		"description": "[Function]surface_get_texture(id)"
     },
 	"surface_set_target": {
         "prefix": "surface_set_target",
         "body": [
-	    	"surface_set_target(${0:id})"
+	    	"surface_set_target(${1:id})"
 		],
 		"description": "[Function]surface_set_target(id)"
     },
@@ -804,252 +804,252 @@
 	"surface_getpixel": {
         "prefix": "surface_getpixel",
         "body": [
-	    	"surface_getpixel(${1:id},${2:x},${0:y})"
+	    	"surface_getpixel(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]surface_getpixel(id,x,y)"
     },
 	"surface_save": {
         "prefix": "surface_save",
         "body": [
-	    	"surface_save(${1:id},${0:fname})"
+	    	"surface_save(${1:id},${2:fname})"
 		],
 		"description": "[Function]surface_save(id,fname)"
     },
 	"surface_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${0:h})"
+	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${6:h})"
 		],
 		"description": "[Function]screen_save_part(id,fname,x,y,w,h)"
     },
 	"surface_copy": {
         "prefix": "surface_copy",
         "body": [
-	    	"surface_copy(${1:destination},${2:x},${3:y},${0:source})"
+	    	"surface_copy(${1:destination},${2:x},${3:y},${4:source})"
 		],
 		"description": "[Function]surface_copy(destination,x,y,source)"
     },
 	"surface_copy_part": {
         "prefix": "surface_copy_part",
         "body": [
-	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${0:hs})"
+	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${8:hs})"
 		],
 		"description": "[Function]surface_copy_part(destination,x,y,source,xs,ys,ws,hs)"
     },
 	"tile_add": {
         "prefix": "tile_add",
         "body": [
-	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${0:depth})"
+	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:depth})"
 		],
 		"description": "[Function]tile_add(background,left,top,width,height,x,y,depth)"
     },
 	"tile_delete": {
         "prefix": "tile_delete",
         "body": [
-	    	"tile_delete(${0:id})"
+	    	"tile_delete(${1:id})"
 		],
 		"description": "[Function]tile_delete(id)"
     },
 	"tile_exists": {
         "prefix": "tile_exists",
         "body": [
-	    	"tile_exists(${0:id})"
+	    	"tile_exists(${1:id})"
 		],
 		"description": "[Function]tile_exists(id)"
     },
 	"tile_get_x": {
         "prefix": "tile_get_x",
         "body": [
-	    	"tile_get_x(${0:id})"
+	    	"tile_get_x(${1:id})"
 		],
 		"description": "[Function]tile_get_x(id)"
     },
 	"tile_get_y": {
         "prefix": "tile_get_y",
         "body": [
-	    	"tile_get_y(${0:id})"
+	    	"tile_get_y(${1:id})"
 		],
 		"description": "[Function]tile_get_y(id)"
     },
 	"tile_get_left": {
         "prefix": "tile_get_left",
         "body": [
-	    	"tile_get_left(${0:id})"
+	    	"tile_get_left(${1:id})"
 		],
 		"description": "[Function]tile_get_left(id)"
     },
 	"tile_get_top": {
         "prefix": "tile_get_top",
         "body": [
-	    	"tile_get_top(${0:id})"
+	    	"tile_get_top(${1:id})"
 		],
 		"description": "[Function]tile_get_top(id)"
     },
 	"tile_get_width": {
         "prefix": "tile_get_width",
         "body": [
-	    	"tile_get_width(${0:id})"
+	    	"tile_get_width(${1:id})"
 		],
 		"description": "[Function]tile_get_width(id)"
     },
 	"tile_get_height": {
         "prefix": "tile_get_height",
         "body": [
-	    	"tile_get_height(${0:id})"
+	    	"tile_get_height(${1:id})"
 		],
 		"description": "[Function]tile_get_height(id)"
     },
 	"tile_get_depth": {
         "prefix": "tile_get_depth",
         "body": [
-	    	"tile_get_depth(${0:id})"
+	    	"tile_get_depth(${1:id})"
 		],
 		"description": "[Function]tile_get_depth(id)"
     },
 	"tile_get_visible": {
         "prefix": "tile_get_visible",
         "body": [
-	    	"tile_get_visible(${0:id})"
+	    	"tile_get_visible(${1:id})"
 		],
 		"description": "[Function]tile_get_visible(id)"
     },
 	"tile_get_xscale": {
         "prefix": "tile_get_xscale",
         "body": [
-	    	"tile_get_xscale(${0:id})"
+	    	"tile_get_xscale(${1:id})"
 		],
 		"description": "[Function]tile_get_xscale(id)"
     },
 	"tile_get_yscale": {
         "prefix": "tile_get_yscale",
         "body": [
-	    	"tile_get_yscale(${0:id})"
+	    	"tile_get_yscale(${1:id})"
 		],
-		"description": "[Function]tile_get_yscale(id"
+		"description": "[Function]tile_get_yscale(id)"
     },
 	"tile_get_background": {
         "prefix": "tile_get_background",
         "body": [
-	    	"tile_get_background(${0:id})"
+	    	"tile_get_background(${1:id})"
 		],
 		"description": "[Function]tile_get_background(id)"
     },
 	"tile_get_blend": {
         "prefix": "tile_get_blend",
         "body": [
-	    	"tile_get_blend(${0:id})"
+	    	"tile_get_blend(${1:id})"
 		],
 		"description": "[Function]tile_get_blend(id)"
     },
 	"tile_get_alpha": {
         "prefix": "tile_get_alpha",
         "body": [
-	    	"tile_get_alpha(${0:id})"
+	    	"tile_get_alpha(${1:id})"
 		],
 		"description": "[Function]tile_get_alpha(id)"
     },
 	"tile_set_position": {
         "prefix": "tile_set_position",
         "body": [
-	    	"tile_set_position(${1:id},${2:x},${0:y})"
+	    	"tile_set_position(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_set_position(id,x,y)"
     },
 	"tile_set_region": {
         "prefix": "tile_set_region",
         "body": [
-	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${0:height})"
+	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${5:height})"
 		],
 		"description": "[Function]tile_set_region(id,left,right,width,height)"
     },
 	"tile_set_background": {
         "prefix": "tile_set_background",
         "body": [
-	    	"tile_set_background(${1:id},${0:background})"
+	    	"tile_set_background(${1:id},${2:background})"
 		],
-		"description": "[Function]tile_set_background((id,background)"
+		"description": "[Function]tile_set_background(id,background)"
     },
 	"tile_set_visible": {
         "prefix": "tile_set_visible",
         "body": [
-	    	"tile_set_visible(${${1:id},${0:visible})"
+	    	"tile_set_visible(${1:id},${2:visible})"
 		],
 		"description": "[Function]tile_set_visible(id,visible)"
     },
 	"tile_set_depth": {
         "prefix": "tile_set_depth",
         "body": [
-	    	"tile_set_depth(${${1:id},${0:depth})"
+	    	"tile_set_depth(${1:id},${2:depth})"
 		],
 		"description": "[Function]tile_set_depth(id,depth)"
     },
 	"tile_set_scale": {
         "prefix": "tile_set_scale",
         "body": [
-	    	"tile_set_scale(${${1:id},${2:xscale},${0:yscale})"
+	    	"tile_set_scale(${1:id},${2:xscale},${3:yscale})"
 		],
 		"description": "[Function]tile_set_scale(id,xscale,yscale)"
     },
 	"tile_set_blend": {
         "prefix": "tile_set_blend",
         "body": [
-	    	"tile_set_blend(${${1:id},${0:blend})"
+	    	"tile_set_blend(${1:id},${2:blend})"
 		],
 		"description": "[Function]tile_set_blend(id,color)"
     },
 	"tile_set_alpha": {
         "prefix": "tile_set_alpha",
         "body": [
-	    	"tile_set_alpha(${${1:id},${0:alpha})"
+	    	"tile_set_alpha(${1:id},${2:alpha})"
 		],
 		"description": "[Function]tile_set_alpha(id,alpha)"
     },
 	"tile_layer_hide": {
         "prefix": "tile_layer_hide",
         "body": [
-	    	"tile_layer_hide(${0:depth})"
+	    	"tile_layer_hide(${1:depth})"
 		],
 		"description": "[Function]tile_layer_hide(depth)"
     },
 	"tile_layer_show": {
         "prefix": "tile_layer_show",
         "body": [
-	    	"tile_layer_show(${0:depth})"
+	    	"tile_layer_show(${1:depth})"
 		],
 		"description": "[Function]tile_layer_show(depth)"
     },
 	"tile_layer_delete": {
         "prefix": "tile_layer_delete",
         "body": [
-	    	"tile_layer_delete(${0:depth})"
+	    	"tile_layer_delete(${1:depth})"
 		],
 		"description": "[Function]tile_layer_delete(depth)"
     },
 	"tile_layer_shift": {
         "prefix": "tile_layer_shift",
         "body": [
-	    	"tile_layer_shift(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_shift(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_shift(depth,x,y)"
     },
 	"tile_layer_find": {
         "prefix": "tile_layer_find",
         "body": [
-	    	"tile_layer_find(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_find(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_find(depth,x,y)"
     },
 	"tile_layer_delete_at": {
         "prefix": "tile_layer_delete_at",
         "body": [
-	    	"tile_layer_delete_at(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_delete_at(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_delete_at(depth,x,y)"
     },
 	"tile_layer_depth": {
         "prefix": "tile_layer_depth",
         "body": [
-	    	"tile_layer_depth(${${1:depth},${0:newdepth})"
+	    	"tile_layer_depth(${1:depth},${2:newdepth})"
 		],
 		"description": "[Function]tile_layer_depth(depth,newdepth)"
     },
@@ -1107,12 +1107,12 @@
         "body": [
 	    	"display_mouse_set()"
 		],
-		"description": "[Function]display_mouse_set(${1:x},${0:y})"
+		"description": "[Function]display_mouse_set(${1:x},${2:y})"
     },
 	"window_set_fullscreen": {
         "prefix": "window_set_fullscreen",
         "body": [
-	    	"window_set_fullscreen(${0:full})"
+	    	"window_set_fullscreen(${1:full})"
 		],
 		"description": "[Function]window_set_fullscreen(full)"
     },
@@ -1126,7 +1126,7 @@
 	"window_set_caption": {
         "prefix": "window_set_caption",
         "body": [
-	    	"window_set_caption(${0:caption})"
+	    	"window_set_caption(${1:caption})"
 		],
 		"description": "[Function]window_set_caption(caption)"
     },
@@ -1140,7 +1140,7 @@
 	"window_set_cursor": {
         "prefix": "window_set_cursor",
         "body": [
-	    	"window_set_cursor(${0:curs})"
+	    	"window_set_cursor(${1:curs})"
 		],
 		"description": "[Function]window_set_cursor(curs)"
     },
@@ -1154,7 +1154,7 @@
 	"window_set_color": {
         "prefix": "window_set_color",
         "body": [
-	    	"window_set_color(${0:color})"
+	    	"window_set_color(${1:color})"
 		],
 		"description": "[Function]window_set_color(color)"
     },
@@ -1168,21 +1168,21 @@
 	"window_set_position": {
         "prefix": "window_set_position",
         "body": [
-	    	"window_set_position(${1:x},${0:y})"
+	    	"window_set_position(${1:x},${2:y})"
 		],
 		"description": "[Function]window_set_position(x,y)"
     },
 	"window_set_size": {
         "prefix": "window_set_size",
         "body": [
-	    	"window_set_size(${1:w},${0:h})"
+	    	"window_set_size(${1:w},${2:h})"
 		],
 		"description": "[Function]window_set_size(w,h)"
     },
 	"window_set_rectangle": {
         "prefix": "window_set_rectangle",
         "body": [
-	    	"window_set_rectangle(${1:x},${2:y},${3:w},${0:h})"
+	    	"window_set_rectangle(${1:x},${2:y},${3:w},${4:h})"
 		],
 		"description": "[Function]window_set_rectangle(x,y,w,h)"
     },
@@ -1238,21 +1238,21 @@
 	"window_mouse_set": {
         "prefix": "window_mouse_set",
         "body": [
-	    	"window_mouse_set(￥{1:x},${0:y})"
+	    	"window_mouse_set(${1:x},${2:y})"
 		],
 		"description": "[Function]window_mouse_set(x,y)"
     },
 	"window_view_mouse_get_x": {
         "prefix": "window_view_mouse_get_x",
         "body": [
-	    	"window_view_mouse_get_x(${0:id})"
+	    	"window_view_mouse_get_x(${1:id})"
 		],
 		"description": "[Function]window_view_mouse_get_x(id)"
     },
 	"window_view_mouse_get_y": {
         "prefix": "window_view_mouse_get_y",
         "body": [
-	    	"window_view_mouse_get_y(${0:id})"
+	    	"window_view_mouse_get_y(${1:id})"
 		],
 		"description": "[Function]window_view_mouse_get_y(id)"
     },
@@ -2113,35 +2113,35 @@
 	"external_define": {
         "prefix": "external_define",
         "body": [
-	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${0:arg2tupe}, ...)"
+	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${7:arg2tupe}, ...)"
 		],
 		"description": "[Function]external_define(dll,name,calltype,restype,argnumb,arg1type,arg2type, ...)"
     },
 	"external_call": {
         "prefix": "external_call",
         "body": [
-	    	"external_call(${1:id},${2:arg1},${0:arg2}, ...)"
+	    	"external_call(${1:id},${2:arg1},${3:arg2}, ...)"
 		],
 		"description": "[Function]external_call(id,arg1,arg2, ...)"
     },
 	"external_free": {
         "prefix": "external_free",
         "body": [
-	    	"external_free(${0:dll})"
+	    	"external_free(${1:dll})"
 		],
 		"description": "[Function]external_free(dll)"
     },
 	"execute_string": {
         "prefix": "execute_string",
         "body": [
-	    	"execute_string(${1:str},${2:arg1},${0:arg2}, ...)"
+	    	"execute_string(${1:str},${2:arg1},${3:arg2}, ...)"
 		],
 		"description": "[Function]execute_string(str,arg0,arg1, ...)"
     },
 	"execute_file": {
         "prefix": "execute_file",
         "body": [
-	    	"execute_file(${0:fname})"
+	    	"execute_file(${1:fname})"
 		],
 		"description": "[Function]execute_file(fname)"
     },

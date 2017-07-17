@@ -7,6 +7,10 @@
         {
             "include": "text.xml",
             "name": "text.xml.gmx"
+        },
+        {
+            "include": "source.gml-gms",
+            "name": "source.gml-gms.gmx"
         }
     ]
 }

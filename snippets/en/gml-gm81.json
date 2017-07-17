@@ -3,7 +3,7 @@
         "prefix": "n",
         "body": [
 	    	"{",
-			"\t${0:STATEMENT}",
+			"\t${1:STATEMENT}",
 			"}"
 		],
 		"description": "Normal block"
@@ -12,7 +12,7 @@
         "prefix": "if",
         "body": [
 	    	"if (${1:CONDITION}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "If block"
@@ -48,8 +48,8 @@
 		"prefix": "do",
 		"body": [
 			"do {",
-			"\t${0:STATEMENT}",
-			"} until (${1:${2:$a} <= ${3:10}});"
+			"\t${1:STATEMENT}",
+			"} until (${2:${3:$a} <= ${4:10}});"
 		],
 		"description": "Do-until loop"
 	},
@@ -57,7 +57,7 @@
 		"prefix": "for",
 		"body": [
         "for (${1:INITIALISATION}; ${2:CONDITION}; ${3:INCREMENT}) { ",
-			"\t${0:STATEMENT}",
+			"\t${4:STATEMENT}",
 			"}"
 		],
 		"description": "For-loop"
@@ -66,7 +66,7 @@
 		"prefix": "fori",
 		"body": [
 			"for (${1:i}=${2:0}; ${1:i} < ${2:CONDITION}; ${1:i}++) { ",
-			"\t${0:STATEMENT}",
+			"\t${3:STATEMENT}",
 			"}"
 		],
 		"description": "For-i-loop"
@@ -75,7 +75,7 @@
 		"prefix": "while",
 		"body": [
 			"while (${1:$a <= 10}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "While-loop"
@@ -84,7 +84,7 @@
 		"prefix": "repeat",
 		"body": [
 	    	"repeat (${1:EXPRESSION}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "Repeat-loop"
@@ -93,7 +93,7 @@
         "prefix": "with",
         "body": [
             "with (${1:EXPRESSION}) {",
-            "\t${0:STATEMENT}",
+            "\t${2:STATEMENT}",
             "}"
         ],
         "description": "With structure"
@@ -105,133 +105,133 @@
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
-	    	"draw_text(${1:x},${2:y},${0:string})"
+	    	"draw_text(${1:x},${2:y},${3:string})"
 		],
 		"description": "[Function]draw_text(x,y,string) \nDraws the string at position (x,y), using the drawing color and alpha. A # symbol or carriage return chr(13) or linefeed chr(10) are interpreted as newline characters. In this way you can draw multi-line texts. (Use \\# to get the # symbol itself.)"
     },
 	"draw_text_ext": {
         "prefix": "draw_text_ext",
         "body": [
-	    	"draw_text_ext(${1:x},${2:y},${0:string})"
+	    	"draw_text_ext(${1:x},${2:y},${3:string})"
 		],
 		"description": "[Function]draw_text_ext(x,y,string) \nSimilar to the previous routine but you can specify two more things. First of all, sep indicates the separation distance between the lines of text in a multiline text. Use -1 to get the default distance. Use w to indicate the width of the text in pixels. Lines that are longer than this width are split- up at spaces or - signs. Use -1 to not split up lines."
     },
 	"draw_arrow": {
         "prefix": "draw_arrow",
         "body": [
-	    	"draw_arrow(${1:x1},${2:y1},${3:x2},${4:y2},${0:size})"
+	    	"draw_arrow(${1:x1},${2:y1},${3:x2},${4:y2},${5:size})"
 		],
 		"description": "[Function]draw_arrow(x1,y1,x2,y2,size) \nDraws an arrow from (x1,y1) to (x2,y2). size indicates the size of the arrow in pixels."
     },
 	"draw_button": {
         "prefix": "draw_button",
         "body": [
-	    	"draw_button(${1:x1},${2:y1},${3:x2},${4:y2},${0:up})"
+	    	"draw_button(${1:x1},${2:y1},${3:x2},${4:y2},${5:up})"
 		],
 		"description": "[Function]draw_button(x1,y1,x2,y2,up) \nDraws a button, up indicates whether up (1) or down (0)."
     },
 	"draw_path": {
         "prefix": "draw_path",
         "body": [
-	    	"draw_path(${1:path},${2:x},${3:y},${0:absolute})"
+	    	"draw_path(${1:path},${2:x},${3:y},${4:absolute})"
 		],
 		"description": "[Function]draw_path(path,x,y,absolute) \nWith this function you can draw the indicated path in the room with its start at position (x,y). If absolute is true the path is drawn at the position where it was defined and the values of x and y are ignored."
     },
 	"draw_healthbar": {
         "prefix": "draw_healthbar",
         "body": [
-	    	"draw_healthbar(${1:x1},${2:y1},${3:x2},${4:y2},${5:amount},${6:backcol},${7:mincol},${8:maxcol},${9:direction},${10:showback},${0:showborder})"
+	    	"draw_healthbar(${1:x1},${2:y1},${3:x2},${4:y2},${5:amount},${6:backcol},${7:mincol},${8:maxcol},${9:direction},${10:showback},${11:showborder})"
 		],
 		"description": "[Function]draw_healthbar(x1,y1,x2,y2,amount,backcol,mincol,maxcol,direction,showback,showborder) \nWith this function you can draw a healthbar (or any other bar that indicates some value, like e.g. the damage). The arguments x1, y1, x2 and y2 indicate the total area for the bar. amount indicates the percentage of the bar that must be filled (must lie between 0 and 100). backcol is the color of the background for the bar. mincol and maxcol indicate the color when the amount is 0 and 100 respectively. For an amount in between the color is interpolated. So you can easily make a bar that goes e.g. from green to red. The direction is the direction in which the bar is drawn. 0 indicates that the bar is anchored at the left, 1 at the right, 2 at the top and 3 at the bottom. Finally showback indicates whether a background box must be shown and showborder indicated whether the box and bar should have a black border line."
     },
 	"draw_clear": {
         "prefix": "draw_clear",
         "body": [
-	    	"draw_clear(${0:col})"
+	    	"draw_clear(${1:col})"
 		],
 		"description": "[Function]draw_clear(col) \nClears the entire room in the given color (no alpha blending)."
     },
 	"draw_clear_alpha": {
         "prefix": "draw_clear_alpha",
         "body": [
-	    	"draw_clear_alpha(${1:col},${0:alpha})"
+	    	"draw_clear_alpha(${1:col},${2:alpha})"
 		],
 		"description": "[Function]draw_clear_alpha(col,alpha) \nClears the entire room in the given color and alpha value (in particular useful for surfaces)."
     },
 	"draw_point": {
         "prefix": "draw_point",
         "body": [
-	    	"draw_point(${1:x},${0:y})"
+	    	"draw_point(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_point(x,y) \nDraws a point at (x,y) in the current color."
     },
 	"draw_line": {
         "prefix": "draw_line",
         "body": [
-	    	"draw_line(${1:x1},${2:y1},${3:x2},${0:y2})"
+	    	"draw_line(${1:x1},${2:y1},${3:x2},${4:y2})"
 		],
 		"description": "[Function]draw_line(x1,y1,x2,y2) \nDraws a line from (x1,y1) to (x2,y2)."
     },
 	"draw_line_width": {
         "prefix": "draw_line_width(x1,y1,x2,y2)",
         "body": [
-	    	"draw_line_width(${1:x1},${2:y1},${3:x2},${4:y2},${0:w})"
+	    	"draw_line_width(${1:x1},${2:y1},${3:x2},${4:y2},${5:w})"
 		],
 		"description": "[Function]draw_line_width(x1,y1,x2,y2,w) \nDraws a line from (x1,y1) to (x2,y2) with width w."
     },
 	"draw_rectangle": {
         "prefix": "draw_rectangle",
         "body": [
-	    	"draw_rectangle(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_rectangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_rectanglet(x1,y1,x2,y2,outline) \nDraws a rectangle. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_roundrect": {
         "prefix": "draw_roundrect",
         "body": [
-	    	"draw_roundrect(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_roundrect(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_roundrect(x1,y1,x2,y2,outline) \nDraws a rounded rectangle. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_triangle": {
         "prefix": "draw_triangle",
         "body": [
-	    	"draw_triangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3},${0:outline})"
+	    	"draw_triangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3},${7:outline})"
 		],
 		"description": "[Function]draw_triangle(x1,y1,x2,y2,x3,y3,outline) \nDraws a triangle. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_circle": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_circle(${1:x},${2:y},${3:r},${4:outline})"
 		],
 		"description": "[Function]draw_circle(x,y,r,outline) \nDraws a circle at (x,y) with radius r. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_ellipse": {
         "prefix": "draw_ellipse",
         "body": [
-	    	"draw_ellipse(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_ellipse(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_ellipse(x1,y1,x2,y2,outline) \nDraws an ellipse. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_set_circle_precision": {
         "prefix": "draw_set_circle_precision",
         "body": [
-	    	"draw_set_circle_precision(${0:precision})"
+	    	"draw_set_circle_precision(${1:precision})"
 		],
 		"description": "[Function]draw_set_circle_precision(precision) \nSets the precision with which circles are drawn, that is, the number of segments they consist of. The precision must lie between 4 and 64 and must be dividable by 4. This is also used for drawing ellipses and rounded rectangles."
     },
 	"draw_set_color": {
         "prefix": "draw_set_color",
         "body": [
-	    	"draw_set_color(${0:col})"
+	    	"draw_set_color(${1:col})"
 		],
 		"description": "[Function]draw_set_color(col) \nSets the drawing color to be used from now on for drawing primitives."
     },
 	"draw_set_alpha": {
         "prefix": "draw_set_alpha",
         "body": [
-	    	"draw_set_alpha(${0:alpha})"
+	    	"draw_set_alpha(${1:alpha})"
 		],
 		"description": "[Function]draw_set_alpha(alpha) \nSets the alpha transparency value to be used from now on for drawing primitives. Should lie in the range 0-1. 0 is fully transparent, 1 is fully opaque."
     },
@@ -252,238 +252,238 @@
 	"draw_getpixel": {
         "prefix": "draw_getpixel",
         "body": [
-	    	"draw_getpixel(${1:x},${0:y})"
+	    	"draw_getpixel(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_getpixel(x,y) \nReturns the color of the pixel corresponding to position (x,y) in the room. This is not very fast, so use with care."
     },
 	"draw_sprite": {
         "prefix": "draw_sprite",
         "body": [
-	    	"draw_sprite(${1:sprite},${2:subimg},${3:x},${0:y})"
+	    	"draw_sprite(${1:sprite},${2:subimg},${3:x},${4:y})"
 		],
 		"description": "[Function]draw_sprite(sprite,subimg,x,y) \nDraws subimage subimg (-1 = current) of the sprite with its origin at position (x,y). (Without color blending and no alpha transparency.)"
     },
 	"draw_sprite_stretched": {
         "prefix": "draw_sprite_stretched",
         "body": [
-	    	"draw_sprite_stretched(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${0:h})"
+	    	"draw_sprite_stretched(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h})"
 		],
 		"description": "[Function]draw_sprite_stretched(sprite,subimg,x,y,w,h) \nDraws the sprite stretched so that it fills the region with top-left corner (x,y) and width w and height h."
     },
 	"draw_sprite_tiled": {
         "prefix": "draw_sprite_tiled",
         "body": [
-	    	"draw_sprite_tiled(${1:sprite},${2:subimg},${3:x},${0:y})"
+	    	"draw_sprite_tiled(${1:sprite},${2:subimg},${3:x},${4:y})"
 		],
 		"description": "[Function]draw_sprite_tiled(sprite,subimg,x,y) \nDraws the sprite tiled so that it fills the entire room. (x,y) is the place where one of the sprites is drawn."
     },
 	"draw_sprite_part": {
         "prefix": "draw_sprite_part",
         "body": [
-	    	"draw_sprite_part(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${0:y})"
+	    	"draw_sprite_part(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y})"
 		],
 		"description": "[Function]draw_sprite_part(sprite,subimg,left,top,width,height,x,y) \nDraws the indicated part of subimage subimg (-1 = current) of the sprite with the top-left corner of the part at position (x,y)."
     },
 	"draw_background": {
         "prefix": "draw_background",
         "body": [
-	    	"draw_background(${1:back},${2:x},${0:y})"
+	    	"draw_background(${1:back},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_background(back,x,y) \nDraws the background at position (x,y). (Without color blending and no alpha transparency.)"
     },
 	"draw_background_stretched": {
         "prefix": "draw_background_stretched",
         "body": [
-	    	"draw_background_stretched(${1:back},${2:x},${3:y},${4:w},${0:h})"
+	    	"draw_background_stretched(${1:back},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]draw_background_stretched(back,x,y,w,h) \nDraws the background stretched to the indicated region."
     },
 	"draw_background_tiled": {
         "prefix": "draw_background_tiled",
         "body": [
-	    	"draw_background_tiled(${1:back},${2:x},${0:y})"
+	    	"draw_background_tiled(${1:back},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_background_tiled(back,x,y) \nDraws the background tiled so that it fills the entire room."
     },
 	"draw_background_part": {
         "prefix": "draw_background_part",
         "body": [
-	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y})"
 		],
 		"description": "[Function]draw_background_part(x,y,r,outline) \nDraws the indicated part of the background with the top-left corner of the part at position (x,y)."
     },
 	"draw_sprite_ext": {
         "prefix": "draw_sprite_ext",
         "body": [
-	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${0:alpha})"
+	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${9:alpha})"
 		],
 		"description": "[Function]draw_sprite_ext(sprite,subimg,x,y,xscale,yscale,rot,color,alpha) \nDraws the sprite scaled with factors xscale and yscale and rotated counterclockwise over rot degrees. color is the blending color (use c_white for no blending) and alpha indicates the transparency factor with which the images is merged with its background. A value of 0 makes the sprite completely transparent. A value of 1 makes it completely solid. This function can create great effect (for example partially transparent explosions)."
     },
 	"draw_sprite_stretched_ext": {
         "prefix": "draw_sprite_stretched_ext",
         "body": [
-	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${0:alpha})"
+	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_sprite_stretched_ext(sprite,subimg,x,y,w,h,color,alpha) \nDraws the sprite stretched so that it fills the region with top-left corner (x,y) and width w and height h. color is the blending color and alpha indicates the transparency setting."
     },
 	"draw_sprite_tiled_ext": {
         "prefix": "draw_sprite_tiled_ext",
         "body": [
-	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${0:alpha})"
+	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_circle(sprite,subimg,x,y,xscale,yscale,color,alpha) \nDraws the sprite tiled so that it fills the entire room but now with scale factors and a color and transparency setting."
     },
 	"draw_sprite_part_ext": {
         "prefix": "draw_sprite_part_ext",
         "body": [
-	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${0:alpha})"
+	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${12:alpha})"
 		],
 		"description": "[Function]draw_sprite_part_ext(sprite,subimg,left,top,width,height,x,y,xscale,yscale,color,alpha) \nDraws the indicated part of subimage subimg (-1 = current) of the sprite with the top-left corner of the part at position (x,y) but now with scale factors and a color and transparency setting."
     },
 	"draw_sprite_general": {
         "prefix": "draw_sprite_general",
         "body": [
-	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${0:alpha})"
+	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${16:alpha})"
 		],
 		"description": "[Function]draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \nThe most general drawing function. It draws the indicated part of subimage subimg (-1 = current) of the sprite with the top-left corner of the part at position (x,y) but now with scale factors, a rotation angle, a color for each of the four vertices (top-left, top-right, bottom-right, and bottom-left), and an alpha transparency value. Note that rotation takes place around the top-left corner of the part."
     },
 	"draw_set_font": {
         "prefix": "draw_set_font",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_set_font(${1:font})"
 		],
 		"description": "[Function]draw_set_font(font) \nSets the font that will be used when drawing text. Use -1 to set the default font (Arial 12)."
     },
 	"draw_set_halign": {
         "prefix": "draw_set_halign",
         "body": [
-	    	"draw_set_halign(${0:halign})"
+	    	"draw_set_halign(${1:halign})"
 		],
 		"description": "[Function]draw_set_halign(halign) \nSets the horizontal alignment used when drawing text. Choose one of the following constants as values: \nfa_left \nfa_center \nfa_right "
     },
 	"draw_set_valign": {
         "prefix": "draw_set_valign",
         "body": [
-	    	"draw_set_valign(${0:valign})"
+	    	"draw_set_valign(${1:valign})"
 		],
 		"description": "[Function]draw_set_valign(valign) \nSets the vertical alignment used when drawing text. Choose one of the following constants as values: \nfa_top \nfa_middle \nfa_bottom "
     },
 	"draw_text_transformed": {
         "prefix": "draw_text_transformed",
         "body": [
-	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${0:angle})"
+	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle})"
 		],
 		"description": "[Function]draw_text_transformed(x,y,string,xscale,yscale,angle) \nDraws the string at position (x,y) in the same way as above, but scale it horizontally and vertically with the indicated factors and rotate it counter-clockwise over angle degrees."
     },
 	"draw_text_ext_transformed": {
         "prefix": "draw_text_ext_transformed",
         "body": [
-	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${0:angle})"
+	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle})"
 		],
 		"description": "[Function]draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \nCombines the function draw_text_ext and draw_text_transformed. It makes it possible to draw a multi-line text rotated and scaled."
     },
 	"draw_text_color": {
         "prefix": "draw_text_color",
         "body": [
-	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${0:alpha})"
+	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${8:alpha})"
 		],
 		"description": "[Function]draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \nDraws the string at position (x,y) like above. The four colors specify the colors of the top-left, top-right, bottom-right, and bottom-left corner of the text. alpha is the alpha transparency to be used (0-1)."
     },
 	"draw_text_ext_color": {
         "prefix": "draw_text_ext_color",
         "body": [
-	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${0:alpha})"
+	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${10:alpha})"
 		],
 		"description": "[Function]draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \nSimilar to draw_text_ext() but with colored vertices."
     },
 	"draw_text_transformed_color": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${0:alpha})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${11:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \nSimilar to draw_text_transformed() but with colored vertices."
     },
 	"draw_text_ext_transformed_color": {
         "prefix": "draw_text_transformed_color",
         "body": [
-	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${13:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \nSimilar to draw_text_ext_transformed() but with colored vertices."
     },
 	"draw_point_color": {
         "prefix": "draw_point_color",
         "body": [
-	    	"draw_point_color(${1:x},${2:y},${0:col1})"
+	    	"draw_point_color(${1:x},${2:y},${3:col1})"
 		],
 		"description": "[Function]draw_point_color(x,y,col1) \nDraws a point at (x,y) in the given color."
     },
 	"draw_line_color": {
         "prefix": "draw_line_color",
         "body": [
-	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${0:col2})"
+	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2})"
 		],
 		"description": "[Function]draw_line_color(x1,y1,x2,y2,col1,col2) \nDraws a line from (x1,y1) to (x2,y2), interpolating the color between col1 and col2."
     },
 	"draw_line_width_color": {
         "prefix": "draw_line_width_color",
         "body": [
-	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${0:col2})"
+	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${7:col2})"
 		],
 		"description": "[Function]draw_line_width_color(x1,y1,x2,y2,w,col1,col2) \nDraws a line from (x1,y1) to (x2,y2) with width w interpolating the color between col1 and col2."
     },
 	"draw_rectangle_color": {
         "prefix": "draw_rectangle_color",
         "body": [
-	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${0:outline})"
+	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${9:outline})"
 		],
 		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline) \nDraws a rectangle. The four colors indicated the colors at the top-left, top-right, bottom-right, and bottom-left vertex. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_roundrect_color": {
         "prefix": "draw_roundrect_color",
         "body": [
-	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:outline})"
 		],
 		"description": "[Function]draw_roundrect_color(x1,y1,x2,y2,col1,col2,outline) \nDraws a rounded rectangle. col1 is the color in the middle and col2 the color at the boundary. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_triangle_color": {
         "prefix": "draw_triangle_color",
         "body": [
-	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${0:outline})"
+	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${10:outline})"
 		],
 		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline) \nDraws a triangle. The three colors are the colors of the three vertices which is interpolated over the triangle. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_circle_color": {
         "prefix": "draw_circle_color",
         "body": [
-	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${0:outline})"
+	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${5:outline})"
 		],
 		"description": "[Function]draw_circle_color(x,y,r,col1,col2,outline) \nDraws a circle at (x,y) with radius r. col1 is the color in the middle and col2 the color at the boundary. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_ellipse_color": {
         "prefix": "draw_ellipse_color",
         "body": [
-	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:outline})"
 		],
 		"description": "[Function]draw_ellipse_color(x1,y1,x2,y2,col1,col2,outline) \nDraws an ellipse. col1 is the color in the middle and col2 the color at the boundary. outline indicates whether only the outline must be drawn (true) or it should be filled (false)."
     },
 	"draw_primitive_begin": {
         "prefix": "draw_primitive_begin",
         "body": [
-	    	"draw_primitive_begin(${0:kind})"
+	    	"draw_primitive_begin(${1:kind})"
 		],
 		"description": "[Function]draw_primitive_begin(kind) \nStart a primitive of the indicated kind."
     },
 	"draw_vertex": {
         "prefix": "draw_vertex",
         "body": [
-	    	"draw_vertex(${1:x},${0:y})"
+	    	"draw_vertex(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_vertex(x,y) \nAdd vertex (x,y) to the primitive, using the color and alpha value set before."
     },
 	"draw_vertex_color": {
         "prefix": "draw_vertex_color",
         "body": [
-	    	"draw_vertex_color(${1:x},${2:y},${3:col},${0:alpha})"
+	    	"draw_vertex_color(${1:x},${2:y},${3:col},${4:alpha})"
 		],
 		"description": "[Function]draw_vertex_color(x,y,col,alpha) \nAdd vertex (x,y) to the primitive, with its own color and alpha value. This allows you to create primitives with smoothly changing color and alpha values."
     },
@@ -497,98 +497,98 @@
 	"draw_primitive_begin_texture": {
         "prefix": "draw_primitive_begin_texture",
         "body": [
-	    	"draw_primitive_begin_texture(${1:kind},${0:texid})"
+	    	"draw_primitive_begin_texture(${1:kind},${2:texid})"
 		],
 		"description": "[Function]draw_primitive_begin_texture(kind,texid) \nStart a primitive of the indicated kind with the given texture."
     },
 	"draw_vertex_texture": {
         "prefix": "draw_vertex_texture",
         "body": [
-	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${0:ytex})"
+	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${4:ytex})"
 		],
 		"description": "[Function]draw_vertex_texture(x,y,xtex,ytex) \nAdd vertex (x,y) to the primitive with position (xtex,ytex) in the texture, blending with the color and alpha value set before. xtex and ytex should normally lie between 0 and 1 but also larger values can be used, leading to a repetition of the texture (see below)."
     },
 	"draw_vertex_texture_color": {
         "prefix": "draw_vertex_texture_color",
         "body": [
-	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${0:alpha})"
+	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${6:alpha})"
 		],
 		"description": "[Function]draw_vertex_texture_color(x,y,xtex,ytex,col,alpha) \nAdd vertex (x,y) to the primitive with position (xtex,ytex) in the texture, blending with its own color and alpha value."
     },
 	"draw_set_blend_mode": {
         "prefix": "draw_set_blend_mode",
         "body": [
-	    	"draw_set_blend_mode(${0:mode})"
+	    	"draw_set_blend_mode(${1:mode})"
 		],
 		"description": "[Function]draw_set_blend_mode(mode) \nIndicates what blend mode to use. The following values are possible: bm_normal, bm_add, bm_subtract, and bm_max. Don't forget to reset the mode to normal after use because otherwise also other sprites and even the backgrounds are drawn with the new blend mode."
     },
 	"draw_set_blend_mode_ext": {
         "prefix": "draw_set_blend_mode_ext",
         "body": [
-	    	"draw_set_blend_mode_ext(${1:src},${0:dest})"
+	    	"draw_set_blend_mode_ext(${1:src},${2:dest})"
 		],
 		"description": "[Function]draw_set_blend_mode_ext(font) \nIndicates what blend mode to use for both the source and destination color. The new color is some factor times the source and another factor times the destination. These factors are set with this function. To understand this, the source and destination both have a red, green, blue, and alpha component. So the source is (Rs, Gs, Bs, As) and the destination is (Rd, Gd, Bd, Ad). All are considered to lie between 0 and 1. The blend factors you can choose for source and destination are:  \nbm_zero: Blend factor is  (0, 0, 0, 0). \nbm_one: Blend factor is  (1, 1, 1, 1). \nbm_src_color: Blend factor is (Rs, Gs, Bs, As). \nbm_inv_src_color: Blend factor is (1–Rs, 1–Gs, 1–Bs, 1–As). \nbm_src_alpha: Blend factor is (As, As, As, As). \nbm_inv_src_alpha: Blend factor is (1–As, 1–As, 1–As, 1–As). \nbm_dest_alpha: Blend factor is (Ad, Ad, Ad, Ad). \nbm_inv_dest_alpha: Blend factor is (1–Ad, 1–Ad, 1–Ad, 1–Ad). \nbm_dest_color: Blend factor is (Rd, Gd, Bd, Ad). \nbm_inv_dest_color: Blend factor is (1–Rd, 1–Gd, 1–Bd, 1–Ad). \nbm_src_alpha_sat: Blend factor is (f, f, f, 1); f = min(As, 1–Ad). \nFor example, the normal blending mode sets the source blending to bm_src_alpha and the destination blending to bm_inv_src_alpha. Don't forget to reset the mode to normal after use because otherwise also other sprites and even the backgrounds are drawn with the new blend mode."
     },
 	"draw_surface": {
         "prefix": "draw_surface",
         "body": [
-	    	"draw_surface(${1:id},${2:x},${0:y})"
+	    	"draw_surface(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_surface(id,x,y) \nDraws the surface at position (x,y). (Without color blending and no alpha transparency.)"
     },
 	"draw_surface_stretched": {
         "prefix": "draw_surface_stretched",
         "body": [
-	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${0:h})"
+	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]draw_surface_stretched(id,x,y,w,h) \nDraws the surface stretched to the indicated region."
     },
 	"draw_surface_tiled": {
         "prefix": "draw_surface_tiled",
         "body": [
-	    	"draw_surface_tiled(${1:id},${2:x},${0:y})"
+	    	"draw_surface_tiled(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_surface_tiled(id,x,y) \nDraws the surface tiled so that it fills the entire room."
     },
 	"draw_surface_part": {
         "prefix": "draw_surface_part",
         "body": [
-	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y})"
 		],
 		"description": "[Function]draw_surface_part(id,left,top,width,height,x,y) \nDraws the indicated part of the surface with its origin at position (x,y)."
     },
 	"draw_surface_ext": {
         "prefix": "draw_surface_ext",
         "body": [
-	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${0:alpha})"
+	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_surface_ext(id,x,y,xscale,yscale,rot,color,alpha) \nDraws the surface scaled and rotated with blending color (use c_white for no blending) and transparency alpha (0-1)."
     },
 	"draw_surface_stretched_ext": {
         "prefix": "draw_surface_stretched_ext",
         "body": [
-	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${0:alpha})"
+	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${7:alpha})"
 		],
 		"description": "[Function]draw_surface_stretched_ext(id,x,y,w,h,color,alpha) \nDraws the surface stretched to the indicated region. color is the blending color and alpha indicates the transparency setting."
     },
 	"draw_surface_tiled_ext": {
         "prefix": "draw_surface_tiled_ext",
         "body": [
-	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
+	    	"draw_surface_tiled_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${7:alpha})"
 		],
 		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \nDraws the surface tiled so that it fills the entire room but now with scale factors and a color and transparency setting."
     },
 	"draw_surface_part_ext": {
         "prefix": "draw_surface_part_ext",
         "body": [
-	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${0:alpha})"
+	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${11:alpha})"
 		],
 		"description": "[Function]draw_surface_part_ext(id,left,top,width,height,x,y,xscale,yscale,color,alpha) \nDraws the surface tiled so that it fills the entire room but now with scale factors and a color and transparency setting."
     },
 	"draw_surface_general": {
         "prefix": "draw_surface_general",
         "body": [
-	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${0:alpha})"
+	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${15:alpha})"
 		],
 		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \nThe most general drawing function. It draws the indicated part of the surface with its origin at position (x,y) but now with scale factors, a rotation angle, a color for each of the four vertices (top-left, top-right, bottom-right, and bottom-left), and an alpha transparency value."
     }
@@ -596,203 +596,203 @@
 	"make_color_rgb": {
         "prefix": "make_color_rgb",
         "body": [
-	    	"make_color_rgb(${1:red},${2:green},${0:blue})"
+	    	"make_color_rgb(${1:red},${2:green},${3:blue})"
 		],
 		"description": "[Function]make_color_rgb(red,green,blue) \nReturns a color with the indicated red, green, and blue components, where red, green and blue must be values between 0 and 255."
     },
 	"make_color_hsv": {
         "prefix": "make_color_hsv",
         "body": [
-	    	"make_color_hsv(${1:hue},${2:saturation},${0:value})"
+	    	"make_color_hsv(${1:hue},${2:saturation},${3:value})"
 		],
 		"description": "[Function]make_color_hsv(hue,saturation,value) \nReturns a color with the indicated hue, saturation and value components (each between 0 and 255)."
     },
 	"color_get_red": {
         "prefix": "color_get_red",
         "body": [
-	    	"color_get_red(${0:col})"
+	    	"color_get_red(${1:col})"
 		],
 		"description": "[Function]color_get_red(col) \nReturns the red component of the color."
     },
 	"color_get_green": {
         "prefix": "color_get_green",
         "body": [
-	    	"color_get_green(${0:col})"
+	    	"color_get_green(${1:col})"
 		],
 		"description": "[Function]color_get_green(col) \nReturns the green component of the color."
     },
 	"color_get_blue": {
         "prefix": "color_get_blue",
         "body": [
-	    	"color_get_blue(${0:col})"
+	    	"color_get_blue(${1:col})"
 		],
 		"description": "[Function]color_get_blue(col) \nReturns the blue component of the color."
     },
 	"color_get_hue": {
         "prefix": "color_get_hue",
         "body": [
-	    	"color_get_hue(${0:col})"
+	    	"color_get_hue(${1:col})"
 		],
 		"description": "[Function]color_get_hue(col) \nReturns the hue component of the color."
     },
 	"color_get_saturation": {
         "prefix": "color_get_saturation",
         "body": [
-	    	"color_get_saturation(${0:col})"
+	    	"color_get_saturation(${1:col})"
 		],
 		"description": "[Function]color_get_saturation(col) \nReturns the saturation component of the color."
     },
 	"color_get_value": {
         "prefix": "color_get_value",
         "body": [
-	    	"color_get_value(${0:col})"
+	    	"color_get_value(${1:col})"
 		],
 		"description": "[Function]color_get_value(col) \nReturns the value component of the color."
     },
 	"merge_color": {
         "prefix": "merge_color",
         "body": [
-	    	"merge_color(${1:col1},${2:col2},${0:amount})"
+	    	"merge_color(${1:col1},${2:col2},${3:amount})"
 		],
 		"description": "[Function]merge_color(col1,col2,amount) \nReturns a merged color of col1 and col2. The merging is determined by amount. A value of 0 corresponds to col1, a value of 1 to col2, and values in between to merged values."
     },
 	"screen_save": {
         "prefix": "screen_save",
         "body": [
-	    	"screen_save(${0:fname})"
+	    	"screen_save(${1:fname})"
 		],
 		"description": "[Function]screen_save(fname) \nSaves a png image of the screen in the given filename. Useful for making screenshots."
     },
 	"screen_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]screen_save_part(fname,x,y,w,h) \nSaves part of the screen in the given png filename."
     },
 	"string_width": {
         "prefix": "string_width",
         "body": [
-	    	"string_width(${0:string})"
+	    	"string_width(${1:string})"
 		],
 		"description": "[Function]string_width(string) \nWidth of the string in the current font as it would be drawn using the draw_text() function. Can be used for precisely positioning graphics."
     },
 	"string_height": {
         "prefix": "string_height",
         "body": [
-	    	"string_height(${0:string})"
+	    	"string_height(${1:string})"
 		],
 		"description": "[Function]string_height(string) \nHeight of the string in the current font as it would be drawn using the draw_text() function."
     },
 	"string_width_ext": {
         "prefix": "string_width_ext",
         "body": [
-	    	"string_width_ext(${1:string},${2:sep},${0:w})"
+	    	"string_width_ext(${1:string},${2:sep},${3:w})"
 		],
 		"description": "[Function]string_width_ext(string,sep,w) \nWidth of the string in the current font as it would be drawn using the draw_text_ext() function. Can be used for precisely positioning graphics."
     },
 	"string_height_ext": {
         "prefix": "string_height_ext",
         "body": [
-	    	"string_height_ext(${1:string},${2:sep},${0:w})"
+	    	"string_height_ext(${1:string},${2:sep},${3:w})"
 		],
 		"description": "[Function]string_height_ext(string,sep,w) \nHeight of the string in the current font as it would be drawn using the draw_text_ext() function."
     },
 	"texture_preload": {
         "prefix": "texture_preload",
         "body": [
-	    	"texture_preload(${0:texid})"
+	    	"texture_preload(${1:texid})"
 		],
 		"description": "[Function]texture_preload(texid) \nPuts the texture immediately into video memory."
     },
 	"texture_set_priority": {
         "prefix": "texture_set_priority",
         "body": [
-	    	"texture_set_priority(${1:texid},${0:prio})"
+	    	"texture_set_priority(${1:texid},${2:prio})"
 		],
 		"description": "[Function]texture_set_priority(texid,prio) \nWhen there is too little video memory some will be removed temporarily to make room for others that are needed. The ones with lowest priority are removed first. Default, all have priority 0 but you can change the priority here. (Use positive values!)"
     },
 	"texture_get_width": {
         "prefix": "texture_get_width",
         "body": [
-	    	"texture_get_width(${0:texid})"
+	    	"texture_get_width(${1:texid})"
 		],
 		"description": "[Function]texture_get_width(texid) \nReturns the width of the texture with the given id. The width lies in the range 0-1."
     },
 	"texture_get_height": {
         "prefix": "texture_get_height",
         "body": [
-	    	"texture_get_height(${0:texid})"
+	    	"texture_get_height(${1:texid})"
 		],
 		"description": "[Function]texture_get_height(texid) \nReturns the height of the texture with the given id. The height lies in the range 0-1."
     },
 	"texture_set_interpolation": {
         "prefix": "texture_set_interpolation",
         "body": [
-	    	"texture_set_interpolation(${0:linear})"
+	    	"texture_set_interpolation(${1:linear})"
 		],
 		"description": "[Function]texture_set_interpolation(linear) \nIndicates whether to use linear interpolation (true) or pick the nearest pixel (false). Linear interpolation gives smoother textures but can also be a bit blurry and sometimes costs extra time. This setting also influence the drawing of sprites and background. Default is false. (This can also be changed in the global game settings.)"
     },
 	"texture_set_blending": {
         "prefix": "texture_set_blending",
         "body": [
-	    	"texture_set_blending(${0:blend})"
+	    	"texture_set_blending(${1:blend})"
 		],
 		"description": "[Function]texture_set_blending(blend) \nIndicates whether to use blending with colors and alpha values. Switching this off might be faster on old hardware. This setting also influence the drawing of sprites and background. Default is true."
     },
 	"texture_set_repeat": {
         "prefix": "texture_set_repeat",
         "body": [
-	    	"texture_set_repeat(${0:repeat})"
+	    	"texture_set_repeat(${1:repeat})"
 		],
 		"description": "[Function]texture_set_repeat(repeat) \nIndicates whether to use repeat the texture. This works as follows. As indicated above texture coordinates lie in the range 0-1. If you specify a value larger than 1, default the rest is not drawn. By setting repeat to true the texture is repeated. Note that sprites and backgrounds are always drawn without repeating. So once you draw a sprite of background this value is reset to false. Default is false."
     },
 	"surface_create": {
         "prefix": "surface_create",
         "body": [
-	    	"surface_create(${1:w},${0:h})"
+	    	"surface_create(${1:w},${2:h})"
 		],
 		"description": "[Function]surface_create(w,h) \nCreates a surface of the indicated width and height. Returns the id of the surface, which must be used in all further calls. Note that the surface will not be cleared. This is the responsibility of the user. (Set it as a target and call the appropriate clear function.)"
     },
 	"surface_free": {
         "prefix": "surface_free",
         "body": [
-	    	"surface_free(${0:id})"
+	    	"surface_free(${1:id})"
 		],
 		"description": "[Function]surface_free(id) \nFrees the memory used by the surface."
     },
 	"surface_exists": {
         "prefix": "surface_exists",
         "body": [
-	    	"surface_exists(${0:id})"
+	    	"surface_exists(${1:id})"
 		],
 		"description": "[Function]surface_exists(id) \nReturns whether the surface with the indicated id exists."
     },
 	"surface_get_width": {
         "prefix": "surface_get_width",
         "body": [
-	    	"surface_get_width(${0:id})"
+	    	"surface_get_width(${1:id})"
 		],
 		"description": "[Function]surface_get_width(id) \nReturns the width of the surface."
     },
 	"surface_get_height": {
         "prefix": "surface_get_height",
         "body": [
-	    	"surface_get_height(${0:id})"
+	    	"surface_get_height(${1:id})"
 		],
 		"description": "[Function]surface_get_height(id) \nReturns the height of the surface."
     },
 	"surface_get_texture": {
         "prefix": "surface_get_texture",
         "body": [
-	    	"surface_get_texture(${0:id})"
+	    	"surface_get_texture(${1:id})"
 		],
 		"description": "[Function]surface_get_texture(id) \nReturns the texture corresponding to the surface. This can be used to draw textured objects with the image of the surface."
     },
 	"surface_set_target": {
         "prefix": "surface_set_target",
         "body": [
-	    	"surface_set_target(${0:id})"
+	    	"surface_set_target(${1:id})"
 		],
 		"description": "[Function]surface_set_target(id) \nSets the indicated surface as the drawing target. All subsequent drawing happens on this surface. It resets the projection to simply cover the surface."
     },
@@ -806,252 +806,252 @@
 	"surface_getpixel": {
         "prefix": "surface_getpixel",
         "body": [
-	    	"surface_getpixel(${1:id},${2:x},${0:y})"
+	    	"surface_getpixel(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]surface_getpixel(id,x,y) \nReturns the color of the pixel corresponding to position (x,y) in the surface. This is not very fast, so use with care."
     },
 	"surface_save": {
         "prefix": "surface_save",
         "body": [
-	    	"surface_save(${1:id},${0:fname})"
+	    	"surface_save(${1:id},${2:fname})"
 		],
 		"description": "[Function]surface_save(id,fname) \nSaves a png image of the surface in the given filename. Useful for making screenshots."
     },
 	"surface_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${0:h})"
+	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${6:h})"
 		],
 		"description": "[Function]screen_save_part(id,fname,x,y,w,h) \nSaves part of the surface in the given png filename."
     },
 	"surface_copy": {
         "prefix": "surface_copy",
         "body": [
-	    	"surface_copy(${1:destination},${2:x},${3:y},${0:source})"
+	    	"surface_copy(${1:destination},${2:x},${3:y},${4:source})"
 		],
 		"description": "[Function]surface_copy(destination,x,y,source) \nCopies the source surface at position (x,y) in the destination surface. (Without any form of blending.)"
     },
 	"surface_copy_part": {
         "prefix": "surface_copy_part",
         "body": [
-	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${0:hs})"
+	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${8:hs})"
 		],
 		"description": "[Function]surface_copy_part(destination,x,y,source,xs,ys,ws,hs) \nCopies the indicated part of the source surface at position (x,y) in the destination surface. (Without any form of blending.)"
     },
 	"tile_add": {
         "prefix": "tile_add",
         "body": [
-	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${0:depth})"
+	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:depth})"
 		],
 		"description": "[Function]tile_add(background,left,top,width,height,x,y,depth) \nAdds a new tile to the room with the indicated values (see above for their meaning). The function returns the id of the tile that can be used later on."
     },
 	"tile_delete": {
         "prefix": "tile_delete",
         "body": [
-	    	"tile_delete(${0:id})"
+	    	"tile_delete(${1:id})"
 		],
 		"description": "[Function]tile_delete(id) \nDeletes the tile with the given id."
     },
 	"tile_exists": {
         "prefix": "tile_exists",
         "body": [
-	    	"tile_exists(${0:id})"
+	    	"tile_exists(${1:id})"
 		],
 		"description": "[Function]tile_exists(id) \nReturns whether a tile with the given id exists."
     },
 	"tile_get_x": {
         "prefix": "tile_get_x",
         "body": [
-	    	"tile_get_x(${0:id})"
+	    	"tile_get_x(${1:id})"
 		],
 		"description": "[Function]tile_get_x(id) \nReturns the x-position of the tile with the given id."
     },
 	"tile_get_y": {
         "prefix": "tile_get_y",
         "body": [
-	    	"tile_get_y(${0:id})"
+	    	"tile_get_y(${1:id})"
 		],
 		"description": "[Function]tile_get_y(id) \nReturns the y-position of the tile with the given id."
     },
 	"tile_get_left": {
         "prefix": "tile_get_left",
         "body": [
-	    	"tile_get_left(${0:id})"
+	    	"tile_get_left(${1:id})"
 		],
 		"description": "[Function]tile_get_left(id) \nReturns the left value of the tile with the given id."
     },
 	"tile_get_top": {
         "prefix": "tile_get_top",
         "body": [
-	    	"tile_get_top(${0:id})"
+	    	"tile_get_top(${1:id})"
 		],
 		"description": "[Function]tile_get_top(id) \nReturns the top value of the tile with the given id."
     },
 	"tile_get_width": {
         "prefix": "tile_get_width",
         "body": [
-	    	"tile_get_width(${0:id})"
+	    	"tile_get_width(${1:id})"
 		],
 		"description": "[Function]tile_get_width(id) \nReturns the width of the tile with the given id."
     },
 	"tile_get_height": {
         "prefix": "tile_get_height",
         "body": [
-	    	"tile_get_height(${0:id})"
+	    	"tile_get_height(${1:id})"
 		],
 		"description": "[Function]tile_get_height(id) \nReturns the height of the tile with the given id."
     },
 	"tile_get_depth": {
         "prefix": "tile_get_depth",
         "body": [
-	    	"tile_get_depth(${0:id})"
+	    	"tile_get_depth(${1:id})"
 		],
 		"description": "[Function]tile_get_depth(id) \nReturns the depth of the tile with the given id."
     },
 	"tile_get_visible": {
         "prefix": "tile_get_visible",
         "body": [
-	    	"tile_get_visible(${0:id})"
+	    	"tile_get_visible(${1:id})"
 		],
 		"description": "[Function]tile_get_visible(id) \nReturns whether the tile with the given id is visible."
     },
 	"tile_get_xscale": {
         "prefix": "tile_get_xscale",
         "body": [
-	    	"tile_get_xscale(${0:id})"
+	    	"tile_get_xscale(${1:id})"
 		],
 		"description": "[Function]tile_get_xscale(id) \nReturns the xscale of the tile with the given id."
     },
 	"tile_get_yscale": {
         "prefix": "tile_get_yscale",
         "body": [
-	    	"tile_get_yscale(${0:id})"
+	    	"tile_get_yscale(${1:id})"
 		],
 		"description": "[Function]tile_get_yscale(id) \nReturns the yscale of the tile with the given id."
     },
 	"tile_get_background": {
         "prefix": "tile_get_background",
         "body": [
-	    	"tile_get_background(${0:id})"
+	    	"tile_get_background(${1:id})"
 		],
 		"description": "[Function]tile_get_background(id) \nReturns the background of the tile with the given id."
     },
 	"tile_get_blend": {
         "prefix": "tile_get_blend",
         "body": [
-	    	"tile_get_blend(${0:id})"
+	    	"tile_get_blend(${1:id})"
 		],
 		"description": "[Function]tile_get_blend(id) \nReturns the blending color of the tile with the given id."
     },
 	"tile_get_alpha": {
         "prefix": "tile_get_alpha",
         "body": [
-	    	"tile_get_alpha(${0:id})"
+	    	"tile_get_alpha(${1:id})"
 		],
 		"description": "[Function]tile_get_alpha(id) \nReturns the alpha value of the tile with the given id."
     },
 	"tile_set_position": {
         "prefix": "tile_set_position",
         "body": [
-	    	"tile_set_position(${1:id},${2:x},${0:y})"
+	    	"tile_set_position(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_set_position(id,x,y) \nSets the position of the tile with the given id."
     },
 	"tile_set_region": {
         "prefix": "tile_set_region",
         "body": [
-	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${0:height})"
+	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${5:height})"
 		],
 		"description": "[Function]tile_set_region(id,left,right,width,height) \nSets the region of the tile with the given id in its background."
     },
 	"tile_set_background": {
         "prefix": "tile_set_background",
         "body": [
-	    	"tile_set_background(${1:id},${0:background})"
+	    	"tile_set_background(${1:id},${2:background})"
 		],
-		"description": "[Function]tile_set_background((id,background) \nSets the background for the tile with the given id."
+		"description": "[Function]tile_set_background(id,background) \nSets the background for the tile with the given id."
     },
 	"tile_set_visible": {
         "prefix": "tile_set_visible",
         "body": [
-	    	"tile_set_visible(${${1:id},${0:visible})"
+	    	"tile_set_visible(${1:id},${2:visible})"
 		],
 		"description": "[Function]tile_set_visible(id,visible) \nSets whether the tile with the given id is visible."
     },
 	"tile_set_depth": {
         "prefix": "tile_set_depth",
         "body": [
-	    	"tile_set_depth(${${1:id},${0:depth})"
+	    	"tile_set_depth(${1:id},${2:depth})"
 		],
 		"description": "[Function]tile_set_depth(id,depth) \nSets the depth of the tile with the given id."
     },
 	"tile_set_scale": {
         "prefix": "tile_set_scale",
         "body": [
-	    	"tile_set_scale(${${1:id},${2:xscale},${0:yscale})"
+	    	"tile_set_scale(${1:id},${2:xscale},${3:yscale})"
 		],
 		"description": "[Function]tile_set_scale(id,xscale,yscale) \nSets the scaling of the tile with the given id."
     },
 	"tile_set_blend": {
         "prefix": "tile_set_blend",
         "body": [
-	    	"tile_set_blend(${${1:id},${0:blend})"
+	    	"tile_set_blend(${1:id},${2:blend})"
 		],
 		"description": "[Function]tile_set_blend(id,color) \nSets the blending color of the tile with the given id."
     },
 	"tile_set_alpha": {
         "prefix": "tile_set_alpha",
         "body": [
-	    	"tile_set_alpha(${${1:id},${0:alpha})"
+	    	"tile_set_alpha(${1:id},${2:alpha})"
 		],
 		"description": "[Function]tile_set_alpha(id,alpha) \nSets the alpha value of the tile with the given id."
     },
 	"tile_layer_hide": {
         "prefix": "tile_layer_hide",
         "body": [
-	    	"tile_layer_hide(${0:depth})"
+	    	"tile_layer_hide(${1:depth})"
 		],
 		"description": "[Function]tile_layer_hide(depth) \nHides all tiles at the indicated depth layer."
     },
 	"tile_layer_show": {
         "prefix": "tile_layer_show",
         "body": [
-	    	"tile_layer_show(${0:depth})"
+	    	"tile_layer_show(${1:depth})"
 		],
 		"description": "[Function]tile_layer_show(depth) \nShows all tiles at the indicated depth layer."
     },
 	"tile_layer_delete": {
         "prefix": "tile_layer_delete",
         "body": [
-	    	"tile_layer_delete(${0:depth})"
+	    	"tile_layer_delete(${1:depth})"
 		],
 		"description": "[Function]tile_layer_delete(depth) \nDeletes all tiles at the indicated depth layer."
     },
 	"tile_layer_shift": {
         "prefix": "tile_layer_shift",
         "body": [
-	    	"tile_layer_shift(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_shift(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_shift(depth,x,y) \nShifts all tiles at the indicated depth layer over the vector x,y. Can be used to create scrolling layers of tiles."
     },
 	"tile_layer_find": {
         "prefix": "tile_layer_find",
         "body": [
-	    	"tile_layer_find(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_find(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_find(depth,x,y) \nReturns the id of the tile with the given depth at position (x,y). When no tile exists at the position -1 is returned. When multiple tiles with the given depth exist at the position the first one is returned."
     },
 	"tile_layer_delete_at": {
         "prefix": "tile_layer_delete_at",
         "body": [
-	    	"tile_layer_delete_at(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_delete_at(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_delete_at(depth,x,y) \nDeletes the tile with the given depth at position (x,y). When multiple tiles with the given depth exist at the position they are all deleted."
     },
 	"tile_layer_depth": {
         "prefix": "tile_layer_depth",
         "body": [
-	    	"tile_layer_depth(${${1:depth},${0:newdepth})"
+	    	"tile_layer_depth(${1:depth},${2:newdepth})"
 		],
 		"description": "[Function]tile_layer_depth(depth,newdepth) \nChanges the depth of all tiles at the indicated depth to the new depth. With this function you can move whole tile layers to a new depth."
     },
@@ -1086,35 +1086,35 @@
 	"display_set_size": {
         "prefix": "display_set_size",
         "body": [
-	    	"display_set_size(${1:w},${0:h})"
+	    	"display_set_size(${1:w},${2:h})"
 		],
 		"description": "[Function]display_set_size(w,h) \nSets the width and height of the display in pixels. Returns whether this was successful. (Realize that only certain combinations are allowed.)"
     },
 	"display_set_colordepth": {
         "prefix": "display_set_colordepth",
         "body": [
-	    	"display_set_colordepth(${0:coldepth})"
+	    	"display_set_colordepth(${1:coldepth})"
 		],
 		"description": "[Function]display_set_colordepth(coldepth) \nSets the color depth. In general only 16 and 32 are allowed values. Returns whether successful."
     },
 	"display_set_frequency": {
         "prefix": "display_set_frequency",
         "body": [
-	    	"display_set_frequency(${0:frequency})"
+	    	"display_set_frequency(${1:frequency})"
 		],
 		"description": "[Function]display_set_frequency(frequency) \nSets the refresh frequency for the display. Only few frequencies are allowed. Typically you could set this to 60 with a same room speed to get smooth 60 frames per second motion. Returns whether successful."
     },
 	"display_set_all": {
         "prefix": "display_set_all",
         "body": [
-	    	"display_set_all(${1:w},${2:h},${3:frequency},${0:coldepth})"
+	    	"display_set_all(${1:w},${2:h},${3:frequency},${4:coldepth})"
 		],
 		"description": "[Function]display_set_all(w,h,frequency,coldepth) \nSets all at once. Use -1 for values you do not want to change. Returns whether successful."
     },
 	"display_test_all": {
         "prefix": "display_test_all",
         "body": [
-	    	"display_test_allh(${1:w},${2:h},${3:frequency},${0:coldepth})"
+	    	"display_test_allh(${1:w},${2:h},${3:frequency},${4:coldepth})"
 		],
 		"description": "[Function]display_test_all(w,h,frequency,coldepth) \nTests whether the indicated settings are allowed. It does not change the settings. Use -1 for values you do not want to change. Returns whether the settings are allowed."
     },
@@ -1144,12 +1144,12 @@
         "body": [
 	    	"display_mouse_set()"
 		],
-		"description": "[Function]display_mouse_set(${1:x},${0:y}) \nSets the position of the mouse on the display to the indicated values."
+		"description": "[Function]display_mouse_set(${1:x},${2:y}) \nSets the position of the mouse on the display to the indicated values."
     },
 	"window_set_visible": {
         "prefix": "window_set_visible",
         "body": [
-	    	"window_set_visible(${0:visible})"
+	    	"window_set_visible(${1:visible})"
 		],
 		"description": "[Function]window_set_visible(visible) \nSets whether the game window is visible. Clearly you normally want the window to remain visible during the whole game. The program will not receive keyboard events when the window is invisible."
     },
@@ -1163,7 +1163,7 @@
 	"window_set_fullscreen": {
         "prefix": "window_set_fullscreen",
         "body": [
-	    	"window_set_fullscreen(${0:full})"
+	    	"window_set_fullscreen(${1:full})"
 		],
 		"description": "[Function]window_set_fullscreen(full) \nSets whether the window is shown in full screen mode."
     },
@@ -1177,7 +1177,7 @@
 	"window_set_showborder": {
         "prefix": "window_set_showborder",
         "body": [
-	    	"window_set_showborder(${0:show})"
+	    	"window_set_showborder(${1:show})"
 		],
 		"description": "[Function]window_set_showborder(show) \nSets whether the border around the window is shown. (In full screen mode it is never shown.)"
     },
@@ -1191,7 +1191,7 @@
 	"window_set_showicons": {
         "prefix": "window_set_showicons",
         "body": [
-	    	"window_set_showicons(${0:show})"
+	    	"window_set_showicons(${1:show})"
 		],
 		"description": "[Function]window_set_showicons(show) \nSets whether the border icons (iconize, maximize, close) are shown. (In full screen mode these are never shown.)"
     },
@@ -1205,7 +1205,7 @@
 	"window_set_stayontop": {
         "prefix": "window_set_stayontop",
         "body": [
-	    	"window_set_stayontop(${0:stay})"
+	    	"window_set_stayontop(${1:stay})"
 		],
 		"description": "[Function]window_set_stayontop(stay) \nSets whether the window must always stay on top of other windows."
     },
@@ -1219,7 +1219,7 @@
 	"window_set_sizeable": {
         "prefix": "window_set_sizeable",
         "body": [
-	    	"window_set_sizeable(${0:sizeable})"
+	    	"window_set_sizeable(${1:sizeable})"
 		],
 		"description": "[Function]window_set_sizeable(sizeable) \nSets whether the window is sizeable by the player. (The player can only size it when the border is shown and the window is not in full screen mode.)"
     },
@@ -1233,7 +1233,7 @@
 	"window_set_caption": {
         "prefix": "window_set_caption",
         "body": [
-	    	"window_set_caption(${0:caption})"
+	    	"window_set_caption(${1:caption})"
 		],
 		"description": "[Function]window_set_caption(caption) \nSets the caption string for the window. Normally you specify this when defining the room and it can be changed using the variable room_caption. So this function is normally not useful, unless you draw the room yourself rather than letting GameMaker do it. The caption is only visible when the window has a border and when it is not in full screen mode."
     },
@@ -1247,7 +1247,7 @@
 	"window_set_cursor": {
         "prefix": "window_set_cursor",
         "body": [
-	    	"window_set_cursor(${0:curs})"
+	    	"window_set_cursor(${1:curs})"
 		],
 		"description": "[Function]window_set_cursor(curs) \nSets the mouse cursor used in the window. You can use the following constant: \ncr_default\ncr_none\ncr_arrow\ncr_cross\ncr_beam\ncr_size_nesw\ncr_size_ns\ncr_size_nwse\ncr_size_we\ncr_uparrow\ncr_hourglass\ncr_drag\ncr_nodrop\ncr_hsplit\ncr_vsplit\ncr_multidrag\ncr_sqlwait\ncr_no\ncr_appstart\ncr_help\ncr_handpoint\ncr_size_all\nIn particular, to hide the mouse cursor, use cr_none as value."
     },
@@ -1261,7 +1261,7 @@
 	"window_set_color": {
         "prefix": "window_set_color",
         "body": [
-	    	"window_set_color(${0:color})"
+	    	"window_set_color(${1:color})"
 		],
 		"description": "[Function]window_set_color(color) \nSets the color of the part of the window that is not used for displaying the room."
     },
@@ -1275,7 +1275,7 @@
 	"window_set_region_scale": {
         "prefix": "window_set_region_scale",
         "body": [
-	    	"window_set_region_scale(${1:scale},${0:adaptwindow})"
+	    	"window_set_region_scale(${1:scale},${2:adaptwindow})"
 		],
 		"description": "[Function]window_set_region_scale(scale,adaptwindow) \nIf the window is larger than the actual room normally the room is displayed in a region centered in the window. It is though possible to indicate that it must be scaled to fill the whole or part of the window. A value of 1 is no scaling. If you use a value of 0 the region will be scaled to fill the whole window. If you set it to a negative value it will be scaled to the maximal size inside the window while maintaining the aspect ratio (this is often what you want). adaptwindow indicates whether the window size must be adapted if the scaled room does not fit in. Adapting the window is only effective when the scale factor is positive."
     },
@@ -1289,21 +1289,21 @@
 	"window_set_position": {
         "prefix": "window_set_position",
         "body": [
-	    	"window_set_position(${1:x},${0:y})"
+	    	"window_set_position(${1:x},${2:y})"
 		],
 		"description": "[Function]window_set_position(x,y) \nSets the position of the (client part of the) window to the indicated position."
     },
 	"window_set_size": {
         "prefix": "window_set_size",
         "body": [
-	    	"window_set_size(${1:w},${0:h})"
+	    	"window_set_size(${1:w},${2:h})"
 		],
 		"description": "[Function]window_set_size(w,h) \nSets the size of the (client part of the) window to the indicated size. Note that is the indicated size is too small to fit the drawing region it is kept large enough for the region to fit it."
     },
 	"window_set_rectangle": {
         "prefix": "window_set_rectangle",
         "body": [
-	    	"window_set_rectangle(${1:x},${2:y},${3:w},${0:h})"
+	    	"window_set_rectangle(${1:x},${2:y},${3:w},${4:h})"
 		],
 		"description": "[Function]window_set_rectangle(x,y,w,h) \nSets the position and size of the window rectangle."
     },
@@ -1366,14 +1366,14 @@
 	"window_mouse_set": {
         "prefix": "window_mouse_set",
         "body": [
-	    	"window_mouse_set(￥{1:x},${0:y})"
+	    	"window_mouse_set(${1:x},${2:y})"
 		],
 		"description": "[Function]window_mouse_set(x,y) \nSets the position of the mouse in the window to the indicated values."
     },
 	"window_set_region_size": {
         "prefix": "window_set_region_size",
         "body": [
-	    	"window_set_region_size(${1:w},${2:h},${0:adaptwindow})"
+	    	"window_set_region_size(${1:w},${2:h},${3:adaptwindow})"
 		],
 		"description": "[Function]window_set_region_size(w,h,adaptwindow) \nSet the width and height of the drawing region in the window. adaptwindow indicates whether the window size must be adapted if the region does not fit in. The window size will always be adapted if you use fixed scaling. (See the function window_set_region_scale().)"
     },
@@ -1394,21 +1394,21 @@
 	"window_view_mouse_get_x": {
         "prefix": "window_view_mouse_get_x",
         "body": [
-	    	"window_view_mouse_get_x(${0:id})"
+	    	"window_view_mouse_get_x(${1:id})"
 		],
 		"description": "[Function]window_view_mouse_get_x(id) \nReturns the x-coordinate of the mouse with respect to the view with index id."
     },
 	"window_view_mouse_get_y": {
         "prefix": "window_view_mouse_get_y",
         "body": [
-	    	"window_view_mouse_get_y(${0:id})"
+	    	"window_view_mouse_get_y(${1:id})"
 		],
 		"description": "[Function]window_view_mouse_get_y(id) \nReturns the y-coordinate of the mouse with respect to the view with index id."
     },
 	"window_view_mouse_set": {
         "prefix": "window_view_mouse_set",
         "body": [
-	    	"window_view_mouse_set(${1:id},${2:x},${0:y})"
+	    	"window_view_mouse_set(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]window_view_mouse_set(id,x,y) \nSets the position of the mouse with respect to the view with index id."
     },
@@ -1429,7 +1429,7 @@
 	"window_views_mouse_set": {
         "prefix": "window_views_mouse_set",
         "body": [
-	    	"window_views_mouse_set(${1:x},${0:y})"
+	    	"window_views_mouse_set(${1:x},${2:y})"
 		],
 		"description": "[Function]window_views_mouse_set() \nSets the position of the mouse with respect to the first view that is visible."
     },
@@ -1450,14 +1450,14 @@
 	"set_automatic_draw": {
         "prefix": "set_automatic_draw",
         "body": [
-	    	"set_automatic_draw(${0:value})"
+	    	"set_automatic_draw(${1:value})"
 		],
 		"description": "[Function]display_get_width(value) \nIndicates whether to automatically redraw the room (true, default) or not (false)."
     },
 	"set_synchronization": {
         "prefix": "set_synchronization",
         "body": [
-	    	"set_synchronization(${0:value})"
+	    	"set_synchronization(${1:value})"
 		],
 		"description": "[Function]set_synchronization(value) \nIndicates whether to synchronize the drawing with the refresh frequency of the monitor."
     },
@@ -2312,35 +2312,35 @@
 	"external_define": {
         "prefix": "external_define",
         "body": [
-	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${0:arg2tupe}, ...)"
+	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${7:arg2tupe}, ...)"
 		],
 		"description": "[Function]external_define(dll,name,calltype,restype,argnumb,arg1type,arg2type, ...) \nDefines an external function. dll is the name of the dll file. name is the name of the functions. calltype is the calling convention used. For this use either dll_cdecl or dll_stdcall. restype is the type of the result. For this use either ty_real or ty_string. argnumb is the number of arguments (0-16). Next, for each argument you must specify its type. For this again use either ty_real or ty_string. When there are more than 4 arguments all of them must be of type ty_real."
     },
 	"external_call": {
         "prefix": "external_call",
         "body": [
-	    	"external_call(${1:id},${2:arg1},${0:arg2}, ...)"
+	    	"external_call(${1:id},${2:arg1},${3:arg2}, ...)"
 		],
 		"description": "[Function]external_call(id,arg1,arg2, ...) \nCalls the external function with the given id, and the given arguments. You need to provide the correct number of arguments of the correct type (real or string). The function returns the result of the external function."
     },
 	"external_free": {
         "prefix": "external_free",
         "body": [
-	    	"external_free(${0:dll})"
+	    	"external_free(${1:dll})"
 		],
 		"description": "[Function]external_free(dll) \nFrees the DLL with the given name. This is in particular necessary if the game should remove the DLL. As long as the DLL is not freed it cannot be removed. Best do this e.g. in an end of game event."
     },
 	"execute_string": {
         "prefix": "execute_string",
         "body": [
-	    	"execute_string(${1:str},${2:arg1},${0:arg2}, ...)"
+	    	"execute_string(${1:str},${2:arg1},${3:arg2}, ...)"
 		],
 		"description": "[Function]execute_string(str,arg0,arg1, ...) \nExecute the piece of code in the string str with the indicated arguments."
     },
 	"execute_file": {
         "prefix": "execute_file",
         "body": [
-	    	"execute_file(${0:fname})"
+	    	"execute_file(${1:fname})"
 		],
 		"description": "[Function]execute_file(fname) \nExecute the piece of code in the file."
     },

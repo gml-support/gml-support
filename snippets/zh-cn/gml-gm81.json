@@ -962,7 +962,7 @@
 	"draw_surface_tiled_ext": {
         "prefix": "draw_surface_tiled_ext",
         "body": [
-	    	"draw_surface_tiled_ext((${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
+	    	"draw_surface_tiled_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
 		],
 		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度。"
     },
@@ -1356,7 +1356,7 @@
         "body": [
 	    	"tile_set_background(${1:id},${0:background})"
 		],
-		"description": "[Function]tile_set_background((id,background) \n设定指定 id 的贴图的背景 background。"
+		"description": "[Function]tile_set_background(id,background) \n设定指定 id 的贴图的背景 background。"
     },
 	"tile_set_visible": {
         "prefix": "tile_set_visible",
@@ -1753,7 +1753,7 @@
 	"window_mouse_set": {
         "prefix": "window_mouse_set",
         "body": [
-	    	"window_mouse_set(￥{1:x},${0:y})"
+	    	"window_mouse_set(${1:x},${0:y})"
 		],
 		"description": "[Function]window_mouse_set(x,y) \n设置鼠标在窗口内的位置，坐标(x,y)。"
     },
