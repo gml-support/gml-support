@@ -48,8 +48,8 @@
 		"prefix": "do",
 		"body": [
 			"do {",
-			"\t${1:STATEMENT}",
-			"} until (${2:${3:$a} <= ${4:10}});"
+			"\t${4:STATEMENT}",
+			"} until (${1:${2:$a} <= ${3:10}});"
 		],
 		"description": "Do-until loop"
 	},

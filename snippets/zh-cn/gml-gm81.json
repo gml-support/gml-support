@@ -3,7 +3,7 @@
         "prefix": "n",
         "body": [
 	    	"{",
-			"\t${0:STATEMENT}",
+			"\t${1:STATEMENT}",
 			"}"
 		],
 		"description": "Normal block"
@@ -12,7 +12,7 @@
         "prefix": "if",
         "body": [
 	    	"if (${1:CONDITION}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "If block"
@@ -45,10 +45,10 @@
 		"description": "Switch block"
 	},
     "do … until …": {
-		"prefix": "do",
+		"prefix": "dountil",
 		"body": [
 			"do {",
-			"\t${0:STATEMENT}",
+			"\t${4:STATEMENT}",
 			"} until (${1:${2:$a} <= ${3:10}});"
 		],
 		"description": "Do-until loop"
@@ -57,7 +57,7 @@
 		"prefix": "for",
 		"body": [
         "for (${1:INITIALISATION}; ${2:CONDITION}; ${3:INCREMENT}) { ",
-			"\t${0:STATEMENT}",
+			"\t${4:STATEMENT}",
 			"}"
 		],
 		"description": "For-loop"
@@ -66,7 +66,7 @@
 		"prefix": "fori",
 		"body": [
 			"for (${1:i}=${2:0}; ${1:i} < ${2:CONDITION}; ${1:i}++) { ",
-			"\t${0:STATEMENT}",
+			"\t${3:STATEMENT}",
 			"}"
 		],
 		"description": "For-i-loop"
@@ -75,7 +75,7 @@
 		"prefix": "while",
 		"body": [
 			"while (${1:$a <= 10}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "While-loop"
@@ -84,7 +84,7 @@
 		"prefix": "repeat",
 		"body": [
 	    	"repeat (${1:EXPRESSION}) {",
-			"\t${0:STATEMENT}",
+			"\t${2:STATEMENT}",
 			"}"
 		],
 		"description": "Repeat-loop"
@@ -93,7 +93,7 @@
         "prefix": "with",
         "body": [
             "with (${1:EXPRESSION}) {",
-            "\t${0:STATEMENT}",
+            "\t${2:STATEMENT}",
             "}"
         ],
         "description": "With structure"
@@ -105,7 +105,7 @@
 	"mm_init": {
         "prefix": "mm_init",
         "body": [
-	    	"mm_init(${0:path})"
+	    	"mm_init(${1:path})"
 		],
 		"description": "[Function]mm_init(path) \n用于初始化MaizeMusic音乐插件，返回插件初始化是否成功。使用MaizeMusic插件之前必须执行这一步！否则无法使用本插件。"
     },
@@ -119,56 +119,56 @@
 	"mm_music_load": {
         "prefix": "mm_music_load",
         "body": [
-	    	"mm_music_load(${1:path},${0:loop})"
+	    	"mm_music_load(${1:path},${2:loop})"
 		],
 		"description": "[Function]mm_music_load(path,loop) \n用用于载入音乐文件，这个函数返回接下来要使用的音乐的id，音乐支持wav、mp3、ogg等常见的音频格式"
     },
 	"mm_music_load_ext": {
         "prefix": "mm_music_load_ext",
         "body": [
-	    	"mm_music_load_ext(${1:path},${2:offset},{3:length},${0:loop})"
+	    	"mm_music_load_ext(${1:path},${2:offset},{3:length},${4:loop})"
 		],
 		"description": "[Function]mm_music_load_ext(path,offset,length,loop) \n同上个函数相同，只不过可以设定文件的初始位置和载入长度，如果你的音乐文件是一个文件大包，可以使用这个函数载入文件的一部分。"
     },
 	"mm_music_load_mem": {
         "prefix": "mm_music_load_mem",
         "body": [
-	    	"mm_music_load_mem(${1:path},${0:loop})"
+	    	"mm_music_load_mem(${1:path},${2:loop})"
 		],
 		"description": "[Function]mm_music_load_mem(path,loop) \n与mm_music_load相似，不同的是该函数会先将文件载入到内存，然后每次播放都会调用内存中的音乐，而不是播放硬盘中的音乐，载入的时候会有较长的载入时间，推荐用于音效载入。"
     },
 	"mm_music_load_mem_ext": {
         "prefix": "mm_music_load_mem_ext",
         "body": [
-	    	"mm_music_load_mem_ext(${1:path},${2:offset},{3:length},${0:loop})"
+	    	"mm_music_load_mem_ext(${1:path},${2:offset},{3:length},${4:loop})"
 		],
 		"description": "[Function]mm_music_load_mem_ext(path,offset,length,loop) \n与mm_music_load_ext和mm_music_load_mem相似，载入音乐文件的一部分到内存。推荐用于音效载入。"
     },
 	"mm_music_load_url": {
         "prefix": "mm_music_load_url",
         "body": [
-	    	"mm_music_load_url(${0:url})"
+	    	"mm_music_load_url(${1:url})"
 		],
 		"description": "[Function]mm_music_load_url(url) \n从网络中载入音乐，返回音乐的ID。使用的时候可能会出现短暂的卡屏现象。"
     },
 	"mm_music_free": {
         "prefix": "mm_music_free",
         "body": [
-	    	"mm_music_free(${0:musicID})"
+	    	"mm_music_free(${1:musicID})"
 		],
 		"description": "[Function]mm_music_free(musicID) \n用于从释放被载入过的音乐，如果某段音频不再使用了，最好调用此函数来节省内存。"
     },
 	"mm_play": {
         "prefix": "mm_play",
         "body": [
-	    	"mm_play(${0:musicID})"
+	    	"mm_play(${1:musicID})"
 		],
 		"description": "[Function]mm_play(musicID) \n用于播放已经被载入过的音乐。这个函数会把播放位点强制推到时间轴最左端。"
     },
 	"mm_stop": {
         "prefix": "mm_stop",
         "body": [
-	    	"mm_stop(${0:musicID})"
+	    	"mm_stop(${1:musicID})"
 		],
 		"description": "[Function]mm_stop(musicID) \n用于停止正在被播放的音乐。这个函数会把播放位点强制推到时间轴最左端。"
     },
@@ -182,126 +182,126 @@
 	"mm_pause": {
         "prefix": "mm_pause",
         "body": [
-	    	"mm_pause(${0:musicID})"
+	    	"mm_pause(${1:musicID})"
 		],
 		"description": "[Function]mm_pause(musicID) \n用于暂停正在播放的音乐。"
     },
 	"mm_resume": {
         "prefix": "mm_resume",
         "body": [
-	    	"mm_resume(${0:musicID})"
+	    	"mm_resume(${1:musicID})"
 		],
 		"description": "[Function]mm_resume(musicID) \n用于恢复播放被暂停的音乐。"
     },
 	"mm_set_position": {
         "prefix": "mm_set_position",
         "body": [
-	    	"mm_set_position(${1:musicID},${0:volume})"
+	    	"mm_set_position(${1:musicID},${2:volume})"
 		],
 		"description": "[Function]mm_init(musicID,volume) \n用于设定某id音乐的播放音量。"
     },
 	"mm_set_pan": {
         "prefix": "mm_set_pan",
         "body": [
-	    	"mm_set_pan(${1:musicID},${0:pan_pos})"
+	    	"mm_set_pan(${1:musicID},${2:pan_pos})"
 		],
 		"description": "[Function]mm_set_pan(musicID,pan_pos) \n用于设定某id音乐的声道位置。"
     },
 	"mm_set_speed": {
         "prefix": "mm_set_speed",
         "body": [
-	    	"mm_set_speed(${1:musicID},${0:spd})"
+	    	"mm_set_speed(${1:musicID},${2:spd})"
 		],
 		"description": "[Function]mm_set_speed(musicID,spd) \n用于设定某id音乐的播放速度。"
     },
 	"mm_set_tempo": {
         "prefix": "mm_set_tempo",
         "body": [
-	    	"mm_set_tempo(${1:musicID},${0:tempo})"
+	    	"mm_set_tempo(${1:musicID},${2:tempo})"
 		],
 		"description": "[Function]mm_set_tempo(musicID,tempo) \n用于设定某id音乐的播放节奏。调整播放节奏会改变音乐的播放速度，但是不会影响音乐音高。"
     },
 	"mm_set_pitch": {
         "prefix": "mm_set_pitch",
         "body": [
-	    	"mm_set_pitch(${1:musicID},${0:pitch})"
+	    	"mm_set_pitch(${1:musicID},${2:pitch})"
 		],
 		"description": "[Function]mm_set_pan(musicID,pitch) \n用于设定某id音乐的音调音高。"
     },
 	"mm_set_global_volume": {
         "prefix": "mm_set_global_volume",
         "body": [
-	    	"mm_set_global_volume(${0:volume})"
+	    	"mm_set_global_volume(${1:volume})"
 		],
 		"description": "[Function]mm_set_global_volume(volume) \n用于设定全局的播放音量，这里的全局指的是操作系统的音量。"
     },
 	"mm_set_music_loop_section": {
         "prefix": "mm_set_music_loop_section",
         "body": [
-	    	"mm_set_music_loop_section(${1:musicID},${2:begin},${0:end})"
+	    	"mm_set_music_loop_section(${1:musicID},${2:begin},${3:end})"
 		],
 		"description": "[Function]mm_set_music_loop_section(musicID,begin,end) \n用于设定某id音乐的循环播放片段。"
     },
 	"mm_remove_music_loop_section": {
         "prefix": "mm_remove_music_loop_section",
         "body": [
-	    	"mm_remove_music_loop_section(${0:musicID})"
+	    	"mm_remove_music_loop_section(${1:musicID})"
 		],
 		"description": "[Function]mm_remove_music_loop_section(musicID) \n用于移除该id音乐的循环播放片段。"
     },
 	"mm_get_active": {
         "prefix": "mm_get_active",
         "body": [
-	    	"mm_get_active(${0:musicID})"
+	    	"mm_get_active(${1:musicID})"
 		],
 		"description": "[Function]mm_get_active(musicID) \n返回指定音乐的当前状态。"
     },
 	"mm_get_length": {
         "prefix": "mm_get_length",
         "body": [
-	    	"mm_get_length(${0:musicID})"
+	    	"mm_get_length(${1:musicID})"
 		],
 		"description": "[Function]mm_get_length(musicID) \n用于获取某id音乐的全长。"
     },
 	"mm_get_position": {
         "prefix": "mm_get_position",
         "body": [
-	    	"mm_get_position(${0:musicID})"
+	    	"mm_get_position(${1:musicID})"
 		],
 		"description": "[Function]mm_get_position(musicID) \n用于获取某id音乐当前的播放位点。"
     },
 	"mm_get_volume": {
         "prefix": "mm_get_volume",
         "body": [
-	    	"mm_get_volume(${0:musicID})"
+	    	"mm_get_volume(${1:musicID})"
 		],
 		"description": "[Function]mm_get_volume(musicID) \n用于获取某id音乐当前的播放音量。"
     },
 	"mm_get_pan": {
         "prefix": "mm_get_pan",
         "body": [
-	    	"mm_get_pan(${0:musicID})"
+	    	"mm_get_pan(${1:musicID})"
 		],
 		"description": "[Function]mm_get_pan(musicID) \n用于获取某id音乐当前的声道位置。"
     },
 	"mm_get_speed": {
         "prefix": "mm_get_speed",
         "body": [
-	    	"mm_get_speed(${0:musicID})"
+	    	"mm_get_speed(${1:musicID})"
 		],
 		"description": "[Function]mm_get_speed(musicID) \n用于获取某id音乐当前的播放速度。"
     },
 	"mm_get_tempo": {
         "prefix": "mm_get_tempo",
         "body": [
-	    	"mm_get_tempo(${0:musicID})"
+	    	"mm_get_tempo(${1:musicID})"
 		],
 		"description": "[Function]mm_get_tempo(musicID) \n用于获取某id音乐当前的播放节奏。"
     },
 	"mm_get_pitch": {
         "prefix": "mm_get_pitch",
         "body": [
-	    	"mm_get_pitch(${0:musicID})"
+	    	"mm_get_pitch(${1:musicID})"
 		],
 		"description": "[Function]mm_get_pitch(musicID) \n用于获取某id音乐当前的音调音高。"
     },
@@ -315,35 +315,35 @@
 	"mm_get_level_left": {
         "prefix": "mm_get_level_left",
         "body": [
-	    	"mm_get_level_left(${0:musicID})"
+	    	"mm_get_level_left(${1:musicID})"
 		],
 		"description": "[Function]mm_get_level_left(musicID) \n用于获取某id音乐当前的左声道电平。"
     },
 	"mm_get_level_right": {
         "prefix": "mm_get_level_right",
         "body": [
-	    	"mm_get_level_right(${0:musicID})"
+	    	"mm_get_level_right(${1:musicID})"
 		],
 		"description": "[Function]mm_get_level_right(musicID) \n用于获取某id音乐当前的右声道电平。"
     },
 	"mm_get_data": {
         "prefix": "mm_get_data",
         "body": [
-	    	"mm_get_data(${1:musicID},${0:length})"
+	    	"mm_get_data(${1:musicID},${2:length})"
 		],
 		"description": "[Function]mm_get_data(musicID,length) \n用于获取某id音乐当前的FFT频谱。"
     },
 	"mm_get_wave_data": {
         "prefix": "mm_get_wave_data",
         "body": [
-	    	"mm_get_wave_data(${1:musicID},${0:length})"
+	    	"mm_get_wave_data(${1:musicID},${2:length})"
 		],
 		"description": "[Function]mm_get_wave_data(musicID,length) \n用于获取某id音乐当前的播放节奏。"
     },
 	"mm_read_data_mes": {
         "prefix": "mm_read_data_mes",
         "body": [
-	    	"mm_read_data_mes(${0:pos})"
+	    	"mm_read_data_mes(${1:pos})"
 		],
 		"description": "[Function]mm_read_data_mes(pos) \n用于读取已经获得到的频谱，在使用 mm_get_data 或 mm_get_wave_data 之后使用这个函数。"
     },
@@ -364,7 +364,7 @@
 	"mm_record_set_input": {
         "prefix": "mm_record_set_input",
         "body": [
-	    	"mm_record_set_input(${1:enabled},${0:volume})"
+	    	"mm_record_set_input(${1:enabled},${2:volume})"
 		],
 		"description": "[Function]mm_get_tempo(enabled,volume) \n设置输入设备的开关和音量。"
     },
@@ -378,70 +378,70 @@
 	"mm_effect_set": {
         "prefix": "mm_effect_set",
         "body": [
-	    	"mm_effect_set(${1:musicID},${0:effect})"
+	    	"mm_effect_set(${1:musicID},${2:effect})"
 		],
 		"description": "[Function]mm_effect_set(musicID,effect) \n为声音添加效果，musicID为要添加效果的音乐ID，effect为添加的效果，可以使用GM中的自带常量\nse_chorus,\nse_echo,\nse_flanger,\nse_gargle,\nse_reverb,\nse_compressor,\nse_equalizer。\n如需设置多种效果则多次使用该函数即可，返回值为效果的ID，用于移除声音效果时使用。"
     },
 	"mm_effect_remove": {
         "prefix": "mm_effect_remove",
         "body": [
-	    	"mm_effect_remove(${1:musicID},${0:effectID})"
+	    	"mm_effect_remove(${1:musicID},${2:effectID})"
 		],
 		"description": "[Function]mm_effect_remove(musicID,effectID) \n用于获取某id音乐当前的播放节奏。"
     },
 	"mm_effect_reset": {
         "prefix": "mm_effect_reset",
         "body": [
-	    	"mm_effect_reset(${0:musicID})"
+	    	"mm_effect_reset(${1:musicID})"
 		],
 		"description": "[Function]mm_effect_reset(musicID) \n(v3.0新增) 重置音乐的所有效果。"
     },
 	"mm_effect_set_chorus": {
         "prefix": "mm_effect_set_chorus",
         "body": [
-	    	"mm_effect_set_chorus(${1:effectID},${2:wetdry},${3:depth},${4:feedback},${5:frequency},${6:wave},${7:delay},${0:phase})"
+	    	"mm_effect_set_chorus(${1:effectID},${2:wetdry},${3:depth},${4:feedback},${5:frequency},${6:wave},${7:delay},${8:phase})"
 		],
 		"description": "[Function]mm_effect_set_chorus(effectID,wetdry,depth,feedback,frequency,wave,delay,phase) \n(v3.0新增) 为指定声音效果设置和声效果参数。"
     },
 	"mm_effect_set_echo": {
         "prefix": "mm_effect_set_echo",
         "body": [
-	    	"mm_effect_set_echo(${1:effectID},${2:wetdry},${3:feedback},${4:leftdelay},${5:rightdelay},${0:pandelay})"
+	    	"mm_effect_set_echo(${1:effectID},${2:wetdry},${3:feedback},${4:leftdelay},${5:rightdelay},${6:pandelay})"
 		],
 		"description": "[Function]mm_effect_set_echo(effectID,wetdry,feedback,leftdelay,rightdelay,pandelay) \n(v3.0新增) 为指定声音效果设置去噪效果参数。"
     },
 	"mm_effect_set_flanger": {
         "prefix": "mm_effect_set_flanger",
         "body": [
-	    	"mm_effect_set_flanger(${1:effectID},${2:wetdry},${3:depth},${4:feedback},${5:frequency},${6:wave},${7:delay},${0:phase})"
+	    	"mm_effect_set_flanger(${1:effectID},${2:wetdry},${3:depth},${4:feedback},${5:frequency},${6:wave},${7:delay},${8:phase})"
 		],
 		"description": "[Function]mm_effect_set_flanger(effectID,wetdry,depth,feedback,frequency,wave,delay,phase) \n(v3.0新增) 为指定声音效果设置和声效果参数。"
     },
 	"mm_effect_set_gargle": {
         "prefix": "mm_effect_set_gargle",
         "body": [
-	    	"mm_effect_set_gargle(${1:effectID},${2:rate},${0:wave})"
+	    	"mm_effect_set_gargle(${1:effectID},${2:rate},${3:wave})"
 		],
 		"description": "[Function]mm_effect_set_gargle(effectID,rate,wave) \n(v3.0新增) 为指定声音效果设置漱口声效果参数。"
     },
 	"mm_effect_set_reverb": {
         "prefix": "mm_effect_set_reverb",
         "body": [
-	    	"mm_effect_set_reverb(${1:effectID},${2:gain},${3:mix},${4:time},${0:ratio})"
+	    	"mm_effect_set_reverb(${1:effectID},${2:gain},${3:mix},${4:time},${5:ratio})"
 		],
 		"description": "[Function]mm_effect_set_reverb(effectID,gain,mix,time,frequency,wave,delay,ratio) \n(v3.0新增) 为指定声音效果设置混响效果参数。"
     },
 	"mm_effect_set_compressor": {
         "prefix": "mm_effect_set_compressor",
         "body": [
-	    	"mm_effect_set_compressor(${1:effectID},${2:gain},${3:attack},${4:release},${5:threshold},${6:ratio},${0:delay})"
+	    	"mm_effect_set_compressor(${1:effectID},${2:gain},${3:attack},${4:release},${5:threshold},${6:ratio},${7:delay})"
 		],
 		"description": "[Function]mm_effect_set_compressor(effectID,gain,attack,release,threshold,ratio,delay) \n(v3.0新增) 为指定声音效果设置压缩器效果参数。"
     },
 	"mm_effect_set_equalizer": {
         "prefix": "mm_effect_set_equalizer",
         "body": [
-	    	"mm_effect_set_equalizer(${1:effectID},${2:center},${3:bandwidth},${0:gain})"
+	    	"mm_effect_set_equalizer(${1:effectID},${2:center},${3:bandwidth},${4:gain})"
 		],
 		"description": "[Function]mm_effect_set_equalizer(effectID,center,bandwidth,gain) \n(v3.0新增) 为指定声音效果设置均衡器效果参数。"
     },
@@ -455,7 +455,7 @@
 	"mm_get_music_cpu": {
         "prefix": "mm_get_music_cpu",
         "body": [
-	    	"mm_get_music_cpu(${0:musicID})"
+	    	"mm_get_music_cpu(${1:musicID})"
 		],
 		"description": "[Function]mm_get_music_cpu() \n获取单个音乐的CPU使用率。"
     },
@@ -469,21 +469,21 @@
 	"mm_device_get_name": {
         "prefix": "mm_device_get_name",
         "body": [
-	    	"mm_device_get_name(${0:device})"
+	    	"mm_device_get_name(${1:device})"
 		],
 		"description": "[Function]mm_device_get_name(device) \n获取播放设备的名字。"
     },
 	"mm_device_set": {
         "prefix": "mm_device_set",
         "body": [
-	    	"mm_device_set(${0:device})"
+	    	"mm_device_set(${1:device})"
 		],
 		"description": "[Function]mm_device_set(device) \n设置MM插件使用的播放设备。"
     },
 	"mm_slider_volume": {
         "prefix": "mm_slider_volume",
         "body": [
-	    	"mm_slider_volume(${1:musicID},${2:tar_vol},${0:time})"
+	    	"mm_slider_volume(${1:musicID},${2:tar_vol},${3:time})"
 		],
 		"description": "[Function]mm_slider_volume(musicID,tar_vol,time) \n用于缓动某id音乐的音量（从当前音量开始向目标音量缓动）。"
     },
@@ -493,133 +493,133 @@
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
-	    	"draw_text(${1:x},${2:y},${0:string})"
+	    	"draw_text(${1:x},${2:y},${3:string})"
 		],
 		"description": "[Function]draw_text(x,y,string) \n在坐标 (x,y) 处绘制字符串 string ，一个'#'通配符或者一个回 车符 chr(13) 或者断行符 chr(10) 会让字符串另起一行，这样我们就可以实现多行文本的 绘制（使用 '\\#' 显示字符 '#' 本身）。"
     },
 	"draw_text_ext": {
         "prefix": "draw_text_ext",
         "body": [
-	    	"draw_text_ext(${1:x},${2:y},${0:string})"
+	    	"draw_text_ext(${1:x},${2:y},${3:string})"
 		],
 		"description": "[Function]draw_text_ext(x,y,string) \n基本与draw_text()的函数作用相同，但增加了两个功能。首先 sep 代表行间距，设成 －1 代表使用默认值。 w 代表行宽，单位像素。超出行宽的部分 会以空格或'-'进行分行。设为 -1 代表不换行。"
     },
 	"draw_arrow": {
         "prefix": "draw_arrow",
         "body": [
-	    	"draw_arrow(${1:x1},${2:y1},${3:x2},${4:y2},${0:size})"
+	    	"draw_arrow(${1:x1},${2:y1},${3:x2},${4:y2},${5:size})"
 		],
 		"description": "[Function]draw_arrow(x1,y1,x2,y2,size) \n绘制一个从坐标(x1,y1)到(x2,y2) 的箭头。size 指定箭 头的尺寸，单位像素。"
     },
 	"draw_button": {
         "prefix": "draw_button",
         "body": [
-	    	"draw_button(${1:x1},${2:y1},${3:x2},${4:y2},${0:up})"
+	    	"draw_button(${1:x1},${2:y1},${3:x2},${4:y2},${5:up})"
 		],
 		"description": "[Function]draw_button(x1,y1,x2,y2,up) \n绘制一个按钮， up 指定按钮状态为上（1）还是下（0）。"
     },
 	"draw_path": {
         "prefix": "draw_path",
         "body": [
-	    	"draw_path(${1:path},${2:x},${3:y},${0:absolute})"
+	    	"draw_path(${1:path},${2:x},${3:y},${4:absolute})"
 		],
 		"description": "[Function]draw_path(path,x,y,absolute) \n 通过这个函数你可以从房间坐标(x,y)之间绘制一条指定的 路径 path 。如果 absolute 为真，路径就会以原先设定的位置进行绘制，而x和y就被无视 了。"
     },
 	"draw_healthbar": {
         "prefix": "draw_healthbar",
         "body": [
-	    	"draw_healthbar(${1:x1},${2:y1},${3:x2},${4:y2},${5:amount},${6:backcol},${7:mincol},${8:maxcol},${9:direction},${10:showback},${0:showborder})"
+	    	"draw_healthbar(${1:x1},${2:y1},${3:x2},${4:y2},${5:amount},${6:backcol},${7:mincol},${8:maxcol},${9:direction},${10:showback},${11:showborder})"
 		],
 		"description": "[Function]draw_healthbar(x1,y1,x2,y2,amount,backcol,mincol,maxcol,direction,showback,showborder) \n 绘制一个健康条。（或者其他任何一种表现数值变化的颜色条，比如：攻击 力）。(x1,y1)和(x2,y2)代表整个条的范围。amount 代表条内颜色填充程度的百分比(从0 到 100)。backcol 为条的背景颜色，mincol 和maxcol 代表条从0 到100之间的颜色变化。 中间值在两端颜色之间渐变。direction 代表条的绘制方向。 0 代表从左边开始， 1 代表 从右边开始， 2 代表从上开始， 3 代表从下开始。 showback 指定是否显示背景框， showborder 指定是否显示边框。"
     },
 	"draw_clear": {
         "prefix": "draw_clear",
         "body": [
-	    	"draw_clear(${0:col})"
+	    	"draw_clear(${1:col})"
 		],
 		"description": "[Function]draw_clear(col) \n使用给定的颜色清除全部房间（非透明混合）。"
     },
 	"draw_clear_alpha": {
         "prefix": "draw_clear_alpha",
         "body": [
-	    	"draw_clear_alpha(${1:col},${0:alpha})"
+	    	"draw_clear_alpha(${1:col},${2:alpha})"
 		],
 		"description": "[Function]draw_clear_alpha(col,alpha) \n使用给定的颜色和阿尔法值清除整个房间（在表面处理时经常用到）。"
     },
 	"draw_point": {
         "prefix": "draw_point",
         "body": [
-	    	"draw_point(${1:x},${0:y})"
+	    	"draw_point(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_point(x,y) \n在坐标(x,y) 上绘制一个使用当前颜色的点。"
     },
 	"draw_line": {
         "prefix": "draw_line",
         "body": [
-	    	"draw_line(${1:x1},${2:y1},${3:x2},${0:y2})"
+	    	"draw_line(${1:x1},${2:y1},${3:x2},${4:y2})"
 		],
 		"description": "[Function]draw_line(x1,y1,x2,y2) \n从坐标(x1,y1)到(x2,y2)绘制一条直线。"
     },
 	"draw_line_width": {
         "prefix": "draw_line_width(x1,y1,x2,y2)",
         "body": [
-	    	"draw_line_width(${1:x1},${2:y1},${3:x2},${4:y2},${0:w})"
+	    	"draw_line_width(${1:x1},${2:y1},${3:x2},${4:y2},${5:w})"
 		],
 		"description": "[Function]draw_line_width(x1,y1,x2,y2,w) \n从坐标(x1,y1)到(x2,y2)绘制一条直线，宽为w。"
     },
 	"draw_rectangle": {
         "prefix": "draw_rectangle",
         "body": [
-	    	"draw_rectangle(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_rectangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_rectanglet(x1,y1,x2,y2,outline) \n在指定坐标之间绘制一个矩形。outline 指定是只 描绘边框（真 true），还是要填充整个区域(假 false)。"
     },
 	"draw_roundrect": {
         "prefix": "draw_roundrect",
         "body": [
-	    	"draw_roundrect(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_roundrect(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_roundrect(x1,y1,x2,y2,outline) \n在指定坐标之间绘制一个圆角矩形。outline 指定是只描 绘边框（真 true），还是要填充整个区域(假 false)。"
     },
 	"draw_triangle": {
         "prefix": "draw_triangle",
         "body": [
-	    	"draw_triangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3},${0:outline})"
+	    	"draw_triangle(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3},${7:outline})"
 		],
 		"description": "[Function]draw_triangle(x1,y1,x2,y2,x3,y3,outline) \n在指定坐标之间绘制一个三角形。outline 指定是只描绘边框（真 true），还是要填充整个区域(假 false)。"
     },
 	"draw_circle": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_circle(${1:x},${2:y},${3:r},${0:outline})"
+	    	"draw_circle(${1:x},${2:y},${3:r},${4:outline})"
 		],
 		"description": "[Function]draw_circle(x,y,r,outline) \n以坐标(x,y)为圆心，r 为半径绘制一个圆形。outline 指定 是只描绘边框（真 true），还是要填充整个区域(假 false)。"
     },
 	"draw_ellipse": {
         "prefix": "draw_ellipse",
         "body": [
-	    	"draw_ellipse(${1:x1},${2:y1},${3:x2},${4:y2},${0:outline})"
+	    	"draw_ellipse(${1:x1},${2:y1},${3:x2},${4:y2},${5:outline})"
 		],
 		"description": "[Function]draw_ellipse(x1,y1,x2,y2,outline) \n绘制一个椭圆。outline 指定是只描绘边框（真 true），还是 要填充整个区域(假 false)。"
     },
 	"draw_set_circle_precision": {
         "prefix": "draw_set_circle_precision",
         "body": [
-	    	"draw_set_circle_precision(${0:precision})"
+	    	"draw_set_circle_precision(${1:precision})"
 		],
 		"description": "[Function]draw_set_circle_precision(precision) \n设置绘制圆的精度，就是由多少段组成，精度必须在4－64之间并被4整除，这也被使用在椭圆和圆角方形中。"
     },
 	"draw_set_color": {
         "prefix": "draw_set_color",
         "body": [
-	    	"draw_set_color(${0:col})"
+	    	"draw_set_color(${1:col})"
 		],
 		"description": "[Function]draw_set_color(col) \n设置当前绘制颜色。"
     },
 	"draw_set_alpha": {
         "prefix": "draw_set_alpha",
         "body": [
-	    	"draw_set_alpha(${0:alpha})"
+	    	"draw_set_alpha(${1:alpha})"
 		],
 		"description": "[Function]draw_set_alpha(alpha) \n设置当前绘制时的阿尔法透明通道值。（从0 到1，0代表完全透明， 1代表完全不透明）。"
     },
@@ -640,238 +640,238 @@
 	"draw_getpixel": {
         "prefix": "draw_getpixel",
         "body": [
-	    	"draw_getpixel(${1:x},${0:y})"
+	    	"draw_getpixel(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_getpixel(x,y) \n在房间的指定坐标(x,y)返回像素的颜色。这个函数不是很快，所以要 谨慎使用。"
     },
 	"draw_sprite": {
         "prefix": "draw_sprite",
         "body": [
-	    	"draw_sprite(${1:sprite},${2:subimg},${3:x},${0:y})"
+	    	"draw_sprite(${1:sprite},${2:subimg},${3:x},${4:y})"
 		],
 		"description": "[Function]draw_sprite(sprite,subimg,x,y) \n在坐标(x,y)绘制子图像 subimg （-1 代表当前子图像，0到N代表各子图像编号）。（不包含颜色混合和阿尔法透明通道）"
     },
 	"draw_sprite_stretched": {
         "prefix": "draw_sprite_stretched",
         "body": [
-	    	"draw_sprite_stretched(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${0:h})"
+	    	"draw_sprite_stretched(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h})"
 		],
 		"description": "[Function]draw_sprite_stretched(sprite,subimg,x,y,w,h) \n将精灵扩展填充至左上角坐标为(x,y)，宽度高度分别为w,h的方形区域内。"
     },
 	"draw_sprite_tiled": {
         "prefix": "draw_sprite_tiled",
         "body": [
-	    	"draw_sprite_tiled(${1:sprite},${2:subimg},${3:x},${0:y})"
+	    	"draw_sprite_tiled(${1:sprite},${2:subimg},${3:x},${4:y})"
 		],
 		"description": "[Function]draw_sprite_tiled(sprite,subimg,x,y) \n将精灵作为图块在整个房间内进行绘制。(x,y) 是其中精灵的绘制坐标。"
     },
 	"draw_sprite_part": {
         "prefix": "draw_sprite_part",
         "body": [
-	    	"draw_sprite_part(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${0:y})"
+	    	"draw_sprite_part(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y})"
 		],
 		"description": "[Function]draw_sprite_part(sprite,subimg,left,top,width,height,x,y) \n在坐标(x,y)绘制指定范围内的子图像的子图区域 （-1 代表当前子图像）（从子图像内位置 left,top,width,height ）。"
     },
 	"draw_background": {
         "prefix": "draw_background",
         "body": [
-	    	"draw_background(${1:back},${2:x},${0:y})"
+	    	"draw_background(${1:back},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_background(back,x,y) \n绘制背景在坐标（x，y）。(不包含颜色混合和阿尔法透明通道)"
     },
 	"draw_background_stretched": {
         "prefix": "draw_background_stretched",
         "body": [
-	    	"draw_background_stretched(${1:back},${2:x},${3:y},${4:w},${0:h})"
+	    	"draw_background_stretched(${1:back},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]draw_background_stretched(back,x,y,w,h) \n将背景扩展填充至左上角坐标为(x,y)，宽度高度分别为w,h的方形区域内。"
     },
 	"draw_background_tiled": {
         "prefix": "draw_background_tiled",
         "body": [
-	    	"draw_background_tiled(${1:back},${2:x},${0:y})"
+	    	"draw_background_tiled(${1:back},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_background_tiled(back,x,y) \n背景作为片平铺在房间中，以(x,y)为起始点。"
     },
 	"draw_background_part": {
         "prefix": "draw_background_part",
         "body": [
-	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+	    	"draw_background_part(${1:back},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y})"
 		],
 		"description": "[Function]draw_background_part(x,y,r,outline) \n绘制背景部分，以左上为原点的x，y。"
     },
 	"draw_sprite_ext": {
         "prefix": "draw_sprite_ext",
         "body": [
-	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${0:alpha})"
+	    	"draw_sprite_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:rot},${8:color},${9:alpha})"
 		],
 		"description": "[Function]draw_sprite_ext(sprite,subimg,x,y,xscale,yscale,rot,color,alpha) \n 代表所要绘制的精灵，subimg 代表要绘制的具体子图像，(x,y) 代表绘制的坐标，(xscale,yscale) 代表要绘制的具体缩放尺寸， rot 代表图像逆时针旋转绘制的角度，color 代表需要混合的颜色（c_white 为默认值），alpha 代表要绘制的阿尔法透明通道数值（1 代表完全不透明， 0 代表完全透明）。这个函数可以创造很多的效果（比如部分透明的爆炸效果）。"
     },
 	"draw_sprite_stretched_ext": {
         "prefix": "draw_sprite_stretched_ext",
         "body": [
-	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${0:alpha})"
+	    	"draw_sprite_stretched_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:w},${6:h},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_sprite_stretched_ext(sprite,subimg,x,y,w,h,color,alpha) \n绘制精灵拉伸如此精灵填充在x，y，宽，高的区域里，color是混合色，alpha是透明度。"
     },
 	"draw_sprite_tiled_ext": {
         "prefix": "draw_sprite_tiled_ext",
         "body": [
-	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${0:alpha})"
+	    	"draw_sprite_tiled_ext(${1:sprite},${2:subimg},${3:x},${4:y},${5:xscale},${6:yscale},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_circle(sprite,subimg,x,y,xscale,yscale,color,alpha) \n绘制精灵贴图，精灵填充整个房间但是以scale比例，color颜色，alpha透明度。"
     },
 	"draw_sprite_part_ext": {
         "prefix": "draw_sprite_part_ext",
         "body": [
-	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${0:alpha})"
+	    	"draw_sprite_part_ext(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:color},${12:alpha})"
 		],
 		"description": "[Function]draw_sprite_part_ext(sprite,subimg,left,top,width,height,x,y,xscale,yscale,color,alpha) \n绘制精灵子图的部分（-1为当前子图）按照left,top,width,height尺寸，以scale比例，color颜色，alpha透明度。"
     },
 	"draw_sprite_general": {
         "prefix": "draw_sprite_general",
         "body": [
-	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${0:alpha})"
+	    	"draw_sprite_general(${1:sprite},${2:subimg},${3:left},${4:top},${5:width},${6:height},${7:x},${8:y},${9:xscale},${10:yscale},${11:rot},${12:c1},${13:c2},${14:c3},${15:c4},${16:alpha})"
 		],
 		"description": "[Function]draw_sprite_general(sprite,subimg,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n常规绘制函数，它绘制精灵子图的部分（－1＝当前子图）按照left,top,width,height尺寸，以scale比例，rot旋转角度，四角混合颜色（左上，右上，右下，左下），alpha透明度。"
     },
 	"draw_set_font": {
         "prefix": "draw_set_font",
         "body": [
-	    	"draw_set_font(${0:font})"
+	    	"draw_set_font(${1:font})"
 		],
 		"description": "[Function]draw_set_font(font) \n设定绘制文本时将要使用的字体。 -1 代表默认字体（Arial 12）。"
     },
 	"draw_set_halign": {
         "prefix": "draw_set_halign",
         "body": [
-	    	"draw_set_halign(${0:halign})"
+	    	"draw_set_halign(${1:halign})"
 		],
 		"description": "[Function]draw_set_halign(halign) \n设定绘制文本的水平坐标参数。选择下面三个中的一个作为值： \nfa_left 左 \nfa_center 中 \nfa_right 右"
     },
 	"draw_set_valign": {
         "prefix": "draw_set_valign",
         "body": [
-	    	"draw_set_valign(${0:valign})"
+	    	"draw_set_valign(${1:valign})"
 		],
 		"description": "[Function]draw_set_valign(valign) \n设定绘制文本的垂直坐标参数。选择下面三个中的一个作为值: \nfa_top 上 \nfa_middle 中 \nfa_bottom 下 "
     },
 	"draw_text_transformed": {
         "prefix": "draw_text_transformed",
         "body": [
-	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${0:angle})"
+	    	"draw_text_transformed(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle})"
 		],
 		"description": "[Function]draw_text_transformed(x,y,string,xscale,yscale,angle) \n在坐标(x,y)，以 xscale, yscale指定的缩放尺寸和逆时针旋转 angle 角度的方式绘制文本 string。"
     },
 	"draw_text_ext_transformed": {
         "prefix": "draw_text_ext_transformed",
         "body": [
-	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${0:angle})"
+	    	"draw_text_ext_transformed(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle})"
 		],
 		"description": "[Function]draw_text_ext_transformed(x,y,string,sep,w,xscale,yscale,angle) \n功能与draw_text_transformed()类似， 但加入了行间距 sep 和 行宽 w 。可以绘制多行文本。"
     },
 	"draw_text_color": {
         "prefix": "draw_text_color",
         "body": [
-	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${0:alpha})"
+	    	"draw_text_color(${1:x},${2:y},${3:string},${4:c1},${5:c2},${6:c3},${7:c4},${8:alpha})"
 		],
 		"description": "[Function]draw_text_color(x,y,string,c1,c2,c3,c4,alpha) \n在坐标(x,y)，左上，右上，右下，左 下四个地方指定文本颜色，以阿尔法透明通道值 alpha （0到1之间）绘制文本 string。"
     },
 	"draw_text_ext_color": {
         "prefix": "draw_text_ext_color",
         "body": [
-	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${0:alpha})"
+	    	"draw_text_ext_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:c1},${7:c2},${8:c3},${9:c4},${10:alpha})"
 		],
 		"description": "[Function]draw_text_ext_color(x,y,string,sep,w,c1,c2,c3,c4,alpha) \ndraw_text_color()函数的多行显示变体。"
     },
 	"draw_text_transformed_color": {
         "prefix": "draw_circle",
         "body": [
-	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${0:alpha})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:xscale},${5:yscale},${6:angle},${7:c1},${8:c2},${9:c3},${10:c4},${11:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_transformed() 相同，但是多了颜色渐变。"
     },
 	"draw_text_ext_transformed_color": {
         "prefix": "draw_text_transformed_color",
         "body": [
-	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${0:alpha})"
+	    	"draw_text_transformed_color(${1:x},${2:y},${3:string},${4:sep},${5:w},${6:xscale},${7:yscale},${8:angle},${9:c1},${10:c2},${11:c3},${12:c4},${13:alpha})"
 		],
 		"description": "[Function]draw_text_transformed_color(x,y,string,sep,w,xscale,yscale,angle,c1,c2,c3,c4,alpha) \n与draw_text_ext_transformed()相同 但是多了颜色渐变。"
     },
 	"draw_point_color": {
         "prefix": "draw_point_color",
         "body": [
-	    	"draw_point_color(${1:x},${2:y},${0:col1})"
+	    	"draw_point_color(${1:x},${2:y},${3:col1})"
 		],
 		"description": "[Function]draw_point_color(x,y,col1) \n在坐标(x,y)处以指定颜色 col1 绘制点。"
     },
 	"draw_line_color": {
         "prefix": "draw_line_color",
         "body": [
-	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${0:col2})"
+	    	"draw_line_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2})"
 		],
 		"description": "[Function]draw_line_color(x1,y1,x2,y2,col1,col2) \n从坐标(x1,y1)到(x2,y2) 之间绘制一条指定颜色 col1 过渡到 col2 的直线。"
     },
 	"draw_line_width_color": {
         "prefix": "draw_line_width_color",
         "body": [
-	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${0:col2})"
+	    	"draw_line_width_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:w},${6:col1},${7:col2})"
 		],
 		"description": "[Function]draw_line_width_color(x1,y1,x2,y2,w,col1,col2) \n从坐标(x1,y1)到(x2,y2) 之间绘制一条宽为w指定颜色 col1 过渡到 col2 的直线。"
     },
 	"draw_rectangle_color": {
         "prefix": "draw_rectangle_color",
         "body": [
-	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${0:outline})"
+	    	"draw_rectangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:col3},${8:col4},${9:outline})"
 		],
 		"description": "[Function]draw_rectangle_color(x1,y1,x2,y2,col1,col2,col3,col4,outline) \n绘制矩形。"
     },
 	"draw_roundrect_color": {
         "prefix": "draw_roundrect_color",
         "body": [
-	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+	    	"draw_roundrect_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:outline})"
 		],
 		"description": "[Function]draw_roundrect_color(x1,y1,x2,y2,col1,col2,outline) \n绘制圆角矩形。"
     },
 	"draw_triangle_color": {
         "prefix": "draw_triangle_color",
         "body": [
-	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${0:outline})"
+	    	"draw_triangle_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:x3},${6:y3),${7:col1},${8:col2},${9:col3},${10:outline})"
 		],
 		"description": "[Function]draw_triangle_color(x1,y1,x2,y2,x3,y3,col1,col2,col3,outline) \n绘制三角形。"
     },
 	"draw_circle_color": {
         "prefix": "draw_circle_color",
         "body": [
-	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${0:outline})"
+	    	"draw_circle_color(${1:x},${2:y},${3:col1},${4:col2},${5:outline})"
 		],
 		"description": "[Function]draw_circle_color(x,y,r,col1,col2,outline) \n绘制圆形。"
     },
 	"draw_ellipse_color": {
         "prefix": "draw_ellipse_color",
         "body": [
-	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${0:outline})"
+	    	"draw_ellipse_color(${1:x1},${2:y1},${3:x2},${4:y2},${5:col1},${6:col2},${7:outline})"
 		],
 		"description": "[Function]draw_ellipse_color(x1,y1,x2,y2,col1,col2,outline) \n绘制椭圆。"
     },
 	"draw_primitive_begin": {
         "prefix": "draw_primitive_begin",
         "body": [
-	    	"draw_primitive_begin(${0:kind})"
+	    	"draw_primitive_begin(${1:kind})"
 		],
 		"description": "[Function]draw_primitive_begin(kind) \n开始一个原始显示类型。"
     },
 	"draw_vertex": {
         "prefix": "draw_vertex",
         "body": [
-	    	"draw_vertex(${1:x},${0:y})"
+	    	"draw_vertex(${1:x},${2:y})"
 		],
 		"description": "[Function]draw_vertex(x,y) \n增加顶点 (x,y)到原始表中,使用之前设定的颜色和透明度。"
     },
 	"draw_vertex_color": {
         "prefix": "draw_vertex_color",
         "body": [
-	    	"draw_vertex_color(${1:x},${2:y},${3:col},${0:alpha})"
+	    	"draw_vertex_color(${1:x},${2:y},${3:col},${4:alpha})"
 		],
 		"description": "[Function]draw_vertex_color(x,y,col,alpha) \n增加顶点 (x,y)到原始表中,使用自定义颜色和透明度，这样允许你创造原始绘制平滑改变颜色和透明度。"
     },
@@ -885,217 +885,217 @@
 	"draw_primitive_begin_texture": {
         "prefix": "draw_primitive_begin_texture",
         "body": [
-	    	"draw_primitive_begin_texture(${1:kind},${0:texid})"
+	    	"draw_primitive_begin_texture(${1:kind},${2:texid})"
 		],
 		"description": "[Function]draw_primitive_begin_texture(kind,texid) \n开始原始绘制设定类型和贴图。"
     },
 	"draw_vertex_texture": {
         "prefix": "draw_vertex_texture",
         "body": [
-	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${0:ytex})"
+	    	"draw_vertex_texture(${1:x},${2:y},${3:xtex},${4:ytex})"
 		],
 		"description": "[Function]draw_vertex_texture(x,y,xtex,ytex) \n增加顶点 (x,y) 到原始绘制对应纹理坐标 (xtex,ytex) ,并且颜色和透明度为之前设定的。 xtex 和 ytex 为 0 或者 1 但是也能使用更大的值，致使重复纹理（见下文）。"
     },
 	"draw_vertex_texture_color": {
         "prefix": "draw_vertex_texture_color",
         "body": [
-	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${0:alpha})"
+	    	"draw_vertex_texture_color(${1:x},${2:y},${3:xtex},${4:ytex},${5:col},${6:alpha})"
 		],
 		"description": "[Function]draw_vertex_texture_color(x,y,xtex,ytex,col,alpha) \n增加顶点 (x,y) 到原始绘制对应纹理坐标 (xtex,ytex) ,并且设定颜色和透明度为。"
     },
 	"draw_set_blend_mode": {
         "prefix": "draw_set_blend_mode",
         "body": [
-	    	"draw_set_blend_mode(${0:mode})"
+	    	"draw_set_blend_mode(${1:mode})"
 		],
 		"description": "[Function]draw_set_blend_mode(mode) \n使用显示混合模式。有如下值： bm_normal, bm_add, bm_subtract, 和 bm_max. 不要忘记在使用后重置为一般模式因为其他精灵和背景都按照新的模式绘制。"
     },
 	"draw_set_blend_mode_ext": {
         "prefix": "draw_set_blend_mode_ext",
         "body": [
-	    	"draw_set_blend_mode_ext(${1:src},${0:dest})"
+	    	"draw_set_blend_mode_ext(${1:src},${2:dest})"
 		],
 		"description": "[Function]draw_set_blend_mode_ext(font) \n所谓混合模式,以利用双方的来源及目的地的颜色. 新的颜色,是一些因素倍源与另一个因素倍的目的地. 这些因素都设定此功能. 了解这一点,来源地和目的地都为红色,绿色,蓝色和alpha分量.  因此源地为 (Rs, Gs, Bs, As) 目的地为 (Rd, Gd, Bd, Ad). 所有被视为介于0和1 .混合因素,你可以选择源和目的地是: \nbm_zero: 混合因素是 (0, 0, 0, 0). \nbm_one: 混合因素是 (1, 1, 1, 1). \nbm_src_color: 混合因素是 (Rs, Gs, Bs, As). \nbm_inv_src_color: 混合因素是 (1–Rs, 1–Gs, 1–Bs, 1–As). \nbm_src_alpha: 混合因素是 (As, As, As, As). \nbm_inv_src_alpha: 混合因素是 (1–As, 1–As, 1–As, 1–As). \nbm_dest_alpha: 混合因素是 (Ad, Ad, Ad, Ad). \nbm_inv_dest_alpha: 混合因素是 (1–Ad, 1–Ad, 1–Ad, 1–Ad). \nbm_dest_color: 混合因素是 (Rd, Gd, Bd, Ad). \nbm_inv_dest_color: 混合因素是 (1–Rd, 1–Gd, 1–Bd, 1–Ad). \nbm_src_alpha_sat: 混合因素是 (f, f, f, 1); f = min(As, 1–Ad). \n例如,正常的混色模式设置源地混合bm_src_alpha和目的地混合bm_inv_src_alpha . 别忘了复位模式后正常使用,因为还另有其他精灵和背景在新的混合模式下绘制."
     },
 	"draw_surface": {
         "prefix": "draw_surface",
         "body": [
-	    	"draw_surface(${1:id},${2:x},${0:y})"
+	    	"draw_surface(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_surface(id,x,y) \n在坐标(x,y) 绘制指定 id 的表面。（不包含颜色混合及阿尔法通 道设置）。"
     },
 	"draw_surface_stretched": {
         "prefix": "draw_surface_stretched",
         "body": [
-	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${0:h})"
+	    	"draw_surface_stretched(${1:id},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]draw_surface_stretched(id,x,y,w,h) \n在坐标(x,y)的宽高分别为 w 、h 的矩形范围内填 充绘制表面。"
     },
 	"draw_surface_tiled": {
         "prefix": "draw_surface_tiled",
         "body": [
-	    	"draw_surface_tiled(${1:id},${2:x},${0:y})"
+	    	"draw_surface_tiled(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]draw_surface_tiled(id,x,y) \n将表面作为图块填充绘制至整个房间。"
     },
 	"draw_surface_part": {
         "prefix": "draw_surface_part",
         "body": [
-	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${0:y})"
+	    	"draw_surface_part(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y})"
 		],
 		"description": "[Function]draw_surface_part(id,left,top,width,height,x,y) \n绘制表面的一部分。"
     },
 	"draw_surface_ext": {
         "prefix": "draw_surface_ext",
         "body": [
-	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${0:alpha})"
+	    	"draw_surface_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:rot},${7:color},${8:alpha})"
 		],
 		"description": "[Function]draw_surface_ext(id,x,y,xscale,yscale,rot,color,alpha) \n结束描述原始绘制，这个函数是马上绘制它。"
     },
 	"draw_surface_stretched_ext": {
         "prefix": "draw_surface_stretched_ext",
         "body": [
-	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${0:alpha})"
+	    	"draw_surface_stretched_ext(${1:id},${2:x},${3:y},${4:w},${5:h},${6:color},${7:alpha})"
 		],
 		"description": "[Function]draw_surface_stretched_ext(id,x,y,w,h,color,alpha) \n绘制表面拉伸到显示范围,按照设定的宽高,颜色,透明度。"
     },
 	"draw_surface_tiled_ext": {
         "prefix": "draw_surface_tiled_ext",
         "body": [
-	    	"draw_surface_tiled_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${0:alpha})"
+	    	"draw_surface_tiled_ext(${1:id},${2:x},${3:y},${4:xscale},${5:yscale},${6:color},${7:alpha})"
 		],
 		"description": "[Function]draw_surface_tiled_ext(id,x,y,xscale,yscale,color,alpha) \n绘制表面贴图填充房间但是按照设定的比例,颜色,透明度。"
     },
 	"draw_surface_part_ext": {
         "prefix": "draw_surface_part_ext",
         "body": [
-	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${0:alpha})"
+	    	"draw_surface_part_ext(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:color},${11:alpha})"
 		],
 		"description": "[Function]draw_surface_part_ext(id,left,top,width,height,x,y,xscale,yscale,color,alpha) \n绘制表面部分,原点在 (x,y)但是按照设定的比例,颜色和透明度."
     },
 	"draw_surface_general": {
         "prefix": "draw_surface_general",
         "body": [
-	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${0:alpha})"
+	    	"draw_surface_general(${1:id},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:xscale},${9:yscale},${10:rot},${11:c1},${12:c2},${13:c3},${14:c4},${15:alpha})"
 		],
 		"description": "[Function]draw_surface_general(id,left,top,width,height,x,y,xscale,yscale,rot,c1,c2,c3,c4,alpha) \n表面常规绘制函数.它绘制表面原点为 (x,y) 但是按照设定比例,旋转角度,四角颜色(左上,右上,右下,左下)和透明度。"
     },
 	"make_color_rgb": {
         "prefix": "make_color_rgb",
         "body": [
-	    	"make_color_rgb(${1:red},${2:green},${0:blue})"
+	    	"make_color_rgb(${1:red},${2:green},${3:blue})"
 		],
 		"description": "[Function]make_color_rgb(red,green,blue) \n返回一个指定RGB值的颜色。red,green,blue 三个参数 必须为0到255的数值。"
     },
 	"make_color_hsv": {
         "prefix": "make_color_hsv",
         "body": [
-	    	"make_color_hsv(${1:hue},${2:saturation},${0:value})"
+	    	"make_color_hsv(${1:hue},${2:saturation},${3:value})"
 		],
 		"description": "[Function]make_color_hsv(hue,saturation,value) \n返回指定色调 hue ，饱和度 saturation，以及 明暗度 value 的颜色（所有参数都必须在0到255之间）。"
     },
 	"color_get_red": {
         "prefix": "color_get_red",
         "body": [
-	    	"color_get_red(${0:col})"
+	    	"color_get_red(${1:col})"
 		],
 		"description": "[Function]color_get_red(col) \n返回指定红色值 col 的颜色。"
     },
 	"color_get_green": {
         "prefix": "color_get_green",
         "body": [
-	    	"color_get_green(${0:col})"
+	    	"color_get_green(${1:col})"
 		],
 		"description": "[Function]color_get_green(col) \n返回指定绿色值 col 的颜色。"
     },
 	"color_get_blue": {
         "prefix": "color_get_blue",
         "body": [
-	    	"color_get_blue(${0:col})"
+	    	"color_get_blue(${1:col})"
 		],
 		"description": "[Function]color_get_blue(col) \n返回指定蓝色值 col 的颜色。"
     },
 	"color_get_hue": {
         "prefix": "color_get_hue",
         "body": [
-	    	"color_get_hue(${0:col})"
+	    	"color_get_hue(${1:col})"
 		],
 		"description": "[Function]color_get_hue(col) \n返回指定色调值 col 的颜色。"
     },
 	"color_get_saturation": {
         "prefix": "color_get_saturation",
         "body": [
-	    	"color_get_saturation(${0:col})"
+	    	"color_get_saturation(${1:col})"
 		],
 		"description": "[Function]color_get_saturation(col) \n返回指定饱和度 col 的颜色。"
     },
 	"color_get_value": {
         "prefix": "color_get_value",
         "body": [
-	    	"color_get_value(${0:col})"
+	    	"color_get_value(${1:col})"
 		],
 		"description": "[Function]color_get_value(col) \n返回指定明暗度 col 的颜色。"
     },
 	"merge_color": {
         "prefix": "merge_color",
         "body": [
-	    	"merge_color(${1:col1},${2:col2},${0:amount})"
+	    	"merge_color(${1:col1},${2:col2},${3:amount})"
 		],
 		"description": "[Function]merge_color(col1,col2,amount) \n返回颜色 col1，和col2 的混合颜色。混合程度由 amount 决定。0 代表完全混合为颜色 col1 ，1 代表完全混合为颜色 col2。"
     },
 	"screen_save": {
         "prefix": "screen_save",
         "body": [
-	    	"screen_save(${0:fname})"
+	    	"screen_save(${1:fname})"
 		],
 		"description": "[Function]screen_save(fname) \n以给定的文件名 fname 保存屏幕截图为 bmp 文件。常用来截屏。"
     },
 	"screen_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${0:h})"
+	    	"screen_save_part(${1:fname},${2:x},${3:y},${4:w},${5:h})"
 		],
 		"description": "[Function]screen_save_part(fname,x,y,w,h) \n保存指定位置的屏幕为给定的文件名。"
     },
 	"string_width": {
         "prefix": "string_width",
         "body": [
-	    	"string_width(${0:string})"
+	    	"string_width(${1:string})"
 		],
 		"description": "[Function]string_width(string) \n当前字体及将要通过 draw_text () 函数绘制的字符串 string 的 宽度。可以用来精确定位图像位置。"
     },
 	"string_height": {
         "prefix": "string_height",
         "body": [
-	    	"string_height(${0:string})"
+	    	"string_height(${1:string})"
 		],
 		"description": "[Function]string_height(string) \n当前字体及将要通过 draw_text () 函数绘制的字符串 string 的 高度。可以用来精确定位图像位置。"
     },
 	"string_width_ext": {
         "prefix": "string_width_ext",
         "body": [
-	    	"string_width_ext(${1:string},${2:sep},${0:w})"
+	    	"string_width_ext(${1:string},${2:sep},${3:w})"
 		],
 		"description": "[Function]string_width_ext(string,sep,w) \n当前字体及将要通过 draw_text_ext () 函数绘制的字 符串 string 的宽度。可以用来精确定位图像位置。sep 代表行间距， w 代表行宽。"
     },
 	"string_height_ext": {
         "prefix": "string_height_ext",
         "body": [
-	    	"string_height_ext(${1:string},${2:sep},${0:w})"
+	    	"string_height_ext(${1:string},${2:sep},${3:w})"
 		],
 		"description": "[Function]string_height_ext(string,sep,w) \n当前字体及将要通过 draw_text_ext () 函数绘制的字 符串 string 的高度。可以用来精确定位图像位置。sep 代表行间距， w 代表行宽。"
     },
 	"texture_preload": {
         "prefix": "texture_preload",
         "body": [
-	    	"texture_preload(${0:texid})"
+	    	"texture_preload(${1:texid})"
 		],
 		"description": "[Function]texture_preload(texid) \n把纹理立即存入显存。"
     },
 	"texture_set_priority": {
         "prefix": "texture_set_priority",
         "body": [
-	    	"texture_set_priority(${1:texid},${0:prio})"
+	    	"texture_set_priority(${1:texid},${2:prio})"
 		],
 		"description": "[Function]texture_set_priority(texid,prio) \n当显存太少需要删除部分在开始其他房间产生时。这时优先级低的先被删除。默认全部优先为0，你不能改变优先计算（使用正数值）。"
     },
@@ -1116,70 +1116,70 @@
 	"texture_set_interpolation": {
         "prefix": "texture_set_interpolation",
         "body": [
-	    	"texture_set_interpolation(${0:linear})"
+	    	"texture_set_interpolation(${1:linear})"
 		],
 		"description": "[Function]texture_set_interpolation(linear) \n表明是否使用线性插值(true) ,或选择就近像素(假) . 线性插值使纹理顺畅,但也感到有点模糊,有时候额外成本时间. 此设定也影响到绘画精灵和背景. 默认值是FALSE . (这也可以改变,在全局游戏设定)。"
     },
 	"texture_set_blending": {
         "prefix": "texture_set_blending",
         "body": [
-	    	"texture_set_blending(${0:blend})"
+	    	"texture_set_blending(${1:blend})"
 		],
 		"description": "[Function]texture_set_blending(blend) \n表明是否使用混合颜色和透明值. 这个开关可能在旧硬件上更块. 此设定也影响到绘画精灵和背景. 默认是真。"
     },
 	"texture_set_repeat": {
         "prefix": "texture_set_repeat",
         "body": [
-	    	"texture_set_repeat(${0:repeat})"
+	    	"texture_set_repeat(${1:repeat})"
 		],
 		"description": "[Function]texture_set_repeat(repeat) \n表明是否重复使用的纹理. 这项工程如下. 如上所述纹理坐标所在的范围0-1 . 如果你指定了一个值大于1 ,则默认休息时不绘制. 设置重复为真时纹理是重复. 注意精灵和背景总是不重复绘制. 一旦你绘制一个精灵背景此值复位为false. 默认值是FALSE。"
     },
 	"surface_create": {
         "prefix": "surface_create",
         "body": [
-	    	"surface_create(${1:w},${0:h})"
+	    	"surface_create(${1:w},${2:h})"
 		],
 		"description": "[Function]surface_create(w,h) \n创建一个表面，w，h 分别代表宽度，高度。返回表面的 id ，后面 会用到它。要注意表面是不会被自动清除的，需要用户负责清除。（先设置表面为操作目标， 然后调用清除函数）。"
     },
 	"surface_free": {
         "prefix": "surface_free",
         "body": [
-	    	"surface_free(${0:id})"
+	    	"surface_free(${1:id})"
 		],
 		"description": "[Function]surface_free(id) \n清除指定 id 的表面占用的内存。"
     },
 	"surface_exists": {
         "prefix": "surface_exists",
         "body": [
-	    	"surface_exists(${0:id})"
+	    	"surface_exists(${1:id})"
 		],
 		"description": "[Function]surface_exists(id) \n返回指定 id 的表面是否存在。"
     },
 	"surface_get_width": {
         "prefix": "surface_get_width",
         "body": [
-	    	"surface_get_width(${0:id})"
+	    	"surface_get_width(${1:id})"
 		],
 		"description": "[Function]surface_get_width(id) \n返回指定 id 的表面的宽。"
     },
 	"surface_get_height": {
         "prefix": "surface_get_height",
         "body": [
-	    	"surface_get_height(${0:id})"
+	    	"surface_get_height(${1:id})"
 		],
 		"description": "[Function]surface_get_height(id) \n返回指定 id 的表面的高度。"
     },
 	"surface_get_texture": {
         "prefix": "surface_get_texture",
         "body": [
-	    	"surface_get_texture(${0:id})"
+	    	"surface_get_texture(${1:id})"
 		],
 		"description": "[Function]surface_get_texture(id) \n回与指定 id 的表面对应的材质。可以在表面图像的材质对象中使用。"
     },
 	"surface_set_target": {
         "prefix": "surface_set_target",
         "body": [
-	    	"surface_set_target(${0:id})"
+	    	"surface_set_target(${1:id})"
 		],
 		"description": "[Function]surface_set_target(id) \n将绘图目标指定为 id 的表面。其后的所有绘图操作都将在指定 表面上进行。这个函数只是简单的将指针覆盖至表面。"
     },
@@ -1193,252 +1193,252 @@
 	"surface_getpixel": {
         "prefix": "surface_getpixel",
         "body": [
-	    	"surface_getpixel(${1:id},${2:x},${0:y})"
+	    	"surface_getpixel(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]surface_getpixel(id,x,y) \n返回指定 id 的表面上坐标为 (x,y) 的像素的颜色。速度不是 很快，所以要谨慎使用。"
     },
 	"surface_save": {
         "prefix": "surface_save",
         "body": [
-	    	"surface_save(${1:id},${0:fname})"
+	    	"surface_save(${1:id},${2:fname})"
 		],
 		"description": "[Function]surface_save(id,fname) \n保存指定 id 的表面到名为 fname 的BMP图像文件中。常用来进行截屏。"
     },
 	"surface_save_part": {
         "prefix": "screen_save_part",
         "body": [
-	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${0:h})"
+	    	"screen_save_part(${1:id},${2:fname},${3:x},${4:y},${5:w},${6:h})"
 		],
 		"description": "[Function]screen_save_part(id,fname,x,y,w,h) \n保存指定 id 的表面上一部分（(x,y)为坐标， w、h为宽度、高度）到指定的文件名。"
     },
 	"surface_copy": {
         "prefix": "surface_copy",
         "body": [
-	    	"surface_copy(${1:destination},${2:x},${3:y},${0:source})"
+	    	"surface_copy(${1:destination},${2:x},${3:y},${4:source})"
 		],
 		"description": "[Function]surface_copy(destination,x,y,source) \n复制原表面的位置(x,y)到一表面上(没有任何混合)。"
     },
 	"surface_copy_part": {
         "prefix": "surface_copy_part",
         "body": [
-	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${0:hs})"
+	    	"surface_copy_part(${1:destination},${2:x},${3:y},${4:source},${5:xs},${6:ys},${7:ws},${8:hs})"
 		],
 		"description": "[Function]surface_copy_part(destination,x,y,source,xs,ys,ws,hs) \n保复制原表面的位置(x,y)部分尺寸(xs,ys,ws,hs)到一表面上(没有任何混合)。"
     },
 	"tile_add": {
         "prefix": "tile_add",
         "body": [
-	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${0:depth})"
+	    	"tile_add(${1:background},${2:left},${3:top},${4:width},${5:height},${6:x},${7:y},${8:depth})"
 		],
 		"description": "[Function]tile_add(background,left,top,width,height,x,y,depth) \n在房间中添加新的贴图。函数 返回生成贴图的 id 。"
     },
 	"tile_delete": {
         "prefix": "tile_delete",
         "body": [
-	    	"tile_delete(${0:id})"
+	    	"tile_delete(${1:id})"
 		],
 		"description": "[Function]tile_delete(id) \n删除指定 id 的贴图。"
     },
 	"tile_exists": {
         "prefix": "tile_exists",
         "body": [
-	    	"tile_exists(${0:id})"
+	    	"tile_exists(${1:id})"
 		],
 		"description": "[Function]tile_exists(id) \n返回指定 id 的贴图是否存在。"
     },
 	"tile_get_x": {
         "prefix": "tile_get_x",
         "body": [
-	    	"tile_get_x(${0:id})"
+	    	"tile_get_x(${1:id})"
 		],
 		"description": "[Function]tile_get_x(id) \n返回指定 id 的贴图的 x 横坐标。"
     },
 	"tile_get_y": {
         "prefix": "tile_get_y",
         "body": [
-	    	"tile_get_y(${0:id})"
+	    	"tile_get_y(${1:id})"
 		],
 		"description": "[Function]tile_get_y(id) \n返回指定 id 的贴图的 y 纵坐标。"
     },
 	"tile_get_left": {
         "prefix": "tile_get_left",
         "body": [
-	    	"tile_get_left(${0:id})"
+	    	"tile_get_left(${1:id})"
 		],
 		"description": "[Function]tile_get_left(id) \n返回指定 id 的贴图的 left 左边属性值。"
     },
 	"tile_get_top": {
         "prefix": "tile_get_top",
         "body": [
-	    	"tile_get_top(${0:id})"
+	    	"tile_get_top(${1:id})"
 		],
 		"description": "[Function]tile_get_top(id) \n返回指定 id 的贴图的 top 顶边属性值。"
     },
 	"tile_get_width": {
         "prefix": "tile_get_width",
         "body": [
-	    	"tile_get_width(${0:id})"
+	    	"tile_get_width(${1:id})"
 		],
 		"description": "[Function]tile_get_width(id) \n返回指定 id 的贴图的 width 宽属性值。"
     },
 	"tile_get_height": {
         "prefix": "tile_get_height",
         "body": [
-	    	"tile_get_height(${0:id})"
+	    	"tile_get_height(${1:id})"
 		],
 		"description": "[Function]tile_get_height(id) \n返回指定 id 的贴图的 height 高属性值。"
     },
 	"tile_get_depth": {
         "prefix": "tile_get_depth",
         "body": [
-	    	"tile_get_depth(${0:id})"
+	    	"tile_get_depth(${1:id})"
 		],
 		"description": "[Function]tile_get_depth(id) \n返回指定 id 的贴图的 depth 深属性值。"
     },
 	"tile_get_visible": {
         "prefix": "tile_get_visible",
         "body": [
-	    	"tile_get_visible(${0:id})"
+	    	"tile_get_visible(${1:id})"
 		],
 		"description": "[Function]tile_get_visible(id) \n返回指定 id 的贴图的 visible 可视属性值。"
     },
 	"tile_get_xscale": {
         "prefix": "tile_get_xscale",
         "body": [
-	    	"tile_get_xscale(${0:id})"
+	    	"tile_get_xscale(${1:id})"
 		],
 		"description": "[Function]tile_get_xscale(id) \n返回指定 id 的贴图的 xscale x比例属性值。"
     },
 	"tile_get_yscale": {
         "prefix": "tile_get_yscale",
         "body": [
-	    	"tile_get_yscale(${0:id})"
+	    	"tile_get_yscale(${1:id})"
 		],
 		"description": "[Function]tile_get_yscale(id) \n返回指定 id 的贴图的 yscale y比例属性值。"
     },
 	"tile_get_background": {
         "prefix": "tile_get_background",
         "body": [
-	    	"tile_get_background(${0:id})"
+	    	"tile_get_background(${1:id})"
 		],
 		"description": "[Function]tile_get_background(id) \n返回指定 id 的贴图的 background 背景属性值。"
     },
 	"tile_get_blend": {
         "prefix": "tile_get_blend",
         "body": [
-	    	"tile_get_blend(${0:id})"
+	    	"tile_get_blend(${1:id})"
 		],
 		"description": "[Function]tile_get_blend(id) \n返回指定 id 的贴图的 blend 混合属性值。"
     },
 	"tile_get_alpha": {
         "prefix": "tile_get_alpha",
         "body": [
-	    	"tile_get_alpha(${0:id})"
+	    	"tile_get_alpha(${1:id})"
 		],
 		"description": "[Function]tile_get_alpha(id) \n返回指定 id 的贴图的 alpha 透明度属性值。"
     },
 	"tile_set_position": {
         "prefix": "tile_set_position",
         "body": [
-	    	"tile_set_position(${1:id},${2:x},${0:y})"
+	    	"tile_set_position(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_set_position(id,x,y) \n设置指定 id 的贴图的坐标为(x,y)。"
     },
 	"tile_set_region": {
         "prefix": "tile_set_region",
         "body": [
-	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${0:height})"
+	    	"tile_set_region(${1:id},${2:left},${3:right},${4:width},${5:height})"
 		],
 		"description": "[Function]tile_set_region(id,left,right,width,height) \n设定指定 id 的贴图在背景上的矩形区域。"
     },
 	"tile_set_background": {
         "prefix": "tile_set_background",
         "body": [
-	    	"tile_set_background(${1:id},${0:background})"
+	    	"tile_set_background(${1:id},${2:background})"
 		],
 		"description": "[Function]tile_set_background(id,background) \n设定指定 id 的贴图的背景 background。"
     },
 	"tile_set_visible": {
         "prefix": "tile_set_visible",
         "body": [
-	    	"tile_set_visible(${1:id},${0:visible})"
+	    	"tile_set_visible(${1:id},${2:visible})"
 		],
 		"description": "[Function]tile_set_visible(id,visible) \n设定指定 id 的贴图是否可见。"
     },
 	"tile_set_depth": {
         "prefix": "tile_set_depth",
         "body": [
-	    	"tile_set_depth(${1:id},${0:depth})"
+	    	"tile_set_depth(${1:id},${2:depth})"
 		],
 		"description": "[Function]tile_set_depth(id,depth) \n设定指定 id 的贴图的深度。"
     },
 	"tile_set_scale": {
         "prefix": "tile_set_scale",
         "body": [
-	    	"tile_set_scale(${1:id},${2:xscale},${0:yscale})"
+	    	"tile_set_scale(${1:id},${2:xscale},${3:yscale})"
 		],
 		"description": "[Function]tile_set_scale(id,xscale,yscale) \n设定指定 id 的贴图的缩放比。"
     },
 	"tile_set_blend": {
         "prefix": "tile_set_blend",
         "body": [
-	    	"tile_set_blend(${1:id},${0:blend})"
+	    	"tile_set_blend(${1:id},${2:blend})"
 		],
 		"description": "[Function]tile_set_blend(id,color) \n设定指定 id 的贴图的混合颜色。"
     },
 	"tile_set_alpha": {
         "prefix": "tile_set_alpha",
         "body": [
-	    	"tile_set_alpha(${1:id},${0:alpha})"
+	    	"tile_set_alpha(${1:id},${2:alpha})"
 		],
 		"description": "[Function]tile_set_alpha(id,alpha) \n设定指定 id 的贴图的阿尔法透明通道值。"
     },
 	"tile_layer_hide": {
         "prefix": "tile_layer_hide",
         "body": [
-	    	"tile_layer_hide(${0:depth})"
+	    	"tile_layer_hide(${1:depth})"
 		],
 		"description": "[Function]tile_layer_hide(depth) \n隐藏指定深度 depth 的所有贴图。"
     },
 	"tile_layer_show": {
         "prefix": "tile_layer_show",
         "body": [
-	    	"tile_layer_show(${0:depth})"
+	    	"tile_layer_show(${1:depth})"
 		],
 		"description": "[Function]tile_layer_show(depth) \n显示指定深度 depth 的所有贴图。"
     },
 	"tile_layer_delete": {
         "prefix": "tile_layer_delete",
         "body": [
-	    	"tile_layer_delete(${0:depth})"
+	    	"tile_layer_delete(${1:depth})"
 		],
 		"description": "[Function]tile_layer_delete(depth) \n删除指定深度 depth 的所有贴图。"
     },
 	"tile_layer_shift": {
         "prefix": "tile_layer_shift",
         "body": [
-	    	"tile_layer_shift(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_shift(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_shift(depth,x,y) \n移动指定深度 depth 下的所有贴图向坐标(x,y)移动。可以 用来搭建卷轴移动的贴图层。"
     },
 	"tile_layer_find": {
         "prefix": "tile_layer_find",
         "body": [
-	    	"tile_layer_find(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_find(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_find(depth,x,y) \n返回给定深度 depth 下，坐标(x,y) 的贴图 id 。如果没有 找到则返回 -1 。如果有多个结果则返回第一个的 id 。"
     },
 	"tile_layer_delete_at": {
         "prefix": "tile_layer_delete_at",
         "body": [
-	    	"tile_layer_delete_at(${1:depth},${2:x},${0:y})"
+	    	"tile_layer_delete_at(${1:depth},${2:x},${3:y})"
 		],
 		"description": "[Function]tile_layer_delete_at(depth,x,y) \n删除指定深度 depth 下，坐标(x,y) 的贴图。如果有 多个结果则全部删除。"
     },
 	"tile_layer_depth": {
         "prefix": "tile_layer_depth",
         "body": [
-	    	"tile_layer_depth(${${1:depth},${0:newdepth})"
+	    	"tile_layer_depth(${${1:depth},${2:newdepth})"
 		],
 		"description": "[Function]tile_layer_depth(depth,newdepth) \n将指定深度 depth 下的所有贴图的深度更改为新的深 度 newdepth。"
     },
@@ -1473,35 +1473,35 @@
 	"display_set_size": {
         "prefix": "display_set_size",
         "body": [
-	    	"display_set_size(${1:w},${0:h})"
+	    	"display_set_size(${1:w},${2:h})"
 		],
 		"description": "[Function]display_set_size(w,h) \n设定显示的宽度和高度，单位像素。返回是否成功。（记住只有正确的组合才被允许）。"
     },
 	"display_set_colordepth": {
         "prefix": "display_set_colordepth",
         "body": [
-	    	"display_set_colordepth(${0:coldepth})"
+	    	"display_set_colordepth(${1:coldepth})"
 		],
 		"description": "[Function]display_set_colordepth(coldepth) \n设置色深。通常只有16和32两种允许值。返回是否成 功。"
     },
 	"display_set_frequency": {
         "prefix": "display_set_frequency",
         "body": [
-	    	"display_set_frequency(${0:frequency})"
+	    	"display_set_frequency(${1:frequency})"
 		],
 		"description": "[Function]display_set_frequency(frequency) \n设置刷新率。通常只有很少的几个允许值（ 比如60、75、85等等）。返回是否成功。"
     },
 	"display_set_all": {
         "prefix": "display_set_all",
         "body": [
-	    	"display_set_all(${1:w},${2:h},${3:frequency},${0:coldepth})"
+	    	"display_set_all(${1:w},${2:h},${3:frequency},${4:coldepth})"
 		],
 		"description": "[Function]display_set_all(w,h,frequency,coldepth) \n一次性设置。-1 代表不更改。返回是否成功。"
     },
 	"display_test_all": {
         "prefix": "display_test_all",
         "body": [
-	    	"display_test_allh(${1:w},${2:h},${3:frequency},${0:coldepth})"
+	    	"display_test_allh(${1:w},${2:h},${3:frequency},${4:coldepth})"
 		],
 		"description": "[Function]display_test_all(w,h,frequency,coldepth) \n返回给定的设置是否允许。-1 代表不更改。"
     },
@@ -1531,12 +1531,12 @@
         "body": [
 	    	"display_mouse_set()"
 		],
-		"description": "[Function]display_mouse_set(${1:x},${0:y}) \n设置鼠标位置到指定的坐标(x,y)。"
+		"description": "[Function]display_mouse_set(${1:x},${2:y}) \n设置鼠标位置到指定的坐标(x,y)。"
     },
 	"window_set_visible": {
         "prefix": "window_set_visible",
         "body": [
-	    	"window_set_visible(${0:visible})"
+	    	"window_set_visible(${1:visible})"
 		],
 		"description": "[Function]window_set_visible(visible) \n设置游戏窗口是否可见。当然通常状况下你会希望游戏窗口 一直可见。处于不可见状态的窗口不会对任何键盘事件产生反应。"
     },
@@ -1550,7 +1550,7 @@
 	"window_set_fullscreen": {
         "prefix": "window_set_fullscreen",
         "body": [
-	    	"window_set_fullscreen(${0:full})"
+	    	"window_set_fullscreen(${1:full})"
 		],
 		"description": "[Function]window_set_fullscreen(full) \n设置窗口为全屏模式。"
     },
@@ -1564,7 +1564,7 @@
 	"window_set_showborder": {
         "prefix": "window_set_showborder",
         "body": [
-	    	"window_set_showborder(${0:show})"
+	    	"window_set_showborder(${1:show})"
 		],
 		"description": "[Function]window_set_showborder(show) \n设置是否显示窗口的边框（全屏模式下不会显示边框）。"
     },
@@ -1578,7 +1578,7 @@
 	"window_set_showicons": {
         "prefix": "window_set_showicons",
         "body": [
-	    	"window_set_showicons(${0:show})"
+	    	"window_set_showicons(${1:show})"
 		],
 		"description": "[Function]window_set_showicons(show) \n设置窗口图标（最小化，最大化，关闭）是否显示（全屏模 式下不会显示）。"
     },
@@ -1592,7 +1592,7 @@
 	"window_set_stayontop": {
         "prefix": "window_set_stayontop",
         "body": [
-	    	"window_set_stayontop(${0:stay})"
+	    	"window_set_stayontop(${1:stay})"
 		],
 		"description": "[Function]window_set_stayontop(stay) \n设置窗口是否一直处于最前。"
     },
@@ -1606,7 +1606,7 @@
 	"window_set_sizeable": {
         "prefix": "window_set_sizeable",
         "body": [
-	    	"window_set_sizeable(${0:sizeable})"
+	    	"window_set_sizeable(${1:sizeable})"
 		],
 		"description": "[Function]window_set_sizeable(sizeable) \n设置窗口是否可以被用户调整。（玩家只能在边框被显示 的非全屏模式下调整窗口大小）。"
     },
@@ -1620,7 +1620,7 @@
 	"window_set_caption": {
         "prefix": "window_set_caption",
         "body": [
-	    	"window_set_caption(${0:caption})"
+	    	"window_set_caption(${1:caption})"
 		],
 		"description": "[Function]window_set_caption(caption) \n设置窗口标题。通常玩家在设计房间的时候都会自己改动房间标题。所以这个函数不是很有用，除非你不想通过 Game Maker 完成这个操作。标题只有在窗口显示边框并且未处于全屏模式时可见。"
     },
@@ -1634,7 +1634,7 @@
 	"window_set_cursor": {
         "prefix": "window_set_cursor",
         "body": [
-	    	"window_set_cursor(${0:curs})"
+	    	"window_set_cursor(${1:curs})"
 		],
 		"description": "[Function]window_set_cursor(curs) \n设置窗口内鼠标指针的类型。你可以使用如下几种鼠标指针类型 : \ncr_default 默认\ncr_none 无\ncr_arrow 箭头\ncr_cross 十字\ncr_beam 工形\ncr_size_nesw 右斜双箭头\ncr_size_ns 垂直双箭头\ncr_size_nwse 左斜双箭头\ncr_size_we 水平双箭头\ncr_uparrow 上箭头\ncr_hourglass 沙漏\ncr_drag 拖拽\ncr_nodrop 不能拖拽\ncr_hsplit 水平分离\ncr_vsplit 垂直分离\ncr_multidrag 复数拖拽选中\ncr_sqlwait SQL等待\ncr_no 拒绝\ncr_appstart 载入\ncr_help 帮助\ncr_handpoint 手指\ncr_size_all 全向箭头\n特别指出，要想隐藏鼠标指针呢，使用 cr_none 这个值。"
     },
@@ -1648,7 +1648,7 @@
 	"window_set_color": {
         "prefix": "window_set_color",
         "body": [
-	    	"window_set_color(${0:color})"
+	    	"window_set_color(${1:color})"
 		],
 		"description": "[Function]window_set_color(color) \n设置窗口未用来绘制房间的部分的颜色。"
     },
@@ -1662,7 +1662,7 @@
 	"window_set_region_scale": {
         "prefix": "window_set_region_scale",
         "body": [
-	    	"window_set_region_scale(${1:scale},${0:adaptwindow})"
+	    	"window_set_region_scale(${1:scale},${2:adaptwindow})"
 		],
 		"description": "[Function]window_set_region_scale(scale,adaptwindow) \n如果窗口比当前房间大，通常房间就会显 示在窗口的中心位置。这里你可以指定房间自动缩放以适应窗口大小。设为 1 代表不进行 缩放。如果你使用 0 作为参数则代表伸展填充全部窗口区域。如果你设置为一个负值则代 表在窗口内维持高宽比的最大尺寸（通常也是你希望的模式）。adaptwindow 指定窗口尺寸 是否根据房间尺寸进行适应调整。只在缩放值为正值时起作用。"
     },
@@ -1676,21 +1676,21 @@
 	"window_set_position": {
         "prefix": "window_set_position",
         "body": [
-	    	"window_set_position(${1:x},${0:y})"
+	    	"window_set_position(${1:x},${2:y})"
 		],
 		"description": "[Function]window_set_position(x,y) \n设置窗口界面的位置。"
     },
 	"window_set_size": {
         "prefix": "window_set_size",
         "body": [
-	    	"window_set_size(${1:w},${0:h})"
+	    	"window_set_size(${1:w},${2:h})"
 		],
 		"description": "[Function]window_set_size(w,h) \n设置窗口界面的尺寸。记住如果这个尺寸比绘图区域小的多它会自 动扩大以适应绘图区域的大小。"
     },
 	"window_set_rectangle": {
         "prefix": "window_set_rectangle",
         "body": [
-	    	"window_set_rectangle(${1:x},${2:y},${3:w},${0:h})"
+	    	"window_set_rectangle(${1:x},${2:y},${3:w},${4:h})"
 		],
 		"description": "[Function]window_set_rectangle(x,y,w,h) \n设置窗口矩形区域的位置和尺寸。"
     },
@@ -1753,14 +1753,14 @@
 	"window_mouse_set": {
         "prefix": "window_mouse_set",
         "body": [
-	    	"window_mouse_set(${1:x},${0:y})"
+	    	"window_mouse_set(${1:x},${2:y})"
 		],
 		"description": "[Function]window_mouse_set(x,y) \n设置鼠标在窗口内的位置，坐标(x,y)。"
     },
 	"window_set_region_size": {
         "prefix": "window_set_region_size",
         "body": [
-	    	"window_set_region_size(${1:w},${2:h},${0:adaptwindow})"
+	    	"window_set_region_size(${1:w},${2:h},${3:adaptwindow})"
 		],
 		"description": "[Function]window_set_region_size(w,h,adaptwindow) \n设置窗口中的绘图区域宽度和高度。 adaptwindow 参数指定窗口尺寸是否一定要适应绘图区域大小。窗口尺寸在你使用固定缩放比例时将总是适应。（请看函数window_set_region_scale()相关内容。）"
     },
@@ -1781,21 +1781,21 @@
 	"window_view_mouse_get_x": {
         "prefix": "window_view_mouse_get_x",
         "body": [
-	    	"window_view_mouse_get_x(${0:id})"
+	    	"window_view_mouse_get_x(${1:id})"
 		],
 		"description": "[Function]window_view_mouse_get_x(id) \n返回鼠标在编号为 id 的视角内的横坐标。"
     },
 	"window_view_mouse_get_y": {
         "prefix": "window_view_mouse_get_y",
         "body": [
-	    	"window_view_mouse_get_y(${0:id})"
+	    	"window_view_mouse_get_y(${1:id})"
 		],
 		"description": "[Function]window_view_mouse_get_y(id) \n返回鼠标在编号为 id 的视角内的纵坐标。"
     },
 	"window_view_mouse_set": {
         "prefix": "window_view_mouse_set",
         "body": [
-	    	"window_view_mouse_set(${1:id},${2:x},${0:y})"
+	    	"window_view_mouse_set(${1:id},${2:x},${3:y})"
 		],
 		"description": "[Function]window_view_mouse_set(id,x,y) \n在编号为 id 的视角内设置鼠标坐标为(x,y)。"
     },
@@ -1816,7 +1816,7 @@
 	"window_views_mouse_set": {
         "prefix": "window_views_mouse_set",
         "body": [
-	    	"window_views_mouse_set(${1:x},${0:y})"
+	    	"window_views_mouse_set(${1:x},${2:y})"
 		],
 		"description": "[Function]window_views_mouse_set() \n设置当前可见的第一个视角内的鼠标坐标为(x,y)。"
     },
@@ -1837,14 +1837,14 @@
 	"set_automatic_draw": {
         "prefix": "set_automatic_draw",
         "body": [
-	    	"set_automatic_draw(${0:value})"
+	    	"set_automatic_draw(${1:value})"
 		],
 		"description": "[Function]display_get_width(value) \n指定是否自动重绘房间（设为 true 则为真，默认。或者 false 为否）。"
     },
 	"set_synchronization": {
         "prefix": "set_synchronization",
         "body": [
-	    	"set_synchronization(${0:value})"
+	    	"set_synchronization(${1:value})"
 		],
 		"description": "[Function]set_synchronization(value) \n指定是否根据屏幕刷新率同步绘制屏幕。"
     },
@@ -2699,35 +2699,35 @@
 	"external_define": {
         "prefix": "external_define",
         "body": [
-	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${0:arg2tupe}, ...)"
+	    	"external_define(${1:dll},${2:name},${3:calltype},${4:restype},${5:argnumb},${6:arg1type},${7:arg2tupe}, ...)"
 		],
 		"description": "[Function]external_define(dll,name,calltype,restype,argnumb,arg1type,arg2type, ...) \n定义一个扩展函数.dll 是DLL文件的文件名，name是功能函数的名字，calltype使用呼叫的协定（方式），它有两种方式分别为dll_cdel或者 dll_stdcall。restype是结果的类型，它也有分为两种类型ty_real或者ty_string。argnumb是参数的个数（0-16 个之间）。下一步，对于每个参数你必须指定它的类型，你可以再使用ty_real或者ty_string。当有四个以上的参数是所有它们的类型必须都为 ty_real。"
     },
 	"external_call": {
         "prefix": "external_call",
         "body": [
-	    	"external_call(${1:id},${2:arg1},${0:arg2}, ...)"
+	    	"external_call(${1:id},${2:arg1},${3:arg2}, ...)"
 		],
 		"description": "[Function]external_call(id,arg1,arg2, ...) \n呼叫外部指定id的外部函数，后面跟上参数。你必须要给出正确的参数个数和每个参数的类型（数值还是字符）。这个函数本身返回外部函数操作后的结果。"
     },
 	"external_free": {
         "prefix": "external_free",
         "body": [
-	    	"external_free(${0:dll})"
+	    	"external_free(${1:dll})"
 		],
 		"description": "[Function]external_free(dll) \n你可以在游戏中释放掉指定文件名的DLL文件。某些特殊需要你删除了dll，同时dll没有被释放的话是不能被删除的.最好记得这个步骤,特别是在游戏结束时。"
     },
 	"execute_string": {
         "prefix": "execute_string",
         "body": [
-	    	"execute_string(${1:str},${2:arg1},${0:arg2}, ...)"
+	    	"execute_string(${1:str},${2:arg1},${3:arg2}, ...)"
 		],
 		"description": "[Function]execute_string(str,arg0,arg1, ...) \n显示参数执行一段代码。"
     },
 	"execute_file": {
         "prefix": "execute_file",
         "body": [
-	    	"execute_file(${0:fname})"
+	    	"execute_file(${1:fname})"
 		],
 		"description": "[Function]execute_file(fname) \n执行文件中的代码。"
     },
