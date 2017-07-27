@@ -22,16 +22,9 @@ Visual Studio Code版本需高于1.8.0。
 Syntax Highlignting may require theme support.  
 高亮功能可能需要主题支持。
 
-<<<<<<< HEAD
 ~~在某个版本中出现了“代码片段很可能混淆了片段变量和片段占位符”错误，目前该错误暂时无解。  
 In a version of the "The `(some snippet)`-snippet very likely confuses snippet-variables and snippet-placeholders." error, the current error is no solution.~~
 该错误已解决。
-=======
-在某个版本中出现了“代码片段很可能混淆了片段变量和片段占位符”错误，目前该错误暂时无解。  
-In a version of the "The `(some snippet)`-snippet very likely confuses snippet-variables and snippet-placeholders." error, the current error is no solution.
-![snipaste_20170718_164331.png](https://i.loli.net/2017/07/18/596dd1f7053ef.png)
-![snipaste_20170718_164430.png](https://i.loli.net/2017/07/18/596dd1f71b1d5.png)
->>>>>>> origin/master
 
 # Screenshot
 
