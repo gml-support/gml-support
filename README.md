@@ -17,7 +17,11 @@ Visual Studio Code版本需高于1.8.0。
 
 按下Ctrl+Shift+P，输入`GML Support Info for MaizeMusic`查看相关信息。
 
-# Known Issue
+## Contributing
+
+At present this plugin is not complete, if you want to contribute to this project, you can fork this project and pull a request.
+
+## Known Issue
 
 Syntax Highlignting may require theme support.  
 高亮功能可能需要主题支持。
@@ -26,7 +30,7 @@ Syntax Highlignting may require theme support.
 In a version of the "The `(some snippet)`-snippet very likely confuses snippet-variables and snippet-placeholders." error, the current error is no solution.~~
 该错误已解决。
 
-# Screenshot
+## Screenshot
 
 ![screenshot1](https://ooo.0o0.ooo/2017/05/29/592bb111b28f4.gif)
 
@@ -34,7 +38,11 @@ Now it also support English!
 
 ![screenshot2](https://ooo.0o0.ooo/2017/05/29/592bb10e83c41.gif)
 
-# Thanks
+## Other
+
+You can also follow me on Twitter : [@LiarOnce1062](https://twitter.com/LiarOnce1062)
+
+## Thanks
 
 GameMaker Syntax：[YellowAfterlife](https://yal.cc/notepad-syntax-highlighting-for-gamemaker-81/)  
 GameMaker Studio Syntax：[Everspace/Sublime_GameMakerStudio](https://github.com/Everspace/Sublime_GameMakerStudio)  
