@@ -87,7 +87,7 @@
          "name": "support.variable.local.gml"
       },
       {
-         "match": "\\b(x|y|id)\\b",
+         "match": "\\b(x|y|id|div|mod)\\b",
          "name": "support.variable.local.gml"
       },
       {

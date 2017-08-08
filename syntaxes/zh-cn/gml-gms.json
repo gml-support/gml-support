@@ -1,4 +1,23 @@
 {
+  "License": [
+      "The MIT License (MIT)",
+      "Copyright (c) 2014 Everspace",
+      "Permission is hereby granted, free of charge, to any person obtaining a copy",
+      "of this software and associated documentation files (the \"Software\"), to deal",
+      "in the Software without restriction, including without limitation the rights",
+      "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+      "copies of the Software, and to permit persons to whom the Software is",
+      "furnished to do so, subject to the following conditions:",
+      "The above copyright notice and this permission notice shall be included in all",
+      "copies or substantial portions of the Software.",
+      "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+      "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+      "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+      "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+      "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+      "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE",
+      "SOFTWARE."
+  ],
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "GameMaker Language(GameMaker Studio)",
   "scopeName": "source.gml-gms",
@@ -87,12 +106,15 @@
          "name": "support.variable.local.gml"
       },
       {
-         "match": "\\b(x|y|id)\\b",
+         "match": "\\b(x|y|id|div|mod)\\b",
          "name": "support.variable.local.gml"
       },
       {
          "match": "(?i)\\b(working_directory|webgl_enabled|view_yview|view_yport|view_xview|view_xport|view_wview|view_wport|view_vspeed|view_visible|view_vborder|view_surface_id|view_object|view_hview|view_hspeed|view_hport|view_hborder|view_enabled|view_current|view_angle|undefined|transition_steps|transition_kind|transition_color|temp_directory|show_score|show_lives|show_health|secure_mode|score|room_width|room_speed|room_persistent|room_last|room_height|room_first|room_caption|room|pointer_null|pointer_invalid|os_version|os_type|os_device|os_browser|mouse_y|mouse_x|mouse_lastbutton|mouse_button|lives|keyboard_string|keyboard_lastkey|keyboard_lastchar|keyboard_key|instance_id|instance_count|iap_data|health|gamemaker_version|gamemaker_registered|gamemaker_pro|game_save_id|game_project_name|game_id|game_display_name|fps_real|fps|event_type|event_object|event_number|event_action|error_occurred|error_last|display_aa|delta_time|debug_mode|cursor_sprite|current_year|current_weekday|current_time|current_second|current_month|current_minute|current_hour|current_day|caption_score|caption_lives|caption_health|browser_width|browser_height|background_yscale|background_y|background_xscale|background_x|background_width|background_vtiled|background_vspeed|background_visible|background_showcolour|background_showcolor|background_index|background_htiled|background_hspeed|background_height|background_foreground|background_colour|background_color|background_blend|background_alpha|async_load|application_surface)\\b",
          "name": "support.variable.global.gml"
       }
-    ]
+    ],
+    "repository":{
+
+    }
 }
