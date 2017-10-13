@@ -40,7 +40,8 @@ Now it also support English!
 
 ## Other
 
-You can also follow me on Twitter (need verification) : [@LiarOnce1062](https://twitter.com/LiarOnce1062)
+You can also follow me on Twitter (need verification) : [@LiarOnce1062](https://twitter.com/LiarOnce1062)  
+Twitter Channel: [#GML_Support](https://twitter.com/hashtag/GML_Support)
 
 ## Thanks
 
