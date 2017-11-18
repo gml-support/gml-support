@@ -7,10 +7,6 @@
   "publisherName": "LiarOnce",
   "icon": "icon.png",
   "license": "SEE LICENSE IN LICENSE",
-  "main": "./src/main",
-  "activationEvents": [
-		"*"
-	],
   "engines": {
     "vscode": "^1.8.0"
   },
@@ -126,6 +122,10 @@
       {
         "language": "gml-gms",
         "path": "%gms.snippet%"
+      },
+      {
+        "language": "gml-gms2",
+        "path": "%gms2.snippet%"
       }
     ]
   }
