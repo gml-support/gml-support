@@ -1,3 +1,14 @@
+## 1.2.1
+
+ - 久违的更新，让大家久等了。  
+ 由于学习缘故，很难及时提供更新，我感到很抱歉。
+ - 加入 `GMS2` 的代码片段，此处非常感谢 @laspencer91。
+ （不过下个版本的需要挤出时间更新了啊，我得旷课了。/(ㄒoㄒ)/~~）  
+ - Long-running update, so that everyone waiting.
+   I am sorry for the difficulty in providing timely updates due to my study.  
+ - Join the `GMS2` snippet, thanks @ laspencer91 here.
+  (However, the next version of the need to squeeze out the time updated ah, I have to truancy./(ㄒoㄒ)/~~)
+
 ## 1.2.0
 
  - 添加`.gmx`，`.yy`，`.yyp`文件高亮支持。
