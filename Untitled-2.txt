@@ -1,4 +1,0 @@
-timezone_local#
-timezone_utc#
-gamespeed_fps#
-gamespeed_microseconds#

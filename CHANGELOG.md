@@ -1,3 +1,8 @@
+## 1.2.2
+
+ - #4 修复了 `GMS2` 代码高亮问题。  
+ - #4 Fix the string highlighting issue.
+
 ## 1.2.1
 
  - 久违的更新，让大家久等了。  

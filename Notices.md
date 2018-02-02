@@ -1,3 +1,5 @@
+# No.1
+
 The following functions are temporarily not added:
 
 New in GameMaker 8.1:
@@ -17,11 +19,19 @@ if( display_aa&2 ) display_reset(2);
 在游戏绘制——高级绘制函数中的函数（这些函数将在后续版本中添加）：
 
 sprite_get_texture(spr,subimg) 返回纹理id对应于精灵子图。
+
 background_get_texture(back) 返回纹理id对应于背景。
 
 EN:.gmk and .gm81 file is GameMaker 8.1 project file! 
 The file can not be edited by the text editor!
 This is just to distinguish the GameMaker version.
+
 zh_CN:.gmk和.gm81文件是GameMaker 8.1的项目文件。
 这些文件无法被文本编辑器编辑。
 在这里仅仅只是为了区分版本。
+
+# Func
+
+[Function]
+[Variable]
+[Constant]
