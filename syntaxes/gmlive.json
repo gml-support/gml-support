@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "fileTypes": ["gml"],
+    "scopeName": "source.gml-gmlive",
+	"patterns": [
+      {
+         "match": "(?i)\\b(live_init|live_execute_string|live_call|live_call_ext|live_defcall|live_defcall_ext)\\b",
+         "name": "support.function.gml-gmlive"
+      },
+      {
+         "match": "(?i)\\b(live_log_script|live_result)\\b",
+         "name": "support.variable.gml-gmlive"
+      }
+   ]
+}

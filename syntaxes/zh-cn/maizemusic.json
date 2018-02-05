@@ -1,0 +1,11 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "fileTypes": ["gml"],
+    "scopeName": "source.gml-maizemusic",
+	"patterns": [
+      {
+         "match": "(?i)\\b(mm_init|mm_free|mm_music_load|mm_music_load_ext|mm_music_load_mem|mm_music_load_mem_ext|mm_music_load_url|mm_music_free|mm_play|mm_stop|mm_stop_all|mm_pause|mm_resume|mm_set_position|mm_set_volume|mm_set_pan|mm_set_speed|mm_set_tempo|mm_set_pitch|mm_set_global_volume|mm_set_music_loop_section|mm_remove_music_loop_section|mm_get_active|mm_get_length|mm_get_position|mm_get_volume|mm_get_pan|mm_get_speed|mm_get_tempo|mm_get_pitch|mm_get_global_volume|mm_get_level_left|mm_get_level_right|mm_get_data|mm_get_wave_data|mm_read_data_mes|mm_record_start|mm_record_stop|mm_record_set_input|mm_record_get_volume|mm_effect_set|mm_effect_remove|mm_effect_reset|mm_effect_set_chorus|mm_effect_set_echo|mm_effect_set_flanger|mm_effect_set_gargle|mm_effect_set_reverb|mm_effect_set_compressor|mm_effect_set_equalizer|mm_get_cpu|mm_get_music_cpu|mm_device_get_number|mm_device_get_name|mm_device_set|mm_slider_volume)\\b",
+         "name": "support.function.gml-maizemusic"
+      }
+   ]
+}

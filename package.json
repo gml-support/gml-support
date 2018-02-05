@@ -112,6 +112,14 @@
         "language": "gml-yyp",
         "scopeName": "source.yyp",
         "path": "./syntaxes/yyp.json"
+      },
+      {
+        "scopeName": "source.gml-maizemusic",
+        "path": "./syntaxes/zh-cn/maizemusic.json"
+      },
+      {
+        "scopeName": "source.gml-gmlive",
+        "path": "./syntaxes/gmlive.json"
       }
     ],
     "snippets": [
