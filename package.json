@@ -40,7 +40,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./gml-configuration.json"
       },
       {
         "id": "gml-gms",
@@ -51,7 +51,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./gml-configuration.json"
       },
       {
         "id": "gml-gmx",
@@ -62,7 +62,7 @@
         "extensions": [
           ".gmx"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./gml-configuration.json"
       },
       {
         "id": "gml-gms2",
@@ -73,7 +73,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./gml-configuration.json"
       },
       {
         "id": "gml-yyp",
@@ -84,7 +84,7 @@
         "extensions": [
           ".yyp",".yy"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./gml-configuration.json"
       }
     ],
     "grammars": [
