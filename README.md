@@ -21,7 +21,7 @@ Visual Studio Code版本需高于1.8.0。
 
 At present this plugin is not complete, if you want to contribute to this project, you can fork this project and pull a request.
 
-Thanks to ![@laspencer91](https://github.com/laspencer91).
+Thanks to [@laspencer91](https://github.com/laspencer91).
 
 ## Known Issue
 
