@@ -1,3 +1,8 @@
+## 1.3.0
+
+ - `GMS` 下的代码补全已制作完毕！
+ - GMS snippet code completion is finished!
+
 ## 1.2.2
 
  - #4 修复了 `GMS2` 代码高亮问题。  
