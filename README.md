@@ -23,15 +23,6 @@ At present this plugin is not complete, if you want to contribute to this projec
 
 Thanks to [@laspencer91](https://github.com/laspencer91).
 
-## Known Issue
-
-Syntax Highlignting may require theme support.  
-高亮功能可能需要主题支持。
-
-~~在某个版本中出现了“代码片段很可能混淆了片段变量和片段占位符”错误，目前该错误暂时无解。  
-In a version of the "The `(some snippet)`-snippet very likely confuses snippet-variables and snippet-placeholders." error, the current error is no solution.~~
-该错误已解决。
-
 ## Screenshot
 
 ![screenshot1](https://ooo.0o0.ooo/2017/05/29/592bb111b28f4.gif)
