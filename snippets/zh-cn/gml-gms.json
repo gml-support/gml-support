@@ -98,8 +98,7 @@
         ],
         "description": "With structure"
     },
-    //GameMaker Language Lists
-	//GameMaker:Studio
+	
 	"draw_text": {
         "prefix": "draw_text",
         "body": [

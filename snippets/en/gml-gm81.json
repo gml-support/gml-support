@@ -98,10 +98,7 @@
         ],
         "description": "With structure"
     },
-    //GameMaker Language Lists
-	//GameMaker 8.1
-	//Game graphics Event Start
-	//Game graphics Event Functions Start
+    
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
@@ -1468,8 +1465,7 @@
 		],
 		"description": "[Function]screen_wait_vsync() \nWaits for the next vertical synchronization of the monitor."
     },
-	//Game graphics Event Functions End
-	//Game graphics Event Variable Start
+	
 	"visible": {
         "prefix": "visible",
         "body": [
@@ -1834,8 +1830,7 @@
 		],
 		"description": "[Variable]view_object[0..7] \nObject whose instance must remain visible in the view. If there are multiple instances of this object only the first one is followed. You can also assign an instance id to this variable. In that case the particular instance is followed."
     },
-	//Game graphics Event Variable End
-	//Game graphics Event Constant Start
+	
 	"c_aqua": {
         "prefix": "c_aqua",
         "body": [
@@ -2304,11 +2299,8 @@
 	    	"cr_size_all"
 		],
 		"description": "[Constant]cr_size_all"
-    },
-	//Game graphics Event Constant End
-	//Game graphics Event End
-	//Using DLL's Event Start
-	//Using DLL's Event Functions Start
+	},
+	
 	"external_define": {
         "prefix": "external_define",
         "body": [
@@ -2351,8 +2343,7 @@
 		],
 		"description": "[Function]window_handle() \nReturns the window handle for the main window."
     },
-	//Using DLL's Event Functions End
-	//Using DLL's Event Constant Start
+	
 	"dll_cdel": {
         "prefix": "dll_cdel",
         "body": [
@@ -2381,6 +2372,4 @@
 		],
 		"description": "[Constant]ty_string"
     }
-	//Using DLL's Event Constant End
-	//Using DLL's Event End
 }

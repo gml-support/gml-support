@@ -98,10 +98,7 @@
         ],
         "description": "With structure"
     },
-    //GameMaker Language Lists
-	//GameMaker 8.1
-	//MaizeMusic Plugin List Start（中国开发者限定）(Only Chinese)
-	//More information:http://www.magecorn.com/p/254.shtml and https://wiki.liaronce.win/#/maizemusic
+    
 	"mm_init": {
         "prefix": "mm_init",
         "body": [
@@ -487,9 +484,7 @@
 		],
 		"description": "[Function]mm_slider_volume(musicID,tar_vol,time) \n用于缓动某id音乐的音量（从当前音量开始向目标音量缓动）。"
     },
-	//MaizeMusic List Plugin End
-	//Game graphics Event Start
-	//Game graphics Event Functions Start
+	
 	"draw_text": {
         "prefix": "draw_text",
         "body": [
@@ -1855,8 +1850,7 @@
 		],
 		"description": "[Function]screen_wait_vsync() \n等待至下一次的显示器垂直同步。"
     },
-	//Game graphics Event Functions End
-	//Game graphics Event Variable Start
+	
 	"visible": {
         "prefix": "visible",
         "body": [
@@ -2221,8 +2215,7 @@
 		],
 		"description": "[Variable]view_object[0..7] \n视角中必须保持可见的对象实例。如果有多个实例则只有第一个算数。你可以分配一个实例 id 到这个变量上。这样特定的实例就被指定。"
     },
-	//Game graphics Event Variable End
-	//Game graphics Event Constant Start
+	
 	"c_aqua": {
         "prefix": "c_aqua",
         "body": [
@@ -2692,10 +2685,7 @@
 		],
 		"description": "[Constant]cr_size_all 全向箭头"
     },
-	//Game graphics Event Constant End
-	//Game graphics Event End
-	//Using DLL's Event Start
-	//Using DLL's Event Functions Start
+	
 	"external_define": {
         "prefix": "external_define",
         "body": [
@@ -2738,8 +2728,7 @@
 		],
 		"description": "[Function]window_handle() \n返回主要窗口的句柄。"
     },
-	//Using DLL's Event Functions End
-	//Using DLL's Event Constant Start
+	
 	"dll_cdel": {
         "prefix": "dll_cdel",
         "body": [
@@ -2768,6 +2757,4 @@
 		],
 		"description": "[Constant]ty_string"
     }
-	//Using DLL's Event Constant End
-	//Using DLL's Event End
 }
