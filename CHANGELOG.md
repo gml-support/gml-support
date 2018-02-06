@@ -1,7 +1,12 @@
+## 1.3.1
+
+ - 完善 `GMS` 的代码补全和代码高亮
+ - Improve the `GMS` snippet and syntax.
+
 ## 1.3.0
 
- - `GMS` 下的代码补全已制作完毕！
- - GMS snippet code completion is finished!
+ - `GMS` 下的代码补全已制作完毕！  
+ - `GMS` snippet code completion is finished!
 
 ## 1.2.2
 
