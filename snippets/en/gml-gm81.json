@@ -5485,364 +5485,364 @@
         "body": [
 	    	"visible"
 		],
-		"description": "[Variable]visible \n如果 visible 为真（1），则图像就被绘制出来，否则就不予绘制。不可见的实例 仍然是活动的并可以触发碰撞事件；只是你看不到而已。将 visible 设置为假可以用在例 如手柄对象中（将他们设置为非固态形式以避免碰撞事件）或者隐藏的机关等。"
+		"description": "[Variable]"
     },
 	"sprite_index": {
         "prefix": "sprite_index",
         "body": [
 	    	"sprite_index"
 		],
-		"description": "[Variable]sprite_index \n实例的当前精灵索引编号。你可以更改它使实例更换另一个精灵。根据不同 的值你可以设定显示你所指定的不同的精灵。更改精灵并不会更改当前可见的子图像索引编号。"
+		"description": "[Variable]"
     },
 	"sprite_width": {
         "prefix": "sprite_width",
         "body": [
 	    	"sprite_width"
 		],
-		"description": "[Variable]sprite_width* \n指定精灵的宽度。这个值无法更改但你可能会用到它。"
+		"description": "[Variable]"
     },
 	"sprite_height": {
         "prefix": "sprite_height",
         "body": [
 	    	"sprite_height"
 		],
-		"description": "[Variable]sprite_height* \n指定精灵的高度。这个值无法更改但你可能会用到它。"
+		"description": "[Variable]"
     },
 	"sprite_xoffset": {
         "prefix": "sprite_xoffset",
         "body": [
 	    	"sprite_xoffset"
 		],
-		"description": "[Variable]sprite_xoffset* \n在精灵属性中设定的精灵水平偏移。这个值无法更改但你可能会用到它。"
+		"description": "[Variable]"
     },
 	"sprite_yoffset": {
         "prefix": "sprite_yoffset",
         "body": [
 	    	"sprite_yoffset"
 		],
-		"description": "[Variable]sprite_yoffset* \n在精灵属性中设定的精灵垂直偏移。这个值无法更改但你可能会用到它。"
+		"description": "[Variable]"
     },
 	"image_number": {
         "prefix": "image_number",
         "body": [
 	    	"image_number"
 		],
-		"description": "[Variable]image_number* \n当前实例内的精灵包含的子图像数量（无法更改）。"
+		"description": "[Variable]"
     },
 	"image_index": {
         "prefix": "image_index",
         "body": [
 	    	"image_index"
 		],
-		"description": "[Variable]image_index \n当图像包含多个子图像的时候程序会反复循环显示他们。这个变量决定了当前将要绘制的子图像编号（从0开始）。你可以更改这个变量以改变当前图像。程序会按照新的索引编号继续循环绘制图像。"
+		"description": "[Variable]"
     },
 	"image_speed": {
         "prefix": "image_speed",
         "body": [
 	    	"image_speed"
 		],
-		"description": "[Variable]image_speed \n循环绘制子图像的速度。为 1 的时候表示每走一步绘制一次子图像。更小的数值代表更慢的绘制速度，同一子图像可以重复多次绘制。更大的数值下会忽略若干子图像的绘制，让精灵看起来动作更快。有些时候你只想让某一幅子图像显示出来而不是绘制所有的子图像。你可以设置速度为 0 并选择正确的子图像就可以了。"
+		"description": "[Variable]"
     },
 	"depth": {
         "prefix": "depth",
         "body": [
 	    	"depth"
 		],
-		"description": "[Variable]depth \n通常图像会在你放置实例的图层上进行绘制。你可以通过设定图像深度来改变位置。默认值是 0 ，除非你在对象属性中设置了其他数值。深度值越高代表实例在较小深度值的实例后面。（当然你也可以使用负值）。设定深度值可以确保实例以你指定的方式被绘制出来（比如让飞机在云层前面显示）。背景实例应该有比较高的深度值（正值），而前景实例则应当有比较低的深度值（或者是负值）。"
+		"description": "[Variable]"
     },
 	"image_xscale": {
         "prefix": "image_xscale",
         "body": [
 	    	"image_xscale"
 		],
-		"description": "[Variable]image_xscale \n放大或缩小图像。为 1 的时候代表正常尺寸。你需要分别设置水平尺寸和垂直尺寸。改变尺寸的同时也会改变图像的宽度和高度，并可能影响你原先预计的碰撞事件的结果。更改尺寸可以造成3D效果。你可以设置值为-1来水平反转精灵图像。"
+		"description": "[Variable]"
     },
 	"image_yscale": {
         "prefix": "image_yscale",
         "body": [
 	    	"image_yscale"
 		],
-		"description": "[Variable]image_yscale \n垂直缩放。1 为原尺寸。你可以设为 -1 来垂直反转精灵图像。"
+		"description": "[Variable]"
     },
 	"image_angle": {
         "prefix": "image_angle",
         "body": [
 	    	"image_angle"
 		],
-		"description": "[Variable]image_angle \n设定图像绘制的阿尔法透明通道的值。设为 1 代表常用的不透明状态。设为 0 代表完全透明。"
+		"description": "[Variable]"
     },
 	"image_blend": {
         "prefix": "image_blend",
         "body": [
 	    	"image_blend"
 		],
-		"description": "[Variable]image_blend \n绘制精灵时混合颜色。c_white 是默认设置。当你指定一个不同的数值时，图像就会与这个颜色混合。这个可以在需要给精灵快速上色的时候使用。"
+		"description": "[Variable]"
     },
 	"bbox_left": {
         "prefix": "bbox_left",
         "body": [
 	    	"bbox_left"
 		],
-		"description": "[Variable]bbox_left* \n在房间中的实例的碰撞盒子左侧，默认是它的图片（缩放比加入计算）。"
+		"description": "[Variable]"
     },
 	"bbox_right": {
         "prefix": "bbox_right",
         "body": [
 	    	"bbox_right"
 		],
-		"description": "[Variable]bbox_right* \n在房间中的实例的碰撞盒的右侧。"
+		"description": "[Variable]"
     },
 	"bbox_top": {
         "prefix": "bbox_top",
         "body": [
 	    	"bbox_top"
 		],
-		"description": "[Variable]bbox_top* \n在房间中的实例的碰撞盒的顶部。"
+		"description": "[Variable]"
     },
 	"bbox_bottom": {
         "prefix": "bbox_bottom",
         "body": [
 	    	"bbox_bottom"
 		],
-		"description": "[Variable]bbox_bottom* \n在房间中的实例的碰撞盒的底部。"
+		"description": "[Variable]"
     },
 	"background_color": {
         "prefix": "background_color",
         "body": [
 	    	"background_color"
 		],
-		"description": "[Variable]background_color \n房间的背景颜色。"
+		"description": "[Variable]"
     },
 	"background_showcolor": {
         "prefix": "background_showcolor",
         "body": [
 	    	"background_showcolor"
 		],
-		"description": "[Variable]background_showcolor \n指定是否以背景色清除窗口。"
+		"description": "[Variable]"
     },
 	"background_visible": {
         "prefix": "background_visible",
         "body": [
 	    	"background_visible"
 		],
-		"description": "[Variable]background_visible[0..7] \n指定背景图像是否为前景。"
+		"description": "[Variable]"
     },
 	"background_foreground": {
         "prefix": "background_foreground",
         "body": [
 	    	"background_foreground"
 		],
-		"description": "[Variable]background_foreground[0..7] \n指定背景图像是否为前景。"
+		"description": "[Variable]"
     },
 	"background_index": {
         "prefix": "background_index",
         "body": [
 	    	"background_index"
 		],
-		"description": "[Variable]background_index[0..7] \n背景图像的索引编号。"
+		"description": "[Variable]"
     },
 	"background_x": {
         "prefix": "background_x",
         "body": [
 	    	"background_x"
 		],
-		"description": "[Variable]background_x[0..7] \n背景图像的 X 坐标。"
+		"description": "[Variable]"
     },
 	"background_y": {
         "prefix": "background_y",
         "body": [
 	    	"background_y"
 		],
-		"description": "[Variable]background_y[0..7] \n背景图像的 Y 坐标。"
+		"description": "[Variable]"
     },
 	"background_width": {
         "prefix": "background_width",
         "body": [
 	    	"background_width"
 		],
-		"description": "[Variable]background_width[0..7]* \n背景图像的宽度。"
+		"description": "[Variable]"
     },
 	"background_height": {
         "prefix": "background_height",
         "body": [
 	    	"background_height"
 		],
-		"description": "[Variable]background_height[0..7]* \n背景图像的高度。"
+		"description": "[Variable]"
     },
 	"background_htiled": {
         "prefix": "background_htiled",
         "body": [
 	    	"background_htiled"
 		],
-		"description": "[Variable]background_htiled[0..7] \n是否水平图块。"
+		"description": "[Variable]"
     },
 	"background_vtiled": {
         "prefix": "background_vtiled",
         "body": [
 	    	"background_vtiled"
 		],
-		"description": "[Variable]background_vtiled[0..7] \n是否垂直图块。"
+		"description": "[Variable]"
     },
 	"background_xscale": {
         "prefix": "background_xscale",
         "body": [
 	    	"background_xscale"
 		],
-		"description": "[Variable]background_xscale[0..7] \n背景水平缩放。（必须为正值；无法使用负值来反转背景）。"
+		"description": "[Variable]"
     },
 	"background_yscale": {
         "prefix": "background_yscale",
         "body": [
 	    	"background_yscale"
 		],
-		"description": "[Variable]background_yscale[0..7] \n背景垂直缩放。（必须为正值；无法使用负值来反转背景）。"
+		"description": "[Variable]"
     },
 	"background_hspeed": {
         "prefix": "background_hspeed",
         "body": [
 	    	"background_hspeed"
 		],
-		"description": "[Variable]background_hspeed[0..7] \n背景水平卷动速度（单位 像素/步）。"
+		"description": "[Variable]"
     },
 	"background_vspeed": {
         "prefix": "background_vspeed",
         "body": [
 	    	"background_vspeed"
 		],
-		"description": "[Variable]background_vspeed[0..7] \n背景垂直卷动速度（单位 像素/步）。"
+		"description": "[Variable]"
     },
 	"background_blend": {
         "prefix": "background_blend",
         "body": [
 	    	"background_blend"
 		],
-		"description": "[Variable]background_blend[0..7] \n使用混合颜色绘制背景。默认值为 c_white 。"
+		"description": "[Variable]"
     },
 	"background_alpha": {
         "prefix": "background_alpha",
         "body": [
 	    	"background_alpha"
 		],
-		"description": "[Variable]background_alpha[0..7] \n在绘制背景的时候设置阿尔法透明通道数值。1 代表完全不透明 ；0 代表完全透明。"
+		"description": "[Variable]"
     },
 	"view_enabled": {
         "prefix": "view_enabled",
         "body": [
 	    	"view_enabled"
 		],
-		"description": "[Variable]view_enabled \n返回视角是否启用。"
+		"description": "[Variable]"
     },
 	"view_current": {
         "prefix": "view_current",
         "body": [
 	    	"view_current"
 		],
-		"description": "[Variable]view_current* \n回当前使用的视角（编号0到7）。只在绘图事件中使用。你可以检查这个变量以确保在某一个视角中进行绘图。变量无法改动。"
+		"description": "[Variable]"
     },
 	"view_visible": {
         "prefix": "view_visible",
         "body": [
 	    	"view_visible"
 		],
-		"description": "[Variable]view_visible[0..7] \n返回指定的视角是否在屏幕上可见。"
+		"description": "[Variable]"
     },
 	"view_xview": {
         "prefix": "view_xview",
         "body": [
 	    	"view_xview"
 		],
-		"description": "[Variable]view_xview[0..7] \n返回视角在房间的横坐标位置。"
+		"description": "[Variable]"
     },
 	"view_yview": {
         "prefix": "view_yview",
         "body": [
 	    	"view_yview"
 		],
-		"description": "[Variable]view_yview[0..7] \n返回视角在房间的纵坐标位置。"
+		"description": "[Variable]"
     },
 	"view_wview": {
         "prefix": "view_wview",
         "body": [
 	    	"view_wview"
 		],
-		"description": "[Variable]view_wview[0..7] \n返回视角在房间的宽度。"
+		"description": "[Variable]"
     },
 	"view_hview": {
         "prefix": "view_hview",
         "body": [
 	    	"view_hview"
 		],
-		"description": "[Variable]view_hview[0..7] \n返回视角在房间的高度。"
+		"description": "[Variable]"
     },
 	"view_xport": {
         "prefix": "view_xport",
         "body": [
 	    	"view_xport"
 		],
-		"description": "[Variable]view_xport[0..7] \n返回绘图区域内视点的横坐标。"
+		"description": "[Variable]"
     },
 	"view_yport": {
         "prefix": "view_yport",
         "body": [
 	    	"view_yport"
 		],
-		"description": "[Variable]view_yport[0..7] \n返回绘图区域内视点的纵坐标。"
+		"description": "[Variable]"
     },
 	"view_wport": {
         "prefix": "view_wport",
         "body": [
 	    	"view_wport"
 		],
-		"description": "[Variable]view_wport[0..7] \n返回绘图区域内视点的宽度。"
+		"description": "[Variable]"
     },
 	"view_hport": {
         "prefix": "view_hport",
         "body": [
 	    	"view_hport"
 		],
-		"description": "[Variable]view_hport[0..7] \n返回绘图区域内视点的高度。"
+		"description": "[Variable]"
     },
 	"view_angle": {
         "prefix": "view_angle",
         "body": [
 	    	"view_angle"
 		],
-		"description": "[Variable]view_angle[0..7] \n房间内视角的旋转角度。（逆时针，单位角度）。"
+		"description": "[Variable]"
     },
 	"view_hborder": {
         "prefix": "view_hborder",
         "body": [
 	    	"view_hborder"
 		],
-		"description": "[Variable]view_hborder[0..7] \n可见对象周围边框的水平尺寸（单位像素）。"
+		"description": "[Variable]"
     },
 	"view_vborder": {
         "prefix": "view_vborder",
         "body": [
 	    	"view_vborder"
 		],
-		"description": "[Variable]view_vborder[0..7] \n可见对象周围边框的垂直尺寸（单位像素）。"
+		"description": "[Variable]"
     },
 	"view_hspeed": {
         "prefix": "view_hspeed",
         "body": [
 	    	"view_hspeed"
 		],
-		"description": "[Variable]view_hspeed[0..7] \n视角的最大水平速度。"
+		"description": "[Variable]"
     },
 	"view_vspeed": {
         "prefix": "view_vspeed",
         "body": [
 	    	"view_vspeed"
 		],
-		"description": "[Variable]view_vspeed[0..7] \n视角的最大垂直速度。"
+		"description": "[Variable]"
     },
 	"view_object": {
         "prefix": "view_object",
         "body": [
 	    	"view_object"
 		],
-		"description": "[Variable]view_object[0..7] \n视角中必须保持可见的对象实例。如果有多个实例则只有第一个算数。你可以分配一个实例 id 到这个变量上。这样特定的实例就被指定。"
+		"description": "[Variable]"
     },
 	
 	"c_aqua": {
@@ -5850,469 +5850,469 @@
         "body": [
 	    	"c_aqua"
 		],
-		"description": "[Constant]c_aqua 水色"
+		"description": "[Constant]"
     },
 	"c_black": {
         "prefix": "c_black",
         "body": [
 	    	"c_black"
 		],
-		"description": "[Constant]c_black 黑色"
+		"description": "[Constant]"
     },
 	"c_dkgray": {
         "prefix": "c_dkgray",
         "body": [
 	    	"c_dkgray"
 		],
-		"description": "[Constant]c_dkgray 深灰"
+		"description": "[Constant]"
     },
 	"c_fuchsia": {
         "prefix": "c_fuchsia",
         "body": [
 	    	"c_fuchsia"
 		],
-		"description": "[Constant]c_fuchsia 紫红"
+		"description": "[Constant]"
     },
 	"c_gray": {
         "prefix": "c_gray",
         "body": [
 	    	"c_gray"
 		],
-		"description": "[Constant]c_gray 灰色"
+		"description": "[Constant]"
     },
 	"c_green": {
         "prefix": "c_green",
         "body": [
 	    	"c_green"
 		],
-		"description": "[Constant]c_green 绿色"
+		"description": "[Constant]"
     },
 	"c_lime": {
         "prefix": "c_lime",
         "body": [
 	    	"c_lime"
 		],
-		"description": "[Constant]c_lime 石灰色"
+		"description": "[Constant]"
     },
 	"c_ltgray": {
         "prefix": "c_ltgray",
         "body": [
 	    	"c_ltgray"
 		],
-		"description": "[Constant]c_ltgray 浅灰"
+		"description": "[Constant]"
     },
 	"c_maroon": {
         "prefix": "c_maroon",
         "body": [
 	    	"c_maroon"
 		],
-		"description": "[Constant]c_maroon 赤褐色"
+		"description": "[Constant]"
     },
 	"c_navy": {
         "prefix": "c_navy",
         "body": [
 	    	"c_navy"
 		],
-		"description": "[Constant]c_navy 深蓝"
+		"description": "[Constant]"
     },
 	"c_olive": {
         "prefix": "c_olive",
         "body": [
 	    	"c_olive"
 		],
-		"description": "[Constant]c_olive 茶青色"
+		"description": "[Constant]"
     },
 	"c_orange": {
         "prefix": "c_orange",
         "body": [
 	    	"c_orange"
 		],
-		"description": "[Constant]c_orange 橙色"
+		"description": "[Constant]"
     },
 	"c_purple": {
         "prefix": "c_purple",
         "body": [
 	    	"c_purple"
 		],
-		"description": "[Constant]c_purple 紫色"
+		"description": "[Constant]"
     },
 	"c_red": {
         "prefix": "c_red",
         "body": [
 	    	"c_red"
 		],
-		"description": "[Constant]c_red 红色"
+		"description": "[Constant]"
     },
 	"c_silver": {
         "prefix": "c_silver",
         "body": [
 	    	"c_silver"
 		],
-		"description": "[Constant]c_silver 银色"
+		"description": "[Constant]"
     },
 	"c_teal": {
         "prefix": "c_teal",
         "body": [
 	    	"c_teal"
 		],
-		"description": "[Constant]c_teal 茶绿色"
+		"description": "[Constant]"
     },
 	"c_white": {
         "prefix": "c_white",
         "body": [
 	    	"c_white"
 		],
-		"description": "[Constant]c_white 白色"
+		"description": "[Constant]"
     },
 	"c_yellow": {
         "prefix": "c_yellow",
         "body": [
 	    	"c_yellow"
 		],
-		"description": "[Constant]c_yellow 黄色"
+		"description": "[Constant]"
     },
 	"fa_left": {
         "prefix": "fa_left",
         "body": [
 	    	"fa_left"
 		],
-		"description": "[Constant]fa_left 左"
+		"description": "[Constant]"
     },
 	"fa_center": {
         "prefix": "fa_center",
         "body": [
 	    	"fa_center"
 		],
-		"description": "[Constant]fa_center 中"
+		"description": "[Constant]"
     },
 	"fa_right": {
         "prefix": "fa_right",
         "body": [
 	    	"fa_right"
 		],
-		"description": "[Constant]fa_right 右"
+		"description": "[Constant]"
     },
 	"fa_top": {
         "prefix": "fa_top",
         "body": [
 	    	"fa_top"
 		],
-		"description": "[Constant]fa_top 上"
+		"description": "[Constant]"
     },
 	"fa_middle": {
         "prefix": "fa_middle",
         "body": [
 	    	"fa_middle"
 		],
-		"description": "[Constant]fa_middle 中"
+		"description": "[Constant]"
     },
 	"fa_bottomk": {
         "prefix": "fa_bottom",
         "body": [
 	    	"fa_bottom"
 		],
-		"description": "[Constant]fa_bottom 下"
+		"description": "[Constant]"
     },
 	"pr_pointlist": {
         "prefix": "pr_pointlist",
         "body": [
 	    	"pr_pointlist"
 		],
-		"description": "[Constant]pr_pointlist 一组点。"
+		"description": "[Constant]"
     },
 	"pr_linelist": {
         "prefix": "pr_linelist",
         "body": [
 	    	"pr_linelist"
 		],
-		"description": "[Constant]pr_linelist 一组直线。"
+		"description": "[Constant]"
     },
 	"pr_linestrip": {
         "prefix": "pr_linestrip",
         "body": [
 	    	"pr_linestrip"
 		],
-		"description": "[Constant]pr_linestrip \n一组连续线，从第一个点到第二个点，再到第三个点，等等。最后一个没有 和第一个点连接。你需要指定一个额外的第一顶点拷贝。"
+		"description": "[Constant]"
     },
 	"pr_trianglelist": {
         "prefix": "pr_trianglelist",
         "body": [
 	    	"pr_trianglelist"
 		],
-		"description": "[Constant]pr_trianglelist \n设置为三角形的顶点。每三个顶点定义一个三角形。所以顶点的数目必须 为3的倍数。"
+		"description": "[Constant]"
     },
 	"pr_trianglestrip": {
         "prefix": "pr_trianglestrip",
         "body": [
 	    	"pr_trianglestrip"
 		],
-		"description": "[Constant]pr_trianglestrip \n同样也是设置三角形的顶点，但这次有些不同。前三个顶点定义第一个 三角形。第二、三个顶点和后面的一个顶点组成下一个三角形的三个顶点，以此类推。所以 每个新的顶点定义一个新的三角形，与前一个相连接。"
+		"description": "[Constant]"
     },
 	"pr_trianglefan": {
         "prefix": "pr_trianglefan",
         "body": [
 	    	"pr_trianglefan"
 		],
-		"description": "[Constant]pr_trianglefan \n同样对于三角列表但是这时第一顶点是整个三角的一部分，同样每个新顶点指明一个新的三角形，连接先前的顶点和第一顶点。"
+		"description": "[Constant]"
     },
 	"bm_add": {
         "prefix": "bm_add",
         "body": [
 	    	"bm_add"
 		],
-		"description": "[Constant]bm_add"
+		"description": "[Constant]"
     },
 	"bm_normal": {
         "prefix": "bm_normal",
         "body": [
 	    	"bm_normal"
 		],
-		"description": "[Constant]bm_normal"
+		"description": "[Constant]"
     },
 	"bm_subtract": {
         "prefix": "bm_subtract",
         "body": [
 	    	"bm_subtract"
 		],
-		"description": "[Constant]bm_subtract"
+		"description": "[Constant]"
     },
 	"bm_max": {
         "prefix": "bm_max",
         "body": [
 	    	"bm_max"
 		],
-		"description": "[Constant]bm_max"
+		"description": "[Constant]"
     },
 	"bm_zero": {
         "prefix": "bm_zero",
         "body": [
 	    	"bm_zero"
 		],
-		"description": "[Constant]bm_zero"
+		"description": "[Constant]"
     },
 	"bm_one": {
         "prefix": "bm_one",
         "body": [
 	    	"bm_one"
 		],
-		"description": "[Constant]bm_max"
+		"description": "[Constant]"
     },
 	"bm_src_color": {
         "prefix": "bm_src_color",
         "body": [
 	    	"bm_src_color"
 		],
-		"description": "[Constant]bm_src_color"
+		"description": "[Constant]"
     },
 	"bm_inv_src_color": {
         "prefix": "bm_inv_src_color",
         "body": [
 	    	"bm_inv_src_color"
 		],
-		"description": "[Constant]bm_inv_src_color"
+		"description": "[Constant]"
     },
 	"bm_src_alpha": {
         "prefix": "bm_src_alpha",
         "body": [
 	    	"bm_src_alpha"
 		],
-		"description": "[Constant]bm_src_alpha"
+		"description": "[Constant]"
     },
 	"bm_inv_src_alpha": {
         "prefix": "bm_inv_src_alpha",
         "body": [
 	    	"bm_inv_src_alpha"
 		],
-		"description": "[Constant]bm_inv_src_alpha"
+		"description": "[Constant]"
     },
 	"bm_dest_alpha": {
         "prefix": "bm_dest_alpha",
         "body": [
 	    	"bm_dest_alpha"
 		],
-		"description": "[Constant]bm_dest_alpha"
+		"description": "[Constant]"
     },
 	"bm_inv_dest_alpha": {
         "prefix": "bm_inv_dest_alpha",
         "body": [
 	    	"bm_inv_dest_alpha"
 		],
-		"description": "[Constant]bm_inv_dest_alpha"
+		"description": "[Constant]"
     },
 	"bm_dest_color": {
         "prefix": "bm_dest_color",
         "body": [
 	    	"bm_dest_color"
 		],
-		"description": "[Constant]bm_dest_color"
+		"description": "[Constant]"
     },
 	"bm_inv_dest_color": {
         "prefix": "bm_inv_dest_color",
         "body": [
 	    	"bm_inv_dest_color"
 		],
-		"description": "[Constant]bm_inv_dest_color"
+		"description": "[Constant]"
     },
 	"bm_src_alpha_sat": {
         "prefix": "bm_src_alpha_sat",
         "body": [
 	    	"bm_src_alpha_sat"
 		],
-		"description": "[Constant]bm_src_alpha_sat"
+		"description": "[Constant]"
     },
 	"cr_default": {
         "prefix": "cr_default",
         "body": [
 	    	"cr_default"
 		],
-		"description": "[Constant]cr_default 默认"
+		"description": "[Constant]"
     },
 	"cr_none": {
         "prefix": "cr_none",
         "body": [
 	    	"cr_none"
 		],
-		"description": "[Constant]cr_none 无"
+		"description": "[Constant]"
     },
 	"cr_arrow": {
         "prefix": "cr_arrow",
         "body": [
 	    	"cr_arrow"
 		],
-		"description": "[Constant]cr_arrow 箭头"
+		"description": "[Constant]"
     },
 	"cr_cross": {
         "prefix": "cr_cross",
         "body": [
 	    	"cr_cross"
 		],
-		"description": "[Constant]cr_cross 十字"
+		"description": "[Constant]"
     },
 	"cr_beam": {
         "prefix": "cr_beam",
         "body": [
 	    	"cr_beam"
 		],
-		"description": "[Constant]cr_beam 工形"
+		"description": "[Constant]"
     },
 	"cr_size_nesw": {
         "prefix": "cr_size_nesw",
         "body": [
 	    	"cr_size_nesw"
 		],
-		"description": "[Constant]cr_size_nesw 右斜双箭头"
+		"description": "[Constant]"
     },
 	"cr_size_ns": {
         "prefix": "cr_size_ns",
         "body": [
 	    	"cr_size_ns"
 		],
-		"description": "[Constant]cr_size_ns 垂直双箭头"
+		"description": "[Constant]"
     },
 	"cr_size_nwse": {
         "prefix": "cr_size_nwse",
         "body": [
 	    	"cr_size_nwse"
 		],
-		"description": "[Constant]cr_size_nwse 左斜双箭头"
+		"description": "[Constant]"
     },
 	"cr_size_we": {
         "prefix": "cr_size_we",
         "body": [
 	    	"cr_size_we"
 		],
-		"description": "[Constant]cr_size_we 水平双箭头"
+		"description": "[Constant]"
     },
 	"cr_uparrow": {
         "prefix": "cr_uparrow",
         "body": [
 	    	"cr_uparrow"
 		],
-		"description": "[Constant]cr_uparrow 上箭头"
+		"description": "[Constant]"
     },
 	"cr_hourglass": {
         "prefix": "cr_hourglass",
         "body": [
 	    	"cr_hourglass"
 		],
-		"description": "[Constant]cr_hourglass 沙漏"
+		"description": "[Constant]"
     },
 	"cr_drag": {
         "prefix": "cr_drag",
         "body": [
 	    	"cr_drag"
 		],
-		"description": "[Constant]cr_drag 拖拽"
+		"description": "[Constant]"
     },
 	"cr_nodrop": {
         "prefix": "cr_nodrop",
         "body": [
 	    	"cr_nodrop"
 		],
-		"description": "[Constant]cr_nodrop 不能拖拽"
+		"description": "[Constant]"
     },
 	"cr_hsplit": {
         "prefix": "cr_hsplit",
         "body": [
 	    	"cr_hsplit"
 		],
-		"description": "[Constant]cr_hsplit 水平分离"
+		"description": "[Constant]"
     },
 	"cr_vsplit": {
         "prefix": "cr_vsplit",
         "body": [
 	    	"cr_vsplit"
 		],
-		"description": "[Constant]cr_vsplit 垂直分离"
+		"description": "[Constant]"
     },
 	"cr_multidrag": {
         "prefix": "cr_multidrag",
         "body": [
 	    	"cr_multidrag"
 		],
-		"description": "[Constant]cr_multidrag 复数拖拽选中"
+		"description": "[Constant]"
     },
 	"cr_sqlwait": {
         "prefix": "cr_sqlwait",
         "body": [
 	    	"cr_sqlwait"
 		],
-		"description": "[Constant]cr_sqlwait SQL等待"
+		"description": "[Constant]"
     },
 	"cr_no": {
         "prefix": "cr_no",
         "body": [
 	    	"cr_no"
 		],
-		"description": "[Constant]cr_no 拒绝"
+		"description": "[Constant]"
     },
 	"cr_appstart": {
         "prefix": "cr_appstart",
         "body": [
 	    	"cr_appstart"
 		],
-		"description": "[Constant]cr_appstart 载入"
+		"description": "[Constant]"
     },
 	"cr_help": {
         "prefix": "cr_help",
         "body": [
 	    	"cr_help"
 		],
-		"description": "[Constant]cr_help 帮助"
+		"description": "[Constant]"
     },
 	"cr_handpoint": {
         "prefix": "cr_handpoint",
         "body": [
 	    	"cr_handpoint"
 		],
-		"description": "[Constant]cr_handpoint 手指"
+		"description": "[Constant]"
     },
 	"cr_size_all": {
         "prefix": "cr_size_all",
         "body": [
 	    	"cr_size_all"
 		],
-		"description": "[Constant]cr_size_all 全向箭头"
+		"description": "[Constant]"
     },
 	
 	"external_define": {
@@ -6363,27 +6363,27 @@
         "body": [
 	    	"dll_cdel"
 		],
-		"description": "[Constant]dll_cdel"
+		"description": "[Constant]"
     },
 	"dll_stdcall": {
         "prefix": "dll_stdcall",
         "body": [
 	    	"dll_stdcall"
 		],
-		"description": "[Constant]dll_stdcall"
+		"description": "[Constant]"
     },
 	"ty_real": {
         "prefix": "ty_real",
         "body": [
 	    	"ty_real"
 		],
-		"description": "[Constant]ty_real"
+		"description": "[Constant]"
     },
 	"ty_string": {
         "prefix": "ty_string",
         "body": [
 	    	"ty_string"
 		],
-		"description": "[Constant]ty_string"
+		"description": "[Constant]"
     }
 }
