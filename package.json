@@ -2,7 +2,7 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
@@ -13,8 +13,12 @@
   "categories": [
     "Languages","Snippets"
   ],
+  "extensionDependencies": [
+    "robertohuertasm.vscode-icons",
+    "slevesque.shader"
+  ],
   "dependencies": {
-		"vscode-nls": "^2.0.2"
+       "vscode-nls": "^2.0.2"
   },
   "bugs": {
       "url": "https://github.com/LiarOnce/gml-support/issues"
@@ -24,12 +28,6 @@
       "url": "https://github.com/LiarOnce/gml-support.git"
   },
   "contributes": {
-    "commands": [
-			{
-				"command": "extension.gmlsupport.maizemusic.info",
-				"title": "GML Support Info for MaizeMusic"
-			}
-		],
     "languages": [
       {
         "id": "gml-gm81",
