@@ -13,10 +13,6 @@ It is recommended to use the [vscode-icons](https://github.com/vscode-icons/vsco
 Visual Studio Code version should be higher than 1.8.0.    
 Visual Studio Code版本需高于1.8.0。  
 
-## 使用了MaizeMusic插件?
-
-按下Ctrl+Shift+P，输入`GML Support Info for MaizeMusic`查看相关信息。
-
 ## Contributing
 
 At present this plugin is not complete, if you want to contribute to this project, you can fork this project and pull a request.
