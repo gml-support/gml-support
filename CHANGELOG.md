@@ -1,3 +1,8 @@
+## 1.3.3
+
+ - 从该版本开始，移除函数信息，[详情](https://gmlsupport.liaronce.win/#/zh-cn/?id=qampa)
+ - From this version, remove the function info, [Details](https://gmlsupport.liaronce.win/#/?id=qampa)
+
 ## 1.3.2
 
  - 添加插件依赖以支持 Shader 语法。
