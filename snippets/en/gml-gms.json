@@ -136,7 +136,7 @@
 	},
 	"achievement_is_online": {
 		"prefix": "achievement_is_online",
-		"body": "achievement_is_online(${1:&})",
+		"body": "achievement_is_online(${1:})",
 		"description": "[Function]" 
 	},
 	"achievement_load_friends": {
@@ -231,17 +231,17 @@
 	},
 	"ads_engagement_active": {
 		"prefix": "ads_engagement_active",
-		"body": "ads_engagement_active(${1:&})",
+		"body": "ads_engagement_active(${1:})",
 		"description": "[Function]" 
 	},
 	"ads_engagement_available": {
 		"prefix": "ads_engagement_available",
-		"body": "ads_engagement_available(${1:&})",
+		"body": "ads_engagement_available(${1:})",
 		"description": "[Function]" 
 	},
 	"ads_engagement_launch": {
 		"prefix": "ads_engagement_launch",
-		"body": "ads_engagement_launch(${1:&})",
+		"body": "ads_engagement_launch(${1:})",
 		"description": "[Function]" 
 	},
 	"ads_event": {
@@ -266,12 +266,12 @@
 	},
 	"ads_interstitial_available": {
 		"prefix": "ads_interstitial_available",
-		"body": "ads_interstitial_available(${1:&})",
+		"body": "ads_interstitial_available(${1:})",
 		"description": "[Function]" 
 	},
 	"ads_interstitial_display": {
 		"prefix": "ads_interstitial_display",
-		"body": "ads_interstitial_display(${1:&})",
+		"body": "ads_interstitial_display(${1:})",
 		"description": "[Function]" 
 	},
 	"ads_move": {
@@ -681,7 +681,7 @@
 	},
 	"audio_music_is_playing": {
 		"prefix": "audio_music_is_playing",
-		"body": "audio_music_is_playing(${1:&})",
+		"body": "audio_music_is_playing(${1:})",
 		"description": "[Function]" 
 	},
 	"audio_pause_all": {
@@ -691,7 +691,7 @@
 	},
 	"audio_pause_music": {
 		"prefix": "audio_pause_music",
-		"body": "audio_pause_music(${1:&})",
+		"body": "audio_pause_music(${1:})",
 		"description": "[Function]" 
 	},
 	"audio_pause_sound": {
@@ -741,7 +741,7 @@
 	},
 	"audio_resume_music": {
 		"prefix": "audio_resume_music",
-		"body": "audio_resume_music(${1:&})",
+		"body": "audio_resume_music(${1:})",
 		"description": "[Function]" 
 	},
 	"audio_resume_sound": {
@@ -826,7 +826,7 @@
 	},
 	"audio_stop_music": {
 		"prefix": "audio_stop_music",
-		"body": "audio_stop_music(${1:&})",
+		"body": "audio_stop_music(${1:})",
 		"description": "[Function]" 
 	},
 	"audio_stop_recording": {
@@ -869,11 +869,6 @@
 		"body": "background_add(${1:fname}, ${2:removeback}, ${3:smooth})",
 		"description": "[Function]" 
 	},
-	"background_add_background": {
-		"prefix": "background_add_background",
-		"body": "background_add_background(${1:fname})",
-		"description": "[Function]" 
-	},
 	"background_assign": {
 		"prefix": "background_assign",
 		"body": "background_assign(${1:ind}, ${2:source})",
@@ -887,11 +882,6 @@
 	"background_create_colour": {
 		"prefix": "background_create_colour",
 		"body": "background_create_colour(${1:w}, ${2:h}, ${3:col})",
-		"description": "[Function]" 
-	},
-	"background_create_from_screen": {
-		"prefix": "background_create_from_screen",
-		"body": "background_create_from_screen(${1:x}, ${2:y}, ${3:w}, ${4:h}, ${5:removeback}, ${6:smooth})",
 		"description": "[Function]" 
 	},
 	"background_create_from_surface": {
@@ -1182,96 +1172,6 @@
 	"buffer_write": {
 		"prefix": "buffer_write",
 		"body": "buffer_write(${1:buffer}, ${2:type}, ${3:value})",
-		"description": "[Function]" 
-	},
-	"cd_close_door": {
-		"prefix": "cd_close_door",
-		"body": "cd_close_door(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_init": {
-		"prefix": "cd_init",
-		"body": "cd_init(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_length": {
-		"prefix": "cd_length",
-		"body": "cd_length(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_number": {
-		"prefix": "cd_number",
-		"body": "cd_number(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_open_door": {
-		"prefix": "cd_open_door",
-		"body": "cd_open_door(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_pause": {
-		"prefix": "cd_pause",
-		"body": "cd_pause(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_paused": {
-		"prefix": "cd_paused",
-		"body": "cd_paused(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_play": {
-		"prefix": "cd_play",
-		"body": "cd_play(${1:first}, ${2:last})",
-		"description": "[Function]" 
-	},
-	"cd_playing": {
-		"prefix": "cd_playing",
-		"body": "cd_playing(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_position": {
-		"prefix": "cd_position",
-		"body": "cd_position(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_present": {
-		"prefix": "cd_present",
-		"body": "cd_present(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_resume": {
-		"prefix": "cd_resume",
-		"body": "cd_resume(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_set_position": {
-		"prefix": "cd_set_position",
-		"body": "cd_set_position(${1:pos})",
-		"description": "[Function]" 
-	},
-	"cd_set_track_position": {
-		"prefix": "cd_set_track_position",
-		"body": "cd_set_track_position(${1:pos})",
-		"description": "[Function]" 
-	},
-	"cd_stop": {
-		"prefix": "cd_stop",
-		"body": "cd_stop(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_track": {
-		"prefix": "cd_track",
-		"body": "cd_track(${1:&})",
-		"description": "[Function]" 
-	},
-	"cd_track_length": {
-		"prefix": "cd_track_length",
-		"body": "cd_track_length(${1:n})",
-		"description": "[Function]" 
-	},
-	"cd_track_position": {
-		"prefix": "cd_track_position",
-		"body": "cd_track_position(${1:&})",
 		"description": "[Function]" 
 	},
 	"ceil": {
@@ -1884,34 +1784,14 @@
 		"body": "date_compare_time(${1:date1}, ${2:date2})",
 		"description": "[Function]" 
 	},
-	"date_create_date": {
-		"prefix": "date_create_date",
-		"body": "date_create_date(${1:year}, ${2:month}, ${3:day})",
-		"description": "[Function]" 
-	},
 	"date_create_datetime": {
 		"prefix": "date_create_datetime",
 		"body": "date_create_datetime(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minute}, ${6:second})",
 		"description": "[Function]" 
 	},
-	"date_create_time": {
-		"prefix": "date_create_time",
-		"body": "date_create_time(${1:hour}, ${2:minute}, ${3:second})",
-		"description": "[Function]" 
-	},
-	"date_current_date": {
-		"prefix": "date_current_date",
-		"body": "date_current_date(${1:&})",
-		"description": "[Function]" 
-	},
 	"date_current_datetime": {
 		"prefix": "date_current_datetime",
 		"body": "date_current_datetime(${1:})",
-		"description": "[Function]" 
-	},
-	"date_current_time": {
-		"prefix": "date_current_time",
-		"body": "date_current_time(${1:&})",
 		"description": "[Function]" 
 	},
 	"date_datetime_string": {
@@ -2089,19 +1969,9 @@
 		"body": "date_time_string(${1:date})",
 		"description": "[Function]" 
 	},
-	"date_valid_date": {
-		"prefix": "date_valid_date",
-		"body": "date_valid_date(${1:year}, ${2:month}, ${3:day})",
-		"description": "[Function]" 
-	},
 	"date_valid_datetime": {
 		"prefix": "date_valid_datetime",
 		"body": "date_valid_datetime(${1:year}, ${2:month}, ${3:day}, ${4:hour}, ${5:minute}, ${6:second})",
-		"description": "[Function]" 
-	},
-	"date_valid_time": {
-		"prefix": "date_valid_time",
-		"body": "date_valid_time(${1:hour}, ${2:minute}, ${3:second})",
 		"description": "[Function]" 
 	},
 	"date_week_span": {
@@ -2146,12 +2016,12 @@
 	},
 	"device_ios_get_image": {
 		"prefix": "device_ios_get_image",
-		"body": "device_ios_get_image(${1:&})",
+		"body": "device_ios_get_image(${1:})",
 		"description": "[Function]" 
 	},
 	"device_ios_get_imagename": {
 		"prefix": "device_ios_get_imagename",
-		"body": "device_ios_get_imagename(${1:&})",
+		"body": "device_ios_get_imagename(${1:})",
 		"description": "[Function]" 
 	},
 	"device_is_keypad_open": {
@@ -2224,24 +2094,9 @@
 		"body": "directory_exists(${1:dname})",
 		"description": "[Function]" 
 	},
-	"discard_include_file": {
-		"prefix": "discard_include_file",
-		"body": "discard_include_file(${1:fname})",
-		"description": "[Function]" 
-	},
-	"disk_free": {
-		"prefix": "disk_free",
-		"body": "disk_free(${1:drive})",
-		"description": "[Function]" 
-	},
-	"disk_size": {
-		"prefix": "disk_size",
-		"body": "disk_size(${1:drive})",
-		"description": "[Function]" 
-	},
 	"display_get_colourdepth": {
 		"prefix": "display_get_colourdepth",
-		"body": "display_get_colourdepth(${1:&})",
+		"body": "display_get_colourdepth(${1:})",
 		"description": "[Function]" 
 	},
 	"display_get_dpi_x": {
@@ -2274,26 +2129,6 @@
 		"body": "display_get_windows_vertex_buffer_method(${1:})",
 		"description": "[Function]" 
 	},
-	"display_set_all": {
-		"prefix": "display_set_all",
-		"body": "display_set_all(${1:w}, ${2:h}, ${3:frequency}, ${4:coldepth})",
-		"description": "[Function]" 
-	},
-	"display_set_colordepth": {
-		"prefix": "display_set_colordepth",
-		"body": "display_set_colordepth(${1:coldepth})",
-		"description": "[Function]" 
-	},
-	"display_set_colourdepth": {
-		"prefix": "display_set_colourdepth",
-		"body": "display_set_colourdepth(${1:coldepth})",
-		"description": "[Function]" 
-	},
-	"display_set_frequency": {
-		"prefix": "display_set_frequency",
-		"body": "display_set_frequency(${1:frequency})",
-		"description": "[Function]" 
-	},
 	"display_set_gui_maximise": {
 		"prefix": "display_set_gui_maximise",
 		"body": "display_set_gui_maximise(${1:xscale}, ${2:yscale}, ${3:xoffset}, ${4:yoffset})",
@@ -2302,11 +2137,6 @@
 	"display_set_gui_size": {
 		"prefix": "display_set_gui_size",
 		"body": "display_set_gui_size(${1:width}, ${2:height})",
-		"description": "[Function]" 
-	},
-	"display_set_size": {
-		"prefix": "display_set_size",
-		"body": "display_set_size(${1:w}, ${2:h})",
 		"description": "[Function]" 
 	},
 	"display_set_ui_visibility": {
@@ -2322,11 +2152,6 @@
 	"display_set_windows_vertex_buffer_method": {
 		"prefix": "display_set_windows_vertex_buffer_method",
 		"body": "display_set_windows_vertex_buffer_method(${1:method})",
-		"description": "[Function]" 
-	},
-	"display_test_all": {
-		"prefix": "display_test_all",
-		"body": "display_test_all(${1:w}, ${2:h}, ${3:frequency}, ${4:coldepth})",
 		"description": "[Function]" 
 	},
 	"distance_to_object": {
@@ -2966,12 +2791,12 @@
 	},
 	"display_get_colordepth": {
 		"prefix": "display_get_colordepth",
-		"body": "display_get_colordepth(${1:&})",
+		"body": "display_get_colordepth(${1:})",
 		"description": "[Function]" 
 	},
 	"display_get_frequency": {
 		"prefix": "display_get_frequency",
-		"body": "display_get_frequency(${1:&})",
+		"body": "display_get_frequency(${1:})",
 		"description": "[Function]" 
 	},
 	"display_get_height": {
@@ -3669,39 +3494,9 @@
 		"body": "event_user(${1:numb})",
 		"description": "[Function]" 
 	},
-	"execute_file": {
-		"prefix": "execute_file",
-		"body": "execute_file(${1:fname}, ${2:arg0}, ${3:arg1}, ${4:...})",
-		"description": "[Function]" 
-	},
-	"execute_program": {
-		"prefix": "execute_program",
-		"body": "execute_program(${1:prog}, ${2:arg}, ${3:wait})",
-		"description": "[Function]" 
-	},
-	"execute_shell": {
-		"prefix": "execute_shell",
-		"body": "execute_shell(${1:prog}, ${2:arg})",
-		"description": "[Function]" 
-	},
-	"execute_string": {
-		"prefix": "execute_string",
-		"body": "execute_string(${1:str}, ${2:arg0}, ${3:arg1}, ${4:...})",
-		"description": "[Function]" 
-	},
 	"exp": {
 		"prefix": "exp",
 		"body": "exp(${1:x})",
-		"description": "[Function]" 
-	},
-	"export_include_file": {
-		"prefix": "export_include_file",
-		"body": "export_include_file(${1:fname})",
-		"description": "[Function]" 
-	},
-	"export_include_file_location": {
-		"prefix": "export_include_file_location",
-		"body": "export_include_file_location(${1:fname}, ${2:location})",
 		"description": "[Function]" 
 	},
 	"external_call": {
@@ -4184,26 +3979,6 @@
 		"body": "game_save_buffer(${1:buffer})",
 		"description": "[Function]" 
 	},
-	"get_color": {
-		"prefix": "get_color",
-		"body": "get_color(${1:defcol})",
-		"description": "[Function]" 
-	},
-	"get_colour": {
-		"prefix": "get_colour",
-		"body": "get_colour(${1:defcol})",
-		"description": "[Function]" 
-	},
-	"get_directory": {
-		"prefix": "get_directory",
-		"body": "get_directory(${1:dname})",
-		"description": "[Function]" 
-	},
-	"get_directory_alt": {
-		"prefix": "get_directory_alt",
-		"body": "get_directory_alt(${1:capt}, ${2:root})",
-		"description": "[Function]" 
-	},
 	"get_integer": {
 		"prefix": "get_integer",
 		"body": "get_integer(${1:str}, ${2:def})",
@@ -4269,11 +4044,6 @@
 		"body": "highscore_add(${1:str}, ${2:numb})",
 		"description": "[Function]" 
 	},
-	"highscore_add_current": {
-		"prefix": "highscore_add_current",
-		"body": "highscore_add_current(${1:&})",
-		"description": "[Function]" 
-	},
 	"highscore_clear": {
 		"prefix": "highscore_clear",
 		"body": "highscore_clear(${1:})",
@@ -4282,46 +4052,6 @@
 	"highscore_name": {
 		"prefix": "highscore_name",
 		"body": "highscore_name(${1:place})",
-		"description": "[Function]" 
-	},
-	"highscore_set_background": {
-		"prefix": "highscore_set_background",
-		"body": "highscore_set_background(${1:back);&})",
-		"description": "[Function]" 
-	},
-	"highscore_set_border": {
-		"prefix": "highscore_set_border",
-		"body": "highscore_set_border(${1:show);&})",
-		"description": "[Function]" 
-	},
-	"highscore_set_colors": {
-		"prefix": "highscore_set_colors",
-		"body": "highscore_set_colors(${1:back}, ${2:new}, ${3:other);&})",
-		"description": "[Function]" 
-	},
-	"highscore_set_colours": {
-		"prefix": "highscore_set_colours",
-		"body": "highscore_set_colours(${1:back}, ${2:new}, ${3:other);&})",
-		"description": "[Function]" 
-	},
-	"highscore_set_font": {
-		"prefix": "highscore_set_font",
-		"body": "highscore_set_font(${1:name}, ${2:size}, ${3:style);&})",
-		"description": "[Function]" 
-	},
-	"highscore_set_strings": {
-		"prefix": "highscore_set_strings",
-		"body": "highscore_set_strings(${1:caption}, ${2:nobody}, ${3:escape);&})",
-		"description": "[Function]" 
-	},
-	"highscore_show": {
-		"prefix": "highscore_show",
-		"body": "highscore_show(${1:numb})",
-		"description": "[Function]" 
-	},
-	"highscore_show_ext": {
-		"prefix": "highscore_show_ext",
-		"body": "highscore_show_ext(${1:numb}, ${2:back}, ${3:border}, ${4:col1}, ${5:col2}, ${6:name}, ${7:size})",
 		"description": "[Function]" 
 	},
 	"highscore_value": {
@@ -4371,12 +4101,12 @@
 	},
 	"iap_event_queue": {
 		"prefix": "iap_event_queue",
-		"body": "iap_event_queue(${1:&})",
+		"body": "iap_event_queue(${1:})",
 		"description": "[Function]" 
 	},
 	"iap_files_purchased": {
 		"prefix": "iap_files_purchased",
-		"body": "iap_files_purchased(${1:&})",
+		"body": "iap_files_purchased(${1:})",
 		"description": "[Function]" 
 	},
 	"iap_is_downloaded": {
@@ -4421,7 +4151,7 @@
 	},
 	"iap_store_status": {
 		"prefix": "iap_store_status",
-		"body": "iap_store_status(${1:&})",
+		"body": "iap_store_status(${1:})",
 		"description": "[Function]" 
 	},
 	"immersion_play_effect": {
@@ -4582,11 +4312,6 @@
 	"io_clear": {
 		"prefix": "io_clear",
 		"body": "io_clear(${1:})",
-		"description": "[Function]" 
-	},
-	"io_handle": {
-		"prefix": "io_handle",
-		"body": "io_handle(${1:&})",
 		"description": "[Function]" 
 	},
 	"irandom": {
@@ -4804,11 +4529,6 @@
 		"body": "keyboard_unset_map(${1:})",
 		"description": "[Function]" 
 	},
-	"keyboard_wait": {
-		"prefix": "keyboard_wait",
-		"body": "keyboard_wait(${1:&})",
-		"description": "[Function]" 
-	},
 	"lengthdir_x": {
 		"prefix": "lengthdir_x",
 		"body": "lengthdir_x(${1:len}, ${2:dir})",
@@ -4904,11 +4624,6 @@
 		"body": "max(${1:x1}, ${2:x2}, ${3:x3}, ${4:...})",
 		"description": "[Function]" 
 	},
-	"MCI_command": {
-		"prefix": "MCI_command",
-		"body": "MCI_command(${1:str})",
-		"description": "[Function]" 
-	},
 	"md5_file": {
 		"prefix": "md5_file",
 		"body": "md5_file(${1:fname})",
@@ -4937,76 +4652,6 @@
 	"merge_color": {
 		"prefix": "merge_color",
 		"body": "merge_color(${1:col1}, ${2:col2}, ${3:amount})",
-		"description": "[Function]" 
-	},
-	"message_alpha": {
-		"prefix": "message_alpha",
-		"body": "message_alpha(${1:alpha})",
-		"description": "[Function]" 
-	},
-	"message_background": {
-		"prefix": "message_background",
-		"body": "message_background(${1:back})",
-		"description": "[Function]" 
-	},
-	"message_button": {
-		"prefix": "message_button",
-		"body": "message_button(${1:sprite})",
-		"description": "[Function]" 
-	},
-	"message_button_font": {
-		"prefix": "message_button_font",
-		"body": "message_button_font(${1:name}, ${2:size}, ${3:colour}, ${4:style})",
-		"description": "[Function]" 
-	},
-	"message_caption": {
-		"prefix": "message_caption",
-		"body": "message_caption(${1:show}, ${2:str})",
-		"description": "[Function]" 
-	},
-	"message_input_color": {
-		"prefix": "message_input_color",
-		"body": "message_input_color(${1:col})",
-		"description": "[Function]" 
-	},
-	"message_input_colour": {
-		"prefix": "message_input_colour",
-		"body": "message_input_colour(${1:col})",
-		"description": "[Function]" 
-	},
-	"message_input_font": {
-		"prefix": "message_input_font",
-		"body": "message_input_font(${1:name}, ${2:size}, ${3:colour}, ${4:style})",
-		"description": "[Function]" 
-	},
-	"message_mouse_color": {
-		"prefix": "message_mouse_color",
-		"body": "message_mouse_color(${1:col})",
-		"description": "[Function]" 
-	},
-	"message_mouse_colour": {
-		"prefix": "message_mouse_colour",
-		"body": "message_mouse_colour(${1:col})",
-		"description": "[Function]" 
-	},
-	"message_position": {
-		"prefix": "message_position",
-		"body": "message_position(${1:x}, ${2:y})",
-		"description": "[Function]" 
-	},
-	"message_size": {
-		"prefix": "message_size",
-		"body": "message_size(${1:w}, ${2:h})",
-		"description": "[Function]" 
-	},
-	"message_text_charset": {
-		"prefix": "message_text_charset",
-		"body": "message_text_charset(${1:type}, ${2:charset_id})",
-		"description": "[Function]" 
-	},
-	"message_text_font": {
-		"prefix": "message_text_font",
-		"body": "message_text_font(${1:name}, ${2:size}, ${3:colour}, ${4:style})",
 		"description": "[Function]" 
 	},
 	"min": {
@@ -5042,11 +4687,6 @@
 	"mouse_clear": {
 		"prefix": "mouse_clear",
 		"body": "mouse_clear(${1:button})",
-		"description": "[Function]" 
-	},
-	"mouse_wait": {
-		"prefix": "mouse_wait",
-		"body": "mouse_wait(${1:&})",
 		"description": "[Function]" 
 	},
 	"mouse_wheel_down": {
@@ -5289,26 +4929,6 @@
 		"body": "network_set_timeout(${1:socket}, ${2:read}, ${3:write})",
 		"description": "[Function]" 
 	},
-	"object_add": {
-		"prefix": "object_add",
-		"body": "object_add(${1:&})",
-		"description": "[Function]" 
-	},
-	"object_delete": {
-		"prefix": "object_delete",
-		"body": "object_delete(${1:ind})",
-		"description": "[Function]" 
-	},
-	"object_event_add": {
-		"prefix": "object_event_add",
-		"body": "object_event_add(${1:ind}, ${2:evtype}, ${3:evnumb}, ${4:codestr})",
-		"description": "[Function]" 
-	},
-	"object_event_clear": {
-		"prefix": "object_event_clear",
-		"body": "object_event_clear(${1:ind}, ${2:evtype}, ${3:evnumb})",
-		"description": "[Function]" 
-	},
 	"object_exists": {
 		"prefix": "object_exists",
 		"body": "object_exists(${1:ind})",
@@ -5401,7 +5021,7 @@
 	},
 	"openfeint_accept_challenge": {
 		"prefix": "openfeint_accept_challenge",
-		"body": "openfeint_accept_challenge(${1:&})",
+		"body": "openfeint_accept_challenge(${1:})",
 		"description": "[Function]" 
 	},
 	"openfeint_send_challenge": {
@@ -5431,7 +5051,7 @@
 	},
 	"openfeint_start": {
 		"prefix": "openfeint_start",
-		"body": "openfeint_start(${1:&})",
+		"body": "openfeint_start(${1:})",
 		"description": "[Function]" 
 	},
 	"ord": {
@@ -5487,151 +5107,6 @@
 	"parameter_string": {
 		"prefix": "parameter_string",
 		"body": "parameter_string(${1:n})",
-		"description": "[Function]" 
-	},
-	"part_attractor_clear": {
-		"prefix": "part_attractor_clear",
-		"body": "part_attractor_clear(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_attractor_create": {
-		"prefix": "part_attractor_create",
-		"body": "part_attractor_create(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_attractor_destroy": {
-		"prefix": "part_attractor_destroy",
-		"body": "part_attractor_destroy(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_attractor_destroy_all": {
-		"prefix": "part_attractor_destroy_all",
-		"body": "part_attractor_destroy_all(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_attractor_exists": {
-		"prefix": "part_attractor_exists",
-		"body": "part_attractor_exists(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_attractor_force": {
-		"prefix": "part_attractor_force",
-		"body": "part_attractor_force(${1:ps}, ${2:ind}, ${3:force}, ${4:dist}, ${5:kind}, ${6:additive})",
-		"description": "[Function]" 
-	},
-	"part_attractor_position": {
-		"prefix": "part_attractor_position",
-		"body": "part_attractor_position(${1:ps}, ${2:ind}, ${3:x}, ${4:y})",
-		"description": "[Function]" 
-	},
-	"part_changer_clear": {
-		"prefix": "part_changer_clear",
-		"body": "part_changer_clear(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_changer_create": {
-		"prefix": "part_changer_create",
-		"body": "part_changer_create(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_changer_destroy": {
-		"prefix": "part_changer_destroy",
-		"body": "part_changer_destroy(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_changer_destroy_all": {
-		"prefix": "part_changer_destroy_all",
-		"body": "part_changer_destroy_all(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_changer_exists": {
-		"prefix": "part_changer_exists",
-		"body": "part_changer_exists(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_changer_kind": {
-		"prefix": "part_changer_kind",
-		"body": "part_changer_kind(${1:ps}, ${2:ind}, ${3:kind})",
-		"description": "[Function]" 
-	},
-	"part_changer_region": {
-		"prefix": "part_changer_region",
-		"body": "part_changer_region(${1:ps}, ${2:ind}, ${3:xmin}, ${4:xmax}, ${5:ymin}, ${6:ymax}, ${7:shape})",
-		"description": "[Function]" 
-	},
-	"part_changer_types": {
-		"prefix": "part_changer_types",
-		"body": "part_changer_types(${1:ps}, ${2:ind}, ${3:parttype1}, ${4:parttype2})",
-		"description": "[Function]" 
-	},
-	"part_deflector_clear": {
-		"prefix": "part_deflector_clear",
-		"body": "part_deflector_clear(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_deflector_create": {
-		"prefix": "part_deflector_create",
-		"body": "part_deflector_create(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_deflector_destroy": {
-		"prefix": "part_deflector_destroy",
-		"body": "part_deflector_destroy(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_deflector_destroy_all": {
-		"prefix": "part_deflector_destroy_all",
-		"body": "part_deflector_destroy_all(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_deflector_exists": {
-		"prefix": "part_deflector_exists",
-		"body": "part_deflector_exists(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_deflector_friction": {
-		"prefix": "part_deflector_friction",
-		"body": "part_deflector_friction(${1:ps}, ${2:ind}, ${3:amount})",
-		"description": "[Function]" 
-	},
-	"part_deflector_kind": {
-		"prefix": "part_deflector_kind",
-		"body": "part_deflector_kind(${1:ps}, ${2:ind}, ${3:kind})",
-		"description": "[Function]" 
-	},
-	"part_deflector_region": {
-		"prefix": "part_deflector_region",
-		"body": "part_deflector_region(${1:ps}, ${2:ind}, ${3:xmin}, ${4:xmax}, ${5:ymin}, ${6:ymax})",
-		"description": "[Function]" 
-	},
-	"part_destroyer_clear": {
-		"prefix": "part_destroyer_clear",
-		"body": "part_destroyer_clear(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_destroyer_create": {
-		"prefix": "part_destroyer_create",
-		"body": "part_destroyer_create(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_destroyer_destroy": {
-		"prefix": "part_destroyer_destroy",
-		"body": "part_destroyer_destroy(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_destroyer_destroy_all": {
-		"prefix": "part_destroyer_destroy_all",
-		"body": "part_destroyer_destroy_all(${1:ps})",
-		"description": "[Function]" 
-	},
-	"part_destroyer_exists": {
-		"prefix": "part_destroyer_exists",
-		"body": "part_destroyer_exists(${1:ps}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"part_destroyer_region": {
-		"prefix": "part_destroyer_region",
-		"body": "part_destroyer_region(${1:ps}, ${2:ind}, ${3:xmin}, ${4:xmax}, ${5:ymin}, ${6:ymax}, ${7:shape})",
 		"description": "[Function]" 
 	},
 	"part_emitter_burst": {
@@ -6601,7 +6076,7 @@
 	},
 	"playhaven_hide_notification_badge": {
 		"prefix": "playhaven_hide_notification_badge",
-		"body": "playhaven_hide_notification_badge(${1:&})",
+		"body": "playhaven_hide_notification_badge(${1:})",
 		"description": "[Function]" 
 	},
 	"playhaven_position_notification_badge": {
@@ -6611,17 +6086,17 @@
 	},
 	"playhaven_update_notification_badge": {
 		"prefix": "playhaven_update_notification_badge",
-		"body": "playhaven_update_notification_badge(${1:&})",
+		"body": "playhaven_update_notification_badge(${1:})",
 		"description": "[Function]" 
 	},
 	"pocketchange_display_reward": {
 		"prefix": "pocketchange_display_reward",
-		"body": "pocketchange_display_reward(${1:&})",
+		"body": "pocketchange_display_reward(${1:})",
 		"description": "[Function]" 
 	},
 	"pocketchange_display_shop": {
 		"prefix": "pocketchange_display_shop",
-		"body": "pocketchange_display_shop(${1:&})",
+		"body": "pocketchange_display_shop(${1:})",
 		"description": "[Function]" 
 	},
 	"point_direction": {
@@ -6769,61 +6244,6 @@
 		"body": "rectangle_in_triangle(${1:sx1}, ${2:sy1}, ${3:sx2}, ${4:sy2}, ${5:x1}, ${6:y1}, ${7:x2}, ${8:y2}, ${9:x3}, ${10:y3})",
 		"description": "[Function]" 
 	},
-	"registry_exists": {
-		"prefix": "registry_exists",
-		"body": "registry_exists(${1:name})",
-		"description": "[Function]" 
-	},
-	"registry_exists_ext": {
-		"prefix": "registry_exists_ext",
-		"body": "registry_exists_ext(${1:key}, ${2:name})",
-		"description": "[Function]" 
-	},
-	"registry_read_real": {
-		"prefix": "registry_read_real",
-		"body": "registry_read_real(${1:name})",
-		"description": "[Function]" 
-	},
-	"registry_read_real_ext": {
-		"prefix": "registry_read_real_ext",
-		"body": "registry_read_real_ext(${1:key}, ${2:name})",
-		"description": "[Function]" 
-	},
-	"registry_read_string": {
-		"prefix": "registry_read_string",
-		"body": "registry_read_string(${1:name})",
-		"description": "[Function]" 
-	},
-	"registry_read_string_ext": {
-		"prefix": "registry_read_string_ext",
-		"body": "registry_read_string_ext(${1:key}, ${2:name})",
-		"description": "[Function]" 
-	},
-	"registry_set_root": {
-		"prefix": "registry_set_root",
-		"body": "registry_set_root(${1:root})",
-		"description": "[Function]" 
-	},
-	"registry_write_real": {
-		"prefix": "registry_write_real",
-		"body": "registry_write_real(${1:name}, ${2:value})",
-		"description": "[Function]" 
-	},
-	"registry_write_real_ext": {
-		"prefix": "registry_write_real_ext",
-		"body": "registry_write_real_ext(${1:key}, ${2:name}, ${3:value})",
-		"description": "[Function]" 
-	},
-	"registry_write_string": {
-		"prefix": "registry_write_string",
-		"body": "registry_write_string(${1:name}, ${2:str})",
-		"description": "[Function]" 
-	},
-	"registry_write_string_ext": {
-		"prefix": "registry_write_string_ext",
-		"body": "registry_write_string_ext(${1:key}, ${2:name}, ${3:str})",
-		"description": "[Function]" 
-	},
 	"room_add": {
 		"prefix": "room_add",
 		"body": "room_add(${1:})",
@@ -6904,16 +6324,6 @@
 		"body": "room_set_background_colour(${1:ind}, ${2:col}, ${3:show})",
 		"description": "[Function]" 
 	},
-	"room_set_caption": {
-		"prefix": "room_set_caption",
-		"body": "room_set_caption(${1:ind}, ${2:str})",
-		"description": "[Function]" 
-	},
-	"room_set_code": {
-		"prefix": "room_set_code",
-		"body": "room_set_code(${1:ind}, ${2:codestr})",
-		"description": "[Function]" 
-	},
 	"room_set_height": {
 		"prefix": "room_set_height",
 		"body": "room_set_height(${1:ind}, ${2:h})",
@@ -6961,12 +6371,7 @@
 	},
 	"screen_redraw": {
 		"prefix": "screen_redraw",
-		"body": "screen_redraw(${1:&})",
-		"description": "[Function]" 
-	},
-	"screen_refresh": {
-		"prefix": "screen_refresh",
-		"body": "screen_refresh(${1:&})",
+		"body": "screen_redraw(${1:})",
 		"description": "[Function]" 
 	},
 	"screen_save": {
@@ -6977,11 +6382,6 @@
 	"screen_save_part": {
 		"prefix": "screen_save_part",
 		"body": "screen_save_part(${1:fname}, ${2:x}, ${3:y}, ${4:w}, ${5:h})",
-		"description": "[Function]" 
-	},
-	"screen_wait_vsync": {
-		"prefix": "screen_wait_vsync",
-		"body": "screen_wait_vsync(${1:&})",
 		"description": "[Function]" 
 	},
 	"script_execute": {
@@ -6997,31 +6397,6 @@
 	"script_get_name": {
 		"prefix": "script_get_name",
 		"body": "script_get_name(${1:ind})",
-		"description": "[Function]" 
-	},
-	"script_get_text": {
-		"prefix": "script_get_text",
-		"body": "script_get_text(${1:ind})",
-		"description": "[Function]" 
-	},
-	"set_application_title": {
-		"prefix": "set_application_title",
-		"body": "set_application_title(${1:title})",
-		"description": "[Function]" 
-	},
-	"set_automatic_draw": {
-		"prefix": "set_automatic_draw",
-		"body": "set_automatic_draw(${1:value})",
-		"description": "[Function]" 
-	},
-	"set_program_priority": {
-		"prefix": "set_program_priority",
-		"body": "set_program_priority(${1:priority})",
-		"description": "[Function]" 
-	},
-	"set_synchronization": {
-		"prefix": "set_synchronization",
-		"body": "set_synchronization(${1:value})",
 		"description": "[Function]" 
 	},
 	"sha1_file": {
@@ -7126,17 +6501,7 @@
 	},
 	"show_info": {
 		"prefix": "show_info",
-		"body": "show_info(${1:&})",
-		"description": "[Function]" 
-	},
-	"show_menu": {
-		"prefix": "show_menu",
-		"body": "show_menu(${1:str}, ${2:def})",
-		"description": "[Function]" 
-	},
-	"show_menu_pos": {
-		"prefix": "show_menu_pos",
-		"body": "show_menu_pos(${1:x}, ${2:y}, ${3:str}, ${4:def})",
+		"body": "show_info(${1:})",
 		"description": "[Function]" 
 	},
 	"show_message": {
@@ -7147,11 +6512,6 @@
 	"show_message_async": {
 		"prefix": "show_message_async",
 		"body": "show_message_async(${1:str})",
-		"description": "[Function]" 
-	},
-	"show_message_ext": {
-		"prefix": "show_message_ext",
-		"body": "show_message_ext(${1:str}, ${2:but1}, ${3:but2}, ${4:but3&})",
 		"description": "[Function]" 
 	},
 	"show_question": {
@@ -7299,94 +6659,14 @@
 		"body": "skeleton_slot_data(${1:sprite}, ${2:list})",
 		"description": "[Function]" 
 	},
-	"sleep": {
-		"prefix": "sleep",
-		"body": "sleep(${1:millisec})",
-		"description": "[Function]" 
-	},
-	"sound_3d_set_sound_cone": {
-		"prefix": "sound_3d_set_sound_cone",
-		"body": "sound_3d_set_sound_cone(${1:snd}, ${2:x}, ${3:y}, ${4:z}, ${5:anglein}, ${6:angleout}, ${7:voloutside})",
-		"description": "[Function]" 
-	},
-	"sound_3d_set_sound_distance": {
-		"prefix": "sound_3d_set_sound_distance",
-		"body": "sound_3d_set_sound_distance(${1:snd}, ${2:mindist}, ${3:maxdist})",
-		"description": "[Function]" 
-	},
-	"sound_3d_set_sound_position": {
-		"prefix": "sound_3d_set_sound_position",
-		"body": "sound_3d_set_sound_position(${1:snd}, ${2:x}, ${3:y}, ${4:z})",
-		"description": "[Function]" 
-	},
-	"sound_3d_set_sound_velocity": {
-		"prefix": "sound_3d_set_sound_velocity",
-		"body": "sound_3d_set_sound_velocity(${1:snd}, ${2:x}, ${3:y}, ${4:z})",
-		"description": "[Function]" 
-	},
 	"sound_add": {
 		"prefix": "sound_add",
 		"body": "sound_add(${1:fname}, ${2:kind}, ${3:preload})",
 		"description": "[Function]" 
 	},
-	"sound_background_tempo": {
-		"prefix": "sound_background_tempo",
-		"body": "sound_background_tempo(${1:factor})",
-		"description": "[Function]" 
-	},
 	"sound_delete": {
 		"prefix": "sound_delete",
 		"body": "sound_delete(${1:ind})",
-		"description": "[Function]" 
-	},
-	"sound_discard": {
-		"prefix": "sound_discard",
-		"body": "sound_discard(${1:ind})",
-		"description": "[Function]" 
-	},
-	"sound_effect_chorus": {
-		"prefix": "sound_effect_chorus",
-		"body": "sound_effect_chorus(${1:snd}, ${2:wetdry}, ${3:depth}, ${4:feedback}, ${5:frequency}, ${6:wave}, ${7:delay}, ${8:phase})",
-		"description": "[Function]" 
-	},
-	"sound_effect_compressor": {
-		"prefix": "sound_effect_compressor",
-		"body": "sound_effect_compressor(${1:snd}, ${2:gain}, ${3:attack}, ${4:release}, ${5:threshold}, ${6:ratio}, ${7:delay})",
-		"description": "[Function]" 
-	},
-	"sound_effect_echo": {
-		"prefix": "sound_effect_echo",
-		"body": "sound_effect_echo(${1:snd}, ${2:wetdry}, ${3:feedback}, ${4:leftdelay}, ${5:rightdelay}, ${6:pandelay})",
-		"description": "[Function]" 
-	},
-	"sound_effect_equalizer": {
-		"prefix": "sound_effect_equalizer",
-		"body": "sound_effect_equalizer(${1:snd}, ${2:center}, ${3:bandwidth}, ${4:gain})",
-		"description": "[Function]" 
-	},
-	"sound_effect_flanger": {
-		"prefix": "sound_effect_flanger",
-		"body": "sound_effect_flanger(${1:snd}, ${2:wetdry}, ${3:depth}, ${4:feedback}, ${5:frequency}, ${6:wave}, ${7:delay}, ${8:phase})",
-		"description": "[Function]" 
-	},
-	"sound_effect_gargle": {
-		"prefix": "sound_effect_gargle",
-		"body": "sound_effect_gargle(${1:snd}, ${2:rate}, ${3:wave})",
-		"description": "[Function]" 
-	},
-	"sound_effect_reverb": {
-		"prefix": "sound_effect_reverb",
-		"body": "sound_effect_reverb(${1:snd}, ${2:gain}, ${3:mix}, ${4:time}, ${5:ratio})",
-		"description": "[Function]" 
-	},
-	"sound_effect_set": {
-		"prefix": "sound_effect_set",
-		"body": "sound_effect_set(${1:snd}, ${2:effect})",
-		"description": "[Function]" 
-	},
-	"sound_exists": {
-		"prefix": "sound_exists",
-		"body": "sound_exists(${1:ind})",
 		"description": "[Function]" 
 	},
 	"sound_fade": {
@@ -7404,11 +6684,6 @@
 		"body": "sound_get_name(${1:ind})",
 		"description": "[Function]" 
 	},
-	"sound_get_preload": {
-		"prefix": "sound_get_preload",
-		"body": "sound_get_preload(${1:ind})",
-		"description": "[Function]" 
-	},
 	"sound_global_volume": {
 		"prefix": "sound_global_volume",
 		"body": "sound_global_volume(${1:value})",
@@ -7424,11 +6699,6 @@
 		"body": "sound_loop(${1:index})",
 		"description": "[Function]" 
 	},
-	"sound_pan": {
-		"prefix": "sound_pan",
-		"body": "sound_pan(${1:index}, ${2:value})",
-		"description": "[Function]" 
-	},
 	"sound_play": {
 		"prefix": "sound_play",
 		"body": "sound_play(${1:index})",
@@ -7437,16 +6707,6 @@
 	"sound_replace": {
 		"prefix": "sound_replace",
 		"body": "sound_replace(${1:ind}, ${2:fname}, ${3:kind}, ${4:preload})",
-		"description": "[Function]" 
-	},
-	"sound_restore": {
-		"prefix": "sound_restore",
-		"body": "sound_restore(${1:ind})",
-		"description": "[Function]" 
-	},
-	"sound_set_search_directory": {
-		"prefix": "sound_set_search_directory",
-		"body": "sound_set_search_directory(${1:dir})",
 		"description": "[Function]" 
 	},
 	"sound_stop": {
@@ -7464,119 +6724,14 @@
 		"body": "sound_volume(${1:index}, ${2:value})",
 		"description": "[Function]" 
 	},
-	"splash_set_adapt": {
-		"prefix": "splash_set_adapt",
-		"body": "splash_set_adapt(${1:adapt})",
-		"description": "[Function]" 
-	},
-	"splash_set_border": {
-		"prefix": "splash_set_border",
-		"body": "splash_set_border(${1:border})",
-		"description": "[Function]" 
-	},
-	"splash_set_caption": {
-		"prefix": "splash_set_caption",
-		"body": "splash_set_caption(${1:cap})",
-		"description": "[Function]" 
-	},
-	"splash_set_close_button": {
-		"prefix": "splash_set_close_button",
-		"body": "splash_set_close_button(${1:show})",
-		"description": "[Function]" 
-	},
-	"splash_set_color": {
-		"prefix": "splash_set_color",
-		"body": "splash_set_color(${1:col})",
-		"description": "[Function]" 
-	},
-	"splash_set_cursor": {
-		"prefix": "splash_set_cursor",
-		"body": "splash_set_cursor(${1:vis})",
-		"description": "[Function]" 
-	},
-	"splash_set_fullscreen": {
-		"prefix": "splash_set_fullscreen",
-		"body": "splash_set_fullscreen(${1:full})",
-		"description": "[Function]" 
-	},
-	"splash_set_interrupt": {
-		"prefix": "splash_set_interrupt",
-		"body": "splash_set_interrupt(${1:interrupt})",
-		"description": "[Function]" 
-	},
-	"splash_set_main": {
-		"prefix": "splash_set_main",
-		"body": "splash_set_main(${1:main})",
-		"description": "[Function]" 
-	},
-	"splash_set_position": {
-		"prefix": "splash_set_position",
-		"body": "splash_set_position(${1:x}, ${2:y})",
-		"description": "[Function]" 
-	},
-	"splash_set_scale": {
-		"prefix": "splash_set_scale",
-		"body": "splash_set_scale(${1:scale})",
-		"description": "[Function]" 
-	},
-	"splash_set_size": {
-		"prefix": "splash_set_size",
-		"body": "splash_set_size(${1:w}, ${2:h})",
-		"description": "[Function]" 
-	},
-	"splash_set_stop_key": {
-		"prefix": "splash_set_stop_key",
-		"body": "splash_set_stop_key(${1:stop})",
-		"description": "[Function]" 
-	},
-	"splash_set_stop_mouse": {
-		"prefix": "splash_set_stop_mouse",
-		"body": "splash_set_stop_mouse(${1:stop})",
-		"description": "[Function]" 
-	},
-	"splash_set_top": {
-		"prefix": "splash_set_top",
-		"body": "splash_set_top(${1:top})",
-		"description": "[Function]" 
-	},
-	"splash_show_image": {
-		"prefix": "splash_show_image",
-		"body": "splash_show_image(${1:fname}, ${2:delay})",
-		"description": "[Function]" 
-	},
-	"splash_show_text": {
-		"prefix": "splash_show_text",
-		"body": "splash_show_text(${1:fname}, ${2:delay})",
-		"description": "[Function]" 
-	},
-	"splash_show_video": {
-		"prefix": "splash_show_video",
-		"body": "splash_show_video(${1:fname}, ${2:loop})",
-		"description": "[Function]" 
-	},
-	"splash_show_web": {
-		"prefix": "splash_show_web",
-		"body": "splash_show_web(${1:url}, ${2:delay})",
-		"description": "[Function]" 
-	},
 	"sprite_add": {
 		"prefix": "sprite_add",
 		"body": "sprite_add(${1:fname}, ${2:imgnumb}, ${3:removeback}, ${4:smooth}, ${5:xorig}, ${6:yorig})",
 		"description": "[Function]" 
 	},
-	"sprite_add_from_screen": {
-		"prefix": "sprite_add_from_screen",
-		"body": "sprite_add_from_screen(${1:ind}, ${2:x}, ${3:y}, ${4:w}, ${5:h}, ${6:removeback}, ${7:smooth})",
-		"description": "[Function]" 
-	},
 	"sprite_add_from_surface": {
 		"prefix": "sprite_add_from_surface",
 		"body": "sprite_add_from_surface(${1:ind}, ${2:id}, ${3:x}, ${4:y}, ${5:w}, ${6:h}, ${7:removeback}, ${8:smooth})",
-		"description": "[Function]" 
-	},
-	"sprite_add_sprite": {
-		"prefix": "sprite_add_sprite",
-		"body": "sprite_add_sprite(${1:fname})",
 		"description": "[Function]" 
 	},
 	"sprite_assign": {
@@ -7587,11 +6742,6 @@
 	"sprite_collision_mask": {
 		"prefix": "sprite_collision_mask",
 		"body": "sprite_collision_mask(${1:ind}, ${2:sepmasks}, ${3:bboxmode}, ${4:bbleft}, ${5:bbright}, ${6:bbtop}, ${7:bbbottom}, ${8:kind}, ${9:tolerance})",
-		"description": "[Function]" 
-	},
-	"sprite_create_from_screen": {
-		"prefix": "sprite_create_from_screen",
-		"body": "sprite_create_from_screen(${1:x}, ${2:y}, ${3:w}, ${4:h}, ${5:removeback}, ${6:smooth}, ${7:xorig}, ${8:yorig})",
 		"description": "[Function]" 
 	},
 	"sprite_create_from_surface": {
@@ -8659,11 +7809,6 @@
 		"body": "timeline_max_moment(${1:ind})",
 		"description": "[Function]" 
 	},
-	"timeline_moment_add": {
-		"prefix": "timeline_moment_add",
-		"body": "timeline_moment_add(${1:ind}, ${2:step}, ${3:codestr})",
-		"description": "[Function]" 
-	},
 	"timeline_moment_add_script": {
 		"prefix": "timeline_moment_add_script",
 		"body": "timeline_moment_add_script(${1:ind}, ${2:step}, ${3:script})",
@@ -8677,16 +7822,6 @@
 	"timeline_size": {
 		"prefix": "timeline_size",
 		"body": "timeline_size(${1:ind})",
-		"description": "[Function]" 
-	},
-	"transition_define": {
-		"prefix": "transition_define",
-		"body": "transition_define(${1:kind}, ${2:name})",
-		"description": "[Function]" 
-	},
-	"transition_exists": {
-		"prefix": "transition_exists",
-		"body": "transition_exists(${1:kind})",
 		"description": "[Function]" 
 	},
 	"typeof": {
@@ -8714,26 +7849,6 @@
 		"body": "url_open_full(${1:url}, ${2:target}, ${3:options})",
 		"description": "[Function]" 
 	},
-	"variable_global_array2_get": {
-		"prefix": "variable_global_array2_get",
-		"body": "variable_global_array2_get(${1:name}, ${2:ind1}, ${3:ind2})",
-		"description": "[Function]" 
-	},
-	"variable_global_array2_set": {
-		"prefix": "variable_global_array2_set",
-		"body": "variable_global_array2_set(${1:name}, ${2:ind1}, ${3:ind2}, ${4:value})",
-		"description": "[Function]" 
-	},
-	"variable_global_array_get": {
-		"prefix": "variable_global_array_get",
-		"body": "variable_global_array_get(${1:name}, ${2:ind})",
-		"description": "[Function]" 
-	},
-	"variable_global_array_set": {
-		"prefix": "variable_global_array_set",
-		"body": "variable_global_array_set(${1:name}, ${2:ind}, ${3:value})",
-		"description": "[Function]" 
-	},
 	"variable_global_exists": {
 		"prefix": "variable_global_exists",
 		"body": "variable_global_exists(${1:name})",
@@ -8747,41 +7862,6 @@
 	"variable_global_set": {
 		"prefix": "variable_global_set",
 		"body": "variable_global_set(${1:name}, ${2:value})",
-		"description": "[Function]" 
-	},
-	"variable_local_array2_get": {
-		"prefix": "variable_local_array2_get",
-		"body": "variable_local_array2_get(${1:name}, ${2:ind1}, ${3:ind2})",
-		"description": "[Function]" 
-	},
-	"variable_local_array2_set": {
-		"prefix": "variable_local_array2_set",
-		"body": "variable_local_array2_set(${1:name}, ${2:ind1}, ${3:ind2}, ${4:value})",
-		"description": "[Function]" 
-	},
-	"variable_local_array_get": {
-		"prefix": "variable_local_array_get",
-		"body": "variable_local_array_get(${1:name}, ${2:ind) &})",
-		"description": "[Function]" 
-	},
-	"variable_local_array_set": {
-		"prefix": "variable_local_array_set",
-		"body": "variable_local_array_set(${1:name}, ${2:ind}, ${3:value})",
-		"description": "[Function]" 
-	},
-	"variable_local_exists": {
-		"prefix": "variable_local_exists",
-		"body": "variable_local_exists(${1:name})",
-		"description": "[Function]" 
-	},
-	"variable_local_get": {
-		"prefix": "variable_local_get",
-		"body": "variable_local_get(${1:name})",
-		"description": "[Function]" 
-	},
-	"variable_local_set": {
-		"prefix": "variable_local_set",
-		"body": "variable_local_set(${1:name}, ${2:value})",
 		"description": "[Function]" 
 	},
 	"vertex_argb": {
@@ -9149,11 +8229,6 @@
 		"body": "window_center(${1:})",
 		"description": "[Function]" 
 	},
-	"window_default": {
-		"prefix": "window_default",
-		"body": "window_default(${1:&})",
-		"description": "[Function]" 
-	},
 	"window_device": {
 		"prefix": "window_device",
 		"body": "window_device(${1:})",
@@ -9189,44 +8264,9 @@
 		"body": "window_get_height(${1:})",
 		"description": "[Function]" 
 	},
-	"window_get_region_height": {
-		"prefix": "window_get_region_height",
-		"body": "window_get_region_height(${1:&})",
-		"description": "[Function]" 
-	},
-	"window_get_region_scale": {
-		"prefix": "window_get_region_scale",
-		"body": "window_get_region_scale(${1:&})",
-		"description": "[Function]" 
-	},
-	"window_get_region_width": {
-		"prefix": "window_get_region_width",
-		"body": "window_get_region_width(${1:&})",
-		"description": "[Function]" 
-	},
-	"window_get_showborder": {
-		"prefix": "window_get_showborder",
-		"body": "window_get_showborder(${1:&})",
-		"description": "[Function]" 
-	},
-	"window_get_showicons": {
-		"prefix": "window_get_showicons",
-		"body": "window_get_showicons(${1:&})",
-		"description": "[Function]" 
-	},
-	"window_get_sizeable": {
-		"prefix": "window_get_sizeable",
-		"body": "window_get_sizeable(${1:&})",
-		"description": "[Function]" 
-	},
-	"window_get_stayontop": {
-		"prefix": "window_get_stayontop",
-		"body": "window_get_stayontop(${1:&})",
-		"description": "[Function]" 
-	},
 	"window_get_visible": {
 		"prefix": "window_get_visible",
-		"body": "window_get_visible(${1:&})",
+		"body": "window_get_visible(${1:})",
 		"description": "[Function]" 
 	},
 	"window_get_visible_rects": {
@@ -9329,44 +8369,9 @@
 		"body": "window_set_rectangle(${1:x}, ${2:y}, ${3:w}, ${4:h})",
 		"description": "[Function]" 
 	},
-	"window_set_region_scale": {
-		"prefix": "window_set_region_scale",
-		"body": "window_set_region_scale(${1:scale}, ${2:adaptwindow})",
-		"description": "[Function]" 
-	},
-	"window_set_region_size": {
-		"prefix": "window_set_region_size",
-		"body": "window_set_region_size(${1:w}, ${2:h}, ${3:adaptwindow})",
-		"description": "[Function]" 
-	},
-	"window_set_showborder": {
-		"prefix": "window_set_showborder",
-		"body": "window_set_showborder(${1:show})",
-		"description": "[Function]" 
-	},
-	"window_set_showicons": {
-		"prefix": "window_set_showicons",
-		"body": "window_set_showicons(${1:show})",
-		"description": "[Function]" 
-	},
 	"window_set_size": {
 		"prefix": "window_set_size",
 		"body": "window_set_size(${1:w}, ${2:h})",
-		"description": "[Function]" 
-	},
-	"window_set_sizeable": {
-		"prefix": "window_set_sizeable",
-		"body": "window_set_sizeable(${1:sizeable})",
-		"description": "[Function]" 
-	},
-	"window_set_stayontop": {
-		"prefix": "window_set_stayontop",
-		"body": "window_set_stayontop(${1:stay})",
-		"description": "[Function]" 
-	},
-	"window_set_visible": {
-		"prefix": "window_set_visible",
-		"body": "window_set_visible(${1:visible})",
 		"description": "[Function]" 
 	},
 	"window_views_mouse_get_x": {
@@ -9379,11 +8384,6 @@
 		"body": "window_views_mouse_get_y(${1:})",
 		"description": "[Function]" 
 	},
-	"window_views_mouse_set": {
-		"prefix": "window_views_mouse_set",
-		"body": "window_views_mouse_set(${1:x}, ${2:y})",
-		"description": "[Function]" 
-	},
 	"window_view_mouse_get_x": {
 		"prefix": "window_view_mouse_get_x",
 		"body": "window_view_mouse_get_x(${1:id})",
@@ -9392,11 +8392,6 @@
 	"window_view_mouse_get_y": {
 		"prefix": "window_view_mouse_get_y",
 		"body": "window_view_mouse_get_y(${1:id})",
-		"description": "[Function]" 
-	},
-	"window_view_mouse_set": {
-		"prefix": "window_view_mouse_set",
-		"body": "window_view_mouse_set(${1:id}, ${2:x}, ${3:y})",
 		"description": "[Function]" 
 	},
 	"winphone_license_trial_version": {
