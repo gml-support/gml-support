@@ -1,3 +1,8 @@
+## 1.3.2
+
+ - 添加插件依赖以支持 Shader 语法。
+ - Add extensionDependencies to support shader.
+
 ## 1.3.1
 
  - 完善 `GMS` 的代码补全和代码高亮
