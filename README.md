@@ -2,7 +2,13 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
 [![Rating](https://vsmarketplacebadge.apphb.com/rating/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
 
-# gml-support README
+# GML Support
+
+<center>
+
+![](https://gmlsupport.liaronce.win/assets/icon.png)
+
+</center>
 
 GameMaker Language Support in Visual Studio Code.  
 GameMaker Language对Visual Studio Code的支持。  

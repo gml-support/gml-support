@@ -8801,11 +8801,6 @@
 		"body": "score",
 		"description": "[Variable]"		
 	},
-	"secure_mode": {
-		"prefix": "secure_mode",
-		"body": "secure_mode",
-		"description": "[Variable]"		
-	},
 	"show_health": {
 		"prefix": "show_health",
 		"body": "show_health",
@@ -9954,11 +9949,6 @@
 		"body": "buffer_wrap",
 		"description": "[Constant]"		
 	},
-	"button_type": {
-		"prefix": "button_type",
-		"body": "button_type",
-		"description": "[Constant]"		
-	},
 	"CHINESEBIG5_CHARSET": {
 		"prefix": "CHINESEBIG5_CHARSET",
 		"body": "CHINESEBIG5_CHARSET",
@@ -10989,11 +10979,6 @@
 		"body": "HEBREW_CHARSET",
 		"description": "[Constant]"		
 	},
-	"input_type": {
-		"prefix": "input_type",
-		"body": "input_type",
-		"description": "[Constant]"		
-	},
 	"JOHAB_CHARSET": {
 		"prefix": "JOHAB_CHARSET",
 		"body": "JOHAB_CHARSET",
@@ -11579,46 +11564,6 @@
 		"body": "self",
 		"description": "[Constant]"		
 	},
-	"se_chorus": {
-		"prefix": "se_chorus",
-		"body": "se_chorus",
-		"description": "[Constant]"		
-	},
-	"se_compressor": {
-		"prefix": "se_compressor",
-		"body": "se_compressor",
-		"description": "[Constant]"		
-	},
-	"se_echo": {
-		"prefix": "se_echo",
-		"body": "se_echo",
-		"description": "[Constant]"		
-	},
-	"se_equalizer": {
-		"prefix": "se_equalizer",
-		"body": "se_equalizer",
-		"description": "[Constant]"		
-	},
-	"se_flanger": {
-		"prefix": "se_flanger",
-		"body": "se_flanger",
-		"description": "[Constant]"		
-	},
-	"se_gargle": {
-		"prefix": "se_gargle",
-		"body": "se_gargle",
-		"description": "[Constant]"		
-	},
-	"se_none": {
-		"prefix": "se_none",
-		"body": "se_none",
-		"description": "[Constant]"		
-	},
-	"se_reverb": {
-		"prefix": "se_reverb",
-		"body": "se_reverb",
-		"description": "[Constant]"		
-	},
 	"SHIFTJIS_CHARSET": {
 		"prefix": "SHIFTJIS_CHARSET",
 		"body": "SHIFTJIS_CHARSET",
@@ -11627,11 +11572,6 @@
 	"SYMBOL_CHARSET": {
 		"prefix": "SYMBOL_CHARSET",
 		"body": "SYMBOL_CHARSET",
-		"description": "[Constant]"		
-	},
-	"text_type": {
-		"prefix": "text_type",
-		"body": "text_type",
 		"description": "[Constant]"		
 	},
 	"THAI_CHARSET": {
