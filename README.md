@@ -4,7 +4,7 @@
 
 # GML Support
 
-<center><img src="https://gmlsupport.liaronce.win/assets/icon.png" alt="" /></center>
+<div align="center"><img src="https://gmlsupport.liaronce.win/assets/icon.png" alt="" /></div>
 
 GameMaker Language Support in Visual Studio Code.  
 GameMaker Language对Visual Studio Code的支持。  
