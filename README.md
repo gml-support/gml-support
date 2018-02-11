@@ -17,8 +17,6 @@ Visual Studio Code版本需高于1.8.0。
 
 At present this plugin is not complete, if you want to contribute to this project, you can fork this project and pull a request.
 
-Thanks to [@laspencer91](https://github.com/laspencer91).
-
 ## Screenshot
 
 ![screenshot1](https://ooo.0o0.ooo/2017/05/29/592bb111b28f4.gif)
@@ -33,6 +31,8 @@ You can also follow me on Twitter (need verification) : [@LiarOnce1062](https://
 Twitter Channel: [#GML_Support](https://twitter.com/hashtag/GML_Support)
 
 ## Thanks
+
+[@laspencer91](https://github.com/laspencer91)
 
 GameMaker Syntax：[YellowAfterlife](https://yal.cc/notepad-syntax-highlighting-for-gamemaker-81/)  
 GameMaker Studio Syntax & GameMaker Studio 2 Syntax：[Uduse/Sublime-GameMaker-Studio-Language-Bundle](https://github.com/Uduse/Sublime-GameMaker-Studio-Language-Bundle)  with Apache-2.0

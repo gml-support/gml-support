@@ -1,7 +1,14 @@
+## 1.3.4
+
+ - 完善 `GMS` 的代码补全。
+ - Improve the `GMS` snippet.
+
 ## 1.3.3
 
  - 从该版本开始，移除函数信息，[详情](https://gmlsupport.liaronce.win/#/zh-cn/?id=qampa)
  - From this version, remove the function info, [Details](https://gmlsupport.liaronce.win/#/?id=qampa)
+ - 添加 `GMLive` 高亮支持,[详情](https://gmlsupport.liaronce.win/#/zh-cn/?id=about-gmlive)。
+ - Add `GMLive` syntaxes support, [Details](https://gmlsupport.liaronce.win/#/?id=about-gmlive).
 
 ## 1.3.2
 
@@ -20,8 +27,8 @@
 
 ## 1.2.2
 
- - #4 修复了 `GMS2` 代码高亮问题。  
- - #4 Fix the string highlighting issue.
+ - \#4 修复了 `GMS2` 代码高亮问题。  
+ - \#4 Fix the string highlighting issue.
 
 ## 1.2.1
 

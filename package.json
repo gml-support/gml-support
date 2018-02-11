@@ -2,13 +2,18 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "vscode": "^1.8.0"
+  },
+  "author": {
+    "email": "qq1062787843@hotmail.com",
+    "name": "Mark Shi",
+    "url": "https://me.liaronce.win"
   },
   "categories": [
     "Languages","Snippets"
