@@ -2,6 +2,8 @@
 
  - 完善 `GMS` 的代码补全。
  - Improve the `GMS` snippet.
+ - 换了个图标。
+ - Change icon.
 
 ## 1.3.3
 
