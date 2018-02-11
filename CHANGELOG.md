@@ -1,3 +1,8 @@
+## 1.3.5
+
+ - 完善 `GM8.1` 和 `GMS` 的代码补全。
+ - Improve the `GM8.1` and `GMS` snippet.
+
 ## 1.3.4
 
  - 完善 `GMS` 的代码补全。
