@@ -23,10 +23,6 @@ At present this plugin is not complete, if you want to contribute to this projec
 
 ![screenshot1](https://ooo.0o0.ooo/2017/05/29/592bb111b28f4.gif)
 
-Now it also support English!
-
-![screenshot2](https://ooo.0o0.ooo/2017/05/29/592bb10e83c41.gif)
-
 ## Other
 
 You can also follow me on Twitter (need verification) : [@LiarOnce1062](https://twitter.com/LiarOnce1062)  
