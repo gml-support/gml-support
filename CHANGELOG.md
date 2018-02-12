@@ -1,3 +1,8 @@
+## 1.3.6
+
+ - 支持添加自定义高亮了（测试中）
+ - Support for adding custom highlight (Testing)
+
 ## 1.3.5
 
  - 完善 `GM8.1` 和 `GMS` 的代码补全。
