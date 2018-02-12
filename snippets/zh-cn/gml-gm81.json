@@ -104,385 +104,385 @@
         "body": [
 	    	"mm_init(${1:path})"
 		],
-		"description": "[Function]mm_init(path) \n用于初始化MaizeMusic音乐插件，返回插件初始化是否成功。使用MaizeMusic插件之前必须执行这一步！否则无法使用本插件。"
+		"description": "[Function]"
     },
 	"mm_free": {
         "prefix": "mm_free",
         "body": [
 	    	"mm_free()"
 		],
-		"description": "[Function]mm_free() \n用于从内存中释放MaizeMusic音乐插件，返回插件释放是否成功。使用MaizeMusic结束后必须执行这一步否则将可能造成内存溢出继而引发严重错误。"
+		"description": "[Function]"
     },
 	"mm_music_load": {
         "prefix": "mm_music_load",
         "body": [
 	    	"mm_music_load(${1:path},${2:loop})"
 		],
-		"description": "[Function]mm_music_load(path,loop) \n用用于载入音乐文件，这个函数返回接下来要使用的音乐的id，音乐支持wav、mp3、ogg等常见的音频格式"
+		"description": "[Function]"
     },
 	"mm_music_load_ext": {
         "prefix": "mm_music_load_ext",
         "body": [
 	    	"mm_music_load_ext(${1:path},${2:offset},{3:length},${4:loop})"
 		],
-		"description": "[Function]mm_music_load_ext(path,offset,length,loop) \n同上个函数相同，只不过可以设定文件的初始位置和载入长度，如果你的音乐文件是一个文件大包，可以使用这个函数载入文件的一部分。"
+		"description": "[Function]"
     },
 	"mm_music_load_mem": {
         "prefix": "mm_music_load_mem",
         "body": [
 	    	"mm_music_load_mem(${1:path},${2:loop})"
 		],
-		"description": "[Function]mm_music_load_mem(path,loop) \n与mm_music_load相似，不同的是该函数会先将文件载入到内存，然后每次播放都会调用内存中的音乐，而不是播放硬盘中的音乐，载入的时候会有较长的载入时间，推荐用于音效载入。"
+		"description": "[Function]"
     },
 	"mm_music_load_mem_ext": {
         "prefix": "mm_music_load_mem_ext",
         "body": [
 	    	"mm_music_load_mem_ext(${1:path},${2:offset},{3:length},${4:loop})"
 		],
-		"description": "[Function]mm_music_load_mem_ext(path,offset,length,loop) \n与mm_music_load_ext和mm_music_load_mem相似，载入音乐文件的一部分到内存。推荐用于音效载入。"
+		"description": "[Function]"
     },
 	"mm_music_load_url": {
         "prefix": "mm_music_load_url",
         "body": [
 	    	"mm_music_load_url(${1:url})"
 		],
-		"description": "[Function]mm_music_load_url(url) \n从网络中载入音乐，返回音乐的ID。使用的时候可能会出现短暂的卡屏现象。"
+		"description": "[Function]"
     },
 	"mm_music_free": {
         "prefix": "mm_music_free",
         "body": [
 	    	"mm_music_free(${1:musicID})"
 		],
-		"description": "[Function]mm_music_free(musicID) \n用于从释放被载入过的音乐，如果某段音频不再使用了，最好调用此函数来节省内存。"
+		"description": "[Function]"
     },
 	"mm_play": {
         "prefix": "mm_play",
         "body": [
 	    	"mm_play(${1:musicID})"
 		],
-		"description": "[Function]mm_play(musicID) \n用于播放已经被载入过的音乐。这个函数会把播放位点强制推到时间轴最左端。"
+		"description": "[Function]"
     },
 	"mm_stop": {
         "prefix": "mm_stop",
         "body": [
 	    	"mm_stop(${1:musicID})"
 		],
-		"description": "[Function]mm_stop(musicID) \n用于停止正在被播放的音乐。这个函数会把播放位点强制推到时间轴最左端。"
+		"description": "[Function]"
     },
 	"mm_stop_all": {
         "prefix": "mm_stop_all",
         "body": [
 	    	"mm_stop_all()"
 		],
-		"description": "[Function]mm_stop_all() \n(v3.0新增) 停止所有音乐。"
+		"description": "[Function]"
     },
 	"mm_pause": {
         "prefix": "mm_pause",
         "body": [
 	    	"mm_pause(${1:musicID})"
 		],
-		"description": "[Function]mm_pause(musicID) \n用于暂停正在播放的音乐。"
+		"description": "[Function]"
     },
 	"mm_resume": {
         "prefix": "mm_resume",
         "body": [
 	    	"mm_resume(${1:musicID})"
 		],
-		"description": "[Function]mm_resume(musicID) \n用于恢复播放被暂停的音乐。"
+		"description": "[Function]"
     },
 	"mm_set_position": {
         "prefix": "mm_set_position",
         "body": [
 	    	"mm_set_position(${1:musicID},${2:volume})"
 		],
-		"description": "[Function]mm_init(musicID,volume) \n用于设定某id音乐的播放音量。"
+		"description": "[Function]"
     },
 	"mm_set_pan": {
         "prefix": "mm_set_pan",
         "body": [
 	    	"mm_set_pan(${1:musicID},${2:pan_pos})"
 		],
-		"description": "[Function]mm_set_pan(musicID,pan_pos) \n用于设定某id音乐的声道位置。"
+		"description": "[Function]"
     },
 	"mm_set_speed": {
         "prefix": "mm_set_speed",
         "body": [
 	    	"mm_set_speed(${1:musicID},${2:spd})"
 		],
-		"description": "[Function]mm_set_speed(musicID,spd) \n用于设定某id音乐的播放速度。"
+		"description": "[Function]"
     },
 	"mm_set_tempo": {
         "prefix": "mm_set_tempo",
         "body": [
 	    	"mm_set_tempo(${1:musicID},${2:tempo})"
 		],
-		"description": "[Function]mm_set_tempo(musicID,tempo) \n用于设定某id音乐的播放节奏。调整播放节奏会改变音乐的播放速度，但是不会影响音乐音高。"
+		"description": "[Function]"
     },
 	"mm_set_pitch": {
         "prefix": "mm_set_pitch",
         "body": [
 	    	"mm_set_pitch(${1:musicID},${2:pitch})"
 		],
-		"description": "[Function]mm_set_pan(musicID,pitch) \n用于设定某id音乐的音调音高。"
+		"description": "[Function]"
     },
 	"mm_set_global_volume": {
         "prefix": "mm_set_global_volume",
         "body": [
 	    	"mm_set_global_volume(${1:volume})"
 		],
-		"description": "[Function]mm_set_global_volume(volume) \n用于设定全局的播放音量，这里的全局指的是操作系统的音量。"
+		"description": "[Function]"
     },
 	"mm_set_music_loop_section": {
         "prefix": "mm_set_music_loop_section",
         "body": [
 	    	"mm_set_music_loop_section(${1:musicID},${2:begin},${3:end})"
 		],
-		"description": "[Function]mm_set_music_loop_section(musicID,begin,end) \n用于设定某id音乐的循环播放片段。"
+		"description": "[Function]"
     },
 	"mm_remove_music_loop_section": {
         "prefix": "mm_remove_music_loop_section",
         "body": [
 	    	"mm_remove_music_loop_section(${1:musicID})"
 		],
-		"description": "[Function]mm_remove_music_loop_section(musicID) \n用于移除该id音乐的循环播放片段。"
+		"description": "[Function]"
     },
 	"mm_get_active": {
         "prefix": "mm_get_active",
         "body": [
 	    	"mm_get_active(${1:musicID})"
 		],
-		"description": "[Function]mm_get_active(musicID) \n返回指定音乐的当前状态。"
+		"description": "[Function]"
     },
 	"mm_get_length": {
         "prefix": "mm_get_length",
         "body": [
 	    	"mm_get_length(${1:musicID})"
 		],
-		"description": "[Function]mm_get_length(musicID) \n用于获取某id音乐的全长。"
+		"description": "[Function]"
     },
 	"mm_get_position": {
         "prefix": "mm_get_position",
         "body": [
 	    	"mm_get_position(${1:musicID})"
 		],
-		"description": "[Function]mm_get_position(musicID) \n用于获取某id音乐当前的播放位点。"
+		"description": "[Function]"
     },
 	"mm_get_volume": {
         "prefix": "mm_get_volume",
         "body": [
 	    	"mm_get_volume(${1:musicID})"
 		],
-		"description": "[Function]mm_get_volume(musicID) \n用于获取某id音乐当前的播放音量。"
+		"description": "[Function]"
     },
 	"mm_get_pan": {
         "prefix": "mm_get_pan",
         "body": [
 	    	"mm_get_pan(${1:musicID})"
 		],
-		"description": "[Function]mm_get_pan(musicID) \n用于获取某id音乐当前的声道位置。"
+		"description": "[Function]"
     },
 	"mm_get_speed": {
         "prefix": "mm_get_speed",
         "body": [
 	    	"mm_get_speed(${1:musicID})"
 		],
-		"description": "[Function]mm_get_speed(musicID) \n用于获取某id音乐当前的播放速度。"
+		"description": "[Function]"
     },
 	"mm_get_tempo": {
         "prefix": "mm_get_tempo",
         "body": [
 	    	"mm_get_tempo(${1:musicID})"
 		],
-		"description": "[Function]mm_get_tempo(musicID) \n用于获取某id音乐当前的播放节奏。"
+		"description": "[Function]"
     },
 	"mm_get_pitch": {
         "prefix": "mm_get_pitch",
         "body": [
 	    	"mm_get_pitch(${1:musicID})"
 		],
-		"description": "[Function]mm_get_pitch(musicID) \n用于获取某id音乐当前的音调音高。"
+		"description": "[Function]"
     },
 	"mm_get_global_volume": {
         "prefix": "mm_get_global_volume",
         "body": [
 	    	"mm_get_global_volume()"
 		],
-		"description": "[Function]mm_get_tempo() \n用于获取全局的播放音量，这里的全局音量是指操作系统的音量。"
+		"description": "[Function]"
     },
 	"mm_get_level_left": {
         "prefix": "mm_get_level_left",
         "body": [
 	    	"mm_get_level_left(${1:musicID})"
 		],
-		"description": "[Function]mm_get_level_left(musicID) \n用于获取某id音乐当前的左声道电平。"
+		"description": "[Function]"
     },
 	"mm_get_level_right": {
         "prefix": "mm_get_level_right",
         "body": [
 	    	"mm_get_level_right(${1:musicID})"
 		],
-		"description": "[Function]mm_get_level_right(musicID) \n用于获取某id音乐当前的右声道电平。"
+		"description": "[Function]"
     },
 	"mm_get_data": {
         "prefix": "mm_get_data",
         "body": [
 	    	"mm_get_data(${1:musicID},${2:length})"
 		],
-		"description": "[Function]mm_get_data(musicID,length) \n用于获取某id音乐当前的FFT频谱。"
+		"description": "[Function]"
     },
 	"mm_get_wave_data": {
         "prefix": "mm_get_wave_data",
         "body": [
 	    	"mm_get_wave_data(${1:musicID},${2:length})"
 		],
-		"description": "[Function]mm_get_wave_data(musicID,length) \n用于获取某id音乐当前的播放节奏。"
+		"description": "[Function]"
     },
 	"mm_read_data_mes": {
         "prefix": "mm_read_data_mes",
         "body": [
 	    	"mm_read_data_mes(${1:pos})"
 		],
-		"description": "[Function]mm_read_data_mes(pos) \n用于读取已经获得到的频谱，在使用 mm_get_data 或 mm_get_wave_data 之后使用这个函数。"
+		"description": "[Function]"
     },
 	"mm_record_start": {
         "prefix": "mm_record_start",
         "body": [
 	    	"mm_record_start()"
 		],
-		"description": "[Function]mm_record_start() \n开启输入设备，你可以使用mm_get_position函数来获取录制的时间，mm_get_level_left和mm_get_level_right来获取电平值，mm_get_data和mm_read_data_mes来获取声音来源的波形。"
+		"description": "[Function]"
     },
 	"mm_record_stop": {
         "prefix": "mm_record_stop",
         "body": [
 	    	"mm_record_stop()"
 		],
-		"description": "[Function]mm_record_stop() \n关闭输入设备的获取，停止录制。"
+		"description": "[Function]"
     },
 	"mm_record_set_input": {
         "prefix": "mm_record_set_input",
         "body": [
 	    	"mm_record_set_input(${1:enabled},${2:volume})"
 		],
-		"description": "[Function]mm_get_tempo(enabled,volume) \n设置输入设备的开关和音量。"
+		"description": "[Function]"
     },
 	"mm_record_get_volume": {
         "prefix": "mm_record_get_volume",
         "body": [
 	    	"mm_record_get_volume()"
 		],
-		"description": "[Function]mm_record_get_volume() \n获取当前输入设备的音量。"
+		"description": "[Function]"
     },
 	"mm_effect_set": {
         "prefix": "mm_effect_set",
         "body": [
 	    	"mm_effect_set(${1:musicID},${2:effect})"
 		],
-		"description": "[Function]mm_effect_set(musicID,effect) \n为声音添加效果，musicID为要添加效果的音乐ID，effect为添加的效果，可以使用GM中的自带常量\nse_chorus,\nse_echo,\nse_flanger,\nse_gargle,\nse_reverb,\nse_compressor,\nse_equalizer。\n如需设置多种效果则多次使用该函数即可，返回值为效果的ID，用于移除声音效果时使用。"
+		"description": "[Function]"
     },
 	"mm_effect_remove": {
         "prefix": "mm_effect_remove",
         "body": [
 	    	"mm_effect_remove(${1:musicID},${2:effectID})"
 		],
-		"description": "[Function]mm_effect_remove(musicID,effectID) \n用于获取某id音乐当前的播放节奏。"
+		"description": "[Function]"
     },
 	"mm_effect_reset": {
         "prefix": "mm_effect_reset",
         "body": [
 	    	"mm_effect_reset(${1:musicID})"
 		],
-		"description": "[Function]mm_effect_reset(musicID) \n(v3.0新增) 重置音乐的所有效果。"
+		"description": "[Function]"
     },
 	"mm_effect_set_chorus": {
         "prefix": "mm_effect_set_chorus",
         "body": [
 	    	"mm_effect_set_chorus(${1:effectID},${2:wetdry},${3:depth},${4:feedback},${5:frequency},${6:wave},${7:delay},${8:phase})"
 		],
-		"description": "[Function]mm_effect_set_chorus(effectID,wetdry,depth,feedback,frequency,wave,delay,phase) \n(v3.0新增) 为指定声音效果设置和声效果参数。"
+		"description": "[Function]"
     },
 	"mm_effect_set_echo": {
         "prefix": "mm_effect_set_echo",
         "body": [
 	    	"mm_effect_set_echo(${1:effectID},${2:wetdry},${3:feedback},${4:leftdelay},${5:rightdelay},${6:pandelay})"
 		],
-		"description": "[Function]mm_effect_set_echo(effectID,wetdry,feedback,leftdelay,rightdelay,pandelay) \n(v3.0新增) 为指定声音效果设置去噪效果参数。"
+		"description": "[Function]"
     },
 	"mm_effect_set_flanger": {
         "prefix": "mm_effect_set_flanger",
         "body": [
 	    	"mm_effect_set_flanger(${1:effectID},${2:wetdry},${3:depth},${4:feedback},${5:frequency},${6:wave},${7:delay},${8:phase})"
 		],
-		"description": "[Function]mm_effect_set_flanger(effectID,wetdry,depth,feedback,frequency,wave,delay,phase) \n(v3.0新增) 为指定声音效果设置和声效果参数。"
+		"description": "[Function]"
     },
 	"mm_effect_set_gargle": {
         "prefix": "mm_effect_set_gargle",
         "body": [
 	    	"mm_effect_set_gargle(${1:effectID},${2:rate},${3:wave})"
 		],
-		"description": "[Function]mm_effect_set_gargle(effectID,rate,wave) \n(v3.0新增) 为指定声音效果设置漱口声效果参数。"
+		"description": "[Function]"
     },
 	"mm_effect_set_reverb": {
         "prefix": "mm_effect_set_reverb",
         "body": [
 	    	"mm_effect_set_reverb(${1:effectID},${2:gain},${3:mix},${4:time},${5:ratio})"
 		],
-		"description": "[Function]mm_effect_set_reverb(effectID,gain,mix,time,frequency,wave,delay,ratio) \n(v3.0新增) 为指定声音效果设置混响效果参数。"
+		"description": "[Function]"
     },
 	"mm_effect_set_compressor": {
         "prefix": "mm_effect_set_compressor",
         "body": [
 	    	"mm_effect_set_compressor(${1:effectID},${2:gain},${3:attack},${4:release},${5:threshold},${6:ratio},${7:delay})"
 		],
-		"description": "[Function]mm_effect_set_compressor(effectID,gain,attack,release,threshold,ratio,delay) \n(v3.0新增) 为指定声音效果设置压缩器效果参数。"
+		"description": "[Function]"
     },
 	"mm_effect_set_equalizer": {
         "prefix": "mm_effect_set_equalizer",
         "body": [
 	    	"mm_effect_set_equalizer(${1:effectID},${2:center},${3:bandwidth},${4:gain})"
 		],
-		"description": "[Function]mm_effect_set_equalizer(effectID,center,bandwidth,gain) \n(v3.0新增) 为指定声音效果设置均衡器效果参数。"
+		"description": "[Function]"
     },
 	"mm_get_cpu": {
         "prefix": "mm_get_cpu",
         "body": [
 	    	"mm_get_cpu()"
 		],
-		"description": "[Function]mm_get_cpu() \n获取插件的CPU使用率。"
+		"description": "[Function]"
     },
 	"mm_get_music_cpu": {
         "prefix": "mm_get_music_cpu",
         "body": [
 	    	"mm_get_music_cpu(${1:musicID})"
 		],
-		"description": "[Function]mm_get_music_cpu() \n获取单个音乐的CPU使用率。"
+		"description": "[Function]"
     },
 	"mm_device_get_number": {
         "prefix": "mm_device_get_number",
         "body": [
 	    	"mm_device_get_number()"
 		],
-		"description": "[Function]mm_device_get_number() \n获取本台电脑的播放设备数量。"
+		"description": "[Function]"
     },
 	"mm_device_get_name": {
         "prefix": "mm_device_get_name",
         "body": [
 	    	"mm_device_get_name(${1:device})"
 		],
-		"description": "[Function]mm_device_get_name(device) \n获取播放设备的名字。"
+		"description": "[Function]"
     },
 	"mm_device_set": {
         "prefix": "mm_device_set",
         "body": [
 	    	"mm_device_set(${1:device})"
 		],
-		"description": "[Function]mm_device_set(device) \n设置MM插件使用的播放设备。"
+		"description": "[Function]"
     },
 	"mm_slider_volume": {
         "prefix": "mm_slider_volume",
         "body": [
 	    	"mm_slider_volume(${1:musicID},${2:tar_vol},${3:time})"
 		],
-		"description": "[Function]mm_slider_volume(musicID,tar_vol,time) \n用于缓动某id音乐的音量（从当前音量开始向目标音量缓动）。"
+		"description": "[Function]"
     },
 	
 	"abs": {
