@@ -2,7 +2,7 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.3.6",
+  "version": "1.4.0",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
@@ -10,6 +10,12 @@
   "engines": {
     "vscode": "^1.8.0"
   },
+  "activationEvents": [
+    "onLanguage:gml-gm81",
+    "onLanguage:gml-gms",
+    "onLanguage:gml-gms2"
+	],
+	"main": "./src/extension",
   "author": {
     "email": "qq1062787843@hotmail.com",
     "name": "Mark Shi",
@@ -94,27 +100,27 @@
       {
         "language": "gml-gm81",
         "scopeName": "source.gml-gm81",
-        "path": "%gm81.syntax%"
+        "path": "./syntaxes/main/gml-gm81.json"
       },
       {
         "language": "gml-gms",
         "scopeName": "source.gml-gms",
-        "path": "%gms.syntax%"
+        "path": "./syntaxes/main/gml-gms.json"
       },
       {
         "language": "gml-gms2",
         "scopeName": "source.gml-gms2",
-        "path": "%gms2.syntax%"
+        "path": "./syntaxes/main/gml-gms2.json"
       },
       {
         "language": "gml-gmx",
         "scopeName": "text.gmx",
-        "path": "./syntaxes/gmx.json"
+        "path": "./syntaxes/main/gmx.json"
       },
       {
         "language": "gml-yyp",
         "scopeName": "source.yyp",
-        "path": "./syntaxes/yyp.json"
+        "path": "./syntaxes/main/yyp.json"
       },
       {
         "scopeName": "source.gml-thirdparty",
@@ -128,15 +134,15 @@
     "snippets": [
       {
         "language": "gml-gm81",
-        "path": "%gm81.snippet%"
+        "path": "./snippets/gml-all.json"
       },
       {
         "language": "gml-gms",
-        "path": "%gms.snippet%"
+        "path": "./snippets/gml-all.json"
       },
       {
         "language": "gml-gms2",
-        "path": "%gms2.snippet%"
+        "path": "./snippets/gml-all.json"
       }
     ]
   }

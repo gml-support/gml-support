@@ -1,8 +1,0 @@
-{
-    "gm81.syntax": "./syntaxes/zh-cn/gml-gm81.json",
-    "gm81.snippet": "./snippets/zh-cn/gml-gm81.json",
-    "gms.syntax": "./syntaxes/zh-cn/gml-gms.json",
-    "gms.snippet": "./snippets/zh-cn/gml-gms.json",
-    "gms2.syntax": "./syntaxes/zh-cn/gml-gms2.json",
-    "gms2.snippet": "./snippets/zh-cn/gml-gms2.json"
-}
