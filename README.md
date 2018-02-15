@@ -15,13 +15,26 @@ It is recommended to use the [vscode-icons](https://github.com/vscode-icons/vsco
 Visual Studio Code version should be higher than 1.8.0.    
 Visual Studio Code版本需高于1.8.0。  
 
+## What's new in dev?
+
+- 受 `Visual Studio Code` 内置的`PHP`插件的启发，使用了 `Language Server`
+- Inspired by the PHP extension built into Visual Studio Code, realized the `Language Server`.
+
+![GIF.gif](https://i.loli.net/2018/02/15/5a85403570406.gif)
+
+但这个部分并不完美，后续需要进行大量的修改和补充。
+
+However, this part is not perfect, and a great deal of changes and supplements are required in the follow-up.
+
+- 精简了大量无用部分（说实话我都没注意）
+
+- Streamline a lot of useless parts.
+
+  ![snipaste_20180215_161833.png](https://i.loli.net/2018/02/15/5a854267bd247.png)
+
 ## Contributing
 
 At present this plugin is not complete, if you want to contribute to this project, you can fork this project and pull a request.
-
-## Screenshot
-
-![screenshot1](https://ooo.0o0.ooo/2017/05/29/592bb111b28f4.gif)
 
 ## Other
 
