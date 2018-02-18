@@ -1,3 +1,8 @@
+## 1.3.8
+
+ - 插件内移除自定义语法高亮支持（因为插件更新后会导致自定义高亮失效），我制作了一个新的插件以继续支持自定义高亮。
+ - Remove custom syntax highlighting support in the extension (custom plug-in update will lead to custom highlighting failure), I made a new extension to continue to support custom highlighting.
+
 ## 1.3.7
 
 - 进行少量精简，下个版本将使用新的方式实现代码补全，现在可以访问插件项目中试用。
@@ -6,7 +11,7 @@
 ## 1.3.6
 
  - 支持添加自定义高亮了（测试中）
- - Support for adding custom highlight (Testing)
+ - Support for adding custom syntax highlighting (Testing)
 
 ## 1.3.5
 
