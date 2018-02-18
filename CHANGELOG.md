@@ -1,3 +1,8 @@
+## 1.3.7
+
+- 进行少量精简，下个版本将使用新的方式实现代码补全，现在可以访问插件项目中试用。
+- A small amount of streamlining, the next version will use the new way to achieve code completion, you can now access the extension project trial.
+
 ## 1.3.6
 
  - 支持添加自定义高亮了（测试中）

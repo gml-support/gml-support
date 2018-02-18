@@ -1,8 +1,5 @@
 {
-    "gm81.syntax": "./syntaxes/en/gml-gm81.json",
     "gm81.snippet": "./snippets/en/gml-gm81.json",
-    "gms.syntax": "./syntaxes/en/gml-gms.json",
     "gms.snippet": "./snippets/en/gml-gms.json",
-    "gms2.syntax": "./syntaxes/en/gml-gms2.json",
     "gms2.snippet": "./snippets/en/gml-gms2.json"
 }
