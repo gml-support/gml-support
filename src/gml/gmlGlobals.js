@@ -1599,59 +1599,59 @@ exports.globalfunctions = {
     },
 	display_get_colourdepth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_dpi_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_dpi_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_gui_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_gui_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_windows_alternate_sync: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_windows_vertex_buffer_method: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_set_gui_maximise: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xscale, yscale, xoffset, yoffset)'
     },
 	display_set_gui_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(width, height)'
     },
 	display_set_ui_visibility: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(flags)'
     },
 	display_set_windows_alternate_sync: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	display_set_windows_vertex_buffer_method: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(method)'
     },
 	distance_to_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj)'
     },
 	distance_to_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	dot_product: {
         description: '[Function]',
