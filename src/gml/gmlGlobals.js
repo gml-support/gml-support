@@ -1655,539 +1655,539 @@ exports.globalfunctions = {
     },
 	dot_product: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2)'
     },
 	dot_product_3d: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, z1, x2, y2, z2)'
     },
 	dot_product_3d_normalised: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, z1, x2, y2, z2)'
     },
 	dot_product_normalised: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2)'
     },
 	draw_arrow: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, size)'
     },
 	draw_background: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, x, y)'
     },
 	draw_background_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_background_general: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
 	draw_background_part: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, left, top, width, height, x, y)'
     },
 	draw_background_part_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_background_stretched: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, x, y, w, h)'
     },
 	draw_background_stretched_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, x, y, w, h, colour, alpha)'
     },
 	draw_background_tiled: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, x, y)'
     },
 	draw_background_tiled_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(back, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_button: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, up)'
     },
 	draw_circle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, r, outline)'
     },
 	draw_circle_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, r, col1, col2, outline)'
     },
 	draw_circle_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, r, col1, col2, outline)'
     },
 	draw_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	draw_clear_alpha: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col, alpha)'
     },
 	draw_ellipse: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_ellipse_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_ellipse_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_enable_alphablend: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	draw_enable_drawevent: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	draw_enable_swf_aa: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	draw_flush: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_getpixel: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	draw_getpixel_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	draw_get_alpha: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_get_alpha_test: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_get_alpha_test_ref_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_get_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_get_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_get_swf_aa_level: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_healthbar: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, amount, backcol, mincol, maxcol, direction, showback, showborder)'
     },
 	draw_highscore: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2)'
     },
 	draw_line: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2)'
     },
 	draw_line_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2)'
     },
 	draw_line_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2)'
     },
 	draw_line_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, w)'
     },
 	draw_line_width_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, w, col1, col2)'
     },
 	draw_line_width_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, w, col1, col2)'
     },
 	draw_path: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(path, x, y, absolute)'
     },
 	draw_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	draw_point_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, col1)'
     },
 	draw_point_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, col1)'
     },
 	draw_primitive_begin: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(kind)'
     },
 	draw_primitive_begin_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(kind, texid)'
     },
 	draw_primitive_end: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_rectangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_rectangle_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2, col3, col4, outline)'
     },
 	draw_rectangle_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2, col3, col4, outline)'
     },
 	draw_roundrect: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_roundrect_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_roundrect_color_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, radiusx, radiusy, col1, col2, outline)'
     },
 	draw_roundrect_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_roundrect_colour_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, radiusx, radiusy, col1, col2, outline)'
     },
 	draw_roundrect_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, radiusx, radiusy, outline)'
     },
 	draw_self: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_set_alpha: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(alpha)'
     },
 	draw_set_alpha_test: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	draw_set_alpha_test_ref_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(value)'
     },
 	draw_set_blend_mode: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(mode)'
     },
 	draw_set_blend_mode_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(src, dest)'
     },
 	draw_set_circle_precision: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(precision)'
     },
 	draw_set_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	draw_set_color_write_enable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(red, green, blue, alpha)'
     },
 	draw_set_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	draw_set_colour_write_enable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(red, green, blue, alpha)'
     },
 	draw_set_font: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(font)'
     },
 	draw_set_halign: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(halign)'
     },
 	draw_set_swf_aa_level: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(aa_level)'
     },
 	draw_set_valign: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(valign)'
     },
 	draw_skeleton: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_skeleton_collision: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, animname, frame, x, y, xscale, yscale, rot, colour)'
     },
 	draw_skeleton_instance: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(instance, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_skeleton_time: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite,  animname, skinname,  time,  x, y,  xscale, yscale,  rot,  colour, alpha)'
     },
 	draw_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x, y)'
     },
 	draw_sprite_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_sprite_general: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
 	draw_sprite_part: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, left, top, width, height, x, y)'
     },
 	draw_sprite_part_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_sprite_pos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x1, y1, x2, y2, x3, y3, x4, y4, alpha)'
     },
 	draw_sprite_stretched: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x, y, w, h)'
     },
 	draw_sprite_stretched_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x, y, w, h, colour, alpha)'
     },
 	draw_sprite_tiled: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x, y)'
     },
 	draw_sprite_tiled_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, subimg, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_surface: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
 	draw_surface_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_surface_general: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
 	draw_surface_part: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, left, top, width, height, x, y)'
     },
 	draw_surface_part_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_surface_stretched: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, w, h)'
     },
 	draw_surface_stretched_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, w, h, colour, alpha)'
     },
 	draw_surface_tiled: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
 	draw_surface_tiled_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_text: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string'
     },
 	draw_texture_flush: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	draw_text_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, c1, c2, c3, c4, alpha)'
     },
 	draw_text_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, sep, w)'
     },
 	draw_text_ext_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, sep, w, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, sep, w, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_transformed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, sep, w, xscale, yscale, angle)'
     },
 	draw_text_ext_transformed_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_transformed_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_transformed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, xscale, yscale, angle)'
     },
 	draw_text_transformed_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_transformed_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, string, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_triangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, x3, y3, outline)'
     },
 	draw_triangle_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, x3, y3, col1, col2, col3, outline)'
     },
 	draw_triangle_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2, x3, y3, col1, col2, col3, outline)'
     },
 	draw_vertex: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	draw_vertex_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, col, alpha)'
     },
 	draw_vertex_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, col, alpha)'
     },
 	draw_vertex_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, xtex, ytex)'
     },
 	draw_vertex_texture_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, xtex, ytex, col, alpha)'
     },
 	draw_vertex_texture_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, xtex, ytex, col, alpha)'
     },
 	color_get_blue: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	color_get_green: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	color_get_hue: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	color_get_red: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	color_get_saturation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	color_get_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col)'
     },
 	display_get_colordepth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_frequency: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_orientation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_get_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_mouse_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_mouse_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	display_mouse_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	display_reset: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(aa_level,  vsync)'
     },
 	dsin: {
         description: '[Function]',
@@ -2195,491 +2195,491 @@ exports.globalfunctions = {
     },
 	ds_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id,  type)'
     },
 	ds_grid_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, val)'
     },
 	ds_grid_add_disk: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_add_grid_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_add_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, val)'
     },
 	ds_grid_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source)'
     },
 	ds_grid_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(w, h)'
     },
 	ds_grid_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_grid_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
 	ds_grid_get_disk_max: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_disk_mean: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_disk_min: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_disk_sum: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_max: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_get_mean: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_get_min: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_get_sum: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_grid_multiply: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, val)'
     },
 	ds_grid_multiply_disk: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_multiply_grid_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_multiply_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, str, ...)'
     },
 	ds_grid_resize: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, w, h)'
     },
 	ds_grid_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, val)'
     },
 	ds_grid_set_disk: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_set_grid_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_set_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_shuffle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_grid_sort: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, column, ascending)'
     },
 	ds_grid_value_disk_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_value_disk_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_value_disk_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_value_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_value_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_value_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_grid_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_list_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value, ...)'
     },
 	ds_list_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_list_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source)'
     },
 	ds_list_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ds_list_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, pos)'
     },
 	ds_list_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_list_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_list_find_index: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value)'
     },
 	ds_list_find_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, pos)'
     },
 	ds_list_insert: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, pos, value)'
     },
 	ds_list_mark_as_list: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, pos)'
     },
 	ds_list_mark_as_map: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, pos)'
     },
 	ds_list_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, str, ...)'
     },
 	ds_list_replace: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, pos, value)'
     },
 	ds_list_shuffle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_list_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_list_sort: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, ascending)'
     },
 	ds_list_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key, value)'
     },
 	ds_map_add_list: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key, value)'
     },
 	ds_map_add_map: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key, value)'
     },
 	ds_map_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source)'
     },
 	ds_map_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ds_map_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key)'
     },
 	ds_map_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key)'
     },
 	ds_map_find_first: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_find_last: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_find_next: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key)'
     },
 	ds_map_find_previous: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key)'
     },
 	ds_map_find_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key)'
     },
 	ds_map_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, str, ...)'
     },
 	ds_map_replace: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key, value)'
     },
 	ds_map_replace_list: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key, value)'
     },
 	ds_map_replace_map: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, key, value)'
     },
 	ds_map_secure_load: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	ds_map_secure_load_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(buffer)'
     },
 	ds_map_secure_save: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id,  filename)'
     },
 	ds_map_secure_save_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, buffer)'
     },
 	ds_map_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_map_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value, priority)'
     },
 	ds_priority_change_priority: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value, priority)'
     },
 	ds_priority_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source)'
     },
 	ds_priority_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ds_priority_delete_max: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_delete_min: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_delete_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value)'
     },
 	ds_priority_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_find_max: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_find_min: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_find_priority: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value)'
     },
 	ds_priority_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, str, ...)'
     },
 	ds_priority_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_priority_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source)'
     },
 	ds_queue_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ds_queue_dequeue: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_enqueue: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value, ...)'
     },
 	ds_queue_head: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, str, ...)'
     },
 	ds_queue_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_tail: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_queue_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_set_precision: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(prec)'
     },
 	ds_stack_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_stack_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, source)'
     },
 	ds_stack_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ds_stack_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_stack_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_stack_pop: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_stack_push: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, value, ...)'
     },
 	ds_stack_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, str, ...)'
     },
 	ds_stack_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_stack_top: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	ds_stack_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	dtan: {
         description: '[Function]',
@@ -2687,943 +2687,943 @@ exports.globalfunctions = {
     },
 	effect_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	effect_create_above: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(kind, x, y, size, colour)'
     },
 	effect_create_below: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(kind, x, y, size, colour)'
     },
 	environment_get_variable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name)'
     },
 	event_inherited: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	event_perform: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type, numb)'
     },
 	event_perform_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj, type, numb)'
     },
 	event_user: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(numb)'
     },
 	exp: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	external_call: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, arg1, arg2, ...)'
     },
 	external_define: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dll, name, calltype, restype, argnumb, arg1type, arg2type, ...)'
     },
 	external_free: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dllname)'
     },
 	facebook_accesstoken: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	facebook_check_permission: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(permission)'
     },
 	facebook_dialog: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(graph_path, ds_map_params, ds_map_response)'
     },
 	facebook_graph_request: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(graph_path, httpMethod, ds_map_params, ds_map_response)'
     },
 	facebook_init: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	facebook_launch_offerwall: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_url)'
     },
 	facebook_login: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_list_of_permissions,  ios_login_type)'
     },
 	facebook_logout: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	facebook_post_message: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(title, caption, message, picture_url, redirect_url, actionname, action_url)'
     },
 	facebook_request_publish_permissions: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_list_permissions)'
     },
 	facebook_request_read_permissions: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_list_permissions)'
     },
 	facebook_send_invite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(title, message, picture_url, redirect_url, ds_map_response)'
     },
 	facebook_status: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	facebook_user_id: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	filename_change_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname, newext)'
     },
 	filename_dir: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	filename_drive: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	filename_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	filename_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	filename_path: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	file_attributes: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname, attr)'
     },
 	file_bin_close: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile)'
     },
 	file_bin_open: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname, mode)'
     },
 	file_bin_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile)'
     },
 	file_bin_read_byte: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile)'
     },
 	file_bin_rewrite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile)'
     },
 	file_bin_seek: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile, pos)'
     },
 	file_bin_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile)'
     },
 	file_bin_write_byte: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(binfile, byte)'
     },
 	file_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname, newname)'
     },
 	file_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	file_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	file_find_close: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	file_find_first: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(mask, attr)'
     },
 	file_find_next: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	file_rename: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(oldname, newname)'
     },
 	file_text_close: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_eof: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_eoln: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_open_append: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	file_text_open_from_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(content)'
     },
 	file_text_open_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	file_text_open_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	file_text_readln: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_read_real: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_read_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_writeln: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file)'
     },
 	file_text_write_real: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file, val)'
     },
 	file_text_write_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file, str)'
     },
 	floor: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	font_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name, size, bold, italic, first, last)'
     },
 	font_add_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(spr, first, prop, sep)'
     },
 	font_add_sprite_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(spr, mapstring, prop, sep)'
     },
 	font_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_bold: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_first: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_fontname: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_italic: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_last: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_get_uvs: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	font_replace: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, name, size, bold, italic, first, last)'
     },
 	font_replace_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, spr, first, prop, sep)'
     },
 	font_replace_sprite_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(font, spr, string_map, prop, sep)'
     },
 	font_set_cache_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(font, max)'
     },
 	frac: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	gamepad_axis_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(axis)'
     },
 	gamepad_axis_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, axisIndex)'
     },
 	gamepad_button_check: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, buttonIndex)'
     },
 	gamepad_button_check_pressed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, buttonIndex)'
     },
 	gamepad_button_check_released: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, buttonIndex)'
     },
 	gamepad_button_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	gamepad_button_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, buttonIndex)'
     },
 	gamepad_get_axis_deadzone: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	gamepad_get_button_threshold: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	gamepad_get_description: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	gamepad_get_device_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	gamepad_is_connected: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	gamepad_is_supported: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	gamepad_set_axis_deadzone: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, deadzone)'
     },
 	gamepad_set_button_threshold: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, threshold)'
     },
 	gamepad_set_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(index, color)'
     },
 	gamepad_set_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(index, colour)'
     },
 	gamepad_set_vibration: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, leftMotorSpeed, rightMotorSpeed)'
     },
 	game_end: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	game_load: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	game_load_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(buffer)'
     },
 	game_restart: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	game_save: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	game_save_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(buffer)'
     },
 	get_integer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, def)'
     },
 	get_integer_async: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, def)'
     },
 	get_login_async: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(username, password)'
     },
 	get_open_filename: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filter, fname)'
     },
 	get_open_filename_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filter, fname, dir, title)'
     },
 	get_save_filename: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filter, fname)'
     },
 	get_save_filename_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filter, fname, dir, title)'
     },
 	get_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, def)'
     },
 	get_string_async: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, def)'
     },
 	get_timer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	gml_pragma: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(setting, ....)'
     },
 	gml_release_mode: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	highscore_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, numb)'
     },
 	highscore_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	highscore_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(place)'
     },
 	highscore_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(place)'
     },
 	http_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url)'
     },
 	http_get_file: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url, dest)'
     },
 	http_post_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url, string)'
     },
 	http_request: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url, method, header_map, body)'
     },
 	iap_acquire: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_id, payload)'
     },
 	iap_activate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_list)'
     },
 	iap_consume: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_id)'
     },
 	iap_enumerate_products: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_list)'
     },
 	iap_event_queue: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	iap_files_purchased: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	iap_is_downloaded: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(purchase_id_string)'
     },
 	iap_is_purchased: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_id)'
     },
 	iap_product_details: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_id, ds_map)'
     },
 	iap_product_files: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(purchase_id, ds_list)'
     },
 	iap_product_status: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_id)'
     },
 	iap_purchase_details: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(product_id, ds_map)'
     },
 	iap_restore_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	iap_status: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	iap_store_status: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	immersion_play_effect: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(effect)'
     },
 	immersion_stop: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ini_close: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	ini_key_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section, key)'
     },
 	ini_key_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section, key)'
     },
 	ini_open: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	ini_open_from_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(content)'
     },
 	ini_read_real: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section, key, default)'
     },
 	ini_read_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section, key, default)'
     },
 	ini_section_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section)'
     },
 	ini_section_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section)'
     },
 	ini_write_real: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section, key, value)'
     },
 	ini_write_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(section, key, str)'
     },
 	instance_activate_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	instance_activate_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj)'
     },
 	instance_activate_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(left, top, width, height, inside)'
     },
 	instance_change: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj, performevents)'
     },
 	instance_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(performevent)'
     },
 	instance_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	instance_deactivate_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(notme)'
     },
 	instance_deactivate_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj)'
     },
 	instance_deactivate_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(left, top, width, height, inside, notme)'
     },
 	instance_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, execute_event_flag)'
     },
 	instance_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj)'
     },
 	instance_find: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj, n)'
     },
 	instance_furthest: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	instance_nearest: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	instance_number: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(obj)'
     },
 	instance_place: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	instance_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	int64: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	io_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	irandom: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	irandom_old: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	irandom_range: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2)'
     },
 	irandom_range_old: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2)'
     },
 	is_array: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_bool: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_int32: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_int64: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_matrix: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_ptr: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_real: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_undefined: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_vec3: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	is_vec4: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	joystick_axes: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_buttons: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_check_button: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, button)'
     },
 	joystick_direction: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_has_pov: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_pov: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_rpos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_upos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_vpos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_xpos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_ypos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	joystick_zpos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	json_decode: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(string)'
     },
 	json_encode: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_map)'
     },
 	keyboard_check: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_check_direct: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_check_pressed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_check_released: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_get_map: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_get_numlock: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	keyboard_key_press: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_key_release: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key)'
     },
 	keyboard_set_map: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(key1, key2)'
     },
 	keyboard_set_numlock: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(bool)'
     },
 	keyboard_unset_map: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	lengthdir_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(len, dir)'
     },
 	lengthdir_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(len, dir)'
     },
 	lerp: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val1, val2, amount)'
     },
 	ln: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	load_info: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	log10: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	log2: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	logn: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(n, x)'
     },
 	make_color_hsv: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hue, saturation, value)'
     },
 	make_color_rgb: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(red, green, blue)'
     },
 	make_colour_hsv: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hue, saturation, value)'
     },
 	make_colour_rgb: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(red, green, blue)'
     },
 	math_get_epsilon: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	math_set_epsilon: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(new_epsilon)'
     },
 	matrix_build: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, xrotation, yrotation, zrotation, xscale, yscale, zscale)'
     },
 	matrix_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type)'
     },
 	matrix_multiply: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(matrix, matrix)'
     },
 	matrix_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type, matrix)'
     },
 	max: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2, x3, ...)'
     },
 	md5_file: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	md5_string_unicode: {
         description: '[Function]',
@@ -3635,235 +3635,235 @@ exports.globalfunctions = {
     },
 	mean: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2, x3, ...)'
     },
 	median: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2, x3, ...)'
     },
 	merge_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(col1, col2, amount)'
     },
 	min: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2, x3, ...)'
     },
 	motion_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dir, speed)'
     },
 	motion_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dir, speed)'
     },
 	mouse_check_button: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(button)'
     },
 	mouse_check_button_pressed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(button)'
     },
 	mouse_check_button_released: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(button)'
     },
 	mouse_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(button)'
     },
 	mouse_wheel_down: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	mouse_wheel_up: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	move_bounce_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(advanced)'
     },
 	move_bounce_solid: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(advanced)'
     },
 	move_contact_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dir, maxdist)'
     },
 	move_contact_solid: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dir, maxdist)'
     },
 	move_outside_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dir, maxdist)'
     },
 	move_outside_solid: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dir, maxdist)'
     },
 	move_random: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hsnap, vsnap)'
     },
 	move_snap: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hsnap, vsnap)'
     },
 	move_towards_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, sp)'
     },
 	move_wrap: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hor, vert, margin)'
     },
 	mp_grid_add_cell: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, h, v)'
     },
 	mp_grid_add_instances: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, obj, prec)'
     },
 	mp_grid_add_rectangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, left, top, right, bottom)'
     },
 	mp_grid_clear_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	mp_grid_clear_cell: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, h, v)'
     },
 	mp_grid_clear_rectangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, left, top, right, bottom)'
     },
 	mp_grid_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(left, top, hcells, vcells, cellwidth, cellheight)'
     },
 	mp_grid_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	mp_grid_draw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	mp_grid_get_cell: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, h, v)'
     },
 	mp_grid_path: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, path, xstart, ystart, xgoal, ygoal, allowdiag)'
     },
 	mp_grid_to_ds_grid: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(src, dest)'
     },
 	mp_linear_path: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(path, xg, yg, stepsize, checkall)'
     },
 	mp_linear_path_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(path, xg, yg, stepsize, obj)'
     },
 	mp_linear_step: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, speed, checkall)'
     },
 	mp_linear_step_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, speed, obj)'
     },
 	mp_potential_path: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(path, xg, yg, stepsize, factor, checkall)'
     },
 	mp_potential_path_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(path, xg, yg, stepsize, factor, obj)'
     },
 	mp_potential_settings: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(maxrot, rotstep, ahead, onspot)'
     },
 	mp_potential_step: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, speed, checkall)'
     },
 	mp_potential_step_object: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, speed, obj)'
     },
 	network_connect: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, url, port)'
     },
 	network_connect_raw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, url, port)'
     },
 	network_create_server: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type, port, maxclients)'
     },
 	network_create_server_raw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type, port, maxclients)'
     },
 	network_create_socket: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type)'
     },
 	network_create_socket_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type, port)'
     },
 	network_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket)'
     },
 	network_resolve: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url)'
     },
 	network_send_broadcast: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, port, bufferid, size)'
     },
 	network_send_packet: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, bufferid, size)'
     },
 	network_send_raw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, buffer_id, size)'
     },
 	network_send_udp: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, URL, port, data, size)'
     },
 	network_send_udp_raw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, URL, port, data, size)'
     },
 	network_set_config: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(parameter, value)'
     },
 	network_set_timeout: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(socket, read, write)'
     },
 	object_exists: {
         description: '[Function]',
@@ -6833,35 +6833,35 @@ exports.globalfunctions = {
     },
     highscore_add_current: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     highscore_set_background: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(back)'
     },
 	highscore_set_border: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(show)'
     },
 	highscore_set_colors: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(back, new, other)'
     },
 	highscore_set_font: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, size, style)'
     },
 	highscore_set_strings: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(caption, nobody, escape)'
     },
 	highscore_show: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(numb)'
     },
 	highscore_show_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(numb, back, border, col1, col2, name, size)'
     },
     io_handle: {
         description: '[Function] (GameMaker 8.1 Only)',
