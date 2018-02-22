@@ -1143,459 +1143,459 @@ exports.globalfunctions = {
     },
 	d3d_set_culling: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(cull)'
     },
 	d3d_set_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth)'
     },
 	d3d_set_fog: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable, colour, start, end)'
     },
 	d3d_set_hidden: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hidden)'
     },
 	d3d_set_lighting: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	d3d_set_perspective: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	d3d_set_projection: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
 	d3d_set_projection_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
     },
 	d3d_set_projection_ortho: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, w, h, angle)'
     },
 	d3d_set_projection_perspective: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, w, h, angle)'
     },
 	d3d_set_shading: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(smooth)'
     },
 	d3d_set_zwriteenable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(on_off)'
     },
 	d3d_start: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_add_rotation_axis: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xa, ya, za, angle)'
     },
 	d3d_transform_add_rotation_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(angle)'
     },
 	d3d_transform_add_rotation_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(angle)'
     },
 	d3d_transform_add_rotation_z: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(angle)'
     },
 	d3d_transform_add_scaling: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xs, ys, zs)'
     },
 	d3d_transform_add_translation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xt, yt, zt)'
     },
 	d3d_transform_set_identity: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_set_rotation_axis: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xa, ya, za, angle)'
     },
 	d3d_transform_set_rotation_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(angle)'
     },
 	d3d_transform_set_rotation_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(angle)'
     },
 	d3d_transform_set_rotation_z: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(angle)'
     },
 	d3d_transform_set_scaling: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xs, ys, zs)'
     },
 	d3d_transform_set_translation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xt, yt, zt)'
     },
 	d3d_transform_stack_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_stack_discard: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_stack_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_stack_pop: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_stack_push: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_stack_top: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	d3d_transform_vertex: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z)'
     },
 	d3d_vertex: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z)'
     },
 	d3d_vertex_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, col, alpha)'
     },
 	d3d_vertex_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, col, alpha)'
     },
 	d3d_vertex_normal: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, nx, ny, nz)'
     },
 	d3d_vertex_normal_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
 	d3d_vertex_normal_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
 	d3d_vertex_normal_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
     },
 	d3d_vertex_normal_texture_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
 	d3d_vertex_normal_texture_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
 	d3d_vertex_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, xtex, ytex)'
     },
 	d3d_vertex_texture_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
 	d3d_vertex_texture_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
 	darccos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	darcsin: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	darctan: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	darctan2: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(y, x)'
     },
 	date_compare_date: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_compare_datetime: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_compare_time: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_create_datetime: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(year, month, day, hour, minute, second)'
     },
 	date_current_datetime: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	date_datetime_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_date_of: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_date_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_days_in_month: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_days_in_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_day_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_get_day: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_day_of_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_hour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_hour_of_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_minute: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_minute_of_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_month: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_second: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_second_of_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_timezone: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	date_get_week: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_weekday: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_get_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_hour_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_inc_day: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_inc_hour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_inc_minute: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_inc_month: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_inc_second: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_inc_week: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_inc_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date, amount)'
     },
 	date_is_today: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_leap_year: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_minute_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_month_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_second_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_set_timezone: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(timezone)'
     },
 	date_time_of: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_time_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date)'
     },
 	date_valid_datetime: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(year, month, day, hour, minute, second)'
     },
 	date_week_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	date_year_span: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(date1, date2)'
     },
 	dcos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(degree_angle)'
     },
 	debug_event: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	degtorad: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	device_get_tilt_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	device_get_tilt_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	device_get_tilt_z: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	device_ios_get_image: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	device_ios_get_imagename: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	device_is_keypad_open: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	device_mouse_check_button: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, button)'
     },
 	device_mouse_check_button_pressed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, button)'
     },
 	device_mouse_check_button_released: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device, button)'
     },
 	device_mouse_dbclick_enable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	device_mouse_raw_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	device_mouse_raw_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	device_mouse_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	device_mouse_x_to_gui: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	device_mouse_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	device_mouse_y_to_gui: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(device)'
     },
 	directory_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dname)'
     },
 	directory_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dname)'
     },
 	directory_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dname)'
     },
 	display_get_colourdepth: {
         description: '[Function]',
@@ -2191,7 +2191,7 @@ exports.globalfunctions = {
     },
 	dsin: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(degree_angle)'
     },
 	ds_exists: {
         description: '[Function]',
@@ -2683,7 +2683,7 @@ exports.globalfunctions = {
     },
 	dtan: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(degree_angle)'
     },
 	effect_clear: {
         description: '[Function]',
@@ -6745,11 +6745,11 @@ exports.globalfunctions = {
     },
     date_create_date: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(year, month, day)'
     },
     date_create_time: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(hour, minute, second)'
     },
 	date_current_date: {
         description: '[Function] (GameMaker 8.1 Only)',
