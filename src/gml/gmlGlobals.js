@@ -30,10 +30,6 @@ exports.globalfunctions = {
 		description: '[Function]',
 		signature: '(achievement_name, value)'
 	},
-	achievement_is_online: {
-		description: '[Function]',
-		signature: '()'
-	},
 	achievement_load_friends: {
 		description: '[Function]',
 		signature: '()'
@@ -57,14 +53,6 @@ exports.globalfunctions = {
 	achievement_logout: {
 		description: '[Function]',
 		signature: '()'
-	},
-	achievement_map_achievement: {
-		description: '[Function]',
-		signature: '(gamecenter_string, openfeint_string)'
-	},
-	achievement_map_leaderboard: {
-		description: '[Function]',
-		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
 	},
 	achievement_post: {
 		description: '[Function]',
@@ -97,61 +85,6 @@ exports.globalfunctions = {
 	achievement_show_leaderboards: {
 		description: '[Function]',
 		signature: '()'
-	},
-	ads_disable: {
-		description: '[Function]',
-		signature: '(num)'
-	},
-	ads_enable: {
-		description: '[Function]',
-		signature: '(x, y, num)'
-	},
-	ads_engagement_active: {
-		description: '[Function]',
-		signature: '()'
-	},
-	ads_engagement_available: {
-		description: '[Function]',
-		signature: '()'
-	},
-	ads_engagement_launch: {
-		description: '[Function]',
-		signature: '()'
-	},
-	ads_event: {
-		description: '[Function]',
-		signature: '(stringid)'
-	},
-	ads_event_preload: {
-		description: '[Function]',
-		signature: '(stringid)'
-	},
-	ads_get_display_height: {
-		description: '[Function]',
-		signature: '(slotnum)'
-	},
-	ads_get_display_width: {
-		description: '[Function]',
-		signature: '(slotnum)'
-	},
-	ads_interstitial_available: {
-		description: '[Function]',
-		signature: '()'
-	},
-	ads_interstitial_display: {
-		description: '[Function]',
-		signature: '()'
-	},
-	ads_move: {
-		description: '[Function]',
-		signature: '(x, y, slotnum)'},
-	ads_setup: {
-		description: '[Function]',
-		signature: '(user_uuid, ad_app_key)'
-	},
-	ads_set_reward_callback: {
-		description: '[Function]',
-		signature: '(callback)'
 	},
 	alarm_get: {
 		description: '[Function]',
@@ -461,19 +394,7 @@ exports.globalfunctions = {
         description: '[Function]',
         signature: '(gain)'
     },
-	audio_music_gain: {
-        description: '[Function]',
-        signature: '(value, time)'
-    },
-	audio_music_is_playing: {
-        description: '[Function]',
-        signature: '()'
-    },
 	audio_pause_all: {
-        description: '[Function]',
-        signature: '()'
-    },
-	audio_pause_music: {
         description: '[Function]',
         signature: '()'
     },
@@ -488,10 +409,6 @@ exports.globalfunctions = {
 	audio_play_in_sync_group: {
         description: '[Function]',
         signature: '(sync_group_id, soundid)'
-    },
-	audio_play_music: {
-        description: '[Function]',
-        signature: '(soundid,loops)'
     },
 	audio_play_sound: {
         description: '[Function]',
@@ -510,10 +427,6 @@ exports.globalfunctions = {
         signature: '(queueId, buffer_id, offset, length)'
     },
 	audio_resume_all: {
-        description: '[Function]',
-        signature: '()'
-    },
-	audio_resume_music: {
         description: '[Function]',
         signature: '()'
     },
@@ -578,10 +491,6 @@ exports.globalfunctions = {
         signature: '(sync_group_id)'
     },
 	audio_stop_all: {
-        description: '[Function]',
-        signature: '()'
-    },
-	audio_stop_music: {
         description: '[Function]',
         signature: '()'
     },
@@ -1533,14 +1442,6 @@ exports.globalfunctions = {
         description: '[Function]',
         signature: '()'
     },
-	device_ios_get_image: {
-        description: '[Function]',
-        signature: '()'
-    },
-	device_ios_get_imagename: {
-        description: '[Function]',
-        signature: '()'
-    },
 	device_is_keypad_open: {
         description: '[Function]',
         signature: '()'
@@ -1596,10 +1497,6 @@ exports.globalfunctions = {
 	directory_exists: {
         description: '[Function]',
         signature: '(dname)'
-    },
-	display_get_colourdepth: {
-        description: '[Function]',
-        signature: '()'
     },
 	display_get_dpi_x: {
         description: '[Function]',
@@ -2154,10 +2051,6 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	display_get_colordepth: {
-        description: '[Function]',
-        signature: '()'
-    },
-	display_get_frequency: {
         description: '[Function]',
         signature: '()'
     },
@@ -3201,18 +3094,6 @@ exports.globalfunctions = {
         description: '[Function]',
         signature: '(ds_list)'
     },
-	iap_event_queue: {
-        description: '[Function]',
-        signature: '()'
-    },
-	iap_files_purchased: {
-        description: '[Function]',
-        signature: '()'
-    },
-	iap_is_downloaded: {
-        description: '[Function]',
-        signature: '(purchase_id_string)'
-    },
 	iap_is_purchased: {
         description: '[Function]',
         signature: '(product_id)'
@@ -3220,14 +3101,6 @@ exports.globalfunctions = {
 	iap_product_details: {
         description: '[Function]',
         signature: '(product_id, ds_map)'
-    },
-	iap_product_files: {
-        description: '[Function]',
-        signature: '(purchase_id, ds_list)'
-    },
-	iap_product_status: {
-        description: '[Function]',
-        signature: '(product_id)'
     },
 	iap_purchase_details: {
         description: '[Function]',
@@ -3238,10 +3111,6 @@ exports.globalfunctions = {
         signature: '()'
     },
 	iap_status: {
-        description: '[Function]',
-        signature: '()'
-    },
-	iap_store_status: {
         description: '[Function]',
         signature: '()'
     },
@@ -3561,10 +3430,6 @@ exports.globalfunctions = {
         description: '[Function]',
         signature: '(x)'
     },
-	load_info: {
-        description: '[Function]',
-        signature: '(fname)'
-    },
 	log10: {
         description: '[Function]',
         signature: '(x)'
@@ -3867,103 +3732,75 @@ exports.globalfunctions = {
     },
 	object_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_mask: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_parent: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_persistent: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_physics: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_solid: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_get_visible: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_is_ancestor: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind_child, ind_parent)'
     },
 	object_set_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, depth)'
     },
 	object_set_mask: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, spr)'
     },
 	object_set_parent: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, obj)'
     },
 	object_set_persistent: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, pers)'
     },
 	object_set_solid: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, soild)'
     },
 	object_set_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, spr)'
     },
 	object_set_visible: {
         description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_accept_challenge: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_send_challenge: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_send_invite: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_send_result: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_send_social: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_set_url: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	openfeint_start: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '(ind, vis)'
     },
 	ord: {
         description: '[Function]',
@@ -4777,30 +4614,6 @@ exports.globalfunctions = {
         description: '[Function]',
         signature: '( )'
     },
-	playhaven_add_notification_badge: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	playhaven_hide_notification_badge: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	playhaven_position_notification_badge: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	playhaven_update_notification_badge: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	pocketchange_display_reward: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	pocketchange_display_shop: {
-        description: '[Function]',
-        signature: '( )'
-    },
 	point_direction: {
         description: '[Function]',
         signature: '( )'
@@ -5118,10 +4931,6 @@ exports.globalfunctions = {
         signature: '( )'
     },
 	show_error: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	show_info: {
         description: '[Function]',
         signature: '( )'
     },
@@ -5921,10 +5730,6 @@ exports.globalfunctions = {
         description: '[Function]',
         signature: '( )'
     },
-	texture_preload: {
-        description: '[Function]',
-        signature: '( )'
-    },
 	texture_set_blending: {
         description: '[Function]',
         signature: '( )'
@@ -5934,10 +5739,6 @@ exports.globalfunctions = {
         signature: '( )'
     },
 	texture_set_interpolation_ext: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	texture_set_priority: {
         description: '[Function]',
         signature: '( )'
     },
@@ -6146,18 +5947,6 @@ exports.globalfunctions = {
         signature: '( )'
     },
 	url_open_full: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	variable_global_exists: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	variable_global_get: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	variable_global_set: {
         description: '[Function]',
         signature: '( )'
     },
@@ -6662,6 +6451,270 @@ exports.globalfunctions = {
         signature: '( )'
     },
 
+    variable_global_exists: {
+        description: '[Function]',
+        signature: '( )'
+    },
+	variable_global_get: {
+        description: '[Function]',
+        signature: '( )'
+    },
+	variable_global_set: {
+        description: '[Function]',
+        signature: '( )'
+    },
+	variable_instance_exists: {
+        description: '[Function]',
+        signature: '( )'
+    },
+	variable_instance_get: {
+        description: '[Function]',
+        signature: '( )'
+    },
+	variable_instance_set: {
+        description: '[Function]',
+        signature: '( )'
+    },
+	variable_instance_get_names: {
+        description: '[Function]',
+        signature: '( )'
+    },
+
+    //These functions are deprecated.
+    pocketchange_display_reward: {
+        description: '[Function] (This function is deprecated)',
+        signature: '( )'
+    },
+	pocketchange_display_shop: {
+        description: '[Function] (This function is deprecated)',
+        signature: '( )'
+    },
+	iap_store_status: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	iap_product_status: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(product_id)'
+    },
+	iap_is_downloaded: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(purchase_id_string)'
+    },
+	iap_files_purchased: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	iap_product_files: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(purchase_id, ds_list)'
+    },
+	iap_event_queue: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+
+    //Obsolete functions in new GameMaker Studio
+    device_ios_get_image: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+	device_ios_get_imagename: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+    sound_delete: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    sound_discard: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    sound_exists: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    sound_get_kind: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_get_name: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_get_preload: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    sound_restore: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    sound_loop: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    sound_stop: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_stop_all: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_volume: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_global_volume: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_fade: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	sound_isplaying: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    audio_music_is_playing: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+    audio_resume_music: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+    audio_pause_music: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+	audio_play_music: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '(soundid,loops)'
+    },
+	audio_stop_music: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+	audio_music_gain: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '(value, time)'
+    },
+	ads_disable: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(num)'
+	},
+	ads_enable: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(x, y, num)'
+	},
+	ads_engagement_active: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '()'
+	},
+	ads_engagement_available: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '()'
+	},
+	ads_engagement_launch: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '()'
+	},
+	ads_event: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(stringid)'
+	},
+	ads_event_preload: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(stringid)'
+	},
+	ads_get_display_height: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(slotnum)'
+	},
+	ads_get_display_width: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(slotnum)'
+	},
+	ads_interstitial_available: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '()'
+	},
+	ads_interstitial_display: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '()'
+	},
+	ads_move: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(x, y, slotnum)'},
+	ads_setup: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(user_uuid, ad_app_key)'
+	},
+	ads_set_reward_callback: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(callback)'
+	},
+    playhaven_add_notification_badge: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	playhaven_hide_notification_badge: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	playhaven_position_notification_badge: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	playhaven_update_notification_badge: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+    openfeint_accept_challenge: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '()'
+    },
+	openfeint_send_challenge: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	openfeint_send_invite: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	openfeint_send_result: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	openfeint_send_social: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	openfeint_set_url: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	openfeint_start: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '( )'
+    },
+	achievement_map_achievement: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(gamecenter_string, openfeint_string)'
+	},
+	achievement_map_leaderboard: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
+	},
+	achievement_is_online: {
+		description: '[Function] (Obsolete function in new GameMaker Studio)',
+		signature: '()'
+	},
+
 	//GameMaker 8.1 Only
 	background_add_background: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6871,10 +6924,6 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
-    max: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
 	MCI_command: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
@@ -6933,23 +6982,19 @@ exports.globalfunctions = {
     },
     object_add: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	object_delete: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	object_event_add: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind,evtype,evnumb,codestr)'
     },
 	object_event_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-    ord: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind,evtype,evnumb)'
     },
 	part_attractor_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7187,14 +7232,6 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
-	sound_delete: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_discard: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
 	sound_effect_chorus: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
@@ -7227,38 +7264,6 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
-	sound_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_fade: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_get_kind: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_get_name: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_get_preload: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_global_volume: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_isplaying: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_loop: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
 	sound_pan: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
@@ -7271,23 +7276,7 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
-	sound_restore: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
 	sound_set_search_directory: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_stop: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_stop_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_volume: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
@@ -7503,6 +7492,31 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
+    
+    texture_preload: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '( )'
+    },
+    texture_set_priority: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '( )'
+    },
+    display_get_colourdepth: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '()'
+    },
+    display_get_frequency: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '()'
+    },
+    show_info: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '( )'
+    },
+    load_info: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '(fname)'
+    },
 
 	//New in GameMaker Studio 2
 	is_bool: {
@@ -7510,34 +7524,6 @@ exports.globalfunctions = {
         signature: '( )'
     },
 	typeof: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_global_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_global_get: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_global_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_instance_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_instance_get: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_instance_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	variable_instance_get_names: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '( )'
     },
