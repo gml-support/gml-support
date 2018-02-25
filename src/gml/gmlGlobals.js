@@ -4832,27 +4832,27 @@ exports.globalfunctions = {
     },
 	screen_save: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	screen_save_part: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname, x, y, w, h)'
     },
 	script_execute: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, arg0, arg1, ...)'
     },
 	script_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	script_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sha1_file: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname)'
     },
 	sha1_string_unicode: {
         description: '[Function]',
@@ -4864,91 +4864,91 @@ exports.globalfunctions = {
     },
 	shaders_are_supported: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	shader_enable_corner_id: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	shader_get_sampler_index: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(shader, uniform_name)'
     },
 	shader_get_uniform: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(shader, uniform_name)'
     },
 	shader_is_compiled: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(shader)'
     },
 	shader_reset: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	shader_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(shader)'
     },
 	shader_set_uniform_f: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(uniform_id, val, ....)'
     },
 	shader_set_uniform_f_array: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(uniform_id, array)'
     },
 	shader_set_uniform_i: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(uniform_id, val, ....)'
     },
 	shader_set_uniform_i_array: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(uniform_id, array)'
     },
 	shader_set_uniform_matrix: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(uniform_id)'
     },
 	shader_set_uniform_matrix_array: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(uniform_id, array)'
     },
 	shop_leave_rating: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(text_string, yes_string, no_string, url)'
     },
 	show_debug_message: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	show_debug_overlay: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(bool)'
     },
 	show_error: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, abort)'
     },
 	show_message: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	show_message_async: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	show_question: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	show_question_async: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	sign: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	sin: {
         description: '[Function]',
@@ -4956,751 +4956,743 @@ exports.globalfunctions = {
     },
 	skeleton_animation_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(track)'
     },
 	skeleton_animation_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	skeleton_animation_get_duration: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(anim_name)'
     },
 	skeleton_animation_get_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(track)'
     },
 	skeleton_animation_get_frames: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(anim_name)'
     },
 	skeleton_animation_list: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, list)'
     },
 	skeleton_animation_mix: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(anim_from, anim_to, duration)'
     },
 	skeleton_animation_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(anim_name)'
     },
 	skeleton_animation_set_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(anim_name, track)'
     },
 	skeleton_attachment_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name, sprite, ind, xo, yo, xs, ys, ro)'
     },
 	skeleton_attachment_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(slot)'
     },
 	skeleton_attachment_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(slot, attachment)'
     },
 	skeleton_bone_data_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(bone, map)'
     },
 	skeleton_bone_data_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(bone, map)'
     },
 	skeleton_bone_state_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(bone, map)'
     },
 	skeleton_bone_state_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(bone, map)'
     },
 	skeleton_collision_draw_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	skeleton_get_bounds: {
         description: '[Function]',
-        signature: '( )'
-    },
-	skeleton_get_imageindex: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '(index)'
     },
 	skeleton_get_minmax: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	skeleton_get_num_bounds: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	skeleton_skin_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	skeleton_skin_list: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, list)'
     },
 	skeleton_skin_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(skin_name)'
     },
 	skeleton_slot_data: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sprite, list)'
     },
 	sprite_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fname, imgnumb, removeback, smooth, xorig, yorig)'
     },
 	sprite_add_from_surface: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, id, x, y, w, h, removeback, smooth)'
     },
 	sprite_assign: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, source)'
     },
 	sprite_collision_mask: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, sepmasks, bboxmode, bbleft, bbtop, bbright, bbbottom, kind, tolerance)'
     },
 	sprite_create_from_surface: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y, w, h, removeback, smooth, xorig, yorig)'
     },
 	sprite_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_duplicate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_flush: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_flush_multi: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(indarray)'
     },
 	sprite_get_bbox_bottom: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_bbox_left: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_bbox_right: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_bbox_top: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_number: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(spr, subimg)'
     },
 	sprite_get_tpe: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(index, subindex)'
     },
 	sprite_get_uvs: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(spr, subimg)'
     },
 	sprite_get_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_xoffset: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_yoffset: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_merge: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind1, ind2)'
     },
 	sprite_prefetch: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_prefetch_multi: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(indarray)'
     },
 	sprite_replace: {
         description: '[Function]',
-        signature: '( )'
-    },
-	sprite_replace_sprite: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '(ind, fname, imgnumb, removeback, smooth, xorig, yorig)'
     },
 	sprite_save: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, subimg, fname)'
     },
 	sprite_save_strip: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, fname)'
     },
 	sprite_set_alpha_from_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, spr)'
     },
 	sprite_set_cache_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, max)'
     },
 	sprite_set_cache_size_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, image, max)'
     },
 	sprite_set_offset: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, xoff, yoff)'
     },
 	sqr: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	sqrt: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	steam_activate_overlay: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(overlayIndex)'
     },
 	steam_activate_overlay_browser: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url)'
     },
 	steam_activate_overlay_store: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(app_id)'
     },
 	steam_activate_overlay_user: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dialog_name, steamid)'
     },
 	steam_available_languages: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_clear_achievement: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ach_name)'
     },
 	steam_create_leaderboard: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, sort_method, display_type)'
     },
 	steam_current_game_language: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_download_friends_scores: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name)'
     },
 	steam_download_scores: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, start_idx, end_idx)'
     },
 	steam_download_scores_around_user: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, range_start, range_end)'
     },
 	steam_file_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	steam_file_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	steam_file_persisted: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	steam_file_read: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	steam_file_share: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	steam_file_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename)'
     },
 	steam_file_write: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(steam_filename, data, size)'
     },
 	steam_file_write_file: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(steam_filename, local_filename)'
     },
 	steam_get_achievement: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ach_name)'
     },
 	steam_get_app_id: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_get_persona_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_get_quota_free: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_get_quota_total: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_get_stat_avg_rate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(stat_name)'
     },
 	steam_get_stat_float: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(stat_name)'
     },
 	steam_get_stat_int: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(stat_name)'
     },
 	steam_get_user_account_id: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_get_user_persona_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(steam_id)'
     },
 	steam_get_user_steam_id: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_initialised: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_is_cloud_enabled_for_account: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_is_cloud_enabled_for_app: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_is_overlay_activated: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_is_overlay_enabled: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_is_screenshot_requested: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_is_user_logged_on: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_publish_workshop_file: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename, previewImage, title, description)'
     },
 	steam_reset_all_stats: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_reset_all_stats_achievements: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_send_screenshot: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(filename, width, height)'
     },
 	steam_set_achievement: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ach_name)'
     },
 	steam_set_stat_avg_rate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(stat_name, session_count, session_length)'
     },
 	steam_set_stat_float: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(stat_name, value)'
     },
 	steam_set_stat_int: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(stat_name, value)'
     },
 	steam_stats_ready: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_ugc_create_item: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(consumer_app_id, file_type)'
     },
 	steam_ugc_create_query_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(query_type, match_type, page)'
     },
 	steam_ugc_create_query_all_ex: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(query_type, match_type, page, creator_app_id, consumer_app_id)'
     },
 	steam_ugc_create_query_user: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(list_type, match_type, sort_order, page)'
     },
 	steam_ugc_create_query_user_ex: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(list_type, match_type, sort_order, page, account_id, creator_app_id, consumer_app_id)'
     },
 	steam_ugc_download: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_handle, dest_filename)'
     },
 	steam_ugc_get_item_install_info: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(published_file_id, info_map)'
     },
 	steam_ugc_get_item_update_info: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(published_file_id, info_map)'
     },
 	steam_ugc_get_item_update_progress: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, info_map)'
     },
 	steam_ugc_get_subscribed_items: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(item_list)'
     },
 	steam_ugc_num_subscribed_items: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	steam_ugc_query_add_excluded_tag: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, tag_name)'
     },
 	steam_ugc_query_add_required_tag: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, tag_name)'
     },
 	steam_ugc_query_set_allow_cached_response: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, max_age_seconds)'
     },
 	steam_ugc_query_set_cloud_filename_filter: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle , match_cloud_filename)'
     },
 	steam_ugc_query_set_match_any_tag: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, match_any_tag)'
     },
 	steam_ugc_query_set_ranked_by_trend_days: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle , days)'
     },
 	steam_ugc_query_set_return_long_description: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, return_long_desc)'
     },
 	steam_ugc_query_set_return_total_only: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, return_total_only)'
     },
 	steam_ugc_query_set_search_text: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle, search_text)'
     },
 	steam_ugc_request_item_details: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(published_file_id, max_age_seconds)'
     },
 	steam_ugc_send_query: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_query_handle)'
     },
 	steam_ugc_set_item_content: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, directory)'
     },
 	steam_ugc_set_item_description: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, description)'
     },
 	steam_ugc_set_item_preview: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, image_path)'
     },
 	steam_ugc_set_item_tags: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, tag_array)'
     },
 	steam_ugc_set_item_title: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, title)'
     },
 	steam_ugc_set_item_visibility: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, visibility)'
     },
 	steam_ugc_start_item_update: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(consumer_app_id, published_file_id)'
     },
 	steam_ugc_submit_item_update: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ugc_update_handle, change_note)'
     },
 	steam_ugc_subscribe_item: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(published_file_id)'
     },
 	steam_ugc_unsubscribe_item: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(published_file_id)'
     },
 	steam_upload_score: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, score)'
     },
 	steam_upload_score_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, score, buffer_id)'
     },
 	steam_upload_score_buffer_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, score, buffer_id, forceupdate)'
     },
 	steam_upload_score_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(lb_name, score, forceupdate)'
     },
 	steam_user_installed_dlc: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dlc_id)'
     },
 	steam_user_owns_dlc: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(dlc_id)'
     },
 	string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	string_byte_at: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, index)'
     },
 	string_byte_length: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_char_at: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, index)'
     },
 	string_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, index, count)'
     },
 	string_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(substr, str)'
     },
 	string_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, index, count)'
     },
 	string_digits: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_format: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val, total, dec)'
     },
 	string_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(string)'
     },
 	string_height_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(string, sep, w)'
     },
 	string_insert: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(substr, str, index)'
     },
 	string_length: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_letters: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_lettersdigits: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_lower: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_ord_at: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, index)'
     },
 	string_pos: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(substr, str)'
     },
 	string_repeat: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, count)'
     },
 	string_replace: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, substr, newstr)'
     },
 	string_replace_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, substr, newstr)'
     },
 	string_set_byte_at: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str, index, val)'
     },
 	string_upper: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(str)'
     },
 	string_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(string)'
     },
 	string_width_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(string, sep, w)'
     },
 	surface_copy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(destination, x, y, source)'
     },
 	surface_copy_part: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(destination, x, y, source, xs, ys, ws, hs)'
     },
 	surface_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(w, h)'
     },
 	surface_create_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name, w, h)'
     },
 	surface_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	surface_free: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	surface_getpixel: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
 	surface_getpixel_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
 	surface_get_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	surface_get_texture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	surface_get_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	surface_reset_target: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	surface_resize: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, width, height)'
     },
 	surface_save: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, fname)'
     },
 	surface_save_part: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, fname, x, y, w, h)'
     },
 	surface_set_target: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	surface_set_target_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(index, id)'
     },
 	tan: {
         description: '[Function]',
@@ -5708,782 +5700,566 @@ exports.globalfunctions = {
     },
 	texture_get_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(texid)'
     },
 	texture_get_texel_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(texture_id)'
     },
 	texture_get_texel_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(texture_id)'
     },
 	texture_get_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(texid)'
     },
 	texture_global_scale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(pow2integer)'
     },
 	texture_set_blending: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(blend)'
     },
 	texture_set_interpolation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(linear)'
     },
 	texture_set_interpolation_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sampler_id, linear)'
     },
 	texture_set_repeat: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(repeat)'
     },
 	texture_set_repeat_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sampler_id, repeat)'
     },
 	texture_set_stage: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sampled_id, texture_id)'
     },
 	tile_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(background, left, top, width, height, x, y, depth)'
     },
 	tile_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_alpha: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_background: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_blend: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	tile_get_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_id: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(index)'
     },
 	tile_get_ids: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	tile_get_ids_at_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth)'
     },
 	tile_get_left: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_top: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_visible: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_xscale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_get_yscale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	tile_layer_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth)'
     },
 	tile_layer_delete_at: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth, x, y)'
     },
 	tile_layer_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth, newdepth)'
     },
 	tile_layer_find: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth, x, y)'
     },
 	tile_layer_hide: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth)'
     },
 	tile_layer_shift: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth, x, y)'
     },
 	tile_layer_show: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(depth)'
     },
 	tile_set_alpha: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, alpha)'
     },
 	tile_set_background: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, background)'
     },
 	tile_set_blend: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, colour)'
     },
 	tile_set_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, depth)'
     },
 	tile_set_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
 	tile_set_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, left, top, width, height)'
     },
 	tile_set_scale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, xscale, yscale)'
     },
 	tile_set_visible: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id, visible)'
     },
 	timeline_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	timeline_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	timeline_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	timeline_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	timeline_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	timeline_max_moment: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	timeline_moment_add_script: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, step, script)'
     },
 	timeline_moment_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, step)'
     },
 	timeline_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	typeof: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	url_get_domain: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	url_open: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url)'
     },
 	url_open_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url, target)'
     },
 	url_open_full: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(url, target, options)'
     },
 	vertex_argb: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, argb)'
     },
 	vertex_begin: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, format)'
     },
 	vertex_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, colour, alpha)'
     },
 	vertex_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, colour, alpha)'
     },
 	vertex_create_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_create_buffer_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(size)'
     },
 	vertex_create_buffer_from_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(src_buffer, format)'
     },
 	vertex_create_buffer_from_buffer_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(src_buffer, format, src_offset, num_vertices)'
     },
 	vertex_delete_buffer: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff)'
     },
 	vertex_end: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff)'
     },
 	vertex_float1: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, f1)'
     },
 	vertex_float2: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, f1, f2)'
     },
 	vertex_float3: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, f1, f2, f3)'
     },
 	vertex_float4: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, f1, f2, f3, f4)'
     },
 	vertex_format_add_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_add_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_add_custom: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(type, usage)'
     },
 	vertex_format_add_normal: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_add_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_add_position_3d: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_add_textcoord: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_begin: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_format_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(format_id)'
     },
 	vertex_format_end: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	vertex_freeze: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff)'
     },
 	vertex_get_buffer_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff)'
     },
 	vertex_get_number: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff)'
     },
 	vertex_normal: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, nx, ny, nz)'
     },
 	vertex_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, x, y)'
     },
 	vertex_position_3d: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, x, y, z)'
     },
 	vertex_submit: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, prim, texture)'
     },
 	vertex_texcoord: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, u, v)'
     },
 	vertex_ubyte4: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(vbuff, b1, b2, b3, b4)'
     },
 	virtual_key_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, w, h, keycode)'
     },
 	virtual_key_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	virtual_key_hide: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	virtual_key_show: {
         description: '[Function]',
-        signature: '( )'
-    },
-	win8_appbar_add_element: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_appbar_enable: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_appbar_remove_element: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_device_touchscreen_available: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_license_initialize_sandbox: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_license_trial_version: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_badge_clear: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_badge_notification: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_begin: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_end: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_expiry: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_image_add: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_secondary_begin: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_tag: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_notification_text_add: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_queue_enable: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_tile_clear: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_livetile_tile_notification: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_search_add_suggestions: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_search_disable: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_search_enable: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_secondarytile_badge_notification: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_secondarytile_delete: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_secondarytile_pin: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_settingscharm_add_entry: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_settingscharm_add_html_entry: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_settingscharm_add_xaml_entry: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_settingscharm_get_xaml_property: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_settingscharm_remove_entry: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_settingscharm_set_xaml_property: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_share_file: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_share_image: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_share_screenshot: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_share_text: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	win8_share_url: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	window_center: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_device: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_caption: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_cursor: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_fullscreen: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_height: {
         description: '[Function]',
-        signature: '( )'
-    },
-	window_get_visible: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_visible_rects: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(startx, starty, eendx, endy)'
     },
 	window_get_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_handle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_has_focus: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_mouse_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_mouse_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_mouse_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	window_set_caption: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(caption)'
     },
 	window_set_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(colour)'
     },
 	window_set_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(colour)'
     },
 	window_set_cursor: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(curs)'
     },
 	window_set_fullscreen: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(full)'
     },
 	window_set_max_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(maxheight)'
     },
 	window_set_max_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(maxwidth)'
     },
 	window_set_min_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(minheight)'
     },
 	window_set_min_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(minwidth)'
     },
 	window_set_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	window_set_rectangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, w, h)'
     },
 	window_set_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(w, h)'
     },
 	window_views_mouse_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_views_mouse_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	window_view_mouse_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	window_view_mouse_get_y: {
         description: '[Function]',
-        signature: '( )'
-    },
-	winphone_license_trial_version: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_background_color: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_background_colour: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_back_content: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_back_content_wide: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_back_image: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_back_image_wide: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_back_title: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_count: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_cycle_images: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_front_image: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_front_image_small: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_front_image_wide: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_icon_image: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_small_background_image: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_small_icon_image: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_title: {
-        description: '[Function]',
-        signature: '( )'
-    },
-	winphone_tile_wide_content: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	zip_unzip: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(file, destPath)'
     },
 
     variable_global_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name)'
     },
 	variable_global_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name)'
     },
 	variable_global_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(name, value)'
     },
 	variable_instance_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(instance_id, name)'
     },
 	variable_instance_get: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(instance_id, name)'
     },
 	variable_instance_set: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(instance_id, name, val)'
     },
 	variable_instance_get_names: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(instance_id)'
     },
 
     //These functions are deprecated.
     pocketchange_display_reward: {
         description: '[Function] (This function is deprecated)',
-        signature: '( )'
+        signature: '()'
     },
 	pocketchange_display_shop: {
         description: '[Function] (This function is deprecated)',
-        signature: '( )'
+        signature: '()'
     },
 	iap_store_status: {
         description: '[Function] (This function is deprecated)',
@@ -6508,6 +6284,218 @@ exports.globalfunctions = {
 	iap_event_queue: {
         description: '[Function] (This function is deprecated)',
         signature: '()'
+    },
+    win8_appbar_add_element: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(type, icon, label, section, toolTip, callback)'
+    },
+	win8_appbar_enable: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(flag)'
+    },
+	win8_appbar_remove_element: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(id)'
+    },
+	win8_device_touchscreen_available: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	win8_license_initialize_sandbox: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(_licenseString)'
+    },
+	win8_license_trial_version: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	win8_livetile_badge_clear: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	win8_livetile_badge_notification: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(id)'
+    },
+	win8_livetile_notification_begin: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(template)'
+    },
+	win8_livetile_notification_end: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	win8_livetile_notification_expiry: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(expiryTime)'
+    },
+	win8_livetile_notification_image_add: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(image)'
+    },
+	win8_livetile_notification_secondary_begin: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(template, tileId)'
+    },
+	win8_livetile_notification_tag: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(tag)'
+    },
+	win8_livetile_notification_text_add: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(text)'
+    },
+	win8_livetile_queue_enable: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(flag)'
+    },
+	win8_livetile_tile_clear: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	win8_livetile_tile_notification: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(template, ds_map, expiry, tag)'
+    },
+	win8_search_add_suggestions: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(_dslist)'
+    },
+	win8_search_disable: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	win8_search_enable: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(_selectionCallback)'
+    },
+	win8_secondarytile_badge_notification: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(id, tileId)'
+    },
+	win8_secondarytile_delete: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(id)'
+    },
+	win8_secondarytile_pin: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(id, shortName, displayName, cmdLineArgs, dsListOptions, tileImg, wideTileImg, textCol)'
+    },
+	win8_settingscharm_add_entry: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(name, callback)'
+    },
+	win8_settingscharm_add_html_entry: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(id, name, htmlPath)'
+    },
+	win8_settingscharm_add_xaml_entry: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(name, xamlPath, headerRGB, callback, wideFlyout)'
+    },
+	win8_settingscharm_get_xaml_property: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(entryName, elementName, propertyName)'
+    },
+	win8_settingscharm_remove_entry: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(name)'
+    },
+	win8_settingscharm_set_xaml_property: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(entryName, elementName, propertyName, newValue)'
+    },
+	win8_share_file: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(filename, title, description, immediate)'
+    },
+	win8_share_image: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(image_filename, title, description, immediate)'
+    },
+	win8_share_screenshot: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(title, description, immediate)'
+    },
+	win8_share_text: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(text, title, description, immediate)'
+    },
+	win8_share_url: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(url, title, description, immediate)'
+    },
+    winphone_license_trial_version: {
+        description: '[Function] (This function is deprecated)',
+        signature: '()'
+    },
+	winphone_tile_background_color: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(color)'
+    },
+	winphone_tile_background_colour: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(colour)'
+    },
+	winphone_tile_back_content: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(content)'
+    },
+	winphone_tile_back_content_wide: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(content)'
+    },
+	winphone_tile_back_image: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_back_image_wide: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_back_title: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(title)'
+    },
+	winphone_tile_count: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(count)'
+    },
+	winphone_tile_cycle_images: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename_1, included_filename_2, ...)'
+    },
+	winphone_tile_front_image: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_front_image_small: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_front_image_wide: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_icon_image: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename'
+    },
+	winphone_tile_small_background_image: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_small_icon_image: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(included_filename)'
+    },
+	winphone_tile_title: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(title)'
+    },
+	winphone_tile_wide_content: {
+        description: '[Function] (This function is deprecated)',
+        signature: '(content, index)'
     },
 
     //Obsolete functions in new GameMaker Studio
@@ -7368,6 +7356,10 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
+    sprite_replace_sprite: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '(ind, fname)'
+    },
     timeline_moment_add: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
@@ -7456,6 +7448,10 @@ exports.globalfunctions = {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
     },
+    window_get_visible: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '( )'
+    },
     window_set_region_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
@@ -7519,77 +7515,57 @@ exports.globalfunctions = {
     },
 
 	//New in GameMaker Studio 2
-	is_bool: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	typeof: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
 	string_hash_to_newline: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(str)'
     },
 	game_set_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(value,type)'
     },
 	game_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(type)'
     },
 	sprite_set_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind,speed,type)'
     },
 	sprite_get_speed_type: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sprite_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	debug_event: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	texture_get_uvs: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(texid)'
     },
 	room_get_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind,vind)'
     },
 	room_set_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind,vind,camera)'
     },
 	room_set_viewport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind,vind)'
     },
 	room_get_viewport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind,vind,vis,xport,yport,wport,hport)'
     },
 	ds_list_set: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(id,pos,value)'
     },
 	ds_map_set: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	ds_grid_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	ds_grid_get: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(id,key,value)'
     },
 	part_system_create_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7597,151 +7573,147 @@ exports.globalfunctions = {
     },
 	part_system_get_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_system_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind, layer)'
     },
 	matrix_build_identity: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	matrix_build_lookat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(xfrom,yfrom,zfrom,xto,yto,zto,xup,yup,zup)'
     },
 	matrix_build_projection_ortho: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(width,height,znear,zfar)'
     },
 	matrix_build_projection_perspective: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(width,height,znear,zfar)'
     },
 	matrix_build_projection_perspective_fov: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(fov_y,aspect,znear,zfar)'
     },
 	matrix_transform_vertex: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(matrix, x, y, z)'
     },
 	matrix_stack_push: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(...)'
     },
 	matrix_stack_pop: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	matrix_stack_set: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(matrix)'
     },
 	matrix_stack_clear: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	matrix_stack_top: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	matrix_stack_is_empty: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	browser_input_capture: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_set_blendenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	gpu_set_ztestenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	gpu_set_zfunc: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	gpu_set_zwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	gpu_set_fog: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable,col,start,end)'
     },
 	gpu_set_cullmode: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(cullmode)'
     },
 	gpu_set_blendmode: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(mode)'
     },
 	gpu_set_blendmode_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(src,dest)'
     },
 	gpu_set_blendmode_ext_sepalpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(src,dest,srcalpha,destalpha)'
     },
 	gpu_set_colorwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(red,green,blue,alpha)'
     },
 	gpu_set_colourwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(red,green,blue,alpha)'
     },
 	gpu_set_alphatestenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	gpu_set_alphatestref: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(value)'
     },
 	gpu_set_alphatestfunc: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(cmp_func)'
     },
 	gpu_set_texfilter: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(linear)'
     },
 	gpu_set_texfilter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id,linear)'
     },
 	gpu_set_texrepeat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(repeat)'
     },
 	gpu_set_texrepeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id,repeat)'
     },
 	gpu_set_tex_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(linear)'
     },
 	gpu_set_tex_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id,linear)'
     },
 	gpu_set_tex_repeat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(repeat)'
     },
 	gpu_set_tex_repeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id,repeat)'
     },
 	gpu_set_tex_mip_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7992,10 +7964,6 @@ exports.globalfunctions = {
         signature: '( )'
     },
 	load_csv: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
-    },
-	skeleton_animation_get_frame: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '( )'
     },
