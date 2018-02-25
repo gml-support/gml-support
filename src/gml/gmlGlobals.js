@@ -3804,1035 +3804,1031 @@ exports.globalfunctions = {
     },
 	ord: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(char)'
     },
 	os_get_config: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	os_get_info: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	os_get_language: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	os_get_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	os_is_network_connected: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	os_is_paused: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	os_lock_orientation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(flag)'
     },
 	os_powersave_enable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(enable)'
     },
 	parameter_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	parameter_string: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(n)'
     },
 	part_emitter_burst: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps, ind, parttype, number)'
     },
 	part_emitter_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_emitter_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_emitter_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_emitter_destroy_all: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_emitter_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_emitter_region: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps, ind, xmin, xmax, ymin, ymax, shape, distribution)'
     },
 	part_emitter_stream: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ps, ind, parttype, number)'
     },
 	part_particles_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_particles_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_particles_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y, parttype, number)'
     },
 	part_particles_create_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y, parttype, colour, number)'
     },
 	part_particles_create_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y, parttype, colour, number)'
     },
 	part_system_automatic_draw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, draw)'
     },
 	part_system_automatic_update: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, automatic)'
     },
 	part_system_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_system_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	part_system_depth: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, depth)'
     },
 	part_system_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_system_drawit: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_system_draw_order: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, oldtonew)'
     },
 	part_system_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_system_position: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y)'
     },
 	part_system_update: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_type_alpha1: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, alpha1)'
     },
 	part_type_alpha2: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, alpha1, alpha2)'
     },
 	part_type_alpha3: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, alpha1, alpha2, alpha3)'
     },
 	part_type_blend: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, additive)'
     },
 	part_type_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_type_color1: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, color1)'
     },
 	part_type_color2: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, color1， color2)'
     },
 	part_type_color3: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, color1, color2, color3)'
     },
 	part_type_color_hsv: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, hmin, hmax, smin, smax, vmin, vmax)'
     },
 	part_type_color_mix: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, colour1, colour2)'
     },
 	part_type_color_rgb: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, rmin, rmax, gmin, gmax, bmin, bmax)'
     },
 	part_type_colour1: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, colour1)'
     },
 	part_type_colour2: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, colour1, colour2)'
     },
 	part_type_colour3: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, colour1, colour2, colour3)'
     },
 	part_type_colour_hsv: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, hmin, hmax, smin, smax, vmin, vmax)'
     },
 	part_type_colour_mix: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, colour1, colour2)'
     },
 	part_type_colour_rgb: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, rmin, rmax, gmin, gmax, bmin, bmax)'
     },
 	part_type_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	part_type_death: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, death_number, death_type)'
     },
 	part_type_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_type_direction: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, dir_min, dir_max, dir_incr, dir_wiggle)'
     },
 	part_type_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	part_type_gravity: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, grav_amount, grav_dir)'
     },
 	part_type_life: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, life_min, life_max)'
     },
 	part_type_orientation: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, ang_min, ang_max, ang_incr, ang_wiggle, ang_relative)'
     },
 	part_type_scale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, xscale, yscale)'
     },
 	part_type_shape: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, shape)'
     },
 	part_type_size: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, size_min, size_max, size_incr, size_wiggle)'
     },
 	part_type_speed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, speed_min, speed_max, speed_incr, speed_wiggle)'
     },
 	part_type_sprite: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, sprite, animat, stretch, random)'
     },
 	part_type_step: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, step_number, step_type)'
     },
 	path_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	path_add_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y, speed)'
     },
 	path_append: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, path)'
     },
 	path_assign: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y, speed)'
     },
 	path_change_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, n, x, y, speed)'
     },
 	path_clear_points: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_delete_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, n)'
     },
 	path_duplicate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_end: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	path_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_flip: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_closed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_kind: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_length: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_number: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_point_speed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, n)'
     },
 	path_get_point_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, n)'
     },
 	path_get_point_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, n)'
     },
 	path_get_precision: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_get_speed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, pos)'
     },
 	path_get_time: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, speed)'
     },
 	path_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, pos)'
     },
 	path_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, pos)'
     },
 	path_insert_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, n, x, y, speed)'
     },
 	path_mirror: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_rescale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, xscale, yscale)'
     },
 	path_reverse: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	path_rotate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, angle)'
     },
 	path_set_closed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, closed)'
     },
 	path_set_kind: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, kind)'
     },
 	path_set_precision: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, prec)'
     },
 	path_shift: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, xshift, yshift)'
     },
 	path_start: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(path, speed, endaction, absolute)'
     },
 	physics_apply_angular_impulse: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(impulse)'
     },
 	physics_apply_force: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xpos,  ypos,  xforce,  yforce)'
     },
 	physics_apply_impulse: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xpos,  ypos,  ximpulse,  yimpulse)'
     },
 	physics_apply_local_force: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xlocal,  ylocal,  xforce_local,  yforce_local)'
     },
 	physics_apply_local_impulse: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(xlocal,  ylocal,  ximpulse_local,  yimpulse_local)'
     },
 	physics_apply_torque: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(torque)'
     },
 	physics_draw_debug: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_fixture_add_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, local_x, local_y)'
     },
 	physics_fixture_bind: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, obj)'
     },
 	physics_fixture_bind_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, obj, xo, yo)'
     },
 	physics_fixture_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_fixture_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture)'
     },
 	physics_fixture_set_angular_damping: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, damping)'
     },
 	physics_fixture_set_awake: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, flag)'
     },
 	physics_fixture_set_box_shape: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, halfWidth, halfHeight)'
     },
 	physics_fixture_set_chain_shape: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, loop)'
     },
 	physics_fixture_set_circle_shape: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, circleRadius)'
     },
 	physics_fixture_set_collision_group: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, group)'
     },
 	physics_fixture_set_density: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, density)'
     },
 	physics_fixture_set_edge_shape: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, local_x1, local_y1, local_x2, local_y2)'
     },
 	physics_fixture_set_friction: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, friction)'
     },
 	physics_fixture_set_kinematic: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture)'
     },
 	physics_fixture_set_linear_damping: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, damping)'
     },
 	physics_fixture_set_polygon_shape: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture)'
     },
 	physics_fixture_set_restitution: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, restitution)'
     },
 	physics_fixture_set_sensor: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, sensorState)'
     },
 	physics_get_density: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture)'
     },
 	physics_get_friction: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture)'
     },
 	physics_get_restitution: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture)'
     },
 	physics_joint_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(joint)'
     },
 	physics_joint_distance_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, collideInstances)'
     },
 	physics_joint_enable_motor: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(joint, motorState)'
     },
 	physics_joint_friction_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, collideInstances)'
     },
 	physics_joint_gear_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, revoluteJoint, prismaticJoint, ratio)'
     },
 	physics_joint_get_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(joint, field)'
     },
 	physics_joint_prismatic_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, lower_translation_limit, upper_translation_limit, enable_limit, max_motor_force, motor_speed, enable_motor, collideInstances)'
     },
 	physics_joint_pulley_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, local_anchor_1_x, local_anchor_1_y, local_anchor_2_x, local_anchor_2_y, ratio, collideInstances)'
     },
 	physics_joint_revolute_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_x, anchor_y, lower_angle_limit, upper_angle_limit, enable_limit, max_motor_torque, motor_speed, enable_motor, collideInstances)'
     },
 	physics_joint_rope_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, maxLength, collideInstances)'
     },
 	physics_joint_set_value: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(joint, field, value)'
     },
 	physics_joint_weld_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_x, anchor_y, ref_angle, freq_hz, damping_ratio, collideInstances)'
     },
 	physics_joint_wheel_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, enableMotor, max_motor_torque, motor_speed, freq_hz, damping_ratio, collideInstances)'
     },
 	physics_mass_properties: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(mass, local_centre_of_mass_x, local_centre_of_mass_y, inertia)'
     },
 	physics_particle_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(typeflags, x, y, xv, yv, col, alpha, category)'
     },
 	physics_particle_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	physics_particle_delete_region_box: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, halfWidth, halfHeight)'
     },
 	physics_particle_delete_region_circle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, radius)'
     },
 	physics_particle_delete_region_poly: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(pointList)'
     },
 	physics_particle_draw: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(typemask, category, sprite, subimg)'
     },
 	physics_particle_draw_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(typemask, category, sprite, subimg, xscale, yscale, angle, col, alpha)'
     },
 	physics_particle_get_damping: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_get_data: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(buffer, dataFlags)'
     },
 	physics_particle_get_data_particle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, buffer, dataFlags)'
     },
 	physics_particle_get_density: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_get_gravity_scale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_get_group_flags: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_get_max_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_get_radius: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_group_add_point: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	physics_particle_group_begin: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(typeflags, groupflags, x, y, ang, xv, yv, angVelocity, col, alpha, strength, category)'
     },
 	physics_particle_group_box: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(halfWidth, halfHeight)'
     },
 	physics_particle_group_circle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(radius)'
     },
 	physics_particle_group_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_delete: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	physics_particle_group_end: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_group_get_angle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_ang_vel: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_centre_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_centre_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_data: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group, buffer, dataFlags)'
     },
 	physics_particle_group_get_inertia: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_mass: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_vel_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_vel_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_x: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_get_y: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group)'
     },
 	physics_particle_group_join: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(to, from)'
     },
 	physics_particle_group_polygon: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	physics_particle_set_category_flags: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(category, typeflags)'
     },
 	physics_particle_set_damping: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(damping)'
     },
 	physics_particle_set_density: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(density)'
     },
 	physics_particle_set_flags: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, typeflags)'
     },
 	physics_particle_set_gravity_scale: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(scale)'
     },
 	physics_particle_set_group_flags: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(group, groupflags)'
     },
 	physics_particle_set_max_count: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(count)'
     },
 	physics_particle_set_radius: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(radius)'
     },
 	physics_pause_enable: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(pause)'
     },
 	physics_remove_fixture: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(inst, id)'
     },
 	physics_set_density: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, density)'
     },
 	physics_set_friction: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, friction)'
     },
 	physics_set_restitution: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fixture, restitution)'
     },
 	physics_test_overlap: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, angle, obj)'
     },
 	physics_world_create: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(PixelToMetreScale)'
     },
 	physics_world_draw_debug: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(draw_flags)'
     },
 	physics_world_gravity: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(gx, gy)'
     },
 	physics_world_update_iterations: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(iterations)'
     },
 	physics_world_update_speed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(speed)'
     },
 	place_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	place_free: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	place_meeting: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	place_snapped: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(hsnap, vsnap)'
     },
 	point_direction: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2)'
     },
 	point_distance: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, x2, y2)'
     },
 	point_distance_3d: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, y1, z1, x2, y2, z2)'
     },
 	point_in_circle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(px, py, cx, cy, rad)'
     },
 	point_in_rectangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(px, py, x1, y1, x2, y2)'
     },
 	point_in_triangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(px, py, x1, y1, x2, y2, x3, y3)'
     },
 	position_change: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj, performevents)'
     },
 	position_destroy: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	position_empty: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	position_meeting: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, y, obj)'
     },
 	power: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x, n)'
     },
 	ptr: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	push_cancel_local_notification: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(id)'
     },
 	push_get_first_local_notification: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_map)'
     },
 	push_get_next_local_notification: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ds_map)'
     },
 	push_local_notification: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(fire_time, title, message, data)'
     },
 	radtodeg: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	random: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	randomize: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	random_get_seed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	random_old: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	random_range: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2)'
     },
 	random_range_old: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(x1, x2)'
     },
 	random_set_seed: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(seed)'
     },
 	random_use_old_version: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(trueFalse)'
     },
 	real: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(val)'
     },
 	rectangle_in_circle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sx1, sy1, sx2, sy2, cx, cy, rad)'
     },
 	rectangle_in_rectangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sx1, sy1, sx2, sy2, dx1, dy1, dx2, dy2)'
     },
 	rectangle_in_triangle: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(sx1, sy1, sx2, sy2, x1, y1, x2, y2, x3, y3)'
     },
 	room_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	room_assign: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, source)'
     },
 	room_duplicate: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	room_exists: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	room_get_name: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	room_goto: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(numb)'
     },
 	room_goto_next: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	room_goto_previous: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	room_instance_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, x, y, obj)'
     },
 	room_instance_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	room_next: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(numb)'
     },
 	room_previous: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(numb)'
     },
 	room_restart: {
         description: '[Function]',
-        signature: '( )'
+        signature: '()'
     },
 	room_set_background: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
     },
 	room_set_background_color: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, col, show)'
     },
 	room_set_background_colour: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, col, show)'
     },
 	room_set_height: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, h)'
     },
 	room_set_persistent: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, pers)'
     },
 	room_set_view: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
     },
 	room_set_view_enabled: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, val)'
     },
 	room_set_width: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, w)'
     },
 	room_tile_add: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, back, left, top, width, height, x, y, depth)'
     },
 	room_tile_add_ext: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
     },
 	room_tile_clear: {
         description: '[Function]',
-        signature: '( )'
+        signature: '(ind)'
     },
 	round: {
         description: '[Function]',
-        signature: '( )'
-    },
-	screen_redraw: {
-        description: '[Function]',
-        signature: '( )'
+        signature: '(x)'
     },
 	screen_save: {
         description: '[Function]',
@@ -7163,6 +7159,10 @@ exports.globalfunctions = {
 	room_set_code: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '( )'
+    },
+    screen_redraw: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '()'
     },
     screen_refresh: {
         description: '[Function] (GameMaker 8.1 Only)',
