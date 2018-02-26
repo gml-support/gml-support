@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.globalfunctions = {
     abs: {
 		description: '[Function]',
-		signature: '(x)'
+		parameters: [ {label: 'x',documentation: "test"}  ]
 	},
 	achievement_available: {
 		description: '[Function]',
