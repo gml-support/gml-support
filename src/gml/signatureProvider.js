@@ -1,39 +1,38 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
-const vscode_1 = require("vscode");
-const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
-const _NL = '\n'.charCodeAt(0);
-const _TAB = '\t'.charCodeAt(0);
-const _WSB = ' '.charCodeAt(0);
-const _LBracket = '['.charCodeAt(0);
-const _RBracket = ']'.charCodeAt(0);
-const _LCurly = '{'.charCodeAt(0);
-const _RCurly = '}'.charCodeAt(0);
-const _LParent = '('.charCodeAt(0);
-const _RParent = ')'.charCodeAt(0);
-const _Comma = ','.charCodeAt(0);
-const _Quote = '\''.charCodeAt(0);
-const _DQuote = '"'.charCodeAt(0);
-const _USC = '_'.charCodeAt(0);
-const _a = 'a'.charCodeAt(0);
-const _z = 'z'.charCodeAt(0);
-const _A = 'A'.charCodeAt(0);
-const _Z = 'Z'.charCodeAt(0);
-const _0 = '0'.charCodeAt(0);
-const _9 = '9'.charCodeAt(0);
-const BOF = 0;
-class BackwardIterator {
-    constructor(model, offset, lineNumber) {
+var vscode_1 = require("vscode");
+var gmlGlobals = require("./gmlGlobals");
+var _NL = '\n'.charCodeAt(0);
+var _TAB = '\t'.charCodeAt(0);
+var _WSB = ' '.charCodeAt(0);
+var _LBracket = '['.charCodeAt(0);
+var _RBracket = ']'.charCodeAt(0);
+var _LCurly = '{'.charCodeAt(0);
+var _RCurly = '}'.charCodeAt(0);
+var _LParent = '('.charCodeAt(0);
+var _RParent = ')'.charCodeAt(0);
+var _Comma = ','.charCodeAt(0);
+var _Quote = '\''.charCodeAt(0);
+var _DQuote = '"'.charCodeAt(0);
+var _USC = '_'.charCodeAt(0);
+var _a = 'a'.charCodeAt(0);
+var _z = 'z'.charCodeAt(0);
+var _A = 'A'.charCodeAt(0);
+var _Z = 'Z'.charCodeAt(0);
+var _0 = '0'.charCodeAt(0);
+var _9 = '9'.charCodeAt(0);
+var BOF = 0;
+var BackwardIterator = /** @class */ (function () {
+    function BackwardIterator(model, offset, lineNumber) {
         this.lineNumber = lineNumber;
         this.offset = offset;
         this.line = model.lineAt(this.lineNumber).text;
         this.model = model;
     }
-    hasNext() {
+    BackwardIterator.prototype.hasNext = function () {
         return this.lineNumber >= 0;
-    }
-    next() {
+    };
+    BackwardIterator.prototype.next = function () {
         if (this.offset < 0) {
             if (this.lineNumber > 0) {
                 this.lineNumber--;
@@ -44,28 +43,31 @@ class BackwardIterator {
             this.lineNumber = -1;
             return BOF;
         }
-        let ch = this.line.charCodeAt(this.offset);
+        var ch = this.line.charCodeAt(this.offset);
         this.offset--;
         return ch;
+    };
+    return BackwardIterator;
+}());
+var GMLSignatureHelpProvider = /** @class */ (function () {
+    function GMLSignatureHelpProvider() {
     }
-}
-class GMLSignatureHelperProvider {
-    provideSignatureHelp(document, position, token) {
+    GMLSignatureHelpProvider.prototype.provideSignatureHelp = function (document, position, _token) {
         let enable = vscode_1.workspace.getConfiguration('gml-gm81' || 'gml-gms' || 'gml-gms2').get('suggest.basic', true);
         if (!enable) {
             return null;
         }
-        let iterator = new BackwardIterator(document, position.character - 1, position.line);
-        let paramCount = this.readArguments(iterator);
+        var iterator = new BackwardIterator(document, position.character - 1, position.line);
+        var paramCount = this.readArguments(iterator);
         if (paramCount < 0) {
             return null;
         }
-        let ident = this.readIdent(iterator);
+        var ident = this.readIdent(iterator);
         if (!ident) {
             return null;
         }
-        let entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name];
-        if (!entry) {
+        var entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.keywords[ident];
+        if (!entry || !entry.signature) {
             return null;
         }
         var paramsString = entry.signature.substring(0, entry.signature.lastIndexOf(')') + 1);
@@ -80,14 +82,14 @@ class GMLSignatureHelperProvider {
         ret.activeSignature = 0;
         ret.activeParameter = Math.min(paramCount, signatureInfo.parameters.length - 1);
         return Promise.resolve(ret);
-    }
-    readArguments(iterator) {
-        let parentNesting = 0;
-        let bracketNesting = 0;
-        let curlyNesting = 0;
-        let paramCount = 0;
+    };
+    GMLSignatureHelpProvider.prototype.readArguments = function (iterator) {
+        var parentNesting = 0;
+        var bracketNesting = 0;
+        var curlyNesting = 0;
+        var paramCount = 0;
         while (iterator.hasNext()) {
-            let ch = iterator.next();
+            var ch = iterator.next();
             switch (ch) {
                 case _LParent:
                     parentNesting--;
@@ -113,6 +115,7 @@ class GMLSignatureHelperProvider {
                 case _DQuote:
                 case _Quote:
                     while (iterator.hasNext() && ch !== iterator.next()) {
+                        // find the closing quote or double quote
                     }
                     break;
                 case _Comma:
@@ -123,8 +126,8 @@ class GMLSignatureHelperProvider {
             }
         }
         return -1;
-    }
-    isIdentPart(ch) {
+    };
+    GMLSignatureHelpProvider.prototype.isIdentPart = function (ch) {
         if (ch === _USC || // _
             ch >= _a && ch <= _z || // a-z
             ch >= _A && ch <= _Z || // A-Z
@@ -133,12 +136,12 @@ class GMLSignatureHelperProvider {
             return true;
         }
         return false;
-    }
-    readIdent(iterator) {
-        let identStarted = false;
-        let ident = '';
+    };
+    GMLSignatureHelpProvider.prototype.readIdent = function (iterator) {
+        var identStarted = false;
+        var ident = '';
         while (iterator.hasNext()) {
-            let ch = iterator.next();
+            var ch = iterator.next();
             if (!identStarted && (ch === _WSB || ch === _TAB || ch === _NL)) {
                 continue;
             }
@@ -151,6 +154,7 @@ class GMLSignatureHelperProvider {
             }
         }
         return ident;
-    }
-}
-exports.default = GMLSignatureHelperProvider;
+    };
+    return GMLSignatureHelpProvider;
+}());
+exports.default = GMLSignatureHelpProvider;

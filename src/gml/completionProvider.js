@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
 class GMLCompletionItemProvider {
     constructor() {
         this.triggerCharacters = ['.'];
@@ -13,14 +12,14 @@ class GMLCompletionItemProvider {
         if (!enable) {
             return Promise.resolve(result);
         }
-        let range = document.getWordRangeAtPosition(position);
-        const prefix = range ? document.getText(range) : '';
+        var range = document.getWordRangeAtPosition(position);
+        var prefix = range ? document.getText(range) : '';
         if (!range) {
             range = new vscode_1.Range(position, position);
         }
-        const added = {};
-        const createNewProposal = (kind, name, entry, type) => {
-            const proposal = new vscode_1.CompletionItem(name);
+        var added = {};
+        var createNewProposal = function (kind, name, entry, type) {
+            var proposal = new vscode_1.CompletionItem(name);
             proposal.kind = kind;
             if (entry) {
                 if (entry.description) {
@@ -41,44 +40,38 @@ class GMLCompletionItemProvider {
             }
             return proposal;
         };
-        const matches = (name) => {
+        var matches = (name) => {
             return prefix.length === 0 || name.length >= prefix.length && name.substr(0, prefix.length) === prefix;
         };
-        for (const globalvariables in gmlGlobals.globalvariables) {
+        for (var globalvariables in gmlGlobals.globalvariables) {
             if (gmlGlobals.globalvariables.hasOwnProperty(globalvariables) && matches(globalvariables)) {
                 added[globalvariables] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Variable, globalvariables, gmlGlobals.globalvariables[globalvariables]));
             }
         }
-        for (const globalfunctions in gmlGlobals.globalfunctions) {
+        for (var globalfunctions in gmlGlobals.globalfunctions) {
             if (gmlGlobals.globalfunctions.hasOwnProperty(globalfunctions) && matches(globalfunctions)) {
                 added[globalfunctions] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Function, globalfunctions, gmlGlobals.globalfunctions[globalfunctions]));
             }
         }
-        for (const constants in gmlGlobals.constants) {
+        for (var constants in gmlGlobals.constants) {
             if (gmlGlobals.constants.hasOwnProperty(constants) && matches(constants)) {
                 added[constants] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Field, constants, gmlGlobals.constants[constants]));
             }
         }
-        for (const keywords in gmlGlobals.keywords) {
+        for (var keywords in gmlGlobals.keywords) {
             if (gmlGlobals.keywords.hasOwnProperty(keywords) && matches(keywords)) {
                 added[keywords] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Keyword, keywords, gmlGlobals.keywords[keywords]));
             }
         }
-        for (const thirdfunctions in gmlThirdparty.thirdfunctions) {
-            if (gmlThirdparty.thirdfunctions.hasOwnProperty(thirdfunctions) && matches(thirdfunctions)) {
-                added[thirdfunctions] = true;
-                result.push(createNewProposal(vscode_1.CompletionItemKind.Function, thirdfunctions, gmlThirdparty.thirdfunctions[thirdfunctions]));
-            }
-        }
-        const text = document.getText();
-        const functionMatch = /^\w+\s+([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*\(/mg;
-        let match = null;
+        var text = document.getText();
+        var functionMatch = /^\w+\s+([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*\(/mg;
+        var match = null;
         while (match = functionMatch.exec(text)) {
-            const word = match[1];
+            var word = match[1];
             if (!added[word]) {
                 added[word] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Function, word, null));

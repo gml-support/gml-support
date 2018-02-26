@@ -3,11 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 exports.globalfunctions = {
     abs: {
-        description: '[Function]',
-        parameters: [ 
-            { label: 'x', documentation: "test" }  
-        ]
-		//signature: '(x)'
+		description: '[Function]',
+		signature: '(x)'
 	},
 	achievement_available: {
 		description: '[Function]',
