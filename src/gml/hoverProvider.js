@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var vscode_1 = require("vscode");
 var gmlGlobals = require("./gmlGlobals");
+var gmlThirdparty = require("./gmlThirdparty")
 var GMLHoverProvider = (function () {
     function GMLHoverProvider() {
     }
@@ -15,7 +16,7 @@ var GMLHoverProvider = (function () {
             return undefined;
         }
         var name = document.getText(wordRange);
-        var entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name];
+        var entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name];
         return undefined;
     };
     return GMLHoverProvider;

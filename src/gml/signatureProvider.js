@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var vscode_1 = require("vscode");
 var gmlGlobals = require("./gmlGlobals");
+var gmlThirdparty = require("./gmlThirdparty")
 var _NL = '\n'.charCodeAt(0);
 var _TAB = '\t'.charCodeAt(0);
 var _WSB = ' '.charCodeAt(0);
@@ -66,7 +67,7 @@ var GMLSignatureHelpProvider = /** @class */ (function () {
         if (!ident) {
             return null;
         }
-        var entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.keywords[ident];
+        var entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name];
         if (!entry || !entry.signature) {
             return null;
         }

@@ -67,6 +67,12 @@ class GMLCompletionItemProvider {
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Keyword, keywords, gmlGlobals.keywords[keywords]));
             }
         }
+        for (var thirdfunctions in gmlThirdparty.thirdfunctions) {
+            if (gmlThirdparty.thirdfunctions.hasOwnProperty(thirdfunctions) && matches(thirdfunctions)) {
+                added[thirdfunctions] = true;
+                result.push(createNewProposal(vscode_1.CompletionItemKind.Function, thirdfunctions, gmlThirdparty.thirdfunctions[thirdfunctions]));
+            }
+        }
         var text = document.getText();
         var functionMatch = /^\w+\s+([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*\(/mg;
         var match = null;
