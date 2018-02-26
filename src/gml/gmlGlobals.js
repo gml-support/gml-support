@@ -7521,7 +7521,7 @@ exports.globalfunctions = {
     },
 	game_set_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(value,type)'
+        signature: '(value, type)'
     },
 	game_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7529,7 +7529,7 @@ exports.globalfunctions = {
     },
 	sprite_set_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(ind,speed,type)'
+        signature: '(ind, speed, type)'
     },
 	sprite_get_speed_type: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7545,31 +7545,31 @@ exports.globalfunctions = {
     },
 	room_get_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(ind,vind)'
+        signature: '(ind, vind)'
     },
 	room_set_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(ind,vind,camera)'
+        signature: '(ind, vind, camera)'
     },
 	room_set_viewport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(ind,vind)'
+        signature: '(ind, vind)'
     },
 	room_get_viewport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(ind,vind,vis,xport,yport,wport,hport)'
+        signature: '(ind, vind, vis, xport, yport, wport, hport)'
     },
 	ds_list_set: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(id,pos,value)'
+        signature: '(id, pos, value)'
     },
 	ds_map_set: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(id,key,value)'
+        signature: '(id, key, value)'
     },
 	part_system_create_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer, persistent)'
     },
 	part_system_get_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7585,19 +7585,19 @@ exports.globalfunctions = {
     },
 	matrix_build_lookat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(xfrom,yfrom,zfrom,xto,yto,zto,xup,yup,zup)'
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
 	matrix_build_projection_ortho: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(width,height,znear,zfar)'
+        signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(width,height,znear,zfar)'
+        signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective_fov: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(fov_y,aspect,znear,zfar)'
+        signature: '(fov_y, aspect, znear, zfar)'
     },
 	matrix_transform_vertex: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7645,7 +7645,7 @@ exports.globalfunctions = {
     },
 	gpu_set_fog: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(enable,col,start,end)'
+        signature: '(enable, col, start, end)'
     },
 	gpu_set_cullmode: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7657,19 +7657,19 @@ exports.globalfunctions = {
     },
 	gpu_set_blendmode_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(src,dest)'
+        signature: '(src, dest)'
     },
 	gpu_set_blendmode_ext_sepalpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(src,dest,srcalpha,destalpha)'
+        signature: '(src, dest, srcalpha, destalpha)'
     },
 	gpu_set_colorwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(red,green,blue,alpha)'
+        signature: '(red, green, blue, alpha)'
     },
 	gpu_set_colourwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(red,green,blue,alpha)'
+        signature: '(red, green, blue, alpha)'
     },
 	gpu_set_alphatestenable: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7689,7 +7689,7 @@ exports.globalfunctions = {
     },
 	gpu_set_texfilter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(sampler_id,linear)'
+        signature: '(sampler_id, linear)'
     },
 	gpu_set_texrepeat: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7697,7 +7697,7 @@ exports.globalfunctions = {
     },
 	gpu_set_texrepeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(sampler_id,repeat)'
+        signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7705,7 +7705,7 @@ exports.globalfunctions = {
     },
 	gpu_set_tex_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(sampler_id,linear)'
+        signature: '(sampler_id, linear)'
     },
 	gpu_set_tex_repeat: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7713,419 +7713,423 @@ exports.globalfunctions = {
     },
 	gpu_set_tex_repeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(sampler_id,repeat)'
+        signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_mip_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(filter)'
     },
 	gpu_set_tex_mip_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id, filter)'
     },
 	gpu_set_tex_mip_bias: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(bias)'
     },
 	gpu_set_tex_mip_bias_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id, bias)'
     },
 	gpu_set_tex_min_mip: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(minmip)'
     },
 	gpu_set_tex_min_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id, minmip)'
     },
 	gpu_set_tex_max_mip: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(maxmip)'
     },
 	gpu_set_tex_max_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id, maxmip)'
     },
 	gpu_set_tex_max_aniso: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(maxaniso)'
     },
 	gpu_set_tex_max_aniso_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id, maxaniso)'
     },
 	gpu_set_tex_mip_enable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(setting)'
     },
 	gpu_set_tex_mip_enable_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id, setting)'
     },
 	gpu_get_blendenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_ztestenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_zfunc: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_zwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_fog: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_cullmode: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode_ext_sepalpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode_src: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode_dest: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode_srcalpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_blendmode_destalpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_colorwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_colourwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_alphatestenable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_alphatestref: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_alphatestfunc: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_texfilter: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_texfilter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_texrepeat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_texrepeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_repeat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_repeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_mip_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_bias: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_mip_bias_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_min_mip: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_min_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_max_mip: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_max_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_max_aniso: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_max_aniso_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_enable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_tex_mip_enable_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sampler_id)'
     },
 	gpu_push_state: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_pop_state: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_get_state: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gpu_set_state: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(map)'
     },
 	draw_light_define_ambient: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(col)'
     },
 	draw_light_define_direction: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind, dx, dy, dz, col)'
     },
 	draw_light_define_point: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind, x, y, z, range, col)'
     },
 	draw_light_enable: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind, enable)'
     },
 	draw_set_lighting: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	draw_light_get_ambient: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	draw_light_get: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	draw_get_lighting: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	load_csv: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(filename)'
+    },
+    skeleton_animation_get_frame: {
+        description: '[Function] (New in GameMaker Studio 2)',
+        signature: '(track)'
     },
 	skeleton_animation_set_frame: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(track, index)'
     },
 	layer_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_name)'
     },
 	layer_get_id_at_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(depth)'
     },
 	layer_get_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_create: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(depth, name*, ...)'
     },
 	layer_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_destroy_instances: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_add_instance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, instance)'
     },
 	layer_has_instance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, instance)'
     },
 	layer_set_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, visible)'
     },
 	layer_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, x)'
     },
 	layer_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, y)'
     },
 	layer_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_hspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, speed)'
     },
 	layer_vspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, speed)'
     },
 	layer_get_hspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_get_vspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_script_begin: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, script)'
     },
 	layer_script_end: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, script)'
     },
 	layer_shader: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, shader)'
     },
 	layer_get_script_begin: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_get_script_end: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_get_shader: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_set_target_room: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(room)'
     },
 	layer_get_target_room: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	layer_reset_target_room: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	layer_get_all: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	layer_get_all_elements: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_get_name: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, depth)'
     },
 	layer_get_element_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(element_id)'
     },
 	layer_get_element_type: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(element_id)'
     },
 	layer_element_move: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(element_id, layer_id)'
     },
 	layer_force_draw_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(force, depth)'
     },
 	layer_is_draw_depth_forced: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	layer_get_forced_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	layer_background_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_background_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8133,323 +8137,323 @@ exports.globalfunctions = {
     },
 	layer_background_create: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, sprite)'
     },
 	layer_background_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, visible)'
     },
 	layer_background_change: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, sprite)'
     },
 	layer_background_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, sprite)'
     },
 	layer_background_htiled: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, tiled)'
     },
 	layer_background_vtiled: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, tiled)'
     },
 	layer_background_stretch: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, stretch)'
     },
 	layer_background_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, yscale)'
     },
 	layer_background_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, xscale)'
     },
 	layer_background_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, col)'
     },
 	layer_background_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, alpha)'
     },
 	layer_background_index: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, image_index)'
     },
 	layer_background_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id, image_speed)'
     },
 	layer_background_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_htiled: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_vtiled: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_stretch: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_index: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_background_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(background_element_id)'
     },
 	layer_sprite_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, sprite_element_name)'
     },
 	layer_sprite_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, sprite_element_id)'
     },
 	layer_sprite_create: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, x, y, sprite)'
     },
 	layer_sprite_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_change: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, sprite)'
     },
 	layer_sprite_index: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, image_index)'
     },
 	layer_sprite_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, image_speed)'
     },
 	layer_sprite_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, scale)'
     },
 	layer_sprite_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, scale)'
     },
 	layer_sprite_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, angle)'
     },
 	layer_sprite_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, col)'
     },
 	layer_sprite_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, alpha)'
     },
 	layer_sprite_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, x)'
     },
 	layer_sprite_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id, y)'
     },
 	layer_sprite_get_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_index: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_sprite_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(sprite_element_id)'
     },
 	layer_tilemap_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	layer_tilemap_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, tilemap_element_id)'
     },
 	layer_tilemap_create: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, x, y, tileset, width, height)'
     },
 	layer_tilemap_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_tileset: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, tileset)'
     },
 	tilemap_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, x)'
     },
 	tilemap_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, y)'
     },
 	tilemap_set: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, tiledata, cell_x, cell_y)'
     },
 	tilemap_set_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, tiledata, x, y)'
     },
 	tilemap_get_tileset: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_width: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_height: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_width: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_height: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, cell_x, cell_y)'
     },
 	tilemap_get_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_x_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_y_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_clear: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, tiledata)'
     },
 	draw_tilemap: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, x, y)'
     },
 	draw_tile: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tileset, tiledata, frame, x, y)'
     },
 	tilemap_set_global_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	tilemap_get_global_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	tilemap_set_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id, mask)'
     },
 	tilemap_get_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tilemap_get_frame: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tilemap_element_id)'
     },
 	tile_set_empty: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata)'
     },
 	tile_set_index: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata, tileindex)'
     },
 	tile_set_flip: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata, flip)'
     },
 	tile_set_mirror: {
         description: '[Function] (New in GameMaker Studio 2)',
