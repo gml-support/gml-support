@@ -9,7 +9,7 @@ class GMLCompletionItemProvider {
     }
     provideCompletionItems(document, position, token) {
         let result = [];
-        let enable = vscode_1.workspace.getConfiguration('gml-gm81' || 'gml-gms' || 'gml-gm2').get('suggest.basic', true);
+        let enable = vscode_1.workspace.getConfiguration('gml-gm81' || 'gml-gms' || 'gml-gms2').get('suggest.basic', true);
         if (!enable) {
             return Promise.resolve(result);
         }
