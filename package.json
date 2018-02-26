@@ -2,7 +2,7 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.4.0-pre2",
+  "version": "1.4.0-pre3",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
@@ -65,7 +65,7 @@
       {
         "id": "gml-gmx",
         "aliases": [
-          "GameMaker Studio GMX Project",
+          "GameMaker Studio GMX Config",
           "gml-gmx"
         ],
         "extensions": [

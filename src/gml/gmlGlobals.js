@@ -6223,6 +6223,11 @@ exports.globalfunctions = {
         signature: '(file, destPath)'
     },
 
+    //These are the functions that were obsoleted in the old version but restored in the new version
+    date_datetime_string: {
+        description: '[Function]',
+        signature: '(date)'
+    },
     variable_global_exists: {
         description: '[Function]',
         signature: '(name)'
@@ -6509,59 +6514,63 @@ exports.globalfunctions = {
     },
     sound_delete: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
     sound_discard: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
     sound_exists: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
     sound_get_kind: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sound_get_name: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	sound_get_preload: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
     sound_restore: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(ind)'
     },
     sound_loop: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(index)'
+    },
+    sound_play: {
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        signature: '(index)'
     },
     sound_stop: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(index)'
     },
 	sound_stop_all: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '()'
     },
 	sound_volume: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(index, value)'
     },
 	sound_global_volume: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(value)'
     },
 	sound_fade: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(index, value, time)'
     },
 	sound_isplaying: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(index)'
     },
     audio_music_is_playing: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6644,19 +6653,19 @@ exports.globalfunctions = {
 	},
     playhaven_add_notification_badge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(x, y, w, h, ident)'
     },
 	playhaven_hide_notification_badge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(x, y, w, h, ident)'
     },
 	playhaven_position_notification_badge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(x, y, w, h)'
     },
 	playhaven_update_notification_badge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(x, y, w, h)'
     },
     openfeint_accept_challenge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6664,27 +6673,27 @@ exports.globalfunctions = {
     },
 	openfeint_send_challenge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(definition_string, text_string, data_string)'
     },
 	openfeint_send_invite: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(definition_string)'
     },
 	openfeint_send_result: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(challenge_result, description_string)'
     },
 	openfeint_send_social: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(text_string, suggested_message, image_name)'
     },
 	openfeint_set_url: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '(url)'
     },
 	openfeint_start: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '( )'
+        signature: '()'
     },
 	achievement_map_achievement: {
 		description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6702,83 +6711,83 @@ exports.globalfunctions = {
 	//GameMaker 8.1 Only
 	background_add_background: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname)'
     },
     background_create_from_screen: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(x, y, w, h, removeback, smooth)'
     },
     cd_close_door: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_init: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     cd_length: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_number: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_open_door: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_pause: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_paused: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_play: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(first, last)'
     },
 	cd_playing: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_present: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_resume: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_set_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(pos)'
     },
 	cd_set_track_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(pos)'
     },
 	cd_stop: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_track: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	cd_track_length: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(n)'
     },
 	cd_track_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     date_create_date: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6790,83 +6799,87 @@ exports.globalfunctions = {
     },
 	date_current_date: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     date_current_time: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-    date_datetime_string: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     date_valid_date: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(year, month, day)'
     },
     date_valid_time: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(hour, minute, second)'
     },
     discard_include_file: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname)'
     },
 	disk_free: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(drive)'
     },
 	disk_size: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(drive)'
     },
 	display_set_all: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(w, h, frequency, coldepth)'
     },
 	display_set_colordepth: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(coldepth)'
     },
 	display_set_frequency: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(frequency)'
     },
 	display_set_size: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(w, h)'
     },
 	display_test_all: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(w, h, frequency, coldepth)'
+    },
+    execute_file: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '(fname, arg0, arg1, ...)'
     },
     execute_program: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(prog, arg, wait)'
     },
 	execute_shell: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(prog, arg)'
+    },
+    execute_string: {
+        description: '[Function] (GameMaker 8.1 Only)',
+        signature: '(str, arg0, arg1, ...)'
     },
 	export_include_file: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname)'
     },
 	export_include_file_location: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname, location)'
     },
     get_color: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(defcol)'
     },
 	get_directory: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(dname)'
     },
 	get_directory_alt: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(capt, root)'
     },
     highscore_add_current: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6902,67 +6915,67 @@ exports.globalfunctions = {
     },
     io_handle: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     keyboard_wait: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	MCI_command: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(str)'
     },
 	message_alpha: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(alpha)'
     },
 	message_background: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(back)'
     },
 	message_button: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(sprite)'
     },
 	message_button_font: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, size, colour, style)'
     },
 	message_caption: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(show, str)'
     },
 	message_input_color: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(col)'
     },
 	message_input_font: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, size, colour, style)'
     },
 	message_mouse_color: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(col)'
     },
 	message_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	message_size: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(w, h)'
     },
 	message_text_charset: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(type, charset_id)'
     },
 	message_text_font: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, size, colour, style)'
     },
     mouse_wait: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     object_add: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6982,171 +6995,171 @@ exports.globalfunctions = {
     },
 	part_attractor_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_attractor_create: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_attractor_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_attractor_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_attractor_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_attractor_force: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, force, dist, kind, additive)'
     },
 	part_attractor_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, x, y)'
     },
 	part_changer_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_changer_create: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_changer_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_changer_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_changer_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_changer_kind: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, kind)'
     },
 	part_changer_region: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
 	part_changer_types: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, parttype1, parttype2)'
     },
 	part_deflector_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_deflector_create: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_deflector_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_deflector_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_deflector_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_deflector_friction: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, amount)'
     },
 	part_deflector_kind: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, kind)'
     },
 	part_deflector_region: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, xmin, xmax, ymin, ymax)'
     },
 	part_destroyer_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_destroyer_create: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_destroyer_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_destroyer_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps)'
     },
 	part_destroyer_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind)'
     },
 	part_destroyer_region: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
     registry_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name)'
     },
 	registry_exists_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(key, name)'
     },
 	registry_read_real: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name)'
     },
 	registry_read_real_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(key, name)'
     },
 	registry_read_string: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name)'
     },
 	registry_read_string_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(key, name)'
     },
 	registry_set_root: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(root)'
     },
 	registry_write_real: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, value)'
     },
 	registry_write_real_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(key, name, value)'
     },
 	registry_write_string: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, str)'
     },
 	registry_write_string_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(key, name, str)'
     },
     room_set_caption: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind, str)'
     },
 	room_set_code: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind, codestr)'
     },
     screen_redraw: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7154,207 +7167,203 @@ exports.globalfunctions = {
     },
     screen_refresh: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     screen_wait_vsync: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     script_get_text: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind)'
     },
 	set_application_title: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(title)'
     },
 	set_automatic_draw: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(value)'
     },
 	set_program_priority: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(priority)'
     },
 	set_synchronization: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(value)'
     },
     show_menu: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(str, def)'
     },
 	show_menu_pos: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(x, y, str, def)'
     },
     show_message_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(str, but1, but2, but3)'
     },
     sleep: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(millisec)'
     },
 	sound_3d_set_sound_cone: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, x, y, z, anglein, angleout, voloutside)'
     },
 	sound_3d_set_sound_distance: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, mindist, maxdist)'
     },
 	sound_3d_set_sound_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, x, y, z)'
     },
 	sound_3d_set_sound_velocity: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, x, y, z)'
     },
 	sound_add: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname, kind, preload)'
     },
 	sound_background_tempo: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(factor)'
     },
 	sound_effect_chorus: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_compressor: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, gain, attack, release, threshold, ratio, delay)'
     },
 	sound_effect_echo: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, wetdry, feedback, leftdelay, rightdelay, pandelay)'
     },
 	sound_effect_equalizer: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, center, bandwidth, gain)'
     },
 	sound_effect_flanger: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_gargle: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, rate, wave)'
     },
 	sound_effect_reverb: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, gain, mix, time, ratio)'
     },
 	sound_effect_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(snd, effect)'
     },
 	sound_pan: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
-    },
-	sound_play: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(index, value)'
     },
 	sound_replace: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind, fname, kind, preload)'
     },
 	sound_set_search_directory: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(dir)'
     },
 	splash_set_adapt: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(adapt)'
     },
 	splash_set_border: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(border)'
     },
 	splash_set_caption: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(cap)'
     },
 	splash_set_close_button: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(show)'
     },
 	splash_set_color: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(col)'
     },
 	splash_set_cursor: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(vis)'
     },
 	splash_set_fullscreen: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(full)'
     },
 	splash_set_interrupt: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(interrupt)'
     },
 	splash_set_main: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(main)'
     },
 	splash_set_position: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	splash_set_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(scale)'
     },
 	splash_set_size: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(w, h)'
     },
 	splash_set_stop_key: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(stop)'
     },
 	splash_set_stop_mouse: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(stop)'
     },
 	splash_set_top: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(top)'
     },
 	splash_show_image: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname, delay)'
     },
 	splash_show_text: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname, delay)'
     },
 	splash_show_video: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname, loop)'
     },
 	splash_show_web: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(url, delay)'
     },
     sprite_add_from_screen: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind, x, y, w, h, removeback, smooth)'
     },
     sprite_add_sprite: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(fname)'
     },
     sprite_create_from_screen: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(x, y, w, h, removeback, smooth, xorig, yorig)'
     },
     sprite_replace_sprite: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7362,140 +7371,140 @@ exports.globalfunctions = {
     },
     timeline_moment_add: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(ind, step, codestr)'
     },
     transition_define: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(kind, name)'
     },
 	transition_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(kind)'
     },
 	variable_global_array2_get: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind1, ind2)'
     },
 	variable_global_array2_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind1, ind2, value)'
     },
 	variable_global_array_get: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind)'
     },
 	variable_global_array_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind, value)'
     },
     variable_local_array2_get: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind1, ind2)'
     },
 	variable_local_array2_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind1, ind2, value)'
     },
 	variable_local_array_get: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind)'
     },
 	variable_local_array_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, ind, value)'
     },
 	variable_local_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name)'
     },
 	variable_local_get: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name)'
     },
 	variable_local_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(name, value)'
     },
     window_default: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     window_get_region_height: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_region_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_region_width: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_showborder: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_showicons: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_sizeable: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
 	window_get_stayontop: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     window_get_visible: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     window_set_region_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(scale, adaptwindow)'
     },
 	window_set_region_size: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(w, h, adaptwindow)'
     },
 	window_set_showborder: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(show)'
     },
 	window_set_showicons: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(show)'
     },
 	window_set_sizeable: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(sizeable)'
     },
 	window_set_stayontop: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(stay)'
     },
 	window_set_visible: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(visible)'
     },
 	window_views_mouse_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(x, y)'
     },
 	window_view_mouse_set: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(id, x, y)'
     },
     
     texture_preload: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(texid)'
     },
     texture_set_priority: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '(texid, prio)'
     },
     display_get_colourdepth: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7507,7 +7516,7 @@ exports.globalfunctions = {
     },
     show_info: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '( )'
+        signature: '()'
     },
     load_info: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -8457,403 +8466,403 @@ exports.globalfunctions = {
     },
 	tile_set_mirror: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata, mirror)'
     },
 	tile_set_rotate: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata, rotate)'
     },
 	tile_get_empty: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata)'
     },
 	tile_get_index: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata)'
     },
 	tile_get_flip: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata)'
     },
 	tile_get_mirror: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata)'
     },
 	tile_get_rotate: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tiledata)'
     },
 	layer_tile_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, tile_element_id, ...)'
     },
 	layer_tile_create: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, x, y, tileset, left, top, width, height)'
     },
 	layer_tile_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_change: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, sprite)'
     },
 	layer_tile_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, scale)'
     },
 	layer_tile_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, scale)'
     },
 	layer_tile_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, col)'
     },
 	layer_tile_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, alpha)'
     },
 	layer_tile_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, x)'
     },
 	layer_tile_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, y)'
     },
 	layer_tile_region: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, left, top, width, height)'
     },
 	layer_tile_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id, visible)'
     },
 	layer_tile_get_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_region: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_tile_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(tile_element_id)'
     },
 	layer_instance_get_instance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(instance_element_id)'
     },
 	instance_activate_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	instance_deactivate_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id)'
     },
 	camera_create: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	camera_create_view: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(room_x, room_y, width, height, angle, object, x_speed, y_speed, x_border, y_border)'
     },
 	camera_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_apply: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_active: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	camera_get_default: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	camera_set_default: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_set_view_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, matrix)'
     },
 	camera_set_proj_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, matrix)'
     },
 	camera_set_update_script: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, script)'
     },
 	camera_set_begin_script: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, script)'
     },
 	camera_set_end_script: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, script)'
     },
 	camera_set_view_pos: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, x, y)'
     },
 	camera_set_view_size: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, width, height)'
     },
 	camera_set_view_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, x_speed, y_speed)'
     },
 	camera_set_view_border: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, x_border, y_border)'
     },
 	camera_set_view_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, angle)'
     },
 	camera_set_view_target: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera, object)'
     },
 	camera_get_view_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_proj_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_update_script: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_begin_script: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_end_script: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_width: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_height: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_speed_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_speed_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_border_x: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_border_y: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	camera_get_view_target: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(camera)'
     },
 	view_get_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_get_xport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_get_yport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_get_wport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_get_hport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_get_surface_id: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view)'
     },
 	view_set_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, camera)'
     },
 	view_set_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, visible)'
     },
 	view_set_xport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, xport)'
     },
 	view_set_yport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, yport)'
     },
 	view_set_wport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, wport)'
     },
 	view_set_hport: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, hport)'
     },
 	view_set_surface_id: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(view, surface_id)'
     },
 	gesture_drag_time: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(time)'
     },
 	gesture_drag_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(distance)'
     },
 	gesture_flick_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(speed)'
     },
 	gesture_double_tap_time: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(time)'
     },
 	gesture_double_tap_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(distance)'
     },
 	gesture_pinch_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(distance)'
     },
 	gesture_pinch_angle_towards: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(angle)'
     },
 	gesture_pinch_angle_away: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(angle)'
     },
 	gesture_rotate_time: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(time)'
     },
 	gesture_rotate_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(angle)'
     },
 	gesture_tap_count: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(enable)'
     },
 	gesture_get_drag_time: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_drag_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_flick_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_double_tap_time: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_double_tap_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_pinch_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_pinch_angle_towards: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_pinch_angle_away: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_rotate_time: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_rotate_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '()'
     },
 	gesture_get_tap_count: {
 		description: '[Function] (New in GameMaker Studio 2)',
-		signature: '( )'
+		signature: '()'
 	}
 };
 
