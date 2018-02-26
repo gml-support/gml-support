@@ -1,3 +1,8 @@
+## 1.4.0-pre3
+
+ - 内置函数的基本信息已经整理完毕。
+ - Built-in functions' basic information has been completed.
+
 ## 1.4.0-pre2
 
  - 补充了 [a~n] 的函数信息（`GMS` 部分）。
