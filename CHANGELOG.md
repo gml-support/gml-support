@@ -2,6 +2,8 @@
 
  - 内置函数的基本信息已经整理完毕。
  - Built-in functions' basic information has been completed.
+ - 修复了特征不完整的问题（需要测试）。
+ - Fix incomplete signature issue (need testing).
 
 ## 1.4.0-pre2
 

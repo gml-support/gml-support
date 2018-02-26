@@ -66,7 +66,7 @@ var GMLSignatureHelpProvider = /** @class */ (function () {
         if (!ident) {
             return null;
         }
-        var entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.keywords[ident];
+        var entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name];
         if (!entry || !entry.signature) {
             return null;
         }
