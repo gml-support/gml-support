@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const gmlGlobals = require("./gmlGlobals");
+const gmlThirdparty = require("./gmlThirdparty");
 const _NL = '\n'.charCodeAt(0);
 const _TAB = '\t'.charCodeAt(0);
 const _WSB = ' '.charCodeAt(0);
@@ -70,7 +71,7 @@ const GMLSignatureHelpProvider = /** @class */ ((() => {
             if (!ident) {
                 return null;
             }
-            const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.keywords[ident];
+            const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.keywords[ident] || gmlThirdparty.thirdfunctions[ident];
             if (!entry || !entry.signature) {
                 return null;
             }
