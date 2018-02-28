@@ -2,9 +2,16 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 
 exports.thirdfunctions = {
+    //Plugin: GMLive.gml
+    //Author: YellowAfterLife <https://yal.cc/>
+    //Website: https://yal.cc/introducing-gmlive-gml/
+             //https://yellowafterlife.itch.io/gamemaker-live
+             //https://marketplace.yoyogames.com/assets/5992/gmlive-gml-gms1-2-livecoding
+
+
     //Plugin: MaizeMusic
-    //Author: Mage 松仁玉米
-    //Website: http://www.magecorn.com
+    //Author: Mage 松仁玉米 <http://www.magecorn.com>
+    //Website: http://www.magecorn.com/p/254.shtml
     mm_init: {
         description: '[Function] (MaizeMusic Plugin)',
         signature: '(path)'
@@ -223,8 +230,8 @@ exports.thirdfunctions = {
     },
 
     //Plugin: FoxWriting
-    //Author: NoisyFox
-    //Website: https://noisyfox.io
+    //Author: NoisyFox <https://www.noisyfox.io>
+    //Website: https://www.noisyfox.io/fox-writing-gamemaker.html
     fw_add_font: {
         description: '[Function] (FoxWriting Plugin)',
         signature: '(name, size, bold, italic, stroke)'
@@ -326,8 +333,8 @@ exports.thirdfunctions = {
     },
 
     //Plugin: FoxWinShave
-    //Author: NoisyFox
-    //Website: https://noisyfox.io
+    //Author: NoisyFox <https://www.noisyfox.io>
+    //Website: https://www.noisyfox.io/31.html
     NF_WS_Init: {
         description: '[Function] (FoxWinShave Plugin)'
     },
@@ -347,48 +354,4 @@ exports.thirdfunctions = {
     },
 };
 
-exports.thirdconstants = {
-    //Plugin: MaizeMusic
-    //Author: Mage 松仁玉米
-    //Website: http://www.magecorn.com
-    se_chorus: {
-        description: '[Constant] (MaizeMusic Plugin)'
-    },
-    se_echo: {
-        description: '[Constant] (MaizeMusic Plugin)'
-    },
-    se_flanger: {
-        description: '[Constant] (MaizeMusic Plugin)'
-    },
-    se_gargle: {
-        description: '[Constant] (MaizeMusic Plugin)'
-    },
-    se_compressor: {
-        description: '[Constant] (MaizeMusic Plugin)'
-    },
-    se_equalizer: {
-        description: '[Constant] (MaizeMusic Plugin)'
-    },
-
-    //Plugin: FoxWriting
-    //Author: NoisyFox
-    //Website: https://noisyfox.io
-    fa_left: {
-        description: '[Constant] (FoxWriting Plugin)'
-    },
-    fa_center: {
-        description: '[Constant] (FoxWriting Plugin)'
-    },
-    fa_right: {
-        description: '[Constant] (FoxWriting Plugin)'
-    },
-    fa_top: {
-        description: '[Constant] (FoxWriting Plugin)'
-    },
-    fa_middle: {
-        description: '[Constant] (FoxWriting Plugin)'
-    },
-    fa_bottom: {
-        description: '[Constant] (FoxWriting Plugin)'
-    }
-}
+exports.thirdconstants = {}
