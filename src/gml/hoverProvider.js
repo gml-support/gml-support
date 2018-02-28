@@ -15,7 +15,7 @@ const GMLHoverProvider = ((() => {
                 return undefined;
             }
             const name = document.getText(wordRange);
-            const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name];
+            const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name] || gmlThirdparty.thirdconstants[name];
             return undefined;
         }
     }

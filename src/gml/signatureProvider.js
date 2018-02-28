@@ -71,7 +71,7 @@ const GMLSignatureHelpProvider = /** @class */ ((() => {
             if (!ident) {
                 return null;
             }
-            const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.keywords[ident] || gmlThirdparty.thirdfunctions[ident];
+            const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.keywords[ident] || gmlThirdparty.thirdfunctions[ident] || gmlThirdparty.thirdconstants[ident];
             if (!entry || !entry.signature) {
                 return null;
             }

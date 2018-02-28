@@ -44,6 +44,7 @@ class GMLCompletionItemProvider {
         const matches = (name) => {
             return prefix.length === 0 || name.length >= prefix.length && name.substr(0, prefix.length) === prefix;
         };
+        //Global
         for (const globalvariables in gmlGlobals.globalvariables) {
             if (gmlGlobals.globalvariables.hasOwnProperty(globalvariables) && matches(globalvariables)) {
                 added[globalvariables] = true;
@@ -68,10 +69,17 @@ class GMLCompletionItemProvider {
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Keyword, keywords, gmlGlobals.keywords[keywords]));
             }
         }
+        //Third-party
         for (const thirdfunctions in gmlThirdparty.thirdfunctions) {
             if (gmlThirdparty.thirdfunctions.hasOwnProperty(thirdfunctions) && matches(thirdfunctions)) {
                 added[thirdfunctions] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Function, thirdfunctions, gmlThirdparty.thirdfunctions[thirdfunctions]));
+            }
+        }
+        for (const thirdconstants in gmlThirdparty.thirdconstants) {
+            if (gmlThirdparty.thirdconstants.hasOwnProperty(thirdconstants) && matches(thirdconstants)) {
+                added[thirdconstants] = true;
+                result.push(createNewProposal(vscode_1.CompletionItemKind.Field, thirdconstants, gmlThirdparty.thirdconstants[thirdconstants]));
             }
         }
         const text = document.getText();
