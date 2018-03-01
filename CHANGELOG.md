@@ -1,3 +1,19 @@
+## 1.4.0
+
+经过了三个 Pre-release 后，这个正式版本终于可以使用了，虽然仍有一些不足，但至少这个版本稳定了嘛。
+
+ - 实现了 `Language Server`
+ - 精简了大量无用代码
+ - `GMS` 和 `GMS2` 内基本函数基本补全，`GM8.1` 大量常用函数也已补全
+ - 添加了第三方插件支持，现可在项目内的 `src/gml/gmlThirdparty.js` 贡献，具体支持列表可前往项目网站[查看](https://gmlsupport.liaronce.win/#/zh-cn/Thirdparty)。
+
+After three pre-release, the official version finally available, although there are some deficiencies, but at least this version of the stable thing.
+
+- Implemented `Language Server`
+- Streamlined a lot of useless code
+- The basic functions in `GMS` and `GMS2` are almost complete, and a large number of commonly used functions in `GM8.1` have also been completed
+- Added third-party plug-in support, specific support list can go to the project site to [view](https://gmlsupport.liaronce.win/#/Thirdparty).
+
 ## 1.3.8
 
  - 插件内移除自定义语法高亮支持（因为插件更新后会导致自定义高亮失效），我制作了一个新的插件以继续支持自定义高亮。[更多信息](https://gmlsupport.liaronce.win/#/zh-cn/OwnSyntax)
@@ -27,10 +43,10 @@
 
 ## 1.3.3
 
- - 从该版本开始，移除函数信息，[详情](https://gmlsupport.liaronce.win/#/zh-cn/?id=qampa)
- - From this version, remove the function info, [Details](https://gmlsupport.liaronce.win/#/?id=qampa)
- - 添加 `GMLive` 高亮支持,[详情](https://gmlsupport.liaronce.win/#/zh-cn/?id=about-gmlive)。
- - Add `GMLive` syntaxes support, [Details](https://gmlsupport.liaronce.win/#/?id=about-gmlive).
+ - 从该版本开始，移除函数信息，[详情](https://gmlsupport.liaronce.win/#/zh-cn/QA)
+ - From this version, remove the function info, [Details](https://gmlsupport.liaronce.win/#/QA)
+ - 添加 `GMLive` 高亮支持,[详情](https://gmlsupport.liaronce.win/#/zh-cn/QA)。
+ - Add `GMLive` syntaxes support, [Details](https://gmlsupport.liaronce.win/#/QA).
 
 ## 1.3.2
 
