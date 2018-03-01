@@ -13,20 +13,7 @@ GitHub: [https://github.com/LiarOnce/gml-support](https://github.com/LiarOnce/gm
 It is recommended to use the [vscode-icons](https://github.com/vscode-icons/vscode-icons) (7.9.0 and later) with this extension in Visual Studio Code.  
 
 GameMaker Language对Visual Studio Code的支持。      
-Visual Studio Code版本需高于1.8.0。  
-
-## What's new in dev?
-
-- 受 `Visual Studio Code` 内置的`PHP`插件的启发，使用了 `Language Server`。但这个部分并不完美，后续需要进行大量的修改和补充。
-- Inspired by the PHP extension built into Visual Studio Code, realized the `Language Server`.However, this part is not perfect, and a great deal of changes and supplements are required in the follow-up.
-
-![GIF.gif](https://i.loli.net/2018/02/15/5a85403570406.gif)
-
-- 精简了大量无用部分（说实话我都没注意）
-
-- Streamline a lot of useless parts.
-
-  ![snipaste_20180215_161833.png](https://i.loli.net/2018/02/15/5a854267bd247.png)
+Visual Studio Code版本需高于1.8.0。    
 
 ## Contributing
 

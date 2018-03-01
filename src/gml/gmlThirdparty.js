@@ -2,13 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 
 exports.thirdfunctions = {
-    //Plugin: GMLive.gml
-    //Author: YellowAfterLife <https://yal.cc/>
-    //Website: https://yal.cc/introducing-gmlive-gml/
-             //https://yellowafterlife.itch.io/gamemaker-live
-             //https://marketplace.yoyogames.com/assets/5992/gmlive-gml-gms1-2-livecoding
-
-
     //Plugin: MaizeMusic
     //Author: Mage 松仁玉米 <http://www.magecorn.com>
     //Website: http://www.magecorn.com/p/254.shtml
