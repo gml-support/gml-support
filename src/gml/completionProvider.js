@@ -7,7 +7,7 @@ class GMLCompletionItemProvider {
     constructor() {
         this.triggerCharacters = ['.'];
     }
-    provideCompletionItems(document, position, token) {
+    provideCompletionItems(document, position) {
         let result = [];
         let enable = vscode_1.workspace.getConfiguration('gml-gm81' || 'gml-gms' || 'gml-gms2').get('suggest.basic', true);
         if (!enable) {
@@ -26,18 +26,23 @@ class GMLCompletionItemProvider {
                 if (entry.description) {
                     proposal.documentation = entry.description;
                 }
+                
+                if (entry.signature) {
+                    proposal.detail = entry.signature;
+                }
+                /**
                 if (entry.parameters) {
-                    let signature = type ? `(${type}) ` : '';
+                    let signature = type ? '(' + type + ')' : '';
                     signature += name;
                     signature += '(';
                     if (entry.parameters && entry.parameters.length != 0) {
                         let params = '';
-                        entry.parameters.forEach(p => params += `${p.label},`);
+                        entry.parameters.forEach(p => params += p.label + ', ');
                         signature += params.slice(0, -1);
                     }
                     signature += ')';
                     proposal.detail = signature;
-                }
+                }**/
             }
             return proposal;
         };

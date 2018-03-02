@@ -57,7 +57,7 @@ const BackwardIterator = /** @class */ ((() => {
 })());
 const GMLSignatureHelpProvider = /** @class */ ((() => {
     class GMLSignatureHelpProvider {
-        provideSignatureHelp(document, position, _token) {
+        provideSignatureHelp(document, position, token) {
             let enable = vscode_1.workspace.getConfiguration('gml-gm81' || 'gml-gms' || 'gml-gms2').get('suggest.basic', true);
             if (!enable) {
                 return null;
