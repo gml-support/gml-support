@@ -3,20 +3,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 exports.globalfunctions = {
     abs: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: "The specified x" }
+        ],
 		signature: '(x)'
 	},
 	achievement_available: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_event: {
 		description: '[Function]',
 		signature: '(stringid)'
 	},
 	achievement_get_challenges: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_get_info: {
 		description: '[Function]',
@@ -31,28 +32,23 @@ exports.globalfunctions = {
 		signature: '(achievement_name, value)'
 	},
 	achievement_load_friends: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_load_leaderboard: {
 		description: '[Function]',
 		signature: '(ident, minindex, maxindex, filter)'
 	},
 	achievement_load_progress: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_login: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_login_status: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_logout: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_post: {
 		description: '[Function]',
@@ -63,8 +59,7 @@ exports.globalfunctions = {
 		signature: '(score_name, value)'
 	},
 	achievement_reset: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_send_challenge: {
 		description: '[Function]',
@@ -75,16 +70,14 @@ exports.globalfunctions = {
 		signature: '(type, val)'
 	},
 	achievement_show_achievements: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	achievement_show_challenge_notifications: {
 		description: '[Function]',
 		signature: '(receive_challenge, local_complete, remote_complete)'
 	},
 	achievement_show_leaderboards: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	alarm_get: {
 		description: '[Function]',
@@ -111,8 +104,7 @@ exports.globalfunctions = {
 		signature: '(val)'
 	},
 	application_get_position: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	application_surface_draw_enable: {
 		description: '[Function]',
@@ -123,8 +115,7 @@ exports.globalfunctions = {
 		signature: '(enable)'
 	},
 	application_surface_is_enabled: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	arccos: {
 		description: '[Function]',
@@ -207,8 +198,7 @@ exports.globalfunctions = {
 		signature: '(sync_group_id)'
 	},
 	audio_emitter_create: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	audio_emitter_exists: {
 		description: '[Function]',
@@ -295,8 +285,7 @@ exports.globalfunctions = {
 		signature: '(queueId)'
 	},
 	audio_get_listener_count: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	audio_get_listener_info: {
 		description: '[Function]',
@@ -315,8 +304,7 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	audio_get_recorder_count: {
-		description: '[Function]',
-		signature: '()'
+		description: '[Function]'
 	},
 	audio_get_recorder_info: {
 		description: '[Function]',
@@ -395,8 +383,7 @@ exports.globalfunctions = {
         signature: '(gain)'
     },
 	audio_pause_all: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	audio_pause_sound: {
         description: '[Function]',
@@ -427,8 +414,7 @@ exports.globalfunctions = {
         signature: '(queueId, buffer_id, offset, length)'
     },
 	audio_resume_all: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	audio_resume_sound: {
         description: '[Function]',
@@ -491,8 +477,7 @@ exports.globalfunctions = {
         signature: '(sync_group_id)'
     },
 	audio_stop_all: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	audio_stop_recording: {
         description: '[Function]',
@@ -519,8 +504,7 @@ exports.globalfunctions = {
         signature: '(sync_group_id)'
     },
 	audio_system: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	background_add: {
         description: '[Function]',
@@ -627,8 +611,7 @@ exports.globalfunctions = {
         signature: '(groupname)'
     },
 	buffer_async_group_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	buffer_async_group_option: {
         description: '[Function]',
@@ -815,12 +798,10 @@ exports.globalfunctions = {
         signature: '(buttonid, map)'
     },
 	clipboard_get_text: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	clipboard_has_text: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	clipboard_set_text: {
         description: '[Function]',
@@ -835,12 +816,10 @@ exports.globalfunctions = {
         signature: '(data, description)'
     },
 	cloud_synchronise: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	code_is_compiled: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	collision_circle: {
         description: '[Function]',
@@ -915,8 +894,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
 	d3d_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_light_define_ambient: {
         description: '[Function]',
@@ -947,16 +925,14 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_model_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_model_cylinder: {
         description: '[Function]',
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_model_destroy: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_model_draw: {
         description: '[Function]',
@@ -1047,8 +1023,7 @@ exports.globalfunctions = {
         signature: '(kind, texid)'
     },
 	d3d_primitive_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_set_culling: {
         description: '[Function]',
@@ -1099,8 +1074,7 @@ exports.globalfunctions = {
         signature: '(on_off)'
     },
 	d3d_start: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_add_rotation_axis: {
         description: '[Function]',
@@ -1127,8 +1101,7 @@ exports.globalfunctions = {
         signature: '(xt, yt, zt)'
     },
 	d3d_transform_set_identity: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_set_rotation_axis: {
         description: '[Function]',
@@ -1155,28 +1128,22 @@ exports.globalfunctions = {
         signature: '(xt, yt, zt)'
     },
 	d3d_transform_stack_clear: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_stack_discard: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_stack_empty: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_stack_pop: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_stack_push: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_stack_top: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	d3d_transform_vertex: {
         description: '[Function]',
@@ -1263,8 +1230,7 @@ exports.globalfunctions = {
         signature: '(year, month, day, hour, minute, second)'
     },
 	date_current_datetime: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	date_datetime_string: {
         description: '[Function]',
@@ -1327,8 +1293,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_timezone: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	date_get_week: {
         description: '[Function]',
@@ -1431,20 +1396,16 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	device_get_tilt_x: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	device_get_tilt_y: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	device_get_tilt_z: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	device_is_keypad_open: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	device_mouse_check_button: {
         description: '[Function]',
@@ -1499,28 +1460,22 @@ exports.globalfunctions = {
         signature: '(dname)'
     },
 	display_get_dpi_x: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_dpi_y: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_gui_height: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_gui_width: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_windows_alternate_sync: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_windows_vertex_buffer_method: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_set_gui_maximise: {
         description: '[Function]',
@@ -1655,8 +1610,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	draw_flush: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_getpixel: {
         description: '[Function]',
@@ -1667,28 +1621,22 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	draw_get_alpha: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_get_alpha_test: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_get_alpha_test_ref_value: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_get_color: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_get_colour: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_get_swf_aa_level: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_healthbar: {
         description: '[Function]',
@@ -1747,8 +1695,7 @@ exports.globalfunctions = {
         signature: '(kind, texid)'
     },
 	draw_primitive_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_rectangle: {
         description: '[Function]',
@@ -1787,8 +1734,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, radiusx, radiusy, outline)'
     },
 	draw_self: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_set_alpha: {
         description: '[Function]',
@@ -1943,8 +1889,7 @@ exports.globalfunctions = {
         signature: '(x, y, string)'
     },
 	draw_texture_flush: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	draw_text_color: {
         description: '[Function]',
@@ -2051,28 +1996,22 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	display_get_colordepth: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_height: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_orientation: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_get_width: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_mouse_get_x: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_mouse_get_y: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	display_mouse_set: {
         description: '[Function]',
@@ -2255,8 +2194,7 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_list_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ds_list_delete: {
         description: '[Function]',
@@ -2335,8 +2273,7 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_map_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ds_map_delete: {
         description: '[Function]',
@@ -2431,8 +2368,7 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_priority_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ds_priority_delete_max: {
         description: '[Function]',
@@ -2487,8 +2423,7 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_queue_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ds_queue_dequeue: {
         description: '[Function]',
@@ -2539,8 +2474,7 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_stack_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ds_stack_destroy: {
         description: '[Function]',
@@ -2579,8 +2513,7 @@ exports.globalfunctions = {
         signature: '(degree_angle)'
     },
 	effect_clear: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	effect_create_above: {
         description: '[Function]',
@@ -2595,8 +2528,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	event_inherited: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	event_perform: {
         description: '[Function]',
@@ -2627,8 +2559,7 @@ exports.globalfunctions = {
         signature: '(dllname)'
     },
 	facebook_accesstoken: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	facebook_check_permission: {
         description: '[Function]',
@@ -2643,8 +2574,7 @@ exports.globalfunctions = {
         signature: '(graph_path, httpMethod, ds_map_params, ds_map_response)'
     },
 	facebook_init: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	facebook_launch_offerwall: {
         description: '[Function]',
@@ -2655,8 +2585,7 @@ exports.globalfunctions = {
         signature: '(ds_list_of_permissions,  ios_login_type)'
     },
 	facebook_logout: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	facebook_post_message: {
         description: '[Function]',
@@ -2675,12 +2604,10 @@ exports.globalfunctions = {
         signature: '(title, message, picture_url, redirect_url, ds_map_response)'
     },
 	facebook_status: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	facebook_user_id: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	filename_change_ext: {
         description: '[Function]',
@@ -2755,16 +2682,14 @@ exports.globalfunctions = {
         signature: '(fname)'
     },
 	file_find_close: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	file_find_first: {
         description: '[Function]',
         signature: '(mask, attr)'
     },
 	file_find_next: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	file_rename: {
         description: '[Function]',
@@ -2943,16 +2868,14 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	gamepad_get_device_count: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	gamepad_is_connected: {
         description: '[Function]',
         signature: '(device)'
     },
 	gamepad_is_supported: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	gamepad_set_axis_deadzone: {
         description: '[Function]',
@@ -2975,8 +2898,7 @@ exports.globalfunctions = {
         signature: '(device, leftMotorSpeed, rightMotorSpeed)'
     },
 	game_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	game_load: {
         description: '[Function]',
@@ -2987,8 +2909,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	game_restart: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	game_save: {
         description: '[Function]',
@@ -3035,8 +2956,7 @@ exports.globalfunctions = {
         signature: '(str, def)'
     },
 	get_timer: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	gml_pragma: {
         description: '[Function]',
@@ -3051,8 +2971,7 @@ exports.globalfunctions = {
         signature: '(str, numb)'
     },
 	highscore_clear: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	highscore_name: {
         description: '[Function]',
@@ -3107,24 +3026,20 @@ exports.globalfunctions = {
         signature: '(product_id, ds_map)'
     },
 	iap_restore_all: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	iap_status: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	immersion_play_effect: {
         description: '[Function]',
         signature: '(effect)'
     },
 	immersion_stop: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ini_close: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	ini_key_delete: {
         description: '[Function]',
@@ -3167,8 +3082,7 @@ exports.globalfunctions = {
         signature: '(section, key, str)'
     },
 	instance_activate_all: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	instance_activate_object: {
         description: '[Function]',
@@ -3239,8 +3153,7 @@ exports.globalfunctions = {
         signature: '(val)'
     },
 	io_clear: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	irandom: {
         description: '[Function]',
@@ -3391,8 +3304,7 @@ exports.globalfunctions = {
         signature: '(key)'
     },
 	keyboard_get_numlock: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	keyboard_key_press: {
         description: '[Function]',
@@ -3411,8 +3323,7 @@ exports.globalfunctions = {
         signature: '(bool)'
     },
 	keyboard_unset_map: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	lengthdir_x: {
         description: '[Function]',
@@ -3459,8 +3370,7 @@ exports.globalfunctions = {
         signature: '(red, green, blue)'
     },
 	math_get_epsilon: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	math_set_epsilon: {
         description: '[Function]',
@@ -3539,12 +3449,10 @@ exports.globalfunctions = {
         signature: '(button)'
     },
 	mouse_wheel_down: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	mouse_wheel_up: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	move_bounce_all: {
         description: '[Function]',
@@ -3807,28 +3715,22 @@ exports.globalfunctions = {
         signature: '(char)'
     },
 	os_get_config: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	os_get_info: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	os_get_language: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	os_get_region: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	os_is_network_connected: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	os_is_paused: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	os_lock_orientation: {
         description: '[Function]',
@@ -3839,8 +3741,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	parameter_count: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	parameter_string: {
         description: '[Function]',
@@ -3911,8 +3812,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	part_system_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	part_system_depth: {
         description: '[Function]',
@@ -4011,8 +3911,7 @@ exports.globalfunctions = {
         signature: '(ind, rmin, rmax, gmin, gmax, bmin, bmax)'
     },
 	part_type_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	part_type_death: {
         description: '[Function]',
@@ -4067,8 +3966,7 @@ exports.globalfunctions = {
         signature: '(ind, step_number, step_type)'
     },
 	path_add: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	path_add_point: {
         description: '[Function]',
@@ -4103,8 +4001,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	path_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	path_exists: {
         description: '[Function]',
@@ -4231,8 +4128,7 @@ exports.globalfunctions = {
         signature: '(torque)'
     },
 	physics_draw_debug: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_fixture_add_point: {
         description: '[Function]',
@@ -4247,8 +4143,7 @@ exports.globalfunctions = {
         signature: '(fixture, obj, xo, yo)'
     },
 	physics_fixture_create: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_fixture_delete: {
         description: '[Function]',
@@ -4379,8 +4274,7 @@ exports.globalfunctions = {
         signature: '(mass, local_centre_of_mass_x, local_centre_of_mass_y, inertia)'
     },
 	physics_particle_count: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_create: {
         description: '[Function]',
@@ -4411,8 +4305,7 @@ exports.globalfunctions = {
         signature: '(typemask, category, sprite, subimg, xscale, yscale, angle, col, alpha)'
     },
 	physics_particle_get_damping: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_get_data: {
         description: '[Function]',
@@ -4423,24 +4316,20 @@ exports.globalfunctions = {
         signature: '(ind, buffer, dataFlags)'
     },
 	physics_particle_get_density: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_get_gravity_scale: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_get_group_flags: {
         description: '[Function]',
         signature: '(group)'
     },
 	physics_particle_get_max_count: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_get_radius: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_group_add_point: {
         description: '[Function]',
@@ -4467,8 +4356,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	physics_particle_group_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_group_get_angle: {
         description: '[Function]',
@@ -4519,8 +4407,7 @@ exports.globalfunctions = {
         signature: '(to, from)'
     },
 	physics_particle_group_polygon: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	physics_particle_set_category_flags: {
         description: '[Function]',
@@ -4687,12 +4574,10 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	randomize: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	random_get_seed: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	random_old: {
         description: '[Function]',
@@ -4731,8 +4616,7 @@ exports.globalfunctions = {
         signature: '(sx1, sy1, sx2, sy2, x1, y1, x2, y2, x3, y3)'
     },
 	room_add: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	room_assign: {
         description: '[Function]',
@@ -4755,12 +4639,10 @@ exports.globalfunctions = {
         signature: '(numb)'
     },
 	room_goto_next: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	room_goto_previous: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	room_instance_add: {
         description: '[Function]',
@@ -4779,8 +4661,7 @@ exports.globalfunctions = {
         signature: '(numb)'
     },
 	room_restart: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	room_set_background: {
         description: '[Function]',
@@ -4863,8 +4744,7 @@ exports.globalfunctions = {
         signature: '(string)'
     },
 	shaders_are_supported: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	shader_enable_corner_id: {
         description: '[Function]',
@@ -4883,8 +4763,7 @@ exports.globalfunctions = {
         signature: '(shader)'
     },
 	shader_reset: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	shader_set: {
         description: '[Function]',
@@ -4959,8 +4838,7 @@ exports.globalfunctions = {
         signature: '(track)'
     },
 	skeleton_animation_get: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	skeleton_animation_get_duration: {
         description: '[Function]',
@@ -5027,16 +4905,13 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	skeleton_get_minmax: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	skeleton_get_num_bounds: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	skeleton_skin_get: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	skeleton_skin_list: {
         description: '[Function]',
@@ -5207,8 +5082,7 @@ exports.globalfunctions = {
         signature: '(dialog_name, steamid)'
     },
 	steam_available_languages: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_clear_achievement: {
         description: '[Function]',
@@ -5219,8 +5093,7 @@ exports.globalfunctions = {
         signature: '(lb_name, sort_method, display_type)'
     },
 	steam_current_game_language: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_download_friends_scores: {
         description: '[Function]',
@@ -5271,20 +5144,16 @@ exports.globalfunctions = {
         signature: '(ach_name)'
     },
 	steam_get_app_id: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_get_persona_name: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_get_quota_free: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_get_quota_total: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_get_stat_avg_rate: {
         description: '[Function]',
@@ -5299,56 +5168,45 @@ exports.globalfunctions = {
         signature: '(stat_name)'
     },
 	steam_get_user_account_id: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_get_user_persona_name: {
         description: '[Function]',
         signature: '(steam_id)'
     },
 	steam_get_user_steam_id: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_initialised: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_is_cloud_enabled_for_account: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_is_cloud_enabled_for_app: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_is_overlay_activated: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_is_overlay_enabled: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_is_screenshot_requested: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_is_user_logged_on: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_publish_workshop_file: {
         description: '[Function]',
         signature: '(filename, previewImage, title, description)'
     },
 	steam_reset_all_stats: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_reset_all_stats_achievements: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_send_screenshot: {
         description: '[Function]',
@@ -5371,8 +5229,7 @@ exports.globalfunctions = {
         signature: '(stat_name, value)'
     },
 	steam_stats_ready: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_ugc_create_item: {
         description: '[Function]',
@@ -5415,8 +5272,7 @@ exports.globalfunctions = {
         signature: '(item_list)'
     },
 	steam_ugc_num_subscribed_items: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	steam_ugc_query_add_excluded_tag: {
         description: '[Function]',
@@ -5671,8 +5527,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	surface_reset_target: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	surface_resize: {
         description: '[Function]',
@@ -5767,8 +5622,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	tile_get_count: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	tile_get_depth: {
         description: '[Function]',
@@ -5783,8 +5637,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	tile_get_ids: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	tile_get_ids_at_depth: {
         description: '[Function]',
@@ -5883,8 +5736,7 @@ exports.globalfunctions = {
         signature: '(id, visible)'
     },
 	timeline_add: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	timeline_clear: {
         description: '[Function]',
@@ -5923,8 +5775,7 @@ exports.globalfunctions = {
         signature: '(val)'
     },
 	url_get_domain: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	url_open: {
         description: '[Function]',
@@ -5955,8 +5806,7 @@ exports.globalfunctions = {
         signature: '(vbuff, colour, alpha)'
     },
 	vertex_create_buffer: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_create_buffer_ext: {
         description: '[Function]',
@@ -5995,44 +5845,36 @@ exports.globalfunctions = {
         signature: '(vbuff, f1, f2, f3, f4)'
     },
 	vertex_format_add_color: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_add_colour: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_add_custom: {
         description: '[Function]',
         signature: '(type, usage)'
     },
 	vertex_format_add_normal: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_add_position: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_add_position_3d: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_add_textcoord: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_begin: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_format_delete: {
         description: '[Function]',
         signature: '(format_id)'
     },
 	vertex_format_end: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	vertex_freeze: {
         description: '[Function]',
@@ -6087,68 +5929,53 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	window_center: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_device: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_caption: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_color: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_colour: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_cursor: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_fullscreen: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_height: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_visible_rects: {
         description: '[Function]',
         signature: '(startx, starty, eendx, endy)'
     },
 	window_get_width: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_x: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_get_y: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_handle: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_has_focus: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_mouse_get_x: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_mouse_get_y: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_mouse_set: {
         description: '[Function]',
@@ -6203,12 +6030,10 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	window_views_mouse_get_x: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_views_mouse_get_y: {
-        description: '[Function]',
-        signature: '()'
+        description: '[Function]'
     },
 	window_view_mouse_get_x: {
         description: '[Function]',
@@ -6259,16 +6084,13 @@ exports.globalfunctions = {
 
     //These functions are deprecated.
     pocketchange_display_reward: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	pocketchange_display_shop: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	iap_store_status: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	iap_product_status: {
         description: '[Function] (This function is deprecated)',
@@ -6279,16 +6101,14 @@ exports.globalfunctions = {
         signature: '(purchase_id_string)'
     },
 	iap_files_purchased: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	iap_product_files: {
         description: '[Function] (This function is deprecated)',
         signature: '(purchase_id, ds_list)'
     },
 	iap_event_queue: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
     win8_appbar_add_element: {
         description: '[Function] (This function is deprecated)',
@@ -6303,20 +6123,17 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	win8_device_touchscreen_available: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	win8_license_initialize_sandbox: {
         description: '[Function] (This function is deprecated)',
         signature: '(_licenseString)'
     },
 	win8_license_trial_version: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	win8_livetile_badge_clear: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	win8_livetile_badge_notification: {
         description: '[Function] (This function is deprecated)',
@@ -6327,8 +6144,7 @@ exports.globalfunctions = {
         signature: '(template)'
     },
 	win8_livetile_notification_end: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	win8_livetile_notification_expiry: {
         description: '[Function] (This function is deprecated)',
@@ -6355,8 +6171,7 @@ exports.globalfunctions = {
         signature: '(flag)'
     },
 	win8_livetile_tile_clear: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	win8_livetile_tile_notification: {
         description: '[Function] (This function is deprecated)',
@@ -6367,8 +6182,7 @@ exports.globalfunctions = {
         signature: '(_dslist)'
     },
 	win8_search_disable: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	win8_search_enable: {
         description: '[Function] (This function is deprecated)',
@@ -6431,8 +6245,7 @@ exports.globalfunctions = {
         signature: '(url, title, description, immediate)'
     },
     winphone_license_trial_version: {
-        description: '[Function] (This function is deprecated)',
-        signature: '()'
+        description: '[Function] (This function is deprecated)'
     },
 	winphone_tile_background_color: {
         description: '[Function] (This function is deprecated)',
@@ -6505,12 +6318,10 @@ exports.globalfunctions = {
 
     //Obsolete functions in new GameMaker Studio
     device_ios_get_image: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	device_ios_get_imagename: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
     sound_delete: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6553,8 +6364,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	sound_stop_all: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	sound_volume: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6573,24 +6383,20 @@ exports.globalfunctions = {
         signature: '(index)'
     },
     audio_music_is_playing: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
     audio_resume_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
     audio_pause_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	audio_play_music: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
         signature: '(soundid,loops)'
     },
 	audio_stop_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	audio_music_gain: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6605,16 +6411,13 @@ exports.globalfunctions = {
 		signature: '(x, y, num)'
 	},
 	ads_engagement_active: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
-		signature: '()'
+		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_engagement_available: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
-		signature: '()'
+		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_engagement_launch: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
-		signature: '()'
+		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_event: {
 		description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6633,12 +6436,10 @@ exports.globalfunctions = {
 		signature: '(slotnum)'
 	},
 	ads_interstitial_available: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
-		signature: '()'
+		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_interstitial_display: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
-		signature: '()'
+		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_move: {
 		description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6668,8 +6469,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h)'
     },
     openfeint_accept_challenge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	openfeint_send_challenge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6692,8 +6492,7 @@ exports.globalfunctions = {
         signature: '(url)'
     },
 	openfeint_start: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '()'
+        description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	achievement_map_achievement: {
 		description: '[Function] (Obsolete function in new GameMaker Studio)',
@@ -6704,8 +6503,7 @@ exports.globalfunctions = {
 		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
 	},
 	achievement_is_online: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
-		signature: '()'
+		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 
 	//GameMaker 8.1 Only
@@ -6718,52 +6516,41 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, removeback, smooth)'
     },
     cd_close_door: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_init: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     cd_length: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_number: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_open_door: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_pause: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_paused: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_play: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '(first, last)'
     },
 	cd_playing: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_present: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_resume: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_set_position: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6774,20 +6561,17 @@ exports.globalfunctions = {
         signature: '(pos)'
     },
 	cd_stop: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_track: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	cd_track_length: {
         description: '[Function] (GameMaker 8.1 Only)',
         signature: '(n)'
     },
 	cd_track_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     date_create_date: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6798,12 +6582,10 @@ exports.globalfunctions = {
         signature: '(hour, minute, second)'
     },
 	date_current_date: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     date_current_time: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     date_valid_date: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6882,8 +6664,7 @@ exports.globalfunctions = {
         signature: '(capt, root)'
     },
     highscore_add_current: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     highscore_set_background: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6914,12 +6695,10 @@ exports.globalfunctions = {
         signature: '(numb, back, border, col1, col2, name, size)'
     },
     io_handle: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     keyboard_wait: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	MCI_command: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -6974,12 +6753,10 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
     mouse_wait: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     object_add: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	object_delete: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7162,16 +6939,13 @@ exports.globalfunctions = {
         signature: '(ind, codestr)'
     },
     screen_redraw: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     screen_refresh: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     screen_wait_vsync: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     script_get_text: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7426,40 +7200,31 @@ exports.globalfunctions = {
         signature: '(name, value)'
     },
     window_default: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     window_get_region_height: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	window_get_region_scale: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	window_get_region_width: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	window_get_showborder: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	window_get_showicons: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	window_get_sizeable: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
 	window_get_stayontop: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     window_get_visible: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     window_set_region_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7507,16 +7272,13 @@ exports.globalfunctions = {
         signature: '(texid, prio)'
     },
     display_get_colourdepth: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     display_get_frequency: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     show_info: {
-        description: '[Function] (GameMaker 8.1 Only)',
-        signature: '()'
+        description: '[Function] (GameMaker 8.1 Only)'
     },
     load_info: {
         description: '[Function] (GameMaker 8.1 Only)',
@@ -7589,8 +7351,7 @@ exports.globalfunctions = {
         signature: '(ind, layer)'
     },
 	matrix_build_identity: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	matrix_build_lookat: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7617,24 +7378,20 @@ exports.globalfunctions = {
         signature: '(...)'
     },
 	matrix_stack_pop: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	matrix_stack_set: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(matrix)'
     },
 	matrix_stack_clear: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	matrix_stack_top: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	matrix_stack_is_empty: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_set_blendenable: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7773,168 +7530,137 @@ exports.globalfunctions = {
         signature: '(sampler_id, setting)'
     },
 	gpu_get_blendenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_ztestenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_zfunc: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_zwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_fog: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_cullmode: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode_ext_sepalpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode_src: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode_dest: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode_srcalpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_blendmode_destalpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_colorwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_colourwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_alphatestenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_alphatestref: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_alphatestfunc: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_texfilter: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_texfilter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_texrepeat: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_texrepeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_filter: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_repeat: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_repeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_filter: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_mip_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_bias: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_mip_bias_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_min_mip: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_min_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_mip: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_max_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_aniso: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_max_aniso_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_enable: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_tex_mip_enable_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(sampler_id)'
     },
 	gpu_push_state: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_pop_state: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_get_state: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gpu_set_state: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -7961,16 +7687,14 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	draw_light_get_ambient: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	draw_light_get: {
         description: '[Function] (New in GameMaker Studio 2)',
         signature: '(ind)'
     },
 	draw_get_lighting: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	load_csv: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8089,16 +7813,13 @@ exports.globalfunctions = {
         signature: '(room)'
     },
 	layer_get_target_room: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	layer_reset_target_room: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	layer_get_all: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	layer_get_all_elements: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8129,12 +7850,10 @@ exports.globalfunctions = {
         signature: '(force, depth)'
     },
 	layer_is_draw_depth_forced: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	layer_get_forced_depth: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	layer_background_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8433,12 +8152,10 @@ exports.globalfunctions = {
         signature: '(tileset, tiledata, frame, x, y)'
     },
 	tilemap_set_global_mask: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	tilemap_get_global_mask: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	tilemap_set_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8589,8 +8306,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	camera_create: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	camera_create_view: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8605,12 +8321,10 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_active: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	camera_get_default: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	camera_set_default: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -8821,48 +8535,37 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gesture_get_drag_time: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_drag_distance: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_flick_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_double_tap_time: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_double_tap_distance: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_pinch_distance: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_pinch_angle_towards: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_pinch_angle_away: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_rotate_time: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_rotate_angle: {
-        description: '[Function] (New in GameMaker Studio 2)',
-        signature: '()'
+        description: '[Function] (New in GameMaker Studio 2)'
     },
 	gesture_get_tap_count: {
-		description: '[Function] (New in GameMaker Studio 2)',
-		signature: '()'
+		description: '[Function] (New in GameMaker Studio 2)'
 	}
 };
 
