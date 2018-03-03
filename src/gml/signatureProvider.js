@@ -70,15 +70,6 @@ class GMLSignatureHelpProvider {
         if (!entry || !entry.signature) {
             return null;
         }
-        /*
-        const paramsString = entry.signature.substring(0, entry.signature.lastIndexOf(')') + 1);
-        const signatureInfo = new vscode_1.SignatureInformation(ident + paramsString, entry.description);
-        const re = /\w*\s+\&?\$[\w_\.]+|void/g;
-        let match = null;
-        while ((match = re.exec(paramsString)) !== null) {
-            signatureInfo.parameters.push({ label: match[0], documentation: '' });
-        }
-        */
         let infos = [];
         let signature = ident;
         signature += '(';

@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//const nls = require("vscode-nls");  //Not available
+//const localize = nls.loadMessageBundle(__filename);  //Not available
 
 exports.globalfunctions = {
     abs: {
         description: '[Function]',
         parameters: [
-            { label: 'x', documentation: "The specified x" }
+            { label: 'x', documentation: '' }
         ],
 		signature: '(x)'
 	},
@@ -13,29 +15,48 @@ exports.globalfunctions = {
 		description: '[Function]'
 	},
 	achievement_event: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'stringid', documentation: '' }
+        ],
 		signature: '(stringid)'
 	},
 	achievement_get_challenges: {
 		description: '[Function]'
 	},
 	achievement_get_info: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'userid', documentation: '' }
+        ],
 		signature: '(userid)'
 	},
 	achievement_get_pic: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'char', documentation: '' }
+        ],
 		signature: '(char)'
 	},
 	achievement_increment: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'achievement_name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
 		signature: '(achievement_name, value)'
 	},
 	achievement_load_friends: {
 		description: '[Function]'
 	},
 	achievement_load_leaderboard: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'ident', documentation: '' },
+            { label: 'minindex', documentation: '' },
+            { label: 'maxindex', documentation: '' },
+            { label: 'filter', documentation: '' }
+        ],
 		signature: '(ident, minindex, maxindex, filter)'
 	},
 	achievement_load_progress: {
@@ -51,126 +72,233 @@ exports.globalfunctions = {
 		description: '[Function]'
 	},
 	achievement_post: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'achievement_name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
 		signature: '(achievement_name, value)'
 	},
 	achievement_post_score: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'score_name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
 		signature: '(score_name, value)'
 	},
 	achievement_reset: {
 		description: '[Function]'
 	},
 	achievement_send_challenge: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'to', documentation: '' },
+            { label: 'challengeid', documentation: '' },
+            { label: 'score', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'msg', documentation: '' }
+        ],
 		signature: '(to, challengeid, score, type, msg)'
 	},
 	achievement_show: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'type', documentation: '' },
+            { label: 'val', documentation: '' }
+        ],
 		signature: '(type, val)'
 	},
 	achievement_show_achievements: {
 		description: '[Function]'
 	},
 	achievement_show_challenge_notifications: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'receive_challenge', documentation: '' },
+            { label: 'local_complete', documentation: '' },
+            { label: 'remote_complete', documentation: '' }
+        ],
 		signature: '(receive_challenge, local_complete, remote_complete)'
 	},
 	achievement_show_leaderboards: {
 		description: '[Function]'
 	},
 	alarm_get: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
 		signature: '(index)'
 	},
 	alarm_set: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'count', documentation: '' }
+        ],
 		signature: '(index, count)'
 	},
 	analytics_event: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' }
+        ],
 		signature: '(string)'
 	},
 	analytics_event_ext: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' },
+            { label: 'string_param_name1', documentation: '' },
+            { label: 'number_value1', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
 		signature: '(string, string_param_name1, number_value1, ...)'
 	},
 	angle_difference: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'src', documentation: '' },
+            { label: 'dest', documentation: '' }
+        ],
 		signature: '(src, dest)'
 	},
 	ansi_char: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'val', documentation: '' }
+        ],
 		signature: '(val)'
 	},
 	application_get_position: {
 		description: '[Function]'
 	},
 	application_surface_draw_enable: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'on_off', documentation: '' }
+        ],
 		signature: '(on_off)'
 	},
 	application_surface_enable: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
 		signature: '(enable)'
 	},
 	application_surface_is_enabled: {
 		description: '[Function]'
 	},
 	arccos: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
 		signature: '(x)'
 	},
 	arcsin: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
 		signature: '(x)'
 	},
 	arctan: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
 		signature: '(x)'
 	},
 	arctan2: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'y', documentation: '' },
+            { label: 'x', documentation: '' }
+        ],
 		signature: '(y, x)'
 	},
 	array_copy: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'dest', documentation: '' },
+            { label: 'dest_index', documentation: '' },
+            { label: 'src', documentation: '' },
+            { label: 'src_index', documentation: '' },
+            { label: 'length', documentation: '' }
+        ],
 		signature: '(dest, dest_index, src, src_index, length)'
 	},
 	array_create: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'size', documentation: '' }
+        ],
 		signature: '(size)'
 	},
 	array_equals: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'var1', documentation: '' },
+            { label: 'var2', documentation: '' }
+        ],
 		signature: '(var1, var2)'
 	},
 	array_height_2d: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'variable', documentation: '' }
+        ],
 		signature: '(variable)'
 	},
 	array_length_1d: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'variable', documentation: '' }
+        ],
 		signature: '(variable)'
 	},
 	array_length_2d: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'variable', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
 		signature: '(variable, index)'
 	},
 	asset_get_index: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
 		signature: '(name)'
 	},
 	asset_get_type: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
 		signature: '(name)'
 	},
 	audio_channel_num: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'numchannels', documentation: '' }
+        ],
 		signature: '(numchannels)'
 	},
 	audio_create_buffer_sound: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'bufferId', documentation: '' },
+            { label: 'format', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'src_index', documentation: '' },
+            { label: 'length', documentation: '' },
+            { label: 'channels', documentation: '' }
+        ],
 		signature: '(bufferId, format, rate, offset, length, channels)'
 	},
 	audio_create_play_queue: {
