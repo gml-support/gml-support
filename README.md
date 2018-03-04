@@ -26,7 +26,4 @@ Twitter Channel: [#GML_Support](https://twitter.com/hashtag/GML_Support)
 
 ## Thanks
 
-[@laspencer91](https://github.com/laspencer91)
-
-GameMaker Syntax：[YellowAfterlife](https://yal.cc/notepad-syntax-highlighting-for-gamemaker-81/)  
-GameMaker Studio Syntax & GameMaker Studio 2 Syntax：[Uduse/Sublime-GameMaker-Studio-Language-Bundle](https://github.com/Uduse/Sublime-GameMaker-Studio-Language-Bundle)  with Apache-2.0
+[https://gmlsupport.liaronce.win/#/?id=credits](https://gmlsupport.liaronce.win/#/?id=credits)

@@ -7,6 +7,7 @@
   "publisherName": "LiarOnce",
   "icon": "icon.png",
   "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/LiarOnce/gml-support/blob/master/README.md",
   "engines": {
     "vscode": "^1.8.0"
   },
