@@ -302,212 +302,399 @@ exports.globalfunctions = {
 		signature: '(bufferId, format, rate, offset, length, channels)'
 	},
 	audio_create_play_queue: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'bufferFormat', documentation: '' },
+            { label: 'sampleRate', documentation: '' },
+            { label: 'channels', documentation: '' }
+        ],
 		signature: '(bufferFormat, sampleRate, channels)'
 	},
 	audio_create_stream: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
 		signature: '(filename)'
 	},
 	audio_create_sync_group: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'looping', documentation: '' }
+        ],
 		signature: '(looping)'
 	},
 	audio_debug: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
 		signature: '(enable)'
 	},
 	audio_destroy_stream: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'stream_sound_id', documentation: '' }
+        ],
 		signature: '(stream_sound_id)'
 	},
 	audio_destroy_sync_group: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
 		signature: '(sync_group_id)'
 	},
 	audio_emitter_create: {
 		description: '[Function]'
 	},
 	audio_emitter_exists: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_falloff: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'falloff_ref_dist', documentation: '' },
+            { label: 'falloff_max_dist', documentation: '' },
+            { label: 'falloff_factor', documentation: '' }
+        ],
 		signature: '(emitterid, falloff_ref_dist, falloff_max_dist, falloff_factor)'
 	},
 	audio_emitter_free: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_gain: {
-		description: '[Function]',
-		signature: '(emitterid,gain)'
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'gain', documentation: '' }
+        ],
+		signature: '(emitterid, gain)'
 	},
 	audio_emitter_get_gain: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_listener_mask: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_pitch: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_vx: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_vy: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_vz: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_x: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_y: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_z: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' }
+        ],
 		signature: '(emitterid)'
 	},
 	audio_emitter_pitch: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'pitch', documentation: '' }
+        ],
 		signature: '(emitterid, pitch)'
 	},
 	audio_emitter_position: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
 		signature: '(emitterid, x, y, z)'
 	},
 	audio_emitter_set_listener_mask: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'mask', documentation: '' }
+        ],
 		signature: '(emitterid, mask)'
 	},
 	audio_emitter_velocity: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'vx', documentation: '' },
+            { label: 'vy', documentation: '' },
+            { label: 'vz', documentation: '' }
+        ],
 		signature: '(emitterid, vx, vy, vz)'
 	},
 	audio_exists: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
 		signature: '(soundid)'
 	},
 	audio_falloff_set_model: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'falloffmode', documentation: '' }
+        ],
 		signature: '(falloffmode)'
 	},
 	audio_free_buffer_sound: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
 		signature: '(soundId)'
 	},
 	audio_free_play_queue: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'queueid', documentation: '' }
+        ],
 		signature: '(queueId)'
 	},
 	audio_get_listener_count: {
 		description: '[Function]'
 	},
 	audio_get_listener_info: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
 		signature: '(index)'
 	},
 	audio_get_listener_mask: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'mask', documentation: '' }
+        ],
 		signature: '(mask)'
 	},
 	audio_get_master_gain: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'listenerIndex', documentation: '' }
+        ],
 		signature: '(listenerIndex)'
 	},
 	audio_get_name: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
 		signature: '(index)'
 	},
 	audio_get_recorder_count: {
 		description: '[Function]'
 	},
 	audio_get_recorder_info: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'recorder_num', documentation: '' }
+        ],
 		signature: '(recorder_num)'
 	},
 	audio_get_type: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
 		signature: '(soundid)'
 	},
 	audio_group_is_loaded: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' }
+        ],
 		signature: '(groupId)'
 	},
 	audio_group_load: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' }
+        ],
 		signature: '(groupId)'
 	},
 	audio_group_load_progress: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' }
+        ],
 		signature: '(groupId)'
 	},
 	audio_group_name: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' }
+        ],
 		signature: '(groupId)'
 	},
 	audio_group_set_gain: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' },
+            { label: 'volume', documentation: '' },
+            { label: 'time', documentation: '' }
+        ],
 		signature: '(groupId, volume, time)'
 	},
 	audio_group_stop_all: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' }
+        ],
 		signature: '(groupId)'
 	},
 	audio_group_unload: {
-		description: '[Function]',
+        description: '[Function]',
+        parameters: [
+            { label: 'groupId', documentation: '' }
+        ],
 		signature: '(groupId)'
 	},
 	audio_is_paused: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_is_playing: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_listener_get_data: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	audio_listener_orientation: {
         description: '[Function]',
+        parameters: [
+            { label: 'lookat_x', documentation: '' },
+            { label: 'lookat_y', documentation: '' },
+            { label: 'lookat_z', documentation: '' },
+            { label: 'up_x', documentation: '' },
+            { label: 'up_y', documentation: '' },
+            { label: 'up_z', documentation: '' }
+        ],
         signature: '(lookat_x, lookat_y, lookat_z, up_x, up_y, up_z)'
     },
 	audio_listener_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(x, y, z)'
     },
 	audio_listener_set_orientation: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'lookat_x', documentation: '' },
+            { label: 'lookat_y', documentation: '' },
+            { label: 'lookat_z', documentation: '' },
+            { label: 'up_x', documentation: '' },
+            { label: 'up_y', documentation: '' },
+            { label: 'up_z', documentation: '' }
+        ],
         signature: '(index, lookat_x, lookat_y, lookat_z, up_x, up_y, up_z)'
     },
 	audio_listener_set_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(index, x, y, z)'
     },
 	audio_listener_set_velocity: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'vx', documentation: '' },
+            { label: 'vy', documentation: '' },
+            { label: 'vz', documentation: '' }
+        ],
         signature: '(index, vx, vy, vz)'
     },
 	audio_listener_velocity: {
         description: '[Function]',
+        parameters: [
+            { label: 'vx', documentation: '' },
+            { label: 'vy', documentation: '' },
+            { label: 'vz', documentation: '' }
+        ],
         signature: '(vx, vy, vz)'
     },
 	audio_master_gain: {
         description: '[Function]',
+        parameters: [
+            { label: 'gain', documentation: '' }
+        ],
         signature: '(gain)'
     },
 	audio_pause_all: {
@@ -515,30 +702,68 @@ exports.globalfunctions = {
     },
 	audio_pause_sound: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_pause_sync_group: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_play_in_sync_group: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' },
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(sync_group_id, soundid)'
     },
 	audio_play_sound: {
         description: '[Function]',
-        signature: '(soundid,priority,loops)'
+        parameters: [
+            { label: 'soundid', documentation: '' },
+            { label: 'priority', documentation: '' },
+            { label: 'loops', documentation: '' }
+        ],
+        signature: '(soundid, priority, loops)'
     },
 	audio_play_sound_at: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'falloff_ref_dist', documentation: '' },
+            { label: 'falloff_max_dist', documentation: '' },
+            { label: 'falloff_factor', documentation: '' },
+            { label: 'loops', documentation: '' },
+            { label: 'priority', documentation: '' }
+        ],
         signature: '(soundid, x, y, z, falloff_ref_dist, falloff_max_dist, falloff_factor, loops, priority)'
     },
 	audio_play_sound_on: {
         description: '[Function]',
+        parameters: [
+            { label: 'emitterid', documentation: '' },
+            { label: 'soundid', documentation: '' },
+            { label: 'priority', documentation: '' },
+            { label: 'loops', documentation: '' }
+        ],
         signature: '(emitterid, soundid, loops, priority)'
     },
 	audio_queue_sound: {
         description: '[Function]',
+        parameters: [
+            { label: 'queueid', documentation: '' },
+            { label: 'buffer_id', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'length', documentation: '' }
+        ],
         signature: '(queueId, buffer_id, offset, length)'
     },
 	audio_resume_all: {
@@ -546,46 +771,83 @@ exports.globalfunctions = {
     },
 	audio_resume_sound: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_resume_sync_group: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_set_listener_mask: {
         description: '[Function]',
+        parameters: [
+            { label: 'mask', documentation: '' }
+        ],
         signature: '(mask)'
     },
 	audio_set_master_gain: {
         description: '[Function]',
+        parameters: [
+            { label: 'listenerIndex', documentation: '' },
+            { label: 'gain', documentation: '' }
+        ],
         signature: '(listenerIndex, gain)'
     },
 	audio_sound_gain: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'volume', documentation: '' },
+            { label: 'time', documentation: '' }
+        ],
         signature: '(index, volume, time)'
     },
 	audio_sound_get_gain: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	audio_sound_get_listener_mask: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_sound_get_pitch: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	audio_sound_get_track_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_sound_length: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_sound_pitch: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'pitch', documentation: '' }
+        ],
         signature: '(index, pitch)'
     },
 	audio_sound_set_listener_mask: {
