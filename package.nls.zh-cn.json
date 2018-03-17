@@ -1,0 +1,7 @@
+{
+    "gmlsupport.localization.option": "zh-CN",
+    "gmlsupport.localization.description": "GML Support 本地化选项",
+    "gml-gm81.suggest.basic": "GML (GameMaker 8.1) 语法提示选项。",
+    "gml-gms.suggest.basic": "GML (GameMaker Studio) 语法提示选项。",
+    "gml-gms2.suggest.basic": "GML (GameMaker Studio 2) 语法提示选项。"
+}

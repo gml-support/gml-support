@@ -1,8 +1,9 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
-const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
+const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
+const gmlGlobals = require("./i18n/gmlGlobals" + "." + localizationset);
+const gmlThirdparty = require("./i18n/gmlThirdparty" + "." + localizationset);
 const _NL = '\n'.charCodeAt(0);
 const _TAB = '\t'.charCodeAt(0);
 const _WSB = ' '.charCodeAt(0);
@@ -80,9 +81,6 @@ class GMLSignatureHelpProvider {
                 infos.push({ label: p.label, documentation: p.documentation });
             });
             signature += params.slice(0, -1);
-        }
-        else {
-            signature += 'void';
         }
         signature += ')';
         let signatureInfo = new vscode_1.SignatureInformation(signature, entry.description);

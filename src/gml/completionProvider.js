@@ -1,8 +1,9 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
-const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
+const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
+const gmlGlobals = require("./i18n/gmlGlobals" + "." + localizationset);
+const gmlThirdparty = require("./i18n/gmlThirdparty" + "." + localizationset);
 class GMLCompletionItemProvider {
     constructor() {
         this.triggerCharacters = ['.'];
