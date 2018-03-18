@@ -5013,10 +5013,20 @@ exports.globalfunctions = {
     },
 	ds_list_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, str, ...)'
     },
 	ds_list_replace: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'pos', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, pos, value)'
     },
 	ds_list_shuffle: {
@@ -5035,6 +5045,10 @@ exports.globalfunctions = {
     },
 	ds_list_sort: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'ascending', documentation: '' }
+        ],
         signature: '(id, ascending)'
     },
 	ds_list_write: {
@@ -5046,14 +5060,29 @@ exports.globalfunctions = {
     },
 	ds_map_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	ds_map_add_list: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	ds_map_add_map: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	ds_map_clear: {
@@ -5076,6 +5105,10 @@ exports.globalfunctions = {
     },
 	ds_map_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(id, key)'
     },
 	ds_map_destroy: {
@@ -5094,6 +5127,10 @@ exports.globalfunctions = {
     },
 	ds_map_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(id, key)'
     },
 	ds_map_find_first: {
@@ -5112,46 +5149,92 @@ exports.globalfunctions = {
     },
 	ds_map_find_next: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(id, key)'
     },
 	ds_map_find_previous: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(id, key)'
     },
 	ds_map_find_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(id, key)'
     },
 	ds_map_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, str, ...)'
     },
 	ds_map_replace: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	ds_map_replace_list: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	ds_map_replace_map: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	ds_map_secure_load: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	ds_map_secure_load_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	ds_map_secure_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(id, filename)'
     },
 	ds_map_secure_save_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(id, buffer)'
     },
 	ds_map_size: {
@@ -5170,10 +5253,20 @@ exports.globalfunctions = {
     },
 	ds_priority_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: 'priority', documentation: '' }
+        ],
         signature: '(id, value, priority)'
     },
 	ds_priority_change_priority: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: 'priority', documentation: '' }
+        ],
         signature: '(id, value, priority)'
     },
 	ds_priority_clear: {
@@ -5254,6 +5347,11 @@ exports.globalfunctions = {
     },
 	ds_priority_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, str, ...)'
     },
 	ds_priority_size: {
@@ -5311,6 +5409,11 @@ exports.globalfunctions = {
     },
 	ds_queue_enqueue: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, value, ...)'
     },
 	ds_queue_head: {
@@ -5322,6 +5425,11 @@ exports.globalfunctions = {
     },
 	ds_queue_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, str, ...)'
     },
 	ds_queue_size: {
@@ -5348,7 +5456,7 @@ exports.globalfunctions = {
 	ds_set_precision: {
         description: '[Function]',
         parameters: [
-            { label: 'id', documentation: '' }
+            { label: 'prec', documentation: '' }
         ],
         signature: '(prec)'
     },
@@ -5397,6 +5505,11 @@ exports.globalfunctions = {
     },
 	ds_stack_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, str, ...)'
     },
 	ds_stack_size: {
@@ -5422,6 +5535,9 @@ exports.globalfunctions = {
     },
 	dtan: {
         description: '[Function]',
+        parameters: [
+            { label: 'degree_angle', documentation: '' }
+        ],
         signature: '(degree_angle)'
     },
 	effect_clear: {
@@ -5429,14 +5545,31 @@ exports.globalfunctions = {
     },
 	effect_create_above: {
         description: '[Function]',
+        parameters: [
+            { label: 'kind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'colour', documentation: '' }
+        ],
         signature: '(kind, x, y, size, colour)'
     },
 	effect_create_below: {
         description: '[Function]',
+        parameters: [
+            { label: 'kind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'colour', documentation: '' }
+        ],
         signature: '(kind, x, y, size, colour)'
     },
 	environment_get_variable: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	event_inherited: {
@@ -5444,14 +5577,26 @@ exports.globalfunctions = {
     },
 	event_perform: {
         description: '[Function]',
+        parameters: [
+            { label: 'type', documentation: '' },
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(type, numb)'
     },
 	event_perform_object: {
         description: '[Function]',
+        parameters: [
+            { label: 'obj', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(obj, type, numb)'
     },
 	event_user: {
         description: '[Function]',
+        parameters: [
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(numb)'
     },
 	exp: {
@@ -5463,14 +5608,33 @@ exports.globalfunctions = {
     },
 	external_call: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'arg1', documentation: '' },
+            { label: 'arg2', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, arg1, arg2, ...)'
     },
 	external_define: {
         description: '[Function]',
+        parameters: [
+            { label: 'dll', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'calltype', documentation: '' },
+            { label: 'restype', documentation: '' },
+            { label: 'argnumb', documentation: '' },
+            { label: 'arg1type', documentation: '' },
+            { label: 'arg2type', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(dll, name, calltype, restype, argnumb, arg1type, arg2type, ...)'
     },
 	external_free: {
         description: '[Function]',
+        parameters: [
+            { label: 'dllname', documentation: '' }
+        ],
         signature: '(dllname)'
     },
 	facebook_accesstoken: {
@@ -5478,14 +5642,28 @@ exports.globalfunctions = {
     },
 	facebook_check_permission: {
         description: '[Function]',
+        parameters: [
+            { label: 'permission', documentation: '' }
+        ],
         signature: '(permission)'
     },
 	facebook_dialog: {
         description: '[Function]',
+        parameters: [
+            { label: 'graph_path', documentation: '' },
+            { label: 'ds_map_params', documentation: '' },
+            { label: 'ds_map_response', documentation: '' }
+        ],
         signature: '(graph_path, ds_map_params, ds_map_response)'
     },
 	facebook_graph_request: {
         description: '[Function]',
+        parameters: [
+            { label: 'graph_path', documentation: '' },
+            { label: 'httpMethod', documentation: '' },
+            { label: 'ds_map_params', documentation: '' },
+            { label: 'ds_map_response', documentation: '' }
+        ],
         signature: '(graph_path, httpMethod, ds_map_params, ds_map_response)'
     },
 	facebook_init: {
@@ -5493,10 +5671,17 @@ exports.globalfunctions = {
     },
 	facebook_launch_offerwall: {
         description: '[Function]',
+        parameters: [
+            { label: 'product_url', documentation: '' }
+        ],
         signature: '(product_url)'
     },
 	facebook_login: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_list_of_permissions', documentation: '' },
+            { label: 'ios_login_type', documentation: '' }
+        ],
         signature: '(ds_list_of_permissions, ios_login_type)'
     },
 	facebook_logout: {
@@ -5504,18 +5689,40 @@ exports.globalfunctions = {
     },
 	facebook_post_message: {
         description: '[Function]',
+        parameters: [
+            { label: 'title', documentation: '' },
+            { label: 'caption', documentation: '' },
+            { label: 'message', documentation: '' },
+            { label: 'picture_url', documentation: '' },
+            { label: 'redirect_url', documentation: '' },
+            { label: 'actionname', documentation: '' },
+            { label: 'action_url', documentation: '' }
+        ],
         signature: '(title, caption, message, picture_url, redirect_url, actionname, action_url)'
     },
 	facebook_request_publish_permissions: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_list_permissions', documentation: '' }
+        ],
         signature: '(ds_list_permissions)'
     },
 	facebook_request_read_permissions: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_list_permissions', documentation: '' }
+        ],
         signature: '(ds_list_permissions)'
     },
 	facebook_send_invite: {
         description: '[Function]',
+        parameters: [
+            { label: 'title', documentation: '' },
+            { label: 'message', documentation: '' },
+            { label: 'picture_url', documentation: '' },
+            { label: 'redirect_url', documentation: '' },
+            { label: 'ds_map_response', documentation: '' }
+        ],
         signature: '(title, message, picture_url, redirect_url, ds_map_response)'
     },
 	facebook_status: {
@@ -5526,74 +5733,134 @@ exports.globalfunctions = {
     },
 	filename_change_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'newext', documentation: '' }
+        ],
         signature: '(fname, newext)'
     },
 	filename_dir: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	filename_drive: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	filename_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	filename_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	filename_path: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	file_attributes: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'attr', documentation: '' }
+        ],
         signature: '(fname, attr)'
     },
 	file_bin_close: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' }
+        ],
         signature: '(binfile)'
     },
 	file_bin_open: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'mode', documentation: '' }
+        ],
         signature: '(fname, mode)'
     },
 	file_bin_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' }
+        ],
         signature: '(binfile)'
     },
 	file_bin_read_byte: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' }
+        ],
         signature: '(binfile)'
     },
 	file_bin_rewrite: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' }
+        ],
         signature: '(binfile)'
     },
 	file_bin_seek: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' },
+            { label: 'pos', documentation: '' }
+        ],
         signature: '(binfile, pos)'
     },
 	file_bin_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' }
+        ],
         signature: '(binfile)'
     },
 	file_bin_write_byte: {
         description: '[Function]',
+        parameters: [
+            { label: 'binfile', documentation: '' },
+            { label: 'byte', documentation: '' }
+        ],
         signature: '(binfile, byte)'
     },
 	file_copy: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'newname', documentation: '' }
+        ],
         signature: '(fname, newname)'
     },
 	file_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	file_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	file_find_close: {
@@ -5601,6 +5868,10 @@ exports.globalfunctions = {
     },
 	file_find_first: {
         description: '[Function]',
+        parameters: [
+            { label: 'mask', documentation: '' },
+            { label: 'attr', documentation: '' }
+        ],
         signature: '(mask, attr)'
     },
 	file_find_next: {
@@ -5608,58 +5879,103 @@ exports.globalfunctions = {
     },
 	file_rename: {
         description: '[Function]',
+        parameters: [
+            { label: 'oldname', documentation: '' },
+            { label: 'newname', documentation: '' }
+        ],
         signature: '(oldname, newname)'
     },
 	file_text_close: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_eof: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_eoln: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_open_append: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	file_text_open_from_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'content', documentation: '' }
+        ],
         signature: '(content)'
     },
 	file_text_open_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	file_text_open_write: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	file_text_readln: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_read_real: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_read_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_writeln: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' }
+        ],
         signature: '(file)'
     },
 	file_text_write_real: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' },
+            { label: 'val', documentation: '' }
+        ],
         signature: '(file, val)'
     },
 	file_text_write_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(file, str)'
     },
 	floor: {
@@ -5671,74 +5987,154 @@ exports.globalfunctions = {
     },
 	font_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'bold', documentation: '' },
+            { label: 'italic', documentation: '' },
+            { label: 'first', documentation: '' },
+            { label: 'last', documentation: '' }
+        ],
         signature: '(name, size, bold, italic, first, last)'
     },
 	font_add_sprite: {
         description: '[Function]',
+        parameters: [
+            { label: 'spr', documentation: '' },
+            { label: 'first', documentation: '' },
+            { label: 'prop', documentation: '' },
+            { label: 'sep', documentation: '' }
+        ],
         signature: '(spr, first, prop, sep)'
     },
 	font_add_sprite_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'spr', documentation: '' },
+            { label: 'mapstring', documentation: '' },
+            { label: 'prop', documentation: '' },
+            { label: 'sep', documentation: '' }
+        ],
         signature: '(spr, mapstring, prop, sep)'
     },
 	font_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_bold: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_first: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_fontname: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_italic: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_last: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_get_uvs: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	font_replace: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'bold', documentation: '' },
+            { label: 'italic', documentation: '' },
+            { label: 'first', documentation: '' },
+            { label: 'last', documentation: '' }
+        ],
         signature: '(ind, name, size, bold, italic, first, last)'
     },
 	font_replace_sprite: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'spr', documentation: '' },
+            { label: 'first', documentation: '' },
+            { label: 'prop', documentation: '' },
+            { label: 'sep', documentation: '' }
+        ],
         signature: '(ind, spr, first, prop, sep)'
     },
 	font_replace_sprite_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'font', documentation: '' },
+            { label: 'spr', documentation: '' },
+            { label: 'string_map', documentation: '' },
+            { label: 'prop', documentation: '' },
+            { label: 'sep', documentation: '' }
+        ],
         signature: '(font, spr, string_map, prop, sep)'
     },
 	font_set_cache_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'font', documentation: '' },
+            { label: 'max', documentation: '' }
+        ],
         signature: '(font, max)'
     },
 	frac: {
@@ -5750,42 +6146,77 @@ exports.globalfunctions = {
     },
 	gamepad_axis_count: {
         description: '[Function]',
+        parameters: [
+            { label: 'axis', documentation: '' }
+        ],
         signature: '(axis)'
     },
 	gamepad_axis_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'axisIndex', documentation: '' }
+        ],
         signature: '(device, axisIndex)'
     },
 	gamepad_button_check: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'buttonIndex', documentation: '' }
+        ],
         signature: '(device, buttonIndex)'
     },
 	gamepad_button_check_pressed: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'buttonIndex', documentation: '' }
+        ],
         signature: '(device, buttonIndex)'
     },
 	gamepad_button_check_released: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'buttonIndex', documentation: '' }
+        ],
         signature: '(device, buttonIndex)'
     },
 	gamepad_button_count: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' }
+        ],
         signature: '(device)'
     },
 	gamepad_button_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'buttonIndex', documentation: '' }
+        ],
         signature: '(device, buttonIndex)'
     },
 	gamepad_get_axis_deadzone: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' }
+        ],
         signature: '(device)'
     },
 	gamepad_get_button_threshold: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' }
+        ],
         signature: '(device)'
     },
 	gamepad_get_description: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' }
+        ],
         signature: '(device)'
     },
 	gamepad_get_device_count: {
@@ -5793,6 +6224,9 @@ exports.globalfunctions = {
     },
 	gamepad_is_connected: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' }
+        ],
         signature: '(device)'
     },
 	gamepad_is_supported: {
@@ -5800,22 +6234,43 @@ exports.globalfunctions = {
     },
 	gamepad_set_axis_deadzone: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'deadzone', documentation: '' }
+        ],
         signature: '(device, deadzone)'
     },
 	gamepad_set_button_threshold: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'threshold', documentation: '' }
+        ],
         signature: '(device, threshold)'
     },
 	gamepad_set_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'color', documentation: '' }
+        ],
         signature: '(index, color)'
     },
 	gamepad_set_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'colour', documentation: '' }
+        ],
         signature: '(index, colour)'
     },
 	gamepad_set_vibration: {
         description: '[Function]',
+        parameters: [
+            { label: 'device', documentation: '' },
+            { label: 'leftMotorSpeed', documentation: '' },
+            { label: 'rightMotorSpeed', documentation: '' }
+        ],
         signature: '(device, leftMotorSpeed, rightMotorSpeed)'
     },
 	game_end: {
@@ -5823,10 +6278,16 @@ exports.globalfunctions = {
     },
 	game_load: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	game_load_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	game_restart: {
@@ -5834,46 +6295,92 @@ exports.globalfunctions = {
     },
 	game_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	game_save_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	get_integer: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'def', documentation: '' }
+        ],
         signature: '(str, def)'
     },
 	get_integer_async: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'def', documentation: '' }
+        ],
         signature: '(str, def)'
     },
 	get_login_async: {
         description: '[Function]',
+        parameters: [
+            { label: 'username', documentation: '' },
+            { label: 'password', documentation: '' }
+        ],
         signature: '(username, password)'
     },
 	get_open_filename: {
         description: '[Function]',
+        parameters: [
+            { label: 'filter', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(filter, fname)'
     },
 	get_open_filename_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'filter', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'dir', documentation: '' },
+            { label: 'title', documentation: '' }
+        ],
         signature: '(filter, fname, dir, title)'
     },
 	get_save_filename: {
         description: '[Function]',
+        parameters: [
+            { label: 'filter', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(filter, fname)'
     },
 	get_save_filename_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'filter', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'dir', documentation: '' },
+            { label: 'title', documentation: '' }
+        ],
         signature: '(filter, fname, dir, title)'
     },
 	get_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'def', documentation: '' }
+        ],
         signature: '(str, def)'
     },
 	get_string_async: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'def', documentation: '' }
+        ],
         signature: '(str, def)'
     },
 	get_timer: {
@@ -5881,14 +6388,25 @@ exports.globalfunctions = {
     },
 	gml_pragma: {
         description: '[Function]',
+        parameters: [
+            { label: 'setting', documentation: '' },
+            { label: '....', documentation: '' }
+        ],
         signature: '(setting, ....)'
     },
 	gml_release_mode: {
         description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(enable)'
     },
 	highscore_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(str, numb)'
     },
 	highscore_clear: {
@@ -5896,30 +6414,57 @@ exports.globalfunctions = {
     },
 	highscore_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'place', documentation: '' }
+        ],
         signature: '(place)'
     },
 	highscore_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'place', documentation: '' }
+        ],
         signature: '(place)'
     },
 	http_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' }
+        ],
         signature: '(url)'
     },
 	http_get_file: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'dest', documentation: '' }
+        ],
         signature: '(url, dest)'
     },
 	http_post_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'string', documentation: '' }
+        ],
         signature: '(url, string)'
     },
 	http_request: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'method', documentation: '' },
+            { label: 'header_map', documentation: '' },
+            { label: 'body', documentation: '' }
+        ],
         signature: '(url, method, header_map, body)'
     },
 	iap_acquire: {
         description: '[Function]',
+        parameters: [
+            { label: 'product_id', documentation: '' },
+            { label: 'payload', documentation: '' }
+        ],
         signature: '(product_id, payload)'
     },
 	iap_activate: {
@@ -5972,6 +6517,9 @@ exports.globalfunctions = {
     },
 	ini_open: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	ini_open_from_string: {
@@ -6373,6 +6921,9 @@ exports.globalfunctions = {
     },
 	md5_file: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	md5_string_unicode: {
@@ -6624,42 +7175,72 @@ exports.globalfunctions = {
     },
 	object_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_depth: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_mask: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_parent: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_persistent: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_physics: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_solid: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_sprite: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_get_visible: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_is_ancestor: {
@@ -6765,10 +7346,16 @@ exports.globalfunctions = {
     },
 	part_particles_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_particles_count: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_particles_create: {
@@ -6793,6 +7380,9 @@ exports.globalfunctions = {
     },
 	part_system_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_system_create: {
@@ -6804,10 +7394,16 @@ exports.globalfunctions = {
     },
 	part_system_destroy: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_system_drawit: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_system_draw_order: {
@@ -6816,6 +7412,9 @@ exports.globalfunctions = {
     },
 	part_system_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_system_position: {
@@ -6824,6 +7423,9 @@ exports.globalfunctions = {
     },
 	part_system_update: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_type_alpha1: {
@@ -6844,6 +7446,9 @@ exports.globalfunctions = {
     },
 	part_type_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_type_color1: {
@@ -6903,6 +7508,9 @@ exports.globalfunctions = {
     },
 	part_type_destroy: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_type_direction: {
@@ -6911,6 +7519,9 @@ exports.globalfunctions = {
     },
 	part_type_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_type_gravity: {
@@ -6970,10 +7581,16 @@ exports.globalfunctions = {
     },
 	path_clear_points: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_delete_point: {
@@ -6982,6 +7599,9 @@ exports.globalfunctions = {
     },
 	path_duplicate: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_end: {
@@ -6989,30 +7609,51 @@ exports.globalfunctions = {
     },
 	path_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_flip: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_closed: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_kind: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_length: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_number: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_point_speed: {
@@ -7029,6 +7670,9 @@ exports.globalfunctions = {
     },
 	path_get_precision: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_get_speed: {
@@ -7053,6 +7697,9 @@ exports.globalfunctions = {
     },
 	path_mirror: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_rescale: {
@@ -7061,6 +7708,9 @@ exports.globalfunctions = {
     },
 	path_reverse: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	path_rotate: {
@@ -7266,6 +7916,9 @@ exports.globalfunctions = {
     },
 	physics_particle_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	physics_particle_delete_region_box: {
@@ -7341,6 +7994,9 @@ exports.globalfunctions = {
     },
 	physics_particle_group_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	physics_particle_group_end: {
@@ -7652,14 +8308,23 @@ exports.globalfunctions = {
     },
 	room_duplicate: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	room_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	room_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	room_goto: {
@@ -7678,6 +8343,9 @@ exports.globalfunctions = {
     },
 	room_instance_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	room_next: {
@@ -7733,6 +8401,9 @@ exports.globalfunctions = {
     },
 	room_tile_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	round: {
@@ -7744,6 +8415,9 @@ exports.globalfunctions = {
     },
 	screen_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	screen_save_part: {
@@ -7756,14 +8430,23 @@ exports.globalfunctions = {
     },
 	script_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	script_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sha1_file: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	sha1_string_unicode: {
@@ -7981,50 +8664,86 @@ exports.globalfunctions = {
     },
 	sprite_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_duplicate: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_flush: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_flush_multi: {
         description: '[Function]',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
         signature: '(indarray)'
     },
 	sprite_get_bbox_bottom: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_bbox_left: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_bbox_right: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_bbox_top: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_height: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_number: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_texture: {
@@ -8041,14 +8760,23 @@ exports.globalfunctions = {
     },
 	sprite_get_width: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_xoffset: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_yoffset: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_merge: {
@@ -8057,10 +8785,16 @@ exports.globalfunctions = {
     },
 	sprite_prefetch: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_prefetch_multi: {
         description: '[Function]',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
         signature: '(indarray)'
     },
 	sprite_replace: {
@@ -8149,26 +8883,44 @@ exports.globalfunctions = {
     },
 	steam_file_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	steam_file_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	steam_file_persisted: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	steam_file_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	steam_file_share: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	steam_file_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	steam_file_write: {
@@ -8847,22 +9599,37 @@ exports.globalfunctions = {
     },
 	timeline_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	timeline_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	timeline_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	timeline_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	timeline_max_moment: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	timeline_moment_add_script: {
@@ -8875,6 +9642,9 @@ exports.globalfunctions = {
     },
 	timeline_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	typeof: {
@@ -9474,30 +10244,51 @@ exports.globalfunctions = {
     },
     sound_delete: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
     sound_discard: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
     sound_exists: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
     sound_get_kind: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sound_get_name: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sound_get_preload: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
     sound_restore: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
     sound_loop: {
@@ -9670,6 +10461,9 @@ exports.globalfunctions = {
 	//GameMaker 8.1 Only
 	background_add_background: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
     background_create_from_screen: {
@@ -9758,6 +10552,9 @@ exports.globalfunctions = {
     },
     discard_include_file: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	disk_free: {
@@ -9810,6 +10607,9 @@ exports.globalfunctions = {
     },
 	export_include_file: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 	export_include_file_location: {
@@ -9939,6 +10739,9 @@ exports.globalfunctions = {
     },
 	object_delete: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	object_event_add: {
@@ -10128,6 +10931,9 @@ exports.globalfunctions = {
     },
     script_get_text: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	set_application_title: {
@@ -10148,6 +10954,10 @@ exports.globalfunctions = {
     },
     show_menu: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'def', documentation: '' }
+        ],
         signature: '(str, def)'
     },
 	show_menu_pos: {
@@ -10323,6 +11133,9 @@ exports.globalfunctions = {
     },
     sprite_add_sprite: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
     sprite_create_from_screen: {
@@ -10476,6 +11289,9 @@ exports.globalfunctions = {
     },
     load_info: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(fname)'
     },
 
@@ -10498,10 +11314,16 @@ exports.globalfunctions = {
     },
 	sprite_get_speed_type: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	sprite_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	texture_get_uvs: {
@@ -10526,10 +11348,20 @@ exports.globalfunctions = {
     },
 	ds_list_set: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'pos', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, pos, value)'
     },
 	ds_map_set: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(id, key, value)'
     },
 	part_system_create_layer: {
@@ -10538,6 +11370,9 @@ exports.globalfunctions = {
     },
 	part_system_get_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	part_system_layer: {
@@ -10888,6 +11723,9 @@ exports.globalfunctions = {
     },
 	draw_light_get: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	draw_get_lighting: {
@@ -10895,6 +11733,9 @@ exports.globalfunctions = {
     },
 	load_csv: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
     skeleton_animation_get_frame: {
