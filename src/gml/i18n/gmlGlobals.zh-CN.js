@@ -852,18 +852,32 @@ exports.globalfunctions = {
     },
 	audio_sound_set_listener_mask: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' },
+            { label: 'mask', documentation: '' }
+        ],
         signature: '(soundid, mask)'
     },
 	audio_sound_set_track_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' },
+            { label: 'time', documentation: '' }
+        ],
         signature: '(soundid, time)'
     },
 	audio_start_recording: {
         description: '[Function]',
+        parameters: [
+            { label: 'recorder_num', documentation: '' }
+        ],
         signature: '(recorder_num)'
     },
 	audio_start_sync_group: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_stop_all: {
@@ -871,26 +885,44 @@ exports.globalfunctions = {
     },
 	audio_stop_recording: {
         description: '[Function]',
+        parameters: [
+            { label: 'channel_index', documentation: '' }
+        ],
         signature: '(channel_index)'
     },
 	audio_stop_sound: {
         description: '[Function]',
+        parameters: [
+            { label: 'soundid', documentation: '' }
+        ],
         signature: '(soundid)'
     },
 	audio_stop_sync_group: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_sync_group_debug: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_sync_group_get_track_pos: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_sync_group_is_playing: {
         description: '[Function]',
+        parameters: [
+            { label: 'sync_group_id', documentation: '' }
+        ],
         signature: '(sync_group_id)'
     },
 	audio_system: {
@@ -898,106 +930,207 @@ exports.globalfunctions = {
     },
 	background_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(fname, removeback, smooth)'
     },
 	background_assign: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'source', documentation: '' }
+        ],
         signature: '(ind, source)'
     },
 	background_create_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(w, h, col)'
     },
 	background_create_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(w, h, col)'
     },
 	background_create_from_surface: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(id, x, y, w, h, removeback, smooth)'
     },
 	background_create_gradient: {
         description: '[Function]',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(w, h, col1, col2, kind)'
     },
 	background_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_duplicate: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_flush: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_flush_multi: {
         description: '[Function]',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
         signature: '(indarray)'
     },
 	background_get_height: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_get_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_get_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
         signature: '(back)'
     },
 	background_get_uvs: {
         description: '[Function]',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
         signature: '(back)'
     },
 	background_get_width: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_prefetch: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	background_prefetch_multi: {
         description: '[Function]',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
         signature: '(indarray)'
     },
 	background_replace: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(ind, fname, removeback, smooth)'
     },
 	background_replace_background: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(ind, fname)'
     },
 	background_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(ind, fname)'
     },
 	background_set_alpha_from_background: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' }
+        ],
         signature: '(ind, back)'
     },
 	base64_decode: {
         description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' }
+        ],
         signature: '(string)'
     },
 	base64_encode: {
         description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' }
+        ],
         signature: '(string)'
     },
 	browser_input_capture: {
         description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(enable)'
     },
 	buffer_async_group_begin: {
         description: '[Function]',
+        parameters: [
+            { label: 'groupname', documentation: '' }
+        ],
         signature: '(groupname)'
     },
 	buffer_async_group_end: {
@@ -1005,186 +1138,414 @@ exports.globalfunctions = {
     },
 	buffer_async_group_option: {
         description: '[Function]',
+        parameters: [
+            { label: 'optionname', documentation: '' },
+            { label: 'optionvalue', documentation: '' }
+        ],
         signature: '(optionname, optionvalue)'
     },
 	buffer_base64_decode: {
         description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' }
+        ],
         signature: '(string)'
     },
 	buffer_base64_decode_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'string', documentation: '' },
+            { label: 'offset', documentation: '' }
+        ],
         signature: '(buffer, string, offset)'
     },
 	buffer_base64_encode: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(buffer, offset, size)'
     },
 	buffer_copy: {
         description: '[Function]',
+        parameters: [
+            { label: 'src_buffer', documentation: '' },
+            { label: 'src_offset', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'dest_buffer', documentation: '' },
+            { label: 'dest_offset', documentation: '' }
+        ],
         signature: '(src_buffer, src_offset, size, dest_buffer, dest_offset)'
     },
 	buffer_copy_from_vertex_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'vertex_buffer', documentation: '' },
+            { label: 'start_vertex', documentation: '' },
+            { label: 'num_vertices', documentation: '' },
+            { label: 'dest_buffer', documentation: '' },
+            { label: 'dest_offset', documentation: '' }
+        ],
         signature: '(vertex_buffer, start_vertex, num_vertices, dest_buffer, dest_offset)'
     },
 	buffer_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'size', documentation: '' },
+            { label: 'buffer_type', documentation: '' },
+            { label: 'alignment', documentation: '' }
+        ],
         signature: '(size, buffer_type, alignment)'
     },
 	buffer_create_from_vertex_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'vertex_buffer', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'alignment', documentation: '' }
+        ],
         signature: '(vertex_buffer, type, alignment)'
     },
 	buffer_create_from_vertex_buffer_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'vertex_buffer', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'alignment', documentation: '' },
+            { label: 'start_vertex', documentation: '' },
+            { label: 'num_vertices', documentation: '' }
+        ],
         signature: '(vertex_buffer, type, alignment, start_vertex, num_vertices)'
     },
 	buffer_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_fill: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(buffer, offset, type, value, size)'
     },
 	buffer_get_address: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_get_alignment: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_get_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_get_surface: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'surface', documentation: '' },
+            { label: 'mode', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'modulo', documentation: '' }
+        ],
         signature: '(buffer, surface, mode, offset, modulo)'
     },
 	buffer_get_type: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_load: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(filename)'
     },
 	buffer_load_async: {
         description: '[Function]',
+        parameters: [
+            { label: 'bufferid', documentation: '' },
+            { label: 'filename', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(bufferid, filename, offset, size)'
     },
 	buffer_load_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'bufferid', documentation: '' },
+            { label: 'filename', documentation: '' },
+            { label: 'offset', documentation: '' }
+        ],
         signature: '(buffer, filename, offset)'
     },
 	buffer_load_partial: {
         description: '[Function]',
+        parameters: [
+            { label: 'bufferid', documentation: '' },
+            { label: 'filename', documentation: '' },
+            { label: 'src_offset', documentation: '' },
+            { label: 'src_len', documentation: '' },
+            { label: 'dest_offset', documentation: '' }
+        ],
         signature: '(buffer, filename, src_offset, src_len, dest_offset)'
     },
 	buffer_md5: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(buffer, offset, size)'
     },
 	buffer_peek: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'type', documentation: '' }
+        ],
         signature: '(buffer, offset, type)'
     },
 	buffer_poke: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(buffer, offset, type, value)'
     },
 	buffer_read: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'type', documentation: '' }
+        ],
         signature: '(buffer, type)'
     },
 	buffer_resize: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'newsize', documentation: '' }
+        ],
         signature: '(buffer, newsize)'
     },
 	buffer_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'filename', documentation: '' }
+        ],
         signature: '(buffer, filename)'
     },
 	buffer_save_async: {
         description: '[Function]',
-        signature: '(bufferid,filename,offset,size)'
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
+        signature: '(bufferid, filename, offset, size)'
     },
 	buffer_save_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'bufferid', documentation: '' },
+            { label: 'filename', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(buffer, filename, offset, size)'
     },
 	buffer_seek: {
         description: '[Function]',
+        parameters: [
+            { label: 'bufferid', documentation: '' },
+            { label: 'base', documentation: '' },
+            { label: 'offset', documentation: '' }
+        ],
         signature: '(buffer, base, offset)'
     },
 	buffer_set_surface: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'surface', documentation: '' },
+            { label: 'mode', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'modulo', documentation: '' }
+        ],
         signature: '(buffer, surface, mode, offset, modulo)'
     },
 	buffer_sha1: {
         description: '[Function]',
+        parameters: [
+            { label: 'bufferid', documentation: '' },
+            { label: 'offset', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(buffer, offset, size)'
     },
 	buffer_sizeof: {
         description: '[Function]',
+        parameters: [
+            { label: 'type', documentation: '' }
+        ],
         signature: '(type)'
     },
 	buffer_tell: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' }
+        ],
         signature: '(buffer)'
     },
 	buffer_write: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'type', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(buffer, type, value)'
     },
 	ceil: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
         signature: '(x)'
     },
 	choose: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'x3', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(x1, x2, x3, ...)'
     },
 	chr: {
         description: '[Function]',
+        parameters: [
+            { label: 'val', documentation: '' }
+        ],
         signature: '(val)'
     },
 	clamp: {
         description: '[Function]',
+        parameters: [
+            { label: 'val', documentation: '' },
+            { label: 'min', documentation: '' },
+            { label: 'max', documentation: '' }
+        ],
         signature: '(val, min, max)'
     },
 	clickable_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'spritetpe', documentation: '' },
+            { label: 'URL', documentation: '' },
+            { label: 'target', documentation: '' },
+            { label: 'params', documentation: '' }
+        ],
         signature: '(x, y, spritetpe, URL, target, params)'
     },
 	clickable_add_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'spritetpe', documentation: '' },
+            { label: 'URL', documentation: '' },
+            { label: 'target', documentation: '' },
+            { label: 'params', documentation: '' },
+            { label: 'scale', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, spritetpe, URL, target, params, scale, alpha)'
     },
 	clickable_change: {
         description: '[Function]',
+        parameters: [
+            { label: 'buttonid', documentation: '' },
+            { label: 'spritetpe', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(buttonid, spritetpe, x, y)'
     },
 	clickable_change_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'buttonid', documentation: '' },
+            { label: 'spritetpe', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'scale', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(buttonid, spritetpe, x, y, scale, alpha)'
     },
 	clickable_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'buttonid', documentation: '' }
+        ],
         signature: '(buttonid)'
     },
 	clickable_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	clickable_set_style: {
         description: '[Function]',
+        parameters: [
+            { label: 'buttonid', documentation: '' },
+            { label: 'map', documentation: '' }
+        ],
         signature: '(buttonid, map)'
     },
 	clipboard_get_text: {
@@ -1195,14 +1556,25 @@ exports.globalfunctions = {
     },
 	clipboard_set_text: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	cloud_file_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' },
+            { label: 'description', documentation: '' }
+        ],
         signature: '(filename, description)'
     },
 	cloud_string_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'data', documentation: '' },
+            { label: 'description', documentation: '' }
+        ],
         signature: '(data, description)'
     },
 	cloud_synchronise: {
@@ -1213,74 +1585,253 @@ exports.globalfunctions = {
     },
 	collision_circle: {
         description: '[Function]',
-        signature: '(x1, y1, radius, obj,prec, notme)'
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'radius', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'prec', documentation: '' },
+            { label: 'notme', documentation: '' }
+        ],
+        signature: '(x1, y1, radius, obj, prec, notme)'
     },
 	collision_ellipse: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'prec', documentation: '' },
+            { label: 'notme', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_line: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'prec', documentation: '' },
+            { label: 'notme', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_point: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'prec', documentation: '' },
+            { label: 'notme', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_rectangle: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'prec', documentation: '' },
+            { label: 'notme', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
+    },
+    color_get_blue: {
+        description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+	color_get_green: {
+        description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+	color_get_hue: {
+        description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+	color_get_red: {
+        description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+	color_get_saturation: {
+        description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+	color_get_value: {
+        description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
     },
 	colour_get_blue: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	colour_get_green: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	colour_get_hue: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	colour_get_red: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	colour_get_saturation: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	colour_get_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	cos: {
         description: '[Function]',
+        parameters: [
+            { label: 'radian_angle', documentation: '' }
+        ],
         signature: '(radian_angle)'
     },
 	d3d_draw_block: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
 	d3d_draw_cone: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_draw_cylinder: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_draw_ellipsoid: {
         description: '[Function]',
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, vrepeat, steps)'
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_draw_floor: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
 	d3d_draw_wall: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
 	d3d_end: {
@@ -1288,30 +1839,79 @@ exports.globalfunctions = {
     },
 	d3d_light_define_ambient: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	d3d_light_define_direction: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'dx', documentation: '' },
+            { label: 'dy', documentation: '' },
+            { label: 'dz', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(ind, dx, dy, dz, col)'
     },
 	d3d_light_define_point: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'range', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(ind, x, y, z, range, col)'
     },
 	d3d_light_enable: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(ind, enable)'
     },
 	d3d_model_block: {
         description: '[Function]',
-        signature: '(ind,x1,y1,z1,x2,y2,z2,hrepeat,vrepeat)'
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
 	d3d_model_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	d3d_model_cone: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_model_create: {
@@ -1319,6 +1919,19 @@ exports.globalfunctions = {
     },
 	d3d_model_cylinder: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
 	d3d_model_destroy: {
@@ -1326,90 +1939,271 @@ exports.globalfunctions = {
     },
 	d3d_model_draw: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'texid', documentation: '' }
+        ],
         signature: '(ind, x, y, z, texid)'
     },
 	d3d_model_ellipsoid: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' }
+        ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
     },
 	d3d_model_floor: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
 	d3d_model_load: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(ind, fname)'
     },
 	d3d_model_primitive_begin: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(ind, kind)'
     },
 	d3d_model_primitive_end: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ind)'
     },
 	d3d_model_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ], 
         signature: '(ind, fname)'
     },
 	d3d_model_vertex: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(ind, x, y, z)'
     },
 	d3d_model_vertex_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, col, alpha)'
     },
 	d3d_model_vertex_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, col, alpha)'
     },
 	d3d_model_vertex_normal: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
         signature: '(ind, x, y, z, nx, ny, nz)'
     },
 	d3d_model_vertex_normal_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
 	d3d_model_vertex_normal_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
 	d3d_model_vertex_normal_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
     },
 	d3d_model_vertex_normal_texture_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
 	d3d_model_vertex_normal_texture_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
 	d3d_model_vertex_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
         signature: '(ind, x, y, z, xtex, ytex)'
     },
 	d3d_model_vertex_texture_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
 	d3d_model_vertex_texture_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
 	d3d_model_wall: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
 	d3d_primitive_begin: {
         description: '[Function]',
+        parameters: [
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(kind)'
     },
 	d3d_primitive_begin_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'kind', documentation: '' },
+            { label: 'texid', documentation: '' }
+        ],
         signature: '(kind, texid)'
     },
 	d3d_primitive_end: {
@@ -1417,50 +2211,117 @@ exports.globalfunctions = {
     },
 	d3d_set_culling: {
         description: '[Function]',
+        parameters: [
+            { label: 'cull', documentation: '' }
+        ],
         signature: '(cull)'
     },
 	d3d_set_depth: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(depth)'
     },
 	d3d_set_fog: {
         description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'start', documentation: '' },
+            { label: 'end', documentation: '' }
+        ],
         signature: '(enable, colour, start, end)'
     },
 	d3d_set_hidden: {
         description: '[Function]',
+        parameters: [
+            { label: 'hidden', documentation: '' }
+        ],
         signature: '(hidden)'
     },
 	d3d_set_lighting: {
         description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(enable)'
     },
 	d3d_set_perspective: {
         description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(enable)'
     },
 	d3d_set_projection: {
         description: '[Function]',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' }
+        ],
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
 	d3d_set_projection_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' },
+            { label: 'angle', documentation: '' },
+            { label: 'aspect', documentation: '' },
+            { label: 'znear', documentation: '' },
+            { label: 'zfar', documentation: '' }
+        ],
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
     },
 	d3d_set_projection_ortho: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(x, y, w, h, angle)'
     },
 	d3d_set_projection_perspective: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(x, y, w, h, angle)'
     },
 	d3d_set_shading: {
         description: '[Function]',
+        parameters: [
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(smooth)'
     },
 	d3d_set_zwriteenable: {
         description: '[Function]',
+        parameters: [
+            { label: 'on_off', documentation: '' }
+        ],
         signature: '(on_off)'
     },
 	d3d_start: {
@@ -1468,26 +2329,51 @@ exports.globalfunctions = {
     },
 	d3d_transform_add_rotation_axis: {
         description: '[Function]',
+        parameters: [
+            { label: 'xa', documentation: '' },
+            { label: 'ya', documentation: '' },
+            { label: 'za', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(xa, ya, za, angle)'
     },
 	d3d_transform_add_rotation_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	d3d_transform_add_rotation_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	d3d_transform_add_rotation_z: {
         description: '[Function]',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	d3d_transform_add_scaling: {
         description: '[Function]',
+        parameters: [
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'zs', documentation: '' }
+        ],
         signature: '(xs, ys, zs)'
     },
 	d3d_transform_add_translation: {
         description: '[Function]',
+        parameters: [
+            { label: 'xt', documentation: '' },
+            { label: 'yt', documentation: '' },
+            { label: 'zt', documentation: '' }
+        ],
         signature: '(xt, yt, zt)'
     },
 	d3d_transform_set_identity: {
@@ -1495,26 +2381,51 @@ exports.globalfunctions = {
     },
 	d3d_transform_set_rotation_axis: {
         description: '[Function]',
+        parameters: [
+            { label: 'xa', documentation: '' },
+            { label: 'ya', documentation: '' },
+            { label: 'za', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(xa, ya, za, angle)'
     },
 	d3d_transform_set_rotation_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	d3d_transform_set_rotation_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	d3d_transform_set_rotation_z: {
         description: '[Function]',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	d3d_transform_set_scaling: {
         description: '[Function]',
+        parameters: [
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'zs', documentation: '' }
+        ],
         signature: '(xs, ys, zs)'
     },
 	d3d_transform_set_translation: {
         description: '[Function]',
+        parameters: [
+            { label: 'xt', documentation: '' },
+            { label: 'yt', documentation: '' },
+            { label: 'zt', documentation: '' }
+        ],
         signature: '(xt, yt, zt)'
     },
 	d3d_transform_stack_clear: {
@@ -1537,86 +2448,230 @@ exports.globalfunctions = {
     },
 	d3d_transform_vertex: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(x, y, z)'
     },
 	d3d_vertex: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(x, y, z)'
     },
 	d3d_vertex_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, col, alpha)'
     },
 	d3d_vertex_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, col, alpha)'
     },
 	d3d_vertex_normal: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
         signature: '(x, y, z, nx, ny, nz)'
     },
 	d3d_vertex_normal_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
 	d3d_vertex_normal_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
 	d3d_vertex_normal_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
     },
 	d3d_vertex_normal_texture_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
 	d3d_vertex_normal_texture_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
 	d3d_vertex_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
         signature: '(x, y, z, xtex, ytex)'
     },
 	d3d_vertex_texture_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
 	d3d_vertex_texture_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
 	darccos: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
         signature: '(x)'
     },
 	darcsin: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
         signature: '(x)'
     },
 	darctan: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' }
+        ],
         signature: '(x)'
     },
 	darctan2: {
         description: '[Function]',
+        parameters: [
+            { label: 'y', documentation: '' },
+            { label: 'x', documentation: '' }
+        ],
         signature: '(y, x)'
     },
 	date_compare_date: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_compare_datetime: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_compare_time: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_create_datetime: {
         description: '[Function]',
+        parameters: [
+            { label: 'year', documentation: '' },
+            { label: 'month', documentation: '' },
+            { label: 'day', documentation: '' },
+            { label: 'hour', documentation: '' },
+            { label: 'minute', documentation: '' },
+            { label: 'second', documentation: '' }
+        ],
         signature: '(year, month, day, hour, minute, second)'
     },
 	date_current_datetime: {
@@ -1624,62 +2679,108 @@ exports.globalfunctions = {
     },
 	date_datetime_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_date_of: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_date_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_days_in_month: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_days_in_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_day_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_get_day: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_day_of_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_hour: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_hour_of_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_minute: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_minute_of_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_month: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_second: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_second_of_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_timezone: {
@@ -1687,94 +2788,181 @@ exports.globalfunctions = {
     },
 	date_get_week: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_weekday: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_get_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_hour_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_inc_day: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_inc_hour: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_inc_minute: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_inc_month: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_inc_second: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_inc_week: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_inc_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(date, amount)'
     },
 	date_is_today: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_leap_year: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_minute_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_month_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_second_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_set_timezone: {
         description: '[Function]',
+        parameters: [
+            { label: 'timezone', documentation: '' }
+        ],
         signature: '(timezone)'
     },
 	date_time_of: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_time_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'date', documentation: '' }
+        ],
         signature: '(date)'
     },
 	date_valid_datetime: {
         description: '[Function]',
+        parameters: [
+            { label: 'year', documentation: '' },
+            { label: 'month', documentation: '' },
+            { label: 'day', documentation: '' },
+            { label: 'hour', documentation: '' },
+            { label: 'minute', documentation: '' },
+            { label: 'second', documentation: '' }
+        ],
         signature: '(year, month, day, hour, minute, second)'
     },
 	date_week_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	date_year_span: {
         description: '[Function]',
+        parameters: [
+            { label: 'date1', documentation: '' },
+            { label: 'date2', documentation: '' }
+        ],
         signature: '(date1, date2)'
     },
 	dcos: {
         description: '[Function]',
+        parameters: [
+            { label: 'degree_angle', documentation: '' }
+        ],
         signature: '(degree_angle)'
     },
 	debug_event: {
@@ -1867,6 +3055,24 @@ exports.globalfunctions = {
 	display_get_windows_vertex_buffer_method: {
         description: '[Function]'
     },
+    display_get_colordepth: {
+        description: '[Function]'
+    },
+	display_get_height: {
+        description: '[Function]'
+    },
+	display_get_orientation: {
+        description: '[Function]'
+    },
+	display_get_width: {
+        description: '[Function]'
+    },
+	display_mouse_get_x: {
+        description: '[Function]'
+    },
+	display_mouse_get_y: {
+        description: '[Function]'
+    },
 	display_set_gui_maximise: {
         description: '[Function]',
         signature: '(xscale, yscale, xoffset, yoffset)'
@@ -1886,6 +3092,14 @@ exports.globalfunctions = {
 	display_set_windows_vertex_buffer_method: {
         description: '[Function]',
         signature: '(method)'
+    },
+	display_mouse_set: {
+        description: '[Function]',
+        signature: '(x, y)'
+    },
+	display_reset: {
+        description: '[Function]',
+        signature: '(aa_level,  vsync)'
     },
 	distance_to_object: {
         description: '[Function]',
@@ -2360,56 +3574,6 @@ exports.globalfunctions = {
 	draw_vertex_texture_colour: {
         description: '[Function]',
         signature: '(x, y, xtex, ytex, col, alpha)'
-    },
-	color_get_blue: {
-        description: '[Function]',
-        signature: '(col)'
-    },
-	color_get_green: {
-        description: '[Function]',
-        signature: '(col)'
-    },
-	color_get_hue: {
-        description: '[Function]',
-        signature: '(col)'
-    },
-	color_get_red: {
-        description: '[Function]',
-        signature: '(col)'
-    },
-	color_get_saturation: {
-        description: '[Function]',
-        signature: '(col)'
-    },
-	color_get_value: {
-        description: '[Function]',
-        signature: '(col)'
-    },
-	display_get_colordepth: {
-        description: '[Function]'
-    },
-	display_get_height: {
-        description: '[Function]'
-    },
-	display_get_orientation: {
-        description: '[Function]'
-    },
-	display_get_width: {
-        description: '[Function]'
-    },
-	display_mouse_get_x: {
-        description: '[Function]'
-    },
-	display_mouse_get_y: {
-        description: '[Function]'
-    },
-	display_mouse_set: {
-        description: '[Function]',
-        signature: '(x, y)'
-    },
-	display_reset: {
-        description: '[Function]',
-        signature: '(aa_level,  vsync)'
     },
 	dsin: {
         description: '[Function]',
