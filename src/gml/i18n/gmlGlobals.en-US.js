@@ -3675,38 +3675,123 @@ exports.globalfunctions = {
     },
 	draw_rectangle: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_rectangle_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'col3', documentation: '' },
+            { label: 'col4', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, col1, col2, col3, col4, outline)'
     },
 	draw_rectangle_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'col3', documentation: '' },
+            { label: 'col4', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, col1, col2, col3, col4, outline)'
     },
 	draw_roundrect: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_roundrect_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_roundrect_color_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'radiusx', documentation: '' },
+            { label: 'radiusy', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, radiusx, radiusy, col1, col2, outline)'
     },
 	draw_roundrect_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_roundrect_colour_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'radiusx', documentation: '' },
+            { label: 'radiusy', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, radiusx, radiusy, col1, col2, outline)'
     },
 	draw_roundrect_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'radiusx', documentation: '' },
+            { label: 'radiusy', documentation: '' },
+            { label: 'outline', documentation: '' }
+        ],
         signature: '(x1, y1, x2, y2, radiusx, radiusy, outline)'
     },
 	draw_self: {
@@ -3714,30 +3799,52 @@ exports.globalfunctions = {
     },
 	draw_set_alpha: {
         description: '[Function]',
+        parameters: [
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(alpha)'
     },
 	draw_set_alpha_test: {
         description: '[Function]',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(enable)'
     },
 	draw_set_alpha_test_ref_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'value', documentation: '' }
+        ],
         signature: '(value)'
     },
 	draw_set_blend_mode: {
         description: '[Function]',
+        parameters: [
+            { label: 'mode', documentation: '' }
+        ],
         signature: '(mode)'
     },
 	draw_set_blend_mode_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'src', documentation: '' },
+            { label: 'dest', documentation: '' }
+        ],
         signature: '(src, dest)'
     },
 	draw_set_circle_precision: {
         description: '[Function]',
+        parameters: [
+            { label: 'precision', documentation: '' }
+        ],
         signature: '(precision)'
     },
 	draw_set_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	draw_set_color_write_enable: {
@@ -3746,6 +3853,9 @@ exports.globalfunctions = {
     },
 	draw_set_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	draw_set_colour_write_enable: {
@@ -4000,6 +4110,11 @@ exports.globalfunctions = {
     },
 	ds_grid_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(id, x, y)'
     },
 	ds_grid_get_disk_max: {
@@ -9042,6 +9157,9 @@ exports.globalfunctions = {
     },
 	message_input_color: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	message_input_font: {
@@ -9050,6 +9168,9 @@ exports.globalfunctions = {
     },
 	message_mouse_color: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	message_position: {
@@ -9393,6 +9514,9 @@ exports.globalfunctions = {
     },
 	splash_set_color: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	splash_set_cursor: {
@@ -10004,6 +10128,9 @@ exports.globalfunctions = {
     },
 	draw_light_define_ambient: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
         signature: '(col)'
     },
 	draw_light_define_direction: {
