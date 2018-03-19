@@ -6469,26 +6469,46 @@ exports.globalfunctions = {
     },
 	iap_activate: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_list', documentation: '' }
+        ],
         signature: '(ds_list)'
     },
 	iap_consume: {
         description: '[Function]',
+        parameters: [
+            { label: 'product_id', documentation: '' }
+        ],
         signature: '(product_id)'
     },
 	iap_enumerate_products: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_list', documentation: '' }
+        ],
         signature: '(ds_list)'
     },
 	iap_is_purchased: {
         description: '[Function]',
+        parameters: [
+            { label: 'product_id', documentation: '' }
+        ],
         signature: '(product_id)'
     },
 	iap_product_details: {
         description: '[Function]',
+        parameters: [
+            { label: 'product_id', documentation: '' },
+            { label: 'ds_map', documentation: '' }
+        ],
         signature: '(product_id, ds_map)'
     },
 	iap_purchase_details: {
         description: '[Function]',
+        parameters: [
+            { label: 'product_id', documentation: '' },
+            { label: 'ds_map', documentation: '' }
+        ],
         signature: '(product_id, ds_map)'
     },
 	iap_restore_all: {
@@ -6499,6 +6519,9 @@ exports.globalfunctions = {
     },
 	immersion_play_effect: {
         description: '[Function]',
+        parameters: [
+            { label: 'effect', documentation: '' }
+        ],
         signature: '(effect)'
     },
 	immersion_stop: {
@@ -6509,10 +6532,18 @@ exports.globalfunctions = {
     },
 	ini_key_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(section, key)'
     },
 	ini_key_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' },
+            { label: 'key', documentation: '' }
+        ],
         signature: '(section, key)'
     },
 	ini_open: {
@@ -6524,30 +6555,59 @@ exports.globalfunctions = {
     },
 	ini_open_from_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'content', documentation: '' }
+        ],
         signature: '(content)'
     },
 	ini_read_real: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'default', documentation: '' }
+        ],
         signature: '(section, key, default)'
     },
 	ini_read_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'default', documentation: '' }
+        ],
         signature: '(section, key, default)'
     },
 	ini_section_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' }
+        ],
         signature: '(section)'
     },
 	ini_section_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' }
+        ],
         signature: '(section)'
     },
 	ini_write_real: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(section, key, value)'
     },
 	ini_write_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'section', documentation: '' },
+            { label: 'key', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(section, key, str)'
     },
 	instance_activate_all: {
@@ -6555,30 +6615,58 @@ exports.globalfunctions = {
     },
 	instance_activate_object: {
         description: '[Function]',
+        parameters: [
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(obj)'
     },
 	instance_activate_region: {
         description: '[Function]',
+        parameters: [
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'inside', documentation: '' }
+        ],
         signature: '(left, top, width, height, inside)'
     },
 	instance_change: {
         description: '[Function]',
+        parameters: [
+            { label: 'obj', documentation: '' },
+            { label: 'performevents', documentation: '' }
+        ],
         signature: '(obj, performevents)'
     },
 	instance_copy: {
         description: '[Function]',
+        parameters: [
+            { label: 'performevents', documentation: '' }
+        ],
         signature: '(performevent)'
     },
 	instance_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	instance_deactivate_all: {
         description: '[Function]',
+        parameters: [
+            { label: 'notme', documentation: '' }
+        ],
         signature: '(notme)'
     },
 	instance_deactivate_object: {
         description: '[Function]',
+        parameters: [
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(obj)'
     },
 	instance_deactivate_region: {
@@ -6591,6 +6679,9 @@ exports.globalfunctions = {
     },
 	instance_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(obj)'
     },
 	instance_find: {
@@ -6599,22 +6690,45 @@ exports.globalfunctions = {
     },
 	instance_furthest: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	instance_nearest: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	instance_number: {
         description: '[Function]',
+        parameters: [
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(obj)'
     },
 	instance_place: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	instance_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	int64: {
@@ -8147,6 +8261,11 @@ exports.globalfunctions = {
     },
 	place_meeting: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	place_snapped: {
@@ -8211,6 +8330,11 @@ exports.globalfunctions = {
     },
 	position_meeting: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, obj)'
     },
 	power: {
