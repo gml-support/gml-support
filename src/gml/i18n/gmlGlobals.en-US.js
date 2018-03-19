@@ -8465,6 +8465,10 @@ exports.globalfunctions = {
     },
 	path_delete_point: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'n', documentation: '' }
+        ],
         signature: '(ind, n)'
     },
 	path_duplicate: {
@@ -8528,14 +8532,26 @@ exports.globalfunctions = {
     },
 	path_get_point_speed: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'n', documentation: '' }
+        ],
         signature: '(ind, n)'
     },
 	path_get_point_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'n', documentation: '' }
+        ],
         signature: '(ind, n)'
     },
 	path_get_point_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'n', documentation: '' }
+        ],
         signature: '(ind, n)'
     },
 	path_get_precision: {
@@ -8547,22 +8563,45 @@ exports.globalfunctions = {
     },
 	path_get_speed: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'pos', documentation: '' }
+        ],
         signature: '(ind, pos)'
     },
 	path_get_time: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'speed', documentation: '' }
+        ],
         signature: '(ind, speed)'
     },
 	path_get_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'pos', documentation: '' }
+        ],
         signature: '(ind, pos)'
     },
 	path_get_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'pos', documentation: '' }
+        ],
         signature: '(ind, pos)'
     },
 	path_insert_point: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'n', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'speed', documentation: '' }
+        ],
         signature: '(ind, n, x, y, speed)'
     },
 	path_mirror: {
@@ -8590,50 +8629,107 @@ exports.globalfunctions = {
     },
 	path_rotate: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(ind, angle)'
     },
 	path_set_closed: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'closed', documentation: '' }
+        ],
         signature: '(ind, closed)'
     },
 	path_set_kind: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(ind, kind)'
     },
 	path_set_precision: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'prec', documentation: '' }
+        ],
         signature: '(ind, prec)'
     },
 	path_shift: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'xshift', documentation: '' },
+            { label: 'yshift', documentation: '' }
+        ],
         signature: '(ind, xshift, yshift)'
     },
 	path_start: {
         description: '[Function]',
+        parameters: [
+            { label: 'path', documentation: '' },
+            { label: 'speed', documentation: '' },
+            { label: 'endaction', documentation: '' },
+            { label: 'absolute', documentation: '' }
+        ],
         signature: '(path, speed, endaction, absolute)'
     },
 	physics_apply_angular_impulse: {
         description: '[Function]',
+        parameters: [
+            { label: 'impulse', documentation: '' }
+        ],
         signature: '(impulse)'
     },
 	physics_apply_force: {
         description: '[Function]',
+        parameters: [
+            { label: 'xpos', documentation: '' },
+            { label: 'ypos', documentation: '' },
+            { label: 'xforce', documentation: '' },
+            { label: 'yforce', documentation: '' }
+        ],
         signature: '(xpos, ypos, xforce, yforce)'
     },
 	physics_apply_impulse: {
         description: '[Function]',
+        parameters: [
+            { label: 'xpos', documentation: '' },
+            { label: 'ypos', documentation: '' },
+            { label: 'ximpulse', documentation: '' },
+            { label: 'yimpulse', documentation: '' }
+        ],
         signature: '(xpos, ypos, ximpulse, yimpulse)'
     },
 	physics_apply_local_force: {
         description: '[Function]',
+        parameters: [
+            { label: 'xlocal', documentation: '' },
+            { label: 'ylocal', documentation: '' },
+            { label: 'xforce_local', documentation: '' },
+            { label: 'yforce_local', documentation: '' }
+        ],
         signature: '(xlocal, ylocal, xforce_local, yforce_local)'
     },
 	physics_apply_local_impulse: {
         description: '[Function]',
+        parameters: [
+            { label: 'xlocal', documentation: '' },
+            { label: 'ylocal', documentation: '' },
+            { label: 'ximpulse_local', documentation: '' },
+            { label: 'yimpulse_local', documentation: '' }
+        ],
         signature: '(xlocal, ylocal, ximpulse_local, yimpulse_local)'
     },
 	physics_apply_torque: {
         description: '[Function]',
+        parameters: [
+            { label: 'torque', documentation: '' }
+        ],
         signature: '(torque)'
     },
 	physics_draw_debug: {
@@ -8641,14 +8737,29 @@ exports.globalfunctions = {
     },
 	physics_fixture_add_point: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'local_x', documentation: '' },
+            { label: 'local_y', documentation: '' }
+        ],
         signature: '(fixture, local_x, local_y)'
     },
 	physics_fixture_bind: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(fixture, obj)'
     },
 	physics_fixture_bind_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'xo', documentation: '' },
+            { label: 'yo', documentation: '' }
+        ],
         signature: '(fixture, obj, xo, yo)'
     },
 	physics_fixture_create: {
@@ -8656,130 +8767,323 @@ exports.globalfunctions = {
     },
 	physics_fixture_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' }
+        ],
         signature: '(fixture)'
     },
 	physics_fixture_set_angular_damping: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'damping', documentation: '' }
+        ],
         signature: '(fixture, damping)'
     },
 	physics_fixture_set_awake: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'flag', documentation: '' }
+        ],
         signature: '(fixture, flag)'
     },
 	physics_fixture_set_box_shape: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'halfWidth', documentation: '' },
+            { label: 'halfHeight', documentation: '' }
+        ],
         signature: '(fixture, halfWidth, halfHeight)'
     },
 	physics_fixture_set_chain_shape: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'loop', documentation: '' }
+        ],
         signature: '(fixture, loop)'
     },
 	physics_fixture_set_circle_shape: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'circleRadius', documentation: '' }
+        ],
         signature: '(fixture, circleRadius)'
     },
 	physics_fixture_set_collision_group: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'group', documentation: '' }
+        ],
         signature: '(fixture, group)'
     },
 	physics_fixture_set_density: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'density', documentation: '' }
+        ],
         signature: '(fixture, density)'
     },
 	physics_fixture_set_edge_shape: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'local_x1', documentation: '' },
+            { label: 'local_y1', documentation: '' },
+            { label: 'local_x2', documentation: '' },
+            { label: 'local_y2', documentation: '' }
+        ],
         signature: '(fixture, local_x1, local_y1, local_x2, local_y2)'
     },
 	physics_fixture_set_friction: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'friction', documentation: '' }
+        ],
         signature: '(fixture, friction)'
     },
 	physics_fixture_set_kinematic: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' }
+        ],
         signature: '(fixture)'
     },
 	physics_fixture_set_linear_damping: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'damping', documentation: '' }
+        ],
         signature: '(fixture, damping)'
     },
 	physics_fixture_set_polygon_shape: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' }
+        ],
         signature: '(fixture)'
     },
 	physics_fixture_set_restitution: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'restitution', documentation: '' }
+        ],
         signature: '(fixture, restitution)'
     },
 	physics_fixture_set_sensor: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'sensorState', documentation: '' }
+        ],
         signature: '(fixture, sensorState)'
     },
 	physics_get_density: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' }
+        ],
         signature: '(fixture)'
     },
 	physics_get_friction: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' }
+        ],
         signature: '(fixture)'
     },
 	physics_get_restitution: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' }
+        ],
         signature: '(fixture)'
     },
 	physics_joint_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'joint', documentation: '' }
+        ],
         signature: '(joint)'
     },
 	physics_joint_distance_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_1_x', documentation: '' },
+            { label: 'anchor_1_y', documentation: '' },
+            { label: 'anchor_2_x', documentation: '' },
+            { label: 'anchor_2_y', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, collideInstances)'
     },
 	physics_joint_enable_motor: {
         description: '[Function]',
+        parameters: [
+            { label: 'joint', documentation: '' },
+            { label: 'motorState', documentation: '' }
+        ],
         signature: '(joint, motorState)'
     },
 	physics_joint_friction_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_x', documentation: '' },
+            { label: 'anchor_y', documentation: '' },
+            { label: 'max_force', documentation: '' },
+            { label: 'max_torque', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, collideInstances)'
     },
 	physics_joint_gear_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'revoluteJoint', documentation: '' },
+            { label: 'prismaticJoint', documentation: '' },
+            { label: 'ratio', documentation: '' }
+        ],
         signature: '(inst1, inst2, revoluteJoint, prismaticJoint, ratio)'
     },
 	physics_joint_get_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'joint', documentation: '' },
+            { label: 'field', documentation: '' }
+        ],
         signature: '(joint, field)'
     },
 	physics_joint_prismatic_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_x', documentation: '' },
+            { label: 'anchor_y', documentation: '' },
+            { label: 'axis_x', documentation: '' },
+            { label: 'axis_y', documentation: '' },
+            { label: 'lower_translation_limit', documentation: '' },
+            { label: 'upper_translation_limit', documentation: '' },
+            { label: 'enable_limit', documentation: '' },
+            { label: 'max_motor_force', documentation: '' },
+            { label: 'motor_speed', documentation: '' },
+            { label: 'enable_motor', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, lower_translation_limit, upper_translation_limit, enable_limit, max_motor_force, motor_speed, enable_motor, collideInstances)'
     },
 	physics_joint_pulley_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_1_x', documentation: '' },
+            { label: 'anchor_1_y', documentation: '' },
+            { label: 'anchor_2_x', documentation: '' },
+            { label: 'anchor_2_y', documentation: '' },
+            { label: 'local_anchor_1_x', documentation: '' },
+            { label: 'local_anchor_1_y', documentation: '' },
+            { label: 'local_anchor_2_x', documentation: '' },
+            { label: 'local_anchor_2_y', documentation: '' },
+            { label: 'ratio', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, local_anchor_1_x, local_anchor_1_y, local_anchor_2_x, local_anchor_2_y, ratio, collideInstances)'
     },
 	physics_joint_revolute_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_x', documentation: '' },
+            { label: 'anchor_y', documentation: '' },
+            { label: 'lower_translation_limit', documentation: '' },
+            { label: 'upper_translation_limit', documentation: '' },
+            { label: 'enable_limit', documentation: '' },
+            { label: 'max_motor_force', documentation: '' },
+            { label: 'motor_speed', documentation: '' },
+            { label: 'enable_motor', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_x, anchor_y, lower_angle_limit, upper_angle_limit, enable_limit, max_motor_torque, motor_speed, enable_motor, collideInstances)'
     },
 	physics_joint_rope_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_1_x', documentation: '' },
+            { label: 'anchor_1_y', documentation: '' },
+            { label: 'anchor_2_x', documentation: '' },
+            { label: 'anchor_2_y', documentation: '' },
+            { label: 'maxLength', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, maxLength, collideInstances)'
     },
 	physics_joint_set_value: {
         description: '[Function]',
+        parameters: [
+            { label: 'joint', documentation: '' },
+            { label: 'field', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(joint, field, value)'
     },
 	physics_joint_weld_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_x', documentation: '' },
+            { label: 'anchor_y', documentation: '' },
+            { label: 'ref_angle', documentation: '' },
+            { label: 'freq_hz', documentation: '' },
+            { label: 'damping_ratio', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_x, anchor_y, ref_angle, freq_hz, damping_ratio, collideInstances)'
     },
 	physics_joint_wheel_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst1', documentation: '' },
+            { label: 'inst2', documentation: '' },
+            { label: 'anchor_x', documentation: '' },
+            { label: 'anchor_y', documentation: '' },
+            { label: 'axis_x', documentation: '' },
+            { label: 'axis_y', documentation: '' },
+            { label: 'enableMotor', documentation: '' },
+            { label: 'max_motor_torque', documentation: '' },
+            { label: 'motor_speed', documentation: '' },
+            { label: 'freq_hz', documentation: '' },
+            { label: 'damping_ratio', documentation: '' },
+            { label: 'collideInstances', documentation: '' }
+        ],
         signature: '(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, enableMotor, max_motor_torque, motor_speed, freq_hz, damping_ratio, collideInstances)'
     },
 	physics_mass_properties: {
         description: '[Function]',
+        parameters: [
+            { label: 'mass', documentation: '' },
+            { label: 'local_centre_of_mass_x', documentation: '' },
+            { label: 'local_centre_of_mass_y', documentation: '' },
+            { label: 'inertia', documentation: '' }
+        ],
         signature: '(mass, local_centre_of_mass_x, local_centre_of_mass_y, inertia)'
     },
 	physics_particle_count: {
@@ -8787,6 +9091,16 @@ exports.globalfunctions = {
     },
 	physics_particle_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'typeflags', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xv', documentation: '' },
+            { label: 'yv', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' },
+            { label: 'category', documentation: '' }
+        ],
         signature: '(typeflags, x, y, xv, yv, col, alpha, category)'
     },
 	physics_particle_delete: {
@@ -8798,22 +9112,53 @@ exports.globalfunctions = {
     },
 	physics_particle_delete_region_box: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'halfWidth', documentation: '' },
+            { label: 'halfHeight', documentation: '' }
+        ],
         signature: '(x, y, halfWidth, halfHeight)'
     },
 	physics_particle_delete_region_circle: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'radius', documentation: '' }
+        ],
         signature: '(x, y, radius)'
     },
 	physics_particle_delete_region_poly: {
         description: '[Function]',
+        parameters: [
+            { label: 'pointList', documentation: '' }
+        ],
         signature: '(pointList)'
     },
 	physics_particle_draw: {
         description: '[Function]',
+        parameters: [
+            { label: 'typemask', documentation: '' },
+            { label: 'category', documentation: '' },
+            { label: 'sprite', documentation: '' },
+            { label: 'subimg', documentation: '' }
+        ],
         signature: '(typemask, category, sprite, subimg)'
     },
 	physics_particle_draw_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'typemask', documentation: '' },
+            { label: 'category', documentation: '' },
+            { label: 'sprite', documentation: '' },
+            { label: 'subimg', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'angle', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(typemask, category, sprite, subimg, xscale, yscale, angle, col, alpha)'
     },
 	physics_particle_get_damping: {
@@ -8821,10 +9166,19 @@ exports.globalfunctions = {
     },
 	physics_particle_get_data: {
         description: '[Function]',
+        parameters: [
+            { label: 'buffer', documentation: '' },
+            { label: 'dataFlags', documentation: '' }
+        ],
         signature: '(buffer, dataFlags)'
     },
 	physics_particle_get_data_particle: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'buffer', documentation: '' },
+            { label: 'dataFlags', documentation: '' }
+        ],
         signature: '(ind, buffer, dataFlags)'
     },
 	physics_particle_get_density: {
@@ -8835,6 +9189,9 @@ exports.globalfunctions = {
     },
 	physics_particle_get_group_flags: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_get_max_count: {
@@ -8853,18 +9210,42 @@ exports.globalfunctions = {
     },
 	physics_particle_group_begin: {
         description: '[Function]',
+        parameters: [
+            { label: 'typeflags', documentation: '' },
+            { label: 'groupflag', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'ang', documentation: '' },
+            { label: 'xv', documentation: '' },
+            { label: 'yv', documentation: '' },
+            { label: 'angVelocity', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' },
+            { label: 'strength', documentation: '' },
+            { label: 'category', documentation: '' }
+        ],
         signature: '(typeflags, groupflags, x, y, ang, xv, yv, angVelocity, col, alpha, strength, category)'
     },
 	physics_particle_group_box: {
         description: '[Function]',
+        parameters: [
+            { label: 'halfWidth', documentation: '' },
+            { label: 'halfHeight', documentation: '' }
+        ],
         signature: '(halfWidth, halfHeight)'
     },
 	physics_particle_group_circle: {
         description: '[Function]',
+        parameters: [
+            { label: 'radius', documentation: '' }
+        ],
         signature: '(radius)'
     },
 	physics_particle_group_count: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_delete: {
@@ -8879,46 +9260,81 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_angle: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_ang_vel: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_centre_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_centre_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_data: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' },
+            { label: 'buffer', documentation: '' },
+            { label: 'dataFlags', documentation: '' }
+        ],
         signature: '(group, buffer, dataFlags)'
     },
 	physics_particle_group_get_inertia: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_mass: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_vel_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_vel_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_x: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_get_y: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' }
+        ],
         signature: '(group)'
     },
 	physics_particle_group_join: {
@@ -8958,6 +9374,9 @@ exports.globalfunctions = {
     },
 	physics_particle_set_radius: {
         description: '[Function]',
+        parameters: [
+            { label: 'radius', documentation: '' }
+        ],
         signature: '(radius)'
     },
 	physics_pause_enable: {
