@@ -9339,6 +9339,10 @@ exports.globalfunctions = {
     },
 	physics_particle_group_join: {
         description: '[Function]',
+        parameters: [
+            { label: 'to', documentation: '' },
+            { label: 'from', documentation: '' }
+        ],
         signature: '(to, from)'
     },
 	physics_particle_group_polygon: {
@@ -9346,30 +9350,54 @@ exports.globalfunctions = {
     },
 	physics_particle_set_category_flags: {
         description: '[Function]',
+        parameters: [
+            { label: 'catagory', documentation: '' },
+            { label: 'typeflags', documentation: '' }
+        ],
         signature: '(category, typeflags)'
     },
 	physics_particle_set_damping: {
         description: '[Function]',
+        parameters: [
+            { label: 'damping', documentation: '' }
+        ],
         signature: '(damping)'
     },
 	physics_particle_set_density: {
         description: '[Function]',
+        parameters: [
+            { label: 'density', documentation: '' }
+        ],
         signature: '(density)'
     },
 	physics_particle_set_flags: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'typeflags', documentation: '' }
+        ],
         signature: '(ind, typeflags)'
     },
 	physics_particle_set_gravity_scale: {
         description: '[Function]',
+        parameters: [
+            { label: 'scale', documentation: '' }
+        ],
         signature: '(scale)'
     },
 	physics_particle_set_group_flags: {
         description: '[Function]',
+        parameters: [
+            { label: 'group', documentation: '' },
+            { label: 'groupflags', documentation: '' }
+        ],
         signature: '(group, groupflags)'
     },
 	physics_particle_set_max_count: {
         description: '[Function]',
+        parameters: [
+            { label: 'count', documentation: '' }
+        ],
         signature: '(count)'
     },
 	physics_particle_set_radius: {
@@ -9381,46 +9409,87 @@ exports.globalfunctions = {
     },
 	physics_pause_enable: {
         description: '[Function]',
+        parameters: [
+            { label: 'pause', documentation: '' }
+        ],
         signature: '(pause)'
     },
 	physics_remove_fixture: {
         description: '[Function]',
+        parameters: [
+            { label: 'inst', documentation: '' },
+            { label: 'id', documentation: '' }
+        ],
         signature: '(inst, id)'
     },
 	physics_set_density: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'density', documentation: '' }
+        ],
         signature: '(fixture, density)'
     },
 	physics_set_friction: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'friction', documentation: '' }
+        ],
         signature: '(fixture, friction)'
     },
 	physics_set_restitution: {
         description: '[Function]',
+        parameters: [
+            { label: 'fixture', documentation: '' },
+            { label: 'restitution', documentation: '' }
+        ],
         signature: '(fixture, restitution)'
     },
 	physics_test_overlap: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'angle', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(x, y, angle, obj)'
     },
 	physics_world_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'PixelToMetreScale', documentation: '' }
+        ],
         signature: '(PixelToMetreScale)'
     },
 	physics_world_draw_debug: {
         description: '[Function]',
+        parameters: [
+            { label: 'draw_flags', documentation: '' }
+        ],
         signature: '(draw_flags)'
     },
 	physics_world_gravity: {
         description: '[Function]',
+        parameters: [
+            { label: 'gx', documentation: '' },
+            { label: 'gy', documentation: '' }
+        ],
         signature: '(gx, gy)'
     },
 	physics_world_update_iterations: {
         description: '[Function]',
+        parameters: [
+            { label: 'iterations', documentation: '' }
+        ],
         signature: '(iterations)'
     },
 	physics_world_update_speed: {
         description: '[Function]',
+        parameters: [
+            { label: 'speed', documentation: '' }
+        ],
         signature: '(speed)'
     },
 	place_empty: {
@@ -9450,6 +9519,10 @@ exports.globalfunctions = {
     },
 	place_snapped: {
         description: '[Function]',
+        parameters: [
+            { label: 'hsnap', documentation: '' },
+            { label: 'vsnap', documentation: '' }
+        ],
         signature: '(hsnap, vsnap)'
     },
 	point_direction: {
@@ -9474,22 +9547,61 @@ exports.globalfunctions = {
     },
 	point_distance_3d: {
         description: '[Function]',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' }
+        ],
         signature: '(x1, y1, z1, x2, y2, z2)'
     },
 	point_in_circle: {
         description: '[Function]',
+        parameters: [
+            { label: 'px', documentation: '' },
+            { label: 'py', documentation: '' },
+            { label: 'cx', documentation: '' },
+            { label: 'cy', documentation: '' },
+            { label: 'rad', documentation: '' }
+        ],
         signature: '(px, py, cx, cy, rad)'
     },
 	point_in_rectangle: {
         description: '[Function]',
+        parameters: [
+            { label: 'px', documentation: '' },
+            { label: 'py', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' }
+        ],
         signature: '(px, py, x1, y1, x2, y2)'
     },
 	point_in_triangle: {
         description: '[Function]',
+        parameters: [
+            { label: 'px', documentation: '' },
+            { label: 'py', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' }
+        ],
         signature: '(px, py, x1, y1, x2, y2, x3, y3)'
     },
 	position_change: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' },
+            { label: 'performevents', documentation: '' }
+        ],
         signature: '(x, y, obj, performevents)'
     },
 	position_destroy: {
@@ -9519,6 +9631,10 @@ exports.globalfunctions = {
     },
 	power: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'n', documentation: '' }
+        ],
         signature: '(x, n)'
     },
 	ptr: {
@@ -9537,14 +9653,26 @@ exports.globalfunctions = {
     },
 	push_get_first_local_notification: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_map', documentation: '' }
+        ],
         signature: '(ds_map)'
     },
 	push_get_next_local_notification: {
         description: '[Function]',
+        parameters: [
+            { label: 'ds_map', documentation: '' }
+        ],
         signature: '(ds_map)'
     },
 	push_local_notification: {
         description: '[Function]',
+        parameters: [
+            { label: 'fire_time', documentation: '' },
+            { label: 'title', documentation: '' },
+            { label: 'message', documentation: '' },
+            { label: 'data', documentation: '' }
+        ],
         signature: '(fire_time, title, message, data)'
     },
 	radtodeg: {
@@ -9592,10 +9720,16 @@ exports.globalfunctions = {
     },
 	random_set_seed: {
         description: '[Function]',
+        parameters: [
+            { label: 'seed', documentation: '' }
+        ],
         signature: '(seed)'
     },
 	random_use_old_version: {
         description: '[Function]',
+        parameters: [
+            { label: 'trueFalse', documentation: '' }
+        ],
         signature: '(trueFalse)'
     },
 	real: {
@@ -9607,14 +9741,45 @@ exports.globalfunctions = {
     },
 	rectangle_in_circle: {
         description: '[Function]',
+        parameters: [
+            { label: 'sx1', documentation: '' },
+            { label: 'sy1', documentation: '' },
+            { label: 'sx2', documentation: '' },
+            { label: 'sy2', documentation: '' },
+            { label: 'cx', documentation: '' },
+            { label: 'cy', documentation: '' },
+            { label: 'rad', documentation: '' }
+        ],
         signature: '(sx1, sy1, sx2, sy2, cx, cy, rad)'
     },
 	rectangle_in_rectangle: {
         description: '[Function]',
+        parameters: [
+            { label: 'sx1', documentation: '' },
+            { label: 'sy1', documentation: '' },
+            { label: 'sx2', documentation: '' },
+            { label: 'sy2', documentation: '' },
+            { label: 'dx1', documentation: '' },
+            { label: 'dy1', documentation: '' },
+            { label: 'dx2', documentation: '' },
+            { label: 'dy2', documentation: '' }
+        ],
         signature: '(sx1, sy1, sx2, sy2, dx1, dy1, dx2, dy2)'
     },
 	rectangle_in_triangle: {
         description: '[Function]',
+        parameters: [
+            { label: 'sx1', documentation: '' },
+            { label: 'sy1', documentation: '' },
+            { label: 'sx2', documentation: '' },
+            { label: 'sy2', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'x3', documentation: '' },
+            { label: 'y3', documentation: '' }
+        ],
         signature: '(sx1, sy1, sx2, sy2, x1, y1, x2, y2, x3, y3)'
     },
 	room_add: {
@@ -9622,6 +9787,10 @@ exports.globalfunctions = {
     },
 	room_assign: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'source', documentation: '' }
+        ],
         signature: '(ind, source)'
     },
 	room_duplicate: {
@@ -9647,6 +9816,9 @@ exports.globalfunctions = {
     },
 	room_goto: {
         description: '[Function]',
+        parameters: [
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(numb)'
     },
 	room_goto_next: {
@@ -9657,6 +9829,12 @@ exports.globalfunctions = {
     },
 	room_instance_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(ind, x, y, obj)'
     },
 	room_instance_clear: {
@@ -9668,10 +9846,16 @@ exports.globalfunctions = {
     },
 	room_next: {
         description: '[Function]',
+        parameters: [
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(numb)'
     },
 	room_previous: {
         description: '[Function]',
+        parameters: [
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(numb)'
     },
 	room_restart: {
@@ -9679,42 +9863,125 @@ exports.globalfunctions = {
     },
 	room_set_background: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'bind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'fore', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'htiled', documentation: '' },
+            { label: 'vtiled', documentation: '' },
+            { label: 'hspeed', documentation: '' },
+            { label: 'vspeed', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
     },
 	room_set_background_color: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'show', documentation: '' }
+        ],
         signature: '(ind, col, show)'
     },
 	room_set_background_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'show', documentation: '' }
+        ],
         signature: '(ind, col, show)'
     },
 	room_set_height: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'h', documentation: '' }
+        ],
         signature: '(ind, h)'
     },
 	room_set_persistent: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'pers', documentation: '' }
+        ],
         signature: '(ind, pers)'
     },
 	room_set_view: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'xview', documentation: '' },
+            { label: 'yview', documentation: '' },
+            { label: 'wview', documentation: '' },
+            { label: 'hview', documentation: '' },
+            { label: 'xport', documentation: '' },
+            { label: 'yport', documentation: '' },
+            { label: 'wport', documentation: '' },
+            { label: 'hport', documentation: '' },
+            { label: 'hborder', documentation: '' },
+            { label: 'vborder', documentation: '' },
+            { label: 'hspeed', documentation: '' },
+            { label: 'vspeed', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
         signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
     },
 	room_set_view_enabled: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'val', documentation: '' }
+        ],
         signature: '(ind, val)'
     },
 	room_set_width: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'w', documentation: '' }
+        ],
         signature: '(ind, w)'
     },
 	room_tile_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'hieght', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(ind, back, left, top, width, height, x, y, depth)'
     },
 	room_tile_add_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'hieght', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
     },
 	room_tile_clear: {
@@ -9740,10 +10007,23 @@ exports.globalfunctions = {
     },
 	screen_save_part: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' }
+        ],
         signature: '(fname, x, y, w, h)'
     },
 	script_execute: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'arg0', documentation: '' },
+            { label: 'arg1', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(ind, arg0, arg1, ...)'
     },
 	script_exists: {
@@ -9793,14 +10073,25 @@ exports.globalfunctions = {
     },
 	shader_get_sampler_index: {
         description: '[Function]',
+        parameters: [
+            { label: 'shader', documentation: '' },
+            { label: 'uniform_name', documentation: '' }
+        ],
         signature: '(shader, uniform_name)'
     },
 	shader_get_uniform: {
         description: '[Function]',
+        parameters: [
+            { label: 'shader', documentation: '' },
+            { label: 'uniform_name', documentation: '' }
+        ],
         signature: '(shader, uniform_name)'
     },
 	shader_is_compiled: {
         description: '[Function]',
+        parameters: [
+            { label: 'shader', documentation: '' }
+        ],
         signature: '(shader)'
     },
 	shader_reset: {
@@ -9808,62 +10099,118 @@ exports.globalfunctions = {
     },
 	shader_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'shader', documentation: '' }
+        ],
         signature: '(shader)'
     },
 	shader_set_uniform_f: {
         description: '[Function]',
+        parameters: [
+            { label: 'uniform_id', documentation: '' },
+            { label: 'val', documentation: '' },
+            { label: '....', documentation: '' }
+        ],
         signature: '(uniform_id, val, ....)'
     },
 	shader_set_uniform_f_array: {
         description: '[Function]',
+        parameters: [
+            { label: 'uniform_id', documentation: '' },
+            { label: 'array', documentation: '' }
+        ],
         signature: '(uniform_id, array)'
     },
 	shader_set_uniform_i: {
         description: '[Function]',
+        parameters: [
+            { label: 'uniform_id', documentation: '' },
+            { label: 'val', documentation: '' },
+            { label: '....', documentation: '' }
+        ],
         signature: '(uniform_id, val, ....)'
     },
 	shader_set_uniform_i_array: {
         description: '[Function]',
+        parameters: [
+            { label: 'uniform_id', documentation: '' },
+            { label: 'array', documentation: '' }
+        ],
         signature: '(uniform_id, array)'
     },
 	shader_set_uniform_matrix: {
         description: '[Function]',
+        parameters: [
+            { label: 'uniform_id', documentation: '' }
+        ],
         signature: '(uniform_id)'
     },
 	shader_set_uniform_matrix_array: {
         description: '[Function]',
+        parameters: [
+            { label: 'uniform_id', documentation: '' },
+            { label: 'array', documentation: '' }
+        ],
         signature: '(uniform_id, array)'
     },
 	shop_leave_rating: {
         description: '[Function]',
+        parameters: [
+            { label: 'text_string', documentation: '' },
+            { label: 'yes_string', documentation: '' },
+            { label: 'no_string', documentation: '' },
+            { label: 'url', documentation: '' }
+        ],
         signature: '(text_string, yes_string, no_string, url)'
     },
 	show_debug_message: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	show_debug_overlay: {
         description: '[Function]',
+        parameters: [
+            { label: 'bool', documentation: '' }
+        ],
         signature: '(bool)'
     },
 	show_error: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'abort', documentation: '' }
+        ],
         signature: '(str, abort)'
     },
 	show_message: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	show_message_async: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	show_question: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	show_question_async: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	sign: {
@@ -9875,10 +10222,16 @@ exports.globalfunctions = {
     },
 	sin: {
         description: '[Function]',
+        parameters: [
+            { label: 'radian_angle', documentation: '' }
+        ],
         signature: '(radian_angle)'
     },
 	skeleton_animation_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'track', documentation: '' }
+        ],
         signature: '(track)'
     },
 	skeleton_animation_get: {
@@ -9886,14 +10239,23 @@ exports.globalfunctions = {
     },
 	skeleton_animation_get_duration: {
         description: '[Function]',
+        parameters: [
+            { label: 'anim_name', documentation: '' }
+        ],
         signature: '(anim_name)'
     },
 	skeleton_animation_get_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'track', documentation: '' }
+        ],
         signature: '(track)'
     },
 	skeleton_animation_get_frames: {
         description: '[Function]',
+        parameters: [
+            { label: 'anim_name', documentation: '' }
+        ],
         signature: '(anim_name)'
     },
 	skeleton_animation_list: {
@@ -9906,6 +10268,9 @@ exports.globalfunctions = {
     },
 	skeleton_animation_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'anim_name', documentation: '' }
+        ],
         signature: '(anim_name)'
     },
 	skeleton_animation_set_ext: {
@@ -10517,6 +10882,9 @@ exports.globalfunctions = {
     },
 	string_byte_length: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_char_at: {
@@ -10537,6 +10905,9 @@ exports.globalfunctions = {
     },
 	string_digits: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_format: {
@@ -10560,18 +10931,30 @@ exports.globalfunctions = {
     },
 	string_length: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_letters: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_lettersdigits: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_lower: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_ord_at: {
@@ -10600,6 +10983,9 @@ exports.globalfunctions = {
     },
 	string_upper: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	string_width: {
@@ -11995,6 +12381,9 @@ exports.globalfunctions = {
     },
 	highscore_show: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'numb', documentation: '' }
+        ],
         signature: '(numb)'
     },
 	highscore_show_ext: {
@@ -12009,6 +12398,9 @@ exports.globalfunctions = {
     },
 	MCI_command: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	message_alpha: {
@@ -12640,6 +13032,9 @@ exports.globalfunctions = {
 	//New in GameMaker Studio 2
 	string_hash_to_newline: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'str', documentation: '' }
+        ],
         signature: '(str)'
     },
 	game_set_speed: {
@@ -13104,6 +13499,9 @@ exports.globalfunctions = {
     },
     skeleton_animation_get_frame: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'track', documentation: '' }
+        ],
         signature: '(track)'
     },
 	skeleton_animation_set_frame: {
