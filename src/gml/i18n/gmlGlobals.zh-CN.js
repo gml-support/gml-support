@@ -10260,10 +10260,19 @@ exports.globalfunctions = {
     },
 	skeleton_animation_list: {
         description: '[Function]',
+        parameters: [
+            { label: 'sprite', documentation: '' },
+            { label: 'list', documentation: '' }
+        ],
         signature: '(sprite, list)'
     },
 	skeleton_animation_mix: {
         description: '[Function]',
+        parameters: [
+            { label: 'anim_from', documentation: '' },
+            { label: 'anim_to', documentation: '' },
+            { label: 'duration', documentation: '' }
+        ],
         signature: '(anim_from, anim_to, duration)'
     },
 	skeleton_animation_set: {
@@ -10275,34 +10284,71 @@ exports.globalfunctions = {
     },
 	skeleton_animation_set_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'anim_name', documentation: '' },
+            { label: 'track', documentation: '' }
+        ],
         signature: '(anim_name, track)'
     },
 	skeleton_attachment_create: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'sprite', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'xo', documentation: '' },
+            { label: 'yo', documentation: '' },
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'ro', documentation: '' }
+        ],
         signature: '(name, sprite, ind, xo, yo, xs, ys, ro)'
     },
 	skeleton_attachment_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'slot', documentation: '' }
+        ],
         signature: '(slot)'
     },
 	skeleton_attachment_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'slot', documentation: '' },
+            { label: 'attachment', documentation: '' }
+        ],
         signature: '(slot, attachment)'
     },
 	skeleton_bone_data_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'bone', documentation: '' },
+            { label: 'map', documentation: '' }
+        ],
         signature: '(bone, map)'
     },
 	skeleton_bone_data_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'bone', documentation: '' },
+            { label: 'map', documentation: '' }
+        ],
         signature: '(bone, map)'
     },
 	skeleton_bone_state_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'bone', documentation: '' },
+            { label: 'map', documentation: '' }
+        ],
         signature: '(bone, map)'
     },
 	skeleton_bone_state_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'bone', documentation: '' },
+            { label: 'map', documentation: '' }
+        ],
         signature: '(bone, map)'
     },
 	skeleton_collision_draw_set: {
@@ -10314,6 +10360,9 @@ exports.globalfunctions = {
     },
 	skeleton_get_bounds: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	skeleton_get_minmax: {
@@ -10327,10 +10376,17 @@ exports.globalfunctions = {
     },
 	skeleton_skin_list: {
         description: '[Function]',
+        parameters: [
+            { label: 'sprite', documentation: '' },
+            { label: 'list', documentation: '' }
+        ],
         signature: '(sprite, list)'
     },
 	skeleton_skin_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'skin_name', documentation: '' }
+        ],
         signature: '(skin_name)'
     },
 	skeleton_slot_data: {
