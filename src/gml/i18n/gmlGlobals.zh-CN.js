@@ -10391,26 +10391,74 @@ exports.globalfunctions = {
     },
 	skeleton_slot_data: {
         description: '[Function]',
+        parameters: [
+            { label: 'sprite', documentation: '' },
+            { label: 'list', documentation: '' }
+        ],
         signature: '(sprite, list)'
     },
 	sprite_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'imgnumb', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' },
+            { label: 'xorig', documentation: '' },
+            { label: 'yorig', documentation: '' }
+        ],
         signature: '(fname, imgnumb, removeback, smooth, xorig, yorig)'
     },
 	sprite_add_from_surface: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(ind, id, x, y, w, h, removeback, smooth)'
     },
 	sprite_assign: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'source', documentation: '' }
+        ],
         signature: '(ind, source)'
     },
 	sprite_collision_mask: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'sepmasks', documentation: '' },
+            { label: 'bboxmode', documentation: '' },
+            { label: 'bbleft', documentation: '' },
+            { label: 'bbtop', documentation: '' },
+            { label: 'bbright', documentation: '' },
+            { label: 'bbbottom', documentation: '' },
+            { label: 'kind', documentation: '' },
+            { label: 'tolerance', documentation: '' }
+        ],
         signature: '(ind, sepmasks, bboxmode, bbleft, bbtop, bbright, bbbottom, kind, tolerance)'
     },
 	sprite_create_from_surface: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' },
+            { label: 'xorig', documentation: '' },
+            { label: 'yorig', documentation: '' }
+        ],
         signature: '(id, x, y, w, h, removeback, smooth, xorig, yorig)'
     },
 	sprite_delete: {
@@ -10499,14 +10547,26 @@ exports.globalfunctions = {
     },
 	sprite_get_texture: {
         description: '[Function]',
+        parameters: [
+            { label: 'spr', documentation: '' },
+            { label: 'subimg', documentation: '' }
+        ],
         signature: '(spr, subimg)'
     },
 	sprite_get_tpe: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'subindex', documentation: '' }
+        ],
         signature: '(index, subindex)'
     },
 	sprite_get_uvs: {
         description: '[Function]',
+        parameters: [
+            { label: 'spr', documentation: '' },
+            { label: 'subimg', documentation: '' }
+        ],
         signature: '(spr, subimg)'
     },
 	sprite_get_width: {
@@ -10532,6 +10592,10 @@ exports.globalfunctions = {
     },
 	sprite_merge: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind1', documentation: '' },
+            { label: 'ind2', documentation: '' }
+        ],
         signature: '(ind1, ind2)'
     },
 	sprite_prefetch: {
@@ -10550,30 +10614,66 @@ exports.globalfunctions = {
     },
 	sprite_replace: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'imgnumb', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' },
+            { label: 'xorig', documentation: '' },
+            { label: 'yorig', documentation: '' }
+        ],
         signature: '(ind, fname, imgnumb, removeback, smooth, xorig, yorig)'
     },
 	sprite_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'subimg', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(ind, subimg, fname)'
     },
 	sprite_save_strip: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(ind, fname)'
     },
 	sprite_set_alpha_from_sprite: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'spr', documentation: '' }
+        ],
         signature: '(ind, spr)'
     },
 	sprite_set_cache_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'max', documentation: '' }
+        ],
         signature: '(ind, max)'
     },
 	sprite_set_cache_size_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'image', documentation: '' },
+            { label: 'max', documentation: '' }
+        ],
         signature: '(ind, image, max)'
     },
 	sprite_set_offset: {
         description: '[Function]',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'xoff', documentation: '' },
+            { label: 'yoff', documentation: '' }
+        ],
         signature: '(ind, xoff, yoff)'
     },
 	sqr: {
@@ -10592,18 +10692,31 @@ exports.globalfunctions = {
     },
 	steam_activate_overlay: {
         description: '[Function]',
+        parameters: [
+            { label: 'overlayIndex', documentation: '' }
+        ],
         signature: '(overlayIndex)'
     },
 	steam_activate_overlay_browser: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' }
+        ],
         signature: '(url)'
     },
 	steam_activate_overlay_store: {
         description: '[Function]',
+        parameters: [
+            { label: 'app_id', documentation: '' }
+        ],
         signature: '(app_id)'
     },
 	steam_activate_overlay_user: {
         description: '[Function]',
+        parameters: [
+            { label: 'dialog_name', documentation: '' },
+            { label: 'steamid', documentation: '' }
+        ],
         signature: '(dialog_name, steamid)'
     },
 	steam_available_languages: {
@@ -10611,10 +10724,18 @@ exports.globalfunctions = {
     },
 	steam_clear_achievement: {
         description: '[Function]',
+        parameters: [
+            { label: 'ach_name', documentation: '' }
+        ],
         signature: '(ach_name)'
     },
 	steam_create_leaderboard: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'sort_method', documentation: '' },
+            { label: 'display_type', documentation: '' }
+        ],
         signature: '(lb_name, sort_method, display_type)'
     },
 	steam_current_game_language: {
@@ -10622,14 +10743,27 @@ exports.globalfunctions = {
     },
 	steam_download_friends_scores: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' }
+        ],
         signature: '(lb_name)'
     },
 	steam_download_scores: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'start_idx', documentation: '' },
+            { label: 'end_idx', documentation: '' }
+        ],
         signature: '(lb_name, start_idx, end_idx)'
     },
 	steam_download_scores_around_user: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'range_start', documentation: '' },
+            { label: 'range_end', documentation: '' }
+        ],
         signature: '(lb_name, range_start, range_end)'
     },
 	steam_file_delete: {
@@ -10676,14 +10810,26 @@ exports.globalfunctions = {
     },
 	steam_file_write: {
         description: '[Function]',
+        parameters: [
+            { label: 'steam_filename', documentation: '' },
+            { label: 'data', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(steam_filename, data, size)'
     },
 	steam_file_write_file: {
         description: '[Function]',
+        parameters: [
+            { label: 'steam_filename', documentation: '' },
+            { label: 'local_filename', documentation: '' }
+        ],
         signature: '(steam_filename, local_filename)'
     },
 	steam_get_achievement: {
         description: '[Function]',
+        parameters: [
+            { label: 'ach_name', documentation: '' }
+        ],
         signature: '(ach_name)'
     },
 	steam_get_app_id: {
@@ -10700,14 +10846,23 @@ exports.globalfunctions = {
     },
 	steam_get_stat_avg_rate: {
         description: '[Function]',
+        parameters: [
+            { label: 'stat_name', documentation: '' }
+        ],
         signature: '(stat_name)'
     },
 	steam_get_stat_float: {
         description: '[Function]',
+        parameters: [
+            { label: 'stat_name', documentation: '' }
+        ],
         signature: '(stat_name)'
     },
 	steam_get_stat_int: {
         description: '[Function]',
+        parameters: [
+            { label: 'stat_name', documentation: '' }
+        ],
         signature: '(stat_name)'
     },
 	steam_get_user_account_id: {
@@ -10715,6 +10870,9 @@ exports.globalfunctions = {
     },
 	steam_get_user_persona_name: {
         description: '[Function]',
+        parameters: [
+            { label: 'steam_id', documentation: '' }
+        ],
         signature: '(steam_id)'
     },
 	steam_get_user_steam_id: {
@@ -10743,6 +10901,12 @@ exports.globalfunctions = {
     },
 	steam_publish_workshop_file: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' },
+            { label: 'previewImage', documentation: '' },
+            { label: 'title', documentation: '' },
+            { label: 'description', documentation: '' }
+        ],
         signature: '(filename, previewImage, title, description)'
     },
 	steam_reset_all_stats: {
@@ -10753,22 +10917,43 @@ exports.globalfunctions = {
     },
 	steam_send_screenshot: {
         description: '[Function]',
+        parameters: [
+            { label: 'filename', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(filename, width, height)'
     },
 	steam_set_achievement: {
         description: '[Function]',
+        parameters: [
+            { label: 'ach_name', documentation: '' }
+        ],
         signature: '(ach_name)'
     },
 	steam_set_stat_avg_rate: {
         description: '[Function]',
+        parameters: [
+            { label: 'stat_name', documentation: '' },
+            { label: 'session_count', documentation: '' },
+            { label: 'session_length', documentation: '' }
+        ],
         signature: '(stat_name, session_count, session_length)'
     },
 	steam_set_stat_float: {
         description: '[Function]',
+        parameters: [
+            { label: 'stat_name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(stat_name, value)'
     },
 	steam_set_stat_int: {
         description: '[Function]',
+        parameters: [
+            { label: 'stat_name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(stat_name, value)'
     },
 	steam_stats_ready: {
@@ -10776,42 +10961,92 @@ exports.globalfunctions = {
     },
 	steam_ugc_create_item: {
         description: '[Function]',
+        parameters: [
+            { label: 'consumer_app_id', documentation: '' },
+            { label: 'file_type', documentation: '' }
+        ],
         signature: '(consumer_app_id, file_type)'
     },
 	steam_ugc_create_query_all: {
         description: '[Function]',
+        parameters: [
+            { label: 'query_type', documentation: '' },
+            { label: 'match_type', documentation: '' },
+            { label: 'page', documentation: '' }
+        ],
         signature: '(query_type, match_type, page)'
     },
 	steam_ugc_create_query_all_ex: {
         description: '[Function]',
+        parameters: [
+            { label: 'query_type', documentation: '' },
+            { label: 'match_type', documentation: '' },
+            { label: 'page', documentation: '' },
+            { label: 'creator_app_id', documentation: '' },
+            { label: 'consumer_app_id', documentation: '' }
+        ],
         signature: '(query_type, match_type, page, creator_app_id, consumer_app_id)'
     },
 	steam_ugc_create_query_user: {
         description: '[Function]',
+        parameters: [
+            { label: 'list_type', documentation: '' },
+            { label: 'match_type', documentation: '' },
+            { label: 'sort_order', documentation: '' },
+            { label: 'page', documentation: '' }
+        ],
         signature: '(list_type, match_type, sort_order, page)'
     },
 	steam_ugc_create_query_user_ex: {
         description: '[Function]',
+        parameters: [
+            { label: 'list_type', documentation: '' },
+            { label: 'match_type', documentation: '' },
+            { label: 'sort_order', documentation: '' },
+            { label: 'page', documentation: '' },
+            { label: 'account_id', documentation: '' },
+            { label: 'creator_app_id', documentation: '' },
+            { label: 'consumer_app_id', documentation: '' }
+        ],
         signature: '(list_type, match_type, sort_order, page, account_id, creator_app_id, consumer_app_id)'
     },
 	steam_ugc_download: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_handle', documentation: '' },
+            { label: 'dest_filename', documentation: '' }
+        ],
         signature: '(ugc_handle, dest_filename)'
     },
 	steam_ugc_get_item_install_info: {
         description: '[Function]',
+        parameters: [
+            { label: 'published_file_id', documentation: '' },
+            { label: 'info_map', documentation: '' }
+        ],
         signature: '(published_file_id, info_map)'
     },
 	steam_ugc_get_item_update_info: {
         description: '[Function]',
+        parameters: [
+            { label: 'published_file_id', documentation: '' },
+            { label: 'info_map', documentation: '' }
+        ],
         signature: '(published_file_id, info_map)'
     },
 	steam_ugc_get_item_update_progress: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'info_map', documentation: '' }
+        ],
         signature: '(ugc_update_handle, info_map)'
     },
 	steam_ugc_get_subscribed_items: {
         description: '[Function]',
+        parameters: [
+            { label: 'info_map', documentation: '' }
+        ],
         signature: '(item_list)'
     },
 	steam_ugc_num_subscribed_items: {
@@ -10819,110 +11054,217 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_add_excluded_tag: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'tag_name', documentation: '' }
+        ],
         signature: '(ugc_query_handle, tag_name)'
     },
 	steam_ugc_query_add_required_tag: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'tag_name', documentation: '' }
+        ],
         signature: '(ugc_query_handle, tag_name)'
     },
 	steam_ugc_query_set_allow_cached_response: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'max_age_seconds', documentation: '' }
+        ],
         signature: '(ugc_query_handle, max_age_seconds)'
     },
 	steam_ugc_query_set_cloud_filename_filter: {
         description: '[Function]',
-        signature: '(ugc_query_handle , match_cloud_filename)'
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'match_cloud_filename', documentation: '' }
+        ],
+        signature: '(ugc_query_handle, match_cloud_filename)'
     },
 	steam_ugc_query_set_match_any_tag: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'match_any_tag', documentation: '' }
+        ],
         signature: '(ugc_query_handle, match_any_tag)'
     },
 	steam_ugc_query_set_ranked_by_trend_days: {
         description: '[Function]',
-        signature: '(ugc_query_handle , days)'
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'days', documentation: '' }
+        ],
+        signature: '(ugc_query_handle, days)'
     },
 	steam_ugc_query_set_return_long_description: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'return_long_desc', documentation: '' }
+        ],
         signature: '(ugc_query_handle, return_long_desc)'
     },
 	steam_ugc_query_set_return_total_only: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'return_total_only', documentation: '' }
+        ],
         signature: '(ugc_query_handle, return_total_only)'
     },
 	steam_ugc_query_set_search_text: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' },
+            { label: 'search_text', documentation: '' }
+        ],
         signature: '(ugc_query_handle, search_text)'
     },
 	steam_ugc_request_item_details: {
         description: '[Function]',
+        parameters: [
+            { label: 'published_file_id', documentation: '' },
+            { label: 'max_age_seconds', documentation: '' }
+        ],
         signature: '(published_file_id, max_age_seconds)'
     },
 	steam_ugc_send_query: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_query_handle', documentation: '' }
+        ],
         signature: '(ugc_query_handle)'
     },
 	steam_ugc_set_item_content: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'directory', documentation: '' }
+        ],
         signature: '(ugc_update_handle, directory)'
     },
 	steam_ugc_set_item_description: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'description', documentation: '' }
+        ],
         signature: '(ugc_update_handle, description)'
     },
 	steam_ugc_set_item_preview: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'image_path', documentation: '' }
+        ],
         signature: '(ugc_update_handle, image_path)'
     },
 	steam_ugc_set_item_tags: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'tag_array', documentation: '' }
+        ],
         signature: '(ugc_update_handle, tag_array)'
     },
 	steam_ugc_set_item_title: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'title', documentation: '' }
+        ],
         signature: '(ugc_update_handle, title)'
     },
 	steam_ugc_set_item_visibility: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'visibility', documentation: '' }
+        ],
         signature: '(ugc_update_handle, visibility)'
     },
 	steam_ugc_start_item_update: {
         description: '[Function]',
+        parameters: [
+            { label: 'consumer_app_id', documentation: '' },
+            { label: 'published_file_id', documentation: '' }
+        ],
         signature: '(consumer_app_id, published_file_id)'
     },
 	steam_ugc_submit_item_update: {
         description: '[Function]',
+        parameters: [
+            { label: 'ugc_update_handle', documentation: '' },
+            { label: 'change_note', documentation: '' }
+        ],
         signature: '(ugc_update_handle, change_note)'
     },
 	steam_ugc_subscribe_item: {
         description: '[Function]',
+        parameters: [
+            { label: 'published_file_id', documentation: '' }
+        ],
         signature: '(published_file_id)'
     },
 	steam_ugc_unsubscribe_item: {
         description: '[Function]',
+        parameters: [
+            { label: 'published_file_id', documentation: '' }
+        ],
         signature: '(published_file_id)'
     },
 	steam_upload_score: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'score', documentation: '' }
+        ],
         signature: '(lb_name, score)'
     },
 	steam_upload_score_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'score', documentation: '' },
+            { label: 'buffer_id', documentation: '' }
+        ],
         signature: '(lb_name, score, buffer_id)'
     },
 	steam_upload_score_buffer_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'score', documentation: '' },
+            { label: 'buffer_id', documentation: '' },
+            { label: 'forceupdate', documentation: '' }
+        ],
         signature: '(lb_name, score, buffer_id, forceupdate)'
     },
 	steam_upload_score_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'lb_name', documentation: '' },
+            { label: 'score', documentation: '' },
+            { label: 'forceupdate', documentation: '' }
+        ],
         signature: '(lb_name, score, forceupdate)'
     },
 	steam_user_installed_dlc: {
         description: '[Function]',
+        parameters: [
+            { label: 'dlc_id', documentation: '' }
+        ],
         signature: '(dlc_id)'
     },
 	steam_user_owns_dlc: {
         description: '[Function]',
+        parameters: [
+            { label: 'dlc_id', documentation: '' }
+        ],
         signature: '(dlc_id)'
     },
 	string: {
@@ -10934,6 +11276,10 @@ exports.globalfunctions = {
     },
 	string_byte_at: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
         signature: '(str, index)'
     },
 	string_byte_length: {
@@ -10945,18 +11291,36 @@ exports.globalfunctions = {
     },
 	string_char_at: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
         signature: '(str, index)'
     },
 	string_copy: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' },
+            { label: 'count', documentation: '' }
+        ],
         signature: '(str, index, count)'
     },
 	string_count: {
         description: '[Function]',
+        parameters: [
+            { label: 'substr', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(substr, str)'
     },
 	string_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' },
+            { label: 'count', documentation: '' }
+        ],
         signature: '(str, index, count)'
     },
 	string_digits: {
@@ -10968,6 +11332,11 @@ exports.globalfunctions = {
     },
 	string_format: {
         description: '[Function]',
+        parameters: [
+            { label: 'val', documentation: '' },
+            { label: 'total', documentation: '' },
+            { label: 'dec', documentation: '' }
+        ],
         signature: '(val, total, dec)'
     },
 	string_height: {
@@ -10979,10 +11348,20 @@ exports.globalfunctions = {
     },
 	string_height_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' },
+            { label: 'sep', documentation: '' },
+            { label: 'w', documentation: '' }
+        ],
         signature: '(string, sep, w)'
     },
 	string_insert: {
         description: '[Function]',
+        parameters: [
+            { label: 'substr', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
         signature: '(substr, str, index)'
     },
 	string_length: {
@@ -11015,26 +11394,53 @@ exports.globalfunctions = {
     },
 	string_ord_at: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
         signature: '(str, index)'
     },
 	string_pos: {
         description: '[Function]',
+        parameters: [
+            { label: 'substr', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(substr, str)'
     },
 	string_repeat: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'count', documentation: '' }
+        ],
         signature: '(str, count)'
     },
 	string_replace: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'substr', documentation: '' },
+            { label: 'newstr', documentation: '' }
+        ],
         signature: '(str, substr, newstr)'
     },
 	string_replace_all: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'substr', documentation: '' },
+            { label: 'newstr', documentation: '' }
+        ],
         signature: '(str, substr, newstr)'
     },
 	string_set_byte_at: {
         description: '[Function]',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'index', documentation: '' },
+            { label: 'val', documentation: '' }
+        ],
         signature: '(str, index, val)'
     },
 	string_upper: {
@@ -11053,6 +11459,11 @@ exports.globalfunctions = {
     },
 	string_width_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'string', documentation: '' },
+            { label: 'sep', documentation: '' },
+            { label: 'w', documentation: '' }
+        ],
         signature: '(string, sep, w)'
     },
 	surface_copy: {
