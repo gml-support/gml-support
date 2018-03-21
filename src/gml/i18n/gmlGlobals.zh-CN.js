@@ -11468,10 +11468,26 @@ exports.globalfunctions = {
     },
 	surface_copy: {
         description: '[Function]',
+        parameters: [
+            { label: 'destination', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'source', documentation: '' }
+        ],
         signature: '(destination, x, y, source)'
     },
 	surface_copy_part: {
         description: '[Function]',
+        parameters: [
+            { label: 'destination', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'source', documentation: '' },
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'ws', documentation: '' },
+            { label: 'hs', documentation: '' }
+        ],
         signature: '(destination, x, y, source, xs, ys, ws, hs)'
     },
 	surface_create: {
@@ -11484,6 +11500,11 @@ exports.globalfunctions = {
     },
 	surface_create_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' }
+        ],
         signature: '(name, w, h)'
     },
 	surface_exists: {
@@ -11502,10 +11523,20 @@ exports.globalfunctions = {
     },
 	surface_getpixel: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(id, x, y)'
     },
 	surface_getpixel_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(id, x, y)'
     },
 	surface_get_height: {
@@ -11534,14 +11565,31 @@ exports.globalfunctions = {
     },
 	surface_resize: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(id, width, height)'
     },
 	surface_save: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(id, fname)'
     },
 	surface_save_part: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' }
+        ],
         signature: '(id, fname, x, y, w, h)'
     },
 	surface_set_target: {
@@ -11553,58 +11601,111 @@ exports.globalfunctions = {
     },
 	surface_set_target_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'id', documentation: '' }
+        ],
         signature: '(index, id)'
     },
 	tan: {
         description: '[Function]',
+        parameters: [
+            { label: 'radian_angle', documentation: '' }
+        ],
         signature: '(radian_angle)'
     },
 	texture_get_height: {
         description: '[Function]',
+        parameters: [
+            { label: 'texid', documentation: '' }
+        ],
         signature: '(texid)'
     },
 	texture_get_texel_height: {
         description: '[Function]',
+        parameters: [
+            { label: 'texture_id', documentation: '' }
+        ],
         signature: '(texture_id)'
     },
 	texture_get_texel_width: {
         description: '[Function]',
+        parameters: [
+            { label: 'texture_id', documentation: '' }
+        ],
         signature: '(texture_id)'
     },
 	texture_get_width: {
         description: '[Function]',
+        parameters: [
+            { label: 'texid', documentation: '' }
+        ],
         signature: '(texid)'
     },
 	texture_global_scale: {
         description: '[Function]',
+        parameters: [
+            { label: 'pow2integer', documentation: '' }
+        ],
         signature: '(pow2integer)'
     },
 	texture_set_blending: {
         description: '[Function]',
+        parameters: [
+            { label: 'blend', documentation: '' }
+        ],
         signature: '(blend)'
     },
 	texture_set_interpolation: {
         description: '[Function]',
+        parameters: [
+            { label: 'linear', documentation: '' }
+        ],
         signature: '(linear)'
     },
 	texture_set_interpolation_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'linear', documentation: '' }
+        ],
         signature: '(sampler_id, linear)'
     },
 	texture_set_repeat: {
         description: '[Function]',
+        parameters: [
+            { label: 'repeat', documentation: '' }
+        ],
         signature: '(repeat)'
     },
 	texture_set_repeat_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'repeat', documentation: '' }
+        ],
         signature: '(sampler_id, repeat)'
     },
 	texture_set_stage: {
         description: '[Function]',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'texture_id', documentation: '' }
+        ],
         signature: '(sampled_id, texture_id)'
     },
 	tile_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'background', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(background, left, top, width, height, x, y, depth)'
     },
 	tile_delete: {
@@ -11661,6 +11762,9 @@ exports.globalfunctions = {
     },
 	tile_get_id: {
         description: '[Function]',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	tile_get_ids: {
@@ -11668,6 +11772,9 @@ exports.globalfunctions = {
     },
 	tile_get_ids_at_depth: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(depth)'
     },
 	tile_get_left: {
@@ -11728,62 +11835,127 @@ exports.globalfunctions = {
     },
 	tile_layer_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(depth)'
     },
 	tile_layer_delete_at: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(depth, x, y)'
     },
 	tile_layer_depth: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'newdepth', documentation: '' }
+        ],
         signature: '(depth, newdepth)'
     },
 	tile_layer_find: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(depth, x, y)'
     },
 	tile_layer_hide: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(depth)'
     },
 	tile_layer_shift: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(depth, x, y)'
     },
 	tile_layer_show: {
         description: '[Function]',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(depth)'
     },
 	tile_set_alpha: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(id, alpha)'
     },
 	tile_set_background: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'background', documentation: '' }
+        ],
         signature: '(id, background)'
     },
 	tile_set_blend: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'colour', documentation: '' }
+        ],
         signature: '(id, colour)'
     },
 	tile_set_depth: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(id, depth)'
     },
 	tile_set_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(id, x, y)'
     },
 	tile_set_region: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(id, left, top, width, height)'
     },
 	tile_set_scale: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' }
+        ],
         signature: '(id, xscale, yscale)'
     },
 	tile_set_visible: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
         signature: '(id, visible)'
     },
 	timeline_add: {
@@ -11826,10 +11998,19 @@ exports.globalfunctions = {
     },
 	timeline_moment_add_script: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'step', documentation: '' },
+            { label: 'script', documentation: '' }
+        ],
         signature: '(ind, step, script)'
     },
 	timeline_moment_clear: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'step', documentation: '' }
+        ],
         signature: '(ind, step)'
     },
 	timeline_size: {
@@ -11851,30 +12032,60 @@ exports.globalfunctions = {
     },
 	url_open: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' }
+        ],
         signature: '(url)'
     },
 	url_open_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'target', documentation: '' }
+        ],
         signature: '(url, target)'
     },
 	url_open_full: {
         description: '[Function]',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'target', documentation: '' },
+            { label: 'options', documentation: '' }
+        ],
         signature: '(url, target, options)'
     },
 	vertex_argb: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'argb', documentation: '' }
+        ],
         signature: '(vbuff, argb)'
     },
 	vertex_begin: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'format', documentation: '' }
+        ],
         signature: '(vbuff, format)'
     },
 	vertex_color: {
         description: '[Function]',
-        signature: '(vbuff, colour, alpha)'
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'color', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(vbuff, color, alpha)'
     },
 	vertex_colour: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(vbuff, colour, alpha)'
     },
 	vertex_create_buffer: {
@@ -11882,38 +12093,79 @@ exports.globalfunctions = {
     },
 	vertex_create_buffer_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'size', documentation: '' }
+        ],
         signature: '(size)'
     },
 	vertex_create_buffer_from_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'src_buffer', documentation: '' },
+            { label: 'format', documentation: '' }
+        ],
         signature: '(src_buffer, format)'
     },
 	vertex_create_buffer_from_buffer_ext: {
         description: '[Function]',
+        parameters: [
+            { label: 'src_buffer', documentation: '' },
+            { label: 'format', documentation: '' },
+            { label: 'src_offset', documentation: '' },
+            { label: 'num_vertices', documentation: '' }
+        ],
         signature: '(src_buffer, format, src_offset, num_vertices)'
     },
 	vertex_delete_buffer: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' }
+        ],
         signature: '(vbuff)'
     },
 	vertex_end: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' }
+        ],
         signature: '(vbuff)'
     },
 	vertex_float1: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'f1', documentation: '' }
+        ],
         signature: '(vbuff, f1)'
     },
 	vertex_float2: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'f1', documentation: '' },
+            { label: 'f2', documentation: '' }
+        ],
         signature: '(vbuff, f1, f2)'
     },
 	vertex_float3: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'f1', documentation: '' },
+            { label: 'f2', documentation: '' },
+            { label: 'f3', documentation: '' }
+        ],
         signature: '(vbuff, f1, f2, f3)'
     },
 	vertex_float4: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'f1', documentation: '' },
+            { label: 'f2', documentation: '' },
+            { label: 'f3', documentation: '' },
+            { label: 'f4', documentation: '' }
+        ],
         signature: '(vbuff, f1, f2, f3, f4)'
     },
 	vertex_format_add_color: {
@@ -11924,6 +12176,10 @@ exports.globalfunctions = {
     },
 	vertex_format_add_custom: {
         description: '[Function]',
+        parameters: [
+            { label: 'type', documentation: '' },
+            { label: 'usage', documentation: '' }
+        ],
         signature: '(type, usage)'
     },
 	vertex_format_add_normal: {
@@ -11943,6 +12199,9 @@ exports.globalfunctions = {
     },
 	vertex_format_delete: {
         description: '[Function]',
+        parameters: [
+            { label: 'format_id', documentation: '' }
+        ],
         signature: '(format_id)'
     },
 	vertex_format_end: {
@@ -11950,42 +12209,92 @@ exports.globalfunctions = {
     },
 	vertex_freeze: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' }
+        ],
         signature: '(vbuff)'
     },
 	vertex_get_buffer_size: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' }
+        ],
         signature: '(vbuff)'
     },
 	vertex_get_number: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' }
+        ],
         signature: '(vbuff)'
     },
 	vertex_normal: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
         signature: '(vbuff, nx, ny, nz)'
     },
 	vertex_position: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(vbuff, x, y)'
     },
 	vertex_position_3d: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(vbuff, x, y, z)'
     },
 	vertex_submit: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'prim', documentation: '' },
+            { label: 'texture', documentation: '' }
+        ],
         signature: '(vbuff, prim, texture)'
     },
 	vertex_texcoord: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'u', documentation: '' },
+            { label: 'v', documentation: '' }
+        ],
         signature: '(vbuff, u, v)'
     },
 	vertex_ubyte4: {
         description: '[Function]',
+        parameters: [
+            { label: 'vbuff', documentation: '' },
+            { label: 'b1', documentation: '' },
+            { label: 'b2', documentation: '' },
+            { label: 'b3', documentation: '' },
+            { label: 'b4', documentation: '' }
+        ],
         signature: '(vbuff, b1, b2, b3, b4)'
     },
 	virtual_key_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'keycode', documentation: '' }
+        ],
         signature: '(x, y, w, h, keycode)'
     },
 	virtual_key_delete: {
@@ -12035,7 +12344,13 @@ exports.globalfunctions = {
     },
 	window_get_visible_rects: {
         description: '[Function]',
-        signature: '(startx, starty, eendx, endy)'
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' }
+        ],
+        signature: '(x1, y1, x2, y2)'
     },
 	window_get_width: {
         description: '[Function]'
@@ -12068,38 +12383,65 @@ exports.globalfunctions = {
     },
 	window_set_caption: {
         description: '[Function]',
+        arameters: [
+            { label: 'caption', documentation: '' }
+        ],
         signature: '(caption)'
     },
 	window_set_color: {
         description: '[Function]',
-        signature: '(colour)'
+        arameters: [
+            { label: 'color', documentation: '' }
+        ],
+        signature: '(color)'
     },
 	window_set_colour: {
         description: '[Function]',
+        arameters: [
+            { label: 'colour', documentation: '' }
+        ],
         signature: '(colour)'
     },
 	window_set_cursor: {
         description: '[Function]',
+        arameters: [
+            { label: 'curs', documentation: '' }
+        ],
         signature: '(curs)'
     },
 	window_set_fullscreen: {
         description: '[Function]',
+        arameters: [
+            { label: 'full', documentation: '' }
+        ],
         signature: '(full)'
     },
 	window_set_max_height: {
         description: '[Function]',
+        arameters: [
+            { label: 'maxheight', documentation: '' }
+        ],
         signature: '(maxheight)'
     },
 	window_set_max_width: {
         description: '[Function]',
+        arameters: [
+            { label: 'maxwidth', documentation: '' }
+        ],
         signature: '(maxwidth)'
     },
 	window_set_min_height: {
         description: '[Function]',
+        arameters: [
+            { label: 'minheight', documentation: '' }
+        ],
         signature: '(minheight)'
     },
 	window_set_min_width: {
         description: '[Function]',
+        arameters: [
+            { label: 'minwidth', documentation: '' }
+        ],
         signature: '(minwidth)'
     },
 	window_set_position: {
@@ -12150,40 +12492,73 @@ exports.globalfunctions = {
     },
 	zip_unzip: {
         description: '[Function]',
+        parameters: [
+            { label: 'file', documentation: '' },
+            { label: 'destPath', documentation: '' }
+        ],
         signature: '(file, destPath)'
     },
 
     //These are the functions that were obsoleted in the old version but restored in the new version
     date_datetime_string: {
         description: '[Function]',
+        parameters: [
+            { label: 'data', documentation: '' }
+        ],
         signature: '(date)'
     },
     variable_global_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	variable_global_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	variable_global_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, value)'
     },
 	variable_instance_exists: {
         description: '[Function]',
+        parameters: [
+            { label: 'instance_id', documentation: '' },
+            { label: 'name', documentation: '' }
+        ],
         signature: '(instance_id, name)'
     },
 	variable_instance_get: {
         description: '[Function]',
+        parameters: [
+            { label: 'instance_id', documentation: '' },
+            { label: 'name', documentation: '' }
+        ],
         signature: '(instance_id, name)'
     },
 	variable_instance_set: {
         description: '[Function]',
+        parameters: [
+            { label: 'instance_id', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'val', documentation: '' }
+        ],
         signature: '(instance_id, name, val)'
     },
 	variable_instance_get_names: {
         description: '[Function]',
+        parameters: [
+            { label: 'instance_id', documentation: '' }
+        ],
         signature: '(instance_id)'
     },
 
@@ -12488,14 +12863,23 @@ exports.globalfunctions = {
     },
     sound_loop: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
     sound_play: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
     sound_stop: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
 	sound_stop_all: {
@@ -12515,6 +12899,9 @@ exports.globalfunctions = {
     },
 	sound_isplaying: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
         signature: '(index)'
     },
     audio_music_is_playing: {
@@ -12636,6 +13023,9 @@ exports.globalfunctions = {
     },
 	openfeint_set_url: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'url', documentation: '' }
+        ],
         signature: '(url)'
     },
 	openfeint_start: {
@@ -13468,11 +13858,19 @@ exports.globalfunctions = {
     },
 	window_view_mouse_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(id, x, y)'
     },
     
     texture_preload: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'texid', documentation: '' }
+        ],
         signature: '(texid)'
     },
     texture_set_priority: {
@@ -13532,6 +13930,9 @@ exports.globalfunctions = {
     },
 	texture_get_uvs: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'texid', documentation: '' }
+        ],
         signature: '(texid)'
     },
 	room_get_camera: {
@@ -13981,6 +14382,9 @@ exports.globalfunctions = {
     },
 	layer_get_id_at_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(depth)'
     },
 	layer_get_depth: {
