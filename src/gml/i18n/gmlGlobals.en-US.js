@@ -12574,10 +12574,16 @@ exports.globalfunctions = {
     },
 	iap_product_status: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'product_id', documentation: '' }
+        ],
         signature: '(product_id)'
     },
 	iap_is_downloaded: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'product_id_string', documentation: '' }
+        ],
         signature: '(purchase_id_string)'
     },
 	iap_files_purchased: {
@@ -12585,6 +12591,10 @@ exports.globalfunctions = {
     },
 	iap_product_files: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'product_id', documentation: '' },
+            { label: 'ds_list', documentation: '' }
+        ],
         signature: '(purchase_id, ds_list)'
     },
 	iap_event_queue: {
@@ -12592,10 +12602,21 @@ exports.globalfunctions = {
     },
     win8_appbar_add_element: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'type', documentation: '' },
+            { label: 'icon', documentation: '' },
+            { label: 'label', documentation: '' },
+            { label: 'section', documentation: '' },
+            { label: 'toolTip', documentation: '' },
+            { label: 'callback', documentation: '' }
+        ],
         signature: '(type, icon, label, section, toolTip, callback)'
     },
 	win8_appbar_enable: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'flag', documentation: '' }
+        ],
         signature: '(flag)'
     },
 	win8_appbar_remove_element: {
@@ -12610,6 +12631,9 @@ exports.globalfunctions = {
     },
 	win8_license_initialize_sandbox: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: '_licenseString', documentation: '' }
+        ],
         signature: '(_licenseString)'
     },
 	win8_license_trial_version: {
@@ -12627,6 +12651,9 @@ exports.globalfunctions = {
     },
 	win8_livetile_notification_begin: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'template', documentation: '' }
+        ],
         signature: '(template)'
     },
 	win8_livetile_notification_end: {
@@ -12634,26 +12661,45 @@ exports.globalfunctions = {
     },
 	win8_livetile_notification_expiry: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'expiryTime', documentation: '' }
+        ],
         signature: '(expiryTime)'
     },
 	win8_livetile_notification_image_add: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'image', documentation: '' }
+        ],
         signature: '(image)'
     },
 	win8_livetile_notification_secondary_begin: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'template', documentation: '' },
+            { label: 'tileId', documentation: '' }
+        ],
         signature: '(template, tileId)'
     },
 	win8_livetile_notification_tag: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'tag', documentation: '' }
+        ],
         signature: '(tag)'
     },
 	win8_livetile_notification_text_add: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'text', documentation: '' }
+        ],
         signature: '(text)'
     },
 	win8_livetile_queue_enable: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'flag', documentation: '' }
+        ],
         signature: '(flag)'
     },
 	win8_livetile_tile_clear: {
@@ -12661,10 +12707,19 @@ exports.globalfunctions = {
     },
 	win8_livetile_tile_notification: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'template', documentation: '' },
+            { label: 'ds_map', documentation: '' },
+            { label: 'expiry', documentation: '' },
+            { label: 'tag', documentation: '' }
+        ],
         signature: '(template, ds_map, expiry, tag)'
     },
 	win8_search_add_suggestions: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: '_dslist', documentation: '' }
+        ],
         signature: '(_dslist)'
     },
 	win8_search_disable: {
@@ -12672,10 +12727,17 @@ exports.globalfunctions = {
     },
 	win8_search_enable: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: '_selectionCallback', documentation: '' }
+        ],
         signature: '(_selectionCallback)'
     },
 	win8_secondarytile_badge_notification: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'tileId', documentation: '' }
+        ],
         signature: '(id, tileId)'
     },
 	win8_secondarytile_delete: {
@@ -12707,6 +12769,9 @@ exports.globalfunctions = {
     },
 	win8_settingscharm_remove_entry: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	win8_settingscharm_set_xaml_property: {
@@ -12887,14 +12952,26 @@ exports.globalfunctions = {
     },
 	sound_volume: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(index, value)'
     },
 	sound_global_volume: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'value', documentation: '' }
+        ],
         signature: '(value)'
     },
 	sound_fade: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: 'time', documentation: '' }
+        ],
         signature: '(index, value, time)'
     },
 	sound_isplaying: {
@@ -12915,21 +12992,37 @@ exports.globalfunctions = {
     },
 	audio_play_music: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
-        signature: '(soundid,loops)'
+        parameters: [
+            { label: 'soundid', documentation: '' },
+            { label: 'loops', documentation: '' }
+        ],
+        signature: '(soundid, loops)'
     },
 	audio_stop_music: {
         description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	audio_music_gain: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'value', documentation: '' },
+            { label: 'time', documentation: '' }
+        ],
         signature: '(value, time)'
     },
 	ads_disable: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'num', documentation: '' }
+        ],
 		signature: '(num)'
 	},
 	ads_enable: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'num', documentation: '' }
+        ],
 		signature: '(x, y, num)'
 	},
 	ads_engagement_active: {
@@ -12942,19 +13035,31 @@ exports.globalfunctions = {
 		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_event: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'stringid', documentation: '' }
+        ],
 		signature: '(stringid)'
 	},
 	ads_event_preload: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'stringid', documentation: '' }
+        ],
 		signature: '(stringid)'
 	},
 	ads_get_display_height: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'slotnum', documentation: '' }
+        ],
 		signature: '(slotnum)'
 	},
 	ads_get_display_width: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'slotnum', documentation: '' }
+        ],
 		signature: '(slotnum)'
 	},
 	ads_interstitial_available: {
@@ -12964,22 +13069,48 @@ exports.globalfunctions = {
 		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
 	ads_move: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'slotnum', documentation: '' }
+        ],
 		signature: '(x, y, slotnum)'},
 	ads_setup: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'user_uuid', documentation: '' },
+            { label: 'ad_app_key', documentation: '' }
+        ],
 		signature: '(user_uuid, ad_app_key)'
 	},
 	ads_set_reward_callback: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'callback', documentation: '' }
+        ],
 		signature: '(callback)'
 	},
     playhaven_add_notification_badge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'ident', documentation: '' }
+        ],
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_hide_notification_badge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'ident', documentation: '' }
+        ],
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_position_notification_badge: {
@@ -13007,18 +13138,35 @@ exports.globalfunctions = {
     },
 	openfeint_send_challenge: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'definition_string', documentation: '' },
+            { label: 'text_string', documentation: '' },
+            { label: 'data_string', documentation: '' }
+        ],
         signature: '(definition_string, text_string, data_string)'
     },
 	openfeint_send_invite: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'definition_string', documentation: '' }
+        ],
         signature: '(definition_string)'
     },
 	openfeint_send_result: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'challenge_result', documentation: '' },
+            { label: 'definition_string', documentation: '' }
+        ],
         signature: '(challenge_result, description_string)'
     },
 	openfeint_send_social: {
         description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'text_string', documentation: '' },
+            { label: 'suggested_message', documentation: '' },
+            { label: 'image_name', documentation: '' }
+        ],
         signature: '(text_string, suggested_message, image_name)'
     },
 	openfeint_set_url: {
@@ -13032,11 +13180,20 @@ exports.globalfunctions = {
         description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
 	achievement_map_achievement: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'gamecenter_string', documentation: '' },
+            { label: 'openfeint_string', documentation: '' }
+        ],
 		signature: '(gamecenter_string, openfeint_string)'
 	},
 	achievement_map_leaderboard: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        parameters: [
+            { label: 'gamecenter_string', documentation: '' },
+            { label: 'openfeint_string', documentation: '' },
+            { label: 'leaderboard_type', documentation: '' }
+        ],
 		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
 	},
 	achievement_is_online: {
@@ -13053,6 +13210,14 @@ exports.globalfunctions = {
     },
     background_create_from_screen: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(x, y, w, h, removeback, smooth)'
     },
     cd_close_door: {
@@ -13078,6 +13243,10 @@ exports.globalfunctions = {
     },
 	cd_play: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'first', documentation: '' },
+            { label: 'last', documentation: '' }
+        ],
         signature: '(first, last)'
     },
 	cd_playing: {
@@ -13094,10 +13263,16 @@ exports.globalfunctions = {
     },
 	cd_set_position: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'pos', documentation: '' }
+        ],
         signature: '(pos)'
     },
 	cd_set_track_position: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'pos', documentation: '' }
+        ],
         signature: '(pos)'
     },
 	cd_stop: {
@@ -13108,6 +13283,9 @@ exports.globalfunctions = {
     },
 	cd_track_length: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'n', documentation: '' }
+        ],
         signature: '(n)'
     },
 	cd_track_position: {
@@ -13115,10 +13293,20 @@ exports.globalfunctions = {
     },
     date_create_date: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'year', documentation: '' },
+            { label: 'month', documentation: '' },
+            { label: 'day', documentation: '' }
+        ],
         signature: '(year, month, day)'
     },
     date_create_time: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'hour', documentation: '' },
+            { label: 'minute', documentation: '' },
+            { label: 'second', documentation: '' }
+        ],
         signature: '(hour, minute, second)'
     },
 	date_current_date: {
@@ -13129,10 +13317,20 @@ exports.globalfunctions = {
     },
     date_valid_date: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'year', documentation: '' },
+            { label: 'month', documentation: '' },
+            { label: 'day', documentation: '' }
+        ],
         signature: '(year, month, day)'
     },
     date_valid_time: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'hour', documentation: '' },
+            { label: 'minute', documentation: '' },
+            { label: 'second', documentation: '' }
+        ],
         signature: '(hour, minute, second)'
     },
     discard_include_file: {
@@ -13144,22 +13342,40 @@ exports.globalfunctions = {
     },
 	disk_free: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'drive', documentation: '' }
+        ],
         signature: '(drive)'
     },
 	disk_size: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'drive', documentation: '' }
+        ],
         signature: '(drive)'
     },
 	display_set_all: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'frequency', documentation: '' },
+            { label: 'coldepth', documentation: '' }
+        ],
         signature: '(w, h, frequency, coldepth)'
     },
 	display_set_colordepth: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'coldepth', documentation: '' }
+        ],
         signature: '(coldepth)'
     },
 	display_set_frequency: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'frequency', documentation: '' }
+        ],
         signature: '(frequency)'
     },
 	display_set_size: {
@@ -13172,22 +13388,49 @@ exports.globalfunctions = {
     },
 	display_test_all: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'frequency', documentation: '' },
+            { label: 'coldepth', documentation: '' }
+        ],
         signature: '(w, h, frequency, coldepth)'
     },
     execute_file: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'arg0', documentation: '' },
+            { label: 'arg1', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(fname, arg0, arg1, ...)'
     },
     execute_program: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'arg', documentation: '' },
+            { label: 'wait', documentation: '' }
+        ],
         signature: '(prog, arg, wait)'
     },
 	execute_shell: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'arg', documentation: '' }
+        ],
         signature: '(prog, arg)'
     },
     execute_string: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'arg0', documentation: '' },
+            { label: 'arg1', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(str, arg0, arg1, ...)'
     },
 	export_include_file: {
@@ -13199,18 +13442,32 @@ exports.globalfunctions = {
     },
 	export_include_file_location: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'location', documentation: '' }
+        ],
         signature: '(fname, location)'
     },
     get_color: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'defcol', documentation: '' }
+        ],
         signature: '(defcol)'
     },
 	get_directory: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'dname', documentation: '' }
+        ],
         signature: '(dname)'
     },
 	get_directory_alt: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'capt', documentation: '' },
+            { label: 'root', documentation: '' }
+        ],
         signature: '(capt, root)'
     },
     highscore_add_current: {
@@ -13218,22 +13475,43 @@ exports.globalfunctions = {
     },
     highscore_set_background: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
         signature: '(back)'
     },
 	highscore_set_border: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'show', documentation: '' }
+        ],
         signature: '(show)'
     },
 	highscore_set_colors: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'new', documentation: '' },
+            { label: 'other', documentation: '' }
+        ],
         signature: '(back, new, other)'
     },
 	highscore_set_font: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'style', documentation: '' }
+        ],
         signature: '(name, size, style)'
     },
 	highscore_set_strings: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'caption', documentation: '' },
+            { label: 'nobody', documentation: '' },
+            { label: 'escape', documentation: '' }
+        ],
         signature: '(caption, nobody, escape)'
     },
 	highscore_show: {
@@ -13245,6 +13523,15 @@ exports.globalfunctions = {
     },
 	highscore_show_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'numb', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'border', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' }
+        ],
         signature: '(numb, back, border, col1, col2, name, size)'
     },
     io_handle: {
@@ -13262,22 +13549,41 @@ exports.globalfunctions = {
     },
 	message_alpha: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(alpha)'
     },
 	message_background: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
         signature: '(back)'
     },
 	message_button: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(sprite)'
     },
 	message_button_font: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'style', documentation: '' }
+        ],
         signature: '(name, size, colour, style)'
     },
 	message_caption: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'show', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(show, str)'
     },
 	message_input_color: {
@@ -13289,6 +13595,12 @@ exports.globalfunctions = {
     },
 	message_input_font: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'style', documentation: '' }
+        ],
         signature: '(name, size, colour, style)'
     },
 	message_mouse_color: {
@@ -13316,10 +13628,20 @@ exports.globalfunctions = {
     },
 	message_text_charset: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'type', documentation: '' },
+            { label: 'charset_id', documentation: '' }
+        ],
         signature: '(type, charset_id)'
     },
 	message_text_font: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'size', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'style', documentation: '' }
+        ],
         signature: '(name, size, colour, style)'
     },
     mouse_wait: {
@@ -13337,178 +13659,372 @@ exports.globalfunctions = {
     },
 	object_event_add: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '(ind,evtype,evnumb,codestr)'
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'evtype', documentation: '' },
+            { label: 'evnumb', documentation: '' },
+            { label: 'codestr', documentation: '' }
+        ],
+        signature: '(ind, evtype, evnumb, codestr)'
     },
 	object_event_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
-        signature: '(ind,evtype,evnumb)'
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'evtype', documentation: '' },
+            { label: 'evnumb', documentation: '' }
+        ],
+        signature: '(ind, evtype, evnumb)'
     },
 	part_attractor_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_attractor_create: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_attractor_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_attractor_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_attractor_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_attractor_force: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'force', documentation: '' },
+            { label: 'dist', documentation: '' },
+            { label: 'kind', documentation: '' },
+            { label: 'additive', documentation: '' }
+        ],
         signature: '(ps, ind, force, dist, kind, additive)'
     },
 	part_attractor_position: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(ps, ind, x, y)'
     },
 	part_changer_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_changer_create: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_changer_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_changer_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_changer_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_changer_kind: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(ps, ind, kind)'
     },
 	part_changer_region: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'xmin', documentation: '' },
+            { label: 'xmax', documentation: '' },
+            { label: 'ymin', documentation: '' },
+            { label: 'ymax', documentation: '' },
+            { label: 'shape', documentation: '' }
+        ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
 	part_changer_types: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'parttype1', documentation: '' },
+            { label: 'parttype2', documentation: '' }
+        ],
         signature: '(ps, ind, parttype1, parttype2)'
     },
 	part_deflector_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_deflector_create: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_deflector_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_deflector_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_deflector_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_deflector_friction: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'amount', documentation: '' }
+        ],
         signature: '(ps, ind, amount)'
     },
 	part_deflector_kind: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(ps, ind, kind)'
     },
 	part_deflector_region: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'xmin', documentation: '' },
+            { label: 'xmax', documentation: '' },
+            { label: 'ymin', documentation: '' },
+            { label: 'ymax', documentation: '' }
+        ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax)'
     },
 	part_destroyer_clear: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_destroyer_create: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_destroyer_destroy: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_destroyer_destroy_all: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' }
+        ],
         signature: '(ps)'
     },
 	part_destroyer_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(ps, ind)'
     },
 	part_destroyer_region: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ps', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'xmin', documentation: '' },
+            { label: 'xmax', documentation: '' },
+            { label: 'ymin', documentation: '' },
+            { label: 'ymax', documentation: '' },
+            { label: 'shape', documentation: '' }
+        ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
     registry_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	registry_exists_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'key', documentation: '' },
+            { label: 'name', documentation: '' }
+        ],
         signature: '(key, name)'
     },
 	registry_read_real: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	registry_read_real_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'key', documentation: '' },
+            { label: 'name', documentation: '' }
+        ],
         signature: '(key, name)'
     },
 	registry_read_string: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	registry_read_string_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'key', documentation: '' },
+            { label: 'name', documentation: '' }
+        ],
         signature: '(key, name)'
     },
 	registry_set_root: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'root', documentation: '' }
+        ],
         signature: '(root)'
     },
 	registry_write_real: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, value)'
     },
 	registry_write_real_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'key', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(key, name, value)'
     },
 	registry_write_string: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(name, str)'
     },
 	registry_write_string_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'key', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(key, name, str)'
     },
     room_set_caption: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'str', documentation: '' }
+        ],
         signature: '(ind, str)'
     },
 	room_set_code: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'codestr', documentation: '' }
+        ],
         signature: '(ind, codestr)'
     },
     screen_redraw: {
@@ -13529,18 +14045,30 @@ exports.globalfunctions = {
     },
 	set_application_title: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'title', documentation: '' }
+        ],
         signature: '(title)'
     },
 	set_automatic_draw: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'value', documentation: '' }
+        ],
         signature: '(value)'
     },
 	set_program_priority: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'priority', documentation: '' }
+        ],
         signature: '(priority)'
     },
 	set_synchronization: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'value', documentation: '' }
+        ],
         signature: '(value)'
     },
     show_menu: {
@@ -13553,14 +14081,29 @@ exports.globalfunctions = {
     },
 	show_menu_pos: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'str', documentation: '' },
+            { label: 'def', documentation: '' }
+        ],
         signature: '(x, y, str, def)'
     },
     show_message_ext: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'str', documentation: '' },
+            { label: 'but1', documentation: '' },
+            { label: 'but2', documentation: '' },
+            { label: 'but3', documentation: '' }
+        ],
         signature: '(str, but1, but2, but3)'
     },
     sleep: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'millisec', documentation: '' }
+        ],
         signature: '(millisec)'
     },
 	sound_3d_set_sound_cone: {
@@ -13645,6 +14188,9 @@ exports.globalfunctions = {
     },
 	splash_set_close_button: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'show', documentation: '' }
+        ],
         signature: '(show)'
     },
 	splash_set_color: {
@@ -13656,18 +14202,30 @@ exports.globalfunctions = {
     },
 	splash_set_cursor: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'vis', documentation: '' }
+        ],
         signature: '(vis)'
     },
 	splash_set_fullscreen: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'full', documentation: '' }
+        ],
         signature: '(full)'
     },
 	splash_set_interrupt: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'interrupt', documentation: '' }
+        ],
         signature: '(interrupt)'
     },
 	splash_set_main: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'main', documentation: '' }
+        ],
         signature: '(main)'
     },
 	splash_set_position: {
@@ -13680,6 +14238,9 @@ exports.globalfunctions = {
     },
 	splash_set_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'scale', documentation: '' }
+        ],
         signature: '(scale)'
     },
 	splash_set_size: {
@@ -13692,14 +14253,23 @@ exports.globalfunctions = {
     },
 	splash_set_stop_key: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'stop', documentation: '' }
+        ],
         signature: '(stop)'
     },
 	splash_set_stop_mouse: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'stop', documentation: '' }
+        ],
         signature: '(stop)'
     },
 	splash_set_top: {
         description: '[Function] (GameMaker 8.1 Only)',
+        arameters: [
+            { label: 'top', documentation: '' }
+        ],
         signature: '(top)'
     },
 	splash_show_image: {
@@ -13735,6 +14305,10 @@ exports.globalfunctions = {
     },
     sprite_replace_sprite: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
         signature: '(ind, fname)'
     },
     timeline_moment_add: {
@@ -13747,6 +14321,9 @@ exports.globalfunctions = {
     },
 	transition_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'kind', documentation: '' }
+        ],
         signature: '(kind)'
     },
 	variable_global_array2_get: {
@@ -13783,14 +14360,24 @@ exports.globalfunctions = {
     },
 	variable_local_exists: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	variable_local_get: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' }
+        ],
         signature: '(name)'
     },
 	variable_local_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, value)'
     },
     window_default: {
@@ -13830,10 +14417,16 @@ exports.globalfunctions = {
     },
 	window_set_showborder: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'show', documentation: '' }
+        ],
         signature: '(show)'
     },
 	window_set_showicons: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'show', documentation: '' }
+        ],
         signature: '(show)'
     },
 	window_set_sizeable: {
@@ -13904,14 +14497,26 @@ exports.globalfunctions = {
     },
 	game_set_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'value', documentation: '' },
+            { label: 'type', documentation: '' }
+        ],
         signature: '(value, type)'
     },
 	game_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'type', documentation: '' }
+        ],
         signature: '(type)'
     },
 	sprite_set_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'speed', documentation: '' },
+            { label: 'type', documentation: '' }
+        ],
         signature: '(ind, speed, type)'
     },
 	sprite_get_speed_type: {
@@ -13937,18 +14542,40 @@ exports.globalfunctions = {
     },
 	room_get_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' }
+        ],
         signature: '(ind, vind)'
     },
 	room_set_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' },
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(ind, vind, camera)'
     },
 	room_set_viewport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' }
+        ],
         signature: '(ind, vind)'
     },
 	room_get_viewport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'xport', documentation: '' },
+            { label: 'yport', documentation: '' },
+            { label: 'wport', documentation: '' },
+            { label: 'hport', documentation: '' }
+        ],
         signature: '(ind, vind, vis, xport, yport, wport, hport)'
     },
 	ds_list_set: {
@@ -14241,6 +14868,9 @@ exports.globalfunctions = {
     },
 	gpu_get_texfilter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_texrepeat: {
@@ -14248,6 +14878,9 @@ exports.globalfunctions = {
     },
 	gpu_get_texrepeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_filter: {
@@ -14255,6 +14888,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_repeat: {
@@ -14262,6 +14898,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_repeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_filter: {
@@ -14269,6 +14908,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_mip_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_bias: {
@@ -14276,6 +14918,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_mip_bias_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_min_mip: {
@@ -14283,6 +14928,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_min_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_mip: {
@@ -14290,6 +14938,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_max_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_aniso: {
@@ -14297,6 +14948,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_max_aniso_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_enable: {
@@ -14304,6 +14958,9 @@ exports.globalfunctions = {
     },
 	gpu_get_tex_mip_enable_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' }
+        ],
         signature: '(sampler_id)'
     },
 	gpu_push_state: {
@@ -14317,6 +14974,9 @@ exports.globalfunctions = {
     },
 	gpu_set_state: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'map', documentation: '' }
+        ],
         signature: '(map)'
     },
 	draw_light_define_ambient: {
@@ -14374,10 +15034,17 @@ exports.globalfunctions = {
     },
 	skeleton_animation_set_frame: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'track', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
         signature: '(track, index)'
     },
 	layer_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_name', documentation: '' }
+        ],
         signature: '(layer_name)'
     },
 	layer_get_id_at_depth: {
@@ -14389,6 +15056,9 @@ exports.globalfunctions = {
     },
 	layer_get_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_create: {
@@ -14397,10 +15067,16 @@ exports.globalfunctions = {
     },
 	layer_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_destroy_instances: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_add_instance: {
@@ -14417,10 +15093,16 @@ exports.globalfunctions = {
     },
 	layer_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_x: {
@@ -14433,10 +15115,16 @@ exports.globalfunctions = {
     },
 	layer_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_hspeed: {
@@ -14449,10 +15137,16 @@ exports.globalfunctions = {
     },
 	layer_get_hspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_get_vspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_script_begin: {
@@ -14469,14 +15163,23 @@ exports.globalfunctions = {
     },
 	layer_get_script_begin: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_get_script_end: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_get_shader: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_set_target_room: {
@@ -14494,10 +15197,16 @@ exports.globalfunctions = {
     },
 	layer_get_all_elements: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_get_name: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_depth: {
@@ -14506,10 +15215,16 @@ exports.globalfunctions = {
     },
 	layer_get_element_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'element_id', documentation: '' }
+        ],
         signature: '(element_id)'
     },
 	layer_get_element_type: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'element_id', documentation: '' }
+        ],
         signature: '(element_id)'
     },
 	layer_element_move: {
@@ -14528,11 +15243,14 @@ exports.globalfunctions = {
     },
 	layer_background_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_background_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '( )'
+        signature: '(layer_id, background_element_id)'
     },
 	layer_background_create: {
         description: '[Function] (New in GameMaker Studio 2)',
@@ -14540,6 +15258,9 @@ exports.globalfunctions = {
     },
 	layer_background_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_visible: {
@@ -14592,46 +15313,79 @@ exports.globalfunctions = {
     },
 	layer_background_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_htiled: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_vtiled: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_stretch: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_index: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_background_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(background_element_id)'
     },
 	layer_sprite_get_id: {
@@ -14648,6 +15402,9 @@ exports.globalfunctions = {
     },
 	layer_sprite_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_change: {
@@ -14692,46 +15449,79 @@ exports.globalfunctions = {
     },
 	layer_sprite_get_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_index: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(sprite_element_id)'
     },
 	layer_tilemap_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	layer_tilemap_exists: {
@@ -14744,6 +15534,9 @@ exports.globalfunctions = {
     },
 	layer_tilemap_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_tileset: {
@@ -14768,30 +15561,51 @@ exports.globalfunctions = {
     },
 	tilemap_get_tileset: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_width: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_height: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_width: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_height: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get: {
@@ -14834,14 +15648,23 @@ exports.globalfunctions = {
     },
 	tilemap_get_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_frame: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(tilemap_element_id)'
     },
 	tile_set_empty: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tiledata)'
     },
 	tile_set_index: {
@@ -14862,22 +15685,37 @@ exports.globalfunctions = {
     },
 	tile_get_empty: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tiledata)'
     },
 	tile_get_index: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tiledata)'
     },
 	tile_get_flip: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tiledata)'
     },
 	tile_get_mirror: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tiledata)'
     },
 	tile_get_rotate: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tiledata)'
     },
 	layer_tile_exists: {
@@ -14890,6 +15728,9 @@ exports.globalfunctions = {
     },
 	layer_tile_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_change: {
@@ -14930,50 +15771,86 @@ exports.globalfunctions = {
     },
 	layer_tile_get_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_region: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' }
+        ],
         signature: '(tile_element_id)'
     },
 	layer_instance_get_instance: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'instance_element_id', documentation: '' }
+        ],
         signature: '(instance_element_id)'
     },
 	instance_activate_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	instance_deactivate_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(layer_id)'
     },
 	camera_create: {
@@ -14985,10 +15862,16 @@ exports.globalfunctions = {
     },
 	camera_destroy: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_apply: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_active: {
@@ -14999,6 +15882,9 @@ exports.globalfunctions = {
     },
 	camera_set_default: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_set_view_mat: {
@@ -15047,90 +15933,156 @@ exports.globalfunctions = {
     },
 	camera_get_view_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_proj_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_update_script: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_begin_script: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_end_script: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_width: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_height: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_speed_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_speed_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_border_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_border_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	camera_get_view_target: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(camera)'
     },
 	view_get_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_get_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_get_xport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_get_yport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_get_wport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_get_hport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_get_surface_id: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' }
+        ],
         signature: '(view)'
     },
 	view_set_camera: {
@@ -15163,42 +16115,72 @@ exports.globalfunctions = {
     },
 	gesture_drag_time: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'time', documentation: '' }
+        ],
         signature: '(time)'
     },
 	gesture_drag_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'distance', documentation: '' }
+        ],
         signature: '(distance)'
     },
 	gesture_flick_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'speed', documentation: '' }
+        ],
         signature: '(speed)'
     },
 	gesture_double_tap_time: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'time', documentation: '' }
+        ],
         signature: '(time)'
     },
 	gesture_double_tap_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'distance', documentation: '' }
+        ],
         signature: '(distance)'
     },
 	gesture_pinch_distance: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'distance', documentation: '' }
+        ],
         signature: '(distance)'
     },
 	gesture_pinch_angle_towards: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	gesture_pinch_angle_away: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	gesture_rotate_time: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'time', documentation: '' }
+        ],
         signature: '(time)'
     },
 	gesture_rotate_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(angle)'
     },
 	gesture_tap_count: {
