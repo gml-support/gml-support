@@ -14108,18 +14108,44 @@ exports.globalfunctions = {
     },
 	sound_3d_set_sound_cone: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'anglein', documentation: '' },
+            { label: 'angleout', documentation: '' },
+            { label: 'voloutside', documentation: '' }
+        ],
         signature: '(snd, x, y, z, anglein, angleout, voloutside)'
     },
 	sound_3d_set_sound_distance: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'mindist', documentation: '' },
+            { label: 'maxdist', documentation: '' }
+        ],
         signature: '(snd, mindist, maxdist)'
     },
 	sound_3d_set_sound_position: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(snd, x, y, z)'
     },
 	sound_3d_set_sound_velocity: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(snd, x, y, z)'
     },
 	sound_add: {
