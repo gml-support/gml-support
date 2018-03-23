@@ -14150,66 +14150,155 @@ exports.globalfunctions = {
     },
 	sound_add: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'kind', documentation: '' },
+            { label: 'preload', documentation: '' }
+        ],
         signature: '(fname, kind, preload)'
     },
 	sound_background_tempo: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'factor', documentation: '' }
+        ],
         signature: '(factor)'
     },
 	sound_effect_chorus: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'wetdry', documentation: '' },
+            { label: 'depth', documentation: '' },
+            { label: 'feedback', documentation: '' },
+            { label: 'frequency', documentation: '' },
+            { label: 'wave', documentation: '' },
+            { label: 'delay', documentation: '' },
+            { label: 'phase', documentation: '' }
+        ],
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_compressor: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'gain', documentation: '' },
+            { label: 'attack', documentation: '' },
+            { label: 'release', documentation: '' },
+            { label: 'threshold', documentation: '' },
+            { label: 'ratio', documentation: '' },
+            { label: 'delay', documentation: '' }
+        ],
         signature: '(snd, gain, attack, release, threshold, ratio, delay)'
     },
 	sound_effect_echo: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'wetdry', documentation: '' },
+            { label: 'feedback', documentation: '' },
+            { label: 'leftdelay', documentation: '' },
+            { label: 'rightdelay', documentation: '' },
+            { label: 'pandelay', documentation: '' }
+        ],
         signature: '(snd, wetdry, feedback, leftdelay, rightdelay, pandelay)'
     },
 	sound_effect_equalizer: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'center', documentation: '' },
+            { label: 'bandwidth', documentation: '' },
+            { label: 'gain', documentation: '' }
+        ],
         signature: '(snd, center, bandwidth, gain)'
     },
 	sound_effect_flanger: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'wetdry', documentation: '' },
+            { label: 'depth', documentation: '' },
+            { label: 'feedback', documentation: '' },
+            { label: 'frequency', documentation: '' },
+            { label: 'wave', documentation: '' },
+            { label: 'delay', documentation: '' },
+            { label: 'phase', documentation: '' }
+        ],
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_gargle: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'rate', documentation: '' },
+            { label: 'wave', documentation: '' }
+        ],
         signature: '(snd, rate, wave)'
     },
 	sound_effect_reverb: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'gain', documentation: '' },
+            { label: 'mix', documentation: '' },
+            { label: 'time', documentation: '' },
+            { label: 'ratio', documentation: '' }
+        ],
         signature: '(snd, gain, mix, time, ratio)'
     },
 	sound_effect_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'snd', documentation: '' },
+            { label: 'effect', documentation: '' }
+        ],
         signature: '(snd, effect)'
     },
 	sound_pan: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'index', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(index, value)'
     },
 	sound_replace: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'kind', documentation: '' },
+            { label: 'preload', documentation: '' }
+        ],
         signature: '(ind, fname, kind, preload)'
     },
 	sound_set_search_directory: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'dir', documentation: '' }
+        ],
         signature: '(dir)'
     },
 	splash_set_adapt: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'adapt', documentation: '' }
+        ],
         signature: '(adapt)'
     },
 	splash_set_border: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'border', documentation: '' }
+        ],
         signature: '(border)'
     },
 	splash_set_caption: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'cap', documentation: '' }
+        ],
         signature: '(cap)'
     },
 	splash_set_close_button: {
@@ -14300,22 +14389,47 @@ exports.globalfunctions = {
     },
 	splash_show_image: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'delay', documentation: '' }
+        ],
         signature: '(fname, delay)'
     },
 	splash_show_text: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'delay', documentation: '' }
+        ],
         signature: '(fname, delay)'
     },
 	splash_show_video: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'loop', documentation: '' }
+        ],
         signature: '(fname, loop)'
     },
 	splash_show_web: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'delay', documentation: '' }
+        ],
         signature: '(url, delay)'
     },
     sprite_add_from_screen: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
         signature: '(ind, x, y, w, h, removeback, smooth)'
     },
     sprite_add_sprite: {
@@ -14327,6 +14441,16 @@ exports.globalfunctions = {
     },
     sprite_create_from_screen: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' },
+            { label: 'xorig', documentation: '' },
+            { label: 'yorig', documentation: '' }
+        ],
         signature: '(x, y, w, h, removeback, smooth, xorig, yorig)'
     },
     sprite_replace_sprite: {
@@ -14339,10 +14463,19 @@ exports.globalfunctions = {
     },
     timeline_moment_add: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'step', documentation: '' },
+            { label: 'codestr', documentation: '' }
+        ],
         signature: '(ind, step, codestr)'
     },
     transition_define: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'kind', documentation: '' },
+            { label: 'name', documentation: '' }
+        ],
         signature: '(kind, name)'
     },
 	transition_exists: {
@@ -14354,34 +14487,74 @@ exports.globalfunctions = {
     },
 	variable_global_array2_get: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind1', documentation: '' },
+            { label: 'ind2', documentation: '' }
+        ],
         signature: '(name, ind1, ind2)'
     },
 	variable_global_array2_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind1', documentation: '' },
+            { label: 'ind2', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, ind1, ind2, value)'
     },
 	variable_global_array_get: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(name, ind)'
     },
 	variable_global_array_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, ind, value)'
     },
     variable_local_array2_get: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind1', documentation: '' },
+            { label: 'ind2', documentation: '' }
+        ],
         signature: '(name, ind1, ind2)'
     },
 	variable_local_array2_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind1', documentation: '' },
+            { label: 'ind2', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, ind1, ind2, value)'
     },
 	variable_local_array_get: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind', documentation: '' }
+        ],
         signature: '(name, ind)'
     },
 	variable_local_array_set: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'ind', documentation: '' },
+            { label: 'value', documentation: '' }
+        ],
         signature: '(name, ind, value)'
     },
 	variable_local_exists: {
@@ -14435,10 +14608,19 @@ exports.globalfunctions = {
     },
     window_set_region_scale: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'scale', documentation: '' },
+            { label: 'adaptwindow', documentation: '' }
+        ],
         signature: '(scale, adaptwindow)'
     },
 	window_set_region_size: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'adaptwindow', documentation: '' }
+        ],
         signature: '(w, h, adaptwindow)'
     },
 	window_set_showborder: {
@@ -14457,14 +14639,23 @@ exports.globalfunctions = {
     },
 	window_set_sizeable: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'sizeable', documentation: '' }
+        ],
         signature: '(sizeable)'
     },
 	window_set_stayontop: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'stay', documentation: '' }
+        ],
         signature: '(stay)'
     },
 	window_set_visible: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'visible', documentation: '' }
+        ],
         signature: '(visible)'
     },
 	window_views_mouse_set: {
@@ -14484,7 +14675,6 @@ exports.globalfunctions = {
         ],
         signature: '(id, x, y)'
     },
-    
     texture_preload: {
         description: '[Function] (GameMaker 8.1 Only)',
         parameters: [
@@ -14494,6 +14684,10 @@ exports.globalfunctions = {
     },
     texture_set_priority: {
         description: '[Function] (GameMaker 8.1 Only)',
+        parameters: [
+            { label: 'texid', documentation: '' },
+            { label: 'prio', documentation: '' }
+        ],
         signature: '(texid, prio)'
     },
     display_get_colourdepth: {
@@ -14624,6 +14818,10 @@ exports.globalfunctions = {
     },
 	part_system_create_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer', documentation: '' },
+            { label: 'persistent', documentation: '' }
+        ],
         signature: '(layer, persistent)'
     },
 	part_system_get_layer: {
@@ -14635,6 +14833,10 @@ exports.globalfunctions = {
     },
 	part_system_layer: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'layer', documentation: '' }
+        ],
         signature: '(ind, layer)'
     },
 	matrix_build_identity: {
@@ -14642,26 +14844,64 @@ exports.globalfunctions = {
     },
 	matrix_build_lookat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' }
+        ],
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
 	matrix_build_projection_ortho: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'znear', documentation: '' },
+            { label: 'zfar', documentation: '' }
+        ],
         signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'znear', documentation: '' },
+            { label: 'zfar', documentation: '' }
+        ],
         signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective_fov: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'fov_y', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'znear', documentation: '' },
+            { label: 'zfar', documentation: '' }
+        ],
         signature: '(fov_y, aspect, znear, zfar)'
     },
 	matrix_transform_vertex: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'matrix', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
         signature: '(matrix, x, y, z)'
     },
 	matrix_stack_push: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: '...', documentation: '' }
+        ],
         signature: '(...)'
     },
 	matrix_stack_pop: {
@@ -14669,6 +14909,9 @@ exports.globalfunctions = {
     },
 	matrix_stack_set: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'matrix', documentation: '' }
+        ],
         signature: '(matrix)'
     },
 	matrix_stack_clear: {
@@ -14710,14 +14953,26 @@ exports.globalfunctions = {
     },
 	gpu_set_fog: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'enable', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'start', documentation: '' },
+            { label: 'end', documentation: '' }
+        ],
         signature: '(enable, col, start, end)'
     },
 	gpu_set_cullmode: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'cullmode', documentation: '' }
+        ],
         signature: '(cullmode)'
     },
 	gpu_set_blendmode: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'mode', documentation: '' }
+        ],
         signature: '(mode)'
     },
 	gpu_set_blendmode_ext: {
@@ -14730,14 +14985,32 @@ exports.globalfunctions = {
     },
 	gpu_set_blendmode_ext_sepalpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'src', documentation: '' },
+            { label: 'dest', documentation: '' },
+            { label: 'srcalpha', documentation: '' },
+            { label: 'destalpha', documentation: '' }
+        ],
         signature: '(src, dest, srcalpha, destalpha)'
     },
 	gpu_set_colorwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'red', documentation: '' },
+            { label: 'green', documentation: '' },
+            { label: 'blue', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(red, green, blue, alpha)'
     },
 	gpu_set_colourwriteenable: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'red', documentation: '' },
+            { label: 'green', documentation: '' },
+            { label: 'blue', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(red, green, blue, alpha)'
     },
 	gpu_set_alphatestenable: {
@@ -14749,90 +15022,166 @@ exports.globalfunctions = {
     },
 	gpu_set_alphatestref: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'value', documentation: '' }
+        ],
         signature: '(value)'
     },
 	gpu_set_alphatestfunc: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'cmp_func', documentation: '' }
+        ],
         signature: '(cmp_func)'
     },
 	gpu_set_texfilter: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'linear', documentation: '' }
+        ],
         signature: '(linear)'
     },
 	gpu_set_texfilter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'linear', documentation: '' }
+        ],
         signature: '(sampler_id, linear)'
     },
 	gpu_set_texrepeat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'repeat', documentation: '' }
+        ],
         signature: '(repeat)'
     },
 	gpu_set_texrepeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'repeat', documentation: '' }
+        ],
         signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'linear', documentation: '' }
+        ],
         signature: '(linear)'
     },
 	gpu_set_tex_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'linear', documentation: '' }
+        ],
         signature: '(sampler_id, linear)'
     },
 	gpu_set_tex_repeat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'repeat', documentation: '' }
+        ],
         signature: '(repeat)'
     },
 	gpu_set_tex_repeat_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'repeat', documentation: '' }
+        ],
         signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_mip_filter: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'filter', documentation: '' }
+        ],
         signature: '(filter)'
     },
 	gpu_set_tex_mip_filter_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'filter', documentation: '' }
+        ],
         signature: '(sampler_id, filter)'
     },
 	gpu_set_tex_mip_bias: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'bias', documentation: '' }
+        ],
         signature: '(bias)'
     },
 	gpu_set_tex_mip_bias_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'bias', documentation: '' }
+        ],
         signature: '(sampler_id, bias)'
     },
 	gpu_set_tex_min_mip: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'minmap', documentation: '' }
+        ],
         signature: '(minmip)'
     },
 	gpu_set_tex_min_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'minmip', documentation: '' }
+        ],
         signature: '(sampler_id, minmip)'
     },
 	gpu_set_tex_max_mip: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'maxmap', documentation: '' }
+        ],
         signature: '(maxmip)'
     },
 	gpu_set_tex_max_mip_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'maxmap', documentation: '' }
+        ],
         signature: '(sampler_id, maxmip)'
     },
 	gpu_set_tex_max_aniso: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'maxaniso', documentation: '' }
+        ],
         signature: '(maxaniso)'
     },
 	gpu_set_tex_max_aniso_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'maxaniso', documentation: '' }
+        ],
         signature: '(sampler_id, maxaniso)'
     },
 	gpu_set_tex_mip_enable: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'setting', documentation: '' }
+        ],
         signature: '(setting)'
     },
 	gpu_set_tex_mip_enable_ext: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sampler_id', documentation: '' },
+            { label: 'setting', documentation: '' }
+        ],
         signature: '(sampler_id, setting)'
     },
 	gpu_get_blendenable: {
@@ -15014,14 +15363,33 @@ exports.globalfunctions = {
     },
 	draw_light_define_direction: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'dx', documentation: '' },
+            { label: 'dy', documentation: '' },
+            { label: 'dz', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(ind, dx, dy, dz, col)'
     },
 	draw_light_define_point: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'range', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(ind, x, y, z, range, col)'
     },
 	draw_light_enable: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'enable', documentation: '' }
+        ],
         signature: '(ind, enable)'
     },
 	draw_set_lighting: {
@@ -15089,6 +15457,11 @@ exports.globalfunctions = {
     },
 	layer_create: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'name*', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(depth, name*, ...)'
     },
 	layer_destroy: {
@@ -15107,14 +15480,26 @@ exports.globalfunctions = {
     },
 	layer_add_instance: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'instance', documentation: '' }
+        ],
         signature: '(layer_id, instance)'
     },
 	layer_has_instance: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'instance', documentation: '' }
+        ],
         signature: '(layer_id, instance)'
     },
 	layer_set_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
         signature: '(layer_id, visible)'
     },
 	layer_get_visible: {
@@ -15133,10 +15518,18 @@ exports.globalfunctions = {
     },
 	layer_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'x', documentation: '' }
+        ],
         signature: '(layer_id, x)'
     },
 	layer_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(layer_id, y)'
     },
 	layer_get_x: {
@@ -15155,10 +15548,18 @@ exports.globalfunctions = {
     },
 	layer_hspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'speed', documentation: '' }
+        ],
         signature: '(layer_id, speed)'
     },
 	layer_vspeed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'speed', documentation: '' }
+        ],
         signature: '(layer_id, speed)'
     },
 	layer_get_hspeed: {
@@ -15177,14 +15578,26 @@ exports.globalfunctions = {
     },
 	layer_script_begin: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'script', documentation: '' }
+        ],
         signature: '(layer_id, script)'
     },
 	layer_script_end: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'script', documentation: '' }
+        ],
         signature: '(layer_id, script)'
     },
 	layer_shader: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'shader', documentation: '' }
+        ],
         signature: '(layer_id, shader)'
     },
 	layer_get_script_begin: {
@@ -15210,6 +15623,9 @@ exports.globalfunctions = {
     },
 	layer_set_target_room: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'room', documentation: '' }
+        ],
         signature: '(room)'
     },
 	layer_get_target_room: {
@@ -15237,6 +15653,10 @@ exports.globalfunctions = {
     },
 	layer_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(layer_id, depth)'
     },
 	layer_get_element_layer: {
@@ -15255,10 +15675,18 @@ exports.globalfunctions = {
     },
 	layer_element_move: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'element_id', documentation: '' },
+            { label: 'layer_id', documentation: '' }
+        ],
         signature: '(element_id, layer_id)'
     },
 	layer_force_draw_depth: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'force', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
         signature: '(force, depth)'
     },
 	layer_is_draw_depth_forced: {
@@ -15276,10 +15704,18 @@ exports.globalfunctions = {
     },
 	layer_background_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'background_element_id', documentation: '' }
+        ],
         signature: '(layer_id, background_element_id)'
     },
 	layer_background_create: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(layer_id, sprite)'
     },
 	layer_background_destroy: {
