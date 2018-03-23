@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
-const gmlGlobals = require("./i18n/gmlGlobals" + "." + localizationset);
-const gmlThirdparty = require("./i18n/gmlThirdparty" + "." + localizationset);
+const gmlGlobals = require("./i18n/" + localizationset + "/gmlGlobals");
+const gmlThirdparty = require("./i18n/" + localizationset + "/gmlThirdparty");
 const _NL = '\n'.charCodeAt(0);
 const _TAB = '\t'.charCodeAt(0);
 const _WSB = ' '.charCodeAt(0);
