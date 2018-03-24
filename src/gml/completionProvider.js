@@ -27,6 +27,7 @@ class GMLCompletionItemProvider {
                 if (entry.description) {
                     proposal.documentation = entry.description;
                 }
+
                 if (entry.signature) {
                     proposal.detail = entry.signature;
                 }
