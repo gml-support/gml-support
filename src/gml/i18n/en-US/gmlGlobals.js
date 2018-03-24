@@ -1,7 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//const nls = require("vscode-nls");  //Not available
-//const localize = nls.loadMessageBundle(__filename);  //Not available
 
 exports.globalfunctions = {
     abs: {
@@ -12749,22 +12747,53 @@ exports.globalfunctions = {
     },
 	win8_secondarytile_pin: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'shortName', documentation: '' },
+            { label: 'displayName', documentation: '' },
+            { label: 'cmdLineArgs', documentation: '' },
+            { label: 'dsListOptions', documentation: '' },
+            { label: 'tileImg', documentation: '' },
+            { label: 'wideTileImg', documentation: '' },
+            { label: 'textCol', documentation: '' }
+        ],
         signature: '(id, shortName, displayName, cmdLineArgs, dsListOptions, tileImg, wideTileImg, textCol)'
     },
 	win8_settingscharm_add_entry: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'callback', documentation: '' }
+        ],
         signature: '(name, callback)'
     },
 	win8_settingscharm_add_html_entry: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'name', documentation: '' },
+            { label: 'htmlPath', documentation: '' }
+        ],
         signature: '(id, name, htmlPath)'
     },
 	win8_settingscharm_add_xaml_entry: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'name', documentation: '' },
+            { label: 'xamlPath', documentation: '' },
+            { label: 'headerRGB', documentation: '' },
+            { label: 'callback', documentation: '' },
+            { label: 'wideFlyout', documentation: '' }
+        ],
         signature: '(name, xamlPath, headerRGB, callback, wideFlyout)'
     },
 	win8_settingscharm_get_xaml_property: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'entryName', documentation: '' },
+            { label: 'elementName', documentation: '' },
+            { label: 'propertyName', documentation: '' }
+        ],
         signature: '(entryName, elementName, propertyName)'
     },
 	win8_settingscharm_remove_entry: {
@@ -12776,26 +12805,61 @@ exports.globalfunctions = {
     },
 	win8_settingscharm_set_xaml_property: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'entryName', documentation: '' },
+            { label: 'elementName', documentation: '' },
+            { label: 'propertyName', documentation: '' },
+            { label: 'newValue', documentation: '' }
+        ],
         signature: '(entryName, elementName, propertyName, newValue)'
     },
 	win8_share_file: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'filename', documentation: '' },
+            { label: 'title', documentation: '' },
+            { label: 'description', documentation: '' },
+            { label: 'immediate', documentation: '' }
+        ],
         signature: '(filename, title, description, immediate)'
     },
 	win8_share_image: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'image_filename', documentation: '' },
+            { label: 'title', documentation: '' },
+            { label: 'description', documentation: '' },
+            { label: 'immediate', documentation: '' }
+        ],
         signature: '(image_filename, title, description, immediate)'
     },
 	win8_share_screenshot: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'entryName', documentation: '' },
+            { label: 'description', documentation: '' },
+            { label: 'immediate', documentation: '' }
+        ],
         signature: '(title, description, immediate)'
     },
 	win8_share_text: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'text', documentation: '' },
+            { label: 'title', documentation: '' },
+            { label: 'description', documentation: '' },
+            { label: 'immediate', documentation: '' }
+        ],
         signature: '(text, title, description, immediate)'
     },
 	win8_share_url: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'url', documentation: '' },
+            { label: 'title', documentation: '' },
+            { label: 'description', documentation: '' },
+            { label: 'immediate', documentation: '' }
+        ],
         signature: '(url, title, description, immediate)'
     },
     winphone_license_trial_version: {
@@ -12803,70 +12867,124 @@ exports.globalfunctions = {
     },
 	winphone_tile_background_color: {
         description: '[Function] (This function is deprecated)',
+        arameters: [
+            { label: 'color', documentation: '' }
+        ],
         signature: '(color)'
     },
 	winphone_tile_background_colour: {
         description: '[Function] (This function is deprecated)',
+        arameters: [
+            { label: 'colour', documentation: '' }
+        ],
         signature: '(colour)'
     },
 	winphone_tile_back_content: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'content', documentation: '' }
+        ],
         signature: '(content)'
     },
 	winphone_tile_back_content_wide: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'content', documentation: '' }
+        ],
         signature: '(content)'
     },
 	winphone_tile_back_image: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_back_image_wide: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_back_title: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'title', documentation: '' }
+        ],
         signature: '(title)'
     },
 	winphone_tile_count: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'count', documentation: '' }
+        ],
         signature: '(count)'
     },
 	winphone_tile_cycle_images: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename_1', documentation: '' },
+            { label: 'included_filename_2', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(included_filename_1, included_filename_2, ...)'
     },
 	winphone_tile_front_image: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_small: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_wide: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_icon_image: {
         description: '[Function] (This function is deprecated)',
-        signature: '(included_filename'
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
+        signature: '(included_filename)'
     },
 	winphone_tile_small_background_image: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_small_icon_image: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'included_filename', documentation: '' }
+        ],
         signature: '(included_filename)'
     },
 	winphone_tile_title: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'title', documentation: '' }
+        ],
         signature: '(title)'
     },
 	winphone_tile_wide_content: {
         description: '[Function] (This function is deprecated)',
+        parameters: [
+            { label: 'content', documentation: '' },
+            { label: 'index', documentation: '' }
+        ],
         signature: '(content, index)'
     },
 
@@ -15727,50 +15845,98 @@ exports.globalfunctions = {
     },
 	layer_background_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
         signature: '(background_element_id, visible)'
     },
 	layer_background_change: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(background_element_id, sprite)'
     },
 	layer_background_sprite: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(background_element_id, sprite)'
     },
 	layer_background_htiled: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'tiled', documentation: '' }
+        ],
         signature: '(background_element_id, tiled)'
     },
 	layer_background_vtiled: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'tiled', documentation: '' }
+        ],
         signature: '(background_element_id, tiled)'
     },
 	layer_background_stretch: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'stretch', documentation: '' }
+        ],
         signature: '(background_element_id, stretch)'
     },
 	layer_background_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'yscale', documentation: '' }
+        ],
         signature: '(background_element_id, yscale)'
     },
 	layer_background_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'xscale', documentation: '' }
+        ],
         signature: '(background_element_id, xscale)'
     },
 	layer_background_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(background_element_id, col)'
     },
 	layer_background_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(background_element_id, alpha)'
     },
 	layer_background_index: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'image_index', documentation: '' }
+        ],
         signature: '(background_element_id, image_index)'
     },
 	layer_background_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background_element_id', documentation: '' },
+            { label: 'image_speed', documentation: '' }
+        ],
         signature: '(background_element_id, image_speed)'
     },
 	layer_background_get_visible: {
@@ -15852,14 +16018,28 @@ exports.globalfunctions = {
     },
 	layer_sprite_get_id: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'sprite_element_name', documentation: '' }
+        ],
         signature: '(layer_id, sprite_element_name)'
     },
 	layer_sprite_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'sprite_element_id', documentation: '' }
+        ],
         signature: '(layer_id, sprite_element_id)'
     },
 	layer_sprite_create: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(layer_id, x, y, sprite)'
     },
 	layer_sprite_destroy: {
@@ -15871,42 +16051,82 @@ exports.globalfunctions = {
     },
 	layer_sprite_change: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(sprite_element_id, sprite)'
     },
 	layer_sprite_index: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'image_index', documentation: '' }
+        ],
         signature: '(sprite_element_id, image_index)'
     },
 	layer_sprite_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'image_speed', documentation: '' }
+        ],
         signature: '(sprite_element_id, image_speed)'
     },
 	layer_sprite_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(sprite_element_id, scale)'
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'xscale', documentation: '' }
+        ],
+        signature: '(sprite_element_id, xscale)'
     },
 	layer_sprite_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(sprite_element_id, scale)'
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'yscale', documentation: '' }
+        ],
+        signature: '(sprite_element_id, yscale)'
     },
 	layer_sprite_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(sprite_element_id, angle)'
     },
 	layer_sprite_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(sprite_element_id, col)'
     },
 	layer_sprite_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(sprite_element_id, alpha)'
     },
 	layer_sprite_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'x', documentation: '' }
+        ],
         signature: '(sprite_element_id, x)'
     },
 	layer_sprite_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'sprite_element_id', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(sprite_element_id, y)'
     },
 	layer_sprite_get_sprite: {
@@ -15988,10 +16208,22 @@ exports.globalfunctions = {
     },
 	layer_tilemap_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'tilemap_element_id', documentation: '' }
+        ],
         signature: '(layer_id, tilemap_element_id)'
     },
 	layer_tilemap_create: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'tileset', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(layer_id, x, y, tileset, width, height)'
     },
 	layer_tilemap_destroy: {
@@ -16003,22 +16235,46 @@ exports.globalfunctions = {
     },
 	tilemap_tileset: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'tileset', documentation: '' }
+        ],
         signature: '(tilemap_element_id, tileset)'
     },
 	tilemap_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'x', documentation: '' }
+        ],
         signature: '(tilemap_element_id, x)'
     },
 	tilemap_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, y)'
     },
 	tilemap_set: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'tiledata', documentation: '' },
+            { label: 'cell_x', documentation: '' },
+            { label: 'cell_y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, tiledata, cell_x, cell_y)'
     },
 	tilemap_set_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'tiledata', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, tiledata, x, y)'
     },
 	tilemap_get_tileset: {
@@ -16072,30 +16328,66 @@ exports.globalfunctions = {
     },
 	tilemap_get: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'cell_x', documentation: '' },
+            { label: 'cell_y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, cell_x, cell_y)'
     },
 	tilemap_get_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_x_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_y_at_pixel: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_clear: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'tiledata', documentation: '' }
+        ],
         signature: '(tilemap_element_id, tiledata)'
     },
 	draw_tilemap: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tilemap_element_id, x, y)'
     },
 	draw_tile: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tileset', documentation: '' },
+            { label: 'tiledata', documentation: '' },
+            { label: 'frame', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tileset, tiledata, frame, x, y)'
     },
 	tilemap_set_global_mask: {
@@ -16106,6 +16398,10 @@ exports.globalfunctions = {
     },
 	tilemap_set_mask: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tilemap_element_id', documentation: '' },
+            { label: 'mask', documentation: '' }
+        ],
         signature: '(tilemap_element_id, mask)'
     },
 	tilemap_get_mask: {
@@ -16131,18 +16427,34 @@ exports.globalfunctions = {
     },
 	tile_set_index: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' },
+            { label: 'tileindex', documentation: '' }
+        ],
         signature: '(tiledata, tileindex)'
     },
 	tile_set_flip: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' },
+            { label: 'flip', documentation: '' }
+        ],
         signature: '(tiledata, flip)'
     },
 	tile_set_mirror: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' },
+            { label: 'mirror', documentation: '' }
+        ],
         signature: '(tiledata, mirror)'
     },
 	tile_set_rotate: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tiledata', documentation: '' },
+            { label: 'rotate', documentation: '' }
+        ],
         signature: '(tiledata, rotate)'
     },
 	tile_get_empty: {
@@ -16182,10 +16494,25 @@ exports.globalfunctions = {
     },
 	layer_tile_exists: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'tile_element_id', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(layer_id, tile_element_id, ...)'
     },
 	layer_tile_create: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'layer_id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'tileset', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(layer_id, x, y, tileset, left, top, width, height)'
     },
 	layer_tile_destroy: {
@@ -16197,38 +16524,77 @@ exports.globalfunctions = {
     },
 	layer_tile_change: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'sprite', documentation: '' }
+        ],
         signature: '(tile_element_id, sprite)'
     },
 	layer_tile_xscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(tile_element_id, scale)'
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'xscale', documentation: '' }
+        ],
+        signature: '(tile_element_id, xscale)'
     },
 	layer_tile_yscale: {
         description: '[Function] (New in GameMaker Studio 2)',
-        signature: '(tile_element_id, scale)'
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'yscale', documentation: '' }
+        ],
+        signature: '(tile_element_id, yscale)'
     },
 	layer_tile_blend: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
         signature: '(tile_element_id, col)'
     },
 	layer_tile_alpha: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
         signature: '(tile_element_id, alpha)'
     },
 	layer_tile_x: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'x', documentation: '' }
+        ],
         signature: '(tile_element_id, x)'
     },
 	layer_tile_y: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(tile_element_id, y)'
     },
 	layer_tile_region: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(tile_element_id, left, top, width, height)'
     },
 	layer_tile_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'tile_element_id', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
         signature: '(tile_element_id, visible)'
     },
 	layer_tile_get_sprite: {
@@ -16320,6 +16686,18 @@ exports.globalfunctions = {
     },
 	camera_create_view: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'room_x', documentation: '' },
+            { label: 'room_y', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'angle', documentation: '' },
+            { label: 'object', documentation: '' },
+            { label: 'x_speed', documentation: '' },
+            { label: 'y_speed', documentation: '' },
+            { label: 'x_border', documentation: '' },
+            { label: 'y_border', documentation: '' }
+        ],
         signature: '(room_x, room_y, width, height, angle, object, x_speed, y_speed, x_border, y_border)'
     },
 	camera_destroy: {
@@ -16351,46 +16729,94 @@ exports.globalfunctions = {
     },
 	camera_set_view_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'matrix', documentation: '' }
+        ],
         signature: '(camera, matrix)'
     },
 	camera_set_proj_mat: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'matrix', documentation: '' }
+        ],
         signature: '(camera, matrix)'
     },
 	camera_set_update_script: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'script', documentation: '' }
+        ],
         signature: '(camera, script)'
     },
 	camera_set_begin_script: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'script', documentation: '' }
+        ],
         signature: '(camera, script)'
     },
 	camera_set_end_script: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'script', documentation: '' }
+        ],
         signature: '(camera, script)'
     },
 	camera_set_view_pos: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
         signature: '(camera, x, y)'
     },
 	camera_set_view_size: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
         signature: '(camera, width, height)'
     },
 	camera_set_view_speed: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'x_speed', documentation: '' },
+            { label: 'y_speed', documentation: '' }
+        ],
         signature: '(camera, x_speed, y_speed)'
     },
 	camera_set_view_border: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'x_border', documentation: '' },
+            { label: 'y_border', documentation: '' }
+        ],
         signature: '(camera, x_border, y_border)'
     },
 	camera_set_view_angle: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
         signature: '(camera, angle)'
     },
 	camera_set_view_target: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'camera', documentation: '' },
+            { label: 'object', documentation: '' }
+        ],
         signature: '(camera, object)'
     },
 	camera_get_view_mat: {
@@ -16549,30 +16975,58 @@ exports.globalfunctions = {
     },
 	view_set_camera: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'camera', documentation: '' }
+        ],
         signature: '(view, camera)'
     },
 	view_set_visible: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
         signature: '(view, visible)'
     },
 	view_set_xport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'xport', documentation: '' }
+        ],
         signature: '(view, xport)'
     },
 	view_set_yport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'yport', documentation: '' }
+        ],
         signature: '(view, yport)'
     },
 	view_set_wport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'wport', documentation: '' }
+        ],
         signature: '(view, wport)'
     },
 	view_set_hport: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'hport', documentation: '' }
+        ],
         signature: '(view, hport)'
     },
 	view_set_surface_id: {
         description: '[Function] (New in GameMaker Studio 2)',
+        parameters: [
+            { label: 'view', documentation: '' },
+            { label: 'surface_id', documentation: '' }
+        ],
         signature: '(view, surface_id)'
     },
 	gesture_drag_time: {
