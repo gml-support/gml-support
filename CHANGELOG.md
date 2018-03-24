@@ -1,3 +1,11 @@
+## 1.4.1
+
+ - 增强语法提示（目前大约有 21 个函数未进行处理，将在后续版本中加入）
+ - 重新加入本地化支持（暂无函数信息，现可贡献函数信息）
+
+ - Enhanced grammar hints (approximately 21 functions are currently unprocessed and will be added in subsequent versions)
+ - Rejoin localization support (no function information available, now you can contribute on the project home page)
+
 ## 1.4.0
 
 经过了三个 Pre-release 后，这个正式版本终于可以使用了，虽然仍有一些不足，但至少这个版本稳定了嘛。

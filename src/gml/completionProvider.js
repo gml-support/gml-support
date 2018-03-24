@@ -1,8 +1,9 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
-const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
+const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
+const gmlGlobals = require("./i18n/" + localizationset + "/gmlGlobals");
+const gmlThirdparty = require("./i18n/" + localizationset + "/gmlThirdparty");
 class GMLCompletionItemProvider {
     constructor() {
         this.triggerCharacters = ['.'];
@@ -26,23 +27,22 @@ class GMLCompletionItemProvider {
                 if (entry.description) {
                     proposal.documentation = entry.description;
                 }
-                
+
                 if (entry.signature) {
                     proposal.detail = entry.signature;
                 }
-                /**
                 if (entry.parameters) {
                     let signature = type ? '(' + type + ')' : '';
                     signature += name;
                     signature += '(';
                     if (entry.parameters && entry.parameters.length != 0) {
                         let params = '';
-                        entry.parameters.forEach(p => params += p.label + ', ');
+                        entry.parameters.forEach(p => params += p.label + ',');
                         signature += params.slice(0, -1);
                     }
                     signature += ')';
                     proposal.detail = signature;
-                }**/
+                }
             }
             return proposal;
         };

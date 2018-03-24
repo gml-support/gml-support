@@ -1,0 +1,7 @@
+{
+    "gmlsupport.localization.option": "en-US",
+    "gmlsupport.localization.description": "GML Support Localization Setting",
+    "gml-gm81.suggest.basic": "GML (GameMaker 8.1) suggestions option.",
+    "gml-gms.suggest.basic": "GML (GameMaker Studio) suggestions option.",
+    "gml-gms2.suggest.basic": "GML (GameMaker Studio 2) suggestions option."
+}
