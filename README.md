@@ -21,8 +21,9 @@ At present this plugin is not complete, if you want to contribute to this projec
 
 ## Other
 
-You can also follow me on Twitter (need verification) : [@LiarOnce1062](https://twitter.com/LiarOnce1062)  
-Twitter Channel: [#GML_Support](https://twitter.com/hashtag/GML_Support)
+You can also follow me on Twitter (need verification) : [@LiarOnce1062](https://twitter.com/LiarOnce1062)    
+Twitter Channel: [#GML_Support](https://twitter.com/hashtag/GML_Support)    
+Telegram Channel: [https://t.me/gmlsupport](https://t.me/gmlsupport)
 
 ## Thanks
 
