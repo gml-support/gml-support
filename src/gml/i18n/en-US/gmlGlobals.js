@@ -4926,6 +4926,11 @@ exports.globalfunctions = {
     },
 	ds_list_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, value, ...)'
     },
 	ds_list_clear: {
@@ -5499,6 +5504,11 @@ exports.globalfunctions = {
     },
 	ds_stack_push: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, value, ...)'
     },
 	ds_stack_read: {

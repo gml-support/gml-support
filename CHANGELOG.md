@@ -1,3 +1,14 @@
+## 1.4.2
+
+ - 添加遗漏的两处（剩下 19 处不知道为什么找不到）
+ - 添加基本的 JSDoc 支持（代码片段）
+ - 添加更多关于 `GMS` 配置文件的标识（**注意：手动修改 `GMX` 文件可能会导致项目无法正常使用，请谨慎修改**）
+ - 整理了一下相关文件
+ - Add two missing places ( The remaining 19 can't be found, I don't know why )
+ - Add basic JSDoc support ( Snippet )
+ - Add more identities for the `GMS` configuration file( **Note: Modifying the `GMX` file manually may cause the project to not work properly. Please modify it carefully.** )
+ - Sort out related documents
+
 ## 1.4.1
 
  - 增强语法提示（目前大约有 21 个函数未进行处理，将在后续版本中加入）
