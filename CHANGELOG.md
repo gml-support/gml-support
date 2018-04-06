@@ -1,3 +1,10 @@
+## 1.4.3
+
+ - 整理函数信息
+ - 翻译了一点点。。。。。。（现已提供翻译模板，可切换到 template 分支查看）
+ - Sort out some function information
+ - Translation template is now available, switch to `template` branch view
+
 ## 1.4.2
 
  - 添加遗漏的两处（剩下 19 处不知道为什么找不到）
@@ -13,7 +20,6 @@
 
  - 增强语法提示（目前大约有 21 个函数未进行处理，将在后续版本中加入）
  - 重新加入本地化支持（暂无函数信息，现可贡献函数信息）
-
  - Enhanced grammar hints (approximately 21 functions are currently unprocessed and will be added in subsequent versions)
  - Rejoin localization support (no function information available, now you can contribute on the project home page)
 

@@ -137,23 +137,6 @@ exports.globalfunctions = {
         ],
 		signature: '(index, count)'
 	},
-	analytics_event: {
-        description: '[Function]',
-        parameters: [
-            { label: 'string', documentation: '' }
-        ],
-		signature: '(string)'
-	},
-	analytics_event_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'string', documentation: '' },
-            { label: 'string_param_name1', documentation: '' },
-            { label: 'number_value1', documentation: '' },
-            { label: '...', documentation: '' }
-        ],
-		signature: '(string, string_param_name1, number_value1, ...)'
-	},
 	angle_difference: {
         description: '[Function]',
         parameters: [
@@ -926,183 +909,6 @@ exports.globalfunctions = {
 	audio_system: {
         description: '[Function]'
     },
-	background_add: {
-        description: '[Function]',
-        parameters: [
-            { label: 'fname', documentation: '' },
-            { label: 'removeback', documentation: '' },
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(fname, removeback, smooth)'
-    },
-	background_assign: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'source', documentation: '' }
-        ],
-        signature: '(ind, source)'
-    },
-	background_create_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(w, h, col)'
-    },
-	background_create_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(w, h, col)'
-    },
-	background_create_from_surface: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'removeback', documentation: '' },
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(id, x, y, w, h, removeback, smooth)'
-    },
-	background_create_gradient: {
-        description: '[Function]',
-        parameters: [
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'col1', documentation: '' },
-            { label: 'col2', documentation: '' },
-            { label: 'kind', documentation: '' }
-        ],
-        signature: '(w, h, col1, col2, kind)'
-    },
-	background_delete: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_duplicate: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_exists: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_flush: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_flush_multi: {
-        description: '[Function]',
-        parameters: [
-            { label: 'indarray', documentation: '' }
-        ],
-        signature: '(indarray)'
-    },
-	background_get_height: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_get_name: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_get_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' }
-        ],
-        signature: '(back)'
-    },
-	background_get_uvs: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' }
-        ],
-        signature: '(back)'
-    },
-	background_get_width: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_prefetch: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_prefetch_multi: {
-        description: '[Function]',
-        parameters: [
-            { label: 'indarray', documentation: '' }
-        ],
-        signature: '(indarray)'
-    },
-	background_replace: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' },
-            { label: 'removeback', documentation: '' },
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(ind, fname, removeback, smooth)'
-    },
-	background_replace_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ],
-        signature: '(ind, fname)'
-    },
-	background_save: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ],
-        signature: '(ind, fname)'
-    },
-	background_set_alpha_from_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'back', documentation: '' }
-        ],
-        signature: '(ind, back)'
-    },
 	base64_decode: {
         description: '[Function]',
         parameters: [
@@ -1736,877 +1542,6 @@ exports.globalfunctions = {
         ],
         signature: '(radian_angle)'
     },
-	d3d_draw_block: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
-    },
-	d3d_draw_cone: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_draw_cylinder: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_draw_ellipsoid: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_draw_floor: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
-    },
-	d3d_draw_wall: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
-    },
-	d3d_end: {
-        description: '[Function]'
-    },
-	d3d_light_define_ambient: {
-        description: '[Function]',
-        parameters: [
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(col)'
-    },
-	d3d_light_define_direction: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'dx', documentation: '' },
-            { label: 'dy', documentation: '' },
-            { label: 'dz', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(ind, dx, dy, dz, col)'
-    },
-	d3d_light_define_point: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'range', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, range, col)'
-    },
-	d3d_light_enable: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(ind, enable)'
-    },
-	d3d_model_block: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
-    },
-	d3d_model_clear: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	d3d_model_cone: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_model_create: {
-        description: '[Function]'
-    },
-	d3d_model_cylinder: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_model_destroy: {
-        description: '[Function]'
-    },
-	d3d_model_draw: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'texid', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, texid)'
-    },
-	d3d_model_ellipsoid: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
-    },
-	d3d_model_floor: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
-    },
-	d3d_model_load: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ],
-        signature: '(ind, fname)'
-    },
-	d3d_model_primitive_begin: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'kind', documentation: '' }
-        ],
-        signature: '(ind, kind)'
-    },
-	d3d_model_primitive_end: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	d3d_model_save: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ], 
-        signature: '(ind, fname)'
-    },
-	d3d_model_vertex: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' }
-        ],
-        signature: '(ind, x, y, z)'
-    },
-	d3d_model_vertex_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, col, alpha)'
-    },
-	d3d_model_vertex_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, col, alpha)'
-    },
-	d3d_model_vertex_normal: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz)'
-    },
-	d3d_model_vertex_normal_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_model_vertex_normal_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_model_vertex_normal_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
-    },
-	d3d_model_vertex_normal_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_model_vertex_normal_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_model_vertex_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, xtex, ytex)'
-    },
-	d3d_model_vertex_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
-    },
-	d3d_model_vertex_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
-    },
-	d3d_model_wall: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
-    },
-	d3d_primitive_begin: {
-        description: '[Function]',
-        parameters: [
-            { label: 'kind', documentation: '' }
-        ],
-        signature: '(kind)'
-    },
-	d3d_primitive_begin_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'kind', documentation: '' },
-            { label: 'texid', documentation: '' }
-        ],
-        signature: '(kind, texid)'
-    },
-	d3d_primitive_end: {
-        description: '[Function]'
-    },
-	d3d_set_culling: {
-        description: '[Function]',
-        parameters: [
-            { label: 'cull', documentation: '' }
-        ],
-        signature: '(cull)'
-    },
-	d3d_set_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	d3d_set_fog: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'start', documentation: '' },
-            { label: 'end', documentation: '' }
-        ],
-        signature: '(enable, colour, start, end)'
-    },
-	d3d_set_hidden: {
-        description: '[Function]',
-        parameters: [
-            { label: 'hidden', documentation: '' }
-        ],
-        signature: '(hidden)'
-    },
-	d3d_set_lighting: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(enable)'
-    },
-	d3d_set_perspective: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(enable)'
-    },
-	d3d_set_projection: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xform', documentation: '' },
-            { label: 'yform', documentation: '' },
-            { label: 'zform', documentation: '' },
-            { label: 'xto', documentation: '' },
-            { label: 'yto', documentation: '' },
-            { label: 'zto', documentation: '' },
-            { label: 'xup', documentation: '' },
-            { label: 'yup', documentation: '' },
-            { label: 'zup', documentation: '' }
-        ],
-        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
-    },
-	d3d_set_projection_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xform', documentation: '' },
-            { label: 'yform', documentation: '' },
-            { label: 'zform', documentation: '' },
-            { label: 'xto', documentation: '' },
-            { label: 'yto', documentation: '' },
-            { label: 'zto', documentation: '' },
-            { label: 'xup', documentation: '' },
-            { label: 'yup', documentation: '' },
-            { label: 'zup', documentation: '' },
-            { label: 'angle', documentation: '' },
-            { label: 'aspect', documentation: '' },
-            { label: 'znear', documentation: '' },
-            { label: 'zfar', documentation: '' }
-        ],
-        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
-    },
-	d3d_set_projection_ortho: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(x, y, w, h, angle)'
-    },
-	d3d_set_projection_perspective: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(x, y, w, h, angle)'
-    },
-	d3d_set_shading: {
-        description: '[Function]',
-        parameters: [
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(smooth)'
-    },
-	d3d_set_zwriteenable: {
-        description: '[Function]',
-        parameters: [
-            { label: 'on_off', documentation: '' }
-        ],
-        signature: '(on_off)'
-    },
-	d3d_start: {
-        description: '[Function]'
-    },
-	d3d_transform_add_rotation_axis: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xa', documentation: '' },
-            { label: 'ya', documentation: '' },
-            { label: 'za', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(xa, ya, za, angle)'
-    },
-	d3d_transform_add_rotation_x: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_add_rotation_y: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_add_rotation_z: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_add_scaling: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xs', documentation: '' },
-            { label: 'ys', documentation: '' },
-            { label: 'zs', documentation: '' }
-        ],
-        signature: '(xs, ys, zs)'
-    },
-	d3d_transform_add_translation: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xt', documentation: '' },
-            { label: 'yt', documentation: '' },
-            { label: 'zt', documentation: '' }
-        ],
-        signature: '(xt, yt, zt)'
-    },
-	d3d_transform_set_identity: {
-        description: '[Function]'
-    },
-	d3d_transform_set_rotation_axis: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xa', documentation: '' },
-            { label: 'ya', documentation: '' },
-            { label: 'za', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(xa, ya, za, angle)'
-    },
-	d3d_transform_set_rotation_x: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_set_rotation_y: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_set_rotation_z: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_set_scaling: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xs', documentation: '' },
-            { label: 'ys', documentation: '' },
-            { label: 'zs', documentation: '' }
-        ],
-        signature: '(xs, ys, zs)'
-    },
-	d3d_transform_set_translation: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xt', documentation: '' },
-            { label: 'yt', documentation: '' },
-            { label: 'zt', documentation: '' }
-        ],
-        signature: '(xt, yt, zt)'
-    },
-	d3d_transform_stack_clear: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_discard: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_empty: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_pop: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_push: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_top: {
-        description: '[Function]'
-    },
-	d3d_transform_vertex: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' }
-        ],
-        signature: '(x, y, z)'
-    },
-	d3d_vertex: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' }
-        ],
-        signature: '(x, y, z)'
-    },
-	d3d_vertex_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, col, alpha)'
-    },
-	d3d_vertex_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, col, alpha)'
-    },
-	d3d_vertex_normal: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz)'
-    },
-	d3d_vertex_normal_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_vertex_normal_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_vertex_normal_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
-    },
-	d3d_vertex_normal_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_vertex_normal_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_vertex_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(x, y, z, xtex, ytex)'
-    },
-	d3d_vertex_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, xtex, ytex, col, alpha)'
-    },
-	d3d_vertex_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, xtex, ytex, col, alpha)'
-    },
 	darccos: {
         description: '[Function]',
         parameters: [
@@ -3095,12 +2030,7 @@ exports.globalfunctions = {
 	display_get_gui_width: {
         description: '[Function]'
     },
-	display_get_windows_alternate_sync: {
-        description: '[Function]'
-    },
-	display_get_windows_vertex_buffer_method: {
-        description: '[Function]'
-    },
+	
     display_get_colordepth: {
         description: '[Function]'
     },
@@ -3143,20 +2073,6 @@ exports.globalfunctions = {
             { label: 'flags', documentation: '' }
         ],
         signature: '(flags)'
-    },
-	display_set_windows_alternate_sync: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(enable)'
-    },
-	display_set_windows_vertex_buffer_method: {
-        description: '[Function]',
-        parameters: [
-            { label: 'method', documentation: '' }
-        ],
-        signature: '(method)'
     },
 	display_mouse_set: {
         description: '[Function]',
@@ -3243,126 +2159,6 @@ exports.globalfunctions = {
             { label: 'size', documentation: '' }
         ],
         signature: '(x1, y1, x2, y2, size)'
-    },
-	draw_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(back, x, y)'
-    },
-	draw_background_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'rot', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
-    },
-	draw_background_general: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'rot', documentation: '' },
-            { label: 'c1', documentation: '' },
-            { label: 'c2', documentation: '' },
-            { label: 'c3', documentation: '' },
-            { label: 'c4', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
-    },
-	draw_background_part: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(back, left, top, width, height, x, y)'
-    },
-	draw_background_part_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
-    },
-	draw_background_stretched: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' }
-        ],
-        signature: '(back, x, y, w, h)'
-    },
-	draw_background_stretched_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, x, y, w, h, colour, alpha)'
-    },
-	draw_background_tiled: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(back, x, y)'
-    },
-	draw_background_tiled_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_button: {
         description: '[Function]',
@@ -6525,16 +5321,6 @@ exports.globalfunctions = {
 	iap_status: {
         description: '[Function]'
     },
-	immersion_play_effect: {
-        description: '[Function]',
-        parameters: [
-            { label: 'effect', documentation: '' }
-        ],
-        signature: '(effect)'
-    },
-	immersion_stop: {
-        description: '[Function]'
-    },
 	ini_close: {
         description: '[Function]'
     },
@@ -7747,13 +6533,6 @@ exports.globalfunctions = {
         ],
         signature: '(ind)'
     },
-	object_get_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
 	object_get_mask: {
         description: '[Function]',
         parameters: [
@@ -7817,14 +6596,6 @@ exports.globalfunctions = {
             { label: 'ind_parent', documentation: '' }
         ],
         signature: '(ind_child, ind_parent)'
-    },
-	object_set_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(ind, depth)'
     },
 	object_set_mask: {
         description: '[Function]',
@@ -9869,24 +8640,6 @@ exports.globalfunctions = {
 	room_restart: {
         description: '[Function]'
     },
-	room_set_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'bind', documentation: '' },
-            { label: 'vis', documentation: '' },
-            { label: 'fore', documentation: '' },
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'htiled', documentation: '' },
-            { label: 'vtiled', documentation: '' },
-            { label: 'hspeed', documentation: '' },
-            { label: 'vspeed', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
-    },
 	room_set_background_color: {
         description: '[Function]',
         parameters: [
@@ -9921,28 +8674,6 @@ exports.globalfunctions = {
         ],
         signature: '(ind, pers)'
     },
-	room_set_view: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'vind', documentation: '' },
-            { label: 'vis', documentation: '' },
-            { label: 'xview', documentation: '' },
-            { label: 'yview', documentation: '' },
-            { label: 'wview', documentation: '' },
-            { label: 'hview', documentation: '' },
-            { label: 'xport', documentation: '' },
-            { label: 'yport', documentation: '' },
-            { label: 'wport', documentation: '' },
-            { label: 'hport', documentation: '' },
-            { label: 'hborder', documentation: '' },
-            { label: 'vborder', documentation: '' },
-            { label: 'hspeed', documentation: '' },
-            { label: 'vspeed', documentation: '' },
-            { label: 'obj', documentation: '' }
-        ],
-        signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
-    },
 	room_set_view_enabled: {
         description: '[Function]',
         parameters: [
@@ -9958,46 +8689,6 @@ exports.globalfunctions = {
             { label: 'w', documentation: '' }
         ],
         signature: '(ind, w)'
-    },
-	room_tile_add: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'hieght', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(ind, back, left, top, width, height, x, y, depth)'
-    },
-	room_tile_add_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'hieght', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'depth', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
-    },
-	room_tile_clear: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
     },
 	round: {
         description: '[Function]',
@@ -11702,270 +10393,6 @@ exports.globalfunctions = {
         ],
         signature: '(sampled_id, texture_id)'
     },
-	tile_add: {
-        description: '[Function]',
-        parameters: [
-            { label: 'background', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(background, left, top, width, height, x, y, depth)'
-    },
-	tile_delete: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_exists: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_alpha: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_blend: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_count: {
-        description: '[Function]'
-    },
-	tile_get_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_height: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_id: {
-        description: '[Function]',
-        parameters: [
-            { label: 'index', documentation: '' }
-        ],
-        signature: '(index)'
-    },
-	tile_get_ids: {
-        description: '[Function]'
-    },
-	tile_get_ids_at_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_get_left: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_top: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_visible: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_width: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_x: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_xscale: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_y: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_yscale: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_layer_delete: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_layer_delete_at: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(depth, x, y)'
-    },
-	tile_layer_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'newdepth', documentation: '' }
-        ],
-        signature: '(depth, newdepth)'
-    },
-	tile_layer_find: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(depth, x, y)'
-    },
-	tile_layer_hide: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_layer_shift: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(depth, x, y)'
-    },
-	tile_layer_show: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_set_alpha: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(id, alpha)'
-    },
-	tile_set_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'background', documentation: '' }
-        ],
-        signature: '(id, background)'
-    },
-	tile_set_blend: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'colour', documentation: '' }
-        ],
-        signature: '(id, colour)'
-    },
-	tile_set_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(id, depth)'
-    },
-	tile_set_position: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(id, x, y)'
-    },
-	tile_set_region: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' }
-        ],
-        signature: '(id, left, top, width, height)'
-    },
-	tile_set_scale: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' }
-        ],
-        signature: '(id, xscale, yscale)'
-    },
-	tile_set_visible: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'visible', documentation: '' }
-        ],
-        signature: '(id, visible)'
-    },
 	timeline_add: {
         description: '[Function]'
     },
@@ -12572,33 +10999,33 @@ exports.globalfunctions = {
 
     //These functions are deprecated.
     pocketchange_display_reward: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)'
     },
 	pocketchange_display_shop: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)'
     },
 	iap_store_status: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)'
     },
 	iap_product_status: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)',
         parameters: [
             { label: 'product_id', documentation: '' }
         ],
         signature: '(product_id)'
     },
 	iap_is_downloaded: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)',
         parameters: [
             { label: 'product_id_string', documentation: '' }
         ],
         signature: '(purchase_id_string)'
     },
 	iap_files_purchased: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)'
     },
 	iap_product_files: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)',
         parameters: [
             { label: 'product_id', documentation: '' },
             { label: 'ds_list', documentation: '' }
@@ -12606,7 +11033,7 @@ exports.globalfunctions = {
         signature: '(purchase_id, ds_list)'
     },
 	iap_event_queue: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (This function is deprecated and obsoleted in GameMaker Studio 2)'
     },
     win8_appbar_add_element: {
         description: '[Function] (This function is deprecated)',
@@ -12998,7 +11425,7 @@ exports.globalfunctions = {
         signature: '(content, index)'
     },
 
-    //Obsolete functions in new GameMaker Studio
+    //Obsolete functions in new GameMaker Studio and GameMaker Studio 2
     device_ios_get_image: {
         description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
@@ -13006,80 +11433,80 @@ exports.globalfunctions = {
         description: '[Function] (Obsolete function in new GameMaker Studio)'
     },
     sound_delete: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_discard: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_exists: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_get_kind: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	sound_get_name: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	sound_get_preload: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_restore: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_loop: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
     sound_play: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
     sound_stop: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
 	sound_stop_all: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
     },
 	sound_volume: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'value', documentation: '' }
@@ -13087,14 +11514,14 @@ exports.globalfunctions = {
         signature: '(index, value)'
     },
 	sound_global_volume: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'value', documentation: '' }
         ],
         signature: '(value)'
     },
 	sound_fade: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'value', documentation: '' },
@@ -13103,23 +11530,23 @@ exports.globalfunctions = {
         signature: '(index, value, time)'
     },
 	sound_isplaying: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
     audio_music_is_playing: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
     },
     audio_resume_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
     },
     audio_pause_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
     },
 	audio_play_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'soundid', documentation: '' },
             { label: 'loops', documentation: '' }
@@ -13127,10 +11554,10 @@ exports.globalfunctions = {
         signature: '(soundid, loops)'
     },
 	audio_stop_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
     },
 	audio_music_gain: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'value', documentation: '' },
             { label: 'time', documentation: '' }
@@ -13138,14 +11565,14 @@ exports.globalfunctions = {
         signature: '(value, time)'
     },
 	ads_disable: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'num', documentation: '' }
         ],
 		signature: '(num)'
 	},
 	ads_enable: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13154,50 +11581,50 @@ exports.globalfunctions = {
 		signature: '(x, y, num)'
 	},
 	ads_engagement_active: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
 	},
 	ads_engagement_available: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
 	},
 	ads_engagement_launch: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
 	},
 	ads_event: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'stringid', documentation: '' }
         ],
 		signature: '(stringid)'
 	},
 	ads_event_preload: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'stringid', documentation: '' }
         ],
 		signature: '(stringid)'
 	},
 	ads_get_display_height: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'slotnum', documentation: '' }
         ],
 		signature: '(slotnum)'
 	},
 	ads_get_display_width: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'slotnum', documentation: '' }
         ],
 		signature: '(slotnum)'
 	},
 	ads_interstitial_available: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
 	},
 	ads_interstitial_display: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)'
 	},
 	ads_move: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13205,7 +11632,7 @@ exports.globalfunctions = {
         ],
 		signature: '(x, y, slotnum)'},
 	ads_setup: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'user_uuid', documentation: '' },
             { label: 'ad_app_key', documentation: '' }
@@ -13213,14 +11640,14 @@ exports.globalfunctions = {
 		signature: '(user_uuid, ad_app_key)'
 	},
 	ads_set_reward_callback: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'callback', documentation: '' }
         ],
 		signature: '(callback)'
 	},
     playhaven_add_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13231,7 +11658,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_hide_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13242,7 +11669,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_position_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13252,7 +11679,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h)'
     },
 	playhaven_update_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (Obsolete function in new GameMaker Studio and GameMaker Studio 2)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13327,6 +11754,1581 @@ exports.globalfunctions = {
 	achievement_is_online: {
 		description: '[Function] (Obsolete function in new GameMaker Studio)'
 	},
+
+    //Obsolete functions in GameMaker Studio 2
+    background_add: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(fname, removeback, smooth)'
+    },
+    background_assign: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'source', documentation: '' }
+        ],
+        signature: '(ind, source)'
+    },
+    background_create_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(w, h, col)'
+    },
+    background_create_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(w, h, col)'
+    },
+    background_create_from_surface: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(id, x, y, w, h, removeback, smooth)'
+    },
+    background_create_gradient: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
+        signature: '(w, h, col1, col2, kind)'
+    },
+    background_delete: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_duplicate: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_exists: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_flush: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_flush_multi: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
+        signature: '(indarray)'
+    },
+    background_get_height: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_get_name: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_get_texture: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
+        signature: '(back)'
+    },
+    background_get_uvs: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
+        signature: '(back)'
+    },
+    background_get_width: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_prefetch: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_prefetch_multi: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
+        signature: '(indarray)'
+    },
+    background_replace: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(ind, fname, removeback, smooth)'
+    },
+    background_replace_background: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
+        signature: '(ind, fname)'
+    },
+    background_save: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
+        signature: '(ind, fname)'
+    },
+    background_set_alpha_from_background: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' }
+        ],
+        signature: '(ind, back)'
+    },draw_background: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(back, x, y)'
+    },
+    draw_background_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'rot', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
+    },
+    draw_background_general: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'rot', documentation: '' },
+            { label: 'c1', documentation: '' },
+            { label: 'c2', documentation: '' },
+            { label: 'c3', documentation: '' },
+            { label: 'c4', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
+    },
+    draw_background_part: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(back, left, top, width, height, x, y)'
+    },
+    draw_background_part_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
+    },
+    draw_background_stretched: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' }
+        ],
+        signature: '(back, x, y, w, h)'
+    },
+    draw_background_stretched_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, x, y, w, h, colour, alpha)'
+    },
+    draw_background_tiled: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(back, x, y)'
+    },
+    draw_background_tiled_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, x, y, xscale, yscale, colour, alpha)'
+    },
+    room_set_background: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'bind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'fore', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'htiled', documentation: '' },
+            { label: 'vtiled', documentation: '' },
+            { label: 'hspeed', documentation: '' },
+            { label: 'vspeed', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
+    },
+    room_tile_add: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'hieght', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(ind, back, left, top, width, height, x, y, depth)'
+    },
+    room_tile_add_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'hieght', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
+    },
+    room_tile_clear: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    tile_add: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'background', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(background, left, top, width, height, x, y, depth)'
+    },
+    tile_delete: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_exists: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_alpha: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_background: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_blend: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_count: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    tile_get_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_height: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_id: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
+        signature: '(index)'
+    },
+    tile_get_ids: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    tile_get_ids_at_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_get_left: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_top: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_visible: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_width: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_x: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_xscale: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_y: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_yscale: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_layer_delete: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_layer_delete_at: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(depth, x, y)'
+    },
+    tile_layer_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'newdepth', documentation: '' }
+        ],
+        signature: '(depth, newdepth)'
+    },
+    tile_layer_find: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(depth, x, y)'
+    },
+    tile_layer_hide: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_layer_shift: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(depth, x, y)'
+    },
+    tile_layer_show: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_set_alpha: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(id, alpha)'
+    },
+    tile_set_background: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'background', documentation: '' }
+        ],
+        signature: '(id, background)'
+    },
+    tile_set_blend: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'colour', documentation: '' }
+        ],
+        signature: '(id, colour)'
+    },
+    tile_set_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(id, depth)'
+    },
+    tile_set_position: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(id, x, y)'
+    },
+    tile_set_region: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
+        signature: '(id, left, top, width, height)'
+    },
+    tile_set_scale: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' }
+        ],
+        signature: '(id, xscale, yscale)'
+    },
+    tile_set_visible: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
+        signature: '(id, visible)'
+    },
+    object_get_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    object_set_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(ind, depth)'
+    },
+    d3d_draw_block: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
+    },
+    d3d_draw_cone: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_draw_cylinder: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_draw_ellipsoid: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_draw_floor: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
+    },
+    d3d_draw_wall: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
+    },
+    d3d_end: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_light_define_ambient: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+    d3d_light_define_direction: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'dx', documentation: '' },
+            { label: 'dy', documentation: '' },
+            { label: 'dz', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(ind, dx, dy, dz, col)'
+    },
+    d3d_light_define_point: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'range', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, range, col)'
+    },
+    d3d_light_enable: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(ind, enable)'
+    },
+    d3d_model_block: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
+    },
+    d3d_model_clear: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    d3d_model_cone: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_model_create: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_model_cylinder: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_model_destroy: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_model_draw: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'texid', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, texid)'
+    },
+    d3d_model_ellipsoid: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
+    },
+    d3d_model_floor: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
+    },
+    d3d_model_load: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
+        signature: '(ind, fname)'
+    },
+    d3d_model_primitive_begin: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
+        signature: '(ind, kind)'
+    },
+    d3d_model_primitive_end: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    d3d_model_save: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ], 
+        signature: '(ind, fname)'
+    },
+    d3d_model_vertex: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
+        signature: '(ind, x, y, z)'
+    },
+    d3d_model_vertex_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, col, alpha)'
+    },
+    d3d_model_vertex_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, col, alpha)'
+    },
+    d3d_model_vertex_normal: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz)'
+    },
+    d3d_model_vertex_normal_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_model_vertex_normal_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_model_vertex_normal_texture: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
+    },
+    d3d_model_vertex_normal_texture_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_model_vertex_normal_texture_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_model_vertex_texture: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, xtex, ytex)'
+    },
+    d3d_model_vertex_texture_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
+    },
+    d3d_model_vertex_texture_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
+    },
+    d3d_model_wall: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
+    },
+    d3d_primitive_begin: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'kind', documentation: '' }
+        ],
+        signature: '(kind)'
+    },
+    d3d_primitive_begin_texture: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'kind', documentation: '' },
+            { label: 'texid', documentation: '' }
+        ],
+        signature: '(kind, texid)'
+    },
+    d3d_primitive_end: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_set_culling: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'cull', documentation: '' }
+        ],
+        signature: '(cull)'
+    },
+    d3d_set_depth: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    d3d_set_fog: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'enable', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'start', documentation: '' },
+            { label: 'end', documentation: '' }
+        ],
+        signature: '(enable, colour, start, end)'
+    },
+    d3d_set_hidden: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'hidden', documentation: '' }
+        ],
+        signature: '(hidden)'
+    },
+    d3d_set_lighting: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(enable)'
+    },
+    d3d_set_perspective: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(enable)'
+    },
+    d3d_set_projection: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' }
+        ],
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
+    },
+    d3d_set_projection_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' },
+            { label: 'angle', documentation: '' },
+            { label: 'aspect', documentation: '' },
+            { label: 'znear', documentation: '' },
+            { label: 'zfar', documentation: '' }
+        ],
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
+    },
+    d3d_set_projection_ortho: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(x, y, w, h, angle)'
+    },
+    d3d_set_projection_perspective: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(x, y, w, h, angle)'
+    },
+    d3d_set_shading: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(smooth)'
+    },
+    d3d_set_zwriteenable: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'on_off', documentation: '' }
+        ],
+        signature: '(on_off)'
+    },
+    d3d_start: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_add_rotation_axis: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xa', documentation: '' },
+            { label: 'ya', documentation: '' },
+            { label: 'za', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(xa, ya, za, angle)'
+    },
+    d3d_transform_add_rotation_x: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_add_rotation_y: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_add_rotation_z: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_add_scaling: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'zs', documentation: '' }
+        ],
+        signature: '(xs, ys, zs)'
+    },
+    d3d_transform_add_translation: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xt', documentation: '' },
+            { label: 'yt', documentation: '' },
+            { label: 'zt', documentation: '' }
+        ],
+        signature: '(xt, yt, zt)'
+    },
+    d3d_transform_set_identity: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_set_rotation_axis: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xa', documentation: '' },
+            { label: 'ya', documentation: '' },
+            { label: 'za', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(xa, ya, za, angle)'
+    },
+    d3d_transform_set_rotation_x: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_set_rotation_y: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_set_rotation_z: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_set_scaling: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'zs', documentation: '' }
+        ],
+        signature: '(xs, ys, zs)'
+    },
+    d3d_transform_set_translation: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'xt', documentation: '' },
+            { label: 'yt', documentation: '' },
+            { label: 'zt', documentation: '' }
+        ],
+        signature: '(xt, yt, zt)'
+    },
+    d3d_transform_stack_clear: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_stack_discard: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_stack_empty: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_stack_pop: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_stack_push: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_stack_top: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    d3d_transform_vertex: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
+        signature: '(x, y, z)'
+    },
+    d3d_vertex: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
+        signature: '(x, y, z)'
+    },
+    d3d_vertex_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, col, alpha)'
+    },
+    d3d_vertex_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, col, alpha)'
+    },
+    d3d_vertex_normal: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz)'
+    },
+    d3d_vertex_normal_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_vertex_normal_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_vertex_normal_texture: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
+    },
+    d3d_vertex_normal_texture_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_vertex_normal_texture_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_vertex_texture: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(x, y, z, xtex, ytex)'
+    },
+    d3d_vertex_texture_color: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, xtex, ytex, col, alpha)'
+    },
+    d3d_vertex_texture_colour: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, xtex, ytex, col, alpha)'
+    },
+    display_set_windows_vertex_buffer_method: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'method', documentation: '' }
+        ],
+        signature: '(method)'
+    },
+    display_get_windows_vertex_buffer_method: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    display_set_windows_alternate_sync: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(enable)'
+    },
+    display_get_windows_alternate_sync: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    room_set_view: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'xview', documentation: '' },
+            { label: 'yview', documentation: '' },
+            { label: 'wview', documentation: '' },
+            { label: 'hview', documentation: '' },
+            { label: 'xport', documentation: '' },
+            { label: 'yport', documentation: '' },
+            { label: 'wport', documentation: '' },
+            { label: 'hport', documentation: '' },
+            { label: 'hborder', documentation: '' },
+            { label: 'vborder', documentation: '' },
+            { label: 'hspeed', documentation: '' },
+            { label: 'vspeed', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
+        signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
+    },
+    immersion_play_effect: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'effect', documentation: '' }
+        ],
+        signature: '(effect)'
+    },
+    immersion_stop: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)'
+    },
+    analytics_event: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'string', documentation: '' }
+        ],
+        signature: '(string)'
+    },
+    analytics_event_ext: {
+        description: '[Function] (Obsolete functions in GameMaker Studio 2)',
+        parameters: [
+            { label: 'string', documentation: '' },
+            { label: 'string_param_name1', documentation: '' },
+            { label: 'number_value1', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
+        signature: '(string, string_param_name1, number_value1, ...)'
+    },
 
 	//GameMaker 8.1 Only
 	background_add_background: {
@@ -17335,21 +17337,6 @@ exports.globalvariables = {
 	background_y: {description: '[Variable]'},
 	background_yscale: {description: '[Variable]'},
     secure_mode: {description: '[Variable]'},
-    view_angle: {description: '[Variable]'},
-	view_hborder: {description: '[Variable]'},
-	view_hport: {description: '[Variable]'},
-	view_hspeed: {description: '[Variable]'},
-	view_hview: {description: '[Variable]'},
-	view_object: {description: '[Variable]'},
-	view_vborder: {description: '[Variable]'},
-	view_visible: {description: '[Variable]'},
-	view_vspeed: {description: '[Variable]'},
-	view_wport: {description: '[Variable]'},
-	view_wview: {description: '[Variable]'},
-	view_xport: {description: '[Variable]'},
-	view_xview: {description: '[Variable]'},
-	view_yport: {description: '[Variable]'},
-	view_yview: {description: '[Variable]'},
 	background_visible: {description: '[Variable] [0..7]'},
 	background_foreground: {description: '[Variable] [0..7]'},
 	background_index: {description: '[Variable] [0..7]'},
@@ -17379,7 +17366,24 @@ exports.globalvariables = {
 	view_vborder: {description: '[Variable] [0..7]'},
 	view_hspeed: {description: '[Variable] [0..7]'},
 	view_vspeed: {description: '[Variable] [0..7]'},
-	view_object: {description: '[Variable] [0..7]'},
+    view_object: {description: '[Variable] [0..7]'},
+    
+    //Obsolete functions in GameMaker Studio 2
+    view_angle: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_hborder: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_hport: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_hspeed: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_hview: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_object: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_vborder: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_visible: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_vspeed: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_wport: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_wview: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_xport: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_xview: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_yport: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
+	view_yview: {description: '[Variable] (Obsolete functions in GameMaker Studio 2)'},
 
 	//New in GameMaker Studio 2
 	layer: {description: '[Variable] (New in GameMaker Studio 2)'},
