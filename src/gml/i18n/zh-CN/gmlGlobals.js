@@ -1428,15 +1428,13 @@ exports.globalfunctions = {
 	collision_point: {
         description: '[Function]',
         parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
             { label: 'obj', documentation: '' },
             { label: 'prec', documentation: '' },
             { label: 'notme', documentation: '' }
         ],
-        signature: '(x1, y1, x2, y2, obj, prec, notme)'
+        signature: '(x, y, obj, prec, notme)'
     },
 	collision_rectangle: {
         description: '[Function]',
