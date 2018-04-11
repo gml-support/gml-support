@@ -1,3 +1,10 @@
+## 1.4.4
+
+ - 修改部分错误的信息
+ - 修复 `collision_point` 错误的提示
+ - Modify the wrong introduction
+ - Fix `collision_point` wrong parameters
+
 ## 1.4.3
 
  - 整理函数信息
