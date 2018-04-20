@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "text.gmxwithgml",
+    "fileTypes": [
+        "room.gmx",
+        "object.gmx",
+        "timeline.gmx"
+    ],
+    "name": "GameMaker Studio GMX Config with GML",
+    "patterns": [
+        {
+            "include": "text.xml",
+            "name": "text.xml.gmxwithgml"
+        },
+        {
+            "include": "source.gml-gms",
+            "name": "source.gml-gms.gmxwithgml"
+        }
+    ]
+}

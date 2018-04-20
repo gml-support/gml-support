@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "scopeName": "text.gmx",
+    "fileTypes": [
+        "project.gmx",
+        "config.gmx",
+        "extension.gmx",
+        "sprite.gmx",
+        "background.gmx",
+        "font.gmx",
+        "path.gmx",
+        "sound.gmx"
+    ],
+    "name": "GameMaker Studio GMX Config",
+    "patterns": [
+        {
+            "include": "text.xml",
+            "name": "text.xml.gmx"
+        }
+    ]
+}

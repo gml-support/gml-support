@@ -1,8 +1,32 @@
+## 1.4.4
+
+ - 修改部分错误的信息
+ - 修复 `collision_point` 错误的提示
+ - Modify the wrong introduction
+ - Fix `collision_point` wrong parameters
+
+## 1.4.3
+
+ - 整理函数信息
+ - 翻译了一点点。。。。。。（现已提供翻译模板，可切换到 template 分支查看）
+ - Sort out some function information
+ - Translation template is now available, switch to `template` branch view
+
+## 1.4.2
+
+ - 添加遗漏的两处（剩下 19 处不知道为什么找不到）
+ - 添加基本的 JSDoc 支持（代码片段）
+ - 添加更多关于 `GMS` 配置文件的标识（**注意：手动修改 `GMX` 文件可能会导致项目无法正常使用，请谨慎修改**）
+ - 整理了一下相关文件
+ - Add two missing places ( The remaining 19 can't be found, I don't know why )
+ - Add basic JSDoc support ( Snippet )
+ - Add more identities for the `GMS` configuration file( **Note: Modifying the `GMX` file manually may cause the project to not work properly. Please modify it carefully.** )
+ - Sort out related documents
+
 ## 1.4.1
 
  - 增强语法提示（目前大约有 21 个函数未进行处理，将在后续版本中加入）
  - 重新加入本地化支持（暂无函数信息，现可贡献函数信息）
-
  - Enhanced grammar hints (approximately 21 functions are currently unprocessed and will be added in subsequent versions)
  - Rejoin localization support (no function information available, now you can contribute on the project home page)
 

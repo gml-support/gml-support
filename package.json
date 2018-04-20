@@ -2,7 +2,7 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.4.1",
+  "version": "1.4.4",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
@@ -64,13 +64,123 @@
         "configuration": "./gml-configuration.json"
       },
       {
-        "id": "gml-gmx",
+        "id": "gmx-config",
         "aliases": [
-          "GameMaker Studio GMX Config",
-          "gml-gmx"
+          "GameMaker Studio GMX Global Game Settings",
+          "gmx-project"
         ],
         "extensions": [
-          ".gmx"
+          ".config.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-project",
+        "aliases": [
+          "GameMaker Studio GMX Project Config",
+          "gmx-project"
+        ],
+        "extensions": [
+          ".project.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-object",
+        "aliases": [
+          "GameMaker Studio GMX Object Config",
+          "gmx-object"
+        ],
+        "extensions": [
+          ".object.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-extension",
+        "aliases": [
+          "GameMaker Studio GMX Extension Config",
+          "gmx-extension"
+        ],
+        "extensions": [
+          ".extension.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-sprite",
+        "aliases": [
+          "GameMaker Studio GMX Sprite Config",
+          "gmx-sprite"
+        ],
+        "extensions": [
+          ".sprite.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-background",
+        "aliases": [
+          "GameMaker Studio GMX Background Config",
+          "gmx-background"
+        ],
+        "extensions": [
+          ".background.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-font",
+        "aliases": [
+          "GameMaker Studio GMX Font Config",
+          "gmx-font"
+        ],
+        "extensions": [
+          ".font.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-path",
+        "aliases": [
+          "GameMaker Studio GMX Path Config",
+          "gmx-path"
+        ],
+        "extensions": [
+          ".path.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-sound",
+        "aliases": [
+          "GameMaker Studio GMX Sound Config",
+          "gmx-sound"
+        ],
+        "extensions": [
+          ".sound.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-room",
+        "aliases": [
+          "GameMaker Studio GMX Room Config",
+          "gmx-room"
+        ],
+        "extensions": [
+          ".room.gmx"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "gmx-timeline",
+        "aliases": [
+          "GameMaker Studio GMX Time Line Config",
+          "gmx-timeline"
+        ],
+        "extensions": [
+          ".timeline.gmx"
         ],
         "configuration": "./gml-configuration.json"
       },
@@ -86,13 +196,24 @@
         "configuration": "./gml-configuration.json"
       },
       {
-        "id": "gml-yyp",
+        "id": "yy-config",
         "aliases": [
           "GameMaker Studio 2 YY Config",
-          "gml-yyp","gml-yy"
+          "yy-config"
         ],
         "extensions": [
-          ".yyp",".yy"
+          ".yy"
+        ],
+        "configuration": "./gml-configuration.json"
+      },
+      {
+        "id": "yy-project",
+        "aliases": [
+          "GameMaker Studio 2 YY Project Config",
+          "yy-project"
+        ],
+        "extensions": [
+          ".yyp"
         ],
         "configuration": "./gml-configuration.json"
       }
@@ -127,25 +248,80 @@
       {
         "language": "gml-gm81",
         "scopeName": "source.gml-gm81",
-        "path": "./syntaxes/main/gml-gm81.json"
+        "path": "./syntaxes/main/gml/gml-gm81.json"
       },
       {
         "language": "gml-gms",
         "scopeName": "source.gml-gms",
-        "path": "./syntaxes/main/gml-gms.json"
+        "path": "./syntaxes/main/gml/gml-gms.json"
       },
       {
         "language": "gml-gms2",
         "scopeName": "source.gml-gms2",
-        "path": "./syntaxes/main/gml-gms2.json"
+        "path": "./syntaxes/main/gml/gml-gms2.json"
       },
       {
-        "language": "gml-gmx",
+        "language": "gmx-config",
         "scopeName": "text.gmx",
-        "path": "./syntaxes/main/gmx.json"
+        "path": "./syntaxes/main/gmx/gmx.json"
       },
       {
-        "language": "gml-yyp",
+        "language": "gmx-project",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },
+      {
+        "language": "gmx-sprite",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },
+      {
+        "language": "gmx-extension",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },
+      {
+        "language": "gmx-background",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },
+      {
+        "language": "gmx-font",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },
+      {
+        "language": "gmx-path",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },
+      {
+        "language": "gmx-sound",
+        "scopeName": "text.gmx",
+        "path": "./syntaxes/main/gmx/gmx.json"
+      },    
+      {
+        "language": "gmx-object",
+        "scopeName": "text.gmxwithgml",
+        "path": "./syntaxes/main/gmx/gmxwithgml.json"
+      },
+      {
+        "language": "gmx-room",
+        "scopeName": "text.gmxwithgml",
+        "path": "./syntaxes/main/gmx/gmxwithgml.json"
+      },
+      {
+        "language": "gmx-timeline",
+        "scopeName": "text.gmxwithgml",
+        "path": "./syntaxes/main/gmx/gmxwithgml.json"
+      },
+      {
+        "language": "yy-config",
+        "scopeName": "source.yyp",
+        "path": "./syntaxes/main/yyp.json"
+      },
+      {
+        "language": "yy-project",
         "scopeName": "source.yyp",
         "path": "./syntaxes/main/yyp.json"
       },

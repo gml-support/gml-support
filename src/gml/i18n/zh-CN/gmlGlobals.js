@@ -137,23 +137,6 @@ exports.globalfunctions = {
         ],
 		signature: '(index, count)'
 	},
-	analytics_event: {
-        description: '[Function]',
-        parameters: [
-            { label: 'string', documentation: '' }
-        ],
-		signature: '(string)'
-	},
-	analytics_event_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'string', documentation: '' },
-            { label: 'string_param_name1', documentation: '' },
-            { label: 'number_value1', documentation: '' },
-            { label: '...', documentation: '' }
-        ],
-		signature: '(string, string_param_name1, number_value1, ...)'
-	},
 	angle_difference: {
         description: '[Function]',
         parameters: [
@@ -926,183 +909,6 @@ exports.globalfunctions = {
 	audio_system: {
         description: '[Function]'
     },
-	background_add: {
-        description: '[Function]',
-        parameters: [
-            { label: 'fname', documentation: '' },
-            { label: 'removeback', documentation: '' },
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(fname, removeback, smooth)'
-    },
-	background_assign: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'source', documentation: '' }
-        ],
-        signature: '(ind, source)'
-    },
-	background_create_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(w, h, col)'
-    },
-	background_create_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(w, h, col)'
-    },
-	background_create_from_surface: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'removeback', documentation: '' },
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(id, x, y, w, h, removeback, smooth)'
-    },
-	background_create_gradient: {
-        description: '[Function]',
-        parameters: [
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'col1', documentation: '' },
-            { label: 'col2', documentation: '' },
-            { label: 'kind', documentation: '' }
-        ],
-        signature: '(w, h, col1, col2, kind)'
-    },
-	background_delete: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_duplicate: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_exists: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_flush: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_flush_multi: {
-        description: '[Function]',
-        parameters: [
-            { label: 'indarray', documentation: '' }
-        ],
-        signature: '(indarray)'
-    },
-	background_get_height: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_get_name: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_get_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' }
-        ],
-        signature: '(back)'
-    },
-	background_get_uvs: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' }
-        ],
-        signature: '(back)'
-    },
-	background_get_width: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_prefetch: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	background_prefetch_multi: {
-        description: '[Function]',
-        parameters: [
-            { label: 'indarray', documentation: '' }
-        ],
-        signature: '(indarray)'
-    },
-	background_replace: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' },
-            { label: 'removeback', documentation: '' },
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(ind, fname, removeback, smooth)'
-    },
-	background_replace_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ],
-        signature: '(ind, fname)'
-    },
-	background_save: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ],
-        signature: '(ind, fname)'
-    },
-	background_set_alpha_from_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'back', documentation: '' }
-        ],
-        signature: '(ind, back)'
-    },
 	base64_decode: {
         description: '[Function]',
         parameters: [
@@ -1622,15 +1428,13 @@ exports.globalfunctions = {
 	collision_point: {
         description: '[Function]',
         parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
             { label: 'obj', documentation: '' },
             { label: 'prec', documentation: '' },
             { label: 'notme', documentation: '' }
         ],
-        signature: '(x1, y1, x2, y2, obj, prec, notme)'
+        signature: '(x, y, obj, prec, notme)'
     },
 	collision_rectangle: {
         description: '[Function]',
@@ -1735,877 +1539,6 @@ exports.globalfunctions = {
             { label: 'radian_angle', documentation: '' }
         ],
         signature: '(radian_angle)'
-    },
-	d3d_draw_block: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
-    },
-	d3d_draw_cone: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_draw_cylinder: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_draw_ellipsoid: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_draw_floor: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
-    },
-	d3d_draw_wall: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'texid', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
-    },
-	d3d_end: {
-        description: '[Function]'
-    },
-	d3d_light_define_ambient: {
-        description: '[Function]',
-        parameters: [
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(col)'
-    },
-	d3d_light_define_direction: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'dx', documentation: '' },
-            { label: 'dy', documentation: '' },
-            { label: 'dz', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(ind, dx, dy, dz, col)'
-    },
-	d3d_light_define_point: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'range', documentation: '' },
-            { label: 'col', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, range, col)'
-    },
-	d3d_light_enable: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(ind, enable)'
-    },
-	d3d_model_block: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
-    },
-	d3d_model_clear: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	d3d_model_cone: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_model_create: {
-        description: '[Function]'
-    },
-	d3d_model_cylinder: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' },
-            { label: 'steps', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
-    },
-	d3d_model_destroy: {
-        description: '[Function]'
-    },
-	d3d_model_draw: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'texid', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, texid)'
-    },
-	d3d_model_ellipsoid: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' },
-            { label: 'closed', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
-    },
-	d3d_model_floor: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
-    },
-	d3d_model_load: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ],
-        signature: '(ind, fname)'
-    },
-	d3d_model_primitive_begin: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'kind', documentation: '' }
-        ],
-        signature: '(ind, kind)'
-    },
-	d3d_model_primitive_end: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
-	d3d_model_save: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'fname', documentation: '' }
-        ], 
-        signature: '(ind, fname)'
-    },
-	d3d_model_vertex: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' }
-        ],
-        signature: '(ind, x, y, z)'
-    },
-	d3d_model_vertex_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, col, alpha)'
-    },
-	d3d_model_vertex_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, col, alpha)'
-    },
-	d3d_model_vertex_normal: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz)'
-    },
-	d3d_model_vertex_normal_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_model_vertex_normal_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_model_vertex_normal_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
-    },
-	d3d_model_vertex_normal_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_model_vertex_normal_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_model_vertex_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, xtex, ytex)'
-    },
-	d3d_model_vertex_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
-    },
-	d3d_model_vertex_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
-    },
-	d3d_model_wall: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'x1', documentation: '' },
-            { label: 'y1', documentation: '' },
-            { label: 'z1', documentation: '' },
-            { label: 'x2', documentation: '' },
-            { label: 'y2', documentation: '' },
-            { label: 'z2', documentation: '' },
-            { label: 'hrepeat', documentation: '' },
-            { label: 'vrepeat', documentation: '' }
-        ],
-        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
-    },
-	d3d_primitive_begin: {
-        description: '[Function]',
-        parameters: [
-            { label: 'kind', documentation: '' }
-        ],
-        signature: '(kind)'
-    },
-	d3d_primitive_begin_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'kind', documentation: '' },
-            { label: 'texid', documentation: '' }
-        ],
-        signature: '(kind, texid)'
-    },
-	d3d_primitive_end: {
-        description: '[Function]'
-    },
-	d3d_set_culling: {
-        description: '[Function]',
-        parameters: [
-            { label: 'cull', documentation: '' }
-        ],
-        signature: '(cull)'
-    },
-	d3d_set_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	d3d_set_fog: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'start', documentation: '' },
-            { label: 'end', documentation: '' }
-        ],
-        signature: '(enable, colour, start, end)'
-    },
-	d3d_set_hidden: {
-        description: '[Function]',
-        parameters: [
-            { label: 'hidden', documentation: '' }
-        ],
-        signature: '(hidden)'
-    },
-	d3d_set_lighting: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(enable)'
-    },
-	d3d_set_perspective: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(enable)'
-    },
-	d3d_set_projection: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xform', documentation: '' },
-            { label: 'yform', documentation: '' },
-            { label: 'zform', documentation: '' },
-            { label: 'xto', documentation: '' },
-            { label: 'yto', documentation: '' },
-            { label: 'zto', documentation: '' },
-            { label: 'xup', documentation: '' },
-            { label: 'yup', documentation: '' },
-            { label: 'zup', documentation: '' }
-        ],
-        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
-    },
-	d3d_set_projection_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xform', documentation: '' },
-            { label: 'yform', documentation: '' },
-            { label: 'zform', documentation: '' },
-            { label: 'xto', documentation: '' },
-            { label: 'yto', documentation: '' },
-            { label: 'zto', documentation: '' },
-            { label: 'xup', documentation: '' },
-            { label: 'yup', documentation: '' },
-            { label: 'zup', documentation: '' },
-            { label: 'angle', documentation: '' },
-            { label: 'aspect', documentation: '' },
-            { label: 'znear', documentation: '' },
-            { label: 'zfar', documentation: '' }
-        ],
-        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
-    },
-	d3d_set_projection_ortho: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(x, y, w, h, angle)'
-    },
-	d3d_set_projection_perspective: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(x, y, w, h, angle)'
-    },
-	d3d_set_shading: {
-        description: '[Function]',
-        parameters: [
-            { label: 'smooth', documentation: '' }
-        ],
-        signature: '(smooth)'
-    },
-	d3d_set_zwriteenable: {
-        description: '[Function]',
-        parameters: [
-            { label: 'on_off', documentation: '' }
-        ],
-        signature: '(on_off)'
-    },
-	d3d_start: {
-        description: '[Function]'
-    },
-	d3d_transform_add_rotation_axis: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xa', documentation: '' },
-            { label: 'ya', documentation: '' },
-            { label: 'za', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(xa, ya, za, angle)'
-    },
-	d3d_transform_add_rotation_x: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_add_rotation_y: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_add_rotation_z: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_add_scaling: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xs', documentation: '' },
-            { label: 'ys', documentation: '' },
-            { label: 'zs', documentation: '' }
-        ],
-        signature: '(xs, ys, zs)'
-    },
-	d3d_transform_add_translation: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xt', documentation: '' },
-            { label: 'yt', documentation: '' },
-            { label: 'zt', documentation: '' }
-        ],
-        signature: '(xt, yt, zt)'
-    },
-	d3d_transform_set_identity: {
-        description: '[Function]'
-    },
-	d3d_transform_set_rotation_axis: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xa', documentation: '' },
-            { label: 'ya', documentation: '' },
-            { label: 'za', documentation: '' },
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(xa, ya, za, angle)'
-    },
-	d3d_transform_set_rotation_x: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_set_rotation_y: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_set_rotation_z: {
-        description: '[Function]',
-        parameters: [
-            { label: 'angle', documentation: '' }
-        ],
-        signature: '(angle)'
-    },
-	d3d_transform_set_scaling: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xs', documentation: '' },
-            { label: 'ys', documentation: '' },
-            { label: 'zs', documentation: '' }
-        ],
-        signature: '(xs, ys, zs)'
-    },
-	d3d_transform_set_translation: {
-        description: '[Function]',
-        parameters: [
-            { label: 'xt', documentation: '' },
-            { label: 'yt', documentation: '' },
-            { label: 'zt', documentation: '' }
-        ],
-        signature: '(xt, yt, zt)'
-    },
-	d3d_transform_stack_clear: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_discard: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_empty: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_pop: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_push: {
-        description: '[Function]'
-    },
-	d3d_transform_stack_top: {
-        description: '[Function]'
-    },
-	d3d_transform_vertex: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' }
-        ],
-        signature: '(x, y, z)'
-    },
-	d3d_vertex: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' }
-        ],
-        signature: '(x, y, z)'
-    },
-	d3d_vertex_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, col, alpha)'
-    },
-	d3d_vertex_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, col, alpha)'
-    },
-	d3d_vertex_normal: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz)'
-    },
-	d3d_vertex_normal_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_vertex_normal_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, col, alpha)'
-    },
-	d3d_vertex_normal_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
-    },
-	d3d_vertex_normal_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_vertex_normal_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'nx', documentation: '' },
-            { label: 'ny', documentation: '' },
-            { label: 'nz', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
-    },
-	d3d_vertex_texture: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' }
-        ],
-        signature: '(x, y, z, xtex, ytex)'
-    },
-	d3d_vertex_texture_color: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, xtex, ytex, col, alpha)'
-    },
-	d3d_vertex_texture_colour: {
-        description: '[Function]',
-        parameters: [
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'z', documentation: '' },
-            { label: 'xtex', documentation: '' },
-            { label: 'ytex', documentation: '' },
-            { label: 'col', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
 	darccos: {
         description: '[Function]',
@@ -3095,12 +2028,7 @@ exports.globalfunctions = {
 	display_get_gui_width: {
         description: '[Function]'
     },
-	display_get_windows_alternate_sync: {
-        description: '[Function]'
-    },
-	display_get_windows_vertex_buffer_method: {
-        description: '[Function]'
-    },
+	
     display_get_colordepth: {
         description: '[Function]'
     },
@@ -3143,20 +2071,6 @@ exports.globalfunctions = {
             { label: 'flags', documentation: '' }
         ],
         signature: '(flags)'
-    },
-	display_set_windows_alternate_sync: {
-        description: '[Function]',
-        parameters: [
-            { label: 'enable', documentation: '' }
-        ],
-        signature: '(enable)'
-    },
-	display_set_windows_vertex_buffer_method: {
-        description: '[Function]',
-        parameters: [
-            { label: 'method', documentation: '' }
-        ],
-        signature: '(method)'
     },
 	display_mouse_set: {
         description: '[Function]',
@@ -3243,126 +2157,6 @@ exports.globalfunctions = {
             { label: 'size', documentation: '' }
         ],
         signature: '(x1, y1, x2, y2, size)'
-    },
-	draw_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(back, x, y)'
-    },
-	draw_background_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'rot', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
-    },
-	draw_background_general: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'rot', documentation: '' },
-            { label: 'c1', documentation: '' },
-            { label: 'c2', documentation: '' },
-            { label: 'c3', documentation: '' },
-            { label: 'c4', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
-    },
-	draw_background_part: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(back, left, top, width, height, x, y)'
-    },
-	draw_background_part_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
-    },
-	draw_background_stretched: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' }
-        ],
-        signature: '(back, x, y, w, h)'
-    },
-	draw_background_stretched_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'w', documentation: '' },
-            { label: 'h', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, x, y, w, h, colour, alpha)'
-    },
-	draw_background_tiled: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(back, x, y)'
-    },
-	draw_background_tiled_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'colour', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(back, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_button: {
         description: '[Function]',
@@ -4926,6 +3720,11 @@ exports.globalfunctions = {
     },
 	ds_list_add: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, value, ...)'
     },
 	ds_list_clear: {
@@ -5499,6 +4298,11 @@ exports.globalfunctions = {
     },
 	ds_stack_push: {
         description: '[Function]',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'value', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
         signature: '(id, value, ...)'
     },
 	ds_stack_read: {
@@ -6513,16 +5317,6 @@ exports.globalfunctions = {
         description: '[Function]'
     },
 	iap_status: {
-        description: '[Function]'
-    },
-	immersion_play_effect: {
-        description: '[Function]',
-        parameters: [
-            { label: 'effect', documentation: '' }
-        ],
-        signature: '(effect)'
-    },
-	immersion_stop: {
         description: '[Function]'
     },
 	ini_close: {
@@ -7737,13 +6531,6 @@ exports.globalfunctions = {
         ],
         signature: '(ind)'
     },
-	object_get_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
-    },
 	object_get_mask: {
         description: '[Function]',
         parameters: [
@@ -7807,14 +6594,6 @@ exports.globalfunctions = {
             { label: 'ind_parent', documentation: '' }
         ],
         signature: '(ind_child, ind_parent)'
-    },
-	object_set_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(ind, depth)'
     },
 	object_set_mask: {
         description: '[Function]',
@@ -9859,24 +8638,6 @@ exports.globalfunctions = {
 	room_restart: {
         description: '[Function]'
     },
-	room_set_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'bind', documentation: '' },
-            { label: 'vis', documentation: '' },
-            { label: 'fore', documentation: '' },
-            { label: 'back', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'htiled', documentation: '' },
-            { label: 'vtiled', documentation: '' },
-            { label: 'hspeed', documentation: '' },
-            { label: 'vspeed', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
-    },
 	room_set_background_color: {
         description: '[Function]',
         parameters: [
@@ -9911,28 +8672,6 @@ exports.globalfunctions = {
         ],
         signature: '(ind, pers)'
     },
-	room_set_view: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'vind', documentation: '' },
-            { label: 'vis', documentation: '' },
-            { label: 'xview', documentation: '' },
-            { label: 'yview', documentation: '' },
-            { label: 'wview', documentation: '' },
-            { label: 'hview', documentation: '' },
-            { label: 'xport', documentation: '' },
-            { label: 'yport', documentation: '' },
-            { label: 'wport', documentation: '' },
-            { label: 'hport', documentation: '' },
-            { label: 'hborder', documentation: '' },
-            { label: 'vborder', documentation: '' },
-            { label: 'hspeed', documentation: '' },
-            { label: 'vspeed', documentation: '' },
-            { label: 'obj', documentation: '' }
-        ],
-        signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
-    },
 	room_set_view_enabled: {
         description: '[Function]',
         parameters: [
@@ -9948,46 +8687,6 @@ exports.globalfunctions = {
             { label: 'w', documentation: '' }
         ],
         signature: '(ind, w)'
-    },
-	room_tile_add: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'hieght', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(ind, back, left, top, width, height, x, y, depth)'
-    },
-	room_tile_add_ext: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' },
-            { label: 'back', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'hieght', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'depth', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
-    },
-	room_tile_clear: {
-        description: '[Function]',
-        parameters: [
-            { label: 'ind', documentation: '' }
-        ],
-        signature: '(ind)'
     },
 	round: {
         description: '[Function]',
@@ -11692,270 +10391,6 @@ exports.globalfunctions = {
         ],
         signature: '(sampled_id, texture_id)'
     },
-	tile_add: {
-        description: '[Function]',
-        parameters: [
-            { label: 'background', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(background, left, top, width, height, x, y, depth)'
-    },
-	tile_delete: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_exists: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_alpha: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_blend: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_count: {
-        description: '[Function]'
-    },
-	tile_get_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_height: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_id: {
-        description: '[Function]',
-        parameters: [
-            { label: 'index', documentation: '' }
-        ],
-        signature: '(index)'
-    },
-	tile_get_ids: {
-        description: '[Function]'
-    },
-	tile_get_ids_at_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_get_left: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_top: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_visible: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_width: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_x: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_xscale: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_y: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_get_yscale: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' }
-        ],
-        signature: '(id)'
-    },
-	tile_layer_delete: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_layer_delete_at: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(depth, x, y)'
-    },
-	tile_layer_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'newdepth', documentation: '' }
-        ],
-        signature: '(depth, newdepth)'
-    },
-	tile_layer_find: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(depth, x, y)'
-    },
-	tile_layer_hide: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_layer_shift: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(depth, x, y)'
-    },
-	tile_layer_show: {
-        description: '[Function]',
-        parameters: [
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(depth)'
-    },
-	tile_set_alpha: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'alpha', documentation: '' }
-        ],
-        signature: '(id, alpha)'
-    },
-	tile_set_background: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'background', documentation: '' }
-        ],
-        signature: '(id, background)'
-    },
-	tile_set_blend: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'colour', documentation: '' }
-        ],
-        signature: '(id, colour)'
-    },
-	tile_set_depth: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'depth', documentation: '' }
-        ],
-        signature: '(id, depth)'
-    },
-	tile_set_position: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'x', documentation: '' },
-            { label: 'y', documentation: '' }
-        ],
-        signature: '(id, x, y)'
-    },
-	tile_set_region: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'left', documentation: '' },
-            { label: 'top', documentation: '' },
-            { label: 'width', documentation: '' },
-            { label: 'height', documentation: '' }
-        ],
-        signature: '(id, left, top, width, height)'
-    },
-	tile_set_scale: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'xscale', documentation: '' },
-            { label: 'yscale', documentation: '' }
-        ],
-        signature: '(id, xscale, yscale)'
-    },
-	tile_set_visible: {
-        description: '[Function]',
-        parameters: [
-            { label: 'id', documentation: '' },
-            { label: 'visible', documentation: '' }
-        ],
-        signature: '(id, visible)'
-    },
 	timeline_add: {
         description: '[Function]'
     },
@@ -12562,33 +10997,33 @@ exports.globalfunctions = {
 
     //These functions are deprecated.
     pocketchange_display_reward: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)'
     },
 	pocketchange_display_shop: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)'
     },
 	iap_store_status: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)'
     },
 	iap_product_status: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
         parameters: [
             { label: 'product_id', documentation: '' }
         ],
         signature: '(product_id)'
     },
 	iap_is_downloaded: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
         parameters: [
             { label: 'product_id_string', documentation: '' }
         ],
         signature: '(purchase_id_string)'
     },
 	iap_files_purchased: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)'
     },
 	iap_product_files: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
         parameters: [
             { label: 'product_id', documentation: '' },
             { label: 'ds_list', documentation: '' }
@@ -12596,10 +11031,10 @@ exports.globalfunctions = {
         signature: '(purchase_id, ds_list)'
     },
 	iap_event_queue: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)'
     },
     win8_appbar_add_element: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'icon', documentation: '' },
@@ -12611,68 +11046,68 @@ exports.globalfunctions = {
         signature: '(type, icon, label, section, toolTip, callback)'
     },
 	win8_appbar_enable: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'flag', documentation: '' }
         ],
         signature: '(flag)'
     },
 	win8_appbar_remove_element: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'id', documentation: '' }
         ],
         signature: '(id)'
     },
 	win8_device_touchscreen_available: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	win8_license_initialize_sandbox: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: '_licenseString', documentation: '' }
         ],
         signature: '(_licenseString)'
     },
 	win8_license_trial_version: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	win8_livetile_badge_clear: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	win8_livetile_badge_notification: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'id', documentation: '' }
         ],
         signature: '(id)'
     },
 	win8_livetile_notification_begin: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'template', documentation: '' }
         ],
         signature: '(template)'
     },
 	win8_livetile_notification_end: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	win8_livetile_notification_expiry: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'expiryTime', documentation: '' }
         ],
         signature: '(expiryTime)'
     },
 	win8_livetile_notification_image_add: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'image', documentation: '' }
         ],
         signature: '(image)'
     },
 	win8_livetile_notification_secondary_begin: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'template', documentation: '' },
             { label: 'tileId', documentation: '' }
@@ -12680,31 +11115,31 @@ exports.globalfunctions = {
         signature: '(template, tileId)'
     },
 	win8_livetile_notification_tag: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'tag', documentation: '' }
         ],
         signature: '(tag)'
     },
 	win8_livetile_notification_text_add: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'text', documentation: '' }
         ],
         signature: '(text)'
     },
 	win8_livetile_queue_enable: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'flag', documentation: '' }
         ],
         signature: '(flag)'
     },
 	win8_livetile_tile_clear: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	win8_livetile_tile_notification: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'template', documentation: '' },
             { label: 'ds_map', documentation: '' },
@@ -12714,24 +11149,24 @@ exports.globalfunctions = {
         signature: '(template, ds_map, expiry, tag)'
     },
 	win8_search_add_suggestions: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: '_dslist', documentation: '' }
         ],
         signature: '(_dslist)'
     },
 	win8_search_disable: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	win8_search_enable: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: '_selectionCallback', documentation: '' }
         ],
         signature: '(_selectionCallback)'
     },
 	win8_secondarytile_badge_notification: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'tileId', documentation: '' }
@@ -12739,14 +11174,14 @@ exports.globalfunctions = {
         signature: '(id, tileId)'
     },
 	win8_secondarytile_delete: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'id', documentation: '' }
         ],
         signature: '(id)'
     },
 	win8_secondarytile_pin: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'shortName', documentation: '' },
@@ -12760,7 +11195,7 @@ exports.globalfunctions = {
         signature: '(id, shortName, displayName, cmdLineArgs, dsListOptions, tileImg, wideTileImg, textCol)'
     },
 	win8_settingscharm_add_entry: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'callback', documentation: '' }
@@ -12768,7 +11203,7 @@ exports.globalfunctions = {
         signature: '(name, callback)'
     },
 	win8_settingscharm_add_html_entry: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'name', documentation: '' },
@@ -12777,7 +11212,7 @@ exports.globalfunctions = {
         signature: '(id, name, htmlPath)'
     },
 	win8_settingscharm_add_xaml_entry: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'xamlPath', documentation: '' },
@@ -12788,7 +11223,7 @@ exports.globalfunctions = {
         signature: '(name, xamlPath, headerRGB, callback, wideFlyout)'
     },
 	win8_settingscharm_get_xaml_property: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'entryName', documentation: '' },
             { label: 'elementName', documentation: '' },
@@ -12797,14 +11232,14 @@ exports.globalfunctions = {
         signature: '(entryName, elementName, propertyName)'
     },
 	win8_settingscharm_remove_entry: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	win8_settingscharm_set_xaml_property: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'entryName', documentation: '' },
             { label: 'elementName', documentation: '' },
@@ -12814,7 +11249,7 @@ exports.globalfunctions = {
         signature: '(entryName, elementName, propertyName, newValue)'
     },
 	win8_share_file: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'filename', documentation: '' },
             { label: 'title', documentation: '' },
@@ -12824,7 +11259,7 @@ exports.globalfunctions = {
         signature: '(filename, title, description, immediate)'
     },
 	win8_share_image: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'image_filename', documentation: '' },
             { label: 'title', documentation: '' },
@@ -12834,7 +11269,7 @@ exports.globalfunctions = {
         signature: '(image_filename, title, description, immediate)'
     },
 	win8_share_screenshot: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'entryName', documentation: '' },
             { label: 'description', documentation: '' },
@@ -12843,7 +11278,7 @@ exports.globalfunctions = {
         signature: '(title, description, immediate)'
     },
 	win8_share_text: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'text', documentation: '' },
             { label: 'title', documentation: '' },
@@ -12853,7 +11288,7 @@ exports.globalfunctions = {
         signature: '(text, title, description, immediate)'
     },
 	win8_share_url: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'title', documentation: '' },
@@ -12863,66 +11298,66 @@ exports.globalfunctions = {
         signature: '(url, title, description, immediate)'
     },
     winphone_license_trial_version: {
-        description: '[Function] (This function is deprecated)'
+        description: '[Function] (该函数已不赞成使用)'
     },
 	winphone_tile_background_color: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         arameters: [
             { label: 'color', documentation: '' }
         ],
         signature: '(color)'
     },
 	winphone_tile_background_colour: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         arameters: [
             { label: 'colour', documentation: '' }
         ],
         signature: '(colour)'
     },
 	winphone_tile_back_content: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'content', documentation: '' }
         ],
         signature: '(content)'
     },
 	winphone_tile_back_content_wide: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'content', documentation: '' }
         ],
         signature: '(content)'
     },
 	winphone_tile_back_image: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_back_image_wide: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_back_title: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'title', documentation: '' }
         ],
         signature: '(title)'
     },
 	winphone_tile_count: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'count', documentation: '' }
         ],
         signature: '(count)'
     },
 	winphone_tile_cycle_images: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename_1', documentation: '' },
             { label: 'included_filename_2', documentation: '' },
@@ -12931,56 +11366,56 @@ exports.globalfunctions = {
         signature: '(included_filename_1, included_filename_2, ...)'
     },
 	winphone_tile_front_image: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_small: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_wide: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_icon_image: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_small_background_image: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_small_icon_image: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'included_filename', documentation: '' }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_title: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'title', documentation: '' }
         ],
         signature: '(title)'
     },
 	winphone_tile_wide_content: {
-        description: '[Function] (This function is deprecated)',
+        description: '[Function] (该函数已不赞成使用)',
         parameters: [
             { label: 'content', documentation: '' },
             { label: 'index', documentation: '' }
@@ -12988,88 +11423,88 @@ exports.globalfunctions = {
         signature: '(content, index)'
     },
 
-    //Obsolete functions in new GameMaker Studio
+    //Obsolete functions in new GameMaker Studio and GameMaker Studio 2
     device_ios_get_image: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
     },
 	device_ios_get_imagename: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
     },
     sound_delete: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_discard: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_exists: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_get_kind: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	sound_get_name: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	sound_get_preload: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_restore: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
     sound_loop: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
     sound_play: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
     sound_stop: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
 	sound_stop_all: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
     },
 	sound_volume: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'value', documentation: '' }
@@ -13077,14 +11512,14 @@ exports.globalfunctions = {
         signature: '(index, value)'
     },
 	sound_global_volume: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'value', documentation: '' }
         ],
         signature: '(value)'
     },
 	sound_fade: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'value', documentation: '' },
@@ -13093,23 +11528,23 @@ exports.globalfunctions = {
         signature: '(index, value, time)'
     },
 	sound_isplaying: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
     audio_music_is_playing: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
     },
     audio_resume_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
     },
     audio_pause_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
     },
 	audio_play_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'soundid', documentation: '' },
             { label: 'loops', documentation: '' }
@@ -13117,10 +11552,10 @@ exports.globalfunctions = {
         signature: '(soundid, loops)'
     },
 	audio_stop_music: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
     },
 	audio_music_gain: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'value', documentation: '' },
             { label: 'time', documentation: '' }
@@ -13128,14 +11563,14 @@ exports.globalfunctions = {
         signature: '(value, time)'
     },
 	ads_disable: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'num', documentation: '' }
         ],
 		signature: '(num)'
 	},
 	ads_enable: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13144,50 +11579,50 @@ exports.globalfunctions = {
 		signature: '(x, y, num)'
 	},
 	ads_engagement_active: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
 	},
 	ads_engagement_available: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
 	},
 	ads_engagement_launch: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
 	},
 	ads_event: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'stringid', documentation: '' }
         ],
 		signature: '(stringid)'
 	},
 	ads_event_preload: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'stringid', documentation: '' }
         ],
 		signature: '(stringid)'
 	},
 	ads_get_display_height: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'slotnum', documentation: '' }
         ],
 		signature: '(slotnum)'
 	},
 	ads_get_display_width: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'slotnum', documentation: '' }
         ],
 		signature: '(slotnum)'
 	},
 	ads_interstitial_available: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
 	},
 	ads_interstitial_display: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)'
 	},
 	ads_move: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13195,7 +11630,7 @@ exports.globalfunctions = {
         ],
 		signature: '(x, y, slotnum)'},
 	ads_setup: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'user_uuid', documentation: '' },
             { label: 'ad_app_key', documentation: '' }
@@ -13203,14 +11638,14 @@ exports.globalfunctions = {
 		signature: '(user_uuid, ad_app_key)'
 	},
 	ads_set_reward_callback: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'callback', documentation: '' }
         ],
 		signature: '(callback)'
 	},
     playhaven_add_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13221,7 +11656,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_hide_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13232,7 +11667,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_position_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13242,7 +11677,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h)'
     },
 	playhaven_update_notification_badge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13252,10 +11687,10 @@ exports.globalfunctions = {
         signature: '(x, y, w, h)'
     },
     openfeint_accept_challenge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
     },
 	openfeint_send_challenge: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'definition_string', documentation: '' },
             { label: 'text_string', documentation: '' },
@@ -13264,14 +11699,14 @@ exports.globalfunctions = {
         signature: '(definition_string, text_string, data_string)'
     },
 	openfeint_send_invite: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'definition_string', documentation: '' }
         ],
         signature: '(definition_string)'
     },
 	openfeint_send_result: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'challenge_result', documentation: '' },
             { label: 'definition_string', documentation: '' }
@@ -13279,7 +11714,7 @@ exports.globalfunctions = {
         signature: '(challenge_result, description_string)'
     },
 	openfeint_send_social: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'text_string', documentation: '' },
             { label: 'suggested_message', documentation: '' },
@@ -13288,17 +11723,17 @@ exports.globalfunctions = {
         signature: '(text_string, suggested_message, image_name)'
     },
 	openfeint_set_url: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'url', documentation: '' }
         ],
         signature: '(url)'
     },
 	openfeint_start: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)'
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
     },
 	achievement_map_achievement: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'gamecenter_string', documentation: '' },
             { label: 'openfeint_string', documentation: '' }
@@ -13306,7 +11741,7 @@ exports.globalfunctions = {
 		signature: '(gamecenter_string, openfeint_string)'
 	},
 	achievement_map_leaderboard: {
-        description: '[Function] (Obsolete function in new GameMaker Studio)',
+        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
         parameters: [
             { label: 'gamecenter_string', documentation: '' },
             { label: 'openfeint_string', documentation: '' },
@@ -13315,19 +11750,1594 @@ exports.globalfunctions = {
 		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
 	},
 	achievement_is_online: {
-		description: '[Function] (Obsolete function in new GameMaker Studio)'
+		description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
 	},
+
+    //Obsolete functions in GameMaker Studio 2
+    background_add: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'fname', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(fname, removeback, smooth)'
+    },
+    background_assign: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'source', documentation: '' }
+        ],
+        signature: '(ind, source)'
+    },
+    background_create_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(w, h, col)'
+    },
+    background_create_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(w, h, col)'
+    },
+    background_create_from_surface: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(id, x, y, w, h, removeback, smooth)'
+    },
+    background_create_gradient: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'col1', documentation: '' },
+            { label: 'col2', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
+        signature: '(w, h, col1, col2, kind)'
+    },
+    background_delete: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_duplicate: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_exists: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_flush: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_flush_multi: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
+        signature: '(indarray)'
+    },
+    background_get_height: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_get_name: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_get_texture: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
+        signature: '(back)'
+    },
+    background_get_uvs: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' }
+        ],
+        signature: '(back)'
+    },
+    background_get_width: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_prefetch: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    background_prefetch_multi: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'indarray', documentation: '' }
+        ],
+        signature: '(indarray)'
+    },
+    background_replace: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' },
+            { label: 'removeback', documentation: '' },
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(ind, fname, removeback, smooth)'
+    },
+    background_replace_background: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
+        signature: '(ind, fname)'
+    },
+    background_save: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
+        signature: '(ind, fname)'
+    },
+    background_set_alpha_from_background: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' }
+        ],
+        signature: '(ind, back)'
+    },draw_background: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(back, x, y)'
+    },
+    draw_background_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'rot', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
+    },
+    draw_background_general: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'rot', documentation: '' },
+            { label: 'c1', documentation: '' },
+            { label: 'c2', documentation: '' },
+            { label: 'c3', documentation: '' },
+            { label: 'c4', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
+    },
+    draw_background_part: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(back, left, top, width, height, x, y)'
+    },
+    draw_background_part_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
+    },
+    draw_background_stretched: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' }
+        ],
+        signature: '(back, x, y, w, h)'
+    },
+    draw_background_stretched_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, x, y, w, h, colour, alpha)'
+    },
+    draw_background_tiled: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(back, x, y)'
+    },
+    draw_background_tiled_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(back, x, y, xscale, yscale, colour, alpha)'
+    },
+    room_set_background: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'bind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'fore', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'htiled', documentation: '' },
+            { label: 'vtiled', documentation: '' },
+            { label: 'hspeed', documentation: '' },
+            { label: 'vspeed', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
+    },
+    room_tile_add: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'hieght', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(ind, back, left, top, width, height, x, y, depth)'
+    },
+    room_tile_add_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'back', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'hieght', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
+    },
+    room_tile_clear: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    tile_add: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'background', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(background, left, top, width, height, x, y, depth)'
+    },
+    tile_delete: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_exists: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_alpha: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_background: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_blend: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_count: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    tile_get_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_height: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_id: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'index', documentation: '' }
+        ],
+        signature: '(index)'
+    },
+    tile_get_ids: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    tile_get_ids_at_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_get_left: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_top: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_visible: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_width: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_x: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_xscale: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_y: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_get_yscale: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' }
+        ],
+        signature: '(id)'
+    },
+    tile_layer_delete: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_layer_delete_at: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(depth, x, y)'
+    },
+    tile_layer_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'newdepth', documentation: '' }
+        ],
+        signature: '(depth, newdepth)'
+    },
+    tile_layer_find: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(depth, x, y)'
+    },
+    tile_layer_hide: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_layer_shift: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(depth, x, y)'
+    },
+    tile_layer_show: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    tile_set_alpha: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(id, alpha)'
+    },
+    tile_set_background: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'background', documentation: '' }
+        ],
+        signature: '(id, background)'
+    },
+    tile_set_blend: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'colour', documentation: '' }
+        ],
+        signature: '(id, colour)'
+    },
+    tile_set_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(id, depth)'
+    },
+    tile_set_position: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' }
+        ],
+        signature: '(id, x, y)'
+    },
+    tile_set_region: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'left', documentation: '' },
+            { label: 'top', documentation: '' },
+            { label: 'width', documentation: '' },
+            { label: 'height', documentation: '' }
+        ],
+        signature: '(id, left, top, width, height)'
+    },
+    tile_set_scale: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'xscale', documentation: '' },
+            { label: 'yscale', documentation: '' }
+        ],
+        signature: '(id, xscale, yscale)'
+    },
+    tile_set_visible: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'id', documentation: '' },
+            { label: 'visible', documentation: '' }
+        ],
+        signature: '(id, visible)'
+    },
+    object_get_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    object_set_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(ind, depth)'
+    },
+    d3d_draw_block: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
+    },
+    d3d_draw_cone: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_draw_cylinder: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_draw_ellipsoid: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_draw_floor: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
+    },
+    d3d_draw_wall: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'texid', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
+    },
+    d3d_end: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_light_define_ambient: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(col)'
+    },
+    d3d_light_define_direction: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'dx', documentation: '' },
+            { label: 'dy', documentation: '' },
+            { label: 'dz', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(ind, dx, dy, dz, col)'
+    },
+    d3d_light_define_point: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'range', documentation: '' },
+            { label: 'col', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, range, col)'
+    },
+    d3d_light_enable: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(ind, enable)'
+    },
+    d3d_model_block: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
+    },
+    d3d_model_clear: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    d3d_model_cone: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_model_create: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_model_cylinder: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' },
+            { label: 'steps', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
+    },
+    d3d_model_destroy: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_model_draw: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'texid', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, texid)'
+    },
+    d3d_model_ellipsoid: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' },
+            { label: 'closed', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
+    },
+    d3d_model_floor: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
+    },
+    d3d_model_load: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ],
+        signature: '(ind, fname)'
+    },
+    d3d_model_primitive_begin: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'kind', documentation: '' }
+        ],
+        signature: '(ind, kind)'
+    },
+    d3d_model_primitive_end: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' }
+        ],
+        signature: '(ind)'
+    },
+    d3d_model_save: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'fname', documentation: '' }
+        ], 
+        signature: '(ind, fname)'
+    },
+    d3d_model_vertex: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
+        signature: '(ind, x, y, z)'
+    },
+    d3d_model_vertex_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, col, alpha)'
+    },
+    d3d_model_vertex_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, col, alpha)'
+    },
+    d3d_model_vertex_normal: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz)'
+    },
+    d3d_model_vertex_normal_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_model_vertex_normal_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_model_vertex_normal_texture: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
+    },
+    d3d_model_vertex_normal_texture_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_model_vertex_normal_texture_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_model_vertex_texture: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, xtex, ytex)'
+    },
+    d3d_model_vertex_texture_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
+    },
+    d3d_model_vertex_texture_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
+    },
+    d3d_model_wall: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'x1', documentation: '' },
+            { label: 'y1', documentation: '' },
+            { label: 'z1', documentation: '' },
+            { label: 'x2', documentation: '' },
+            { label: 'y2', documentation: '' },
+            { label: 'z2', documentation: '' },
+            { label: 'hrepeat', documentation: '' },
+            { label: 'vrepeat', documentation: '' }
+        ],
+        signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
+    },
+    d3d_primitive_begin: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'kind', documentation: '' }
+        ],
+        signature: '(kind)'
+    },
+    d3d_primitive_begin_texture: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'kind', documentation: '' },
+            { label: 'texid', documentation: '' }
+        ],
+        signature: '(kind, texid)'
+    },
+    d3d_primitive_end: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_set_culling: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'cull', documentation: '' }
+        ],
+        signature: '(cull)'
+    },
+    d3d_set_depth: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'depth', documentation: '' }
+        ],
+        signature: '(depth)'
+    },
+    d3d_set_fog: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'enable', documentation: '' },
+            { label: 'colour', documentation: '' },
+            { label: 'start', documentation: '' },
+            { label: 'end', documentation: '' }
+        ],
+        signature: '(enable, colour, start, end)'
+    },
+    d3d_set_hidden: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'hidden', documentation: '' }
+        ],
+        signature: '(hidden)'
+    },
+    d3d_set_lighting: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(enable)'
+    },
+    d3d_set_perspective: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(enable)'
+    },
+    d3d_set_projection: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' }
+        ],
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
+    },
+    d3d_set_projection_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xform', documentation: '' },
+            { label: 'yform', documentation: '' },
+            { label: 'zform', documentation: '' },
+            { label: 'xto', documentation: '' },
+            { label: 'yto', documentation: '' },
+            { label: 'zto', documentation: '' },
+            { label: 'xup', documentation: '' },
+            { label: 'yup', documentation: '' },
+            { label: 'zup', documentation: '' },
+            { label: 'angle', documentation: '' },
+            { label: 'aspect', documentation: '' },
+            { label: 'znear', documentation: '' },
+            { label: 'zfar', documentation: '' }
+        ],
+        signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
+    },
+    d3d_set_projection_ortho: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(x, y, w, h, angle)'
+    },
+    d3d_set_projection_perspective: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'w', documentation: '' },
+            { label: 'h', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(x, y, w, h, angle)'
+    },
+    d3d_set_shading: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'smooth', documentation: '' }
+        ],
+        signature: '(smooth)'
+    },
+    d3d_set_zwriteenable: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'on_off', documentation: '' }
+        ],
+        signature: '(on_off)'
+    },
+    d3d_start: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_add_rotation_axis: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xa', documentation: '' },
+            { label: 'ya', documentation: '' },
+            { label: 'za', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(xa, ya, za, angle)'
+    },
+    d3d_transform_add_rotation_x: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_add_rotation_y: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_add_rotation_z: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_add_scaling: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'zs', documentation: '' }
+        ],
+        signature: '(xs, ys, zs)'
+    },
+    d3d_transform_add_translation: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xt', documentation: '' },
+            { label: 'yt', documentation: '' },
+            { label: 'zt', documentation: '' }
+        ],
+        signature: '(xt, yt, zt)'
+    },
+    d3d_transform_set_identity: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_set_rotation_axis: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xa', documentation: '' },
+            { label: 'ya', documentation: '' },
+            { label: 'za', documentation: '' },
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(xa, ya, za, angle)'
+    },
+    d3d_transform_set_rotation_x: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_set_rotation_y: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_set_rotation_z: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'angle', documentation: '' }
+        ],
+        signature: '(angle)'
+    },
+    d3d_transform_set_scaling: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xs', documentation: '' },
+            { label: 'ys', documentation: '' },
+            { label: 'zs', documentation: '' }
+        ],
+        signature: '(xs, ys, zs)'
+    },
+    d3d_transform_set_translation: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'xt', documentation: '' },
+            { label: 'yt', documentation: '' },
+            { label: 'zt', documentation: '' }
+        ],
+        signature: '(xt, yt, zt)'
+    },
+    d3d_transform_stack_clear: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_stack_discard: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_stack_empty: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_stack_pop: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_stack_push: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_stack_top: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    d3d_transform_vertex: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
+        signature: '(x, y, z)'
+    },
+    d3d_vertex: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' }
+        ],
+        signature: '(x, y, z)'
+    },
+    d3d_vertex_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, col, alpha)'
+    },
+    d3d_vertex_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, col, alpha)'
+    },
+    d3d_vertex_normal: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz)'
+    },
+    d3d_vertex_normal_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_vertex_normal_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, col, alpha)'
+    },
+    d3d_vertex_normal_texture: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
+    },
+    d3d_vertex_normal_texture_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_vertex_normal_texture_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'nx', documentation: '' },
+            { label: 'ny', documentation: '' },
+            { label: 'nz', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
+    },
+    d3d_vertex_texture: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' }
+        ],
+        signature: '(x, y, z, xtex, ytex)'
+    },
+    d3d_vertex_texture_color: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, xtex, ytex, col, alpha)'
+    },
+    d3d_vertex_texture_colour: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'x', documentation: '' },
+            { label: 'y', documentation: '' },
+            { label: 'z', documentation: '' },
+            { label: 'xtex', documentation: '' },
+            { label: 'ytex', documentation: '' },
+            { label: 'col', documentation: '' },
+            { label: 'alpha', documentation: '' }
+        ],
+        signature: '(x, y, z, xtex, ytex, col, alpha)'
+    },
+    display_set_windows_vertex_buffer_method: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'method', documentation: '' }
+        ],
+        signature: '(method)'
+    },
+    display_get_windows_vertex_buffer_method: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    display_set_windows_alternate_sync: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'enable', documentation: '' }
+        ],
+        signature: '(enable)'
+    },
+    display_get_windows_alternate_sync: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    room_set_view: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'ind', documentation: '' },
+            { label: 'vind', documentation: '' },
+            { label: 'vis', documentation: '' },
+            { label: 'xview', documentation: '' },
+            { label: 'yview', documentation: '' },
+            { label: 'wview', documentation: '' },
+            { label: 'hview', documentation: '' },
+            { label: 'xport', documentation: '' },
+            { label: 'yport', documentation: '' },
+            { label: 'wport', documentation: '' },
+            { label: 'hport', documentation: '' },
+            { label: 'hborder', documentation: '' },
+            { label: 'vborder', documentation: '' },
+            { label: 'hspeed', documentation: '' },
+            { label: 'vspeed', documentation: '' },
+            { label: 'obj', documentation: '' }
+        ],
+        signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
+    },
+    immersion_play_effect: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'effect', documentation: '' }
+        ],
+        signature: '(effect)'
+    },
+    immersion_stop: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)'
+    },
+    analytics_event: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'string', documentation: '' }
+        ],
+        signature: '(string)'
+    },
+    analytics_event_ext: {
+        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        parameters: [
+            { label: 'string', documentation: '' },
+            { label: 'string_param_name1', documentation: '' },
+            { label: 'number_value1', documentation: '' },
+            { label: '...', documentation: '' }
+        ],
+        signature: '(string, string_param_name1, number_value1, ...)'
+    },
 
 	//GameMaker 8.1 Only
 	background_add_background: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' }
         ],
         signature: '(fname)'
     },
     background_create_from_screen: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -13339,28 +13349,28 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, removeback, smooth)'
     },
     cd_close_door: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_init: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     cd_length: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_number: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_open_door: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_pause: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_paused: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_play: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'first', documentation: '' },
             { label: 'last', documentation: '' }
@@ -13368,49 +13378,49 @@ exports.globalfunctions = {
         signature: '(first, last)'
     },
 	cd_playing: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_position: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_present: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_resume: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_set_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'pos', documentation: '' }
         ],
         signature: '(pos)'
     },
 	cd_set_track_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'pos', documentation: '' }
         ],
         signature: '(pos)'
     },
 	cd_stop: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_track: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	cd_track_length: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'n', documentation: '' }
         ],
         signature: '(n)'
     },
 	cd_track_position: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     date_create_date: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'year', documentation: '' },
             { label: 'month', documentation: '' },
@@ -13419,7 +13429,7 @@ exports.globalfunctions = {
         signature: '(year, month, day)'
     },
     date_create_time: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'hour', documentation: '' },
             { label: 'minute', documentation: '' },
@@ -13428,13 +13438,13 @@ exports.globalfunctions = {
         signature: '(hour, minute, second)'
     },
 	date_current_date: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     date_current_time: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     date_valid_date: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'year', documentation: '' },
             { label: 'month', documentation: '' },
@@ -13443,7 +13453,7 @@ exports.globalfunctions = {
         signature: '(year, month, day)'
     },
     date_valid_time: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'hour', documentation: '' },
             { label: 'minute', documentation: '' },
@@ -13452,28 +13462,28 @@ exports.globalfunctions = {
         signature: '(hour, minute, second)'
     },
     discard_include_file: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' }
         ],
         signature: '(fname)'
     },
 	disk_free: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'drive', documentation: '' }
         ],
         signature: '(drive)'
     },
 	disk_size: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'drive', documentation: '' }
         ],
         signature: '(drive)'
     },
 	display_set_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' },
@@ -13483,21 +13493,21 @@ exports.globalfunctions = {
         signature: '(w, h, frequency, coldepth)'
     },
 	display_set_colordepth: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'coldepth', documentation: '' }
         ],
         signature: '(coldepth)'
     },
 	display_set_frequency: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'frequency', documentation: '' }
         ],
         signature: '(frequency)'
     },
 	display_set_size: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' }
@@ -13505,7 +13515,7 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	display_test_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' },
@@ -13515,7 +13525,7 @@ exports.globalfunctions = {
         signature: '(w, h, frequency, coldepth)'
     },
     execute_file: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'arg0', documentation: '' },
@@ -13525,7 +13535,7 @@ exports.globalfunctions = {
         signature: '(fname, arg0, arg1, ...)'
     },
     execute_program: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'arg', documentation: '' },
@@ -13534,7 +13544,7 @@ exports.globalfunctions = {
         signature: '(prog, arg, wait)'
     },
 	execute_shell: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'arg', documentation: '' }
@@ -13542,7 +13552,7 @@ exports.globalfunctions = {
         signature: '(prog, arg)'
     },
     execute_string: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'arg0', documentation: '' },
@@ -13552,14 +13562,14 @@ exports.globalfunctions = {
         signature: '(str, arg0, arg1, ...)'
     },
 	export_include_file: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' }
         ],
         signature: '(fname)'
     },
 	export_include_file_location: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'location', documentation: '' }
@@ -13567,21 +13577,21 @@ exports.globalfunctions = {
         signature: '(fname, location)'
     },
     get_color: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'defcol', documentation: '' }
         ],
         signature: '(defcol)'
     },
 	get_directory: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'dname', documentation: '' }
         ],
         signature: '(dname)'
     },
 	get_directory_alt: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'capt', documentation: '' },
             { label: 'root', documentation: '' }
@@ -13589,24 +13599,24 @@ exports.globalfunctions = {
         signature: '(capt, root)'
     },
     highscore_add_current: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     highscore_set_background: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'back', documentation: '' }
         ],
         signature: '(back)'
     },
 	highscore_set_border: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'show', documentation: '' }
         ],
         signature: '(show)'
     },
 	highscore_set_colors: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'back', documentation: '' },
             { label: 'new', documentation: '' },
@@ -13615,7 +13625,7 @@ exports.globalfunctions = {
         signature: '(back, new, other)'
     },
 	highscore_set_font: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'size', documentation: '' },
@@ -13624,7 +13634,7 @@ exports.globalfunctions = {
         signature: '(name, size, style)'
     },
 	highscore_set_strings: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'caption', documentation: '' },
             { label: 'nobody', documentation: '' },
@@ -13633,14 +13643,14 @@ exports.globalfunctions = {
         signature: '(caption, nobody, escape)'
     },
 	highscore_show: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'numb', documentation: '' }
         ],
         signature: '(numb)'
     },
 	highscore_show_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'numb', documentation: '' },
             { label: 'back', documentation: '' },
@@ -13653,41 +13663,41 @@ exports.globalfunctions = {
         signature: '(numb, back, border, col1, col2, name, size)'
     },
     io_handle: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     keyboard_wait: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	MCI_command: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'str', documentation: '' }
         ],
         signature: '(str)'
     },
 	message_alpha: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'alpha', documentation: '' }
         ],
         signature: '(alpha)'
     },
 	message_background: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'back', documentation: '' }
         ],
         signature: '(back)'
     },
 	message_button: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'sprite', documentation: '' }
         ],
         signature: '(sprite)'
     },
 	message_button_font: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'size', documentation: '' },
@@ -13697,7 +13707,7 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
 	message_caption: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'show', documentation: '' },
             { label: 'str', documentation: '' }
@@ -13705,14 +13715,14 @@ exports.globalfunctions = {
         signature: '(show, str)'
     },
 	message_input_color: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'col', documentation: '' }
         ],
         signature: '(col)'
     },
 	message_input_font: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'size', documentation: '' },
@@ -13722,14 +13732,14 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
 	message_mouse_color: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'col', documentation: '' }
         ],
         signature: '(col)'
     },
 	message_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -13737,7 +13747,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	message_size: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' }
@@ -13745,7 +13755,7 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	message_text_charset: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'charset_id', documentation: '' }
@@ -13753,7 +13763,7 @@ exports.globalfunctions = {
         signature: '(type, charset_id)'
     },
 	message_text_font: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'size', documentation: '' },
@@ -13763,20 +13773,20 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
     mouse_wait: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     object_add: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	object_delete: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	object_event_add: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'evtype', documentation: '' },
@@ -13786,7 +13796,7 @@ exports.globalfunctions = {
         signature: '(ind, evtype, evnumb, codestr)'
     },
 	object_event_clear: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'evtype', documentation: '' },
@@ -13795,7 +13805,7 @@ exports.globalfunctions = {
         signature: '(ind, evtype, evnumb)'
     },
 	part_attractor_clear: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13803,14 +13813,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_attractor_create: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_attractor_destroy: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13818,14 +13828,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_attractor_destroy_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_attractor_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13833,7 +13843,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_attractor_force: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13845,7 +13855,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, force, dist, kind, additive)'
     },
 	part_attractor_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13855,7 +13865,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, x, y)'
     },
 	part_changer_clear: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13863,14 +13873,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_changer_create: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_changer_destroy: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13878,14 +13888,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_changer_destroy_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_changer_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13893,7 +13903,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_changer_kind: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13902,7 +13912,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, kind)'
     },
 	part_changer_region: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13915,7 +13925,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
 	part_changer_types: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13925,7 +13935,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, parttype1, parttype2)'
     },
 	part_deflector_clear: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13933,14 +13943,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_deflector_create: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_deflector_destroy: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13948,14 +13958,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_deflector_destroy_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_deflector_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -13963,7 +13973,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_deflector_friction: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13972,7 +13982,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, amount)'
     },
 	part_deflector_kind: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13981,7 +13991,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, kind)'
     },
 	part_deflector_region: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -13993,7 +14003,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, xmin, xmax, ymin, ymax)'
     },
 	part_destroyer_clear: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -14001,14 +14011,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_destroyer_create: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_destroyer_destroy: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -14016,14 +14026,14 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_destroyer_destroy_all: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' }
         ],
         signature: '(ps)'
     },
 	part_destroyer_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -14031,7 +14041,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_destroyer_region: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -14044,14 +14054,14 @@ exports.globalfunctions = {
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
     registry_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	registry_exists_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'key', documentation: '' },
             { label: 'name', documentation: '' }
@@ -14059,14 +14069,14 @@ exports.globalfunctions = {
         signature: '(key, name)'
     },
 	registry_read_real: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	registry_read_real_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'key', documentation: '' },
             { label: 'name', documentation: '' }
@@ -14074,14 +14084,14 @@ exports.globalfunctions = {
         signature: '(key, name)'
     },
 	registry_read_string: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	registry_read_string_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'key', documentation: '' },
             { label: 'name', documentation: '' }
@@ -14089,14 +14099,14 @@ exports.globalfunctions = {
         signature: '(key, name)'
     },
 	registry_set_root: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'root', documentation: '' }
         ],
         signature: '(root)'
     },
 	registry_write_real: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -14104,7 +14114,7 @@ exports.globalfunctions = {
         signature: '(name, value)'
     },
 	registry_write_real_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'key', documentation: '' },
             { label: 'name', documentation: '' },
@@ -14113,7 +14123,7 @@ exports.globalfunctions = {
         signature: '(key, name, value)'
     },
 	registry_write_string: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'str', documentation: '' }
@@ -14121,7 +14131,7 @@ exports.globalfunctions = {
         signature: '(name, str)'
     },
 	registry_write_string_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'key', documentation: '' },
             { label: 'name', documentation: '' },
@@ -14130,7 +14140,7 @@ exports.globalfunctions = {
         signature: '(key, name, str)'
     },
     room_set_caption: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'str', documentation: '' }
@@ -14138,7 +14148,7 @@ exports.globalfunctions = {
         signature: '(ind, str)'
     },
 	room_set_code: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'codestr', documentation: '' }
@@ -14146,51 +14156,51 @@ exports.globalfunctions = {
         signature: '(ind, codestr)'
     },
     screen_redraw: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     screen_refresh: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     screen_wait_vsync: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     script_get_text: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	set_application_title: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'title', documentation: '' }
         ],
         signature: '(title)'
     },
 	set_automatic_draw: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'value', documentation: '' }
         ],
         signature: '(value)'
     },
 	set_program_priority: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'priority', documentation: '' }
         ],
         signature: '(priority)'
     },
 	set_synchronization: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'value', documentation: '' }
         ],
         signature: '(value)'
     },
     show_menu: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'def', documentation: '' }
@@ -14198,7 +14208,7 @@ exports.globalfunctions = {
         signature: '(str, def)'
     },
 	show_menu_pos: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -14208,7 +14218,7 @@ exports.globalfunctions = {
         signature: '(x, y, str, def)'
     },
     show_message_ext: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'but1', documentation: '' },
@@ -14218,14 +14228,14 @@ exports.globalfunctions = {
         signature: '(str, but1, but2, but3)'
     },
     sleep: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'millisec', documentation: '' }
         ],
         signature: '(millisec)'
     },
 	sound_3d_set_sound_cone: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'x', documentation: '' },
@@ -14238,7 +14248,7 @@ exports.globalfunctions = {
         signature: '(snd, x, y, z, anglein, angleout, voloutside)'
     },
 	sound_3d_set_sound_distance: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'mindist', documentation: '' },
@@ -14247,7 +14257,7 @@ exports.globalfunctions = {
         signature: '(snd, mindist, maxdist)'
     },
 	sound_3d_set_sound_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'x', documentation: '' },
@@ -14257,7 +14267,7 @@ exports.globalfunctions = {
         signature: '(snd, x, y, z)'
     },
 	sound_3d_set_sound_velocity: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'x', documentation: '' },
@@ -14267,7 +14277,7 @@ exports.globalfunctions = {
         signature: '(snd, x, y, z)'
     },
 	sound_add: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'kind', documentation: '' },
@@ -14276,14 +14286,14 @@ exports.globalfunctions = {
         signature: '(fname, kind, preload)'
     },
 	sound_background_tempo: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'factor', documentation: '' }
         ],
         signature: '(factor)'
     },
 	sound_effect_chorus: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'wetdry', documentation: '' },
@@ -14297,7 +14307,7 @@ exports.globalfunctions = {
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_compressor: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'gain', documentation: '' },
@@ -14310,7 +14320,7 @@ exports.globalfunctions = {
         signature: '(snd, gain, attack, release, threshold, ratio, delay)'
     },
 	sound_effect_echo: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'wetdry', documentation: '' },
@@ -14322,7 +14332,7 @@ exports.globalfunctions = {
         signature: '(snd, wetdry, feedback, leftdelay, rightdelay, pandelay)'
     },
 	sound_effect_equalizer: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'center', documentation: '' },
@@ -14332,7 +14342,7 @@ exports.globalfunctions = {
         signature: '(snd, center, bandwidth, gain)'
     },
 	sound_effect_flanger: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'wetdry', documentation: '' },
@@ -14346,7 +14356,7 @@ exports.globalfunctions = {
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_gargle: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'rate', documentation: '' },
@@ -14355,7 +14365,7 @@ exports.globalfunctions = {
         signature: '(snd, rate, wave)'
     },
 	sound_effect_reverb: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'gain', documentation: '' },
@@ -14366,7 +14376,7 @@ exports.globalfunctions = {
         signature: '(snd, gain, mix, time, ratio)'
     },
 	sound_effect_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'snd', documentation: '' },
             { label: 'effect', documentation: '' }
@@ -14374,7 +14384,7 @@ exports.globalfunctions = {
         signature: '(snd, effect)'
     },
 	sound_pan: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'value', documentation: '' }
@@ -14382,7 +14392,7 @@ exports.globalfunctions = {
         signature: '(index, value)'
     },
 	sound_replace: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'fname', documentation: '' },
@@ -14392,77 +14402,77 @@ exports.globalfunctions = {
         signature: '(ind, fname, kind, preload)'
     },
 	sound_set_search_directory: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'dir', documentation: '' }
         ],
         signature: '(dir)'
     },
 	splash_set_adapt: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'adapt', documentation: '' }
         ],
         signature: '(adapt)'
     },
 	splash_set_border: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'border', documentation: '' }
         ],
         signature: '(border)'
     },
 	splash_set_caption: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'cap', documentation: '' }
         ],
         signature: '(cap)'
     },
 	splash_set_close_button: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'show', documentation: '' }
         ],
         signature: '(show)'
     },
 	splash_set_color: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'col', documentation: '' }
         ],
         signature: '(col)'
     },
 	splash_set_cursor: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'vis', documentation: '' }
         ],
         signature: '(vis)'
     },
 	splash_set_fullscreen: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'full', documentation: '' }
         ],
         signature: '(full)'
     },
 	splash_set_interrupt: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'interrupt', documentation: '' }
         ],
         signature: '(interrupt)'
     },
 	splash_set_main: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'main', documentation: '' }
         ],
         signature: '(main)'
     },
 	splash_set_position: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -14470,14 +14480,14 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	splash_set_scale: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'scale', documentation: '' }
         ],
         signature: '(scale)'
     },
 	splash_set_size: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' }
@@ -14485,28 +14495,28 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	splash_set_stop_key: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'stop', documentation: '' }
         ],
         signature: '(stop)'
     },
 	splash_set_stop_mouse: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'stop', documentation: '' }
         ],
         signature: '(stop)'
     },
 	splash_set_top: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         arameters: [
             { label: 'top', documentation: '' }
         ],
         signature: '(top)'
     },
 	splash_show_image: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'delay', documentation: '' }
@@ -14514,7 +14524,7 @@ exports.globalfunctions = {
         signature: '(fname, delay)'
     },
 	splash_show_text: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'delay', documentation: '' }
@@ -14522,7 +14532,7 @@ exports.globalfunctions = {
         signature: '(fname, delay)'
     },
 	splash_show_video: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'loop', documentation: '' }
@@ -14530,7 +14540,7 @@ exports.globalfunctions = {
         signature: '(fname, loop)'
     },
 	splash_show_web: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'delay', documentation: '' }
@@ -14538,7 +14548,7 @@ exports.globalfunctions = {
         signature: '(url, delay)'
     },
     sprite_add_from_screen: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -14551,14 +14561,14 @@ exports.globalfunctions = {
         signature: '(ind, x, y, w, h, removeback, smooth)'
     },
     sprite_add_sprite: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' }
         ],
         signature: '(fname)'
     },
     sprite_create_from_screen: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -14572,7 +14582,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, removeback, smooth, xorig, yorig)'
     },
     sprite_replace_sprite: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'fname', documentation: '' }
@@ -14580,7 +14590,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     timeline_moment_add: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'step', documentation: '' },
@@ -14589,7 +14599,7 @@ exports.globalfunctions = {
         signature: '(ind, step, codestr)'
     },
     transition_define: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'kind', documentation: '' },
             { label: 'name', documentation: '' }
@@ -14597,14 +14607,14 @@ exports.globalfunctions = {
         signature: '(kind, name)'
     },
 	transition_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'kind', documentation: '' }
         ],
         signature: '(kind)'
     },
 	variable_global_array2_get: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind1', documentation: '' },
@@ -14613,7 +14623,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2)'
     },
 	variable_global_array2_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind1', documentation: '' },
@@ -14623,7 +14633,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2, value)'
     },
 	variable_global_array_get: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -14631,7 +14641,7 @@ exports.globalfunctions = {
         signature: '(name, ind)'
     },
 	variable_global_array_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -14640,7 +14650,7 @@ exports.globalfunctions = {
         signature: '(name, ind, value)'
     },
     variable_local_array2_get: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind1', documentation: '' },
@@ -14649,7 +14659,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2)'
     },
 	variable_local_array2_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind1', documentation: '' },
@@ -14659,7 +14669,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2, value)'
     },
 	variable_local_array_get: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -14667,7 +14677,7 @@ exports.globalfunctions = {
         signature: '(name, ind)'
     },
 	variable_local_array_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -14676,21 +14686,21 @@ exports.globalfunctions = {
         signature: '(name, ind, value)'
     },
 	variable_local_exists: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	variable_local_get: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	variable_local_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -14698,34 +14708,34 @@ exports.globalfunctions = {
         signature: '(name, value)'
     },
     window_default: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     window_get_region_height: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	window_get_region_scale: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	window_get_region_width: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	window_get_showborder: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	window_get_showicons: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	window_get_sizeable: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
 	window_get_stayontop: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     window_get_visible: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     window_set_region_scale: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'scale', documentation: '' },
             { label: 'adaptwindow', documentation: '' }
@@ -14733,7 +14743,7 @@ exports.globalfunctions = {
         signature: '(scale, adaptwindow)'
     },
 	window_set_region_size: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' },
@@ -14742,42 +14752,42 @@ exports.globalfunctions = {
         signature: '(w, h, adaptwindow)'
     },
 	window_set_showborder: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'show', documentation: '' }
         ],
         signature: '(show)'
     },
 	window_set_showicons: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'show', documentation: '' }
         ],
         signature: '(show)'
     },
 	window_set_sizeable: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'sizeable', documentation: '' }
         ],
         signature: '(sizeable)'
     },
 	window_set_stayontop: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'stay', documentation: '' }
         ],
         signature: '(stay)'
     },
 	window_set_visible: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'visible', documentation: '' }
         ],
         signature: '(visible)'
     },
 	window_views_mouse_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -14785,7 +14795,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	window_view_mouse_set: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -14794,14 +14804,14 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
     texture_preload: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'texid', documentation: '' }
         ],
         signature: '(texid)'
     },
     texture_set_priority: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'texid', documentation: '' },
             { label: 'prio', documentation: '' }
@@ -14809,16 +14819,16 @@ exports.globalfunctions = {
         signature: '(texid, prio)'
     },
     display_get_colourdepth: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     display_get_frequency: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     show_info: {
-        description: '[Function] (GameMaker 8.1 Only)'
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)'
     },
     load_info: {
-        description: '[Function] (GameMaker 8.1 Only)',
+        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -14827,14 +14837,14 @@ exports.globalfunctions = {
 
 	//New in GameMaker Studio 2
 	string_hash_to_newline: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'str', documentation: '' }
         ],
         signature: '(str)'
     },
 	game_set_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'value', documentation: '' },
             { label: 'type', documentation: '' }
@@ -14842,14 +14852,14 @@ exports.globalfunctions = {
         signature: '(value, type)'
     },
 	game_get_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'type', documentation: '' }
         ],
         signature: '(type)'
     },
 	sprite_set_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'speed', documentation: '' },
@@ -14858,28 +14868,28 @@ exports.globalfunctions = {
         signature: '(ind, speed, type)'
     },
 	sprite_get_speed_type: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	sprite_get_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	texture_get_uvs: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'texid', documentation: '' }
         ],
         signature: '(texid)'
     },
 	room_get_camera: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'vind', documentation: '' }
@@ -14887,7 +14897,7 @@ exports.globalfunctions = {
         signature: '(ind, vind)'
     },
 	room_set_camera: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'vind', documentation: '' },
@@ -14896,7 +14906,7 @@ exports.globalfunctions = {
         signature: '(ind, vind, camera)'
     },
 	room_set_viewport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'vind', documentation: '' }
@@ -14904,7 +14914,7 @@ exports.globalfunctions = {
         signature: '(ind, vind)'
     },
 	room_get_viewport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'vind', documentation: '' },
@@ -14917,7 +14927,7 @@ exports.globalfunctions = {
         signature: '(ind, vind, vis, xport, yport, wport, hport)'
     },
 	ds_list_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' },
@@ -14926,7 +14936,7 @@ exports.globalfunctions = {
         signature: '(id, pos, value)'
     },
 	ds_map_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -14935,7 +14945,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	part_system_create_layer: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer', documentation: '' },
             { label: 'persistent', documentation: '' }
@@ -14943,14 +14953,14 @@ exports.globalfunctions = {
         signature: '(layer, persistent)'
     },
 	part_system_get_layer: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	part_system_layer: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'layer', documentation: '' }
@@ -14958,10 +14968,10 @@ exports.globalfunctions = {
         signature: '(ind, layer)'
     },
 	matrix_build_identity: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	matrix_build_lookat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'xform', documentation: '' },
             { label: 'yform', documentation: '' },
@@ -14976,7 +14986,7 @@ exports.globalfunctions = {
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
 	matrix_build_projection_ortho: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'width', documentation: '' },
             { label: 'height', documentation: '' },
@@ -14986,7 +14996,7 @@ exports.globalfunctions = {
         signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'width', documentation: '' },
             { label: 'height', documentation: '' },
@@ -14996,7 +15006,7 @@ exports.globalfunctions = {
         signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective_fov: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'fov_y', documentation: '' },
             { label: 'height', documentation: '' },
@@ -15006,7 +15016,7 @@ exports.globalfunctions = {
         signature: '(fov_y, aspect, znear, zfar)'
     },
 	matrix_transform_vertex: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'matrix', documentation: '' },
             { label: 'x', documentation: '' },
@@ -15016,61 +15026,61 @@ exports.globalfunctions = {
         signature: '(matrix, x, y, z)'
     },
 	matrix_stack_push: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: '...', documentation: '' }
         ],
         signature: '(...)'
     },
 	matrix_stack_pop: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	matrix_stack_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'matrix', documentation: '' }
         ],
         signature: '(matrix)'
     },
 	matrix_stack_clear: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	matrix_stack_top: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	matrix_stack_is_empty: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_set_blendenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	gpu_set_ztestenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	gpu_set_zfunc: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	gpu_set_zwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	gpu_set_fog: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' },
             { label: 'col', documentation: '' },
@@ -15080,21 +15090,21 @@ exports.globalfunctions = {
         signature: '(enable, col, start, end)'
     },
 	gpu_set_cullmode: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'cullmode', documentation: '' }
         ],
         signature: '(cullmode)'
     },
 	gpu_set_blendmode: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'mode', documentation: '' }
         ],
         signature: '(mode)'
     },
 	gpu_set_blendmode_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'src', documentation: '' },
             { label: 'dest', documentation: '' }
@@ -15102,7 +15112,7 @@ exports.globalfunctions = {
         signature: '(src, dest)'
     },
 	gpu_set_blendmode_ext_sepalpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'src', documentation: '' },
             { label: 'dest', documentation: '' },
@@ -15112,7 +15122,7 @@ exports.globalfunctions = {
         signature: '(src, dest, srcalpha, destalpha)'
     },
 	gpu_set_colorwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'red', documentation: '' },
             { label: 'green', documentation: '' },
@@ -15122,7 +15132,7 @@ exports.globalfunctions = {
         signature: '(red, green, blue, alpha)'
     },
 	gpu_set_colourwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'red', documentation: '' },
             { label: 'green', documentation: '' },
@@ -15132,35 +15142,35 @@ exports.globalfunctions = {
         signature: '(red, green, blue, alpha)'
     },
 	gpu_set_alphatestenable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	gpu_set_alphatestref: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'value', documentation: '' }
         ],
         signature: '(value)'
     },
 	gpu_set_alphatestfunc: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'cmp_func', documentation: '' }
         ],
         signature: '(cmp_func)'
     },
 	gpu_set_texfilter: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'linear', documentation: '' }
         ],
         signature: '(linear)'
     },
 	gpu_set_texfilter_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'linear', documentation: '' }
@@ -15168,14 +15178,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, linear)'
     },
 	gpu_set_texrepeat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'repeat', documentation: '' }
         ],
         signature: '(repeat)'
     },
 	gpu_set_texrepeat_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'repeat', documentation: '' }
@@ -15183,14 +15193,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_filter: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'linear', documentation: '' }
         ],
         signature: '(linear)'
     },
 	gpu_set_tex_filter_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'linear', documentation: '' }
@@ -15198,14 +15208,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, linear)'
     },
 	gpu_set_tex_repeat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'repeat', documentation: '' }
         ],
         signature: '(repeat)'
     },
 	gpu_set_tex_repeat_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'repeat', documentation: '' }
@@ -15213,14 +15223,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_mip_filter: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'filter', documentation: '' }
         ],
         signature: '(filter)'
     },
 	gpu_set_tex_mip_filter_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'filter', documentation: '' }
@@ -15228,14 +15238,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, filter)'
     },
 	gpu_set_tex_mip_bias: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'bias', documentation: '' }
         ],
         signature: '(bias)'
     },
 	gpu_set_tex_mip_bias_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'bias', documentation: '' }
@@ -15243,14 +15253,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, bias)'
     },
 	gpu_set_tex_min_mip: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'minmap', documentation: '' }
         ],
         signature: '(minmip)'
     },
 	gpu_set_tex_min_mip_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'minmip', documentation: '' }
@@ -15258,14 +15268,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, minmip)'
     },
 	gpu_set_tex_max_mip: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'maxmap', documentation: '' }
         ],
         signature: '(maxmip)'
     },
 	gpu_set_tex_max_mip_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'maxmap', documentation: '' }
@@ -15273,14 +15283,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, maxmip)'
     },
 	gpu_set_tex_max_aniso: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'maxaniso', documentation: '' }
         ],
         signature: '(maxaniso)'
     },
 	gpu_set_tex_max_aniso_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'maxaniso', documentation: '' }
@@ -15288,14 +15298,14 @@ exports.globalfunctions = {
         signature: '(sampler_id, maxaniso)'
     },
 	gpu_set_tex_mip_enable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'setting', documentation: '' }
         ],
         signature: '(setting)'
     },
 	gpu_set_tex_mip_enable_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'setting', documentation: '' }
@@ -15303,184 +15313,184 @@ exports.globalfunctions = {
         signature: '(sampler_id, setting)'
     },
 	gpu_get_blendenable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_ztestenable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_zfunc: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_zwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_fog: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_cullmode: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode_ext: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode_ext_sepalpha: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode_src: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode_dest: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode_srcalpha: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_blendmode_destalpha: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_colorwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_colourwriteenable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_alphatestenable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_alphatestref: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_alphatestfunc: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_texfilter: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_texfilter_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_texrepeat: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_texrepeat_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_filter: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_filter_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_repeat: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_repeat_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_filter: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_mip_filter_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_bias: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_mip_bias_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_min_mip: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_min_mip_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_mip: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_max_mip_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_aniso: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_max_aniso_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_enable: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_tex_mip_enable_ext: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sampler_id', documentation: '' }
         ],
         signature: '(sampler_id)'
     },
 	gpu_push_state: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_pop_state: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_get_state: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gpu_set_state: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'map', documentation: '' }
         ],
         signature: '(map)'
     },
 	draw_light_define_ambient: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'col', documentation: '' }
         ],
         signature: '(col)'
     },
 	draw_light_define_direction: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'dx', documentation: '' },
@@ -15491,7 +15501,7 @@ exports.globalfunctions = {
         signature: '(ind, dx, dy, dz, col)'
     },
 	draw_light_define_point: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -15503,7 +15513,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, range, col)'
     },
 	draw_light_enable: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'enable', documentation: '' }
@@ -15511,41 +15521,41 @@ exports.globalfunctions = {
         signature: '(ind, enable)'
     },
 	draw_set_lighting: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	draw_light_get_ambient: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	draw_light_get: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	draw_get_lighting: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	load_csv: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'filename', documentation: '' }
         ],
         signature: '(filename)'
     },
     skeleton_animation_get_frame: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'track', documentation: '' }
         ],
         signature: '(track)'
     },
 	skeleton_animation_set_frame: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'track', documentation: '' },
             { label: 'index', documentation: '' }
@@ -15553,28 +15563,28 @@ exports.globalfunctions = {
         signature: '(track, index)'
     },
 	layer_get_id: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_name', documentation: '' }
         ],
         signature: '(layer_name)'
     },
 	layer_get_id_at_depth: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'depth', documentation: '' }
         ],
         signature: '(depth)'
     },
 	layer_get_depth: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_create: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'depth', documentation: '' },
             { label: 'name*', documentation: '' },
@@ -15583,21 +15593,21 @@ exports.globalfunctions = {
         signature: '(depth, name*, ...)'
     },
 	layer_destroy: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_destroy_instances: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_add_instance: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'instance', documentation: '' }
@@ -15605,7 +15615,7 @@ exports.globalfunctions = {
         signature: '(layer_id, instance)'
     },
 	layer_has_instance: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'instance', documentation: '' }
@@ -15613,7 +15623,7 @@ exports.globalfunctions = {
         signature: '(layer_id, instance)'
     },
 	layer_set_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'visible', documentation: '' }
@@ -15621,21 +15631,21 @@ exports.globalfunctions = {
         signature: '(layer_id, visible)'
     },
 	layer_get_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'x', documentation: '' }
@@ -15643,7 +15653,7 @@ exports.globalfunctions = {
         signature: '(layer_id, x)'
     },
 	layer_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'y', documentation: '' }
@@ -15651,21 +15661,21 @@ exports.globalfunctions = {
         signature: '(layer_id, y)'
     },
 	layer_get_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_get_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_hspeed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'speed', documentation: '' }
@@ -15673,7 +15683,7 @@ exports.globalfunctions = {
         signature: '(layer_id, speed)'
     },
 	layer_vspeed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'speed', documentation: '' }
@@ -15681,21 +15691,21 @@ exports.globalfunctions = {
         signature: '(layer_id, speed)'
     },
 	layer_get_hspeed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_get_vspeed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_script_begin: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'script', documentation: '' }
@@ -15703,7 +15713,7 @@ exports.globalfunctions = {
         signature: '(layer_id, script)'
     },
 	layer_script_end: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'script', documentation: '' }
@@ -15711,7 +15721,7 @@ exports.globalfunctions = {
         signature: '(layer_id, script)'
     },
 	layer_shader: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'shader', documentation: '' }
@@ -15719,58 +15729,58 @@ exports.globalfunctions = {
         signature: '(layer_id, shader)'
     },
 	layer_get_script_begin: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_get_script_end: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_get_shader: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_set_target_room: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'room', documentation: '' }
         ],
         signature: '(room)'
     },
 	layer_get_target_room: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	layer_reset_target_room: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	layer_get_all: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	layer_get_all_elements: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_get_name: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_depth: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'depth', documentation: '' }
@@ -15778,21 +15788,21 @@ exports.globalfunctions = {
         signature: '(layer_id, depth)'
     },
 	layer_get_element_layer: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'element_id', documentation: '' }
         ],
         signature: '(element_id)'
     },
 	layer_get_element_type: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'element_id', documentation: '' }
         ],
         signature: '(element_id)'
     },
 	layer_element_move: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'element_id', documentation: '' },
             { label: 'layer_id', documentation: '' }
@@ -15800,7 +15810,7 @@ exports.globalfunctions = {
         signature: '(element_id, layer_id)'
     },
 	layer_force_draw_depth: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'force', documentation: '' },
             { label: 'depth', documentation: '' }
@@ -15808,20 +15818,20 @@ exports.globalfunctions = {
         signature: '(force, depth)'
     },
 	layer_is_draw_depth_forced: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	layer_get_forced_depth: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	layer_background_get_id: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_background_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'background_element_id', documentation: '' }
@@ -15829,7 +15839,7 @@ exports.globalfunctions = {
         signature: '(layer_id, background_element_id)'
     },
 	layer_background_create: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'sprite', documentation: '' }
@@ -15837,14 +15847,14 @@ exports.globalfunctions = {
         signature: '(layer_id, sprite)'
     },
 	layer_background_destroy: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'visible', documentation: '' }
@@ -15852,7 +15862,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, visible)'
     },
 	layer_background_change: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'sprite', documentation: '' }
@@ -15860,7 +15870,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, sprite)'
     },
 	layer_background_sprite: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'sprite', documentation: '' }
@@ -15868,7 +15878,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, sprite)'
     },
 	layer_background_htiled: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'tiled', documentation: '' }
@@ -15876,7 +15886,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, tiled)'
     },
 	layer_background_vtiled: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'tiled', documentation: '' }
@@ -15884,7 +15894,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, tiled)'
     },
 	layer_background_stretch: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'stretch', documentation: '' }
@@ -15892,7 +15902,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, stretch)'
     },
 	layer_background_yscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'yscale', documentation: '' }
@@ -15900,7 +15910,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, yscale)'
     },
 	layer_background_xscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'xscale', documentation: '' }
@@ -15908,7 +15918,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, xscale)'
     },
 	layer_background_blend: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'col', documentation: '' }
@@ -15916,7 +15926,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, col)'
     },
 	layer_background_alpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'alpha', documentation: '' }
@@ -15924,7 +15934,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, alpha)'
     },
 	layer_background_index: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'image_index', documentation: '' }
@@ -15932,7 +15942,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, image_index)'
     },
 	layer_background_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' },
             { label: 'image_speed', documentation: '' }
@@ -15940,84 +15950,84 @@ exports.globalfunctions = {
         signature: '(background_element_id, image_speed)'
     },
 	layer_background_get_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_sprite: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_htiled: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_vtiled: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_stretch: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_yscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_xscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_blend: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_alpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_index: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'background_element_id', documentation: '' }
         ],
         signature: '(background_element_id)'
     },
 	layer_sprite_get_id: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'sprite_element_name', documentation: '' }
@@ -16025,7 +16035,7 @@ exports.globalfunctions = {
         signature: '(layer_id, sprite_element_name)'
     },
 	layer_sprite_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'sprite_element_id', documentation: '' }
@@ -16033,7 +16043,7 @@ exports.globalfunctions = {
         signature: '(layer_id, sprite_element_id)'
     },
 	layer_sprite_create: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16043,14 +16053,14 @@ exports.globalfunctions = {
         signature: '(layer_id, x, y, sprite)'
     },
 	layer_sprite_destroy: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_change: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'sprite', documentation: '' }
@@ -16058,7 +16068,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, sprite)'
     },
 	layer_sprite_index: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'image_index', documentation: '' }
@@ -16066,7 +16076,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, image_index)'
     },
 	layer_sprite_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'image_speed', documentation: '' }
@@ -16074,7 +16084,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, image_speed)'
     },
 	layer_sprite_xscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'xscale', documentation: '' }
@@ -16082,7 +16092,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, xscale)'
     },
 	layer_sprite_yscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'yscale', documentation: '' }
@@ -16090,7 +16100,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, yscale)'
     },
 	layer_sprite_angle: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'angle', documentation: '' }
@@ -16098,7 +16108,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, angle)'
     },
 	layer_sprite_blend: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'col', documentation: '' }
@@ -16106,7 +16116,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, col)'
     },
 	layer_sprite_alpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'alpha', documentation: '' }
@@ -16114,7 +16124,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, alpha)'
     },
 	layer_sprite_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'x', documentation: '' }
@@ -16122,7 +16132,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, x)'
     },
 	layer_sprite_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
             { label: 'y', documentation: '' }
@@ -16130,84 +16140,84 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, y)'
     },
 	layer_sprite_get_sprite: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_index: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_xscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_yscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_angle: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_blend: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_alpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_tilemap_get_id: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	layer_tilemap_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'tilemap_element_id', documentation: '' }
@@ -16215,7 +16225,7 @@ exports.globalfunctions = {
         signature: '(layer_id, tilemap_element_id)'
     },
 	layer_tilemap_create: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16227,14 +16237,14 @@ exports.globalfunctions = {
         signature: '(layer_id, x, y, tileset, width, height)'
     },
 	layer_tilemap_destroy: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_tileset: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'tileset', documentation: '' }
@@ -16242,7 +16252,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tileset)'
     },
 	tilemap_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'x', documentation: '' }
@@ -16250,7 +16260,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x)'
     },
 	tilemap_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'y', documentation: '' }
@@ -16258,7 +16268,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, y)'
     },
 	tilemap_set: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'tiledata', documentation: '' },
@@ -16268,7 +16278,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tiledata, cell_x, cell_y)'
     },
 	tilemap_set_at_pixel: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'tiledata', documentation: '' },
@@ -16278,56 +16288,56 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tiledata, x, y)'
     },
 	tilemap_get_tileset: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_width: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_height: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_width: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_height: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'cell_x', documentation: '' },
@@ -16336,7 +16346,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, cell_x, cell_y)'
     },
 	tilemap_get_at_pixel: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16345,7 +16355,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_x_at_pixel: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16354,7 +16364,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_y_at_pixel: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16363,7 +16373,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_clear: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'tiledata', documentation: '' }
@@ -16371,7 +16381,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tiledata)'
     },
 	draw_tilemap: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16380,7 +16390,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	draw_tile: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tileset', documentation: '' },
             { label: 'tiledata', documentation: '' },
@@ -16391,13 +16401,13 @@ exports.globalfunctions = {
         signature: '(tileset, tiledata, frame, x, y)'
     },
 	tilemap_set_global_mask: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	tilemap_get_global_mask: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	tilemap_set_mask: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
             { label: 'mask', documentation: '' }
@@ -16405,28 +16415,28 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, mask)'
     },
 	tilemap_get_mask: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_frame: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
         ],
         signature: '(tilemap_element_id)'
     },
 	tile_set_empty: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' }
         ],
         signature: '(tiledata)'
     },
 	tile_set_index: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' },
             { label: 'tileindex', documentation: '' }
@@ -16434,7 +16444,7 @@ exports.globalfunctions = {
         signature: '(tiledata, tileindex)'
     },
 	tile_set_flip: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' },
             { label: 'flip', documentation: '' }
@@ -16442,7 +16452,7 @@ exports.globalfunctions = {
         signature: '(tiledata, flip)'
     },
 	tile_set_mirror: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' },
             { label: 'mirror', documentation: '' }
@@ -16450,7 +16460,7 @@ exports.globalfunctions = {
         signature: '(tiledata, mirror)'
     },
 	tile_set_rotate: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' },
             { label: 'rotate', documentation: '' }
@@ -16458,42 +16468,42 @@ exports.globalfunctions = {
         signature: '(tiledata, rotate)'
     },
 	tile_get_empty: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' }
         ],
         signature: '(tiledata)'
     },
 	tile_get_index: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' }
         ],
         signature: '(tiledata)'
     },
 	tile_get_flip: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' }
         ],
         signature: '(tiledata)'
     },
 	tile_get_mirror: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' }
         ],
         signature: '(tiledata)'
     },
 	tile_get_rotate: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tiledata', documentation: '' }
         ],
         signature: '(tiledata)'
     },
 	layer_tile_exists: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'tile_element_id', documentation: '' },
@@ -16502,7 +16512,7 @@ exports.globalfunctions = {
         signature: '(layer_id, tile_element_id, ...)'
     },
 	layer_tile_create: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16516,14 +16526,14 @@ exports.globalfunctions = {
         signature: '(layer_id, x, y, tileset, left, top, width, height)'
     },
 	layer_tile_destroy: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_change: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'sprite', documentation: '' }
@@ -16531,7 +16541,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, sprite)'
     },
 	layer_tile_xscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'xscale', documentation: '' }
@@ -16539,7 +16549,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, xscale)'
     },
 	layer_tile_yscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'yscale', documentation: '' }
@@ -16547,7 +16557,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, yscale)'
     },
 	layer_tile_blend: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'col', documentation: '' }
@@ -16555,7 +16565,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, col)'
     },
 	layer_tile_alpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'alpha', documentation: '' }
@@ -16563,7 +16573,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, alpha)'
     },
 	layer_tile_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'x', documentation: '' }
@@ -16571,7 +16581,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, x)'
     },
 	layer_tile_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'y', documentation: '' }
@@ -16579,7 +16589,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, y)'
     },
 	layer_tile_region: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'left', documentation: '' },
@@ -16590,7 +16600,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, left, top, width, height)'
     },
 	layer_tile_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' },
             { label: 'visible', documentation: '' }
@@ -16598,94 +16608,94 @@ exports.globalfunctions = {
         signature: '(tile_element_id, visible)'
     },
 	layer_tile_get_sprite: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_xscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_yscale: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_blend: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_alpha: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_region: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'tile_element_id', documentation: '' }
         ],
         signature: '(tile_element_id)'
     },
 	layer_instance_get_instance: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'instance_element_id', documentation: '' }
         ],
         signature: '(instance_element_id)'
     },
 	instance_activate_layer: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	instance_deactivate_layer: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'layer_id', documentation: '' }
         ],
         signature: '(layer_id)'
     },
 	camera_create: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	camera_create_view: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'room_x', documentation: '' },
             { label: 'room_y', documentation: '' },
@@ -16701,34 +16711,34 @@ exports.globalfunctions = {
         signature: '(room_x, room_y, width, height, angle, object, x_speed, y_speed, x_border, y_border)'
     },
 	camera_destroy: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_apply: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_active: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	camera_get_default: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	camera_set_default: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_set_view_mat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'matrix', documentation: '' }
@@ -16736,7 +16746,7 @@ exports.globalfunctions = {
         signature: '(camera, matrix)'
     },
 	camera_set_proj_mat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'matrix', documentation: '' }
@@ -16744,7 +16754,7 @@ exports.globalfunctions = {
         signature: '(camera, matrix)'
     },
 	camera_set_update_script: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'script', documentation: '' }
@@ -16752,7 +16762,7 @@ exports.globalfunctions = {
         signature: '(camera, script)'
     },
 	camera_set_begin_script: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'script', documentation: '' }
@@ -16760,7 +16770,7 @@ exports.globalfunctions = {
         signature: '(camera, script)'
     },
 	camera_set_end_script: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'script', documentation: '' }
@@ -16768,7 +16778,7 @@ exports.globalfunctions = {
         signature: '(camera, script)'
     },
 	camera_set_view_pos: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'x', documentation: '' },
@@ -16777,7 +16787,7 @@ exports.globalfunctions = {
         signature: '(camera, x, y)'
     },
 	camera_set_view_size: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'width', documentation: '' },
@@ -16786,7 +16796,7 @@ exports.globalfunctions = {
         signature: '(camera, width, height)'
     },
 	camera_set_view_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'x_speed', documentation: '' },
@@ -16795,7 +16805,7 @@ exports.globalfunctions = {
         signature: '(camera, x_speed, y_speed)'
     },
 	camera_set_view_border: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'x_border', documentation: '' },
@@ -16804,7 +16814,7 @@ exports.globalfunctions = {
         signature: '(camera, x_border, y_border)'
     },
 	camera_set_view_angle: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'angle', documentation: '' }
@@ -16812,7 +16822,7 @@ exports.globalfunctions = {
         signature: '(camera, angle)'
     },
 	camera_set_view_target: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' },
             { label: 'object', documentation: '' }
@@ -16820,161 +16830,161 @@ exports.globalfunctions = {
         signature: '(camera, object)'
     },
 	camera_get_view_mat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_proj_mat: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_update_script: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_begin_script: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_end_script: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_width: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_height: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_speed_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_speed_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_border_x: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_border_y: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_angle: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	camera_get_view_target: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'camera', documentation: '' }
         ],
         signature: '(camera)'
     },
 	view_get_camera: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_get_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_get_xport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_get_yport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_get_wport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_get_hport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_get_surface_id: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' }
         ],
         signature: '(view)'
     },
 	view_set_camera: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'camera', documentation: '' }
@@ -16982,7 +16992,7 @@ exports.globalfunctions = {
         signature: '(view, camera)'
     },
 	view_set_visible: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'visible', documentation: '' }
@@ -16990,7 +17000,7 @@ exports.globalfunctions = {
         signature: '(view, visible)'
     },
 	view_set_xport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'xport', documentation: '' }
@@ -16998,7 +17008,7 @@ exports.globalfunctions = {
         signature: '(view, xport)'
     },
 	view_set_yport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'yport', documentation: '' }
@@ -17006,7 +17016,7 @@ exports.globalfunctions = {
         signature: '(view, yport)'
     },
 	view_set_wport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'wport', documentation: '' }
@@ -17014,7 +17024,7 @@ exports.globalfunctions = {
         signature: '(view, wport)'
     },
 	view_set_hport: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'hport', documentation: '' }
@@ -17022,7 +17032,7 @@ exports.globalfunctions = {
         signature: '(view, hport)'
     },
 	view_set_surface_id: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'view', documentation: '' },
             { label: 'surface_id', documentation: '' }
@@ -17030,114 +17040,114 @@ exports.globalfunctions = {
         signature: '(view, surface_id)'
     },
 	gesture_drag_time: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'time', documentation: '' }
         ],
         signature: '(time)'
     },
 	gesture_drag_distance: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'distance', documentation: '' }
         ],
         signature: '(distance)'
     },
 	gesture_flick_speed: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'speed', documentation: '' }
         ],
         signature: '(speed)'
     },
 	gesture_double_tap_time: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'time', documentation: '' }
         ],
         signature: '(time)'
     },
 	gesture_double_tap_distance: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'distance', documentation: '' }
         ],
         signature: '(distance)'
     },
 	gesture_pinch_distance: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'distance', documentation: '' }
         ],
         signature: '(distance)'
     },
 	gesture_pinch_angle_towards: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'angle', documentation: '' }
         ],
         signature: '(angle)'
     },
 	gesture_pinch_angle_away: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'angle', documentation: '' }
         ],
         signature: '(angle)'
     },
 	gesture_rotate_time: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'time', documentation: '' }
         ],
         signature: '(time)'
     },
 	gesture_rotate_angle: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'angle', documentation: '' }
         ],
         signature: '(angle)'
     },
 	gesture_tap_count: {
-        description: '[Function] (New in GameMaker Studio 2)',
+        description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	gesture_get_drag_time: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_drag_distance: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_flick_speed: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_double_tap_time: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_double_tap_distance: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_pinch_distance: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_pinch_angle_towards: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_pinch_angle_away: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_rotate_time: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_rotate_angle: {
-        description: '[Function] (New in GameMaker Studio 2)'
+        description: '[Function] (GameMaker Studio 2 新增)'
     },
 	gesture_get_tap_count: {
-		description: '[Function] (New in GameMaker Studio 2)'
+		description: '[Function] (GameMaker Studio 2 新增)'
 	}
 };
 
@@ -17325,21 +17335,6 @@ exports.globalvariables = {
 	background_y: {description: '[Variable]'},
 	background_yscale: {description: '[Variable]'},
     secure_mode: {description: '[Variable]'},
-    view_angle: {description: '[Variable]'},
-	view_hborder: {description: '[Variable]'},
-	view_hport: {description: '[Variable]'},
-	view_hspeed: {description: '[Variable]'},
-	view_hview: {description: '[Variable]'},
-	view_object: {description: '[Variable]'},
-	view_vborder: {description: '[Variable]'},
-	view_visible: {description: '[Variable]'},
-	view_vspeed: {description: '[Variable]'},
-	view_wport: {description: '[Variable]'},
-	view_wview: {description: '[Variable]'},
-	view_xport: {description: '[Variable]'},
-	view_xview: {description: '[Variable]'},
-	view_yport: {description: '[Variable]'},
-	view_yview: {description: '[Variable]'},
 	background_visible: {description: '[Variable] [0..7]'},
 	background_foreground: {description: '[Variable] [0..7]'},
 	background_index: {description: '[Variable] [0..7]'},
@@ -17369,12 +17364,29 @@ exports.globalvariables = {
 	view_vborder: {description: '[Variable] [0..7]'},
 	view_hspeed: {description: '[Variable] [0..7]'},
 	view_vspeed: {description: '[Variable] [0..7]'},
-	view_object: {description: '[Variable] [0..7]'},
+    view_object: {description: '[Variable] [0..7]'},
+    
+    //Obsolete variables in GameMaker Studio 2
+    view_angle: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_hborder: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_hport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_hspeed: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_hview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_object: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_vborder: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_visible: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_vspeed: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_wport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_wview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_xport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_xview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_yport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_yview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
 
 	//New in GameMaker Studio 2
-	layer: {description: '[Variable] (New in GameMaker Studio 2)'},
-	view_camera: {description: '[Variable] [0..7] (New in GameMaker Studio 2)'},
-	event_data: {description: '[Variable] (New in GameMaker Studio 2)'}
+	layer: {description: '[Variable] (GameMaker Studio 2 新增)'},
+	view_camera: {description: '[Variable] [0..7] (GameMaker Studio 2 新增)'},
+	event_data: {description: '[Variable] (GameMaker Studio 2 新增)'}
 };
 
 exports.constants = {
@@ -17881,96 +17893,96 @@ exports.constants = {
 	vk_up: {description: '[Constant]'},
 
 	//GameMaker 8.1 Only
-	input_type: {description: '[Constant] (GameMaker 8.1 Only)'},
-    se_chorus: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_compressor: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_echo: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_equalizer: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_flanger: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_gargle: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_none: {description: '[Constant] (GameMaker 8.1 Only)'},
-	se_reverb: {description: '[Constant] (GameMaker 8.1 Only)'},
-	text_type: {description: '[Constant] (GameMaker 8.1 Only)'},
+	input_type: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+    se_chorus: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_compressor: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_echo: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_equalizer: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_flanger: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_gargle: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_none: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	se_reverb: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
+	text_type: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
 	
 	//New in GameMaker Studio 2
-	undefined: {description: '[Constant] (New in GameMaker Studio 2)'},
-	pointer_invalid: {description: '[Constant] (New in GameMaker Studio 2)'},
-	pointer_null: {description: '[Constant] (New in GameMaker Studio 2)'},
-	path_action_stop: {description: '[Constant] (New in GameMaker Studio 2)'},
-	path_action_restart: {description: '[Constant] (New in GameMaker Studio 2)'},
-	path_action_continue: {description: '[Constant] (New in GameMaker Studio 2)'},
-	path_action_reverse: {description: '[Constant] (New in GameMaker Studio 2)'},
-	gamespeed_fps: {description: '[Constant] (New in GameMaker Studio 2)'},
-	gamespeed_microseconds: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_tap: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_double_tap: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_drag_start: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_dragging: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_drag_end: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_flick: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_pinch_start: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_pinch_in: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_pinch_out: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_pinch_end: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_rotate_start: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_rotating: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_gesture_rotate_end: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_tap: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_double_tap: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_drag_start: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_dragging: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_drag_end: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_flick: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_pinch_start: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_pinch_in: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_pinch_out: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_pinch_end: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_rotate_start: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_rotating: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ev_global_gesture_rotate_end: {description: '[Constant] (New in GameMaker Studio 2)'},
-	bm_complex: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tf_point: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tf_linear: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tf_anisotropic: {description: '[Constant] (New in GameMaker Studio 2)'},
-	mip_off: {description: '[Constant] (New in GameMaker Studio 2)'},
-	mip_on: {description: '[Constant] (New in GameMaker Studio 2)'},
-	mip_markedonly: {description: '[Constant] (New in GameMaker Studio 2)'},
-	asset_tiles: {description: '[Constant] (New in GameMaker Studio 2)'},
-	asset_shader: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tile_rotate: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tile_flip: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tile_mirror: {description: '[Constant] (New in GameMaker Studio 2)'},
-	tile_index_mask: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_undefined: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_background: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_instance: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_oldtilemap: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_sprite: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_tilemap: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_particlesystem: {description: '[Constant] (New in GameMaker Studio 2)'},
-	layerelementtype_tile: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_never: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_less: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_equal: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_lessequal: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_greater: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_notequal: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_greaterequal: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cmpfunc_always: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cull_noculling: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cull_clockwise: {description: '[Constant] (New in GameMaker Studio 2)'},
-	cull_counterclockwise: {description: '[Constant] (New in GameMaker Studio 2)'},
-	lighttype_dir: {description: '[Constant] (New in GameMaker Studio 2)'},
-	lighttype_point: {description: '[Constant] (New in GameMaker Studio 2)'},
-	spritespeed_framespersecond: {description: '[Constant] (New in GameMaker Studio 2)'},
-	spritespeed_framespergameframe: {description: '[Constant] (New in GameMaker Studio 2)'},
-	browser_edge: {description: '[Constant] (New in GameMaker Studio 2)'},
-	of_challenge_win: {description: '[Constant] (New in GameMaker Studio 2)'},
-	of_challen: {description: '[Constant] (New in GameMaker Studio 2)'},
-	ge_lose: {description: '[Constant] (New in GameMaker Studio 2)'},
-	of_challenge_tie: {description: '[Constant] (New in GameMaker Studio 2)'},
-	buffer_text: {description: '[Constant] (New in GameMaker Studio 2)'}
+	undefined: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	pointer_invalid: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	pointer_null: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	path_action_stop: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	path_action_restart: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	path_action_continue: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	path_action_reverse: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	gamespeed_fps: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	gamespeed_microseconds: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_tap: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_double_tap: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_drag_start: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_dragging: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_drag_end: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_flick: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_pinch_start: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_pinch_in: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_pinch_out: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_pinch_end: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_rotate_start: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_rotating: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_gesture_rotate_end: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_tap: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_double_tap: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_drag_start: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_dragging: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_drag_end: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_flick: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_pinch_start: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_pinch_in: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_pinch_out: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_pinch_end: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_rotate_start: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_rotating: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ev_global_gesture_rotate_end: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	bm_complex: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tf_point: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tf_linear: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tf_anisotropic: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	mip_off: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	mip_on: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	mip_markedonly: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	asset_tiles: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	asset_shader: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tile_rotate: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tile_flip: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tile_mirror: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	tile_index_mask: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_undefined: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_background: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_instance: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_oldtilemap: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_sprite: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_tilemap: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_particlesystem: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	layerelementtype_tile: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_never: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_less: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_equal: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_lessequal: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_greater: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_notequal: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_greaterequal: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cmpfunc_always: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cull_noculling: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cull_clockwise: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	cull_counterclockwise: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	lighttype_dir: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	lighttype_point: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	spritespeed_framespersecond: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	spritespeed_framespergameframe: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	browser_edge: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	of_challenge_win: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	of_challen: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	ge_lose: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	of_challenge_tie: {description: '[Constant] (GameMaker Studio 2 新增)'},
+	buffer_text: {description: '[Constant] (GameMaker Studio 2 新增)'}
 };
 
 exports.keywords = {

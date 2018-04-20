@@ -97,5 +97,16 @@
             "}"
         ],
         "description": "With structure"
+    },
+    "jsdoc": {
+        "prefix": "jsdoc",
+        "body": [
+            "/**",
+			"\t* @function ${1}",
+			"\t* @description ${2}",
+			"\t* @param ${3}",
+            "*/"
+        ],
+        "description": "JSDoc structure (New in GameMaker Studio 2)"
     }
 }
