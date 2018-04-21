@@ -11930,7 +11930,8 @@ exports.globalfunctions = {
             { label: 'back', documentation: '' }
         ],
         signature: '(ind, back)'
-    },draw_background: {
+    },
+    draw_background: {
         description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
         parameters: [
             { label: 'back', documentation: '' },
