@@ -10993,8 +10993,10 @@ exports.globalfunctions = {
             { label: 'instance_id', documentation: '' }
         ],
         signature: '(instance_id)'
-    },
+    }
+};
 
+exports.deprecatedfunctions = {
     //These functions are deprecated.
     pocketchange_display_reward: {
         description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)'
@@ -11421,8 +11423,10 @@ exports.globalfunctions = {
             { label: 'index', documentation: '' }
         ],
         signature: '(content, index)'
-    },
+    }
+};
 
+exports.obsoletefunctions1 = {
     //Obsolete functions in new GameMaker Studio and GameMaker Studio 2
     device_ios_get_image: {
         description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
@@ -11751,8 +11755,10 @@ exports.globalfunctions = {
 	},
 	achievement_is_online: {
 		description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)'
-	},
+	}
+};
 
+exports.obsoletefunctions2 = {
     //Obsolete functions in GameMaker Studio 2
     background_add: {
         description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
@@ -13327,9 +13333,11 @@ exports.globalfunctions = {
             { label: '...', documentation: '' }
         ],
         signature: '(string, string_param_name1, number_value1, ...)'
-    },
+    }
+};
 
-	//GameMaker 8.1 Only
+exports.gm81functions = {
+    //GameMaker 8.1 Only
 	background_add_background: {
         description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
         parameters: [
@@ -14835,8 +14843,10 @@ exports.globalfunctions = {
         ],
         signature: '(fname)'
     },
+};
 
-	//New in GameMaker Studio 2
+exports.gms2functions = {
+    //New in GameMaker Studio 2
 	string_hash_to_newline: {
         description: '[Function] (GameMaker Studio 2 新增)',
         parameters: [
@@ -17365,8 +17375,10 @@ exports.globalvariables = {
 	view_vborder: {description: '[Variable] [0..7]'},
 	view_hspeed: {description: '[Variable] [0..7]'},
 	view_vspeed: {description: '[Variable] [0..7]'},
-    view_object: {description: '[Variable] [0..7]'},
-    
+    view_object: {description: '[Variable] [0..7]'}
+};
+
+exports.obsoletevariables2 = {
     //Obsolete variables in GameMaker Studio 2
     view_angle: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
 	view_hborder: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
@@ -17382,9 +17394,11 @@ exports.globalvariables = {
 	view_xport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
 	view_xview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
 	view_yport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
-	view_yview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'},
+	view_yview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)'}
+};
 
-	//New in GameMaker Studio 2
+exports.gms2variables = {
+    //New in GameMaker Studio 2
 	layer: {description: '[Variable] (GameMaker Studio 2 新增)'},
 	view_camera: {description: '[Variable] [0..7] (GameMaker Studio 2 新增)'},
 	event_data: {description: '[Variable] (GameMaker Studio 2 新增)'}
@@ -17891,9 +17905,11 @@ exports.constants = {
 	vk_space: {description: '[Constant]'},
 	vk_subtract: {description: '[Constant]'},
 	vk_tab: {description: '[Constant]'},
-	vk_up: {description: '[Constant]'},
+	vk_up: {description: '[Constant]'}
+};
 
-	//GameMaker 8.1 Only
+exports.gm81constants = {
+    //GameMaker 8.1 Only
 	input_type: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
     se_chorus: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
 	se_compressor: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
@@ -17903,9 +17919,11 @@ exports.constants = {
 	se_gargle: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
 	se_none: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
 	se_reverb: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
-	text_type: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'},
-	
-	//New in GameMaker Studio 2
+	text_type: {description: '[Constant] (该常量仅 GameMaker 8.1 及早期版本可用)'}
+};
+
+exports.gms2constants = {
+    //New in GameMaker Studio 2
 	undefined: {description: '[Constant] (GameMaker Studio 2 新增)'},
 	pointer_invalid: {description: '[Constant] (GameMaker Studio 2 新增)'},
 	pointer_null: {description: '[Constant] (GameMaker Studio 2 新增)'},

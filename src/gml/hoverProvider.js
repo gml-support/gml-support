@@ -26,13 +26,12 @@ const GMLHoverProvider = ((() => {
                 backchar = backidx.character < 0 ? '' : document.getText(new vscode_1.Range(backidx, wordRange.start));
             }
             const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name] || gmlThirdparty.thirdconstants[name];
-            if (entry && entry.description) {
+            if (entry && entry.description && entry.available) {
                 const signature = entry.signature;
-                //const signature = name;
-                //const contents = [textToMarkedString(entry.description)];
+                const availability = "GM Language Availability: ";
                 const contents = [];
                 contents.push(new vscode_1.MarkdownString(signature));
-                contents.push(textToMarkedString(entry.description));
+                contents.push(textToMarkedString(availability + entry.available + " \n " + entry.description));
                 return new vscode_1.Hover(contents, wordRange);
             }
             return undefined;
