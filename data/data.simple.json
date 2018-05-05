@@ -1,0 +1,9 @@
+{
+    "all": "GM81 => ✓ GMS => ✓ GMS2 => ✓",
+    "gm81": "GM81 => ✓ GMS => ✗ GMS2 => ✗",
+    "gms1": "GM81 => ✗ GMS => ✓ GMS2 => ✓",
+    "gms2": "GM81 => ✗ GMS => ✗ GMS2 => ✓",
+    "gms1d": "GM81 => ✗ GMS => ✓ (Deprecated) GMS2 => ✗",
+    "ob1": "GM81 => ✓ GMS => ✓ (Old version) GMS2 => ✗",
+    "ob2": "GM81 => ✓ GMS => ✓ GMS2 => ✗"
+}
