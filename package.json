@@ -23,11 +23,10 @@
     "url": "https://me.liaronce.win"
   },
   "categories": [
-    "Languages","Snippets"
+    "Programming Languages","Snippets"
   ],
   "extensionDependencies": [
-    "robertohuertasm.vscode-icons",
-    "slevesque.shader"
+    "robertohuertasm.vscode-icons"
   ],
   "dependencies": {
        "vscode-nls": "^2.0.2"
