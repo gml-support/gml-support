@@ -18,6 +18,10 @@
          "name": "comment.block.gml"
       },
       {
+        "match": "#\\b(region|endregion).*$",
+        "name": "comment.region.block.gml"
+      },
+      {
          "begin": "\\'",
          "end": "\\'",
          "name": "string.quoted.single.gml"
@@ -64,8 +68,18 @@
          "name": "constant.language.gml"
       },
       {
-         "match": "\\b((global)?var)|(enum)\\b",
-         "name": "storage.type.gml"
+         "begin": "\\b((global)?var)|(enum)\\b",
+         "beginCaptures": {
+           "1": {
+             "name": "storage.type.gml"
+           }
+         },
+         "end": ".*$",
+         "endCaptures": {
+            "0": {
+              "name": "variable.other.gml"
+            }
+         }
       },
       {
          "match": "(?i)\\b(global|local|self|other)\\b",
