@@ -12,20 +12,24 @@ exports.globalfunctions = {
 		signature: '(x)'
 	},
 	achievement_available: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_event: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stringid', documentation: '' }
         ],
 		signature: '(stringid)'
 	},
 	achievement_get_challenges: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_get_info: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'userid', documentation: '' }
         ],
@@ -33,6 +37,7 @@ exports.globalfunctions = {
 	},
 	achievement_get_pic: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'char', documentation: '' }
         ],
@@ -40,6 +45,7 @@ exports.globalfunctions = {
 	},
 	achievement_increment: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'achievement_name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -47,10 +53,12 @@ exports.globalfunctions = {
 		signature: '(achievement_name, value)'
 	},
 	achievement_load_friends: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_load_leaderboard: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ident', documentation: '' },
             { label: 'minindex', documentation: '' },
@@ -60,19 +68,24 @@ exports.globalfunctions = {
 		signature: '(ident, minindex, maxindex, filter)'
 	},
 	achievement_load_progress: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_login: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_login_status: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_logout: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_post: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'achievement_name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -81,6 +94,7 @@ exports.globalfunctions = {
 	},
 	achievement_post_score: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'score_name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -88,10 +102,12 @@ exports.globalfunctions = {
 		signature: '(score_name, value)'
 	},
 	achievement_reset: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_send_challenge: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'to', documentation: '' },
             { label: 'challengeid', documentation: '' },
@@ -103,6 +119,7 @@ exports.globalfunctions = {
 	},
 	achievement_show: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'val', documentation: '' }
@@ -110,10 +127,12 @@ exports.globalfunctions = {
 		signature: '(type, val)'
 	},
 	achievement_show_achievements: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	achievement_show_challenge_notifications: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'receive_challenge', documentation: '' },
             { label: 'local_complete', documentation: '' },
@@ -122,10 +141,12 @@ exports.globalfunctions = {
 		signature: '(receive_challenge, local_complete, remote_complete)'
 	},
 	achievement_show_leaderboards: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	alarm_get: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
@@ -133,6 +154,7 @@ exports.globalfunctions = {
 	},
 	alarm_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'count', documentation: '' }
@@ -141,6 +163,7 @@ exports.globalfunctions = {
 	},
 	angle_difference: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'src', documentation: '' },
             { label: 'dest', documentation: '' }
@@ -149,16 +172,19 @@ exports.globalfunctions = {
 	},
 	ansi_char: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: '' }
         ],
 		signature: '(val)'
 	},
 	application_get_position: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	application_surface_draw_enable: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'on_off', documentation: '' }
         ],
@@ -166,16 +192,19 @@ exports.globalfunctions = {
 	},
 	application_surface_enable: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
 		signature: '(enable)'
 	},
 	application_surface_is_enabled: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	arccos: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -183,6 +212,7 @@ exports.globalfunctions = {
 	},
 	arcsin: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -190,6 +220,7 @@ exports.globalfunctions = {
 	},
 	arctan: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -197,6 +228,7 @@ exports.globalfunctions = {
 	},
 	arctan2: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'y', documentation: '' },
             { label: 'x', documentation: '' }
@@ -205,6 +237,7 @@ exports.globalfunctions = {
 	},
 	array_copy: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'dest', documentation: '' },
             { label: 'dest_index', documentation: '' },
@@ -216,6 +249,7 @@ exports.globalfunctions = {
 	},
 	array_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'size', documentation: '' }
         ],
@@ -223,6 +257,7 @@ exports.globalfunctions = {
 	},
 	array_equals: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'var1', documentation: '' },
             { label: 'var2', documentation: '' }
@@ -231,6 +266,7 @@ exports.globalfunctions = {
 	},
 	array_height_2d: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'variable', documentation: '' }
         ],
@@ -238,6 +274,7 @@ exports.globalfunctions = {
 	},
 	array_length_1d: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'variable', documentation: '' }
         ],
@@ -245,6 +282,7 @@ exports.globalfunctions = {
 	},
 	array_length_2d: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'variable', documentation: '' },
             { label: 'index', documentation: '' }
@@ -253,6 +291,7 @@ exports.globalfunctions = {
 	},
 	asset_get_index: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'name', documentation: '' }
         ],
@@ -260,6 +299,7 @@ exports.globalfunctions = {
 	},
 	asset_get_type: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'name', documentation: '' }
         ],
@@ -267,6 +307,7 @@ exports.globalfunctions = {
 	},
 	audio_channel_num: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'numchannels', documentation: '' }
         ],
@@ -274,6 +315,7 @@ exports.globalfunctions = {
 	},
 	audio_create_buffer_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferId', documentation: '' },
             { label: 'format', documentation: '' },
@@ -286,6 +328,7 @@ exports.globalfunctions = {
 	},
 	audio_create_play_queue: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferFormat', documentation: '' },
             { label: 'sampleRate', documentation: '' },
@@ -295,6 +338,7 @@ exports.globalfunctions = {
 	},
 	audio_create_stream: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -302,6 +346,7 @@ exports.globalfunctions = {
 	},
 	audio_create_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'looping', documentation: '' }
         ],
@@ -309,6 +354,7 @@ exports.globalfunctions = {
 	},
 	audio_debug: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -316,6 +362,7 @@ exports.globalfunctions = {
 	},
 	audio_destroy_stream: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stream_sound_id', documentation: '' }
         ],
@@ -323,16 +370,19 @@ exports.globalfunctions = {
 	},
 	audio_destroy_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
 		signature: '(sync_group_id)'
 	},
 	audio_emitter_create: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	audio_emitter_exists: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -340,6 +390,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_falloff: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'falloff_ref_dist', documentation: '' },
@@ -350,6 +401,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_free: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -357,6 +409,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'gain', documentation: '' }
@@ -365,6 +418,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -372,6 +426,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_listener_mask: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -379,6 +434,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_pitch: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -386,6 +442,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_vx: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -393,6 +450,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_vy: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -400,6 +458,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_vz: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -407,6 +466,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_x: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -414,6 +474,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_y: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -421,6 +482,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_get_z: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' }
         ],
@@ -428,6 +490,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_pitch: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'pitch', documentation: '' }
@@ -436,6 +499,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_position: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'x', documentation: '' },
@@ -446,6 +510,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_set_listener_mask: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'mask', documentation: '' }
@@ -454,6 +519,7 @@ exports.globalfunctions = {
 	},
 	audio_emitter_velocity: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'vx', documentation: '' },
@@ -464,6 +530,7 @@ exports.globalfunctions = {
 	},
 	audio_exists: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -471,6 +538,7 @@ exports.globalfunctions = {
 	},
 	audio_falloff_set_model: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'falloffmode', documentation: '' }
         ],
@@ -478,6 +546,7 @@ exports.globalfunctions = {
 	},
 	audio_free_buffer_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -485,16 +554,19 @@ exports.globalfunctions = {
 	},
 	audio_free_play_queue: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'queueid', documentation: '' }
         ],
 		signature: '(queueId)'
 	},
 	audio_get_listener_count: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	audio_get_listener_info: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
@@ -502,6 +574,7 @@ exports.globalfunctions = {
 	},
 	audio_get_listener_mask: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'mask', documentation: '' }
         ],
@@ -509,6 +582,7 @@ exports.globalfunctions = {
 	},
 	audio_get_master_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'listenerIndex', documentation: '' }
         ],
@@ -516,16 +590,19 @@ exports.globalfunctions = {
 	},
 	audio_get_name: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
 		signature: '(index)'
 	},
 	audio_get_recorder_count: {
-		description: '[Function]'
+		description: '[Function]',
+        available: datasimple.gms1
 	},
 	audio_get_recorder_info: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'recorder_num', documentation: '' }
         ],
@@ -533,6 +610,7 @@ exports.globalfunctions = {
 	},
 	audio_get_type: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -540,6 +618,7 @@ exports.globalfunctions = {
 	},
 	audio_group_is_loaded: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' }
         ],
@@ -547,6 +626,7 @@ exports.globalfunctions = {
 	},
 	audio_group_load: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' }
         ],
@@ -554,6 +634,7 @@ exports.globalfunctions = {
 	},
 	audio_group_load_progress: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' }
         ],
@@ -561,6 +642,7 @@ exports.globalfunctions = {
 	},
 	audio_group_name: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' }
         ],
@@ -568,6 +650,7 @@ exports.globalfunctions = {
 	},
 	audio_group_set_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' },
             { label: 'volume', documentation: '' },
@@ -577,6 +660,7 @@ exports.globalfunctions = {
 	},
 	audio_group_stop_all: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' }
         ],
@@ -584,6 +668,7 @@ exports.globalfunctions = {
 	},
 	audio_group_unload: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: '' }
         ],
@@ -591,6 +676,7 @@ exports.globalfunctions = {
 	},
 	audio_is_paused: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -598,6 +684,7 @@ exports.globalfunctions = {
     },
 	audio_is_playing: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -605,6 +692,7 @@ exports.globalfunctions = {
     },
 	audio_listener_get_data: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
@@ -612,6 +700,7 @@ exports.globalfunctions = {
     },
 	audio_listener_orientation: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lookat_x', documentation: '' },
             { label: 'lookat_y', documentation: '' },
@@ -624,6 +713,7 @@ exports.globalfunctions = {
     },
 	audio_listener_position: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -633,6 +723,7 @@ exports.globalfunctions = {
     },
 	audio_listener_set_orientation: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'lookat_x', documentation: '' },
@@ -646,6 +737,7 @@ exports.globalfunctions = {
     },
 	audio_listener_set_position: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'x', documentation: '' },
@@ -656,6 +748,7 @@ exports.globalfunctions = {
     },
 	audio_listener_set_velocity: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'vx', documentation: '' },
@@ -666,6 +759,7 @@ exports.globalfunctions = {
     },
 	audio_listener_velocity: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vx', documentation: '' },
             { label: 'vy', documentation: '' },
@@ -675,16 +769,19 @@ exports.globalfunctions = {
     },
 	audio_master_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'gain', documentation: '' }
         ],
         signature: '(gain)'
     },
 	audio_pause_all: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	audio_pause_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -692,6 +789,7 @@ exports.globalfunctions = {
     },
 	audio_pause_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
@@ -699,6 +797,7 @@ exports.globalfunctions = {
     },
 	audio_play_in_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' },
             { label: 'soundid', documentation: '' }
@@ -707,6 +806,7 @@ exports.globalfunctions = {
     },
 	audio_play_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' },
             { label: 'priority', documentation: '' },
@@ -716,6 +816,7 @@ exports.globalfunctions = {
     },
 	audio_play_sound_at: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' },
             { label: 'x', documentation: '' },
@@ -731,6 +832,7 @@ exports.globalfunctions = {
     },
 	audio_play_sound_on: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: '' },
             { label: 'soundid', documentation: '' },
@@ -741,6 +843,7 @@ exports.globalfunctions = {
     },
 	audio_queue_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'queueid', documentation: '' },
             { label: 'buffer_id', documentation: '' },
@@ -750,10 +853,12 @@ exports.globalfunctions = {
         signature: '(queueId, buffer_id, offset, length)'
     },
 	audio_resume_all: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	audio_resume_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -761,6 +866,7 @@ exports.globalfunctions = {
     },
 	audio_resume_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
@@ -768,6 +874,7 @@ exports.globalfunctions = {
     },
 	audio_set_listener_mask: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'mask', documentation: '' }
         ],
@@ -775,6 +882,7 @@ exports.globalfunctions = {
     },
 	audio_set_master_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'listenerIndex', documentation: '' },
             { label: 'gain', documentation: '' }
@@ -783,6 +891,7 @@ exports.globalfunctions = {
     },
 	audio_sound_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'volume', documentation: '' },
@@ -792,6 +901,7 @@ exports.globalfunctions = {
     },
 	audio_sound_get_gain: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
@@ -799,6 +909,7 @@ exports.globalfunctions = {
     },
 	audio_sound_get_listener_mask: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -806,6 +917,7 @@ exports.globalfunctions = {
     },
 	audio_sound_get_pitch: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
@@ -813,6 +925,7 @@ exports.globalfunctions = {
     },
 	audio_sound_get_track_position: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -820,6 +933,7 @@ exports.globalfunctions = {
     },
 	audio_sound_length: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -827,6 +941,7 @@ exports.globalfunctions = {
     },
 	audio_sound_pitch: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'pitch', documentation: '' }
@@ -835,6 +950,7 @@ exports.globalfunctions = {
     },
 	audio_sound_set_listener_mask: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' },
             { label: 'mask', documentation: '' }
@@ -843,6 +959,7 @@ exports.globalfunctions = {
     },
 	audio_sound_set_track_position: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' },
             { label: 'time', documentation: '' }
@@ -851,6 +968,7 @@ exports.globalfunctions = {
     },
 	audio_start_recording: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'recorder_num', documentation: '' }
         ],
@@ -858,16 +976,19 @@ exports.globalfunctions = {
     },
 	audio_start_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
         signature: '(sync_group_id)'
     },
 	audio_stop_all: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	audio_stop_recording: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'channel_index', documentation: '' }
         ],
@@ -875,6 +996,7 @@ exports.globalfunctions = {
     },
 	audio_stop_sound: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'soundid', documentation: '' }
         ],
@@ -882,6 +1004,7 @@ exports.globalfunctions = {
     },
 	audio_stop_sync_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
@@ -889,6 +1012,7 @@ exports.globalfunctions = {
     },
 	audio_sync_group_debug: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
@@ -896,6 +1020,7 @@ exports.globalfunctions = {
     },
 	audio_sync_group_get_track_pos: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
@@ -903,16 +1028,19 @@ exports.globalfunctions = {
     },
 	audio_sync_group_is_playing: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sync_group_id', documentation: '' }
         ],
         signature: '(sync_group_id)'
     },
 	audio_system: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	base64_decode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -920,6 +1048,7 @@ exports.globalfunctions = {
     },
 	base64_encode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -927,6 +1056,7 @@ exports.globalfunctions = {
     },
 	browser_input_capture: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -934,16 +1064,19 @@ exports.globalfunctions = {
     },
 	buffer_async_group_begin: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'groupname', documentation: '' }
         ],
         signature: '(groupname)'
     },
 	buffer_async_group_end: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	buffer_async_group_option: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'optionname', documentation: '' },
             { label: 'optionvalue', documentation: '' }
@@ -952,6 +1085,7 @@ exports.globalfunctions = {
     },
 	buffer_base64_decode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -959,6 +1093,7 @@ exports.globalfunctions = {
     },
 	buffer_base64_decode_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'string', documentation: '' },
@@ -968,6 +1103,7 @@ exports.globalfunctions = {
     },
 	buffer_base64_encode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'offset', documentation: '' },
@@ -977,6 +1113,7 @@ exports.globalfunctions = {
     },
 	buffer_copy: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'src_buffer', documentation: '' },
             { label: 'src_offset', documentation: '' },
@@ -988,6 +1125,7 @@ exports.globalfunctions = {
     },
 	buffer_copy_from_vertex_buffer: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vertex_buffer', documentation: '' },
             { label: 'start_vertex', documentation: '' },
@@ -999,6 +1137,7 @@ exports.globalfunctions = {
     },
 	buffer_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'size', documentation: '' },
             { label: 'buffer_type', documentation: '' },
@@ -1008,6 +1147,7 @@ exports.globalfunctions = {
     },
 	buffer_create_from_vertex_buffer: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vertex_buffer', documentation: '' },
             { label: 'type', documentation: '' },
@@ -1017,6 +1157,7 @@ exports.globalfunctions = {
     },
 	buffer_create_from_vertex_buffer_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vertex_buffer', documentation: '' },
             { label: 'type', documentation: '' },
@@ -1028,6 +1169,7 @@ exports.globalfunctions = {
     },
 	buffer_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1035,6 +1177,7 @@ exports.globalfunctions = {
     },
 	buffer_exists: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1042,6 +1185,7 @@ exports.globalfunctions = {
     },
 	buffer_fill: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'offset', documentation: '' },
@@ -1053,6 +1197,7 @@ exports.globalfunctions = {
     },
 	buffer_get_address: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1060,6 +1205,7 @@ exports.globalfunctions = {
     },
 	buffer_get_alignment: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1067,6 +1213,7 @@ exports.globalfunctions = {
     },
 	buffer_get_size: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1074,6 +1221,7 @@ exports.globalfunctions = {
     },
 	buffer_get_surface: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'surface', documentation: '' },
@@ -1085,6 +1233,7 @@ exports.globalfunctions = {
     },
 	buffer_get_type: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1092,6 +1241,7 @@ exports.globalfunctions = {
     },
 	buffer_load: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -1099,6 +1249,7 @@ exports.globalfunctions = {
     },
 	buffer_load_async: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: '' },
             { label: 'filename', documentation: '' },
@@ -1109,6 +1260,7 @@ exports.globalfunctions = {
     },
 	buffer_load_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: '' },
             { label: 'filename', documentation: '' },
@@ -1118,6 +1270,7 @@ exports.globalfunctions = {
     },
 	buffer_load_partial: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: '' },
             { label: 'filename', documentation: '' },
@@ -1129,6 +1282,7 @@ exports.globalfunctions = {
     },
 	buffer_md5: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'offset', documentation: '' },
@@ -1138,6 +1292,7 @@ exports.globalfunctions = {
     },
 	buffer_peek: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'offset', documentation: '' },
@@ -1147,6 +1302,7 @@ exports.globalfunctions = {
     },
 	buffer_poke: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'offset', documentation: '' },
@@ -1157,6 +1313,7 @@ exports.globalfunctions = {
     },
 	buffer_read: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'type', documentation: '' }
@@ -1165,6 +1322,7 @@ exports.globalfunctions = {
     },
 	buffer_resize: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'newsize', documentation: '' }
@@ -1173,6 +1331,7 @@ exports.globalfunctions = {
     },
 	buffer_save: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'filename', documentation: '' }
@@ -1181,6 +1340,7 @@ exports.globalfunctions = {
     },
 	buffer_save_async: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'type', documentation: '' },
@@ -1191,6 +1351,7 @@ exports.globalfunctions = {
     },
 	buffer_save_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: '' },
             { label: 'filename', documentation: '' },
@@ -1201,6 +1362,7 @@ exports.globalfunctions = {
     },
 	buffer_seek: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: '' },
             { label: 'base', documentation: '' },
@@ -1210,6 +1372,7 @@ exports.globalfunctions = {
     },
 	buffer_set_surface: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'surface', documentation: '' },
@@ -1221,6 +1384,7 @@ exports.globalfunctions = {
     },
 	buffer_sha1: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: '' },
             { label: 'offset', documentation: '' },
@@ -1230,6 +1394,7 @@ exports.globalfunctions = {
     },
 	buffer_sizeof: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' }
         ],
@@ -1237,6 +1402,7 @@ exports.globalfunctions = {
     },
 	buffer_tell: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -1244,6 +1410,7 @@ exports.globalfunctions = {
     },
 	buffer_write: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'type', documentation: '' },
@@ -1253,6 +1420,7 @@ exports.globalfunctions = {
     },
 	ceil: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -1260,6 +1428,7 @@ exports.globalfunctions = {
     },
 	choose: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' },
@@ -1270,6 +1439,7 @@ exports.globalfunctions = {
     },
 	chr: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -1277,6 +1447,7 @@ exports.globalfunctions = {
     },
 	clamp: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: '' },
             { label: 'min', documentation: '' },
@@ -1286,6 +1457,7 @@ exports.globalfunctions = {
     },
 	clickable_add: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -1298,6 +1470,7 @@ exports.globalfunctions = {
     },
 	clickable_add_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -1312,6 +1485,7 @@ exports.globalfunctions = {
     },
 	clickable_change: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buttonid', documentation: '' },
             { label: 'spritetpe', documentation: '' },
@@ -1322,6 +1496,7 @@ exports.globalfunctions = {
     },
 	clickable_change_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buttonid', documentation: '' },
             { label: 'spritetpe', documentation: '' },
@@ -1334,6 +1509,7 @@ exports.globalfunctions = {
     },
 	clickable_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buttonid', documentation: '' }
         ],
@@ -1341,6 +1517,7 @@ exports.globalfunctions = {
     },
 	clickable_exists: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
@@ -1348,6 +1525,7 @@ exports.globalfunctions = {
     },
 	clickable_set_style: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buttonid', documentation: '' },
             { label: 'map', documentation: '' }
@@ -1355,13 +1533,16 @@ exports.globalfunctions = {
         signature: '(buttonid, map)'
     },
 	clipboard_get_text: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	clipboard_has_text: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	clipboard_set_text: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -1369,6 +1550,7 @@ exports.globalfunctions = {
     },
 	cloud_file_save: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' },
             { label: 'description', documentation: '' }
@@ -1377,6 +1559,7 @@ exports.globalfunctions = {
     },
 	cloud_string_save: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'data', documentation: '' },
             { label: 'description', documentation: '' }
@@ -1384,13 +1567,16 @@ exports.globalfunctions = {
         signature: '(data, description)'
     },
 	cloud_synchronise: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	code_is_compiled: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	collision_circle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -1403,6 +1589,7 @@ exports.globalfunctions = {
     },
 	collision_ellipse: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -1416,6 +1603,7 @@ exports.globalfunctions = {
     },
 	collision_line: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -1429,6 +1617,7 @@ exports.globalfunctions = {
     },
 	collision_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -1440,6 +1629,7 @@ exports.globalfunctions = {
     },
 	collision_rectangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -1453,6 +1643,7 @@ exports.globalfunctions = {
     },
     color_get_blue: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1460,6 +1651,7 @@ exports.globalfunctions = {
     },
 	color_get_green: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1467,6 +1659,7 @@ exports.globalfunctions = {
     },
 	color_get_hue: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1474,6 +1667,7 @@ exports.globalfunctions = {
     },
 	color_get_red: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1481,6 +1675,7 @@ exports.globalfunctions = {
     },
 	color_get_saturation: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1488,6 +1683,7 @@ exports.globalfunctions = {
     },
 	color_get_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1495,6 +1691,7 @@ exports.globalfunctions = {
     },
 	colour_get_blue: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1502,6 +1699,7 @@ exports.globalfunctions = {
     },
 	colour_get_green: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1509,6 +1707,7 @@ exports.globalfunctions = {
     },
 	colour_get_hue: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1516,6 +1715,7 @@ exports.globalfunctions = {
     },
 	colour_get_red: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1523,6 +1723,7 @@ exports.globalfunctions = {
     },
 	colour_get_saturation: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1530,6 +1731,7 @@ exports.globalfunctions = {
     },
 	colour_get_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -1537,6 +1739,7 @@ exports.globalfunctions = {
     },
 	cos: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'radian_angle', documentation: '' }
         ],
@@ -1544,6 +1747,7 @@ exports.globalfunctions = {
     },
 	darccos: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -1551,6 +1755,7 @@ exports.globalfunctions = {
     },
 	darcsin: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -1558,6 +1763,7 @@ exports.globalfunctions = {
     },
 	darctan: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -1565,6 +1771,7 @@ exports.globalfunctions = {
     },
 	darctan2: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'y', documentation: '' },
             { label: 'x', documentation: '' }
@@ -1573,6 +1780,7 @@ exports.globalfunctions = {
     },
 	date_compare_date: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1581,6 +1789,7 @@ exports.globalfunctions = {
     },
 	date_compare_datetime: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1589,6 +1798,7 @@ exports.globalfunctions = {
     },
 	date_compare_time: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1597,6 +1807,7 @@ exports.globalfunctions = {
     },
 	date_create_datetime: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'year', documentation: '' },
             { label: 'month', documentation: '' },
@@ -1612,6 +1823,7 @@ exports.globalfunctions = {
     },
 	date_datetime_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1619,6 +1831,7 @@ exports.globalfunctions = {
     },
 	date_date_of: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1626,6 +1839,7 @@ exports.globalfunctions = {
     },
 	date_date_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1633,6 +1847,7 @@ exports.globalfunctions = {
     },
 	date_days_in_month: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1640,6 +1855,7 @@ exports.globalfunctions = {
     },
 	date_days_in_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1647,6 +1863,7 @@ exports.globalfunctions = {
     },
 	date_day_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1655,6 +1872,7 @@ exports.globalfunctions = {
     },
 	date_get_day: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1662,6 +1880,7 @@ exports.globalfunctions = {
     },
 	date_get_day_of_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1669,6 +1888,7 @@ exports.globalfunctions = {
     },
 	date_get_hour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1676,6 +1896,7 @@ exports.globalfunctions = {
     },
 	date_get_hour_of_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1683,6 +1904,7 @@ exports.globalfunctions = {
     },
 	date_get_minute: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1690,6 +1912,7 @@ exports.globalfunctions = {
     },
 	date_get_minute_of_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1697,6 +1920,7 @@ exports.globalfunctions = {
     },
 	date_get_month: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1704,6 +1928,7 @@ exports.globalfunctions = {
     },
 	date_get_second: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1711,6 +1936,7 @@ exports.globalfunctions = {
     },
 	date_get_second_of_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1721,6 +1947,7 @@ exports.globalfunctions = {
     },
 	date_get_week: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1728,6 +1955,7 @@ exports.globalfunctions = {
     },
 	date_get_weekday: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1735,6 +1963,7 @@ exports.globalfunctions = {
     },
 	date_get_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1742,6 +1971,7 @@ exports.globalfunctions = {
     },
 	date_hour_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1750,6 +1980,7 @@ exports.globalfunctions = {
     },
 	date_inc_day: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1758,6 +1989,7 @@ exports.globalfunctions = {
     },
 	date_inc_hour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1766,6 +1998,7 @@ exports.globalfunctions = {
     },
 	date_inc_minute: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1774,6 +2007,7 @@ exports.globalfunctions = {
     },
 	date_inc_month: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1782,6 +2016,7 @@ exports.globalfunctions = {
     },
 	date_inc_second: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1790,6 +2025,7 @@ exports.globalfunctions = {
     },
 	date_inc_week: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1798,6 +2034,7 @@ exports.globalfunctions = {
     },
 	date_inc_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' },
             { label: 'amount', documentation: '' }
@@ -1806,6 +2043,7 @@ exports.globalfunctions = {
     },
 	date_is_today: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1813,6 +2051,7 @@ exports.globalfunctions = {
     },
 	date_leap_year: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1820,6 +2059,7 @@ exports.globalfunctions = {
     },
 	date_minute_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1828,6 +2068,7 @@ exports.globalfunctions = {
     },
 	date_month_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1836,6 +2077,7 @@ exports.globalfunctions = {
     },
 	date_second_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1844,6 +2086,7 @@ exports.globalfunctions = {
     },
 	date_set_timezone: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'timezone', documentation: '' }
         ],
@@ -1851,6 +2094,7 @@ exports.globalfunctions = {
     },
 	date_time_of: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1858,6 +2102,7 @@ exports.globalfunctions = {
     },
 	date_time_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date', documentation: '' }
         ],
@@ -1865,6 +2110,7 @@ exports.globalfunctions = {
     },
 	date_valid_datetime: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'year', documentation: '' },
             { label: 'month', documentation: '' },
@@ -1877,6 +2123,7 @@ exports.globalfunctions = {
     },
 	date_week_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1885,6 +2132,7 @@ exports.globalfunctions = {
     },
 	date_year_span: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: '' },
             { label: 'date2', documentation: '' }
@@ -1893,6 +2141,7 @@ exports.globalfunctions = {
     },
 	dcos: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'degree_angle', documentation: '' }
         ],
@@ -1900,6 +2149,7 @@ exports.globalfunctions = {
     },
 	debug_event: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -1907,25 +2157,31 @@ exports.globalfunctions = {
     },
 	degtorad: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' }
         ],
         signature: '(x)'
     },
 	device_get_tilt_x: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	device_get_tilt_y: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	device_get_tilt_z: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	device_is_keypad_open: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	device_mouse_check_button: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'button', documentation: '' }
@@ -1934,6 +2190,7 @@ exports.globalfunctions = {
     },
 	device_mouse_check_button_pressed: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'button', documentation: '' }
@@ -1942,6 +2199,7 @@ exports.globalfunctions = {
     },
 	device_mouse_check_button_released: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'button', documentation: '' }
@@ -1950,6 +2208,7 @@ exports.globalfunctions = {
     },
 	device_mouse_dbclick_enable: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -1957,6 +2216,7 @@ exports.globalfunctions = {
     },
 	device_mouse_raw_x: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -1964,6 +2224,7 @@ exports.globalfunctions = {
     },
 	device_mouse_raw_y: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -1971,6 +2232,7 @@ exports.globalfunctions = {
     },
 	device_mouse_x: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -1978,6 +2240,7 @@ exports.globalfunctions = {
     },
 	device_mouse_x_to_gui: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -1985,6 +2248,7 @@ exports.globalfunctions = {
     },
 	device_mouse_y: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -1992,6 +2256,7 @@ exports.globalfunctions = {
     },
 	device_mouse_y_to_gui: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -1999,6 +2264,7 @@ exports.globalfunctions = {
     },
 	directory_create: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dname', documentation: '' }
         ],
@@ -2006,6 +2272,7 @@ exports.globalfunctions = {
     },
 	directory_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dname', documentation: '' }
         ],
@@ -2013,44 +2280,56 @@ exports.globalfunctions = {
     },
 	directory_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dname', documentation: '' }
         ],
         signature: '(dname)'
     },
 	display_get_dpi_x: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_get_dpi_y: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_get_gui_height: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_get_gui_width: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	
     display_get_colordepth: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_get_height: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_get_orientation: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_get_width: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_mouse_get_x: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_mouse_get_y: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	display_set_gui_maximise: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'xscale', documentation: '' },
             { label: 'yscale', documentation: '' },
@@ -2061,6 +2340,7 @@ exports.globalfunctions = {
     },
 	display_set_gui_size: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'width', documentation: '' },
             { label: 'height', documentation: '' }
@@ -2069,6 +2349,7 @@ exports.globalfunctions = {
     },
 	display_set_ui_visibility: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'flags', documentation: '' }
         ],
@@ -2076,6 +2357,7 @@ exports.globalfunctions = {
     },
 	display_mouse_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -2084,6 +2366,7 @@ exports.globalfunctions = {
     },
 	display_reset: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'aa_level', documentation: '' },
             { label: 'vsync', documentation: '' }
@@ -2092,6 +2375,7 @@ exports.globalfunctions = {
     },
 	distance_to_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' }
         ],
@@ -2099,6 +2383,7 @@ exports.globalfunctions = {
     },
 	distance_to_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -2107,6 +2392,7 @@ exports.globalfunctions = {
     },
 	dot_product: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2117,6 +2403,7 @@ exports.globalfunctions = {
     },
 	dot_product_3d: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2129,6 +2416,7 @@ exports.globalfunctions = {
     },
 	dot_product_3d_normalised: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2141,6 +2429,7 @@ exports.globalfunctions = {
     },
 	dot_product_normalised: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2151,6 +2440,7 @@ exports.globalfunctions = {
     },
 	draw_arrow: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2162,6 +2452,7 @@ exports.globalfunctions = {
     },
 	draw_button: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2173,6 +2464,7 @@ exports.globalfunctions = {
     },
 	draw_circle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -2183,6 +2475,7 @@ exports.globalfunctions = {
     },
 	draw_circle_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -2195,6 +2488,7 @@ exports.globalfunctions = {
     },
 	draw_circle_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -2207,6 +2501,7 @@ exports.globalfunctions = {
     },
 	draw_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -2214,6 +2509,7 @@ exports.globalfunctions = {
     },
 	draw_clear_alpha: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' },
             { label: 'alpha', documentation: '' }
@@ -2222,6 +2518,7 @@ exports.globalfunctions = {
     },
 	draw_ellipse: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2233,6 +2530,7 @@ exports.globalfunctions = {
     },
 	draw_ellipse_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2246,6 +2544,7 @@ exports.globalfunctions = {
     },
 	draw_ellipse_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2259,6 +2558,7 @@ exports.globalfunctions = {
     },
 	draw_enable_alphablend: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -2266,6 +2566,7 @@ exports.globalfunctions = {
     },
 	draw_enable_drawevent: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -2273,16 +2574,19 @@ exports.globalfunctions = {
     },
 	draw_enable_swf_aa: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	draw_flush: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_getpixel: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -2291,6 +2595,7 @@ exports.globalfunctions = {
     },
 	draw_getpixel_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -2298,25 +2603,32 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	draw_get_alpha: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_get_alpha_test: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_get_alpha_test_ref_value: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_get_color: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_get_colour: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_get_swf_aa_level: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_healthbar: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2334,6 +2646,7 @@ exports.globalfunctions = {
     },
 	draw_highscore: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2344,6 +2657,7 @@ exports.globalfunctions = {
     },
 	draw_line: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2354,6 +2668,7 @@ exports.globalfunctions = {
     },
 	draw_line_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2366,6 +2681,7 @@ exports.globalfunctions = {
     },
 	draw_line_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2378,6 +2694,7 @@ exports.globalfunctions = {
     },
 	draw_line_width: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2389,6 +2706,7 @@ exports.globalfunctions = {
     },
 	draw_line_width_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2402,6 +2720,7 @@ exports.globalfunctions = {
     },
 	draw_line_width_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2415,6 +2734,7 @@ exports.globalfunctions = {
     },
 	draw_path: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'path', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -2425,6 +2745,7 @@ exports.globalfunctions = {
     },
 	draw_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -2433,6 +2754,7 @@ exports.globalfunctions = {
     },
 	draw_point_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -2442,6 +2764,7 @@ exports.globalfunctions = {
     },
 	draw_point_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -2451,6 +2774,7 @@ exports.globalfunctions = {
     },
 	draw_primitive_begin: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: '' }
         ],
@@ -2458,6 +2782,7 @@ exports.globalfunctions = {
     },
 	draw_primitive_begin_texture: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: '' },
             { label: 'texid', documentation: '' }
@@ -2469,6 +2794,7 @@ exports.globalfunctions = {
     },
 	draw_rectangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2480,6 +2806,7 @@ exports.globalfunctions = {
     },
 	draw_rectangle_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2495,6 +2822,7 @@ exports.globalfunctions = {
     },
 	draw_rectangle_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2510,6 +2838,7 @@ exports.globalfunctions = {
     },
 	draw_roundrect: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2521,6 +2850,7 @@ exports.globalfunctions = {
     },
 	draw_roundrect_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2534,6 +2864,7 @@ exports.globalfunctions = {
     },
 	draw_roundrect_color_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2549,6 +2880,7 @@ exports.globalfunctions = {
     },
 	draw_roundrect_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2562,6 +2894,7 @@ exports.globalfunctions = {
     },
 	draw_roundrect_colour_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2577,6 +2910,7 @@ exports.globalfunctions = {
     },
 	draw_roundrect_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -2589,10 +2923,12 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, radiusx, radiusy, outline)'
     },
 	draw_self: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_set_alpha: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'alpha', documentation: '' }
         ],
@@ -2600,6 +2936,7 @@ exports.globalfunctions = {
     },
 	draw_set_alpha_test: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -2607,6 +2944,7 @@ exports.globalfunctions = {
     },
 	draw_set_alpha_test_ref_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'value', documentation: '' }
         ],
@@ -2614,6 +2952,7 @@ exports.globalfunctions = {
     },
 	draw_set_blend_mode: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'mode', documentation: '' }
         ],
@@ -2621,6 +2960,7 @@ exports.globalfunctions = {
     },
 	draw_set_blend_mode_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'src', documentation: '' },
             { label: 'dest', documentation: '' }
@@ -2629,6 +2969,7 @@ exports.globalfunctions = {
     },
 	draw_set_circle_precision: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'precision', documentation: '' }
         ],
@@ -2636,6 +2977,7 @@ exports.globalfunctions = {
     },
 	draw_set_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -2643,6 +2985,7 @@ exports.globalfunctions = {
     },
 	draw_set_color_write_enable: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'red', documentation: '' },
             { label: 'green', documentation: '' },
@@ -2653,6 +2996,7 @@ exports.globalfunctions = {
     },
 	draw_set_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col', documentation: '' }
         ],
@@ -2660,6 +3004,7 @@ exports.globalfunctions = {
     },
 	draw_set_colour_write_enable: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'red', documentation: '' },
             { label: 'green', documentation: '' },
@@ -2670,6 +3015,7 @@ exports.globalfunctions = {
     },
 	draw_set_font: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'font', documentation: '' }
         ],
@@ -2677,6 +3023,7 @@ exports.globalfunctions = {
     },
 	draw_set_halign: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'halign', documentation: '' }
         ],
@@ -2684,6 +3031,7 @@ exports.globalfunctions = {
     },
 	draw_set_swf_aa_level: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'aa_level', documentation: '' }
         ],
@@ -2691,6 +3039,7 @@ exports.globalfunctions = {
     },
 	draw_set_valign: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'valign', documentation: '' }
         ],
@@ -2698,6 +3047,7 @@ exports.globalfunctions = {
     },
 	draw_skeleton: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'animname', documentation: '' },
@@ -2715,6 +3065,7 @@ exports.globalfunctions = {
     },
 	draw_skeleton_collision: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'animname', documentation: '' },
@@ -2730,6 +3081,7 @@ exports.globalfunctions = {
     },
 	draw_skeleton_instance: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'instance', documentation: '' },
             { label: 'animname', documentation: '' },
@@ -2747,6 +3099,7 @@ exports.globalfunctions = {
     },
 	draw_skeleton_time: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'animname', documentation: '' },
@@ -2764,6 +3117,7 @@ exports.globalfunctions = {
     },
 	draw_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2774,6 +3128,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2789,6 +3144,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_general: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2811,6 +3167,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_part: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2825,6 +3182,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_part_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2843,6 +3201,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_pos: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2860,6 +3219,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_stretched: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2872,6 +3232,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_stretched_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2886,6 +3247,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_tiled: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2896,6 +3258,7 @@ exports.globalfunctions = {
     },
 	draw_sprite_tiled_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -2910,6 +3273,7 @@ exports.globalfunctions = {
     },
 	draw_surface: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -2919,6 +3283,7 @@ exports.globalfunctions = {
     },
 	draw_surface_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -2933,6 +3298,7 @@ exports.globalfunctions = {
     },
 	draw_surface_general: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'left', documentation: '' },
@@ -2954,6 +3320,7 @@ exports.globalfunctions = {
     },
 	draw_surface_part: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'left', documentation: '' },
@@ -2967,6 +3334,7 @@ exports.globalfunctions = {
     },
 	draw_surface_part_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'left', documentation: '' },
@@ -2984,6 +3352,7 @@ exports.globalfunctions = {
     },
 	draw_surface_stretched: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -2995,6 +3364,7 @@ exports.globalfunctions = {
     },
 	draw_surface_stretched_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3008,6 +3378,7 @@ exports.globalfunctions = {
     },
 	draw_surface_tiled: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3017,6 +3388,7 @@ exports.globalfunctions = {
     },
 	draw_surface_tiled_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3030,6 +3402,7 @@ exports.globalfunctions = {
     },
 	draw_text: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3038,10 +3411,12 @@ exports.globalfunctions = {
         signature: '(x, y, string)'
     },
 	draw_texture_flush: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	draw_text_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3056,6 +3431,7 @@ exports.globalfunctions = {
     },
 	draw_text_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3070,6 +3446,7 @@ exports.globalfunctions = {
     },
 	draw_text_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3081,6 +3458,7 @@ exports.globalfunctions = {
     },
 	draw_text_ext_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3097,6 +3475,7 @@ exports.globalfunctions = {
     },
 	draw_text_ext_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3113,6 +3492,7 @@ exports.globalfunctions = {
     },
 	draw_text_ext_transformed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3127,6 +3507,7 @@ exports.globalfunctions = {
     },
 	draw_text_ext_transformed_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3146,6 +3527,7 @@ exports.globalfunctions = {
     },
 	draw_text_ext_transformed_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3165,6 +3547,7 @@ exports.globalfunctions = {
     },
 	draw_text_transformed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3177,6 +3560,7 @@ exports.globalfunctions = {
     },
 	draw_text_transformed_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3194,6 +3578,7 @@ exports.globalfunctions = {
     },
 	draw_text_transformed_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3211,6 +3596,7 @@ exports.globalfunctions = {
     },
 	draw_triangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -3224,6 +3610,7 @@ exports.globalfunctions = {
     },
 	draw_triangle_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -3240,6 +3627,7 @@ exports.globalfunctions = {
     },
 	draw_triangle_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -3256,6 +3644,7 @@ exports.globalfunctions = {
     },
 	draw_vertex: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -3264,6 +3653,7 @@ exports.globalfunctions = {
     },
 	draw_vertex_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3274,6 +3664,7 @@ exports.globalfunctions = {
     },
 	draw_vertex_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3284,6 +3675,7 @@ exports.globalfunctions = {
     },
 	draw_vertex_texture: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3294,6 +3686,7 @@ exports.globalfunctions = {
     },
 	draw_vertex_texture_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3306,6 +3699,7 @@ exports.globalfunctions = {
     },
 	draw_vertex_texture_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -3325,6 +3719,7 @@ exports.globalfunctions = {
     },
 	ds_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'type', documentation: '' }
@@ -3333,6 +3728,7 @@ exports.globalfunctions = {
     },
 	ds_grid_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3343,6 +3739,7 @@ exports.globalfunctions = {
     },
 	ds_grid_add_disk: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3354,6 +3751,7 @@ exports.globalfunctions = {
     },
 	ds_grid_add_grid_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' },
@@ -3368,6 +3766,7 @@ exports.globalfunctions = {
     },
 	ds_grid_add_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3380,6 +3779,7 @@ exports.globalfunctions = {
     },
 	ds_grid_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'val', documentation: '' }
@@ -3388,6 +3788,7 @@ exports.globalfunctions = {
     },
 	ds_grid_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' }
@@ -3396,6 +3797,7 @@ exports.globalfunctions = {
     },
 	ds_grid_create: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' }
@@ -3404,6 +3806,7 @@ exports.globalfunctions = {
     },
 	ds_grid_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3411,6 +3814,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3420,6 +3824,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_disk_max: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3430,6 +3835,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_disk_mean: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3440,6 +3846,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_disk_min: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3450,6 +3857,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_disk_sum: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3460,6 +3868,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_max: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3471,6 +3880,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_mean: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3482,6 +3892,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_min: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3493,6 +3904,7 @@ exports.globalfunctions = {
     },
 	ds_grid_get_sum: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3504,6 +3916,7 @@ exports.globalfunctions = {
     },
 	ds_grid_height: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3511,6 +3924,7 @@ exports.globalfunctions = {
     },
 	ds_grid_multiply: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3521,6 +3935,7 @@ exports.globalfunctions = {
     },
 	ds_grid_multiply_disk: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3532,6 +3947,7 @@ exports.globalfunctions = {
     },
 	ds_grid_multiply_grid_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' },
@@ -3546,6 +3962,7 @@ exports.globalfunctions = {
     },
 	ds_grid_multiply_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3558,6 +3975,7 @@ exports.globalfunctions = {
     },
 	ds_grid_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'str', documentation: '' },
@@ -3567,6 +3985,7 @@ exports.globalfunctions = {
     },
 	ds_grid_resize: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'w', documentation: '' },
@@ -3576,6 +3995,7 @@ exports.globalfunctions = {
     },
 	ds_grid_set: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -3586,6 +4006,7 @@ exports.globalfunctions = {
     },
 	ds_grid_set_disk: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3597,6 +4018,7 @@ exports.globalfunctions = {
     },
 	ds_grid_set_grid_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' },
@@ -3611,6 +4033,7 @@ exports.globalfunctions = {
     },
 	ds_grid_set_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3623,6 +4046,7 @@ exports.globalfunctions = {
     },
 	ds_grid_shuffle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3630,6 +4054,7 @@ exports.globalfunctions = {
     },
 	ds_grid_sort: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'column', documentation: '' },
@@ -3639,6 +4064,7 @@ exports.globalfunctions = {
     },
 	ds_grid_value_disk_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3650,6 +4076,7 @@ exports.globalfunctions = {
     },
 	ds_grid_value_disk_x: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3661,6 +4088,7 @@ exports.globalfunctions = {
     },
 	ds_grid_value_disk_y: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'xm', documentation: '' },
@@ -3672,6 +4100,7 @@ exports.globalfunctions = {
     },
 	ds_grid_value_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3684,6 +4113,7 @@ exports.globalfunctions = {
     },
 	ds_grid_value_x: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3696,6 +4126,7 @@ exports.globalfunctions = {
     },
 	ds_grid_value_y: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x1', documentation: '' },
@@ -3708,6 +4139,7 @@ exports.globalfunctions = {
     },
 	ds_grid_width: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3715,6 +4147,7 @@ exports.globalfunctions = {
     },
 	ds_grid_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3722,6 +4155,7 @@ exports.globalfunctions = {
     },
 	ds_list_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' },
@@ -3731,6 +4165,7 @@ exports.globalfunctions = {
     },
 	ds_list_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3738,6 +4173,7 @@ exports.globalfunctions = {
     },
 	ds_list_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' }
@@ -3749,6 +4185,7 @@ exports.globalfunctions = {
     },
 	ds_list_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -3757,6 +4194,7 @@ exports.globalfunctions = {
     },
 	ds_list_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3764,6 +4202,7 @@ exports.globalfunctions = {
     },
 	ds_list_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3771,6 +4210,7 @@ exports.globalfunctions = {
     },
 	ds_list_find_index: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' }
@@ -3779,6 +4219,7 @@ exports.globalfunctions = {
     },
 	ds_list_find_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -3787,6 +4228,7 @@ exports.globalfunctions = {
     },
 	ds_list_insert: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' },
@@ -3796,6 +4238,7 @@ exports.globalfunctions = {
     },
 	ds_list_mark_as_list: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -3804,6 +4247,7 @@ exports.globalfunctions = {
     },
 	ds_list_mark_as_map: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -3812,6 +4256,7 @@ exports.globalfunctions = {
     },
 	ds_list_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'str', documentation: '' },
@@ -3821,6 +4266,7 @@ exports.globalfunctions = {
     },
 	ds_list_replace: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'pos', documentation: '' },
@@ -3830,6 +4276,7 @@ exports.globalfunctions = {
     },
 	ds_list_shuffle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3837,6 +4284,7 @@ exports.globalfunctions = {
     },
 	ds_list_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3844,6 +4292,7 @@ exports.globalfunctions = {
     },
 	ds_list_sort: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'ascending', documentation: '' }
@@ -3852,6 +4301,7 @@ exports.globalfunctions = {
     },
 	ds_list_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3859,6 +4309,7 @@ exports.globalfunctions = {
     },
 	ds_map_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -3868,6 +4319,7 @@ exports.globalfunctions = {
     },
 	ds_map_add_list: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -3877,6 +4329,7 @@ exports.globalfunctions = {
     },
 	ds_map_add_map: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -3886,6 +4339,7 @@ exports.globalfunctions = {
     },
 	ds_map_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3893,6 +4347,7 @@ exports.globalfunctions = {
     },
 	ds_map_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' }
@@ -3904,6 +4359,7 @@ exports.globalfunctions = {
     },
 	ds_map_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' }
@@ -3912,6 +4368,7 @@ exports.globalfunctions = {
     },
 	ds_map_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3919,6 +4376,7 @@ exports.globalfunctions = {
     },
 	ds_map_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3926,6 +4384,7 @@ exports.globalfunctions = {
     },
 	ds_map_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' }
@@ -3934,6 +4393,7 @@ exports.globalfunctions = {
     },
 	ds_map_find_first: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3941,6 +4401,7 @@ exports.globalfunctions = {
     },
 	ds_map_find_last: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -3948,6 +4409,7 @@ exports.globalfunctions = {
     },
 	ds_map_find_next: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' }
@@ -3956,6 +4418,7 @@ exports.globalfunctions = {
     },
 	ds_map_find_previous: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' }
@@ -3964,6 +4427,7 @@ exports.globalfunctions = {
     },
 	ds_map_find_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' }
@@ -3972,6 +4436,7 @@ exports.globalfunctions = {
     },
 	ds_map_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'str', documentation: '' },
@@ -3981,6 +4446,7 @@ exports.globalfunctions = {
     },
 	ds_map_replace: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -3990,6 +4456,7 @@ exports.globalfunctions = {
     },
 	ds_map_replace_list: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -3999,6 +4466,7 @@ exports.globalfunctions = {
     },
 	ds_map_replace_map: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'key', documentation: '' },
@@ -4008,6 +4476,7 @@ exports.globalfunctions = {
     },
 	ds_map_secure_load: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -4015,6 +4484,7 @@ exports.globalfunctions = {
     },
 	ds_map_secure_load_buffer: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -4022,6 +4492,7 @@ exports.globalfunctions = {
     },
 	ds_map_secure_save: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'filename', documentation: '' }
@@ -4030,6 +4501,7 @@ exports.globalfunctions = {
     },
 	ds_map_secure_save_buffer: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'buffer', documentation: '' }
@@ -4038,6 +4510,7 @@ exports.globalfunctions = {
     },
 	ds_map_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4045,6 +4518,7 @@ exports.globalfunctions = {
     },
 	ds_map_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4052,6 +4526,7 @@ exports.globalfunctions = {
     },
 	ds_priority_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' },
@@ -4061,6 +4536,7 @@ exports.globalfunctions = {
     },
 	ds_priority_change_priority: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' },
@@ -4070,6 +4546,7 @@ exports.globalfunctions = {
     },
 	ds_priority_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4077,6 +4554,7 @@ exports.globalfunctions = {
     },
 	ds_priority_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' }
@@ -4088,6 +4566,7 @@ exports.globalfunctions = {
     },
 	ds_priority_delete_max: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4095,6 +4574,7 @@ exports.globalfunctions = {
     },
 	ds_priority_delete_min: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4102,6 +4582,7 @@ exports.globalfunctions = {
     },
 	ds_priority_delete_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' }
@@ -4110,6 +4591,7 @@ exports.globalfunctions = {
     },
 	ds_priority_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4117,6 +4599,7 @@ exports.globalfunctions = {
     },
 	ds_priority_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4124,6 +4607,7 @@ exports.globalfunctions = {
     },
 	ds_priority_find_max: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4131,6 +4615,7 @@ exports.globalfunctions = {
     },
 	ds_priority_find_min: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4138,6 +4623,7 @@ exports.globalfunctions = {
     },
 	ds_priority_find_priority: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' }
@@ -4146,6 +4632,7 @@ exports.globalfunctions = {
     },
 	ds_priority_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'str', documentation: '' },
@@ -4155,6 +4642,7 @@ exports.globalfunctions = {
     },
 	ds_priority_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4162,6 +4650,7 @@ exports.globalfunctions = {
     },
 	ds_priority_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4169,6 +4658,7 @@ exports.globalfunctions = {
     },
 	ds_queue_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4176,6 +4666,7 @@ exports.globalfunctions = {
     },
 	ds_queue_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' }
@@ -4187,6 +4678,7 @@ exports.globalfunctions = {
     },
 	ds_queue_dequeue: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4194,6 +4686,7 @@ exports.globalfunctions = {
     },
 	ds_queue_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4201,6 +4694,7 @@ exports.globalfunctions = {
     },
 	ds_queue_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4208,6 +4702,7 @@ exports.globalfunctions = {
     },
 	ds_queue_enqueue: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' },
@@ -4217,6 +4712,7 @@ exports.globalfunctions = {
     },
 	ds_queue_head: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4224,6 +4720,7 @@ exports.globalfunctions = {
     },
 	ds_queue_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'str', documentation: '' },
@@ -4233,6 +4730,7 @@ exports.globalfunctions = {
     },
 	ds_queue_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4240,6 +4738,7 @@ exports.globalfunctions = {
     },
 	ds_queue_tail: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4247,6 +4746,7 @@ exports.globalfunctions = {
     },
 	ds_queue_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4254,6 +4754,7 @@ exports.globalfunctions = {
     },
 	ds_set_precision: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'prec', documentation: '' }
         ],
@@ -4261,6 +4762,7 @@ exports.globalfunctions = {
     },
 	ds_stack_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4268,6 +4770,7 @@ exports.globalfunctions = {
     },
 	ds_stack_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'source', documentation: '' }
@@ -4279,6 +4782,7 @@ exports.globalfunctions = {
     },
 	ds_stack_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4286,6 +4790,7 @@ exports.globalfunctions = {
     },
 	ds_stack_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4293,6 +4798,7 @@ exports.globalfunctions = {
     },
 	ds_stack_pop: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4300,6 +4806,7 @@ exports.globalfunctions = {
     },
 	ds_stack_push: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'value', documentation: '' },
@@ -4309,6 +4816,7 @@ exports.globalfunctions = {
     },
 	ds_stack_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'str', documentation: '' },
@@ -4318,6 +4826,7 @@ exports.globalfunctions = {
     },
 	ds_stack_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4325,6 +4834,7 @@ exports.globalfunctions = {
     },
 	ds_stack_top: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4332,6 +4842,7 @@ exports.globalfunctions = {
     },
 	ds_stack_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -4339,16 +4850,19 @@ exports.globalfunctions = {
     },
 	dtan: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'degree_angle', documentation: '' }
         ],
         signature: '(degree_angle)'
     },
 	effect_clear: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	effect_create_above: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -4360,6 +4874,7 @@ exports.globalfunctions = {
     },
 	effect_create_below: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -4371,16 +4886,19 @@ exports.globalfunctions = {
     },
 	environment_get_variable: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'name', documentation: '' }
         ],
         signature: '(name)'
     },
 	event_inherited: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	event_perform: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'numb', documentation: '' }
@@ -4389,6 +4907,7 @@ exports.globalfunctions = {
     },
 	event_perform_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' },
             { label: 'type', documentation: '' },
@@ -4398,6 +4917,7 @@ exports.globalfunctions = {
     },
 	event_user: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'numb', documentation: '' }
         ],
@@ -4405,6 +4925,7 @@ exports.globalfunctions = {
     },
 	exp: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -4412,6 +4933,7 @@ exports.globalfunctions = {
     },
 	external_call: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'arg1', documentation: '' },
@@ -4422,6 +4944,7 @@ exports.globalfunctions = {
     },
 	external_define: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dll', documentation: '' },
             { label: 'name', documentation: '' },
@@ -4436,16 +4959,19 @@ exports.globalfunctions = {
     },
 	external_free: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dllname', documentation: '' }
         ],
         signature: '(dllname)'
     },
 	facebook_accesstoken: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	facebook_check_permission: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'permission', documentation: '' }
         ],
@@ -4453,6 +4979,7 @@ exports.globalfunctions = {
     },
 	facebook_dialog: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'graph_path', documentation: '' },
             { label: 'ds_map_params', documentation: '' },
@@ -4462,6 +4989,7 @@ exports.globalfunctions = {
     },
 	facebook_graph_request: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'graph_path', documentation: '' },
             { label: 'httpMethod', documentation: '' },
@@ -4471,10 +4999,12 @@ exports.globalfunctions = {
         signature: '(graph_path, httpMethod, ds_map_params, ds_map_response)'
     },
 	facebook_init: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	facebook_launch_offerwall: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'product_url', documentation: '' }
         ],
@@ -4482,6 +5012,7 @@ exports.globalfunctions = {
     },
 	facebook_login: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_list_of_permissions', documentation: '' },
             { label: 'ios_login_type', documentation: '' }
@@ -4489,10 +5020,12 @@ exports.globalfunctions = {
         signature: '(ds_list_of_permissions, ios_login_type)'
     },
 	facebook_logout: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	facebook_post_message: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'title', documentation: '' },
             { label: 'caption', documentation: '' },
@@ -4506,6 +5039,7 @@ exports.globalfunctions = {
     },
 	facebook_request_publish_permissions: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_list_permissions', documentation: '' }
         ],
@@ -4513,6 +5047,7 @@ exports.globalfunctions = {
     },
 	facebook_request_read_permissions: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_list_permissions', documentation: '' }
         ],
@@ -4520,6 +5055,7 @@ exports.globalfunctions = {
     },
 	facebook_send_invite: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'title', documentation: '' },
             { label: 'message', documentation: '' },
@@ -4530,13 +5066,16 @@ exports.globalfunctions = {
         signature: '(title, message, picture_url, redirect_url, ds_map_response)'
     },
 	facebook_status: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	facebook_user_id: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	filename_change_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'newext', documentation: '' }
@@ -4545,6 +5084,7 @@ exports.globalfunctions = {
     },
 	filename_dir: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4552,6 +5092,7 @@ exports.globalfunctions = {
     },
 	filename_drive: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4559,6 +5100,7 @@ exports.globalfunctions = {
     },
 	filename_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4566,6 +5108,7 @@ exports.globalfunctions = {
     },
 	filename_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4573,6 +5116,7 @@ exports.globalfunctions = {
     },
 	filename_path: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4580,6 +5124,7 @@ exports.globalfunctions = {
     },
 	file_attributes: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'attr', documentation: '' }
@@ -4588,6 +5133,7 @@ exports.globalfunctions = {
     },
 	file_bin_close: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' }
         ],
@@ -4595,6 +5141,7 @@ exports.globalfunctions = {
     },
 	file_bin_open: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'mode', documentation: '' }
@@ -4603,6 +5150,7 @@ exports.globalfunctions = {
     },
 	file_bin_position: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' }
         ],
@@ -4610,6 +5158,7 @@ exports.globalfunctions = {
     },
 	file_bin_read_byte: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' }
         ],
@@ -4617,6 +5166,7 @@ exports.globalfunctions = {
     },
 	file_bin_rewrite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' }
         ],
@@ -4624,6 +5174,7 @@ exports.globalfunctions = {
     },
 	file_bin_seek: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -4632,6 +5183,7 @@ exports.globalfunctions = {
     },
 	file_bin_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' }
         ],
@@ -4639,6 +5191,7 @@ exports.globalfunctions = {
     },
 	file_bin_write_byte: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'binfile', documentation: '' },
             { label: 'byte', documentation: '' }
@@ -4647,6 +5200,7 @@ exports.globalfunctions = {
     },
 	file_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'newname', documentation: '' }
@@ -4655,6 +5209,7 @@ exports.globalfunctions = {
     },
 	file_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4662,16 +5217,19 @@ exports.globalfunctions = {
     },
 	file_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
         signature: '(fname)'
     },
 	file_find_close: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	file_find_first: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'mask', documentation: '' },
             { label: 'attr', documentation: '' }
@@ -4679,10 +5237,12 @@ exports.globalfunctions = {
         signature: '(mask, attr)'
     },
 	file_find_next: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	file_rename: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'oldname', documentation: '' },
             { label: 'newname', documentation: '' }
@@ -4691,6 +5251,7 @@ exports.globalfunctions = {
     },
 	file_text_close: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4698,6 +5259,7 @@ exports.globalfunctions = {
     },
 	file_text_eof: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4705,6 +5267,7 @@ exports.globalfunctions = {
     },
 	file_text_eoln: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4712,6 +5275,7 @@ exports.globalfunctions = {
     },
 	file_text_open_append: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4719,6 +5283,7 @@ exports.globalfunctions = {
     },
 	file_text_open_from_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'content', documentation: '' }
         ],
@@ -4726,6 +5291,7 @@ exports.globalfunctions = {
     },
 	file_text_open_read: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4733,6 +5299,7 @@ exports.globalfunctions = {
     },
 	file_text_open_write: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -4740,6 +5307,7 @@ exports.globalfunctions = {
     },
 	file_text_readln: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4747,6 +5315,7 @@ exports.globalfunctions = {
     },
 	file_text_read_real: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4754,6 +5323,7 @@ exports.globalfunctions = {
     },
 	file_text_read_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4761,6 +5331,7 @@ exports.globalfunctions = {
     },
 	file_text_writeln: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' }
         ],
@@ -4768,6 +5339,7 @@ exports.globalfunctions = {
     },
 	file_text_write_real: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' },
             { label: 'val', documentation: '' }
@@ -4776,6 +5348,7 @@ exports.globalfunctions = {
     },
 	file_text_write_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'file', documentation: '' },
             { label: 'str', documentation: '' }
@@ -4784,6 +5357,7 @@ exports.globalfunctions = {
     },
 	floor: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -4791,6 +5365,7 @@ exports.globalfunctions = {
     },
 	font_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'size', documentation: '' },
@@ -4803,6 +5378,7 @@ exports.globalfunctions = {
     },
 	font_add_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'spr', documentation: '' },
             { label: 'first', documentation: '' },
@@ -4813,6 +5389,7 @@ exports.globalfunctions = {
     },
 	font_add_sprite_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'spr', documentation: '' },
             { label: 'mapstring', documentation: '' },
@@ -4823,6 +5400,7 @@ exports.globalfunctions = {
     },
 	font_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4830,6 +5408,7 @@ exports.globalfunctions = {
     },
 	font_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4837,6 +5416,7 @@ exports.globalfunctions = {
     },
 	font_get_bold: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4844,6 +5424,7 @@ exports.globalfunctions = {
     },
 	font_get_first: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4851,6 +5432,7 @@ exports.globalfunctions = {
     },
 	font_get_fontname: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4858,6 +5440,7 @@ exports.globalfunctions = {
     },
 	font_get_italic: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4865,6 +5448,7 @@ exports.globalfunctions = {
     },
 	font_get_last: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4872,6 +5456,7 @@ exports.globalfunctions = {
     },
 	font_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4879,6 +5464,7 @@ exports.globalfunctions = {
     },
 	font_get_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4886,6 +5472,7 @@ exports.globalfunctions = {
     },
 	font_get_texture: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4893,6 +5480,7 @@ exports.globalfunctions = {
     },
 	font_get_uvs: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -4900,6 +5488,7 @@ exports.globalfunctions = {
     },
 	font_replace: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'name', documentation: '' },
@@ -4913,6 +5502,7 @@ exports.globalfunctions = {
     },
 	font_replace_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'spr', documentation: '' },
@@ -4924,6 +5514,7 @@ exports.globalfunctions = {
     },
 	font_replace_sprite_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'font', documentation: '' },
             { label: 'spr', documentation: '' },
@@ -4935,6 +5526,7 @@ exports.globalfunctions = {
     },
 	font_set_cache_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'font', documentation: '' },
             { label: 'max', documentation: '' }
@@ -4943,6 +5535,7 @@ exports.globalfunctions = {
     },
 	frac: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -4950,6 +5543,7 @@ exports.globalfunctions = {
     },
 	gamepad_axis_count: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'axis', documentation: '' }
         ],
@@ -4957,6 +5551,7 @@ exports.globalfunctions = {
     },
 	gamepad_axis_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'axisIndex', documentation: '' }
@@ -4965,6 +5560,7 @@ exports.globalfunctions = {
     },
 	gamepad_button_check: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'buttonIndex', documentation: '' }
@@ -4973,6 +5569,7 @@ exports.globalfunctions = {
     },
 	gamepad_button_check_pressed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'buttonIndex', documentation: '' }
@@ -4981,6 +5578,7 @@ exports.globalfunctions = {
     },
 	gamepad_button_check_released: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'buttonIndex', documentation: '' }
@@ -4989,6 +5587,7 @@ exports.globalfunctions = {
     },
 	gamepad_button_count: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -4996,6 +5595,7 @@ exports.globalfunctions = {
     },
 	gamepad_button_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'buttonIndex', documentation: '' }
@@ -5004,6 +5604,7 @@ exports.globalfunctions = {
     },
 	gamepad_get_axis_deadzone: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -5011,6 +5612,7 @@ exports.globalfunctions = {
     },
 	gamepad_get_button_threshold: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' }
         ],
@@ -5018,26 +5620,31 @@ exports.globalfunctions = {
     },
 	gamepad_get_description: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' }
         ],
         signature: '(device)'
     },
 	gamepad_get_device_count: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	gamepad_is_connected: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' }
         ],
         signature: '(device)'
     },
 	gamepad_is_supported: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	gamepad_set_axis_deadzone: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'deadzone', documentation: '' }
@@ -5046,6 +5653,7 @@ exports.globalfunctions = {
     },
 	gamepad_set_button_threshold: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'threshold', documentation: '' }
@@ -5054,6 +5662,7 @@ exports.globalfunctions = {
     },
 	gamepad_set_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'color', documentation: '' }
@@ -5062,6 +5671,7 @@ exports.globalfunctions = {
     },
 	gamepad_set_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'colour', documentation: '' }
@@ -5070,6 +5680,7 @@ exports.globalfunctions = {
     },
 	gamepad_set_vibration: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'device', documentation: '' },
             { label: 'leftMotorSpeed', documentation: '' },
@@ -5078,10 +5689,12 @@ exports.globalfunctions = {
         signature: '(device, leftMotorSpeed, rightMotorSpeed)'
     },
 	game_end: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	game_load: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -5089,16 +5702,19 @@ exports.globalfunctions = {
     },
 	game_load_buffer: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
         signature: '(buffer)'
     },
 	game_restart: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	game_save: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -5106,6 +5722,7 @@ exports.globalfunctions = {
     },
 	game_save_buffer: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'buffer', documentation: '' }
         ],
@@ -5113,6 +5730,7 @@ exports.globalfunctions = {
     },
 	get_integer: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'def', documentation: '' }
@@ -5121,6 +5739,7 @@ exports.globalfunctions = {
     },
 	get_integer_async: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'def', documentation: '' }
@@ -5129,6 +5748,7 @@ exports.globalfunctions = {
     },
 	get_login_async: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'username', documentation: '' },
             { label: 'password', documentation: '' }
@@ -5137,6 +5757,7 @@ exports.globalfunctions = {
     },
 	get_open_filename: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filter', documentation: '' },
             { label: 'fname', documentation: '' }
@@ -5145,6 +5766,7 @@ exports.globalfunctions = {
     },
 	get_open_filename_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filter', documentation: '' },
             { label: 'fname', documentation: '' },
@@ -5155,6 +5777,7 @@ exports.globalfunctions = {
     },
 	get_save_filename: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filter', documentation: '' },
             { label: 'fname', documentation: '' }
@@ -5163,6 +5786,7 @@ exports.globalfunctions = {
     },
 	get_save_filename_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'filter', documentation: '' },
             { label: 'fname', documentation: '' },
@@ -5173,6 +5797,7 @@ exports.globalfunctions = {
     },
 	get_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'def', documentation: '' }
@@ -5181,6 +5806,7 @@ exports.globalfunctions = {
     },
 	get_string_async: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'def', documentation: '' }
@@ -5188,10 +5814,12 @@ exports.globalfunctions = {
         signature: '(str, def)'
     },
 	get_timer: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	gml_pragma: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'setting', documentation: '' },
             { label: '....', documentation: '' }
@@ -5200,6 +5828,7 @@ exports.globalfunctions = {
     },
 	gml_release_mode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -5207,6 +5836,7 @@ exports.globalfunctions = {
     },
 	highscore_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'numb', documentation: '' }
@@ -5214,10 +5844,12 @@ exports.globalfunctions = {
         signature: '(str, numb)'
     },
 	highscore_clear: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	highscore_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'place', documentation: '' }
         ],
@@ -5225,6 +5857,7 @@ exports.globalfunctions = {
     },
 	highscore_value: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'place', documentation: '' }
         ],
@@ -5232,6 +5865,7 @@ exports.globalfunctions = {
     },
 	http_get: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' }
         ],
@@ -5239,6 +5873,7 @@ exports.globalfunctions = {
     },
 	http_get_file: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'dest', documentation: '' }
@@ -5247,6 +5882,7 @@ exports.globalfunctions = {
     },
 	http_post_string: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'string', documentation: '' }
@@ -5255,6 +5891,7 @@ exports.globalfunctions = {
     },
 	http_request: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'method', documentation: '' },
@@ -5265,6 +5902,7 @@ exports.globalfunctions = {
     },
 	iap_acquire: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'product_id', documentation: '' },
             { label: 'payload', documentation: '' }
@@ -5273,6 +5911,7 @@ exports.globalfunctions = {
     },
 	iap_activate: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_list', documentation: '' }
         ],
@@ -5280,6 +5919,7 @@ exports.globalfunctions = {
     },
 	iap_consume: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'product_id', documentation: '' }
         ],
@@ -5287,6 +5927,7 @@ exports.globalfunctions = {
     },
 	iap_enumerate_products: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_list', documentation: '' }
         ],
@@ -5294,6 +5935,7 @@ exports.globalfunctions = {
     },
 	iap_is_purchased: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'product_id', documentation: '' }
         ],
@@ -5301,6 +5943,7 @@ exports.globalfunctions = {
     },
 	iap_product_details: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'product_id', documentation: '' },
             { label: 'ds_map', documentation: '' }
@@ -5309,6 +5952,7 @@ exports.globalfunctions = {
     },
 	iap_purchase_details: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'product_id', documentation: '' },
             { label: 'ds_map', documentation: '' }
@@ -5316,16 +5960,20 @@ exports.globalfunctions = {
         signature: '(product_id, ds_map)'
     },
 	iap_restore_all: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	iap_status: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	ini_close: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	ini_key_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' },
             { label: 'key', documentation: '' }
@@ -5334,6 +5982,7 @@ exports.globalfunctions = {
     },
 	ini_key_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' },
             { label: 'key', documentation: '' }
@@ -5342,6 +5991,7 @@ exports.globalfunctions = {
     },
 	ini_open: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -5349,6 +5999,7 @@ exports.globalfunctions = {
     },
 	ini_open_from_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'content', documentation: '' }
         ],
@@ -5356,6 +6007,7 @@ exports.globalfunctions = {
     },
 	ini_read_real: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' },
             { label: 'key', documentation: '' },
@@ -5365,6 +6017,7 @@ exports.globalfunctions = {
     },
 	ini_read_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' },
             { label: 'key', documentation: '' },
@@ -5374,6 +6027,7 @@ exports.globalfunctions = {
     },
 	ini_section_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' }
         ],
@@ -5381,6 +6035,7 @@ exports.globalfunctions = {
     },
 	ini_section_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' }
         ],
@@ -5388,6 +6043,7 @@ exports.globalfunctions = {
     },
 	ini_write_real: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' },
             { label: 'key', documentation: '' },
@@ -5397,6 +6053,7 @@ exports.globalfunctions = {
     },
 	ini_write_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'section', documentation: '' },
             { label: 'key', documentation: '' },
@@ -5405,10 +6062,13 @@ exports.globalfunctions = {
         signature: '(section, key, str)'
     },
 	instance_activate_all: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all,
+        available: datasimple.all
     },
 	instance_activate_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' }
         ],
@@ -5416,6 +6076,7 @@ exports.globalfunctions = {
     },
 	instance_activate_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'left', documentation: '' },
             { label: 'top', documentation: '' },
@@ -5427,6 +6088,7 @@ exports.globalfunctions = {
     },
 	instance_change: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' },
             { label: 'performevents', documentation: '' }
@@ -5435,6 +6097,7 @@ exports.globalfunctions = {
     },
 	instance_copy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'performevents', documentation: '' }
         ],
@@ -5442,6 +6105,7 @@ exports.globalfunctions = {
     },
 	instance_create: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -5451,6 +6115,7 @@ exports.globalfunctions = {
     },
 	instance_deactivate_all: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'notme', documentation: '' }
         ],
@@ -5458,6 +6123,7 @@ exports.globalfunctions = {
     },
 	instance_deactivate_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' }
         ],
@@ -5465,6 +6131,7 @@ exports.globalfunctions = {
     },
 	instance_deactivate_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'left', documentation: '' },
             { label: 'top', documentation: '' },
@@ -5477,6 +6144,7 @@ exports.globalfunctions = {
     },
 	instance_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'execute_event_flag', documentation: '' }
@@ -5485,6 +6153,7 @@ exports.globalfunctions = {
     },
 	instance_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' }
         ],
@@ -5492,6 +6161,7 @@ exports.globalfunctions = {
     },
 	instance_find: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' },
             { label: 'n', documentation: '' }
@@ -5500,6 +6170,7 @@ exports.globalfunctions = {
     },
 	instance_furthest: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -5509,6 +6180,7 @@ exports.globalfunctions = {
     },
 	instance_nearest: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -5518,6 +6190,7 @@ exports.globalfunctions = {
     },
 	instance_number: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: '' }
         ],
@@ -5525,6 +6198,7 @@ exports.globalfunctions = {
     },
 	instance_place: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -5534,6 +6208,7 @@ exports.globalfunctions = {
     },
 	instance_position: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -5543,16 +6218,20 @@ exports.globalfunctions = {
     },
 	int64: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
         signature: '(val)'
     },
 	io_clear: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all,
+        available: datasimple.all
     },
 	irandom: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -5560,6 +6239,7 @@ exports.globalfunctions = {
     },
 	irandom_old: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -5567,6 +6247,7 @@ exports.globalfunctions = {
     },
 	irandom_range: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' }
@@ -5575,6 +6256,7 @@ exports.globalfunctions = {
     },
 	irandom_range_old: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' }
@@ -5583,6 +6265,7 @@ exports.globalfunctions = {
     },
 	is_array: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5590,6 +6273,7 @@ exports.globalfunctions = {
     },
 	is_bool: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5597,6 +6281,7 @@ exports.globalfunctions = {
     },
 	is_int32: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5604,6 +6289,7 @@ exports.globalfunctions = {
     },
 	is_int64: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5611,6 +6297,7 @@ exports.globalfunctions = {
     },
 	is_matrix: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5618,6 +6305,7 @@ exports.globalfunctions = {
     },
 	is_ptr: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5625,6 +6313,7 @@ exports.globalfunctions = {
     },
 	is_real: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5632,6 +6321,7 @@ exports.globalfunctions = {
     },
 	is_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5639,6 +6329,7 @@ exports.globalfunctions = {
     },
 	is_undefined: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5646,6 +6337,7 @@ exports.globalfunctions = {
     },
 	is_vec3: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5653,6 +6345,7 @@ exports.globalfunctions = {
     },
 	is_vec4: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -5759,6 +6452,7 @@ exports.globalfunctions = {
     },
 	json_decode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -5766,6 +6460,7 @@ exports.globalfunctions = {
     },
 	json_encode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_map', documentation: '' }
         ],
@@ -5773,6 +6468,7 @@ exports.globalfunctions = {
     },
 	keyboard_check: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5780,6 +6476,7 @@ exports.globalfunctions = {
     },
 	keyboard_check_direct: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5787,6 +6484,7 @@ exports.globalfunctions = {
     },
 	keyboard_check_pressed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5794,6 +6492,7 @@ exports.globalfunctions = {
     },
 	keyboard_check_released: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5801,6 +6500,7 @@ exports.globalfunctions = {
     },
 	keyboard_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5808,16 +6508,19 @@ exports.globalfunctions = {
     },
 	keyboard_get_map: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
         signature: '(key)'
     },
 	keyboard_get_numlock: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	keyboard_key_press: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5825,6 +6528,7 @@ exports.globalfunctions = {
     },
 	keyboard_key_release: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key', documentation: '' }
         ],
@@ -5832,6 +6536,7 @@ exports.globalfunctions = {
     },
 	keyboard_set_map: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'key1', documentation: '' },
             { label: 'key2', documentation: '' }
@@ -5840,16 +6545,19 @@ exports.globalfunctions = {
     },
 	keyboard_set_numlock: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'bool', documentation: '' }
         ],
         signature: '(bool)'
     },
 	keyboard_unset_map: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	lengthdir_x: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'len', documentation: '' },
             { label: 'dir', documentation: '' }
@@ -5858,6 +6566,7 @@ exports.globalfunctions = {
     },
 	lengthdir_y: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'len', documentation: '' },
             { label: 'dir', documentation: '' }
@@ -5866,6 +6575,7 @@ exports.globalfunctions = {
     },
 	lerp: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val1', documentation: '' },
             { label: 'val2', documentation: '' },
@@ -5875,6 +6585,7 @@ exports.globalfunctions = {
     },
 	ln: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -5882,6 +6593,7 @@ exports.globalfunctions = {
     },
 	log10: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -5889,6 +6601,7 @@ exports.globalfunctions = {
     },
 	log2: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -5896,6 +6609,7 @@ exports.globalfunctions = {
     },
 	logn: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'n', documentation: '' },
             { label: 'x', documentation: '' }
@@ -5904,6 +6618,7 @@ exports.globalfunctions = {
     },
 	make_color_hsv: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'hue', documentation: '' },
             { label: 'saturation', documentation: '' },
@@ -5913,6 +6628,7 @@ exports.globalfunctions = {
     },
 	make_color_rgb: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'red', documentation: '' },
             { label: 'green', documentation: '' },
@@ -5922,6 +6638,7 @@ exports.globalfunctions = {
     },
 	make_colour_hsv: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'hue', documentation: '' },
             { label: 'saturation', documentation: '' },
@@ -5931,6 +6648,7 @@ exports.globalfunctions = {
     },
 	make_colour_rgb: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'red', documentation: '' },
             { label: 'green', documentation: '' },
@@ -5939,10 +6657,12 @@ exports.globalfunctions = {
         signature: '(red, green, blue)'
     },
 	math_get_epsilon: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	math_set_epsilon: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'new_epsilon', documentation: '' }
         ],
@@ -5950,6 +6670,7 @@ exports.globalfunctions = {
     },
 	matrix_build: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -5965,6 +6686,7 @@ exports.globalfunctions = {
     },
 	matrix_get: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' }
         ],
@@ -5972,6 +6694,7 @@ exports.globalfunctions = {
     },
 	matrix_multiply: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'matrix', documentation: '' },
             { label: 'matrix', documentation: '' }
@@ -5980,6 +6703,7 @@ exports.globalfunctions = {
     },
 	matrix_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'matrix', documentation: '' }
@@ -5988,6 +6712,7 @@ exports.globalfunctions = {
     },
 	max: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' },
@@ -5998,6 +6723,7 @@ exports.globalfunctions = {
     },
 	md5_file: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -6005,6 +6731,7 @@ exports.globalfunctions = {
     },
 	md5_string_unicode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -6012,6 +6739,7 @@ exports.globalfunctions = {
     },
 	md5_string_utf8: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -6019,6 +6747,7 @@ exports.globalfunctions = {
     },
 	mean: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' },
@@ -6029,6 +6758,7 @@ exports.globalfunctions = {
     },
 	median: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' },
@@ -6039,6 +6769,7 @@ exports.globalfunctions = {
     },
 	merge_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'col1', documentation: '' },
             { label: 'col2', documentation: '' },
@@ -6048,6 +6779,7 @@ exports.globalfunctions = {
     },
 	min: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' },
@@ -6058,6 +6790,7 @@ exports.globalfunctions = {
     },
 	motion_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dir', documentation: '' },
             { label: 'speed', documentation: '' }
@@ -6066,6 +6799,7 @@ exports.globalfunctions = {
     },
 	motion_set: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dir', documentation: '' },
             { label: 'speed', documentation: '' }
@@ -6074,6 +6808,7 @@ exports.globalfunctions = {
     },
 	mouse_check_button: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'button', documentation: '' }
         ],
@@ -6081,6 +6816,7 @@ exports.globalfunctions = {
     },
 	mouse_check_button_pressed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'button', documentation: '' }
         ],
@@ -6088,6 +6824,7 @@ exports.globalfunctions = {
     },
 	mouse_check_button_released: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'button', documentation: '' }
         ],
@@ -6095,19 +6832,23 @@ exports.globalfunctions = {
     },
 	mouse_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'button', documentation: '' }
         ],
         signature: '(button)'
     },
 	mouse_wheel_down: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	mouse_wheel_up: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	move_bounce_all: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'advanced', documentation: '' }
         ],
@@ -6115,6 +6856,7 @@ exports.globalfunctions = {
     },
 	move_bounce_solid: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'advanced', documentation: '' }
         ],
@@ -6122,6 +6864,7 @@ exports.globalfunctions = {
     },
 	move_contact_all: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dir', documentation: '' },
             { label: 'maxdist', documentation: '' }
@@ -6130,6 +6873,7 @@ exports.globalfunctions = {
     },
 	move_contact_solid: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dir', documentation: '' },
             { label: 'maxdist', documentation: '' }
@@ -6138,6 +6882,7 @@ exports.globalfunctions = {
     },
 	move_outside_all: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dir', documentation: '' },
             { label: 'maxdist', documentation: '' }
@@ -6146,6 +6891,7 @@ exports.globalfunctions = {
     },
 	move_outside_solid: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'dir', documentation: '' },
             { label: 'maxdist', documentation: '' }
@@ -6154,6 +6900,7 @@ exports.globalfunctions = {
     },
 	move_random: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'hsnap', documentation: '' },
             { label: 'vsnap', documentation: '' }
@@ -6162,6 +6909,7 @@ exports.globalfunctions = {
     },
 	move_snap: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'hsnap', documentation: '' },
             { label: 'vsnap', documentation: '' }
@@ -6170,6 +6918,7 @@ exports.globalfunctions = {
     },
 	move_towards_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -6179,6 +6928,7 @@ exports.globalfunctions = {
     },
 	move_wrap: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'hor', documentation: '' },
             { label: 'vert', documentation: '' },
@@ -6188,6 +6938,7 @@ exports.globalfunctions = {
     },
 	mp_grid_add_cell: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'h', documentation: '' },
@@ -6197,6 +6948,7 @@ exports.globalfunctions = {
     },
 	mp_grid_add_instances: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'obj', documentation: '' },
@@ -6206,6 +6958,7 @@ exports.globalfunctions = {
     },
 	mp_grid_add_rectangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'left', documentation: '' },
@@ -6217,6 +6970,7 @@ exports.globalfunctions = {
     },
 	mp_grid_clear_all: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -6224,6 +6978,7 @@ exports.globalfunctions = {
     },
 	mp_grid_clear_cell: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'h', documentation: '' },
@@ -6233,6 +6988,7 @@ exports.globalfunctions = {
     },
 	mp_grid_clear_rectangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'left', documentation: '' },
@@ -6244,6 +7000,7 @@ exports.globalfunctions = {
     },
 	mp_grid_create: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'left', documentation: '' },
             { label: 'top', documentation: '' },
@@ -6256,6 +7013,7 @@ exports.globalfunctions = {
     },
 	mp_grid_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -6263,6 +7021,7 @@ exports.globalfunctions = {
     },
 	mp_grid_draw: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -6270,6 +7029,7 @@ exports.globalfunctions = {
     },
 	mp_grid_get_cell: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'h', documentation: '' },
@@ -6279,6 +7039,7 @@ exports.globalfunctions = {
     },
 	mp_grid_path: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'path', documentation: '' },
@@ -6292,6 +7053,7 @@ exports.globalfunctions = {
     },
 	mp_grid_to_ds_grid: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'src', documentation: '' },
             { label: 'dest', documentation: '' }
@@ -6300,6 +7062,7 @@ exports.globalfunctions = {
     },
 	mp_linear_path: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'path', documentation: '' },
             { label: 'xg', documentation: '' },
@@ -6311,6 +7074,7 @@ exports.globalfunctions = {
     },
 	mp_linear_path_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'path', documentation: '' },
             { label: 'xg', documentation: '' },
@@ -6322,6 +7086,7 @@ exports.globalfunctions = {
     },
 	mp_linear_step: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -6332,6 +7097,7 @@ exports.globalfunctions = {
     },
 	mp_linear_step_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -6342,6 +7108,7 @@ exports.globalfunctions = {
     },
 	mp_potential_path: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'path', documentation: '' },
             { label: 'xg', documentation: '' },
@@ -6354,6 +7121,7 @@ exports.globalfunctions = {
     },
 	mp_potential_path_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'path', documentation: '' },
             { label: 'xg', documentation: '' },
@@ -6366,6 +7134,7 @@ exports.globalfunctions = {
     },
 	mp_potential_settings: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'maxrot', documentation: '' },
             { label: 'rotstep', documentation: '' },
@@ -6376,6 +7145,7 @@ exports.globalfunctions = {
     },
 	mp_potential_step: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -6386,6 +7156,7 @@ exports.globalfunctions = {
     },
 	mp_potential_step_object: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -6396,6 +7167,7 @@ exports.globalfunctions = {
     },
 	network_connect: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'url', documentation: '' },
@@ -6405,6 +7177,7 @@ exports.globalfunctions = {
     },
 	network_connect_raw: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'url', documentation: '' },
@@ -6414,6 +7187,7 @@ exports.globalfunctions = {
     },
 	network_create_server: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'port', documentation: '' },
@@ -6423,6 +7197,7 @@ exports.globalfunctions = {
     },
 	network_create_server_raw: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'port', documentation: '' },
@@ -6432,6 +7207,7 @@ exports.globalfunctions = {
     },
 	network_create_socket: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' }
         ],
@@ -6439,6 +7215,7 @@ exports.globalfunctions = {
     },
 	network_create_socket_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'port', documentation: '' }
@@ -6447,6 +7224,7 @@ exports.globalfunctions = {
     },
 	network_destroy: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' }
         ],
@@ -6454,6 +7232,7 @@ exports.globalfunctions = {
     },
 	network_resolve: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' }
         ],
@@ -6461,6 +7240,7 @@ exports.globalfunctions = {
     },
 	network_send_broadcast: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'port', documentation: '' },
@@ -6471,6 +7251,7 @@ exports.globalfunctions = {
     },
 	network_send_packet: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'bufferid', documentation: '' },
@@ -6480,6 +7261,7 @@ exports.globalfunctions = {
     },
 	network_send_raw: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'bufferid', documentation: '' },
@@ -6489,6 +7271,7 @@ exports.globalfunctions = {
     },
 	network_send_udp: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'URL', documentation: '' },
@@ -6500,6 +7283,7 @@ exports.globalfunctions = {
     },
 	network_send_udp_raw: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'URL', documentation: '' },
@@ -6511,6 +7295,7 @@ exports.globalfunctions = {
     },
 	network_set_config: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'parameter', documentation: '' },
             { label: 'value', documentation: '' }
@@ -6519,6 +7304,7 @@ exports.globalfunctions = {
     },
 	network_set_timeout: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'socket', documentation: '' },
             { label: 'read', documentation: '' },
@@ -6528,6 +7314,7 @@ exports.globalfunctions = {
     },
 	object_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6535,6 +7322,7 @@ exports.globalfunctions = {
     },
 	object_get_mask: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6542,6 +7330,7 @@ exports.globalfunctions = {
     },
 	object_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6549,6 +7338,7 @@ exports.globalfunctions = {
     },
 	object_get_parent: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6556,6 +7346,7 @@ exports.globalfunctions = {
     },
 	object_get_persistent: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6563,6 +7354,7 @@ exports.globalfunctions = {
     },
 	object_get_physics: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6570,6 +7362,7 @@ exports.globalfunctions = {
     },
 	object_get_solid: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6577,6 +7370,7 @@ exports.globalfunctions = {
     },
 	object_get_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6584,6 +7378,7 @@ exports.globalfunctions = {
     },
 	object_get_visible: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6591,6 +7386,7 @@ exports.globalfunctions = {
     },
 	object_is_ancestor: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind_child', documentation: '' },
             { label: 'ind_parent', documentation: '' }
@@ -6599,6 +7395,7 @@ exports.globalfunctions = {
     },
 	object_set_mask: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'spr', documentation: '' }
@@ -6607,6 +7404,7 @@ exports.globalfunctions = {
     },
 	object_set_parent: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'obj', documentation: '' }
@@ -6615,6 +7413,7 @@ exports.globalfunctions = {
     },
 	object_set_persistent: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'pers', documentation: '' }
@@ -6623,6 +7422,7 @@ exports.globalfunctions = {
     },
 	object_set_solid: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'soild', documentation: '' }
@@ -6631,6 +7431,7 @@ exports.globalfunctions = {
     },
 	object_set_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'spr', documentation: '' }
@@ -6639,6 +7440,7 @@ exports.globalfunctions = {
     },
 	object_set_visible: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'vis', documentation: '' }
@@ -6647,31 +7449,39 @@ exports.globalfunctions = {
     },
 	ord: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'char', documentation: '' }
         ],
         signature: '(char)'
     },
 	os_get_config: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	os_get_info: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	os_get_language: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	os_get_region: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	os_is_network_connected: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	os_is_paused: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	os_lock_orientation: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'flag', documentation: '' }
         ],
@@ -6679,16 +7489,19 @@ exports.globalfunctions = {
     },
 	os_powersave_enable: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
         signature: '(enable)'
     },
 	parameter_count: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	parameter_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'n', documentation: '' }
         ],
@@ -6696,6 +7509,7 @@ exports.globalfunctions = {
     },
 	part_emitter_burst: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -6706,6 +7520,7 @@ exports.globalfunctions = {
     },
 	part_emitter_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -6714,6 +7529,7 @@ exports.globalfunctions = {
     },
 	part_emitter_create: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' }
         ],
@@ -6721,6 +7537,7 @@ exports.globalfunctions = {
     },
 	part_emitter_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -6729,6 +7546,7 @@ exports.globalfunctions = {
     },
 	part_emitter_destroy_all: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' }
         ],
@@ -6736,6 +7554,7 @@ exports.globalfunctions = {
     },
 	part_emitter_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' }
@@ -6744,6 +7563,7 @@ exports.globalfunctions = {
     },
 	part_emitter_region: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -6758,6 +7578,7 @@ exports.globalfunctions = {
     },
 	part_emitter_stream: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ps', documentation: '' },
             { label: 'ind', documentation: '' },
@@ -6768,6 +7589,7 @@ exports.globalfunctions = {
     },
 	part_particles_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6775,6 +7597,7 @@ exports.globalfunctions = {
     },
 	part_particles_count: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6782,6 +7605,7 @@ exports.globalfunctions = {
     },
 	part_particles_create: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -6793,6 +7617,7 @@ exports.globalfunctions = {
     },
 	part_particles_create_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -6805,6 +7630,7 @@ exports.globalfunctions = {
     },
 	part_particles_create_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -6817,6 +7643,7 @@ exports.globalfunctions = {
     },
 	part_system_automatic_draw: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'draw', documentation: '' }
@@ -6825,6 +7652,7 @@ exports.globalfunctions = {
     },
 	part_system_automatic_update: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'automatic', documentation: '' }
@@ -6833,16 +7661,19 @@ exports.globalfunctions = {
     },
 	part_system_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	part_system_create: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	part_system_depth: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'depth', documentation: '' }
@@ -6851,6 +7682,7 @@ exports.globalfunctions = {
     },
 	part_system_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6858,6 +7690,7 @@ exports.globalfunctions = {
     },
 	part_system_drawit: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6865,6 +7698,7 @@ exports.globalfunctions = {
     },
 	part_system_draw_order: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'oldtonew', documentation: '' }
@@ -6873,6 +7707,7 @@ exports.globalfunctions = {
     },
 	part_system_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6880,6 +7715,7 @@ exports.globalfunctions = {
     },
 	part_system_position: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -6889,6 +7725,7 @@ exports.globalfunctions = {
     },
 	part_system_update: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6896,6 +7733,7 @@ exports.globalfunctions = {
     },
 	part_type_alpha1: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'alpha1', documentation: '' }
@@ -6904,6 +7742,7 @@ exports.globalfunctions = {
     },
 	part_type_alpha2: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'alpha1', documentation: '' },
@@ -6913,6 +7752,7 @@ exports.globalfunctions = {
     },
 	part_type_alpha3: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'alpha1', documentation: '' },
@@ -6923,6 +7763,7 @@ exports.globalfunctions = {
     },
 	part_type_blend: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'additive', documentation: '' }
@@ -6931,6 +7772,7 @@ exports.globalfunctions = {
     },
 	part_type_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -6938,6 +7780,7 @@ exports.globalfunctions = {
     },
 	part_type_color1: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'color1', documentation: '' }
@@ -6946,6 +7789,7 @@ exports.globalfunctions = {
     },
 	part_type_color2: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'color1', documentation: '' },
@@ -6955,6 +7799,7 @@ exports.globalfunctions = {
     },
 	part_type_color3: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'color1', documentation: '' },
@@ -6965,6 +7810,7 @@ exports.globalfunctions = {
     },
 	part_type_color_hsv: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'hmin', documentation: '' },
@@ -6978,6 +7824,7 @@ exports.globalfunctions = {
     },
 	part_type_color_mix: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'color1', documentation: '' },
@@ -6987,6 +7834,7 @@ exports.globalfunctions = {
     },
 	part_type_color_rgb: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'rmin', documentation: '' },
@@ -7000,6 +7848,7 @@ exports.globalfunctions = {
     },
 	part_type_colour1: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'colour1', documentation: '' }
@@ -7008,6 +7857,7 @@ exports.globalfunctions = {
     },
 	part_type_colour2: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'colour1', documentation: '' },
@@ -7017,6 +7867,7 @@ exports.globalfunctions = {
     },
 	part_type_colour3: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'colour1', documentation: '' },
@@ -7027,6 +7878,7 @@ exports.globalfunctions = {
     },
 	part_type_colour_hsv: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'hmin', documentation: '' },
@@ -7040,6 +7892,7 @@ exports.globalfunctions = {
     },
 	part_type_colour_mix: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'colour1', documentation: '' },
@@ -7049,6 +7902,7 @@ exports.globalfunctions = {
     },
 	part_type_colour_rgb: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'rmin', documentation: '' },
@@ -7061,10 +7915,12 @@ exports.globalfunctions = {
         signature: '(ind, rmin, rmax, gmin, gmax, bmin, bmax)'
     },
 	part_type_create: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	part_type_death: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'death_number', documentation: '' },
@@ -7074,6 +7930,7 @@ exports.globalfunctions = {
     },
 	part_type_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7081,6 +7938,7 @@ exports.globalfunctions = {
     },
 	part_type_direction: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'dir_min', documentation: '' },
@@ -7092,6 +7950,7 @@ exports.globalfunctions = {
     },
 	part_type_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7099,6 +7958,7 @@ exports.globalfunctions = {
     },
 	part_type_gravity: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'grav_amount', documentation: '' },
@@ -7108,6 +7968,7 @@ exports.globalfunctions = {
     },
 	part_type_life: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'life_min', documentation: '' },
@@ -7117,6 +7978,7 @@ exports.globalfunctions = {
     },
 	part_type_orientation: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'ang_min', documentation: '' },
@@ -7129,6 +7991,7 @@ exports.globalfunctions = {
     },
 	part_type_scale: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'xscale', documentation: '' },
@@ -7138,6 +8001,7 @@ exports.globalfunctions = {
     },
 	part_type_shape: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'shape', documentation: '' }
@@ -7146,6 +8010,7 @@ exports.globalfunctions = {
     },
 	part_type_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'size_min', documentation: '' },
@@ -7157,6 +8022,7 @@ exports.globalfunctions = {
     },
 	part_type_speed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'speed_min', documentation: '' },
@@ -7168,6 +8034,7 @@ exports.globalfunctions = {
     },
 	part_type_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'sprite', documentation: '' },
@@ -7179,6 +8046,7 @@ exports.globalfunctions = {
     },
 	part_type_step: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'step_number', documentation: '' },
@@ -7187,10 +8055,12 @@ exports.globalfunctions = {
         signature: '(ind, step_number, step_type)'
     },
 	path_add: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	path_add_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -7201,6 +8071,7 @@ exports.globalfunctions = {
     },
 	path_append: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'path', documentation: '' }
@@ -7209,6 +8080,7 @@ exports.globalfunctions = {
     },
 	path_assign: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -7219,6 +8091,7 @@ exports.globalfunctions = {
     },
 	path_change_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'n', documentation: '' },
@@ -7230,6 +8103,7 @@ exports.globalfunctions = {
     },
 	path_clear_points: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7237,6 +8111,7 @@ exports.globalfunctions = {
     },
 	path_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7244,6 +8119,7 @@ exports.globalfunctions = {
     },
 	path_delete_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'n', documentation: '' }
@@ -7252,16 +8128,19 @@ exports.globalfunctions = {
     },
 	path_duplicate: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	path_end: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	path_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7269,6 +8148,7 @@ exports.globalfunctions = {
     },
 	path_flip: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7276,6 +8156,7 @@ exports.globalfunctions = {
     },
 	path_get_closed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7283,6 +8164,7 @@ exports.globalfunctions = {
     },
 	path_get_kind: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7290,6 +8172,7 @@ exports.globalfunctions = {
     },
 	path_get_length: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7297,6 +8180,7 @@ exports.globalfunctions = {
     },
 	path_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7304,6 +8188,7 @@ exports.globalfunctions = {
     },
 	path_get_number: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7311,6 +8196,7 @@ exports.globalfunctions = {
     },
 	path_get_point_speed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'n', documentation: '' }
@@ -7319,6 +8205,7 @@ exports.globalfunctions = {
     },
 	path_get_point_x: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'n', documentation: '' }
@@ -7327,6 +8214,7 @@ exports.globalfunctions = {
     },
 	path_get_point_y: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'n', documentation: '' }
@@ -7335,6 +8223,7 @@ exports.globalfunctions = {
     },
 	path_get_precision: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7342,6 +8231,7 @@ exports.globalfunctions = {
     },
 	path_get_speed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -7350,6 +8240,7 @@ exports.globalfunctions = {
     },
 	path_get_time: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'speed', documentation: '' }
@@ -7358,6 +8249,7 @@ exports.globalfunctions = {
     },
 	path_get_x: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -7366,6 +8258,7 @@ exports.globalfunctions = {
     },
 	path_get_y: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'pos', documentation: '' }
@@ -7374,6 +8267,7 @@ exports.globalfunctions = {
     },
 	path_insert_point: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'n', documentation: '' },
@@ -7385,6 +8279,7 @@ exports.globalfunctions = {
     },
 	path_mirror: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7392,6 +8287,7 @@ exports.globalfunctions = {
     },
 	path_rescale: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'xscale', documentation: '' },
@@ -7401,6 +8297,7 @@ exports.globalfunctions = {
     },
 	path_reverse: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7408,6 +8305,7 @@ exports.globalfunctions = {
     },
 	path_rotate: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'angle', documentation: '' }
@@ -7416,6 +8314,7 @@ exports.globalfunctions = {
     },
 	path_set_closed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'closed', documentation: '' }
@@ -7424,6 +8323,7 @@ exports.globalfunctions = {
     },
 	path_set_kind: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'kind', documentation: '' }
@@ -7432,6 +8332,7 @@ exports.globalfunctions = {
     },
 	path_set_precision: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'prec', documentation: '' }
@@ -7440,6 +8341,7 @@ exports.globalfunctions = {
     },
 	path_shift: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'xshift', documentation: '' },
@@ -7449,6 +8351,7 @@ exports.globalfunctions = {
     },
 	path_start: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'path', documentation: '' },
             { label: 'speed', documentation: '' },
@@ -7459,6 +8362,7 @@ exports.globalfunctions = {
     },
 	physics_apply_angular_impulse: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'impulse', documentation: '' }
         ],
@@ -7466,6 +8370,7 @@ exports.globalfunctions = {
     },
 	physics_apply_force: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'xpos', documentation: '' },
             { label: 'ypos', documentation: '' },
@@ -7476,6 +8381,7 @@ exports.globalfunctions = {
     },
 	physics_apply_impulse: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'xpos', documentation: '' },
             { label: 'ypos', documentation: '' },
@@ -7486,6 +8392,7 @@ exports.globalfunctions = {
     },
 	physics_apply_local_force: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'xlocal', documentation: '' },
             { label: 'ylocal', documentation: '' },
@@ -7496,6 +8403,7 @@ exports.globalfunctions = {
     },
 	physics_apply_local_impulse: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'xlocal', documentation: '' },
             { label: 'ylocal', documentation: '' },
@@ -7506,16 +8414,19 @@ exports.globalfunctions = {
     },
 	physics_apply_torque: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'torque', documentation: '' }
         ],
         signature: '(torque)'
     },
 	physics_draw_debug: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_fixture_add_point: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'local_x', documentation: '' },
@@ -7525,6 +8436,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_bind: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'obj', documentation: '' }
@@ -7533,6 +8445,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_bind_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'obj', documentation: '' },
@@ -7542,10 +8455,12 @@ exports.globalfunctions = {
         signature: '(fixture, obj, xo, yo)'
     },
 	physics_fixture_create: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_fixture_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' }
         ],
@@ -7553,6 +8468,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_angular_damping: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'damping', documentation: '' }
@@ -7561,6 +8477,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_awake: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'flag', documentation: '' }
@@ -7569,6 +8486,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_box_shape: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'halfWidth', documentation: '' },
@@ -7578,6 +8496,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_chain_shape: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'loop', documentation: '' }
@@ -7586,6 +8505,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_circle_shape: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'circleRadius', documentation: '' }
@@ -7594,6 +8514,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_collision_group: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'group', documentation: '' }
@@ -7602,6 +8523,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_density: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'density', documentation: '' }
@@ -7610,6 +8532,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_edge_shape: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'local_x1', documentation: '' },
@@ -7621,6 +8544,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_friction: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'friction', documentation: '' }
@@ -7629,6 +8553,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_kinematic: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' }
         ],
@@ -7636,6 +8561,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_linear_damping: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'damping', documentation: '' }
@@ -7644,6 +8570,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_polygon_shape: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' }
         ],
@@ -7651,6 +8578,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_restitution: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'restitution', documentation: '' }
@@ -7659,6 +8587,7 @@ exports.globalfunctions = {
     },
 	physics_fixture_set_sensor: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'sensorState', documentation: '' }
@@ -7667,6 +8596,7 @@ exports.globalfunctions = {
     },
 	physics_get_density: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' }
         ],
@@ -7674,6 +8604,7 @@ exports.globalfunctions = {
     },
 	physics_get_friction: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' }
         ],
@@ -7681,6 +8612,7 @@ exports.globalfunctions = {
     },
 	physics_get_restitution: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' }
         ],
@@ -7688,6 +8620,7 @@ exports.globalfunctions = {
     },
 	physics_joint_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'joint', documentation: '' }
         ],
@@ -7695,6 +8628,7 @@ exports.globalfunctions = {
     },
 	physics_joint_distance_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7708,6 +8642,7 @@ exports.globalfunctions = {
     },
 	physics_joint_enable_motor: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'joint', documentation: '' },
             { label: 'motorState', documentation: '' }
@@ -7716,6 +8651,7 @@ exports.globalfunctions = {
     },
 	physics_joint_friction_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7729,6 +8665,7 @@ exports.globalfunctions = {
     },
 	physics_joint_gear_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7740,6 +8677,7 @@ exports.globalfunctions = {
     },
 	physics_joint_get_value: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'joint', documentation: '' },
             { label: 'field', documentation: '' }
@@ -7748,6 +8686,7 @@ exports.globalfunctions = {
     },
 	physics_joint_prismatic_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7767,6 +8706,7 @@ exports.globalfunctions = {
     },
 	physics_joint_pulley_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7785,6 +8725,7 @@ exports.globalfunctions = {
     },
 	physics_joint_revolute_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7802,6 +8743,7 @@ exports.globalfunctions = {
     },
 	physics_joint_rope_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7816,6 +8758,7 @@ exports.globalfunctions = {
     },
 	physics_joint_set_value: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'joint', documentation: '' },
             { label: 'field', documentation: '' },
@@ -7825,6 +8768,7 @@ exports.globalfunctions = {
     },
 	physics_joint_weld_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7839,6 +8783,7 @@ exports.globalfunctions = {
     },
 	physics_joint_wheel_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst1', documentation: '' },
             { label: 'inst2', documentation: '' },
@@ -7857,6 +8802,7 @@ exports.globalfunctions = {
     },
 	physics_mass_properties: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'mass', documentation: '' },
             { label: 'local_centre_of_mass_x', documentation: '' },
@@ -7866,10 +8812,12 @@ exports.globalfunctions = {
         signature: '(mass, local_centre_of_mass_x, local_centre_of_mass_y, inertia)'
     },
 	physics_particle_count: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'typeflags', documentation: '' },
             { label: 'x', documentation: '' },
@@ -7884,6 +8832,7 @@ exports.globalfunctions = {
     },
 	physics_particle_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -7891,6 +8840,7 @@ exports.globalfunctions = {
     },
 	physics_particle_delete_region_box: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -7901,6 +8851,7 @@ exports.globalfunctions = {
     },
 	physics_particle_delete_region_circle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -7910,6 +8861,7 @@ exports.globalfunctions = {
     },
 	physics_particle_delete_region_poly: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'pointList', documentation: '' }
         ],
@@ -7917,6 +8869,7 @@ exports.globalfunctions = {
     },
 	physics_particle_draw: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'typemask', documentation: '' },
             { label: 'category', documentation: '' },
@@ -7927,6 +8880,7 @@ exports.globalfunctions = {
     },
 	physics_particle_draw_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'typemask', documentation: '' },
             { label: 'category', documentation: '' },
@@ -7941,10 +8895,12 @@ exports.globalfunctions = {
         signature: '(typemask, category, sprite, subimg, xscale, yscale, angle, col, alpha)'
     },
 	physics_particle_get_damping: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_get_data: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: '' },
             { label: 'dataFlags', documentation: '' }
@@ -7953,6 +8909,7 @@ exports.globalfunctions = {
     },
 	physics_particle_get_data_particle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'buffer', documentation: '' },
@@ -7961,26 +8918,32 @@ exports.globalfunctions = {
         signature: '(ind, buffer, dataFlags)'
     },
 	physics_particle_get_density: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_get_gravity_scale: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_get_group_flags: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
         signature: '(group)'
     },
 	physics_particle_get_max_count: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_get_radius: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_group_add_point: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -7989,6 +8952,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_begin: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'typeflags', documentation: '' },
             { label: 'groupflag', documentation: '' },
@@ -8007,6 +8971,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_box: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'halfWidth', documentation: '' },
             { label: 'halfHeight', documentation: '' }
@@ -8015,6 +8980,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_circle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'radius', documentation: '' }
         ],
@@ -8022,6 +8988,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_count: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8029,16 +8996,19 @@ exports.globalfunctions = {
     },
 	physics_particle_group_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
         signature: '(ind)'
     },
 	physics_particle_group_end: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_group_get_angle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8046,6 +9016,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_ang_vel: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8053,6 +9024,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_centre_x: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8060,6 +9032,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_centre_y: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8067,6 +9040,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_data: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' },
             { label: 'buffer', documentation: '' },
@@ -8076,6 +9050,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_inertia: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8083,6 +9058,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_mass: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8090,6 +9066,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_vel_x: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8097,6 +9074,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_vel_y: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8104,6 +9082,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_x: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8111,6 +9090,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_get_y: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' }
         ],
@@ -8118,6 +9098,7 @@ exports.globalfunctions = {
     },
 	physics_particle_group_join: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'to', documentation: '' },
             { label: 'from', documentation: '' }
@@ -8125,10 +9106,12 @@ exports.globalfunctions = {
         signature: '(to, from)'
     },
 	physics_particle_group_polygon: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	physics_particle_set_category_flags: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'catagory', documentation: '' },
             { label: 'typeflags', documentation: '' }
@@ -8137,6 +9120,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_damping: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'damping', documentation: '' }
         ],
@@ -8144,6 +9128,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_density: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'density', documentation: '' }
         ],
@@ -8151,6 +9136,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_flags: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'typeflags', documentation: '' }
@@ -8159,6 +9145,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_gravity_scale: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'scale', documentation: '' }
         ],
@@ -8166,6 +9153,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_group_flags: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'group', documentation: '' },
             { label: 'groupflags', documentation: '' }
@@ -8174,6 +9162,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_max_count: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'count', documentation: '' }
         ],
@@ -8181,6 +9170,7 @@ exports.globalfunctions = {
     },
 	physics_particle_set_radius: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'radius', documentation: '' }
         ],
@@ -8188,6 +9178,7 @@ exports.globalfunctions = {
     },
 	physics_pause_enable: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'pause', documentation: '' }
         ],
@@ -8195,6 +9186,7 @@ exports.globalfunctions = {
     },
 	physics_remove_fixture: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'inst', documentation: '' },
             { label: 'id', documentation: '' }
@@ -8203,6 +9195,7 @@ exports.globalfunctions = {
     },
 	physics_set_density: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'density', documentation: '' }
@@ -8211,6 +9204,7 @@ exports.globalfunctions = {
     },
 	physics_set_friction: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'friction', documentation: '' }
@@ -8219,6 +9213,7 @@ exports.globalfunctions = {
     },
 	physics_set_restitution: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: '' },
             { label: 'restitution', documentation: '' }
@@ -8227,6 +9222,7 @@ exports.globalfunctions = {
     },
 	physics_test_overlap: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -8237,6 +9233,7 @@ exports.globalfunctions = {
     },
 	physics_world_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'PixelToMetreScale', documentation: '' }
         ],
@@ -8244,6 +9241,7 @@ exports.globalfunctions = {
     },
 	physics_world_draw_debug: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'draw_flags', documentation: '' }
         ],
@@ -8251,6 +9249,7 @@ exports.globalfunctions = {
     },
 	physics_world_gravity: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'gx', documentation: '' },
             { label: 'gy', documentation: '' }
@@ -8259,6 +9258,7 @@ exports.globalfunctions = {
     },
 	physics_world_update_iterations: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'iterations', documentation: '' }
         ],
@@ -8266,6 +9266,7 @@ exports.globalfunctions = {
     },
 	physics_world_update_speed: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'speed', documentation: '' }
         ],
@@ -8273,6 +9274,7 @@ exports.globalfunctions = {
     },
 	place_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -8281,6 +9283,7 @@ exports.globalfunctions = {
     },
 	place_free: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -8289,6 +9292,7 @@ exports.globalfunctions = {
     },
 	place_meeting: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -8298,6 +9302,7 @@ exports.globalfunctions = {
     },
 	place_snapped: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'hsnap', documentation: '' },
             { label: 'vsnap', documentation: '' }
@@ -8306,6 +9311,7 @@ exports.globalfunctions = {
     },
 	point_direction: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -8316,6 +9322,7 @@ exports.globalfunctions = {
     },
 	point_distance: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -8326,6 +9333,7 @@ exports.globalfunctions = {
     },
 	point_distance_3d: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -8338,6 +9346,7 @@ exports.globalfunctions = {
     },
 	point_in_circle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'px', documentation: '' },
             { label: 'py', documentation: '' },
@@ -8349,6 +9358,7 @@ exports.globalfunctions = {
     },
 	point_in_rectangle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'px', documentation: '' },
             { label: 'py', documentation: '' },
@@ -8361,6 +9371,7 @@ exports.globalfunctions = {
     },
 	point_in_triangle: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'px', documentation: '' },
             { label: 'py', documentation: '' },
@@ -8375,6 +9386,7 @@ exports.globalfunctions = {
     },
 	position_change: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -8385,6 +9397,7 @@ exports.globalfunctions = {
     },
 	position_destroy: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -8393,6 +9406,7 @@ exports.globalfunctions = {
     },
 	position_empty: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -8401,6 +9415,7 @@ exports.globalfunctions = {
     },
 	position_meeting: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -8410,6 +9425,7 @@ exports.globalfunctions = {
     },
 	power: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'n', documentation: '' }
@@ -8418,6 +9434,7 @@ exports.globalfunctions = {
     },
 	ptr: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -8425,6 +9442,7 @@ exports.globalfunctions = {
     },
 	push_cancel_local_notification: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -8432,6 +9450,7 @@ exports.globalfunctions = {
     },
 	push_get_first_local_notification: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_map', documentation: '' }
         ],
@@ -8439,6 +9458,7 @@ exports.globalfunctions = {
     },
 	push_get_next_local_notification: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ds_map', documentation: '' }
         ],
@@ -8446,6 +9466,7 @@ exports.globalfunctions = {
     },
 	push_local_notification: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fire_time', documentation: '' },
             { label: 'title', documentation: '' },
@@ -8456,6 +9477,7 @@ exports.globalfunctions = {
     },
 	radtodeg: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -8463,19 +9485,23 @@ exports.globalfunctions = {
     },
 	random: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
         signature: '(x)'
     },
 	randomize: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	random_get_seed: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	random_old: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -8483,6 +9509,7 @@ exports.globalfunctions = {
     },
 	random_range: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' }
@@ -8491,6 +9518,7 @@ exports.globalfunctions = {
     },
 	random_range_old: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'x2', documentation: '' }
@@ -8499,6 +9527,7 @@ exports.globalfunctions = {
     },
 	random_set_seed: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'seed', documentation: '' }
         ],
@@ -8506,6 +9535,7 @@ exports.globalfunctions = {
     },
 	random_use_old_version: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'trueFalse', documentation: '' }
         ],
@@ -8513,6 +9543,7 @@ exports.globalfunctions = {
     },
 	real: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -8520,6 +9551,7 @@ exports.globalfunctions = {
     },
 	rectangle_in_circle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sx1', documentation: '' },
             { label: 'sy1', documentation: '' },
@@ -8533,6 +9565,7 @@ exports.globalfunctions = {
     },
 	rectangle_in_rectangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sx1', documentation: '' },
             { label: 'sy1', documentation: '' },
@@ -8547,6 +9580,7 @@ exports.globalfunctions = {
     },
 	rectangle_in_triangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'sx1', documentation: '' },
             { label: 'sy1', documentation: '' },
@@ -8562,10 +9596,12 @@ exports.globalfunctions = {
         signature: '(sx1, sy1, sx2, sy2, x1, y1, x2, y2, x3, y3)'
     },
 	room_add: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	room_assign: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'source', documentation: '' }
@@ -8574,6 +9610,7 @@ exports.globalfunctions = {
     },
 	room_duplicate: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -8581,6 +9618,7 @@ exports.globalfunctions = {
     },
 	room_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -8588,6 +9626,7 @@ exports.globalfunctions = {
     },
 	room_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -8595,19 +9634,23 @@ exports.globalfunctions = {
     },
 	room_goto: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'numb', documentation: '' }
         ],
         signature: '(numb)'
     },
 	room_goto_next: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	room_goto_previous: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	room_instance_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'x', documentation: '' },
@@ -8618,6 +9661,7 @@ exports.globalfunctions = {
     },
 	room_instance_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -8625,6 +9669,7 @@ exports.globalfunctions = {
     },
 	room_next: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'numb', documentation: '' }
         ],
@@ -8632,16 +9677,19 @@ exports.globalfunctions = {
     },
 	room_previous: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'numb', documentation: '' }
         ],
         signature: '(numb)'
     },
 	room_restart: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	room_set_background_color: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'col', documentation: '' },
@@ -8651,6 +9699,7 @@ exports.globalfunctions = {
     },
 	room_set_background_colour: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'col', documentation: '' },
@@ -8660,6 +9709,7 @@ exports.globalfunctions = {
     },
 	room_set_height: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'h', documentation: '' }
@@ -8668,6 +9718,7 @@ exports.globalfunctions = {
     },
 	room_set_persistent: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'pers', documentation: '' }
@@ -8676,6 +9727,7 @@ exports.globalfunctions = {
     },
 	room_set_view_enabled: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'val', documentation: '' }
@@ -8684,6 +9736,7 @@ exports.globalfunctions = {
     },
 	room_set_width: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'w', documentation: '' }
@@ -8692,6 +9745,7 @@ exports.globalfunctions = {
     },
 	round: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -8699,6 +9753,7 @@ exports.globalfunctions = {
     },
 	screen_save: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -8706,6 +9761,7 @@ exports.globalfunctions = {
     },
 	screen_save_part: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'x', documentation: '' },
@@ -8717,6 +9773,7 @@ exports.globalfunctions = {
     },
 	script_execute: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'arg0', documentation: '' },
@@ -8727,6 +9784,7 @@ exports.globalfunctions = {
     },
 	script_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -8734,6 +9792,7 @@ exports.globalfunctions = {
     },
 	script_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -8741,6 +9800,7 @@ exports.globalfunctions = {
     },
 	sha1_file: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'fname', documentation: '' }
         ],
@@ -8748,6 +9808,7 @@ exports.globalfunctions = {
     },
 	sha1_string_unicode: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -8755,16 +9816,19 @@ exports.globalfunctions = {
     },
 	sha1_string_utf8: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
         signature: '(string)'
     },
 	shaders_are_supported: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	shader_enable_corner_id: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: '' }
         ],
@@ -8772,6 +9836,7 @@ exports.globalfunctions = {
     },
 	shader_get_sampler_index: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'shader', documentation: '' },
             { label: 'uniform_name', documentation: '' }
@@ -8780,6 +9845,7 @@ exports.globalfunctions = {
     },
 	shader_get_uniform: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'shader', documentation: '' },
             { label: 'uniform_name', documentation: '' }
@@ -8788,16 +9854,19 @@ exports.globalfunctions = {
     },
 	shader_is_compiled: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'shader', documentation: '' }
         ],
         signature: '(shader)'
     },
 	shader_reset: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	shader_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'shader', documentation: '' }
         ],
@@ -8805,6 +9874,7 @@ exports.globalfunctions = {
     },
 	shader_set_uniform_f: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: '' },
             { label: 'val', documentation: '' },
@@ -8814,6 +9884,7 @@ exports.globalfunctions = {
     },
 	shader_set_uniform_f_array: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: '' },
             { label: 'array', documentation: '' }
@@ -8822,6 +9893,7 @@ exports.globalfunctions = {
     },
 	shader_set_uniform_i: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: '' },
             { label: 'val', documentation: '' },
@@ -8831,6 +9903,7 @@ exports.globalfunctions = {
     },
 	shader_set_uniform_i_array: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: '' },
             { label: 'array', documentation: '' }
@@ -8839,6 +9912,7 @@ exports.globalfunctions = {
     },
 	shader_set_uniform_matrix: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: '' }
         ],
@@ -8846,6 +9920,7 @@ exports.globalfunctions = {
     },
 	shader_set_uniform_matrix_array: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: '' },
             { label: 'array', documentation: '' }
@@ -8854,6 +9929,7 @@ exports.globalfunctions = {
     },
 	shop_leave_rating: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'text_string', documentation: '' },
             { label: 'yes_string', documentation: '' },
@@ -8864,6 +9940,7 @@ exports.globalfunctions = {
     },
 	show_debug_message: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -8871,6 +9948,7 @@ exports.globalfunctions = {
     },
 	show_debug_overlay: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bool', documentation: '' }
         ],
@@ -8878,6 +9956,7 @@ exports.globalfunctions = {
     },
 	show_error: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'abort', documentation: '' }
@@ -8886,6 +9965,7 @@ exports.globalfunctions = {
     },
 	show_message: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -8893,6 +9973,7 @@ exports.globalfunctions = {
     },
 	show_message_async: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -8900,6 +9981,7 @@ exports.globalfunctions = {
     },
 	show_question: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -8907,6 +9989,7 @@ exports.globalfunctions = {
     },
 	show_question_async: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -8914,6 +9997,7 @@ exports.globalfunctions = {
     },
 	sign: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -8921,6 +10005,7 @@ exports.globalfunctions = {
     },
 	sin: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'radian_angle', documentation: '' }
         ],
@@ -8928,16 +10013,19 @@ exports.globalfunctions = {
     },
 	skeleton_animation_clear: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'track', documentation: '' }
         ],
         signature: '(track)'
     },
 	skeleton_animation_get: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	skeleton_animation_get_duration: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'anim_name', documentation: '' }
         ],
@@ -8945,6 +10033,7 @@ exports.globalfunctions = {
     },
 	skeleton_animation_get_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'track', documentation: '' }
         ],
@@ -8952,6 +10041,7 @@ exports.globalfunctions = {
     },
 	skeleton_animation_get_frames: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'anim_name', documentation: '' }
         ],
@@ -8959,6 +10049,7 @@ exports.globalfunctions = {
     },
 	skeleton_animation_list: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'list', documentation: '' }
@@ -8967,6 +10058,7 @@ exports.globalfunctions = {
     },
 	skeleton_animation_mix: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'anim_from', documentation: '' },
             { label: 'anim_to', documentation: '' },
@@ -8976,6 +10068,7 @@ exports.globalfunctions = {
     },
 	skeleton_animation_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'anim_name', documentation: '' }
         ],
@@ -8983,6 +10076,7 @@ exports.globalfunctions = {
     },
 	skeleton_animation_set_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'anim_name', documentation: '' },
             { label: 'track', documentation: '' }
@@ -8991,6 +10085,7 @@ exports.globalfunctions = {
     },
 	skeleton_attachment_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'sprite', documentation: '' },
@@ -9005,6 +10100,7 @@ exports.globalfunctions = {
     },
 	skeleton_attachment_get: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'slot', documentation: '' }
         ],
@@ -9012,6 +10108,7 @@ exports.globalfunctions = {
     },
 	skeleton_attachment_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'slot', documentation: '' },
             { label: 'attachment', documentation: '' }
@@ -9020,6 +10117,7 @@ exports.globalfunctions = {
     },
 	skeleton_bone_data_get: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bone', documentation: '' },
             { label: 'map', documentation: '' }
@@ -9028,6 +10126,7 @@ exports.globalfunctions = {
     },
 	skeleton_bone_data_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bone', documentation: '' },
             { label: 'map', documentation: '' }
@@ -9036,6 +10135,7 @@ exports.globalfunctions = {
     },
 	skeleton_bone_state_get: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bone', documentation: '' },
             { label: 'map', documentation: '' }
@@ -9044,6 +10144,7 @@ exports.globalfunctions = {
     },
 	skeleton_bone_state_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'bone', documentation: '' },
             { label: 'map', documentation: '' }
@@ -9052,6 +10153,7 @@ exports.globalfunctions = {
     },
 	skeleton_collision_draw_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -9059,22 +10161,27 @@ exports.globalfunctions = {
     },
 	skeleton_get_bounds: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' }
         ],
         signature: '(index)'
     },
 	skeleton_get_minmax: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	skeleton_get_num_bounds: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	skeleton_skin_get: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	skeleton_skin_list: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'list', documentation: '' }
@@ -9083,6 +10190,7 @@ exports.globalfunctions = {
     },
 	skeleton_skin_set: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'skin_name', documentation: '' }
         ],
@@ -9090,6 +10198,7 @@ exports.globalfunctions = {
     },
 	skeleton_slot_data: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: '' },
             { label: 'list', documentation: '' }
@@ -9098,6 +10207,7 @@ exports.globalfunctions = {
     },
 	sprite_add: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'fname', documentation: '' },
             { label: 'imgnumb', documentation: '' },
@@ -9110,6 +10220,7 @@ exports.globalfunctions = {
     },
 	sprite_add_from_surface: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'id', documentation: '' },
@@ -9124,6 +10235,7 @@ exports.globalfunctions = {
     },
 	sprite_assign: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'source', documentation: '' }
@@ -9132,6 +10244,7 @@ exports.globalfunctions = {
     },
 	sprite_collision_mask: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'sepmasks', documentation: '' },
@@ -9147,6 +10260,7 @@ exports.globalfunctions = {
     },
 	sprite_create_from_surface: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -9162,6 +10276,7 @@ exports.globalfunctions = {
     },
 	sprite_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9169,6 +10284,7 @@ exports.globalfunctions = {
     },
 	sprite_duplicate: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9176,6 +10292,7 @@ exports.globalfunctions = {
     },
 	sprite_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9183,6 +10300,7 @@ exports.globalfunctions = {
     },
 	sprite_flush: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9190,6 +10308,7 @@ exports.globalfunctions = {
     },
 	sprite_flush_multi: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'indarray', documentation: '' }
         ],
@@ -9197,6 +10316,7 @@ exports.globalfunctions = {
     },
 	sprite_get_bbox_bottom: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9204,6 +10324,7 @@ exports.globalfunctions = {
     },
 	sprite_get_bbox_left: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9211,6 +10332,7 @@ exports.globalfunctions = {
     },
 	sprite_get_bbox_right: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9218,6 +10340,7 @@ exports.globalfunctions = {
     },
 	sprite_get_bbox_top: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9225,6 +10348,7 @@ exports.globalfunctions = {
     },
 	sprite_get_height: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9232,6 +10356,7 @@ exports.globalfunctions = {
     },
 	sprite_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9239,6 +10364,7 @@ exports.globalfunctions = {
     },
 	sprite_get_number: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9246,6 +10372,7 @@ exports.globalfunctions = {
     },
 	sprite_get_texture: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'spr', documentation: '' },
             { label: 'subimg', documentation: '' }
@@ -9254,6 +10381,7 @@ exports.globalfunctions = {
     },
 	sprite_get_tpe: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'subindex', documentation: '' }
@@ -9262,6 +10390,7 @@ exports.globalfunctions = {
     },
 	sprite_get_uvs: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'spr', documentation: '' },
             { label: 'subimg', documentation: '' }
@@ -9270,6 +10399,7 @@ exports.globalfunctions = {
     },
 	sprite_get_width: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9277,6 +10407,7 @@ exports.globalfunctions = {
     },
 	sprite_get_xoffset: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9284,6 +10415,7 @@ exports.globalfunctions = {
     },
 	sprite_get_yoffset: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9291,6 +10423,7 @@ exports.globalfunctions = {
     },
 	sprite_merge: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind1', documentation: '' },
             { label: 'ind2', documentation: '' }
@@ -9299,6 +10432,7 @@ exports.globalfunctions = {
     },
 	sprite_prefetch: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -9306,6 +10440,7 @@ exports.globalfunctions = {
     },
 	sprite_prefetch_multi: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'indarray', documentation: '' }
         ],
@@ -9313,6 +10448,7 @@ exports.globalfunctions = {
     },
 	sprite_replace: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'fname', documentation: '' },
@@ -9326,6 +10462,7 @@ exports.globalfunctions = {
     },
 	sprite_save: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'subimg', documentation: '' },
@@ -9335,6 +10472,7 @@ exports.globalfunctions = {
     },
 	sprite_save_strip: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'fname', documentation: '' }
@@ -9343,6 +10481,7 @@ exports.globalfunctions = {
     },
 	sprite_set_alpha_from_sprite: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'spr', documentation: '' }
@@ -9351,6 +10490,7 @@ exports.globalfunctions = {
     },
 	sprite_set_cache_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'max', documentation: '' }
@@ -9359,6 +10499,7 @@ exports.globalfunctions = {
     },
 	sprite_set_cache_size_ext: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'image', documentation: '' },
@@ -9368,6 +10509,7 @@ exports.globalfunctions = {
     },
 	sprite_set_offset: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' },
             { label: 'xoff', documentation: '' },
@@ -9377,6 +10519,7 @@ exports.globalfunctions = {
     },
 	sqr: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -9384,6 +10527,7 @@ exports.globalfunctions = {
     },
 	sqrt: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
         ],
@@ -9391,6 +10535,7 @@ exports.globalfunctions = {
     },
 	steam_activate_overlay: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'overlayIndex', documentation: '' }
         ],
@@ -9398,6 +10543,7 @@ exports.globalfunctions = {
     },
 	steam_activate_overlay_browser: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' }
         ],
@@ -9405,6 +10551,7 @@ exports.globalfunctions = {
     },
 	steam_activate_overlay_store: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'app_id', documentation: '' }
         ],
@@ -9412,6 +10559,7 @@ exports.globalfunctions = {
     },
 	steam_activate_overlay_user: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'dialog_name', documentation: '' },
             { label: 'steamid', documentation: '' }
@@ -9419,10 +10567,12 @@ exports.globalfunctions = {
         signature: '(dialog_name, steamid)'
     },
 	steam_available_languages: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_clear_achievement: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ach_name', documentation: '' }
         ],
@@ -9430,6 +10580,7 @@ exports.globalfunctions = {
     },
 	steam_create_leaderboard: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'sort_method', documentation: '' },
@@ -9438,10 +10589,12 @@ exports.globalfunctions = {
         signature: '(lb_name, sort_method, display_type)'
     },
 	steam_current_game_language: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_download_friends_scores: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' }
         ],
@@ -9449,6 +10602,7 @@ exports.globalfunctions = {
     },
 	steam_download_scores: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'start_idx', documentation: '' },
@@ -9458,6 +10612,7 @@ exports.globalfunctions = {
     },
 	steam_download_scores_around_user: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'range_start', documentation: '' },
@@ -9467,6 +10622,7 @@ exports.globalfunctions = {
     },
 	steam_file_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -9474,6 +10630,7 @@ exports.globalfunctions = {
     },
 	steam_file_exists: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -9481,6 +10638,7 @@ exports.globalfunctions = {
     },
 	steam_file_persisted: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -9488,6 +10646,7 @@ exports.globalfunctions = {
     },
 	steam_file_read: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -9495,6 +10654,7 @@ exports.globalfunctions = {
     },
 	steam_file_share: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -9502,6 +10662,7 @@ exports.globalfunctions = {
     },
 	steam_file_size: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' }
         ],
@@ -9509,6 +10670,7 @@ exports.globalfunctions = {
     },
 	steam_file_write: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'steam_filename', documentation: '' },
             { label: 'data', documentation: '' },
@@ -9518,6 +10680,7 @@ exports.globalfunctions = {
     },
 	steam_file_write_file: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'steam_filename', documentation: '' },
             { label: 'local_filename', documentation: '' }
@@ -9526,25 +10689,31 @@ exports.globalfunctions = {
     },
 	steam_get_achievement: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ach_name', documentation: '' }
         ],
         signature: '(ach_name)'
     },
 	steam_get_app_id: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_get_persona_name: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_get_quota_free: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_get_quota_total: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_get_stat_avg_rate: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stat_name', documentation: '' }
         ],
@@ -9552,6 +10721,7 @@ exports.globalfunctions = {
     },
 	steam_get_stat_float: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stat_name', documentation: '' }
         ],
@@ -9559,47 +10729,59 @@ exports.globalfunctions = {
     },
 	steam_get_stat_int: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stat_name', documentation: '' }
         ],
         signature: '(stat_name)'
     },
 	steam_get_user_account_id: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_get_user_persona_name: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'steam_id', documentation: '' }
         ],
         signature: '(steam_id)'
     },
 	steam_get_user_steam_id: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_initialised: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_is_cloud_enabled_for_account: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_is_cloud_enabled_for_app: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_is_overlay_activated: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_is_overlay_enabled: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_is_screenshot_requested: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_is_user_logged_on: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_publish_workshop_file: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' },
             { label: 'previewImage', documentation: '' },
@@ -9609,13 +10791,16 @@ exports.globalfunctions = {
         signature: '(filename, previewImage, title, description)'
     },
 	steam_reset_all_stats: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_reset_all_stats_achievements: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_send_screenshot: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: '' },
             { label: 'width', documentation: '' },
@@ -9625,6 +10810,7 @@ exports.globalfunctions = {
     },
 	steam_set_achievement: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ach_name', documentation: '' }
         ],
@@ -9632,6 +10818,7 @@ exports.globalfunctions = {
     },
 	steam_set_stat_avg_rate: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stat_name', documentation: '' },
             { label: 'session_count', documentation: '' },
@@ -9641,6 +10828,7 @@ exports.globalfunctions = {
     },
 	steam_set_stat_float: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stat_name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -9649,6 +10837,7 @@ exports.globalfunctions = {
     },
 	steam_set_stat_int: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'stat_name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -9656,10 +10845,12 @@ exports.globalfunctions = {
         signature: '(stat_name, value)'
     },
 	steam_stats_ready: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_ugc_create_item: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'consumer_app_id', documentation: '' },
             { label: 'file_type', documentation: '' }
@@ -9668,6 +10859,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_create_query_all: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'query_type', documentation: '' },
             { label: 'match_type', documentation: '' },
@@ -9677,6 +10869,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_create_query_all_ex: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'query_type', documentation: '' },
             { label: 'match_type', documentation: '' },
@@ -9688,6 +10881,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_create_query_user: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'list_type', documentation: '' },
             { label: 'match_type', documentation: '' },
@@ -9698,6 +10892,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_create_query_user_ex: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'list_type', documentation: '' },
             { label: 'match_type', documentation: '' },
@@ -9711,6 +10906,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_download: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_handle', documentation: '' },
             { label: 'dest_filename', documentation: '' }
@@ -9719,6 +10915,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_get_item_install_info: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'published_file_id', documentation: '' },
             { label: 'info_map', documentation: '' }
@@ -9727,6 +10924,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_get_item_update_info: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'published_file_id', documentation: '' },
             { label: 'info_map', documentation: '' }
@@ -9735,6 +10933,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_get_item_update_progress: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'info_map', documentation: '' }
@@ -9743,16 +10942,19 @@ exports.globalfunctions = {
     },
 	steam_ugc_get_subscribed_items: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'info_map', documentation: '' }
         ],
         signature: '(item_list)'
     },
 	steam_ugc_num_subscribed_items: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	steam_ugc_query_add_excluded_tag: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'tag_name', documentation: '' }
@@ -9761,6 +10963,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_add_required_tag: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'tag_name', documentation: '' }
@@ -9769,6 +10972,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_allow_cached_response: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'max_age_seconds', documentation: '' }
@@ -9777,6 +10981,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_cloud_filename_filter: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'match_cloud_filename', documentation: '' }
@@ -9785,6 +10990,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_match_any_tag: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'match_any_tag', documentation: '' }
@@ -9793,6 +10999,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_ranked_by_trend_days: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'days', documentation: '' }
@@ -9801,6 +11008,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_return_long_description: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'return_long_desc', documentation: '' }
@@ -9809,6 +11017,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_return_total_only: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'return_total_only', documentation: '' }
@@ -9817,6 +11026,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_query_set_search_text: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' },
             { label: 'search_text', documentation: '' }
@@ -9825,6 +11035,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_request_item_details: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'published_file_id', documentation: '' },
             { label: 'max_age_seconds', documentation: '' }
@@ -9833,6 +11044,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_send_query: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_query_handle', documentation: '' }
         ],
@@ -9840,6 +11052,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_set_item_content: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'directory', documentation: '' }
@@ -9848,6 +11061,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_set_item_description: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'description', documentation: '' }
@@ -9856,6 +11070,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_set_item_preview: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'image_path', documentation: '' }
@@ -9864,6 +11079,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_set_item_tags: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'tag_array', documentation: '' }
@@ -9872,6 +11088,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_set_item_title: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'title', documentation: '' }
@@ -9880,6 +11097,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_set_item_visibility: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'visibility', documentation: '' }
@@ -9888,6 +11106,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_start_item_update: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'consumer_app_id', documentation: '' },
             { label: 'published_file_id', documentation: '' }
@@ -9896,6 +11115,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_submit_item_update: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ugc_update_handle', documentation: '' },
             { label: 'change_note', documentation: '' }
@@ -9904,6 +11124,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_subscribe_item: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'published_file_id', documentation: '' }
         ],
@@ -9911,6 +11132,7 @@ exports.globalfunctions = {
     },
 	steam_ugc_unsubscribe_item: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'published_file_id', documentation: '' }
         ],
@@ -9918,6 +11140,7 @@ exports.globalfunctions = {
     },
 	steam_upload_score: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'score', documentation: '' }
@@ -9926,6 +11149,7 @@ exports.globalfunctions = {
     },
 	steam_upload_score_buffer: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'score', documentation: '' },
@@ -9935,6 +11159,7 @@ exports.globalfunctions = {
     },
 	steam_upload_score_buffer_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'score', documentation: '' },
@@ -9945,6 +11170,7 @@ exports.globalfunctions = {
     },
 	steam_upload_score_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'lb_name', documentation: '' },
             { label: 'score', documentation: '' },
@@ -9954,6 +11180,7 @@ exports.globalfunctions = {
     },
 	steam_user_installed_dlc: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'dlc_id', documentation: '' }
         ],
@@ -9961,6 +11188,7 @@ exports.globalfunctions = {
     },
 	steam_user_owns_dlc: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'dlc_id', documentation: '' }
         ],
@@ -9968,6 +11196,7 @@ exports.globalfunctions = {
     },
 	string: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: '' }
         ],
@@ -9975,6 +11204,7 @@ exports.globalfunctions = {
     },
 	string_byte_at: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'index', documentation: '' }
@@ -9983,6 +11213,7 @@ exports.globalfunctions = {
     },
 	string_byte_length: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -9990,6 +11221,7 @@ exports.globalfunctions = {
     },
 	string_char_at: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'index', documentation: '' }
@@ -9998,6 +11230,7 @@ exports.globalfunctions = {
     },
 	string_copy: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'index', documentation: '' },
@@ -10007,6 +11240,7 @@ exports.globalfunctions = {
     },
 	string_count: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'substr', documentation: '' },
             { label: 'str', documentation: '' }
@@ -10015,6 +11249,7 @@ exports.globalfunctions = {
     },
 	string_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'index', documentation: '' },
@@ -10024,6 +11259,7 @@ exports.globalfunctions = {
     },
 	string_digits: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -10031,6 +11267,7 @@ exports.globalfunctions = {
     },
 	string_format: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: '' },
             { label: 'total', documentation: '' },
@@ -10040,6 +11277,7 @@ exports.globalfunctions = {
     },
 	string_height: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -10047,6 +11285,7 @@ exports.globalfunctions = {
     },
 	string_height_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' },
             { label: 'sep', documentation: '' },
@@ -10056,6 +11295,7 @@ exports.globalfunctions = {
     },
 	string_insert: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'substr', documentation: '' },
             { label: 'str', documentation: '' },
@@ -10065,6 +11305,7 @@ exports.globalfunctions = {
     },
 	string_length: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -10072,6 +11313,7 @@ exports.globalfunctions = {
     },
 	string_letters: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -10079,6 +11321,7 @@ exports.globalfunctions = {
     },
 	string_lettersdigits: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -10086,6 +11329,7 @@ exports.globalfunctions = {
     },
 	string_lower: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -10093,6 +11337,7 @@ exports.globalfunctions = {
     },
 	string_ord_at: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'index', documentation: '' }
@@ -10101,6 +11346,7 @@ exports.globalfunctions = {
     },
 	string_pos: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'substr', documentation: '' },
             { label: 'str', documentation: '' }
@@ -10109,6 +11355,7 @@ exports.globalfunctions = {
     },
 	string_repeat: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'count', documentation: '' }
@@ -10117,6 +11364,7 @@ exports.globalfunctions = {
     },
 	string_replace: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'substr', documentation: '' },
@@ -10126,6 +11374,7 @@ exports.globalfunctions = {
     },
 	string_replace_all: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'substr', documentation: '' },
@@ -10135,6 +11384,7 @@ exports.globalfunctions = {
     },
 	string_set_byte_at: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' },
             { label: 'index', documentation: '' },
@@ -10144,6 +11394,7 @@ exports.globalfunctions = {
     },
 	string_upper: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'str', documentation: '' }
         ],
@@ -10151,6 +11402,7 @@ exports.globalfunctions = {
     },
 	string_width: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' }
         ],
@@ -10158,6 +11410,7 @@ exports.globalfunctions = {
     },
 	string_width_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: '' },
             { label: 'sep', documentation: '' },
@@ -10167,6 +11420,7 @@ exports.globalfunctions = {
     },
 	surface_copy: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'destination', documentation: '' },
             { label: 'x', documentation: '' },
@@ -10177,6 +11431,7 @@ exports.globalfunctions = {
     },
 	surface_copy_part: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'destination', documentation: '' },
             { label: 'x', documentation: '' },
@@ -10191,6 +11446,7 @@ exports.globalfunctions = {
     },
 	surface_create: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' }
@@ -10199,6 +11455,7 @@ exports.globalfunctions = {
     },
 	surface_create_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'w', documentation: '' },
@@ -10208,6 +11465,7 @@ exports.globalfunctions = {
     },
 	surface_exists: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10215,6 +11473,7 @@ exports.globalfunctions = {
     },
 	surface_free: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10222,6 +11481,7 @@ exports.globalfunctions = {
     },
 	surface_getpixel: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -10231,6 +11491,7 @@ exports.globalfunctions = {
     },
 	surface_getpixel_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'x', documentation: '' },
@@ -10240,6 +11501,7 @@ exports.globalfunctions = {
     },
 	surface_get_height: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10247,6 +11509,7 @@ exports.globalfunctions = {
     },
 	surface_get_texture: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10254,16 +11517,19 @@ exports.globalfunctions = {
     },
 	surface_get_width: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
         signature: '(id)'
     },
 	surface_reset_target: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	surface_resize: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'width', documentation: '' },
@@ -10273,6 +11539,7 @@ exports.globalfunctions = {
     },
 	surface_save: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'fname', documentation: '' }
@@ -10281,6 +11548,7 @@ exports.globalfunctions = {
     },
 	surface_save_part: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'fname', documentation: '' },
@@ -10293,6 +11561,7 @@ exports.globalfunctions = {
     },
 	surface_set_target: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10300,6 +11569,7 @@ exports.globalfunctions = {
     },
 	surface_set_target_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: '' },
             { label: 'id', documentation: '' }
@@ -10308,6 +11578,7 @@ exports.globalfunctions = {
     },
 	tan: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'radian_angle', documentation: '' }
         ],
@@ -10315,6 +11586,7 @@ exports.globalfunctions = {
     },
 	texture_get_height: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'texid', documentation: '' }
         ],
@@ -10322,6 +11594,7 @@ exports.globalfunctions = {
     },
 	texture_get_texel_height: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'texture_id', documentation: '' }
         ],
@@ -10329,6 +11602,7 @@ exports.globalfunctions = {
     },
 	texture_get_texel_width: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'texture_id', documentation: '' }
         ],
@@ -10336,6 +11610,7 @@ exports.globalfunctions = {
     },
 	texture_get_width: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'texid', documentation: '' }
         ],
@@ -10343,6 +11618,7 @@ exports.globalfunctions = {
     },
 	texture_global_scale: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'pow2integer', documentation: '' }
         ],
@@ -10350,6 +11626,7 @@ exports.globalfunctions = {
     },
 	texture_set_blending: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'blend', documentation: '' }
         ],
@@ -10357,6 +11634,7 @@ exports.globalfunctions = {
     },
 	texture_set_interpolation: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'linear', documentation: '' }
         ],
@@ -10364,6 +11642,7 @@ exports.globalfunctions = {
     },
 	texture_set_interpolation_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'linear', documentation: '' }
@@ -10372,6 +11651,7 @@ exports.globalfunctions = {
     },
 	texture_set_repeat: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'repeat', documentation: '' }
         ],
@@ -10379,6 +11659,7 @@ exports.globalfunctions = {
     },
 	texture_set_repeat_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'repeat', documentation: '' }
@@ -10387,6 +11668,7 @@ exports.globalfunctions = {
     },
 	texture_set_stage: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'sampler_id', documentation: '' },
             { label: 'texture_id', documentation: '' }
@@ -10394,10 +11676,12 @@ exports.globalfunctions = {
         signature: '(sampled_id, texture_id)'
     },
 	timeline_add: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	timeline_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -10405,6 +11689,7 @@ exports.globalfunctions = {
     },
 	timeline_delete: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -10412,6 +11697,7 @@ exports.globalfunctions = {
     },
 	timeline_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -10419,6 +11705,7 @@ exports.globalfunctions = {
     },
 	timeline_get_name: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -10426,6 +11713,7 @@ exports.globalfunctions = {
     },
 	timeline_max_moment: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -10433,6 +11721,7 @@ exports.globalfunctions = {
     },
 	timeline_moment_add_script: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'step', documentation: '' },
@@ -10442,6 +11731,7 @@ exports.globalfunctions = {
     },
 	timeline_moment_clear: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' },
             { label: 'step', documentation: '' }
@@ -10450,6 +11740,7 @@ exports.globalfunctions = {
     },
 	timeline_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: '' }
         ],
@@ -10457,16 +11748,19 @@ exports.globalfunctions = {
     },
 	typeof: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'val', documentation: '' }
         ],
         signature: '(val)'
     },
 	url_get_domain: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	url_open: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' }
         ],
@@ -10474,6 +11768,7 @@ exports.globalfunctions = {
     },
 	url_open_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'target', documentation: '' }
@@ -10482,6 +11777,7 @@ exports.globalfunctions = {
     },
 	url_open_full: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'url', documentation: '' },
             { label: 'target', documentation: '' },
@@ -10491,6 +11787,7 @@ exports.globalfunctions = {
     },
 	vertex_argb: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'argb', documentation: '' }
@@ -10499,6 +11796,7 @@ exports.globalfunctions = {
     },
 	vertex_begin: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'format', documentation: '' }
@@ -10507,6 +11805,7 @@ exports.globalfunctions = {
     },
 	vertex_color: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'color', documentation: '' },
@@ -10516,6 +11815,7 @@ exports.globalfunctions = {
     },
 	vertex_colour: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'colour', documentation: '' },
@@ -10524,10 +11824,12 @@ exports.globalfunctions = {
         signature: '(vbuff, colour, alpha)'
     },
 	vertex_create_buffer: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_create_buffer_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'size', documentation: '' }
         ],
@@ -10535,6 +11837,7 @@ exports.globalfunctions = {
     },
 	vertex_create_buffer_from_buffer: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'src_buffer', documentation: '' },
             { label: 'format', documentation: '' }
@@ -10543,6 +11846,7 @@ exports.globalfunctions = {
     },
 	vertex_create_buffer_from_buffer_ext: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'src_buffer', documentation: '' },
             { label: 'format', documentation: '' },
@@ -10553,6 +11857,7 @@ exports.globalfunctions = {
     },
 	vertex_delete_buffer: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' }
         ],
@@ -10560,6 +11865,7 @@ exports.globalfunctions = {
     },
 	vertex_end: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' }
         ],
@@ -10567,6 +11873,7 @@ exports.globalfunctions = {
     },
 	vertex_float1: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'f1', documentation: '' }
@@ -10575,6 +11882,7 @@ exports.globalfunctions = {
     },
 	vertex_float2: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'f1', documentation: '' },
@@ -10584,6 +11892,7 @@ exports.globalfunctions = {
     },
 	vertex_float3: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'f1', documentation: '' },
@@ -10594,6 +11903,7 @@ exports.globalfunctions = {
     },
 	vertex_float4: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'f1', documentation: '' },
@@ -10604,13 +11914,16 @@ exports.globalfunctions = {
         signature: '(vbuff, f1, f2, f3, f4)'
     },
 	vertex_format_add_color: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_add_colour: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_add_custom: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: '' },
             { label: 'usage', documentation: '' }
@@ -10618,32 +11931,40 @@ exports.globalfunctions = {
         signature: '(type, usage)'
     },
 	vertex_format_add_normal: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_add_position: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_add_position_3d: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_add_textcoord: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_begin: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_format_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'format_id', documentation: '' }
         ],
         signature: '(format_id)'
     },
 	vertex_format_end: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.gms1
     },
 	vertex_freeze: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' }
         ],
@@ -10651,6 +11972,7 @@ exports.globalfunctions = {
     },
 	vertex_get_buffer_size: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' }
         ],
@@ -10658,6 +11980,7 @@ exports.globalfunctions = {
     },
 	vertex_get_number: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' }
         ],
@@ -10665,6 +11988,7 @@ exports.globalfunctions = {
     },
 	vertex_normal: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'nx', documentation: '' },
@@ -10675,6 +11999,7 @@ exports.globalfunctions = {
     },
 	vertex_position: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'x', documentation: '' },
@@ -10684,6 +12009,7 @@ exports.globalfunctions = {
     },
 	vertex_position_3d: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'x', documentation: '' },
@@ -10694,6 +12020,7 @@ exports.globalfunctions = {
     },
 	vertex_submit: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'prim', documentation: '' },
@@ -10703,6 +12030,7 @@ exports.globalfunctions = {
     },
 	vertex_texcoord: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'u', documentation: '' },
@@ -10712,6 +12040,7 @@ exports.globalfunctions = {
     },
 	vertex_ubyte4: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'vbuff', documentation: '' },
             { label: 'b1', documentation: '' },
@@ -10723,6 +12052,7 @@ exports.globalfunctions = {
     },
 	virtual_key_add: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -10734,6 +12064,7 @@ exports.globalfunctions = {
     },
 	virtual_key_delete: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10741,6 +12072,7 @@ exports.globalfunctions = {
     },
 	virtual_key_hide: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10748,37 +12080,47 @@ exports.globalfunctions = {
     },
 	virtual_key_show: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: '' }
         ],
         signature: '(id)'
     },
 	window_center: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_device: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_caption: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_color: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_colour: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_cursor: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_fullscreen: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_height: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_visible_rects: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: '' },
             { label: 'y1', documentation: '' },
@@ -10788,28 +12130,36 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2)'
     },
 	window_get_width: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_x: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_get_y: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_handle: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_has_focus: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_mouse_get_x: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_mouse_get_y: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_mouse_set: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -10818,6 +12168,7 @@ exports.globalfunctions = {
     },
 	window_set_caption: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'caption', documentation: '' }
         ],
@@ -10825,6 +12176,7 @@ exports.globalfunctions = {
     },
 	window_set_color: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'color', documentation: '' }
         ],
@@ -10832,6 +12184,7 @@ exports.globalfunctions = {
     },
 	window_set_colour: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'colour', documentation: '' }
         ],
@@ -10839,6 +12192,7 @@ exports.globalfunctions = {
     },
 	window_set_cursor: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'curs', documentation: '' }
         ],
@@ -10846,6 +12200,7 @@ exports.globalfunctions = {
     },
 	window_set_fullscreen: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'full', documentation: '' }
         ],
@@ -10853,6 +12208,7 @@ exports.globalfunctions = {
     },
 	window_set_max_height: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'maxheight', documentation: '' }
         ],
@@ -10860,6 +12216,7 @@ exports.globalfunctions = {
     },
 	window_set_max_width: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'maxwidth', documentation: '' }
         ],
@@ -10867,6 +12224,7 @@ exports.globalfunctions = {
     },
 	window_set_min_height: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'minheight', documentation: '' }
         ],
@@ -10874,6 +12232,7 @@ exports.globalfunctions = {
     },
 	window_set_min_width: {
         description: '[Function]',
+        available: datasimple.all,
         arameters: [
             { label: 'minwidth', documentation: '' }
         ],
@@ -10881,6 +12240,7 @@ exports.globalfunctions = {
     },
 	window_set_position: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' }
@@ -10889,6 +12249,7 @@ exports.globalfunctions = {
     },
 	window_set_rectangle: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' },
             { label: 'y', documentation: '' },
@@ -10899,6 +12260,7 @@ exports.globalfunctions = {
     },
 	window_set_size: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'w', documentation: '' },
             { label: 'h', documentation: '' }
@@ -10906,13 +12268,16 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	window_views_mouse_get_x: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_views_mouse_get_y: {
-        description: '[Function]'
+        description: '[Function]',
+        available: datasimple.all
     },
 	window_view_mouse_get_x: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10920,6 +12285,7 @@ exports.globalfunctions = {
     },
 	window_view_mouse_get_y: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'id', documentation: '' }
         ],
@@ -10927,6 +12293,7 @@ exports.globalfunctions = {
     },
 	zip_unzip: {
         description: '[Function]',
+        available: datasimple.gms1,
         parameters: [
             { label: 'file', documentation: '' },
             { label: 'destPath', documentation: '' }
@@ -10937,6 +12304,7 @@ exports.globalfunctions = {
     //These are the functions that were obsoleted in the old version but restored in the new version
     date_datetime_string: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'data', documentation: '' }
         ],
@@ -10944,6 +12312,7 @@ exports.globalfunctions = {
     },
     variable_global_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'name', documentation: '' }
         ],
@@ -10951,6 +12320,7 @@ exports.globalfunctions = {
     },
 	variable_global_get: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'name', documentation: '' }
         ],
@@ -10958,6 +12328,7 @@ exports.globalfunctions = {
     },
 	variable_global_set: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'name', documentation: '' },
             { label: 'value', documentation: '' }
@@ -10966,6 +12337,7 @@ exports.globalfunctions = {
     },
 	variable_instance_exists: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'instance_id', documentation: '' },
             { label: 'name', documentation: '' }
@@ -10974,6 +12346,7 @@ exports.globalfunctions = {
     },
 	variable_instance_get: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'instance_id', documentation: '' },
             { label: 'name', documentation: '' }
@@ -10982,6 +12355,7 @@ exports.globalfunctions = {
     },
 	variable_instance_set: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'instance_id', documentation: '' },
             { label: 'name', documentation: '' },
@@ -10991,6 +12365,7 @@ exports.globalfunctions = {
     },
 	variable_instance_get_names: {
         description: '[Function]',
+        available: datasimple.all,
         parameters: [
             { label: 'instance_id', documentation: '' }
         ],
@@ -17971,219 +19346,221 @@ exports.globalfunctions = {
 };
 
 exports.globalvariables = {
-    argument: {description: '[Variable]'},
-	argument0: {description: '[Variable]'},
-	argument1: {description: '[Variable]'},
-	argument10: {description: '[Variable]'},
-	argument11: {description: '[Variable]'},
-	argument12: {description: '[Variable]'},
-	argument13: {description: '[Variable]'},
-	argument14: {description: '[Variable]'},
-	argument15: {description: '[Variable]'},
-	argument2: {description: '[Variable]'},
-	argument3: {description: '[Variable]'},
-	argument4: {description: '[Variable]'},
-	argument5: {description: '[Variable]'},
-	argument6: {description: '[Variable]'},
-	argument7: {description: '[Variable]'},
-	argument8: {description: '[Variable]'},
-	argument9: {description: '[Variable]'},
-	argument_count: {description: '[Variable]'},
-	argument_relative: {description: '[Variable]'},
-	async_load: {description: '[Variable]'},
-	browser_height: {description: '[Variable]'},
-	browser_width: {description: '[Variable]'},
-	caption_health: {description: '[Variable]'},
-	caption_lives: {description: '[Variable]'},
-	caption_score: {description: '[Variable]'},
-	current_day: {description: '[Variable]'},
-	current_hour: {description: '[Variable]'},
-	current_minute: {description: '[Variable]'},
-	current_month: {description: '[Variable]'},
-	current_second: {description: '[Variable]'},
-	current_time: {description: '[Variable]'},
-	current_weekday: {description: '[Variable]'},
-	current_year: {description: '[Variable]'},
-	cursor_sprite: {description: '[Variable]'},
-	debug_mode: {description: '[Variable]'},
-	delta_time: {description: '[Variable]'},
-	display_aa: {description: '[Variable]'},
-	error_last: {description: '[Variable]'},
-	error_occurred: {description: '[Variable]'},
-	event_action: {description: '[Variable]'},
-	event_number: {description: '[Variable]'},
-	event_object: {description: '[Variable]'},
-	event_type: {description: '[Variable]'},
-	fps: {description: '[Variable]'},
-	fps_real: {description: '[Variable]'},
-	gamemaker_pro: {description: '[Variable]'},
-	gamemaker_registered: {description: '[Variable]'},
-	gamemaker_version: {description: '[Variable]'},
-	game_id: {description: '[Variable]'},
-	health: {description: '[Variable]'},
-	instance_count: {description: '[Variable]'},
-	instance_id: {description: '[Variable]'},
-	keyboard_key: {description: '[Variable]'},
-	keyboard_lastchar: {description: '[Variable]'},
-	keyboard_lastkey: {description: '[Variable]'},
-	keyboard_string: {description: '[Variable]'},
-	lives: {description: '[Variable]'},
-	mouse_button: {description: '[Variable]'},
-	mouse_lastbutton: {description: '[Variable]'},
-	mouse_x: {description: '[Variable]'},
-	mouse_y: {description: '[Variable]'},
-	os_browser: {description: '[Variable]'},
-	os_device: {description: '[Variable]'},
-	os_type: {description: '[Variable]'},
-	os_version: {description: '[Variable]'},
-	program_directory: {description: '[Variable]'},
-	room: {description: '[Variable]'},
-	room_caption: {description: '[Variable]'},
-	room_first: {description: '[Variable]'},
-	room_height: {description: '[Variable]'},
-	room_last: {description: '[Variable]'},
-	room_persistent: {description: '[Variable]'},
-	room_speed: {description: '[Variable]'},
-	room_width: {description: '[Variable]'},
-	score: {description: '[Variable]'},
-	show_health: {description: '[Variable]'},
-	show_lives: {description: '[Variable]'},
-	show_score: {description: '[Variable]'},
-	temp_directory: {description: '[Variable]'},
-	transition_color: {description: '[Variable]'},
-	transition_kind: {description: '[Variable]'},
-	transition_steps: {description: '[Variable]'},
-	webgl_enabled: {description: '[Variable]'},
-	working_directory: {description: '[Variable]'},
-	alarm: {description: '[Variable]'},
-	bbox_bottom: {description: '[Variable]'},
-	bbox_left: {description: '[Variable]'},
-	bbox_right: {description: '[Variable]'},
-	bbox_top: {description: '[Variable]'},
-	depth: {description: '[Variable]'},
-	direction: {description: '[Variable]'},
-	friction: {description: '[Variable]'},
-	gravity: {description: '[Variable]'},
-	gravity_direction: {description: '[Variable]'},
-	hspeed: {description: '[Variable]'},
-	id: {description: '[Variable]'},
-	image_alpha: {description: '[Variable]'},
-	image_angle: {description: '[Variable]'},
-	image_blend: {description: '[Variable]'},
-	image_index: {description: '[Variable]'},
-	image_number: {description: '[Variable]'},
-	image_single: {description: '[Variable]'},
-	image_speed: {description: '[Variable]'},
-	image_xscale: {description: '[Variable]'},
-	image_yscale: {description: '[Variable]'},
-	mask_index: {description: '[Variable]'},
-	object_index: {description: '[Variable]'},
-	path_endaction: {description: '[Variable]'},
-	path_index: {description: '[Variable]'},
-	path_orientation: {description: '[Variable]'},
-	path_position: {description: '[Variable]'},
-	path_positionprevious: {description: '[Variable]'},
-	path_scale: {description: '[Variable]'},
-	path_speed: {description: '[Variable]'},
-	persistent: {description: '[Variable]'},
-	phy_active: {description: '[Variable]'},
-	phy_angular_damping: {description: '[Variable]'},
-	phy_angular_velocity: {description: '[Variable]'},
-	phy_bullet: {description: '[Variable]'},
-	phy_collision_points: {description: '[Variable]'},
-	phy_collision_x: {description: '[Variable]'},
-	phy_collision_y: {description: '[Variable]'},
-	phy_col_normal_x: {description: '[Variable]'},
-	phy_col_normal_y: {description: '[Variable]'},
-	phy_com_x: {description: '[Variable]'},
-	phy_com_y: {description: '[Variable]'},
-	phy_dynamic: {description: '[Variable]'},
-	phy_fixed_rotation: {description: '[Variable]'},
-	phy_inertia: {description: '[Variable]'},
-	phy_kinematic: {description: '[Variable]'},
-	phy_linear_damping: {description: '[Variable]'},
-	phy_linear_velocity_x: {description: '[Variable]'},
-	phy_linear_velocity_y: {description: '[Variable]'},
-	phy_mass: {description: '[Variable]'},
-	phy_position_x: {description: '[Variable]'},
-	phy_position_xprevious: {description: '[Variable]'},
-	phy_position_y: {description: '[Variable]'},
-	phy_position_yprevious: {description: '[Variable]'},
-	phy_rotation: {description: '[Variable]'},
-	phy_sleeping: {description: '[Variable]'},
-	phy_speed: {description: '[Variable]'},
-	phy_speed_x: {description: '[Variable]'},
-	phy_speed_y: {description: '[Variable]'},
-	solid: {description: '[Variable]'},
-	speed: {description: '[Variable]'},
-	sprite_height: {description: '[Variable]'},
-	sprite_index: {description: '[Variable]'},
-	sprite_width: {description: '[Variable]'},
-	sprite_xoffset: {description: '[Variable]'},
-	sprite_yoffset: {description: '[Variable]'},
-	timeline_index: {description: '[Variable]'},
-	timeline_loop: {description: '[Variable]'},
-	timeline_position: {description: '[Variable]'},
-	timeline_running: {description: '[Variable]'},
-	timeline_speed: {description: '[Variable]'},
-	visible: {description: '[Variable]'},
-	vspeed: {description: '[Variable]'},
-	x: {description: '[Variable]'},
-	xprevious: {description: '[Variable]'},
-	xstart: {description: '[Variable]'},
-	y: {description: '[Variable]'},
-	yprevious: {description: '[Variable]'},
-	ystart: {description: '[Variable]'},
-	view_enabled: {description: '[Variable]'},
-	view_current: {description: '[Variable]'},
-	background_alpha: {description: '[Variable]'},
-	background_blend: {description: '[Variable]'},
-	background_color: {description: '[Variable]'},
-	background_foreground: {description: '[Variable]'},
-	background_height: {description: '[Variable]'},
-	background_hspeed: {description: '[Variable]'},
-	background_htiled: {description: '[Variable]'},
-	background_index: {description: '[Variable]'},
-	background_showcolor: {description: '[Variable]'},
-	background_visible: {description: '[Variable]'},
-	background_vspeed: {description: '[Variable]'},
-	background_vtiled: {description: '[Variable]'},
-	background_width: {description: '[Variable]'},
-	background_x: {description: '[Variable]'},
-	background_xscale: {description: '[Variable]'},
-	background_y: {description: '[Variable]'},
-	background_yscale: {description: '[Variable]'},
-    secure_mode: {description: '[Variable]'},
-	background_visible: {description: '[Variable] [0..7]'},
-	background_foreground: {description: '[Variable] [0..7]'},
-	background_index: {description: '[Variable] [0..7]'},
-	background_x: {description: '[Variable] [0..7]'},
-	background_y: {description: '[Variable] [0..7]'},
-	background_width: {description: '[Variable] [0..7]'},
-	background_height: {description: '[Variable] [0..7]'},
-	background_htiled: {description: '[Variable] [0..7]'},
-	background_vtiled: {description: '[Variable] [0..7]'},
-	background_xscale: {description: '[Variable] [0..7]'},
-	background_yscale: {description: '[Variable] [0..7]'},
-	background_hspeed: {description: '[Variable] [0..7]'},
-	background_vspeed: {description: '[Variable] [0..7]'},
-	background_blend: {description: '[Variable] [0..7]'},
-	background_alpha: {description: '[Variable] [0..7]'},
-    view_visible: {description: '[Variable] [0..7]'},
-	view_xview: {description: '[Variable] [0..7]'},
-	view_yview: {description: '[Variable] [0..7]'},
-	view_wview: {description: '[Variable] [0..7]'},
-	view_hview: {description: '[Variable] [0..7]'},
-	view_xport: {description: '[Variable] [0..7]'},
-	view_yport: {description: '[Variable] [0..7]'},
-	view_wport: {description: '[Variable] [0..7]'},
-	view_hport: {description: '[Variable] [0..7]'},
-	view_angle: {description: '[Variable] [0..7]'},
-	view_hborder: {description: '[Variable] [0..7]'},
-	view_vborder: {description: '[Variable] [0..7]'},
-	view_hspeed: {description: '[Variable] [0..7]'},
-	view_vspeed: {description: '[Variable] [0..7]'},
-    view_object: {description: '[Variable] [0..7]'},
+    argument: {description: '[Variable]',available: datasimple.all},
+	argument0: {description: '[Variable]',available: datasimple.all},
+	argument1: {description: '[Variable]',available: datasimple.all},
+	argument10: {description: '[Variable]',available: datasimple.all},
+	argument11: {description: '[Variable]',available: datasimple.all},
+	argument12: {description: '[Variable]',available: datasimple.all},
+	argument13: {description: '[Variable]',available: datasimple.all},
+	argument14: {description: '[Variable]',available: datasimple.all},
+	argument15: {description: '[Variable]',available: datasimple.all},
+	argument2: {description: '[Variable]',available: datasimple.all},
+	argument3: {description: '[Variable]',available: datasimple.all},
+	argument4: {description: '[Variable]',available: datasimple.all},
+	argument5: {description: '[Variable]',available: datasimple.all},
+	argument6: {description: '[Variable]',available: datasimple.all},
+	argument7: {description: '[Variable]',available: datasimple.all},
+	argument8: {description: '[Variable]',available: datasimple.all},
+	argument9: {description: '[Variable]',available: datasimple.all},
+	argument_count: {description: '[Variable]',available: datasimple.all},
+	argument_relative: {description: '[Variable]',available: datasimple.all},
+	async_load: {description: '[Variable]',available: datasimple.all},
+	browser_height: {description: '[Variable]',available: datasimple.all},
+	browser_width: {description: '[Variable]',available: datasimple.all},
+	caption_health: {description: '[Variable]',available: datasimple.all},
+	caption_lives: {description: '[Variable]',available: datasimple.all},
+	caption_score: {description: '[Variable]',available: datasimple.all},
+	current_day: {description: '[Variable]',available: datasimple.all},
+	current_hour: {description: '[Variable]',available: datasimple.all},
+	current_minute: {description: '[Variable]',available: datasimple.all},
+	current_month: {description: '[Variable]',available: datasimple.all},
+	current_second: {description: '[Variable]',available: datasimple.all},
+	current_time: {description: '[Variable]',available: datasimple.all},
+	current_weekday: {description: '[Variable]',available: datasimple.all},
+	current_year: {description: '[Variable]',available: datasimple.all},
+	cursor_sprite: {description: '[Variable]',available: datasimple.all},
+	debug_mode: {description: '[Variable]',available: datasimple.all},
+	delta_time: {description: '[Variable]',available: datasimple.all},
+	display_aa: {description: '[Variable]',available: datasimple.all},
+	error_last: {description: '[Variable]',available: datasimple.all},
+	error_occurred: {description: '[Variable]',available: datasimple.all},
+	event_action: {description: '[Variable]',available: datasimple.all},
+	event_number: {description: '[Variable]',available: datasimple.all},
+	event_object: {description: '[Variable]',available: datasimple.all},
+	event_type: {description: '[Variable]',available: datasimple.all},
+	fps: {description: '[Variable]',available: datasimple.all},
+	fps_real: {description: '[Variable]',available: datasimple.all},
+	game_id: {description: '[Variable]',available: datasimple.all},
+	health: {description: '[Variable]',available: datasimple.all},
+	instance_count: {description: '[Variable]',available: datasimple.all},
+	instance_id: {description: '[Variable]',available: datasimple.all},
+	keyboard_key: {description: '[Variable]',available: datasimple.all},
+	keyboard_lastchar: {description: '[Variable]',available: datasimple.all},
+	keyboard_lastkey: {description: '[Variable]',available: datasimple.all},
+	keyboard_string: {description: '[Variable]',available: datasimple.all},
+	lives: {description: '[Variable]',available: datasimple.all},
+	mouse_button: {description: '[Variable]',available: datasimple.all},
+	mouse_lastbutton: {description: '[Variable]',available: datasimple.all},
+	mouse_x: {description: '[Variable]',available: datasimple.all},
+	mouse_y: {description: '[Variable]',available: datasimple.all},
+	os_browser: {description: '[Variable]',available: datasimple.all},
+	os_device: {description: '[Variable]',available: datasimple.all},
+	os_type: {description: '[Variable]',available: datasimple.all},
+	os_version: {description: '[Variable]',available: datasimple.all},
+	program_directory: {description: '[Variable]',available: datasimple.all},
+	room: {description: '[Variable]',available: datasimple.all},
+	room_caption: {description: '[Variable]',available: datasimple.all},
+	room_first: {description: '[Variable]',available: datasimple.all},
+	room_height: {description: '[Variable]',available: datasimple.all},
+	room_last: {description: '[Variable]',available: datasimple.all},
+	room_persistent: {description: '[Variable]',available: datasimple.all},
+	room_speed: {description: '[Variable]',available: datasimple.all},
+	room_width: {description: '[Variable]',available: datasimple.all},
+	score: {description: '[Variable]',available: datasimple.all},
+	show_health: {description: '[Variable]',available: datasimple.all},
+	show_lives: {description: '[Variable]',available: datasimple.all},
+	show_score: {description: '[Variable]',available: datasimple.all},
+	temp_directory: {description: '[Variable]',available: datasimple.all},
+	transition_color: {description: '[Variable]',available: datasimple.all},
+	transition_kind: {description: '[Variable]',available: datasimple.all},
+	transition_steps: {description: '[Variable]',available: datasimple.all},
+	webgl_enabled: {description: '[Variable]',available: datasimple.gms1},
+	working_directory: {description: '[Variable]',available: datasimple.all},
+	alarm: {description: '[Variable]',available: datasimple.all},
+	bbox_bottom: {description: '[Variable]',available: datasimple.all},
+	bbox_left: {description: '[Variable]',available: datasimple.all},
+	bbox_right: {description: '[Variable]',available: datasimple.all},
+	bbox_top: {description: '[Variable]',available: datasimple.all},
+	depth: {description: '[Variable]',available: datasimple.all},
+	direction: {description: '[Variable]',available: datasimple.all},
+	friction: {description: '[Variable]',available: datasimple.all},
+	gravity: {description: '[Variable]',available: datasimple.all},
+	gravity_direction: {description: '[Variable]',available: datasimple.all},
+	hspeed: {description: '[Variable]',available: datasimple.all},
+	id: {description: '[Variable]',available: datasimple.all},
+	image_alpha: {description: '[Variable]',available: datasimple.all},
+	image_angle: {description: '[Variable]',available: datasimple.all},
+	image_blend: {description: '[Variable]',available: datasimple.all},
+	image_index: {description: '[Variable]',available: datasimple.all},
+	image_number: {description: '[Variable]',available: datasimple.all},
+	image_single: {description: '[Variable]',available: datasimple.all},
+	image_speed: {description: '[Variable]',available: datasimple.all},
+	image_xscale: {description: '[Variable]',available: datasimple.all},
+	image_yscale: {description: '[Variable]',available: datasimple.all},
+	mask_index: {description: '[Variable]',available: datasimple.all},
+	object_index: {description: '[Variable]',available: datasimple.all},
+	path_endaction: {description: '[Variable]',available: datasimple.all},
+	path_index: {description: '[Variable]',available: datasimple.all},
+	path_orientation: {description: '[Variable]',available: datasimple.all},
+	path_position: {description: '[Variable]',available: datasimple.all},
+	path_positionprevious: {description: '[Variable]',available: datasimple.all},
+	path_scale: {description: '[Variable]',available: datasimple.all},
+	path_speed: {description: '[Variable]',available: datasimple.all},
+	persistent: {description: '[Variable]',available: datasimple.all},
+	phy_active: {description: '[Variable]',available: datasimple.gms1},
+	phy_angular_damping: {description: '[Variable]',available: datasimple.gms1},
+	phy_angular_velocity: {description: '[Variable]',available: datasimple.gms1},
+	phy_bullet: {description: '[Variable]',available: datasimple.gms1},
+	phy_collision_points: {description: '[Variable]',available: datasimple.gms1},
+	phy_collision_x: {description: '[Variable]',available: datasimple.gms1},
+	phy_collision_y: {description: '[Variable]',available: datasimple.gms1},
+	phy_col_normal_x: {description: '[Variable]',available: datasimple.gms1},
+	phy_col_normal_y: {description: '[Variable]',available: datasimple.gms1},
+	phy_com_x: {description: '[Variable]',available: datasimple.gms1},
+	phy_com_y: {description: '[Variable]',available: datasimple.gms1},
+	phy_dynamic: {description: '[Variable]',available: datasimple.gms1},
+	phy_fixed_rotation: {description: '[Variable]',available: datasimple.gms1},
+	phy_inertia: {description: '[Variable]',available: datasimple.gms1},
+	phy_kinematic: {description: '[Variable]',available: datasimple.gms1},
+	phy_linear_damping: {description: '[Variable]',available: datasimple.gms1},
+	phy_linear_velocity_x: {description: '[Variable]',available: datasimple.gms1},
+	phy_linear_velocity_y: {description: '[Variable]',available: datasimple.gms1},
+	phy_mass: {description: '[Variable]',available: datasimple.gms1},
+	phy_position_x: {description: '[Variable]',available: datasimple.gms1},
+	phy_position_xprevious: {description: '[Variable]',available: datasimple.gms1},
+	phy_position_y: {description: '[Variable]',available: datasimple.gms1},
+	phy_position_yprevious: {description: '[Variable]',available: datasimple.gms1},
+	phy_rotation: {description: '[Variable]',available: datasimple.gms1},
+	phy_sleeping: {description: '[Variable]',available: datasimple.gms1},
+	phy_speed: {description: '[Variable]',available: datasimple.gms1},
+	phy_speed_x: {description: '[Variable]',available: datasimple.gms1},
+	phy_speed_y: {description: '[Variable]',available: datasimple.gms1},
+	solid: {description: '[Variable]',available: datasimple.all},
+	speed: {description: '[Variable]',available: datasimple.all},
+	sprite_height: {description: '[Variable]',available: datasimple.all},
+	sprite_index: {description: '[Variable]',available: datasimple.all},
+	sprite_width: {description: '[Variable]',available: datasimple.all},
+	sprite_xoffset: {description: '[Variable]',available: datasimple.all},
+	sprite_yoffset: {description: '[Variable]',available: datasimple.all},
+	timeline_index: {description: '[Variable]',available: datasimple.all},
+	timeline_loop: {description: '[Variable]',available: datasimple.all},
+	timeline_position: {description: '[Variable]',available: datasimple.all},
+	timeline_running: {description: '[Variable]',available: datasimple.all},
+	timeline_speed: {description: '[Variable]',available: datasimple.all},
+	visible: {description: '[Variable]',available: datasimple.all},
+	vspeed: {description: '[Variable]',available: datasimple.all},
+	x: {description: '[Variable]',available: datasimple.all},
+	xprevious: {description: '[Variable]',available: datasimple.all},
+	xstart: {description: '[Variable]',available: datasimple.all},
+	y: {description: '[Variable]',available: datasimple.all},
+	yprevious: {description: '[Variable]',available: datasimple.all},
+	ystart: {description: '[Variable]',available: datasimple.all},
+	view_enabled: {description: '[Variable]',available: datasimple.all},
+	view_current: {description: '[Variable]',available: datasimple.all},
+	background_alpha: {description: '[Variable]',available: datasimple.all},
+	background_blend: {description: '[Variable]',available: datasimple.all},
+	background_color: {description: '[Variable]',available: datasimple.all},
+	background_foreground: {description: '[Variable]',available: datasimple.all},
+	background_height: {description: '[Variable]',available: datasimple.all},
+	background_hspeed: {description: '[Variable]',available: datasimple.all},
+	background_htiled: {description: '[Variable]',available: datasimple.all},
+	background_index: {description: '[Variable]',available: datasimple.all},
+	background_showcolor: {description: '[Variable]',available: datasimple.all},
+	background_visible: {description: '[Variable]',available: datasimple.all},
+	background_vspeed: {description: '[Variable]',available: datasimple.all},
+	background_vtiled: {description: '[Variable]',available: datasimple.all},
+	background_width: {description: '[Variable]',available: datasimple.all},
+	background_x: {description: '[Variable]',available: datasimple.all},
+	background_xscale: {description: '[Variable]',available: datasimple.all},
+	background_y: {description: '[Variable]',available: datasimple.all},
+	background_yscale: {description: '[Variable]',available: datasimple.all},
+	background_visible: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_foreground: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_index: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_x: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_y: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_width: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_height: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_htiled: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_vtiled: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_xscale: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_yscale: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_hspeed: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_vspeed: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_blend: {description: '[Variable] [0..7]',available: datasimple.all},
+	background_alpha: {description: '[Variable] [0..7]',available: datasimple.all},
+    view_visible: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_xview: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_yview: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_wview: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_hview: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_xport: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_yport: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_wport: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_hport: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_angle: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_hborder: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_vborder: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_hspeed: {description: '[Variable] [0..7]',available: datasimple.all},
+	view_vspeed: {description: '[Variable] [0..7]',available: datasimple.all},
+    view_object: {description: '[Variable] [0..7]',available: datasimple.all},
+
+    //GameMaker 8.1 Only
+    secure_mode: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
+    gamemaker_pro: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
+	gamemaker_registered: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
+	gamemaker_version: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
     
     //Obsolete variables in GameMaker Studio 2
     view_angle: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
@@ -18209,507 +19586,507 @@ exports.globalvariables = {
 };
 
 exports.constants = {
-    dll_cdel: {description: '[Constant]'},
-	achievement_achievement_info: {description: '[Constant]'},
-	achievement_challenge_completed: {description: '[Constant]'},
-	achievement_challenge_completed_by_remote: {description: '[Constant]'},
-	achievement_challenge_launched: {description: '[Constant]'},
-	achievement_challenge_list_received: {description: '[Constant]'},
-	achievement_challenge_received: {description: '[Constant]'},
-	achievement_filter_all_players: {description: '[Constant]'},
-	achievement_filter_friends_only: {description: '[Constant]'},
-	achievement_friends_info: {description: '[Constant]'},
-	achievement_leaderboard_info: {description: '[Constant]'},
-	achievement_our_info: {description: '[Constant]'},
-	achievement_pic_loaded: {description: '[Constant]'},
-	achievement_player_info: {description: '[Constant]'},
-	achievement_purchase_info: {description: '[Constant]'},
-	achievement_show_achievement: {description: '[Constant]'},
-	achievement_show_bank: {description: '[Constant]'},
-	achievement_show_friend_picker: {description: '[Constant]'},
-	achievement_show_leaderboard: {description: '[Constant]'},
-	achievement_show_profile: {description: '[Constant]'},
-	achievement_show_purchase_prompt: {description: '[Constant]'},
-	achievement_show_ui: {description: '[Constant]'},
-	achievement_type_achievement_challenge: {description: '[Constant]'},
-	achievement_type_score_challenge: {description: '[Constant]'},
-	all: {description: '[Constant]'},
-	ANSI_CHARSET: {description: '[Constant]'},
-	ARABIC_CHARSET: {description: '[Constant]'},
-	asset_background: {description: '[Constant]'},
-	asset_font: {description: '[Constant]'},
-	asset_object: {description: '[Constant]'},
-	asset_path: {description: '[Constant]'},
-	asset_room: {description: '[Constant]'},
-	asset_script: {description: '[Constant]'},
-	asset_sound: {description: '[Constant]'},
-	asset_sprite: {description: '[Constant]'},
-	asset_timeline: {description: '[Constant]'},
-	asset_unknown: {description: '[Constant]'},
-	audio_falloff_exponent_distance: {description: '[Constant]'},
-	audio_falloff_exponent_distance_clamped: {description: '[Constant]'},
-	audio_falloff_inverse_distance: {description: '[Constant]'},
-	audio_falloff_inverse_distance_clamped: {description: '[Constant]'},
-	audio_falloff_linear_distance: {description: '[Constant]'},
-	audio_falloff_linear_distance_clamped: {description: '[Constant]'},
-	audio_falloff_none: {description: '[Constant]'},
-	audio_new_system: {description: '[Constant]'},
-	audio_old_system: {description: '[Constant]'},
-	BALTIC_CHARSET: {description: '[Constant]'},
-	bm_add: {description: '[Constant]'},
-	bm_dest_alpha: {description: '[Constant]'},
-	bm_dest_color: {description: '[Constant]'},
-	bm_inv_dest_alpha: {description: '[Constant]'},
-	bm_inv_dest_color: {description: '[Constant]'},
-	bm_inv_src_alpha: {description: '[Constant]'},
-	bm_inv_src_color: {description: '[Constant]'},
-	bm_max: {description: '[Constant]'},
-	bm_normal: {description: '[Constant]'},
-	bm_one: {description: '[Constant]'},
-	bm_src_alpha: {description: '[Constant]'},
-	bm_src_alpha_sat: {description: '[Constant]'},
-	bm_src_color: {description: '[Constant]'},
-	bm_subtract: {description: '[Constant]'},
-	bm_zero: {description: '[Constant]'},
-	browser_chrome: {description: '[Constant]'},
-	browser_firefox: {description: '[Constant]'},
-	browser_ie: {description: '[Constant]'},
-	browser_ie_mobile: {description: '[Constant]'},
-	browser_not_a_browser: {description: '[Constant]'},
-	browser_opera: {description: '[Constant]'},
-	browser_safari: {description: '[Constant]'},
-	browser_safari_mobile: {description: '[Constant]'},
-	browser_tizen: {description: '[Constant]'},
-	browser_unknown: {description: '[Constant]'},
-	browser_windows_store: {description: '[Constant]'},
-	buffer_bool: {description: '[Constant]'},
-	buffer_f16: {description: '[Constant]'},
-	buffer_f32: {description: '[Constant]'},
-	buffer_f64: {description: '[Constant]'},
-	buffer_fast: {description: '[Constant]'},
-	buffer_fixed: {description: '[Constant]'},
-	buffer_generalerror: {description: '[Constant]'},
-	buffer_grow: {description: '[Constant]'},
-	buffer_invalidtype: {description: '[Constant]'},
-	buffer_outofbounds: {description: '[Constant]'},
-	buffer_outofspace: {description: '[Constant]'},
-	buffer_s16: {description: '[Constant]'},
-	buffer_s32: {description: '[Constant]'},
-	buffer_s8: {description: '[Constant]'},
-	buffer_seek_end: {description: '[Constant]'},
-	buffer_seek_relative: {description: '[Constant]'},
-	buffer_seek_start: {description: '[Constant]'},
-	buffer_string: {description: '[Constant]'},
-	buffer_u16: {description: '[Constant]'},
-	buffer_u32: {description: '[Constant]'},
-	buffer_u8: {description: '[Constant]'},
-	buffer_vbuffer: {description: '[Constant]'},
-	buffer_wrap: {description: '[Constant]'},
-	CHINESEBIG5_CHARSET: {description: '[Constant]'},
-	cr_appstart: {description: '[Constant]'},
-	cr_arrow: {description: '[Constant]'},
-	cr_beam: {description: '[Constant]'},
-	cr_cross: {description: '[Constant]'},
-	cr_default: {description: '[Constant]'},
-	cr_drag: {description: '[Constant]'},
-	cr_handpoint: {description: '[Constant]'},
-	cr_help: {description: '[Constant]'},
-	cr_hourglass: {description: '[Constant]'},
-	cr_hsplit: {description: '[Constant]'},
-	cr_multidrag: {description: '[Constant]'},
-	cr_no: {description: '[Constant]'},
-	cr_nodrop: {description: '[Constant]'},
-	cr_none: {description: '[Constant]'},
-	cr_size_all: {description: '[Constant]'},
-	cr_size_nesw: {description: '[Constant]'},
-	cr_size_ns: {description: '[Constant]'},
-	cr_size_nwse: {description: '[Constant]'},
-	cr_size_we: {description: '[Constant]'},
-	cr_sqlwait: {description: '[Constant]'},
-	cr_uparrow: {description: '[Constant]'},
-	cr_vsplit: {description: '[Constant]'},
-	c_aqua: {description: '[Constant]'},
-	c_black: {description: '[Constant]'},
-	c_blue: {description: '[Constant]'},
-	c_dkgray: {description: '[Constant]'},
-	c_fuchsia: {description: '[Constant]'},
-	c_gray: {description: '[Constant]'},
-	c_green: {description: '[Constant]'},
-	c_lime: {description: '[Constant]'},
-	c_ltgray: {description: '[Constant]'},
-	c_maroon: {description: '[Constant]'},
-	c_navy: {description: '[Constant]'},
-	c_olive: {description: '[Constant]'},
-	c_orange: {description: '[Constant]'},
-	c_purple: {description: '[Constant]'},
-	c_red: {description: '[Constant]'},
-	c_silver: {description: '[Constant]'},
-	c_teal: {description: '[Constant]'},
-	c_white: {description: '[Constant]'},
-	c_yellow: {description: '[Constant]'},
-	DEFAULT_CHARSET: {description: '[Constant]'},
-	device_emulator: {description: '[Constant]'},
-	device_ios_ipad: {description: '[Constant]'},
-	device_ios_ipad_retina: {description: '[Constant]'},
-	device_ios_iphone: {description: '[Constant]'},
-	device_ios_iphone5: {description: '[Constant]'},
-	device_ios_iphone_retina: {description: '[Constant]'},
-	device_ios_unknown: {description: '[Constant]'},
-	device_tablet: {description: '[Constant]'},
-	display_landscape: {description: '[Constant]'},
-	display_landscape_flipped: {description: '[Constant]'},
-	display_portrait: {description: '[Constant]'},
-	display_portrait_flipped: {description: '[Constant]'},
-	dll_cdecl: {description: '[Constant]'},
-	dll_stdcall: {description: '[Constant]'},
-	ds_type_grid: {description: '[Constant]'},
-	ds_type_list: {description: '[Constant]'},
-	ds_type_map: {description: '[Constant]'},
-	ds_type_priority: {description: '[Constant]'},
-	ds_type_queue: {description: '[Constant]'},
-	ds_type_stack: {description: '[Constant]'},
-	EASTEUROPE_CHARSET: {description: '[Constant]'},
-	ef_cloud: {description: '[Constant]'},
-	ef_ellipse: {description: '[Constant]'},
-	ef_explosion: {description: '[Constant]'},
-	ef_firework: {description: '[Constant]'},
-	ef_flare: {description: '[Constant]'},
-	ef_rain: {description: '[Constant]'},
-	ef_ring: {description: '[Constant]'},
-	ef_smoke: {description: '[Constant]'},
-	ef_smokeup: {description: '[Constant]'},
-	ef_snow: {description: '[Constant]'},
-	ef_spark: {description: '[Constant]'},
-	ef_star: {description: '[Constant]'},
-	ev_alarm: {description: '[Constant]'},
-	ev_animation_end: {description: '[Constant]'},
-	ev_boundary: {description: '[Constant]'},
-	ev_close_button: {description: '[Constant]'},
-	ev_collision: {description: '[Constant]'},
-	ev_create: {description: '[Constant]'},
-	ev_destroy: {description: '[Constant]'},
-	ev_draw: {description: '[Constant]'},
-	ev_end_of_path: {description: '[Constant]'},
-	ev_game_end: {description: '[Constant]'},
-	ev_game_start: {description: '[Constant]'},
-	ev_global_left_button: {description: '[Constant]'},
-	ev_global_left_press: {description: '[Constant]'},
-	ev_global_left_release: {description: '[Constant]'},
-	ev_global_middle_button: {description: '[Constant]'},
-	ev_global_middle_press: {description: '[Constant]'},
-	ev_global_middle_release: {description: '[Constant]'},
-	ev_global_press: {description: '[Constant]'},
-	ev_global_release: {description: '[Constant]'},
-	ev_global_right_button: {description: '[Constant]'},
-	ev_global_right_press: {description: '[Constant]'},
-	ev_global_right_release: {description: '[Constant]'},
-	ev_gui: {description: '[Constant]'},
-	ev_joystick1_button1: {description: '[Constant]'},
-	ev_joystick1_button2: {description: '[Constant]'},
-	ev_joystick1_button3: {description: '[Constant]'},
-	ev_joystick1_button4: {description: '[Constant]'},
-	ev_joystick1_button5: {description: '[Constant]'},
-	ev_joystick1_button6: {description: '[Constant]'},
-	ev_joystick1_button7: {description: '[Constant]'},
-	ev_joystick1_button8: {description: '[Constant]'},
-	ev_joystick1_down: {description: '[Constant]'},
-	ev_joystick1_left: {description: '[Constant]'},
-	ev_joystick1_right: {description: '[Constant]'},
-	ev_joystick1_up: {description: '[Constant]'},
-	ev_joystick2_button1: {description: '[Constant]'},
-	ev_joystick2_button2: {description: '[Constant]'},
-	ev_joystick2_button3: {description: '[Constant]'},
-	ev_joystick2_button4: {description: '[Constant]'},
-	ev_joystick2_button5: {description: '[Constant]'},
-	ev_joystick2_button6: {description: '[Constant]'},
-	ev_joystick2_button7: {description: '[Constant]'},
-	ev_joystick2_button8: {description: '[Constant]'},
-	ev_joystick2_down: {description: '[Constant]'},
-	ev_joystick2_left: {description: '[Constant]'},
-	ev_joystick2_right: {description: '[Constant]'},
-	ev_joystick2_up: {description: '[Constant]'},
-	ev_keyboard: {description: '[Constant]'},
-	ev_keypress: {description: '[Constant]'},
-	ev_keyrelease: {description: '[Constant]'},
-	ev_left_button: {description: '[Constant]'},
-	ev_left_press: {description: '[Constant]'},
-	ev_left_release: {description: '[Constant]'},
-	ev_middle_button: {description: '[Constant]'},
-	ev_middle_press: {description: '[Constant]'},
-	ev_middle_release: {description: '[Constant]'},
-	ev_mouse: {description: '[Constant]'},
-	ev_mouse_enter: {description: '[Constant]'},
-	ev_mouse_leave: {description: '[Constant]'},
-	ev_mouse_wheel_down: {description: '[Constant]'},
-	ev_mouse_wheel_up: {description: '[Constant]'},
-	ev_no_button: {description: '[Constant]'},
-	ev_no_more_health: {description: '[Constant]'},
-	ev_no_more_lives: {description: '[Constant]'},
-	ev_other: {description: '[Constant]'},
-	ev_outside: {description: '[Constant]'},
-	ev_right_button: {description: '[Constant]'},
-	ev_right_press: {description: '[Constant]'},
-	ev_right_release: {description: '[Constant]'},
-	ev_room_end: {description: '[Constant]'},
-	ev_room_start: {description: '[Constant]'},
-	ev_step: {description: '[Constant]'},
-	ev_step_begin: {description: '[Constant]'},
-	ev_step_end: {description: '[Constant]'},
-	ev_step_normal: {description: '[Constant]'},
-	ev_trigger: {description: '[Constant]'},
-	ev_user0: {description: '[Constant]'},
-	ev_user1: {description: '[Constant]'},
-	ev_user10: {description: '[Constant]'},
-	ev_user11: {description: '[Constant]'},
-	ev_user12: {description: '[Constant]'},
-	ev_user13: {description: '[Constant]'},
-	ev_user14: {description: '[Constant]'},
-	ev_user15: {description: '[Constant]'},
-	ev_user2: {description: '[Constant]'},
-	ev_user3: {description: '[Constant]'},
-	ev_user4: {description: '[Constant]'},
-	ev_user5: {description: '[Constant]'},
-	ev_user6: {description: '[Constant]'},
-	ev_user7: {description: '[Constant]'},
-	ev_user8: {description: '[Constant]'},
-	ev_user9: {description: '[Constant]'},
-	false: {description: '[Constant]'},
-	fa_archive: {description: '[Constant]'},
-	fa_bottom: {description: '[Constant]'},
-	fa_center: {description: '[Constant]'},
-	fa_directory: {description: '[Constant]'},
-	fa_hidden: {description: '[Constant]'},
-	fa_left: {description: '[Constant]'},
-	fa_middle: {description: '[Constant]'},
-	fa_readonly: {description: '[Constant]'},
-	fa_right: {description: '[Constant]'},
-	fa_sysfile: {description: '[Constant]'},
-	fa_top: {description: '[Constant]'},
-	fa_volumeid: {description: '[Constant]'},
-	GB2312_CHARSET: {description: '[Constant]'},
-	global: {description: '[Constant]'},
-	gp_axislh: {description: '[Constant]'},
-	gp_axislv: {description: '[Constant]'},
-	gp_axisrh: {description: '[Constant]'},
-	gp_axisrv: {description: '[Constant]'},
-	gp_face1: {description: '[Constant]'},
-	gp_face2: {description: '[Constant]'},
-	gp_face3: {description: '[Constant]'},
-	gp_face4: {description: '[Constant]'},
-	gp_padd: {description: '[Constant]'},
-	gp_padl: {description: '[Constant]'},
-	gp_padr: {description: '[Constant]'},
-	gp_padu: {description: '[Constant]'},
-	gp_select: {description: '[Constant]'},
-	gp_shoulderl: {description: '[Constant]'},
-	gp_shoulderlb: {description: '[Constant]'},
-	gp_shoulderr: {description: '[Constant]'},
-	gp_shoulderrb: {description: '[Constant]'},
-	gp_start: {description: '[Constant]'},
-	gp_stickl: {description: '[Constant]'},
-	gp_stickr: {description: '[Constant]'},
-	GREEK_CHARSET: {description: '[Constant]'},
-	HANGEUL_CHARSET: {description: '[Constant]'},
-	HEBREW_CHARSET: {description: '[Constant]'},
-	JOHAB_CHARSET: {description: '[Constant]'},
-	lb_disp_none: {description: '[Constant]'},
-	lb_disp_numeric: {description: '[Constant]'},
-	lb_disp_time_ms: {description: '[Constant]'},
-	lb_disp_time_sec: {description: '[Constant]'},
-	lb_sort_ascending: {description: '[Constant]'},
-	lb_sort_descending: {description: '[Constant]'},
-	lb_sort_none: {description: '[Constant]'},
-	leaderboard_type_number: {description: '[Constant]'},
-	leaderboard_type_time_mins_secs: {description: '[Constant]'},
-	local: {description: '[Constant]'},
-	MAC_CHARSET: {description: '[Constant]'},
-	matrix_projection: {description: '[Constant]'},
-	matrix_view: {description: '[Constant]'},
-	matrix_world: {description: '[Constant]'},
-	mb_any: {description: '[Constant]'},
-	mb_left: {description: '[Constant]'},
-	mb_middle: {description: '[Constant]'},
-	mb_none: {description: '[Constant]'},
-	mb_right: {description: '[Constant]'},
-	network_socket_bluetooth: {description: '[Constant]'},
-	network_socket_tcp: {description: '[Constant]'},
-	network_socket_udp: {description: '[Constant]'},
-	network_type_connect: {description: '[Constant]'},
-	network_type_data: {description: '[Constant]'},
-	network_type_disconnect: {description: '[Constant]'},
-	noone: {description: '[Constant]'},
-	OEM_CHARSET: {description: '[Constant]'},
-	of_challenge_lose: {description: '[Constant]'},
-	of_challenge_tie: {description: '[Constant]'},
-	of_challenge_win: {description: '[Constant]'},
-	os_android: {description: '[Constant]'},
-	os_ios: {description: '[Constant]'},
-	os_linux: {description: '[Constant]'},
-	os_macosx: {description: '[Constant]'},
-	os_psp: {description: '[Constant]'},
-	os_symbian: {description: '[Constant]'},
-	os_tizen: {description: '[Constant]'},
-	os_unknown: {description: '[Constant]'},
-	os_win32: {description: '[Constant]'},
-	os_win8native: {description: '[Constant]'},
-	os_windows: {description: '[Constant]'},
-	os_winphone: {description: '[Constant]'},
-	other: {description: '[Constant]'},
-	ov_achievements: {description: '[Constant]'},
-	ov_community: {description: '[Constant]'},
-	ov_friends: {description: '[Constant]'},
-	ov_gamegroup: {description: '[Constant]'},
-	ov_players: {description: '[Constant]'},
-	ov_settings: {description: '[Constant]'},
-	phy_debug_render_aabb: {description: '[Constant]'},
-	phy_debug_render_collision_pairs: {description: '[Constant]'},
-	phy_debug_render_coms: {description: '[Constant]'},
-	phy_debug_render_core_shapes: {description: '[Constant]'},
-	phy_debug_render_joints: {description: '[Constant]'},
-	phy_debug_render_obb: {description: '[Constant]'},
-	phy_debug_render_shapes: {description: '[Constant]'},
-	phy_joint_anchor_1_x: {description: '[Constant]'},
-	phy_joint_anchor_1_y: {description: '[Constant]'},
-	phy_joint_anchor_2_x: {description: '[Constant]'},
-	phy_joint_anchor_2_y: {description: '[Constant]'},
-	phy_joint_angle: {description: '[Constant]'},
-	phy_joint_angle_limits: {description: '[Constant]'},
-	phy_joint_damping_ratio: {description: '[Constant]'},
-	phy_joint_frequency: {description: '[Constant]'},
-	phy_joint_length_1: {description: '[Constant]'},
-	phy_joint_length_2: {description: '[Constant]'},
-	phy_joint_lower_angle_limit: {description: '[Constant]'},
-	phy_joint_max_motor_force: {description: '[Constant]'},
-	phy_joint_max_motor_torque: {description: '[Constant]'},
-	phy_joint_motor_force: {description: '[Constant]'},
-	phy_joint_motor_speed: {description: '[Constant]'},
-	phy_joint_motor_torque: {description: '[Constant]'},
-	phy_joint_reaction_force_x: {description: '[Constant]'},
-	phy_joint_reaction_force_y: {description: '[Constant]'},
-	phy_joint_reaction_torque: {description: '[Constant]'},
-	phy_joint_speed: {description: '[Constant]'},
-	phy_joint_translation: {description: '[Constant]'},
-	phy_joint_upper_angle_limit: {description: '[Constant]'},
-	pi: {description: '[Constant]'},
-	pr_linelist: {description: '[Constant]'},
-	pr_linestrip: {description: '[Constant]'},
-	pr_pointlist: {description: '[Constant]'},
-	pr_trianglefan: {description: '[Constant]'},
-	pr_trianglelist: {description: '[Constant]'},
-	pr_trianglestrip: {description: '[Constant]'},
-	ps_change_all: {description: '[Constant]'},
-	ps_change_motion: {description: '[Constant]'},
-	ps_change_shape: {description: '[Constant]'},
-	ps_deflect_horizontal: {description: '[Constant]'},
-	ps_deflect_vertical: {description: '[Constant]'},
-	ps_distr_gaussian: {description: '[Constant]'},
-	ps_distr_invgaussian: {description: '[Constant]'},
-	ps_distr_linear: {description: '[Constant]'},
-	ps_force_constant: {description: '[Constant]'},
-	ps_force_linear: {description: '[Constant]'},
-	ps_force_quadratic: {description: '[Constant]'},
-	ps_shape_diamond: {description: '[Constant]'},
-	ps_shape_ellipse: {description: '[Constant]'},
-	ps_shape_line: {description: '[Constant]'},
-	ps_shape_rectangle: {description: '[Constant]'},
-	pt_shape_circle: {description: '[Constant]'},
-	pt_shape_cloud: {description: '[Constant]'},
-	pt_shape_disk: {description: '[Constant]'},
-	pt_shape_explosion: {description: '[Constant]'},
-	pt_shape_flare: {description: '[Constant]'},
-	pt_shape_line: {description: '[Constant]'},
-	pt_shape_pixel: {description: '[Constant]'},
-	pt_shape_ring: {description: '[Constant]'},
-	pt_shape_smoke: {description: '[Constant]'},
-	pt_shape_snow: {description: '[Constant]'},
-	pt_shape_spark: {description: '[Constant]'},
-	pt_shape_sphere: {description: '[Constant]'},
-	pt_shape_square: {description: '[Constant]'},
-	pt_shape_star: {description: '[Constant]'},
-	RUSSIAN_CHARSET: {description: '[Constant]'},
-	self: {description: '[Constant]'},
-	SHIFTJIS_CHARSET: {description: '[Constant]'},
-	SYMBOL_CHARSET: {description: '[Constant]'},
-	THAI_CHARSET: {description: '[Constant]'},
-	true: {description: '[Constant]'},
-	TURKISH_CHARSET: {description: '[Constant]'},
-	ty_real: {description: '[Constant]'},
-	ty_string: {description: '[Constant]'},
-	vertex_type_colour: {description: '[Constant]'},
-	vertex_type_float1: {description: '[Constant]'},
-	vertex_type_float2: {description: '[Constant]'},
-	vertex_type_float3: {description: '[Constant]'},
-	vertex_type_float4: {description: '[Constant]'},
-	vertex_type_ubyte4: {description: '[Constant]'},
-	vertex_usage_binormal: {description: '[Constant]'},
-	vertex_usage_blendindices: {description: '[Constant]'},
-	vertex_usage_blendweight: {description: '[Constant]'},
-	vertex_usage_colour: {description: '[Constant]'},
-	vertex_usage_depth: {description: '[Constant]'},
-	vertex_usage_fog: {description: '[Constant]'},
-	vertex_usage_normal: {description: '[Constant]'},
-	vertex_usage_position: {description: '[Constant]'},
-	vertex_usage_psize: {description: '[Constant]'},
-	vertex_usage_sample: {description: '[Constant]'},
-	vertex_usage_tagnet: {description: '[Constant]'},
-	vertex_usage_textcoord: {description: '[Constant]'},
-	VIETNAMESE_CHARSET: {description: '[Constant]'},
-	vk_add: {description: '[Constant]'},
-	vk_alt: {description: '[Constant]'},
-	vk_anykey: {description: '[Constant]'},
-	vk_backspace: {description: '[Constant]'},
-	vk_control: {description: '[Constant]'},
-	vk_decimal: {description: '[Constant]'},
-	vk_delete: {description: '[Constant]'},
-	vk_divide: {description: '[Constant]'},
-	vk_down: {description: '[Constant]'},
-	vk_end: {description: '[Constant]'},
-	vk_enter: {description: '[Constant]'},
-	vk_escape: {description: '[Constant]'},
-	vk_f1: {description: '[Constant]'},
-	vk_f10: {description: '[Constant]'},
-	vk_f11: {description: '[Constant]'},
-	vk_f12: {description: '[Constant]'},
-	vk_f2: {description: '[Constant]'},
-	vk_f3: {description: '[Constant]'},
-	vk_f4: {description: '[Constant]'},
-	vk_f5: {description: '[Constant]'},
-	vk_f6: {description: '[Constant]'},
-	vk_f7: {description: '[Constant]'},
-	vk_f8: {description: '[Constant]'},
-	vk_f9: {description: '[Constant]'},
-	vk_home: {description: '[Constant]'},
-	vk_insert: {description: '[Constant]'},
-	vk_lalt: {description: '[Constant]'},
-	vk_lcontrol: {description: '[Constant]'},
-	vk_left: {description: '[Constant]'},
-	vk_lshift: {description: '[Constant]'},
-	vk_multiply: {description: '[Constant]'},
-	vk_nokey: {description: '[Constant]'},
-	vk_numpad0: {description: '[Constant]'},
-	vk_numpad1: {description: '[Constant]'},
-	vk_numpad2: {description: '[Constant]'},
-	vk_numpad3: {description: '[Constant]'},
-	vk_numpad4: {description: '[Constant]'},
-	vk_numpad5: {description: '[Constant]'},
-	vk_numpad6: {description: '[Constant]'},
-	vk_numpad7: {description: '[Constant]'},
-	vk_numpad8: {description: '[Constant]'},
-	vk_numpad9: {description: '[Constant]'},
-	vk_pagedown: {description: '[Constant]'},
-	vk_pageup: {description: '[Constant]'},
-	vk_pause: {description: '[Constant]'},
-	vk_printscreen: {description: '[Constant]'},
-	vk_ralt: {description: '[Constant]'},
-	vk_rcontrol: {description: '[Constant]'},
-	vk_return: {description: '[Constant]'},
-	vk_right: {description: '[Constant]'},
-	vk_rshift: {description: '[Constant]'},
-	vk_shift: {description: '[Constant]'},
-	vk_space: {description: '[Constant]'},
-	vk_subtract: {description: '[Constant]'},
-	vk_tab: {description: '[Constant]'},
-	vk_up: {description: '[Constant]'},
+    dll_cdel: {description: '[Constant]',available: datasimple.all},
+	achievement_achievement_info: {description: '[Constant]',available: datasimple.gms1},
+	achievement_challenge_completed: {description: '[Constant]',available: datasimple.gms1},
+	achievement_challenge_completed_by_remote: {description: '[Constant]',available: datasimple.gms1},
+	achievement_challenge_launched: {description: '[Constant]',available: datasimple.gms1},
+	achievement_challenge_list_received: {description: '[Constant]',available: datasimple.gms1},
+	achievement_challenge_received: {description: '[Constant]',available: datasimple.gms1},
+	achievement_filter_all_players: {description: '[Constant]',available: datasimple.gms1},
+	achievement_filter_friends_only: {description: '[Constant]',available: datasimple.gms1},
+	achievement_friends_info: {description: '[Constant]',available: datasimple.gms1},
+	achievement_leaderboard_info: {description: '[Constant]',available: datasimple.gms1},
+	achievement_our_info: {description: '[Constant]',available: datasimple.gms1},
+	achievement_pic_loaded: {description: '[Constant]',available: datasimple.gms1},
+	achievement_player_info: {description: '[Constant]',available: datasimple.gms1},
+	achievement_purchase_info: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_achievement: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_bank: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_friend_picker: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_leaderboard: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_profile: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_purchase_prompt: {description: '[Constant]',available: datasimple.gms1},
+	achievement_show_ui: {description: '[Constant]',available: datasimple.gms1},
+	achievement_type_achievement_challenge: {description: '[Constant]',available: datasimple.gms1},
+	achievement_type_score_challenge: {description: '[Constant]',available: datasimple.gms1},
+	all: {description: '[Constant]',available: datasimple.all},
+	ANSI_CHARSET: {description: '[Constant]',available: datasimple.all},
+	ARABIC_CHARSET: {description: '[Constant]',available: datasimple.all},
+	asset_background: {description: '[Constant]',available: datasimple.gms1},
+	asset_font: {description: '[Constant]',available: datasimple.gms1},
+	asset_object: {description: '[Constant]',available: datasimple.gms1},
+	asset_path: {description: '[Constant]',available: datasimple.gms1},
+	asset_room: {description: '[Constant]',available: datasimple.gms1},
+	asset_script: {description: '[Constant]',available: datasimple.gms1},
+	asset_sound: {description: '[Constant]',available: datasimple.gms1},
+	asset_sprite: {description: '[Constant]',available: datasimple.gms1},
+	asset_timeline: {description: '[Constant]',available: datasimple.gms1},
+	asset_unknown: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_exponent_distance: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_exponent_distance_clamped: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_inverse_distance: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_inverse_distance_clamped: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_linear_distance: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_linear_distance_clamped: {description: '[Constant]',available: datasimple.gms1},
+	audio_falloff_none: {description: '[Constant]',available: datasimple.gms1},
+	audio_new_system: {description: '[Constant]',available: datasimple.gms1},
+	audio_old_system: {description: '[Constant]',available: datasimple.gms1},
+	BALTIC_CHARSET: {description: '[Constant]',available: datasimple.all},
+	bm_add: {description: '[Constant]',available: datasimple.all},
+	bm_dest_alpha: {description: '[Constant]',available: datasimple.all},
+	bm_dest_color: {description: '[Constant]',available: datasimple.all},
+	bm_inv_dest_alpha: {description: '[Constant]',available: datasimple.all},
+	bm_inv_dest_color: {description: '[Constant]',available: datasimple.all},
+	bm_inv_src_alpha: {description: '[Constant]',available: datasimple.all},
+	bm_inv_src_color: {description: '[Constant]',available: datasimple.all},
+	bm_max: {description: '[Constant]',available: datasimple.all},
+	bm_normal: {description: '[Constant]',available: datasimple.all},
+	bm_one: {description: '[Constant]',available: datasimple.all},
+	bm_src_alpha: {description: '[Constant]',available: datasimple.all},
+	bm_src_alpha_sat: {description: '[Constant]',available: datasimple.all},
+	bm_src_color: {description: '[Constant]',available: datasimple.all},
+	bm_subtract: {description: '[Constant]',available: datasimple.all},
+	bm_zero: {description: '[Constant]',available: datasimple.all},
+	browser_chrome: {description: '[Constant]',available: datasimple.gms1},
+	browser_firefox: {description: '[Constant]',available: datasimple.gms1},
+	browser_ie: {description: '[Constant]',available: datasimple.gms1},
+	browser_ie_mobile: {description: '[Constant]',available: datasimple.gms1},
+	browser_not_a_browser: {description: '[Constant]',available: datasimple.gms1},
+	browser_opera: {description: '[Constant]',available: datasimple.gms1},
+	browser_safari: {description: '[Constant]',available: datasimple.gms1},
+	browser_safari_mobile: {description: '[Constant]',available: datasimple.gms1},
+	browser_tizen: {description: '[Constant]',available: datasimple.gms1},
+	browser_unknown: {description: '[Constant]',available: datasimple.gms1},
+	browser_windows_store: {description: '[Constant]',available: datasimple.gms1},
+	buffer_bool: {description: '[Constant]',available: datasimple.gms1},
+	buffer_f16: {description: '[Constant]',available: datasimple.gms1},
+	buffer_f32: {description: '[Constant]',available: datasimple.gms1},
+	buffer_f64: {description: '[Constant]',available: datasimple.gms1},
+	buffer_fast: {description: '[Constant]',available: datasimple.gms1},
+	buffer_fixed: {description: '[Constant]',available: datasimple.gms1},
+	buffer_generalerror: {description: '[Constant]',available: datasimple.gms1},
+	buffer_grow: {description: '[Constant]',available: datasimple.gms1},
+	buffer_invalidtype: {description: '[Constant]',available: datasimple.gms1},
+	buffer_outofbounds: {description: '[Constant]',available: datasimple.gms1},
+	buffer_outofspace: {description: '[Constant]',available: datasimple.gms1},
+	buffer_s16: {description: '[Constant]',available: datasimple.gms1},
+	buffer_s32: {description: '[Constant]',available: datasimple.gms1},
+	buffer_s8: {description: '[Constant]',available: datasimple.gms1},
+	buffer_seek_end: {description: '[Constant]',available: datasimple.gms1},
+	buffer_seek_relative: {description: '[Constant]',available: datasimple.gms1},
+	buffer_seek_start: {description: '[Constant]',available: datasimple.gms1},
+	buffer_string: {description: '[Constant]',available: datasimple.gms1},
+	buffer_u16: {description: '[Constant]',available: datasimple.gms1},
+	buffer_u32: {description: '[Constant]',available: datasimple.gms1},
+	buffer_u8: {description: '[Constant]',available: datasimple.gms1},
+	buffer_vbuffer: {description: '[Constant]',available: datasimple.gms1},
+	buffer_wrap: {description: '[Constant]',available: datasimple.gms1},
+	CHINESEBIG5_CHARSET: {description: '[Constant]',available: datasimple.all},
+	cr_appstart: {description: '[Constant]',available: datasimple.all},
+	cr_arrow: {description: '[Constant]',available: datasimple.all},
+	cr_beam: {description: '[Constant]',available: datasimple.all},
+	cr_cross: {description: '[Constant]',available: datasimple.all},
+	cr_default: {description: '[Constant]',available: datasimple.all},
+	cr_drag: {description: '[Constant]',available: datasimple.all},
+	cr_handpoint: {description: '[Constant]',available: datasimple.all},
+	cr_help: {description: '[Constant]',available: datasimple.all},
+	cr_hourglass: {description: '[Constant]',available: datasimple.all},
+	cr_hsplit: {description: '[Constant]',available: datasimple.all},
+	cr_multidrag: {description: '[Constant]',available: datasimple.all},
+	cr_no: {description: '[Constant]',available: datasimple.all},
+	cr_nodrop: {description: '[Constant]',available: datasimple.all},
+	cr_none: {description: '[Constant]',available: datasimple.all},
+	cr_size_all: {description: '[Constant]',available: datasimple.all},
+	cr_size_nesw: {description: '[Constant]',available: datasimple.all},
+	cr_size_ns: {description: '[Constant]',available: datasimple.all},
+	cr_size_nwse: {description: '[Constant]',available: datasimple.all},
+	cr_size_we: {description: '[Constant]',available: datasimple.all},
+	cr_sqlwait: {description: '[Constant]',available: datasimple.all},
+	cr_uparrow: {description: '[Constant]',available: datasimple.all},
+	cr_vsplit: {description: '[Constant]',available: datasimple.all},
+	c_aqua: {description: '[Constant]',available: datasimple.all},
+	c_black: {description: '[Constant]',available: datasimple.all},
+	c_blue: {description: '[Constant]',available: datasimple.all},
+	c_dkgray: {description: '[Constant]',available: datasimple.all},
+	c_fuchsia: {description: '[Constant]',available: datasimple.all},
+	c_gray: {description: '[Constant]',available: datasimple.all},
+	c_green: {description: '[Constant]',available: datasimple.all},
+	c_lime: {description: '[Constant]',available: datasimple.all},
+	c_ltgray: {description: '[Constant]',available: datasimple.all},
+	c_maroon: {description: '[Constant]',available: datasimple.all},
+	c_navy: {description: '[Constant]',available: datasimple.all},
+	c_olive: {description: '[Constant]',available: datasimple.all},
+	c_orange: {description: '[Constant]',available: datasimple.all},
+	c_purple: {description: '[Constant]',available: datasimple.all},
+	c_red: {description: '[Constant]',available: datasimple.all},
+	c_silver: {description: '[Constant]',available: datasimple.all},
+	c_teal: {description: '[Constant]',available: datasimple.all},
+	c_white: {description: '[Constant]',available: datasimple.all},
+	c_yellow: {description: '[Constant]',available: datasimple.all},
+	DEFAULT_CHARSET: {description: '[Constant]',available: datasimple.all},
+	device_emulator: {description: '[Constant]',available: datasimple.gms1},
+	device_ios_ipad: {description: '[Constant]',available: datasimple.gms1},
+	device_ios_ipad_retina: {description: '[Constant]',available: datasimple.gms1},
+	device_ios_iphone: {description: '[Constant]',available: datasimple.gms1},
+	device_ios_iphone5: {description: '[Constant]',available: datasimple.gms1},
+	device_ios_iphone_retina: {description: '[Constant]',available: datasimple.gms1},
+	device_ios_unknown: {description: '[Constant]',available: datasimple.gms1},
+	device_tablet: {description: '[Constant]',available: datasimple.gms1},
+	display_landscape: {description: '[Constant]',available: datasimple.gms1},
+	display_landscape_flipped: {description: '[Constant]',available: datasimple.gms1},
+	display_portrait: {description: '[Constant]',available: datasimple.gms1},
+	display_portrait_flipped: {description: '[Constant]',available: datasimple.gms1},
+	dll_cdecl: {description: '[Constant]',available: datasimple.all},
+	dll_stdcall: {description: '[Constant]',available: datasimple.all},
+	ds_type_grid: {description: '[Constant]',available: datasimple.gms1},
+	ds_type_list: {description: '[Constant]',available: datasimple.gms1},
+	ds_type_map: {description: '[Constant]',available: datasimple.gms1},
+	ds_type_priority: {description: '[Constant]',available: datasimple.gms1},
+	ds_type_queue: {description: '[Constant]',available: datasimple.gms1},
+	ds_type_stack: {description: '[Constant]',available: datasimple.gms1},
+	EASTEUROPE_CHARSET: {description: '[Constant]',available: datasimple.all},
+	ef_cloud: {description: '[Constant]',available: datasimple.all},
+	ef_ellipse: {description: '[Constant]',available: datasimple.all},
+	ef_explosion: {description: '[Constant]',available: datasimple.all},
+	ef_firework: {description: '[Constant]',available: datasimple.all},
+	ef_flare: {description: '[Constant]',available: datasimple.all},
+	ef_rain: {description: '[Constant]',available: datasimple.all},
+	ef_ring: {description: '[Constant]',available: datasimple.all},
+	ef_smoke: {description: '[Constant]',available: datasimple.all},
+	ef_smokeup: {description: '[Constant]',available: datasimple.all},
+	ef_snow: {description: '[Constant]',available: datasimple.all},
+	ef_spark: {description: '[Constant]',available: datasimple.all},
+	ef_star: {description: '[Constant]',available: datasimple.all},
+	ev_alarm: {description: '[Constant]',available: datasimple.all},
+	ev_animation_end: {description: '[Constant]',available: datasimple.all},
+	ev_boundary: {description: '[Constant]',available: datasimple.all},
+	ev_close_button: {description: '[Constant]',available: datasimple.all},
+	ev_collision: {description: '[Constant]',available: datasimple.all},
+	ev_create: {description: '[Constant]',available: datasimple.all},
+	ev_destroy: {description: '[Constant]',available: datasimple.all},
+	ev_draw: {description: '[Constant]',available: datasimple.all},
+	ev_end_of_path: {description: '[Constant]',available: datasimple.all},
+	ev_game_end: {description: '[Constant]',available: datasimple.all},
+	ev_game_start: {description: '[Constant]',available: datasimple.all},
+	ev_global_left_button: {description: '[Constant]',available: datasimple.all},
+	ev_global_left_press: {description: '[Constant]',available: datasimple.all},
+	ev_global_left_release: {description: '[Constant]',available: datasimple.all},
+	ev_global_middle_button: {description: '[Constant]',available: datasimple.all},
+	ev_global_middle_press: {description: '[Constant]',available: datasimple.all},
+	ev_global_middle_release: {description: '[Constant]',available: datasimple.all},
+	ev_global_press: {description: '[Constant]',available: datasimple.all},
+	ev_global_release: {description: '[Constant]',available: datasimple.all},
+	ev_global_right_button: {description: '[Constant]',available: datasimple.all},
+	ev_global_right_press: {description: '[Constant]',available: datasimple.all},
+	ev_global_right_release: {description: '[Constant]',available: datasimple.all},
+	ev_gui: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button1: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button2: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button3: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button4: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button5: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button6: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button7: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_button8: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_down: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_left: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_right: {description: '[Constant]',available: datasimple.all},
+	ev_joystick1_up: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button1: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button2: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button3: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button4: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button5: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button6: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button7: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_button8: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_down: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_left: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_right: {description: '[Constant]',available: datasimple.all},
+	ev_joystick2_up: {description: '[Constant]',available: datasimple.all},
+	ev_keyboard: {description: '[Constant]',available: datasimple.all},
+	ev_keypress: {description: '[Constant]',available: datasimple.all},
+	ev_keyrelease: {description: '[Constant]',available: datasimple.all},
+	ev_left_button: {description: '[Constant]',available: datasimple.all},
+	ev_left_press: {description: '[Constant]',available: datasimple.all},
+	ev_left_release: {description: '[Constant]',available: datasimple.all},
+	ev_middle_button: {description: '[Constant]',available: datasimple.all},
+	ev_middle_press: {description: '[Constant]',available: datasimple.all},
+	ev_middle_release: {description: '[Constant]',available: datasimple.all},
+	ev_mouse: {description: '[Constant]',available: datasimple.all},
+	ev_mouse_enter: {description: '[Constant]',available: datasimple.all},
+	ev_mouse_leave: {description: '[Constant]',available: datasimple.all},
+	ev_mouse_wheel_down: {description: '[Constant]',available: datasimple.all},
+	ev_mouse_wheel_up: {description: '[Constant]',available: datasimple.all},
+	ev_no_button: {description: '[Constant]',available: datasimple.all},
+	ev_no_more_health: {description: '[Constant]',available: datasimple.all},
+	ev_no_more_lives: {description: '[Constant]',available: datasimple.all},
+	ev_other: {description: '[Constant]',available: datasimple.all},
+	ev_outside: {description: '[Constant]',available: datasimple.all},
+	ev_right_button: {description: '[Constant]',available: datasimple.all},
+	ev_right_press: {description: '[Constant]',available: datasimple.all},
+	ev_right_release: {description: '[Constant]',available: datasimple.all},
+	ev_room_end: {description: '[Constant]',available: datasimple.all},
+	ev_room_start: {description: '[Constant]',available: datasimple.all},
+	ev_step: {description: '[Constant]',available: datasimple.all},
+	ev_step_begin: {description: '[Constant]',available: datasimple.all},
+	ev_step_end: {description: '[Constant]',available: datasimple.all},
+	ev_step_normal: {description: '[Constant]',available: datasimple.all},
+	ev_trigger: {description: '[Constant]',available: datasimple.all},
+	ev_user0: {description: '[Constant]',available: datasimple.all},
+	ev_user1: {description: '[Constant]',available: datasimple.all},
+	ev_user10: {description: '[Constant]',available: datasimple.all},
+	ev_user11: {description: '[Constant]',available: datasimple.all},
+	ev_user12: {description: '[Constant]',available: datasimple.all},
+	ev_user13: {description: '[Constant]',available: datasimple.all},
+	ev_user14: {description: '[Constant]',available: datasimple.all},
+	ev_user15: {description: '[Constant]',available: datasimple.all},
+	ev_user2: {description: '[Constant]',available: datasimple.all},
+	ev_user3: {description: '[Constant]',available: datasimple.all},
+	ev_user4: {description: '[Constant]',available: datasimple.all},
+	ev_user5: {description: '[Constant]',available: datasimple.all},
+	ev_user6: {description: '[Constant]',available: datasimple.all},
+	ev_user7: {description: '[Constant]',available: datasimple.all},
+	ev_user8: {description: '[Constant]',available: datasimple.all},
+	ev_user9: {description: '[Constant]',available: datasimple.all},
+	false: {description: '[Constant]',available: datasimple.all},
+	fa_archive: {description: '[Constant]',available: datasimple.all},
+	fa_bottom: {description: '[Constant]',available: datasimple.all},
+	fa_center: {description: '[Constant]',available: datasimple.all},
+	fa_directory: {description: '[Constant]',available: datasimple.all},
+	fa_hidden: {description: '[Constant]',available: datasimple.all},
+	fa_left: {description: '[Constant]',available: datasimple.all},
+	fa_middle: {description: '[Constant]',available: datasimple.all},
+	fa_readonly: {description: '[Constant]',available: datasimple.all},
+	fa_right: {description: '[Constant]',available: datasimple.all},
+	fa_sysfile: {description: '[Constant]',available: datasimple.all},
+	fa_top: {description: '[Constant]',available: datasimple.all},
+	fa_volumeid: {description: '[Constant]',available: datasimple.all},
+	GB2312_CHARSET: {description: '[Constant]',available: datasimple.all},
+	global: {description: '[Constant]',available: datasimple.all},
+	gp_axislh: {description: '[Constant]',available: datasimple.gms1},
+	gp_axislv: {description: '[Constant]',available: datasimple.gms1},
+	gp_axisrh: {description: '[Constant]',available: datasimple.gms1},
+	gp_axisrv: {description: '[Constant]',available: datasimple.gms1},
+	gp_face1: {description: '[Constant]',available: datasimple.gms1},
+	gp_face2: {description: '[Constant]',available: datasimple.gms1},
+	gp_face3: {description: '[Constant]',available: datasimple.gms1},
+	gp_face4: {description: '[Constant]',available: datasimple.gms1},
+	gp_padd: {description: '[Constant]',available: datasimple.gms1},
+	gp_padl: {description: '[Constant]',available: datasimple.gms1},
+	gp_padr: {description: '[Constant]',available: datasimple.gms1},
+	gp_padu: {description: '[Constant]',available: datasimple.gms1},
+	gp_select: {description: '[Constant]',available: datasimple.gms1},
+	gp_shoulderl: {description: '[Constant]',available: datasimple.gms1},
+	gp_shoulderlb: {description: '[Constant]',available: datasimple.gms1},
+	gp_shoulderr: {description: '[Constant]',available: datasimple.gms1},
+	gp_shoulderrb: {description: '[Constant]',available: datasimple.gms1},
+	gp_start: {description: '[Constant]',available: datasimple.gms1},
+	gp_stickl: {description: '[Constant]',available: datasimple.gms1},
+	gp_stickr: {description: '[Constant]',available: datasimple.gms1},
+	GREEK_CHARSET: {description: '[Constant]',available: datasimple.all},
+	HANGEUL_CHARSET: {description: '[Constant]',available: datasimple.all},
+	HEBREW_CHARSET: {description: '[Constant]',available: datasimple.all},
+	JOHAB_CHARSET: {description: '[Constant]',available: datasimple.all},
+	lb_disp_none: {description: '[Constant]',available: datasimple.gms1},
+	lb_disp_numeric: {description: '[Constant]',available: datasimple.gms1},
+	lb_disp_time_ms: {description: '[Constant]',available: datasimple.gms1},
+	lb_disp_time_sec: {description: '[Constant]',available: datasimple.gms1},
+	lb_sort_ascending: {description: '[Constant]',available: datasimple.gms1},
+	lb_sort_descending: {description: '[Constant]',available: datasimple.gms1},
+	lb_sort_none: {description: '[Constant]',available: datasimple.gms1},
+	leaderboard_type_number: {description: '[Constant]',available: datasimple.gms1},
+	leaderboard_type_time_mins_secs: {description: '[Constant]',available: datasimple.gms1},
+	local: {description: '[Constant]',available: datasimple.all},
+	MAC_CHARSET: {description: '[Constant]',available: datasimple.all},
+	matrix_projection: {description: '[Constant]',available: datasimple.all},
+	matrix_view: {description: '[Constant]',available: datasimple.all},
+	matrix_world: {description: '[Constant]',available: datasimple.all},
+	mb_any: {description: '[Constant]',available: datasimple.all},
+	mb_left: {description: '[Constant]',available: datasimple.all},
+	mb_middle: {description: '[Constant]',available: datasimple.all},
+	mb_none: {description: '[Constant]',available: datasimple.all},
+	mb_right: {description: '[Constant]',available: datasimple.all},
+	network_socket_bluetooth: {description: '[Constant]',available: datasimple.gms1},
+	network_socket_tcp: {description: '[Constant]',available: datasimple.gms1},
+	network_socket_udp: {description: '[Constant]',available: datasimple.gms1},
+	network_type_connect: {description: '[Constant]',available: datasimple.gms1},
+	network_type_data: {description: '[Constant]',available: datasimple.gms1},
+	network_type_disconnect: {description: '[Constant]',available: datasimple.gms1},
+	noone: {description: '[Constant]',available: datasimple.all},
+	OEM_CHARSET: {description: '[Constant]',available: datasimple.all},
+	of_challenge_lose: {description: '[Constant]',available: datasimple.gms1},
+	of_challenge_tie: {description: '[Constant]',available: datasimple.gms1},
+	of_challenge_win: {description: '[Constant]',available: datasimple.gms1},
+	os_android: {description: '[Constant]',available: datasimple.gms1},
+	os_ios: {description: '[Constant]',available: datasimple.gms1},
+	os_linux: {description: '[Constant]',available: datasimple.gms1},
+	os_macosx: {description: '[Constant]',available: datasimple.gms1},
+	os_psp: {description: '[Constant]',available: datasimple.gms1},
+	os_symbian: {description: '[Constant]',available: datasimple.gms1},
+	os_tizen: {description: '[Constant]',available: datasimple.gms1},
+	os_unknown: {description: '[Constant]',available: datasimple.gms1},
+	os_win32: {description: '[Constant]',available: datasimple.gms1},
+	os_win8native: {description: '[Constant]',available: datasimple.gms1},
+	os_windows: {description: '[Constant]',available: datasimple.gms1},
+	os_winphone: {description: '[Constant]',available: datasimple.gms1},
+	other: {description: '[Constant]',available: datasimple.all},
+	ov_achievements: {description: '[Constant]',available: datasimple.gms1},
+	ov_community: {description: '[Constant]',available: datasimple.gms1},
+	ov_friends: {description: '[Constant]',available: datasimple.gms1},
+	ov_gamegroup: {description: '[Constant]',available: datasimple.gms1},
+	ov_players: {description: '[Constant]',available: datasimple.gms1},
+	ov_settings: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_aabb: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_collision_pairs: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_coms: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_core_shapes: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_joints: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_obb: {description: '[Constant]',available: datasimple.gms1},
+	phy_debug_render_shapes: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_anchor_1_x: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_anchor_1_y: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_anchor_2_x: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_anchor_2_y: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_angle: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_angle_limits: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_damping_ratio: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_frequency: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_length_1: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_length_2: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_lower_angle_limit: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_max_motor_force: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_max_motor_torque: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_motor_force: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_motor_speed: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_motor_torque: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_reaction_force_x: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_reaction_force_y: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_reaction_torque: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_speed: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_translation: {description: '[Constant]',available: datasimple.gms1},
+	phy_joint_upper_angle_limit: {description: '[Constant]',available: datasimple.gms1},
+	pi: {description: '[Constant]',available: datasimple.all},
+	pr_linelist: {description: '[Constant]',available: datasimple.all},
+	pr_linestrip: {description: '[Constant]',available: datasimple.all},
+	pr_pointlist: {description: '[Constant]',available: datasimple.all},
+	pr_trianglefan: {description: '[Constant]',available: datasimple.all},
+	pr_trianglelist: {description: '[Constant]',available: datasimple.all},
+	pr_trianglestrip: {description: '[Constant]',available: datasimple.all},
+	ps_change_all: {description: '[Constant]',available: datasimple.all},
+	ps_change_motion: {description: '[Constant]',available: datasimple.all},
+	ps_change_shape: {description: '[Constant]',available: datasimple.all},
+	ps_deflect_horizontal: {description: '[Constant]',available: datasimple.all},
+	ps_deflect_vertical: {description: '[Constant]',available: datasimple.all},
+	ps_distr_gaussian: {description: '[Constant]',available: datasimple.all},
+	ps_distr_invgaussian: {description: '[Constant]',available: datasimple.all},
+	ps_distr_linear: {description: '[Constant]',available: datasimple.all},
+	ps_force_constant: {description: '[Constant]',available: datasimple.all},
+	ps_force_linear: {description: '[Constant]',available: datasimple.all},
+	ps_force_quadratic: {description: '[Constant]',available: datasimple.all},
+	ps_shape_diamond: {description: '[Constant]',available: datasimple.all},
+	ps_shape_ellipse: {description: '[Constant]',available: datasimple.all},
+	ps_shape_line: {description: '[Constant]',available: datasimple.all},
+	ps_shape_rectangle: {description: '[Constant]',available: datasimple.all},
+	pt_shape_circle: {description: '[Constant]',available: datasimple.all},
+	pt_shape_cloud: {description: '[Constant]',available: datasimple.all},
+	pt_shape_disk: {description: '[Constant]',available: datasimple.all},
+	pt_shape_explosion: {description: '[Constant]',available: datasimple.all},
+	pt_shape_flare: {description: '[Constant]',available: datasimple.all},
+	pt_shape_line: {description: '[Constant]',available: datasimple.all},
+	pt_shape_pixel: {description: '[Constant]',available: datasimple.all},
+	pt_shape_ring: {description: '[Constant]',available: datasimple.all},
+	pt_shape_smoke: {description: '[Constant]',available: datasimple.all},
+	pt_shape_snow: {description: '[Constant]',available: datasimple.all},
+	pt_shape_spark: {description: '[Constant]',available: datasimple.all},
+	pt_shape_sphere: {description: '[Constant]',available: datasimple.all},
+	pt_shape_square: {description: '[Constant]',available: datasimple.all},
+	pt_shape_star: {description: '[Constant]',available: datasimple.all},
+	RUSSIAN_CHARSET: {description: '[Constant]',available: datasimple.all},
+	self: {description: '[Constant]',available: datasimple.all},
+	SHIFTJIS_CHARSET: {description: '[Constant]',available: datasimple.all},
+	SYMBOL_CHARSET: {description: '[Constant]',available: datasimple.all},
+	THAI_CHARSET: {description: '[Constant]',available: datasimple.all},
+	true: {description: '[Constant]',available: datasimple.all},
+	TURKISH_CHARSET: {description: '[Constant]',available: datasimple.all},
+	ty_real: {description: '[Constant]',available: datasimple.all},
+	ty_string: {description: '[Constant]',available: datasimple.all},
+	vertex_type_colour: {description: '[Constant]',available: datasimple.gms1},
+	vertex_type_float1: {description: '[Constant]',available: datasimple.gms1},
+	vertex_type_float2: {description: '[Constant]',available: datasimple.gms1},
+	vertex_type_float3: {description: '[Constant]',available: datasimple.gms1},
+	vertex_type_float4: {description: '[Constant]',available: datasimple.gms1},
+	vertex_type_ubyte4: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_binormal: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_blendindices: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_blendweight: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_colour: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_depth: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_fog: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_normal: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_position: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_psize: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_sample: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_tagnet: {description: '[Constant]',available: datasimple.gms1},
+	vertex_usage_textcoord: {description: '[Constant]',available: datasimple.gms1},
+	VIETNAMESE_CHARSET: {description: '[Constant]',available: datasimple.all},
+	vk_add: {description: '[Constant]',available: datasimple.all},
+	vk_alt: {description: '[Constant]',available: datasimple.all},
+	vk_anykey: {description: '[Constant]',available: datasimple.all},
+	vk_backspace: {description: '[Constant]',available: datasimple.all},
+	vk_control: {description: '[Constant]',available: datasimple.all},
+	vk_decimal: {description: '[Constant]',available: datasimple.all},
+	vk_delete: {description: '[Constant]',available: datasimple.all},
+	vk_divide: {description: '[Constant]',available: datasimple.all},
+	vk_down: {description: '[Constant]',available: datasimple.all},
+	vk_end: {description: '[Constant]',available: datasimple.all},
+	vk_enter: {description: '[Constant]',available: datasimple.all},
+	vk_escape: {description: '[Constant]',available: datasimple.all},
+	vk_f1: {description: '[Constant]',available: datasimple.all},
+	vk_f10: {description: '[Constant]',available: datasimple.all},
+	vk_f11: {description: '[Constant]',available: datasimple.all},
+	vk_f12: {description: '[Constant]',available: datasimple.all},
+	vk_f2: {description: '[Constant]',available: datasimple.all},
+	vk_f3: {description: '[Constant]',available: datasimple.all},
+	vk_f4: {description: '[Constant]',available: datasimple.all},
+	vk_f5: {description: '[Constant]',available: datasimple.all},
+	vk_f6: {description: '[Constant]',available: datasimple.all},
+	vk_f7: {description: '[Constant]',available: datasimple.all},
+	vk_f8: {description: '[Constant]',available: datasimple.all},
+	vk_f9: {description: '[Constant]',available: datasimple.all},
+	vk_home: {description: '[Constant]',available: datasimple.all},
+	vk_insert: {description: '[Constant]',available: datasimple.all},
+	vk_lalt: {description: '[Constant]',available: datasimple.all},
+	vk_lcontrol: {description: '[Constant]',available: datasimple.all},
+	vk_left: {description: '[Constant]',available: datasimple.all},
+	vk_lshift: {description: '[Constant]',available: datasimple.all},
+	vk_multiply: {description: '[Constant]',available: datasimple.all},
+	vk_nokey: {description: '[Constant]',available: datasimple.all},
+	vk_numpad0: {description: '[Constant]',available: datasimple.all},
+	vk_numpad1: {description: '[Constant]',available: datasimple.all},
+	vk_numpad2: {description: '[Constant]',available: datasimple.all},
+	vk_numpad3: {description: '[Constant]',available: datasimple.all},
+	vk_numpad4: {description: '[Constant]',available: datasimple.all},
+	vk_numpad5: {description: '[Constant]',available: datasimple.all},
+	vk_numpad6: {description: '[Constant]',available: datasimple.all},
+	vk_numpad7: {description: '[Constant]',available: datasimple.all},
+	vk_numpad8: {description: '[Constant]',available: datasimple.all},
+	vk_numpad9: {description: '[Constant]',available: datasimple.all},
+	vk_pagedown: {description: '[Constant]',available: datasimple.all},
+	vk_pageup: {description: '[Constant]',available: datasimple.all},
+	vk_pause: {description: '[Constant]',available: datasimple.all},
+	vk_printscreen: {description: '[Constant]',available: datasimple.all},
+	vk_ralt: {description: '[Constant]',available: datasimple.all},
+	vk_rcontrol: {description: '[Constant]',available: datasimple.all},
+	vk_return: {description: '[Constant]',available: datasimple.all},
+	vk_right: {description: '[Constant]',available: datasimple.all},
+	vk_rshift: {description: '[Constant]',available: datasimple.all},
+	vk_shift: {description: '[Constant]',available: datasimple.all},
+	vk_space: {description: '[Constant]',available: datasimple.all},
+	vk_subtract: {description: '[Constant]',available: datasimple.all},
+	vk_tab: {description: '[Constant]',available: datasimple.all},
+	vk_up: {description: '[Constant]',available: datasimple.all},
 
 	//GameMaker 8.1 Only
 	input_type: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
