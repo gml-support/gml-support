@@ -1,3 +1,15 @@
+## 1.5.0
+
+ - 添加 GML 语言可用性
+ - 添加 `#region` 和 `var` 定义的变量的高亮 （不完整）
+ - 修改分类
+ - 从插件中移除 `slevesque.shader` 依赖
+ - Add `GM Language Availability`
+ - Add `#region` and `var` defined variables highlighted (incomplete)
+ - Change categories
+ - Remove `slevesque.shader` dependencies from this extension.
+ 
+
 ## 1.4.4
 
  - 修改部分错误的信息
