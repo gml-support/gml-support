@@ -17,7 +17,7 @@ Visual Studio Code版本需高于1.8.0。
 
 ## Contributing
 
-At present this plugin is not complete, if you want to contribute to this project, you can fork this project and pull a request.
+[https://gmlsupport.liaronce.win/#/Contribute](https://gmlsupport.liaronce.win/#/Contribute)
 
 ## Other
 
