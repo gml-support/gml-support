@@ -1,0 +1,12 @@
+{
+    "deprecated_1": "该函数已不赞成使用",
+    "deprecated_2": "该函数已不赞成使用且在 GameMaker Studio 2 中被废除",
+    "obsolete_new1": "该函数在新版 GameMaker Studio 中被废弃",
+    "obsolete_new1_2": "该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃",
+    "obsolete_2": "该函数在 GameMaker Studio 2 中被废弃",
+    "obsolete_2_variable": "该变量在 GameMaker Studio 2 中被废弃",
+    "gm_81": "该函数仅 GameMaker 8.1 及早期版本可用",
+    "gm_81_variable": "该变量仅 GameMaker 8.1 及早期版本可用",
+    "gm_81_constant": "该常量仅 GameMaker 8.1 及早期版本可用",
+    "new_2": "GameMaker Studio 2 新增"
+}

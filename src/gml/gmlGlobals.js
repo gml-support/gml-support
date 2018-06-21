@@ -1,10 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const datasimple = require("../../../../data/data.simple.json");
+const vscode_1 = require("vscode");
+const datasimple = require("../../data/data.simple.json");
+const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
+const i18n = require("./i18n/" + localizationset + "/gmlGlobals.json")
+const i18n_notice = require("./i18n/" + localizationset + "/gmlNotices.json")
 
 exports.globalfunctions = {
     abs: {
-        description: '[Function]',
+        description: '[Function]' + i18n.abs.desc,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: '' }
@@ -44,11 +48,11 @@ exports.globalfunctions = {
 		signature: '(char)'
 	},
 	achievement_increment: {
-        description: '[Function]',
+        description: '[Function]' + i18n.achievement_increment.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'achievement_name', documentation: '' },
-            { label: 'value', documentation: '' }
+            { label: 'achievement_name', documentation: i18n.achievement_increment.achievement_name },
+            { label: 'value', documentation: i18n.achievement_increment.value }
         ],
 		signature: '(achievement_name, value)'
 	},
@@ -12374,19 +12378,19 @@ exports.globalfunctions = {
 
     //These functions are deprecated.
     pocketchange_display_reward: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d
     },
 	pocketchange_display_shop: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d
     },
 	iap_store_status: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d
     },
 	iap_product_status: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'product_id', documentation: '' }
@@ -12394,7 +12398,7 @@ exports.globalfunctions = {
         signature: '(product_id)'
     },
 	iap_is_downloaded: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'product_id_string', documentation: '' }
@@ -12402,11 +12406,11 @@ exports.globalfunctions = {
         signature: '(purchase_id_string)'
     },
 	iap_files_purchased: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d
     },
 	iap_product_files: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'product_id', documentation: '' },
@@ -12415,11 +12419,11 @@ exports.globalfunctions = {
         signature: '(purchase_id, ds_list)'
     },
 	iap_event_queue: {
-        description: '[Function] (该函数已不赞成使用且在 GameMaker Studio 2 中被废除)',
+        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
         available: datasimple.gms1d
     },
     win8_appbar_add_element: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'type', documentation: '' },
@@ -12432,7 +12436,7 @@ exports.globalfunctions = {
         signature: '(type, icon, label, section, toolTip, callback)'
     },
 	win8_appbar_enable: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'flag', documentation: '' }
@@ -12440,7 +12444,7 @@ exports.globalfunctions = {
         signature: '(flag)'
     },
 	win8_appbar_remove_element: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: '' }
@@ -12448,11 +12452,11 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	win8_device_touchscreen_available: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	win8_license_initialize_sandbox: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: '_licenseString', documentation: '' }
@@ -12460,15 +12464,15 @@ exports.globalfunctions = {
         signature: '(_licenseString)'
     },
 	win8_license_trial_version: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	win8_livetile_badge_clear: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	win8_livetile_badge_notification: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: '' }
@@ -12476,7 +12480,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	win8_livetile_notification_begin: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: '' }
@@ -12484,11 +12488,11 @@ exports.globalfunctions = {
         signature: '(template)'
     },
 	win8_livetile_notification_end: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	win8_livetile_notification_expiry: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'expiryTime', documentation: '' }
@@ -12496,7 +12500,7 @@ exports.globalfunctions = {
         signature: '(expiryTime)'
     },
 	win8_livetile_notification_image_add: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'image', documentation: '' }
@@ -12504,7 +12508,7 @@ exports.globalfunctions = {
         signature: '(image)'
     },
 	win8_livetile_notification_secondary_begin: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: '' },
@@ -12513,7 +12517,7 @@ exports.globalfunctions = {
         signature: '(template, tileId)'
     },
 	win8_livetile_notification_tag: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'tag', documentation: '' }
@@ -12521,7 +12525,7 @@ exports.globalfunctions = {
         signature: '(tag)'
     },
 	win8_livetile_notification_text_add: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'text', documentation: '' }
@@ -12529,7 +12533,7 @@ exports.globalfunctions = {
         signature: '(text)'
     },
 	win8_livetile_queue_enable: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'flag', documentation: '' }
@@ -12537,11 +12541,11 @@ exports.globalfunctions = {
         signature: '(flag)'
     },
 	win8_livetile_tile_clear: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	win8_livetile_tile_notification: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: '' },
@@ -12552,7 +12556,7 @@ exports.globalfunctions = {
         signature: '(template, ds_map, expiry, tag)'
     },
 	win8_search_add_suggestions: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: '_dslist', documentation: '' }
@@ -12560,11 +12564,11 @@ exports.globalfunctions = {
         signature: '(_dslist)'
     },
 	win8_search_disable: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	win8_search_enable: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: '_selectionCallback', documentation: '' }
@@ -12572,7 +12576,7 @@ exports.globalfunctions = {
         signature: '(_selectionCallback)'
     },
 	win8_secondarytile_badge_notification: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: '' },
@@ -12581,7 +12585,7 @@ exports.globalfunctions = {
         signature: '(id, tileId)'
     },
 	win8_secondarytile_delete: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: '' }
@@ -12589,7 +12593,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	win8_secondarytile_pin: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: '' },
@@ -12604,7 +12608,7 @@ exports.globalfunctions = {
         signature: '(id, shortName, displayName, cmdLineArgs, dsListOptions, tileImg, wideTileImg, textCol)'
     },
 	win8_settingscharm_add_entry: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'name', documentation: '' },
@@ -12613,7 +12617,7 @@ exports.globalfunctions = {
         signature: '(name, callback)'
     },
 	win8_settingscharm_add_html_entry: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: '' },
@@ -12623,7 +12627,7 @@ exports.globalfunctions = {
         signature: '(id, name, htmlPath)'
     },
 	win8_settingscharm_add_xaml_entry: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'name', documentation: '' },
@@ -12635,7 +12639,7 @@ exports.globalfunctions = {
         signature: '(name, xamlPath, headerRGB, callback, wideFlyout)'
     },
 	win8_settingscharm_get_xaml_property: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: '' },
@@ -12645,7 +12649,7 @@ exports.globalfunctions = {
         signature: '(entryName, elementName, propertyName)'
     },
 	win8_settingscharm_remove_entry: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'name', documentation: '' }
@@ -12653,7 +12657,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	win8_settingscharm_set_xaml_property: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: '' },
@@ -12664,7 +12668,7 @@ exports.globalfunctions = {
         signature: '(entryName, elementName, propertyName, newValue)'
     },
 	win8_share_file: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'filename', documentation: '' },
@@ -12675,7 +12679,7 @@ exports.globalfunctions = {
         signature: '(filename, title, description, immediate)'
     },
 	win8_share_image: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'image_filename', documentation: '' },
@@ -12686,7 +12690,7 @@ exports.globalfunctions = {
         signature: '(image_filename, title, description, immediate)'
     },
 	win8_share_screenshot: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: '' },
@@ -12696,7 +12700,7 @@ exports.globalfunctions = {
         signature: '(title, description, immediate)'
     },
 	win8_share_text: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'text', documentation: '' },
@@ -12707,7 +12711,7 @@ exports.globalfunctions = {
         signature: '(text, title, description, immediate)'
     },
 	win8_share_url: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'url', documentation: '' },
@@ -12718,11 +12722,11 @@ exports.globalfunctions = {
         signature: '(url, title, description, immediate)'
     },
     winphone_license_trial_version: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d
     },
 	winphone_tile_background_color: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         arameters: [
             { label: 'color', documentation: '' }
@@ -12730,7 +12734,7 @@ exports.globalfunctions = {
         signature: '(color)'
     },
 	winphone_tile_background_colour: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         arameters: [
             { label: 'colour', documentation: '' }
@@ -12738,7 +12742,7 @@ exports.globalfunctions = {
         signature: '(colour)'
     },
 	winphone_tile_back_content: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'content', documentation: '' }
@@ -12746,7 +12750,7 @@ exports.globalfunctions = {
         signature: '(content)'
     },
 	winphone_tile_back_content_wide: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'content', documentation: '' }
@@ -12754,7 +12758,7 @@ exports.globalfunctions = {
         signature: '(content)'
     },
 	winphone_tile_back_image: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12762,7 +12766,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_back_image_wide: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12770,7 +12774,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_back_title: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'title', documentation: '' }
@@ -12778,7 +12782,7 @@ exports.globalfunctions = {
         signature: '(title)'
     },
 	winphone_tile_count: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'count', documentation: '' }
@@ -12786,7 +12790,7 @@ exports.globalfunctions = {
         signature: '(count)'
     },
 	winphone_tile_cycle_images: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename_1', documentation: '' },
@@ -12796,7 +12800,7 @@ exports.globalfunctions = {
         signature: '(included_filename_1, included_filename_2, ...)'
     },
 	winphone_tile_front_image: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12804,7 +12808,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_small: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12812,7 +12816,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_wide: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12820,7 +12824,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_icon_image: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12828,7 +12832,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_small_background_image: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12836,7 +12840,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_small_icon_image: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: '' }
@@ -12844,7 +12848,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_title: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'title', documentation: '' }
@@ -12852,7 +12856,7 @@ exports.globalfunctions = {
         signature: '(title)'
     },
 	winphone_tile_wide_content: {
-        description: '[Function] (该函数已不赞成使用)',
+        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
             { label: 'content', documentation: '' },
@@ -12863,15 +12867,15 @@ exports.globalfunctions = {
 
     //Obsolete functions in new GameMaker Studio and GameMaker Studio 2
     device_ios_get_image: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1
     },
 	device_ios_get_imagename: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1
     },
     sound_delete: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12879,7 +12883,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     sound_discard: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12887,7 +12891,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     sound_exists: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12895,7 +12899,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     sound_get_kind: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12903,7 +12907,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	sound_get_name: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12911,7 +12915,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	sound_get_preload: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12919,7 +12923,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     sound_restore: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -12927,7 +12931,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     sound_loop: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'index', documentation: '' }
@@ -12935,7 +12939,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
     sound_play: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'index', documentation: '' }
@@ -12943,7 +12947,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
     sound_stop: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'index', documentation: '' }
@@ -12951,11 +12955,11 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	sound_stop_all: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
     },
 	sound_volume: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'index', documentation: '' },
@@ -12964,7 +12968,7 @@ exports.globalfunctions = {
         signature: '(index, value)'
     },
 	sound_global_volume: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'value', documentation: '' }
@@ -12972,7 +12976,7 @@ exports.globalfunctions = {
         signature: '(value)'
     },
 	sound_fade: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'index', documentation: '' },
@@ -12982,7 +12986,7 @@ exports.globalfunctions = {
         signature: '(index, value, time)'
     },
 	sound_isplaying: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'index', documentation: '' }
@@ -12990,19 +12994,19 @@ exports.globalfunctions = {
         signature: '(index)'
     },
     audio_music_is_playing: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
     },
     audio_resume_music: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
     },
     audio_pause_music: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
     },
 	audio_play_music: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'soundid', documentation: '' },
@@ -13011,11 +13015,11 @@ exports.globalfunctions = {
         signature: '(soundid, loops)'
     },
 	audio_stop_music: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
     },
 	audio_music_gain: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'value', documentation: '' },
@@ -13024,7 +13028,7 @@ exports.globalfunctions = {
         signature: '(value, time)'
     },
 	ads_disable: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'num', documentation: '' }
@@ -13032,7 +13036,7 @@ exports.globalfunctions = {
 		signature: '(num)'
 	},
 	ads_enable: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'x', documentation: '' },
@@ -13042,19 +13046,19 @@ exports.globalfunctions = {
 		signature: '(x, y, num)'
 	},
 	ads_engagement_active: {
-		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
 	},
 	ads_engagement_available: {
-		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
 	},
 	ads_engagement_launch: {
-		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
 	},
 	ads_event: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'stringid', documentation: '' }
@@ -13062,7 +13066,7 @@ exports.globalfunctions = {
 		signature: '(stringid)'
 	},
 	ads_event_preload: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'stringid', documentation: '' }
@@ -13070,7 +13074,7 @@ exports.globalfunctions = {
 		signature: '(stringid)'
 	},
 	ads_get_display_height: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'slotnum', documentation: '' }
@@ -13078,7 +13082,7 @@ exports.globalfunctions = {
 		signature: '(slotnum)'
 	},
 	ads_get_display_width: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'slotnum', documentation: '' }
@@ -13086,15 +13090,15 @@ exports.globalfunctions = {
 		signature: '(slotnum)'
 	},
 	ads_interstitial_available: {
-		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
 	},
 	ads_interstitial_display: {
-		description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1
 	},
 	ads_move: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'x', documentation: '' },
@@ -13103,7 +13107,7 @@ exports.globalfunctions = {
         ],
 		signature: '(x, y, slotnum)'},
 	ads_setup: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'user_uuid', documentation: '' },
@@ -13112,7 +13116,7 @@ exports.globalfunctions = {
 		signature: '(user_uuid, ad_app_key)'
 	},
 	ads_set_reward_callback: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'callback', documentation: '' }
@@ -13120,7 +13124,7 @@ exports.globalfunctions = {
 		signature: '(callback)'
 	},
     playhaven_add_notification_badge: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'x', documentation: '' },
@@ -13132,7 +13136,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_hide_notification_badge: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'x', documentation: '' },
@@ -13144,7 +13148,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_position_notification_badge: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'x', documentation: '' },
@@ -13155,7 +13159,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h)'
     },
 	playhaven_update_notification_badge: {
-        description: '[Function] (该函数在新版 GameMaker Studio 和 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'x', documentation: '' },
@@ -13166,11 +13170,11 @@ exports.globalfunctions = {
         signature: '(x, y, w, h)'
     },
     openfeint_accept_challenge: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1
     },
 	openfeint_send_challenge: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'definition_string', documentation: '' },
@@ -13180,7 +13184,7 @@ exports.globalfunctions = {
         signature: '(definition_string, text_string, data_string)'
     },
 	openfeint_send_invite: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'definition_string', documentation: '' }
@@ -13188,7 +13192,7 @@ exports.globalfunctions = {
         signature: '(definition_string)'
     },
 	openfeint_send_result: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'challenge_result', documentation: '' },
@@ -13197,7 +13201,7 @@ exports.globalfunctions = {
         signature: '(challenge_result, description_string)'
     },
 	openfeint_send_social: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'text_string', documentation: '' },
@@ -13207,7 +13211,7 @@ exports.globalfunctions = {
         signature: '(text_string, suggested_message, image_name)'
     },
 	openfeint_set_url: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'url', documentation: '' }
@@ -13215,11 +13219,11 @@ exports.globalfunctions = {
         signature: '(url)'
     },
 	openfeint_start: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1
     },
 	achievement_map_achievement: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'gamecenter_string', documentation: '' },
@@ -13228,7 +13232,7 @@ exports.globalfunctions = {
 		signature: '(gamecenter_string, openfeint_string)'
 	},
 	achievement_map_leaderboard: {
-        description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1,
         parameters: [
             { label: 'gamecenter_string', documentation: '' },
@@ -13238,13 +13242,13 @@ exports.globalfunctions = {
 		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
 	},
 	achievement_is_online: {
-		description: '[Function] (该函数在新版 GameMaker Studio 中被废弃)',
+		description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
         available: datasimple.ob1
 	},
 
     //Obsolete functions in GameMaker Studio 2
     background_add: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -13254,7 +13258,7 @@ exports.globalfunctions = {
         signature: '(fname, removeback, smooth)'
     },
     background_assign: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13263,7 +13267,7 @@ exports.globalfunctions = {
         signature: '(ind, source)'
     },
     background_create_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'w', documentation: '' },
@@ -13273,7 +13277,7 @@ exports.globalfunctions = {
         signature: '(w, h, col)'
     },
     background_create_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'w', documentation: '' },
@@ -13283,7 +13287,7 @@ exports.globalfunctions = {
         signature: '(w, h, col)'
     },
     background_create_from_surface: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13297,7 +13301,7 @@ exports.globalfunctions = {
         signature: '(id, x, y, w, h, removeback, smooth)'
     },
     background_create_gradient: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'w', documentation: '' },
@@ -13309,7 +13313,7 @@ exports.globalfunctions = {
         signature: '(w, h, col1, col2, kind)'
     },
     background_delete: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13317,7 +13321,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_duplicate: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13325,7 +13329,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_exists: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13333,7 +13337,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_flush: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13341,7 +13345,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_flush_multi: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'indarray', documentation: '' }
@@ -13349,7 +13353,7 @@ exports.globalfunctions = {
         signature: '(indarray)'
     },
     background_get_height: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13357,7 +13361,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_get_name: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13365,7 +13369,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_get_texture: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' }
@@ -13373,7 +13377,7 @@ exports.globalfunctions = {
         signature: '(back)'
     },
     background_get_uvs: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' }
@@ -13381,7 +13385,7 @@ exports.globalfunctions = {
         signature: '(back)'
     },
     background_get_width: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13389,7 +13393,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_prefetch: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13397,7 +13401,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_prefetch_multi: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'indarray', documentation: '' }
@@ -13405,7 +13409,7 @@ exports.globalfunctions = {
         signature: '(indarray)'
     },
     background_replace: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13416,7 +13420,7 @@ exports.globalfunctions = {
         signature: '(ind, fname, removeback, smooth)'
     },
     background_replace_background: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13425,7 +13429,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     background_save: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13434,7 +13438,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     background_set_alpha_from_background: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13443,7 +13447,7 @@ exports.globalfunctions = {
         signature: '(ind, back)'
     },
     draw_background: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13453,7 +13457,7 @@ exports.globalfunctions = {
         signature: '(back, x, y)'
     },
     draw_background_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13468,7 +13472,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
     },
     draw_background_general: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13490,7 +13494,7 @@ exports.globalfunctions = {
         signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
     draw_background_part: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13504,7 +13508,7 @@ exports.globalfunctions = {
         signature: '(back, left, top, width, height, x, y)'
     },
     draw_background_part_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13522,7 +13526,7 @@ exports.globalfunctions = {
         signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
     draw_background_stretched: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13534,7 +13538,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, w, h)'
     },
     draw_background_stretched_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13548,7 +13552,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, w, h, colour, alpha)'
     },
     draw_background_tiled: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13558,7 +13562,7 @@ exports.globalfunctions = {
         signature: '(back, x, y)'
     },
     draw_background_tiled_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: '' },
@@ -13572,7 +13576,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, xscale, yscale, colour, alpha)'
     },
     room_set_background: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13591,7 +13595,7 @@ exports.globalfunctions = {
         signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
     },
     room_tile_add: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13607,7 +13611,7 @@ exports.globalfunctions = {
         signature: '(ind, back, left, top, width, height, x, y, depth)'
     },
     room_tile_add_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13626,7 +13630,7 @@ exports.globalfunctions = {
         signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
     },
     room_tile_clear: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13634,7 +13638,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     tile_add: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'background', documentation: '' },
@@ -13649,7 +13653,7 @@ exports.globalfunctions = {
         signature: '(background, left, top, width, height, x, y, depth)'
     },
     tile_delete: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13657,7 +13661,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_exists: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13665,7 +13669,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_alpha: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13673,7 +13677,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_background: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13681,7 +13685,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_blend: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13689,11 +13693,11 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_count: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     tile_get_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13701,7 +13705,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_height: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13709,7 +13713,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_id: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'index', documentation: '' }
@@ -13717,11 +13721,11 @@ exports.globalfunctions = {
         signature: '(index)'
     },
     tile_get_ids: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     tile_get_ids_at_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' }
@@ -13729,7 +13733,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_get_left: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13737,7 +13741,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_top: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13745,7 +13749,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_visible: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13753,7 +13757,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_width: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13761,7 +13765,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_x: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13769,7 +13773,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_xscale: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13777,7 +13781,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_y: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13785,7 +13789,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_yscale: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' }
@@ -13793,7 +13797,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_layer_delete: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' }
@@ -13801,7 +13805,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_layer_delete_at: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' },
@@ -13811,7 +13815,7 @@ exports.globalfunctions = {
         signature: '(depth, x, y)'
     },
     tile_layer_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' },
@@ -13820,7 +13824,7 @@ exports.globalfunctions = {
         signature: '(depth, newdepth)'
     },
     tile_layer_find: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' },
@@ -13830,7 +13834,7 @@ exports.globalfunctions = {
         signature: '(depth, x, y)'
     },
     tile_layer_hide: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' }
@@ -13838,7 +13842,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_layer_shift: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' },
@@ -13848,7 +13852,7 @@ exports.globalfunctions = {
         signature: '(depth, x, y)'
     },
     tile_layer_show: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' }
@@ -13856,7 +13860,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_set_alpha: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13865,7 +13869,7 @@ exports.globalfunctions = {
         signature: '(id, alpha)'
     },
     tile_set_background: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13874,7 +13878,7 @@ exports.globalfunctions = {
         signature: '(id, background)'
     },
     tile_set_blend: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13883,7 +13887,7 @@ exports.globalfunctions = {
         signature: '(id, colour)'
     },
     tile_set_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13892,7 +13896,7 @@ exports.globalfunctions = {
         signature: '(id, depth)'
     },
     tile_set_position: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13902,7 +13906,7 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
     tile_set_region: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13914,7 +13918,7 @@ exports.globalfunctions = {
         signature: '(id, left, top, width, height)'
     },
     tile_set_scale: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13924,7 +13928,7 @@ exports.globalfunctions = {
         signature: '(id, xscale, yscale)'
     },
     tile_set_visible: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -13933,7 +13937,7 @@ exports.globalfunctions = {
         signature: '(id, visible)'
     },
     object_get_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -13941,7 +13945,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     object_set_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -13950,7 +13954,7 @@ exports.globalfunctions = {
         signature: '(ind, depth)'
     },
     d3d_draw_block: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: '' },
@@ -13966,7 +13970,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_draw_cone: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: '' },
@@ -13984,7 +13988,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_cylinder: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: '' },
@@ -14002,7 +14006,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_ellipsoid: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: '' },
@@ -14020,7 +14024,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_floor: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: '' },
@@ -14036,7 +14040,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_draw_wall: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: '' },
@@ -14052,11 +14056,11 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_end: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_light_define_ambient: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'col', documentation: '' }
@@ -14064,7 +14068,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
     d3d_light_define_direction: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14076,7 +14080,7 @@ exports.globalfunctions = {
         signature: '(ind, dx, dy, dz, col)'
     },
     d3d_light_define_point: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14089,7 +14093,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, range, col)'
     },
     d3d_light_enable: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14098,7 +14102,7 @@ exports.globalfunctions = {
         signature: '(ind, enable)'
     },
     d3d_model_block: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14114,7 +14118,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_model_clear: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -14122,7 +14126,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     d3d_model_cone: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14140,11 +14144,11 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
     d3d_model_create: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_model_cylinder: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14162,11 +14166,11 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
     d3d_model_destroy: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_model_draw: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14178,7 +14182,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, texid)'
     },
     d3d_model_ellipsoid: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14195,7 +14199,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
     },
     d3d_model_floor: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14211,7 +14215,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_model_load: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14220,7 +14224,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     d3d_model_primitive_begin: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14229,7 +14233,7 @@ exports.globalfunctions = {
         signature: '(ind, kind)'
     },
     d3d_model_primitive_end: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -14237,7 +14241,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     d3d_model_save: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14246,7 +14250,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     d3d_model_vertex: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14257,7 +14261,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z)'
     },
     d3d_model_vertex_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14270,7 +14274,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, col, alpha)'
     },
     d3d_model_vertex_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14283,7 +14287,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, col, alpha)'
     },
     d3d_model_vertex_normal: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14297,7 +14301,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz)'
     },
     d3d_model_vertex_normal_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14313,7 +14317,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_model_vertex_normal_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14329,7 +14333,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_model_vertex_normal_texture: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14345,7 +14349,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
     },
     d3d_model_vertex_normal_texture_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14363,7 +14367,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_normal_texture_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14381,7 +14385,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_texture: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14394,7 +14398,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, xtex, ytex)'
     },
     d3d_model_vertex_texture_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14409,7 +14413,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_texture_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14424,7 +14428,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_model_wall: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14440,7 +14444,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_primitive_begin: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'kind', documentation: '' }
@@ -14448,7 +14452,7 @@ exports.globalfunctions = {
         signature: '(kind)'
     },
     d3d_primitive_begin_texture: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'kind', documentation: '' },
@@ -14457,11 +14461,11 @@ exports.globalfunctions = {
         signature: '(kind, texid)'
     },
     d3d_primitive_end: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_set_culling: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'cull', documentation: '' }
@@ -14469,7 +14473,7 @@ exports.globalfunctions = {
         signature: '(cull)'
     },
     d3d_set_depth: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: '' }
@@ -14477,7 +14481,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     d3d_set_fog: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: '' },
@@ -14488,7 +14492,7 @@ exports.globalfunctions = {
         signature: '(enable, colour, start, end)'
     },
     d3d_set_hidden: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'hidden', documentation: '' }
@@ -14496,7 +14500,7 @@ exports.globalfunctions = {
         signature: '(hidden)'
     },
     d3d_set_lighting: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -14504,7 +14508,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
     d3d_set_perspective: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -14512,7 +14516,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
     d3d_set_projection: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xform', documentation: '' },
@@ -14528,7 +14532,7 @@ exports.globalfunctions = {
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
     d3d_set_projection_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xform', documentation: '' },
@@ -14548,7 +14552,7 @@ exports.globalfunctions = {
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
     },
     d3d_set_projection_ortho: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14560,7 +14564,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, angle)'
     },
     d3d_set_projection_perspective: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14572,7 +14576,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, angle)'
     },
     d3d_set_shading: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'smooth', documentation: '' }
@@ -14580,7 +14584,7 @@ exports.globalfunctions = {
         signature: '(smooth)'
     },
     d3d_set_zwriteenable: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'on_off', documentation: '' }
@@ -14588,11 +14592,11 @@ exports.globalfunctions = {
         signature: '(on_off)'
     },
     d3d_start: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_add_rotation_axis: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xa', documentation: '' },
@@ -14603,7 +14607,7 @@ exports.globalfunctions = {
         signature: '(xa, ya, za, angle)'
     },
     d3d_transform_add_rotation_x: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -14611,7 +14615,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_add_rotation_y: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -14619,7 +14623,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_add_rotation_z: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -14627,7 +14631,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_add_scaling: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xs', documentation: '' },
@@ -14637,7 +14641,7 @@ exports.globalfunctions = {
         signature: '(xs, ys, zs)'
     },
     d3d_transform_add_translation: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xt', documentation: '' },
@@ -14647,11 +14651,11 @@ exports.globalfunctions = {
         signature: '(xt, yt, zt)'
     },
     d3d_transform_set_identity: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_set_rotation_axis: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xa', documentation: '' },
@@ -14662,7 +14666,7 @@ exports.globalfunctions = {
         signature: '(xa, ya, za, angle)'
     },
     d3d_transform_set_rotation_x: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -14670,7 +14674,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_set_rotation_y: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -14678,7 +14682,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_set_rotation_z: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -14686,7 +14690,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_set_scaling: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xs', documentation: '' },
@@ -14696,7 +14700,7 @@ exports.globalfunctions = {
         signature: '(xs, ys, zs)'
     },
     d3d_transform_set_translation: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'xt', documentation: '' },
@@ -14706,31 +14710,31 @@ exports.globalfunctions = {
         signature: '(xt, yt, zt)'
     },
     d3d_transform_stack_clear: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_stack_discard: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_stack_empty: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_stack_pop: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_stack_push: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_stack_top: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     d3d_transform_vertex: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14740,7 +14744,7 @@ exports.globalfunctions = {
         signature: '(x, y, z)'
     },
     d3d_vertex: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14750,7 +14754,7 @@ exports.globalfunctions = {
         signature: '(x, y, z)'
     },
     d3d_vertex_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14762,7 +14766,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, col, alpha)'
     },
     d3d_vertex_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14774,7 +14778,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, col, alpha)'
     },
     d3d_vertex_normal: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14787,7 +14791,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz)'
     },
     d3d_vertex_normal_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14802,7 +14806,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_vertex_normal_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14817,7 +14821,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_vertex_normal_texture: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14832,7 +14836,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
     },
     d3d_vertex_normal_texture_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14849,7 +14853,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_vertex_normal_texture_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14866,7 +14870,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_vertex_texture: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14878,7 +14882,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, xtex, ytex)'
     },
     d3d_vertex_texture_color: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14892,7 +14896,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_vertex_texture_colour: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: '' },
@@ -14906,7 +14910,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
     display_set_windows_vertex_buffer_method: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'method', documentation: '' }
@@ -14914,11 +14918,11 @@ exports.globalfunctions = {
         signature: '(method)'
     },
     display_get_windows_vertex_buffer_method: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     display_set_windows_alternate_sync: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -14926,11 +14930,11 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
     display_get_windows_alternate_sync: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     room_set_view: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -14953,7 +14957,7 @@ exports.globalfunctions = {
         signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
     },
     immersion_play_effect: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'effect', documentation: '' }
@@ -14961,11 +14965,11 @@ exports.globalfunctions = {
         signature: '(effect)'
     },
     immersion_stop: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2
     },
     analytics_event: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'string', documentation: '' }
@@ -14973,7 +14977,7 @@ exports.globalfunctions = {
         signature: '(string)'
     },
     analytics_event_ext: {
-        description: '[Function] (该函数在 GameMaker Studio 2 中被废弃)',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
             { label: 'string', documentation: '' },
@@ -14986,7 +14990,7 @@ exports.globalfunctions = {
 
 	//GameMaker 8.1 Only
 	background_add_background: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' }
@@ -14994,7 +14998,7 @@ exports.globalfunctions = {
         signature: '(fname)'
     },
     background_create_from_screen: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'x', documentation: '' },
@@ -15007,35 +15011,35 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, removeback, smooth)'
     },
     cd_close_door: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_init: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     cd_length: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_number: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_open_door: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_pause: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_paused: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_play: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'first', documentation: '' },
@@ -15044,23 +15048,23 @@ exports.globalfunctions = {
         signature: '(first, last)'
     },
 	cd_playing: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_present: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_resume: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_set_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'pos', documentation: '' }
@@ -15068,7 +15072,7 @@ exports.globalfunctions = {
         signature: '(pos)'
     },
 	cd_set_track_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'pos', documentation: '' }
@@ -15076,15 +15080,15 @@ exports.globalfunctions = {
         signature: '(pos)'
     },
 	cd_stop: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_track: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	cd_track_length: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'n', documentation: '' }
@@ -15092,11 +15096,11 @@ exports.globalfunctions = {
         signature: '(n)'
     },
 	cd_track_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     date_create_date: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'year', documentation: '' },
@@ -15106,7 +15110,7 @@ exports.globalfunctions = {
         signature: '(year, month, day)'
     },
     date_create_time: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'hour', documentation: '' },
@@ -15116,15 +15120,15 @@ exports.globalfunctions = {
         signature: '(hour, minute, second)'
     },
 	date_current_date: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     date_current_time: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     date_valid_date: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'year', documentation: '' },
@@ -15134,7 +15138,7 @@ exports.globalfunctions = {
         signature: '(year, month, day)'
     },
     date_valid_time: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'hour', documentation: '' },
@@ -15144,7 +15148,7 @@ exports.globalfunctions = {
         signature: '(hour, minute, second)'
     },
     discard_include_file: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' }
@@ -15152,7 +15156,7 @@ exports.globalfunctions = {
         signature: '(fname)'
     },
 	disk_free: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'drive', documentation: '' }
@@ -15160,7 +15164,7 @@ exports.globalfunctions = {
         signature: '(drive)'
     },
 	disk_size: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'drive', documentation: '' }
@@ -15168,7 +15172,7 @@ exports.globalfunctions = {
         signature: '(drive)'
     },
 	display_set_all: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'w', documentation: '' },
@@ -15179,7 +15183,7 @@ exports.globalfunctions = {
         signature: '(w, h, frequency, coldepth)'
     },
 	display_set_colordepth: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'coldepth', documentation: '' }
@@ -15187,7 +15191,7 @@ exports.globalfunctions = {
         signature: '(coldepth)'
     },
 	display_set_frequency: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'frequency', documentation: '' }
@@ -15195,7 +15199,7 @@ exports.globalfunctions = {
         signature: '(frequency)'
     },
 	display_set_size: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'w', documentation: '' },
@@ -15204,7 +15208,7 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	display_test_all: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'w', documentation: '' },
@@ -15215,7 +15219,7 @@ exports.globalfunctions = {
         signature: '(w, h, frequency, coldepth)'
     },
     execute_file: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -15226,7 +15230,7 @@ exports.globalfunctions = {
         signature: '(fname, arg0, arg1, ...)'
     },
     execute_program: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -15236,7 +15240,7 @@ exports.globalfunctions = {
         signature: '(prog, arg, wait)'
     },
 	execute_shell: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -15245,7 +15249,7 @@ exports.globalfunctions = {
         signature: '(prog, arg)'
     },
     execute_string: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'str', documentation: '' },
@@ -15256,7 +15260,7 @@ exports.globalfunctions = {
         signature: '(str, arg0, arg1, ...)'
     },
 	export_include_file: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' }
@@ -15264,7 +15268,7 @@ exports.globalfunctions = {
         signature: '(fname)'
     },
 	export_include_file_location: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -15273,7 +15277,7 @@ exports.globalfunctions = {
         signature: '(fname, location)'
     },
     get_color: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'defcol', documentation: '' }
@@ -15281,7 +15285,7 @@ exports.globalfunctions = {
         signature: '(defcol)'
     },
 	get_directory: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'dname', documentation: '' }
@@ -15289,7 +15293,7 @@ exports.globalfunctions = {
         signature: '(dname)'
     },
 	get_directory_alt: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'capt', documentation: '' },
@@ -15298,11 +15302,11 @@ exports.globalfunctions = {
         signature: '(capt, root)'
     },
     highscore_add_current: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     highscore_set_background: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'back', documentation: '' }
@@ -15310,7 +15314,7 @@ exports.globalfunctions = {
         signature: '(back)'
     },
 	highscore_set_border: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'show', documentation: '' }
@@ -15318,7 +15322,7 @@ exports.globalfunctions = {
         signature: '(show)'
     },
 	highscore_set_colors: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'back', documentation: '' },
@@ -15328,7 +15332,7 @@ exports.globalfunctions = {
         signature: '(back, new, other)'
     },
 	highscore_set_font: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -15338,7 +15342,7 @@ exports.globalfunctions = {
         signature: '(name, size, style)'
     },
 	highscore_set_strings: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'caption', documentation: '' },
@@ -15348,7 +15352,7 @@ exports.globalfunctions = {
         signature: '(caption, nobody, escape)'
     },
 	highscore_show: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'numb', documentation: '' }
@@ -15356,7 +15360,7 @@ exports.globalfunctions = {
         signature: '(numb)'
     },
 	highscore_show_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'numb', documentation: '' },
@@ -15370,15 +15374,15 @@ exports.globalfunctions = {
         signature: '(numb, back, border, col1, col2, name, size)'
     },
     io_handle: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     keyboard_wait: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	MCI_command: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'str', documentation: '' }
@@ -15386,7 +15390,7 @@ exports.globalfunctions = {
         signature: '(str)'
     },
 	message_alpha: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'alpha', documentation: '' }
@@ -15394,7 +15398,7 @@ exports.globalfunctions = {
         signature: '(alpha)'
     },
 	message_background: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'back', documentation: '' }
@@ -15402,7 +15406,7 @@ exports.globalfunctions = {
         signature: '(back)'
     },
 	message_button: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'sprite', documentation: '' }
@@ -15410,7 +15414,7 @@ exports.globalfunctions = {
         signature: '(sprite)'
     },
 	message_button_font: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -15421,7 +15425,7 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
 	message_caption: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'show', documentation: '' },
@@ -15430,7 +15434,7 @@ exports.globalfunctions = {
         signature: '(show, str)'
     },
 	message_input_color: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'col', documentation: '' }
@@ -15438,7 +15442,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	message_input_font: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -15449,7 +15453,7 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
 	message_mouse_color: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'col', documentation: '' }
@@ -15457,7 +15461,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	message_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'x', documentation: '' },
@@ -15466,7 +15470,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	message_size: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'w', documentation: '' },
@@ -15475,7 +15479,7 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	message_text_charset: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'type', documentation: '' },
@@ -15484,7 +15488,7 @@ exports.globalfunctions = {
         signature: '(type, charset_id)'
     },
 	message_text_font: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -15495,15 +15499,15 @@ exports.globalfunctions = {
         signature: '(name, size, colour, style)'
     },
     mouse_wait: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     object_add: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	object_delete: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -15511,7 +15515,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	object_event_add: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -15522,7 +15526,7 @@ exports.globalfunctions = {
         signature: '(ind, evtype, evnumb, codestr)'
     },
 	object_event_clear: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -15532,7 +15536,7 @@ exports.globalfunctions = {
         signature: '(ind, evtype, evnumb)'
     },
 	part_attractor_clear: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15541,7 +15545,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_attractor_create: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15549,7 +15553,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_attractor_destroy: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15558,7 +15562,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_attractor_destroy_all: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15566,7 +15570,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_attractor_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15575,7 +15579,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_attractor_force: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15588,7 +15592,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, force, dist, kind, additive)'
     },
 	part_attractor_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15599,7 +15603,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, x, y)'
     },
 	part_changer_clear: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15608,7 +15612,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_changer_create: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15616,7 +15620,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_changer_destroy: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15625,7 +15629,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_changer_destroy_all: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15633,7 +15637,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_changer_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15642,7 +15646,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_changer_kind: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15652,7 +15656,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, kind)'
     },
 	part_changer_region: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15666,7 +15670,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
 	part_changer_types: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15677,7 +15681,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, parttype1, parttype2)'
     },
 	part_deflector_clear: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15686,7 +15690,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_deflector_create: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15694,7 +15698,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_deflector_destroy: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15703,7 +15707,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_deflector_destroy_all: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15711,7 +15715,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_deflector_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15720,7 +15724,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_deflector_friction: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15730,7 +15734,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, amount)'
     },
 	part_deflector_kind: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15740,7 +15744,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, kind)'
     },
 	part_deflector_region: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15753,7 +15757,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, xmin, xmax, ymin, ymax)'
     },
 	part_destroyer_clear: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15762,7 +15766,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_destroyer_create: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15770,7 +15774,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_destroyer_destroy: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15779,7 +15783,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_destroyer_destroy_all: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' }
@@ -15787,7 +15791,7 @@ exports.globalfunctions = {
         signature: '(ps)'
     },
 	part_destroyer_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15796,7 +15800,7 @@ exports.globalfunctions = {
         signature: '(ps, ind)'
     },
 	part_destroyer_region: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ps', documentation: '' },
@@ -15810,7 +15814,7 @@ exports.globalfunctions = {
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
     registry_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' }
@@ -15818,7 +15822,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	registry_exists_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'key', documentation: '' },
@@ -15827,7 +15831,7 @@ exports.globalfunctions = {
         signature: '(key, name)'
     },
 	registry_read_real: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' }
@@ -15835,7 +15839,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	registry_read_real_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'key', documentation: '' },
@@ -15844,7 +15848,7 @@ exports.globalfunctions = {
         signature: '(key, name)'
     },
 	registry_read_string: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' }
@@ -15852,7 +15856,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	registry_read_string_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'key', documentation: '' },
@@ -15861,7 +15865,7 @@ exports.globalfunctions = {
         signature: '(key, name)'
     },
 	registry_set_root: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'root', documentation: '' }
@@ -15869,7 +15873,7 @@ exports.globalfunctions = {
         signature: '(root)'
     },
 	registry_write_real: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -15878,7 +15882,7 @@ exports.globalfunctions = {
         signature: '(name, value)'
     },
 	registry_write_real_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'key', documentation: '' },
@@ -15888,7 +15892,7 @@ exports.globalfunctions = {
         signature: '(key, name, value)'
     },
 	registry_write_string: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -15897,7 +15901,7 @@ exports.globalfunctions = {
         signature: '(name, str)'
     },
 	registry_write_string_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'key', documentation: '' },
@@ -15907,7 +15911,7 @@ exports.globalfunctions = {
         signature: '(key, name, str)'
     },
     room_set_caption: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -15916,7 +15920,7 @@ exports.globalfunctions = {
         signature: '(ind, str)'
     },
 	room_set_code: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -15925,19 +15929,19 @@ exports.globalfunctions = {
         signature: '(ind, codestr)'
     },
     screen_redraw: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     screen_refresh: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     screen_wait_vsync: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     script_get_text: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -15945,7 +15949,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	set_application_title: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'title', documentation: '' }
@@ -15953,7 +15957,7 @@ exports.globalfunctions = {
         signature: '(title)'
     },
 	set_automatic_draw: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'value', documentation: '' }
@@ -15961,7 +15965,7 @@ exports.globalfunctions = {
         signature: '(value)'
     },
 	set_program_priority: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'priority', documentation: '' }
@@ -15969,7 +15973,7 @@ exports.globalfunctions = {
         signature: '(priority)'
     },
 	set_synchronization: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'value', documentation: '' }
@@ -15977,7 +15981,7 @@ exports.globalfunctions = {
         signature: '(value)'
     },
     show_menu: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'str', documentation: '' },
@@ -15986,7 +15990,7 @@ exports.globalfunctions = {
         signature: '(str, def)'
     },
 	show_menu_pos: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'x', documentation: '' },
@@ -15997,7 +16001,7 @@ exports.globalfunctions = {
         signature: '(x, y, str, def)'
     },
     show_message_ext: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'str', documentation: '' },
@@ -16008,7 +16012,7 @@ exports.globalfunctions = {
         signature: '(str, but1, but2, but3)'
     },
     sleep: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'millisec', documentation: '' }
@@ -16016,7 +16020,7 @@ exports.globalfunctions = {
         signature: '(millisec)'
     },
 	sound_3d_set_sound_cone: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16030,7 +16034,7 @@ exports.globalfunctions = {
         signature: '(snd, x, y, z, anglein, angleout, voloutside)'
     },
 	sound_3d_set_sound_distance: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16040,7 +16044,7 @@ exports.globalfunctions = {
         signature: '(snd, mindist, maxdist)'
     },
 	sound_3d_set_sound_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16051,7 +16055,7 @@ exports.globalfunctions = {
         signature: '(snd, x, y, z)'
     },
 	sound_3d_set_sound_velocity: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16062,7 +16066,7 @@ exports.globalfunctions = {
         signature: '(snd, x, y, z)'
     },
 	sound_add: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -16072,7 +16076,7 @@ exports.globalfunctions = {
         signature: '(fname, kind, preload)'
     },
 	sound_background_tempo: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'factor', documentation: '' }
@@ -16080,7 +16084,7 @@ exports.globalfunctions = {
         signature: '(factor)'
     },
 	sound_effect_chorus: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16095,7 +16099,7 @@ exports.globalfunctions = {
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_compressor: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16109,7 +16113,7 @@ exports.globalfunctions = {
         signature: '(snd, gain, attack, release, threshold, ratio, delay)'
     },
 	sound_effect_echo: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16122,7 +16126,7 @@ exports.globalfunctions = {
         signature: '(snd, wetdry, feedback, leftdelay, rightdelay, pandelay)'
     },
 	sound_effect_equalizer: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16133,7 +16137,7 @@ exports.globalfunctions = {
         signature: '(snd, center, bandwidth, gain)'
     },
 	sound_effect_flanger: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16148,7 +16152,7 @@ exports.globalfunctions = {
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_gargle: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16158,7 +16162,7 @@ exports.globalfunctions = {
         signature: '(snd, rate, wave)'
     },
 	sound_effect_reverb: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16170,7 +16174,7 @@ exports.globalfunctions = {
         signature: '(snd, gain, mix, time, ratio)'
     },
 	sound_effect_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: '' },
@@ -16179,7 +16183,7 @@ exports.globalfunctions = {
         signature: '(snd, effect)'
     },
 	sound_pan: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'index', documentation: '' },
@@ -16188,7 +16192,7 @@ exports.globalfunctions = {
         signature: '(index, value)'
     },
 	sound_replace: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16199,7 +16203,7 @@ exports.globalfunctions = {
         signature: '(ind, fname, kind, preload)'
     },
 	sound_set_search_directory: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'dir', documentation: '' }
@@ -16207,7 +16211,7 @@ exports.globalfunctions = {
         signature: '(dir)'
     },
 	splash_set_adapt: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'adapt', documentation: '' }
@@ -16215,7 +16219,7 @@ exports.globalfunctions = {
         signature: '(adapt)'
     },
 	splash_set_border: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'border', documentation: '' }
@@ -16223,7 +16227,7 @@ exports.globalfunctions = {
         signature: '(border)'
     },
 	splash_set_caption: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'cap', documentation: '' }
@@ -16231,7 +16235,7 @@ exports.globalfunctions = {
         signature: '(cap)'
     },
 	splash_set_close_button: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'show', documentation: '' }
@@ -16239,7 +16243,7 @@ exports.globalfunctions = {
         signature: '(show)'
     },
 	splash_set_color: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'col', documentation: '' }
@@ -16247,7 +16251,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	splash_set_cursor: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'vis', documentation: '' }
@@ -16255,7 +16259,7 @@ exports.globalfunctions = {
         signature: '(vis)'
     },
 	splash_set_fullscreen: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'full', documentation: '' }
@@ -16263,7 +16267,7 @@ exports.globalfunctions = {
         signature: '(full)'
     },
 	splash_set_interrupt: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'interrupt', documentation: '' }
@@ -16271,7 +16275,7 @@ exports.globalfunctions = {
         signature: '(interrupt)'
     },
 	splash_set_main: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'main', documentation: '' }
@@ -16279,7 +16283,7 @@ exports.globalfunctions = {
         signature: '(main)'
     },
 	splash_set_position: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'x', documentation: '' },
@@ -16288,7 +16292,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	splash_set_scale: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'scale', documentation: '' }
@@ -16296,7 +16300,7 @@ exports.globalfunctions = {
         signature: '(scale)'
     },
 	splash_set_size: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'w', documentation: '' },
@@ -16305,7 +16309,7 @@ exports.globalfunctions = {
         signature: '(w, h)'
     },
 	splash_set_stop_key: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'stop', documentation: '' }
@@ -16313,7 +16317,7 @@ exports.globalfunctions = {
         signature: '(stop)'
     },
 	splash_set_stop_mouse: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'stop', documentation: '' }
@@ -16321,7 +16325,7 @@ exports.globalfunctions = {
         signature: '(stop)'
     },
 	splash_set_top: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
             { label: 'top', documentation: '' }
@@ -16329,7 +16333,7 @@ exports.globalfunctions = {
         signature: '(top)'
     },
 	splash_show_image: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -16338,7 +16342,7 @@ exports.globalfunctions = {
         signature: '(fname, delay)'
     },
 	splash_show_text: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -16347,7 +16351,7 @@ exports.globalfunctions = {
         signature: '(fname, delay)'
     },
 	splash_show_video: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' },
@@ -16356,7 +16360,7 @@ exports.globalfunctions = {
         signature: '(fname, loop)'
     },
 	splash_show_web: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'url', documentation: '' },
@@ -16365,7 +16369,7 @@ exports.globalfunctions = {
         signature: '(url, delay)'
     },
     sprite_add_from_screen: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16379,7 +16383,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, w, h, removeback, smooth)'
     },
     sprite_add_sprite: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' }
@@ -16387,7 +16391,7 @@ exports.globalfunctions = {
         signature: '(fname)'
     },
     sprite_create_from_screen: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'x', documentation: '' },
@@ -16402,7 +16406,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, removeback, smooth, xorig, yorig)'
     },
     sprite_replace_sprite: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16411,7 +16415,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     timeline_moment_add: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16421,7 +16425,7 @@ exports.globalfunctions = {
         signature: '(ind, step, codestr)'
     },
     transition_define: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'kind', documentation: '' },
@@ -16430,7 +16434,7 @@ exports.globalfunctions = {
         signature: '(kind, name)'
     },
 	transition_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'kind', documentation: '' }
@@ -16438,7 +16442,7 @@ exports.globalfunctions = {
         signature: '(kind)'
     },
 	variable_global_array2_get: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16448,7 +16452,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2)'
     },
 	variable_global_array2_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16459,7 +16463,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2, value)'
     },
 	variable_global_array_get: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16468,7 +16472,7 @@ exports.globalfunctions = {
         signature: '(name, ind)'
     },
 	variable_global_array_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16478,7 +16482,7 @@ exports.globalfunctions = {
         signature: '(name, ind, value)'
     },
     variable_local_array2_get: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16488,7 +16492,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2)'
     },
 	variable_local_array2_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16499,7 +16503,7 @@ exports.globalfunctions = {
         signature: '(name, ind1, ind2, value)'
     },
 	variable_local_array_get: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16508,7 +16512,7 @@ exports.globalfunctions = {
         signature: '(name, ind)'
     },
 	variable_local_array_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16518,7 +16522,7 @@ exports.globalfunctions = {
         signature: '(name, ind, value)'
     },
 	variable_local_exists: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' }
@@ -16526,7 +16530,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	variable_local_get: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' }
@@ -16534,7 +16538,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	variable_local_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: '' },
@@ -16543,43 +16547,43 @@ exports.globalfunctions = {
         signature: '(name, value)'
     },
     window_default: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     window_get_region_height: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	window_get_region_scale: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	window_get_region_width: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	window_get_showborder: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	window_get_showicons: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	window_get_sizeable: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
 	window_get_stayontop: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     window_get_visible: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     window_set_region_scale: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'scale', documentation: '' },
@@ -16588,7 +16592,7 @@ exports.globalfunctions = {
         signature: '(scale, adaptwindow)'
     },
 	window_set_region_size: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'w', documentation: '' },
@@ -16598,7 +16602,7 @@ exports.globalfunctions = {
         signature: '(w, h, adaptwindow)'
     },
 	window_set_showborder: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'show', documentation: '' }
@@ -16606,7 +16610,7 @@ exports.globalfunctions = {
         signature: '(show)'
     },
 	window_set_showicons: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'show', documentation: '' }
@@ -16614,7 +16618,7 @@ exports.globalfunctions = {
         signature: '(show)'
     },
 	window_set_sizeable: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'sizeable', documentation: '' }
@@ -16622,7 +16626,7 @@ exports.globalfunctions = {
         signature: '(sizeable)'
     },
 	window_set_stayontop: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'stay', documentation: '' }
@@ -16630,7 +16634,7 @@ exports.globalfunctions = {
         signature: '(stay)'
     },
 	window_set_visible: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'visible', documentation: '' }
@@ -16638,7 +16642,7 @@ exports.globalfunctions = {
         signature: '(visible)'
     },
 	window_views_mouse_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'x', documentation: '' },
@@ -16647,7 +16651,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	window_view_mouse_set: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'id', documentation: '' },
@@ -16657,7 +16661,7 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
     texture_preload: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'texid', documentation: '' }
@@ -16665,7 +16669,7 @@ exports.globalfunctions = {
         signature: '(texid)'
     },
     texture_set_priority: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'texid', documentation: '' },
@@ -16674,19 +16678,19 @@ exports.globalfunctions = {
         signature: '(texid, prio)'
     },
     display_get_colourdepth: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     display_get_frequency: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     show_info: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81
     },
     load_info: {
-        description: '[Function] (该函数仅 GameMaker 8.1 及早期版本可用)',
+        description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: '' }
@@ -16696,7 +16700,7 @@ exports.globalfunctions = {
 
 	//New in GameMaker Studio 2
 	string_hash_to_newline: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'str', documentation: '' }
@@ -16704,7 +16708,7 @@ exports.globalfunctions = {
         signature: '(str)'
     },
 	game_set_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'value', documentation: '' },
@@ -16713,7 +16717,7 @@ exports.globalfunctions = {
         signature: '(value, type)'
     },
 	game_get_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'type', documentation: '' }
@@ -16721,7 +16725,7 @@ exports.globalfunctions = {
         signature: '(type)'
     },
 	sprite_set_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16731,7 +16735,7 @@ exports.globalfunctions = {
         signature: '(ind, speed, type)'
     },
 	sprite_get_speed_type: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -16739,7 +16743,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	sprite_get_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -16747,7 +16751,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	texture_get_uvs: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'texid', documentation: '' }
@@ -16755,7 +16759,7 @@ exports.globalfunctions = {
         signature: '(texid)'
     },
 	room_get_camera: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16764,7 +16768,7 @@ exports.globalfunctions = {
         signature: '(ind, vind)'
     },
 	room_set_camera: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16774,7 +16778,7 @@ exports.globalfunctions = {
         signature: '(ind, vind, camera)'
     },
 	room_set_viewport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16783,7 +16787,7 @@ exports.globalfunctions = {
         signature: '(ind, vind)'
     },
 	room_get_viewport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16797,7 +16801,7 @@ exports.globalfunctions = {
         signature: '(ind, vind, vis, xport, yport, wport, hport)'
     },
 	ds_list_set: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -16807,7 +16811,7 @@ exports.globalfunctions = {
         signature: '(id, pos, value)'
     },
 	ds_map_set: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'id', documentation: '' },
@@ -16817,7 +16821,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	part_system_create_layer: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer', documentation: '' },
@@ -16826,7 +16830,7 @@ exports.globalfunctions = {
         signature: '(layer, persistent)'
     },
 	part_system_get_layer: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -16834,7 +16838,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	part_system_layer: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -16843,11 +16847,11 @@ exports.globalfunctions = {
         signature: '(ind, layer)'
     },
 	matrix_build_identity: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	matrix_build_lookat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'xform', documentation: '' },
@@ -16863,7 +16867,7 @@ exports.globalfunctions = {
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
 	matrix_build_projection_ortho: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'width', documentation: '' },
@@ -16874,7 +16878,7 @@ exports.globalfunctions = {
         signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'width', documentation: '' },
@@ -16885,7 +16889,7 @@ exports.globalfunctions = {
         signature: '(width, height, znear, zfar)'
     },
 	matrix_build_projection_perspective_fov: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'fov_y', documentation: '' },
@@ -16896,7 +16900,7 @@ exports.globalfunctions = {
         signature: '(fov_y, aspect, znear, zfar)'
     },
 	matrix_transform_vertex: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'matrix', documentation: '' },
@@ -16907,7 +16911,7 @@ exports.globalfunctions = {
         signature: '(matrix, x, y, z)'
     },
 	matrix_stack_push: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: '...', documentation: '' }
@@ -16915,11 +16919,11 @@ exports.globalfunctions = {
         signature: '(...)'
     },
 	matrix_stack_pop: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	matrix_stack_set: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'matrix', documentation: '' }
@@ -16927,19 +16931,19 @@ exports.globalfunctions = {
         signature: '(matrix)'
     },
 	matrix_stack_clear: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	matrix_stack_top: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	matrix_stack_is_empty: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_set_blendenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -16947,7 +16951,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gpu_set_ztestenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -16955,7 +16959,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gpu_set_zfunc: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -16963,7 +16967,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gpu_set_zwriteenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -16971,7 +16975,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gpu_set_fog: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' },
@@ -16982,7 +16986,7 @@ exports.globalfunctions = {
         signature: '(enable, col, start, end)'
     },
 	gpu_set_cullmode: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'cullmode', documentation: '' }
@@ -16990,7 +16994,7 @@ exports.globalfunctions = {
         signature: '(cullmode)'
     },
 	gpu_set_blendmode: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'mode', documentation: '' }
@@ -16998,7 +17002,7 @@ exports.globalfunctions = {
         signature: '(mode)'
     },
 	gpu_set_blendmode_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'src', documentation: '' },
@@ -17007,7 +17011,7 @@ exports.globalfunctions = {
         signature: '(src, dest)'
     },
 	gpu_set_blendmode_ext_sepalpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'src', documentation: '' },
@@ -17018,7 +17022,7 @@ exports.globalfunctions = {
         signature: '(src, dest, srcalpha, destalpha)'
     },
 	gpu_set_colorwriteenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'red', documentation: '' },
@@ -17029,7 +17033,7 @@ exports.globalfunctions = {
         signature: '(red, green, blue, alpha)'
     },
 	gpu_set_colourwriteenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'red', documentation: '' },
@@ -17040,7 +17044,7 @@ exports.globalfunctions = {
         signature: '(red, green, blue, alpha)'
     },
 	gpu_set_alphatestenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -17048,7 +17052,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gpu_set_alphatestref: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'value', documentation: '' }
@@ -17056,7 +17060,7 @@ exports.globalfunctions = {
         signature: '(value)'
     },
 	gpu_set_alphatestfunc: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'cmp_func', documentation: '' }
@@ -17064,7 +17068,7 @@ exports.globalfunctions = {
         signature: '(cmp_func)'
     },
 	gpu_set_texfilter: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'linear', documentation: '' }
@@ -17072,7 +17076,7 @@ exports.globalfunctions = {
         signature: '(linear)'
     },
 	gpu_set_texfilter_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17081,7 +17085,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, linear)'
     },
 	gpu_set_texrepeat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'repeat', documentation: '' }
@@ -17089,7 +17093,7 @@ exports.globalfunctions = {
         signature: '(repeat)'
     },
 	gpu_set_texrepeat_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17098,7 +17102,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_filter: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'linear', documentation: '' }
@@ -17106,7 +17110,7 @@ exports.globalfunctions = {
         signature: '(linear)'
     },
 	gpu_set_tex_filter_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17115,7 +17119,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, linear)'
     },
 	gpu_set_tex_repeat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'repeat', documentation: '' }
@@ -17123,7 +17127,7 @@ exports.globalfunctions = {
         signature: '(repeat)'
     },
 	gpu_set_tex_repeat_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17132,7 +17136,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, repeat)'
     },
 	gpu_set_tex_mip_filter: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'filter', documentation: '' }
@@ -17140,7 +17144,7 @@ exports.globalfunctions = {
         signature: '(filter)'
     },
 	gpu_set_tex_mip_filter_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17149,7 +17153,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, filter)'
     },
 	gpu_set_tex_mip_bias: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'bias', documentation: '' }
@@ -17157,7 +17161,7 @@ exports.globalfunctions = {
         signature: '(bias)'
     },
 	gpu_set_tex_mip_bias_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17166,7 +17170,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, bias)'
     },
 	gpu_set_tex_min_mip: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'minmap', documentation: '' }
@@ -17174,7 +17178,7 @@ exports.globalfunctions = {
         signature: '(minmip)'
     },
 	gpu_set_tex_min_mip_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17183,7 +17187,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, minmip)'
     },
 	gpu_set_tex_max_mip: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'maxmap', documentation: '' }
@@ -17191,7 +17195,7 @@ exports.globalfunctions = {
         signature: '(maxmip)'
     },
 	gpu_set_tex_max_mip_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17200,7 +17204,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, maxmip)'
     },
 	gpu_set_tex_max_aniso: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'maxaniso', documentation: '' }
@@ -17208,7 +17212,7 @@ exports.globalfunctions = {
         signature: '(maxaniso)'
     },
 	gpu_set_tex_max_aniso_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17217,7 +17221,7 @@ exports.globalfunctions = {
         signature: '(sampler_id, maxaniso)'
     },
 	gpu_set_tex_mip_enable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'setting', documentation: '' }
@@ -17225,7 +17229,7 @@ exports.globalfunctions = {
         signature: '(setting)'
     },
 	gpu_set_tex_mip_enable_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' },
@@ -17234,83 +17238,83 @@ exports.globalfunctions = {
         signature: '(sampler_id, setting)'
     },
 	gpu_get_blendenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_ztestenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_zfunc: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_zwriteenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_fog: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_cullmode: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode_ext_sepalpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode_src: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode_dest: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode_srcalpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_blendmode_destalpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_colorwriteenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_colourwriteenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_alphatestenable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_alphatestref: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_alphatestfunc: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_texfilter: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_texfilter_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17318,11 +17322,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_texrepeat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_texrepeat_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17330,11 +17334,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_filter: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_filter_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17342,11 +17346,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_repeat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_repeat_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17354,11 +17358,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_filter: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_mip_filter_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17366,11 +17370,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_bias: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_mip_bias_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17378,11 +17382,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_min_mip: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_min_mip_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17390,11 +17394,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_mip: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_max_mip_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17402,11 +17406,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_max_aniso: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_max_aniso_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17414,11 +17418,11 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_get_tex_mip_enable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_tex_mip_enable_ext: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sampler_id', documentation: '' }
@@ -17426,19 +17430,19 @@ exports.globalfunctions = {
         signature: '(sampler_id)'
     },
 	gpu_push_state: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_pop_state: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_get_state: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gpu_set_state: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'map', documentation: '' }
@@ -17446,7 +17450,7 @@ exports.globalfunctions = {
         signature: '(map)'
     },
 	draw_light_define_ambient: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'col', documentation: '' }
@@ -17454,7 +17458,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	draw_light_define_direction: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -17466,7 +17470,7 @@ exports.globalfunctions = {
         signature: '(ind, dx, dy, dz, col)'
     },
 	draw_light_define_point: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -17479,7 +17483,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, range, col)'
     },
 	draw_light_enable: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' },
@@ -17488,7 +17492,7 @@ exports.globalfunctions = {
         signature: '(ind, enable)'
     },
 	draw_set_lighting: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -17496,11 +17500,11 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	draw_light_get_ambient: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	draw_light_get: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: '' }
@@ -17508,11 +17512,11 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
 	draw_get_lighting: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	load_csv: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'filename', documentation: '' }
@@ -17520,7 +17524,7 @@ exports.globalfunctions = {
         signature: '(filename)'
     },
     skeleton_animation_get_frame: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'track', documentation: '' }
@@ -17528,7 +17532,7 @@ exports.globalfunctions = {
         signature: '(track)'
     },
 	skeleton_animation_set_frame: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'track', documentation: '' },
@@ -17537,7 +17541,7 @@ exports.globalfunctions = {
         signature: '(track, index)'
     },
 	layer_get_id: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_name', documentation: '' }
@@ -17545,7 +17549,7 @@ exports.globalfunctions = {
         signature: '(layer_name)'
     },
 	layer_get_id_at_depth: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'depth', documentation: '' }
@@ -17553,7 +17557,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
 	layer_get_depth: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17561,7 +17565,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_create: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'depth', documentation: '' },
@@ -17571,7 +17575,7 @@ exports.globalfunctions = {
         signature: '(depth, name*, ...)'
     },
 	layer_destroy: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17579,7 +17583,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_destroy_instances: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17587,7 +17591,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_add_instance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17596,7 +17600,7 @@ exports.globalfunctions = {
         signature: '(layer_id, instance)'
     },
 	layer_has_instance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17605,7 +17609,7 @@ exports.globalfunctions = {
         signature: '(layer_id, instance)'
     },
 	layer_set_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17614,7 +17618,7 @@ exports.globalfunctions = {
         signature: '(layer_id, visible)'
     },
 	layer_get_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17622,7 +17626,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_exists: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17630,7 +17634,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17639,7 +17643,7 @@ exports.globalfunctions = {
         signature: '(layer_id, x)'
     },
 	layer_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17648,7 +17652,7 @@ exports.globalfunctions = {
         signature: '(layer_id, y)'
     },
 	layer_get_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17656,7 +17660,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_get_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17664,7 +17668,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_hspeed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17673,7 +17677,7 @@ exports.globalfunctions = {
         signature: '(layer_id, speed)'
     },
 	layer_vspeed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17682,7 +17686,7 @@ exports.globalfunctions = {
         signature: '(layer_id, speed)'
     },
 	layer_get_hspeed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17690,7 +17694,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_get_vspeed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17698,7 +17702,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_script_begin: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17707,7 +17711,7 @@ exports.globalfunctions = {
         signature: '(layer_id, script)'
     },
 	layer_script_end: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17716,7 +17720,7 @@ exports.globalfunctions = {
         signature: '(layer_id, script)'
     },
 	layer_shader: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17725,7 +17729,7 @@ exports.globalfunctions = {
         signature: '(layer_id, shader)'
     },
 	layer_get_script_begin: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17733,7 +17737,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_get_script_end: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17741,7 +17745,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_get_shader: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17749,7 +17753,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_set_target_room: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'room', documentation: '' }
@@ -17757,19 +17761,19 @@ exports.globalfunctions = {
         signature: '(room)'
     },
 	layer_get_target_room: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	layer_reset_target_room: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	layer_get_all: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	layer_get_all_elements: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17777,7 +17781,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_get_name: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17785,7 +17789,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_depth: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17794,7 +17798,7 @@ exports.globalfunctions = {
         signature: '(layer_id, depth)'
     },
 	layer_get_element_layer: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'element_id', documentation: '' }
@@ -17802,7 +17806,7 @@ exports.globalfunctions = {
         signature: '(element_id)'
     },
 	layer_get_element_type: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'element_id', documentation: '' }
@@ -17810,7 +17814,7 @@ exports.globalfunctions = {
         signature: '(element_id)'
     },
 	layer_element_move: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'element_id', documentation: '' },
@@ -17819,7 +17823,7 @@ exports.globalfunctions = {
         signature: '(element_id, layer_id)'
     },
 	layer_force_draw_depth: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'force', documentation: '' },
@@ -17828,15 +17832,15 @@ exports.globalfunctions = {
         signature: '(force, depth)'
     },
 	layer_is_draw_depth_forced: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	layer_get_forced_depth: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	layer_background_get_id: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -17844,7 +17848,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_background_exists: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17853,7 +17857,7 @@ exports.globalfunctions = {
         signature: '(layer_id, background_element_id)'
     },
 	layer_background_create: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -17862,7 +17866,7 @@ exports.globalfunctions = {
         signature: '(layer_id, sprite)'
     },
 	layer_background_destroy: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -17870,7 +17874,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17879,7 +17883,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, visible)'
     },
 	layer_background_change: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17888,7 +17892,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, sprite)'
     },
 	layer_background_sprite: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17897,7 +17901,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, sprite)'
     },
 	layer_background_htiled: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17906,7 +17910,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, tiled)'
     },
 	layer_background_vtiled: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17915,7 +17919,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, tiled)'
     },
 	layer_background_stretch: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17924,7 +17928,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, stretch)'
     },
 	layer_background_yscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17933,7 +17937,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, yscale)'
     },
 	layer_background_xscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17942,7 +17946,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, xscale)'
     },
 	layer_background_blend: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17951,7 +17955,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, col)'
     },
 	layer_background_alpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17960,7 +17964,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, alpha)'
     },
 	layer_background_index: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17969,7 +17973,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, image_index)'
     },
 	layer_background_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' },
@@ -17978,7 +17982,7 @@ exports.globalfunctions = {
         signature: '(background_element_id, image_speed)'
     },
 	layer_background_get_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -17986,7 +17990,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_sprite: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -17994,7 +17998,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_htiled: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18002,7 +18006,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_vtiled: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18010,7 +18014,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_stretch: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18018,7 +18022,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_yscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18026,7 +18030,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_xscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18034,7 +18038,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_blend: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18042,7 +18046,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_alpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18050,7 +18054,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_index: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18058,7 +18062,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_background_get_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: '' }
@@ -18066,7 +18070,7 @@ exports.globalfunctions = {
         signature: '(background_element_id)'
     },
 	layer_sprite_get_id: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18075,7 +18079,7 @@ exports.globalfunctions = {
         signature: '(layer_id, sprite_element_name)'
     },
 	layer_sprite_exists: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18084,7 +18088,7 @@ exports.globalfunctions = {
         signature: '(layer_id, sprite_element_id)'
     },
 	layer_sprite_create: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18095,7 +18099,7 @@ exports.globalfunctions = {
         signature: '(layer_id, x, y, sprite)'
     },
 	layer_sprite_destroy: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18103,7 +18107,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_change: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18112,7 +18116,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, sprite)'
     },
 	layer_sprite_index: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18121,7 +18125,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, image_index)'
     },
 	layer_sprite_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18130,7 +18134,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, image_speed)'
     },
 	layer_sprite_xscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18139,7 +18143,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, xscale)'
     },
 	layer_sprite_yscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18148,7 +18152,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, yscale)'
     },
 	layer_sprite_angle: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18157,7 +18161,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, angle)'
     },
 	layer_sprite_blend: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18166,7 +18170,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, col)'
     },
 	layer_sprite_alpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18175,7 +18179,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, alpha)'
     },
 	layer_sprite_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18184,7 +18188,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, x)'
     },
 	layer_sprite_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' },
@@ -18193,7 +18197,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id, y)'
     },
 	layer_sprite_get_sprite: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18201,7 +18205,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_index: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18209,7 +18213,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18217,7 +18221,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_xscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18225,7 +18229,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_yscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18233,7 +18237,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_angle: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18241,7 +18245,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_blend: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18249,7 +18253,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_alpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18257,7 +18261,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18265,7 +18269,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: '' }
@@ -18273,7 +18277,7 @@ exports.globalfunctions = {
         signature: '(sprite_element_id)'
     },
 	layer_tilemap_get_id: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -18281,7 +18285,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	layer_tilemap_exists: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18290,7 +18294,7 @@ exports.globalfunctions = {
         signature: '(layer_id, tilemap_element_id)'
     },
 	layer_tilemap_create: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18303,7 +18307,7 @@ exports.globalfunctions = {
         signature: '(layer_id, x, y, tileset, width, height)'
     },
 	layer_tilemap_destroy: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18311,7 +18315,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_tileset: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18320,7 +18324,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tileset)'
     },
 	tilemap_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18329,7 +18333,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x)'
     },
 	tilemap_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18338,7 +18342,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, y)'
     },
 	tilemap_set: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18349,7 +18353,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tiledata, cell_x, cell_y)'
     },
 	tilemap_set_at_pixel: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18360,7 +18364,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tiledata, x, y)'
     },
 	tilemap_get_tileset: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18368,7 +18372,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_width: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18376,7 +18380,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_height: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18384,7 +18388,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_width: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18392,7 +18396,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_height: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18400,7 +18404,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18408,7 +18412,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18416,7 +18420,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18426,7 +18430,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, cell_x, cell_y)'
     },
 	tilemap_get_at_pixel: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18436,7 +18440,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_x_at_pixel: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18446,7 +18450,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_y_at_pixel: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18456,7 +18460,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_clear: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18465,7 +18469,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, tiledata)'
     },
 	draw_tilemap: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18475,7 +18479,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, x, y)'
     },
 	draw_tile: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tileset', documentation: '' },
@@ -18487,15 +18491,15 @@ exports.globalfunctions = {
         signature: '(tileset, tiledata, frame, x, y)'
     },
 	tilemap_set_global_mask: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	tilemap_get_global_mask: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	tilemap_set_mask: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' },
@@ -18504,7 +18508,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id, mask)'
     },
 	tilemap_get_mask: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18512,7 +18516,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_frame: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tilemap_element_id', documentation: '' }
@@ -18520,7 +18524,7 @@ exports.globalfunctions = {
         signature: '(tilemap_element_id)'
     },
 	tile_set_empty: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' }
@@ -18528,7 +18532,7 @@ exports.globalfunctions = {
         signature: '(tiledata)'
     },
 	tile_set_index: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' },
@@ -18537,7 +18541,7 @@ exports.globalfunctions = {
         signature: '(tiledata, tileindex)'
     },
 	tile_set_flip: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' },
@@ -18546,7 +18550,7 @@ exports.globalfunctions = {
         signature: '(tiledata, flip)'
     },
 	tile_set_mirror: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' },
@@ -18555,7 +18559,7 @@ exports.globalfunctions = {
         signature: '(tiledata, mirror)'
     },
 	tile_set_rotate: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' },
@@ -18564,7 +18568,7 @@ exports.globalfunctions = {
         signature: '(tiledata, rotate)'
     },
 	tile_get_empty: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' }
@@ -18572,7 +18576,7 @@ exports.globalfunctions = {
         signature: '(tiledata)'
     },
 	tile_get_index: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' }
@@ -18580,7 +18584,7 @@ exports.globalfunctions = {
         signature: '(tiledata)'
     },
 	tile_get_flip: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' }
@@ -18588,7 +18592,7 @@ exports.globalfunctions = {
         signature: '(tiledata)'
     },
 	tile_get_mirror: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' }
@@ -18596,7 +18600,7 @@ exports.globalfunctions = {
         signature: '(tiledata)'
     },
 	tile_get_rotate: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tiledata', documentation: '' }
@@ -18604,7 +18608,7 @@ exports.globalfunctions = {
         signature: '(tiledata)'
     },
 	layer_tile_exists: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18614,7 +18618,7 @@ exports.globalfunctions = {
         signature: '(layer_id, tile_element_id, ...)'
     },
 	layer_tile_create: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' },
@@ -18629,7 +18633,7 @@ exports.globalfunctions = {
         signature: '(layer_id, x, y, tileset, left, top, width, height)'
     },
 	layer_tile_destroy: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18637,7 +18641,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_change: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18646,7 +18650,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, sprite)'
     },
 	layer_tile_xscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18655,7 +18659,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, xscale)'
     },
 	layer_tile_yscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18664,7 +18668,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, yscale)'
     },
 	layer_tile_blend: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18673,7 +18677,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, col)'
     },
 	layer_tile_alpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18682,7 +18686,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, alpha)'
     },
 	layer_tile_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18691,7 +18695,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, x)'
     },
 	layer_tile_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18700,7 +18704,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, y)'
     },
 	layer_tile_region: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18712,7 +18716,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, left, top, width, height)'
     },
 	layer_tile_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' },
@@ -18721,7 +18725,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id, visible)'
     },
 	layer_tile_get_sprite: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18729,7 +18733,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_xscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18737,7 +18741,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_yscale: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18745,7 +18749,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_blend: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18753,7 +18757,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_alpha: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18761,7 +18765,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18769,7 +18773,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18777,7 +18781,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_region: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18785,7 +18789,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_tile_get_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: '' }
@@ -18793,7 +18797,7 @@ exports.globalfunctions = {
         signature: '(tile_element_id)'
     },
 	layer_instance_get_instance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'instance_element_id', documentation: '' }
@@ -18801,7 +18805,7 @@ exports.globalfunctions = {
         signature: '(instance_element_id)'
     },
 	instance_activate_layer: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -18809,7 +18813,7 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	instance_deactivate_layer: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: '' }
@@ -18817,11 +18821,11 @@ exports.globalfunctions = {
         signature: '(layer_id)'
     },
 	camera_create: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	camera_create_view: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'room_x', documentation: '' },
@@ -18838,7 +18842,7 @@ exports.globalfunctions = {
         signature: '(room_x, room_y, width, height, angle, object, x_speed, y_speed, x_border, y_border)'
     },
 	camera_destroy: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -18846,7 +18850,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_apply: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -18854,15 +18858,15 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_active: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	camera_get_default: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	camera_set_default: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -18870,7 +18874,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_set_view_mat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18879,7 +18883,7 @@ exports.globalfunctions = {
         signature: '(camera, matrix)'
     },
 	camera_set_proj_mat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18888,7 +18892,7 @@ exports.globalfunctions = {
         signature: '(camera, matrix)'
     },
 	camera_set_update_script: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18897,7 +18901,7 @@ exports.globalfunctions = {
         signature: '(camera, script)'
     },
 	camera_set_begin_script: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18906,7 +18910,7 @@ exports.globalfunctions = {
         signature: '(camera, script)'
     },
 	camera_set_end_script: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18915,7 +18919,7 @@ exports.globalfunctions = {
         signature: '(camera, script)'
     },
 	camera_set_view_pos: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18925,7 +18929,7 @@ exports.globalfunctions = {
         signature: '(camera, x, y)'
     },
 	camera_set_view_size: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18935,7 +18939,7 @@ exports.globalfunctions = {
         signature: '(camera, width, height)'
     },
 	camera_set_view_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18945,7 +18949,7 @@ exports.globalfunctions = {
         signature: '(camera, x_speed, y_speed)'
     },
 	camera_set_view_border: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18955,7 +18959,7 @@ exports.globalfunctions = {
         signature: '(camera, x_border, y_border)'
     },
 	camera_set_view_angle: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18964,7 +18968,7 @@ exports.globalfunctions = {
         signature: '(camera, angle)'
     },
 	camera_set_view_target: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' },
@@ -18973,7 +18977,7 @@ exports.globalfunctions = {
         signature: '(camera, object)'
     },
 	camera_get_view_mat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -18981,7 +18985,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_proj_mat: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -18989,7 +18993,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_update_script: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -18997,7 +19001,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_begin_script: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19005,7 +19009,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_end_script: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19013,7 +19017,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19021,7 +19025,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19029,7 +19033,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_width: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19037,7 +19041,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_height: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19045,7 +19049,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_speed_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19053,7 +19057,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_speed_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19061,7 +19065,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_border_x: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19069,7 +19073,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_border_y: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19077,7 +19081,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_angle: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19085,7 +19089,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	camera_get_view_target: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: '' }
@@ -19093,7 +19097,7 @@ exports.globalfunctions = {
         signature: '(camera)'
     },
 	view_get_camera: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19101,7 +19105,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_get_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19109,7 +19113,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_get_xport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19117,7 +19121,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_get_yport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19125,7 +19129,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_get_wport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19133,7 +19137,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_get_hport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19141,7 +19145,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_get_surface_id: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' }
@@ -19149,7 +19153,7 @@ exports.globalfunctions = {
         signature: '(view)'
     },
 	view_set_camera: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19158,7 +19162,7 @@ exports.globalfunctions = {
         signature: '(view, camera)'
     },
 	view_set_visible: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19167,7 +19171,7 @@ exports.globalfunctions = {
         signature: '(view, visible)'
     },
 	view_set_xport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19176,7 +19180,7 @@ exports.globalfunctions = {
         signature: '(view, xport)'
     },
 	view_set_yport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19185,7 +19189,7 @@ exports.globalfunctions = {
         signature: '(view, yport)'
     },
 	view_set_wport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19194,7 +19198,7 @@ exports.globalfunctions = {
         signature: '(view, wport)'
     },
 	view_set_hport: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19203,7 +19207,7 @@ exports.globalfunctions = {
         signature: '(view, hport)'
     },
 	view_set_surface_id: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: '' },
@@ -19212,7 +19216,7 @@ exports.globalfunctions = {
         signature: '(view, surface_id)'
     },
 	gesture_drag_time: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'time', documentation: '' }
@@ -19220,7 +19224,7 @@ exports.globalfunctions = {
         signature: '(time)'
     },
 	gesture_drag_distance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'distance', documentation: '' }
@@ -19228,7 +19232,7 @@ exports.globalfunctions = {
         signature: '(distance)'
     },
 	gesture_flick_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'speed', documentation: '' }
@@ -19236,7 +19240,7 @@ exports.globalfunctions = {
         signature: '(speed)'
     },
 	gesture_double_tap_time: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'time', documentation: '' }
@@ -19244,7 +19248,7 @@ exports.globalfunctions = {
         signature: '(time)'
     },
 	gesture_double_tap_distance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'distance', documentation: '' }
@@ -19252,7 +19256,7 @@ exports.globalfunctions = {
         signature: '(distance)'
     },
 	gesture_pinch_distance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'distance', documentation: '' }
@@ -19260,7 +19264,7 @@ exports.globalfunctions = {
         signature: '(distance)'
     },
 	gesture_pinch_angle_towards: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -19268,7 +19272,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
 	gesture_pinch_angle_away: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -19276,7 +19280,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
 	gesture_rotate_time: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'time', documentation: '' }
@@ -19284,7 +19288,7 @@ exports.globalfunctions = {
         signature: '(time)'
     },
 	gesture_rotate_angle: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'angle', documentation: '' }
@@ -19292,7 +19296,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
 	gesture_tap_count: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: '' }
@@ -19300,47 +19304,47 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	gesture_get_drag_time: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_drag_distance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_flick_speed: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_double_tap_time: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_double_tap_distance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_pinch_distance: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_pinch_angle_towards: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_pinch_angle_away: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_rotate_time: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_rotate_angle: {
-        description: '[Function] (GameMaker Studio 2 新增)',
+        description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
     },
 	gesture_get_tap_count: {
-		description: '[Function] (GameMaker Studio 2 新增)',
+		description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2
 	}
 };
@@ -19557,32 +19561,32 @@ exports.globalvariables = {
     view_object: {description: '[Variable] [0..7]',available: datasimple.all},
 
     //GameMaker 8.1 Only
-    secure_mode: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-    gamemaker_pro: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	gamemaker_registered: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	gamemaker_version: {description: '[Variable] (该变量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
+    secure_mode: {description: '[Variable] (' + i18n_notice.gm_81_variable + ')',available: datasimple.gm81},
+    gamemaker_pro: {description: '[Variable] (' + i18n_notice.gm_81_variable + ')',available: datasimple.gm81},
+	gamemaker_registered: {description: '[Variable] (' + i18n_notice.gm_81_variable + ')',available: datasimple.gm81},
+	gamemaker_version: {description: '[Variable] (' + i18n_notice.gm_81_variable + ')',available: datasimple.gm81},
     
     //Obsolete variables in GameMaker Studio 2
-    view_angle: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_hborder: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_hport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_hspeed: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_hview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_object: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_vborder: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_visible: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_vspeed: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_wport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_wview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_xport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_xview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_yport: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
-	view_yview: {description: '[Variable] (该变量在 GameMaker Studio 2 中被废弃)',available: datasimple.ob2},
+    view_angle: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hborder: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hspeed: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_object: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_vborder: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_visible: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_vspeed: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_wport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_wview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_xport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_xview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_yport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_yview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
 
 	//New in GameMaker Studio 2
-	layer: {description: '[Variable] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	view_camera: {description: '[Variable] [0..7] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	event_data: {description: '[Variable] (GameMaker Studio 2 新增)',available: datasimple.gms2}
+	layer: {description: '[Variable] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	view_camera: {description: '[Variable] [0..7] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	event_data: {description: '[Variable] (' + i18n_notice.new_2 + ')',available: datasimple.gms2}
 };
 
 exports.constants = {
@@ -20089,96 +20093,96 @@ exports.constants = {
 	vk_up: {description: '[Constant]',available: datasimple.all},
 
 	//GameMaker 8.1 Only
-	input_type: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-    se_chorus: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_compressor: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_echo: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_equalizer: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_flanger: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_gargle: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_none: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	se_reverb: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
-	text_type: {description: '[Variable] (该常量仅 GameMaker 8.1 及早期版本可用)',available: datasimple.gm81},
+	input_type: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+    se_chorus: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_compressor: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_echo: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_equalizer: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_flanger: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_gargle: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_none: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	se_reverb: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
+	text_type: {description: '[Constant] (' + i18n_notice.gm_81_constant + ')',available: datasimple.gm81},
 	
 	//New in GameMaker Studio 2
-	undefined: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	pointer_invalid: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	pointer_null: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	path_action_stop: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	path_action_restart: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	path_action_continue: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	path_action_reverse: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	gamespeed_fps: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	gamespeed_microseconds: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_tap: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_double_tap: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_drag_start: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_dragging: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_drag_end: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_flick: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_pinch_start: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_pinch_in: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_pinch_out: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_pinch_end: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_rotate_start: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_rotating: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_gesture_rotate_end: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_tap: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_double_tap: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_drag_start: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_dragging: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_drag_end: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_flick: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_pinch_start: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_pinch_in: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_pinch_out: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_pinch_end: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_rotate_start: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_rotating: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ev_global_gesture_rotate_end: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	bm_complex: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tf_point: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tf_linear: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tf_anisotropic: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	mip_off: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	mip_on: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	mip_markedonly: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	asset_tiles: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	asset_shader: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tile_rotate: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tile_flip: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tile_mirror: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	tile_index_mask: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_undefined: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_background: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_instance: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_oldtilemap: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_sprite: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_tilemap: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_particlesystem: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	layerelementtype_tile: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_never: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_less: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_equal: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_lessequal: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_greater: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_notequal: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_greaterequal: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cmpfunc_always: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cull_noculling: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cull_clockwise: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	cull_counterclockwise: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	lighttype_dir: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	lighttype_point: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	spritespeed_framespersecond: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	spritespeed_framespergameframe: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	browser_edge: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	of_challenge_win: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	of_challen: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	ge_lose: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	of_challenge_tie: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2},
-	buffer_text: {description: '[Constant] (GameMaker Studio 2 新增)',available: datasimple.gms2}
+	undefined: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	pointer_invalid: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	pointer_null: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	path_action_stop: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	path_action_restart: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	path_action_continue: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	path_action_reverse: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	gamespeed_fps: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	gamespeed_microseconds: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_tap: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_double_tap: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_drag_start: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_dragging: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_drag_end: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_flick: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_pinch_start: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_pinch_in: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_pinch_out: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_pinch_end: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_rotate_start: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_rotating: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_gesture_rotate_end: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_tap: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_double_tap: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_drag_start: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_dragging: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_drag_end: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_flick: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_pinch_start: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_pinch_in: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_pinch_out: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_pinch_end: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_rotate_start: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_rotating: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ev_global_gesture_rotate_end: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	bm_complex: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tf_point: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tf_linear: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tf_anisotropic: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	mip_off: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	mip_on: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	mip_markedonly: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	asset_tiles: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	asset_shader: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tile_rotate: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tile_flip: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tile_mirror: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	tile_index_mask: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_undefined: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_background: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_instance: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_oldtilemap: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_sprite: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_tilemap: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_particlesystem: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	layerelementtype_tile: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_never: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_less: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_equal: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_lessequal: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_greater: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_notequal: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_greaterequal: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cmpfunc_always: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cull_noculling: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cull_clockwise: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	cull_counterclockwise: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	lighttype_dir: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	lighttype_point: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	spritespeed_framespersecond: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	spritespeed_framespergameframe: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	browser_edge: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	of_challenge_win: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	of_challen: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	ge_lose: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	of_challenge_tie: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
+	buffer_text: {description: '[Constant] (' + i18n_notice.new_2 + ')',available: datasimple.gms2}
 };
 
 exports.keywords = {
