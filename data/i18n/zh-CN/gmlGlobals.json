@@ -2436,7 +2436,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "...": ""
+        "more": ""
     },
     "ds_grid_resize": {
         "desc": "",
@@ -2552,7 +2552,7 @@
         "desc": "",
         "id": "",
         "value": "",
-        "...": ""
+        "more": ""
     },
     "ds_list_clear": {
         "desc": "",
@@ -2609,7 +2609,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "...": ""
+        "more": ""
     },
     "ds_list_replace": {
         "desc": "",
@@ -2709,7 +2709,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "...": ""
+        "more": ""
     },
     "ds_map_replace": {
         "desc": "",
@@ -2817,7 +2817,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "...": ""
+        "more": ""
     },
     "ds_priority_size": {
         "desc": "",
@@ -2855,7 +2855,7 @@
         "desc": "",
         "id": "",
         "value": "",
-        "...": ""
+        "more": ""
     },
     "ds_queue_head": {
         "desc": "",
@@ -2865,7 +2865,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "...": ""
+        "more": ""
     },
     "ds_queue_size": {
         "desc": "",
@@ -2911,13 +2911,13 @@
         "desc": "",
         "id": "",
         "value": "",
-        "...": ""
+        "more": ""
     },
     "ds_stack_read": {
         "desc": "",
         "id": "",
         "str": "",
-        "...": ""
+        "more": ""
     },
     "ds_stack_size": {
         "desc": "",
@@ -2985,7 +2985,7 @@
         "id": "",
         "arg1": "",
         "arg2": "",
-        "...": ""
+        "more": ""
     },
 	"external_define": {
         "desc": "",
@@ -2996,7 +2996,7 @@
         "argnumb": "",
         "arg1type": "",
         "arg2type": "",
-        "...": ""
+        "more": ""
     },
 	"external_free": {
         "desc": "",
@@ -3481,7 +3481,7 @@
 	"gml_pragma": {
         "desc": "",
         "setting": "",
-        "....": ""
+        "more": ""
     },
 	"gml_release_mode": {
         "desc": "",
@@ -3978,7 +3978,7 @@
         "x1": "",
         "x2": "",
         "x3": "",
-        "...": ""
+        "more": ""
     },
 	"md5_file": {
         "desc": "",
@@ -3997,14 +3997,14 @@
         "x1": "",
         "x2": "",
         "x3": "",
-        "...": ""
+        "more": ""
     },
 	"median": {
         "desc": "",
         "x1": "",
         "x2": "",
         "x3": "",
-        "...": ""
+        "more": ""
     },
 	"merge_color": {
         "desc": "",
@@ -4017,7 +4017,7 @@
         "x1": "",
         "x2": "",
         "x3": "",
-        "...": ""
+        "more": ""
     },
 	"motion_add": {
         "desc": "",
@@ -5798,7 +5798,7 @@
         "ind": "",
         "arg0": "",
         "arg1": "",
-        "...": ""
+        "more": ""
     },
 	"script_exists": {
         "desc": "",
@@ -5852,7 +5852,7 @@
         "desc": "",
         "uniform_id": "",
         "val": "",
-        "....": ""
+        "more": ""
     },
 	"shader_set_uniform_f_array": {
         "desc": "",
@@ -5863,7 +5863,7 @@
         "desc": "",
         "uniform_id": "",
         "val": "",
-        "....": ""
+        "more": ""
     },
 	"shader_set_uniform_i_array": {
         "desc": "",

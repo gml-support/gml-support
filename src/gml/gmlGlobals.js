@@ -3394,769 +3394,769 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
 	draw_surface_tiled_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_surface_tiled_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'id', documentation: i18n.draw_surface_tiled_ext.id },
+            { label: 'x', documentation: i18n.draw_surface_tiled_ext.x },
+            { label: 'y', documentation: i18n.draw_surface_tiled_ext.y },
+            { label: 'xscale', documentation: i18n.draw_surface_tiled_ext.xscale },
+            { label: 'yscale', documentation: i18n.draw_surface_tiled_ext.yscale },
+            { label: 'colour', documentation: i18n.draw_surface_tiled_ext.colour },
+            { label: 'alpha', documentation: i18n.draw_surface_tiled_ext.alpha }
         ],
         signature: '(id, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_text: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string }
+            { label: 'x', documentation: i18n.draw_text.x },
+            { label: 'y', documentation: i18n.draw_text.y },
+            { label: 'string', documentation: i18n.draw_text.string }
         ],
         signature: '(x, y, string)'
     },
 	draw_texture_flush: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_texture_flush.desc,
         available: datasimple.all
     },
 	draw_text_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_color.x },
+            { label: 'y', documentation: i18n.draw_text_color.y },
+            { label: 'string', documentation: i18n.draw_text_color.string },
+            { label: 'c1', documentation: i18n.draw_text_color.c1 },
+            { label: 'c2', documentation: i18n.draw_text_color.c2 },
+            { label: 'c3', documentation: i18n.draw_text_color.c3 },
+            { label: 'c4', documentation: i18n.draw_text_color.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_color.alpha }
         ],
         signature: '(x, y, string, c1, c2, c3, c4, alpha)'
     },
 	draw_text_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_colour.x },
+            { label: 'y', documentation: i18n.draw_text_colour.y },
+            { label: 'string', documentation: i18n.draw_text_colour.string },
+            { label: 'c1', documentation: i18n.draw_text_colour.c1 },
+            { label: 'c2', documentation: i18n.draw_text_colour.c2 },
+            { label: 'c3', documentation: i18n.draw_text_colour.c3 },
+            { label: 'c4', documentation: i18n.draw_text_colour.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_colour.alpha }
         ],
         signature: '(x, y, string, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_ext.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
-            { label: 'w', documentation: i18n..w }
+            { label: 'x', documentation: i18n.draw_text_ext.x },
+            { label: 'y', documentation: i18n.draw_text_ext.y },
+            { label: 'string', documentation: i18n.draw_text_ext.string },
+            { label: 'sep', documentation: i18n.draw_text_ext.sep },
+            { label: 'w', documentation: i18n.draw_text_ext.w }
         ],
         signature: '(x, y, string, sep, w)'
     },
 	draw_text_ext_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_ext_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
-            { label: 'w', documentation: i18n..w },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_ext_color.x },
+            { label: 'y', documentation: i18n.draw_text_ext_color.y },
+            { label: 'string', documentation: i18n.draw_text_ext_color.string },
+            { label: 'sep', documentation: i18n.draw_text_ext_color.sep },
+            { label: 'w', documentation: i18n.draw_text_ext_color.w },
+            { label: 'c1', documentation: i18n.draw_text_ext_color.c1 },
+            { label: 'c2', documentation: i18n.draw_text_ext_color.c2 },
+            { label: 'c3', documentation: i18n.draw_text_ext_color.c3 },
+            { label: 'c4', documentation: i18n.draw_text_ext_color.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_ext_color.alpha }
         ],
         signature: '(x, y, string, sep, w, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_ext_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
-            { label: 'w', documentation: i18n..w },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_ext_colour.x },
+            { label: 'y', documentation: i18n.draw_text_ext_colour.y },
+            { label: 'string', documentation: i18n.draw_text_ext_colour.string },
+            { label: 'sep', documentation: i18n.draw_text_ext_colour.sep },
+            { label: 'w', documentation: i18n.draw_text_ext_colour.w },
+            { label: 'c1', documentation: i18n.draw_text_ext_colour.c1 },
+            { label: 'c2', documentation: i18n.draw_text_ext_colour.c2 },
+            { label: 'c3', documentation: i18n.draw_text_ext_colour.c3 },
+            { label: 'c4', documentation: i18n.draw_text_ext_colour.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_ext_colour.alpha }
         ],
         signature: '(x, y, string, sep, w, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_transformed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_ext_transformed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
-            { label: 'w', documentation: i18n..w },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. }
+            { label: 'x', documentation: i18n.draw_text_ext_transformed.x },
+            { label: 'y', documentation: i18n.draw_text_ext_transformed.y },
+            { label: 'string', documentation: i18n.draw_text_ext_transformed.string },
+            { label: 'sep', documentation: i18n.draw_text_ext_transformed.sep },
+            { label: 'w', documentation: i18n.draw_text_ext_transformed.w },
+            { label: 'xscale', documentation: i18n.draw_text_ext_transformed.xscale },
+            { label: 'yscale', documentation: i18n.draw_text_ext_transformed.yscale },
+            { label: 'angle', documentation: i18n.draw_text_ext_transformed.angle }
         ],
         signature: '(x, y, string, sep, w, xscale, yscale, angle)'
     },
 	draw_text_ext_transformed_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_ext_transformed_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
-            { label: 'w', documentation: i18n..w },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_ext_transformed_color.x },
+            { label: 'y', documentation: i18n.draw_text_ext_transformed_color.y },
+            { label: 'string', documentation: i18n.draw_text_ext_transformed_color.string },
+            { label: 'sep', documentation: i18n.draw_text_ext_transformed_color.sep },
+            { label: 'w', documentation: i18n.draw_text_ext_transformed_color.w },
+            { label: 'xscale', documentation: i18n.draw_text_ext_transformed_color.xscale },
+            { label: 'yscale', documentation: i18n.draw_text_ext_transformed_color.yscale },
+            { label: 'angle', documentation: i18n.draw_text_ext_transformed_color.angle },
+            { label: 'c1', documentation: i18n.draw_text_ext_transformed_color.c1 },
+            { label: 'c2', documentation: i18n.draw_text_ext_transformed_color.c2 },
+            { label: 'c3', documentation: i18n.draw_text_ext_transformed_color.c3 },
+            { label: 'c4', documentation: i18n.draw_text_ext_transformed_color.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_ext_transformed_color.alpha }
         ],
         signature: '(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_transformed_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_ext_transformed_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
-            { label: 'w', documentation: i18n..w },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_ext_transformed_colour.x },
+            { label: 'y', documentation: i18n.draw_text_ext_transformed_colour.y },
+            { label: 'string', documentation: i18n.draw_text_ext_transformed_colour.string },
+            { label: 'sep', documentation: i18n.draw_text_ext_transformed_colour.sep },
+            { label: 'w', documentation: i18n.draw_text_ext_transformed_colour.w },
+            { label: 'xscale', documentation: i18n.draw_text_ext_transformed_colour.xscale },
+            { label: 'yscale', documentation: i18n.draw_text_ext_transformed_colour.yscale },
+            { label: 'angle', documentation: i18n.draw_text_ext_transformed_colour.angle },
+            { label: 'c1', documentation: i18n.draw_text_ext_transformed_colour.c1 },
+            { label: 'c2', documentation: i18n.draw_text_ext_transformed_colour.c2 },
+            { label: 'c3', documentation: i18n.draw_text_ext_transformed_colour.c3 },
+            { label: 'c4', documentation: i18n.draw_text_ext_transformed_colour.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_ext_transformed_colour.alpha }
         ],
         signature: '(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_transformed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_transformed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. }
+            { label: 'x', documentation: i18n.draw_text_transformed.x },
+            { label: 'y', documentation: i18n.draw_text_transformed.y },
+            { label: 'string', documentation: i18n.draw_text_transformed.string },
+            { label: 'xscale', documentation: i18n.draw_text_transformed.xscale },
+            { label: 'yscale', documentation: i18n.draw_text_transformed.yscale },
+            { label: 'angle', documentation: i18n.draw_text_transformed.angle }
         ],
         signature: '(x, y, string, xscale, yscale, angle)'
     },
 	draw_text_transformed_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_transformed_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_transformed_color.x },
+            { label: 'y', documentation: i18n.draw_text_transformed_color.y },
+            { label: 'string', documentation: i18n.draw_text_transformed_color.string },
+            { label: 'xscale', documentation: i18n.draw_text_transformed_color.xscale },
+            { label: 'yscale', documentation: i18n.draw_text_transformed_color.yscale },
+            { label: 'angle', documentation: i18n.draw_text_transformed_color.angle },
+            { label: 'c1', documentation: i18n.draw_text_transformed_color.c1 },
+            { label: 'c2', documentation: i18n.draw_text_transformed_color.c2 },
+            { label: 'c3', documentation: i18n.draw_text_transformed_color.c3 },
+            { label: 'c4', documentation: i18n.draw_text_transformed_color.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_transformed_color.alpha }
         ],
         signature: '(x, y, string, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_transformed_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_text_transformed_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'string', documentation: i18n..string },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_text_transformed_colour.x },
+            { label: 'y', documentation: i18n.draw_text_transformed_colour.y },
+            { label: 'string', documentation: i18n.draw_text_transformed_colour.string },
+            { label: 'xscale', documentation: i18n.draw_text_transformed_colour.xscale },
+            { label: 'yscale', documentation: i18n.draw_text_transformed_colour.yscale },
+            { label: 'angle', documentation: i18n.draw_text_transformed_colour.angle },
+            { label: 'c1', documentation: i18n.draw_text_transformed_colour.c1 },
+            { label: 'c2', documentation: i18n.draw_text_transformed_colour.c2 },
+            { label: 'c3', documentation: i18n.draw_text_transformed_colour.c3 },
+            { label: 'c4', documentation: i18n.draw_text_transformed_colour.c4 },
+            { label: 'alpha', documentation: i18n.draw_text_transformed_colour.alpha }
         ],
         signature: '(x, y, string, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_triangle: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_triangle.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'x3', documentation: i18n..x3 },
-            { label: 'y3', documentation: i18n..y3 },
-            { label: 'outline', documentation: i18n..outline }
+            { label: 'x1', documentation: i18n.draw_triangle.x1 },
+            { label: 'y1', documentation: i18n.draw_triangle.y1 },
+            { label: 'x2', documentation: i18n.draw_triangle.x2 },
+            { label: 'y2', documentation: i18n.draw_triangle.y2 },
+            { label: 'x3', documentation: i18n.draw_triangle.x3 },
+            { label: 'y3', documentation: i18n.draw_triangle.y3 },
+            { label: 'outline', documentation: i18n.draw_triangle.outline }
         ],
         signature: '(x1, y1, x2, y2, x3, y3, outline)'
     },
 	draw_triangle_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_triangle_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'x3', documentation: i18n..x3 },
-            { label: 'y3', documentation: i18n..y3 },
-            { label: 'col1', documentation: i18n..col1 },
-            { label: 'col2', documentation: i18n..col2 },
-            { label: 'col3', documentation: i18n..col3 },
-            { label: 'outline', documentation: i18n..outline }
+            { label: 'x1', documentation: i18n.draw_triangle_color.x1 },
+            { label: 'y1', documentation: i18n.draw_triangle_color.y1 },
+            { label: 'x2', documentation: i18n.draw_triangle_color.x2 },
+            { label: 'y2', documentation: i18n.draw_triangle_color.y2 },
+            { label: 'x3', documentation: i18n.draw_triangle_color.x3 },
+            { label: 'y3', documentation: i18n.draw_triangle_color.y3 },
+            { label: 'col1', documentation: i18n.draw_triangle_color.col1 },
+            { label: 'col2', documentation: i18n.draw_triangle_color.col2 },
+            { label: 'col3', documentation: i18n.draw_triangle_color.col3 },
+            { label: 'outline', documentation: i18n.draw_triangle_color.outline }
         ],
         signature: '(x1, y1, x2, y2, x3, y3, col1, col2, col3, outline)'
     },
 	draw_triangle_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_triangle_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'x3', documentation: i18n..x3 },
-            { label: 'y3', documentation: i18n..y3 },
-            { label: 'col1', documentation: i18n..col1 },
-            { label: 'col2', documentation: i18n..col2 },
-            { label: 'col3', documentation: i18n..col3 },
-            { label: 'outline', documentation: i18n..outline }
+            { label: 'x1', documentation: i18n.draw_triangle_colour.x1 },
+            { label: 'y1', documentation: i18n.draw_triangle_colour.y1 },
+            { label: 'x2', documentation: i18n.draw_triangle_colour.x2 },
+            { label: 'y2', documentation: i18n.draw_triangle_colour.y2 },
+            { label: 'x3', documentation: i18n.draw_triangle_colour.x3 },
+            { label: 'y3', documentation: i18n.draw_triangle_colour.y3 },
+            { label: 'col1', documentation: i18n.draw_triangle_colour.col1 },
+            { label: 'col2', documentation: i18n.draw_triangle_colour.col2 },
+            { label: 'col3', documentation: i18n.draw_triangle_colour.col3 },
+            { label: 'outline', documentation: i18n.draw_triangle_colour.outline }
         ],
         signature: '(x1, y1, x2, y2, x3, y3, col1, col2, col3, outline)'
     },
 	draw_vertex: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_vertex.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'x', documentation: i18n.draw_vertex.x },
+            { label: 'y', documentation: i18n.draw_vertex.y }
         ],
         signature: '(x, y)'
     },
 	draw_vertex_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_vertex_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_vertex_color.x },
+            { label: 'y', documentation: i18n.draw_vertex_color.y },
+            { label: 'col', documentation: i18n.draw_vertex_color.col },
+            { label: 'alpha', documentation: i18n.draw_vertex_color.alpha }
         ],
         signature: '(x, y, col, alpha)'
     },
 	draw_vertex_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_vertex_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_vertex_colour.x },
+            { label: 'y', documentation: i18n.draw_vertex_colour.y },
+            { label: 'col', documentation: i18n.draw_vertex_colour.col },
+            { label: 'alpha', documentation: i18n.draw_vertex_colour.alpha }
         ],
         signature: '(x, y, col, alpha)'
     },
 	draw_vertex_texture: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_vertex_texture.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. }
+            { label: 'x', documentation: i18n.draw_vertex_texture.x },
+            { label: 'y', documentation: i18n.draw_vertex_texture.y },
+            { label: 'xtex', documentation: i18n.draw_vertex_texture.xtex },
+            { label: 'ytex', documentation: i18n.draw_vertex_texture.ytex }
         ],
         signature: '(x, y, xtex, ytex)'
     },
 	draw_vertex_texture_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_vertex_texture_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_vertex_texture_color.x },
+            { label: 'y', documentation: i18n.draw_vertex_texture_color.y },
+            { label: 'xtex', documentation: i18n.draw_vertex_texture_color.xtex },
+            { label: 'ytex', documentation: i18n.draw_vertex_texture_color.ytex },
+            { label: 'col', documentation: i18n.draw_vertex_texture_color.col },
+            { label: 'alpha', documentation: i18n.draw_vertex_texture_color.alpha }
         ],
         signature: '(x, y, xtex, ytex, col, alpha)'
     },
 	draw_vertex_texture_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.draw_vertex_texture_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.draw_vertex_texture_colour.x },
+            { label: 'y', documentation: i18n.draw_vertex_texture_colour.y },
+            { label: 'xtex', documentation: i18n.draw_vertex_texture_colour.xtex },
+            { label: 'ytex', documentation: i18n.draw_vertex_texture_colour.ytex },
+            { label: 'col', documentation: i18n.draw_vertex_texture_colour.col },
+            { label: 'alpha', documentation: i18n.draw_vertex_texture_colour.alpha }
         ],
         signature: '(x, y, xtex, ytex, col, alpha)'
     },
 	dsin: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.dsin.desc,
         parameters: [
-            { label: 'degree_angle', documentation: i18n. }
+            { label: 'degree_angle', documentation: i18n.dsin.degree_angle }
         ],
         signature: '(degree_angle)'
     },
 	ds_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'type', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_exists.id },
+            { label: 'type', documentation: i18n.ds_exists.type }
         ],
         signature: '(id, type)'
     },
 	ds_grid_add: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_add.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_add.id },
+            { label: 'x', documentation: i18n.ds_grid_add.x },
+            { label: 'y', documentation: i18n.ds_grid_add.y },
+            { label: 'val', documentation: i18n.ds_grid_add.val }
         ],
         signature: '(id, x, y, val)'
     },
 	ds_grid_add_disk: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_add_disk.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n..r },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_add_disk.id },
+            { label: 'xm', documentation: i18n.ds_grid_add_disk.xm },
+            { label: 'ym', documentation: i18n.ds_grid_add_disk.ym },
+            { label: 'r', documentation: i18n.ds_grid_add_disk.r },
+            { label: 'val', documentation: i18n.ds_grid_add_disk.val }
         ],
         signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_add_grid_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_add_grid_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'xpos', documentation: i18n. },
-            { label: 'ypos', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_add_grid_region.id },
+            { label: 'source', documentation: i18n.ds_grid_add_grid_region.source },
+            { label: 'x1', documentation: i18n.ds_grid_add_grid_region.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_add_grid_region.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_add_grid_region.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_add_grid_region.y2 },
+            { label: 'xpos', documentation: i18n.ds_grid_add_grid_region.xpos },
+            { label: 'ypos', documentation: i18n.ds_grid_add_grid_region.ypos }
         ],
         signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_add_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_add_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_add_region.id },
+            { label: 'x1', documentation: i18n.ds_grid_add_region.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_add_region.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_add_region.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_add_region.y2 },
+            { label: 'val', documentation: i18n.ds_grid_add_region.val }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_clear.id },
+            { label: 'val', documentation: i18n.ds_grid_clear.val }
         ],
         signature: '(id, val)'
     },
 	ds_grid_copy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_copy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_copy.id },
+            { label: 'source', documentation: i18n.ds_grid_copy.source }
         ],
         signature: '(id, source)'
     },
 	ds_grid_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_create.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'w', documentation: i18n.ds_grid_create.w },
+            { label: 'h', documentation: i18n.ds_grid_create.h }
         ],
         signature: '(w, h)'
     },
 	ds_grid_destroy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_destroy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.ds_grid_destroy.id }
         ],
         signature: '(id)'
     },
 	ds_grid_get: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'id', documentation: i18n.ds_grid_get.id },
+            { label: 'x', documentation: i18n.ds_grid_get.x },
+            { label: 'y', documentation: i18n.ds_grid_get.y }
         ],
         signature: '(id, x, y)'
     },
 	ds_grid_get_disk_max: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_disk_max.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_get_disk_max.id },
+            { label: 'xm', documentation: i18n.ds_grid_get_disk_max.xm },
+            { label: 'ym', documentation: i18n.ds_grid_get_disk_max.ym },
+            { label: 'r', documentation: i18n.ds_grid_get_disk_max.r }
         ],
         signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_disk_mean: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_disk_mean.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_get_disk_mean.id },
+            { label: 'xm', documentation: i18n.ds_grid_get_disk_mean.xm },
+            { label: 'ym', documentation: i18n.ds_grid_get_disk_mean.ym },
+            { label: 'r', documentation: i18n.ds_grid_get_disk_mean.r }
         ],
         signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_disk_min: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_disk_min.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_get_disk_min.id },
+            { label: 'xm', documentation: i18n.ds_grid_get_disk_min.xm },
+            { label: 'ym', documentation: i18n.ds_grid_get_disk_min.ym },
+            { label: 'r', documentation: i18n.ds_grid_get_disk_min.r }
         ],
         signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_disk_sum: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_disk_sum.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_get_disk_sum.id },
+            { label: 'xm', documentation: i18n.ds_grid_get_disk_sum.xm },
+            { label: 'ym', documentation: i18n.ds_grid_get_disk_sum.ym },
+            { label: 'r', documentation: i18n.ds_grid_get_disk_sum.r }
         ],
         signature: '(id, xm, ym, r)'
     },
 	ds_grid_get_max: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_max.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 }
+            { label: 'id', documentation: i18n.ds_grid_get_max.id },
+            { label: 'x1', documentation: i18n.ds_grid_get_max.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_get_max.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_get_max.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_get_max.y2 }
         ],
         signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_get_mean: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_mean.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 }
+            { label: 'id', documentation: i18n.ds_grid_get_mean.id },
+            { label: 'x1', documentation: i18n.ds_grid_get_mean.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_get_mean.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_get_mean.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_get_mean.y2 }
         ],
         signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_get_min: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_min.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 }
+            { label: 'id', documentation: i18n.ds_grid_get_min.id },
+            { label: 'x1', documentation: i18n.ds_grid_get_min.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_get_min.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_get_min.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_get_min.y2 }
         ],
         signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_get_sum: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_get_sum.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 }
+            { label: 'id', documentation: i18n.ds_grid_get_sum.id },
+            { label: 'x1', documentation: i18n.ds_grid_get_sum.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_get_sum.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_get_sum.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_get_sum.y2 }
         ],
         signature: '(id, x1, y1, x2, y2)'
     },
 	ds_grid_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.ds_grid_height.id }
         ],
         signature: '(id)'
     },
 	ds_grid_multiply: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_multiply.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_multiply.id },
+            { label: 'x', documentation: i18n.ds_grid_multiply.x },
+            { label: 'y', documentation: i18n.ds_grid_multiply.y },
+            { label: 'val', documentation: i18n.ds_grid_multiply.val }
         ],
         signature: '(id, x, y, val)'
     },
 	ds_grid_multiply_disk: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_multiply_disk.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n..r },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_multiply_disk.id },
+            { label: 'xm', documentation: i18n.ds_grid_multiply_disk.xm },
+            { label: 'ym', documentation: i18n.ds_grid_multiply_disk.ym },
+            { label: 'r', documentation: i18n.ds_grid_multiply_disk.r },
+            { label: 'val', documentation: i18n.ds_grid_multiply_disk.val }
         ],
         signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_multiply_grid_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_multiply_grid_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'xpos', documentation: i18n. },
-            { label: 'ypos', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_multiply_grid_region.id },
+            { label: 'source', documentation: i18n.ds_grid_multiply_grid_region.source },
+            { label: 'x1', documentation: i18n.ds_grid_multiply_grid_region.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_multiply_grid_region.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_multiply_grid_region.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_multiply_grid_region.y2 },
+            { label: 'xpos', documentation: i18n.ds_grid_multiply_grid_region.xpos },
+            { label: 'ypos', documentation: i18n.ds_grid_multiply_grid_region.ypos }
         ],
         signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_multiply_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_multiply_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_multiply_region.id },
+            { label: 'x1', documentation: i18n.ds_grid_multiply_region.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_multiply_region.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_multiply_region.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_multiply_region.y2 },
+            { label: 'val', documentation: i18n.ds_grid_multiply_region.val }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_read: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_read.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'str', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_read.id },
+            { label: 'str', documentation: i18n.ds_grid_read.str },
+            { label: '...', documentation: i18n.ds_grid_read.more }
         ],
         signature: '(id, str, ...)'
     },
 	ds_grid_resize: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_resize.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'id', documentation: i18n.ds_grid_resize.id },
+            { label: 'w', documentation: i18n.ds_grid_resize.w },
+            { label: 'h', documentation: i18n.ds_grid_resize.h }
         ],
         signature: '(id, w, h)'
     },
 	ds_grid_set: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_set.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_set.id },
+            { label: 'x', documentation: i18n.ds_grid_set.x },
+            { label: 'y', documentation: i18n.ds_grid_set.y },
+            { label: 'val', documentation: i18n.ds_grid_set.val }
         ],
         signature: '(id, x, y, val)'
     },
 	ds_grid_set_disk: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_set_disk.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n..r },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_set_disk.id },
+            { label: 'xm', documentation: i18n.ds_grid_set_disk.xm },
+            { label: 'ym', documentation: i18n.ds_grid_set_disk.ym },
+            { label: 'r', documentation: i18n.ds_grid_set_disk.r },
+            { label: 'val', documentation: i18n.ds_grid_set_disk.val }
         ],
         signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_set_grid_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_set_grid_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'xpos', documentation: i18n. },
-            { label: 'ypos', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_set_grid_region.id },
+            { label: 'source', documentation: i18n.ds_grid_set_grid_region.source },
+            { label: 'x1', documentation: i18n.ds_grid_set_grid_region.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_set_grid_region.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_set_grid_region.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_set_grid_region.y2 },
+            { label: 'xpos', documentation: i18n.ds_grid_set_grid_region.xpos },
+            { label: 'ypos', documentation: i18n.ds_grid_set_grid_region.ypos }
         ],
         signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_set_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_set_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_set_region.id },
+            { label: 'x1', documentation: i18n.ds_grid_set_region.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_set_region.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_set_region.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_set_region.y2 },
+            { label: 'val', documentation: i18n.ds_grid_set_region.val }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_shuffle: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_shuffle.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.ds_grid_shuffle.id }
         ],
         signature: '(id)'
     },
 	ds_grid_sort: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_sort.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'column', documentation: i18n. },
-            { label: 'ascending', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_sort.id },
+            { label: 'column', documentation: i18n.ds_grid_sort.column },
+            { label: 'ascending', documentation: i18n.ds_grid_sort.ascending }
         ],
         signature: '(id, column, ascending)'
     },
 	ds_grid_value_disk_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_value_disk_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n..r },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_value_disk_exists.id },
+            { label: 'xm', documentation: i18n.ds_grid_value_disk_exists.xm },
+            { label: 'ym', documentation: i18n.ds_grid_value_disk_exists.ym },
+            { label: 'r', documentation: i18n.ds_grid_value_disk_exists.r },
+            { label: 'val', documentation: i18n.ds_grid_value_disk_exists.val }
         ],
         signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_value_disk_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_value_disk_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n..r },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_value_disk_x.id },
+            { label: 'xm', documentation: i18n.ds_grid_value_disk_x.xm },
+            { label: 'ym', documentation: i18n.ds_grid_value_disk_x.ym },
+            { label: 'r', documentation: i18n.ds_grid_value_disk_x.r },
+            { label: 'val', documentation: i18n.ds_grid_value_disk_x.val }
         ],
         signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_value_disk_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_value_disk_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xm', documentation: i18n. },
-            { label: 'ym', documentation: i18n. },
-            { label: 'r', documentation: i18n..r },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_value_disk_y.id },
+            { label: 'xm', documentation: i18n.ds_grid_value_disk_y.xm },
+            { label: 'ym', documentation: i18n.ds_grid_value_disk_y.ym },
+            { label: 'r', documentation: i18n.ds_grid_value_disk_y.r },
+            { label: 'val', documentation: i18n.ds_grid_value_disk_y.val }
         ],
         signature: '(id, xm, ym, r, val)'
     },
 	ds_grid_value_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_value_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_value_exists.id },
+            { label: 'x1', documentation: i18n.ds_grid_value_exists.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_value_exists.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_value_exists.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_value_exists.y2 },
+            { label: 'val', documentation: i18n.ds_grid_value_exists.val }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_value_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_value_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_value_x.id },
+            { label: 'x1', documentation: i18n.ds_grid_value_x.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_value_x.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_value_x.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_value_x.y2 },
+            { label: 'val', documentation: i18n.ds_grid_value_x.val }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_value_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_value_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'val', documentation: i18n. }
+            { label: 'id', documentation: i18n.ds_grid_value_y.id },
+            { label: 'x1', documentation: i18n.ds_grid_value_y.x1 },
+            { label: 'y1', documentation: i18n.ds_grid_value_y.y1 },
+            { label: 'x2', documentation: i18n.ds_grid_value_y.x2 },
+            { label: 'y2', documentation: i18n.ds_grid_value_y.y2 },
+            { label: 'val', documentation: i18n.ds_grid_value_y.val }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
     },
 	ds_grid_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.ds_grid_width.id }
         ],
         signature: '(id)'
     },
 	ds_grid_write: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ds_grid_write.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.ds_grid_write.id }
         ],
         signature: '(id)'
     },
@@ -4166,7 +4166,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'id', documentation: i18n..id },
             { label: 'value', documentation: i18n..value },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, value, ...)'
     },
@@ -4183,7 +4183,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(id, source)'
     },
@@ -4267,8 +4267,8 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'str', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: 'str', documentation: i18n..str },
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, str, ...)'
     },
@@ -4358,7 +4358,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(id, source)'
     },
@@ -4448,8 +4448,8 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'str', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: 'str', documentation: i18n..str },
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, str, ...)'
     },
@@ -4566,7 +4566,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(id, source)'
     },
@@ -4645,8 +4645,8 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'str', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: 'str', documentation: i18n..str },
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, str, ...)'
     },
@@ -4679,7 +4679,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(id, source)'
     },
@@ -4717,7 +4717,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'id', documentation: i18n..id },
             { label: 'value', documentation: i18n..value },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, value, ...)'
     },
@@ -4734,8 +4734,8 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'str', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: 'str', documentation: i18n..str },
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, str, ...)'
     },
@@ -4784,7 +4784,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(id, source)'
     },
@@ -4822,7 +4822,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'id', documentation: i18n..id },
             { label: 'value', documentation: i18n..value },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, value, ...)'
     },
@@ -4831,8 +4831,8 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'str', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: 'str', documentation: i18n..str },
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, str, ...)'
     },
@@ -4912,7 +4912,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'numb', documentation: i18n. }
         ],
         signature: '(type, numb)'
@@ -4922,7 +4922,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: i18n..obj },
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'numb', documentation: i18n. }
         ],
         signature: '(obj, type, numb)'
@@ -4950,7 +4950,7 @@ exports.globalfunctions = {
             { label: 'id', documentation: i18n..id },
             { label: 'arg1', documentation: i18n. },
             { label: 'arg2', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(id, arg1, arg2, ...)'
     },
@@ -4965,7 +4965,7 @@ exports.globalfunctions = {
             { label: 'argnumb', documentation: i18n. },
             { label: 'arg1type', documentation: i18n. },
             { label: 'arg2type', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(dll, name, calltype, restype, argnumb, arg1type, arg2type, ...)'
     },
@@ -5354,7 +5354,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'file', documentation: i18n. },
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(file, val)'
     },
@@ -5363,7 +5363,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'file', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(file, str)'
     },
@@ -5395,7 +5395,7 @@ exports.globalfunctions = {
             { label: 'spr', documentation: i18n. },
             { label: 'first', documentation: i18n. },
             { label: 'prop', documentation: i18n. },
-            { label: 'sep', documentation: i18n. }
+            { label: 'sep', documentation: i18n..sep }
         ],
         signature: '(spr, first, prop, sep)'
     },
@@ -5406,7 +5406,7 @@ exports.globalfunctions = {
             { label: 'spr', documentation: i18n. },
             { label: 'mapstring', documentation: i18n. },
             { label: 'prop', documentation: i18n. },
-            { label: 'sep', documentation: i18n. }
+            { label: 'sep', documentation: i18n..sep }
         ],
         signature: '(spr, mapstring, prop, sep)'
     },
@@ -5520,7 +5520,7 @@ exports.globalfunctions = {
             { label: 'spr', documentation: i18n. },
             { label: 'first', documentation: i18n. },
             { label: 'prop', documentation: i18n. },
-            { label: 'sep', documentation: i18n. }
+            { label: 'sep', documentation: i18n..sep }
         ],
         signature: '(ind, spr, first, prop, sep)'
     },
@@ -5532,7 +5532,7 @@ exports.globalfunctions = {
             { label: 'spr', documentation: i18n. },
             { label: 'string_map', documentation: i18n. },
             { label: 'prop', documentation: i18n. },
-            { label: 'sep', documentation: i18n. }
+            { label: 'sep', documentation: i18n..sep }
         ],
         signature: '(font, spr, string_map, prop, sep)'
     },
@@ -5744,7 +5744,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'def', documentation: i18n. }
         ],
         signature: '(str, def)'
@@ -5753,7 +5753,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'def', documentation: i18n. }
         ],
         signature: '(str, def)'
@@ -5811,7 +5811,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'def', documentation: i18n. }
         ],
         signature: '(str, def)'
@@ -5820,7 +5820,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'def', documentation: i18n. }
         ],
         signature: '(str, def)'
@@ -5850,7 +5850,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'numb', documentation: i18n. }
         ],
         signature: '(str, numb)'
@@ -6069,7 +6069,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'section', documentation: i18n. },
             { label: 'key', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(section, key, str)'
     },
@@ -6232,7 +6232,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6279,7 +6279,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6287,7 +6287,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6295,7 +6295,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6303,7 +6303,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6311,7 +6311,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6319,7 +6319,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6327,7 +6327,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6335,7 +6335,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6343,7 +6343,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6351,7 +6351,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6359,7 +6359,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -6700,7 +6700,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. }
+            { label: 'type', documentation: i18n..type }
         ],
         signature: '(type)'
     },
@@ -6717,7 +6717,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'matrix', documentation: i18n. }
         ],
         signature: '(type, matrix)'
@@ -6729,7 +6729,7 @@ exports.globalfunctions = {
             { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n..x3 },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(x1, x2, x3, ...)'
     },
@@ -6764,7 +6764,7 @@ exports.globalfunctions = {
             { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n..x3 },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(x1, x2, x3, ...)'
     },
@@ -6775,7 +6775,7 @@ exports.globalfunctions = {
             { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n..x3 },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(x1, x2, x3, ...)'
     },
@@ -6796,7 +6796,7 @@ exports.globalfunctions = {
             { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n..x3 },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(x1, x2, x3, ...)'
     },
@@ -7201,7 +7201,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'port', documentation: i18n. },
             { label: 'maxclients', documentation: i18n. }
         ],
@@ -7211,7 +7211,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'port', documentation: i18n. },
             { label: 'maxclients', documentation: i18n. }
         ],
@@ -7221,7 +7221,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. }
+            { label: 'type', documentation: i18n..type }
         ],
         signature: '(type)'
     },
@@ -7229,7 +7229,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'port', documentation: i18n. }
         ],
         signature: '(type, port)'
@@ -8320,7 +8320,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(ind, angle)'
     },
@@ -8384,8 +8384,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'xpos', documentation: i18n. },
-            { label: 'ypos', documentation: i18n. },
+            { label: 'xpos', documentation: i18n..xpos },
+            { label: 'ypos', documentation: i18n..ypos },
             { label: 'xforce', documentation: i18n. },
             { label: 'yforce', documentation: i18n. }
         ],
@@ -8395,8 +8395,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'xpos', documentation: i18n. },
-            { label: 'ypos', documentation: i18n. },
+            { label: 'xpos', documentation: i18n..xpos },
+            { label: 'ypos', documentation: i18n..ypos },
             { label: 'ximpulse', documentation: i18n. },
             { label: 'yimpulse', documentation: i18n. }
         ],
@@ -8900,7 +8900,7 @@ exports.globalfunctions = {
             { label: 'subimg', documentation: i18n..subimg },
             { label: 'xscale', documentation: i18n..xscale },
             { label: 'yscale', documentation: i18n..yscale },
-            { label: 'angle', documentation: i18n. },
+            { label: 'angle', documentation: i18n..angle },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -9238,7 +9238,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'angle', documentation: i18n. },
+            { label: 'angle', documentation: i18n..angle },
             { label: 'obj', documentation: i18n..obj }
         ],
         signature: '(x, y, angle, obj)'
@@ -9448,7 +9448,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -9557,7 +9557,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -9616,7 +9616,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(ind, source)'
     },
@@ -9742,7 +9742,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(ind, val)'
     },
@@ -9790,7 +9790,7 @@ exports.globalfunctions = {
             { label: 'ind', documentation: i18n. },
             { label: 'arg0', documentation: i18n. },
             { label: 'arg1', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(ind, arg0, arg1, ...)'
     },
@@ -9889,7 +9889,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: i18n. },
-            { label: 'val', documentation: i18n. },
+            { label: 'val', documentation: i18n..val },
             { label: '....', documentation: i18n. }
         ],
         signature: '(uniform_id, val, ....)'
@@ -9908,7 +9908,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'uniform_id', documentation: i18n. },
-            { label: 'val', documentation: i18n. },
+            { label: 'val', documentation: i18n..val },
             { label: '....', documentation: i18n. }
         ],
         signature: '(uniform_id, val, ....)'
@@ -9954,7 +9954,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -9970,7 +9970,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'abort', documentation: i18n. }
         ],
         signature: '(str, abort)'
@@ -9979,7 +9979,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -9987,7 +9987,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -9995,7 +9995,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -10003,7 +10003,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -10167,7 +10167,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -10250,7 +10250,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(ind, source)'
     },
@@ -11210,7 +11210,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -11218,7 +11218,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index }
         ],
         signature: '(str, index)'
@@ -11227,7 +11227,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11235,7 +11235,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index }
         ],
         signature: '(str, index)'
@@ -11244,7 +11244,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index },
             { label: 'count', documentation: i18n. }
         ],
@@ -11255,7 +11255,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'substr', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(substr, str)'
     },
@@ -11263,7 +11263,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index },
             { label: 'count', documentation: i18n. }
         ],
@@ -11273,7 +11273,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11281,7 +11281,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'val', documentation: i18n. },
+            { label: 'val', documentation: i18n..val },
             { label: 'total', documentation: i18n. },
             { label: 'dec', documentation: i18n. }
         ],
@@ -11300,7 +11300,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
+            { label: 'sep', documentation: i18n..sep },
             { label: 'w', documentation: i18n..w }
         ],
         signature: '(string, sep, w)'
@@ -11310,7 +11310,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'substr', documentation: i18n. },
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index }
         ],
         signature: '(substr, str, index)'
@@ -11319,7 +11319,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11327,7 +11327,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11335,7 +11335,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11343,7 +11343,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11351,7 +11351,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index }
         ],
         signature: '(str, index)'
@@ -11361,7 +11361,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'substr', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(substr, str)'
     },
@@ -11369,7 +11369,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'count', documentation: i18n. }
         ],
         signature: '(str, count)'
@@ -11378,7 +11378,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'substr', documentation: i18n. },
             { label: 'newstr', documentation: i18n. }
         ],
@@ -11388,7 +11388,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'substr', documentation: i18n. },
             { label: 'newstr', documentation: i18n. }
         ],
@@ -11398,9 +11398,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'index', documentation: i18n..index },
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(str, index, val)'
     },
@@ -11408,7 +11408,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -11425,7 +11425,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n. },
+            { label: 'sep', documentation: i18n..sep },
             { label: 'w', documentation: i18n..w }
         ],
         signature: '(string, sep, w)'
@@ -11437,7 +11437,7 @@ exports.globalfunctions = {
             { label: 'destination', documentation: i18n. },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(destination, x, y, source)'
     },
@@ -11448,7 +11448,7 @@ exports.globalfunctions = {
             { label: 'destination', documentation: i18n. },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'source', documentation: i18n. },
+            { label: 'source', documentation: i18n..source },
             { label: 'xs', documentation: i18n. },
             { label: 'ys', documentation: i18n. },
             { label: 'ws', documentation: i18n. },
@@ -11762,7 +11762,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(val)'
     },
@@ -11937,7 +11937,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'usage', documentation: i18n. }
         ],
         signature: '(type, usage)'
@@ -12363,7 +12363,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'instance_id', documentation: i18n. },
             { label: 'name', documentation: i18n. },
-            { label: 'val', documentation: i18n. }
+            { label: 'val', documentation: i18n..val }
         ],
         signature: '(instance_id, name, val)'
     },
@@ -12426,7 +12426,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'icon', documentation: i18n. },
             { label: 'label', documentation: i18n. },
             { label: 'section', documentation: i18n. },
@@ -12795,7 +12795,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'included_filename_1', documentation: i18n. },
             { label: 'included_filename_2', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(included_filename_1, included_filename_2, ...)'
     },
@@ -13262,7 +13262,7 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'source', documentation: i18n. }
+            { label: 'source', documentation: i18n..source }
         ],
         signature: '(ind, source)'
     },
@@ -14343,8 +14343,8 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. }
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
     },
@@ -14359,8 +14359,8 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14377,8 +14377,8 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14392,8 +14392,8 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. }
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex }
         ],
         signature: '(ind, x, y, z, xtex, ytex)'
     },
@@ -14405,8 +14405,8 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14420,8 +14420,8 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14544,7 +14544,7 @@ exports.globalfunctions = {
             { label: 'xup', documentation: i18n. },
             { label: 'yup', documentation: i18n. },
             { label: 'zup', documentation: i18n. },
-            { label: 'angle', documentation: i18n. },
+            { label: 'angle', documentation: i18n..angle },
             { label: 'aspect', documentation: i18n. },
             { label: 'znear', documentation: i18n. },
             { label: 'zfar', documentation: i18n. }
@@ -14559,7 +14559,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'w', documentation: i18n..w },
             { label: 'h', documentation: i18n..h },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(x, y, w, h, angle)'
     },
@@ -14571,7 +14571,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'w', documentation: i18n..w },
             { label: 'h', documentation: i18n..h },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(x, y, w, h, angle)'
     },
@@ -14602,7 +14602,7 @@ exports.globalfunctions = {
             { label: 'xa', documentation: i18n. },
             { label: 'ya', documentation: i18n. },
             { label: 'za', documentation: i18n. },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(xa, ya, za, angle)'
     },
@@ -14610,7 +14610,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -14618,7 +14618,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -14626,7 +14626,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -14661,7 +14661,7 @@ exports.globalfunctions = {
             { label: 'xa', documentation: i18n. },
             { label: 'ya', documentation: i18n. },
             { label: 'za', documentation: i18n. },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(xa, ya, za, angle)'
     },
@@ -14669,7 +14669,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -14677,7 +14677,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -14685,7 +14685,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -14830,8 +14830,8 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. }
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex }
         ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
     },
@@ -14845,8 +14845,8 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14862,8 +14862,8 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14876,8 +14876,8 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. }
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex }
         ],
         signature: '(x, y, z, xtex, ytex)'
     },
@@ -14888,8 +14888,8 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14902,8 +14902,8 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n. },
-            { label: 'ytex', documentation: i18n. },
+            { label: 'xtex', documentation: i18n..xtex },
+            { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14983,7 +14983,7 @@ exports.globalfunctions = {
             { label: 'string', documentation: i18n..string },
             { label: 'string_param_name1', documentation: i18n. },
             { label: 'number_value1', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(string, string_param_name1, number_value1, ...)'
     },
@@ -15225,7 +15225,7 @@ exports.globalfunctions = {
             { label: 'fname', documentation: i18n. },
             { label: 'arg0', documentation: i18n. },
             { label: 'arg1', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(fname, arg0, arg1, ...)'
     },
@@ -15252,10 +15252,10 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'arg0', documentation: i18n. },
             { label: 'arg1', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(str, arg0, arg1, ...)'
     },
@@ -15385,7 +15385,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -15429,7 +15429,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'show', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(show, str)'
     },
@@ -15482,7 +15482,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'type', documentation: i18n. },
+            { label: 'type', documentation: i18n..type },
             { label: 'charset_id', documentation: i18n. }
         ],
         signature: '(type, charset_id)'
@@ -15896,7 +15896,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(name, str)'
     },
@@ -15906,7 +15906,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'key', documentation: i18n. },
             { label: 'name', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(key, name, str)'
     },
@@ -15915,7 +15915,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(ind, str)'
     },
@@ -15984,7 +15984,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'def', documentation: i18n. }
         ],
         signature: '(str, def)'
@@ -15995,7 +15995,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'def', documentation: i18n. }
         ],
         signature: '(x, y, str, def)'
@@ -16004,7 +16004,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n. },
+            { label: 'str', documentation: i18n..str },
             { label: 'but1', documentation: i18n. },
             { label: 'but2', documentation: i18n. },
             { label: 'but3', documentation: i18n. }
@@ -16703,7 +16703,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n..str }
         ],
         signature: '(str)'
     },
@@ -16712,7 +16712,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'value', documentation: i18n..value },
-            { label: 'type', documentation: i18n. }
+            { label: 'type', documentation: i18n..type }
         ],
         signature: '(value, type)'
     },
@@ -16720,7 +16720,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'type', documentation: i18n. }
+            { label: 'type', documentation: i18n..type }
         ],
         signature: '(type)'
     },
@@ -16730,7 +16730,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'ind', documentation: i18n. },
             { label: 'speed', documentation: i18n. },
-            { label: 'type', documentation: i18n. }
+            { label: 'type', documentation: i18n..type }
         ],
         signature: '(ind, speed, type)'
     },
@@ -16914,7 +16914,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(...)'
     },
@@ -17570,7 +17570,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'depth', documentation: i18n. },
             { label: 'name*', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(depth, name*, ...)'
     },
@@ -18156,7 +18156,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: i18n. },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(sprite_element_id, angle)'
     },
@@ -18613,7 +18613,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'layer_id', documentation: i18n. },
             { label: 'tile_element_id', documentation: i18n. },
-            { label: '...', documentation: i18n. }
+            { label: '...', documentation: i18n..more }
         ],
         signature: '(layer_id, tile_element_id, ...)'
     },
@@ -18832,7 +18832,7 @@ exports.globalfunctions = {
             { label: 'room_y', documentation: i18n. },
             { label: 'width', documentation: i18n..width },
             { label: 'height', documentation: i18n..height },
-            { label: 'angle', documentation: i18n. },
+            { label: 'angle', documentation: i18n..angle },
             { label: 'object', documentation: i18n. },
             { label: 'x_speed', documentation: i18n. },
             { label: 'y_speed', documentation: i18n. },
@@ -18963,7 +18963,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: i18n. },
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(camera, angle)'
     },
@@ -19267,7 +19267,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -19275,7 +19275,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
@@ -19291,7 +19291,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'angle', documentation: i18n. }
+            { label: 'angle', documentation: i18n..angle }
         ],
         signature: '(angle)'
     },
