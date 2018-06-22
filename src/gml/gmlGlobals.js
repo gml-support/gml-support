@@ -1488,297 +1488,297 @@ exports.globalfunctions = {
         signature: '(x, y, spritetpe, URL, target, params, scale, alpha)'
     },
 	clickable_change: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clickable_change.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n. },
-            { label: 'spritetpe', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n. }
+            { label: 'buttonid', documentation: i18n.clickable_change.buttonid },
+            { label: 'spritetpe', documentation: i18n.clickable_change.spritetpe },
+            { label: 'x', documentation: i18n.clickable_change.x },
+            { label: 'y', documentation: i18n.clickable_change.y }
         ],
         signature: '(buttonid, spritetpe, x, y)'
     },
 	clickable_change_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clickable_change_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n. },
-            { label: 'spritetpe', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'scale', documentation: i18n. },
-            { label: 'alpha', documentation: i18n. }
+            { label: 'buttonid', documentation: i18n.clickable_change_ext.buttonid },
+            { label: 'spritetpe', documentation: i18n.clickable_change_ext.spritetpe },
+            { label: 'x', documentation: i18n.clickable_change_ext.x },
+            { label: 'y', documentation: i18n.clickable_change_ext.y },
+            { label: 'scale', documentation: i18n.clickable_change_ext.scale },
+            { label: 'alpha', documentation: i18n.clickable_change_ext.alpha }
         ],
         signature: '(buttonid, spritetpe, x, y, scale, alpha)'
     },
 	clickable_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clickable_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n. }
+            { label: 'buttonid', documentation: i18n.clickable_delete.buttonid }
         ],
         signature: '(buttonid)'
     },
 	clickable_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clickable_exists.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'index', documentation: i18n..index }
+            { label: 'index', documentation: i18n.clickable_exists.index }
         ],
         signature: '(index)'
     },
 	clickable_set_style: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clickable_set_style.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n. },
-            { label: 'map', documentation: i18n. }
+            { label: 'buttonid', documentation: i18n.clickable_set_style.buttonid },
+            { label: 'map', documentation: i18n.clickable_set_style.map }
         ],
         signature: '(buttonid, map)'
     },
 	clipboard_get_text: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clipboard_get_text.desc,
         available: datasimple.all
     },
 	clipboard_has_text: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clipboard_has_text.desc,
         available: datasimple.all
     },
 	clipboard_set_text: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.clipboard_set_text.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'str', documentation: i18n. }
+            { label: 'str', documentation: i18n.clipboard_set_text.str }
         ],
         signature: '(str)'
     },
 	cloud_file_save: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.cloud_file_save.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename },
-            { label: 'description', documentation: i18n. }
+            { label: 'filename', documentation: i18n.cloud_file_save.filename },
+            { label: 'description', documentation: i18n.cloud_file_save.description }
         ],
         signature: '(filename, description)'
     },
 	cloud_string_save: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.cloud_string_save.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'data', documentation: i18n. },
-            { label: 'description', documentation: i18n. }
+            { label: 'data', documentation: i18n.cloud_string_save.data },
+            { label: 'description', documentation: i18n.cloud_string_save.description }
         ],
         signature: '(data, description)'
     },
 	cloud_synchronise: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.cloud_synchronise.desc,
         available: datasimple.gms1
     },
 	code_is_compiled: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.code_is_compiled.desc,
         available: datasimple.gms1
     },
 	collision_circle: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.collision_circle.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'radius', documentation: i18n. },
-            { label: 'obj', documentation: i18n. },
-            { label: 'prec', documentation: i18n. },
-            { label: 'notme', documentation: i18n. }
+            { label: 'x1', documentation: i18n.collision_circle.x1 },
+            { label: 'y1', documentation: i18n.collision_circle.y1 },
+            { label: 'radius', documentation: i18n.collision_circle.radius },
+            { label: 'obj', documentation: i18n.collision_circle.obj },
+            { label: 'prec', documentation: i18n.collision_circle.prec },
+            { label: 'notme', documentation: i18n.collision_circle.notme }
         ],
         signature: '(x1, y1, radius, obj, prec, notme)'
     },
 	collision_ellipse: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.collision_ellipse.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
-            { label: 'obj', documentation: i18n. },
-            { label: 'prec', documentation: i18n. },
-            { label: 'notme', documentation: i18n. }
+            { label: 'x1', documentation: i18n.collision_ellipse.x1 },
+            { label: 'y1', documentation: i18n.collision_ellipse.y1 },
+            { label: 'x2', documentation: i18n.collision_ellipse.x2 },
+            { label: 'y2', documentation: i18n.collision_ellipse.y2 },
+            { label: 'obj', documentation: i18n.collision_ellipse.obj },
+            { label: 'prec', documentation: i18n.collision_ellipse.prec },
+            { label: 'notme', documentation: i18n.collision_ellipse.notme }
         ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_line: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.collision_line.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
-            { label: 'obj', documentation: i18n. },
-            { label: 'prec', documentation: i18n. },
-            { label: 'notme', documentation: i18n. }
+            { label: 'x1', documentation: i18n.collision_line.x1 },
+            { label: 'y1', documentation: i18n.collision_line.y1 },
+            { label: 'x2', documentation: i18n.collision_line.x2 },
+            { label: 'y2', documentation: i18n.collision_line.y2 },
+            { label: 'obj', documentation: i18n.collision_line.obj },
+            { label: 'prec', documentation: i18n.collision_line.prec },
+            { label: 'notme', documentation: i18n.collision_line.notme }
         ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_point: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.collision_point.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'obj', documentation: i18n. },
-            { label: 'prec', documentation: i18n. },
-            { label: 'notme', documentation: i18n. }
+            { label: 'x', documentation: i18n.collision_point.x },
+            { label: 'y', documentation: i18n.collision_point.y },
+            { label: 'obj', documentation: i18n.collision_point.obj },
+            { label: 'prec', documentation: i18n.collision_point.prec },
+            { label: 'notme', documentation: i18n.collision_point.notme }
         ],
         signature: '(x, y, obj, prec, notme)'
     },
 	collision_rectangle: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.collision_rectangle.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
-            { label: 'obj', documentation: i18n. },
-            { label: 'prec', documentation: i18n. },
-            { label: 'notme', documentation: i18n. }
+            { label: 'x1', documentation: i18n.collision_rectangle.x1 },
+            { label: 'y1', documentation: i18n.collision_rectangle.y1 },
+            { label: 'x2', documentation: i18n.collision_rectangle.x2 },
+            { label: 'y2', documentation: i18n.collision_rectangle.y2 },
+            { label: 'obj', documentation: i18n.collision_rectangle.obj },
+            { label: 'prec', documentation: i18n.collision_rectangle.prec },
+            { label: 'notme', documentation: i18n.collision_rectangle.notme }
         ],
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
     color_get_blue: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.color_get_blue.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.color_get_blue.col }
         ],
         signature: '(col)'
     },
 	color_get_green: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.color_get_green.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.color_get_green.col }
         ],
         signature: '(col)'
     },
 	color_get_hue: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.color_get_hue.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.color_get_hue.col }
         ],
         signature: '(col)'
     },
 	color_get_red: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.color_get_red.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.color_get_red.col }
         ],
         signature: '(col)'
     },
 	color_get_saturation: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.color_get_saturation.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.color_get_saturation.col }
         ],
         signature: '(col)'
     },
 	color_get_value: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.color_get_value.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.color_get_value.col }
         ],
         signature: '(col)'
     },
 	colour_get_blue: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.colour_get_blue.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.colour_get_blue.col }
         ],
         signature: '(col)'
     },
 	colour_get_green: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.colour_get_green.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.colour_get_green.col }
         ],
         signature: '(col)'
     },
 	colour_get_hue: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.colour_get_hue.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.colour_get_hue.col }
         ],
         signature: '(col)'
     },
 	colour_get_red: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.colour_get_red.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.colour_get_red.col }
         ],
         signature: '(col)'
     },
 	colour_get_saturation: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.colour_get_saturation.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.colour_get_saturation.col }
         ],
         signature: '(col)'
     },
 	colour_get_value: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.colour_get_value.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n.colour_get_value.col }
         ],
         signature: '(col)'
     },
 	cos: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.cos.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'radian_angle', documentation: i18n. }
+            { label: 'radian_angle', documentation: i18n.cos.radian_angle }
         ],
         signature: '(radian_angle)'
     },
 	darccos: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.darccos.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n. }
+            { label: 'x', documentation: i18n.darccos.x }
         ],
         signature: '(x)'
     },
 	darcsin: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.darcsin.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n. }
+            { label: 'x', documentation: i18n.darcsin.x }
         ],
         signature: '(x)'
     },
 	darctan: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.darctan.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n. }
+            { label: 'x', documentation: i18n.darctan.x }
         ],
         signature: '(x)'
     },
 	darctan2: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.darctan2.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'y', documentation: i18n..y },
-            { label: 'x', documentation: i18n. }
+            { label: 'y', documentation: i18n.darctan2.y },
+            { label: 'x', documentation: i18n.darctan2.x }
         ],
         signature: '(y, x)'
     },
@@ -2398,9 +2398,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -2409,11 +2409,11 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. }
         ],
         signature: '(x1, y1, z1, x2, y2, z2)'
@@ -2422,11 +2422,11 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. }
         ],
         signature: '(x1, y1, z1, x2, y2, z2)'
@@ -2435,9 +2435,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -2446,10 +2446,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'size', documentation: i18n..size }
         ],
         signature: '(x1, y1, x2, y2, size)'
@@ -2458,10 +2458,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'up', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2, up)'
@@ -2507,7 +2507,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -2515,7 +2515,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(col, alpha)'
@@ -2524,10 +2524,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'outline', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2, outline)'
@@ -2536,10 +2536,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. },
             { label: 'outline', documentation: i18n. }
@@ -2550,10 +2550,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. },
             { label: 'outline', documentation: i18n. }
@@ -2634,10 +2634,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'amount', documentation: i18n. },
             { label: 'backcol', documentation: i18n. },
             { label: 'mincol', documentation: i18n. },
@@ -2652,9 +2652,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -2663,9 +2663,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -2674,10 +2674,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. }
         ],
@@ -2687,10 +2687,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. }
         ],
@@ -2700,10 +2700,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'w', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2, w)'
@@ -2712,10 +2712,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'w', documentation: i18n. },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. }
@@ -2726,10 +2726,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'w', documentation: i18n. },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. }
@@ -2741,8 +2741,8 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'path', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'absolute', documentation: i18n. }
         ],
         signature: '(path, x, y, absolute)'
@@ -2762,7 +2762,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(x, y, col1)'
     },
@@ -2772,7 +2772,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(x, y, col1)'
     },
@@ -2800,10 +2800,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'outline', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2, outline)'
@@ -2812,10 +2812,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. },
             { label: 'col3', documentation: i18n. },
@@ -2828,10 +2828,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. },
             { label: 'col3', documentation: i18n. },
@@ -2844,10 +2844,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'outline', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2, outline)'
@@ -2856,10 +2856,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. },
             { label: 'outline', documentation: i18n. }
@@ -2870,10 +2870,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'radiusx', documentation: i18n. },
             { label: 'radiusy', documentation: i18n. },
             { label: 'col1', documentation: i18n. },
@@ -2886,10 +2886,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'col1', documentation: i18n. },
             { label: 'col2', documentation: i18n. },
             { label: 'outline', documentation: i18n. }
@@ -2900,10 +2900,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'radiusx', documentation: i18n. },
             { label: 'radiusy', documentation: i18n. },
             { label: 'col1', documentation: i18n. },
@@ -2916,10 +2916,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'radiusx', documentation: i18n. },
             { label: 'radiusy', documentation: i18n. },
             { label: 'outline', documentation: i18n. }
@@ -2983,7 +2983,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -3002,7 +3002,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -3209,10 +3209,10 @@ exports.globalfunctions = {
         parameters: [
             { label: 'sprite', documentation: i18n. },
             { label: 'subimg', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'x3', documentation: i18n. },
             { label: 'y3', documentation: i18n. },
             { label: 'x4', documentation: i18n. },
@@ -3602,10 +3602,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'x3', documentation: i18n. },
             { label: 'y3', documentation: i18n. },
             { label: 'outline', documentation: i18n. }
@@ -3616,10 +3616,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'x3', documentation: i18n. },
             { label: 'y3', documentation: i18n. },
             { label: 'col1', documentation: i18n. },
@@ -3633,10 +3633,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'x3', documentation: i18n. },
             { label: 'y3', documentation: i18n. },
             { label: 'col1', documentation: i18n. },
@@ -3661,7 +3661,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, col, alpha)'
@@ -3672,7 +3672,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, col, alpha)'
@@ -3696,7 +3696,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, xtex, ytex, col, alpha)'
@@ -3709,7 +3709,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, xtex, ytex, col, alpha)'
@@ -3759,10 +3759,10 @@ exports.globalfunctions = {
         parameters: [
             { label: 'id', documentation: i18n. },
             { label: 'source', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'xpos', documentation: i18n. },
             { label: 'ypos', documentation: i18n. }
         ],
@@ -3773,10 +3773,10 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'val', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
@@ -3875,9 +3875,9 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2)'
@@ -3887,9 +3887,9 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2)'
@@ -3899,9 +3899,9 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2)'
@@ -3911,9 +3911,9 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2)'
@@ -3955,10 +3955,10 @@ exports.globalfunctions = {
         parameters: [
             { label: 'id', documentation: i18n. },
             { label: 'source', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'xpos', documentation: i18n. },
             { label: 'ypos', documentation: i18n. }
         ],
@@ -3969,10 +3969,10 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'val', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
@@ -4026,10 +4026,10 @@ exports.globalfunctions = {
         parameters: [
             { label: 'id', documentation: i18n. },
             { label: 'source', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'xpos', documentation: i18n. },
             { label: 'ypos', documentation: i18n. }
         ],
@@ -4040,10 +4040,10 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'val', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
@@ -4107,10 +4107,10 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'val', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
@@ -4120,10 +4120,10 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'val', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
@@ -4133,10 +4133,10 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'val', documentation: i18n. }
         ],
         signature: '(id, x1, y1, x2, y2, val)'
@@ -4913,7 +4913,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'obj', documentation: i18n. },
+            { label: 'obj', documentation: i18n..obj },
             { label: 'type', documentation: i18n. },
             { label: 'numb', documentation: i18n. }
         ],
@@ -6094,7 +6094,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'obj', documentation: i18n. },
+            { label: 'obj', documentation: i18n..obj },
             { label: 'performevents', documentation: i18n. }
         ],
         signature: '(obj, performevents)'
@@ -6121,7 +6121,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'notme', documentation: i18n. }
+            { label: 'notme', documentation: i18n..notme }
         ],
         signature: '(notme)'
     },
@@ -6142,7 +6142,7 @@ exports.globalfunctions = {
             { label: 'width', documentation: i18n. },
             { label: 'height', documentation: i18n. },
             { label: 'inside', documentation: i18n. },
-            { label: 'notme', documentation: i18n. }
+            { label: 'notme', documentation: i18n..notme }
         ],
         signature: '(left, top, width, height, inside, notme)'
     },
@@ -6167,7 +6167,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'obj', documentation: i18n. },
+            { label: 'obj', documentation: i18n..obj },
             { label: 'n', documentation: i18n. }
         ],
         signature: '(obj, n)'
@@ -6253,7 +6253,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n. }
         ],
         signature: '(x1, x2)'
@@ -6262,7 +6262,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n. }
         ],
         signature: '(x1, x2)'
@@ -6718,8 +6718,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n. },
             { label: '...', documentation: i18n. }
         ],
@@ -6753,8 +6753,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n. },
             { label: '...', documentation: i18n. }
         ],
@@ -6764,8 +6764,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n. },
             { label: '...', documentation: i18n. }
         ],
@@ -6785,8 +6785,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'x3', documentation: i18n. },
             { label: '...', documentation: i18n. }
         ],
@@ -6955,7 +6955,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n. },
-            { label: 'obj', documentation: i18n. },
+            { label: 'obj', documentation: i18n..obj },
             { label: 'prec', documentation: i18n. }
         ],
         signature: '(id, obj, prec)'
@@ -8452,7 +8452,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'fixture', documentation: i18n. },
-            { label: 'obj', documentation: i18n. },
+            { label: 'obj', documentation: i18n..obj },
             { label: 'xo', documentation: i18n. },
             { label: 'yo', documentation: i18n. }
         ],
@@ -8828,7 +8828,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'xv', documentation: i18n. },
             { label: 'yv', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. },
             { label: 'category', documentation: i18n. }
         ],
@@ -8893,7 +8893,7 @@ exports.globalfunctions = {
             { label: 'xscale', documentation: i18n. },
             { label: 'yscale', documentation: i18n. },
             { label: 'angle', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(typemask, category, sprite, subimg, xscale, yscale, angle, col, alpha)'
@@ -8966,7 +8966,7 @@ exports.globalfunctions = {
             { label: 'xv', documentation: i18n. },
             { label: 'yv', documentation: i18n. },
             { label: 'angVelocity', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. },
             { label: 'strength', documentation: i18n. },
             { label: 'category', documentation: i18n. }
@@ -9317,9 +9317,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -9328,9 +9328,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -9339,11 +9339,11 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. }
         ],
         signature: '(x1, y1, z1, x2, y2, z2)'
@@ -9366,9 +9366,9 @@ exports.globalfunctions = {
         parameters: [
             { label: 'px', documentation: i18n. },
             { label: 'py', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(px, py, x1, y1, x2, y2)'
@@ -9379,11 +9379,11 @@ exports.globalfunctions = {
         parameters: [
             { label: 'px', documentation: i18n. },
             { label: 'py', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. }
         ],
         signature: '(px, py, x1, y1, x2, y2, x3, y3)'
@@ -9394,7 +9394,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'obj', documentation: i18n. },
+            { label: 'obj', documentation: i18n..obj },
             { label: 'performevents', documentation: i18n. }
         ],
         signature: '(x, y, obj, performevents)'
@@ -9515,7 +9515,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n. }
         ],
         signature: '(x1, x2)'
@@ -9524,7 +9524,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
             { label: 'x2', documentation: i18n. }
         ],
         signature: '(x1, x2)'
@@ -9590,10 +9590,10 @@ exports.globalfunctions = {
             { label: 'sy1', documentation: i18n. },
             { label: 'sx2', documentation: i18n. },
             { label: 'sy2', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'x3', documentation: i18n. },
             { label: 'y3', documentation: i18n. }
         ],
@@ -9696,7 +9696,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'show', documentation: i18n. }
         ],
         signature: '(ind, col, show)'
@@ -9706,7 +9706,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'show', documentation: i18n. }
         ],
         signature: '(ind, col, show)'
@@ -12126,9 +12126,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
+            { label: 'x2', documentation: i18n..x2 },
             { label: 'y2', documentation: i18n. }
         ],
         signature: '(x1, y1, x2, y2)'
@@ -13272,7 +13272,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'w', documentation: i18n. },
             { label: 'h', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(w, h, col)'
     },
@@ -13282,7 +13282,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'w', documentation: i18n. },
             { label: 'h', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(w, h, col)'
     },
@@ -13957,11 +13957,11 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'texid', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
@@ -13973,11 +13973,11 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'texid', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
@@ -13991,11 +13991,11 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'texid', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
@@ -14009,11 +14009,11 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'texid', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
@@ -14027,11 +14027,11 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'texid', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
@@ -14043,11 +14043,11 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'texid', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
@@ -14063,7 +14063,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -14075,7 +14075,7 @@ exports.globalfunctions = {
             { label: 'dx', documentation: i18n. },
             { label: 'dy', documentation: i18n. },
             { label: 'dz', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(ind, dx, dy, dz, col)'
     },
@@ -14088,7 +14088,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
             { label: 'range', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(ind, x, y, z, range, col)'
     },
@@ -14106,11 +14106,11 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
             { label: 'vrepeat', documentation: i18n. }
@@ -14130,11 +14130,11 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
             { label: 'vrepeat', documentation: i18n. },
@@ -14152,11 +14152,11 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
             { label: 'vrepeat', documentation: i18n. },
@@ -14186,11 +14186,11 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
             { label: 'vrepeat', documentation: i18n. },
@@ -14203,11 +14203,11 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
             { label: 'vrepeat', documentation: i18n. }
@@ -14268,7 +14268,7 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, col, alpha)'
@@ -14281,7 +14281,7 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, col, alpha)'
@@ -14311,7 +14311,7 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
@@ -14327,7 +14327,7 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
@@ -14361,7 +14361,7 @@ exports.globalfunctions = {
             { label: 'nz', documentation: i18n. },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
@@ -14379,7 +14379,7 @@ exports.globalfunctions = {
             { label: 'nz', documentation: i18n. },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
@@ -14407,7 +14407,7 @@ exports.globalfunctions = {
             { label: 'z', documentation: i18n..z },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
@@ -14422,7 +14422,7 @@ exports.globalfunctions = {
             { label: 'z', documentation: i18n..z },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
@@ -14432,11 +14432,11 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n. },
-            { label: 'x1', documentation: i18n. },
-            { label: 'y1', documentation: i18n. },
+            { label: 'x1', documentation: i18n..x1 },
+            { label: 'y1', documentation: i18n..y1 },
             { label: 'z1', documentation: i18n. },
-            { label: 'x2', documentation: i18n. },
-            { label: 'y2', documentation: i18n. },
+            { label: 'x2', documentation: i18n..x2 },
+            { label: 'y2', documentation: i18n..y2 },
             { label: 'z2', documentation: i18n. },
             { label: 'hrepeat', documentation: i18n. },
             { label: 'vrepeat', documentation: i18n. }
@@ -14760,7 +14760,7 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, col, alpha)'
@@ -14772,7 +14772,7 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, col, alpha)'
@@ -14800,7 +14800,7 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
@@ -14815,7 +14815,7 @@ exports.globalfunctions = {
             { label: 'nx', documentation: i18n. },
             { label: 'ny', documentation: i18n. },
             { label: 'nz', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
@@ -14847,7 +14847,7 @@ exports.globalfunctions = {
             { label: 'nz', documentation: i18n. },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
@@ -14864,7 +14864,7 @@ exports.globalfunctions = {
             { label: 'nz', documentation: i18n. },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
@@ -14890,7 +14890,7 @@ exports.globalfunctions = {
             { label: 'z', documentation: i18n..z },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, xtex, ytex, col, alpha)'
@@ -14904,7 +14904,7 @@ exports.globalfunctions = {
             { label: 'z', documentation: i18n..z },
             { label: 'xtex', documentation: i18n. },
             { label: 'ytex', documentation: i18n. },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n. }
         ],
         signature: '(x, y, z, xtex, ytex, col, alpha)'
@@ -15437,7 +15437,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -15456,7 +15456,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -16246,7 +16246,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -16979,7 +16979,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'enable', documentation: i18n..enable },
-            { label: 'col', documentation: i18n. },
+            { label: 'col', documentation: i18n..col },
             { label: 'start', documentation: i18n. },
             { label: 'end', documentation: i18n. }
         ],
@@ -17453,7 +17453,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(col)'
     },
@@ -17465,7 +17465,7 @@ exports.globalfunctions = {
             { label: 'dx', documentation: i18n. },
             { label: 'dy', documentation: i18n. },
             { label: 'dz', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(ind, dx, dy, dz, col)'
     },
@@ -17478,7 +17478,7 @@ exports.globalfunctions = {
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
             { label: 'range', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(ind, x, y, z, range, col)'
     },
@@ -17950,7 +17950,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(background_element_id, col)'
     },
@@ -18165,7 +18165,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'sprite_element_id', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(sprite_element_id, col)'
     },
@@ -18672,7 +18672,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: i18n. },
-            { label: 'col', documentation: i18n. }
+            { label: 'col', documentation: i18n..col }
         ],
         signature: '(tile_element_id, col)'
     },

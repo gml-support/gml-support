@@ -995,4 +995,21 @@
         "desc": "",
         "radian_angle": ""
     },
+    "darccos": {
+        "desc": "",
+        "x": ""
+    },
+	"darcsin": {
+        "desc": "",
+        "x": ""
+    },
+	"darctan": {
+        "desc": "",
+        "x": ""
+    },
+	"darctan2": {
+        "desc": "",
+        "y": "",
+        "x": ""
+    },
 }
