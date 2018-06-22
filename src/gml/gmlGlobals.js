@@ -3,47 +3,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const datasimple = require("../../data/data.simple.json");
 const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
-const i18n = require("./i18n/" + localizationset + "/gmlGlobals.json")
-const i18n_notice = require("./i18n/" + localizationset + "/gmlNotices.json")
+const i18n = require("../../data/i18n/" + localizationset + "/gmlGlobals.json")
+const i18n_notice = require("../../data/i18n/" + localizationset + "/gmlNotices.json")
 
 exports.globalfunctions = {
     abs: {
         description: '[Function]' + i18n.abs.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: '' }
+            { label: 'x', documentation: i18n.abs.x }
         ],
 		signature: '(x)'
 	},
 	achievement_available: {
-		description: '[Function]',
+		description: '[Function]' + i18n.achievement_available.desc,
         available: datasimple.gms1
 	},
 	achievement_event: {
-        description: '[Function]',
+        description: '[Function]' + i18n.achievement_event.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stringid', documentation: '' }
+            { label: 'stringid', documentation: i18n.achievement_event.stringid }
         ],
 		signature: '(stringid)'
 	},
 	achievement_get_challenges: {
-		description: '[Function]',
+		description: '[Function]' + i18n.achievement_get_challenges.desc,
         available: datasimple.gms1
 	},
 	achievement_get_info: {
-        description: '[Function]',
+        description: '[Function]' + i18n.achievement_get_info.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'userid', documentation: '' }
+            { label: 'userid', documentation: i18n.achievement_get_info.userid }
         ],
 		signature: '(userid)'
 	},
 	achievement_get_pic: {
-        description: '[Function]',
+        description: '[Function]' + i18n.achievement_get_pic.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'char', documentation: '' }
+            { label: 'char', documentation: i18n.achievement_get_pic.char }
         ],
 		signature: '(char)'
 	},

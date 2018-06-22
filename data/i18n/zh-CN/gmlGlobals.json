@@ -1,0 +1,34 @@
+{
+    "abs": {
+        "desc": "",
+        "x": ""
+    },
+    "achievement_available": {
+        "desc": ""
+    },
+    "achievement_event": {
+        "desc": "",
+        "stringid": ""
+    },
+    "achievement_get_challenges": {
+        "desc": ""
+    },
+    "achievement_get_info": {
+        "desc": "",
+        "userid": ""
+    },
+    "achievement_get_pic": {
+        "desc": "",
+        "char": ""
+    },
+    "achievement_increment": 
+    {
+        "desc": "",
+        "achievement_name": "",
+        "value": ""
+    },
+    "achievement_load_friends":
+    {
+        "desc": ""
+    }
+}
