@@ -1,9 +1,9 @@
 {
     "abs": {
-        "desc": "",
-        "x": ""
+        "desc": "test",
+        "x": "test"
     },
-    "achievement_available": {
+    "achievement_availablen": {
         "desc": ""
     },
     "achievement_event": {
@@ -21,14 +21,978 @@
         "desc": "",
         "char": ""
     },
-    "achievement_increment": 
-    {
+    "achievement_increment": {
         "desc": "",
         "achievement_name": "",
         "value": ""
     },
-    "achievement_load_friends":
-    {
+    "achievement_load_friends": {
         "desc": ""
-    }
+    },
+    "achievement_load_leaderboard": {
+        "desc": "",
+        "ident": "",
+        "minindex": "",
+        "maxindex": "",
+        "filter": ""
+    },
+    "achievement_load_progress": {
+        "desc": ""
+    },
+    "achievement_login": {
+        "desc": ""
+    },
+    "achievement_login_status": {
+        "desc": ""
+    },
+    "achievement_logout": {
+        "desc": ""
+    },
+    "achievement_post": {
+        "desc": "",
+        "achievement_name": "",
+        "value": ""
+    },
+    "achievement_post_score": {
+        "desc": "",
+        "score_name": "",
+        "value": ""
+    },
+    "achievement_reset": {
+        "desc": ""
+    },
+    "achievement_send_challenge": {
+        "desc": "",
+        "to": "",
+        "challengeid": "",
+        "score": "",
+        "type": "",
+        "msg": ""
+    },
+    "achievement_show": {
+        "desc": "",
+        "type": "",
+        "val": ""
+    },
+    "achievement_show_achievements": {
+        "desc": ""
+    },
+    "achievement_show_challenge_notifications": {
+        "desc": "",
+        "receive_challenge": "",
+        "local_complete": "",
+        "remote_complete": ""
+    },
+    "achievement_show_leaderboards": {
+        "desc": ""
+    },
+    "alarm_get": {
+        "desc": "",
+        "index": ""
+    },
+    "alarm_set": {
+        "desc": "",
+        "index": "",
+        "count": ""
+    },
+    "angle_difference": {
+        "desc": "",
+        "src": "",
+        "dest": ""
+    },
+    "ansi_char": {
+        "desc": "",
+        "val": ""
+    },
+    "application_get_position": {
+        "desc": ""
+    },
+    "application_surface_draw_enable": {
+        "desc": "",
+        "on_off": ""
+    },
+    "application_surface_enable": {
+        "desc": "",
+        "enable": ""
+    },
+    "application_surface_is_enabled": {
+        "desc": ""
+    },
+    "arccos": {
+        "desc": "",
+        "x": ""
+    },
+    "arcsin": {
+        "desc": "",
+        "x": ""
+    },
+    "arctan": {
+        "desc": "",
+        "x": ""
+    },
+    "arctan2": {
+        "desc": "",
+        "y": "",
+        "x": ""
+    },
+    "array_copy": {
+        "desc": "",
+        "dest": "",
+        "dest_index": "",
+        "src": "",
+        "src_index": "",
+        "length": ""
+    },
+    "array_create": {
+        "desc": "",
+        "size": ""
+    },
+    "array_equals": {
+        "desc": "",
+        "var1": "",
+        "var2": ""
+    },
+    "array_height_2d": {
+        "desc": "",
+        "variable": ""
+    },
+    "array_length_1d": {
+        "desc": "",
+        "variable": ""
+    },
+    "array_length_2d": {
+        "desc": "",
+        "variable": "",
+        "index": ""
+    },
+    "asset_get_index": {
+        "desc": "",
+        "name": ""
+    },
+    "asset_get_type": {
+        "desc": "",
+        "name": ""
+    },
+    "audio_channel_num": {
+        "desc": "",
+        "numchannels": ""
+    },
+    "audio_create_buffer_sound": {
+        "desc": "",
+        "bufferId": "",
+        "format": "",
+        "offset": "",
+        "src_index": "",
+        "length": "",
+        "channels": ""
+    },
+    "audio_create_play_queue": {
+        "desc": "",
+        "bufferFormat": "",
+        "sampleRate": "",
+        "channels": ""
+    },
+    "audio_create_stream": {
+        "desc": "",
+        "filename": ""
+    },
+    "audio_create_sync_group": {
+        "desc": "",
+        "looping": ""
+    },
+    "audio_debug": {
+        "desc": "",
+        "enable": ""
+    },
+    "audio_destroy_stream": {
+        "desc": "",
+        "stream_sound_id": ""
+    },
+    "audio_destroy_sync_group": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_emitter_create": {
+        "desc": ""
+    },
+    "audio_emitter_exists": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_falloff": {
+        "desc": "",
+        "emitterid": "",
+        "falloff_ref_dist": "",
+        "falloff_max_dist": "",
+        "falloff_factor": ""
+    },
+    "audio_emitter_free": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_gain": {
+        "desc": "",
+        "emitterid": "",
+        "gain": ""
+    },
+    "audio_emitter_get_gain": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_listener_mask": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_pitch": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_vx": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_vy": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_vz": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_x": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_y": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_get_z": {
+        "desc": "",
+        "emitterid": ""
+    },
+    "audio_emitter_pitch": {
+        "desc": "",
+        "emitterid": "",
+        "pitch": ""
+    },
+    "audio_emitter_position": {
+        "desc": "",
+        "emitterid": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    "audio_emitter_set_listener_mask": {
+        "desc": "",
+        "emitterid": "",
+        "mask": ""
+    },
+    "audio_emitter_velocity": {
+        "desc": "",
+        "emitterid": "",
+        "vx": "",
+        "vy": "",
+        "vz": ""
+    },
+    "audio_exists": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_falloff_set_model": {
+        "desc": "",
+        "falloffmode": ""
+    },
+    "audio_free_buffer_sound": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_free_play_queue": {
+        "desc": "",
+        "queueid": ""
+    },
+    "audio_get_listener_count": {
+        "desc": ""
+    },
+    "audio_get_listener_info": {
+        "desc": "",
+        "index": ""
+    },
+    "audio_get_listener_mask": {
+        "desc": "",
+        "mask": ""
+    },
+    "audio_get_master_gain": {
+        "desc": "",
+        "listenerIndex": ""
+    },
+    "audio_get_name": {
+        "desc": "",
+        "index": ""
+    },
+    "audio_get_recorder_count": {
+        "desc": ""
+    },
+    "audio_get_recorder_info": {
+        "desc": "",
+        "recorder_num": ""
+    },
+    "audio_get_type": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_group_is_loaded": {
+        "desc": "",
+        "groupId": ""
+    },
+    "audio_group_load": {
+        "desc": "",
+        "groupId": ""
+    },
+    "audio_group_load_progress": {
+        "desc": "",
+        "groupId": ""
+    },
+    "audio_group_name": {
+        "desc": "",
+        "groupId": ""
+    },
+    "audio_group_set_gain": {
+        "desc": "",
+        "groupId": "",
+        "volume": "",
+        "time": ""
+    },
+    "audio_group_stop_all": {
+        "desc": "",
+        "groupId": ""
+    },
+    "audio_group_unload": {
+        "desc": "",
+        "groupId": ""
+    },
+    "audio_is_paused": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_is_playing": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_listener_get_data": {
+        "desc": "",
+        "index": ""
+    },
+    "audio_listener_orientation": {
+        "desc": "",
+        "lookat_x": "",
+        "lookat_y": "",
+        "lookat_z": "",
+        "up_x": "",
+        "up_y": "",
+        "up_z": ""
+    },
+    "audio_listener_position": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    "audio_listener_set_orientation": {
+        "desc": "",
+        "index": "",
+        "lookat_x": "",
+        "lookat_y": "",
+        "lookat_z": "",
+        "up_x": "",
+        "up_y": "",
+        "up_z": ""
+    },
+    "audio_listener_set_position": {
+        "desc": "",
+        "index": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    "audio_listener_set_velocity": {
+        "desc": "",
+        "index": "",
+        "vx": "",
+        "vy": "",
+        "vz": ""
+    },
+    "audio_listener_velocity": {
+        "desc": "",
+        "vx": "",
+        "vy": "",
+        "vz": ""
+    },
+    "audio_master_gain": {
+        "desc": "",
+        "gain": ""
+    },
+    "audio_pause_all": {
+        "desc": ""
+    },
+    "audio_pause_sound": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_pause_sync_group": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_play_in_sync_group": {
+        "desc": "",
+        "sync_group_id": "",
+        "soundid": ""
+    },
+    "audio_play_sound": {
+        "desc": "",
+        "soundid": "",
+        "priority": "",
+        "loops": ""
+    },
+    "audio_play_sound_at": {
+        "desc": "",
+        "soundid": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "falloff_ref_dist": "",
+        "falloff_max_dist": "",
+        "falloff_factor": "",
+        "loops": "",
+        "priority": ""
+    },
+    "audio_play_sound_on": {
+        "desc": "",
+        "emitterid": "",
+        "soundid": "",
+        "priority": "",
+        "loops": ""
+    },
+    "audio_queue_sound": {
+        "desc": "",
+        "queueid": "",
+        "buffer_id": "",
+        "offset": "",
+        "length": ""
+    },
+    "audio_resume_all": {
+        "desc": ""
+    },
+    "audio_resume_sound": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_resume_sync_group": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_set_listener_mask": {
+        "desc": "",
+        "mask": ""
+    },
+    "audio_set_master_gain": {
+        "desc": "",
+        "listenerIndex": "",
+        "gain": ""
+    },
+    "audio_sound_gain": {
+        "desc": "",
+        "index": "",
+        "volume": "",
+        "time": ""
+    },
+    "audio_sound_get_gain": {
+        "desc": "",
+        "index": ""
+    },
+    "audio_sound_get_listener_mask": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_sound_get_pitch": {
+        "desc": "",
+        "index": ""
+    },
+    "audio_sound_get_track_position": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_sound_length": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_sound_pitch": {
+        "desc": "",
+        "index": "",
+        "pitch": ""
+    },
+    "audio_sound_set_listener_mask": {
+        "desc": "",
+        "soundid": "",
+        "mask": ""
+    },
+    "audio_sound_set_track_position": {
+        "desc": "",
+        "soundid": "",
+        "time": ""
+    },
+    "audio_start_recording": {
+        "desc": "",
+        "recorder_num": ""
+    },
+    "audio_start_sync_group": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_stop_all": {
+        "desc": ""
+    },
+    "audio_stop_recording": {
+        "desc": "",
+        "channel_index": ""
+    },
+    "audio_stop_sound": {
+        "desc": "",
+        "soundid": ""
+    },
+    "audio_stop_sync_group": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_sync_group_debug": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_sync_group_get_track_pos": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_sync_group_is_playing": {
+        "desc": "",
+        "sync_group_id": ""
+    },
+    "audio_system": {
+        "desc": ""
+    },
+    "base64_decoden": {
+        "desc": "",
+        "string": ""
+    },
+	"base64_encoden": {
+        "desc": "",
+        "string": ""
+    },
+	"browser_input_capturen": {
+        "desc": "",
+        "enable": ""
+    },
+	"buffer_async_group_beginn": {
+        "desc": "",
+        "groupname": ""
+    },
+	"buffer_async_group_end": {
+        "desc": ""
+    },
+	"buffer_async_group_option": {
+        "desc": "",
+        "optionname": "",
+        "optionvalue": ""
+    },
+	"buffer_base64_decode": {
+        "desc": "",
+        "string": ""
+    },
+	"buffer_base64_decode_ext": {
+        "desc": "",
+        "buffer": "",
+        "string": "",
+        "offset": ""
+    },
+	"buffer_base64_encode": {
+        "desc": "",
+        "buffer": "",
+        "offset": "",
+        "size": ""
+    },
+	"buffer_copy": {
+        "desc": "",
+        "src_buffer": "",
+        "src_offset": "",
+        "size": "",
+        "dest_buffer": "",
+        "dest_offset": ""
+    },
+	"buffer_copy_from_vertex_buffer": {
+        "desc": "",
+        "vertex_buffer": "",
+        "start_vertex": "",
+        "num_vertices": "",
+        "dest_buffer": "",
+        "dest_offset": ""
+    },
+	"buffer_create": {
+        "desc": "",
+        "size": "",
+        "buffer_type": "",
+        "alignment": ""
+    },
+	"buffer_create_from_vertex_buffer": {
+        "desc": "",
+        "vertex_buffer": "",
+        "type": "",
+        "alignment": ""
+    },
+	"buffer_create_from_vertex_buffer_ext": {
+        "desc": "",
+        "vertex_buffer": "",
+        "type": "",
+        "alignment": "",
+        "start_vertex": "",
+        "num_vertices": ""
+    },
+	"buffer_delete": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_exists": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_fill": {
+        "desc": "",
+        "buffer": "",
+        "offset": "",
+        "type": "",
+        "value": "",
+        "size": ""
+    },
+	"buffer_get_address": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_get_alignment": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_get_size": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_get_surface": {
+        "desc": "",
+        "buffer": "",
+        "surface": "",
+        "mode": "",
+        "offset": "",
+        "modulo": ""
+    },
+	"buffer_get_type": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_load": {
+        "desc": "",
+        "filename": ""
+    },
+	"buffer_load_async": {
+        "desc": "",
+        "bufferid": "",
+        "filename": "",
+        "offset": "",
+        "size": ""
+    },
+	"buffer_load_ext": {
+        "desc": "",
+        "bufferid": "",
+        "filename": "",
+        "offset": ""
+    },
+	"buffer_load_partial": {
+        "desc": "",
+        "bufferid": "",
+        "filename": "",
+        "src_offset": "",
+        "src_len": "",
+        "dest_offset": ""
+    },
+	"buffer_md5": {
+        "desc": "",
+        "buffer": "",
+        "offset": "",
+        "size": ""
+    },
+	"buffer_peek": {
+        "desc": "",
+        "buffer": "",
+        "offset": "",
+        "type": ""
+    },
+	"buffer_poke": {
+        "desc": "",
+        "buffer": "",
+        "offset": "",
+        "type": "",
+        "value": ""
+    },
+	"buffer_read": {
+        "desc": "",
+        "buffer": "",
+        "type": ""
+    },
+	"buffer_resize": {
+        "desc": "",
+        "buffer": "",
+        "newsize": ""
+    },
+	"buffer_save": {
+        "desc": "",
+        "buffer": "",
+        "filename": ""
+    },
+	"buffer_save_async": {
+        "desc": "",
+        "buffer": "",
+        "type": "",
+        "offset": "",
+        "size": ""
+    },
+	"buffer_save_ext": {
+        "desc": "",
+        "bufferid": "",
+        "filename": "",
+        "offset": "",
+        "size": ""
+    },
+	"buffer_seek": {
+        "desc": "",
+        "bufferid": "",
+        "base": "",
+        "offset": ""
+    },
+	"buffer_set_surface": {
+        "desc": "",
+        "buffer": "",
+        "surface": "",
+        "mode": "",
+        "offset": "",
+        "modulo": ""
+    },
+	"buffer_sha1": {
+        "desc": "",
+        "bufferid": "",
+        "offset": "",
+        "size": ""
+    },
+	"buffer_sizeof": {
+        "desc": "",
+        "type": ""
+    },
+	"buffer_tell": {
+        "desc": "",
+        "buffer": ""
+    },
+	"buffer_write": {
+        "desc": "",
+        "buffer": "",
+        "type": "",
+        "value": ""
+    },
+    "ceil": {
+        "desc": "",
+        "x": ""
+    },
+	"choose": {
+        "desc": "",
+        "x1": "",
+        "x2": "",
+        "x3": "",
+        "more": ""
+    },
+	"chr": {
+        "desc": "",
+        "val": ""
+    },
+	"clamp": {
+        "desc": "",
+        "val": "",
+        "min": "",
+        "max": ""
+    },
+	"clickable_add": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "spritetpe": "",
+        "URL": "",
+        "target": "",
+        "params": ""
+    },
+	"clickable_add_ext": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "spritetpe": "",
+        "URL": "",
+        "target": "",
+        "params": "",
+        "scale": "",
+        "alpha": ""
+    },
+	"clickable_change": {
+        "desc": "",
+        "buttonid": "",
+        "spritetpe": "",
+        "x": "",
+        "y": ""
+    },
+	"clickable_change_ext": {
+        "desc": "",
+        "buttonid": "",
+        "spritetpe": "",
+        "x": "",
+        "y": "",
+        "scale": "",
+        "alpha": ""
+    },
+	"clickable_delete": {
+        "desc": "",
+        "buttonid": ""
+    },
+	"clickable_exists": {
+        "desc": "",
+        "index": ""
+    },
+	"clickable_set_style": {
+        "desc": "",
+        "buttonid": "",
+        "map": ""
+    },
+	"clipboard_get_text": {
+        "desc": ""
+    },
+	"clipboard_has_text": {
+        "desc": ""
+    },
+	"clipboard_set_text": {
+        "desc": "",
+        "str": ""
+    },
+	"cloud_file_save": {
+        "desc": "",
+        "filename": ""
+    },
+	"cloud_string_save": {
+        "desc": "",
+        "data": ""
+    },
+	"cloud_synchronise": {
+        "desc": ""
+    },
+	"code_is_compiled": {
+        "desc": ""
+    },
+	"collision_circle": {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "radius": "",
+        "obj": "",
+        "prec": "",
+        "notme": ""
+    },
+	"collision_ellipse": {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "x2": "",
+        "y2": "",
+        "obj": "",
+        "prec": "",
+        "notme": ""
+    },
+	"collision_line": {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "x2": "",
+        "y2": "",
+        "obj": "",
+        "prec": "",
+        "notme": ""
+    },
+	"collision_point": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "obj": "",
+        "prec": "",
+        "notme": ""
+    },
+	"collision_rectangle": {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "x2": "",
+        "y2": "",
+        "obj": "",
+        "prec": "",
+        "notme": ""
+    },
+    "color_get_blue": {
+        "desc": "",
+        "col": ""
+    },
+	"color_get_green": {
+        "desc": "",
+        "col": ""
+    },
+	"color_get_hue": {
+        "desc": "",
+        "col": ""
+    },
+	"color_get_red": {
+        "desc": "",
+        "col": ""
+    },
+	"color_get_saturation": {
+        "desc": "",
+        "col": ""
+    },
+	"color_get_value": {
+        "desc": "",
+        "col": ""
+    },
+	"colour_get_blue": {
+        "desc": "",
+        "col": ""
+    },
+	"colour_get_green": {
+        "desc": "",
+        "col": ""
+    },
+	"colour_get_hue": {
+        "desc": "",
+        "col": ""
+    },
+	"colour_get_red": {
+        "desc": "",
+        "col": ""
+    },
+	"colour_get_saturation": {
+        "desc": "",
+        "col": ""
+    },
+	"colour_get_value": {
+        "desc": "",
+        "col": ""
+    },
+	"cos": {
+        "desc": "",
+        "radian_angle": ""
+    },
 }
