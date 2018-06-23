@@ -6947,7 +6947,7 @@ exports.globalfunctions = {
         signature: '(hor, vert, margin)'
     },
 	mp_grid_add_cell: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_grid_add_cell.desc,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.mp_grid_add_cell.id },
@@ -6957,7 +6957,7 @@ exports.globalfunctions = {
         signature: '(id, h, v)'
     },
 	mp_grid_add_instances: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_grid_add_instances.desc,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.mp_grid_add_instances.id },
@@ -7012,7 +7012,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.mp_grid_create.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'left', documentation: i18n..mp_grid_createleft },
+            { label: 'left', documentation: i18n.mp_grid_create.left },
             { label: 'top', documentation: i18n.mp_grid_create.top },
             { label: 'hcells', documentation: i18n.mp_grid_create.heclls },
             { label: 'vcells', documentation: i18n.mp_grid_create.vcells },
@@ -7062,1732 +7062,1732 @@ exports.globalfunctions = {
         signature: '(id, path, xstart, ystart, xgoal, ygoal, allowdiag)'
     },
 	mp_grid_to_ds_grid: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_grid_to_ds_grid.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'src', documentation: i18n..src },
-            { label: 'dest', documentation: i18n..dest }
+            { label: 'src', documentation: i18n.mp_grid_to_ds_grid.src },
+            { label: 'dest', documentation: i18n.mp_grid_to_ds_grid.dest }
         ],
         signature: '(src, dest)'
     },
 	mp_linear_path: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_path.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'path', documentation: i18n.mp_linear_path.path },
+            { label: 'xg', documentation: i18n.mp_linear_path.xg },
+            { label: 'yg', documentation: i18n.mp_linear_path.yg },
+            { label: 'stepsize', documentation: i18n.mp_linear_path.stepsize },
+            { label: 'checkall', documentation: i18n.mp_linear_path.checkall }
         ],
         signature: '(path, xg, yg, stepsize, checkall)'
     },
 	mp_linear_path_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_path_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'path', documentation: i18n.mp_linear_path_object.path },
+            { label: 'xg', documentation: i18n.mp_linear_path_object.xg },
+            { label: 'yg', documentation: i18n.mp_linear_path_object.yg },
+            { label: 'stepsize', documentation: i18n.mp_linear_path_object.stepsize },
+            { label: 'obj', documentation: i18n.mp_linear_path_object.obj }
         ],
         signature: '(path, xg, yg, stepsize, obj)'
     },
 	mp_linear_step: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_step.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'x', documentation: i18n.mp_linear_step.x },
+            { label: 'y', documentation: i18n.mp_linear_step.y },
+            { label: 'speed', documentation: i18n.mp_linear_step.speed },
+            { label: 'checkall', documentation: i18n.mp_linear_step.checkall }
         ],
         signature: '(x, y, speed, checkall)'
     },
 	mp_linear_step_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_step_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'x', documentation: i18n.mp_linear_step_object.x },
+            { label: 'y', documentation: i18n.mp_linear_step_object.y },
+            { label: 'speed', documentation: i18n.mp_linear_step_object.speed },
+            { label: 'obj', documentation: i18n.mp_linear_step_object.obj }
         ],
         signature: '(x, y, speed, obj)'
     },
 	mp_potential_path: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_path.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'factor', documentation: i18n. },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'path', documentation: i18n.mp_potential_path.path },
+            { label: 'xg', documentation: i18n.mp_potential_path.xg },
+            { label: 'yg', documentation: i18n.mp_potential_path.yg },
+            { label: 'stepsize', documentation: i18n.mp_potential_path.stepsize },
+            { label: 'factor', documentation: i18n.mp_potential_path.factor },
+            { label: 'checkall', documentation: i18n.mp_potential_path.checkall }
         ],
         signature: '(path, xg, yg, stepsize, factor, checkall)'
     },
 	mp_potential_path_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_path_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'factor', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'path', documentation: i18n.mp_potential_path_object.path },
+            { label: 'xg', documentation: i18n.mp_potential_path_object.xg },
+            { label: 'yg', documentation: i18n.mp_potential_path_object.yg },
+            { label: 'stepsize', documentation: i18n.mp_potential_path_object.stepsize },
+            { label: 'factor', documentation: i18n.mp_potential_path_object.factor },
+            { label: 'obj', documentation: i18n.mp_potential_path_object.obj }
         ],
         signature: '(path, xg, yg, stepsize, factor, obj)'
     },
 	mp_potential_settings: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_settings.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'maxrot', documentation: i18n. },
-            { label: 'rotstep', documentation: i18n. },
-            { label: 'ahead', documentation: i18n. },
-            { label: 'onspot', documentation: i18n. }
+            { label: 'maxrot', documentation: i18n.mp_potential_settings.maxrot },
+            { label: 'rotstep', documentation: i18n.mp_potential_settings.rotstep },
+            { label: 'ahead', documentation: i18n.mp_potential_settings.ahead },
+            { label: 'onspot', documentation: i18n.mp_potential_settings.onspot }
         ],
         signature: '(maxrot, rotstep, ahead, onspot)'
     },
 	mp_potential_step: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_step.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'x', documentation: i18n.mp_potential_step.x },
+            { label: 'y', documentation: i18n.mp_potential_step.y },
+            { label: 'speed', documentation: i18n.mp_potential_step.speed },
+            { label: 'checkall', documentation: i18n.mp_potential_step.checkall }
         ],
         signature: '(x, y, speed, checkall)'
     },
 	mp_potential_step_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_step_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'x', documentation: i18n.mp_potential_step_object.x },
+            { label: 'y', documentation: i18n.mp_potential_step_object.y },
+            { label: 'speed', documentation: i18n.mp_potential_step_object.speed },
+            { label: 'obj', documentation: i18n.mp_potential_step_object.obj }
         ],
         signature: '(x, y, speed, obj)'
     },
 	network_connect: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_connect.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_connect.socket },
+            { label: 'url', documentation: i18n.network_connect.url },
+            { label: 'port', documentation: i18n.network_connect.port }
         ],
         signature: '(socket, url, port)'
     },
 	network_connect_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_connect_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_connect_raw.socket },
+            { label: 'url', documentation: i18n.network_connect_raw.url },
+            { label: 'port', documentation: i18n.network_connect_raw.port }
         ],
         signature: '(socket, url, port)'
     },
 	network_create_server: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_server.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'port', documentation: i18n. },
-            { label: 'maxclients', documentation: i18n. }
+            { label: 'type', documentation: i18n.network_create_server.type },
+            { label: 'port', documentation: i18n.network_create_server.port },
+            { label: 'maxclients', documentation: i18n.network_create_server.maxclients }
         ],
         signature: '(type, port, maxclients)'
     },
 	network_create_server_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_server_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'port', documentation: i18n. },
-            { label: 'maxclients', documentation: i18n. }
+            { label: 'type', documentation: i18n.network_create_server_raw.type },
+            { label: 'port', documentation: i18n.network_create_server_raw.port },
+            { label: 'maxclients', documentation: i18n.network_create_server_raw.maxclients }
         ],
         signature: '(type, port, maxclients)'
     },
 	network_create_socket: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_socket.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type }
+            { label: 'type', documentation: i18n.network_create_socket.type }
         ],
         signature: '(type)'
     },
 	network_create_socket_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_socket_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'port', documentation: i18n. }
+            { label: 'type', documentation: i18n.network_create_socket_ext.type },
+            { label: 'port', documentation: i18n.network_create_socket_ext.port }
         ],
         signature: '(type, port)'
     },
 	network_destroy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_destroy.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_destroy.socket }
         ],
         signature: '(socket)'
     },
 	network_resolve: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_resolve.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'url', documentation: i18n..url }
+            { label: 'url', documentation: i18n.network_resolve.url }
         ],
         signature: '(url)'
     },
 	network_send_broadcast: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_broadcast.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'port', documentation: i18n. },
-            { label: 'bufferid', documentation: i18n..bufferid },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_broadcast.socket },
+            { label: 'port', documentation: i18n.network_send_broadcast.port },
+            { label: 'bufferid', documentation: i18n.network_send_broadcast.bufferid },
+            { label: 'size', documentation: i18n.network_send_broadcast.size }
         ],
         signature: '(socket, port, bufferid, size)'
     },
 	network_send_packet: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_packet.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'bufferid', documentation: i18n..bufferid },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_packet.socket },
+            { label: 'bufferid', documentation: i18n.network_send_packet.bufferid },
+            { label: 'size', documentation: i18n.network_send_packet.size }
         ],
         signature: '(socket, bufferid, size)'
     },
 	network_send_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'bufferid', documentation: i18n..bufferid },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_raw.socket },
+            { label: 'bufferid', documentation: i18n.network_send_raw.bufferid },
+            { label: 'size', documentation: i18n.network_send_raw.size }
         ],
         signature: '(socket, buffer_id, size)'
     },
 	network_send_udp: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_udp.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. },
-            { label: 'data', documentation: i18n. },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_udp.socket },
+            { label: 'url', documentation: i18n.network_send_udp.url },
+            { label: 'port', documentation: i18n.network_send_udp.port },
+            { label: 'data', documentation: i18n.network_send_udp.data },
+            { label: 'size', documentation: i18n.network_send_udp.size }
         ],
         signature: '(socket, URL, port, data, size)'
     },
 	network_send_udp_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_udp_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. },
-            { label: 'data', documentation: i18n. },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_udp_raw.socket },
+            { label: 'url', documentation: i18n.network_send_udp_raw.url },
+            { label: 'port', documentation: i18n.network_send_udp_raw.port },
+            { label: 'data', documentation: i18n.network_send_udp_raw.data },
+            { label: 'size', documentation: i18n.network_send_udp_raw.size }
         ],
         signature: '(socket, URL, port, data, size)'
     },
 	network_set_config: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_set_config.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'parameter', documentation: i18n. },
-            { label: 'value', documentation: i18n..value }
+            { label: 'parameter', documentation: i18n.network_set_config.parameter },
+            { label: 'value', documentation: i18n.network_set_config.value }
         ],
         signature: '(parameter, value)'
     },
 	network_set_timeout: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_set_timeout.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'read', documentation: i18n. },
-            { label: 'write', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_set_timeout.socket },
+            { label: 'read', documentation: i18n.network_set_timeout.read },
+            { label: 'write', documentation: i18n.network_set_timeout.write }
         ],
         signature: '(socket, read, write)'
     },
 	object_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_exists.ind }
         ],
         signature: '(ind)'
     },
 	object_get_mask: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_mask.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_mask.ind }
         ],
         signature: '(ind)'
     },
 	object_get_name: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_name.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_name.ind }
         ],
         signature: '(ind)'
     },
 	object_get_parent: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_parent.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_parent.ind }
         ],
         signature: '(ind)'
     },
 	object_get_persistent: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_persistent.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_persistent.ind }
         ],
         signature: '(ind)'
     },
 	object_get_physics: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_physics.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_physics.ind }
         ],
         signature: '(ind)'
     },
 	object_get_solid: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_solid.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_solid.ind }
         ],
         signature: '(ind)'
     },
 	object_get_sprite: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_sprite.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_sprite.ind }
         ],
         signature: '(ind)'
     },
 	object_get_visible: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_get_visible.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_visible.ind }
         ],
         signature: '(ind)'
     },
 	object_is_ancestor: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_is_ancestor.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind_child', documentation: i18n. },
-            { label: 'ind_parent', documentation: i18n. }
+            { label: 'ind_child', documentation: i18n.object_is_ancestor.ind_child },
+            { label: 'ind_parent', documentation: i18n.object_is_ancestor.ind_parent }
         ],
         signature: '(ind_child, ind_parent)'
     },
 	object_set_mask: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_set_mask.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'spr', documentation: i18n..spr }
+            { label: 'ind', documentation: i18n.object_set_mask.ind },
+            { label: 'spr', documentation: i18n.object_set_mask.spr }
         ],
         signature: '(ind, spr)'
     },
 	object_set_parent: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_set_parent.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'ind', documentation: i18n.object_set_parent.ind },
+            { label: 'obj', documentation: i18n.object_set_parent.obj }
         ],
         signature: '(ind, obj)'
     },
 	object_set_persistent: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_set_persistent.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'pers', documentation: i18n. }
+            { label: 'ind', documentation: i18n.object_set_persistent.ind },
+            { label: 'pers', documentation: i18n.object_set_persistent.pers }
         ],
         signature: '(ind, pers)'
     },
 	object_set_solid: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_set_solid.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'soild', documentation: i18n. }
+            { label: 'ind', documentation: i18n.object_set_solid.ind },
+            { label: 'soild', documentation: i18n.object_set_solid.soild }
         ],
         signature: '(ind, soild)'
     },
 	object_set_sprite: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_set_sprite.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'spr', documentation: i18n..spr }
+            { label: 'ind', documentation: i18n.object_set_sprite.ind },
+            { label: 'spr', documentation: i18n.object_set_sprite.spr }
         ],
         signature: '(ind, spr)'
     },
 	object_set_visible: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.object_set_visible.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'vis', documentation: i18n. }
+            { label: 'ind', documentation: i18n.object_set_visible.ind },
+            { label: 'vis', documentation: i18n.object_set_visible.vis }
         ],
         signature: '(ind, vis)'
     },
 	ord: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.ord.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'char', documentation: i18n. }
+            { label: 'char', documentation: i18n.ord.char }
         ],
         signature: '(char)'
     },
 	os_get_config: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_get_config.desc,
         available: datasimple.gms1
     },
 	os_get_info: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_get_info.desc,
         available: datasimple.gms1
     },
 	os_get_language: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_get_language.desc,
         available: datasimple.gms1
     },
 	os_get_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_get_region.desc,
         available: datasimple.gms1
     },
 	os_is_network_connected: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_is_network_connected.desc,
         available: datasimple.gms1
     },
 	os_is_paused: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_is_paused.desc,
         available: datasimple.gms1
     },
 	os_lock_orientation: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_lock_orientation.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'flag', documentation: i18n. }
+            { label: 'flag', documentation: i18n.os_lock_orientation.flag }
         ],
         signature: '(flag)'
     },
 	os_powersave_enable: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.os_powersave_enable.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'enable', documentation: i18n..enable }
+            { label: 'enable', documentation: i18n.os_powersave_enable.enable }
         ],
         signature: '(enable)'
     },
 	parameter_count: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.parameter_count.desc,
         available: datasimple.all
     },
 	parameter_string: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.parameter_string.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'n', documentation: i18n..n }
+            { label: 'n', documentation: i18n.parameter_string.n }
         ],
         signature: '(n)'
     },
 	part_emitter_burst: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_burst.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'parttype', documentation: i18n. },
-            { label: 'number', documentation: i18n. }
+            { label: 'ps', documentation: i18n.part_emitter_burst.ps },
+            { label: 'ind', documentation: i18n.part_emitter_burst.ind },
+            { label: 'parttype', documentation: i18n.part_emitter_burst.parttype },
+            { label: 'number', documentation: i18n.part_emitter_burst.number }
         ],
         signature: '(ps, ind, parttype, number)'
     },
 	part_emitter_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_emitter_clear.ps },
+            { label: 'ind', documentation: i18n.part_emitter_clear.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_emitter_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_create.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n.part_emitter_create.ps }
         ],
         signature: '(ps)'
     },
 	part_emitter_destroy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_destroy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_emitter_destroy.ps },
+            { label: 'ind', documentation: i18n.part_emitter_destroy.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_emitter_destroy_all: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_destroy_all.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n.part_emitter_destroy_all.ps }
         ],
         signature: '(ps)'
     },
 	part_emitter_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_emitter_exists.ps },
+            { label: 'ind', documentation: i18n.part_emitter_exists.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_emitter_region: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n. },
-            { label: 'xmax', documentation: i18n. },
-            { label: 'ymin', documentation: i18n. },
-            { label: 'ymax', documentation: i18n. },
-            { label: 'shape', documentation: i18n. },
-            { label: 'distribution', documentation: i18n. }
+            { label: 'ps', documentation: i18n.part_emitter_region.ps },
+            { label: 'ind', documentation: i18n.part_emitter_region.ind },
+            { label: 'xmin', documentation: i18n.part_emitter_region.xmin },
+            { label: 'xmax', documentation: i18n.part_emitter_region.xmax },
+            { label: 'ymin', documentation: i18n.part_emitter_region.ymin },
+            { label: 'ymax', documentation: i18n.part_emitter_region.ymax },
+            { label: 'shape', documentation: i18n.part_emitter_region.shape },
+            { label: 'distribution', documentation: i18n.part_emitter_region.distribution }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape, distribution)'
     },
 	part_emitter_stream: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_emitter_stream.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ps', documentation: i18n. },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'parttype', documentation: i18n. },
-            { label: 'number', documentation: i18n. }
+            { label: 'ps', documentation: i18n.part_emitter_stream.ps },
+            { label: 'ind', documentation: i18n.part_emitter_stream.ind },
+            { label: 'parttype', documentation: i18n.part_emitter_stream.parttype },
+            { label: 'number', documentation: i18n.part_emitter_stream.number }
         ],
         signature: '(ps, ind, parttype, number)'
     },
 	part_particles_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_particles_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_particles_clear.ind }
         ],
         signature: '(ind)'
     },
 	part_particles_count: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_particles_count.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_particles_count.ind }
         ],
         signature: '(ind)'
     },
 	part_particles_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_particles_create.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'parttype', documentation: i18n. },
-            { label: 'number', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_particles_create.ind },
+            { label: 'x', documentation: i18n.part_particles_create.x },
+            { label: 'y', documentation: i18n.part_particles_create.y },
+            { label: 'parttype', documentation: i18n.part_particles_create.parttype },
+            { label: 'number', documentation: i18n.part_particles_create.number }
         ],
         signature: '(ind, x, y, parttype, number)'
     },
 	part_particles_create_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_particles_create_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'parttype', documentation: i18n. },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'number', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_particles_create_color.ind },
+            { label: 'x', documentation: i18n.part_particles_create_color.x },
+            { label: 'y', documentation: i18n.part_particles_create_color.y },
+            { label: 'parttype', documentation: i18n.part_particles_create_color.parttype },
+            { label: 'colour', documentation: i18n.part_particles_create_color.colour },
+            { label: 'number', documentation: i18n.part_particles_create_color.number }
         ],
         signature: '(ind, x, y, parttype, colour, number)'
     },
 	part_particles_create_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_particles_create_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'parttype', documentation: i18n. },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'number', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_particles_create_colour.ind },
+            { label: 'x', documentation: i18n.part_particles_create_colour.x },
+            { label: 'y', documentation: i18n.part_particles_create_colour.y },
+            { label: 'parttype', documentation: i18n.part_particles_create_colour.parttype },
+            { label: 'colour', documentation: i18n.part_particles_create_colour.colour },
+            { label: 'number', documentation: i18n.part_particles_create_colour.number }
         ],
         signature: '(ind, x, y, parttype, colour, number)'
     },
 	part_system_automatic_draw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_automatic_draw.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'draw', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_system_automatic_draw.ind },
+            { label: 'draw', documentation: i18n.part_system_automatic_draw.draw }
         ],
         signature: '(ind, draw)'
     },
 	part_system_automatic_update: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_automatic_update.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'automatic', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_system_automatic_update.ind },
+            { label: 'automatic', documentation: i18n.part_system_automatic_update.automatic }
         ],
         signature: '(ind, automatic)'
     },
 	part_system_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_system_clear.ind }
         ],
         signature: '(ind)'
     },
 	part_system_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_create.desc,
         available: datasimple.all
     },
 	part_system_depth: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_depth.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'depth', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_system_depth.ind },
+            { label: 'depth', documentation: i18n.part_system_depth.depth }
         ],
         signature: '(ind, depth)'
     },
 	part_system_destroy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_destroy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_system_destroy.ind }
         ],
         signature: '(ind)'
     },
 	part_system_drawit: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_drawit.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_system_drawit.ind }
         ],
         signature: '(ind)'
     },
 	part_system_draw_order: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_draw_order.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'oldtonew', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_system_draw_order.ind },
+            { label: 'oldtonew', documentation: i18n.part_system_draw_order.oldtonew }
         ],
         signature: '(ind, oldtonew)'
     },
 	part_system_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_system_exists.ind }
         ],
         signature: '(ind)'
     },
 	part_system_position: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_position.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'ind', documentation: i18n.part_system_position.ind },
+            { label: 'x', documentation: i18n.part_system_position.x },
+            { label: 'y', documentation: i18n.part_system_position.y }
         ],
         signature: '(ind, x, y)'
     },
 	part_system_update: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_system_update.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_system_update.ind }
         ],
         signature: '(ind)'
     },
 	part_type_alpha1: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_alpha1.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'alpha1', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_alpha1.ind },
+            { label: 'alpha1', documentation: i18n.part_type_alpha1.alpha1 }
         ],
         signature: '(ind, alpha1)'
     },
 	part_type_alpha2: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_alpha2.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'alpha1', documentation: i18n. },
-            { label: 'alpha2', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_alpha2.ind },
+            { label: 'alpha1', documentation: i18n.part_type_alpha2.alpha1 },
+            { label: 'alpha2', documentation: i18n.part_type_alpha2.alpha2 }
         ],
         signature: '(ind, alpha1, alpha2)'
     },
 	part_type_alpha3: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_alpha3.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'alpha1', documentation: i18n. },
-            { label: 'alpha2', documentation: i18n. },
-            { label: 'alpha3', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_alpha3.ind },
+            { label: 'alpha1', documentation: i18n.part_type_alpha3.alpha1 },
+            { label: 'alpha2', documentation: i18n.part_type_alpha3.alpha2 },
+            { label: 'alpha3', documentation: i18n.part_type_alpha3.alpha3 }
         ],
         signature: '(ind, alpha1, alpha2, alpha3)'
     },
 	part_type_blend: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_blend.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'additive', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_blend.ind },
+            { label: 'additive', documentation: i18n.part_type_blend.additive }
         ],
         signature: '(ind, additive)'
     },
 	part_type_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_type_clear.ind }
         ],
         signature: '(ind)'
     },
 	part_type_color1: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_color1.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'color1', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_color1.ind },
+            { label: 'color1', documentation: i18n.part_type_color1.color1 }
         ],
         signature: '(ind, color1)'
     },
 	part_type_color2: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_color2.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'color1', documentation: i18n. },
-            { label: 'color2', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_color2.ind },
+            { label: 'color1', documentation: i18n.part_type_color2.color1 },
+            { label: 'color2', documentation: i18n.part_type_color2.color2 }
         ],
         signature: '(ind, color1， color2)'
     },
 	part_type_color3: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_color3.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'color1', documentation: i18n. },
-            { label: 'color2', documentation: i18n. },
-            { label: 'color3', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_color3.ind },
+            { label: 'color1', documentation: i18n.part_type_color3.color1 },
+            { label: 'color2', documentation: i18n.part_type_color3.color2 },
+            { label: 'color3', documentation: i18n.part_type_color3.color3 }
         ],
         signature: '(ind, color1, color2, color3)'
     },
 	part_type_color_hsv: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_color_hsv.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'hmin', documentation: i18n. },
-            { label: 'hmax', documentation: i18n. },
-            { label: 'smin', documentation: i18n. },
-            { label: 'smax', documentation: i18n. },
-            { label: 'vmin', documentation: i18n. },
-            { label: 'vmax', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_color_hsv.ind },
+            { label: 'hmin', documentation: i18n.part_type_color_hsv.hmin },
+            { label: 'hmax', documentation: i18n.part_type_color_hsv.hmax },
+            { label: 'smin', documentation: i18n.part_type_color_hsv.smin },
+            { label: 'smax', documentation: i18n.part_type_color_hsv.smax },
+            { label: 'vmin', documentation: i18n.part_type_color_hsv.vmin },
+            { label: 'vmax', documentation: i18n.part_type_color_hsv.vmax }
         ],
         signature: '(ind, hmin, hmax, smin, smax, vmin, vmax)'
     },
 	part_type_color_mix: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_color_mix.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'color1', documentation: i18n. },
-            { label: 'color2', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_color_mix.ind },
+            { label: 'color1', documentation: i18n.part_type_color_mix.color1 },
+            { label: 'color2', documentation: i18n.part_type_color_mix.color2 }
         ],
         signature: '(ind, color1, color2)'
     },
 	part_type_color_rgb: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_color_rgb.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'rmin', documentation: i18n. },
-            { label: 'rmax', documentation: i18n. },
-            { label: 'gmin', documentation: i18n. },
-            { label: 'gmax', documentation: i18n. },
-            { label: 'bmin', documentation: i18n. },
-            { label: 'bmax', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_color_rgb.ind },
+            { label: 'rmin', documentation: i18n.part_type_color_rgb.rmin },
+            { label: 'rmax', documentation: i18n.part_type_color_rgb.rmax },
+            { label: 'gmin', documentation: i18n.part_type_color_rgb.gmin },
+            { label: 'gmax', documentation: i18n.part_type_color_rgb.gmax },
+            { label: 'bmin', documentation: i18n.part_type_color_rgb.bmin },
+            { label: 'bmax', documentation: i18n.part_type_color_rgb.bmax }
         ],
         signature: '(ind, rmin, rmax, gmin, gmax, bmin, bmax)'
     },
 	part_type_colour1: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_colour1.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'colour1', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_colour1.ind },
+            { label: 'colour1', documentation: i18n.part_type_colour1.colour1 }
         ],
         signature: '(ind, colour1)'
     },
 	part_type_colour2: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_colour2.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'colour1', documentation: i18n. },
-            { label: 'colour2', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_colour2.ind },
+            { label: 'colour1', documentation: i18n.part_type_colour2.colour1 },
+            { label: 'colour2', documentation: i18n.part_type_colour2.colour2 }
         ],
         signature: '(ind, colour1, colour2)'
     },
 	part_type_colour3: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_colour3.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'colour1', documentation: i18n. },
-            { label: 'colour2', documentation: i18n. },
-            { label: 'colour3', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_colour3.ind },
+            { label: 'colour1', documentation: i18n.part_type_colour3.colour1 },
+            { label: 'colour2', documentation: i18n.part_type_colour3.colour2 },
+            { label: 'colour3', documentation: i18n.part_type_colour3.colour3 }
         ],
         signature: '(ind, colour1, colour2, colour3)'
     },
 	part_type_colour_hsv: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_colour_hsv.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'hmin', documentation: i18n. },
-            { label: 'hmax', documentation: i18n. },
-            { label: 'smin', documentation: i18n. },
-            { label: 'smax', documentation: i18n. },
-            { label: 'vmin', documentation: i18n. },
-            { label: 'vmax', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_colour_hsv.ind },
+            { label: 'hmin', documentation: i18n.part_type_colour_hsv.hmin },
+            { label: 'hmax', documentation: i18n.part_type_colour_hsv.hmax },
+            { label: 'smin', documentation: i18n.part_type_colour_hsv.smin },
+            { label: 'smax', documentation: i18n.part_type_colour_hsv.smax },
+            { label: 'vmin', documentation: i18n.part_type_colour_hsv.vmin },
+            { label: 'vmax', documentation: i18n.part_type_colour_hsv.vmax }
         ],
         signature: '(ind, hmin, hmax, smin, smax, vmin, vmax)'
     },
 	part_type_colour_mix: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_colour_mix.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'colour1', documentation: i18n. },
-            { label: 'colour2', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_colour_mix.ind },
+            { label: 'colour1', documentation: i18n.part_type_colour_mix.colour1 },
+            { label: 'colour2', documentation: i18n.part_type_colour_mix.colour2 }
         ],
         signature: '(ind, colour1, colour2)'
     },
 	part_type_colour_rgb: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_colour_rgb.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'rmin', documentation: i18n. },
-            { label: 'rmax', documentation: i18n. },
-            { label: 'gmin', documentation: i18n. },
-            { label: 'gmax', documentation: i18n. },
-            { label: 'bmin', documentation: i18n. },
-            { label: 'bmax', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_colour_rgb.ind },
+            { label: 'rmin', documentation: i18n.part_type_colour_rgb.rmin },
+            { label: 'rmax', documentation: i18n.part_type_colour_rgb.rmax },
+            { label: 'gmin', documentation: i18n.part_type_colour_rgb.gmin },
+            { label: 'gmax', documentation: i18n.part_type_colour_rgb.gmax },
+            { label: 'bmin', documentation: i18n.part_type_colour_rgb.bmin },
+            { label: 'bmax', documentation: i18n.part_type_colour_rgb.bmax }
         ],
         signature: '(ind, rmin, rmax, gmin, gmax, bmin, bmax)'
     },
 	part_type_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_create.desc,
         available: datasimple.all
     },
 	part_type_death: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_death.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'death_number', documentation: i18n. },
-            { label: 'death_type', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_death.ind },
+            { label: 'death_number', documentation: i18n.part_type_death.death_number },
+            { label: 'death_type', documentation: i18n.part_type_death.death_type }
         ],
         signature: '(ind, death_number, death_type)'
     },
 	part_type_destroy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_destroy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_type_destroy.ind }
         ],
         signature: '(ind)'
     },
 	part_type_direction: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_direction.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'dir_min', documentation: i18n. },
-            { label: 'dir_max', documentation: i18n. },
-            { label: 'dir_incr', documentation: i18n. },
-            { label: 'dir_wiggle', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_direction.ind },
+            { label: 'dir_min', documentation: i18n.part_type_direction.dir_min },
+            { label: 'dir_max', documentation: i18n.part_type_direction.dir_max },
+            { label: 'dir_incr', documentation: i18n.part_type_direction.dir_incr },
+            { label: 'dir_wiggle', documentation: i18n.part_type_direction.dir_wiggle }
         ],
         signature: '(ind, dir_min, dir_max, dir_incr, dir_wiggle)'
     },
 	part_type_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.part_type_exists.ind }
         ],
         signature: '(ind)'
     },
 	part_type_gravity: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_gravity.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'grav_amount', documentation: i18n. },
-            { label: 'grav_dir', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_gravity.ind },
+            { label: 'grav_amount', documentation: i18n.part_type_gravity.grav_amount },
+            { label: 'grav_dir', documentation: i18n.part_type_gravity.grav_dir }
         ],
         signature: '(ind, grav_amount, grav_dir)'
     },
 	part_type_life: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_life.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'life_min', documentation: i18n. },
-            { label: 'life_max', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_life.ind },
+            { label: 'life_min', documentation: i18n.part_type_life.life_min },
+            { label: 'life_max', documentation: i18n.part_type_life.life_max }
         ],
         signature: '(ind, life_min, life_max)'
     },
 	part_type_orientation: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_orientation.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'ang_min', documentation: i18n. },
-            { label: 'ang_max', documentation: i18n. },
-            { label: 'ang_incr', documentation: i18n. },
-            { label: 'ang_wiggle', documentation: i18n. },
-            { label: 'ang_relative', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_orientation.ind },
+            { label: 'ang_min', documentation: i18n.part_type_orientation.ang_min },
+            { label: 'ang_max', documentation: i18n.part_type_orientation.ang_max },
+            { label: 'ang_incr', documentation: i18n.part_type_orientation.ang_incr },
+            { label: 'ang_wiggle', documentation: i18n.part_type_orientation.ang_wiggle },
+            { label: 'ang_relative', documentation: i18n.part_type_orientation.ang_relative }
         ],
         signature: '(ind, ang_min, ang_max, ang_incr, ang_wiggle, ang_relative)'
     },
 	part_type_scale: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_scale.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale }
+            { label: 'ind', documentation: i18n.part_type_scale.ind },
+            { label: 'xscale', documentation: i18n.part_type_scale.xscale },
+            { label: 'yscale', documentation: i18n.part_type_scale.yscale }
         ],
         signature: '(ind, xscale, yscale)'
     },
 	part_type_shape: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_shape.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'shape', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_shape.ind },
+            { label: 'shape', documentation: i18n.part_type_shape.shape }
         ],
         signature: '(ind, shape)'
     },
 	part_type_size: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_size.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'size_min', documentation: i18n. },
-            { label: 'size_max', documentation: i18n. },
-            { label: 'size_incr', documentation: i18n. },
-            { label: 'size_wiggle', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_size.ind },
+            { label: 'size_min', documentation: i18n.part_type_size.size_min },
+            { label: 'size_max', documentation: i18n.part_type_size.size_max },
+            { label: 'size_incr', documentation: i18n.part_type_size.size_incr },
+            { label: 'size_wiggle', documentation: i18n.part_type_size.size_wiggle }
         ],
         signature: '(ind, size_min, size_max, size_incr, size_wiggle)'
     },
 	part_type_speed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_speed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'speed_min', documentation: i18n. },
-            { label: 'speed_max', documentation: i18n. },
-            { label: 'speed_incr', documentation: i18n. },
-            { label: 'speed_wiggle', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_speed.ind },
+            { label: 'speed_min', documentation: i18n.part_type_speed.speed_min },
+            { label: 'speed_max', documentation: i18n.part_type_speed.speed_max },
+            { label: 'speed_incr', documentation: i18n.part_type_speed.speed_incr },
+            { label: 'speed_wiggle', documentation: i18n.part_type_speed.speed_wiggle }
         ],
         signature: '(ind, speed_min, speed_max, speed_incr, speed_wiggle)'
     },
 	part_type_sprite: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_sprite.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'sprite', documentation: i18n..sprite },
-            { label: 'animat', documentation: i18n. },
-            { label: 'stretch', documentation: i18n. },
-            { label: 'random', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_sprite.ind },
+            { label: 'sprite', documentation: i18n.part_type_sprite.sprite },
+            { label: 'animat', documentation: i18n.part_type_sprite.animat },
+            { label: 'stretch', documentation: i18n.part_type_sprite.stretch },
+            { label: 'random', documentation: i18n.part_type_sprite.random }
         ],
         signature: '(ind, sprite, animat, stretch, random)'
     },
 	part_type_step: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.part_type_step.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'step_number', documentation: i18n. },
-            { label: 'step_type', documentation: i18n. }
+            { label: 'ind', documentation: i18n.part_type_step.ind },
+            { label: 'step_number', documentation: i18n.part_type_step.step_number },
+            { label: 'step_type', documentation: i18n.part_type_step.step_type }
         ],
         signature: '(ind, step_number, step_type)'
     },
 	path_add: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_add.desc,
         available: datasimple.all
     },
 	path_add_point: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_add_point.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'ind', documentation: i18n.path_add_point.ind },
+            { label: 'x', documentation: i18n.path_add_point.x },
+            { label: 'y', documentation: i18n.path_add_point.y },
+            { label: 'speed', documentation: i18n.path_add_point.speed }
         ],
         signature: '(ind, x, y, speed)'
     },
 	path_append: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_append.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'path', documentation: i18n..path }
+            { label: 'ind', documentation: i18n.path_append.ind },
+            { label: 'path', documentation: i18n.path_append.path }
         ],
         signature: '(ind, path)'
     },
 	path_assign: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_assign.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'ind', documentation: i18n.path_assign.ind },
+            { label: 'x', documentation: i18n.path_assign.x },
+            { label: 'y', documentation: i18n.path_assign.y },
+            { label: 'speed', documentation: i18n.path_assign.speed }
         ],
         signature: '(ind, x, y, speed)'
     },
 	path_change_point: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_change_point.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'n', documentation: i18n..n },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'ind', documentation: i18n.path_change_point.ind },
+            { label: 'n', documentation: i18n.path_change_point.n },
+            { label: 'x', documentation: i18n.path_change_point.x },
+            { label: 'y', documentation: i18n.path_change_point.y },
+            { label: 'speed', documentation: i18n.path_change_point.speed }
         ],
         signature: '(ind, n, x, y, speed)'
     },
 	path_clear_points: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_clear_points.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_clear_points.ind }
         ],
         signature: '(ind)'
     },
 	path_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_delete.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_delete.ind }
         ],
         signature: '(ind)'
     },
 	path_delete_point: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_delete_point.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'n', documentation: i18n..n }
+            { label: 'ind', documentation: i18n.path_delete_point.ind },
+            { label: 'n', documentation: i18n.path_delete_point.n }
         ],
         signature: '(ind, n)'
     },
 	path_duplicate: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_duplicate.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_duplicate.ind }
         ],
         signature: '(ind)'
     },
 	path_end: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_end.desc,
         available: datasimple.all
     },
 	path_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_exists.ind }
         ],
         signature: '(ind)'
     },
 	path_flip: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_flip.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_flip.ind }
         ],
         signature: '(ind)'
     },
 	path_get_closed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_closed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_get_closed.ind }
         ],
         signature: '(ind)'
     },
 	path_get_kind: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_kind.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_get_kind.ind }
         ],
         signature: '(ind)'
     },
 	path_get_length: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_length.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_get_length.ind }
         ],
         signature: '(ind)'
     },
 	path_get_name: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_name.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_get_name.ind }
         ],
         signature: '(ind)'
     },
 	path_get_number: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_number.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_get_number.ind }
         ],
         signature: '(ind)'
     },
 	path_get_point_speed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_point_speed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'n', documentation: i18n..n }
+            { label: 'ind', documentation: i18n.path_get_point_speed.ind },
+            { label: 'n', documentation: i18n.path_get_point_speed.n }
         ],
         signature: '(ind, n)'
     },
 	path_get_point_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_point_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'n', documentation: i18n..n }
+            { label: 'ind', documentation: i18n.path_get_point_x.ind },
+            { label: 'n', documentation: i18n.path_get_point_x.n }
         ],
         signature: '(ind, n)'
     },
 	path_get_point_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_point_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'n', documentation: i18n..n }
+            { label: 'ind', documentation: i18n.path_get_point_y.ind },
+            { label: 'n', documentation: i18n.path_get_point_y.n }
         ],
         signature: '(ind, n)'
     },
 	path_get_precision: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_precision.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_get_precision.ind }
         ],
         signature: '(ind)'
     },
 	path_get_speed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_speed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'pos', documentation: i18n..pos }
+            { label: 'ind', documentation: i18n.path_get_speed.ind },
+            { label: 'pos', documentation: i18n.path_get_speed.pos }
         ],
         signature: '(ind, pos)'
     },
 	path_get_time: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_time.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'ind', documentation: i18n.path_get_time.ind },
+            { label: 'speed', documentation: i18n.path_get_time.speed }
         ],
         signature: '(ind, speed)'
     },
 	path_get_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'pos', documentation: i18n..pos }
+            { label: 'ind', documentation: i18n.path_get_x.ind },
+            { label: 'pos', documentation: i18n.path_get_x.pos }
         ],
         signature: '(ind, pos)'
     },
 	path_get_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_get_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'pos', documentation: i18n..pos }
+            { label: 'ind', documentation: i18n.path_get_y.ind },
+            { label: 'pos', documentation: i18n.path_get_y.pos }
         ],
         signature: '(ind, pos)'
     },
 	path_insert_point: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_insert_point.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'n', documentation: i18n..n },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'ind', documentation: i18n.path_insert_point.ind },
+            { label: 'n', documentation: i18n.path_insert_point.n },
+            { label: 'x', documentation: i18n.path_insert_point.x },
+            { label: 'y', documentation: i18n.path_insert_point.y },
+            { label: 'speed', documentation: i18n.path_insert_point.speed }
         ],
         signature: '(ind, n, x, y, speed)'
     },
 	path_mirror: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_mirror.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_mirror.ind }
         ],
         signature: '(ind)'
     },
 	path_rescale: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_rescale.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale }
+            { label: 'ind', documentation: i18n.path_rescale.ind },
+            { label: 'xscale', documentation: i18n.path_rescale.xscale },
+            { label: 'yscale', documentation: i18n.path_rescale.yscale }
         ],
         signature: '(ind, xscale, yscale)'
     },
 	path_reverse: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_reverse.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.path_reverse.ind }
         ],
         signature: '(ind)'
     },
 	path_rotate: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_rotate.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'ind', documentation: i18n.path_rotate.ind },
+            { label: 'angle', documentation: i18n.path_rotate.angle }
         ],
         signature: '(ind, angle)'
     },
 	path_set_closed: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_set_closed.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'closed', documentation: i18n. }
+            { label: 'ind', documentation: i18n.path_set_closed.ind },
+            { label: 'closed', documentation: i18n.path_set_closed.closed }
         ],
         signature: '(ind, closed)'
     },
 	path_set_kind: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_set_kind.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'ind', documentation: i18n.path_set_kind.ind },
+            { label: 'kind', documentation: i18n.path_set_kind.kind }
         ],
         signature: '(ind, kind)'
     },
 	path_set_precision: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_set_precision.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'prec', documentation: i18n..prec }
+            { label: 'ind', documentation: i18n.path_set_precision.ind },
+            { label: 'prec', documentation: i18n.path_set_precision.prec }
         ],
         signature: '(ind, prec)'
     },
 	path_shift: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_shift.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xshift', documentation: i18n. },
-            { label: 'yshift', documentation: i18n. }
+            { label: 'ind', documentation: i18n.path_shift.ind },
+            { label: 'xshift', documentation: i18n.path_shift.xshift },
+            { label: 'yshift', documentation: i18n.path_shift.yshift }
         ],
         signature: '(ind, xshift, yshift)'
     },
 	path_start: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.path_start.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'endaction', documentation: i18n. },
-            { label: 'absolute', documentation: i18n. }
+            { label: 'path', documentation: i18n.path_start.path },
+            { label: 'speed', documentation: i18n.path_start.speed },
+            { label: 'endaction', documentation: i18n.path_start.endaction },
+            { label: 'absolute', documentation: i18n.path_start.aboslute }
         ],
         signature: '(path, speed, endaction, absolute)'
     },
 	physics_apply_angular_impulse: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_apply_angular_impulse.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'impulse', documentation: i18n. }
+            { label: 'impulse', documentation: i18n.physics_apply_angular_impulse.impulse }
         ],
         signature: '(impulse)'
     },
 	physics_apply_force: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_apply_force.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'xpos', documentation: i18n..xpos },
-            { label: 'ypos', documentation: i18n..ypos },
-            { label: 'xforce', documentation: i18n. },
-            { label: 'yforce', documentation: i18n. }
+            { label: 'xpos', documentation: i18n.physics_apply_force.xpos },
+            { label: 'ypos', documentation: i18n.physics_apply_force.ypos },
+            { label: 'xforce', documentation: i18n.physics_apply_force.xforce },
+            { label: 'yforce', documentation: i18n.physics_apply_force.yforce }
         ],
         signature: '(xpos, ypos, xforce, yforce)'
     },
 	physics_apply_impulse: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_apply_impulse.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'xpos', documentation: i18n..xpos },
-            { label: 'ypos', documentation: i18n..ypos },
-            { label: 'ximpulse', documentation: i18n. },
-            { label: 'yimpulse', documentation: i18n. }
+            { label: 'xpos', documentation: i18n.physics_apply_impulse.xpos },
+            { label: 'ypos', documentation: i18n.physics_apply_impulse.ypos },
+            { label: 'ximpulse', documentation: i18n.physics_apply_impulse.ximpulse },
+            { label: 'yimpulse', documentation: i18n.physics_apply_impulse.yimpulse }
         ],
         signature: '(xpos, ypos, ximpulse, yimpulse)'
     },
 	physics_apply_local_force: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_apply_local_force.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'xlocal', documentation: i18n. },
-            { label: 'ylocal', documentation: i18n. },
-            { label: 'xforce_local', documentation: i18n. },
-            { label: 'yforce_local', documentation: i18n. }
+            { label: 'xlocal', documentation: i18n.physics_apply_local_force.xlocal },
+            { label: 'ylocal', documentation: i18n.physics_apply_local_force.ylocal },
+            { label: 'xforce_local', documentation: i18n.physics_apply_local_force.xforce_local },
+            { label: 'yforce_local', documentation: i18n.physics_apply_local_force.yforce_local }
         ],
         signature: '(xlocal, ylocal, xforce_local, yforce_local)'
     },
 	physics_apply_local_impulse: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_apply_local_impulse.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'xlocal', documentation: i18n. },
-            { label: 'ylocal', documentation: i18n. },
-            { label: 'ximpulse_local', documentation: i18n. },
-            { label: 'yimpulse_local', documentation: i18n. }
+            { label: 'xlocal', documentation: i18n.physics_apply_local_impulse.xlocal },
+            { label: 'ylocal', documentation: i18n.physics_apply_local_impulse.ylocal },
+            { label: 'ximpulse_local', documentation: i18n.physics_apply_local_impulse.ximpulse_local },
+            { label: 'yimpulse_local', documentation: i18n.physics_apply_local_impulse.yimpulse_local }
         ],
         signature: '(xlocal, ylocal, ximpulse_local, yimpulse_local)'
     },
 	physics_apply_torque: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_apply_torque.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'torque', documentation: i18n. }
+            { label: 'torque', documentation: i18n.physics_apply_torque.torque }
         ],
         signature: '(torque)'
     },
 	physics_draw_debug: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_draw_debug.desc,
         available: datasimple.gms1
     },
 	physics_fixture_add_point: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_add_point.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'local_x', documentation: i18n. },
-            { label: 'local_y', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_add_point.fixture },
+            { label: 'local_x', documentation: i18n.physics_fixture_add_point.local_x },
+            { label: 'local_y', documentation: i18n.physics_fixture_add_point.local_y }
         ],
         signature: '(fixture, local_x, local_y)'
     },
 	physics_fixture_bind: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_bind.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'fixture', documentation: i18n.physics_fixture_bind.fixture },
+            { label: 'obj', documentation: i18n.physics_fixture_bind.obj }
         ],
         signature: '(fixture, obj)'
     },
 	physics_fixture_bind_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_bind_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj },
-            { label: 'xo', documentation: i18n. },
-            { label: 'yo', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_bind_ext.fixture },
+            { label: 'obj', documentation: i18n.physics_fixture_bind_ext.obj },
+            { label: 'xo', documentation: i18n.physics_fixture_bind_ext.xo },
+            { label: 'yo', documentation: i18n.physics_fixture_bind_ext.yo }
         ],
         signature: '(fixture, obj, xo, yo)'
     },
 	physics_fixture_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_create.desc,
         available: datasimple.gms1
     },
 	physics_fixture_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_delete.fixture }
         ],
         signature: '(fixture)'
     },
 	physics_fixture_set_angular_damping: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_angular_damping.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'damping', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_angular_damping.fixture },
+            { label: 'damping', documentation: i18n.physics_fixture_set_angular_damping.damping }
         ],
         signature: '(fixture, damping)'
     },
 	physics_fixture_set_awake: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_awake.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'flag', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_awake.fixture },
+            { label: 'flag', documentation: i18n.physics_fixture_set_awake.flag }
         ],
         signature: '(fixture, flag)'
     },
 	physics_fixture_set_box_shape: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_box_shape.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'halfWidth', documentation: i18n. },
-            { label: 'halfHeight', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_box_shape.fixture },
+            { label: 'halfWidth', documentation: i18n.physics_fixture_set_box_shape.halfWidth },
+            { label: 'halfHeight', documentation: i18n.physics_fixture_set_box_shape.halfHeight }
         ],
         signature: '(fixture, halfWidth, halfHeight)'
     },
 	physics_fixture_set_chain_shape: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_chain_shape.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'loop', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_chain_shape.fixture },
+            { label: 'loop', documentation: i18n.physics_fixture_set_chain_shape.loop }
         ],
         signature: '(fixture, loop)'
     },
 	physics_fixture_set_circle_shape: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_circle_shape.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'circleRadius', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_circle_shape.fixture },
+            { label: 'circleRadius', documentation: i18n.physics_fixture_set_circle_shape.circleRadius }
         ],
         signature: '(fixture, circleRadius)'
     },
 	physics_fixture_set_collision_group: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_collision_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'group', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_collision_group.fixture },
+            { label: 'group', documentation: i18n.physics_fixture_set_collision_group.group }
         ],
         signature: '(fixture, group)'
     },
 	physics_fixture_set_density: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_density.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'density', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_density.fixture },
+            { label: 'density', documentation: i18n.physics_fixture_set_density.density }
         ],
         signature: '(fixture, density)'
     },
 	physics_fixture_set_edge_shape: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_edge_shape.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'local_x1', documentation: i18n. },
-            { label: 'local_y1', documentation: i18n. },
-            { label: 'local_x2', documentation: i18n. },
-            { label: 'local_y2', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_edge_shape.fixture },
+            { label: 'local_x1', documentation: i18n.physics_fixture_set_edge_shape.local_x1 },
+            { label: 'local_y1', documentation: i18n.physics_fixture_set_edge_shape.local_y1 },
+            { label: 'local_x2', documentation: i18n.physics_fixture_set_edge_shape.local_x2 },
+            { label: 'local_y2', documentation: i18n.physics_fixture_set_edge_shape.local_y2 }
         ],
         signature: '(fixture, local_x1, local_y1, local_x2, local_y2)'
     },
 	physics_fixture_set_friction: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_friction.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'friction', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_friction.fixture },
+            { label: 'friction', documentation: i18n.physics_fixture_set_friction.friction }
         ],
         signature: '(fixture, friction)'
     },
 	physics_fixture_set_kinematic: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_kinematic.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_kinematic.fixture }
         ],
         signature: '(fixture)'
     },
 	physics_fixture_set_linear_damping: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_linear_damping.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'damping', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_linear_damping.fixture },
+            { label: 'damping', documentation: i18n.physics_fixture_set_linear_damping.damping }
         ],
         signature: '(fixture, damping)'
     },
 	physics_fixture_set_polygon_shape: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_polygon_shape.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_polygon_shape.fixture }
         ],
         signature: '(fixture)'
     },
 	physics_fixture_set_restitution: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_restitution.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'restitution', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_restitution.fixture },
+            { label: 'restitution', documentation: i18n.physics_fixture_set_restitution.restitution }
         ],
         signature: '(fixture, restitution)'
     },
 	physics_fixture_set_sensor: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_fixture_set_sensor.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'sensorState', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_fixture_set_sensor.fixture },
+            { label: 'sensorState', documentation: i18n.physics_fixture_set_sensor.sensorState }
         ],
         signature: '(fixture, sensorState)'
     },
 	physics_get_density: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_get_density.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_get_density.fixture }
         ],
         signature: '(fixture)'
     },
 	physics_get_friction: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_get_friction.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_get_friction.fixture }
         ],
         signature: '(fixture)'
     },
 	physics_get_restitution: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_get_restitution.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. }
+            { label: 'fixture', documentation: i18n.physics_get_restitution.fixture }
         ],
         signature: '(fixture)'
     },
 	physics_joint_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'joint', documentation: i18n. }
+            { label: 'joint', documentation: i18n.physics_joint_delete.joint }
         ],
         signature: '(joint)'
     },
 	physics_joint_distance_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_distance_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_1_x', documentation: i18n. },
-            { label: 'anchor_1_y', documentation: i18n. },
-            { label: 'anchor_2_x', documentation: i18n. },
-            { label: 'anchor_2_y', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_distance_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_distance_create.inst2 },
+            { label: 'anchor_1_x', documentation: i18n.physics_joint_distance_create.anchor_1_x },
+            { label: 'anchor_1_y', documentation: i18n.physics_joint_distance_create.anchor_1_y },
+            { label: 'anchor_2_x', documentation: i18n.physics_joint_distance_create.anchor_2_x },
+            { label: 'anchor_2_y', documentation: i18n.physics_joint_distance_create.anchor_2_y },
+            { label: 'collideInstances', documentation: i18n.physics_joint_distance_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, collideInstances)'
     },
 	physics_joint_enable_motor: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_enable_motor.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'joint', documentation: i18n. },
-            { label: 'motorState', documentation: i18n. }
+            { label: 'joint', documentation: i18n.physics_joint_enable_motor.joint },
+            { label: 'motorState', documentation: i18n.physics_joint_enable_motor.motorState }
         ],
         signature: '(joint, motorState)'
     },
 	physics_joint_friction_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_friction_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_x', documentation: i18n. },
-            { label: 'anchor_y', documentation: i18n. },
-            { label: 'max_force', documentation: i18n. },
-            { label: 'max_torque', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_friction_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_friction_create.inst2 },
+            { label: 'anchor_x', documentation: i18n.physics_joint_friction_create.anchor_x },
+            { label: 'anchor_y', documentation: i18n.physics_joint_friction_create.anchor_y },
+            { label: 'max_force', documentation: i18n.physics_joint_friction_create.max_force },
+            { label: 'max_torque', documentation: i18n.physics_joint_friction_create.max_torque },
+            { label: 'collideInstances', documentation: i18n.physics_joint_friction_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, collideInstances)'
     },
 	physics_joint_gear_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_gear_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'revoluteJoint', documentation: i18n. },
-            { label: 'prismaticJoint', documentation: i18n. },
-            { label: 'ratio', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_gear_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_gear_create.inst2 },
+            { label: 'revoluteJoint', documentation: i18n.physics_joint_gear_create.revoluteJoint },
+            { label: 'prismaticJoint', documentation: i18n.physics_joint_gear_create.prismaticJoint },
+            { label: 'ratio', documentation: i18n.physics_joint_gear_create.ratio }
         ],
         signature: '(inst1, inst2, revoluteJoint, prismaticJoint, ratio)'
     },
 	physics_joint_get_value: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_get_value.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'joint', documentation: i18n. },
-            { label: 'field', documentation: i18n. }
+            { label: 'joint', documentation: i18n.physics_joint_get_value.joint },
+            { label: 'field', documentation: i18n.physics_joint_get_value.field }
         ],
         signature: '(joint, field)'
     },
 	physics_joint_prismatic_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_prismatic_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_x', documentation: i18n. },
-            { label: 'anchor_y', documentation: i18n. },
-            { label: 'axis_x', documentation: i18n. },
-            { label: 'axis_y', documentation: i18n. },
-            { label: 'lower_translation_limit', documentation: i18n. },
-            { label: 'upper_translation_limit', documentation: i18n. },
-            { label: 'enable_limit', documentation: i18n. },
-            { label: 'max_motor_force', documentation: i18n. },
-            { label: 'motor_speed', documentation: i18n. },
-            { label: 'enable_motor', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_prismatic_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_prismatic_create.inst2 },
+            { label: 'anchor_x', documentation: i18n.physics_joint_prismatic_create.anchor_x },
+            { label: 'anchor_y', documentation: i18n.physics_joint_prismatic_create.anchor_y },
+            { label: 'axis_x', documentation: i18n.physics_joint_prismatic_create.axis_x },
+            { label: 'axis_y', documentation: i18n.physics_joint_prismatic_create.axis_y },
+            { label: 'lower_translation_limit', documentation: i18n.physics_joint_prismatic_create.lower_translation_limit },
+            { label: 'upper_translation_limit', documentation: i18n.physics_joint_prismatic_create.upper_translation_limit },
+            { label: 'enable_limit', documentation: i18n.physics_joint_prismatic_create.enable_limit },
+            { label: 'max_motor_force', documentation: i18n.physics_joint_prismatic_create.max_motor_force },
+            { label: 'motor_speed', documentation: i18n.physics_joint_prismatic_create.motor_speed },
+            { label: 'enable_motor', documentation: i18n.physics_joint_prismatic_create.enable_motor },
+            { label: 'collideInstances', documentation: i18n.physics_joint_prismatic_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, lower_translation_limit, upper_translation_limit, enable_limit, max_motor_force, motor_speed, enable_motor, collideInstances)'
     },
 	physics_joint_pulley_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_pulley_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_1_x', documentation: i18n. },
-            { label: 'anchor_1_y', documentation: i18n. },
-            { label: 'anchor_2_x', documentation: i18n. },
-            { label: 'anchor_2_y', documentation: i18n. },
-            { label: 'local_anchor_1_x', documentation: i18n. },
-            { label: 'local_anchor_1_y', documentation: i18n. },
-            { label: 'local_anchor_2_x', documentation: i18n. },
-            { label: 'local_anchor_2_y', documentation: i18n. },
-            { label: 'ratio', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_pulley_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_pulley_create.inst2 },
+            { label: 'anchor_1_x', documentation: i18n.physics_joint_pulley_create.anchor_1_x },
+            { label: 'anchor_1_y', documentation: i18n.physics_joint_pulley_create.anchor_1_y },
+            { label: 'anchor_2_x', documentation: i18n.physics_joint_pulley_create.anchor_2_x },
+            { label: 'anchor_2_y', documentation: i18n.physics_joint_pulley_create.anchor_2_y },
+            { label: 'local_anchor_1_x', documentation: i18n.physics_joint_pulley_create.local_anchor_1_x },
+            { label: 'local_anchor_1_y', documentation: i18n.physics_joint_pulley_create.local_anchor_1_y },
+            { label: 'local_anchor_2_x', documentation: i18n.physics_joint_pulley_create.local_anchor_2_x },
+            { label: 'local_anchor_2_y', documentation: i18n.physics_joint_pulley_create.local_anchor_2_y },
+            { label: 'ratio', documentation: i18n.physics_joint_pulley_create.ratio },
+            { label: 'collideInstances', documentation: i18n.physics_joint_pulley_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, local_anchor_1_x, local_anchor_1_y, local_anchor_2_x, local_anchor_2_y, ratio, collideInstances)'
     },
 	physics_joint_revolute_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_revolute_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_x', documentation: i18n. },
-            { label: 'anchor_y', documentation: i18n. },
-            { label: 'lower_translation_limit', documentation: i18n. },
-            { label: 'upper_translation_limit', documentation: i18n. },
-            { label: 'enable_limit', documentation: i18n. },
-            { label: 'max_motor_force', documentation: i18n. },
-            { label: 'motor_speed', documentation: i18n. },
-            { label: 'enable_motor', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_revolute_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_revolute_create.inst2 },
+            { label: 'anchor_x', documentation: i18n.physics_joint_revolute_create.anchor_x },
+            { label: 'anchor_y', documentation: i18n.physics_joint_revolute_create.anchor_y },
+            { label: 'lower_translation_limit', documentation: i18n.physics_joint_revolute_create.lower_translation_limit },
+            { label: 'upper_translation_limit', documentation: i18n.physics_joint_revolute_create.upper_translation_limit },
+            { label: 'enable_limit', documentation: i18n.physics_joint_revolute_create.enable_limit },
+            { label: 'max_motor_force', documentation: i18n.physics_joint_revolute_create.max_motor_force },
+            { label: 'motor_speed', documentation: i18n.physics_joint_revolute_create.motor_speed },
+            { label: 'enable_motor', documentation: i18n.physics_joint_revolute_create.enable_motor },
+            { label: 'collideInstances', documentation: i18n.physics_joint_revolute_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_x, anchor_y, lower_angle_limit, upper_angle_limit, enable_limit, max_motor_torque, motor_speed, enable_motor, collideInstances)'
     },
 	physics_joint_rope_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_rope_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_1_x', documentation: i18n. },
-            { label: 'anchor_1_y', documentation: i18n. },
-            { label: 'anchor_2_x', documentation: i18n. },
-            { label: 'anchor_2_y', documentation: i18n. },
-            { label: 'maxLength', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_rope_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_rope_create.inst2 },
+            { label: 'anchor_1_x', documentation: i18n.physics_joint_rope_create.anchor_1_x },
+            { label: 'anchor_1_y', documentation: i18n.physics_joint_rope_create.anchor_1_y },
+            { label: 'anchor_2_x', documentation: i18n.physics_joint_rope_create.anchor_2_x },
+            { label: 'anchor_2_y', documentation: i18n.physics_joint_rope_create.anchor_2_y },
+            { label: 'maxLength', documentation: i18n.physics_joint_rope_create.maxLength },
+            { label: 'collideInstances', documentation: i18n.physics_joint_rope_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_1_x, anchor_1_y, anchor_2_x, anchor_2_y, maxLength, collideInstances)'
     },
 	physics_joint_set_value: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_set_value.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'joint', documentation: i18n. },
-            { label: 'field', documentation: i18n. },
-            { label: 'value', documentation: i18n..value }
+            { label: 'joint', documentation: i18n.physics_joint_set_value.joint },
+            { label: 'field', documentation: i18n.physics_joint_set_value.field },
+            { label: 'value', documentation: i18n.physics_joint_set_value.value }
         ],
         signature: '(joint, field, value)'
     },
 	physics_joint_weld_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.physics_joint_weld_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_x', documentation: i18n. },
-            { label: 'anchor_y', documentation: i18n. },
-            { label: 'ref_angle', documentation: i18n. },
-            { label: 'freq_hz', documentation: i18n. },
-            { label: 'damping_ratio', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_weld_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_weld_create.inst2 },
+            { label: 'anchor_x', documentation: i18n.physics_joint_weld_create.anchor_x },
+            { label: 'anchor_y', documentation: i18n.physics_joint_weld_create.anchor_y },
+            { label: 'ref_angle', documentation: i18n.physics_joint_weld_create.ref_angle },
+            { label: 'freq_hz', documentation: i18n.physics_joint_weld_create.freq_hz },
+            { label: 'damping_ratio', documentation: i18n.physics_joint_weld_create.damping_ratio },
+            { label: 'collideInstances', documentation: i18n.physics_joint_weld_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_x, anchor_y, ref_angle, freq_hz, damping_ratio, collideInstances)'
     },
@@ -8795,18 +8795,18 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'inst1', documentation: i18n. },
-            { label: 'inst2', documentation: i18n. },
-            { label: 'anchor_x', documentation: i18n. },
-            { label: 'anchor_y', documentation: i18n. },
-            { label: 'axis_x', documentation: i18n. },
-            { label: 'axis_y', documentation: i18n. },
-            { label: 'enableMotor', documentation: i18n. },
-            { label: 'max_motor_torque', documentation: i18n. },
-            { label: 'motor_speed', documentation: i18n. },
-            { label: 'freq_hz', documentation: i18n. },
-            { label: 'damping_ratio', documentation: i18n. },
-            { label: 'collideInstances', documentation: i18n. }
+            { label: 'inst1', documentation: i18n.physics_joint_wheel_create.inst1 },
+            { label: 'inst2', documentation: i18n.physics_joint_wheel_create.inst2 },
+            { label: 'anchor_x', documentation: i18n.physics_joint_wheel_create.anchor_x },
+            { label: 'anchor_y', documentation: i18n.physics_joint_wheel_create.anchor_y },
+            { label: 'axis_x', documentation: i18n.physics_joint_wheel_create.axis_x },
+            { label: 'axis_y', documentation: i18n.physics_joint_wheel_create.axis_y },
+            { label: 'enableMotor', documentation: i18n.physics_joint_wheel_create.enableMotor },
+            { label: 'max_motor_torque', documentation: i18n.physics_joint_wheel_create.max_motor_torque },
+            { label: 'motor_speed', documentation: i18n.physics_joint_wheel_create.motor_speed },
+            { label: 'freq_hz', documentation: i18n.physics_joint_wheel_create.freq_hz },
+            { label: 'damping_ratio', documentation: i18n.physics_joint_wheel_create.damping_ratio },
+            { label: 'collideInstances', documentation: i18n.physics_joint_wheel_create.collideInstances }
         ],
         signature: '(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, enableMotor, max_motor_torque, motor_speed, freq_hz, damping_ratio, collideInstances)'
     },
@@ -8939,7 +8939,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9000,7 +9000,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9020,7 +9020,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9028,7 +9028,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9036,7 +9036,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9044,7 +9044,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9052,7 +9052,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. },
+            { label: 'group', documentation: i18n..group },
             { label: 'buffer', documentation: i18n..buffer },
             { label: 'dataFlags', documentation: i18n. }
         ],
@@ -9062,7 +9062,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9070,7 +9070,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9078,7 +9078,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9086,7 +9086,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9094,7 +9094,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9102,7 +9102,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. }
+            { label: 'group', documentation: i18n..group }
         ],
         signature: '(group)'
     },
@@ -9132,7 +9132,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'damping', documentation: i18n. }
+            { label: 'damping', documentation: i18n..damping }
         ],
         signature: '(damping)'
     },
@@ -9140,7 +9140,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'density', documentation: i18n. }
+            { label: 'density', documentation: i18n..density }
         ],
         signature: '(density)'
     },
@@ -9165,7 +9165,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'group', documentation: i18n. },
+            { label: 'group', documentation: i18n..group },
             { label: 'groupflags', documentation: i18n. }
         ],
         signature: '(group, groupflags)'
@@ -9207,8 +9207,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'density', documentation: i18n. }
+            { label: 'fixture', documentation: i18n..fixture },
+            { label: 'density', documentation: i18n..density }
         ],
         signature: '(fixture, density)'
     },
@@ -9216,8 +9216,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'friction', documentation: i18n. }
+            { label: 'fixture', documentation: i18n..fixture },
+            { label: 'friction', documentation: i18n..friction }
         ],
         signature: '(fixture, friction)'
     },
@@ -9225,8 +9225,8 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'fixture', documentation: i18n. },
-            { label: 'restitution', documentation: i18n. }
+            { label: 'fixture', documentation: i18n..fixture },
+            { label: 'restitution', documentation: i18n..restitution }
         ],
         signature: '(fixture, restitution)'
     },
@@ -9481,7 +9481,7 @@ exports.globalfunctions = {
             { label: 'fire_time', documentation: i18n. },
             { label: 'title', documentation: i18n..title },
             { label: 'message', documentation: i18n..message },
-            { label: 'data', documentation: i18n. }
+            { label: 'data', documentation: i18n..data }
         ],
         signature: '(fire_time, title, message, data)'
     },
@@ -9731,7 +9731,7 @@ exports.globalfunctions = {
         available: datasimple.all,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'pers', documentation: i18n. }
+            { label: 'pers', documentation: i18n..pers }
         ],
         signature: '(ind, pers)'
     },
@@ -10100,8 +10100,8 @@ exports.globalfunctions = {
             { label: 'name', documentation: i18n..name },
             { label: 'sprite', documentation: i18n..sprite },
             { label: 'ind', documentation: i18n..ind },
-            { label: 'xo', documentation: i18n. },
-            { label: 'yo', documentation: i18n. },
+            { label: 'xo', documentation: i18n..xo },
+            { label: 'yo', documentation: i18n..yo },
             { label: 'xs', documentation: i18n. },
             { label: 'ys', documentation: i18n. },
             { label: 'ro', documentation: i18n. }
@@ -10683,7 +10683,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'steam_filename', documentation: i18n. },
-            { label: 'data', documentation: i18n. },
+            { label: 'data', documentation: i18n..data },
             { label: 'size', documentation: i18n..size }
         ],
         signature: '(steam_filename, data, size)'
@@ -12437,7 +12437,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
-            { label: 'flag', documentation: i18n. }
+            { label: 'flag', documentation: i18n..flag }
         ],
         signature: '(flag)'
     },
@@ -12534,7 +12534,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
-            { label: 'flag', documentation: i18n. }
+            { label: 'flag', documentation: i18n..flag }
         ],
         signature: '(flag)'
     },
@@ -13579,7 +13579,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'ind', documentation: i18n..ind },
             { label: 'bind', documentation: i18n. },
-            { label: 'vis', documentation: i18n. },
+            { label: 'vis', documentation: i18n..vis },
             { label: 'fore', documentation: i18n. },
             { label: 'back', documentation: i18n. },
             { label: 'x', documentation: i18n..x },
@@ -13604,7 +13604,7 @@ exports.globalfunctions = {
             { label: 'hieght', documentation: i18n. },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(ind, back, left, top, width, height, x, y, depth)'
     },
@@ -13620,7 +13620,7 @@ exports.globalfunctions = {
             { label: 'hieght', documentation: i18n. },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'xscale', documentation: i18n..xscale },
             { label: 'yscale', documentation: i18n..yscale },
             { label: 'alpha', documentation: i18n..alpha }
@@ -13646,7 +13646,7 @@ exports.globalfunctions = {
             { label: 'height', documentation: i18n..height },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(background, left, top, width, height, x, y, depth)'
     },
@@ -13726,7 +13726,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(depth)'
     },
@@ -13798,7 +13798,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(depth)'
     },
@@ -13806,7 +13806,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y }
         ],
@@ -13816,7 +13816,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'newdepth', documentation: i18n. }
         ],
         signature: '(depth, newdepth)'
@@ -13825,7 +13825,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y }
         ],
@@ -13835,7 +13835,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(depth)'
     },
@@ -13843,7 +13843,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y }
         ],
@@ -13853,7 +13853,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(depth)'
     },
@@ -13889,7 +13889,7 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(id, depth)'
     },
@@ -13947,7 +13947,7 @@ exports.globalfunctions = {
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(ind, depth)'
     },
@@ -14474,7 +14474,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(depth)'
     },
@@ -14937,7 +14937,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'ind', documentation: i18n..ind },
             { label: 'vind', documentation: i18n. },
-            { label: 'vis', documentation: i18n. },
+            { label: 'vis', documentation: i18n..vis },
             { label: 'xview', documentation: i18n. },
             { label: 'yview', documentation: i18n. },
             { label: 'wview', documentation: i18n. },
@@ -15537,7 +15537,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15546,7 +15546,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15554,7 +15554,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15563,7 +15563,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15571,7 +15571,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15580,12 +15580,12 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
             { label: 'force', documentation: i18n. },
             { label: 'dist', documentation: i18n. },
             { label: 'kind', documentation: i18n..kind },
-            { label: 'additive', documentation: i18n. }
+            { label: 'additive', documentation: i18n..additive }
         ],
         signature: '(ps, ind, force, dist, kind, additive)'
     },
@@ -15593,7 +15593,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y }
@@ -15604,7 +15604,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15613,7 +15613,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15621,7 +15621,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15630,7 +15630,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15638,7 +15638,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15647,7 +15647,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
             { label: 'kind', documentation: i18n..kind }
         ],
@@ -15657,13 +15657,13 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n. },
-            { label: 'xmax', documentation: i18n. },
-            { label: 'ymin', documentation: i18n. },
-            { label: 'ymax', documentation: i18n. },
-            { label: 'shape', documentation: i18n. }
+            { label: 'xmin', documentation: i18n..xmin },
+            { label: 'xmax', documentation: i18n..xmax },
+            { label: 'ymin', documentation: i18n..ymin },
+            { label: 'ymax', documentation: i18n..ymax },
+            { label: 'shape', documentation: i18n..shape }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
@@ -15671,7 +15671,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
             { label: 'parttype1', documentation: i18n. },
             { label: 'parttype2', documentation: i18n. }
@@ -15682,7 +15682,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15691,7 +15691,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15699,7 +15699,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15708,7 +15708,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15716,7 +15716,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15725,7 +15725,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
             { label: 'amount', documentation: i18n..amount }
         ],
@@ -15735,7 +15735,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
             { label: 'kind', documentation: i18n..kind }
         ],
@@ -15745,12 +15745,12 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n. },
-            { label: 'xmax', documentation: i18n. },
-            { label: 'ymin', documentation: i18n. },
-            { label: 'ymax', documentation: i18n. }
+            { label: 'xmin', documentation: i18n..xmin },
+            { label: 'xmax', documentation: i18n..xmax },
+            { label: 'ymin', documentation: i18n..ymin },
+            { label: 'ymax', documentation: i18n..ymax }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax)'
     },
@@ -15758,7 +15758,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15767,7 +15767,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15775,7 +15775,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15784,7 +15784,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. }
+            { label: 'ps', documentation: i18n..ps }
         ],
         signature: '(ps)'
     },
@@ -15792,7 +15792,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind }
         ],
         signature: '(ps, ind)'
@@ -15801,13 +15801,13 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n. },
+            { label: 'ps', documentation: i18n..ps },
             { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n. },
-            { label: 'xmax', documentation: i18n. },
-            { label: 'ymin', documentation: i18n. },
-            { label: 'ymax', documentation: i18n. },
-            { label: 'shape', documentation: i18n. }
+            { label: 'xmin', documentation: i18n..xmin },
+            { label: 'xmax', documentation: i18n..xmax },
+            { label: 'ymin', documentation: i18n..ymin },
+            { label: 'ymax', documentation: i18n..ymax },
+            { label: 'shape', documentation: i18n..shape }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
@@ -16077,7 +16077,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'factor', documentation: i18n. }
+            { label: 'factor', documentation: i18n..factor }
         ],
         signature: '(factor)'
     },
@@ -16087,7 +16087,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'snd', documentation: i18n. },
             { label: 'wetdry', documentation: i18n. },
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'feedback', documentation: i18n. },
             { label: 'frequency', documentation: i18n. },
             { label: 'wave', documentation: i18n. },
@@ -16105,7 +16105,7 @@ exports.globalfunctions = {
             { label: 'attack', documentation: i18n. },
             { label: 'release', documentation: i18n. },
             { label: 'threshold', documentation: i18n. },
-            { label: 'ratio', documentation: i18n. },
+            { label: 'ratio', documentation: i18n..ratio },
             { label: 'delay', documentation: i18n. }
         ],
         signature: '(snd, gain, attack, release, threshold, ratio, delay)'
@@ -16140,7 +16140,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'snd', documentation: i18n. },
             { label: 'wetdry', documentation: i18n. },
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'feedback', documentation: i18n. },
             { label: 'frequency', documentation: i18n. },
             { label: 'wave', documentation: i18n. },
@@ -16167,7 +16167,7 @@ exports.globalfunctions = {
             { label: 'gain', documentation: i18n. },
             { label: 'mix', documentation: i18n. },
             { label: 'time', documentation: i18n..time },
-            { label: 'ratio', documentation: i18n. }
+            { label: 'ratio', documentation: i18n..ratio }
         ],
         signature: '(snd, gain, mix, time, ratio)'
     },
@@ -16252,7 +16252,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
-            { label: 'vis', documentation: i18n. }
+            { label: 'vis', documentation: i18n..vis }
         ],
         signature: '(vis)'
     },
@@ -16353,7 +16353,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'fname', documentation: i18n..fname },
-            { label: 'loop', documentation: i18n. }
+            { label: 'loop', documentation: i18n..loop }
         ],
         signature: '(fname, loop)'
     },
@@ -16790,7 +16790,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'ind', documentation: i18n..ind },
             { label: 'vind', documentation: i18n. },
-            { label: 'vis', documentation: i18n. },
+            { label: 'vis', documentation: i18n..vis },
             { label: 'xport', documentation: i18n. },
             { label: 'yport', documentation: i18n. },
             { label: 'wport', documentation: i18n. },
@@ -17550,7 +17550,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(depth)'
     },
@@ -17566,7 +17566,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'depth', documentation: i18n. },
+            { label: 'depth', documentation: i18n..depth },
             { label: 'name*', documentation: i18n. },
             { label: '...', documentation: i18n..more }
         ],
@@ -17791,7 +17791,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: i18n. },
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(layer_id, depth)'
     },
@@ -17825,7 +17825,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'force', documentation: i18n. },
-            { label: 'depth', documentation: i18n. }
+            { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(force, depth)'
     },
