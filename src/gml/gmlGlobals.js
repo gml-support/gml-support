@@ -6947,7 +6947,7 @@ exports.globalfunctions = {
         signature: '(hor, vert, margin)'
     },
 	mp_grid_add_cell: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_grid_add_cell.desc,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.mp_grid_add_cell.id },
@@ -6957,7 +6957,7 @@ exports.globalfunctions = {
         signature: '(id, h, v)'
     },
 	mp_grid_add_instances: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_grid_add_instances.desc,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.mp_grid_add_instances.id },
@@ -7012,7 +7012,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.mp_grid_create.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'left', documentation: i18n..mp_grid_createleft },
+            { label: 'left', documentation: i18n.mp_grid_create.left },
             { label: 'top', documentation: i18n.mp_grid_create.top },
             { label: 'hcells', documentation: i18n.mp_grid_create.heclls },
             { label: 'vcells', documentation: i18n.mp_grid_create.vcells },
@@ -7062,232 +7062,232 @@ exports.globalfunctions = {
         signature: '(id, path, xstart, ystart, xgoal, ygoal, allowdiag)'
     },
 	mp_grid_to_ds_grid: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_grid_to_ds_grid.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'src', documentation: i18n..src },
-            { label: 'dest', documentation: i18n..dest }
+            { label: 'src', documentation: i18n.mp_grid_to_ds_grid.src },
+            { label: 'dest', documentation: i18n.mp_grid_to_ds_grid.dest }
         ],
         signature: '(src, dest)'
     },
 	mp_linear_path: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_path.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'path', documentation: i18n.mp_linear_path.path },
+            { label: 'xg', documentation: i18n.mp_linear_path.xg },
+            { label: 'yg', documentation: i18n.mp_linear_path.yg },
+            { label: 'stepsize', documentation: i18n.mp_linear_path.stepsize },
+            { label: 'checkall', documentation: i18n.mp_linear_path.checkall }
         ],
         signature: '(path, xg, yg, stepsize, checkall)'
     },
 	mp_linear_path_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_path_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'path', documentation: i18n.mp_linear_path_object.path },
+            { label: 'xg', documentation: i18n.mp_linear_path_object.xg },
+            { label: 'yg', documentation: i18n.mp_linear_path_object.yg },
+            { label: 'stepsize', documentation: i18n.mp_linear_path_object.stepsize },
+            { label: 'obj', documentation: i18n.mp_linear_path_object.obj }
         ],
         signature: '(path, xg, yg, stepsize, obj)'
     },
 	mp_linear_step: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_step.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'x', documentation: i18n.mp_linear_step.x },
+            { label: 'y', documentation: i18n.mp_linear_step.y },
+            { label: 'speed', documentation: i18n.mp_linear_step.speed },
+            { label: 'checkall', documentation: i18n.mp_linear_step.checkall }
         ],
         signature: '(x, y, speed, checkall)'
     },
 	mp_linear_step_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_linear_step_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'x', documentation: i18n.mp_linear_step_object.x },
+            { label: 'y', documentation: i18n.mp_linear_step_object.y },
+            { label: 'speed', documentation: i18n.mp_linear_step_object.speed },
+            { label: 'obj', documentation: i18n.mp_linear_step_object.obj }
         ],
         signature: '(x, y, speed, obj)'
     },
 	mp_potential_path: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_path.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'factor', documentation: i18n. },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'path', documentation: i18n.mp_potential_path.path },
+            { label: 'xg', documentation: i18n.mp_potential_path.xg },
+            { label: 'yg', documentation: i18n.mp_potential_path.yg },
+            { label: 'stepsize', documentation: i18n.mp_potential_path.stepsize },
+            { label: 'factor', documentation: i18n.mp_potential_path.factor },
+            { label: 'checkall', documentation: i18n.mp_potential_path.checkall }
         ],
         signature: '(path, xg, yg, stepsize, factor, checkall)'
     },
 	mp_potential_path_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_path_object.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'path', documentation: i18n..path },
-            { label: 'xg', documentation: i18n. },
-            { label: 'yg', documentation: i18n. },
-            { label: 'stepsize', documentation: i18n. },
-            { label: 'factor', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'path', documentation: i18n.mp_potential_path_object.path },
+            { label: 'xg', documentation: i18n.mp_potential_path_object.xg },
+            { label: 'yg', documentation: i18n.mp_potential_path_object.yg },
+            { label: 'stepsize', documentation: i18n.mp_potential_path_object.stepsize },
+            { label: 'factor', documentation: i18n.mp_potential_path_object.factor },
+            { label: 'obj', documentation: i18n.mp_potential_path_object.obj }
         ],
         signature: '(path, xg, yg, stepsize, factor, obj)'
     },
 	mp_potential_settings: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_settings.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'maxrot', documentation: i18n. },
-            { label: 'rotstep', documentation: i18n. },
-            { label: 'ahead', documentation: i18n. },
-            { label: 'onspot', documentation: i18n. }
+            { label: 'maxrot', documentation: i18n.mp_potential_settings.maxrot },
+            { label: 'rotstep', documentation: i18n.mp_potential_settings.rotstep },
+            { label: 'ahead', documentation: i18n.mp_potential_settings.ahead },
+            { label: 'onspot', documentation: i18n.mp_potential_settings.onspot }
         ],
         signature: '(maxrot, rotstep, ahead, onspot)'
     },
 	mp_potential_step: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.mp_potential_step.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'checkall', documentation: i18n. }
+            { label: 'x', documentation: i18n.mp_potential_step.x },
+            { label: 'y', documentation: i18n.mp_potential_step.y },
+            { label: 'speed', documentation: i18n.mp_potential_step.speed },
+            { label: 'checkall', documentation: i18n.mp_potential_step.checkall }
         ],
         signature: '(x, y, speed, checkall)'
     },
 	mp_potential_step_object: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18nmp_potential_step_object..desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'speed', documentation: i18n..speed },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'x', documentation: i18n.mp_potential_step_object.x },
+            { label: 'y', documentation: i18n.mp_potential_step_object.y },
+            { label: 'speed', documentation: i18n.mp_potential_step_object.speed },
+            { label: 'obj', documentation: i18n.mp_potential_step_object.obj }
         ],
         signature: '(x, y, speed, obj)'
     },
 	network_connect: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_connect.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_connect.socket },
+            { label: 'url', documentation: i18n.network_connect.url },
+            { label: 'port', documentation: i18n.network_connect.port }
         ],
         signature: '(socket, url, port)'
     },
 	network_connect_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_connect_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_connect_raw.socket },
+            { label: 'url', documentation: i18n.network_connect_raw.url },
+            { label: 'port', documentation: i18n.network_connect_raw.port }
         ],
         signature: '(socket, url, port)'
     },
 	network_create_server: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_server.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'port', documentation: i18n. },
-            { label: 'maxclients', documentation: i18n. }
+            { label: 'type', documentation: i18n.network_create_server.type },
+            { label: 'port', documentation: i18n.network_create_server.port },
+            { label: 'maxclients', documentation: i18n.network_create_server.maxclients }
         ],
         signature: '(type, port, maxclients)'
     },
 	network_create_server_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_server_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'port', documentation: i18n. },
-            { label: 'maxclients', documentation: i18n. }
+            { label: 'type', documentation: i18n.network_create_server_raw.type },
+            { label: 'port', documentation: i18n.network_create_server_raw.port },
+            { label: 'maxclients', documentation: i18n.network_create_server_raw.maxclients }
         ],
         signature: '(type, port, maxclients)'
     },
 	network_create_socket: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_socket.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type }
+            { label: 'type', documentation: i18n.network_create_socket.type }
         ],
         signature: '(type)'
     },
 	network_create_socket_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_create_socket_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'port', documentation: i18n. }
+            { label: 'type', documentation: i18n.network_create_socket_ext.type },
+            { label: 'port', documentation: i18n.network_create_socket_ext.port }
         ],
         signature: '(type, port)'
     },
 	network_destroy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_destroy.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. }
+            { label: 'socket', documentation: i18n.network_destroy.socket }
         ],
         signature: '(socket)'
     },
 	network_resolve: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_resolve.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'url', documentation: i18n..url }
+            { label: 'url', documentation: i18n.network_resolve.url }
         ],
         signature: '(url)'
     },
 	network_send_broadcast: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_broadcast.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'port', documentation: i18n. },
-            { label: 'bufferid', documentation: i18n..bufferid },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_broadcast.socket },
+            { label: 'port', documentation: i18n.network_send_broadcast.port },
+            { label: 'bufferid', documentation: i18n.network_send_broadcast.bufferid },
+            { label: 'size', documentation: i18n.network_send_broadcast.size }
         ],
         signature: '(socket, port, bufferid, size)'
     },
 	network_send_packet: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18nnetwork_send_packet..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'bufferid', documentation: i18n..bufferid },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_packet.socket },
+            { label: 'bufferid', documentation: i18n.network_send_packet.bufferid },
+            { label: 'size', documentation: i18n.network_send_packet.size }
         ],
         signature: '(socket, bufferid, size)'
     },
 	network_send_raw: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_raw.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'bufferid', documentation: i18n..bufferid },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_raw.socket },
+            { label: 'bufferid', documentation: i18n.network_send_raw.bufferid },
+            { label: 'size', documentation: i18n.network_send_raw.size }
         ],
         signature: '(socket, buffer_id, size)'
     },
 	network_send_udp: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.network_send_udp.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
-            { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. },
-            { label: 'data', documentation: i18n. },
-            { label: 'size', documentation: i18n..size }
+            { label: 'socket', documentation: i18n.network_send_udp.socket },
+            { label: 'url', documentation: i18n.network_send_udp.url },
+            { label: 'port', documentation: i18n.network_send_udp.port },
+            { label: 'data', documentation: i18n.network_send_udp.data },
+            { label: 'size', documentation: i18n.network_send_udp.size }
         ],
         signature: '(socket, URL, port, data, size)'
     },
@@ -7295,10 +7295,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
+            { label: 'socket', documentation: i18n..socket },
             { label: 'url', documentation: i18n..url },
-            { label: 'port', documentation: i18n. },
-            { label: 'data', documentation: i18n. },
+            { label: 'port', documentation: i18n..port },
+            { label: 'data', documentation: i18n..data },
             { label: 'size', documentation: i18n..size }
         ],
         signature: '(socket, URL, port, data, size)'
@@ -7316,7 +7316,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n..desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'socket', documentation: i18n. },
+            { label: 'socket', documentation: i18n..socket },
             { label: 'read', documentation: i18n. },
             { label: 'write', documentation: i18n. }
         ],
@@ -9481,7 +9481,7 @@ exports.globalfunctions = {
             { label: 'fire_time', documentation: i18n. },
             { label: 'title', documentation: i18n..title },
             { label: 'message', documentation: i18n..message },
-            { label: 'data', documentation: i18n. }
+            { label: 'data', documentation: i18n..data }
         ],
         signature: '(fire_time, title, message, data)'
     },
@@ -10683,7 +10683,7 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'steam_filename', documentation: i18n. },
-            { label: 'data', documentation: i18n. },
+            { label: 'data', documentation: i18n..data },
             { label: 'size', documentation: i18n..size }
         ],
         signature: '(steam_filename, data, size)'
@@ -16077,7 +16077,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'factor', documentation: i18n. }
+            { label: 'factor', documentation: i18n..factor }
         ],
         signature: '(factor)'
     },
