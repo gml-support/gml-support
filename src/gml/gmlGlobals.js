@@ -10058,7 +10058,7 @@ exports.globalfunctions = {
         signature: '(anim_name)'
     },
 	skeleton_animation_list: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.skeleton_animation_list.desc,
         available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: i18n.skeleton_animation_list.sprite },
@@ -10097,7 +10097,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.skeleton_attachment_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'name', documentation: i18nskeleton_attachment_create..name },
+            { label: 'name', documentation: i18nskeleton_attachment_create.skeleton_attachment_create.name },
             { label: 'sprite', documentation: i18n.skeleton_attachment_create.sprite },
             { label: 'ind', documentation: i18n.skeleton_attachment_create.ind },
             { label: 'xo', documentation: i18n.skeleton_attachment_create.xo },
@@ -10253,1526 +10253,1526 @@ exports.globalfunctions = {
         signature: '(ind, source)'
     },
 	sprite_collision_mask: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_collision_mask.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'sepmasks', documentation: i18n. },
-            { label: 'bboxmode', documentation: i18n. },
-            { label: 'bbleft', documentation: i18n. },
-            { label: 'bbtop', documentation: i18n. },
-            { label: 'bbright', documentation: i18n. },
-            { label: 'bbbottom', documentation: i18n. },
-            { label: 'kind', documentation: i18n..kind },
-            { label: 'tolerance', documentation: i18n. }
+            { label: 'ind', documentation: i18n.sprite_collision_mask.ind },
+            { label: 'sepmasks', documentation: i18n.sprite_collision_mask.sepmasks },
+            { label: 'bboxmode', documentation: i18n.sprite_collision_mask.bboxmode },
+            { label: 'bbleft', documentation: i18n.sprite_collision_mask.bbleft },
+            { label: 'bbtop', documentation: i18n.sprite_collision_mask.bbtop },
+            { label: 'bbright', documentation: i18n.sprite_collision_mask.bbright },
+            { label: 'bbbottom', documentation: i18n.sprite_collision_mask.bbbottom },
+            { label: 'kind', documentation: i18n.sprite_collision_mask.kind },
+            { label: 'tolerance', documentation: i18n.sprite_collision_mask.tolerance }
         ],
         signature: '(ind, sepmasks, bboxmode, bbleft, bbtop, bbright, bbbottom, kind, tolerance)'
     },
 	sprite_create_from_surface: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_create_from_surface.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth },
-            { label: 'xorig', documentation: i18n..xorig },
-            { label: 'yorig', documentation: i18n..yorig }
+            { label: 'id', documentation: i18n.sprite_create_from_surface.id },
+            { label: 'x', documentation: i18n.sprite_create_from_surface.x },
+            { label: 'y', documentation: i18n.sprite_create_from_surface.y },
+            { label: 'w', documentation: i18n.sprite_create_from_surface.w },
+            { label: 'h', documentation: i18n.sprite_create_from_surface.h },
+            { label: 'removeback', documentation: i18n.sprite_create_from_surface.removeback },
+            { label: 'smooth', documentation: i18n.sprite_create_from_surface.smooth },
+            { label: 'xorig', documentation: i18n.sprite_create_from_surface.xorig },
+            { label: 'yorig', documentation: i18n.sprite_create_from_surface.yorig }
         ],
         signature: '(id, x, y, w, h, removeback, smooth, xorig, yorig)'
     },
 	sprite_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_delete.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_delete.ind }
         ],
         signature: '(ind)'
     },
 	sprite_duplicate: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_duplicate.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_duplicate.ind }
         ],
         signature: '(ind)'
     },
 	sprite_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_exists.ind }
         ],
         signature: '(ind)'
     },
 	sprite_flush: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_flush.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_flush.ind }
         ],
         signature: '(ind)'
     },
 	sprite_flush_multi: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_flush_multi.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'indarray', documentation: i18n. }
+            { label: 'indarray', documentation: i18n.sprite_flush_multi.indarray }
         ],
         signature: '(indarray)'
     },
 	sprite_get_bbox_bottom: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_bbox_bottom.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_bbox_bottom.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_bbox_left: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_bbox_left.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_bbox_left.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_bbox_right: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_bbox_right.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_bbox_right.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_bbox_top: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_bbox_top.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_bbox_top.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_height.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_name: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_name.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_name.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_number: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_number.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_number.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_texture: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_texture.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'spr', documentation: i18n..spr },
-            { label: 'subimg', documentation: i18n..subimg }
+            { label: 'spr', documentation: i18n.sprite_get_texture.spr },
+            { label: 'subimg', documentation: i18n.sprite_get_texture.subimg }
         ],
         signature: '(spr, subimg)'
     },
 	sprite_get_tpe: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_tpe.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'index', documentation: i18n..index },
-            { label: 'subindex', documentation: i18n. }
+            { label: 'index', documentation: i18n.sprite_get_tpe.index },
+            { label: 'subindex', documentation: i18n.sprite_get_tpe.subindex }
         ],
         signature: '(index, subindex)'
     },
 	sprite_get_uvs: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_uvs.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'spr', documentation: i18n..spr },
-            { label: 'subimg', documentation: i18n..subimg }
+            { label: 'spr', documentation: i18n.sprite_get_uvs.spr },
+            { label: 'subimg', documentation: i18n.sprite_get_uvs.subimg }
         ],
         signature: '(spr, subimg)'
     },
 	sprite_get_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_width.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_xoffset: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_xoffset.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_xoffset.ind }
         ],
         signature: '(ind)'
     },
 	sprite_get_yoffset: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_get_yoffset.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_get_yoffset.ind }
         ],
         signature: '(ind)'
     },
 	sprite_merge: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_merge.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind1', documentation: i18n. },
-            { label: 'ind2', documentation: i18n. }
+            { label: 'ind1', documentation: i18n.sprite_merge.ind1 },
+            { label: 'ind2', documentation: i18n.sprite_merge.ind2 }
         ],
         signature: '(ind1, ind2)'
     },
 	sprite_prefetch: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_prefetch.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sprite_prefetch.ind }
         ],
         signature: '(ind)'
     },
 	sprite_prefetch_multi: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_prefetch_multi.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'indarray', documentation: i18n. }
+            { label: 'indarray', documentation: i18n.sprite_prefetch_multi.indarray }
         ],
         signature: '(indarray)'
     },
 	sprite_replace: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_replace.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'imgnumb', documentation: i18n..imgnumb },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth },
-            { label: 'xorig', documentation: i18n..xorig },
-            { label: 'yorig', documentation: i18n..yorig }
+            { label: 'ind', documentation: i18n.sprite_replace.ind },
+            { label: 'fname', documentation: i18n.sprite_replace.fname },
+            { label: 'imgnumb', documentation: i18n.sprite_replace.imgnumb },
+            { label: 'removeback', documentation: i18n.sprite_replace.removeback },
+            { label: 'smooth', documentation: i18n.sprite_replace.smooth },
+            { label: 'xorig', documentation: i18n.sprite_replace.xorig },
+            { label: 'yorig', documentation: i18n.sprite_replace.yorig }
         ],
         signature: '(ind, fname, imgnumb, removeback, smooth, xorig, yorig)'
     },
 	sprite_save: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_save.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'subimg', documentation: i18n..subimg },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.sprite_save.ind },
+            { label: 'subimg', documentation: i18n.sprite_save.subimg },
+            { label: 'fname', documentation: i18n.sprite_save.fname }
         ],
         signature: '(ind, subimg, fname)'
     },
 	sprite_save_strip: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_save_strip.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.sprite_save_strip.ind },
+            { label: 'fname', documentation: i18n.sprite_save_strip.fname }
         ],
         signature: '(ind, fname)'
     },
 	sprite_set_alpha_from_sprite: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_set_alpha_from_sprite.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'spr', documentation: i18n..spr }
+            { label: 'ind', documentation: i18n.sprite_set_alpha_from_sprite.ind },
+            { label: 'spr', documentation: i18n.sprite_set_alpha_from_sprite.spr }
         ],
         signature: '(ind, spr)'
     },
 	sprite_set_cache_size: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_set_cache_size.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'max', documentation: i18n..max }
+            { label: 'ind', documentation: i18n.sprite_set_cache_size.ind },
+            { label: 'max', documentation: i18n.sprite_set_cache_size.max }
         ],
         signature: '(ind, max)'
     },
 	sprite_set_cache_size_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_set_cache_size_ext.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'image', documentation: i18n. },
-            { label: 'max', documentation: i18n..max }
+            { label: 'ind', documentation: i18n.sprite_set_cache_size_ext.ind },
+            { label: 'image', documentation: i18n.sprite_set_cache_size_ext.image },
+            { label: 'max', documentation: i18n.sprite_set_cache_size_ext.max }
         ],
         signature: '(ind, image, max)'
     },
 	sprite_set_offset: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sprite_set_offset.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xoff', documentation: i18n. },
-            { label: 'yoff', documentation: i18n. }
+            { label: 'ind', documentation: i18n.sprite_set_offset.ind },
+            { label: 'xoff', documentation: i18n.sprite_set_offset.xoff },
+            { label: 'yoff', documentation: i18n.sprite_set_offset.yoff }
         ],
         signature: '(ind, xoff, yoff)'
     },
 	sqr: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sqr.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x }
+            { label: 'x', documentation: i18n.sqr.x }
         ],
         signature: '(x)'
     },
 	sqrt: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.sqrt.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x }
+            { label: 'x', documentation: i18n.sqrt.x }
         ],
         signature: '(x)'
     },
 	steam_activate_overlay: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_activate_overlay.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'overlayIndex', documentation: i18n. }
+            { label: 'overlayIndex', documentation: i18n.steam_activate_overlay.steam_activate_overlay }
         ],
         signature: '(overlayIndex)'
     },
 	steam_activate_overlay_browser: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_activate_overlay_browser.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'url', documentation: i18n..url }
+            { label: 'url', documentation: i18n.steam_activate_overlay_browser.url }
         ],
         signature: '(url)'
     },
 	steam_activate_overlay_store: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_activate_overlay_store.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'app_id', documentation: i18n. }
+            { label: 'app_id', documentation: i18n.steam_activate_overlay_store.app_id }
         ],
         signature: '(app_id)'
     },
 	steam_activate_overlay_user: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_activate_overlay_user.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'dialog_name', documentation: i18n. },
-            { label: 'steamid', documentation: i18n. }
+            { label: 'dialog_name', documentation: i18n.steam_activate_overlay_user.dialog_name },
+            { label: 'steamid', documentation: i18n.steam_activate_overlay_user.steamid }
         ],
         signature: '(dialog_name, steamid)'
     },
 	steam_available_languages: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_available_languages.desc,
         available: datasimple.gms1
     },
 	steam_clear_achievement: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_clear_achievement.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ach_name', documentation: i18n. }
+            { label: 'ach_name', documentation: i18n.steam_clear_achievement.ach_name }
         ],
         signature: '(ach_name)'
     },
 	steam_create_leaderboard: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_create_leaderboard.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'sort_method', documentation: i18n. },
-            { label: 'display_type', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_create_leaderboard.lb_name },
+            { label: 'sort_method', documentation: i18n.steam_create_leaderboard.sort_method },
+            { label: 'display_type', documentation: i18n.steam_create_leaderboard.display_type }
         ],
         signature: '(lb_name, sort_method, display_type)'
     },
 	steam_current_game_language: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_current_game_language.desc,
         available: datasimple.gms1
     },
 	steam_download_friends_scores: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_download_friends_scores.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_download_friends_scores.lb_name }
         ],
         signature: '(lb_name)'
     },
 	steam_download_scores: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_download_scores.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'start_idx', documentation: i18n. },
-            { label: 'end_idx', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_download_scores.lb_name },
+            { label: 'start_idx', documentation: i18n.steam_download_scores.start_idx },
+            { label: 'end_idx', documentation: i18n.steam_download_scores.end_idx }
         ],
         signature: '(lb_name, start_idx, end_idx)'
     },
 	steam_download_scores_around_user: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_download_scores_around_user.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'range_start', documentation: i18n. },
-            { label: 'range_end', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_download_scores_around_user.lb_name },
+            { label: 'range_start', documentation: i18n.steam_download_scores_around_user.range_start },
+            { label: 'range_end', documentation: i18n.steam_download_scores_around_user.range_end }
         ],
         signature: '(lb_name, range_start, range_end)'
     },
 	steam_file_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename }
+            { label: 'filename', documentation: i18n.steam_file_delete.filename }
         ],
         signature: '(filename)'
     },
 	steam_file_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_exists.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename }
+            { label: 'filename', documentation: i18n.steam_file_exists.filename }
         ],
         signature: '(filename)'
     },
 	steam_file_persisted: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_persisted.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename }
+            { label: 'filename', documentation: i18n.steam_file_persisted.filename }
         ],
         signature: '(filename)'
     },
 	steam_file_read: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_read.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename }
+            { label: 'filename', documentation: i18n.steam_file_read.filename }
         ],
         signature: '(filename)'
     },
 	steam_file_share: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_share.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename }
+            { label: 'filename', documentation: i18n.steam_file_share.filename }
         ],
         signature: '(filename)'
     },
 	steam_file_size: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_size.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename }
+            { label: 'filename', documentation: i18n.steam_file_size.filename }
         ],
         signature: '(filename)'
     },
 	steam_file_write: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_write.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'steam_filename', documentation: i18n. },
-            { label: 'data', documentation: i18n..data },
-            { label: 'size', documentation: i18n..size }
+            { label: 'steam_filename', documentation: i18n.steam_file_write.steam_filename },
+            { label: 'data', documentation: i18n.steam_file_write.data },
+            { label: 'size', documentation: i18n.steam_file_write.size }
         ],
         signature: '(steam_filename, data, size)'
     },
 	steam_file_write_file: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_file_write_file.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'steam_filename', documentation: i18n. },
-            { label: 'local_filename', documentation: i18n. }
+            { label: 'steam_filename', documentation: i18n.steam_file_write_file.steam_filename },
+            { label: 'local_filename', documentation: i18n.steam_file_write_file.local_filename }
         ],
         signature: '(steam_filename, local_filename)'
     },
 	steam_get_achievement: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_achievement.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ach_name', documentation: i18n. }
+            { label: 'ach_name', documentation: i18n.steam_get_achievement.ach_name }
         ],
         signature: '(ach_name)'
     },
 	steam_get_app_id: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_app_id.desc,
         available: datasimple.gms1
     },
 	steam_get_persona_name: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_persona_name.desc,
         available: datasimple.gms1
     },
 	steam_get_quota_free: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_quota_free.desc,
         available: datasimple.gms1
     },
 	steam_get_quota_total: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_quota_total.desc,
         available: datasimple.gms1
     },
 	steam_get_stat_avg_rate: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_stat_avg_rate.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stat_name', documentation: i18n. }
+            { label: 'stat_name', documentation: i18n.steam_get_stat_avg_rate.stat_name }
         ],
         signature: '(stat_name)'
     },
 	steam_get_stat_float: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_stat_float.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stat_name', documentation: i18n. }
+            { label: 'stat_name', documentation: i18n.steam_get_stat_float.stat_name }
         ],
         signature: '(stat_name)'
     },
 	steam_get_stat_int: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_stat_int.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stat_name', documentation: i18n. }
+            { label: 'stat_name', documentation: i18n.steam_get_stat_int.stat_name }
         ],
         signature: '(stat_name)'
     },
 	steam_get_user_account_id: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_user_account_id.desc,
         available: datasimple.gms1
     },
 	steam_get_user_persona_name: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_user_persona_name.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'steam_id', documentation: i18n. }
+            { label: 'steam_id', documentation: i18n.steam_get_user_persona_name.steam_id }
         ],
         signature: '(steam_id)'
     },
 	steam_get_user_steam_id: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_get_user_steam_id.desc,
         available: datasimple.gms1
     },
 	steam_initialised: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_initialised.desc,
         available: datasimple.gms1
     },
 	steam_is_cloud_enabled_for_account: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_is_cloud_enabled_for_account.desc,
         available: datasimple.gms1
     },
 	steam_is_cloud_enabled_for_app: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_is_cloud_enabled_for_app.desc,
         available: datasimple.gms1
     },
 	steam_is_overlay_activated: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_is_overlay_activated.desc,
         available: datasimple.gms1
     },
 	steam_is_overlay_enabled: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_is_overlay_enabled.desc,
         available: datasimple.gms1
     },
 	steam_is_screenshot_requested: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_is_screenshot_requested.desc,
         available: datasimple.gms1
     },
 	steam_is_user_logged_on: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_is_user_logged_on.desc,
         available: datasimple.gms1
     },
 	steam_publish_workshop_file: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_publish_workshop_file.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename },
-            { label: 'previewImage', documentation: i18n. },
-            { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n. }
+            { label: 'filename', documentation: i18n.steam_publish_workshop_file.filename },
+            { label: 'previewImage', documentation: i18n.steam_publish_workshop_file.previewImage },
+            { label: 'title', documentation: i18n.steam_publish_workshop_file.title },
+            { label: 'description', documentation: i18n.steam_publish_workshop_file.description }
         ],
         signature: '(filename, previewImage, title, description)'
     },
 	steam_reset_all_stats: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_reset_all_stats.desc,
         available: datasimple.gms1
     },
 	steam_reset_all_stats_achievements: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_reset_all_stats_achievements.desc,
         available: datasimple.gms1
     },
 	steam_send_screenshot: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_send_screenshot.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'filename', documentation: i18n..filename },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'filename', documentation: i18n.steam_send_screenshot.filename },
+            { label: 'width', documentation: i18n.steam_send_screenshot.width },
+            { label: 'height', documentation: i18n.steam_send_screenshot.height }
         ],
         signature: '(filename, width, height)'
     },
 	steam_set_achievement: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_set_achievement.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ach_name', documentation: i18n. }
+            { label: 'ach_name', documentation: i18n.steam_set_achievement.ach_name }
         ],
         signature: '(ach_name)'
     },
 	steam_set_stat_avg_rate: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_set_stat_avg_rate.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stat_name', documentation: i18n. },
-            { label: 'session_count', documentation: i18n. },
-            { label: 'session_length', documentation: i18n. }
+            { label: 'stat_name', documentation: i18n.steam_set_stat_avg_rate.stat_name },
+            { label: 'session_count', documentation: i18n.steam_set_stat_avg_rate.session_count },
+            { label: 'session_length', documentation: i18n.steam_set_stat_avg_rate.session_length }
         ],
         signature: '(stat_name, session_count, session_length)'
     },
 	steam_set_stat_float: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_set_stat_float.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stat_name', documentation: i18n. },
-            { label: 'value', documentation: i18n..value }
+            { label: 'stat_name', documentation: i18n.steam_set_stat_float.stat_name },
+            { label: 'value', documentation: i18n.steam_set_stat_float.value }
         ],
         signature: '(stat_name, value)'
     },
 	steam_set_stat_int: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_set_stat_int.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stat_name', documentation: i18n. },
-            { label: 'value', documentation: i18n..value }
+            { label: 'stat_name', documentation: i18n.steam_set_stat_int.stat_name },
+            { label: 'value', documentation: i18n.steam_set_stat_int.value }
         ],
         signature: '(stat_name, value)'
     },
 	steam_stats_ready: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_stats_ready.desc,
         available: datasimple.gms1
     },
 	steam_ugc_create_item: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_create_item.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'consumer_app_id', documentation: i18n. },
-            { label: 'file_type', documentation: i18n. }
+            { label: 'consumer_app_id', documentation: i18n.steam_ugc_create_item.consumer_app_id },
+            { label: 'file_type', documentation: i18n.steam_ugc_create_item.file_type }
         ],
         signature: '(consumer_app_id, file_type)'
     },
 	steam_ugc_create_query_all: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_create_query_all.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'query_type', documentation: i18n. },
-            { label: 'match_type', documentation: i18n. },
-            { label: 'page', documentation: i18n. }
+            { label: 'query_type', documentation: i18n.steam_ugc_create_query_all.query_type },
+            { label: 'match_type', documentation: i18n.steam_ugc_create_query_all.match_type },
+            { label: 'page', documentation: i18n.steam_ugc_create_query_all.page }
         ],
         signature: '(query_type, match_type, page)'
     },
 	steam_ugc_create_query_all_ex: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_create_query_all_ex.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'query_type', documentation: i18n. },
-            { label: 'match_type', documentation: i18n. },
-            { label: 'page', documentation: i18n. },
-            { label: 'creator_app_id', documentation: i18n. },
-            { label: 'consumer_app_id', documentation: i18n. }
+            { label: 'query_type', documentation: i18n.steam_ugc_create_query_all_ex.query_type },
+            { label: 'match_type', documentation: i18n.steam_ugc_create_query_all_ex.match_type },
+            { label: 'page', documentation: i18n.steam_ugc_create_query_all_ex.page },
+            { label: 'creator_app_id', documentation: i18n.steam_ugc_create_query_all_ex.creator_app_id },
+            { label: 'consumer_app_id', documentation: i18n.steam_ugc_create_query_all_ex.consumer_app_id }
         ],
         signature: '(query_type, match_type, page, creator_app_id, consumer_app_id)'
     },
 	steam_ugc_create_query_user: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_create_query_user.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'list_type', documentation: i18n. },
-            { label: 'match_type', documentation: i18n. },
-            { label: 'sort_order', documentation: i18n. },
-            { label: 'page', documentation: i18n. }
+            { label: 'list_type', documentation: i18n.steam_ugc_create_query_user.list_type },
+            { label: 'match_type', documentation: i18n.steam_ugc_create_query_user.match_type },
+            { label: 'sort_order', documentation: i18n.steam_ugc_create_query_user.sort_order },
+            { label: 'page', documentation: i18n.steam_ugc_create_query_user.page }
         ],
         signature: '(list_type, match_type, sort_order, page)'
     },
 	steam_ugc_create_query_user_ex: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_create_query_user_ex.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'list_type', documentation: i18n. },
-            { label: 'match_type', documentation: i18n. },
-            { label: 'sort_order', documentation: i18n. },
-            { label: 'page', documentation: i18n. },
-            { label: 'account_id', documentation: i18n. },
-            { label: 'creator_app_id', documentation: i18n. },
-            { label: 'consumer_app_id', documentation: i18n. }
+            { label: 'list_type', documentation: i18n.steam_ugc_create_query_user_ex.list_type },
+            { label: 'match_type', documentation: i18n.steam_ugc_create_query_user_ex.match_type },
+            { label: 'sort_order', documentation: i18n.steam_ugc_create_query_user_ex.sort_order },
+            { label: 'page', documentation: i18n.steam_ugc_create_query_user_ex.page },
+            { label: 'account_id', documentation: i18n.steam_ugc_create_query_user_ex.account_id },
+            { label: 'creator_app_id', documentation: i18n.steam_ugc_create_query_user_ex.creator_app_id },
+            { label: 'consumer_app_id', documentation: i18n.steam_ugc_create_query_user_ex.consumer_app_id }
         ],
         signature: '(list_type, match_type, sort_order, page, account_id, creator_app_id, consumer_app_id)'
     },
 	steam_ugc_download: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_download.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_handle', documentation: i18n. },
-            { label: 'dest_filename', documentation: i18n. }
+            { label: 'ugc_handle', documentation: i18n.steam_ugc_download.ugc_handle },
+            { label: 'dest_filename', documentation: i18n.steam_ugc_download.dest_filename }
         ],
         signature: '(ugc_handle, dest_filename)'
     },
 	steam_ugc_get_item_install_info: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_get_item_install_info.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'published_file_id', documentation: i18n. },
-            { label: 'info_map', documentation: i18n. }
+            { label: 'published_file_id', documentation: i18n.steam_ugc_get_item_install_info.published_file_id },
+            { label: 'info_map', documentation: i18n.steam_ugc_get_item_install_info.info_map }
         ],
         signature: '(published_file_id, info_map)'
     },
 	steam_ugc_get_item_update_info: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_get_item_update_info.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'published_file_id', documentation: i18n. },
-            { label: 'info_map', documentation: i18n. }
+            { label: 'published_file_id', documentation: i18n.steam_ugc_get_item_update_info.published_file_id },
+            { label: 'info_map', documentation: i18n.steam_ugc_get_item_update_info.info_map }
         ],
         signature: '(published_file_id, info_map)'
     },
 	steam_ugc_get_item_update_progress: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_get_item_update_progress.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'info_map', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_get_item_update_progress.ugc_update_handle },
+            { label: 'info_map', documentation: i18n.steam_ugc_get_item_update_progress.info_map }
         ],
         signature: '(ugc_update_handle, info_map)'
     },
 	steam_ugc_get_subscribed_items: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_get_subscribed_items.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'info_map', documentation: i18n. }
+            { label: 'info_map', documentation: i18n.steam_ugc_get_subscribed_items.info_map }
         ],
         signature: '(item_list)'
     },
 	steam_ugc_num_subscribed_items: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_num_subscribed_items.desc,
         available: datasimple.gms1
     },
 	steam_ugc_query_add_excluded_tag: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_add_excluded_tag.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'tag_name', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_add_excluded_tag.ugc_query_handle },
+            { label: 'tag_name', documentation: i18n.steam_ugc_query_add_excluded_tag.tag_name }
         ],
         signature: '(ugc_query_handle, tag_name)'
     },
 	steam_ugc_query_add_required_tag: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_add_required_tag.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'tag_name', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_add_required_tag.ugc_query_handle },
+            { label: 'tag_name', documentation: i18n.steam_ugc_query_add_required_tag.tag_name }
         ],
         signature: '(ugc_query_handle, tag_name)'
     },
 	steam_ugc_query_set_allow_cached_response: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_allow_cached_response.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'max_age_seconds', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_allow_cached_response.ugc_query_handle },
+            { label: 'max_age_seconds', documentation: i18n.steam_ugc_query_set_allow_cached_response.max_age_seconds }
         ],
         signature: '(ugc_query_handle, max_age_seconds)'
     },
 	steam_ugc_query_set_cloud_filename_filter: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_cloud_filename_filter.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'match_cloud_filename', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_cloud_filename_filter.ugc_query_handle },
+            { label: 'match_cloud_filename', documentation: i18n.steam_ugc_query_set_cloud_filename_filter.match_cloud_filename }
         ],
         signature: '(ugc_query_handle, match_cloud_filename)'
     },
 	steam_ugc_query_set_match_any_tag: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_match_any_tag.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'match_any_tag', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_match_any_tag.ugc_query_handle },
+            { label: 'match_any_tag', documentation: i18n.steam_ugc_query_set_match_any_tag.match_any_tag }
         ],
         signature: '(ugc_query_handle, match_any_tag)'
     },
 	steam_ugc_query_set_ranked_by_trend_days: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_ranked_by_trend_days.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'days', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_ranked_by_trend_days.ugc_query_handle },
+            { label: 'days', documentation: i18n.steam_ugc_query_set_ranked_by_trend_days.days }
         ],
         signature: '(ugc_query_handle, days)'
     },
 	steam_ugc_query_set_return_long_description: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_return_long_description.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'return_long_desc', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_return_long_description.ugc_query_handle },
+            { label: 'return_long_desc', documentation: i18n.steam_ugc_query_set_return_long_description.return_long_desc }
         ],
         signature: '(ugc_query_handle, return_long_desc)'
     },
 	steam_ugc_query_set_return_total_only: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_return_total_only.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'return_total_only', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_return_total_only.ugc_query_handle },
+            { label: 'return_total_only', documentation: i18n.steam_ugc_query_set_return_total_only.return_total_only }
         ],
         signature: '(ugc_query_handle, return_total_only)'
     },
 	steam_ugc_query_set_search_text: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_query_set_search_text.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. },
-            { label: 'search_text', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_query_set_search_text.ugc_query_handle },
+            { label: 'search_text', documentation: i18n.steam_ugc_query_set_search_text.search_text }
         ],
         signature: '(ugc_query_handle, search_text)'
     },
 	steam_ugc_request_item_details: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_request_item_details.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'published_file_id', documentation: i18n. },
-            { label: 'max_age_seconds', documentation: i18n. }
+            { label: 'published_file_id', documentation: i18n.steam_ugc_request_item_details.published_file_id },
+            { label: 'max_age_seconds', documentation: i18n.steam_ugc_request_item_details.max_age_seconds }
         ],
         signature: '(published_file_id, max_age_seconds)'
     },
 	steam_ugc_send_query: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_send_query.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_query_handle', documentation: i18n. }
+            { label: 'ugc_query_handle', documentation: i18n.steam_ugc_send_query.ugc_query_handle }
         ],
         signature: '(ugc_query_handle)'
     },
 	steam_ugc_set_item_content: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_set_item_content.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'directory', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_set_item_content.ugc_update_handle },
+            { label: 'directory', documentation: i18n.steam_ugc_set_item_content.directory }
         ],
         signature: '(ugc_update_handle, directory)'
     },
 	steam_ugc_set_item_description: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_set_item_description.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'description', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_set_item_description.ugc_update_handle },
+            { label: 'description', documentation: i18n.steam_ugc_set_item_description.description }
         ],
         signature: '(ugc_update_handle, description)'
     },
 	steam_ugc_set_item_preview: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_set_item_preview.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'image_path', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_set_item_preview.ugc_update_handle },
+            { label: 'image_path', documentation: i18n.steam_ugc_set_item_preview.image_path }
         ],
         signature: '(ugc_update_handle, image_path)'
     },
 	steam_ugc_set_item_tags: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_set_item_tags.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'tag_array', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_set_item_tags.ugc_update_handle },
+            { label: 'tag_array', documentation: i18n.steam_ugc_set_item_tags.tag_array }
         ],
         signature: '(ugc_update_handle, tag_array)'
     },
 	steam_ugc_set_item_title: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_set_item_title.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'title', documentation: i18n..title }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_set_item_title.ugc_update_handle },
+            { label: 'title', documentation: i18n.steam_ugc_set_item_title.title }
         ],
         signature: '(ugc_update_handle, title)'
     },
 	steam_ugc_set_item_visibility: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_set_item_visibility.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'visibility', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_set_item_visibility.ugc_update_handle },
+            { label: 'visibility', documentation: i18n.steam_ugc_set_item_visibility.visibility }
         ],
         signature: '(ugc_update_handle, visibility)'
     },
 	steam_ugc_start_item_update: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_start_item_update.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'consumer_app_id', documentation: i18n. },
-            { label: 'published_file_id', documentation: i18n. }
+            { label: 'consumer_app_id', documentation: i18n.steam_ugc_start_item_update.consumer_app_id },
+            { label: 'published_file_id', documentation: i18n.steam_ugc_start_item_update.published_file_id }
         ],
         signature: '(consumer_app_id, published_file_id)'
     },
 	steam_ugc_submit_item_update: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_submit_item_update.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ugc_update_handle', documentation: i18n. },
-            { label: 'change_note', documentation: i18n. }
+            { label: 'ugc_update_handle', documentation: i18n.steam_ugc_submit_item_update.ugc_update_handle },
+            { label: 'change_note', documentation: i18n.steam_ugc_submit_item_update.change_note }
         ],
         signature: '(ugc_update_handle, change_note)'
     },
 	steam_ugc_subscribe_item: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_subscribe_item.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'published_file_id', documentation: i18n. }
+            { label: 'published_file_id', documentation: i18n.steam_ugc_subscribe_item.published_file_id }
         ],
         signature: '(published_file_id)'
     },
 	steam_ugc_unsubscribe_item: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_ugc_unsubscribe_item.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'published_file_id', documentation: i18n. }
+            { label: 'published_file_id', documentation: i18n.steam_ugc_unsubscribe_item.published_file_id }
         ],
         signature: '(published_file_id)'
     },
 	steam_upload_score: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_upload_score.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'score', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_upload_score.lb_name },
+            { label: 'score', documentation: i18n.steam_upload_score.score }
         ],
         signature: '(lb_name, score)'
     },
 	steam_upload_score_buffer: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_upload_score_buffer.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'score', documentation: i18n. },
-            { label: 'buffer_id', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_upload_score_buffer.lb_name },
+            { label: 'score', documentation: i18n.steam_upload_score_buffer.score },
+            { label: 'buffer_id', documentation: i18n.steam_upload_score_buffer.buffer_id }
         ],
         signature: '(lb_name, score, buffer_id)'
     },
 	steam_upload_score_buffer_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_upload_score_buffer_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'score', documentation: i18n. },
-            { label: 'buffer_id', documentation: i18n. },
-            { label: 'forceupdate', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_upload_score_buffer_ext.lb_name },
+            { label: 'score', documentation: i18n.steam_upload_score_buffer_ext.score },
+            { label: 'buffer_id', documentation: i18n.steam_upload_score_buffer_ext.buffer_id },
+            { label: 'forceupdate', documentation: i18n.steam_upload_score_buffer_ext.forceupdate }
         ],
         signature: '(lb_name, score, buffer_id, forceupdate)'
     },
 	steam_upload_score_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_upload_score_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'lb_name', documentation: i18n. },
-            { label: 'score', documentation: i18n. },
-            { label: 'forceupdate', documentation: i18n. }
+            { label: 'lb_name', documentation: i18n.steam_upload_score_ext.lb_name },
+            { label: 'score', documentation: i18n.steam_upload_score_ext.score },
+            { label: 'forceupdate', documentation: i18n.steam_upload_score_ext.forceupdate }
         ],
         signature: '(lb_name, score, forceupdate)'
     },
 	steam_user_installed_dlc: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_user_installed_dlc.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'dlc_id', documentation: i18n. }
+            { label: 'dlc_id', documentation: i18n.steam_user_installed_dlc.dlc_id }
         ],
         signature: '(dlc_id)'
     },
 	steam_user_owns_dlc: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.steam_user_owns_dlc.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'dlc_id', documentation: i18n. }
+            { label: 'dlc_id', documentation: i18n.steam_user_owns_dlc.dlc_id }
         ],
         signature: '(dlc_id)'
     },
 	string: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'val', documentation: i18n..val }
+            { label: 'val', documentation: i18n.string.val }
         ],
         signature: '(val)'
     },
 	string_byte_at: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_byte_at.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index }
+            { label: 'str', documentation: i18n.string_byte_at.str },
+            { label: 'index', documentation: i18n.string_byte_at.index }
         ],
         signature: '(str, index)'
     },
 	string_byte_length: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_byte_length.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_byte_length.str }
         ],
         signature: '(str)'
     },
 	string_char_at: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_char_at.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index }
+            { label: 'str', documentation: i18n.string_char_at.str },
+            { label: 'index', documentation: i18n.string_char_at.index }
         ],
         signature: '(str, index)'
     },
 	string_copy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_copy.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index },
-            { label: 'count', documentation: i18n..count }
+            { label: 'str', documentation: i18n.string_copy.str },
+            { label: 'index', documentation: i18n.string_copy.index },
+            { label: 'count', documentation: i18n.string_copy.count }
         ],
         signature: '(str, index, count)'
     },
 	string_count: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_count.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'substr', documentation: i18n. },
-            { label: 'str', documentation: i18n..str }
+            { label: 'substr', documentation: i18n.string_count.substr },
+            { label: 'str', documentation: i18n.string_count.str }
         ],
         signature: '(substr, str)'
     },
 	string_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index },
-            { label: 'count', documentation: i18n..count }
+            { label: 'str', documentation: i18n.string_delete.str },
+            { label: 'index', documentation: i18n.string_delete.index },
+            { label: 'count', documentation: i18n.string_delete.count }
         ],
         signature: '(str, index, count)'
     },
 	string_digits: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_digits.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_digits.str }
         ],
         signature: '(str)'
     },
 	string_format: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_format.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'val', documentation: i18n..val },
-            { label: 'total', documentation: i18n. },
-            { label: 'dec', documentation: i18n. }
+            { label: 'val', documentation: i18n.string_format.val },
+            { label: 'total', documentation: i18n.string_format.total },
+            { label: 'dec', documentation: i18n.string_format.dec }
         ],
         signature: '(val, total, dec)'
     },
 	string_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_height.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'string', documentation: i18n..string }
+            { label: 'string', documentation: i18n.string_height.string }
         ],
         signature: '(string)'
     },
 	string_height_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_height_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n..sep },
-            { label: 'w', documentation: i18n..w }
+            { label: 'string', documentation: i18n.string_height_ext.string },
+            { label: 'sep', documentation: i18n.string_height_ext.sep },
+            { label: 'w', documentation: i18n.string_height_ext.w }
         ],
         signature: '(string, sep, w)'
     },
 	string_insert: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_insert.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'substr', documentation: i18n. },
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index }
+            { label: 'substr', documentation: i18n.string_insert.substr },
+            { label: 'str', documentation: i18n.string_insert.str },
+            { label: 'index', documentation: i18n.string_insert.index }
         ],
         signature: '(substr, str, index)'
     },
 	string_length: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_length.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_length.str }
         ],
         signature: '(str)'
     },
 	string_letters: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_letters.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_letters.str }
         ],
         signature: '(str)'
     },
 	string_lettersdigits: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_lettersdigits.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_lettersdigits.str }
         ],
         signature: '(str)'
     },
 	string_lower: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_lower.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_lower.str }
         ],
         signature: '(str)'
     },
 	string_ord_at: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_ord_at.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index }
+            { label: 'str', documentation: i18n.string_ord_at.str },
+            { label: 'index', documentation: i18n.string_ord_at.index }
         ],
         signature: '(str, index)'
     },
 	string_pos: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_pos.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'substr', documentation: i18n. },
-            { label: 'str', documentation: i18n..str }
+            { label: 'substr', documentation: i18n.string_pos.substr },
+            { label: 'str', documentation: i18n.string_pos.str }
         ],
         signature: '(substr, str)'
     },
 	string_repeat: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_repeat.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'count', documentation: i18n..count }
+            { label: 'str', documentation: i18n.string_repeat.str },
+            { label: 'count', documentation: i18n.string_repeat.count }
         ],
         signature: '(str, count)'
     },
 	string_replace: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_replace.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'substr', documentation: i18n. },
-            { label: 'newstr', documentation: i18n. }
+            { label: 'str', documentation: i18n.string_replace.str },
+            { label: 'substr', documentation: i18n.string_replace.substr },
+            { label: 'newstr', documentation: i18n.string_replace.newstr }
         ],
         signature: '(str, substr, newstr)'
     },
 	string_replace_all: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_replace_all.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'substr', documentation: i18n. },
-            { label: 'newstr', documentation: i18n. }
+            { label: 'str', documentation: i18n.string_replace_all.str },
+            { label: 'substr', documentation: i18n.string_replace_all.substr },
+            { label: 'newstr', documentation: i18n.string_replace_all.newstr }
         ],
         signature: '(str, substr, newstr)'
     },
 	string_set_byte_at: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_set_byte_at.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'index', documentation: i18n..index },
-            { label: 'val', documentation: i18n..val }
+            { label: 'str', documentation: i18n.string_set_byte_at.str },
+            { label: 'index', documentation: i18n.string_set_byte_at.index },
+            { label: 'val', documentation: i18n.string_set_byte_at.val }
         ],
         signature: '(str, index, val)'
     },
 	string_upper: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_upper.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.string_upper.str }
         ],
         signature: '(str)'
     },
 	string_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_width.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'string', documentation: i18n..string }
+            { label: 'string', documentation: i18n.string_width.string }
         ],
         signature: '(string)'
     },
 	string_width_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.string_width_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'string', documentation: i18n..string },
-            { label: 'sep', documentation: i18n..sep },
-            { label: 'w', documentation: i18n..w }
+            { label: 'string', documentation: i18n.string_width_ext.string },
+            { label: 'sep', documentation: i18n.string_width_ext.sep },
+            { label: 'w', documentation: i18n.string_width_ext.w }
         ],
         signature: '(string, sep, w)'
     },
 	surface_copy: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_copy.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'destination', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'source', documentation: i18n..source }
+            { label: 'destination', documentation: i18n.surface_copy.destination },
+            { label: 'x', documentation: i18n.surface_copy.x },
+            { label: 'y', documentation: i18n.surface_copy.y },
+            { label: 'source', documentation: i18n.surface_copy.source }
         ],
         signature: '(destination, x, y, source)'
     },
 	surface_copy_part: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_copy_part.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'destination', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'source', documentation: i18n..source },
-            { label: 'xs', documentation: i18n..xs },
-            { label: 'ys', documentation: i18n..ys },
-            { label: 'ws', documentation: i18n. },
-            { label: 'hs', documentation: i18n. }
+            { label: 'destination', documentation: i18n.surface_copy_part.destination },
+            { label: 'x', documentation: i18n.surface_copy_part.x },
+            { label: 'y', documentation: i18n.surface_copy_part.y },
+            { label: 'source', documentation: i18n.surface_copy_part.source },
+            { label: 'xs', documentation: i18n.surface_copy_part.xs },
+            { label: 'ys', documentation: i18n.surface_copy_part.ys },
+            { label: 'ws', documentation: i18n.surface_copy_part.ws },
+            { label: 'hs', documentation: i18n.surface_copy_part.hs }
         ],
         signature: '(destination, x, y, source, xs, ys, ws, hs)'
     },
 	surface_create: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'w', documentation: i18n.surface_create.w },
+            { label: 'h', documentation: i18n.surface_create.h }
         ],
         signature: '(w, h)'
     },
 	surface_create_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_create_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'name', documentation: i18n.surface_create_ext.name },
+            { label: 'w', documentation: i18n.surface_create_ext.w },
+            { label: 'h', documentation: i18n.surface_create_ext.h }
         ],
         signature: '(name, w, h)'
     },
 	surface_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_exists.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.surface_exists.id }
         ],
         signature: '(id)'
     },
 	surface_free: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_free.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.surface_free.id }
         ],
         signature: '(id)'
     },
 	surface_getpixel: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_getpixel.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'id', documentation: i18n.surface_getpixel.id },
+            { label: 'x', documentation: i18n.surface_getpixel.x },
+            { label: 'y', documentation: i18n.surface_getpixel.y }
         ],
         signature: '(id, x, y)'
     },
 	surface_getpixel_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_getpixel_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'id', documentation: i18n.surface_getpixel_ext.id },
+            { label: 'x', documentation: i18n.surface_getpixel_ext.x },
+            { label: 'y', documentation: i18n.surface_getpixel_ext.y }
         ],
         signature: '(id, x, y)'
     },
 	surface_get_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_get_height.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.surface_get_height.id }
         ],
         signature: '(id)'
     },
 	surface_get_texture: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_get_texture.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.surface_get_texture.id }
         ],
         signature: '(id)'
     },
 	surface_get_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_get_width.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.surface_get_width.id }
         ],
         signature: '(id)'
     },
 	surface_reset_target: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_reset_target.desc,
         available: datasimple.gms1
     },
 	surface_resize: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_resize.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'id', documentation: i18n.surface_resize.id },
+            { label: 'width', documentation: i18n.surface_resize.width },
+            { label: 'height', documentation: i18n.surface_resize.height }
         ],
         signature: '(id, width, height)'
     },
 	surface_save: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_save.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'id', documentation: i18n.surface_save.id },
+            { label: 'fname', documentation: i18n.surface_save.fname }
         ],
         signature: '(id, fname)'
     },
 	surface_save_part: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_save_part.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'id', documentation: i18n.surface_save_part.id },
+            { label: 'fname', documentation: i18n.surface_save_part.fname },
+            { label: 'x', documentation: i18n.surface_save_part.x },
+            { label: 'y', documentation: i18n.surface_save_part.y },
+            { label: 'w', documentation: i18n.surface_save_part.w },
+            { label: 'h', documentation: i18n.surface_save_part.h }
         ],
         signature: '(id, fname, x, y, w, h)'
     },
 	surface_set_target: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_set_target.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.surface_set_target.id }
         ],
         signature: '(id)'
     },
 	surface_set_target_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.surface_set_target_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'index', documentation: i18n..index },
-            { label: 'id', documentation: i18n..id }
+            { label: 'index', documentation: i18n.surface_set_target_ext.index },
+            { label: 'id', documentation: i18n.surface_set_target_ext.id }
         ],
         signature: '(index, id)'
     },
 	tan: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.tan.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'radian_angle', documentation: i18n. }
+            { label: 'radian_angle', documentation: i18n.tan.radian_angle }
         ],
         signature: '(radian_angle)'
     },
 	texture_get_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_get_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'texid', documentation: i18n..texid }
+            { label: 'texid', documentation: i18n.texture_get_height.texid }
         ],
         signature: '(texid)'
     },
 	texture_get_texel_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_get_texel_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'texture_id', documentation: i18n. }
+            { label: 'texture_id', documentation: i18n.texture_get_texel_height.texture_id }
         ],
         signature: '(texture_id)'
     },
 	texture_get_texel_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_get_texel_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'texture_id', documentation: i18n. }
+            { label: 'texture_id', documentation: i18n.texture_get_texel_width.texture_id }
         ],
         signature: '(texture_id)'
     },
 	texture_get_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_get_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'texid', documentation: i18n..texid }
+            { label: 'texid', documentation: i18n.texture_get_width.texid }
         ],
         signature: '(texid)'
     },
 	texture_global_scale: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_global_scale.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'pow2integer', documentation: i18n. }
+            { label: 'pow2integer', documentation: i18n.texture_global_scale.pow2integer }
         ],
         signature: '(pow2integer)'
     },
 	texture_set_blending: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_set_blending.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'blend', documentation: i18n. }
+            { label: 'blend', documentation: i18n.texture_set_blending.blend }
         ],
         signature: '(blend)'
     },
 	texture_set_interpolation: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_set_interpolation.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'linear', documentation: i18n. }
+            { label: 'linear', documentation: i18n.texture_set_interpolation.linear }
         ],
         signature: '(linear)'
     },
 	texture_set_interpolation_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_set_interpolation_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'linear', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n.texture_set_interpolation_ext.sampler_id },
+            { label: 'linear', documentation: i18n.texture_set_interpolation_ext.linear }
         ],
         signature: '(sampler_id, linear)'
     },
 	texture_set_repeat: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_set_repeat.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'repeat', documentation: i18n. }
+            { label: 'repeat', documentation: i18n.texture_set_repeat.repeat }
         ],
         signature: '(repeat)'
     },
 	texture_set_repeat_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_set_repeat_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'repeat', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n.texture_set_repeat_ext.sampler_id },
+            { label: 'repeat', documentation: i18n.texture_set_repeat_ext.repeat }
         ],
         signature: '(sampler_id, repeat)'
     },
 	texture_set_stage: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.texture_set_stage.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'texture_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n.texture_set_stage.sampler_id },
+            { label: 'texture_id', documentation: i18n.texture_set_stage.texture_id }
         ],
         signature: '(sampled_id, texture_id)'
     },
 	timeline_add: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_add.desc,
         available: datasimple.all
     },
 	timeline_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.timeline_clear.ind }
         ],
         signature: '(ind)'
     },
 	timeline_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_delete.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.timeline_delete.ind }
         ],
         signature: '(ind)'
     },
 	timeline_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.timeline_exists.ind }
         ],
         signature: '(ind)'
     },
 	timeline_get_name: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_get_name.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.timeline_get_name.ind }
         ],
         signature: '(ind)'
     },
 	timeline_max_moment: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_max_moment.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.timeline_max_moment.ind }
         ],
         signature: '(ind)'
     },
 	timeline_moment_add_script: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_moment_add_script.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'step', documentation: i18n. },
-            { label: 'script', documentation: i18n. }
+            { label: 'id', documentation: i18n.timeline_moment_add_script.id },
+            { label: 'step', documentation: i18n.timeline_moment_add_script.step },
+            { label: 'script', documentation: i18n.timeline_moment_add_script.script }
         ],
         signature: '(ind, step, script)'
     },
 	timeline_moment_clear: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_moment_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'step', documentation: i18n. }
+            { label: 'id', documentation: i18n.timeline_moment_clear.id },
+            { label: 'step', documentation: i18n.timeline_moment_clear.step }
         ],
         signature: '(ind, step)'
     },
 	timeline_size: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.timeline_size.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.timeline_size.ind }
         ],
         signature: '(ind)'
     },
 	typeof: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.typeof.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'val', documentation: i18n..val }
+            { label: 'val', documentation: i18n.typeof.val }
         ],
         signature: '(val)'
     },
 	url_get_domain: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.url_get_domain.desc,
         available: datasimple.gms1
     },
 	url_open: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.url_open.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'url', documentation: i18n..url }
+            { label: 'url', documentation: i18n.url_open.url }
         ],
         signature: '(url)'
     },
@@ -12501,7 +12501,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.deprecated_1 + ')',
         available: datasimple.gms1d,
         parameters: [
-            { label: 'image', documentation: i18n. }
+            { label: 'image', documentation: i18n..image }
         ],
         signature: '(image)'
     },
@@ -12671,7 +12671,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'filename', documentation: i18n..filename },
             { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n. },
+            { label: 'description', documentation: i18n..description },
             { label: 'immediate', documentation: i18n. }
         ],
         signature: '(filename, title, description, immediate)'
@@ -12682,7 +12682,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'image_filename', documentation: i18n. },
             { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n. },
+            { label: 'description', documentation: i18n..description },
             { label: 'immediate', documentation: i18n. }
         ],
         signature: '(image_filename, title, description, immediate)'
@@ -12692,7 +12692,7 @@ exports.globalfunctions = {
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: i18n. },
-            { label: 'description', documentation: i18n. },
+            { label: 'description', documentation: i18n..description },
             { label: 'immediate', documentation: i18n. }
         ],
         signature: '(title, description, immediate)'
@@ -12703,7 +12703,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'text', documentation: i18n. },
             { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n. },
+            { label: 'description', documentation: i18n..description },
             { label: 'immediate', documentation: i18n. }
         ],
         signature: '(text, title, description, immediate)'
@@ -12714,7 +12714,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'url', documentation: i18n..url },
             { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n. },
+            { label: 'description', documentation: i18n..description },
             { label: 'immediate', documentation: i18n. }
         ],
         signature: '(url, title, description, immediate)'
@@ -13346,7 +13346,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'indarray', documentation: i18n. }
+            { label: 'indarray', documentation: i18n..indarray }
         ],
         signature: '(indarray)'
     },
@@ -13402,7 +13402,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_2 + ')',
         available: datasimple.ob2,
         parameters: [
-            { label: 'indarray', documentation: i18n. }
+            { label: 'indarray', documentation: i18n..indarray }
         ],
         signature: '(indarray)'
     },
@@ -16417,7 +16417,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'step', documentation: i18n. },
+            { label: 'step', documentation: i18n..step },
             { label: 'codestr', documentation: i18n. }
         ],
         signature: '(ind, step, codestr)'
@@ -16444,8 +16444,8 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n. },
-            { label: 'ind2', documentation: i18n. }
+            { label: 'ind1', documentation: i18n..ind1 },
+            { label: 'ind2', documentation: i18n..ind2 }
         ],
         signature: '(name, ind1, ind2)'
     },
@@ -16454,8 +16454,8 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n. },
-            { label: 'ind2', documentation: i18n. },
+            { label: 'ind1', documentation: i18n..ind1 },
+            { label: 'ind2', documentation: i18n..ind2 },
             { label: 'value', documentation: i18n..value }
         ],
         signature: '(name, ind1, ind2, value)'
@@ -16484,8 +16484,8 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n. },
-            { label: 'ind2', documentation: i18n. }
+            { label: 'ind1', documentation: i18n..ind1 },
+            { label: 'ind2', documentation: i18n..ind2 }
         ],
         signature: '(name, ind1, ind2)'
     },
@@ -16494,8 +16494,8 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n. },
-            { label: 'ind2', documentation: i18n. },
+            { label: 'ind1', documentation: i18n..ind1 },
+            { label: 'ind2', documentation: i18n..ind2 },
             { label: 'value', documentation: i18n..value }
         ],
         signature: '(name, ind1, ind2, value)'
@@ -17069,7 +17069,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'linear', documentation: i18n. }
+            { label: 'linear', documentation: i18n..linear }
         ],
         signature: '(linear)'
     },
@@ -17077,8 +17077,8 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'linear', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id },
+            { label: 'linear', documentation: i18n..linear }
         ],
         signature: '(sampler_id, linear)'
     },
@@ -17086,7 +17086,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'repeat', documentation: i18n. }
+            { label: 'repeat', documentation: i18n..repeat }
         ],
         signature: '(repeat)'
     },
@@ -17094,8 +17094,8 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'repeat', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id },
+            { label: 'repeat', documentation: i18n..repeat }
         ],
         signature: '(sampler_id, repeat)'
     },
@@ -17103,7 +17103,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'linear', documentation: i18n. }
+            { label: 'linear', documentation: i18n..linear }
         ],
         signature: '(linear)'
     },
@@ -17111,8 +17111,8 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'linear', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id },
+            { label: 'linear', documentation: i18n..linear }
         ],
         signature: '(sampler_id, linear)'
     },
@@ -17120,7 +17120,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'repeat', documentation: i18n. }
+            { label: 'repeat', documentation: i18n..repeat }
         ],
         signature: '(repeat)'
     },
@@ -17128,8 +17128,8 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
-            { label: 'repeat', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id },
+            { label: 'repeat', documentation: i18n..repeat }
         ],
         signature: '(sampler_id, repeat)'
     },
@@ -17145,7 +17145,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
+            { label: 'sampler_id', documentation: i18n..sampler_id },
             { label: 'filter', documentation: i18n..filter }
         ],
         signature: '(sampler_id, filter)'
@@ -17162,7 +17162,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
+            { label: 'sampler_id', documentation: i18n..sampler_id },
             { label: 'bias', documentation: i18n. }
         ],
         signature: '(sampler_id, bias)'
@@ -17179,7 +17179,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
+            { label: 'sampler_id', documentation: i18n..sampler_id },
             { label: 'minmip', documentation: i18n. }
         ],
         signature: '(sampler_id, minmip)'
@@ -17196,7 +17196,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
+            { label: 'sampler_id', documentation: i18n..sampler_id },
             { label: 'maxmap', documentation: i18n. }
         ],
         signature: '(sampler_id, maxmip)'
@@ -17213,7 +17213,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
+            { label: 'sampler_id', documentation: i18n..sampler_id },
             { label: 'maxaniso', documentation: i18n. }
         ],
         signature: '(sampler_id, maxaniso)'
@@ -17230,7 +17230,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. },
+            { label: 'sampler_id', documentation: i18n..sampler_id },
             { label: 'setting', documentation: i18n. }
         ],
         signature: '(sampler_id, setting)'
@@ -17315,7 +17315,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17327,7 +17327,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17339,7 +17339,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17351,7 +17351,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17363,7 +17363,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17375,7 +17375,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17387,7 +17387,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17399,7 +17399,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17411,7 +17411,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17423,7 +17423,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'sampler_id', documentation: i18n. }
+            { label: 'sampler_id', documentation: i18n..sampler_id }
         ],
         signature: '(sampler_id)'
     },
@@ -17704,7 +17704,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: i18n. },
-            { label: 'script', documentation: i18n. }
+            { label: 'script', documentation: i18n..script }
         ],
         signature: '(layer_id, script)'
     },
@@ -17713,7 +17713,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: i18n. },
-            { label: 'script', documentation: i18n. }
+            { label: 'script', documentation: i18n..script }
         ],
         signature: '(layer_id, script)'
     },
@@ -18894,7 +18894,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: i18n. },
-            { label: 'script', documentation: i18n. }
+            { label: 'script', documentation: i18n..script }
         ],
         signature: '(camera, script)'
     },
@@ -18903,7 +18903,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: i18n. },
-            { label: 'script', documentation: i18n. }
+            { label: 'script', documentation: i18n..script }
         ],
         signature: '(camera, script)'
     },
@@ -18912,7 +18912,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'camera', documentation: i18n. },
-            { label: 'script', documentation: i18n. }
+            { label: 'script', documentation: i18n..script }
         ],
         signature: '(camera, script)'
     },
