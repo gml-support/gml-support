@@ -7325,7 +7325,7 @@
     },
 	"win8_license_initialize_sandbox": {
         "desc": "",
-        "_licenseString": ""
+        "licenseString": ""
     },
 	"win8_license_trial_version": {
         "desc": ""
@@ -7381,14 +7381,14 @@
     },
 	"win8_search_add_suggestions": {
         "desc": "",
-        "_dslist": ""
+        "dslist": ""
     },
 	"win8_search_disable": {
         "desc": ""
     },
 	"win8_search_enable": {
         "desc": "",
-        "_selectionCallback": ""
+        "selectionCallback": ""
     },
 	"win8_secondarytile_badge_notification": {
         "desc": "",
@@ -7412,28 +7412,28 @@
     },
 	"win8_settingscharm_add_entry": {
         "desc": "",
-        "name": ""
-        callback
+        "name": "",
+        "callback": ""
     },
 	"win8_settingscharm_add_html_entry": {
         "desc": "",
-        "id": ""
-        "name": ""
-        htmlPath
+        "id": "",
+        "name": "",
+        "htmlPath": ""
     },
 	"win8_settingscharm_add_xaml_entry": {
         "desc": "",
-        "name": ""
-        xamlPath
-        headerRGB
-        callback
-        w"id": ""eFlyout
+        "name": "",
+        "xamlPath": "",
+        "headerRGB": "",
+        "callback": "",
+        "wideFlyout": ""
     },
 	"win8_settingscharm_get_xaml_property": {
         "desc": "",
-        entryName
-        elementName
-        propertyName
+        "entryName": "",
+        "elementName": "",
+        "propertyName": ""
     },
 	"win8_settingscharm_remove_entry": {
         "desc": "",
@@ -7441,119 +7441,338 @@
     },
 	"win8_settingscharm_set_xaml_property": {
         "desc": "",
-        entryName
-        elementName
-        propertyName
-        newValue
+        "entryName": "",
+        "elementName": "",
+        "propertyName": "",
+        "newValue": ""
     },
 	"win8_share_file": {
         "desc": "",
-        file"name": ""
-        title
-        description
-        immediate
+        "filename": "",
+        "title": "",
+        "description": "",
+        "immediate": ""
     },
 	"win8_share_image": {
         "desc": "",
-        image_file"name": ""
-        title
-        description
-        immediate
+        "image_filename": "",
+        "title": "",
+        "description": "",
+        "immediate": ""
     },
 	"win8_share_screenshot": {
         "desc": "",
-        entryName
-        description
-        immediate
+        "entryName": "",
+        "description": "",
+        "immediate": ""
     },
 	"win8_share_text": {
         "desc": "",
-        "text": ""
-        title
-        description
-        immediate
+        "text": "",
+        "title": "",
+        "description": "",
+        "immediate": ""
     },
 	"win8_share_url": {
         "desc": "",
-        url
-        title
-        description
-        immediate
+        "url": "",
+        "title": "",
+        "description": "",
+        "immediate": ""
     },
-    winphone_license_trial_version": {
+    "winphone_license_trial_version": {
         "desc": ""
     },
-	winphone_tile_background_color": {
+	"winphone_tile_background_color": {
         "desc": "",
-        arameters: [
-        color
+        "color": ""
     },
-	winphone_tile_background_colour": {
+	"winphone_tile_background_colour": {
         "desc": "",
-        arameters: [
-        colour
+        "colour": ""
     },
-	winphone_tile_back_content": {
+	"winphone_tile_back_content": {
         "desc": "",
-        content
+        "content": ""
     },
-	winphone_tile_back_content_w"id": ""e": {
+	"winphone_tile_back_content_wide": {
         "desc": "",
-        content
+        "content": ""
     },
-	winphone_tile_back_image": {
+	"winphone_tile_back_image": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_back_image_w"id": ""e": {
+	"winphone_tile_back_image_wide": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_back_title": {
+	"winphone_tile_back_title": {
         "desc": "",
-        title
+        "title": ""
     },
-	winphone_tile_count": {
+	"winphone_tile_count": {
         "desc": "",
-        count
+        "count": ""
     },
-	winphone_tile_cycle_images": {
+	"winphone_tile_cycle_images": {
         "desc": "",
-        included_filename_1
-        included_filename_2
-        ...
+        "included_filename_1": "",
+        "included_filename_2": "",
+        "more": ""
     },
-	winphone_tile_front_image": {
+	"winphone_tile_front_image": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_front_image_small": {
+	"winphone_tile_front_image_small": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_front_image_w"id": ""e": {
+	"winphone_tile_front_image_wide": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_icon_image": {
+	"winphone_tile_icon_image": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_small_background_image": {
+	"winphone_tile_small_background_image": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_small_icon_image": {
+	"winphone_tile_small_icon_image": {
         "desc": "",
-        included_filename
+        "included_filename": ""
     },
-	winphone_tile_title": {
+	"winphone_tile_title": {
         "desc": "",
-        title
+        "title": ""
     },
-	winphone_tile_w"id": ""e_content": {
+	"winphone_tile_wide_content": {
         "desc": "",
-        content
-        index
+        "content": "",
+        "index": ""
     },
+    "device_ios_get_image": {
+        "desc": ""
+    },
+	"device_ios_get_imagename": {
+        "desc": ""
+    },
+    "sound_delete": {
+        "desc": "",
+        "ind": ""
+    },
+    "sound_discard": {
+        "desc": "",
+        "ind": ""
+    },
+    "sound_exists": {
+        "desc": "",
+        "ind": ""
+    },
+    "sound_get_kind": {
+        "desc": "",
+        "ind": ""
+    },
+	"sound_get_name": {
+        "desc": "",
+        "ind": ""
+    },
+	"sound_get_preload": {
+        "desc": "",
+        "ind": ""
+    },
+    "sound_restore": {
+        "desc": "",
+        "ind": ""
+    },
+    "sound_loop": {
+        "desc": "",
+        "index": ""
+    },
+    "sound_play": {
+        "desc": "",
+        "index": ""
+    },
+    "sound_stop": {
+        "desc": "",
+        "index": ""
+    },
+	"sound_stop_all": {
+        "desc": ""
+    },
+	"sound_volume": {
+        "desc": "",
+        "index": "",
+        "value": ""
+    },
+	"sound_global_volume": {
+        "desc": "",
+        "value": ""
+    },
+	"sound_fade": {
+        "desc": "",
+        "index": "",
+        "value": "",
+        "time": ""
+    },
+	"sound_isplaying": {
+        "desc": "",
+        "index": ""
+    },
+    "audio_music_is_playing": {
+        "desc": ""
+    },
+    "audio_resume_music": {
+        "desc": ""
+    },
+    "audio_pause_music": {
+        "desc": ""
+    },
+	"audio_play_music": {
+        "desc": "",
+        "soundid": "",
+        "loops": ""
+    },
+	"audio_stop_music": {
+        "desc": ""
+    },
+	"audio_music_gain": {
+        "desc": "",
+        "value": "",
+        "time": ""
+    },
+	"ads_disable": {
+        "desc": "",
+        "num": ""
+	},
+	"ads_enable": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "num": ""
+	},
+	"ads_engagement_active": {
+		"desc": ""
+	},
+	"ads_engagement_available": {
+		"desc": ""
+	},
+	"ads_engagement_launch": {
+		"desc": ""
+	},
+	"ads_event": {
+        "desc": "",
+        "stringid": ""
+	},
+	"ads_event_preload": {
+        "desc": "",
+        "stringid": ""
+	},
+	"ads_get_display_height": {
+        "desc": "",
+        "slotnum": ""
+	},
+	"ads_get_display_width": {
+        "desc": "",
+        "slotnum": ""
+	},
+	"ads_interstitial_available": {
+		"desc": ""
+	},
+	"ads_interstitial_display": {
+		"desc": ""
+	},
+	"ads_move": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "slotnum": ""
+    },
+	"ads_setup": {
+        "desc": "",
+        "user_uuid": "",
+        "ad_app_key": ""
+	},
+	"ads_set_reward_callback": {
+        "desc": "",
+        "callback": ""
+	},
+    "playhaven_add_notification_badge": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "ident": ""
+    },
+	"playhaven_hide_notification_badge": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "ident": ""
+    },
+	"playhaven_position_notification_badge": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": ""
+    },
+	"playhaven_update_notification_badge": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": ""
+    },
+    "openfeint_accept_challenge": {
+        "desc": ""
+    },
+	"openfeint_send_challenge": {
+        "desc": "",
+        "definition_string": "",
+        "text_string": "",
+        "data_string": ""
+    },
+	"openfeint_send_invite": {
+        "desc": "",
+        "definition_string": ""
+    },
+	"openfeint_send_result": {
+        "desc": "",
+        "challenge_result": "",
+        "definition_string": ""
+    },
+	"openfeint_send_social": {
+        "desc": "",
+        "text_string": "",
+        "suggested_message": "",
+        "image_name": ""
+    },
+	"openfeint_set_url": {
+        "desc": "",
+        "url": ""
+    },
+	"openfeint_start": {
+        "desc": ""
+    },
+	"achievement_map_achievement": {
+        "desc": "",
+        "gamecenter_string": "",
+        "openfeint_string": ""
+	},
+	"achievement_map_leaderboard": {
+        "desc": "",
+        "gamecenter_string": "",
+        "openfeint_string": "",
+        "leaderboard_type": ""
+	},
+	"achievement_is_online": {
+		"desc": ""
+	}
 }

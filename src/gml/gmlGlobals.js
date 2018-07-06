@@ -12457,790 +12457,790 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_license_initialize_sandbox.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: '_licenseString', documentation: i18n. }
+            { label: '_licenseString', documentation: i18n.win8_license_initialize_sandbox.licenseString }
         ],
         signature: '(_licenseString)'
     },
 	win8_license_trial_version: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_license_trial_version.desc,
         available: datasimple.gms1d
     },
 	win8_livetile_badge_clear: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_badge_clear.desc,
         available: datasimple.gms1d
     },
 	win8_livetile_badge_notification: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_badge_notification.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.win8_livetile_badge_notification.id }
         ],
         signature: '(id)'
     },
 	win8_livetile_notification_begin: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_begin.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'template', documentation: i18n. }
+            { label: 'template', documentation: i18n.win8_livetile_notification_begin.template }
         ],
         signature: '(template)'
     },
 	win8_livetile_notification_end: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_end.desc,
         available: datasimple.gms1d
     },
 	win8_livetile_notification_expiry: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_expiry.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'expiryTime', documentation: i18n. }
+            { label: 'expiryTime', documentation: i18n.win8_livetile_notification_expiry.expiryTime }
         ],
         signature: '(expiryTime)'
     },
 	win8_livetile_notification_image_add: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_image_add.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'image', documentation: i18n..image }
+            { label: 'image', documentation: i18n.win8_livetile_notification_image_add.image }
         ],
         signature: '(image)'
     },
 	win8_livetile_notification_secondary_begin: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_secondary_begin.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'template', documentation: i18n. },
-            { label: 'tileId', documentation: i18n. }
+            { label: 'template', documentation: i18n.win8_livetile_notification_secondary_begin.template },
+            { label: 'tileId', documentation: i18n.tileId.win8_livetile_notification_secondary_begin.tileId }
         ],
         signature: '(template, tileId)'
     },
 	win8_livetile_notification_tag: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_tag.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'tag', documentation: i18n. }
+            { label: 'tag', documentation: i18n.win8_livetile_notification_tag.tag }
         ],
         signature: '(tag)'
     },
 	win8_livetile_notification_text_add: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_notification_text_add.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'text', documentation: i18n. }
+            { label: 'text', documentation: i18n.win8_livetile_notification_text_add.text }
         ],
         signature: '(text)'
     },
 	win8_livetile_queue_enable: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_queue_enable.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'flag', documentation: i18n..flag }
+            { label: 'flag', documentation: i18n.win8_livetile_queue_enable.flag }
         ],
         signature: '(flag)'
     },
 	win8_livetile_tile_clear: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_tile_clear.desc,
         available: datasimple.gms1d
     },
 	win8_livetile_tile_notification: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_livetile_tile_notification.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'template', documentation: i18n. },
-            { label: 'ds_map', documentation: i18n..ds_map },
-            { label: 'expiry', documentation: i18n. },
-            { label: 'tag', documentation: i18n. }
+            { label: 'template', documentation: i18n.win8_livetile_tile_notification.template },
+            { label: 'ds_map', documentation: i18n.win8_livetile_tile_notification.ds_map },
+            { label: 'expiry', documentation: i18n.win8_livetile_tile_notification.expiry },
+            { label: 'tag', documentation: i18n.win8_livetile_tile_notification.tag }
         ],
         signature: '(template, ds_map, expiry, tag)'
     },
 	win8_search_add_suggestions: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_search_add_suggestions.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: '_dslist', documentation: i18n. }
+            { label: '_dslist', documentation: i18n.win8_search_add_suggestions.dslist }
         ],
         signature: '(_dslist)'
     },
 	win8_search_disable: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_search_disable.desc,
         available: datasimple.gms1d
     },
 	win8_search_enable: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_search_enable.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: '_selectionCallback', documentation: i18n. }
+            { label: '_selectionCallback', documentation: i18n.win8_search_enable.selectionCallback }
         ],
         signature: '(_selectionCallback)'
     },
 	win8_secondarytile_badge_notification: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_secondarytile_badge_notification.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'tileId', documentation: i18n. }
+            { label: 'id', documentation: i18n.win8_secondarytile_badge_notification.id },
+            { label: 'tileId', documentation: i18n.tileId.win8_secondarytile_badge_notification.tileId }
         ],
         signature: '(id, tileId)'
     },
 	win8_secondarytile_delete: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_secondarytile_delete.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.win8_secondarytile_delete.id }
         ],
         signature: '(id)'
     },
 	win8_secondarytile_pin: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_secondarytile_pin.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'shortName', documentation: i18n. },
-            { label: 'displayName', documentation: i18n. },
-            { label: 'cmdLineArgs', documentation: i18n. },
-            { label: 'dsListOptions', documentation: i18n. },
-            { label: 'tileImg', documentation: i18n. },
-            { label: 'wideTileImg', documentation: i18n. },
-            { label: 'textCol', documentation: i18n. }
+            { label: 'id', documentation: i18n.win8_secondarytile_pin.id },
+            { label: 'shortName', documentation: i18n.win8_secondarytile_pin.shortName },
+            { label: 'displayName', documentation: i18n.win8_secondarytile_pin.displayName },
+            { label: 'cmdLineArgs', documentation: i18n.win8_secondarytile_pin.cmdLineArgs },
+            { label: 'dsListOptions', documentation: i18n.win8_secondarytile_pin.dsListOptions },
+            { label: 'tileImg', documentation: i18n.win8_secondarytile_pin.tileImg },
+            { label: 'wideTileImg', documentation: i18n.win8_secondarytile_pin.wideTileImg },
+            { label: 'textCol', documentation: i18n.win8_secondarytile_pin.textCol }
         ],
         signature: '(id, shortName, displayName, cmdLineArgs, dsListOptions, tileImg, wideTileImg, textCol)'
     },
 	win8_settingscharm_add_entry: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_settingscharm_add_entry.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'callback', documentation: i18n..callback }
+            { label: 'name', documentation: i18n.win8_settingscharm_add_entry.name },
+            { label: 'callback', documentation: i18n.win8_settingscharm_add_entry.callback }
         ],
         signature: '(name, callback)'
     },
 	win8_settingscharm_add_html_entry: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_settingscharm_add_html_entry.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'name', documentation: i18n..name },
-            { label: 'htmlPath', documentation: i18n. }
+            { label: 'id', documentation: i18n.win8_settingscharm_add_html_entry.id },
+            { label: 'name', documentation: i18n.win8_settingscharm_add_html_entry.name },
+            { label: 'htmlPath', documentation: i18n.win8_settingscharm_add_html_entry.htmlPath }
         ],
         signature: '(id, name, htmlPath)'
     },
 	win8_settingscharm_add_xaml_entry: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_settingscharm_add_xaml_entry.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'xamlPath', documentation: i18n. },
-            { label: 'headerRGB', documentation: i18n. },
-            { label: 'callback', documentation: i18n..callback },
-            { label: 'wideFlyout', documentation: i18n. }
+            { label: 'name', documentation: i18n.win8_settingscharm_add_xaml_entry.name },
+            { label: 'xamlPath', documentation: i18n.win8_settingscharm_add_xaml_entry.xamlPath },
+            { label: 'headerRGB', documentation: i18n.win8_settingscharm_add_xaml_entry.headerRGB },
+            { label: 'callback', documentation: i18n.win8_settingscharm_add_xaml_entry.callback },
+            { label: 'wideFlyout', documentation: i18n.win8_settingscharm_add_xaml_entry.wideFlyout }
         ],
         signature: '(name, xamlPath, headerRGB, callback, wideFlyout)'
     },
 	win8_settingscharm_get_xaml_property: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_settingscharm_get_xaml_property.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'entryName', documentation: i18n. },
-            { label: 'elementName', documentation: i18n. },
-            { label: 'propertyName', documentation: i18n. }
+            { label: 'entryName', documentation: i18n.win8_settingscharm_get_xaml_property.entryName },
+            { label: 'elementName', documentation: i18n.win8_settingscharm_get_xaml_property.elementName },
+            { label: 'propertyName', documentation: i18n.win8_settingscharm_get_xaml_property.propertyName }
         ],
         signature: '(entryName, elementName, propertyName)'
     },
 	win8_settingscharm_remove_entry: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_settingscharm_remove_entry.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.win8_settingscharm_remove_entry.name }
         ],
         signature: '(name)'
     },
 	win8_settingscharm_set_xaml_property: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_settingscharm_set_xaml_property.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'entryName', documentation: i18n. },
-            { label: 'elementName', documentation: i18n. },
-            { label: 'propertyName', documentation: i18n. },
-            { label: 'newValue', documentation: i18n. }
+            { label: 'entryName', documentation: i18n.win8_settingscharm_set_xaml_property.entryName },
+            { label: 'elementName', documentation: i18n.win8_settingscharm_set_xaml_property.elementName },
+            { label: 'propertyName', documentation: i18n.win8_settingscharm_set_xaml_property.propertyName },
+            { label: 'newValue', documentation: i18n.win8_settingscharm_set_xaml_property.newValue }
         ],
         signature: '(entryName, elementName, propertyName, newValue)'
     },
 	win8_share_file: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_share_file.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'filename', documentation: i18n..filename },
-            { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n..description },
-            { label: 'immediate', documentation: i18n. }
+            { label: 'filename', documentation: i18n.win8_share_file.filename },
+            { label: 'title', documentation: i18n.win8_share_file.title },
+            { label: 'description', documentation: i18n.win8_share_file.description },
+            { label: 'immediate', documentation: i18n.win8_share_file.immediate }
         ],
         signature: '(filename, title, description, immediate)'
     },
 	win8_share_image: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_share_image.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'image_filename', documentation: i18n. },
-            { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n..description },
-            { label: 'immediate', documentation: i18n. }
+            { label: 'image_filename', documentation: i18n.win8_share_image.image_filename },
+            { label: 'title', documentation: i18n.win8_share_image.title },
+            { label: 'description', documentation: i18n.win8_share_image.description },
+            { label: 'immediate', documentation: i18n.win8_share_image.immediate }
         ],
         signature: '(image_filename, title, description, immediate)'
     },
 	win8_share_screenshot: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_share_screenshot.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'entryName', documentation: i18n. },
-            { label: 'description', documentation: i18n..description },
-            { label: 'immediate', documentation: i18n. }
+            { label: 'entryName', documentation: i18n.win8_share_screenshot.entryName },
+            { label: 'description', documentation: i18n.win8_share_screenshot.description },
+            { label: 'immediate', documentation: i18n.win8_share_screenshot.immediate }
         ],
         signature: '(title, description, immediate)'
     },
 	win8_share_text: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_share_text.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'text', documentation: i18n. },
-            { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n..description },
-            { label: 'immediate', documentation: i18n. }
+            { label: 'text', documentation: i18n.win8_share_text.text },
+            { label: 'title', documentation: i18n.win8_share_text.title },
+            { label: 'description', documentation: i18n.win8_share_text.description },
+            { label: 'immediate', documentation: i18n.win8_share_text.immediate }
         ],
         signature: '(text, title, description, immediate)'
     },
 	win8_share_url: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_share_url.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'url', documentation: i18n..url },
-            { label: 'title', documentation: i18n..title },
-            { label: 'description', documentation: i18n..description },
-            { label: 'immediate', documentation: i18n. }
+            { label: 'url', documentation: i18n.win8_share_url.url },
+            { label: 'title', documentation: i18n.win8_share_url.title },
+            { label: 'description', documentation: i18n.win8_share_url.description },
+            { label: 'immediate', documentation: i18n.win8_share_url.immediate }
         ],
         signature: '(url, title, description, immediate)'
     },
     winphone_license_trial_version: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_license_trial_version.desc,
         available: datasimple.gms1d
     },
 	winphone_tile_background_color: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_background_color.desc,
         available: datasimple.gms1d,
         arameters: [
-            { label: 'color', documentation: i18n..color }
+            { label: 'color', documentation: i18n.winphone_tile_background_color.color }
         ],
         signature: '(color)'
     },
 	winphone_tile_background_colour: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_background_colour.desc,
         available: datasimple.gms1d,
         arameters: [
-            { label: 'colour', documentation: i18n..colour }
+            { label: 'colour', documentation: i18n.winphone_tile_background_colour.colour }
         ],
         signature: '(colour)'
     },
 	winphone_tile_back_content: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_back_content.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'content', documentation: i18n..content }
+            { label: 'content', documentation: i18n.winphone_tile_back_content.content }
         ],
         signature: '(content)'
     },
 	winphone_tile_back_content_wide: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_back_content_wide.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'content', documentation: i18n..content }
+            { label: 'content', documentation: i18n.winphone_tile_back_content_wide.content }
         ],
         signature: '(content)'
     },
 	winphone_tile_back_image: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_back_image.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_back_image.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_back_image_wide: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_back_image_wide.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_back_image_wide.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_back_title: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_back_title.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'title', documentation: i18n..title }
+            { label: 'title', documentation: i18n.winphone_tile_back_title.title }
         ],
         signature: '(title)'
     },
 	winphone_tile_count: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_count.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'count', documentation: i18n..count }
+            { label: 'count', documentation: i18n.winphone_tile_count.count }
         ],
         signature: '(count)'
     },
 	winphone_tile_cycle_images: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_cycle_images.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename_1', documentation: i18n. },
-            { label: 'included_filename_2', documentation: i18n. },
-            { label: '...', documentation: i18n..more }
+            { label: 'included_filename_1', documentation: i18n.winphone_tile_cycle_images.included_filename_1 },
+            { label: 'included_filename_2', documentation: i18n.winphone_tile_cycle_images.included_filename_2 },
+            { label: '...', documentation: i18n.winphone_tile_cycle_images.more }
         ],
         signature: '(included_filename_1, included_filename_2, ...)'
     },
 	winphone_tile_front_image: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_front_image.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_front_image.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_small: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_front_image_small.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_front_image_small.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_wide: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_front_image_wide.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_front_image_wide.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_icon_image: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_icon_image.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_icon_image.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_small_background_image: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_small_background_image.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_small_background_image.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_small_icon_image: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_small_icon_image.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'included_filename', documentation: i18n. }
+            { label: 'included_filename', documentation: i18n.winphone_tile_small_icon_image.included_filename }
         ],
         signature: '(included_filename)'
     },
 	winphone_tile_title: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_title.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'title', documentation: i18n..title }
+            { label: 'title', documentation: i18n.winphone_tile_title.title }
         ],
         signature: '(title)'
     },
 	winphone_tile_wide_content: {
-        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.winphone_tile_wide_content.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'content', documentation: i18n..content },
-            { label: 'index', documentation: i18n..index }
+            { label: 'content', documentation: i18n.winphone_tile_wide_content.content },
+            { label: 'index', documentation: i18n.winphone_tile_wide_content.index }
         ],
         signature: '(content, index)'
     },
 
     //Obsolete functions in new GameMaker Studio and GameMaker Studio 2
     device_ios_get_image: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.device_ios_get_image.desc,
         available: datasimple.ob1
     },
 	device_ios_get_imagename: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.device_ios_get_imagename.desc,
         available: datasimple.ob1
     },
     sound_delete: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_delete.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_delete.ind }
         ],
         signature: '(ind)'
     },
     sound_discard: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_discard.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_discard.ind }
         ],
         signature: '(ind)'
     },
     sound_exists: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_exists.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_exists.ind }
         ],
         signature: '(ind)'
     },
     sound_get_kind: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_get_kind.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_get_kind.ind }
         ],
         signature: '(ind)'
     },
 	sound_get_name: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_get_name.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_get_name.ind }
         ],
         signature: '(ind)'
     },
 	sound_get_preload: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_get_preload.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_get_preload.ind }
         ],
         signature: '(ind)'
     },
     sound_restore: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_restore.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.sound_restore.ind }
         ],
         signature: '(ind)'
     },
     sound_loop: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_loop.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'index', documentation: i18n..index }
+            { label: 'index', documentation: i18n.sound_loop.index }
         ],
         signature: '(index)'
     },
     sound_play: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_play.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'index', documentation: i18n..index }
+            { label: 'index', documentation: i18n.sound_play.index }
         ],
         signature: '(index)'
     },
     sound_stop: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_stop.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'index', documentation: i18n..index }
+            { label: 'index', documentation: i18n.sound_stop.index }
         ],
         signature: '(index)'
     },
 	sound_stop_all: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_stop_all.desc,
         available: datasimple.ob1
     },
 	sound_volume: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_volume.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'index', documentation: i18n..index },
-            { label: 'value', documentation: i18n..value }
+            { label: 'index', documentation: i18n.sound_volume.index },
+            { label: 'value', documentation: i18n.sound_volume.value }
         ],
         signature: '(index, value)'
     },
 	sound_global_volume: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_global_volume.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'value', documentation: i18n..value }
+            { label: 'value', documentation: i18n.sound_global_volume.value }
         ],
         signature: '(value)'
     },
 	sound_fade: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_fade.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'index', documentation: i18n..index },
-            { label: 'value', documentation: i18n..value },
-            { label: 'time', documentation: i18n..time }
+            { label: 'index', documentation: i18n.sound_fade.index },
+            { label: 'value', documentation: i18n.sound_fade.value },
+            { label: 'time', documentation: i18n.sound_fade.time }
         ],
         signature: '(index, value, time)'
     },
 	sound_isplaying: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.sound_isplaying.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'index', documentation: i18n..index }
+            { label: 'index', documentation: i18n.sound_isplaying.index }
         ],
         signature: '(index)'
     },
     audio_music_is_playing: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_music_is_playing.desc,
         available: datasimple.ob1
     },
     audio_resume_music: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_resume_music.desc,
         available: datasimple.ob1
     },
     audio_pause_music: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_pause_music.desc,
         available: datasimple.ob1
     },
 	audio_play_music: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_play_music.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'soundid', documentation: i18n..soundid },
-            { label: 'loops', documentation: i18n. }
+            { label: 'soundid', documentation: i18n.audio_play_music.soundid },
+            { label: 'loops', documentation: i18n.audio_play_music.loops }
         ],
         signature: '(soundid, loops)'
     },
 	audio_stop_music: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_stop_music.desc,
         available: datasimple.ob1
     },
 	audio_music_gain: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_music_gain.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'value', documentation: i18n..value },
-            { label: 'time', documentation: i18n..time }
+            { label: 'value', documentation: i18n.audio_music_gain.value },
+            { label: 'time', documentation: i18n.audio_music_gain.time }
         ],
         signature: '(value, time)'
     },
 	ads_disable: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_disable.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'num', documentation: i18n. }
+            { label: 'num', documentation: i18n.ads_disable.num }
         ],
 		signature: '(num)'
 	},
 	ads_enable: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_enable.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'num', documentation: i18n. }
+            { label: 'x', documentation: i18n.ads_enable.x },
+            { label: 'y', documentation: i18n.ads_enable.y },
+            { label: 'num', documentation: i18n.ads_enable.num }
         ],
 		signature: '(x, y, num)'
 	},
 	ads_engagement_active: {
-		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_engagement_active.desc,
         available: datasimple.ob1
 	},
 	ads_engagement_available: {
-		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_engagement_available.desc,
         available: datasimple.ob1
 	},
 	ads_engagement_launch: {
-		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_engagement_launch.desc,
         available: datasimple.ob1
 	},
 	ads_event: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_event.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'stringid', documentation: i18n. }
+            { label: 'stringid', documentation: i18n.ads_event.stringid }
         ],
 		signature: '(stringid)'
 	},
 	ads_event_preload: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_event_preload.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'stringid', documentation: i18n. }
+            { label: 'stringid', documentation: i18n.ads_event_preload.stringid }
         ],
 		signature: '(stringid)'
 	},
 	ads_get_display_height: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_get_display_height.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'slotnum', documentation: i18n. }
+            { label: 'slotnum', documentation: i18n.ads_get_display_height.slotnum }
         ],
 		signature: '(slotnum)'
 	},
 	ads_get_display_width: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_get_display_width.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'slotnum', documentation: i18n. }
+            { label: 'slotnum', documentation: i18n.ads_get_display_width.slotnum }
         ],
 		signature: '(slotnum)'
 	},
 	ads_interstitial_available: {
-		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_interstitial_available.desc,
         available: datasimple.ob1
 	},
 	ads_interstitial_display: {
-		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_interstitial_display.desc,
         available: datasimple.ob1
 	},
 	ads_move: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_move.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'slotnum', documentation: i18n. }
+            { label: 'x', documentation: i18n.ads_move.x },
+            { label: 'y', documentation: i18n.ads_move.y },
+            { label: 'slotnum', documentation: i18n.ads_move.slotnum }
         ],
 		signature: '(x, y, slotnum)'},
 	ads_setup: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_setup.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'user_uuid', documentation: i18n. },
-            { label: 'ad_app_key', documentation: i18n. }
+            { label: 'user_uuid', documentation: i18n.ads_setup.user_uuid },
+            { label: 'ad_app_key', documentation: i18n.ads_setup.ad_app_key }
         ],
 		signature: '(user_uuid, ad_app_key)'
 	},
 	ads_set_reward_callback: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.ads_set_reward_callback.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'callback', documentation: i18n..callback }
+            { label: 'callback', documentation: i18n.ads_set_reward_callback.callback }
         ],
 		signature: '(callback)'
 	},
     playhaven_add_notification_badge: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.playhaven_add_notification_badge.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'ident', documentation: i18n. }
+            { label: 'x', documentation: i18n.playhaven_add_notification_badge.x },
+            { label: 'y', documentation: i18n.playhaven_add_notification_badge.y },
+            { label: 'w', documentation: i18n.playhaven_add_notification_badge.w },
+            { label: 'h', documentation: i18n.playhaven_add_notification_badge.h },
+            { label: 'ident', documentation: i18n.playhaven_add_notification_badge.ident }
         ],
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_hide_notification_badge: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.playhaven_hide_notification_badge.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'ident', documentation: i18n. }
+            { label: 'x', documentation: i18n.playhaven_hide_notification_badge.x },
+            { label: 'y', documentation: i18n.playhaven_hide_notification_badge.y },
+            { label: 'w', documentation: i18n.playhaven_hide_notification_badge.w },
+            { label: 'h', documentation: i18n.playhaven_hide_notification_badge.h },
+            { label: 'ident', documentation: i18n.playhaven_hide_notification_badge.ident }
         ],
         signature: '(x, y, w, h, ident)'
     },
 	playhaven_position_notification_badge: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.playhaven_position_notification_badge.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'x', documentation: i18n.playhaven_position_notification_badge.x },
+            { label: 'y', documentation: i18n.playhaven_position_notification_badge.y },
+            { label: 'w', documentation: i18n.playhaven_position_notification_badge.w },
+            { label: 'h', documentation: i18n.playhaven_position_notification_badge.h }
         ],
         signature: '(x, y, w, h)'
     },
 	playhaven_update_notification_badge: {
-        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.playhaven_update_notification_badge.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'x', documentation: i18n.playhaven_update_notification_badge.x },
+            { label: 'y', documentation: i18n.playhaven_update_notification_badge.y },
+            { label: 'w', documentation: i18n.playhaven_update_notification_badge.w },
+            { label: 'h', documentation: i18n.playhaven_update_notification_badge.h }
         ],
         signature: '(x, y, w, h)'
     },
     openfeint_accept_challenge: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_accept_challenge.desc,
         available: datasimple.ob1
     },
 	openfeint_send_challenge: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_send_challenge.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'definition_string', documentation: i18n. },
-            { label: 'text_string', documentation: i18n..text_string },
-            { label: 'data_string', documentation: i18n. }
+            { label: 'definition_string', documentation: i18n.openfeint_send_challenge.definition_string },
+            { label: 'text_string', documentation: i18n.openfeint_send_challenge.text_string },
+            { label: 'data_string', documentation: i18n.openfeint_send_challenge.data_string }
         ],
         signature: '(definition_string, text_string, data_string)'
     },
 	openfeint_send_invite: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_send_invite.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'definition_string', documentation: i18n. }
+            { label: 'definition_string', documentation: i18n.openfeint_send_invite.definition_string }
         ],
         signature: '(definition_string)'
     },
 	openfeint_send_result: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_send_result.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'challenge_result', documentation: i18n. },
-            { label: 'definition_string', documentation: i18n. }
+            { label: 'challenge_result', documentation: i18n.openfeint_send_result.challenge_result },
+            { label: 'definition_string', documentation: i18n.openfeint_send_result.definition_string }
         ],
         signature: '(challenge_result, description_string)'
     },
 	openfeint_send_social: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_send_social.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'text_string', documentation: i18n..text_string },
-            { label: 'suggested_message', documentation: i18n. },
-            { label: 'image_name', documentation: i18n. }
+            { label: 'text_string', documentation: i18n.openfeint_send_social.text_string },
+            { label: 'suggested_message', documentation: i18n.openfeint_send_social.suggested_message },
+            { label: 'image_name', documentation: i18n.openfeint_send_social.image_name }
         ],
         signature: '(text_string, suggested_message, image_name)'
     },
 	openfeint_set_url: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_set_url.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'url', documentation: i18n..url }
+            { label: 'url', documentation: i18n.openfeint_set_url.url }
         ],
         signature: '(url)'
     },
 	openfeint_start: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.openfeint_start.desc,
         available: datasimple.ob1
     },
 	achievement_map_achievement: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.achievement_map_achievement.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'gamecenter_string', documentation: i18n. },
-            { label: 'openfeint_string', documentation: i18n. }
+            { label: 'gamecenter_string', documentation: i18n.achievement_map_achievement.gamecenter_string },
+            { label: 'openfeint_string', documentation: i18n.achievement_map_achievement.openfeint_string }
         ],
 		signature: '(gamecenter_string, openfeint_string)'
 	},
 	achievement_map_leaderboard: {
-        description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.achievement_map_leaderboard.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'gamecenter_string', documentation: i18n. },
-            { label: 'openfeint_string', documentation: i18n. },
-            { label: 'leaderboard_type', documentation: i18n. }
+            { label: 'gamecenter_string', documentation: i18n.achievement_map_leaderboard.gamecenter_string },
+            { label: 'openfeint_string', documentation: i18n.achievement_map_leaderboard.openfeint_string },
+            { label: 'leaderboard_type', documentation: i18n.achievement_map_leaderboard.leaderboard_type }
         ],
 		signature: '(gamecenter_string, openfeint_string, leaderboard_type)'
 	},
 	achievement_is_online: {
-		description: '[Function] (' + i18n_notice.obsolete_new1 + ')',
+		description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.achievement_is_online.desc,
         available: datasimple.ob1
 	},
 
