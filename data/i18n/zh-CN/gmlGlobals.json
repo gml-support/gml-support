@@ -7273,5 +7273,287 @@
 	"variable_instance_get_names": {
         "desc": "",
         "instance_id": ""
-    }
+    },
+
+    "pocketchange_display_reward": {
+        "desc": ""
+    },
+	"pocketchange_display_shop": {
+        "desc": ""
+    },
+	"iap_store_status": {
+        "desc": ""
+    },
+	"iap_product_status": {
+        "desc": "",
+        "product_id": ""
+    },
+	"iap_is_downloaded": {
+        "desc": "",
+        "product_id_string": ""
+    },
+	"iap_files_purchased": {
+        "desc": ""
+    },
+	"iap_product_files": {
+        "desc": "",
+        "product_id": "",
+        "ds_list": ""
+    },
+	"iap_event_queue": {
+        "desc": ""
+    },
+    "win8_appbar_add_element": {
+        "desc": "",
+        "type": "",
+        "icon": "",
+        "label": "",
+        "section": "",
+        "toolTip": "",
+        "callback": ""
+    },
+	"win8_appbar_enable": {
+        "desc": "",
+        "flag": ""
+    },
+	"win8_appbar_remove_element": {
+        "desc": "",
+        "id": ""
+    },
+	"win8_device_touchscreen_available": {
+        "desc": ""
+    },
+	"win8_license_initialize_sandbox": {
+        "desc": "",
+        "_licenseString": ""
+    },
+	"win8_license_trial_version": {
+        "desc": ""
+    },
+	"win8_livetile_badge_clear": {
+        "desc": ""
+    },
+	"win8_livetile_badge_notification": {
+        "desc": "",
+        "id": ""
+    },
+	"win8_livetile_notification_begin": {
+        "desc": "",
+        "template": ""
+    },
+	"win8_livetile_notification_end": {
+        "desc": ""
+    },
+	"win8_livetile_notification_expiry": {
+        "desc": "",
+        "expiryTime": ""
+    },
+	"win8_livetile_notification_image_add": {
+        "desc": "",
+        "image": ""
+    },
+	"win8_livetile_notification_secondary_begin": {
+        "desc": "",
+        "template": "",
+        "tileid": ""
+    },
+	"win8_livetile_notification_tag": {
+        "desc": "",
+        "tag": ""
+    },
+	"win8_livetile_notification_text": {
+        "desc": "",
+        "text": ""
+    },
+	"win8_livetile_queue_enable": {
+        "desc": "",
+        "flag": ""
+    },
+	"win8_livetile_tile_clear": {
+        "desc": ""
+    },
+	"win8_livetile_tile_notification": {
+        "desc": "",
+        "template": "",
+        "ds_map": "",
+        "expiry": "",
+        "tag": ""
+    },
+	"win8_search_add_suggestions": {
+        "desc": "",
+        "_dslist": ""
+    },
+	"win8_search_disable": {
+        "desc": ""
+    },
+	"win8_search_enable": {
+        "desc": "",
+        "_selectionCallback": ""
+    },
+	"win8_secondarytile_badge_notification": {
+        "desc": "",
+        "id": "",
+        "tileid": ""
+    },
+	"win8_secondarytile_delete": {
+        "desc": "",
+        "id": ""
+    },
+	"win8_secondarytile_pin": {
+        "desc": "",
+        "id": "",
+        "shortName": "",
+        "displayName": "",
+        "cmdLineArgs": "",
+        "dsListOptions": "",
+        "tileImg": "",
+        "wideTileImg": "",
+        "textCol": ""
+    },
+	"win8_settingscharm_add_entry": {
+        "desc": "",
+        "name": ""
+        callback
+    },
+	"win8_settingscharm_add_html_entry": {
+        "desc": "",
+        "id": ""
+        "name": ""
+        htmlPath
+    },
+	"win8_settingscharm_add_xaml_entry": {
+        "desc": "",
+        "name": ""
+        xamlPath
+        headerRGB
+        callback
+        w"id": ""eFlyout
+    },
+	"win8_settingscharm_get_xaml_property": {
+        "desc": "",
+        entryName
+        elementName
+        propertyName
+    },
+	"win8_settingscharm_remove_entry": {
+        "desc": "",
+        "name": ""
+    },
+	"win8_settingscharm_set_xaml_property": {
+        "desc": "",
+        entryName
+        elementName
+        propertyName
+        newValue
+    },
+	"win8_share_file": {
+        "desc": "",
+        file"name": ""
+        title
+        description
+        immediate
+    },
+	"win8_share_image": {
+        "desc": "",
+        image_file"name": ""
+        title
+        description
+        immediate
+    },
+	"win8_share_screenshot": {
+        "desc": "",
+        entryName
+        description
+        immediate
+    },
+	"win8_share_text": {
+        "desc": "",
+        "text": ""
+        title
+        description
+        immediate
+    },
+	"win8_share_url": {
+        "desc": "",
+        url
+        title
+        description
+        immediate
+    },
+    winphone_license_trial_version": {
+        "desc": ""
+    },
+	winphone_tile_background_color": {
+        "desc": "",
+        arameters: [
+        color
+    },
+	winphone_tile_background_colour": {
+        "desc": "",
+        arameters: [
+        colour
+    },
+	winphone_tile_back_content": {
+        "desc": "",
+        content
+    },
+	winphone_tile_back_content_w"id": ""e": {
+        "desc": "",
+        content
+    },
+	winphone_tile_back_image": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_back_image_w"id": ""e": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_back_title": {
+        "desc": "",
+        title
+    },
+	winphone_tile_count": {
+        "desc": "",
+        count
+    },
+	winphone_tile_cycle_images": {
+        "desc": "",
+        included_filename_1
+        included_filename_2
+        ...
+    },
+	winphone_tile_front_image": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_front_image_small": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_front_image_w"id": ""e": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_icon_image": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_small_background_image": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_small_icon_image": {
+        "desc": "",
+        included_filename
+    },
+	winphone_tile_title": {
+        "desc": "",
+        title
+    },
+	winphone_tile_w"id": ""e_content": {
+        "desc": "",
+        content
+        index
+    },
 }

@@ -11777,684 +11777,684 @@ exports.globalfunctions = {
         signature: '(url)'
     },
 	url_open_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.url_open_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'url', documentation: i18n..url },
-            { label: 'target', documentation: i18n. }
+            { label: 'url', documentation: i18n.url_open_ext.url },
+            { label: 'target', documentation: i18n.url_open_ext.target }
         ],
         signature: '(url, target)'
     },
 	url_open_full: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.url_open_full.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'url', documentation: i18n..url },
-            { label: 'target', documentation: i18n. },
-            { label: 'options', documentation: i18n. }
+            { label: 'url', documentation: i18n.url_open_full.url },
+            { label: 'target', documentation: i18n.url_open_full.target },
+            { label: 'options', documentation: i18n.url_open_full.options }
         ],
         signature: '(url, target, options)'
     },
 	vertex_argb: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_argb.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'argb', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_argb.vbuff },
+            { label: 'argb', documentation: i18n.vertex_argb.argb }
         ],
         signature: '(vbuff, argb)'
     },
 	vertex_begin: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_begin.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'format', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_begin.vbuff },
+            { label: 'format', documentation: i18n.vertex_begin.format }
         ],
         signature: '(vbuff, format)'
     },
 	vertex_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_color.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'color', documentation: i18n..color },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'vbuff', documentation: i18n.vertex_color.vbuff },
+            { label: 'color', documentation: i18n.vertex_color.color },
+            { label: 'alpha', documentation: i18n.vertex_color.alpha }
         ],
         signature: '(vbuff, color, alpha)'
     },
 	vertex_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_colour.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'vbuff', documentation: i18n.vertex_colour.vbuff },
+            { label: 'colour', documentation: i18n.vertex_colour.colour },
+            { label: 'alpha', documentation: i18n.vertex_colour.alpha }
         ],
         signature: '(vbuff, colour, alpha)'
     },
 	vertex_create_buffer: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_create_buffer.desc,
         available: datasimple.gms1
     },
 	vertex_create_buffer_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_create_buffer_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'size', documentation: i18n..size }
+            { label: 'size', documentation: i18n.vertex_create_buffer_ext.size }
         ],
         signature: '(size)'
     },
 	vertex_create_buffer_from_buffer: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_create_buffer_from_buffer.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'src_buffer', documentation: i18n. },
-            { label: 'format', documentation: i18n. }
+            { label: 'src_buffer', documentation: i18n.vertex_create_buffer_from_buffer.src_buffer },
+            { label: 'format', documentation: i18n.vertex_create_buffer_from_buffer.format }
         ],
         signature: '(src_buffer, format)'
     },
 	vertex_create_buffer_from_buffer_ext: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_create_buffer_from_buffer_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'src_buffer', documentation: i18n. },
-            { label: 'format', documentation: i18n. },
-            { label: 'src_offset', documentation: i18n. },
-            { label: 'num_vertices', documentation: i18n. }
+            { label: 'src_buffer', documentation: i18n.vertex_create_buffer_from_buffer_ext.src_buffer },
+            { label: 'format', documentation: i18n.vertex_create_buffer_from_buffer_ext.format },
+            { label: 'src_offset', documentation: i18n.vertex_create_buffer_from_buffer_ext.src_offset },
+            { label: 'num_vertices', documentation: i18n.vertex_create_buffer_from_buffer_ext.num_vertices }
         ],
         signature: '(src_buffer, format, src_offset, num_vertices)'
     },
 	vertex_delete_buffer: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_delete_buffer.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_delete_buffer.vbuff }
         ],
         signature: '(vbuff)'
     },
 	vertex_end: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_end.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_end.vbuff }
         ],
         signature: '(vbuff)'
     },
 	vertex_float1: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_float1.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'f1', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_float1.vbuff },
+            { label: 'f1', documentation: i18n.vertex_float1.f1 }
         ],
         signature: '(vbuff, f1)'
     },
 	vertex_float2: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_float2.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'f1', documentation: i18n. },
-            { label: 'f2', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_float2.vbuff },
+            { label: 'f1', documentation: i18n.vertex_float2.f1 },
+            { label: 'f2', documentation: i18n.vertex_float2.f2 }
         ],
         signature: '(vbuff, f1, f2)'
     },
 	vertex_float3: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_float3.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'f1', documentation: i18n. },
-            { label: 'f2', documentation: i18n. },
-            { label: 'f3', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_float3.vbuff },
+            { label: 'f1', documentation: i18n.vertex_float3.f1 },
+            { label: 'f2', documentation: i18n.vertex_float3.f2 },
+            { label: 'f3', documentation: i18n.vertex_float3.f3 }
         ],
         signature: '(vbuff, f1, f2, f3)'
     },
 	vertex_float4: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_float4.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'f1', documentation: i18n. },
-            { label: 'f2', documentation: i18n. },
-            { label: 'f3', documentation: i18n. },
-            { label: 'f4', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_float4.vbuff },
+            { label: 'f1', documentation: i18n.vertex_float4.f1 },
+            { label: 'f2', documentation: i18n.vertex_float4.f2 },
+            { label: 'f3', documentation: i18n.vertex_float4.f3 },
+            { label: 'f4', documentation: i18n.vertex_float4.f4 }
         ],
         signature: '(vbuff, f1, f2, f3, f4)'
     },
 	vertex_format_add_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_color.desc,
         available: datasimple.gms1
     },
 	vertex_format_add_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_colour.desc,
         available: datasimple.gms1
     },
 	vertex_format_add_custom: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_custom.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'usage', documentation: i18n. }
+            { label: 'type', documentation: i18n.vertex_format_add_custom.type },
+            { label: 'usage', documentation: i18n.vertex_format_add_custom.usage }
         ],
         signature: '(type, usage)'
     },
 	vertex_format_add_normal: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_normal.desc,
         available: datasimple.gms1
     },
 	vertex_format_add_position: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_position.desc,
         available: datasimple.gms1
     },
 	vertex_format_add_position_3d: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_position_3d.desc,
         available: datasimple.gms1
     },
 	vertex_format_add_textcoord: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_add_textcoord.desc,
         available: datasimple.gms1
     },
 	vertex_format_begin: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_begin.desc,
         available: datasimple.gms1
     },
 	vertex_format_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'format_id', documentation: i18n. }
+            { label: 'format_id', documentation: i18n.vertex_format_delete.format_id }
         ],
         signature: '(format_id)'
     },
 	vertex_format_end: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_format_end.desc,
         available: datasimple.gms1
     },
 	vertex_freeze: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_freeze.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_freeze.vbuff }
         ],
         signature: '(vbuff)'
     },
 	vertex_get_buffer_size: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_get_buffer_size.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_get_buffer_size.vbuff }
         ],
         signature: '(vbuff)'
     },
 	vertex_get_number: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_get_number.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_get_number.vbuff }
         ],
         signature: '(vbuff)'
     },
 	vertex_normal: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_normal.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_normal.vbuff },
+            { label: 'nx', documentation: i18n.vertex_normal.nx },
+            { label: 'ny', documentation: i18n.vertex_normal.ny },
+            { label: 'nz', documentation: i18n.vertex_normal.nz }
         ],
         signature: '(vbuff, nx, ny, nz)'
     },
 	vertex_position: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_position.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'vbuff', documentation: i18n.vertex_position.vbuff },
+            { label: 'x', documentation: i18n.vertex_position.x },
+            { label: 'y', documentation: i18n.vertex_position.y }
         ],
         signature: '(vbuff, x, y)'
     },
 	vertex_position_3d: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_position_3d.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z }
+            { label: 'vbuff', documentation: i18n.vertex_position_3d.vbuff },
+            { label: 'x', documentation: i18n.vertex_position_3d.x },
+            { label: 'y', documentation: i18n.vertex_position_3d.y },
+            { label: 'z', documentation: i18n.vertex_position_3d.z }
         ],
         signature: '(vbuff, x, y, z)'
     },
 	vertex_submit: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_submit.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'prim', documentation: i18n. },
-            { label: 'texture', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_submit.vbuff },
+            { label: 'prim', documentation: i18n.vertex_submit.prim },
+            { label: 'texture', documentation: i18n.vertex_submit.texture }
         ],
         signature: '(vbuff, prim, texture)'
     },
 	vertex_texcoord: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_texcoord.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'u', documentation: i18n. },
-            { label: 'v', documentation: i18n..v }
+            { label: 'vbuff', documentation: i18n.vertex_texcoord.vbuff },
+            { label: 'u', documentation: i18n.vertex_texcoord.u },
+            { label: 'v', documentation: i18n.vertex_texcoord.v }
         ],
         signature: '(vbuff, u, v)'
     },
 	vertex_ubyte4: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.vertex_ubyte4.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'vbuff', documentation: i18n. },
-            { label: 'b1', documentation: i18n. },
-            { label: 'b2', documentation: i18n. },
-            { label: 'b3', documentation: i18n. },
-            { label: 'b4', documentation: i18n. }
+            { label: 'vbuff', documentation: i18n.vertex_ubyte4.vbuff },
+            { label: 'b1', documentation: i18n.vertex_ubyte4.b1 },
+            { label: 'b2', documentation: i18n.vertex_ubyte4.b2 },
+            { label: 'b3', documentation: i18n.vertex_ubyte4.b3 },
+            { label: 'b4', documentation: i18n.vertex_ubyte4.b4 }
         ],
         signature: '(vbuff, b1, b2, b3, b4)'
     },
 	virtual_key_add: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.virtual_key_add.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'keycode', documentation: i18n. }
+            { label: 'x', documentation: i18n.virtual_key_add.x },
+            { label: 'y', documentation: i18n.virtual_key_add.y },
+            { label: 'w', documentation: i18n.virtual_key_add.w },
+            { label: 'h', documentation: i18n.virtual_key_add.h },
+            { label: 'keycode', documentation: i18n.virtual_key_add.keycode }
         ],
         signature: '(x, y, w, h, keycode)'
     },
 	virtual_key_delete: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.virtual_key_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.virtual_key_delete.id }
         ],
         signature: '(id)'
     },
 	virtual_key_hide: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.virtual_key_hide.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.virtual_key_hide.id }
         ],
         signature: '(id)'
     },
 	virtual_key_show: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.virtual_key_show.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.virtual_key_show.id }
         ],
         signature: '(id)'
     },
 	window_center: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_center.desc,
         available: datasimple.all
     },
 	window_device: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_device.desc,
         available: datasimple.all
     },
 	window_get_caption: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_caption.desc,
         available: datasimple.all
     },
 	window_get_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_color.desc,
         available: datasimple.all
     },
 	window_get_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_colour.desc,
         available: datasimple.all
     },
 	window_get_cursor: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_cursor.desc,
         available: datasimple.all
     },
 	window_get_fullscreen: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_fullscreen.desc,
         available: datasimple.all
     },
 	window_get_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_height.desc,
         available: datasimple.all
     },
 	window_get_visible_rects: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_visible_rects.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 }
+            { label: 'x1', documentation: i18n.window_get_visible_rects.x1 },
+            { label: 'y1', documentation: i18n.window_get_visible_rects.y1 },
+            { label: 'x2', documentation: i18n.window_get_visible_rects.x2 },
+            { label: 'y2', documentation: i18n.window_get_visible_rects.y2 }
         ],
         signature: '(x1, y1, x2, y2)'
     },
 	window_get_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_width.desc,
         available: datasimple.all
     },
 	window_get_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_x.desc,
         available: datasimple.all
     },
 	window_get_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_get_y.desc,
         available: datasimple.all
     },
 	window_handle: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_handle.desc,
         available: datasimple.all
     },
 	window_has_focus: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_has_focus.desc,
         available: datasimple.all
     },
 	window_mouse_get_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_mouse_get_x.desc,
         available: datasimple.all
     },
 	window_mouse_get_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_mouse_get_y.desc,
         available: datasimple.all
     },
 	window_mouse_set: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_mouse_set.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'x', documentation: i18n.window_mouse_set.x },
+            { label: 'y', documentation: i18n.window_mouse_set.y }
         ],
         signature: '(x, y)'
     },
 	window_set_caption: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_caption.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'caption', documentation: i18n. }
+            { label: 'caption', documentation: i18n.window_set_caption.caption }
         ],
         signature: '(caption)'
     },
 	window_set_color: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_color.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'color', documentation: i18n..color }
+            { label: 'color', documentation: i18n.window_set_color.color }
         ],
         signature: '(color)'
     },
 	window_set_colour: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_colour.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'colour', documentation: i18n..colour }
+            { label: 'colour', documentation: i18n.window_set_colour.colour }
         ],
         signature: '(colour)'
     },
 	window_set_cursor: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_cursor.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'curs', documentation: i18n. }
+            { label: 'curs', documentation: i18n.window_set_cursor.curs }
         ],
         signature: '(curs)'
     },
 	window_set_fullscreen: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_fullscreen.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'full', documentation: i18n. }
+            { label: 'full', documentation: i18n.window_set_fullscreen.full }
         ],
         signature: '(full)'
     },
 	window_set_max_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_max_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'maxheight', documentation: i18n. }
+            { label: 'maxheight', documentation: i18n.window_set_max_height.maxheight }
         ],
         signature: '(maxheight)'
     },
 	window_set_max_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_max_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'maxwidth', documentation: i18n. }
+            { label: 'maxwidth', documentation: i18n.window_set_max_width.maxwidth }
         ],
         signature: '(maxwidth)'
     },
 	window_set_min_height: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_min_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'minheight', documentation: i18n. }
+            { label: 'minheight', documentation: i18n.window_set_min_height.minheight }
         ],
         signature: '(minheight)'
     },
 	window_set_min_width: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_min_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'minwidth', documentation: i18n. }
+            { label: 'minwidth', documentation: i18n.window_set_min_width.minwidth }
         ],
         signature: '(minwidth)'
     },
 	window_set_position: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_position.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'x', documentation: i18n.window_set_position.x },
+            { label: 'y', documentation: i18n.window_set_position.y }
         ],
         signature: '(x, y)'
     },
 	window_set_rectangle: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_rectangle.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'x', documentation: i18n.window_set_rectangle.x },
+            { label: 'y', documentation: i18n.window_set_rectangle.y },
+            { label: 'w', documentation: i18n.window_set_rectangle.w },
+            { label: 'h', documentation: i18n.window_set_rectangle.h }
         ],
         signature: '(x, y, w, h)'
     },
 	window_set_size: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_set_size.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'w', documentation: i18n.window_set_size.w },
+            { label: 'h', documentation: i18n.window_set_size.h }
         ],
         signature: '(w, h)'
     },
 	window_views_mouse_get_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_views_mouse_get_x.desc,
         available: datasimple.all
     },
 	window_views_mouse_get_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_views_mouse_get_y.desc,
         available: datasimple.all
     },
 	window_view_mouse_get_x: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_view_mouse_get_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.window_view_mouse_get_x.id }
         ],
         signature: '(id)'
     },
 	window_view_mouse_get_y: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.window_view_mouse_get_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.window_view_mouse_get_y.id }
         ],
         signature: '(id)'
     },
 	zip_unzip: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.zip_unzip.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'file', documentation: i18n..file },
-            { label: 'destPath', documentation: i18n. }
+            { label: 'file', documentation: i18n.zip_unzip.file },
+            { label: 'destPath', documentation: i18n.zip_unzip.destPath }
         ],
         signature: '(file, destPath)'
     },
 
     //These are the functions that were obsoleted in the old version but restored in the new version
     variable_global_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_global_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.variable_global_exists.name }
         ],
         signature: '(name)'
     },
 	variable_global_get: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_global_get.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.variable_global_get.name }
         ],
         signature: '(name)'
     },
 	variable_global_set: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_global_set.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.variable_global_set.name },
+            { label: 'value', documentation: i18n.variable_global_set.value }
         ],
         signature: '(name, value)'
     },
 	variable_instance_exists: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_instance_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'instance_id', documentation: i18n. },
-            { label: 'name', documentation: i18n..name }
+            { label: 'instance_id', documentation: i18n.variable_instance_exists.instance_id },
+            { label: 'name', documentation: i18n.variable_instance_exists.name }
         ],
         signature: '(instance_id, name)'
     },
 	variable_instance_get: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_instance_get.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'instance_id', documentation: i18n. },
-            { label: 'name', documentation: i18n..name }
+            { label: 'instance_id', documentation: i18n.variable_instance_get.instance_id },
+            { label: 'name', documentation: i18n.variable_instance_get.name }
         ],
         signature: '(instance_id, name)'
     },
 	variable_instance_set: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_instance_set.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'instance_id', documentation: i18n. },
-            { label: 'name', documentation: i18n..name },
-            { label: 'val', documentation: i18n..val }
+            { label: 'instance_id', documentation: i18n.variable_instance_set.instance_id },
+            { label: 'name', documentation: i18n.variable_instance_set.name },
+            { label: 'val', documentation: i18n.variable_instance_set.val }
         ],
         signature: '(instance_id, name, val)'
     },
 	variable_instance_get_names: {
-        description: '[Function]' + i18n..desc,
+        description: '[Function]' + i18n.variable_instance_get_names.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'instance_id', documentation: i18n. }
+            { label: 'instance_id', documentation: i18n.variable_instance_get_names.instance_id }
         ],
         signature: '(instance_id)'
     },
 
     //These functions are deprecated.
     pocketchange_display_reward: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.pocketchange_display_reward.desc,
         available: datasimple.gms1d
     },
 	pocketchange_display_shop: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.pocketchange_display_shop.desc,
         available: datasimple.gms1d
     },
 	iap_store_status: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.iap_store_status.desc,
         available: datasimple.gms1d
     },
 	iap_product_status: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.iap_product_status.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'product_id', documentation: i18n..product_id }
+            { label: 'product_id', documentation: i18n.iap_product_status.product_id }
         ],
         signature: '(product_id)'
     },
 	iap_is_downloaded: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.iap_is_downloaded.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'product_id_string', documentation: i18n. }
+            { label: 'product_id_string', documentation: i18n.iap_is_downloaded.product_id_string }
         ],
         signature: '(purchase_id_string)'
     },
 	iap_files_purchased: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.iap_files_purchased.desc,
         available: datasimple.gms1d
     },
 	iap_product_files: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.iap_product_files.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'product_id', documentation: i18n..product_id },
-            { label: 'ds_list', documentation: i18n..ds_list }
+            { label: 'product_id', documentation: i18n.iap_product_files.product_id },
+            { label: 'ds_list', documentation: i18n.iap_product_files.ds_list }
         ],
         signature: '(purchase_id, ds_list)'
     },
 	iap_event_queue: {
-        description: '[Function] (' + i18n_notice.deprecated_2 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.iap_event_queue.desc,
         available: datasimple.gms1d
     },
     win8_appbar_add_element: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_appbar_add_element.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'icon', documentation: i18n. },
-            { label: 'label', documentation: i18n. },
-            { label: 'section', documentation: i18n..section },
-            { label: 'toolTip', documentation: i18n. },
-            { label: 'callback', documentation: i18n. }
+            { label: 'type', documentation: i18n.win8_appbar_add_element.type },
+            { label: 'icon', documentation: i18n.win8_appbar_add_element.icon },
+            { label: 'label', documentation: i18n.win8_appbar_add_element.label },
+            { label: 'section', documentation: i18n.win8_appbar_add_element.section },
+            { label: 'toolTip', documentation: i18n.win8_appbar_add_element.toolTip },
+            { label: 'callback', documentation: i18n.win8_appbar_add_element.callback }
         ],
         signature: '(type, icon, label, section, toolTip, callback)'
     },
 	win8_appbar_enable: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_appbar_enable.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'flag', documentation: i18n..flag }
+            { label: 'flag', documentation: i18n.win8_appbar_enable.flag }
         ],
         signature: '(flag)'
     },
 	win8_appbar_remove_element: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_appbar_remove_element.desc,
         available: datasimple.gms1d,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.win8_appbar_remove_element.id }
         ],
         signature: '(id)'
     },
 	win8_device_touchscreen_available: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_device_touchscreen_available.desc,
         available: datasimple.gms1d
     },
 	win8_license_initialize_sandbox: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n.win8_license_initialize_sandbox.desc,
         available: datasimple.gms1d,
         parameters: [
             { label: '_licenseString', documentation: i18n. }
@@ -12462,15 +12462,15 @@ exports.globalfunctions = {
         signature: '(_licenseString)'
     },
 	win8_license_trial_version: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d
     },
 	win8_livetile_badge_clear: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d
     },
 	win8_livetile_badge_notification: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -12478,7 +12478,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	win8_livetile_notification_begin: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: i18n. }
@@ -12486,11 +12486,11 @@ exports.globalfunctions = {
         signature: '(template)'
     },
 	win8_livetile_notification_end: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d
     },
 	win8_livetile_notification_expiry: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'expiryTime', documentation: i18n. }
@@ -12498,7 +12498,7 @@ exports.globalfunctions = {
         signature: '(expiryTime)'
     },
 	win8_livetile_notification_image_add: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'image', documentation: i18n..image }
@@ -12506,7 +12506,7 @@ exports.globalfunctions = {
         signature: '(image)'
     },
 	win8_livetile_notification_secondary_begin: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: i18n. },
@@ -12515,7 +12515,7 @@ exports.globalfunctions = {
         signature: '(template, tileId)'
     },
 	win8_livetile_notification_tag: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'tag', documentation: i18n. }
@@ -12523,7 +12523,7 @@ exports.globalfunctions = {
         signature: '(tag)'
     },
 	win8_livetile_notification_text_add: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'text', documentation: i18n. }
@@ -12531,7 +12531,7 @@ exports.globalfunctions = {
         signature: '(text)'
     },
 	win8_livetile_queue_enable: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'flag', documentation: i18n..flag }
@@ -12539,11 +12539,11 @@ exports.globalfunctions = {
         signature: '(flag)'
     },
 	win8_livetile_tile_clear: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d
     },
 	win8_livetile_tile_notification: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: i18n. },
@@ -12554,7 +12554,7 @@ exports.globalfunctions = {
         signature: '(template, ds_map, expiry, tag)'
     },
 	win8_search_add_suggestions: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: '_dslist', documentation: i18n. }
@@ -12562,11 +12562,11 @@ exports.globalfunctions = {
         signature: '(_dslist)'
     },
 	win8_search_disable: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d
     },
 	win8_search_enable: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: '_selectionCallback', documentation: i18n. }
@@ -12574,7 +12574,7 @@ exports.globalfunctions = {
         signature: '(_selectionCallback)'
     },
 	win8_secondarytile_badge_notification: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -12583,7 +12583,7 @@ exports.globalfunctions = {
         signature: '(id, tileId)'
     },
 	win8_secondarytile_delete: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -12591,7 +12591,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	win8_secondarytile_pin: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -12606,16 +12606,16 @@ exports.globalfunctions = {
         signature: '(id, shortName, displayName, cmdLineArgs, dsListOptions, tileImg, wideTileImg, textCol)'
     },
 	win8_settingscharm_add_entry: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'name', documentation: i18n..name },
-            { label: 'callback', documentation: i18n. }
+            { label: 'callback', documentation: i18n..callback }
         ],
         signature: '(name, callback)'
     },
 	win8_settingscharm_add_html_entry: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -12625,19 +12625,19 @@ exports.globalfunctions = {
         signature: '(id, name, htmlPath)'
     },
 	win8_settingscharm_add_xaml_entry: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'name', documentation: i18n..name },
             { label: 'xamlPath', documentation: i18n. },
             { label: 'headerRGB', documentation: i18n. },
-            { label: 'callback', documentation: i18n. },
+            { label: 'callback', documentation: i18n..callback },
             { label: 'wideFlyout', documentation: i18n. }
         ],
         signature: '(name, xamlPath, headerRGB, callback, wideFlyout)'
     },
 	win8_settingscharm_get_xaml_property: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: i18n. },
@@ -12647,7 +12647,7 @@ exports.globalfunctions = {
         signature: '(entryName, elementName, propertyName)'
     },
 	win8_settingscharm_remove_entry: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'name', documentation: i18n..name }
@@ -12655,7 +12655,7 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	win8_settingscharm_set_xaml_property: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: i18n. },
@@ -12666,7 +12666,7 @@ exports.globalfunctions = {
         signature: '(entryName, elementName, propertyName, newValue)'
     },
 	win8_share_file: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'filename', documentation: i18n..filename },
@@ -12677,7 +12677,7 @@ exports.globalfunctions = {
         signature: '(filename, title, description, immediate)'
     },
 	win8_share_image: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'image_filename', documentation: i18n. },
@@ -12688,7 +12688,7 @@ exports.globalfunctions = {
         signature: '(image_filename, title, description, immediate)'
     },
 	win8_share_screenshot: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'entryName', documentation: i18n. },
@@ -12698,7 +12698,7 @@ exports.globalfunctions = {
         signature: '(title, description, immediate)'
     },
 	win8_share_text: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'text', documentation: i18n. },
@@ -12709,7 +12709,7 @@ exports.globalfunctions = {
         signature: '(text, title, description, immediate)'
     },
 	win8_share_url: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'url', documentation: i18n..url },
@@ -12720,11 +12720,11 @@ exports.globalfunctions = {
         signature: '(url, title, description, immediate)'
     },
     winphone_license_trial_version: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d
     },
 	winphone_tile_background_color: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         arameters: [
             { label: 'color', documentation: i18n..color }
@@ -12732,7 +12732,7 @@ exports.globalfunctions = {
         signature: '(color)'
     },
 	winphone_tile_background_colour: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         arameters: [
             { label: 'colour', documentation: i18n..colour }
@@ -12740,7 +12740,7 @@ exports.globalfunctions = {
         signature: '(colour)'
     },
 	winphone_tile_back_content: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'content', documentation: i18n..content }
@@ -12748,7 +12748,7 @@ exports.globalfunctions = {
         signature: '(content)'
     },
 	winphone_tile_back_content_wide: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'content', documentation: i18n..content }
@@ -12756,7 +12756,7 @@ exports.globalfunctions = {
         signature: '(content)'
     },
 	winphone_tile_back_image: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12764,7 +12764,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_back_image_wide: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12772,7 +12772,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_back_title: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'title', documentation: i18n..title }
@@ -12780,7 +12780,7 @@ exports.globalfunctions = {
         signature: '(title)'
     },
 	winphone_tile_count: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'count', documentation: i18n..count }
@@ -12788,7 +12788,7 @@ exports.globalfunctions = {
         signature: '(count)'
     },
 	winphone_tile_cycle_images: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename_1', documentation: i18n. },
@@ -12798,7 +12798,7 @@ exports.globalfunctions = {
         signature: '(included_filename_1, included_filename_2, ...)'
     },
 	winphone_tile_front_image: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12806,7 +12806,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_small: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12814,7 +12814,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_front_image_wide: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12822,7 +12822,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_icon_image: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12830,7 +12830,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_small_background_image: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12838,7 +12838,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_small_icon_image: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'included_filename', documentation: i18n. }
@@ -12846,7 +12846,7 @@ exports.globalfunctions = {
         signature: '(included_filename)'
     },
 	winphone_tile_title: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'title', documentation: i18n..title }
@@ -12854,7 +12854,7 @@ exports.globalfunctions = {
         signature: '(title)'
     },
 	winphone_tile_wide_content: {
-        description: '[Function] (' + i18n_notice.deprecated_1 + ')',
+        description: '[Function] (' + i18n_notice.deprecated + ')' + i18n..desc,
         available: datasimple.gms1d,
         parameters: [
             { label: 'content', documentation: i18n..content },
@@ -13117,7 +13117,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')',
         available: datasimple.ob1,
         parameters: [
-            { label: 'callback', documentation: i18n. }
+            { label: 'callback', documentation: i18n..callback }
         ],
 		signature: '(callback)'
 	},
@@ -14292,9 +14292,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. }
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz }
         ],
         signature: '(ind, x, y, z, nx, ny, nz)'
     },
@@ -14306,9 +14306,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14322,9 +14322,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14338,9 +14338,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'xtex', documentation: i18n..xtex },
             { label: 'ytex', documentation: i18n..ytex }
         ],
@@ -14354,9 +14354,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'xtex', documentation: i18n..xtex },
             { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
@@ -14372,9 +14372,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'xtex', documentation: i18n..xtex },
             { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
@@ -14782,9 +14782,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. }
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz }
         ],
         signature: '(x, y, z, nx, ny, nz)'
     },
@@ -14795,9 +14795,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14810,9 +14810,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'col', documentation: i18n..col },
             { label: 'alpha', documentation: i18n..alpha }
         ],
@@ -14825,9 +14825,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'xtex', documentation: i18n..xtex },
             { label: 'ytex', documentation: i18n..ytex }
         ],
@@ -14840,9 +14840,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'xtex', documentation: i18n..xtex },
             { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
@@ -14857,9 +14857,9 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n. },
-            { label: 'ny', documentation: i18n. },
-            { label: 'nz', documentation: i18n. },
+            { label: 'nx', documentation: i18n..nx },
+            { label: 'ny', documentation: i18n..ny },
+            { label: 'nz', documentation: i18n..nz },
             { label: 'xtex', documentation: i18n..xtex },
             { label: 'ytex', documentation: i18n..ytex },
             { label: 'col', documentation: i18n..col },
@@ -16260,7 +16260,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         arameters: [
-            { label: 'full', documentation: i18n. }
+            { label: 'full', documentation: i18n..full }
         ],
         signature: '(full)'
     },
