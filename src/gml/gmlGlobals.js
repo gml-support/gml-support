@@ -13246,112 +13246,112 @@ exports.globalfunctions = {
 
     //Obsolete functions in GameMaker Studio 2
     background_add: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_add.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth }
+            { label: 'fname', documentation: i18n.background_add.fname },
+            { label: 'removeback', documentation: i18n.background_add.removeback },
+            { label: 'smooth', documentation: i18n.background_add.smooth }
         ],
         signature: '(fname, removeback, smooth)'
     },
     background_assign: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_assign.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'source', documentation: i18n..source }
+            { label: 'ind', documentation: i18n.background_assign.ind },
+            { label: 'source', documentation: i18n.background_assign.source }
         ],
         signature: '(ind, source)'
     },
     background_create_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_create_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'col', documentation: i18n..col }
+            { label: 'w', documentation: i18n.background_create_color.w },
+            { label: 'h', documentation: i18n.background_create_color.h },
+            { label: 'col', documentation: i18n.background_create_color.col }
         ],
         signature: '(w, h, col)'
     },
     background_create_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_create_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'col', documentation: i18n..col }
+            { label: 'w', documentation: i18n.background_create_colour.w },
+            { label: 'h', documentation: i18n.background_create_colour.h },
+            { label: 'col', documentation: i18n.background_create_colour.col }
         ],
         signature: '(w, h, col)'
     },
     background_create_from_surface: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_create_from_surface.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth }
+            { label: 'id', documentation: i18n.background_create_from_surface.id },
+            { label: 'x', documentation: i18n.background_create_from_surface.x },
+            { label: 'y', documentation: i18n.background_create_from_surface.y },
+            { label: 'w', documentation: i18n.background_create_from_surface.w },
+            { label: 'h', documentation: i18n.background_create_from_surface.h },
+            { label: 'removeback', documentation: i18n.background_create_from_surface.removeback },
+            { label: 'smooth', documentation: i18n.background_create_from_surface.smooth }
         ],
         signature: '(id, x, y, w, h, removeback, smooth)'
     },
     background_create_gradient: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_create_gradient.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'col1', documentation: i18n..col1 },
-            { label: 'col2', documentation: i18n..col2 },
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'w', documentation: i18n.background_create_gradient.w },
+            { label: 'h', documentation: i18n.background_create_gradient.h },
+            { label: 'col1', documentation: i18n.background_create_gradient.col1 },
+            { label: 'col2', documentation: i18n.background_create_gradient.col2 },
+            { label: 'kind', documentation: i18n.background_create_gradient.kind }
         ],
         signature: '(w, h, col1, col2, kind)'
     },
     background_delete: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_delete.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_delete.ind }
         ],
         signature: '(ind)'
     },
     background_duplicate: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_duplicate.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_duplicate.ind }
         ],
         signature: '(ind)'
     },
     background_exists: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_exists.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_exists.ind }
         ],
         signature: '(ind)'
     },
     background_flush: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_flush.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_flush.ind }
         ],
         signature: '(ind)'
     },
     background_flush_multi: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_flush_multi.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'indarray', documentation: i18n..indarray }
+            { label: 'indarray', documentation: i18n.background_flush_multi.indarray }
         ],
         signature: '(indarray)'
     },
     background_get_height: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -13359,7 +13359,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_get_name: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -13367,7 +13367,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_get_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. }
@@ -13375,7 +13375,7 @@ exports.globalfunctions = {
         signature: '(back)'
     },
     background_get_uvs: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. }
@@ -13383,7 +13383,7 @@ exports.globalfunctions = {
         signature: '(back)'
     },
     background_get_width: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -13391,7 +13391,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_prefetch: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -13399,7 +13399,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     background_prefetch_multi: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'indarray', documentation: i18n..indarray }
@@ -13407,7 +13407,7 @@ exports.globalfunctions = {
         signature: '(indarray)'
     },
     background_replace: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13418,7 +13418,7 @@ exports.globalfunctions = {
         signature: '(ind, fname, removeback, smooth)'
     },
     background_replace_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13427,7 +13427,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     background_save: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13436,7 +13436,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     background_set_alpha_from_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13445,7 +13445,7 @@ exports.globalfunctions = {
         signature: '(ind, back)'
     },
     draw_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13455,7 +13455,7 @@ exports.globalfunctions = {
         signature: '(back, x, y)'
     },
     draw_background_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13470,7 +13470,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
     },
     draw_background_general: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13492,7 +13492,7 @@ exports.globalfunctions = {
         signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
     draw_background_part: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13506,7 +13506,7 @@ exports.globalfunctions = {
         signature: '(back, left, top, width, height, x, y)'
     },
     draw_background_part_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13524,7 +13524,7 @@ exports.globalfunctions = {
         signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
     draw_background_stretched: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13536,7 +13536,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, w, h)'
     },
     draw_background_stretched_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13550,7 +13550,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, w, h, colour, alpha)'
     },
     draw_background_tiled: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13560,7 +13560,7 @@ exports.globalfunctions = {
         signature: '(back, x, y)'
     },
     draw_background_tiled_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'back', documentation: i18n. },
@@ -13574,7 +13574,7 @@ exports.globalfunctions = {
         signature: '(back, x, y, xscale, yscale, colour, alpha)'
     },
     room_set_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13593,7 +13593,7 @@ exports.globalfunctions = {
         signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
     },
     room_tile_add: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13609,7 +13609,7 @@ exports.globalfunctions = {
         signature: '(ind, back, left, top, width, height, x, y, depth)'
     },
     room_tile_add_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13628,7 +13628,7 @@ exports.globalfunctions = {
         signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
     },
     room_tile_clear: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -13636,7 +13636,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     tile_add: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'background', documentation: i18n. },
@@ -13651,7 +13651,7 @@ exports.globalfunctions = {
         signature: '(background, left, top, width, height, x, y, depth)'
     },
     tile_delete: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13659,7 +13659,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_exists: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13667,7 +13667,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_alpha: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13675,7 +13675,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13683,7 +13683,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_blend: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13691,11 +13691,11 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_count: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     tile_get_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13703,7 +13703,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_height: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13711,7 +13711,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_id: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'index', documentation: i18n..index }
@@ -13719,11 +13719,11 @@ exports.globalfunctions = {
         signature: '(index)'
     },
     tile_get_ids: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     tile_get_ids_at_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth }
@@ -13731,7 +13731,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_get_left: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13739,7 +13739,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_top: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13747,7 +13747,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_visible: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13755,7 +13755,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_width: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13763,7 +13763,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_x: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13771,7 +13771,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_xscale: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13779,7 +13779,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_y: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13787,7 +13787,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_get_yscale: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id }
@@ -13795,7 +13795,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
     tile_layer_delete: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth }
@@ -13803,7 +13803,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_layer_delete_at: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth },
@@ -13813,7 +13813,7 @@ exports.globalfunctions = {
         signature: '(depth, x, y)'
     },
     tile_layer_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth },
@@ -13822,7 +13822,7 @@ exports.globalfunctions = {
         signature: '(depth, newdepth)'
     },
     tile_layer_find: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth },
@@ -13832,7 +13832,7 @@ exports.globalfunctions = {
         signature: '(depth, x, y)'
     },
     tile_layer_hide: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth }
@@ -13840,7 +13840,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_layer_shift: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth },
@@ -13850,7 +13850,7 @@ exports.globalfunctions = {
         signature: '(depth, x, y)'
     },
     tile_layer_show: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth }
@@ -13858,7 +13858,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     tile_set_alpha: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13867,7 +13867,7 @@ exports.globalfunctions = {
         signature: '(id, alpha)'
     },
     tile_set_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13876,7 +13876,7 @@ exports.globalfunctions = {
         signature: '(id, background)'
     },
     tile_set_blend: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13885,7 +13885,7 @@ exports.globalfunctions = {
         signature: '(id, colour)'
     },
     tile_set_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13894,7 +13894,7 @@ exports.globalfunctions = {
         signature: '(id, depth)'
     },
     tile_set_position: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13904,7 +13904,7 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
     tile_set_region: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13916,7 +13916,7 @@ exports.globalfunctions = {
         signature: '(id, left, top, width, height)'
     },
     tile_set_scale: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13926,7 +13926,7 @@ exports.globalfunctions = {
         signature: '(id, xscale, yscale)'
     },
     tile_set_visible: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'id', documentation: i18n..id },
@@ -13935,7 +13935,7 @@ exports.globalfunctions = {
         signature: '(id, visible)'
     },
     object_get_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -13943,7 +13943,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     object_set_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -13952,7 +13952,7 @@ exports.globalfunctions = {
         signature: '(ind, depth)'
     },
     d3d_draw_block: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: i18n..x1 },
@@ -13968,7 +13968,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_draw_cone: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: i18n..x1 },
@@ -13986,7 +13986,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_cylinder: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: i18n..x1 },
@@ -14004,7 +14004,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_ellipsoid: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: i18n..x1 },
@@ -14022,7 +14022,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_floor: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: i18n..x1 },
@@ -14038,7 +14038,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_draw_wall: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x1', documentation: i18n..x1 },
@@ -14054,11 +14054,11 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_end: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_light_define_ambient: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'col', documentation: i18n..col }
@@ -14066,7 +14066,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
     d3d_light_define_direction: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14078,7 +14078,7 @@ exports.globalfunctions = {
         signature: '(ind, dx, dy, dz, col)'
     },
     d3d_light_define_point: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14091,7 +14091,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, range, col)'
     },
     d3d_light_enable: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14100,7 +14100,7 @@ exports.globalfunctions = {
         signature: '(ind, enable)'
     },
     d3d_model_block: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14116,7 +14116,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_model_clear: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -14124,7 +14124,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     d3d_model_cone: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14142,11 +14142,11 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
     d3d_model_create: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_model_cylinder: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14164,11 +14164,11 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
     d3d_model_destroy: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_model_draw: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14180,7 +14180,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, texid)'
     },
     d3d_model_ellipsoid: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14197,7 +14197,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
     },
     d3d_model_floor: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14213,7 +14213,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_model_load: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14222,7 +14222,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     d3d_model_primitive_begin: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14231,7 +14231,7 @@ exports.globalfunctions = {
         signature: '(ind, kind)'
     },
     d3d_model_primitive_end: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind }
@@ -14239,7 +14239,7 @@ exports.globalfunctions = {
         signature: '(ind)'
     },
     d3d_model_save: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14248,7 +14248,7 @@ exports.globalfunctions = {
         signature: '(ind, fname)'
     },
     d3d_model_vertex: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14259,7 +14259,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z)'
     },
     d3d_model_vertex_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14272,7 +14272,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, col, alpha)'
     },
     d3d_model_vertex_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14285,7 +14285,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, col, alpha)'
     },
     d3d_model_vertex_normal: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14299,7 +14299,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz)'
     },
     d3d_model_vertex_normal_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14315,7 +14315,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_model_vertex_normal_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14331,7 +14331,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_model_vertex_normal_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14347,7 +14347,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
     },
     d3d_model_vertex_normal_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14365,7 +14365,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_normal_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14383,7 +14383,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14396,7 +14396,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, xtex, ytex)'
     },
     d3d_model_vertex_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14411,7 +14411,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14426,7 +14426,7 @@ exports.globalfunctions = {
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_model_wall: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14442,7 +14442,7 @@ exports.globalfunctions = {
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_primitive_begin: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'kind', documentation: i18n..kind }
@@ -14450,7 +14450,7 @@ exports.globalfunctions = {
         signature: '(kind)'
     },
     d3d_primitive_begin_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'kind', documentation: i18n..kind },
@@ -14459,11 +14459,11 @@ exports.globalfunctions = {
         signature: '(kind, texid)'
     },
     d3d_primitive_end: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_set_culling: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'cull', documentation: i18n. }
@@ -14471,7 +14471,7 @@ exports.globalfunctions = {
         signature: '(cull)'
     },
     d3d_set_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'depth', documentation: i18n..depth }
@@ -14479,7 +14479,7 @@ exports.globalfunctions = {
         signature: '(depth)'
     },
     d3d_set_fog: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: i18n..enable },
@@ -14490,7 +14490,7 @@ exports.globalfunctions = {
         signature: '(enable, colour, start, end)'
     },
     d3d_set_hidden: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'hidden', documentation: i18n. }
@@ -14498,7 +14498,7 @@ exports.globalfunctions = {
         signature: '(hidden)'
     },
     d3d_set_lighting: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: i18n..enable }
@@ -14506,7 +14506,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
     d3d_set_perspective: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: i18n..enable }
@@ -14514,7 +14514,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
     d3d_set_projection: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xform', documentation: i18n. },
@@ -14530,7 +14530,7 @@ exports.globalfunctions = {
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
     d3d_set_projection_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xform', documentation: i18n. },
@@ -14550,7 +14550,7 @@ exports.globalfunctions = {
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
     },
     d3d_set_projection_ortho: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14562,7 +14562,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, angle)'
     },
     d3d_set_projection_perspective: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14574,7 +14574,7 @@ exports.globalfunctions = {
         signature: '(x, y, w, h, angle)'
     },
     d3d_set_shading: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'smooth', documentation: i18n..smooth }
@@ -14582,7 +14582,7 @@ exports.globalfunctions = {
         signature: '(smooth)'
     },
     d3d_set_zwriteenable: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'on_off', documentation: i18n. }
@@ -14590,11 +14590,11 @@ exports.globalfunctions = {
         signature: '(on_off)'
     },
     d3d_start: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_add_rotation_axis: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xa', documentation: i18n. },
@@ -14605,7 +14605,7 @@ exports.globalfunctions = {
         signature: '(xa, ya, za, angle)'
     },
     d3d_transform_add_rotation_x: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: i18n..angle }
@@ -14613,7 +14613,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_add_rotation_y: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: i18n..angle }
@@ -14621,7 +14621,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_add_rotation_z: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: i18n..angle }
@@ -14629,7 +14629,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_add_scaling: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xs', documentation: i18n..xs },
@@ -14639,7 +14639,7 @@ exports.globalfunctions = {
         signature: '(xs, ys, zs)'
     },
     d3d_transform_add_translation: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xt', documentation: i18n. },
@@ -14649,11 +14649,11 @@ exports.globalfunctions = {
         signature: '(xt, yt, zt)'
     },
     d3d_transform_set_identity: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_set_rotation_axis: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xa', documentation: i18n. },
@@ -14664,7 +14664,7 @@ exports.globalfunctions = {
         signature: '(xa, ya, za, angle)'
     },
     d3d_transform_set_rotation_x: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: i18n..angle }
@@ -14672,7 +14672,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_set_rotation_y: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: i18n..angle }
@@ -14680,7 +14680,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_set_rotation_z: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'angle', documentation: i18n..angle }
@@ -14688,7 +14688,7 @@ exports.globalfunctions = {
         signature: '(angle)'
     },
     d3d_transform_set_scaling: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xs', documentation: i18n..xs },
@@ -14698,7 +14698,7 @@ exports.globalfunctions = {
         signature: '(xs, ys, zs)'
     },
     d3d_transform_set_translation: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'xt', documentation: i18n. },
@@ -14708,31 +14708,31 @@ exports.globalfunctions = {
         signature: '(xt, yt, zt)'
     },
     d3d_transform_stack_clear: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_discard: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_empty: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_pop: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_push: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_top: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     d3d_transform_vertex: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14742,7 +14742,7 @@ exports.globalfunctions = {
         signature: '(x, y, z)'
     },
     d3d_vertex: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14752,7 +14752,7 @@ exports.globalfunctions = {
         signature: '(x, y, z)'
     },
     d3d_vertex_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14764,7 +14764,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, col, alpha)'
     },
     d3d_vertex_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14776,7 +14776,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, col, alpha)'
     },
     d3d_vertex_normal: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14789,7 +14789,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz)'
     },
     d3d_vertex_normal_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14804,7 +14804,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_vertex_normal_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14819,7 +14819,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_vertex_normal_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14834,7 +14834,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
     },
     d3d_vertex_normal_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14851,7 +14851,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_vertex_normal_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14868,7 +14868,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_vertex_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14880,7 +14880,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, xtex, ytex)'
     },
     d3d_vertex_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14894,7 +14894,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_vertex_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'x', documentation: i18n..x },
@@ -14908,7 +14908,7 @@ exports.globalfunctions = {
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
     display_set_windows_vertex_buffer_method: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'method', documentation: i18n. }
@@ -14916,11 +14916,11 @@ exports.globalfunctions = {
         signature: '(method)'
     },
     display_get_windows_vertex_buffer_method: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     display_set_windows_alternate_sync: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'enable', documentation: i18n..enable }
@@ -14928,11 +14928,11 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
     display_get_windows_alternate_sync: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     room_set_view: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
@@ -14955,7 +14955,7 @@ exports.globalfunctions = {
         signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
     },
     immersion_play_effect: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'effect', documentation: i18n. }
@@ -14963,11 +14963,11 @@ exports.globalfunctions = {
         signature: '(effect)'
     },
     immersion_stop: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2
     },
     analytics_event: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'string', documentation: i18n..string }
@@ -14975,7 +14975,7 @@ exports.globalfunctions = {
         signature: '(string)'
     },
     analytics_event_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')',
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
         available: datasimple.ob2,
         parameters: [
             { label: 'string', documentation: i18n..string },

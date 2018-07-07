@@ -7774,5 +7774,1115 @@
 	},
 	"achievement_is_online": {
 		"desc": ""
-	}
+    },
+    
+    background_add: {
+        "desc": "",
+        "fname": "",
+        "removeback": "",
+        "smooth": ""
+    },
+    background_assign: {
+        "desc": "",
+        "ind": "",
+        "source": ""
+    },
+    background_create_color: {
+        "desc": "",
+        "w": "",
+        "h": "",
+        "col": ""
+    },
+    background_create_colour: {
+        "desc": "",
+        "w": "",
+        "h": "",
+        "col": ""
+    },
+    background_create_from_surface: {
+        "desc": "",
+        "id": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "removeback": "",
+        "smooth": ""
+    },
+    background_create_gradient: {
+        "desc": "",
+        "w": "",
+        "h": "",
+        "col1": "",
+        "col2": "",
+        "kind": ""
+    },
+    background_delete: {
+        "desc": "",
+        "ind": ""
+    },
+    background_duplicate: {
+        "desc": "",
+        "ind": ""
+    },
+    background_exists: {
+        "desc": "",
+        "ind": ""
+    },
+    background_flush: {
+        "desc": "",
+        "ind": ""
+    },
+    background_flush_multi: {
+        "desc": "",
+        "indarray": ""
+    },
+    background_get_height: {
+        "desc": "",
+        "ind": ""
+    },
+    background_get_name: {
+        "desc": "",
+        "ind": ""
+    },
+    background_get_texture: {
+        "desc": "",
+        "back": ""
+    },
+    background_get_uvs: {
+        "desc": "",
+        "back": ""
+    },
+    background_get_width: {
+        "desc": "",
+        "ind": ""
+    },
+    background_prefetch: {
+        "desc": "",
+        "ind": ""
+    },
+    background_prefetch_multi: {
+        "desc": "",
+        "indarray": ""
+    },
+    background_replace: {
+        "desc": "",
+        "ind": "",
+        "fname": "",
+        "removeback": "",
+        "smooth": ""
+    },
+    background_replace_background: {
+        "desc": "",
+        "ind": "",
+        "fname": ""
+    },
+    background_save: {
+        "desc": "",
+        "ind": "",
+        "fname": ""
+    },
+    background_set_alpha_from_background: {
+        "desc": "",
+        "ind": "",
+        "alpha": ""
+    },
+    draw_background_part: {
+        "desc": "",
+        "back": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": "",
+        "x": "",
+        "y": ""
+    },
+    draw_background_part_ext: {
+        "desc": "",
+        "back": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": "",
+        "x": "",
+        "y": "",
+        "xscale": "",
+        "yscale": "",
+        "colour": "",
+        "alpha": ""
+    },
+    draw_background_stretched: {
+        "desc": "",
+        "back": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": ""
+    },
+    draw_background_stretched_ext: {
+        "desc": "",
+        "back": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "colour": "",
+        "alpha": ""
+    },
+    draw_background_tiled: {
+        "desc": "",
+        "back": "",
+        "x": "",
+        "y": ""
+    },
+    draw_background_tiled_ext: {
+        "desc": "",
+        "back": "",
+        "x": "",
+        "y": "",
+        "xscale": "",
+        "yscale": "",
+        "colour": "",
+        "alpha": ""
+    },
+    room_set_background: {
+        "desc": "",
+        "ind": "",
+        "bind": "",
+        "vis": "",
+        "fore": "",
+        "back": "",
+        "x": "",
+        "y": "",
+        "htiled": "",
+        "vtiled": "",
+        "hspeed": "",
+        "vspeed": "",
+        "alpha": ""
+    },
+    room_tile_add: {
+        "desc": "",
+        "ind": "",
+        "back": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "hieght": "",
+        "x": "",
+        "y": "",
+        "depth": ""
+    },
+    room_tile_add_ext: {
+        "desc": "",
+        "ind": "",
+        "back": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "hieght": "",
+        "x": "",
+        "y": "",
+        "depth": "",
+        "xscale": "",
+        "yscale": "",
+        "alpha": ""
+    },
+    room_tile_clear: {
+        "desc": "",
+        "ind": ""
+    },
+    tile_add: {
+        "desc": "",
+        "background": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": "",
+        "x": "",
+        "y": "",
+        "depth": ""
+    },
+    tile_delete: {
+        "desc": "",
+        "id": ""
+    },
+    tile_exists: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_alpha: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_background: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_blend: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_count: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    tile_get_depth: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_height: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_id: {
+        "desc": "",
+        "index": ""
+    },
+    tile_get_ids: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    tile_get_ids_at_depth: {
+        "desc": "",
+        "depth": ""
+    },
+    tile_get_left: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_top: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_visible: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_width: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_x: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_xscale: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_y: {
+        "desc": "",
+        "id": ""
+    },
+    tile_get_yscale: {
+        "desc": "",
+        "id": ""
+    },
+    tile_layer_delete: {
+        "desc": "",
+        "depth": ""
+    },
+    tile_layer_delete_at: {
+        "desc": "",
+        "depth": "",
+        "x": "",
+        "y": ""
+    },
+    tile_layer_depth: {
+        "desc": "",
+        "depth": "",
+        "newdepth": ""
+    },
+    tile_layer_find: {
+        "desc": "",
+        "depth": "",
+        "x": "",
+        "y": ""
+    },
+    tile_layer_hide: {
+        "desc": "",
+        "depth": ""
+    },
+    tile_layer_shift: {
+        "desc": "",
+        "depth": "",
+        "x": "",
+        "y": ""
+    },
+    tile_layer_show: {
+        "desc": "",
+        "depth": ""
+    },
+    tile_set_alpha: {
+        "desc": "",
+        "id": "",
+        "alpha": ""
+    },
+    tile_set_background: {
+        "desc": "",
+        "id": "",
+        "background": ""
+    },
+    tile_set_blend: {
+        "desc": "",
+        "id": "",
+        "colour": ""
+    },
+    tile_set_depth: {
+        "desc": "",
+        "id": "",
+        "depth": ""
+    },
+    tile_set_position: {
+        "desc": "",
+        "id": "",
+        "x": "",
+        "y": ""
+    },
+    tile_set_region: {
+        "desc": "",
+        "id": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+    },
+    tile_set_scale: {
+        "desc": "",
+        "id": "",
+        "xscale": "",
+        "yscale": ""
+    },
+    tile_set_visible: {
+        "desc": "",
+        "id": "",
+        "visible": ""
+    },
+    object_get_depth: {
+        "desc": "",
+        "ind": ""
+    },
+    object_set_depth: {
+        "desc": "",
+        "ind": "",
+        "depth": ""
+    },
+    d3d_draw_block: {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "texid": "",
+        "hrepeat": "",
+        "vrepeat": ""
+    },
+    d3d_draw_cone: {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "texid": "",
+        "hrepeat": "",
+        "vrepeat": "",
+        "closed": "",
+        "steps": ""
+    },
+    d3d_draw_cylinder: {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "texid": "",
+        "hrepeat": "",
+        "vrepeat": "",
+        "closed": "",
+        "steps": ""
+    },
+    d3d_draw_ellipsoid: {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "texid": "",
+        "hrepeat": "",
+        "vrepeat": "",
+        "closed": "",
+        "steps": ""
+    },
+    d3d_draw_floor: {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "texid": "",
+        "hrepeat": "",
+        "vrepeat": ""
+    },
+    d3d_draw_wall: {
+        "desc": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "texid": "",
+        "hrepeat": "",
+        "vrepeat": ""
+    },
+    d3d_end: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_light_define_ambient: {
+        "desc": "",
+        "col": ""
+    },
+    d3d_light_define_direction: {
+        "desc": "",
+        "ind": "",
+        "dx": "",
+        "dy": "",
+        "dz": "",
+        "col": ""
+    },
+    d3d_light_define_point: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "range": "",
+        "col": ""
+    },
+    d3d_light_enable: {
+        "desc": "",
+        "ind": "",
+        "enable": ""
+    },
+    d3d_model_block: {
+        "desc": "",
+        "ind": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "hrepeat": "",
+        "vrepeat": ""
+    },
+    d3d_model_clear: {
+        "desc": "",
+        "ind": ""
+    },
+    d3d_model_cone: {
+        "desc": "",
+        "ind": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "hrepeat": "",
+        "vrepeat": "",
+        "closed": "",
+        "steps": ""
+    },
+    d3d_model_create: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_model_cylinder: {
+        "desc": "",
+        "ind": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "hrepeat": "",
+        "vrepeat": "",
+        "closed": "",
+        "steps": ""
+    },
+    d3d_model_destroy: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_model_draw: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "texid": ""
+    },
+    d3d_model_ellipsoid: {
+        "desc": "",
+        "ind": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "hrepeat": "",
+        "vrepeat": "",
+        "closed": ""
+    },
+    d3d_model_floor: {
+        "desc": "",
+        "ind": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "hrepeat": "",
+        "vrepeat": ""
+    },
+    d3d_model_load: {
+        "desc": "",
+        "ind": "",
+        "fname": ""
+    },
+    d3d_model_primitive_begin: {
+        "desc": "",
+        "ind": "",
+        "kind": ""
+    },
+    d3d_model_primitive_end: {
+        "desc": "",
+        "ind": ""
+    },
+    d3d_model_save: {
+        "desc": "",
+        "ind": "",
+        "fname": ""
+    },
+    d3d_model_vertex: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    d3d_model_vertex_color: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_colour: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_normal: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": ""
+    },
+    d3d_model_vertex_normal_color: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_normal_colour: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_normal_texture: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "xtex": "",
+        "ytex": ""
+    },
+    d3d_model_vertex_normal_texture_color: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_normal_texture_colour: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_texture: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "xtex": "",
+        "ytex": ""
+    },
+    d3d_model_vertex_texture_color: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_vertex_texture_colour: {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_model_wall: {
+        "desc": "",
+        "ind": "",
+        "x1": "",
+        "y1": "",
+        "z1": "",
+        "x2": "",
+        "y2": "",
+        "z2": "",
+        "hrepeat": "",
+        "vrepeat": ""
+    },
+    d3d_primitive_begin: {
+        "desc": "",
+        "kind": ""
+    },
+    d3d_primitive_begin_texture: {
+        "desc": "",
+        "kind": "",
+        "texid": ""
+    },
+    d3d_primitive_end: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_set_culling: {
+        "desc": "",
+        "cull": ""
+    },
+    d3d_set_depth: {
+        "desc": "",
+        "depth": ""
+    },
+    d3d_set_fog: {
+        "desc": "",
+        "enable": "",
+        "colour": "",
+        "start": "",
+        "end": ""
+    },
+    d3d_set_hidden: {
+        "desc": "",
+        "hidden": ""
+    },
+    d3d_set_lighting: {
+        "desc": "",
+        "enable": ""
+    },
+    d3d_set_perspective: {
+        "desc": "",
+        "enable": ""
+    },
+    d3d_set_projection: {
+        "desc": "",
+        "xform": "",
+        "yform": "",
+        "zform": "",
+        "xto": "",
+        "yto": "",
+        "zto": "",
+        "xup": "",
+        "yup": "",
+        "zup": ""
+    },
+    d3d_set_projection_ext: {
+        "desc": "",
+        "xform": "",
+        "yform": "",
+        "zform": "",
+        "xto": "",
+        "yto": "",
+        "zto": "",
+        "xup": "",
+        "yup": "",
+        "zup": "",
+        "angle": "",
+        "aspect": "",
+        "znear": "",
+        "zfar": ""
+    },
+    d3d_set_projection_ortho: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "angle": ""
+    },
+    d3d_set_projection_perspective: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "angle": ""
+    },
+    d3d_set_shading: {
+        "desc": "",
+        "smooth": ""
+    },
+    d3d_set_zwriteenable: {
+        "desc": "",
+        "on_off": ""
+    },
+    d3d_start: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_add_rotation_axis: {
+        "desc": "",
+        "xa": "",
+        "ya": "",
+        "za": "",
+        "angle": ""
+    },
+    d3d_transform_add_rotation_x: {
+        "desc": "",
+        "angle": ""
+    },
+    d3d_transform_add_rotation_y: {
+        "desc": "",
+        "angle": ""
+    },
+    d3d_transform_add_rotation_z: {
+        "desc": "",
+        "angle": ""
+    },
+    d3d_transform_add_scaling: {
+        "desc": "",
+        "xs": "",
+        "ys": "",
+        "zs": ""
+    },
+    d3d_transform_add_translation: {
+        "desc": "",
+        "xt": "",
+        "yt": "",
+        "zt": ""
+    },
+    d3d_transform_set_identity: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_set_rotation_axis: {
+        "desc": "",
+        "xa": "",
+        "ya": "",
+        "za": "",
+        "angle": ""
+    },
+    d3d_transform_set_rotation_x: {
+        "desc": "",
+        "angle": ""
+    },
+    d3d_transform_set_rotation_y: {
+        "desc": "",
+        "angle": ""
+    },
+    d3d_transform_set_rotation_z: {
+        "desc": "",
+        "angle": ""
+    },
+    d3d_transform_set_scaling: {
+        "desc": "",
+        "xs": "",
+        "ys": "",
+        "zs": ""
+    },
+    d3d_transform_set_translation: {
+        "desc": "",
+        "xt": "",
+        "yt": "",
+        "zt": ""
+    },
+    d3d_transform_stack_clear: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_stack_discard: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_stack_empty: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_stack_pop: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_stack_push: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_stack_top: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    d3d_transform_vertex: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    d3d_vertex: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    d3d_vertex_color: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_colour: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_normal: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": ""
+    },
+    d3d_vertex_normal_color: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_normal_colour: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_normal_texture: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "xtex": "",
+        "ytex": ""
+    },
+    d3d_vertex_normal_texture_color: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_normal_texture_colour: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "nx": "",
+        "ny": "",
+        "nz": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_texture: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "xtex": "",
+        "ytex": ""
+    },
+    d3d_vertex_texture_color: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    d3d_vertex_texture_colour: {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "xtex": "",
+        "ytex": "",
+        "col": "",
+        "alpha": ""
+    },
+    display_set_windows_vertex_buffer_method: {
+        "desc": "",
+        "method": ""
+    },
+    display_get_windows_vertex_buffer_method: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    display_set_windows_alternate_sync: {
+        "desc": "",
+        "enable": ""
+    },
+    display_get_windows_alternate_sync: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    room_set_view: {
+        "desc": "",
+        "ind": "",
+        "vind": "",
+        "vis": "",
+        "xview": "",
+        "yview": "",
+        "wview": "",
+        "hview": "",
+        "xport": "",
+        "yport": "",
+        "wport": "",
+        "hport": "",
+        "hborder": "",
+        "vborder": "",
+        "hspeed": "",
+        "vspeed": "",
+        "obj": ""
+    },
+    immersion_play_effect: {
+        "desc": "",
+        "effect": ""
+    },
+    immersion_stop: {
+        "desc": "",
+        available: datasimple.ob2
+    },
+    analytics_event: {
+        "desc": "",
+        "string": ""
+    },
+    analytics_event_ext: {
+        "desc": "",
+        "string": "",
+        "string_param_name1": "",
+        "number_value1": "",
+        "...": "",
+    },
 }
