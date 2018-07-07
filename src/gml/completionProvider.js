@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
 class GMLCompletionItemProvider {
     constructor() {
         this.triggerCharacters = ['.'];
@@ -126,19 +125,6 @@ class GMLCompletionItemProvider {
             if (gmlGlobals.keywords.hasOwnProperty(keywords) && matches(keywords)) {
                 added[keywords] = true;
                 result.push(createNewProposal(vscode_1.CompletionItemKind.Keyword, keywords, gmlGlobals.keywords[keywords]));
-            }
-        }
-        //Third-party
-        for (const thirdfunctions in gmlThirdparty.thirdfunctions) {
-            if (gmlThirdparty.thirdfunctions.hasOwnProperty(thirdfunctions) && matches(thirdfunctions)) {
-                added[thirdfunctions] = true;
-                result.push(createNewProposal(vscode_1.CompletionItemKind.Function, thirdfunctions, gmlThirdparty.thirdfunctions[thirdfunctions]));
-            }
-        }
-        for (const thirdconstants in gmlThirdparty.thirdconstants) {
-            if (gmlThirdparty.thirdconstants.hasOwnProperty(thirdconstants) && matches(thirdconstants)) {
-                added[thirdconstants] = true;
-                result.push(createNewProposal(vscode_1.CompletionItemKind.Field, thirdconstants, gmlThirdparty.thirdconstants[thirdconstants]));
             }
         }
         const text = document.getText();

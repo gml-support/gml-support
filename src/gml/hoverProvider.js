@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const gmlGlobals = require("./gmlGlobals");
-const gmlThirdparty = require("./gmlThirdparty");
 function textToMarkedString(text) {
     return text.replace(/[\\`*_{}[\]()#+\-.!]/g, '\\$&'); // escape markdown syntax tokens: http://daringfireball.net/projects/markdown/syntax#backslash
 }
@@ -24,7 +23,7 @@ const GMLHoverProvider = ((() => {
                 let backidx = wordRange.start.translate({ characterDelta: -1 });
                 backchar = backidx.character < 0 ? '' : document.getText(new vscode_1.Range(backidx, wordRange.start));
             }
-            const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name] || gmlThirdparty.thirdfunctions[name] || gmlThirdparty.thirdconstants[name];
+            const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name];
             if (entry && entry.description && entry.available) {
                 const signature = entry.signature;
                 const availability = "GM Language Availability: ";
