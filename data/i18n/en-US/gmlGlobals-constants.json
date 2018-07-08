@@ -1,0 +1,1765 @@
+{
+    "dll_cdel": {
+        "desc": ""
+    },
+    "achievement_achievement_info": {
+        "desc": ""
+    },
+    "achievement_challenge_completed": {
+        "desc": ""
+    },
+    "achievement_challenge_completed_by_remote": {
+        "desc": ""
+    },
+    "achievement_challenge_launched": {
+        "desc": ""
+    },
+    "achievement_challenge_list_received": {
+        "desc": ""
+    },
+    "achievement_challenge_received": {
+        "desc": ""
+    },
+    "achievement_filter_all_players": {
+        "desc": ""
+    },
+    "achievement_filter_friends_only": {
+        "desc": ""
+    },
+    "achievement_friends_info": {
+        "desc": ""
+    },
+    "achievement_leaderboard_info": {
+        "desc": ""
+    },
+    "achievement_our_info": {
+        "desc": ""
+    },
+    "achievement_pic_loaded": {
+        "desc": ""
+    },
+    "achievement_player_info": {
+        "desc": ""
+    },
+    "achievement_purchase_info": {
+        "desc": ""
+    },
+    "achievement_show_achievement": {
+        "desc": ""
+    },
+    "achievement_show_bank": {
+        "desc": ""
+    },
+    "achievement_show_friend_picker": {
+        "desc": ""
+    },
+    "achievement_show_leaderboard": {
+        "desc": ""
+    },
+    "achievement_show_profile": {
+        "desc": ""
+    },
+    "achievement_show_purchase_prompt": {
+        "desc": ""
+    },
+    "achievement_show_ui": {
+        "desc": ""
+    },
+    "achievement_type_achievement_challenge": {
+        "desc": ""
+    },
+    "achievement_type_score_challenge": {
+        "desc": ""
+    },
+    "all": {
+        "desc": ""
+    },
+    "ANSI_CHARSET": {
+        "desc": ""
+    },
+    "ARABIC_CHARSET": {
+        "desc": ""
+    },
+    "asset_background": {
+        "desc": ""
+    },
+    "asset_font": {
+        "desc": ""
+    },
+    "asset_object": {
+        "desc": ""
+    },
+    "asset_path": {
+        "desc": ""
+    },
+    "asset_room": {
+        "desc": ""
+    },
+    "asset_script": {
+        "desc": ""
+    },
+    "asset_sound": {
+        "desc": ""
+    },
+    "asset_sprite": {
+        "desc": ""
+    },
+    "asset_timeline": {
+        "desc": ""
+    },
+    "asset_unknown": {
+        "desc": ""
+    },
+    "audio_falloff_exponent_distance": {
+        "desc": ""
+    },
+    "audio_falloff_exponent_distance_clamped": {
+        "desc": ""
+    },
+    "audio_falloff_inverse_distance": {
+        "desc": ""
+    },
+    "audio_falloff_inverse_distance_clamped": {
+        "desc": ""
+    },
+    "audio_falloff_linear_distance": {
+        "desc": ""
+    },
+    "audio_falloff_linear_distance_clamped": {
+        "desc": ""
+    },
+    "audio_falloff_none": {
+        "desc": ""
+    },
+    "audio_new_system": {
+        "desc": ""
+    },
+    "audio_old_system": {
+        "desc": ""
+    },
+    "BALTIC_CHARSET": {
+        "desc": ""
+    },
+    "bm_add": {
+        "desc": ""
+    },
+    "bm_dest_alpha": {
+        "desc": ""
+    },
+    "bm_dest_color": {
+        "desc": ""
+    },
+    "bm_inv_dest_alpha": {
+        "desc": ""
+    },
+    "bm_inv_dest_color": {
+        "desc": ""
+    },
+    "bm_inv_src_alpha": {
+        "desc": ""
+    },
+    "bm_inv_src_color": {
+        "desc": ""
+    },
+    "bm_max": {
+        "desc": ""
+    },
+    "bm_normal": {
+        "desc": ""
+    },
+    "bm_one": {
+        "desc": ""
+    },
+    "bm_src_alpha": {
+        "desc": ""
+    },
+    "bm_src_alpha_sat": {
+        "desc": ""
+    },
+    "bm_src_color": {
+        "desc": ""
+    },
+    "bm_subtract": {
+        "desc": ""
+    },
+    "bm_zero": {
+        "desc": ""
+    },
+    "browser_chrome": {
+        "desc": ""
+    },
+    "browser_firefox": {
+        "desc": ""
+    },
+    "browser_ie": {
+        "desc": ""
+    },
+    "browser_ie_mobile": {
+        "desc": ""
+    },
+    "browser_not_a_browser": {
+        "desc": ""
+    },
+    "browser_opera": {
+        "desc": ""
+    },
+    "browser_safari": {
+        "desc": ""
+    },
+    "browser_safari_mobile": {
+        "desc": ""
+    },
+    "browser_tizen": {
+        "desc": ""
+    },
+    "browser_unknown": {
+        "desc": ""
+    },
+    "browser_windows_store": {
+        "desc": ""
+    },
+    "buffer_bool": {
+        "desc": ""
+    },
+    "buffer_f16": {
+        "desc": ""
+    },
+    "buffer_f32": {
+        "desc": ""
+    },
+    "buffer_f64": {
+        "desc": ""
+    },
+    "buffer_fast": {
+        "desc": ""
+    },
+    "buffer_fixed": {
+        "desc": ""
+    },
+    "buffer_generalerror": {
+        "desc": ""
+    },
+    "buffer_grow": {
+        "desc": ""
+    },
+    "buffer_invalidtype": {
+        "desc": ""
+    },
+    "buffer_outofbounds": {
+        "desc": ""
+    },
+    "buffer_outofspace": {
+        "desc": ""
+    },
+    "buffer_s16": {
+        "desc": ""
+    },
+    "buffer_s32": {
+        "desc": ""
+    },
+    "buffer_s8": {
+        "desc": ""
+    },
+    "buffer_seek_end": {
+        "desc": ""
+    },
+    "buffer_seek_relative": {
+        "desc": ""
+    },
+    "buffer_seek_start": {
+        "desc": ""
+    },
+    "buffer_string": {
+        "desc": ""
+    },
+    "buffer_u16": {
+        "desc": ""
+    },
+    "buffer_u32": {
+        "desc": ""
+    },
+    "buffer_u8": {
+        "desc": ""
+    },
+    "buffer_vbuffer": {
+        "desc": ""
+    },
+    "buffer_wrap": {
+        "desc": ""
+    },
+    "CHINESEBIG5_CHARSET": {
+        "desc": ""
+    },
+    "cr_appstart": {
+        "desc": ""
+    },
+    "cr_arrow": {
+        "desc": ""
+    },
+    "cr_beam": {
+        "desc": ""
+    },
+    "cr_cross": {
+        "desc": ""
+    },
+    "cr_default": {
+        "desc": ""
+    },
+    "cr_drag": {
+        "desc": ""
+    },
+    "cr_handpoint": {
+        "desc": ""
+    },
+    "cr_help": {
+        "desc": ""
+    },
+    "cr_hourglass": {
+        "desc": ""
+    },
+    "cr_hsplit": {
+        "desc": ""
+    },
+    "cr_multidrag": {
+        "desc": ""
+    },
+    "cr_no": {
+        "desc": ""
+    },
+    "cr_nodrop": {
+        "desc": ""
+    },
+    "cr_none": {
+        "desc": ""
+    },
+    "cr_size_all": {
+        "desc": ""
+    },
+    "cr_size_nesw": {
+        "desc": ""
+    },
+    "cr_size_ns": {
+        "desc": ""
+    },
+    "cr_size_nwse": {
+        "desc": ""
+    },
+    "cr_size_we": {
+        "desc": ""
+    },
+    "cr_sqlwait": {
+        "desc": ""
+    },
+    "cr_uparrow": {
+        "desc": ""
+    },
+    "cr_vsplit": {
+        "desc": ""
+    },
+    "c_aqua": {
+        "desc": ""
+    },
+    "c_black": {
+        "desc": ""
+    },
+    "c_blue": {
+        "desc": ""
+    },
+    "c_dkgray": {
+        "desc": ""
+    },
+    "c_fuchsia": {
+        "desc": ""
+    },
+    "c_gray": {
+        "desc": ""
+    },
+    "c_green": {
+        "desc": ""
+    },
+    "c_lime": {
+        "desc": ""
+    },
+    "c_ltgray": {
+        "desc": ""
+    },
+    "c_maroon": {
+        "desc": ""
+    },
+    "c_navy": {
+        "desc": ""
+    },
+    "c_olive": {
+        "desc": ""
+    },
+    "c_orange": {
+        "desc": ""
+    },
+    "c_purple": {
+        "desc": ""
+    },
+    "c_red": {
+        "desc": ""
+    },
+    "c_silver": {
+        "desc": ""
+    },
+    "c_teal": {
+        "desc": ""
+    },
+    "c_white": {
+        "desc": ""
+    },
+    "c_yellow": {
+        "desc": ""
+    },
+    "DEFAULT_CHARSET": {
+        "desc": ""
+    },
+    "device_emulator": {
+        "desc": ""
+    },
+    "device_ios_ipad": {
+        "desc": ""
+    },
+    "device_ios_ipad_retina": {
+        "desc": ""
+    },
+    "device_ios_iphone": {
+        "desc": ""
+    },
+    "device_ios_iphone5": {
+        "desc": ""
+    },
+    "device_ios_iphone_retina": {
+        "desc": ""
+    },
+    "device_ios_unknown": {
+        "desc": ""
+    },
+    "device_tablet": {
+        "desc": ""
+    },
+    "display_landscape": {
+        "desc": ""
+    },
+    "display_landscape_flipped": {
+        "desc": ""
+    },
+    "display_portrait": {
+        "desc": ""
+    },
+    "display_portrait_flipped": {
+        "desc": ""
+    },
+    "dll_cdecl": {
+        "desc": ""
+    },
+    "dll_stdcall": {
+        "desc": ""
+    },
+    "ds_type_grid": {
+        "desc": ""
+    },
+    "ds_type_list": {
+        "desc": ""
+    },
+    "ds_type_map": {
+        "desc": ""
+    },
+    "ds_type_priority": {
+        "desc": ""
+    },
+    "ds_type_queue": {
+        "desc": ""
+    },
+    "ds_type_stack": {
+        "desc": ""
+    },
+    "EASTEUROPE_CHARSET": {
+        "desc": ""
+    },
+    "ef_cloud": {
+        "desc": ""
+    },
+    "ef_ellipse": {
+        "desc": ""
+    },
+    "ef_explosion": {
+        "desc": ""
+    },
+    "ef_firework": {
+        "desc": ""
+    },
+    "ef_flare": {
+        "desc": ""
+    },
+    "ef_rain": {
+        "desc": ""
+    },
+    "ef_ring": {
+        "desc": ""
+    },
+    "ef_smoke": {
+        "desc": ""
+    },
+    "ef_smokeup": {
+        "desc": ""
+    },
+    "ef_snow": {
+        "desc": ""
+    },
+    "ef_spark": {
+        "desc": ""
+    },
+    "ef_star": {
+        "desc": ""
+    },
+    "ev_alarm": {
+        "desc": ""
+    },
+    "ev_animation_end": {
+        "desc": ""
+    },
+    "ev_boundary": {
+        "desc": ""
+    },
+    "ev_close_button": {
+        "desc": ""
+    },
+    "ev_collision": {
+        "desc": ""
+    },
+    "ev_create": {
+        "desc": ""
+    },
+    "ev_destroy": {
+        "desc": ""
+    },
+    "ev_draw": {
+        "desc": ""
+    },
+    "ev_end_of_path": {
+        "desc": ""
+    },
+    "ev_game_end": {
+        "desc": ""
+    },
+    "ev_game_start": {
+        "desc": ""
+    },
+    "ev_global_left_button": {
+        "desc": ""
+    },
+    "ev_global_left_press": {
+        "desc": ""
+    },
+    "ev_global_left_release": {
+        "desc": ""
+    },
+    "ev_global_middle_button": {
+        "desc": ""
+    },
+    "ev_global_middle_press": {
+        "desc": ""
+    },
+    "ev_global_middle_release": {
+        "desc": ""
+    },
+    "ev_global_press": {
+        "desc": ""
+    },
+    "ev_global_release": {
+        "desc": ""
+    },
+    "ev_global_right_button": {
+        "desc": ""
+    },
+    "ev_global_right_press": {
+        "desc": ""
+    },
+    "ev_global_right_release": {
+        "desc": ""
+    },
+    "ev_gui": {
+        "desc": ""
+    },
+    "ev_joystick1_button1": {
+        "desc": ""
+    },
+    "ev_joystick1_button2": {
+        "desc": ""
+    },
+    "ev_joystick1_button3": {
+        "desc": ""
+    },
+    "ev_joystick1_button4": {
+        "desc": ""
+    },
+    "ev_joystick1_button5": {
+        "desc": ""
+    },
+    "ev_joystick1_button6": {
+        "desc": ""
+    },
+    "ev_joystick1_button7": {
+        "desc": ""
+    },
+    "ev_joystick1_button8": {
+        "desc": ""
+    },
+    "ev_joystick1_down": {
+        "desc": ""
+    },
+    "ev_joystick1_left": {
+        "desc": ""
+    },
+    "ev_joystick1_right": {
+        "desc": ""
+    },
+    "ev_joystick1_up": {
+        "desc": ""
+    },
+    "ev_joystick2_button1": {
+        "desc": ""
+    },
+    "ev_joystick2_button2": {
+        "desc": ""
+    },
+    "ev_joystick2_button3": {
+        "desc": ""
+    },
+    "ev_joystick2_button4": {
+        "desc": ""
+    },
+    "ev_joystick2_button5": {
+        "desc": ""
+    },
+    "ev_joystick2_button6": {
+        "desc": ""
+    },
+    "ev_joystick2_button7": {
+        "desc": ""
+    },
+    "ev_joystick2_button8": {
+        "desc": ""
+    },
+    "ev_joystick2_down": {
+        "desc": ""
+    },
+    "ev_joystick2_left": {
+        "desc": ""
+    },
+    "ev_joystick2_right": {
+        "desc": ""
+    },
+    "ev_joystick2_up": {
+        "desc": ""
+    },
+    "ev_keyboard": {
+        "desc": ""
+    },
+    "ev_keypress": {
+        "desc": ""
+    },
+    "ev_keyrelease": {
+        "desc": ""
+    },
+    "ev_left_button": {
+        "desc": ""
+    },
+    "ev_left_press": {
+        "desc": ""
+    },
+    "ev_left_release": {
+        "desc": ""
+    },
+    "ev_middle_button": {
+        "desc": ""
+    },
+    "ev_middle_press": {
+        "desc": ""
+    },
+    "ev_middle_release": {
+        "desc": ""
+    },
+    "ev_mouse": {
+        "desc": ""
+    },
+    "ev_mouse_enter": {
+        "desc": ""
+    },
+    "ev_mouse_leave": {
+        "desc": ""
+    },
+    "ev_mouse_wheel_down": {
+        "desc": ""
+    },
+    "ev_mouse_wheel_up": {
+        "desc": ""
+    },
+    "ev_no_button": {
+        "desc": ""
+    },
+    "ev_no_more_health": {
+        "desc": ""
+    },
+    "ev_no_more_lives": {
+        "desc": ""
+    },
+    "ev_other": {
+        "desc": ""
+    },
+    "ev_outside": {
+        "desc": ""
+    },
+    "ev_right_button": {
+        "desc": ""
+    },
+    "ev_right_press": {
+        "desc": ""
+    },
+    "ev_right_release": {
+        "desc": ""
+    },
+    "ev_room_end": {
+        "desc": ""
+    },
+    "ev_room_start": {
+        "desc": ""
+    },
+    "ev_step": {
+        "desc": ""
+    },
+    "ev_step_begin": {
+        "desc": ""
+    },
+    "ev_step_end": {
+        "desc": ""
+    },
+    "ev_step_normal": {
+        "desc": ""
+    },
+    "ev_trigger": {
+        "desc": ""
+    },
+    "ev_user0": {
+        "desc": ""
+    },
+    "ev_user1": {
+        "desc": ""
+    },
+    "ev_user10": {
+        "desc": ""
+    },
+    "ev_user11": {
+        "desc": ""
+    },
+    "ev_user12": {
+        "desc": ""
+    },
+    "ev_user13": {
+        "desc": ""
+    },
+    "ev_user14": {
+        "desc": ""
+    },
+    "ev_user15": {
+        "desc": ""
+    },
+    "ev_user2": {
+        "desc": ""
+    },
+    "ev_user3": {
+        "desc": ""
+    },
+    "ev_user4": {
+        "desc": ""
+    },
+    "ev_user5": {
+        "desc": ""
+    },
+    "ev_user6": {
+        "desc": ""
+    },
+    "ev_user7": {
+        "desc": ""
+    },
+    "ev_user8": {
+        "desc": ""
+    },
+    "ev_user9": {
+        "desc": ""
+    },
+    "false": {
+        "desc": ""
+    },
+    "fa_archive": {
+        "desc": ""
+    },
+    "fa_bottom": {
+        "desc": ""
+    },
+    "fa_center": {
+        "desc": ""
+    },
+    "fa_directory": {
+        "desc": ""
+    },
+    "fa_hidden": {
+        "desc": ""
+    },
+    "fa_left": {
+        "desc": ""
+    },
+    "fa_middle": {
+        "desc": ""
+    },
+    "fa_readonly": {
+        "desc": ""
+    },
+    "fa_right": {
+        "desc": ""
+    },
+    "fa_sysfile": {
+        "desc": ""
+    },
+    "fa_top": {
+        "desc": ""
+    },
+    "fa_volumeid": {
+        "desc": ""
+    },
+    "GB2312_CHARSET": {
+        "desc": ""
+    },
+    "global": {
+        "desc": ""
+    },
+    "gp_axislh": {
+        "desc": ""
+    },
+    "gp_axislv": {
+        "desc": ""
+    },
+    "gp_axisrh": {
+        "desc": ""
+    },
+    "gp_axisrv": {
+        "desc": ""
+    },
+    "gp_face1": {
+        "desc": ""
+    },
+    "gp_face2": {
+        "desc": ""
+    },
+    "gp_face3": {
+        "desc": ""
+    },
+    "gp_face4": {
+        "desc": ""
+    },
+    "gp_padd": {
+        "desc": ""
+    },
+    "gp_padl": {
+        "desc": ""
+    },
+    "gp_padr": {
+        "desc": ""
+    },
+    "gp_padu": {
+        "desc": ""
+    },
+    "gp_select": {
+        "desc": ""
+    },
+    "gp_shoulderl": {
+        "desc": ""
+    },
+    "gp_shoulderlb": {
+        "desc": ""
+    },
+    "gp_shoulderr": {
+        "desc": ""
+    },
+    "gp_shoulderrb": {
+        "desc": ""
+    },
+    "gp_start": {
+        "desc": ""
+    },
+    "gp_stickl": {
+        "desc": ""
+    },
+    "gp_stickr": {
+        "desc": ""
+    },
+    "GREEK_CHARSET": {
+        "desc": ""
+    },
+    "HANGEUL_CHARSET": {
+        "desc": ""
+    },
+    "HEBREW_CHARSET": {
+        "desc": ""
+    },
+    "JOHAB_CHARSET": {
+        "desc": ""
+    },
+    "lb_disp_none": {
+        "desc": ""
+    },
+    "lb_disp_numeric": {
+        "desc": ""
+    },
+    "lb_disp_time_ms": {
+        "desc": ""
+    },
+    "lb_disp_time_sec": {
+        "desc": ""
+    },
+    "lb_sort_ascending": {
+        "desc": ""
+    },
+    "lb_sort_descending": {
+        "desc": ""
+    },
+    "lb_sort_none": {
+        "desc": ""
+    },
+    "leaderboard_type_number": {
+        "desc": ""
+    },
+    "leaderboard_type_time_mins_secs": {
+        "desc": ""
+    },
+    "local": {
+        "desc": ""
+    },
+    "MAC_CHARSET": {
+        "desc": ""
+    },
+    "matrix_projection": {
+        "desc": ""
+    },
+    "matrix_view": {
+        "desc": ""
+    },
+    "matrix_world": {
+        "desc": ""
+    },
+    "mb_any": {
+        "desc": ""
+    },
+    "mb_left": {
+        "desc": ""
+    },
+    "mb_middle": {
+        "desc": ""
+    },
+    "mb_none": {
+        "desc": ""
+    },
+    "mb_right": {
+        "desc": ""
+    },
+    "network_socket_bluetooth": {
+        "desc": ""
+    },
+    "network_socket_tcp": {
+        "desc": ""
+    },
+    "network_socket_udp": {
+        "desc": ""
+    },
+    "network_type_connect": {
+        "desc": ""
+    },
+    "network_type_data": {
+        "desc": ""
+    },
+    "network_type_disconnect": {
+        "desc": ""
+    },
+    "noone": {
+        "desc": ""
+    },
+    "OEM_CHARSET": {
+        "desc": ""
+    },
+    "of_challenge_lose": {
+        "desc": ""
+    },
+    "of_challenge_tie": {
+        "desc": ""
+    },
+    "of_challenge_win": {
+        "desc": ""
+    },
+    "os_android": {
+        "desc": ""
+    },
+    "os_ios": {
+        "desc": ""
+    },
+    "os_linux": {
+        "desc": ""
+    },
+    "os_macosx": {
+        "desc": ""
+    },
+    "os_psp": {
+        "desc": ""
+    },
+    "os_symbian": {
+        "desc": ""
+    },
+    "os_tizen": {
+        "desc": ""
+    },
+    "os_unknown": {
+        "desc": ""
+    },
+    "os_win32": {
+        "desc": ""
+    },
+    "os_win8native": {
+        "desc": ""
+    },
+    "os_windows": {
+        "desc": ""
+    },
+    "os_winphone": {
+        "desc": ""
+    },
+    "other": {
+        "desc": ""
+    },
+    "ov_achievements": {
+        "desc": ""
+    },
+    "ov_community": {
+        "desc": ""
+    },
+    "ov_friends": {
+        "desc": ""
+    },
+    "ov_gamegroup": {
+        "desc": ""
+    },
+    "ov_players": {
+        "desc": ""
+    },
+    "ov_settings": {
+        "desc": ""
+    },
+    "phy_debug_render_aabb": {
+        "desc": ""
+    },
+    "phy_debug_render_collision_pairs": {
+        "desc": ""
+    },
+    "phy_debug_render_coms": {
+        "desc": ""
+    },
+    "phy_debug_render_core_shapes": {
+        "desc": ""
+    },
+    "phy_debug_render_joints": {
+        "desc": ""
+    },
+    "phy_debug_render_obb": {
+        "desc": ""
+    },
+    "phy_debug_render_shapes": {
+        "desc": ""
+    },
+    "phy_joint_anchor_1_x": {
+        "desc": ""
+    },
+    "phy_joint_anchor_1_y": {
+        "desc": ""
+    },
+    "phy_joint_anchor_2_x": {
+        "desc": ""
+    },
+    "phy_joint_anchor_2_y": {
+        "desc": ""
+    },
+    "phy_joint_angle": {
+        "desc": ""
+    },
+    "phy_joint_angle_limits": {
+        "desc": ""
+    },
+    "phy_joint_damping_ratio": {
+        "desc": ""
+    },
+    "phy_joint_frequency": {
+        "desc": ""
+    },
+    "phy_joint_length_1": {
+        "desc": ""
+    },
+    "phy_joint_length_2": {
+        "desc": ""
+    },
+    "phy_joint_lower_angle_limit": {
+        "desc": ""
+    },
+    "phy_joint_max_motor_force": {
+        "desc": ""
+    },
+    "phy_joint_max_motor_torque": {
+        "desc": ""
+    },
+    "phy_joint_motor_force": {
+        "desc": ""
+    },
+    "phy_joint_motor_speed": {
+        "desc": ""
+    },
+    "phy_joint_motor_torque": {
+        "desc": ""
+    },
+    "phy_joint_reaction_force_x": {
+        "desc": ""
+    },
+    "phy_joint_reaction_force_y": {
+        "desc": ""
+    },
+    "phy_joint_reaction_torque": {
+        "desc": ""
+    },
+    "phy_joint_speed": {
+        "desc": ""
+    },
+    "phy_joint_translation": {
+        "desc": ""
+    },
+    "phy_joint_upper_angle_limit": {
+        "desc": ""
+    },
+    "pi": {
+        "desc": ""
+    },
+    "pr_linelist": {
+        "desc": ""
+    },
+    "pr_linestrip": {
+        "desc": ""
+    },
+    "pr_pointlist": {
+        "desc": ""
+    },
+    "pr_trianglefan": {
+        "desc": ""
+    },
+    "pr_trianglelist": {
+        "desc": ""
+    },
+    "pr_trianglestrip": {
+        "desc": ""
+    },
+    "ps_change_all": {
+        "desc": ""
+    },
+    "ps_change_motion": {
+        "desc": ""
+    },
+    "ps_change_shape": {
+        "desc": ""
+    },
+    "ps_deflect_horizontal": {
+        "desc": ""
+    },
+    "ps_deflect_vertical": {
+        "desc": ""
+    },
+    "ps_distr_gaussian": {
+        "desc": ""
+    },
+    "ps_distr_invgaussian": {
+        "desc": ""
+    },
+    "ps_distr_linear": {
+        "desc": ""
+    },
+    "ps_force_constant": {
+        "desc": ""
+    },
+    "ps_force_linear": {
+        "desc": ""
+    },
+    "ps_force_quadratic": {
+        "desc": ""
+    },
+    "ps_shape_diamond": {
+        "desc": ""
+    },
+    "ps_shape_ellipse": {
+        "desc": ""
+    },
+    "ps_shape_line": {
+        "desc": ""
+    },
+    "ps_shape_rectangle": {
+        "desc": ""
+    },
+    "pt_shape_circle": {
+        "desc": ""
+    },
+    "pt_shape_cloud": {
+        "desc": ""
+    },
+    "pt_shape_disk": {
+        "desc": ""
+    },
+    "pt_shape_explosion": {
+        "desc": ""
+    },
+    "pt_shape_flare": {
+        "desc": ""
+    },
+    "pt_shape_line": {
+        "desc": ""
+    },
+    "pt_shape_pixel": {
+        "desc": ""
+    },
+    "pt_shape_ring": {
+        "desc": ""
+    },
+    "pt_shape_smoke": {
+        "desc": ""
+    },
+    "pt_shape_snow": {
+        "desc": ""
+    },
+    "pt_shape_spark": {
+        "desc": ""
+    },
+    "pt_shape_sphere": {
+        "desc": ""
+    },
+    "pt_shape_square": {
+        "desc": ""
+    },
+    "pt_shape_star": {
+        "desc": ""
+    },
+    "RUSSIAN_CHARSET": {
+        "desc": ""
+    },
+    "self": {
+        "desc": ""
+    },
+    "SHIFTJIS_CHARSET": {
+        "desc": ""
+    },
+    "SYMBOL_CHARSET": {
+        "desc": ""
+    },
+    "THAI_CHARSET": {
+        "desc": ""
+    },
+    "true": {
+        "desc": ""
+    },
+    "TURKISH_CHARSET": {
+        "desc": ""
+    },
+    "ty_real": {
+        "desc": ""
+    },
+    "ty_string": {
+        "desc": ""
+    },
+    "vertex_type_colour": {
+        "desc": ""
+    },
+    "vertex_type_float1": {
+        "desc": ""
+    },
+    "vertex_type_float2": {
+        "desc": ""
+    },
+    "vertex_type_float3": {
+        "desc": ""
+    },
+    "vertex_type_float4": {
+        "desc": ""
+    },
+    "vertex_type_ubyte4": {
+        "desc": ""
+    },
+    "vertex_usage_binormal": {
+        "desc": ""
+    },
+    "vertex_usage_blendindices": {
+        "desc": ""
+    },
+    "vertex_usage_blendweight": {
+        "desc": ""
+    },
+    "vertex_usage_colour": {
+        "desc": ""
+    },
+    "vertex_usage_depth": {
+        "desc": ""
+    },
+    "vertex_usage_fog": {
+        "desc": ""
+    },
+    "vertex_usage_normal": {
+        "desc": ""
+    },
+    "vertex_usage_position": {
+        "desc": ""
+    },
+    "vertex_usage_psize": {
+        "desc": ""
+    },
+    "vertex_usage_sample": {
+        "desc": ""
+    },
+    "vertex_usage_tagnet": {
+        "desc": ""
+    },
+    "vertex_usage_textcoord": {
+        "desc": ""
+    },
+    "VIETNAMESE_CHARSET": {
+        "desc": ""
+    },
+    "vk_add": {
+        "desc": ""
+    },
+    "vk_alt": {
+        "desc": ""
+    },
+    "vk_anykey": {
+        "desc": ""
+    },
+    "vk_backspace": {
+        "desc": ""
+    },
+    "vk_control": {
+        "desc": ""
+    },
+    "vk_decimal": {
+        "desc": ""
+    },
+    "vk_delete": {
+        "desc": ""
+    },
+    "vk_divide": {
+        "desc": ""
+    },
+    "vk_down": {
+        "desc": ""
+    },
+    "vk_end": {
+        "desc": ""
+    },
+    "vk_enter": {
+        "desc": ""
+    },
+    "vk_escape": {
+        "desc": ""
+    },
+    "vk_f1": {
+        "desc": ""
+    },
+    "vk_f10": {
+        "desc": ""
+    },
+    "vk_f11": {
+        "desc": ""
+    },
+    "vk_f12": {
+        "desc": ""
+    },
+    "vk_f2": {
+        "desc": ""
+    },
+    "vk_f3": {
+        "desc": ""
+    },
+    "vk_f4": {
+        "desc": ""
+    },
+    "vk_f5": {
+        "desc": ""
+    },
+    "vk_f6": {
+        "desc": ""
+    },
+    "vk_f7": {
+        "desc": ""
+    },
+    "vk_f8": {
+        "desc": ""
+    },
+    "vk_f9": {
+        "desc": ""
+    },
+    "vk_home": {
+        "desc": ""
+    },
+    "vk_insert": {
+        "desc": ""
+    },
+    "vk_lalt": {
+        "desc": ""
+    },
+    "vk_lcontrol": {
+        "desc": ""
+    },
+    "vk_left": {
+        "desc": ""
+    },
+    "vk_lshift": {
+        "desc": ""
+    },
+    "vk_multiply": {
+        "desc": ""
+    },
+    "vk_nokey": {
+        "desc": ""
+    },
+    "vk_numpad0": {
+        "desc": ""
+    },
+    "vk_numpad1": {
+        "desc": ""
+    },
+    "vk_numpad2": {
+        "desc": ""
+    },
+    "vk_numpad3": {
+        "desc": ""
+    },
+    "vk_numpad4": {
+        "desc": ""
+    },
+    "vk_numpad5": {
+        "desc": ""
+    },
+    "vk_numpad6": {
+        "desc": ""
+    },
+    "vk_numpad7": {
+        "desc": ""
+    },
+    "vk_numpad8": {
+        "desc": ""
+    },
+    "vk_numpad9": {
+        "desc": ""
+    },
+    "vk_pagedown": {
+        "desc": ""
+    },
+    "vk_pageup": {
+        "desc": ""
+    },
+    "vk_pause": {
+        "desc": ""
+    },
+    "vk_printscreen": {
+        "desc": ""
+    },
+    "vk_ralt": {
+        "desc": ""
+    },
+    "vk_rcontrol": {
+        "desc": ""
+    },
+    "vk_return": {
+        "desc": ""
+    },
+    "vk_right": {
+        "desc": ""
+    },
+    "vk_rshift": {
+        "desc": ""
+    },
+    "vk_shift": {
+        "desc": ""
+    },
+    "vk_space": {
+        "desc": ""
+    },
+    "vk_subtract": {
+        "desc": ""
+    },
+    "vk_tab": {
+        "desc": ""
+    },
+    "vk_up": {
+        "desc": ""
+    },
+
+    "input_type": {
+        "desc": ""
+    },
+    "se_chorus": {
+        "desc": ""
+    },
+    "se_compressor": {
+        "desc": ""
+    },
+    "se_echo": {
+        "desc": ""
+    },
+    "se_equalizer": {
+        "desc": ""
+    },
+    "se_flanger": {
+        "desc": ""
+    },
+    "se_gargle": {
+        "desc": ""
+    },
+    "se_none": {
+        "desc": ""
+    },
+    "se_reverb": {
+        "desc": ""
+    },
+    "text_type": {
+        "desc": ""
+    },
+
+    "undefined": {
+        "desc": ""
+    },
+    "pointer_invalid": {
+        "desc": ""
+    },
+    "pointer_null": {
+        "desc": ""
+    },
+    "path_action_stop": {
+        "desc": ""
+    },
+    "path_action_restart": {
+        "desc": ""
+    },
+    "path_action_continue": {
+        "desc": ""
+    },
+    "path_action_reverse": {
+        "desc": ""
+    },
+    "gamespeed_fps": {
+        "desc": ""
+    },
+    "gamespeed_microseconds": {
+        "desc": ""
+    },
+    "ev_gesture": {
+        "desc": ""
+    },
+    "ev_gesture_tap": {
+        "desc": ""
+    },
+    "ev_gesture_double_tap": {
+        "desc": ""
+    },
+    "ev_gesture_drag_start": {
+        "desc": ""
+    },
+    "ev_gesture_dragging": {
+        "desc": ""
+    },
+    "ev_gesture_drag_end": {
+        "desc": ""
+    },
+    "ev_gesture_flick": {
+        "desc": ""
+    },
+    "ev_gesture_pinch_start": {
+        "desc": ""
+    },
+    "ev_gesture_pinch_in": {
+        "desc": ""
+    },
+    "ev_gesture_pinch_out": {
+        "desc": ""
+    },
+    "ev_gesture_pinch_end": {
+        "desc": ""
+    },
+    "ev_gesture_rotate_start": {
+        "desc": ""
+    },
+    "ev_gesture_rotating": {
+        "desc": ""
+    },
+    "ev_gesture_rotate_end": {
+        "desc": ""
+    },
+    "ev_global_gesture_tap": {
+        "desc": ""
+    },
+    "ev_global_gesture_double_tap": {
+        "desc": ""
+    },
+    "ev_global_gesture_drag_start": {
+        "desc": ""
+    },
+    "ev_global_gesture_dragging": {
+        "desc": ""
+    },
+    "ev_global_gesture_drag_end": {
+        "desc": ""
+    },
+    "ev_global_gesture_flick": {
+        "desc": ""
+    },
+    "ev_global_gesture_pinch_start": {
+        "desc": ""
+    },
+    "ev_global_gesture_pinch_in": {
+        "desc": ""
+    },
+    "ev_global_gesture_pinch_out": {
+        "desc": ""
+    },
+    "ev_global_gesture_pinch_end": {
+        "desc": ""
+    },
+    "ev_global_gesture_rotate_start": {
+        "desc": ""
+    },
+    "ev_global_gesture_rotating": {
+        "desc": ""
+    },
+    "ev_global_gesture_rotate_end": {
+        "desc": ""
+    },
+    "bm_complex": {
+        "desc": ""
+    },
+    "tf_point": {
+        "desc": ""
+    },
+    "tf_linear": {
+        "desc": ""
+    },
+    "tf_anisotropic": {
+        "desc": ""
+    },
+    "mip_off": {
+        "desc": ""
+    },
+    "mip_on": {
+        "desc": ""
+    },
+    "mip_markedonly": {
+        "desc": ""
+    },
+    "asset_tiles": {
+        "desc": ""
+    },
+    "asset_shader": {
+        "desc": ""
+    },
+    "tile_rotate": {
+        "desc": ""
+    },
+    "tile_flip": {
+        "desc": ""
+    },
+    "tile_mirror": {
+        "desc": ""
+    },
+    "tile_index_mask": {
+        "desc": ""
+    },
+    "layerelementtype_undefined": {
+        "desc": ""
+    },
+    "layerelementtype_background": {
+        "desc": ""
+    },
+    "layerelementtype_instance": {
+        "desc": ""
+    },
+    "layerelementtype_oldtilemap": {
+        "desc": ""
+    },
+    "layerelementtype_sprite": {
+        "desc": ""
+    },
+    "layerelementtype_tilemap": {
+        "desc": ""
+    },
+    "layerelementtype_particlesystem": {
+        "desc": ""
+    },
+    "layerelementtype_tile": {
+        "desc": ""
+    },
+    "cmpfunc_never": {
+        "desc": ""
+    },
+    "cmpfunc_less": {
+        "desc": ""
+    },
+    "cmpfunc_equal": {
+        "desc": ""
+    },
+    "cmpfunc_lessequal": {
+        "desc": ""
+    },
+    "cmpfunc_greater": {
+        "desc": ""
+    },
+    "cmpfunc_notequal": {
+        "desc": ""
+    },
+    "cmpfunc_greaterequal": {
+        "desc": ""
+    },
+    "cmpfunc_always": {
+        "desc": ""
+    },
+    "cull_noculling": {
+        "desc": ""
+    },
+    "cull_clockwise": {
+        "desc": ""
+    },
+    "cull_counterclockwise": {
+        "desc": ""
+    },
+    "lighttype_dir": {
+        "desc": ""
+    },
+    "lighttype_point": {
+        "desc": ""
+    },
+    "spritespeed_framespersecond": {
+        "desc": ""
+    },
+    "spritespeed_framespergameframe": {
+        "desc": ""
+    },
+    "browser_edge": {
+        "desc": ""
+    },
+    "of_challen": {
+        "desc": ""
+    },
+    "ge_lose": {
+        "desc": ""
+    },
+    "buffer_text": {
+        "desc": ""
+    }
+}
