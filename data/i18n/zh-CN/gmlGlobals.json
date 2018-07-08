@@ -7776,30 +7776,30 @@
 		"desc": ""
     },
     
-    background_add: {
+    "background_add": {
         "desc": "",
         "fname": "",
         "removeback": "",
         "smooth": ""
     },
-    background_assign: {
+    "background_assign": {
         "desc": "",
         "ind": "",
         "source": ""
     },
-    background_create_color: {
+    "background_create_color": {
         "desc": "",
         "w": "",
         "h": "",
         "col": ""
     },
-    background_create_colour: {
+    "background_create_colour": {
         "desc": "",
         "w": "",
         "h": "",
         "col": ""
     },
-    background_create_from_surface: {
+    "background_create_from_surface": {
         "desc": "",
         "id": "",
         "x": "",
@@ -7809,7 +7809,7 @@
         "removeback": "",
         "smooth": ""
     },
-    background_create_gradient: {
+    "background_create_gradient": {
         "desc": "",
         "w": "",
         "h": "",
@@ -7817,77 +7817,77 @@
         "col2": "",
         "kind": ""
     },
-    background_delete: {
+    "background_delete": {
         "desc": "",
         "ind": ""
     },
-    background_duplicate: {
+    "background_duplicate": {
         "desc": "",
         "ind": ""
     },
-    background_exists: {
+    "background_exists": {
         "desc": "",
         "ind": ""
     },
-    background_flush: {
+    "background_flush": {
         "desc": "",
         "ind": ""
     },
-    background_flush_multi: {
+    "background_flush_multi": {
         "desc": "",
         "indarray": ""
     },
-    background_get_height: {
+    "background_get_height": {
         "desc": "",
         "ind": ""
     },
-    background_get_name: {
+    "background_get_name": {
         "desc": "",
         "ind": ""
     },
-    background_get_texture: {
+    "background_get_texture": {
         "desc": "",
         "back": ""
     },
-    background_get_uvs: {
+    "background_get_uvs": {
         "desc": "",
         "back": ""
     },
-    background_get_width: {
+    "background_get_width": {
         "desc": "",
         "ind": ""
     },
-    background_prefetch: {
+    "background_prefetch": {
         "desc": "",
         "ind": ""
     },
-    background_prefetch_multi: {
+    "background_prefetch_multi": {
         "desc": "",
         "indarray": ""
     },
-    background_replace: {
+    "background_replace": {
         "desc": "",
         "ind": "",
         "fname": "",
         "removeback": "",
         "smooth": ""
     },
-    background_replace_background: {
+    "background_replace_background": {
         "desc": "",
         "ind": "",
         "fname": ""
     },
-    background_save: {
+    "background_save": {
         "desc": "",
         "ind": "",
         "fname": ""
     },
-    background_set_alpha_from_background: {
+    "background_set_alpha_from_background": {
         "desc": "",
         "ind": "",
         "alpha": ""
     },
-    draw_background_part: {
+    "draw_background_part": {
         "desc": "",
         "back": "",
         "left": "",
@@ -7897,7 +7897,7 @@
         "x": "",
         "y": ""
     },
-    draw_background_part_ext: {
+    "draw_background_part_ext": {
         "desc": "",
         "back": "",
         "left": "",
@@ -7911,7 +7911,7 @@
         "colour": "",
         "alpha": ""
     },
-    draw_background_stretched: {
+    "draw_background_stretched": {
         "desc": "",
         "back": "",
         "x": "",
@@ -7919,7 +7919,7 @@
         "w": "",
         "h": ""
     },
-    draw_background_stretched_ext: {
+    "draw_background_stretched_ext": {
         "desc": "",
         "back": "",
         "x": "",
@@ -7929,13 +7929,13 @@
         "colour": "",
         "alpha": ""
     },
-    draw_background_tiled: {
+    "draw_background_tiled": {
         "desc": "",
         "back": "",
         "x": "",
         "y": ""
     },
-    draw_background_tiled_ext: {
+    "draw_background_tiled_ext": {
         "desc": "",
         "back": "",
         "x": "",
@@ -7945,7 +7945,7 @@
         "colour": "",
         "alpha": ""
     },
-    room_set_background: {
+    "room_set_background": {
         "desc": "",
         "ind": "",
         "bind": "",
@@ -7960,7 +7960,7 @@
         "vspeed": "",
         "alpha": ""
     },
-    room_tile_add: {
+    "room_tile_add": {
         "desc": "",
         "ind": "",
         "back": "",
@@ -7972,7 +7972,7 @@
         "y": "",
         "depth": ""
     },
-    room_tile_add_ext: {
+    "room_tile_add_ext": {
         "desc": "",
         "ind": "",
         "back": "",
@@ -7987,11 +7987,11 @@
         "yscale": "",
         "alpha": ""
     },
-    room_tile_clear: {
+    "room_tile_clear": {
         "desc": "",
         "ind": ""
     },
-    tile_add: {
+    "tile_add": {
         "desc": "",
         "background": "",
         "left": "",
@@ -8002,144 +8002,142 @@
         "y": "",
         "depth": ""
     },
-    tile_delete: {
+    "tile_delete": {
         "desc": "",
         "id": ""
     },
-    tile_exists: {
+    "tile_exists": {
         "desc": "",
         "id": ""
     },
-    tile_get_alpha: {
+    "tile_get_alpha": {
         "desc": "",
         "id": ""
     },
-    tile_get_background: {
+    "tile_get_background": {
         "desc": "",
         "id": ""
     },
-    tile_get_blend: {
+    "tile_get_blend": {
         "desc": "",
         "id": ""
     },
-    tile_get_count: {
-        "desc": "",
-        available: datasimple.ob2
+    "tile_get_count": {
+        "desc": ""
     },
-    tile_get_depth: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_height: {
+    "tile_get_depth": {
         "desc": "",
         "id": ""
     },
-    tile_get_id: {
+    "tile_get_height": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_id": {
         "desc": "",
         "index": ""
     },
-    tile_get_ids: {
-        "desc": "",
-        available: datasimple.ob2
+    "tile_get_ids": {
+        "desc": ""
     },
-    tile_get_ids_at_depth: {
-        "desc": "",
-        "depth": ""
-    },
-    tile_get_left: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_top: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_visible: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_width: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_x: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_xscale: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_y: {
-        "desc": "",
-        "id": ""
-    },
-    tile_get_yscale: {
-        "desc": "",
-        "id": ""
-    },
-    tile_layer_delete: {
+    "tile_get_ids_at_depth": {
         "desc": "",
         "depth": ""
     },
-    tile_layer_delete_at: {
+    "tile_get_left": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_top": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_visible": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_width": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_x": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_xscale": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_y": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_get_yscale": {
+        "desc": "",
+        "id": ""
+    },
+    "tile_layer_delete": {
+        "desc": "",
+        "depth": ""
+    },
+    "tile_layer_delete_at": {
         "desc": "",
         "depth": "",
         "x": "",
         "y": ""
     },
-    tile_layer_depth: {
+    "tile_layer_depth": {
         "desc": "",
         "depth": "",
         "newdepth": ""
     },
-    tile_layer_find: {
+    "tile_layer_find": {
         "desc": "",
         "depth": "",
         "x": "",
         "y": ""
     },
-    tile_layer_hide: {
+    "tile_layer_hide": {
         "desc": "",
         "depth": ""
     },
-    tile_layer_shift: {
+    "tile_layer_shift": {
         "desc": "",
         "depth": "",
         "x": "",
         "y": ""
     },
-    tile_layer_show: {
+    "tile_layer_show": {
         "desc": "",
         "depth": ""
     },
-    tile_set_alpha: {
+    "tile_set_alpha": {
         "desc": "",
         "id": "",
         "alpha": ""
     },
-    tile_set_background: {
+    "tile_set_background": {
         "desc": "",
         "id": "",
         "background": ""
     },
-    tile_set_blend: {
+    "tile_set_blend": {
         "desc": "",
         "id": "",
         "colour": ""
     },
-    tile_set_depth: {
+    "tile_set_depth": {
         "desc": "",
         "id": "",
         "depth": ""
     },
-    tile_set_position: {
+    "tile_set_position": {
         "desc": "",
         "id": "",
         "x": "",
         "y": ""
     },
-    tile_set_region: {
+    "tile_set_region": {
         "desc": "",
         "id": "",
         "left": "",
@@ -8147,27 +8145,27 @@
         "width": "",
         "height": ""
     },
-    tile_set_scale: {
+    "tile_set_scale": {
         "desc": "",
         "id": "",
         "xscale": "",
         "yscale": ""
     },
-    tile_set_visible: {
+    "tile_set_visible": {
         "desc": "",
         "id": "",
         "visible": ""
     },
-    object_get_depth: {
+    "object_get_depth": {
         "desc": "",
         "ind": ""
     },
-    object_set_depth: {
+    "object_set_depth": {
         "desc": "",
         "ind": "",
         "depth": ""
     },
-    d3d_draw_block: {
+    "d3d_draw_block": {
         "desc": "",
         "x1": "",
         "y1": "",
@@ -8179,7 +8177,7 @@
         "hrepeat": "",
         "vrepeat": ""
     },
-    d3d_draw_cone: {
+    "d3d_draw_cone": {
         "desc": "",
         "x1": "",
         "y1": "",
@@ -8193,7 +8191,7 @@
         "closed": "",
         "steps": ""
     },
-    d3d_draw_cylinder: {
+    "d3d_draw_cylinder": {
         "desc": "",
         "x1": "",
         "y1": "",
@@ -8207,7 +8205,7 @@
         "closed": "",
         "steps": ""
     },
-    d3d_draw_ellipsoid: {
+    "d3d_draw_ellipsoid": {
         "desc": "",
         "x1": "",
         "y1": "",
@@ -8221,7 +8219,7 @@
         "closed": "",
         "steps": ""
     },
-    d3d_draw_floor: {
+    "d3d_draw_floor": {
         "desc": "",
         "x1": "",
         "y1": "",
@@ -8233,7 +8231,7 @@
         "hrepeat": "",
         "vrepeat": ""
     },
-    d3d_draw_wall: {
+    "d3d_draw_wall": {
         "desc": "",
         "x1": "",
         "y1": "",
@@ -8245,15 +8243,14 @@
         "hrepeat": "",
         "vrepeat": ""
     },
-    d3d_end: {
-        "desc": "",
-        available: datasimple.ob2
+    "d3d_end": {
+        "desc": ""
     },
-    d3d_light_define_ambient: {
+    "d3d_light_define_ambient": {
         "desc": "",
         "col": ""
     },
-    d3d_light_define_direction: {
+    "d3d_light_define_direction": {
         "desc": "",
         "ind": "",
         "dx": "",
@@ -8261,7 +8258,7 @@
         "dz": "",
         "col": ""
     },
-    d3d_light_define_point: {
+    "d3d_light_define_point": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8270,12 +8267,12 @@
         "range": "",
         "col": ""
     },
-    d3d_light_enable: {
+    "d3d_light_enable": {
         "desc": "",
         "ind": "",
         "enable": ""
     },
-    d3d_model_block: {
+    "d3d_model_block": {
         "desc": "",
         "ind": "",
         "x1": "",
@@ -8287,11 +8284,11 @@
         "hrepeat": "",
         "vrepeat": ""
     },
-    d3d_model_clear: {
+    "d3d_model_clear": {
         "desc": "",
         "ind": ""
     },
-    d3d_model_cone: {
+    "d3d_model_cone": {
         "desc": "",
         "ind": "",
         "x1": "",
@@ -8305,11 +8302,10 @@
         "closed": "",
         "steps": ""
     },
-    d3d_model_create: {
-        "desc": "",
-        available: datasimple.ob2
+    "d3d_model_create": {
+        "desc": ""
     },
-    d3d_model_cylinder: {
+    "d3d_model_cylinder": {
         "desc": "",
         "ind": "",
         "x1": "",
@@ -8323,11 +8319,10 @@
         "closed": "",
         "steps": ""
     },
-    d3d_model_destroy: {
-        "desc": "",
-        available: datasimple.ob2
+    "d3d_model_destroy": {
+        "desc": ""
     },
-    d3d_model_draw: {
+    "d3d_model_draw": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8335,7 +8330,7 @@
         "z": "",
         "texid": ""
     },
-    d3d_model_ellipsoid: {
+    "d3d_model_ellipsoid": {
         "desc": "",
         "ind": "",
         "x1": "",
@@ -8348,7 +8343,7 @@
         "vrepeat": "",
         "closed": ""
     },
-    d3d_model_floor: {
+    "d3d_model_floor": {
         "desc": "",
         "ind": "",
         "x1": "",
@@ -8360,33 +8355,33 @@
         "hrepeat": "",
         "vrepeat": ""
     },
-    d3d_model_load: {
+    "d3d_model_load": {
         "desc": "",
         "ind": "",
         "fname": ""
     },
-    d3d_model_primitive_begin: {
+    "d3d_model_primitive_begin": {
         "desc": "",
         "ind": "",
         "kind": ""
     },
-    d3d_model_primitive_end: {
+    "d3d_model_primitive_end": {
         "desc": "",
         "ind": ""
     },
-    d3d_model_save: {
+    "d3d_model_save": {
         "desc": "",
         "ind": "",
         "fname": ""
     },
-    d3d_model_vertex: {
+    "d3d_model_vertex": {
         "desc": "",
         "ind": "",
         "x": "",
         "y": "",
         "z": ""
     },
-    d3d_model_vertex_color: {
+    "d3d_model_vertex_color": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8395,7 +8390,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_colour: {
+    "d3d_model_vertex_colour": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8404,7 +8399,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_normal: {
+    "d3d_model_vertex_normal": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8414,7 +8409,7 @@
         "ny": "",
         "nz": ""
     },
-    d3d_model_vertex_normal_color: {
+    "d3d_model_vertex_normal_color": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8426,7 +8421,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_normal_colour: {
+    "d3d_model_vertex_normal_colour": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8438,7 +8433,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_normal_texture: {
+    "d3d_model_vertex_normal_texture": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8450,7 +8445,7 @@
         "xtex": "",
         "ytex": ""
     },
-    d3d_model_vertex_normal_texture_color: {
+    "d3d_model_vertex_normal_texture_color": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8464,7 +8459,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_normal_texture_colour: {
+    "d3d_model_vertex_normal_texture_colour": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8478,7 +8473,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_texture: {
+    "d3d_model_vertex_texture": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8487,7 +8482,7 @@
         "xtex": "",
         "ytex": ""
     },
-    d3d_model_vertex_texture_color: {
+    "d3d_model_vertex_texture_color": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8498,7 +8493,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_vertex_texture_colour: {
+    "d3d_model_vertex_texture_colour": {
         "desc": "",
         "ind": "",
         "x": "",
@@ -8509,7 +8504,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_model_wall: {
+    "d3d_model_wall": {
         "desc": "",
         "ind": "",
         "x1": "",
@@ -8521,51 +8516,50 @@
         "hrepeat": "",
         "vrepeat": ""
     },
-    d3d_primitive_begin: {
+    "d3d_primitive_begin": {
         "desc": "",
         "kind": ""
     },
-    d3d_primitive_begin_texture: {
+    "d3d_primitive_begin_texture": {
         "desc": "",
         "kind": "",
         "texid": ""
     },
-    d3d_primitive_end: {
-        "desc": "",
-        available: datasimple.ob2
+    "d3d_primitive_end": {
+        "desc": ""
     },
-    d3d_set_culling: {
+    "d3d_set_culling": {
         "desc": "",
         "cull": ""
     },
-    d3d_set_depth: {
+    "d3d_set_depth": {
         "desc": "",
         "depth": ""
     },
-    d3d_set_fog: {
+    "d3d_set_fog": {
         "desc": "",
         "enable": "",
         "colour": "",
         "start": "",
         "end": ""
     },
-    d3d_set_hidden: {
+    "d3d_set_hidden": {
         "desc": "",
         "hidden": ""
     },
-    d3d_set_lighting: {
+    "d3d_set_lighting": {
         "desc": "",
         "enable": ""
     },
-    d3d_set_perspective: {
+    "d3d_set_perspective": {
         "desc": "",
         "enable": ""
     },
-    d3d_set_projection: {
+    "d3d_set_projection": {
         "desc": "",
-        "xform": "",
-        "yform": "",
-        "zform": "",
+        "xfrom": "",
+        "yfrom": "",
+        "zfrom": "",
         "xto": "",
         "yto": "",
         "zto": "",
@@ -8573,11 +8567,11 @@
         "yup": "",
         "zup": ""
     },
-    d3d_set_projection_ext: {
+    "d3d_set_projection_ext": {
         "desc": "",
-        "xform": "",
-        "yform": "",
-        "zform": "",
+        "xfrom": "",
+        "yfrom": "",
+        "zfrom": "",
         "xto": "",
         "yto": "",
         "zto": "",
@@ -8589,7 +8583,7 @@
         "znear": "",
         "zfar": ""
     },
-    d3d_set_projection_ortho: {
+    "d3d_set_projection_ortho": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8597,7 +8591,7 @@
         "h": "",
         "angle": ""
     },
-    d3d_set_projection_perspective: {
+    "d3d_set_projection_perspective": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8605,121 +8599,113 @@
         "h": "",
         "angle": ""
     },
-    d3d_set_shading: {
+    "d3d_set_shading": {
         "desc": "",
         "smooth": ""
     },
-    d3d_set_zwriteenable: {
+    "d3d_set_zwriteenable": {
         "desc": "",
         "on_off": ""
     },
-    d3d_start: {
-        "desc": "",
-        available: datasimple.ob2
+    "d3d_start": {
+        "desc": ""
     },
-    d3d_transform_add_rotation_axis: {
-        "desc": "",
-        "xa": "",
-        "ya": "",
-        "za": "",
-        "angle": ""
-    },
-    d3d_transform_add_rotation_x: {
-        "desc": "",
-        "angle": ""
-    },
-    d3d_transform_add_rotation_y: {
-        "desc": "",
-        "angle": ""
-    },
-    d3d_transform_add_rotation_z: {
-        "desc": "",
-        "angle": ""
-    },
-    d3d_transform_add_scaling: {
-        "desc": "",
-        "xs": "",
-        "ys": "",
-        "zs": ""
-    },
-    d3d_transform_add_translation: {
-        "desc": "",
-        "xt": "",
-        "yt": "",
-        "zt": ""
-    },
-    d3d_transform_set_identity: {
-        "desc": "",
-        available: datasimple.ob2
-    },
-    d3d_transform_set_rotation_axis: {
+    "d3d_transform_add_rotation_axis": {
         "desc": "",
         "xa": "",
         "ya": "",
         "za": "",
         "angle": ""
     },
-    d3d_transform_set_rotation_x: {
+    "d3d_transform_add_rotation_x": {
         "desc": "",
         "angle": ""
     },
-    d3d_transform_set_rotation_y: {
+    "d3d_transform_add_rotation_y": {
         "desc": "",
         "angle": ""
     },
-    d3d_transform_set_rotation_z: {
+    "d3d_transform_add_rotation_z": {
         "desc": "",
         "angle": ""
     },
-    d3d_transform_set_scaling: {
+    "d3d_transform_add_scaling": {
         "desc": "",
         "xs": "",
         "ys": "",
         "zs": ""
     },
-    d3d_transform_set_translation: {
+    "d3d_transform_add_translation": {
         "desc": "",
         "xt": "",
         "yt": "",
         "zt": ""
     },
-    d3d_transform_stack_clear: {
-        "desc": "",
-        available: datasimple.ob2
+    "d3d_transform_set_identity": {
+        "desc": ""
     },
-    d3d_transform_stack_discard: {
+    "d3d_transform_set_rotation_axis": {
         "desc": "",
-        available: datasimple.ob2
+        "xa": "",
+        "ya": "",
+        "za": "",
+        "angle": ""
     },
-    d3d_transform_stack_empty: {
+    "d3d_transform_set_rotation_x": {
         "desc": "",
-        available: datasimple.ob2
+        "angle": ""
     },
-    d3d_transform_stack_pop: {
+    "d3d_transform_set_rotation_y": {
         "desc": "",
-        available: datasimple.ob2
+        "angle": ""
     },
-    d3d_transform_stack_push: {
+    "d3d_transform_set_rotation_z": {
         "desc": "",
-        available: datasimple.ob2
+        "angle": ""
     },
-    d3d_transform_stack_top: {
+    "d3d_transform_set_scaling": {
         "desc": "",
-        available: datasimple.ob2
+        "xs": "",
+        "ys": "",
+        "zs": ""
     },
-    d3d_transform_vertex: {
+    "d3d_transform_set_translation": {
+        "desc": "",
+        "xt": "",
+        "yt": "",
+        "zt": ""
+    },
+    "d3d_transform_stack_clear": {
+        "desc": ""
+    },
+    "d3d_transform_stack_discard": {
+        "desc": ""
+    },
+    "d3d_transform_stack_empty": {
+        "desc": ""
+    },
+    "d3d_transform_stack_pop": {
+        "desc": ""
+    },
+    "d3d_transform_stack_push": {
+        "desc": ""
+    },
+    "d3d_transform_stack_top": {
+        "desc": ""
+    },
+    "d3d_transform_vertex": {
         "desc": "",
         "x": "",
         "y": "",
         "z": ""
     },
-    d3d_vertex: {
+    "d3d_vertex": {
         "desc": "",
         "x": "",
         "y": "",
         "z": ""
     },
-    d3d_vertex_color: {
+    "d3d_vertex_color": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8727,7 +8713,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_colour: {
+    "d3d_vertex_colour": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8735,7 +8721,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_normal: {
+    "d3d_vertex_normal": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8744,7 +8730,7 @@
         "ny": "",
         "nz": ""
     },
-    d3d_vertex_normal_color: {
+    "d3d_vertex_normal_color": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8755,7 +8741,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_normal_colour: {
+    "d3d_vertex_normal_colour": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8766,7 +8752,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_normal_texture: {
+    "d3d_vertex_normal_texture": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8777,7 +8763,7 @@
         "xtex": "",
         "ytex": ""
     },
-    d3d_vertex_normal_texture_color: {
+    "d3d_vertex_normal_texture_color": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8790,7 +8776,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_normal_texture_colour: {
+    "d3d_vertex_normal_texture_colour": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8803,7 +8789,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_texture: {
+    "d3d_vertex_texture": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8811,7 +8797,7 @@
         "xtex": "",
         "ytex": ""
     },
-    d3d_vertex_texture_color: {
+    "d3d_vertex_texture_color": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8821,7 +8807,7 @@
         "col": "",
         "alpha": ""
     },
-    d3d_vertex_texture_colour: {
+    "d3d_vertex_texture_colour": {
         "desc": "",
         "x": "",
         "y": "",
@@ -8831,23 +8817,21 @@
         "col": "",
         "alpha": ""
     },
-    display_set_windows_vertex_buffer_method: {
+    "display_set_windows_vertex_buffer_method": {
         "desc": "",
         "method": ""
     },
-    display_get_windows_vertex_buffer_method: {
-        "desc": "",
-        available: datasimple.ob2
+    "display_get_windows_vertex_buffer_method": {
+        "desc": ""
     },
-    display_set_windows_alternate_sync: {
+    "display_set_windows_alternate_sync": {
         "desc": "",
         "enable": ""
     },
-    display_get_windows_alternate_sync: {
-        "desc": "",
-        available: datasimple.ob2
+    "display_get_windows_alternate_sync": {
+        "desc": ""
     },
-    room_set_view: {
+    "room_set_view": {
         "desc": "",
         "ind": "",
         "vind": "",
@@ -8866,23 +8850,1027 @@
         "vspeed": "",
         "obj": ""
     },
-    immersion_play_effect: {
+    "immersion_play_effect": {
         "desc": "",
         "effect": ""
     },
-    immersion_stop: {
-        "desc": "",
-        available: datasimple.ob2
+    "immersion_stop": {
+        "desc": ""
     },
-    analytics_event: {
+    "analytics_event": {
         "desc": "",
         "string": ""
     },
-    analytics_event_ext: {
+    "analytics_event_ext": {
         "desc": "",
         "string": "",
         "string_param_name1": "",
         "number_value1": "",
-        "...": "",
+        "...": ""
     },
+
+    "background_add_background": {
+        "desc": "",
+        "fname": ""
+    },
+    "background_create_from_screen": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "removeback": "",
+        "smooth": ""
+    },
+    "cd_close_door": {
+        "desc": ""
+    },
+	"cd_init": {
+        "desc": ""
+    },
+    "cd_length": {
+        "desc": ""
+    },
+	"cd_number": {
+        "desc": ""
+    },
+	"cd_open_door": {
+        "desc": ""
+    },
+	"cd_pause": {
+        "desc": ""
+    },
+	"cd_paused": {
+        "desc": ""
+    },
+	"cd_play": {
+        "desc": "",
+        "first": "",
+        "last": ""
+    },
+	"cd_playing": {
+        "desc": ""
+    },
+	"cd_position": {
+        "desc": ""
+    },
+	"cd_present": {
+        "desc": ""
+    },
+	"cd_resume": {
+        "desc": ""
+    },
+	"cd_set_position": {
+        "desc": "",
+        "pos": ""
+    },
+	"cd_set_track_position": {
+        "desc": "",
+        "pos": ""
+    },
+	"cd_stop": {
+        "desc": ""
+    },
+	"cd_track": {
+        "desc": ""
+    },
+	"cd_track_length": {
+        "desc": "",
+        "n": ""
+    },
+	"cd_track_position": {
+        "desc": ""
+    },
+    "date_create_date": {
+        "desc": "",
+        "year": "",
+        "month": "",
+        "day": ""
+    },
+    "date_create_time": {
+        "desc": "",
+        "hour": "",
+        "minute": "",
+        "second": ""
+    },
+	"date_current_date": {
+        "desc": ""
+    },
+    "date_current_time": {
+        "desc": ""
+    },
+    "date_valid_date": {
+        "desc": "",
+        "year": "",
+        "month": "",
+        "day": ""
+    },
+    "date_valid_time": {
+        "desc": "",
+        "hour": "",
+        "minute": "",
+        "second": ""
+    },
+    "discard_include_file": {
+        "desc": "",
+        "fname": ""
+    },
+	"disk_free": {
+        "desc": "",
+        "drive": ""
+    },
+	"disk_size": {
+        "desc": "",
+        "drive": ""
+    },
+	"display_set_all": {
+        "desc": "",
+        "w": "",
+        "h": "",
+        "frequency": "",
+        "coldepth": ""
+    },
+	"display_set_colordepth": {
+        "desc": "",
+        "coldepth": ""
+    },
+	"display_set_frequency": {
+        "desc": "",
+        "frequency": ""
+    },
+	"display_set_size": {
+        "desc": "",
+        "w": "",
+        "h": ""
+    },
+	"display_test_all": {
+        "desc": "",
+        "w": "",
+        "h": "",
+        "frequency": "",
+        "coldepth": ""
+    },
+    "execute_file": {
+        "desc": "",
+        "fname": "",
+        "arg0": "",
+        "arg1": "",
+        "...": ""
+    },
+    "execute_program": {
+        "desc": "",
+        "fname": "",
+        "arg": "",
+        "wait": ""
+    },
+	"execute_shell": {
+        "desc": "",
+        "fname": "",
+        "arg": ""
+    },
+    "execute_string": {
+        "desc": "",
+        "str": "",
+        "arg0": "",
+        "arg1": "",
+        "...": ""
+    },
+	"export_include_file": {
+        "desc": "",
+        "fname": ""
+    },
+	"export_include_file_location": {
+        "desc": "",
+        "fname": "",
+        "location": ""
+    },
+    "get_color": {
+        "desc": "",
+        "defcol": ""
+    },
+	"get_directory": {
+        "desc": "",
+        "dname": ""
+    },
+	"get_directory_alt": {
+        "desc": "",
+        "capt": "",
+        "root": ""
+    },
+    "highscore_add_current": {
+        "desc": ""
+    },
+    "highscore_set_background": {
+        "desc": "",
+        "back": ""
+    },
+	"highscore_set_border": {
+        "desc": "",
+        "show": ""
+    },
+	"highscore_set_colors": {
+        "desc": "",
+        "back": "",
+        "new": "",
+        "other": ""
+    },
+	"highscore_set_font": {
+        "desc": "",
+        "name": "",
+        "size": "",
+        "style": ""
+    },
+	"highscore_set_strings": {
+        "desc": "",
+        "caption": "",
+        "nobody": "",
+        "escape": ""
+    },
+	"highscore_show": {
+        "desc": "",
+        "numb": ""
+    },
+	"highscore_show_ext": {
+        "desc": "",
+        "numb": "",
+        "back": "",
+        "border": "",
+        "col1": "",
+        "col2": "",
+        "name": "",
+        "size": ""
+    },
+    "io_handle": {
+        "desc": ""
+    },
+    "keyboard_wait": {
+        "desc": ""
+    },
+	"MCI_command": {
+        "desc": "",
+        "str": ""
+    },
+	"message_alpha": {
+        "desc": "",
+        "alpha": ""
+    },
+	"message_background": {
+        "desc": "",
+        "back": ""
+    },
+	"message_button": {
+        "desc": "",
+        "sprite": ""
+    },
+	"message_button_font": {
+        "desc": "",
+        "name": "",
+        "size": "",
+        "colour": "",
+        "style": ""
+    },
+	"message_caption": {
+        "desc": "",
+        "show": "",
+        "str": ""
+    },
+	"message_input_color": {
+        "desc": "",
+        "col": ""
+    },
+	"message_input_font": {
+        "desc": "",
+        "name": "",
+        "size": "",
+        "colour": "",
+        "style": ""
+    },
+	"message_mouse_color": {
+        "desc": "",
+        "col": ""
+    },
+	"message_position": {
+        "desc": "",
+        "x": "",
+        "y": ""
+    },
+	"message_size": {
+        "desc": "",
+        "w": "",
+        "h": ""
+    },
+	"message_text_charset": {
+        "desc": "",
+        "type": "",
+        "charset_id": ""
+    },
+	"message_text_font": {
+        "desc": "",
+        "name": "",
+        "size": "",
+        "colour": "",
+        "style": ""
+    },
+    "mouse_wait": {
+        "desc": ""
+    },
+    "object_add": {
+        "desc": ""
+    },
+	"object_delete": {
+        "desc": "",
+        "ind": ""
+    },
+	"object_event_add": {
+        "desc": "",
+        "ind": "",
+        "evtype": "",
+        "evnumb": "",
+        "codestr": ""
+    },
+	"object_event_clear": {
+        "desc": "",
+        "ind": "",
+        "evtype": "",
+        "evnumb": ""
+    },
+	"part_attractor_clear": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_attractor_create": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_attractor_destroy": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_attractor_destroy_all": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_attractor_exists": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_attractor_force": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "force": "",
+        "dist": "",
+        "kind": "",
+        "additive": ""
+    },
+	"part_attractor_position": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "x": "",
+        "y": ""
+    },
+	"part_changer_clear": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_changer_create": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_changer_destroy": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_changer_destroy_all": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_changer_exists": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_changer_kind": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "kind": ""
+    },
+	"part_changer_region": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "xmin": "",
+        "xmax": "",
+        "ymin": "",
+        "ymax": "",
+        "shape": ""
+    },
+	"part_changer_types": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "parttype1": "",
+        "parttype2": ""
+    },
+	"part_deflector_clear": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_deflector_create": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_deflector_destroy": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_deflector_destroy_all": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_deflector_exists": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_deflector_friction": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "amount": ""
+    },
+	"part_deflector_kind": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "kind": ""
+    },
+	"part_deflector_region": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "xmin": "",
+        "xmax": "",
+        "ymin": "",
+        "ymax": ""
+    },
+	"part_destroyer_clear": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_destroyer_create": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_destroyer_destroy": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_destroyer_destroy_all": {
+        "desc": "",
+        "ps": ""
+    },
+	"part_destroyer_exists": {
+        "desc": "",
+        "ps": "",
+        "ind": ""
+    },
+	"part_destroyer_region": {
+        "desc": "",
+        "ps": "",
+        "ind": "",
+        "xmin": "",
+        "xmax": "",
+        "ymin": "",
+        "ymax": "",
+        "shape": ""
+    },
+    "registry_exists": {
+        "desc": "",
+        "name": ""
+    },
+	"registry_exists_ext": {
+        "desc": "",
+        "key": "",
+        "name": ""
+    },
+	"registry_read_real": {
+        "desc": "",
+        "name": ""
+    },
+	"registry_read_real_ext": {
+        "desc": "",
+        "key": "",
+        "name": ""
+    },
+	"registry_read_string": {
+        "desc": "",
+        "name": ""
+    },
+	"registry_read_string_ext": {
+        "desc": "",
+        "key": "",
+        "name": ""
+    },
+	"registry_set_root": {
+        "desc": "",
+        "root": ""
+    },
+	"registry_write_real": {
+        "desc": "",
+        "name": "",
+        "value": ""
+    },
+	"registry_write_real_ext": {
+        "desc": "",
+        "key": "",
+        "name": "",
+        "value": ""
+    },
+	"registry_write_string": {
+        "desc": "",
+        "name": "",
+        "str": ""
+    },
+	"registry_write_string_ext": {
+        "desc": "",
+        "key": "",
+        "name": "",
+        "str": ""
+    },
+    "room_set_caption": {
+        "desc": "",
+        "ind": "",
+        "str": ""
+    },
+	"room_set_code": {
+        "desc": "",
+        "ind": "",
+        "codestr": ""
+    },
+    "screen_redraw": {
+        "desc": ""
+    },
+    "screen_refresh": {
+        "desc": ""
+    },
+    "screen_wait_vsync": {
+        "desc": ""
+    },
+    "script_get_text": {
+        "desc": "",
+        "ind": ""
+    },
+	"set_application_title": {
+        "desc": "",
+        "title": ""
+    },
+	"set_automatic_draw": {
+        "desc": "",
+        "value": ""
+    },
+	"set_program_priority": {
+        "desc": "",
+        "priority": ""
+    },
+	"set_synchronization": {
+        "desc": "",
+        "value": ""
+    },
+    "show_menu": {
+        "desc": "",
+        "str": "",
+        "def": ""
+    },
+	"show_menu_pos": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "str": "",
+        "def": ""
+    },
+    "show_message_ext": {
+        "desc": "",
+        "str": "",
+        "but1": "",
+        "but2": "",
+        "but3": ""
+    },
+    "sleep": {
+        "desc": "",
+        "millisec": ""
+    },
+	"sound_3d_set_sound_cone": {
+        "desc": "",
+        "snd": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "anglein": "",
+        "angleout": "",
+        "voloutside": ""
+    },
+	"sound_3d_set_sound_distance": {
+        "desc": "",
+        "snd": "",
+        "mindist": "",
+        "maxdist": ""
+    },
+	"sound_3d_set_sound_position": {
+        "desc": "",
+        "snd": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+	"sound_3d_set_sound_velocity": {
+        "desc": "",
+        "snd": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+	"sound_add": {
+        "desc": "",
+        "fname": "",
+        "kind": "",
+        "preload": ""
+    },
+	"sound_background_tempo": {
+        "desc": "",
+        "factor": ""
+    },
+	"sound_effect_chorus": {
+        "desc": "",
+        "snd": "",
+        "wetdry": "",
+        "depth": "",
+        "feedback": "",
+        "frequency": "",
+        "wave": "",
+        "delay": "",
+        "phase": ""
+    },
+	"sound_effect_compressor": {
+        "desc": "",
+        "snd": "",
+        "gain": "",
+        "attack": "",
+        "release": "",
+        "threshold": "",
+        "ratio": "",
+        "delay": ""
+    },
+	"sound_effect_echo": {
+        "desc": "",
+        "snd": "",
+        "wetdry": "",
+        "feedback": "",
+        "leftdelay": "",
+        "rightdelay": "",
+        "pandelay": ""
+    },
+	"sound_effect_equalizer": {
+        "desc": "",
+        "snd": "",
+        "center": "",
+        "bandwidth": "",
+        "gain": ""
+    },
+	"sound_effect_flanger": {
+        "desc": "",
+        "snd": "",
+        "wetdry": "",
+        "depth": "",
+        "feedback": "",
+        "frequency": "",
+        "wave": "",
+        "delay": "",
+        "phase": ""
+    },
+	"sound_effect_gargle": {
+        "desc": "",
+        "snd": "",
+        "rate": "",
+        "wave": ""
+    },
+	"sound_effect_reverb": {
+        "desc": "",
+        "snd": "",
+        "gain": "",
+        "mix": "",
+        "time": "",
+        "ratio": ""
+    },
+	"sound_effect_set": {
+        "desc": "",
+        "snd": "",
+        "effect": ""
+    },
+	"sound_pan": {
+        "desc": "",
+        "index": "",
+        "value": ""
+    },
+	"sound_replace": {
+        "desc": "",
+        "ind": "",
+        "fname": "",
+        "kind": "",
+        "preload": ""
+    },
+	"sound_set_search_directory": {
+        "desc": "",
+        "dir": ""
+    },
+	"splash_set_adapt": {
+        "desc": "",
+        "adapt": ""
+    },
+	"splash_set_border": {
+        "desc": "",
+        "border": ""
+    },
+	"splash_set_caption": {
+        "desc": "",
+        "cap": ""
+    },
+	"splash_set_close_button": {
+        "desc": "",
+        "show": ""
+    },
+	"splash_set_color": {
+        "desc": "",
+        "col": ""
+    },
+	"splash_set_cursor": {
+        "desc": "",
+        "vis": ""
+    },
+	"splash_set_fullscreen": {
+        "desc": "",
+        "full": ""
+    },
+	"splash_set_interrupt": {
+        "desc": "",
+        "interrupt": ""
+    },
+	"splash_set_main": {
+        "desc": "",
+        "main": ""
+    },
+	"splash_set_position": {
+        "desc": "",
+        "x": "",
+        "y": ""
+    },
+	"splash_set_scale": {
+        "desc": "",
+        "scale": ""
+    },
+	"splash_set_size": {
+        "desc": "",
+        "w": "",
+        "h": ""
+    },
+	"splash_set_stop_key": {
+        "desc": "",
+        "stop": ""
+    },
+	"splash_set_stop_mouse": {
+        "desc": "",
+        "stop": ""
+    },
+	"splash_set_top": {
+        "desc": "",
+        "top": ""
+    },
+	"splash_show_image": {
+        "desc": "",
+        "fname": "",
+        "delay": ""
+    },
+	"splash_show_text": {
+        "desc": "",
+        "fname": "",
+        "delay": ""
+    },
+	"splash_show_video": {
+        "desc": "",
+        "fname": "",
+        "loop": ""
+    },
+	"splash_show_web": {
+        "desc": "",
+        "url": "",
+        "delay": ""
+    },
+    "sprite_add_from_screen": {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "removeback": "",
+        "smooth": ""
+    },
+    "sprite_add_sprite": {
+        "desc": "",
+        "fname": ""
+    },
+    "sprite_create_from_screen": {
+        "desc": "",
+        "x": "",
+        "y": "",
+        "w": "",
+        "h": "",
+        "removeback": "",
+        "smooth": "",
+        "xorig": "",
+        "yorig": ""
+    },
+    "sprite_replace_sprite": {
+        "desc": "",
+        "ind": "",
+        "fname": ""
+    },
+    "timeline_moment_add": {
+        "desc": "",
+        "ind": "",
+        "step": "",
+        "codestr": ""
+    },
+    "transition_define": {
+        "desc": "",
+        "kind": "",
+        "name": ""
+    },
+	"transition_exists": {
+        "desc": "",
+        "kind": ""
+    },
+	"variable_global_array2_get": {
+        "desc": "",
+        "name": "",
+        "ind1": "",
+        "ind2": ""
+    },
+	"variable_global_array2_set": {
+        "desc": "",
+        "name": "",
+        "ind1": "",
+        "ind2": "",
+        "value": ""
+    },
+	"variable_global_array_get": {
+        "desc": "",
+        "name": "",
+        "ind": ""
+    },
+	"variable_global_array_set": {
+        "desc": "",
+        "name": "",
+        "ind": "",
+        "value": ""
+    },
+    "variable_local_array2_get": {
+        "desc": "",
+        "name": "",
+        "ind1": "",
+        "ind2": ""
+    },
+	"variable_local_array2_set": {
+        "desc": "",
+        "name": "",
+        "ind1": "",
+        "ind2": "",
+        "value": ""
+    },
+	"variable_local_array_get": {
+        "desc": "",
+        "name": "",
+        "ind": ""
+    },
+	"variable_local_array_set": {
+        "desc": "",
+        "name": "",
+        "ind": "",
+        "value": ""
+    },
+	"variable_local_exists": {
+        "desc": "",
+        "name": ""
+    },
+	"variable_local_get": {
+        "desc": "",
+        "name": ""
+    },
+	"variable_local_set": {
+        "desc": "",
+        "name": "",
+        "value": ""
+    },
+    "window_default": {
+        "desc": ""
+    },
+    "window_get_region_height": {
+        "desc": ""
+    },
+	"window_get_region_scale": {
+        "desc": ""
+    },
+	"window_get_region_width": {
+        "desc": ""
+    },
+	"window_get_showborder": {
+        "desc": ""
+    },
+	"window_get_showicons": {
+        "desc": ""
+    },
+	"window_get_sizeable": {
+        "desc": ""
+    },
+	"window_get_stayontop": {
+        "desc": ""
+    },
+    "window_get_visible": {
+        "desc": ""
+    },
+    "window_set_region_scale": {
+        "desc": "",
+        "scale": "",
+        "adaptwindow": ""
+    },
+	"window_set_region_size": {
+        "desc": "",
+        "w": "",
+        "h": "",
+        "adaptwindow": ""
+    },
+	"window_set_showborder": {
+        "desc": "",
+        "show": ""
+    },
+	"window_set_showicons": {
+        "desc": "",
+        "show": ""
+    },
+	"window_set_sizeable": {
+        "desc": "",
+        "sizeable": ""
+    },
+	"window_set_stayontop": {
+        "desc": "",
+        "stay": ""
+    },
+	"window_set_visible": {
+        "desc": "",
+        "visible": ""
+    },
+	"window_views_mouse_set": {
+        "desc": "",
+        "x": "",
+        "y": ""
+    },
+	"window_view_mouse_set": {
+        "desc": "",
+        "id": "",
+        "x": "",
+        "y": ""
+    },
+    "texture_preload": {
+        "desc": "",
+        "texid": ""
+    },
+    "texture_set_priority": {
+        "desc": "",
+        "texid": "",
+        "prio": ""
+    },
+    "display_get_colourdepth": {
+        "desc": ""
+    },
+    "display_get_frequency": {
+        "desc": ""
+    },
+    "show_info": {
+        "desc": ""
+    },
+    "load_info": {
+        "desc": "",
+        "fname": ""
+    }
 }

@@ -13351,1637 +13351,1637 @@ exports.globalfunctions = {
         signature: '(indarray)'
     },
     background_get_height: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_get_height.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_get_height.ind }
         ],
         signature: '(ind)'
     },
     background_get_name: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_get_name.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_get_name.ind }
         ],
         signature: '(ind)'
     },
     background_get_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_get_texture.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. }
+            { label: 'back', documentation: i18n.background_get_texture.back }
         ],
         signature: '(back)'
     },
     background_get_uvs: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_get_uvs.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. }
+            { label: 'back', documentation: i18n.background_get_uvs.back }
         ],
         signature: '(back)'
     },
     background_get_width: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_get_width.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_get_width.ind }
         ],
         signature: '(ind)'
     },
     background_prefetch: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_prefetch.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.background_prefetch.ind }
         ],
         signature: '(ind)'
     },
     background_prefetch_multi: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_prefetch_multi.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'indarray', documentation: i18n..indarray }
+            { label: 'indarray', documentation: i18n.background_prefetch_multi.indarray }
         ],
         signature: '(indarray)'
     },
     background_replace: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_replace.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth }
+            { label: 'ind', documentation: i18n.background_replace.ind },
+            { label: 'fname', documentation: i18n.background_replace.fname },
+            { label: 'removeback', documentation: i18n.background_replace.removeback },
+            { label: 'smooth', documentation: i18n.background_replace.smooth }
         ],
         signature: '(ind, fname, removeback, smooth)'
     },
     background_replace_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_replace_background.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.background_replace_background.ind },
+            { label: 'fname', documentation: i18n.background_replace_background.fname }
         ],
         signature: '(ind, fname)'
     },
     background_save: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_save.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.background_save.ind },
+            { label: 'fname', documentation: i18n.background_save.fname }
         ],
         signature: '(ind, fname)'
     },
     background_set_alpha_from_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.background_set_alpha_from_background.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'back', documentation: i18n. }
+            { label: 'ind', documentation: i18n.background_set_alpha_from_background.ind },
+            { label: 'back', documentation: i18n.background_set_alpha_from_background.back }
         ],
         signature: '(ind, back)'
     },
     draw_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'back', documentation: i18n.draw_background.back },
+            { label: 'x', documentation: i18n.draw_background.x },
+            { label: 'y', documentation: i18n.draw_background.y }
         ],
         signature: '(back, x, y)'
     },
     draw_background_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'rot', documentation: i18n..rot },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'back', documentation: i18n.draw_background_ext.back },
+            { label: 'x', documentation: i18n.draw_background_ext.x },
+            { label: 'y', documentation: i18n.draw_background_ext.y },
+            { label: 'xscale', documentation: i18n.draw_background_ext.xscale },
+            { label: 'yscale', documentation: i18n.draw_background_ext.yscale },
+            { label: 'rot', documentation: i18n.draw_background_ext.rot },
+            { label: 'colour', documentation: i18n.draw_background_ext.colour },
+            { label: 'alpha', documentation: i18n.draw_background_ext.alpha }
         ],
         signature: '(back, x, y, xscale, yscale, rot, colour, alpha)'
     },
     draw_background_general: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_general.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'rot', documentation: i18n..rot },
-            { label: 'c1', documentation: i18n..c1 },
-            { label: 'c2', documentation: i18n..c2 },
-            { label: 'c3', documentation: i18n..c3 },
-            { label: 'c4', documentation: i18n..c4 },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'back', documentation: i18n.draw_background_general.back },
+            { label: 'left', documentation: i18n.draw_background_general.left },
+            { label: 'top', documentation: i18n.draw_background_general.top },
+            { label: 'width', documentation: i18n.draw_background_general.width },
+            { label: 'height', documentation: i18n.draw_background_general.height },
+            { label: 'x', documentation: i18n.draw_background_general.x },
+            { label: 'y', documentation: i18n.draw_background_general.y },
+            { label: 'xscale', documentation: i18n.draw_background_general.xscale },
+            { label: 'yscale', documentation: i18n.draw_background_general.yscale },
+            { label: 'rot', documentation: i18n.draw_background_general.rot },
+            { label: 'c1', documentation: i18n.draw_background_general.c1 },
+            { label: 'c2', documentation: i18n.draw_background_general.c2 },
+            { label: 'c3', documentation: i18n.draw_background_general.c3 },
+            { label: 'c4', documentation: i18n.draw_background_general.c4 },
+            { label: 'alpha', documentation: i18n.draw_background_general.alpha }
         ],
         signature: '(back, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
     draw_background_part: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_part.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'back', documentation: i18n.draw_background_part.back },
+            { label: 'left', documentation: i18n.draw_background_part.left },
+            { label: 'top', documentation: i18n.draw_background_part.top },
+            { label: 'width', documentation: i18n.draw_background_part.width },
+            { label: 'height', documentation: i18n.draw_background_part.height },
+            { label: 'x', documentation: i18n.draw_background_part.x },
+            { label: 'y', documentation: i18n.draw_background_part.y }
         ],
         signature: '(back, left, top, width, height, x, y)'
     },
     draw_background_part_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_part_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'back', documentation: i18n.draw_background_part_ext.back },
+            { label: 'left', documentation: i18n.draw_background_part_ext.left },
+            { label: 'top', documentation: i18n.draw_background_part_ext.top },
+            { label: 'width', documentation: i18n.draw_background_part_ext.width },
+            { label: 'height', documentation: i18n.draw_background_part_ext.height },
+            { label: 'x', documentation: i18n.draw_background_part_ext.x },
+            { label: 'y', documentation: i18n.draw_background_part_ext.y },
+            { label: 'xscale', documentation: i18n.draw_background_part_ext.xscale },
+            { label: 'yscale', documentation: i18n.draw_background_part_ext.yscale },
+            { label: 'colour', documentation: i18n.draw_background_part_ext.colour },
+            { label: 'alpha', documentation: i18n.draw_background_part_ext.alpha }
         ],
         signature: '(back, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
     draw_background_stretched: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_stretched.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'back', documentation: i18n.draw_background_stretched.back },
+            { label: 'x', documentation: i18n.draw_background_stretched.x },
+            { label: 'y', documentation: i18n.draw_background_stretched.y },
+            { label: 'w', documentation: i18n.draw_background_stretched.w },
+            { label: 'h', documentation: i18n.draw_background_stretched.h }
         ],
         signature: '(back, x, y, w, h)'
     },
     draw_background_stretched_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_stretched_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'back', documentation: i18n.draw_background_stretched_ext.back },
+            { label: 'x', documentation: i18n.draw_background_stretched_ext.x },
+            { label: 'y', documentation: i18n.draw_background_stretched_ext.y },
+            { label: 'w', documentation: i18n.draw_background_stretched_ext.w },
+            { label: 'h', documentation: i18n.draw_background_stretched_ext.h },
+            { label: 'colour', documentation: i18n.draw_background_stretched_ext.colour },
+            { label: 'alpha', documentation: i18n.draw_background_stretched_ext.alpha }
         ],
         signature: '(back, x, y, w, h, colour, alpha)'
     },
     draw_background_tiled: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_tiled.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'back', documentation: i18n.draw_background_tiled.back },
+            { label: 'x', documentation: i18n.draw_background_tiled.x },
+            { label: 'y', documentation: i18n.draw_background_tiled.y }
         ],
         signature: '(back, x, y)'
     },
     draw_background_tiled_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.draw_background_tiled_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'back', documentation: i18n.draw_background_tiled_ext.back },
+            { label: 'x', documentation: i18n.draw_background_tiled_ext.x },
+            { label: 'y', documentation: i18n.draw_background_tiled_ext.y },
+            { label: 'xscale', documentation: i18n.draw_background_tiled_ext.xscale },
+            { label: 'yscale', documentation: i18n.draw_background_tiled_ext.yscale },
+            { label: 'colour', documentation: i18n.draw_background_tiled_ext.colour },
+            { label: 'alpha', documentation: i18n.draw_background_tiled_ext.alpha }
         ],
         signature: '(back, x, y, xscale, yscale, colour, alpha)'
     },
     room_set_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.room_set_background.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'bind', documentation: i18n. },
-            { label: 'vis', documentation: i18n..vis },
-            { label: 'fore', documentation: i18n. },
-            { label: 'back', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'htiled', documentation: i18n. },
-            { label: 'vtiled', documentation: i18n. },
-            { label: 'hspeed', documentation: i18n. },
-            { label: 'vspeed', documentation: i18n. },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.room_set_background.ind },
+            { label: 'bind', documentation: i18n.room_set_background.bind },
+            { label: 'vis', documentation: i18n.room_set_background.vis },
+            { label: 'fore', documentation: i18n.room_set_background.fore },
+            { label: 'back', documentation: i18n.room_set_background.back },
+            { label: 'x', documentation: i18n.room_set_background.x },
+            { label: 'y', documentation: i18n.room_set_background.y },
+            { label: 'htiled', documentation: i18n.room_set_background.htiled },
+            { label: 'vtiled', documentation: i18n.room_set_background.vtiled },
+            { label: 'hspeed', documentation: i18n.room_set_background.hspeed },
+            { label: 'vspeed', documentation: i18n.room_set_background.vspeed },
+            { label: 'alpha', documentation: i18n.room_set_background.alpha }
         ],
         signature: '(ind, bind, vis, fore, back, x, y, htiled, vtiled, hspeed, vspeed, alpha)'
     },
     room_tile_add: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.room_tile_add.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'back', documentation: i18n. },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'hieght', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'ind', documentation: i18n.room_tile_add.ind },
+            { label: 'back', documentation: i18n.room_tile_add.back },
+            { label: 'left', documentation: i18n.room_tile_add.left },
+            { label: 'top', documentation: i18n.room_tile_add.top },
+            { label: 'width', documentation: i18n.room_tile_add.width },
+            { label: 'height', documentation: i18n.room_tile_add.height },
+            { label: 'x', documentation: i18n.room_tile_add.x },
+            { label: 'y', documentation: i18n.room_tile_add.y },
+            { label: 'depth', documentation: i18n.room_tile_add.depth }
         ],
         signature: '(ind, back, left, top, width, height, x, y, depth)'
     },
     room_tile_add_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.room_tile_add_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'back', documentation: i18n. },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'hieght', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.room_tile_add_ext.ind },
+            { label: 'back', documentation: i18n.room_tile_add_ext.back },
+            { label: 'left', documentation: i18n.room_tile_add_ext.left },
+            { label: 'top', documentation: i18n.room_tile_add_ext.top },
+            { label: 'width', documentation: i18n.room_tile_add_ext.width },
+            { label: 'height', documentation: i18n.room_tile_add_ext.height },
+            { label: 'x', documentation: i18n.room_tile_add_ext.x },
+            { label: 'y', documentation: i18n.room_tile_add_ext.y },
+            { label: 'depth', documentation: i18n.room_tile_add_ext.depth },
+            { label: 'xscale', documentation: i18n.room_tile_add_ext.xscale },
+            { label: 'yscale', documentation: i18n.room_tile_add_ext.yscale },
+            { label: 'alpha', documentation: i18n.room_tile_add_ext.alpha }
         ],
         signature: '(ind, back, left, top, width, height, x, y, depth, xscale, yscale, alpha)'
     },
     room_tile_clear: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.room_tile_clear.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.room_tile_clear.ind }
         ],
         signature: '(ind)'
     },
     tile_add: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_add.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'background', documentation: i18n. },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'background', documentation: i18n.tile_add.background },
+            { label: 'left', documentation: i18n.tile_add.left },
+            { label: 'top', documentation: i18n.tile_add.top },
+            { label: 'width', documentation: i18n.tile_add.width },
+            { label: 'height', documentation: i18n.tile_add.height },
+            { label: 'x', documentation: i18n.tile_add.x },
+            { label: 'y', documentation: i18n.tile_add.y },
+            { label: 'depth', documentation: i18n.tile_add.depth }
         ],
         signature: '(background, left, top, width, height, x, y, depth)'
     },
     tile_delete: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_delete.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_delete.id }
         ],
         signature: '(id)'
     },
     tile_exists: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_exists.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_exists.id }
         ],
         signature: '(id)'
     },
     tile_get_alpha: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_alpha.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_alpha.id }
         ],
         signature: '(id)'
     },
     tile_get_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_background.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_background.id }
         ],
         signature: '(id)'
     },
     tile_get_blend: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_blend.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_blend.id }
         ],
         signature: '(id)'
     },
     tile_get_count: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_count.desc,
         available: datasimple.ob2
     },
     tile_get_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_depth.id }
         ],
         signature: '(id)'
     },
     tile_get_height: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_height.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_height.id }
         ],
         signature: '(id)'
     },
     tile_get_id: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_id.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'index', documentation: i18n..index }
+            { label: 'index', documentation: i18n.tile_get_id.index }
         ],
         signature: '(index)'
     },
     tile_get_ids: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_ids.desc,
         available: datasimple.ob2
     },
     tile_get_ids_at_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_ids_at_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'depth', documentation: i18n.tile_get_ids_at_depth.depth }
         ],
         signature: '(depth)'
     },
     tile_get_left: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_left.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_left.id }
         ],
         signature: '(id)'
     },
     tile_get_top: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_top.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_top.id }
         ],
         signature: '(id)'
     },
     tile_get_visible: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_visible.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_visible.id }
         ],
         signature: '(id)'
     },
     tile_get_width: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_width.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_width.id }
         ],
         signature: '(id)'
     },
     tile_get_x: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_x.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_x.id }
         ],
         signature: '(id)'
     },
     tile_get_xscale: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_xscale.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_xscale.id }
         ],
         signature: '(id)'
     },
     tile_get_y: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_y.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_y.id }
         ],
         signature: '(id)'
     },
     tile_get_yscale: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_get_yscale.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id }
+            { label: 'id', documentation: i18n.tile_get_yscale.id }
         ],
         signature: '(id)'
     },
     tile_layer_delete: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_delete.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'depth', documentation: i18n.tile_layer_delete.depth }
         ],
         signature: '(depth)'
     },
     tile_layer_delete_at: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_delete_at.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'depth', documentation: i18n.tile_layer_delete_at.depth },
+            { label: 'x', documentation: i18n.tile_layer_delete_at.x },
+            { label: 'y', documentation: i18n.tile_layer_delete_at.y }
         ],
         signature: '(depth, x, y)'
     },
     tile_layer_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'newdepth', documentation: i18n. }
+            { label: 'depth', documentation: i18n.tile_layer_depth.depth },
+            { label: 'newdepth', documentation: i18n.tile_layer_depth.newdepth }
         ],
         signature: '(depth, newdepth)'
     },
     tile_layer_find: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_find.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'depth', documentation: i18n.tile_layer_find.depth },
+            { label: 'x', documentation: i18n.tile_layer_find.x },
+            { label: 'y', documentation: i18n.tile_layer_find.y }
         ],
         signature: '(depth, x, y)'
     },
     tile_layer_hide: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_hide.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'depth', documentation: i18n.tile_layer_hide.depth }
         ],
         signature: '(depth)'
     },
     tile_layer_shift: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_shift.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'depth', documentation: i18n.tile_layer_shift.depth },
+            { label: 'x', documentation: i18n.tile_layer_shift.x },
+            { label: 'y', documentation: i18n.tile_layer_shift.y }
         ],
         signature: '(depth, x, y)'
     },
     tile_layer_show: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_layer_show.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'depth', documentation: i18n.tile_layer_show.depth }
         ],
         signature: '(depth)'
     },
     tile_set_alpha: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_alpha.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'id', documentation: i18n.tile_set_alpha.id },
+            { label: 'alpha', documentation: i18n.tile_set_alpha.alpha }
         ],
         signature: '(id, alpha)'
     },
     tile_set_background: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_background.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'background', documentation: i18n. }
+            { label: 'id', documentation: i18n.tile_set_background.id },
+            { label: 'background', documentation: i18n.tile_set_background.background }
         ],
         signature: '(id, background)'
     },
     tile_set_blend: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_blend.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'colour', documentation: i18n..colour }
+            { label: 'id', documentation: i18n.tile_set_blend.id },
+            { label: 'colour', documentation: i18n.tile_set_blend.colour }
         ],
         signature: '(id, colour)'
     },
     tile_set_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'id', documentation: i18n.tile_set_depth.id },
+            { label: 'depth', documentation: i18n.tile_set_depth.depth }
         ],
         signature: '(id, depth)'
     },
     tile_set_position: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_position.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'id', documentation: i18n.tile_set_position.id },
+            { label: 'x', documentation: i18n.tile_set_position.x },
+            { label: 'y', documentation: i18n.tile_set_position.y }
         ],
         signature: '(id, x, y)'
     },
     tile_set_region: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_region.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'id', documentation: i18n.tile_set_region.id },
+            { label: 'left', documentation: i18n.tile_set_region.left },
+            { label: 'top', documentation: i18n.tile_set_region.top },
+            { label: 'width', documentation: i18n.tile_set_region.width },
+            { label: 'height', documentation: i18n.tile_set_region.height }
         ],
         signature: '(id, left, top, width, height)'
     },
     tile_set_scale: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_scale.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'xscale', documentation: i18n..xscale },
-            { label: 'yscale', documentation: i18n..yscale }
+            { label: 'id', documentation: i18n.tile_set_scale.id },
+            { label: 'xscale', documentation: i18n.tile_set_scale.xscale },
+            { label: 'yscale', documentation: i18n.tile_set_scale.yscale }
         ],
         signature: '(id, xscale, yscale)'
     },
     tile_set_visible: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.tile_set_visible.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'visible', documentation: i18n. }
+            { label: 'id', documentation: i18n.tile_set_visible.id },
+            { label: 'visible', documentation: i18n.tile_set_visible.visible }
         ],
         signature: '(id, visible)'
     },
     object_get_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.object_get_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_get_depth.ind }
         ],
         signature: '(ind)'
     },
     object_set_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.object_set_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'ind', documentation: i18n.object_set_depth.ind },
+            { label: 'depth', documentation: i18n.object_set_depth.depth }
         ],
         signature: '(ind, depth)'
     },
     d3d_draw_block: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_draw_block.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. }
+            { label: 'x1', documentation: i18n.d3d_draw_block.x1 },
+            { label: 'y1', documentation: i18n.d3d_draw_block.y1 },
+            { label: 'z1', documentation: i18n.d3d_draw_block.z1 },
+            { label: 'x2', documentation: i18n.d3d_draw_block.x2 },
+            { label: 'y2', documentation: i18n.d3d_draw_block.y2 },
+            { label: 'z2', documentation: i18n.d3d_draw_block.z2 },
+            { label: 'texid', documentation: i18n.d3d_draw_block.texid },
+            { label: 'hrepeat', documentation: i18n.d3d_draw_block.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_draw_block.vrepeat }
         ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_draw_cone: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_draw_cone.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. },
-            { label: 'closed', documentation: i18n. },
-            { label: 'steps', documentation: i18n. }
+            { label: 'x1', documentation: i18n.d3d_draw_cone.x1 },
+            { label: 'y1', documentation: i18n.d3d_draw_cone.y1 },
+            { label: 'z1', documentation: i18n.d3d_draw_cone.z1 },
+            { label: 'x2', documentation: i18n.d3d_draw_cone.x2 },
+            { label: 'y2', documentation: i18n.d3d_draw_cone.y2 },
+            { label: 'z2', documentation: i18n.d3d_draw_cone.z2 },
+            { label: 'texid', documentation: i18n.d3d_draw_cone.texid },
+            { label: 'hrepeat', documentation: i18n.d3d_draw_cone.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_draw_cone.vrepeat },
+            { label: 'closed', documentation: i18n.d3d_draw_cone.closed },
+            { label: 'steps', documentation: i18n.d3d_draw_cone.steps }
         ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_cylinder: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_draw_cylinder.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. },
-            { label: 'closed', documentation: i18n. },
-            { label: 'steps', documentation: i18n. }
+            { label: 'x1', documentation: i18n.d3d_draw_cylinder.x1 },
+            { label: 'y1', documentation: i18n.d3d_draw_cylinder.y1 },
+            { label: 'z1', documentation: i18n.d3d_draw_cylinder.z1 },
+            { label: 'x2', documentation: i18n.d3d_draw_cylinder.x2 },
+            { label: 'y2', documentation: i18n.d3d_draw_cylinder.y2 },
+            { label: 'z2', documentation: i18n.d3d_draw_cylinder.z2 },
+            { label: 'texid', documentation: i18n.d3d_draw_cylinder.texid },
+            { label: 'hrepeat', documentation: i18n.d3d_draw_cylinder.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_draw_cylinder.vrepeat },
+            { label: 'closed', documentation: i18n.d3d_draw_cylinder.closed },
+            { label: 'steps', documentation: i18n.d3d_draw_cylinder.steps }
         ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_ellipsoid: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_draw_ellipsoid.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. },
-            { label: 'closed', documentation: i18n. },
-            { label: 'steps', documentation: i18n. }
+            { label: 'x1', documentation: i18n.d3d_draw_ellipsoid.x1 },
+            { label: 'y1', documentation: i18n.d3d_draw_ellipsoid.y1 },
+            { label: 'z1', documentation: i18n.d3d_draw_ellipsoid.z1 },
+            { label: 'x2', documentation: i18n.d3d_draw_ellipsoid.x2 },
+            { label: 'y2', documentation: i18n.d3d_draw_ellipsoid.y2 },
+            { label: 'z2', documentation: i18n.d3d_draw_ellipsoid.z2 },
+            { label: 'texid', documentation: i18n.d3d_draw_ellipsoid.texid },
+            { label: 'hrepeat', documentation: i18n.d3d_draw_ellipsoid.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_draw_ellipsoid.vrepeat },
+            { label: 'closed', documentation: i18n.d3d_draw_ellipsoid.closed },
+            { label: 'steps', documentation: i18n.d3d_draw_ellipsoid.steps }
         ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat, closed, steps)'
     },
     d3d_draw_floor: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_draw_floor.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. }
+            { label: 'x1', documentation: i18n.d3d_draw_floor.x1 },
+            { label: 'y1', documentation: i18n.d3d_draw_floor.y1 },
+            { label: 'z1', documentation: i18n.d3d_draw_floor.z1 },
+            { label: 'x2', documentation: i18n.d3d_draw_floor.x2 },
+            { label: 'y2', documentation: i18n.d3d_draw_floor.y2 },
+            { label: 'z2', documentation: i18n.d3d_draw_floor.z2 },
+            { label: 'texid', documentation: i18n.d3d_draw_floor.texid },
+            { label: 'hrepeat', documentation: i18n.d3d_draw_floor.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_draw_floor.vrepeat }
         ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_draw_wall: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_draw_wall.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. }
+            { label: 'x1', documentation: i18n.d3d_draw_wall.x1 },
+            { label: 'y1', documentation: i18n.d3d_draw_wall.y1 },
+            { label: 'z1', documentation: i18n.d3d_draw_wall.z1 },
+            { label: 'x2', documentation: i18n.d3d_draw_wall.x2 },
+            { label: 'y2', documentation: i18n.d3d_draw_wall.y2 },
+            { label: 'z2', documentation: i18n.d3d_draw_wall.z2 },
+            { label: 'texid', documentation: i18n.d3d_draw_wall.texid },
+            { label: 'hrepeat', documentation: i18n.d3d_draw_wall.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_draw_wall.vrepeat }
         ],
         signature: '(x1, y1, z1, x2, y2, z2, texid, hrepeat, vrepeat)'
     },
     d3d_end: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_end.desc,
         available: datasimple.ob2
     },
     d3d_light_define_ambient: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_light_define_ambient.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'col', documentation: i18n..col }
+            { label: 'col', documentation: i18n.d3d_light_define_ambient.col }
         ],
         signature: '(col)'
     },
     d3d_light_define_direction: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_light_define_direction.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'dx', documentation: i18n. },
-            { label: 'dy', documentation: i18n. },
-            { label: 'dz', documentation: i18n. },
-            { label: 'col', documentation: i18n..col }
+            { label: 'ind', documentation: i18n.d3d_light_define_direction.ind },
+            { label: 'dx', documentation: i18n.d3d_light_define_direction.dx },
+            { label: 'dy', documentation: i18n.d3d_light_define_direction.dy },
+            { label: 'dz', documentation: i18n.d3d_light_define_direction.dz },
+            { label: 'col', documentation: i18n.d3d_light_define_direction.col }
         ],
         signature: '(ind, dx, dy, dz, col)'
     },
     d3d_light_define_point: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_light_define_point.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'range', documentation: i18n. },
-            { label: 'col', documentation: i18n..col }
+            { label: 'ind', documentation: i18n.d3d_light_define_point.ind },
+            { label: 'x', documentation: i18n.d3d_light_define_point.x },
+            { label: 'y', documentation: i18n.d3d_light_define_point.y },
+            { label: 'z', documentation: i18n.d3d_light_define_point.z },
+            { label: 'range', documentation: i18n.d3d_light_define_point.range },
+            { label: 'col', documentation: i18n.d3d_light_define_point.col }
         ],
         signature: '(ind, x, y, z, range, col)'
     },
     d3d_light_enable: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_light_enable.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'enable', documentation: i18n..enable }
+            { label: 'ind', documentation: i18n.d3d_light_enable.ind },
+            { label: 'enable', documentation: i18n.d3d_light_enable.enable }
         ],
         signature: '(ind, enable)'
     },
     d3d_model_block: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_block.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. }
+            { label: 'ind', documentation: i18n.d3d_model_block.ind },
+            { label: 'x1', documentation: i18n.d3d_model_block.x1 },
+            { label: 'y1', documentation: i18n.d3d_model_block.y1 },
+            { label: 'z1', documentation: i18n.d3d_model_block.z1 },
+            { label: 'x2', documentation: i18n.d3d_model_block.x2 },
+            { label: 'y2', documentation: i18n.d3d_model_block.y2 },
+            { label: 'z2', documentation: i18n.d3d_model_block.z2 },
+            { label: 'hrepeat', documentation: i18n.d3d_model_block.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_model_block.vrepeat }
         ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_model_clear: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_clear.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.d3d_model_clear.ind }
         ],
         signature: '(ind)'
     },
     d3d_model_cone: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_cone.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. },
-            { label: 'closed', documentation: i18n. },
-            { label: 'steps', documentation: i18n. }
+            { label: 'ind', documentation: i18n.d3d_model_cone.ind },
+            { label: 'x1', documentation: i18n.d3d_model_cone.x1 },
+            { label: 'y1', documentation: i18n.d3d_model_cone.y1 },
+            { label: 'z1', documentation: i18n.d3d_model_cone.z1 },
+            { label: 'x2', documentation: i18n.d3d_model_cone.x2 },
+            { label: 'y2', documentation: i18n.d3d_model_cone.y2 },
+            { label: 'z2', documentation: i18n.d3d_model_cone.z2 },
+            { label: 'hrepeat', documentation: i18n.d3d_model_cone.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_model_cone.vrepeat },
+            { label: 'closed', documentation: i18n.d3d_model_cone.closed },
+            { label: 'steps', documentation: i18n.d3d_model_cone.steps }
         ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
     d3d_model_create: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_create.desc,
         available: datasimple.ob2
     },
     d3d_model_cylinder: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_cylinder.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. },
-            { label: 'closed', documentation: i18n. },
-            { label: 'steps', documentation: i18n. }
+            { label: 'ind', documentation: i18n.d3d_model_cylinder.ind },
+            { label: 'x1', documentation: i18n.d3d_model_cylinder.x1 },
+            { label: 'y1', documentation: i18n.d3d_model_cylinder.y1 },
+            { label: 'z1', documentation: i18n.d3d_model_cylinder.z1 },
+            { label: 'x2', documentation: i18n.d3d_model_cylinder.x2 },
+            { label: 'y2', documentation: i18n.d3d_model_cylinder.y2 },
+            { label: 'z2', documentation: i18n.d3d_model_cylinder.z2 },
+            { label: 'hrepeat', documentation: i18n.d3d_model_cylinder.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_model_cylinder.vrepeat },
+            { label: 'closed', documentation: i18n.d3d_model_cylinder.closed },
+            { label: 'steps', documentation: i18n.d3d_model_cylinder.steps }
         ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, closed, steps)'
     },
     d3d_model_destroy: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_destroy.desc,
         available: datasimple.ob2
     },
     d3d_model_draw: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_draw.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'texid', documentation: i18n..texid }
+            { label: 'ind', documentation: i18n.d3d_model_draw.ind },
+            { label: 'x', documentation: i18n.d3d_model_draw.x },
+            { label: 'y', documentation: i18n.d3d_model_draw.y },
+            { label: 'z', documentation: i18n.d3d_model_draw.z },
+            { label: 'texid', documentation: i18n.d3d_model_draw.texid }
         ],
         signature: '(ind, x, y, z, texid)'
     },
     d3d_model_ellipsoid: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_ellipsoid.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. },
-            { label: 'closed', documentation: i18n. }
+            { label: 'ind', documentation: i18n.d3d_model_ellipsoid.ind },
+            { label: 'x1', documentation: i18n.d3d_model_ellipsoid.x1 },
+            { label: 'y1', documentation: i18n.d3d_model_ellipsoid.y1 },
+            { label: 'z1', documentation: i18n.d3d_model_ellipsoid.z1 },
+            { label: 'x2', documentation: i18n.d3d_model_ellipsoid.x2 },
+            { label: 'y2', documentation: i18n.d3d_model_ellipsoid.y2 },
+            { label: 'z2', documentation: i18n.d3d_model_ellipsoid.z2 },
+            { label: 'hrepeat', documentation: i18n.d3d_model_ellipsoid.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_model_ellipsoid.vrepeat },
+            { label: 'closed', documentation: i18n.d3d_model_ellipsoid.closed }
         ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat, steps)'
     },
     d3d_model_floor: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_floor.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. }
+            { label: 'ind', documentation: i18n.d3d_model_floor.ind },
+            { label: 'x1', documentation: i18n.d3d_model_floor.x1 },
+            { label: 'y1', documentation: i18n.d3d_model_floor.y1 },
+            { label: 'z1', documentation: i18n.d3d_model_floor.z1 },
+            { label: 'x2', documentation: i18n.d3d_model_floor.x2 },
+            { label: 'y2', documentation: i18n.d3d_model_floor.y2 },
+            { label: 'z2', documentation: i18n.d3d_model_floor.z2 },
+            { label: 'hrepeat', documentation: i18n.d3d_model_floor.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_model_floor.vrepeat }
         ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_model_load: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_load.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.d3d_model_load.ind },
+            { label: 'fname', documentation: i18n.d3d_model_load.fname }
         ],
         signature: '(ind, fname)'
     },
     d3d_model_primitive_begin: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_primitive_begin.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'ind', documentation: i18n.d3d_model_primitive_begin.ind },
+            { label: 'kind', documentation: i18n.d3d_model_primitive_begin.kind }
         ],
         signature: '(ind, kind)'
     },
     d3d_model_primitive_end: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_primitive_end.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.d3d_model_primitive_end.ind }
         ],
         signature: '(ind)'
     },
     d3d_model_save: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_save.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.d3d_model_save.ind },
+            { label: 'fname', documentation: i18n.d3d_model_save.fname }
         ], 
         signature: '(ind, fname)'
     },
     d3d_model_vertex: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z }
+            { label: 'ind', documentation: i18n.d3d_model_vertex.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex.z }
         ],
         signature: '(ind, x, y, z)'
     },
     d3d_model_vertex_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_color.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_color.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_color.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_color.z },
+            { label: 'col', documentation: i18n.d3d_model_vertex_color.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_color.alpha }
         ],
         signature: '(ind, x, y, z, col, alpha)'
     },
     d3d_model_vertex_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_colour.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_colour.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_colour.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_colour.z },
+            { label: 'col', documentation: i18n.d3d_model_vertex_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_colour.alpha }
         ],
         signature: '(ind, x, y, z, col, alpha)'
     },
     d3d_model_vertex_normal: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_normal.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_normal.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_normal.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_normal.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_normal.z },
+            { label: 'nx', documentation: i18n.d3d_model_vertex_normal.nx },
+            { label: 'ny', documentation: i18n.d3d_model_vertex_normal.ny },
+            { label: 'nz', documentation: i18n.d3d_model_vertex_normal.nz }
         ],
         signature: '(ind, x, y, z, nx, ny, nz)'
     },
     d3d_model_vertex_normal_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_normal_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_normal_color.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_normal_color.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_normal_color.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_normal_color.z },
+            { label: 'nx', documentation: i18n.d3d_model_vertex_normal_color.nx },
+            { label: 'ny', documentation: i18n.d3d_model_vertex_normal_color.ny },
+            { label: 'nz', documentation: i18n.d3d_model_vertex_normal_color.nz },
+            { label: 'col', documentation: i18n.d3d_model_vertex_normal_color.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_normal_color.alpha }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_model_vertex_normal_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_normal_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_normal_colour.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_normal_colour.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_normal_colour.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_normal_colour.z },
+            { label: 'nx', documentation: i18n.d3d_model_vertex_normal_colour.nx },
+            { label: 'ny', documentation: i18n.d3d_model_vertex_normal_colour.ny },
+            { label: 'nz', documentation: i18n.d3d_model_vertex_normal_colour.nz },
+            { label: 'col', documentation: i18n.d3d_model_vertex_normal_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_normal_colour.alpha }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_model_vertex_normal_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_normal_texture.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_normal_texture.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_normal_texture.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_normal_texture.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_normal_texture.z },
+            { label: 'nx', documentation: i18n.d3d_model_vertex_normal_texture.nx },
+            { label: 'ny', documentation: i18n.d3d_model_vertex_normal_texture.ny },
+            { label: 'nz', documentation: i18n.d3d_model_vertex_normal_texture.nz },
+            { label: 'xtex', documentation: i18n.d3d_model_vertex_normal_texture.xtex },
+            { label: 'ytex', documentation: i18n.d3d_model_vertex_normal_texture.ytex }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex)'
     },
     d3d_model_vertex_normal_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_normal_texture_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_normal_texture_color.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_normal_texture_color.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_normal_texture_color.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_normal_texture_color.z },
+            { label: 'nx', documentation: i18n.d3d_model_vertex_normal_texture_color.nx },
+            { label: 'ny', documentation: i18n.d3d_model_vertex_normal_texture_color.ny },
+            { label: 'nz', documentation: i18n.d3d_model_vertex_normal_texture_color.nz },
+            { label: 'xtex', documentation: i18n.d3d_model_vertex_normal_texture_color.xtex },
+            { label: 'ytex', documentation: i18n.d3d_model_vertex_normal_texture_color.ytex },
+            { label: 'col', documentation: i18n.d3d_model_vertex_normal_texture_color.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_normal_texture_color.alpha }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_normal_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_normal_texture_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_normal_texture_colour.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_normal_texture_colour.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_normal_texture_colour.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_normal_texture_colour.z },
+            { label: 'nx', documentation: i18n.d3d_model_vertex_normal_texture_colour.nx },
+            { label: 'ny', documentation: i18n.d3d_model_vertex_normal_texture_colour.ny },
+            { label: 'nz', documentation: i18n.d3d_model_vertex_normal_texture_colour.nz },
+            { label: 'xtex', documentation: i18n.d3d_model_vertex_normal_texture_colour.xtex },
+            { label: 'ytex', documentation: i18n.d3d_model_vertex_normal_texture_colour.ytex },
+            { label: 'col', documentation: i18n.d3d_model_vertex_normal_texture_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_normal_texture_colour.alpha }
         ],
         signature: '(ind, x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_texture.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_texture.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_texture.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_texture.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_texture.z },
+            { label: 'xtex', documentation: i18n.d3d_model_vertex_texture.xtex },
+            { label: 'ytex', documentation: i18n.d3d_model_vertex_texture.ytex }
         ],
         signature: '(ind, x, y, z, xtex, ytex)'
     },
     d3d_model_vertex_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_texture_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_texture_color.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_texture_color.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_texture_color.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_texture_color.z },
+            { label: 'xtex', documentation: i18n.d3d_model_vertex_texture_color.xtex },
+            { label: 'ytex', documentation: i18n.d3d_model_vertex_texture_color.ytex },
+            { label: 'col', documentation: i18n.d3d_model_vertex_texture_color.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_texture_color.alpha }
         ],
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_model_vertex_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_vertex_texture_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'ind', documentation: i18n.d3d_model_vertex_texture_colour.ind },
+            { label: 'x', documentation: i18n.d3d_model_vertex_texture_colour.x },
+            { label: 'y', documentation: i18n.d3d_model_vertex_texture_colour.y },
+            { label: 'z', documentation: i18n.d3d_model_vertex_texture_colour.z },
+            { label: 'xtex', documentation: i18n.d3d_model_vertex_texture_colour.xtex },
+            { label: 'ytex', documentation: i18n.d3d_model_vertex_texture_colour.ytex },
+            { label: 'col', documentation: i18n.d3d_model_vertex_texture_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_model_vertex_texture_colour.alpha }
         ],
         signature: '(ind, x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_model_wall: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_model_wall.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x1', documentation: i18n..x1 },
-            { label: 'y1', documentation: i18n..y1 },
-            { label: 'z1', documentation: i18n..z1 },
-            { label: 'x2', documentation: i18n..x2 },
-            { label: 'y2', documentation: i18n..y2 },
-            { label: 'z2', documentation: i18n..z2 },
-            { label: 'hrepeat', documentation: i18n. },
-            { label: 'vrepeat', documentation: i18n. }
+            { label: 'ind', documentation: i18n.d3d_model_wall.ind },
+            { label: 'x1', documentation: i18n.d3d_model_wall.x1 },
+            { label: 'y1', documentation: i18n.d3d_model_wall.y1 },
+            { label: 'z1', documentation: i18n.d3d_model_wall.z1 },
+            { label: 'x2', documentation: i18n.d3d_model_wall.x2 },
+            { label: 'y2', documentation: i18n.d3d_model_wall.y2 },
+            { label: 'z2', documentation: i18n.d3d_model_wall.z2 },
+            { label: 'hrepeat', documentation: i18n.d3d_model_wall.hrepeat },
+            { label: 'vrepeat', documentation: i18n.d3d_model_wall.vrepeat }
         ],
         signature: '(ind, x1, y1, z1, x2, y2, z2, hrepeat, vrepeat)'
     },
     d3d_primitive_begin: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_primitive_begin.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'kind', documentation: i18n.d3d_primitive_begin.kind }
         ],
         signature: '(kind)'
     },
     d3d_primitive_begin_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_primitive_begin_texture.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'kind', documentation: i18n..kind },
-            { label: 'texid', documentation: i18n..texid }
+            { label: 'kind', documentation: i18n.d3d_primitive_begin_texture.kind },
+            { label: 'texid', documentation: i18n.d3d_primitive_begin_texture.texid }
         ],
         signature: '(kind, texid)'
     },
     d3d_primitive_end: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_primitive_end.desc,
         available: datasimple.ob2
     },
     d3d_set_culling: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_culling.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'cull', documentation: i18n. }
+            { label: 'cull', documentation: i18n.d3d_set_culling.cull }
         ],
         signature: '(cull)'
     },
     d3d_set_depth: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_depth.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'depth', documentation: i18n.d3d_set_depth.depth }
         ],
         signature: '(depth)'
     },
     d3d_set_fog: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_fog.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'enable', documentation: i18n..enable },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'start', documentation: i18n. },
-            { label: 'end', documentation: i18n. }
+            { label: 'enable', documentation: i18n.d3d_set_fog.enable },
+            { label: 'colour', documentation: i18n.d3d_set_fog.colour },
+            { label: 'start', documentation: i18n.d3d_set_fog.start },
+            { label: 'end', documentation: i18n.d3d_set_fog.end }
         ],
         signature: '(enable, colour, start, end)'
     },
     d3d_set_hidden: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_hidden.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'hidden', documentation: i18n. }
+            { label: 'hidden', documentation: i18n.d3d_set_hidden.hidden }
         ],
         signature: '(hidden)'
     },
     d3d_set_lighting: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_lighting.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'enable', documentation: i18n..enable }
+            { label: 'enable', documentation: i18n.d3d_set_lighting.enable }
         ],
         signature: '(enable)'
     },
     d3d_set_perspective: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_perspective.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'enable', documentation: i18n..enable }
+            { label: 'enable', documentation: i18n.d3d_set_perspective.enable }
         ],
         signature: '(enable)'
     },
     d3d_set_projection: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_projection.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xform', documentation: i18n. },
-            { label: 'yform', documentation: i18n. },
-            { label: 'zform', documentation: i18n. },
-            { label: 'xto', documentation: i18n. },
-            { label: 'yto', documentation: i18n. },
-            { label: 'zto', documentation: i18n. },
-            { label: 'xup', documentation: i18n. },
-            { label: 'yup', documentation: i18n. },
-            { label: 'zup', documentation: i18n. }
+            { label: 'xfrom', documentation: i18n.d3d_set_projection.xfrom },
+            { label: 'yfrom', documentation: i18n.d3d_set_projection.yfrom },
+            { label: 'zfrom', documentation: i18n.d3d_set_projection.zfrom },
+            { label: 'xto', documentation: i18n.d3d_set_projection.xto },
+            { label: 'yto', documentation: i18n.d3d_set_projection.yto },
+            { label: 'zto', documentation: i18n.d3d_set_projection.zto },
+            { label: 'xup', documentation: i18n.d3d_set_projection.xup },
+            { label: 'yup', documentation: i18n.d3d_set_projection.yup },
+            { label: 'zup', documentation: i18n.d3d_set_projection.zup }
         ],
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
     d3d_set_projection_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_projection_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xform', documentation: i18n. },
-            { label: 'yform', documentation: i18n. },
-            { label: 'zform', documentation: i18n. },
-            { label: 'xto', documentation: i18n. },
-            { label: 'yto', documentation: i18n. },
-            { label: 'zto', documentation: i18n. },
-            { label: 'xup', documentation: i18n. },
-            { label: 'yup', documentation: i18n. },
-            { label: 'zup', documentation: i18n. },
-            { label: 'angle', documentation: i18n..angle },
-            { label: 'aspect', documentation: i18n. },
-            { label: 'znear', documentation: i18n. },
-            { label: 'zfar', documentation: i18n. }
+            { label: 'xfrom', documentation: i18n.d3d_set_projection_ext.xfrom },
+            { label: 'yfrom', documentation: i18n.d3d_set_projection_ext.yfrom },
+            { label: 'zfrom', documentation: i18n.d3d_set_projection_ext.zfrom },
+            { label: 'xto', documentation: i18n.d3d_set_projection_ext.xto },
+            { label: 'yto', documentation: i18n.d3d_set_projection_ext.yto },
+            { label: 'zto', documentation: i18n.d3d_set_projection_ext.zto },
+            { label: 'xup', documentation: i18n.d3d_set_projection_ext.xup },
+            { label: 'yup', documentation: i18n.d3d_set_projection_ext.yup },
+            { label: 'zup', documentation: i18n.d3d_set_projection_ext.zup },
+            { label: 'angle', documentation: i18n.d3d_set_projection_ext.angle },
+            { label: 'aspect', documentation: i18n.d3d_set_projection_ext.aspect },
+            { label: 'znear', documentation: i18n.d3d_set_projection_ext.znear },
+            { label: 'zfar', documentation: i18n.d3d_set_projection_ext.zfar }
         ],
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup, angle, aspect, znear, zfar)'
     },
     d3d_set_projection_ortho: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_projection_ortho.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'x', documentation: i18n.d3d_set_projection_ortho.x },
+            { label: 'y', documentation: i18n.d3d_set_projection_ortho.y },
+            { label: 'w', documentation: i18n.d3d_set_projection_ortho.w },
+            { label: 'h', documentation: i18n.d3d_set_projection_ortho.h },
+            { label: 'angle', documentation: i18n.d3d_set_projection_ortho.angle }
         ],
         signature: '(x, y, w, h, angle)'
     },
     d3d_set_projection_perspective: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_projection_perspective.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'x', documentation: i18n.d3d_set_projection_perspective.x },
+            { label: 'y', documentation: i18n.d3d_set_projection_perspective.y },
+            { label: 'w', documentation: i18n.d3d_set_projection_perspective.w },
+            { label: 'h', documentation: i18n.d3d_set_projection_perspective.h },
+            { label: 'angle', documentation: i18n.d3d_set_projection_perspective.angle }
         ],
         signature: '(x, y, w, h, angle)'
     },
     d3d_set_shading: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_shading.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'smooth', documentation: i18n..smooth }
+            { label: 'smooth', documentation: i18n.d3d_set_shading.smooth }
         ],
         signature: '(smooth)'
     },
     d3d_set_zwriteenable: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_set_zwriteenable.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'on_off', documentation: i18n. }
+            { label: 'on_off', documentation: i18n.d3d_set_zwriteenable.on_off }
         ],
         signature: '(on_off)'
     },
     d3d_start: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_start.desc,
         available: datasimple.ob2
     },
     d3d_transform_add_rotation_axis: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_add_rotation_axis.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xa', documentation: i18n. },
-            { label: 'ya', documentation: i18n. },
-            { label: 'za', documentation: i18n. },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'xa', documentation: i18n.d3d_transform_add_rotation_axis.xa },
+            { label: 'ya', documentation: i18n.d3d_transform_add_rotation_axis.ya },
+            { label: 'za', documentation: i18n.d3d_transform_add_rotation_axis.za },
+            { label: 'angle', documentation: i18n.d3d_transform_add_rotation_axis.angle }
         ],
         signature: '(xa, ya, za, angle)'
     },
     d3d_transform_add_rotation_x: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_add_rotation_x.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.d3d_transform_add_rotation_x.angle }
         ],
         signature: '(angle)'
     },
     d3d_transform_add_rotation_y: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_add_rotation_y.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.d3d_transform_add_rotation_y.angle }
         ],
         signature: '(angle)'
     },
     d3d_transform_add_rotation_z: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_add_rotation_z.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.d3d_transform_add_rotation_z.angle }
         ],
         signature: '(angle)'
     },
     d3d_transform_add_scaling: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_add_scaling.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xs', documentation: i18n..xs },
-            { label: 'ys', documentation: i18n..ys },
-            { label: 'zs', documentation: i18n. }
+            { label: 'xs', documentation: i18n.d3d_transform_add_scaling.xs },
+            { label: 'ys', documentation: i18n.d3d_transform_add_scaling.ys },
+            { label: 'zs', documentation: i18n.d3d_transform_add_scaling.zs }
         ],
         signature: '(xs, ys, zs)'
     },
     d3d_transform_add_translation: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_add_translation.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xt', documentation: i18n. },
-            { label: 'yt', documentation: i18n. },
-            { label: 'zt', documentation: i18n. }
+            { label: 'xt', documentation: i18n.d3d_transform_add_translation.xt },
+            { label: 'yt', documentation: i18n.d3d_transform_add_translation.yt },
+            { label: 'zt', documentation: i18n.d3d_transform_add_translation.zt }
         ],
         signature: '(xt, yt, zt)'
     },
     d3d_transform_set_identity: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_identity.desc,
         available: datasimple.ob2
     },
     d3d_transform_set_rotation_axis: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_rotation_axis.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xa', documentation: i18n. },
-            { label: 'ya', documentation: i18n. },
-            { label: 'za', documentation: i18n. },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'xa', documentation: i18n.d3d_transform_set_rotation_axis.xa },
+            { label: 'ya', documentation: i18n.d3d_transform_set_rotation_axis.ya },
+            { label: 'za', documentation: i18n.d3d_transform_set_rotation_axis.za },
+            { label: 'angle', documentation: i18n.d3d_transform_set_rotation_axis.angle }
         ],
         signature: '(xa, ya, za, angle)'
     },
     d3d_transform_set_rotation_x: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_rotation_x.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.d3d_transform_set_rotation_x.angle }
         ],
         signature: '(angle)'
     },
     d3d_transform_set_rotation_y: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_rotation_y.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.d3d_transform_set_rotation_y.angle }
         ],
         signature: '(angle)'
     },
     d3d_transform_set_rotation_z: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_rotation_z.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.d3d_transform_set_rotation_z.angle }
         ],
         signature: '(angle)'
     },
     d3d_transform_set_scaling: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_scaling.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xs', documentation: i18n..xs },
-            { label: 'ys', documentation: i18n..ys },
-            { label: 'zs', documentation: i18n. }
+            { label: 'xs', documentation: i18n.d3d_transform_set_scaling.xs },
+            { label: 'ys', documentation: i18n.d3d_transform_set_scaling.ys },
+            { label: 'zs', documentation: i18n.d3d_transform_set_scaling.zs }
         ],
         signature: '(xs, ys, zs)'
     },
     d3d_transform_set_translation: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_set_translation.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'xt', documentation: i18n. },
-            { label: 'yt', documentation: i18n. },
-            { label: 'zt', documentation: i18n. }
+            { label: 'xt', documentation: i18n.d3d_transform_set_translation.xt },
+            { label: 'yt', documentation: i18n.d3d_transform_set_translation.yt },
+            { label: 'zt', documentation: i18n.d3d_transform_set_translation.zt }
         ],
         signature: '(xt, yt, zt)'
     },
     d3d_transform_stack_clear: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_stack_clear.desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_discard: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_stack_discard.desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_empty: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_stack_empty.desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_pop: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_stack_pop.desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_push: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_stack_push.desc,
         available: datasimple.ob2
     },
     d3d_transform_stack_top: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_stack_top.desc,
         available: datasimple.ob2
     },
     d3d_transform_vertex: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_transform_vertex.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z }
+            { label: 'x', documentation: i18n.d3d_transform_vertex.x },
+            { label: 'y', documentation: i18n.d3d_transform_vertex.y },
+            { label: 'z', documentation: i18n.d3d_transform_vertex.z }
         ],
         signature: '(x, y, z)'
     },
     d3d_vertex: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z }
+            { label: 'x', documentation: i18n.d3d_vertex.x },
+            { label: 'y', documentation: i18n.d3d_vertex.y },
+            { label: 'z', documentation: i18n.d3d_vertex.z }
         ],
         signature: '(x, y, z)'
     },
     d3d_vertex_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_color.x },
+            { label: 'y', documentation: i18n.d3d_vertex_color.y },
+            { label: 'z', documentation: i18n.d3d_vertex_color.z },
+            { label: 'col', documentation: i18n.d3d_vertex_color.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_color.alpha }
         ],
         signature: '(x, y, z, col, alpha)'
     },
     d3d_vertex_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_colour.x },
+            { label: 'y', documentation: i18n.d3d_vertex_colour.y },
+            { label: 'z', documentation: i18n.d3d_vertex_colour.z },
+            { label: 'col', documentation: i18n.d3d_vertex_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_colour.alpha }
         ],
         signature: '(x, y, z, col, alpha)'
     },
     d3d_vertex_normal: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_normal.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz }
+            { label: 'x', documentation: i18n.d3d_vertex_normal.x },
+            { label: 'y', documentation: i18n.d3d_vertex_normal.y },
+            { label: 'z', documentation: i18n.d3d_vertex_normal.z },
+            { label: 'nx', documentation: i18n.d3d_vertex_normal.nx },
+            { label: 'ny', documentation: i18n.d3d_vertex_normal.ny },
+            { label: 'nz', documentation: i18n.d3d_vertex_normal.nz }
         ],
         signature: '(x, y, z, nx, ny, nz)'
     },
     d3d_vertex_normal_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_normal_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_normal_color.x },
+            { label: 'y', documentation: i18n.d3d_vertex_normal_color.y },
+            { label: 'z', documentation: i18n.d3d_vertex_normal_color.z },
+            { label: 'nx', documentation: i18n.d3d_vertex_normal_color.nx },
+            { label: 'ny', documentation: i18n.d3d_vertex_normal_color.ny },
+            { label: 'nz', documentation: i18n.d3d_vertex_normal_color.nz },
+            { label: 'col', documentation: i18n.d3d_vertex_normal_color.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_normal_color.alpha }
         ],
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_vertex_normal_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_normal_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_normal_colour.x },
+            { label: 'y', documentation: i18n.d3d_vertex_normal_colour.y },
+            { label: 'z', documentation: i18n.d3d_vertex_normal_colour.z },
+            { label: 'nx', documentation: i18n.d3d_vertex_normal_colour.nx },
+            { label: 'ny', documentation: i18n.d3d_vertex_normal_colour.ny },
+            { label: 'nz', documentation: i18n.d3d_vertex_normal_colour.nz },
+            { label: 'col', documentation: i18n.d3d_vertex_normal_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_normal_colour.alpha }
         ],
         signature: '(x, y, z, nx, ny, nz, col, alpha)'
     },
     d3d_vertex_normal_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_normal_texture.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex }
+            { label: 'x', documentation: i18n.d3d_vertex_normal_texture.x },
+            { label: 'y', documentation: i18n.d3d_vertex_normal_texture.y },
+            { label: 'z', documentation: i18n.d3d_vertex_normal_texture.z },
+            { label: 'nx', documentation: i18n.d3d_vertex_normal_texture.nx },
+            { label: 'ny', documentation: i18n.d3d_vertex_normal_texture.ny },
+            { label: 'nz', documentation: i18n.d3d_vertex_normal_texture.nz },
+            { label: 'xtex', documentation: i18n.d3d_vertex_normal_texture.xtex },
+            { label: 'ytex', documentation: i18n.d3d_vertex_normal_texture.ytex }
         ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex)'
     },
     d3d_vertex_normal_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_normal_texture_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_normal_texture_color.x },
+            { label: 'y', documentation: i18n.d3d_vertex_normal_texture_color.y },
+            { label: 'z', documentation: i18n.d3d_vertex_normal_texture_color.z },
+            { label: 'nx', documentation: i18n.d3d_vertex_normal_texture_color.nx },
+            { label: 'ny', documentation: i18n.d3d_vertex_normal_texture_color.ny },
+            { label: 'nz', documentation: i18n.d3d_vertex_normal_texture_color.nz },
+            { label: 'xtex', documentation: i18n.d3d_vertex_normal_texture_color.xtex },
+            { label: 'ytex', documentation: i18n.d3d_vertex_normal_texture_color.ytex },
+            { label: 'col', documentation: i18n.d3d_vertex_normal_texture_color.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_normal_texture_color.alpha }
         ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_vertex_normal_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_normal_texture_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'nx', documentation: i18n..nx },
-            { label: 'ny', documentation: i18n..ny },
-            { label: 'nz', documentation: i18n..nz },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_normal_texture_colour.x },
+            { label: 'y', documentation: i18n.d3d_vertex_normal_texture_colour.y },
+            { label: 'z', documentation: i18n.d3d_vertex_normal_texture_colour.z },
+            { label: 'nx', documentation: i18n.d3d_vertex_normal_texture_colour.nx },
+            { label: 'ny', documentation: i18n.d3d_vertex_normal_texture_colour.ny },
+            { label: 'nz', documentation: i18n.d3d_vertex_normal_texture_colour.nz },
+            { label: 'xtex', documentation: i18n.d3d_vertex_normal_texture_colour.xtex },
+            { label: 'ytex', documentation: i18n.d3d_vertex_normal_texture_colour.ytex },
+            { label: 'col', documentation: i18n.d3d_vertex_normal_texture_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_normal_texture_colour.alpha }
         ],
         signature: '(x, y, z, nx, ny, nz, xtex, ytex, col, alpha)'
     },
     d3d_vertex_texture: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_texture.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex }
+            { label: 'x', documentation: i18n.d3d_vertex_texture.x },
+            { label: 'y', documentation: i18n.d3d_vertex_texture.y },
+            { label: 'z', documentation: i18n.d3d_vertex_texture.z },
+            { label: 'xtex', documentation: i18n.d3d_vertex_texture.xtex },
+            { label: 'ytex', documentation: i18n.d3d_vertex_texture.ytex }
         ],
         signature: '(x, y, z, xtex, ytex)'
     },
     d3d_vertex_texture_color: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_texture_color.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_texture_color.x },
+            { label: 'y', documentation: i18n.d3d_vertex_texture_color.y },
+            { label: 'z', documentation: i18n.d3d_vertex_texture_color.z },
+            { label: 'xtex', documentation: i18n.d3d_vertex_texture_color.xtex },
+            { label: 'ytex', documentation: i18n.d3d_vertex_texture_color.ytex },
+            { label: 'col', documentation: i18n.d3d_vertex_texture_color.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_texture_color.alpha }
         ],
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
     d3d_vertex_texture_colour: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.d3d_vertex_texture_colour.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'xtex', documentation: i18n..xtex },
-            { label: 'ytex', documentation: i18n..ytex },
-            { label: 'col', documentation: i18n..col },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'x', documentation: i18n.d3d_vertex_texture_colour.x },
+            { label: 'y', documentation: i18n.d3d_vertex_texture_colour.y },
+            { label: 'z', documentation: i18n.d3d_vertex_texture_colour.z },
+            { label: 'xtex', documentation: i18n.d3d_vertex_texture_colour.xtex },
+            { label: 'ytex', documentation: i18n.d3d_vertex_texture_colour.ytex },
+            { label: 'col', documentation: i18n.d3d_vertex_texture_colour.col },
+            { label: 'alpha', documentation: i18n.d3d_vertex_texture_colour.alpha }
         ],
         signature: '(x, y, z, xtex, ytex, col, alpha)'
     },
     display_set_windows_vertex_buffer_method: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.display_set_windows_vertex_buffer_method.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'method', documentation: i18n. }
+            { label: 'method', documentation: i18n.display_set_windows_vertex_buffer_method.method }
         ],
         signature: '(method)'
     },
     display_get_windows_vertex_buffer_method: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.display_get_windows_vertex_buffer_method.desc,
         available: datasimple.ob2
     },
     display_set_windows_alternate_sync: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.display_set_windows_alternate_sync.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'enable', documentation: i18n..enable }
+            { label: 'enable', documentation: i18n.display_set_windows_alternate_sync.enable }
         ],
         signature: '(enable)'
     },
     display_get_windows_alternate_sync: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.display_get_windows_alternate_sync.desc,
         available: datasimple.ob2
     },
     room_set_view: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.room_set_view.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'vind', documentation: i18n. },
-            { label: 'vis', documentation: i18n..vis },
-            { label: 'xview', documentation: i18n. },
-            { label: 'yview', documentation: i18n. },
-            { label: 'wview', documentation: i18n. },
-            { label: 'hview', documentation: i18n. },
-            { label: 'xport', documentation: i18n. },
-            { label: 'yport', documentation: i18n. },
-            { label: 'wport', documentation: i18n. },
-            { label: 'hport', documentation: i18n. },
-            { label: 'hborder', documentation: i18n. },
-            { label: 'vborder', documentation: i18n. },
-            { label: 'hspeed', documentation: i18n. },
-            { label: 'vspeed', documentation: i18n. },
-            { label: 'obj', documentation: i18n..obj }
+            { label: 'ind', documentation: i18n.room_set_view.ind },
+            { label: 'vind', documentation: i18n.room_set_view.vind },
+            { label: 'vis', documentation: i18n.room_set_view.vis },
+            { label: 'xview', documentation: i18n.room_set_view.xview },
+            { label: 'yview', documentation: i18n.room_set_view.yview },
+            { label: 'wview', documentation: i18n.room_set_view.wview },
+            { label: 'hview', documentation: i18n.room_set_view.hview },
+            { label: 'xport', documentation: i18n.room_set_view.xport },
+            { label: 'yport', documentation: i18n.room_set_view.yport },
+            { label: 'wport', documentation: i18n.room_set_view.wport },
+            { label: 'hport', documentation: i18n.room_set_view.hport },
+            { label: 'hborder', documentation: i18n.room_set_view.hborder },
+            { label: 'vborder', documentation: i18n.room_set_view.vborder },
+            { label: 'hspeed', documentation: i18n.room_set_view.hspeed },
+            { label: 'vspeed', documentation: i18n.room_set_view.vspeed },
+            { label: 'obj', documentation: i18n.room_set_view.obj }
         ],
         signature: '(ind, vind, vis, xview, yview, wview, hview, xport, yport, wport, hport, hborder, vborder, hspeed, vspeed, obj)'
     },
     immersion_play_effect: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.immersion_play_effect.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'effect', documentation: i18n. }
+            { label: 'effect', documentation: i18n.immersion_play_effect.effect }
         ],
         signature: '(effect)'
     },
     immersion_stop: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.immersion_stop.desc,
         available: datasimple.ob2
     },
     analytics_event: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.analytics_event.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'string', documentation: i18n..string }
+            { label: 'string', documentation: i18n.analytics_event.string }
         ],
         signature: '(string)'
     },
     analytics_event_ext: {
-        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.obsolete_2 + ')' + i18n.analytics_event_ext.desc,
         available: datasimple.ob2,
         parameters: [
-            { label: 'string', documentation: i18n..string },
-            { label: 'string_param_name1', documentation: i18n. },
-            { label: 'number_value1', documentation: i18n. },
-            { label: '...', documentation: i18n..more }
+            { label: 'string', documentation: i18n.analytics_event_ext.string },
+            { label: 'string_param_name1', documentation: i18n.analytics_event_ext.string_param_name1 },
+            { label: 'number_value1', documentation: i18n.analytics_event_ext.number_value1 },
+            { label: '...', documentation: i18n.analytics_event_ext.more }
         ],
         signature: '(string, string_param_name1, number_value1, ...)'
     },
@@ -15307,7 +15307,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'back', documentation: i18n. }
+            { label: 'back', documentation: i18n..back }
         ],
         signature: '(back)'
     },
@@ -15323,7 +15323,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'back', documentation: i18n. },
+            { label: 'back', documentation: i18n..back },
             { label: 'new', documentation: i18n. },
             { label: 'other', documentation: i18n. }
         ],
@@ -15362,7 +15362,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'numb', documentation: i18n..numb },
-            { label: 'back', documentation: i18n. },
+            { label: 'back', documentation: i18n..back },
             { label: 'border', documentation: i18n. },
             { label: 'col1', documentation: i18n..col1 },
             { label: 'col2', documentation: i18n..col2 },
@@ -15399,7 +15399,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'back', documentation: i18n. }
+            { label: 'back', documentation: i18n..back }
         ],
         signature: '(back)'
     },
@@ -16176,7 +16176,7 @@ exports.globalfunctions = {
         available: datasimple.gm81,
         parameters: [
             { label: 'snd', documentation: i18n. },
-            { label: 'effect', documentation: i18n. }
+            { label: 'effect', documentation: i18n..effect }
         ],
         signature: '(snd, effect)'
     },
@@ -16635,7 +16635,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.gm_81 + ')',
         available: datasimple.gm81,
         parameters: [
-            { label: 'visible', documentation: i18n. }
+            { label: 'visible', documentation: i18n..visible }
         ],
         signature: '(visible)'
     },
@@ -16761,7 +16761,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'vind', documentation: i18n. }
+            { label: 'vind', documentation: i18n..vind }
         ],
         signature: '(ind, vind)'
     },
@@ -16770,7 +16770,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'vind', documentation: i18n. },
+            { label: 'vind', documentation: i18n..vind },
             { label: 'camera', documentation: i18n. }
         ],
         signature: '(ind, vind, camera)'
@@ -16780,7 +16780,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'vind', documentation: i18n. }
+            { label: 'vind', documentation: i18n..vind }
         ],
         signature: '(ind, vind)'
     },
@@ -16789,7 +16789,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'vind', documentation: i18n. },
+            { label: 'vind', documentation: i18n..vind },
             { label: 'vis', documentation: i18n..vis },
             { label: 'xport', documentation: i18n. },
             { label: 'yport', documentation: i18n. },
@@ -16852,15 +16852,15 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'xform', documentation: i18n. },
-            { label: 'yform', documentation: i18n. },
-            { label: 'zform', documentation: i18n. },
-            { label: 'xto', documentation: i18n. },
-            { label: 'yto', documentation: i18n. },
-            { label: 'zto', documentation: i18n. },
-            { label: 'xup', documentation: i18n. },
-            { label: 'yup', documentation: i18n. },
-            { label: 'zup', documentation: i18n. }
+            { label: 'xfrom', documentation: i18n..xfrom },
+            { label: 'yfrom', documentation: i18n..yfrom },
+            { label: 'zfrom', documentation: i18n..zfrom },
+            { label: 'xto', documentation: i18n..xto },
+            { label: 'yto', documentation: i18n..yto },
+            { label: 'zto', documentation: i18n..zto },
+            { label: 'xup', documentation: i18n..xup },
+            { label: 'yup', documentation: i18n..yup },
+            { label: 'zup', documentation: i18n..zup }
         ],
         signature: '(xfrom, yfrom, zfrom, xto, yto, zto, xup, yup, zup)'
     },
@@ -16870,8 +16870,8 @@ exports.globalfunctions = {
         parameters: [
             { label: 'width', documentation: i18n..width },
             { label: 'height', documentation: i18n..height },
-            { label: 'znear', documentation: i18n. },
-            { label: 'zfar', documentation: i18n. }
+            { label: 'znear', documentation: i18n..znear },
+            { label: 'zfar', documentation: i18n..zfar }
         ],
         signature: '(width, height, znear, zfar)'
     },
@@ -16881,8 +16881,8 @@ exports.globalfunctions = {
         parameters: [
             { label: 'width', documentation: i18n..width },
             { label: 'height', documentation: i18n..height },
-            { label: 'znear', documentation: i18n. },
-            { label: 'zfar', documentation: i18n. }
+            { label: 'znear', documentation: i18n..znear },
+            { label: 'zfar', documentation: i18n..zfar }
         ],
         signature: '(width, height, znear, zfar)'
     },
@@ -16892,8 +16892,8 @@ exports.globalfunctions = {
         parameters: [
             { label: 'fov_y', documentation: i18n. },
             { label: 'height', documentation: i18n..height },
-            { label: 'znear', documentation: i18n. },
-            { label: 'zfar', documentation: i18n. }
+            { label: 'znear', documentation: i18n..znear },
+            { label: 'zfar', documentation: i18n..zfar }
         ],
         signature: '(fov_y, aspect, znear, zfar)'
     },
@@ -16978,8 +16978,8 @@ exports.globalfunctions = {
         parameters: [
             { label: 'enable', documentation: i18n..enable },
             { label: 'col', documentation: i18n..col },
-            { label: 'start', documentation: i18n. },
-            { label: 'end', documentation: i18n. }
+            { label: 'start', documentation: i18n..start },
+            { label: 'end', documentation: i18n..end }
         ],
         signature: '(enable, col, start, end)'
     },
@@ -17460,9 +17460,9 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'ind', documentation: i18n..ind },
-            { label: 'dx', documentation: i18n. },
-            { label: 'dy', documentation: i18n. },
-            { label: 'dz', documentation: i18n. },
+            { label: 'dx', documentation: i18n..dx },
+            { label: 'dy', documentation: i18n..dy },
+            { label: 'dz', documentation: i18n..dz },
             { label: 'col', documentation: i18n..col }
         ],
         signature: '(ind, dx, dy, dz, col)'
@@ -17475,7 +17475,7 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n..x },
             { label: 'y', documentation: i18n..y },
             { label: 'z', documentation: i18n..z },
-            { label: 'range', documentation: i18n. },
+            { label: 'range', documentation: i18n..range },
             { label: 'col', documentation: i18n..col }
         ],
         signature: '(ind, x, y, z, range, col)'
@@ -17611,7 +17611,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'layer_id', documentation: i18n. },
-            { label: 'visible', documentation: i18n. }
+            { label: 'visible', documentation: i18n..visible }
         ],
         signature: '(layer_id, visible)'
     },
@@ -17876,7 +17876,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'background_element_id', documentation: i18n. },
-            { label: 'visible', documentation: i18n. }
+            { label: 'visible', documentation: i18n..visible }
         ],
         signature: '(background_element_id, visible)'
     },
@@ -18718,7 +18718,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'tile_element_id', documentation: i18n. },
-            { label: 'visible', documentation: i18n. }
+            { label: 'visible', documentation: i18n..visible }
         ],
         signature: '(tile_element_id, visible)'
     },
@@ -19164,7 +19164,7 @@ exports.globalfunctions = {
         available: datasimple.gms2,
         parameters: [
             { label: 'view', documentation: i18n. },
-            { label: 'visible', documentation: i18n. }
+            { label: 'visible', documentation: i18n..visible }
         ],
         signature: '(view, visible)'
     },
