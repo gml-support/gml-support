@@ -535,5 +535,74 @@
     },
 	"background_yscale": {
         "desc": ""
+    },
+
+    "secure_mode": {
+        "desc": ""
+    },
+    "gamemaker_pro": {
+        "desc": ""
+    },
+    "gamemaker_registered": {
+        "desc": ""
+    },
+    "gamemaker_version": {
+        "desc": ""
+    },
+
+    "view_angle": {
+        "desc": ""
+    },
+    "view_hborder": {
+        "desc": ""
+    },
+    "view_hport": {
+        "desc": ""
+    },
+    "view_hspeed": {
+        "desc": ""
+    },
+    "view_hview": {
+        "desc": ""
+    },
+    "view_object": {
+        "desc": ""
+    },
+    "view_vborder": {
+        "desc": ""
+    },
+    "view_visible": {
+        "desc": ""
+    },
+    "view_vspeed": {
+        "desc": ""
+    },
+    "view_wport": {
+        "desc": ""
+    },
+    "view_wview": {
+        "desc": ""
+    },
+    "view_xport": {
+        "desc": ""
+    },
+    "view_xview": {
+        "desc": ""
+    },
+    "view_yport": {
+        "desc": ""
+    },
+    "view_yview": {
+        "desc": ""
+    },
+
+    "layer": {
+       "desc": ""
+    },
+    "view_camera": {
+       "desc": ""
+    },
+    "event_data": {
+       "desc": ""
     }
 }
