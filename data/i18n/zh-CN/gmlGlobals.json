@@ -10383,7 +10383,7 @@
 	"layer_create": {
         "desc": "",
         "depth": "",
-        "name*": "",
+        "name": "",
         "...": ""
     },
 	"layer_destroy": {
@@ -10886,7 +10886,8 @@
         "y": ""
     },
 	"tilemap_set_global_mask": {
-        "desc": ""
+        "desc": "",
+        "mask": ""
     },
 	"tilemap_get_global_mask": {
         "desc": ""

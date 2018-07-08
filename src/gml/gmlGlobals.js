@@ -4,6 +4,7 @@ const vscode_1 = require("vscode");
 const datasimple = require("../../data/data.simple.json");
 const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
 const i18n = require("../../data/i18n/" + localizationset + "/gmlGlobals.json")
+const i18n_variable = require("../../data/i18n/" + localizationset + "/gmlGlobals-variables.json")
 const i18n_notice = require("../../data/i18n/" + localizationset + "/gmlNotices.json")
 
 exports.globalfunctions = {
@@ -17522,1827 +17523,1831 @@ exports.globalfunctions = {
         signature: '(filename)'
     },
     skeleton_animation_get_frame: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.skeleton_animation_get_frame.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'track', documentation: i18n..track }
+            { label: 'track', documentation: i18n.skeleton_animation_get_frame.track }
         ],
         signature: '(track)'
     },
 	skeleton_animation_set_frame: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.skeleton_animation_set_frame.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'track', documentation: i18n..track },
-            { label: 'index', documentation: i18n..index }
+            { label: 'track', documentation: i18n.skeleton_animation_set_frame.track },
+            { label: 'index', documentation: i18n.skeleton_animation_set_frame.index }
         ],
         signature: '(track, index)'
     },
 	layer_get_id: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_id.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_name', documentation: i18n..layer_name }
+            { label: 'layer_name', documentation: i18n.layer_get_id.layer_name }
         ],
         signature: '(layer_name)'
     },
 	layer_get_id_at_depth: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_id_at_depth.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'depth', documentation: i18n.layer_get_id_at_depth.depth }
         ],
         signature: '(depth)'
     },
 	layer_get_depth: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_depth.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_depth.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_create: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_create.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'name*', documentation: i18n. },
-            { label: '...', documentation: i18n..more }
+            { label: 'depth', documentation: i18n.layer_create.depth },
+            { label: 'name*', documentation: i18n.layer_create.name },
+            { label: '...', documentation: i18n.layer_create.more }
         ],
         signature: '(depth, name*, ...)'
     },
 	layer_destroy: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_destroy.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_destroy.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_destroy_instances: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_destroy_instances.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_destroy_instances.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_add_instance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_add_instance.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'instance', documentation: i18n..instance }
+            { label: 'layer_id', documentation: i18n.layer_add_instance.layer_id },
+            { label: 'instance', documentation: i18n.layer_add_instance.instance }
         ],
         signature: '(layer_id, instance)'
     },
 	layer_has_instance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_has_instance.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'instance', documentation: i18n..instance }
+            { label: 'layer_id', documentation: i18n.layer_has_instance.layer_id },
+            { label: 'instance', documentation: i18n.layer_has_instance.instance }
         ],
         signature: '(layer_id, instance)'
     },
 	layer_set_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_set_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'visible', documentation: i18n..visible }
+            { label: 'layer_id', documentation: i18n.layer_set_visible.layer_id },
+            { label: 'visible', documentation: i18n.layer_set_visible.visible }
         ],
         signature: '(layer_id, visible)'
     },
 	layer_get_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_visible.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_exists: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_exists.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_exists.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'x', documentation: i18n..x }
+            { label: 'layer_id', documentation: i18n.layer_x.layer_id },
+            { label: 'x', documentation: i18n.layer_x.x }
         ],
         signature: '(layer_id, x)'
     },
 	layer_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'y', documentation: i18n..y }
+            { label: 'layer_id', documentation: i18n.layer_y.layer_id },
+            { label: 'y', documentation: i18n.layer_y.y }
         ],
         signature: '(layer_id, y)'
     },
 	layer_get_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_x.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_get_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_y.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_hspeed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_hspeed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'layer_id', documentation: i18n.layer_hspeed.layer_id },
+            { label: 'speed', documentation: i18n.layer_hspeed.speed }
         ],
         signature: '(layer_id, speed)'
     },
 	layer_vspeed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_vspeed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'layer_id', documentation: i18n.layer_vspeed.layer_id },
+            { label: 'speed', documentation: i18n.layer_vspeed.speed }
         ],
         signature: '(layer_id, speed)'
     },
 	layer_get_hspeed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_hspeed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_hspeed.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_get_vspeed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_vspeed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_vspeed.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_script_begin: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_script_begin.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'script', documentation: i18n..script }
+            { label: 'layer_id', documentation: i18n.layer_script_begin.layer_id },
+            { label: 'script', documentation: i18n.layer_script_begin.script }
         ],
         signature: '(layer_id, script)'
     },
 	layer_script_end: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_script_end.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'script', documentation: i18n..script }
+            { label: 'layer_id', documentation: i18n.layer_script_end.layer_id },
+            { label: 'script', documentation: i18n.layer_script_end.script }
         ],
         signature: '(layer_id, script)'
     },
 	layer_shader: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_shader.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'shader', documentation: i18n..shader }
+            { label: 'layer_id', documentation: i18n.layer_shader.layer_id },
+            { label: 'shader', documentation: i18n.layer_shader.shader }
         ],
         signature: '(layer_id, shader)'
     },
 	layer_get_script_begin: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_script_begin.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_script_begin.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_get_script_end: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_script_end.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_script_end.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_get_shader: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_shader.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_shader.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_set_target_room: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_set_target_room.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'room', documentation: i18n. }
+            { label: 'room', documentation: i18n.layer_set_target_room.room }
         ],
         signature: '(room)'
     },
 	layer_get_target_room: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_target_room.desc,
         available: datasimple.gms2
     },
 	layer_reset_target_room: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_reset_target_room.desc,
         available: datasimple.gms2
     },
 	layer_get_all: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_all.desc,
         available: datasimple.gms2
     },
 	layer_get_all_elements: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_all_elements.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_all_elements.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_get_name: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_name.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_get_name.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_depth: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_depth.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'layer_id', documentation: i18n.layer_depth.layer_id },
+            { label: 'depth', documentation: i18n.layer_depth.depth }
         ],
         signature: '(layer_id, depth)'
     },
 	layer_get_element_layer: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_element_layer.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'element_id', documentation: i18n..element_id }
+            { label: 'element_id', documentation: i18n.layer_get_element_layer.element_id }
         ],
         signature: '(element_id)'
     },
 	layer_get_element_type: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_element_type.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'element_id', documentation: i18n..element_id }
+            { label: 'element_id', documentation: i18n.layer_get_element_type.element_id }
         ],
         signature: '(element_id)'
     },
 	layer_element_move: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_element_move.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'element_id', documentation: i18n..element_id },
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'element_id', documentation: i18n.layer_element_move.element_id },
+            { label: 'layer_id', documentation: i18n.layer_element_move.layer_id }
         ],
         signature: '(element_id, layer_id)'
     },
 	layer_force_draw_depth: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_force_draw_depth.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'force', documentation: i18n..force },
-            { label: 'depth', documentation: i18n..depth }
+            { label: 'force', documentation: i18n.layer_force_draw_depth.force },
+            { label: 'depth', documentation: i18n.layer_force_draw_depth.depth }
         ],
         signature: '(force, depth)'
     },
 	layer_is_draw_depth_forced: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_is_draw_depth_forced.desc,
         available: datasimple.gms2
     },
 	layer_get_forced_depth: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_get_forced_depth.desc,
         available: datasimple.gms2
     },
 	layer_background_get_id: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_id.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_background_get_id.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_background_exists: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_exists.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'layer_id', documentation: i18n.layer_background_exists.layer_id },
+            { label: 'background_element_id', documentation: i18n.layer_background_exists.background_element_id }
         ],
         signature: '(layer_id, background_element_id)'
     },
 	layer_background_create: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_create.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'layer_id', documentation: i18n.layer_background_create.layer_id },
+            { label: 'sprite', documentation: i18n.layer_background_create.sprite }
         ],
         signature: '(layer_id, sprite)'
     },
 	layer_background_destroy: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_destroy.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_destroy.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'visible', documentation: i18n..visible }
+            { label: 'background_element_id', documentation: i18n.layer_background_visible.background_element_id },
+            { label: 'visible', documentation: i18n.layer_background_visible.visible }
         ],
         signature: '(background_element_id, visible)'
     },
 	layer_background_change: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_change.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'background_element_id', documentation: i18n.layer_background_change.background_element_id },
+            { label: 'sprite', documentation: i18n.layer_background_change.sprite }
         ],
         signature: '(background_element_id, sprite)'
     },
 	layer_background_sprite: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_sprite.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'background_element_id', documentation: i18n.layer_background_sprite.background_element_id },
+            { label: 'sprite', documentation: i18n.layer_background_sprite.sprite }
         ],
         signature: '(background_element_id, sprite)'
     },
 	layer_background_htiled: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_htiled.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'tiled', documentation: i18n. }
+            { label: 'background_element_id', documentation: i18n.layer_background_htiled.background_element_id },
+            { label: 'tiled', documentation: i18n.layer_background_htiled.tiled }
         ],
         signature: '(background_element_id, tiled)'
     },
 	layer_background_vtiled: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_vtiled.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'tiled', documentation: i18n. }
+            { label: 'background_element_id', documentation: i18n.layer_background_vtiled.background_element_id },
+            { label: 'tiled', documentation: i18n.layer_background_vtiled.tiled }
         ],
         signature: '(background_element_id, tiled)'
     },
 	layer_background_stretch: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_stretch.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'stretch', documentation: i18n. }
+            { label: 'background_element_id', documentation: i18n.layer_background_stretch.background_element_id },
+            { label: 'stretch', documentation: i18n.layer_background_stretch.stretch }
         ],
         signature: '(background_element_id, stretch)'
     },
 	layer_background_yscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_yscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'yscale', documentation: i18n..yscale }
+            { label: 'background_element_id', documentation: i18n.layer_background_yscale.background_element_id },
+            { label: 'yscale', documentation: i18n.layer_background_yscale.yscale }
         ],
         signature: '(background_element_id, yscale)'
     },
 	layer_background_xscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_xscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'xscale', documentation: i18n..xscale }
+            { label: 'background_element_id', documentation: i18n.layer_background_xscale.background_element_id },
+            { label: 'xscale', documentation: i18n.layer_background_xscale.xscale }
         ],
         signature: '(background_element_id, xscale)'
     },
 	layer_background_blend: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_blend.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'col', documentation: i18n..col }
+            { label: 'background_element_id', documentation: i18n.layer_background_blend.background_element_id },
+            { label: 'col', documentation: i18n.layer_background_blend.col }
         ],
         signature: '(background_element_id, col)'
     },
 	layer_background_alpha: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_alpha.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'background_element_id', documentation: i18n.layer_background_alpha.background_element_id },
+            { label: 'alpha', documentation: i18n.layer_background_alpha.alpha }
         ],
         signature: '(background_element_id, alpha)'
     },
 	layer_background_index: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_index.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'image_index', documentation: i18n. }
+            { label: 'background_element_id', documentation: i18n.layer_background_index.background_element_id },
+            { label: 'image_index', documentation: i18n.layer_background_index.image_index }
         ],
         signature: '(background_element_id, image_index)'
     },
 	layer_background_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_speed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id },
-            { label: 'image_speed', documentation: i18n. }
+            { label: 'background_element_id', documentation: i18n.layer_background_speed.background_element_id },
+            { label: 'image_speed', documentation: i18n.layer_background_speed.image_speed }
         ],
         signature: '(background_element_id, image_speed)'
     },
 	layer_background_get_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_visible.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_sprite: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_sprite.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_sprite.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_htiled: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_htiled.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_htiled.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_vtiled: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_vtiled.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_vtiled.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_stretch: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_stretch.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_stretch.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_yscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_yscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_yscale.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_xscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_xscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_xscale.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_blend: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_blend.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_blend.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_alpha: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_alpha.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_alpha.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_index: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_index.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_index.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_background_get_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_background_get_speed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'background_element_id', documentation: i18n..background_element_id }
+            { label: 'background_element_id', documentation: i18n.layer_background_get_speed.background_element_id }
         ],
         signature: '(background_element_id)'
     },
 	layer_sprite_get_id: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_id.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'sprite_element_name', documentation: i18n..sprite_element_name }
+            { label: 'layer_id', documentation: i18n.layer_sprite_get_id.layer_id },
+            { label: 'sprite_element_name', documentation: i18n.layer_sprite_get_id.sprite_element_name }
         ],
         signature: '(layer_id, sprite_element_name)'
     },
 	layer_sprite_exists: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_exists.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'layer_id', documentation: i18n.layer_sprite_exists.layer_id },
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_exists.sprite_element_id }
         ],
         signature: '(layer_id, sprite_element_id)'
     },
 	layer_sprite_create: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_create.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'layer_id', documentation: i18n.layer_sprite_create.layer_id },
+            { label: 'x', documentation: i18n.layer_sprite_create.x },
+            { label: 'y', documentation: i18n.layer_sprite_create.y },
+            { label: 'sprite', documentation: i18n.layer_sprite_create.sprite }
         ],
         signature: '(layer_id, x, y, sprite)'
     },
 	layer_sprite_destroy: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_destroy.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_destroy.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_change: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_change.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_change.sprite_element_id },
+            { label: 'sprite', documentation: i18n.layer_sprite_change.sprite }
         ],
         signature: '(sprite_element_id, sprite)'
     },
 	layer_sprite_index: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_index.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'image_index', documentation: i18n. }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_index.sprite_element_id },
+            { label: 'image_index', documentation: i18n.layer_sprite_index.image_index }
         ],
         signature: '(sprite_element_id, image_index)'
     },
 	layer_sprite_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_speed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'image_speed', documentation: i18n. }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_speed.sprite_element_id },
+            { label: 'image_speed', documentation: i18n.layer_sprite_speed.image_speed }
         ],
         signature: '(sprite_element_id, image_speed)'
     },
 	layer_sprite_xscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_xscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'xscale', documentation: i18n..xscale }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_xscale.sprite_element_id },
+            { label: 'xscale', documentation: i18n.layer_sprite_xscale.xscale }
         ],
         signature: '(sprite_element_id, xscale)'
     },
 	layer_sprite_yscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_yscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'yscale', documentation: i18n..yscale }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_yscale.sprite_element_id },
+            { label: 'yscale', documentation: i18n.layer_sprite_yscale.yscale }
         ],
         signature: '(sprite_element_id, yscale)'
     },
 	layer_sprite_angle: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_angle.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_angle.sprite_element_id },
+            { label: 'angle', documentation: i18n.layer_sprite_angle.angle }
         ],
         signature: '(sprite_element_id, angle)'
     },
 	layer_sprite_blend: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_blend.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'col', documentation: i18n..col }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_blend.sprite_element_id },
+            { label: 'col', documentation: i18n.layer_sprite_blend.col }
         ],
         signature: '(sprite_element_id, col)'
     },
 	layer_sprite_alpha: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_alpha.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_alpha.sprite_element_id },
+            { label: 'alpha', documentation: i18n.layer_sprite_alpha.alpha }
         ],
         signature: '(sprite_element_id, alpha)'
     },
 	layer_sprite_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'x', documentation: i18n..x }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_x.sprite_element_id },
+            { label: 'x', documentation: i18n.layer_sprite_x.x }
         ],
         signature: '(sprite_element_id, x)'
     },
 	layer_sprite_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id },
-            { label: 'y', documentation: i18n..y }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_y.sprite_element_id },
+            { label: 'y', documentation: i18n.layer_sprite_y.y }
         ],
         signature: '(sprite_element_id, y)'
     },
 	layer_sprite_get_sprite: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_sprite.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_sprite.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_index: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_index.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_index.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_speed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_speed.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_xscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_xscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_xscale.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_yscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_yscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_yscale.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_angle: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_angle.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_angle.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_blend: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_blend.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_blend.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_alpha: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_alpha.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_alpha.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_x.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_sprite_get_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_sprite_get_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'sprite_element_id', documentation: i18n..sprite_element_id }
+            { label: 'sprite_element_id', documentation: i18n.layer_sprite_get_y.sprite_element_id }
         ],
         signature: '(sprite_element_id)'
     },
 	layer_tilemap_get_id: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tilemap_get_id.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.layer_tilemap_get_id.layer_id }
         ],
         signature: '(layer_id)'
     },
 	layer_tilemap_exists: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tilemap_exists.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'layer_id', documentation: i18n.layer_tilemap_exists.layer_id },
+            { label: 'tilemap_element_id', documentation: i18n.layer_tilemap_exists.tilemap_element_id }
         ],
         signature: '(layer_id, tilemap_element_id)'
     },
 	layer_tilemap_create: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tilemap_create.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'tileset', documentation: i18n..tileset },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'layer_id', documentation: i18n.layer_tilemap_create.layer_id },
+            { label: 'x', documentation: i18n.layer_tilemap_create.x },
+            { label: 'y', documentation: i18n.layer_tilemap_create.y },
+            { label: 'tileset', documentation: i18n.layer_tilemap_create.tileset },
+            { label: 'width', documentation: i18n.layer_tilemap_create.width },
+            { label: 'height', documentation: i18n.layer_tilemap_create.height }
         ],
         signature: '(layer_id, x, y, tileset, width, height)'
     },
 	layer_tilemap_destroy: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tilemap_destroy.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.layer_tilemap_destroy.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_tileset: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_tileset.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'tileset', documentation: i18n..tileset }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_tileset.tilemap_element_id },
+            { label: 'tileset', documentation: i18n.tilemap_tileset.tileset }
         ],
         signature: '(tilemap_element_id, tileset)'
     },
 	tilemap_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'x', documentation: i18n..x }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_x.tilemap_element_id },
+            { label: 'x', documentation: i18n.tilemap_x.x }
         ],
         signature: '(tilemap_element_id, x)'
     },
 	tilemap_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_y.tilemap_element_id },
+            { label: 'y', documentation: i18n.tilemap_y.y }
         ],
         signature: '(tilemap_element_id, y)'
     },
 	tilemap_set: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_set.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'cell_x', documentation: i18n. },
-            { label: 'cell_y', documentation: i18n. }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_set.tilemap_element_id },
+            { label: 'tiledata', documentation: i18n.tilemap_set.tiledata },
+            { label: 'cell_x', documentation: i18n.tilemap_set.cell_x },
+            { label: 'cell_y', documentation: i18n.tilemap_set.cell_y }
         ],
         signature: '(tilemap_element_id, tiledata, cell_x, cell_y)'
     },
 	tilemap_set_at_pixel: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_set_at_pixel.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_set_at_pixel.tilemap_element_id },
+            { label: 'tiledata', documentation: i18n.tilemap_set_at_pixel.tiledata },
+            { label: 'x', documentation: i18n.tilemap_set_at_pixel.x },
+            { label: 'y', documentation: i18n.tilemap_set_at_pixel.y }
         ],
         signature: '(tilemap_element_id, tiledata, x, y)'
     },
 	tilemap_get_tileset: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_tileset.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_tileset.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_width: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_tile_width.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_tile_width.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_tile_height: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_tile_height.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_tile_height.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_width: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_width.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_width.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_height: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_height.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_height.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_x.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_y.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'cell_x', documentation: i18n. },
-            { label: 'cell_y', documentation: i18n. }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get.tilemap_element_id },
+            { label: 'cell_x', documentation: i18n.tilemap_get.cell_x },
+            { label: 'cell_y', documentation: i18n.tilemap_get.cell_y }
         ],
         signature: '(tilemap_element_id, cell_x, cell_y)'
     },
 	tilemap_get_at_pixel: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_at_pixel.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_at_pixel.tilemap_element_id },
+            { label: 'x', documentation: i18n.tilemap_get_at_pixel.x },
+            { label: 'y', documentation: i18n.tilemap_get_at_pixel.y }
         ],
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_x_at_pixel: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_cell_x_at_pixel.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_cell_x_at_pixel.tilemap_element_id },
+            { label: 'x', documentation: i18n.tilemap_get_cell_x_at_pixel.x },
+            { label: 'y', documentation: i18n.tilemap_get_cell_x_at_pixel.y }
         ],
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_get_cell_y_at_pixel: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_cell_y_at_pixel.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_cell_y_at_pixel.tilemap_element_id },
+            { label: 'x', documentation: i18n.tilemap_get_cell_y_at_pixel.x },
+            { label: 'y', documentation: i18n.tilemap_get_cell_y_at_pixel.y }
         ],
         signature: '(tilemap_element_id, x, y)'
     },
 	tilemap_clear: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_clear.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_clear.tilemap_element_id },
+            { label: 'tiledata', documentation: i18n.tilemap_clear.tiledata }
         ],
         signature: '(tilemap_element_id, tiledata)'
     },
 	draw_tilemap: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.draw_tilemap.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tilemap_element_id', documentation: i18n.draw_tilemap.tilemap_element_id },
+            { label: 'x', documentation: i18n.draw_tilemap.x },
+            { label: 'y', documentation: i18n.draw_tilemap.y }
         ],
         signature: '(tilemap_element_id, x, y)'
     },
 	draw_tile: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.draw_tile.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tileset', documentation: i18n..tileset },
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'frame', documentation: i18n..frame },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tileset', documentation: i18n.draw_tile.tileset },
+            { label: 'tiledata', documentation: i18n.draw_tile.tiledata },
+            { label: 'frame', documentation: i18n.draw_tile.frame },
+            { label: 'x', documentation: i18n.draw_tile.x },
+            { label: 'y', documentation: i18n.draw_tile.y }
         ],
         signature: '(tileset, tiledata, frame, x, y)'
     },
 	tilemap_set_global_mask: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
-        available: datasimple.gms2
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_set_global_mask.desc,
+        available: datasimple.gms2,
+        parameters: [
+            { label: 'mask', documentation: i18n.tilemap_set_global_mask.mask }
+        ],
+        signature: '(mask)'
     },
 	tilemap_get_global_mask: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_global_mask.desc,
         available: datasimple.gms2
     },
 	tilemap_set_mask: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_set_mask.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id },
-            { label: 'mask', documentation: i18n. }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_set_mask.tilemap_element_id },
+            { label: 'mask', documentation: i18n.tilemap_set_mask.mask }
         ],
         signature: '(tilemap_element_id, mask)'
     },
 	tilemap_get_mask: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_mask.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_mask.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tilemap_get_frame: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tilemap_get_frame.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tilemap_element_id', documentation: i18n..tilemap_element_id }
+            { label: 'tilemap_element_id', documentation: i18n.tilemap_get_frame.tilemap_element_id }
         ],
         signature: '(tilemap_element_id)'
     },
 	tile_set_empty: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_set_empty.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tiledata', documentation: i18n.tile_set_empty.tiledata }
         ],
         signature: '(tiledata)'
     },
 	tile_set_index: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_set_index.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'tileindex', documentation: i18n. }
+            { label: 'tiledata', documentation: i18n.tile_set_index.tiledata },
+            { label: 'tileindex', documentation: i18n.tile_set_index.tileindex }
         ],
         signature: '(tiledata, tileindex)'
     },
 	tile_set_flip: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_set_flip.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'flip', documentation: i18n. }
+            { label: 'tiledata', documentation: i18n.tile_set_flip.tiledata },
+            { label: 'flip', documentation: i18n.tile_set_flip.flip }
         ],
         signature: '(tiledata, flip)'
     },
 	tile_set_mirror: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_set_mirror.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'mirror', documentation: i18n. }
+            { label: 'tiledata', documentation: i18n.tile_set_mirror.tiledata },
+            { label: 'mirror', documentation: i18n.tile_set_mirror.mirror }
         ],
         signature: '(tiledata, mirror)'
     },
 	tile_set_rotate: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_set_rotate.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata },
-            { label: 'rotate', documentation: i18n. }
+            { label: 'tiledata', documentation: i18n.tile_set_rotate.tiledata },
+            { label: 'rotate', documentation: i18n.tile_set_rotate.rotate }
         ],
         signature: '(tiledata, rotate)'
     },
 	tile_get_empty: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_get_empty.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tiledata', documentation: i18n.tile_get_empty.tiledata }
         ],
         signature: '(tiledata)'
     },
 	tile_get_index: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_get_index.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tiledata', documentation: i18n.tile_get_index.tiledata }
         ],
         signature: '(tiledata)'
     },
 	tile_get_flip: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_get_flip.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tiledata', documentation: i18n.tile_get_flip.tiledata }
         ],
         signature: '(tiledata)'
     },
 	tile_get_mirror: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_get_mirror.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tiledata', documentation: i18n.tile_get_mirror.tiledata }
         ],
         signature: '(tiledata)'
     },
 	tile_get_rotate: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.tile_get_rotate.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tiledata', documentation: i18n..tiledata }
+            { label: 'tiledata', documentation: i18n.tile_get_rotate.tiledata }
         ],
         signature: '(tiledata)'
     },
 	layer_tile_exists: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_exists.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: '...', documentation: i18n..more }
+            { label: 'layer_id', documentation: i18n.layer_tile_exists.layer_id },
+            { label: 'tile_element_id', documentation: i18n.layer_tile_exists.tile_element_id },
+            { label: '...', documentation: i18n.layer_tile_exists.more }
         ],
         signature: '(layer_id, tile_element_id, ...)'
     },
 	layer_tile_create: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_create.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'tileset', documentation: i18n..tileset },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'layer_id', documentation: i18n.layer_tile_create.layer_id },
+            { label: 'x', documentation: i18n.layer_tile_create.x },
+            { label: 'y', documentation: i18n.layer_tile_create.y },
+            { label: 'tileset', documentation: i18n.layer_tile_create.tileset },
+            { label: 'left', documentation: i18n.layer_tile_create.left },
+            { label: 'top', documentation: i18n.layer_tile_create.top },
+            { label: 'width', documentation: i18n.layer_tile_create.width },
+            { label: 'height', documentation: i18n.layer_tile_create.height }
         ],
         signature: '(layer_id, x, y, tileset, left, top, width, height)'
     },
 	layer_tile_destroy: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_destroy.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_destroy.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_change: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_change.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_change.tile_element_id },
+            { label: 'sprite', documentation: i18n.layer_tile_change.sprite }
         ],
         signature: '(tile_element_id, sprite)'
     },
 	layer_tile_xscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_xscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'xscale', documentation: i18n..xscale }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_xscale.tile_element_id },
+            { label: 'xscale', documentation: i18n.layer_tile_xscale.xscale }
         ],
         signature: '(tile_element_id, xscale)'
     },
 	layer_tile_yscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_yscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'yscale', documentation: i18n..yscale }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_yscale.tile_element_id },
+            { label: 'yscale', documentation: i18n.layer_tile_yscale.yscale }
         ],
         signature: '(tile_element_id, yscale)'
     },
 	layer_tile_blend: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_blend.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'col', documentation: i18n..col }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_blend.tile_element_id },
+            { label: 'col', documentation: i18n.layer_tile_blend.col }
         ],
         signature: '(tile_element_id, col)'
     },
 	layer_tile_alpha: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_alpha.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_alpha.tile_element_id },
+            { label: 'alpha', documentation: i18n.layer_tile_alpha.alpha }
         ],
         signature: '(tile_element_id, alpha)'
     },
 	layer_tile_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'x', documentation: i18n..x }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_x.tile_element_id },
+            { label: 'x', documentation: i18n.layer_tile_x.x }
         ],
         signature: '(tile_element_id, x)'
     },
 	layer_tile_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'y', documentation: i18n..y }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_y.tile_element_id },
+            { label: 'y', documentation: i18n.layer_tile_y.y }
         ],
         signature: '(tile_element_id, y)'
     },
 	layer_tile_region: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_region.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'left', documentation: i18n..left },
-            { label: 'top', documentation: i18n..top },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_region.tile_element_id },
+            { label: 'left', documentation: i18n.layer_tile_region.left },
+            { label: 'top', documentation: i18n.layer_tile_region.top },
+            { label: 'width', documentation: i18n.layer_tile_region.width },
+            { label: 'height', documentation: i18n.layer_tile_region.height }
         ],
         signature: '(tile_element_id, left, top, width, height)'
     },
 	layer_tile_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id },
-            { label: 'visible', documentation: i18n..visible }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_visible.tile_element_id },
+            { label: 'visible', documentation: i18n.layer_tile_visible.visible }
         ],
         signature: '(tile_element_id, visible)'
     },
 	layer_tile_get_sprite: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_sprite.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_sprite.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_xscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_xscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_xscale.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_yscale: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_yscale.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_yscale.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_blend: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_blend.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_blend.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_alpha: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_alpha.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_alpha.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_x.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_y.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_region: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_region.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_region.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_tile_get_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_tile_get_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'tile_element_id', documentation: i18n..tile_element_id }
+            { label: 'tile_element_id', documentation: i18n.layer_tile_get_visible.tile_element_id }
         ],
         signature: '(tile_element_id)'
     },
 	layer_instance_get_instance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.layer_instance_get_instance.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'instance_element_id', documentation: i18n. }
+            { label: 'instance_element_id', documentation: i18n.layer_instance_get_instance.instance_element_id }
         ],
         signature: '(instance_element_id)'
     },
 	instance_activate_layer: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.instance_activate_layer.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.instance_activate_layer.layer_id }
         ],
         signature: '(layer_id)'
     },
 	instance_deactivate_layer: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.instance_deactivate_layer.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'layer_id', documentation: i18n..layer_id }
+            { label: 'layer_id', documentation: i18n.instance_deactivate_layer.layer_id }
         ],
         signature: '(layer_id)'
     },
 	camera_create: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_create.desc,
         available: datasimple.gms2
     },
 	camera_create_view: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_create_view.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'room_x', documentation: i18n..room_x },
-            { label: 'room_y', documentation: i18n..room_y },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height },
-            { label: 'angle', documentation: i18n..angle },
-            { label: 'object', documentation: i18n..object },
-            { label: 'x_speed', documentation: i18n..x_speed },
-            { label: 'y_speed', documentation: i18n..y_speed },
-            { label: 'x_border', documentation: i18n..x_border },
-            { label: 'y_border', documentation: i18n..y_border }
+            { label: 'room_x', documentation: i18n.camera_create_view.room_x },
+            { label: 'room_y', documentation: i18n.camera_create_view.room_y },
+            { label: 'width', documentation: i18n.camera_create_view.width },
+            { label: 'height', documentation: i18n.camera_create_view.height },
+            { label: 'angle', documentation: i18n.camera_create_view.angle },
+            { label: 'object', documentation: i18n.camera_create_view.object },
+            { label: 'x_speed', documentation: i18n.camera_create_view.x_speed },
+            { label: 'y_speed', documentation: i18n.camera_create_view.y_speed },
+            { label: 'x_border', documentation: i18n.camera_create_view.x_border },
+            { label: 'y_border', documentation: i18n.camera_create_view.y_border }
         ],
         signature: '(room_x, room_y, width, height, angle, object, x_speed, y_speed, x_border, y_border)'
     },
 	camera_destroy: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_destroy.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_destroy.camera }
         ],
         signature: '(camera)'
     },
 	camera_apply: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_apply.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_apply.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_active: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_active.desc,
         available: datasimple.gms2
     },
 	camera_get_default: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_default.desc,
         available: datasimple.gms2
     },
 	camera_set_default: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_default.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_set_default.camera }
         ],
         signature: '(camera)'
     },
 	camera_set_view_mat: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_mat.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'matrix', documentation: i18n..matrix }
+            { label: 'camera', documentation: i18n.camera_set_view_mat.camera },
+            { label: 'matrix', documentation: i18n.camera_set_view_mat.matrix }
         ],
         signature: '(camera, matrix)'
     },
 	camera_set_proj_mat: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_proj_mat.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'matrix', documentation: i18n..matrix }
+            { label: 'camera', documentation: i18n.camera_set_proj_mat.camera },
+            { label: 'matrix', documentation: i18n.camera_set_proj_mat.matrix }
         ],
         signature: '(camera, matrix)'
     },
 	camera_set_update_script: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_update_script.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'script', documentation: i18n..script }
+            { label: 'camera', documentation: i18n.camera_set_update_script.camera },
+            { label: 'script', documentation: i18n.camera_set_update_script.script }
         ],
         signature: '(camera, script)'
     },
 	camera_set_begin_script: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_begin_script.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'script', documentation: i18n..script }
+            { label: 'camera', documentation: i18n.camera_set_begin_script.camera },
+            { label: 'script', documentation: i18n.camera_set_begin_script.script }
         ],
         signature: '(camera, script)'
     },
 	camera_set_end_script: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_end_script.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'script', documentation: i18n..script }
+            { label: 'camera', documentation: i18n.camera_set_end_script.camera },
+            { label: 'script', documentation: i18n.camera_set_end_script.script }
         ],
         signature: '(camera, script)'
     },
 	camera_set_view_pos: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_pos.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'camera', documentation: i18n.camera_set_view_pos.camera },
+            { label: 'x', documentation: i18n.camera_set_view_pos.x },
+            { label: 'y', documentation: i18n.camera_set_view_pos.y }
         ],
         signature: '(camera, x, y)'
     },
 	camera_set_view_size: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_size.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'width', documentation: i18n..width },
-            { label: 'height', documentation: i18n..height }
+            { label: 'camera', documentation: i18n.camera_set_view_size.camera },
+            { label: 'width', documentation: i18n.camera_set_view_size.width },
+            { label: 'height', documentation: i18n.camera_set_view_size.height }
         ],
         signature: '(camera, width, height)'
     },
 	camera_set_view_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_speed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'x_speed', documentation: i18n..x_speed },
-            { label: 'y_speed', documentation: i18n..y_speed }
+            { label: 'camera', documentation: i18n.camera_set_view_speed.camera },
+            { label: 'x_speed', documentation: i18n.camera_set_view_speed.x_speed },
+            { label: 'y_speed', documentation: i18n.camera_set_view_speed.y_speed }
         ],
         signature: '(camera, x_speed, y_speed)'
     },
 	camera_set_view_border: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_border.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'x_border', documentation: i18n..x_border },
-            { label: 'y_border', documentation: i18n..y_border }
+            { label: 'camera', documentation: i18n.camera_set_view_border.camera },
+            { label: 'x_border', documentation: i18n.camera_set_view_border.x_border },
+            { label: 'y_border', documentation: i18n.camera_set_view_border.y_border }
         ],
         signature: '(camera, x_border, y_border)'
     },
 	camera_set_view_angle: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_angle.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'camera', documentation: i18n.camera_set_view_angle.camera },
+            { label: 'angle', documentation: i18n.camera_set_view_angle.angle }
         ],
         signature: '(camera, angle)'
     },
 	camera_set_view_target: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_set_view_target.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera },
-            { label: 'object', documentation: i18n..object }
+            { label: 'camera', documentation: i18n.camera_set_view_target.camera },
+            { label: 'object', documentation: i18n.camera_set_view_target.object }
         ],
         signature: '(camera, object)'
     },
 	camera_get_view_mat: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_mat.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_mat.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_proj_mat: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_proj_mat.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_proj_mat.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_update_script: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_update_script.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_update_script.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_begin_script: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_begin_script.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_begin_script.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_end_script: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_end_script.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_end_script.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_x.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_y.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_width: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_width.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_width.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_height: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_height.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_height.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_speed_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_speed_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_speed_x.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_speed_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_speed_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_speed_y.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_border_x: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_border_x.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_border_x.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_border_y: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_border_y.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_border_y.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_angle: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_angle.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_angle.camera }
         ],
         signature: '(camera)'
     },
 	camera_get_view_target: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.camera_get_view_target.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'camera', documentation: i18n.camera_get_view_target.camera }
         ],
         signature: '(camera)'
     },
 	view_get_camera: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_camera.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_camera.view }
         ],
         signature: '(view)'
     },
 	view_get_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_visible.view }
         ],
         signature: '(view)'
     },
 	view_get_xport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_xport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_xport.view }
         ],
         signature: '(view)'
     },
 	view_get_yport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_yport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_yport.view }
         ],
         signature: '(view)'
     },
 	view_get_wport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_wport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_wport.view }
         ],
         signature: '(view)'
     },
 	view_get_hport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_hport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_hport.view }
         ],
         signature: '(view)'
     },
 	view_get_surface_id: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_get_surface_id.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view }
+            { label: 'view', documentation: i18n.view_get_surface_id.view }
         ],
         signature: '(view)'
     },
 	view_set_camera: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_camera.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'camera', documentation: i18n..camera }
+            { label: 'view', documentation: i18n.view_set_camera.view },
+            { label: 'camera', documentation: i18n.view_set_camera.camera }
         ],
         signature: '(view, camera)'
     },
 	view_set_visible: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_visible.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'visible', documentation: i18n..visible }
+            { label: 'view', documentation: i18n.view_set_visible.view },
+            { label: 'visible', documentation: i18n.view_set_visible.visible }
         ],
         signature: '(view, visible)'
     },
 	view_set_xport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_xport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'xport', documentation: i18n..xport }
+            { label: 'view', documentation: i18n.view_set_xport.view },
+            { label: 'xport', documentation: i18n.view_set_xport.xport }
         ],
         signature: '(view, xport)'
     },
 	view_set_yport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_yport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'yport', documentation: i18n..yport }
+            { label: 'view', documentation: i18n.view_set_yport.view },
+            { label: 'yport', documentation: i18n.view_set_yport.yport }
         ],
         signature: '(view, yport)'
     },
 	view_set_wport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_wport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'wport', documentation: i18n..wport }
+            { label: 'view', documentation: i18n.view_set_wport.view },
+            { label: 'wport', documentation: i18n.view_set_wport.wport }
         ],
         signature: '(view, wport)'
     },
 	view_set_hport: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_hport.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'hport', documentation: i18n..hport }
+            { label: 'view', documentation: i18n.view_set_hport.view },
+            { label: 'hport', documentation: i18n.view_set_hport.hport }
         ],
         signature: '(view, hport)'
     },
 	view_set_surface_id: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.view_set_surface_id.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'view', documentation: i18n..view },
-            { label: 'surface_id', documentation: i18n. }
+            { label: 'view', documentation: i18n.view_set_surface_id.view },
+            { label: 'surface_id', documentation: i18n.view_set_surface_id.surface_id }
         ],
         signature: '(view, surface_id)'
     },
 	gesture_drag_time: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_drag_time.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'time', documentation: i18n..time }
+            { label: 'time', documentation: i18n.gesture_drag_time.time }
         ],
         signature: '(time)'
     },
 	gesture_drag_distance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_drag_distance.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'distance', documentation: i18n. }
+            { label: 'distance', documentation: i18n.gesture_drag_distance.distance }
         ],
         signature: '(distance)'
     },
 	gesture_flick_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_flick_speed.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'speed', documentation: i18n..speed }
+            { label: 'speed', documentation: i18n.gesture_flick_speed.speed }
         ],
         signature: '(speed)'
     },
 	gesture_double_tap_time: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_double_tap_time.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'time', documentation: i18n..time }
+            { label: 'time', documentation: i18n.gesture_double_tap_time.time }
         ],
         signature: '(time)'
     },
 	gesture_double_tap_distance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_double_tap_distance.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'distance', documentation: i18n. }
+            { label: 'distance', documentation: i18n.gesture_double_tap_distance.distance }
         ],
         signature: '(distance)'
     },
 	gesture_pinch_distance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_pinch_distance.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'distance', documentation: i18n. }
+            { label: 'distance', documentation: i18n.gesture_pinch_distance.distance }
         ],
         signature: '(distance)'
     },
 	gesture_pinch_angle_towards: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_pinch_angle_towards.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.gesture_pinch_angle_towards.angle }
         ],
         signature: '(angle)'
     },
 	gesture_pinch_angle_away: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_pinch_angle_away.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.gesture_pinch_angle_away.angle }
         ],
         signature: '(angle)'
     },
 	gesture_rotate_time: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_rotate_time.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'time', documentation: i18n..time }
+            { label: 'time', documentation: i18n.gesture_rotate_time.time }
         ],
         signature: '(time)'
     },
 	gesture_rotate_angle: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_rotate_angle.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'angle', documentation: i18n..angle }
+            { label: 'angle', documentation: i18n.gesture_rotate_angle.angle }
         ],
         signature: '(angle)'
     },
 	gesture_tap_count: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_tap_count.desc,
         available: datasimple.gms2,
         parameters: [
-            { label: 'enable', documentation: i18n..enable }
+            { label: 'enable', documentation: i18n.gesture_tap_count.enable }
         ],
         signature: '(enable)'
     },
 	gesture_get_drag_time: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_drag_time.desc,
         available: datasimple.gms2
     },
 	gesture_get_drag_distance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_drag_distance.desc,
         available: datasimple.gms2
     },
 	gesture_get_flick_speed: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_flick_speed.desc,
         available: datasimple.gms2
     },
 	gesture_get_double_tap_time: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_double_tap_time.desc,
         available: datasimple.gms2
     },
 	gesture_get_double_tap_distance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_double_tap_distance.desc,
         available: datasimple.gms2
     },
 	gesture_get_pinch_distance: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_pinch_distance.desc,
         available: datasimple.gms2
     },
 	gesture_get_pinch_angle_towards: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_pinch_angle_towards.desc,
         available: datasimple.gms2
     },
 	gesture_get_pinch_angle_away: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_pinch_angle_away.desc,
         available: datasimple.gms2
     },
 	gesture_get_rotate_time: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_rotate_time.desc,
         available: datasimple.gms2
     },
 	gesture_get_rotate_angle: {
-        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+        description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_rotate_angle.desc,
         available: datasimple.gms2
     },
 	gesture_get_tap_count: {
-		description: '[Function] (' + i18n_notice.new_2 + ')' + i18n..desc,
+		description: '[Function] (' + i18n_notice.new_2 + ')' + i18n.gesture_get_tap_count.desc,
         available: datasimple.gms2
 	}
 };
@@ -19510,23 +19515,8 @@ exports.globalvariables = {
 	ystart: {description: '[Variable]',available: datasimple.all},
 	view_enabled: {description: '[Variable]',available: datasimple.all},
 	view_current: {description: '[Variable]',available: datasimple.all},
-	background_alpha: {description: '[Variable]',available: datasimple.all},
-	background_blend: {description: '[Variable]',available: datasimple.all},
 	background_color: {description: '[Variable]',available: datasimple.all},
-	background_foreground: {description: '[Variable]',available: datasimple.all},
-	background_height: {description: '[Variable]',available: datasimple.all},
-	background_hspeed: {description: '[Variable]',available: datasimple.all},
-	background_htiled: {description: '[Variable]',available: datasimple.all},
-	background_index: {description: '[Variable]',available: datasimple.all},
 	background_showcolor: {description: '[Variable]',available: datasimple.all},
-	background_visible: {description: '[Variable]',available: datasimple.all},
-	background_vspeed: {description: '[Variable]',available: datasimple.all},
-	background_vtiled: {description: '[Variable]',available: datasimple.all},
-	background_width: {description: '[Variable]',available: datasimple.all},
-	background_x: {description: '[Variable]',available: datasimple.all},
-	background_xscale: {description: '[Variable]',available: datasimple.all},
-	background_y: {description: '[Variable]',available: datasimple.all},
-	background_yscale: {description: '[Variable]',available: datasimple.all},
 	background_visible: {description: '[Variable] [0..7]',available: datasimple.all},
 	background_foreground: {description: '[Variable] [0..7]',available: datasimple.all},
 	background_index: {description: '[Variable] [0..7]',available: datasimple.all},
@@ -19542,21 +19532,6 @@ exports.globalvariables = {
 	background_vspeed: {description: '[Variable] [0..7]',available: datasimple.all},
 	background_blend: {description: '[Variable] [0..7]',available: datasimple.all},
 	background_alpha: {description: '[Variable] [0..7]',available: datasimple.all},
-    view_visible: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_xview: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_yview: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_wview: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_hview: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_xport: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_yport: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_wport: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_hport: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_angle: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_hborder: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_vborder: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_hspeed: {description: '[Variable] [0..7]',available: datasimple.all},
-	view_vspeed: {description: '[Variable] [0..7]',available: datasimple.all},
-    view_object: {description: '[Variable] [0..7]',available: datasimple.all},
 
     //GameMaker 8.1 Only
     secure_mode: {description: '[Variable] (' + i18n_notice.gm_81_variable + ')',available: datasimple.gm81},
@@ -19565,21 +19540,21 @@ exports.globalvariables = {
 	gamemaker_version: {description: '[Variable] (' + i18n_notice.gm_81_variable + ')',available: datasimple.gm81},
     
     //Obsolete variables in GameMaker Studio 2
-    view_angle: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_hborder: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_hport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_hspeed: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_hview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_object: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_vborder: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_visible: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_vspeed: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_wport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_wview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_xport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_xview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_yport: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
-	view_yview: {description: '[Variable] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+    view_angle: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hborder: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hport: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hspeed: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_hview: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_object: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_vborder: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_visible: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_vspeed: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_wport: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_wview: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_xport: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_xview: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_yport: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
+	view_yview: {description: '[Variable] [0..7] (' + i18n_notice.obsolete_2_variable + ')',available: datasimple.ob2},
 
 	//New in GameMaker Studio 2
 	layer: {description: '[Variable] (' + i18n_notice.new_2 + ')',available: datasimple.gms2},
