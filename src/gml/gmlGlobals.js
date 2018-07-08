@@ -14988,1710 +14988,1710 @@ exports.globalfunctions = {
 
 	//GameMaker 8.1 Only
 	background_add_background: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.background_add_background.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'fname', documentation: i18n.background_add_background.fname }
         ],
         signature: '(fname)'
     },
     background_create_from_screen: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.background_create_from_screen.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth }
+            { label: 'x', documentation: i18n.background_create_from_screen.x },
+            { label: 'y', documentation: i18n.background_create_from_screen.y },
+            { label: 'w', documentation: i18n.background_create_from_screen.w },
+            { label: 'h', documentation: i18n.background_create_from_screen.h },
+            { label: 'removeback', documentation: i18n.background_create_from_screen.removeback },
+            { label: 'smooth', documentation: i18n.background_create_from_screen.smooth }
         ],
         signature: '(x, y, w, h, removeback, smooth)'
     },
     cd_close_door: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_close_door.desc,
         available: datasimple.gm81
     },
 	cd_init: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_init.desc,
         available: datasimple.gm81
     },
     cd_length: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_length.desc,
         available: datasimple.gm81
     },
 	cd_number: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_number.desc,
         available: datasimple.gm81
     },
 	cd_open_door: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_open_door.desc,
         available: datasimple.gm81
     },
 	cd_pause: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_pause.desc,
         available: datasimple.gm81
     },
 	cd_paused: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_paused.desc,
         available: datasimple.gm81
     },
 	cd_play: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_play.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'first', documentation: i18n..first },
-            { label: 'last', documentation: i18n..last }
+            { label: 'first', documentation: i18n.cd_play.first },
+            { label: 'last', documentation: i18n.cd_play.last }
         ],
         signature: '(first, last)'
     },
 	cd_playing: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_playing.desc,
         available: datasimple.gm81
     },
 	cd_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_position.desc,
         available: datasimple.gm81
     },
 	cd_present: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_present.desc,
         available: datasimple.gm81
     },
 	cd_resume: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_resume.desc,
         available: datasimple.gm81
     },
 	cd_set_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_set_position.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'pos', documentation: i18n..pos }
+            { label: 'pos', documentation: i18n.cd_set_position.pos }
         ],
         signature: '(pos)'
     },
 	cd_set_track_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_set_track_position.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'pos', documentation: i18n..pos }
+            { label: 'pos', documentation: i18n.cd_set_track_position.pos }
         ],
         signature: '(pos)'
     },
 	cd_stop: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_stop.desc,
         available: datasimple.gm81
     },
 	cd_track: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_track.desc,
         available: datasimple.gm81
     },
 	cd_track_length: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_track_length.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'n', documentation: i18n..n }
+            { label: 'n', documentation: i18n.cd_track_length.n }
         ],
         signature: '(n)'
     },
 	cd_track_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.cd_track_position.desc,
         available: datasimple.gm81
     },
     date_create_date: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.date_create_date.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'year', documentation: i18n. },
-            { label: 'month', documentation: i18n. },
-            { label: 'day', documentation: i18n. }
+            { label: 'year', documentation: i18n.date_create_date.year },
+            { label: 'month', documentation: i18n.date_create_date.month },
+            { label: 'day', documentation: i18n.date_create_date.day }
         ],
         signature: '(year, month, day)'
     },
     date_create_time: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.date_create_time.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'hour', documentation: i18n. },
-            { label: 'minute', documentation: i18n. },
-            { label: 'second', documentation: i18n. }
+            { label: 'hour', documentation: i18n.date_create_time.hour },
+            { label: 'minute', documentation: i18n.date_create_time.minute },
+            { label: 'second', documentation: i18n.date_create_time.second }
         ],
         signature: '(hour, minute, second)'
     },
 	date_current_date: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.date_current_date.desc,
         available: datasimple.gm81
     },
     date_current_time: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.date_current_time.desc,
         available: datasimple.gm81
     },
     date_valid_date: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.date_valid_date.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'year', documentation: i18n. },
-            { label: 'month', documentation: i18n. },
-            { label: 'day', documentation: i18n. }
+            { label: 'year', documentation: i18n.date_valid_date.year },
+            { label: 'month', documentation: i18n.date_valid_date.month },
+            { label: 'day', documentation: i18n.date_valid_date.day }
         ],
         signature: '(year, month, day)'
     },
     date_valid_time: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.date_valid_time.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'hour', documentation: i18n. },
-            { label: 'minute', documentation: i18n. },
-            { label: 'second', documentation: i18n. }
+            { label: 'hour', documentation: i18n.date_valid_time.hour },
+            { label: 'minute', documentation: i18n.date_valid_time.minute },
+            { label: 'second', documentation: i18n.date_valid_time.second }
         ],
         signature: '(hour, minute, second)'
     },
     discard_include_file: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.discard_include_file.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'fname', documentation: i18n.discard_include_file.fname }
         ],
         signature: '(fname)'
     },
 	disk_free: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.disk_free.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'drive', documentation: i18n. }
+            { label: 'drive', documentation: i18n.disk_free.drive }
         ],
         signature: '(drive)'
     },
 	disk_size: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.disk_size.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'drive', documentation: i18n. }
+            { label: 'drive', documentation: i18n.disk_size.drive }
         ],
         signature: '(drive)'
     },
 	display_set_all: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_set_all.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'frequency', documentation: i18n. },
-            { label: 'coldepth', documentation: i18n. }
+            { label: 'w', documentation: i18n.display_set_all.w },
+            { label: 'h', documentation: i18n.display_set_all.h },
+            { label: 'frequency', documentation: i18n.display_set_all.frequency },
+            { label: 'coldepth', documentation: i18n.display_set_all.coldepth }
         ],
         signature: '(w, h, frequency, coldepth)'
     },
 	display_set_colordepth: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_set_colordepth.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'coldepth', documentation: i18n. }
+            { label: 'coldepth', documentation: i18n.display_set_colordepth.coldepth }
         ],
         signature: '(coldepth)'
     },
 	display_set_frequency: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_set_frequency.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'frequency', documentation: i18n. }
+            { label: 'frequency', documentation: i18n.display_set_frequency.frequency }
         ],
         signature: '(frequency)'
     },
 	display_set_size: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_set_size.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'w', documentation: i18n.display_set_size.w },
+            { label: 'h', documentation: i18n.display_set_size.h }
         ],
         signature: '(w, h)'
     },
 	display_test_all: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_test_all.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'frequency', documentation: i18n. },
-            { label: 'coldepth', documentation: i18n. }
+            { label: 'w', documentation: i18n.display_test_all.w },
+            { label: 'h', documentation: i18n.display_test_all.h },
+            { label: 'frequency', documentation: i18n.display_test_all.frequency },
+            { label: 'coldepth', documentation: i18n.display_test_all.coldepth }
         ],
         signature: '(w, h, frequency, coldepth)'
     },
     execute_file: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.execute_file.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'arg0', documentation: i18n..arg0 },
-            { label: 'arg1', documentation: i18n..arg1 },
-            { label: '...', documentation: i18n..more }
+            { label: 'fname', documentation: i18n.execute_file.fname },
+            { label: 'arg0', documentation: i18n.execute_file.arg0 },
+            { label: 'arg1', documentation: i18n.execute_file.arg1 },
+            { label: '...', documentation: i18n.execute_file.more }
         ],
         signature: '(fname, arg0, arg1, ...)'
     },
     execute_program: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.execute_program.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'arg', documentation: i18n. },
-            { label: 'wait', documentation: i18n. }
+            { label: 'fname', documentation: i18n.execute_program.fname },
+            { label: 'arg', documentation: i18n.execute_program.arg },
+            { label: 'wait', documentation: i18n.execute_program.wait }
         ],
         signature: '(prog, arg, wait)'
     },
 	execute_shell: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.execute_shell.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'arg', documentation: i18n. }
+            { label: 'fname', documentation: i18n.execute_shell.fname },
+            { label: 'arg', documentation: i18n.execute_shell.arg }
         ],
         signature: '(prog, arg)'
     },
     execute_string: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.execute_string.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'arg0', documentation: i18n..arg0 },
-            { label: 'arg1', documentation: i18n..arg1 },
-            { label: '...', documentation: i18n..more }
+            { label: 'str', documentation: i18n.execute_string.str },
+            { label: 'arg0', documentation: i18n.execute_string.arg0 },
+            { label: 'arg1', documentation: i18n.execute_string.arg1 },
+            { label: '...', documentation: i18n.execute_string.more }
         ],
         signature: '(str, arg0, arg1, ...)'
     },
 	export_include_file: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.export_include_file.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'fname', documentation: i18n.export_include_file.fname }
         ],
         signature: '(fname)'
     },
 	export_include_file_location: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.export_include_file_location.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'location', documentation: i18n. }
+            { label: 'fname', documentation: i18n.export_include_file_location.fname },
+            { label: 'location', documentation: i18n.export_include_file_location.location }
         ],
         signature: '(fname, location)'
     },
     get_color: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.get_color.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'defcol', documentation: i18n. }
+            { label: 'defcol', documentation: i18n.get_color.defcol }
         ],
         signature: '(defcol)'
     },
 	get_directory: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.get_directory.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'dname', documentation: i18n. }
+            { label: 'dname', documentation: i18n.get_directory.dname }
         ],
         signature: '(dname)'
     },
 	get_directory_alt: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.get_directory_alt.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'capt', documentation: i18n. },
-            { label: 'root', documentation: i18n. }
+            { label: 'capt', documentation: i18n.get_directory_alt.capt },
+            { label: 'root', documentation: i18n.get_directory_alt.root }
         ],
         signature: '(capt, root)'
     },
     highscore_add_current: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_add_current.desc,
         available: datasimple.gm81
     },
     highscore_set_background: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_set_background.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'back', documentation: i18n..back }
+            { label: 'back', documentation: i18n.highscore_set_background.back }
         ],
         signature: '(back)'
     },
 	highscore_set_border: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_set_border.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'show', documentation: i18n..show }
+            { label: 'show', documentation: i18n.highscore_set_border.show }
         ],
         signature: '(show)'
     },
 	highscore_set_colors: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_set_colors.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'back', documentation: i18n..back },
-            { label: 'new', documentation: i18n. },
-            { label: 'other', documentation: i18n. }
+            { label: 'back', documentation: i18n.highscore_set_colors.back },
+            { label: 'new', documentation: i18n.highscore_set_colors.new },
+            { label: 'other', documentation: i18n.highscore_set_colors.other }
         ],
         signature: '(back, new, other)'
     },
 	highscore_set_font: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_set_font.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'size', documentation: i18n..size },
-            { label: 'style', documentation: i18n. }
+            { label: 'name', documentation: i18n.highscore_set_font.name },
+            { label: 'size', documentation: i18n.highscore_set_font.size },
+            { label: 'style', documentation: i18n.highscore_set_font.style }
         ],
         signature: '(name, size, style)'
     },
 	highscore_set_strings: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_set_strings.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'caption', documentation: i18n. },
-            { label: 'nobody', documentation: i18n. },
-            { label: 'escape', documentation: i18n. }
+            { label: 'caption', documentation: i18n.highscore_set_strings.caption },
+            { label: 'nobody', documentation: i18n.highscore_set_strings.nobody },
+            { label: 'escape', documentation: i18n.highscore_set_strings.escape }
         ],
         signature: '(caption, nobody, escape)'
     },
 	highscore_show: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_show.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'numb', documentation: i18n..numb }
+            { label: 'numb', documentation: i18n.highscore_show.numb }
         ],
         signature: '(numb)'
     },
 	highscore_show_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.highscore_show_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'numb', documentation: i18n..numb },
-            { label: 'back', documentation: i18n..back },
-            { label: 'border', documentation: i18n. },
-            { label: 'col1', documentation: i18n..col1 },
-            { label: 'col2', documentation: i18n..col2 },
-            { label: 'name', documentation: i18n..name },
-            { label: 'size', documentation: i18n..size }
+            { label: 'numb', documentation: i18n.highscore_show_ext.numb },
+            { label: 'back', documentation: i18n.highscore_show_ext.back },
+            { label: 'border', documentation: i18n.highscore_show_ext.border },
+            { label: 'col1', documentation: i18n.highscore_show_ext.col1 },
+            { label: 'col2', documentation: i18n.highscore_show_ext.col2 },
+            { label: 'name', documentation: i18n.highscore_show_ext.name },
+            { label: 'size', documentation: i18n.highscore_show_ext.size }
         ],
         signature: '(numb, back, border, col1, col2, name, size)'
     },
     io_handle: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.io_handle.desc,
         available: datasimple.gm81
     },
     keyboard_wait: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.keyboard_wait.desc,
         available: datasimple.gm81
     },
 	MCI_command: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.MCI_command.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n..str }
+            { label: 'str', documentation: i18n.MCI_command.str }
         ],
         signature: '(str)'
     },
 	message_alpha: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_alpha.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'alpha', documentation: i18n..alpha }
+            { label: 'alpha', documentation: i18n.message_alpha.alpha }
         ],
         signature: '(alpha)'
     },
 	message_background: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_background.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'back', documentation: i18n..back }
+            { label: 'back', documentation: i18n.message_background.back }
         ],
         signature: '(back)'
     },
 	message_button: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_button.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'sprite', documentation: i18n..sprite }
+            { label: 'sprite', documentation: i18n.message_button.sprite }
         ],
         signature: '(sprite)'
     },
 	message_button_font: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_button_font.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'size', documentation: i18n..size },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'style', documentation: i18n. }
+            { label: 'name', documentation: i18n.message_button_font.name },
+            { label: 'size', documentation: i18n.message_button_font.size },
+            { label: 'colour', documentation: i18n.message_button_font.colour },
+            { label: 'style', documentation: i18n.message_button_font.style }
         ],
         signature: '(name, size, colour, style)'
     },
 	message_caption: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_caption.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'show', documentation: i18n..show },
-            { label: 'str', documentation: i18n..str }
+            { label: 'show', documentation: i18n.message_caption.show },
+            { label: 'str', documentation: i18n.message_caption.str }
         ],
         signature: '(show, str)'
     },
 	message_input_color: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_input_color.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'col', documentation: i18n..col }
+            { label: 'col', documentation: i18n.message_input_color.col }
         ],
         signature: '(col)'
     },
 	message_input_font: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_input_font.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'size', documentation: i18n..size },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'style', documentation: i18n. }
+            { label: 'name', documentation: i18n.message_input_font.name },
+            { label: 'size', documentation: i18n.message_input_font.size },
+            { label: 'colour', documentation: i18n.message_input_font.colour },
+            { label: 'style', documentation: i18n.message_input_font.style }
         ],
         signature: '(name, size, colour, style)'
     },
 	message_mouse_color: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_mouse_color.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'col', documentation: i18n..col }
+            { label: 'col', documentation: i18n.message_mouse_color.col }
         ],
         signature: '(col)'
     },
 	message_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_position.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'x', documentation: i18n.message_position.x },
+            { label: 'y', documentation: i18n.message_position.y }
         ],
         signature: '(x, y)'
     },
 	message_size: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_size.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'w', documentation: i18n.message_size.w },
+            { label: 'h', documentation: i18n.message_size.h }
         ],
         signature: '(w, h)'
     },
 	message_text_charset: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_text_charset.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'type', documentation: i18n..type },
-            { label: 'charset_id', documentation: i18n. }
+            { label: 'type', documentation: i18n.message_text_charset.type },
+            { label: 'charset_id', documentation: i18n.message_text_charset.charset_id }
         ],
         signature: '(type, charset_id)'
     },
 	message_text_font: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.message_text_font.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'size', documentation: i18n..size },
-            { label: 'colour', documentation: i18n..colour },
-            { label: 'style', documentation: i18n. }
+            { label: 'name', documentation: i18n.message_text_font.name },
+            { label: 'size', documentation: i18n.message_text_font.size },
+            { label: 'colour', documentation: i18n.message_text_font.colour },
+            { label: 'style', documentation: i18n.message_text_font.style }
         ],
         signature: '(name, size, colour, style)'
     },
     mouse_wait: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.mouse_wait.desc,
         available: datasimple.gm81
     },
     object_add: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.object_add.desc,
         available: datasimple.gm81
     },
 	object_delete: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.object_delete.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.object_delete.ind }
         ],
         signature: '(ind)'
     },
 	object_event_add: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.object_event_add.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'evtype', documentation: i18n. },
-            { label: 'evnumb', documentation: i18n. },
-            { label: 'codestr', documentation: i18n. }
+            { label: 'ind', documentation: i18n.object_event_add.ind },
+            { label: 'evtype', documentation: i18n.object_event_add.evtype },
+            { label: 'evnumb', documentation: i18n.object_event_add.evnumb },
+            { label: 'codestr', documentation: i18n.object_event_add.codestr }
         ],
         signature: '(ind, evtype, evnumb, codestr)'
     },
 	object_event_clear: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.object_event_clear.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'evtype', documentation: i18n. },
-            { label: 'evnumb', documentation: i18n. }
+            { label: 'ind', documentation: i18n.object_event_clear.ind },
+            { label: 'evtype', documentation: i18n.object_event_clear.evtype },
+            { label: 'evnumb', documentation: i18n.object_event_clear.evnumb }
         ],
         signature: '(ind, evtype, evnumb)'
     },
 	part_attractor_clear: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_clear.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_attractor_clear.ps },
+            { label: 'ind', documentation: i18n.part_attractor_clear.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_attractor_create: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_create.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_attractor_create.ps }
         ],
         signature: '(ps)'
     },
 	part_attractor_destroy: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_destroy.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_attractor_destroy.ps },
+            { label: 'ind', documentation: i18n.part_attractor_destroy.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_attractor_destroy_all: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_destroy_all.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_attractor_destroy_all.ps }
         ],
         signature: '(ps)'
     },
 	part_attractor_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_attractor_exists.ps },
+            { label: 'ind', documentation: i18n.part_attractor_exists.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_attractor_force: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_force.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'force', documentation: i18n. },
-            { label: 'dist', documentation: i18n. },
-            { label: 'kind', documentation: i18n..kind },
-            { label: 'additive', documentation: i18n..additive }
+            { label: 'ps', documentation: i18n.part_attractor_force.ps },
+            { label: 'ind', documentation: i18n.part_attractor_force.ind },
+            { label: 'force', documentation: i18n.part_attractor_force.force },
+            { label: 'dist', documentation: i18n.part_attractor_force.dist },
+            { label: 'kind', documentation: i18n.part_attractor_force.kind },
+            { label: 'additive', documentation: i18n.part_attractor_force.additive }
         ],
         signature: '(ps, ind, force, dist, kind, additive)'
     },
 	part_attractor_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_attractor_position.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'ps', documentation: i18n.part_attractor_position.ps },
+            { label: 'ind', documentation: i18n.part_attractor_position.ind },
+            { label: 'x', documentation: i18n.part_attractor_position.x },
+            { label: 'y', documentation: i18n.part_attractor_position.y }
         ],
         signature: '(ps, ind, x, y)'
     },
 	part_changer_clear: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_clear.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_changer_clear.ps },
+            { label: 'ind', documentation: i18n.part_changer_clear.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_changer_create: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_create.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_changer_create.ps }
         ],
         signature: '(ps)'
     },
 	part_changer_destroy: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_destroy.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_changer_destroy.ps },
+            { label: 'ind', documentation: i18n.part_changer_destroy.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_changer_destroy_all: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_destroy_all.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_changer_destroy_all.ps }
         ],
         signature: '(ps)'
     },
 	part_changer_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_changer_exists.ps },
+            { label: 'ind', documentation: i18n.part_changer_exists.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_changer_kind: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_kind.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'ps', documentation: i18n.part_changer_kind.ps },
+            { label: 'ind', documentation: i18n.part_changer_kind.ind },
+            { label: 'kind', documentation: i18n.part_changer_kind.kind }
         ],
         signature: '(ps, ind, kind)'
     },
 	part_changer_region: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_region.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n..xmin },
-            { label: 'xmax', documentation: i18n..xmax },
-            { label: 'ymin', documentation: i18n..ymin },
-            { label: 'ymax', documentation: i18n..ymax },
-            { label: 'shape', documentation: i18n..shape }
+            { label: 'ps', documentation: i18n.part_changer_region.ps },
+            { label: 'ind', documentation: i18n.part_changer_region.ind },
+            { label: 'xmin', documentation: i18n.part_changer_region.xmin },
+            { label: 'xmax', documentation: i18n.part_changer_region.xmax },
+            { label: 'ymin', documentation: i18n.part_changer_region.ymin },
+            { label: 'ymax', documentation: i18n.part_changer_region.ymax },
+            { label: 'shape', documentation: i18n.part_changer_region.shape }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
 	part_changer_types: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_changer_types.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'parttype1', documentation: i18n. },
-            { label: 'parttype2', documentation: i18n. }
+            { label: 'ps', documentation: i18n.part_changer_types.ps },
+            { label: 'ind', documentation: i18n.part_changer_types.ind },
+            { label: 'parttype1', documentation: i18n.part_changer_types.parttype1 },
+            { label: 'parttype2', documentation: i18n.part_changer_types.parttype2 }
         ],
         signature: '(ps, ind, parttype1, parttype2)'
     },
 	part_deflector_clear: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_clear.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_deflector_clear.ps },
+            { label: 'ind', documentation: i18n.part_deflector_clear.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_deflector_create: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_create.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_deflector_create.ps }
         ],
         signature: '(ps)'
     },
 	part_deflector_destroy: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_destroy.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_deflector_destroy.ps },
+            { label: 'ind', documentation: i18n.part_deflector_destroy.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_deflector_destroy_all: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_destroy_all.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_deflector_destroy_all.ps }
         ],
         signature: '(ps)'
     },
 	part_deflector_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_deflector_exists.ps },
+            { label: 'ind', documentation: i18n.part_deflector_exists.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_deflector_friction: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_friction.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'amount', documentation: i18n..amount }
+            { label: 'ps', documentation: i18n.part_deflector_friction.ps },
+            { label: 'ind', documentation: i18n.part_deflector_friction.ind },
+            { label: 'amount', documentation: i18n.part_deflector_friction.amount }
         ],
         signature: '(ps, ind, amount)'
     },
 	part_deflector_kind: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_kind.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'ps', documentation: i18n.part_deflector_kind.ps },
+            { label: 'ind', documentation: i18n.part_deflector_kind.ind },
+            { label: 'kind', documentation: i18n.part_deflector_kind.kind }
         ],
         signature: '(ps, ind, kind)'
     },
 	part_deflector_region: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_deflector_region.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n..xmin },
-            { label: 'xmax', documentation: i18n..xmax },
-            { label: 'ymin', documentation: i18n..ymin },
-            { label: 'ymax', documentation: i18n..ymax }
+            { label: 'ps', documentation: i18n.part_deflector_region.ps },
+            { label: 'ind', documentation: i18n.part_deflector_region.ind },
+            { label: 'xmin', documentation: i18n.part_deflector_region.xmin },
+            { label: 'xmax', documentation: i18n.part_deflector_region.xmax },
+            { label: 'ymin', documentation: i18n.part_deflector_region.ymin },
+            { label: 'ymax', documentation: i18n.part_deflector_region.ymax }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax)'
     },
 	part_destroyer_clear: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_destroyer_clear.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_destroyer_clear.ps },
+            { label: 'ind', documentation: i18n.part_destroyer_clear.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_destroyer_create: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_destroyer_create.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_destroyer_create.ps }
         ],
         signature: '(ps)'
     },
 	part_destroyer_destroy: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_destroyer_destroy.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_destroyer_destroy.ps },
+            { label: 'ind', documentation: i18n.part_destroyer_destroy.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_destroyer_destroy_all: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_destroyer_destroy_all.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps }
+            { label: 'ps', documentation: i18n.part_destroyer_destroy_all.ps }
         ],
         signature: '(ps)'
     },
 	part_destroyer_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_destroyer_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ps', documentation: i18n.part_destroyer_exists.ps },
+            { label: 'ind', documentation: i18n.part_destroyer_exists.ind }
         ],
         signature: '(ps, ind)'
     },
 	part_destroyer_region: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.part_destroyer_region.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ps', documentation: i18n..ps },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'xmin', documentation: i18n..xmin },
-            { label: 'xmax', documentation: i18n..xmax },
-            { label: 'ymin', documentation: i18n..ymin },
-            { label: 'ymax', documentation: i18n..ymax },
-            { label: 'shape', documentation: i18n..shape }
+            { label: 'ps', documentation: i18n.part_destroyer_region.ps },
+            { label: 'ind', documentation: i18n.part_destroyer_region.ind },
+            { label: 'xmin', documentation: i18n.part_destroyer_region.xmin },
+            { label: 'xmax', documentation: i18n.part_destroyer_region.xmax },
+            { label: 'ymin', documentation: i18n.part_destroyer_region.ymin },
+            { label: 'ymax', documentation: i18n.part_destroyer_region.ymax },
+            { label: 'shape', documentation: i18n.part_destroyer_region.shape }
         ],
         signature: '(ps, ind, xmin, xmax, ymin, ymax, shape)'
     },
     registry_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.registry_exists.name }
         ],
         signature: '(name)'
     },
 	registry_exists_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_exists_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'key', documentation: i18n..key },
-            { label: 'name', documentation: i18n..name }
+            { label: 'key', documentation: i18n.registry_exists_ext.key },
+            { label: 'name', documentation: i18n.registry_exists_ext.name }
         ],
         signature: '(key, name)'
     },
 	registry_read_real: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_read_real.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.registry_read_real.name }
         ],
         signature: '(name)'
     },
 	registry_read_real_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_read_real_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'key', documentation: i18n..key },
-            { label: 'name', documentation: i18n..name }
+            { label: 'key', documentation: i18n.registry_read_real_ext.key },
+            { label: 'name', documentation: i18n.registry_read_real_ext.name }
         ],
         signature: '(key, name)'
     },
 	registry_read_string: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_read_string.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.registry_read_string.name }
         ],
         signature: '(name)'
     },
 	registry_read_string_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_read_string_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'key', documentation: i18n..key },
-            { label: 'name', documentation: i18n..name }
+            { label: 'key', documentation: i18n.registry_read_string_ext.key },
+            { label: 'name', documentation: i18n.registry_read_string_ext.name }
         ],
         signature: '(key, name)'
     },
 	registry_set_root: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_set_root.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'root', documentation: i18n. }
+            { label: 'root', documentation: i18n.registry_set_root.root }
         ],
         signature: '(root)'
     },
 	registry_write_real: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_write_real.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.registry_write_real.name },
+            { label: 'value', documentation: i18n.registry_write_real.value }
         ],
         signature: '(name, value)'
     },
 	registry_write_real_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_write_real_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'key', documentation: i18n..key },
-            { label: 'name', documentation: i18n..name },
-            { label: 'value', documentation: i18n..value }
+            { label: 'key', documentation: i18n.registry_write_real_ext.key },
+            { label: 'name', documentation: i18n.registry_write_real_ext.name },
+            { label: 'value', documentation: i18n.registry_write_real_ext.value }
         ],
         signature: '(key, name, value)'
     },
 	registry_write_string: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_write_string.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'str', documentation: i18n..str }
+            { label: 'name', documentation: i18n.registry_write_string.name },
+            { label: 'str', documentation: i18n.registry_write_string.str }
         ],
         signature: '(name, str)'
     },
 	registry_write_string_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.registry_write_string_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'key', documentation: i18n..key },
-            { label: 'name', documentation: i18n..name },
-            { label: 'str', documentation: i18n..str }
+            { label: 'key', documentation: i18n.registry_write_string_ext.key },
+            { label: 'name', documentation: i18n.registry_write_string_ext.name },
+            { label: 'str', documentation: i18n.registry_write_string_ext.str }
         ],
         signature: '(key, name, str)'
     },
     room_set_caption: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.room_set_caption.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'str', documentation: i18n..str }
+            { label: 'ind', documentation: i18n.room_set_caption.ind },
+            { label: 'str', documentation: i18n.room_set_caption.str }
         ],
         signature: '(ind, str)'
     },
 	room_set_code: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.room_set_code.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'codestr', documentation: i18n. }
+            { label: 'ind', documentation: i18n.room_set_code.ind },
+            { label: 'codestr', documentation: i18n.room_set_code.codestr }
         ],
         signature: '(ind, codestr)'
     },
     screen_redraw: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.screen_redraw.desc,
         available: datasimple.gm81
     },
     screen_refresh: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.screen_refresh.desc,
         available: datasimple.gm81
     },
     screen_wait_vsync: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.screen_wait_vsync.desc,
         available: datasimple.gm81
     },
     script_get_text: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.script_get_text.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'ind', documentation: i18n.script_get_text.ind }
         ],
         signature: '(ind)'
     },
 	set_application_title: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.set_application_title.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'title', documentation: i18n..title }
+            { label: 'title', documentation: i18n.set_application_title.title }
         ],
         signature: '(title)'
     },
 	set_automatic_draw: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.set_automatic_draw.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'value', documentation: i18n..value }
+            { label: 'value', documentation: i18n.set_automatic_draw.value }
         ],
         signature: '(value)'
     },
 	set_program_priority: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.set_program_priority.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'priority', documentation: i18n..priority }
+            { label: 'priority', documentation: i18n.set_program_priority.priority }
         ],
         signature: '(priority)'
     },
 	set_synchronization: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.set_synchronization.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'value', documentation: i18n..value }
+            { label: 'value', documentation: i18n.set_synchronization.value }
         ],
         signature: '(value)'
     },
     show_menu: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.show_menu.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'def', documentation: i18n..def }
+            { label: 'str', documentation: i18n.show_menu.str },
+            { label: 'def', documentation: i18n.show_menu.def }
         ],
         signature: '(str, def)'
     },
 	show_menu_pos: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.show_menu_pos.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'str', documentation: i18n..str },
-            { label: 'def', documentation: i18n..def }
+            { label: 'x', documentation: i18n.show_menu_pos.x },
+            { label: 'y', documentation: i18n.show_menu_pos.y },
+            { label: 'str', documentation: i18n.show_menu_pos.str },
+            { label: 'def', documentation: i18n.show_menu_pos.def }
         ],
         signature: '(x, y, str, def)'
     },
     show_message_ext: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.show_message_ext.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'str', documentation: i18n..str },
-            { label: 'but1', documentation: i18n. },
-            { label: 'but2', documentation: i18n. },
-            { label: 'but3', documentation: i18n. }
+            { label: 'str', documentation: i18n.show_message_ext.str },
+            { label: 'but1', documentation: i18n.show_message_ext.but1 },
+            { label: 'but2', documentation: i18n.show_message_ext.but2 },
+            { label: 'but3', documentation: i18n.show_message_ext.but3 }
         ],
         signature: '(str, but1, but2, but3)'
     },
     sleep: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sleep.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'millisec', documentation: i18n. }
+            { label: 'millisec', documentation: i18n.sleep.millisec }
         ],
         signature: '(millisec)'
     },
 	sound_3d_set_sound_cone: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_3d_set_sound_cone.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z },
-            { label: 'anglein', documentation: i18n. },
-            { label: 'angleout', documentation: i18n. },
-            { label: 'voloutside', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_3d_set_sound_cone.snd },
+            { label: 'x', documentation: i18n.sound_3d_set_sound_cone.x },
+            { label: 'y', documentation: i18n.sound_3d_set_sound_cone.y },
+            { label: 'z', documentation: i18n.sound_3d_set_sound_cone.z },
+            { label: 'anglein', documentation: i18n.sound_3d_set_sound_cone.anglein },
+            { label: 'angleout', documentation: i18n.sound_3d_set_sound_cone.angleout },
+            { label: 'voloutside', documentation: i18n.sound_3d_set_sound_cone.voloutside }
         ],
         signature: '(snd, x, y, z, anglein, angleout, voloutside)'
     },
 	sound_3d_set_sound_distance: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_3d_set_sound_distance.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'mindist', documentation: i18n. },
-            { label: 'maxdist', documentation: i18n..maxdist }
+            { label: 'snd', documentation: i18n.sound_3d_set_sound_distance.snd },
+            { label: 'mindist', documentation: i18n.sound_3d_set_sound_distance.mindist },
+            { label: 'maxdist', documentation: i18n.sound_3d_set_sound_distance.maxdist }
         ],
         signature: '(snd, mindist, maxdist)'
     },
 	sound_3d_set_sound_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_3d_set_sound_position.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z }
+            { label: 'snd', documentation: i18n.sound_3d_set_sound_position.snd },
+            { label: 'x', documentation: i18n.sound_3d_set_sound_position.x },
+            { label: 'y', documentation: i18n.sound_3d_set_sound_position.y },
+            { label: 'z', documentation: i18n.sound_3d_set_sound_position.z }
         ],
         signature: '(snd, x, y, z)'
     },
 	sound_3d_set_sound_velocity: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_3d_set_sound_velocity.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'z', documentation: i18n..z }
+            { label: 'snd', documentation: i18n.sound_3d_set_sound_velocity.snd },
+            { label: 'x', documentation: i18n.sound_3d_set_sound_velocity.x },
+            { label: 'y', documentation: i18n.sound_3d_set_sound_velocity.y },
+            { label: 'z', documentation: i18n.sound_3d_set_sound_velocity.z }
         ],
         signature: '(snd, x, y, z)'
     },
 	sound_add: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_add.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'kind', documentation: i18n..kind },
-            { label: 'preload', documentation: i18n. }
+            { label: 'fname', documentation: i18n.sound_add.fname },
+            { label: 'kind', documentation: i18n.sound_add.kind },
+            { label: 'preload', documentation: i18n.sound_add.preload }
         ],
         signature: '(fname, kind, preload)'
     },
 	sound_background_tempo: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_background_tempo.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'factor', documentation: i18n..factor }
+            { label: 'factor', documentation: i18n.sound_background_tempo.factor }
         ],
         signature: '(factor)'
     },
 	sound_effect_chorus: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_chorus.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'wetdry', documentation: i18n. },
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'feedback', documentation: i18n. },
-            { label: 'frequency', documentation: i18n. },
-            { label: 'wave', documentation: i18n. },
-            { label: 'delay', documentation: i18n. },
-            { label: 'phase', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_effect_chorus.snd },
+            { label: 'wetdry', documentation: i18n.sound_effect_chorus.wetdry },
+            { label: 'depth', documentation: i18n.sound_effect_chorus.depth },
+            { label: 'feedback', documentation: i18n.sound_effect_chorus.feedback },
+            { label: 'frequency', documentation: i18n.sound_effect_chorus.frequency },
+            { label: 'wave', documentation: i18n.sound_effect_chorus.wave },
+            { label: 'delay', documentation: i18n.sound_effect_chorus.delay },
+            { label: 'phase', documentation: i18n.sound_effect_chorus.phase }
         ],
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_compressor: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_compressor.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'gain', documentation: i18n. },
-            { label: 'attack', documentation: i18n. },
-            { label: 'release', documentation: i18n. },
-            { label: 'threshold', documentation: i18n. },
-            { label: 'ratio', documentation: i18n..ratio },
-            { label: 'delay', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_effect_compressor.snd },
+            { label: 'gain', documentation: i18n.sound_effect_compressor.gain },
+            { label: 'attack', documentation: i18n.sound_effect_compressor.attack },
+            { label: 'release', documentation: i18n.sound_effect_compressor.release },
+            { label: 'threshold', documentation: i18n.sound_effect_compressor.threshold },
+            { label: 'ratio', documentation: i18n.sound_effect_compressor.ratio },
+            { label: 'delay', documentation: i18n.sound_effect_compressor.delay }
         ],
         signature: '(snd, gain, attack, release, threshold, ratio, delay)'
     },
 	sound_effect_echo: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_echo.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'wetdry', documentation: i18n. },
-            { label: 'feedback', documentation: i18n. },
-            { label: 'leftdelay', documentation: i18n. },
-            { label: 'rightdelay', documentation: i18n. },
-            { label: 'pandelay', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_effect_echo.snd },
+            { label: 'wetdry', documentation: i18n.sound_effect_echo.wetdry },
+            { label: 'feedback', documentation: i18n.sound_effect_echo.feedback },
+            { label: 'leftdelay', documentation: i18n.sound_effect_echo.leftdelay },
+            { label: 'rightdelay', documentation: i18n.sound_effect_echo.rightdelay },
+            { label: 'pandelay', documentation: i18n.sound_effect_echo.pandelay }
         ],
         signature: '(snd, wetdry, feedback, leftdelay, rightdelay, pandelay)'
     },
 	sound_effect_equalizer: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_equalizer.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'center', documentation: i18n. },
-            { label: 'bandwidth', documentation: i18n. },
-            { label: 'gain', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_effect_equalizer.snd },
+            { label: 'center', documentation: i18n.sound_effect_equalizer.center },
+            { label: 'bandwidth', documentation: i18n.sound_effect_equalizer.bandwidth },
+            { label: 'gain', documentation: i18n.sound_effect_equalizer.gain }
         ],
         signature: '(snd, center, bandwidth, gain)'
     },
 	sound_effect_flanger: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_flanger.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'wetdry', documentation: i18n. },
-            { label: 'depth', documentation: i18n..depth },
-            { label: 'feedback', documentation: i18n. },
-            { label: 'frequency', documentation: i18n. },
-            { label: 'wave', documentation: i18n. },
-            { label: 'delay', documentation: i18n. },
-            { label: 'phase', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_effect_flanger.snd },
+            { label: 'wetdry', documentation: i18n.sound_effect_flanger.wetdry },
+            { label: 'depth', documentation: i18n.sound_effect_flanger.depth },
+            { label: 'feedback', documentation: i18n.sound_effect_flanger.feedback },
+            { label: 'frequency', documentation: i18n.sound_effect_flanger.frequency },
+            { label: 'wave', documentation: i18n.sound_effect_flanger.wave },
+            { label: 'delay', documentation: i18n.sound_effect_flanger.delay },
+            { label: 'phase', documentation: i18n.sound_effect_flanger.phase }
         ],
         signature: '(snd, wetdry, depth, feedback, frequency, wave, delay, phase)'
     },
 	sound_effect_gargle: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_gargle.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'rate', documentation: i18n. },
-            { label: 'wave', documentation: i18n. }
+            { label: 'snd', documentation: i18n.sound_effect_gargle.snd },
+            { label: 'rate', documentation: i18n.sound_effect_gargle.rate },
+            { label: 'wave', documentation: i18n.sound_effect_gargle.wave }
         ],
         signature: '(snd, rate, wave)'
     },
 	sound_effect_reverb: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_reverb.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'gain', documentation: i18n. },
-            { label: 'mix', documentation: i18n. },
-            { label: 'time', documentation: i18n..time },
-            { label: 'ratio', documentation: i18n..ratio }
+            { label: 'snd', documentation: i18n.sound_effect_reverb.snd },
+            { label: 'gain', documentation: i18n.sound_effect_reverb.gain },
+            { label: 'mix', documentation: i18n.sound_effect_reverb.mix },
+            { label: 'time', documentation: i18n.sound_effect_reverb.time },
+            { label: 'ratio', documentation: i18n.sound_effect_reverb.ratio }
         ],
         signature: '(snd, gain, mix, time, ratio)'
     },
 	sound_effect_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_effect_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'snd', documentation: i18n. },
-            { label: 'effect', documentation: i18n..effect }
+            { label: 'snd', documentation: i18n.sound_effect_set.snd },
+            { label: 'effect', documentation: i18n.sound_effect_set.effect }
         ],
         signature: '(snd, effect)'
     },
 	sound_pan: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_pan.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'index', documentation: i18n..index },
-            { label: 'value', documentation: i18n..value }
+            { label: 'index', documentation: i18n.sound_pan.index },
+            { label: 'value', documentation: i18n.sound_pan.value }
         ],
         signature: '(index, value)'
     },
 	sound_replace: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_replace.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'kind', documentation: i18n..kind },
-            { label: 'preload', documentation: i18n. }
+            { label: 'ind', documentation: i18n.sound_replace.ind },
+            { label: 'fname', documentation: i18n.sound_replace.fname },
+            { label: 'kind', documentation: i18n.sound_replace.kind },
+            { label: 'preload', documentation: i18n.sound_replace.preload }
         ],
         signature: '(ind, fname, kind, preload)'
     },
 	sound_set_search_directory: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sound_set_search_directory.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'dir', documentation: i18n..dir }
+            { label: 'dir', documentation: i18n.sound_set_search_directory.dir }
         ],
         signature: '(dir)'
     },
 	splash_set_adapt: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_adapt.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'adapt', documentation: i18n. }
+            { label: 'adapt', documentation: i18n.splash_set_adapt.adapt }
         ],
         signature: '(adapt)'
     },
 	splash_set_border: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_border.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'border', documentation: i18n. }
+            { label: 'border', documentation: i18n.splash_set_border.border }
         ],
         signature: '(border)'
     },
 	splash_set_caption: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_caption.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'cap', documentation: i18n. }
+            { label: 'cap', documentation: i18n.splash_set_caption.cap }
         ],
         signature: '(cap)'
     },
 	splash_set_close_button: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_close_button.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'show', documentation: i18n..show }
+            { label: 'show', documentation: i18n.splash_set_close_button.show }
         ],
         signature: '(show)'
     },
 	splash_set_color: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_color.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'col', documentation: i18n..col }
+            { label: 'col', documentation: i18n.splash_set_color.col }
         ],
         signature: '(col)'
     },
 	splash_set_cursor: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_cursor.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'vis', documentation: i18n..vis }
+            { label: 'vis', documentation: i18n.splash_set_cursor.vis }
         ],
         signature: '(vis)'
     },
 	splash_set_fullscreen: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_fullscreen.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'full', documentation: i18n..full }
+            { label: 'full', documentation: i18n.splash_set_fullscreen.full }
         ],
         signature: '(full)'
     },
 	splash_set_interrupt: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_interrupt.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'interrupt', documentation: i18n. }
+            { label: 'interrupt', documentation: i18n.splash_set_interrupt.interrupt }
         ],
         signature: '(interrupt)'
     },
 	splash_set_main: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_main.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'main', documentation: i18n. }
+            { label: 'main', documentation: i18n.splash_set_main.main }
         ],
         signature: '(main)'
     },
 	splash_set_position: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_position.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'x', documentation: i18n.splash_set_position.x },
+            { label: 'y', documentation: i18n.splash_set_position.y }
         ],
         signature: '(x, y)'
     },
 	splash_set_scale: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_scale.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'scale', documentation: i18n..scale }
+            { label: 'scale', documentation: i18n.splash_set_scale.scale }
         ],
         signature: '(scale)'
     },
 	splash_set_size: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_size.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h }
+            { label: 'w', documentation: i18n.splash_set_size.w },
+            { label: 'h', documentation: i18n.splash_set_size.h }
         ],
         signature: '(w, h)'
     },
 	splash_set_stop_key: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_stop_key.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'stop', documentation: i18n. }
+            { label: 'stop', documentation: i18n.splash_set_stop_key.stop }
         ],
         signature: '(stop)'
     },
 	splash_set_stop_mouse: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_stop_mouse.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'stop', documentation: i18n. }
+            { label: 'stop', documentation: i18n.splash_set_stop_mouse.stop }
         ],
         signature: '(stop)'
     },
 	splash_set_top: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_set_top.desc,
         available: datasimple.gm81,
         arameters: [
-            { label: 'top', documentation: i18n..top }
+            { label: 'top', documentation: i18n.splash_set_top.top }
         ],
         signature: '(top)'
     },
 	splash_show_image: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_show_image.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'delay', documentation: i18n. }
+            { label: 'fname', documentation: i18n.splash_show_image.fname },
+            { label: 'delay', documentation: i18n.splash_show_image.delay }
         ],
         signature: '(fname, delay)'
     },
 	splash_show_text: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_show_text.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'delay', documentation: i18n. }
+            { label: 'fname', documentation: i18n.splash_show_text.fname },
+            { label: 'delay', documentation: i18n.splash_show_text.delay }
         ],
         signature: '(fname, delay)'
     },
 	splash_show_video: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_show_video.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname },
-            { label: 'loop', documentation: i18n..loop }
+            { label: 'fname', documentation: i18n.splash_show_video.fname },
+            { label: 'loop', documentation: i18n.splash_show_video.loop }
         ],
         signature: '(fname, loop)'
     },
 	splash_show_web: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.splash_show_web.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'url', documentation: i18n..url },
-            { label: 'delay', documentation: i18n. }
+            { label: 'url', documentation: i18n.splash_show_web.url },
+            { label: 'delay', documentation: i18n.splash_show_web.delay }
         ],
         signature: '(url, delay)'
     },
     sprite_add_from_screen: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sprite_add_from_screen.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth }
+            { label: 'ind', documentation: i18n.sprite_add_from_screen.ind },
+            { label: 'x', documentation: i18n.sprite_add_from_screen.x },
+            { label: 'y', documentation: i18n.sprite_add_from_screen.y },
+            { label: 'w', documentation: i18n.sprite_add_from_screen.w },
+            { label: 'h', documentation: i18n.sprite_add_from_screen.h },
+            { label: 'removeback', documentation: i18n.sprite_add_from_screen.removeback },
+            { label: 'smooth', documentation: i18n.sprite_add_from_screen.smooth }
         ],
         signature: '(ind, x, y, w, h, removeback, smooth)'
     },
     sprite_add_sprite: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sprite_add_sprite.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'fname', documentation: i18n.sprite_add_sprite.fname }
         ],
         signature: '(fname)'
     },
     sprite_create_from_screen: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sprite_create_from_screen.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y },
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'removeback', documentation: i18n..removeback },
-            { label: 'smooth', documentation: i18n..smooth },
-            { label: 'xorig', documentation: i18n..xorig },
-            { label: 'yorig', documentation: i18n..yorig }
+            { label: 'x', documentation: i18n.sprite_create_from_screen.x },
+            { label: 'y', documentation: i18n.sprite_create_from_screen.y },
+            { label: 'w', documentation: i18n.sprite_create_from_screen.w },
+            { label: 'h', documentation: i18n.sprite_create_from_screen.h },
+            { label: 'removeback', documentation: i18n.sprite_create_from_screen.removeback },
+            { label: 'smooth', documentation: i18n.sprite_create_from_screen.smooth },
+            { label: 'xorig', documentation: i18n.sprite_create_from_screen.xorig },
+            { label: 'yorig', documentation: i18n.sprite_create_from_screen.yorig }
         ],
         signature: '(x, y, w, h, removeback, smooth, xorig, yorig)'
     },
     sprite_replace_sprite: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.sprite_replace_sprite.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'ind', documentation: i18n.sprite_replace_sprite.ind },
+            { label: 'fname', documentation: i18n.sprite_replace_sprite.fname }
         ],
         signature: '(ind, fname)'
     },
     timeline_moment_add: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.timeline_moment_add.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'step', documentation: i18n..step },
-            { label: 'codestr', documentation: i18n. }
+            { label: 'ind', documentation: i18n.timeline_moment_add.ind },
+            { label: 'step', documentation: i18n.timeline_moment_add.step },
+            { label: 'codestr', documentation: i18n.timeline_moment_add.codestr }
         ],
         signature: '(ind, step, codestr)'
     },
     transition_define: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.transition_define.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'kind', documentation: i18n..kind },
-            { label: 'name', documentation: i18n..name }
+            { label: 'kind', documentation: i18n.transition_define.kind },
+            { label: 'name', documentation: i18n.transition_define.name }
         ],
         signature: '(kind, name)'
     },
 	transition_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.transition_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'kind', documentation: i18n..kind }
+            { label: 'kind', documentation: i18n.transition_exists.kind }
         ],
         signature: '(kind)'
     },
 	variable_global_array2_get: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_global_array2_get.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n..ind1 },
-            { label: 'ind2', documentation: i18n..ind2 }
+            { label: 'name', documentation: i18n.variable_global_array2_get.name },
+            { label: 'ind1', documentation: i18n.variable_global_array2_get.ind1 },
+            { label: 'ind2', documentation: i18n.variable_global_array2_get.ind2 }
         ],
         signature: '(name, ind1, ind2)'
     },
 	variable_global_array2_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_global_array2_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n..ind1 },
-            { label: 'ind2', documentation: i18n..ind2 },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.variable_global_array2_set.name },
+            { label: 'ind1', documentation: i18n.variable_global_array2_set.ind1 },
+            { label: 'ind2', documentation: i18n.variable_global_array2_set.ind2 },
+            { label: 'value', documentation: i18n.variable_global_array2_set.value }
         ],
         signature: '(name, ind1, ind2, value)'
     },
 	variable_global_array_get: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_global_array_get.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'name', documentation: i18n.variable_global_array_get.name },
+            { label: 'ind', documentation: i18n.variable_global_array_get.ind }
         ],
         signature: '(name, ind)'
     },
 	variable_global_array_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_global_array_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.variable_global_array_set.name },
+            { label: 'ind', documentation: i18n.variable_global_array_set.ind },
+            { label: 'value', documentation: i18n.variable_global_array_set.value }
         ],
         signature: '(name, ind, value)'
     },
     variable_local_array2_get: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_array2_get.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n..ind1 },
-            { label: 'ind2', documentation: i18n..ind2 }
+            { label: 'name', documentation: i18n.variable_local_array2_get.name },
+            { label: 'ind1', documentation: i18n.variable_local_array2_get.ind1 },
+            { label: 'ind2', documentation: i18n.variable_local_array2_get.ind2 }
         ],
         signature: '(name, ind1, ind2)'
     },
 	variable_local_array2_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_array2_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind1', documentation: i18n..ind1 },
-            { label: 'ind2', documentation: i18n..ind2 },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.variable_local_array2_set.name },
+            { label: 'ind1', documentation: i18n.variable_local_array2_set.ind1 },
+            { label: 'ind2', documentation: i18n.variable_local_array2_set.ind2 },
+            { label: 'value', documentation: i18n.variable_local_array2_set.value }
         ],
         signature: '(name, ind1, ind2, value)'
     },
 	variable_local_array_get: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_array_get.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind', documentation: i18n..ind }
+            { label: 'name', documentation: i18n.variable_local_array_get.name },
+            { label: 'ind', documentation: i18n.variable_local_array_get.ind }
         ],
         signature: '(name, ind)'
     },
 	variable_local_array_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_array_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'ind', documentation: i18n..ind },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.variable_local_array_set.name },
+            { label: 'ind', documentation: i18n.variable_local_array_set.ind },
+            { label: 'value', documentation: i18n.variable_local_array_set.value }
         ],
         signature: '(name, ind, value)'
     },
 	variable_local_exists: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_exists.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.variable_local_exists.name }
         ],
         signature: '(name)'
     },
 	variable_local_get: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_get.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name }
+            { label: 'name', documentation: i18n.variable_local_get.name }
         ],
         signature: '(name)'
     },
 	variable_local_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.variable_local_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'name', documentation: i18n..name },
-            { label: 'value', documentation: i18n..value }
+            { label: 'name', documentation: i18n.variable_local_set.name },
+            { label: 'value', documentation: i18n.variable_local_set.value }
         ],
         signature: '(name, value)'
     },
     window_default: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_default.desc,
         available: datasimple.gm81
     },
     window_get_region_height: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_region_height.desc,
         available: datasimple.gm81
     },
 	window_get_region_scale: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_region_scale.desc,
         available: datasimple.gm81
     },
 	window_get_region_width: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_region_width.desc,
         available: datasimple.gm81
     },
 	window_get_showborder: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_showborder.desc,
         available: datasimple.gm81
     },
 	window_get_showicons: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_showicons.desc,
         available: datasimple.gm81
     },
 	window_get_sizeable: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_sizeable.desc,
         available: datasimple.gm81
     },
 	window_get_stayontop: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_stayontop.desc,
         available: datasimple.gm81
     },
     window_get_visible: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_get_visible.desc,
         available: datasimple.gm81
     },
     window_set_region_scale: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_region_scale.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'scale', documentation: i18n..scale },
-            { label: 'adaptwindow', documentation: i18n. }
+            { label: 'scale', documentation: i18n.window_set_region_scale.scale },
+            { label: 'adaptwindow', documentation: i18n.window_set_region_scale.adaptwindow }
         ],
         signature: '(scale, adaptwindow)'
     },
 	window_set_region_size: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_region_size.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'w', documentation: i18n..w },
-            { label: 'h', documentation: i18n..h },
-            { label: 'adaptwindow', documentation: i18n. }
+            { label: 'w', documentation: i18n.window_set_region_size.w },
+            { label: 'h', documentation: i18n.window_set_region_size.h },
+            { label: 'adaptwindow', documentation: i18n.window_set_region_size.adaptwindow }
         ],
         signature: '(w, h, adaptwindow)'
     },
 	window_set_showborder: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_showborder.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'show', documentation: i18n..show }
+            { label: 'show', documentation: i18n.window_set_showborder.show }
         ],
         signature: '(show)'
     },
 	window_set_showicons: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_showicons.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'show', documentation: i18n..show }
+            { label: 'show', documentation: i18n.window_set_showicons.show }
         ],
         signature: '(show)'
     },
 	window_set_sizeable: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_sizeable.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'sizeable', documentation: i18n. }
+            { label: 'sizeable', documentation: i18n.window_set_sizeable.sizeable }
         ],
         signature: '(sizeable)'
     },
 	window_set_stayontop: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_stayontop.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'stay', documentation: i18n. }
+            { label: 'stay', documentation: i18n.window_set_stayontop.stay }
         ],
         signature: '(stay)'
     },
 	window_set_visible: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_set_visible.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'visible', documentation: i18n..visible }
+            { label: 'visible', documentation: i18n.window_set_visible.visible }
         ],
         signature: '(visible)'
     },
 	window_views_mouse_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_views_mouse_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'x', documentation: i18n.window_views_mouse_set.x },
+            { label: 'y', documentation: i18n.window_views_mouse_set.y }
         ],
         signature: '(x, y)'
     },
 	window_view_mouse_set: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.window_view_mouse_set.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'id', documentation: i18n..id },
-            { label: 'x', documentation: i18n..x },
-            { label: 'y', documentation: i18n..y }
+            { label: 'id', documentation: i18n.window_view_mouse_set.id },
+            { label: 'x', documentation: i18n.window_view_mouse_set.x },
+            { label: 'y', documentation: i18n.window_view_mouse_set.y }
         ],
         signature: '(id, x, y)'
     },
     texture_preload: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.texture_preload.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'texid', documentation: i18n..texid }
+            { label: 'texid', documentation: i18n.texture_preload.texid }
         ],
         signature: '(texid)'
     },
     texture_set_priority: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.texture_set_priority.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'texid', documentation: i18n..texid },
-            { label: 'prio', documentation: i18n. }
+            { label: 'texid', documentation: i18n.texture_set_priority.texid },
+            { label: 'prio', documentation: i18n.texture_set_priority.prio }
         ],
         signature: '(texid, prio)'
     },
     display_get_colourdepth: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_get_colourdepth.desc,
         available: datasimple.gm81
     },
     display_get_frequency: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.display_get_frequency.desc,
         available: datasimple.gm81
     },
     show_info: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.show_info.desc,
         available: datasimple.gm81
     },
     load_info: {
-        description: '[Function] (' + i18n_notice.gm_81 + ')',
+        description: '[Function] (' + i18n_notice.gm_81 + ')' + i18n.load_info.desc,
         available: datasimple.gm81,
         parameters: [
-            { label: 'fname', documentation: i18n..fname }
+            { label: 'fname', documentation: i18n.load_info.fname }
         ],
         signature: '(fname)'
     },
@@ -17824,7 +17824,7 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.new_2 + ')',
         available: datasimple.gms2,
         parameters: [
-            { label: 'force', documentation: i18n. },
+            { label: 'force', documentation: i18n..force },
             { label: 'depth', documentation: i18n..depth }
         ],
         signature: '(force, depth)'

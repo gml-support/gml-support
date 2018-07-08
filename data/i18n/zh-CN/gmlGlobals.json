@@ -9872,5 +9872,1491 @@
     "load_info": {
         "desc": "",
         "fname": ""
-    }
+    },
+
+    "string_hash_to_newline": {
+        "desc": "",
+        "str": ""
+    },
+	"game_set_speed": {
+        "desc": "",
+        "value": "",
+        "type": ""
+    },
+	"game_get_speed": {
+        "desc": "",
+        "type": ""
+    },
+	"sprite_set_speed": {
+        "desc": "",
+        "ind": "",
+        "speed": "",
+        "type": ""
+    },
+	"sprite_get_speed_type": {
+        "desc": "",
+        "ind": ""
+    },
+	"sprite_get_speed": {
+        "desc": "",
+        "ind": ""
+    },
+	"texture_get_uvs": {
+        "desc": "",
+        "texid": ""
+    },
+	"room_get_camera": {
+        "desc": "",
+        "ind": "",
+        "vind": ""
+    },
+	"room_set_camera": {
+        "desc": "",
+        "ind": "",
+        "vind": "",
+        "camera": ""
+    },
+	"room_set_viewport": {
+        "desc": "",
+        "ind": "",
+        "vind": ""
+    },
+	"room_get_viewport": {
+        "desc": "",
+        "ind": "",
+        "vind": "",
+        "vis": "",
+        "xport": "",
+        "yport": "",
+        "wport": "",
+        "hport": ""
+    },
+	"ds_list_set": {
+        "desc": "",
+        "id": "",
+        "pos": "",
+        "value": ""
+    },
+	"ds_map_set": {
+        "desc": "",
+        "id": "",
+        "key": "",
+        "value": ""
+    },
+	"part_system_create_layer": {
+        "desc": "",
+        "layer": "",
+        "persistent": ""
+    },
+	"part_system_get_layer": {
+        "desc": "",
+        "ind": ""
+    },
+	"part_system_layer": {
+        "desc": "",
+        "ind": "",
+        "layer": ""
+    },
+	"matrix_build_identity": {
+        "desc": ""
+    },
+	"matrix_build_lookat": {
+        "desc": "",
+        "xfrom": "",
+        "yfrom": "",
+        "zfrom": "",
+        "xto": "",
+        "yto": "",
+        "zto": "",
+        "xup": "",
+        "yup": "",
+        "zup": ""
+    },
+	"matrix_build_projection_ortho": {
+        "desc": "",
+        "width": "",
+        "height": "",
+        "znear": "",
+        "zfar": ""
+    },
+	"matrix_build_projection_perspective": {
+        "desc": "",
+        "width": "",
+        "height": "",
+        "znear": "",
+        "zfar": ""
+    },
+	"matrix_build_projection_perspective_fov": {
+        "desc": "",
+        "fov_y": "",
+        "height": "",
+        "znear": "",
+        "zfar": ""
+    },
+	"matrix_transform_vertex": {
+        "desc": "",
+        "matrix": "",
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+	"matrix_stack_push": {
+        "desc": "",
+        "...": ""
+    },
+	"matrix_stack_pop": {
+        "desc": ""
+    },
+	"matrix_stack_set": {
+        "desc": "",
+        "matrix": ""
+    },
+	"matrix_stack_clear": {
+        "desc": ""
+    },
+	"matrix_stack_top": {
+        "desc": ""
+    },
+	"matrix_stack_is_empty": {
+        "desc": ""
+    },
+	"gpu_set_blendenable": {
+        "desc": "",
+        "enable": ""
+    },
+	"gpu_set_ztestenable": {
+        "desc": "",
+        "enable": ""
+    },
+	"gpu_set_zfunc": {
+        "desc": "",
+        "enable": ""
+    },
+	"gpu_set_zwriteenable": {
+        "desc": "",
+        "enable": ""
+    },
+	"gpu_set_fog": {
+        "desc": "",
+        "enable": "",
+        "col": "",
+        "start": "",
+        "end": ""
+    },
+	"gpu_set_cullmode": {
+        "desc": "",
+        "cullmode": ""
+    },
+	"gpu_set_blendmode": {
+        "desc": "",
+        "mode": ""
+    },
+	"gpu_set_blendmode_ext": {
+        "desc": "",
+        "src": "",
+        "dest": ""
+    },
+	"gpu_set_blendmode_ext_sepalpha": {
+        "desc": "",
+        "src": "",
+        "dest": "",
+        "srcalpha": "",
+        "destalpha": ""
+    },
+	"gpu_set_colorwriteenable": {
+        "desc": "",
+        "red": "",
+        "green": "",
+        "blue": "",
+        "alpha": ""
+    },
+	"gpu_set_colourwriteenable": {
+        "desc": "",
+        "red": "",
+        "green": "",
+        "blue": "",
+        "alpha": ""
+    },
+	"gpu_set_alphatestenable": {
+        "desc": "",
+        "enable": ""
+    },
+	"gpu_set_alphatestref": {
+        "desc": "",
+        "value": ""
+    },
+	"gpu_set_alphatestfunc": {
+        "desc": "",
+        "cmp_func": ""
+    },
+	"gpu_set_texfilter": {
+        "desc": "",
+        "linear": ""
+    },
+	"gpu_set_texfilter_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "linear": ""
+    },
+	"gpu_set_texrepeat": {
+        "desc": "",
+        "repeat": ""
+    },
+	"gpu_set_texrepeat_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "repeat": ""
+    },
+	"gpu_set_tex_filter": {
+        "desc": "",
+        "linear": ""
+    },
+	"gpu_set_tex_filter_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "linear": ""
+    },
+	"gpu_set_tex_repeat": {
+        "desc": "",
+        "repeat": ""
+    },
+	"gpu_set_tex_repeat_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "repeat": ""
+    },
+	"gpu_set_tex_mip_filter": {
+        "desc": "",
+        "filter": ""
+    },
+	"gpu_set_tex_mip_filter_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "filter": ""
+    },
+	"gpu_set_tex_mip_bias": {
+        "desc": "",
+        "bias": ""
+    },
+	"gpu_set_tex_mip_bias_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "bias": ""
+    },
+	"gpu_set_tex_min_mip": {
+        "desc": "",
+        "minmap": ""
+    },
+	"gpu_set_tex_min_mip_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "minmip": ""
+    },
+	"gpu_set_tex_max_mip": {
+        "desc": "",
+        "maxmap": ""
+    },
+	"gpu_set_tex_max_mip_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "maxmap": ""
+    },
+	"gpu_set_tex_max_aniso": {
+        "desc": "",
+        "maxaniso": ""
+    },
+	"gpu_set_tex_max_aniso_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "maxaniso": ""
+    },
+	"gpu_set_tex_mip_enable": {
+        "desc": "",
+        "setting": ""
+    },
+	"gpu_set_tex_mip_enable_ext": {
+        "desc": "",
+        "sampler_id": "",
+        "setting": ""
+    },
+	"gpu_get_blendenable": {
+        "desc": ""
+    },
+	"gpu_get_ztestenable": {
+        "desc": ""
+    },
+	"gpu_get_zfunc": {
+        "desc": ""
+    },
+	"gpu_get_zwriteenable": {
+        "desc": ""
+    },
+	"gpu_get_fog": {
+        "desc": ""
+    },
+	"gpu_get_cullmode": {
+        "desc": ""
+    },
+	"gpu_get_blendmode": {
+        "desc": ""
+    },
+	"gpu_get_blendmode_ext": {
+        "desc": ""
+    },
+	"gpu_get_blendmode_ext_sepalpha": {
+        "desc": ""
+    },
+	"gpu_get_blendmode_src": {
+        "desc": ""
+    },
+	"gpu_get_blendmode_dest": {
+        "desc": ""
+    },
+	"gpu_get_blendmode_srcalpha": {
+        "desc": ""
+    },
+	"gpu_get_blendmode_destalpha": {
+        "desc": ""
+    },
+	"gpu_get_colorwriteenable": {
+        "desc": ""
+    },
+	"gpu_get_colourwriteenable": {
+        "desc": ""
+    },
+	"gpu_get_alphatestenable": {
+        "desc": ""
+    },
+	"gpu_get_alphatestref": {
+        "desc": ""
+    },
+	"gpu_get_alphatestfunc": {
+        "desc": ""
+    },
+	"gpu_get_texfilter": {
+        "desc": ""
+    },
+	"gpu_get_texfilter_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_texrepeat": {
+        "desc": ""
+    },
+	"gpu_get_texrepeat_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_filter": {
+        "desc": ""
+    },
+	"gpu_get_tex_filter_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_repeat": {
+        "desc": ""
+    },
+	"gpu_get_tex_repeat_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_mip_filter": {
+        "desc": ""
+    },
+	"gpu_get_tex_mip_filter_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_mip_bias": {
+        "desc": ""
+    },
+	"gpu_get_tex_mip_bias_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_min_mip": {
+        "desc": ""
+    },
+	"gpu_get_tex_min_mip_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_max_mip": {
+        "desc": ""
+    },
+	"gpu_get_tex_max_mip_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_max_aniso": {
+        "desc": ""
+    },
+	"gpu_get_tex_max_aniso_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_get_tex_mip_enable": {
+        "desc": ""
+    },
+	"gpu_get_tex_mip_enable_ext": {
+        "desc": "",
+        "sampler_id": ""
+    },
+	"gpu_push_state": {
+        "desc": ""
+    },
+	"gpu_pop_state": {
+        "desc": ""
+    },
+	"gpu_get_state": {
+        "desc": ""
+    },
+	"gpu_set_state": {
+        "desc": "",
+        "map": ""
+    },
+	"draw_light_define_ambient": {
+        "desc": "",
+        "col": ""
+    },
+	"draw_light_define_direction": {
+        "desc": "",
+        "ind": "",
+        "dx": "",
+        "dy": "",
+        "dz": "",
+        "col": ""
+    },
+	"draw_light_define_point": {
+        "desc": "",
+        "ind": "",
+        "x": "",
+        "y": "",
+        "z": "",
+        "range": "",
+        "col": ""
+    },
+	"draw_light_enable": {
+        "desc": "",
+        "ind": "",
+        "enable": ""
+    },
+	"draw_set_lighting": {
+        "desc": "",
+        "enable": ""
+    },
+	"draw_light_get_ambient": {
+        "desc": ""
+    },
+	"draw_light_get": {
+        "desc": "",
+        "ind": ""
+    },
+	"draw_get_lighting": {
+        "desc": ""
+    },
+	"load_csv": {
+        "desc": "",
+        "filename": ""
+    },
+    "skeleton_animation_get_frame": {
+        "desc": "",
+        "track": ""
+    },
+	"skeleton_animation_set_frame": {
+        "desc": "",
+        "track": "",
+        "index": ""
+    },
+	"layer_get_id": {
+        "desc": "",
+        "layer_name": ""
+    },
+	"layer_get_id_at_depth": {
+        "desc": "",
+        "depth": ""
+    },
+	"layer_get_depth": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_create": {
+        "desc": "",
+        "depth": "",
+        "name*": "",
+        "...": ""
+    },
+	"layer_destroy": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_destroy_instances": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_add_instance": {
+        "desc": "",
+        "layer_id": "",
+        "instance": ""
+    },
+	"layer_has_instance": {
+        "desc": "",
+        "layer_id": "",
+        "instance": ""
+    },
+	"layer_set_visible": {
+        "desc": "",
+        "layer_id": "",
+        "visible": ""
+    },
+	"layer_get_visible": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_exists": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_x": {
+        "desc": "",
+        "layer_id": "",
+        "x": ""
+    },
+	"layer_y": {
+        "desc": "",
+        "layer_id": "",
+        "y": ""
+    },
+	"layer_get_x": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_get_y": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_hspeed": {
+        "desc": "",
+        "layer_id": "",
+        "speed": ""
+    },
+	"layer_vspeed": {
+        "desc": "",
+        "layer_id": "",
+        "speed": ""
+    },
+	"layer_get_hspeed": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_get_vspeed": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_script_begin": {
+        "desc": "",
+        "layer_id": "",
+        "script": ""
+    },
+	"layer_script_end": {
+        "desc": "",
+        "layer_id": "",
+        "script": ""
+    },
+	"layer_shader": {
+        "desc": "",
+        "layer_id": "",
+        "shader": ""
+    },
+	"layer_get_script_begin": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_get_script_end": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_get_shader": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_set_target_room": {
+        "desc": "",
+        "room": ""
+    },
+	"layer_get_target_room": {
+        "desc": ""
+    },
+	"layer_reset_target_room": {
+        "desc": ""
+    },
+	"layer_get_all": {
+        "desc": ""
+    },
+	"layer_get_all_elements": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_get_name": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_depth": {
+        "desc": "",
+        "layer_id": "",
+        "depth": ""
+    },
+	"layer_get_element_layer": {
+        "desc": "",
+        "element_id": ""
+    },
+	"layer_get_element_type": {
+        "desc": "",
+        "element_id": ""
+    },
+	"layer_element_move": {
+        "desc": "",
+        "element_id": "",
+        "layer_id": ""
+    },
+	"layer_force_draw_depth": {
+        "desc": "",
+        "force": "",
+        "depth": ""
+    },
+	"layer_is_draw_depth_forced": {
+        "desc": ""
+    },
+	"layer_get_forced_depth": {
+        "desc": ""
+    },
+	"layer_background_get_id": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_background_exists": {
+        "desc": "",
+        "layer_id": "",
+        "background_element_id": ""
+    },
+	"layer_background_create": {
+        "desc": "",
+        "layer_id": "",
+        "sprite": ""
+    },
+	"layer_background_destroy": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_visible": {
+        "desc": "",
+        "background_element_id": "",
+        "visible": ""
+    },
+	"layer_background_change": {
+        "desc": "",
+        "background_element_id": "",
+        "sprite": ""
+    },
+	"layer_background_sprite": {
+        "desc": "",
+        "background_element_id": "",
+        "sprite": ""
+    },
+	"layer_background_htiled": {
+        "desc": "",
+        "background_element_id": "",
+        "tiled": ""
+    },
+	"layer_background_vtiled": {
+        "desc": "",
+        "background_element_id": "",
+        "tiled": ""
+    },
+	"layer_background_stretch": {
+        "desc": "",
+        "background_element_id": "",
+        "stretch": ""
+    },
+	"layer_background_yscale": {
+        "desc": "",
+        "background_element_id": "",
+        "yscale": ""
+    },
+	"layer_background_xscale": {
+        "desc": "",
+        "background_element_id": "",
+        "xscale": ""
+    },
+	"layer_background_blend": {
+        "desc": "",
+        "background_element_id": "",
+        "col": ""
+    },
+	"layer_background_alpha": {
+        "desc": "",
+        "background_element_id": "",
+        "alpha": ""
+    },
+	"layer_background_index": {
+        "desc": "",
+        "background_element_id": "",
+        "image_index": ""
+    },
+	"layer_background_speed": {
+        "desc": "",
+        "background_element_id": "",
+        "image_speed": ""
+    },
+	"layer_background_get_visible": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_sprite": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_htiled": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_vtiled": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_stretch": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_yscale": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_xscale": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_blend": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_alpha": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_index": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_background_get_speed": {
+        "desc": "",
+        "background_element_id": ""
+    },
+	"layer_sprite_get_id": {
+        "desc": "",
+        "layer_id": "",
+        "sprite_element_name": ""
+    },
+	"layer_sprite_exists": {
+        "desc": "",
+        "layer_id": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_create": {
+        "desc": "",
+        "layer_id": "",
+        "x": "",
+        "y": "",
+        "sprite": ""
+    },
+	"layer_sprite_destroy": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_change": {
+        "desc": "",
+        "sprite_element_id": "",
+        "sprite": ""
+    },
+	"layer_sprite_index": {
+        "desc": "",
+        "sprite_element_id": "",
+        "image_index": ""
+    },
+	"layer_sprite_speed": {
+        "desc": "",
+        "sprite_element_id": "",
+        "image_speed": ""
+    },
+	"layer_sprite_xscale": {
+        "desc": "",
+        "sprite_element_id": "",
+        "xscale": ""
+    },
+	"layer_sprite_yscale": {
+        "desc": "",
+        "sprite_element_id": "",
+        "yscale": ""
+    },
+	"layer_sprite_angle": {
+        "desc": "",
+        "sprite_element_id": "",
+        "angle": ""
+    },
+	"layer_sprite_blend": {
+        "desc": "",
+        "sprite_element_id": "",
+        "col": ""
+    },
+	"layer_sprite_alpha": {
+        "desc": "",
+        "sprite_element_id": "",
+        "alpha": ""
+    },
+	"layer_sprite_x": {
+        "desc": "",
+        "sprite_element_id": "",
+        "x": ""
+    },
+	"layer_sprite_y": {
+        "desc": "",
+        "sprite_element_id": "",
+        "y": ""
+    },
+	"layer_sprite_get_sprite": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_index": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_speed": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_xscale": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_yscale": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_angle": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_blend": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_alpha": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_x": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_sprite_get_y": {
+        "desc": "",
+        "sprite_element_id": ""
+    },
+	"layer_tilemap_get_id": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"layer_tilemap_exists": {
+        "desc": "",
+        "layer_id": "",
+        "tilemap_element_id": ""
+    },
+	"layer_tilemap_create": {
+        "desc": "",
+        "layer_id": "",
+        "x": "",
+        "y": "",
+        "tileset": "",
+        "width": "",
+        "height": ""
+    },
+	"layer_tilemap_destroy": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_tileset": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "tileset": ""
+    },
+	"tilemap_x": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "x": ""
+    },
+	"tilemap_y": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "y": ""
+    },
+	"tilemap_set": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "tiledata": "",
+        "cell_x": "",
+        "cell_y": ""
+    },
+	"tilemap_set_at_pixel": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "tiledata": "",
+        "x": "",
+        "y": ""
+    },
+	"tilemap_get_tileset": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_tile_width": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_tile_height": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_width": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_height": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_x": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_y": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "cell_x": "",
+        "cell_y": ""
+    },
+	"tilemap_get_at_pixel": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "x": "",
+        "y": ""
+    },
+	"tilemap_get_cell_x_at_pixel": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "x": "",
+        "y": ""
+    },
+	"tilemap_get_cell_y_at_pixel": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "x": "",
+        "y": ""
+    },
+	"tilemap_clear": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "tiledata": ""
+    },
+	"draw_tilemap": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "x": "",
+        "y": ""
+    },
+	"draw_tile": {
+        "desc": "",
+        "tileset": "",
+        "tiledata": "",
+        "frame": "",
+        "x": "",
+        "y": ""
+    },
+	"tilemap_set_global_mask": {
+        "desc": ""
+    },
+	"tilemap_get_global_mask": {
+        "desc": ""
+    },
+	"tilemap_set_mask": {
+        "desc": "",
+        "tilemap_element_id": "",
+        "mask": ""
+    },
+	"tilemap_get_mask": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tilemap_get_frame": {
+        "desc": "",
+        "tilemap_element_id": ""
+    },
+	"tile_set_empty": {
+        "desc": "",
+        "tiledata": ""
+    },
+	"tile_set_index": {
+        "desc": "",
+        "tiledata": "",
+        "tileindex": ""
+    },
+	"tile_set_flip": {
+        "desc": "",
+        "tiledata": "",
+        "flip": ""
+    },
+	"tile_set_mirror": {
+        "desc": "",
+        "tiledata": "",
+        "mirror": ""
+    },
+	"tile_set_rotate": {
+        "desc": "",
+        "tiledata": "",
+        "rotate": ""
+    },
+	"tile_get_empty": {
+        "desc": "",
+        "tiledata": ""
+    },
+	"tile_get_index": {
+        "desc": "",
+        "tiledata": ""
+    },
+	"tile_get_flip": {
+        "desc": "",
+        "tiledata": ""
+    },
+	"tile_get_mirror": {
+        "desc": "",
+        "tiledata": ""
+    },
+	"tile_get_rotate": {
+        "desc": "",
+        "tiledata": ""
+    },
+	"layer_tile_exists": {
+        "desc": "",
+        "layer_id": "",
+        "tile_element_id": "",
+        "...": ""
+    },
+	"layer_tile_create": {
+        "desc": "",
+        "layer_id": "",
+        "x": "",
+        "y": "",
+        "tileset": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+    },
+	"layer_tile_destroy": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_change": {
+        "desc": "",
+        "tile_element_id": "",
+        "sprite": ""
+    },
+	"layer_tile_xscale": {
+        "desc": "",
+        "tile_element_id": "",
+        "xscale": ""
+    },
+	"layer_tile_yscale": {
+        "desc": "",
+        "tile_element_id": "",
+        "yscale": ""
+    },
+	"layer_tile_blend": {
+        "desc": "",
+        "tile_element_id": "",
+        "col": ""
+    },
+	"layer_tile_alpha": {
+        "desc": "",
+        "tile_element_id": "",
+        "alpha": ""
+    },
+	"layer_tile_x": {
+        "desc": "",
+        "tile_element_id": "",
+        "x": ""
+    },
+	"layer_tile_y": {
+        "desc": "",
+        "tile_element_id": "",
+        "y": ""
+    },
+	"layer_tile_region": {
+        "desc": "",
+        "tile_element_id": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": ""
+    },
+	"layer_tile_visible": {
+        "desc": "",
+        "tile_element_id": "",
+        "visible": ""
+    },
+	"layer_tile_get_sprite": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_xscale": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_yscale": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_blend": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_alpha": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_x": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_y": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_region": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_tile_get_visible": {
+        "desc": "",
+        "tile_element_id": ""
+    },
+	"layer_instance_get_instance": {
+        "desc": "",
+        "instance_element_id": ""
+    },
+	 "instance_activate_layer": {
+        "desc": "",
+        "layer_id": ""
+    },
+	 "instance_deactivate_layer": {
+        "desc": "",
+        "layer_id": ""
+    },
+	"camera_create": {
+        "desc": ""
+    },
+	"camera_create_view": {
+        "desc": "",
+        "room_x": "",
+        "room_y": "",
+        "width": "",
+        "height": "",
+        "angle": "",
+        "object": "",
+        "x_speed": "",
+        "y_speed": "",
+        "x_border": "",
+        "y_border": ""
+    },
+	"camera_destroy": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_apply": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_active": {
+        "desc": ""
+    },
+	"camera_get_default": {
+        "desc": ""
+    },
+	"camera_set_default": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_set_view_mat": {
+        "desc": "",
+        "camera": "",
+        "matrix": ""
+    },
+	"camera_set_proj_mat": {
+        "desc": "",
+        "camera": "",
+        "matrix": ""
+    },
+	"camera_set_update_script": {
+        "desc": "",
+        "camera": "",
+        "script": ""
+    },
+	"camera_set_begin_script": {
+        "desc": "",
+        "camera": "",
+        "script": ""
+    },
+	"camera_set_end_script": {
+        "desc": "",
+        "camera": "",
+        "script": ""
+    },
+	"camera_set_view_pos": {
+        "desc": "",
+        "camera": "",
+        "x": "",
+        "y": ""
+    },
+	"camera_set_view_size": {
+        "desc": "",
+        "camera": "",
+        "width": "",
+        "height": ""
+    },
+	"camera_set_view_speed": {
+        "desc": "",
+        "camera": "",
+        "x_speed": "",
+        "y_speed": ""
+    },
+	"camera_set_view_border": {
+        "desc": "",
+        "camera": "",
+        "x_border": "",
+        "y_border": ""
+    },
+	"camera_set_view_angle": {
+        "desc": "",
+        "camera": "",
+        "angle": ""
+    },
+	"camera_set_view_target": {
+        "desc": "",
+        "camera": "",
+        "object": ""
+    },
+	"camera_get_view_mat": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_proj_mat": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_update_script": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_begin_script": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_end_script": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_x": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_y": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_width": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_height": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_speed_x": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_speed_y": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_border_x": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_border_y": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_angle": {
+        "desc": "",
+        "camera": ""
+    },
+	"camera_get_view_target": {
+        "desc": "",
+        "camera": ""
+    },
+	"view_get_camera": {
+        "desc": "",
+        "view": ""
+    },
+	"view_get_visible": {
+        "desc": "",
+        "view": ""
+    },
+	"view_get_xport": {
+        "desc": "",
+        "view": ""
+    },
+	"view_get_yport": {
+        "desc": "",
+        "view": ""
+    },
+	"view_get_wport": {
+        "desc": "",
+        "view": ""
+    },
+	"view_get_hport": {
+        "desc": "",
+        "view": ""
+    },
+	"view_get_surface_id": {
+        "desc": "",
+        "view": ""
+    },
+	"view_set_camera": {
+        "desc": "",
+        "view": "",
+        "camera": ""
+    },
+	"view_set_visible": {
+        "desc": "",
+        "view": "",
+        "visible": ""
+    },
+	"view_set_xport": {
+        "desc": "",
+        "view": "",
+        "xport": ""
+    },
+	"view_set_yport": {
+        "desc": "",
+        "view": "",
+        "yport": ""
+    },
+	"view_set_wport": {
+        "desc": "",
+        "view": "",
+        "wport": ""
+    },
+	"view_set_hport": {
+        "desc": "",
+        "view": "",
+        "hport": ""
+    },
+	"view_set_surface_id": {
+        "desc": "",
+        "view": "",
+        "surface_id": ""
+    },
+	"gesture_drag_time": {
+        "desc": "",
+        "time": ""
+    },
+	"gesture_drag_distance": {
+        "desc": "",
+        "distance": ""
+    },
+	"gesture_flick_speed": {
+        "desc": "",
+        "speed": ""
+    },
+	"gesture_double_tap_time": {
+        "desc": "",
+        "time": ""
+    },
+	"gesture_double_tap_distance": {
+        "desc": "",
+        "distance": ""
+    },
+	"gesture_pinch_distance": {
+        "desc": "",
+        "distance": ""
+    },
+	"gesture_pinch_angle_towards": {
+        "desc": "",
+        "angle": ""
+    },
+	"gesture_pinch_angle_away": {
+        "desc": "",
+        "angle": ""
+    },
+	"gesture_rotate_time": {
+        "desc": "",
+        "time": ""
+    },
+	"gesture_rotate_angle": {
+        "desc": "",
+        "angle": ""
+    },
+	"gesture_tap_count": {
+        "desc": "",
+        "enable": ""
+    },
+	"gesture_get_drag_time": {
+        "desc": ""
+    },
+	"gesture_get_drag_distance": {
+        "desc": ""
+    },
+	"gesture_get_flick_speed": {
+        "desc": ""
+    },
+	"gesture_get_double_tap_time": {
+        "desc": ""
+    },
+	"gesture_get_double_tap_distance": {
+        "desc": ""
+    },
+	"gesture_get_pinch_distance": {
+        "desc": ""
+    },
+	"gesture_get_pinch_angle_towards": {
+        "desc": ""
+    },
+	"gesture_get_pinch_angle_away": {
+        "desc": ""
+    },
+	"gesture_get_rotate_time": {
+        "desc": ""
+    },
+	"gesture_get_rotate_angle": {
+        "desc": ""
+    },
+	"gesture_get_tap_count": {
+		"desc": ""
+	}
 }
