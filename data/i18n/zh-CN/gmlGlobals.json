@@ -9916,12 +9916,11 @@
         "vind": "",
         "camera": ""
     },
-	"room_set_viewport": {
+	"room_get_viewport": {
         "desc": "",
-        "ind": "",
         "vind": ""
     },
-	"room_get_viewport": {
+	"room_set_viewport": {
         "desc": "",
         "ind": "",
         "vind": "",
@@ -10145,7 +10144,7 @@
     },
 	"gpu_set_tex_min_mip": {
         "desc": "",
-        "minmap": ""
+        "minmip": ""
     },
 	"gpu_set_tex_min_mip_ext": {
         "desc": "",
@@ -10154,12 +10153,12 @@
     },
 	"gpu_set_tex_max_mip": {
         "desc": "",
-        "maxmap": ""
+        "maxmip": ""
     },
 	"gpu_set_tex_max_mip_ext": {
         "desc": "",
         "sampler_id": "",
-        "maxmap": ""
+        "maxmip": ""
     },
 	"gpu_set_tex_max_aniso": {
         "desc": "",
