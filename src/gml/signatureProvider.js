@@ -65,7 +65,7 @@ class GMLSignatureHelpProvider {
         if (!ident) {
             return null;
         }
-        const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name];
+        const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.keywords[ident];
         if (!entry || !entry.signature) {
             return null;
         }

@@ -3,7 +3,7 @@
         "desc": "test",
         "x": "test"
     },
-    "achievement_availablen": {
+    "achievement_available": {
         "desc": ""
     },
     "achievement_event": {
@@ -30,8 +30,8 @@
         "desc": ""
     },
     "achievement_load_leaderboard": {
-        "desc": "",
-        "ident": "",
+        "desc": "test",
+        "ident": "test",
         "minindex": "",
         "maxindex": "",
         "filter": ""
@@ -579,19 +579,19 @@
     "audio_system": {
         "desc": ""
     },
-    "base64_decoden": {
+    "base64_decode": {
         "desc": "",
         "string": ""
     },
-    "base64_encoden": {
+    "base64_encode": {
         "desc": "",
         "string": ""
     },
-    "browser_input_capturen": {
+    "browser_input_capture": {
         "desc": "",
         "enable": ""
     },
-    "buffer_async_group_beginn": {
+    "buffer_async_group_begin": {
         "desc": "",
         "groupname": ""
     },
@@ -7361,7 +7361,7 @@
         "desc": "",
         "tag": ""
     },
-	"win8_livetile_notification_text": {
+	"win8_livetile_notification_text_add": {
         "desc": "",
         "text": ""
     },
@@ -7885,6 +7885,41 @@
     "background_set_alpha_from_background": {
         "desc": "",
         "ind": "",
+        "alpha": ""
+    },
+    "draw_background": {
+        "desc": "",
+        "back": "",
+        "x": "",
+        "y": ""
+    },
+    "draw_background_ext": {
+        "desc": "",
+        "back": "",
+        "x": "",
+        "y": "",
+        "xscale": "",
+        "yscale": "",
+        "rot": "",
+        "colour": "",
+        "alpha": ""
+    },
+    "draw_background_general": {
+        "desc": "",
+        "back": "",
+        "left": "",
+        "top": "",
+        "width": "",
+        "height": "",
+        "x": "",
+        "y": "",
+        "xscale": "",
+        "yscale": "",
+        "rot": "",
+        "c1": "",
+        "c2": "",
+        "c3": "",
+        "c4": "",
         "alpha": ""
     },
     "draw_background_part": {
