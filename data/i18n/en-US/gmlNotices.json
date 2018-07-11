@@ -1,0 +1,10 @@
+{
+    "deprecated": "This function is deprecated and obsoleted in GameMaker Studio 2",
+    "obsolete_new1_2": "Obsolete function in new GameMaker Studio and GameMaker Studio 2",
+    "obsolete_2": "Obsolete function in GameMaker Studio 2",
+    "obsolete_2_variable": "Obsolete variable in GameMaker Studio 2",
+    "gm_81": "GameMaker 8.1 Only",
+    "gm_81_variable": "GameMaker 8.1 Only - Variable",
+    "gm_81_constant": "GameMaker 8.1 Only - Constant",
+    "new_2": "New in GameMaker Studio 2"
+}

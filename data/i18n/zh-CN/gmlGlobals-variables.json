@@ -1,0 +1,608 @@
+{
+    "argument": {
+        "desc": ""
+    },
+	"argument0": {
+        "desc": ""
+    },
+	"argument1": {
+        "desc": ""
+    },
+	"argument10": {
+        "desc": ""
+    },
+	"argument11": {
+        "desc": ""
+    },
+	"argument12": {
+        "desc": ""
+    },
+	"argument13": {
+        "desc": ""
+    },
+	"argument14": {
+        "desc": ""
+    },
+	"argument15": {
+        "desc": ""
+    },
+	"argument2": {
+        "desc": ""
+    },
+	"argument3": {
+        "desc": ""
+    },
+	"argument4": {
+        "desc": ""
+    },
+	"argument5": {
+        "desc": ""
+    },
+	"argument6": {
+        "desc": ""
+    },
+	"argument7": {
+        "desc": ""
+    },
+	"argument8": {
+        "desc": ""
+    },
+	"argument9": {
+        "desc": ""
+    },
+	"argument_count": {
+        "desc": ""
+    },
+	"argument_relative": {
+        "desc": ""
+    },
+	"async_load": {
+        "desc": ""
+    },
+	"browser_height": {
+        "desc": ""
+    },
+	"browser_width": {
+        "desc": ""
+    },
+	"caption_health": {
+        "desc": ""
+    },
+	"caption_lives": {
+        "desc": ""
+    },
+	"caption_score": {
+        "desc": ""
+    },
+	"current_day": {
+        "desc": ""
+    },
+	"current_hour": {
+        "desc": ""
+    },
+	"current_minute": {
+        "desc": ""
+    },
+	"current_month": {
+        "desc": ""
+    },
+	"current_second": {
+        "desc": ""
+    },
+	"current_time": {
+        "desc": ""
+    },
+	"current_weekday": {
+        "desc": ""
+    },
+	"current_year": {
+        "desc": ""
+    },
+	"cursor_sprite": {
+        "desc": ""
+    },
+	"debug_mode": {
+        "desc": ""
+    },
+	"delta_time": {
+        "desc": ""
+    },
+	"display_aa": {
+        "desc": ""
+    },
+	"error_last": {
+        "desc": ""
+    },
+	"error_occurred": {
+        "desc": ""
+    },
+	"event_action": {
+        "desc": ""
+    },
+	"event_number": {
+        "desc": ""
+    },
+	"event_object": {
+        "desc": ""
+    },
+	"event_type": {
+        "desc": ""
+    },
+	"fps": {
+        "desc": ""
+    },
+	"fps_real": {
+        "desc": ""
+    },
+	"game_id": {
+        "desc": ""
+    },
+	"health": {
+        "desc": ""
+    },
+	"instance_count": {
+        "desc": ""
+    },
+	"instance_id": {
+        "desc": ""
+    },
+	"keyboard_key": {
+        "desc": ""
+    },
+	"keyboard_lastchar": {
+        "desc": ""
+    },
+	"keyboard_lastkey": {
+        "desc": ""
+    },
+	"keyboard_string": {
+        "desc": ""
+    },
+	"lives": {
+        "desc": ""
+    },
+	"mouse_button": {
+        "desc": ""
+    },
+	"mouse_lastbutton": {
+        "desc": ""
+    },
+	"mouse_x": {
+        "desc": ""
+    },
+	"mouse_y": {
+        "desc": ""
+    },
+	"os_browser": {
+        "desc": ""
+    },
+	"os_device": {
+        "desc": ""
+    },
+	"os_type": {
+        "desc": ""
+    },
+	"os_version": {
+        "desc": ""
+    },
+	"program_directory": {
+        "desc": ""
+    },
+	"room": {
+        "desc": ""
+    },
+	"room_caption": {
+        "desc": ""
+    },
+	"room_first": {
+        "desc": ""
+    },
+	"room_height": {
+        "desc": ""
+    },
+	"room_last": {
+        "desc": ""
+    },
+	"room_persistent": {
+        "desc": ""
+    },
+	"room_speed": {
+        "desc": ""
+    },
+	"room_width": {
+        "desc": ""
+    },
+	"score": {
+        "desc": ""
+    },
+	"show_health": {
+        "desc": ""
+    },
+	"show_lives": {
+        "desc": ""
+    },
+	"show_score": {
+        "desc": ""
+    },
+	"temp_directory": {
+        "desc": ""
+    },
+	"transition_color": {
+        "desc": ""
+    },
+	"transition_kind": {
+        "desc": ""
+    },
+	"transition_steps": {
+        "desc": ""
+    },
+	"webgl_enabled": {
+        "desc": ""
+    },
+	"working_directory": {
+        "desc": ""
+    },
+	"alarm": {
+        "desc": ""
+    },
+	"bbox_bottom": {
+        "desc": ""
+    },
+	"bbox_left": {
+        "desc": ""
+    },
+	"bbox_right": {
+        "desc": ""
+    },
+	"bbox_top": {
+        "desc": ""
+    },
+	"depth": {
+        "desc": ""
+    },
+	"direction": {
+        "desc": ""
+    },
+	"friction": {
+        "desc": ""
+    },
+	"gravity": {
+        "desc": ""
+    },
+	"gravity_direction": {
+        "desc": ""
+    },
+	"hspeed": {
+        "desc": ""
+    },
+	"id": {
+        "desc": ""
+    },
+	"image_alpha": {
+        "desc": ""
+    },
+	"image_angle": {
+        "desc": ""
+    },
+	"image_blend": {
+        "desc": ""
+    },
+	"image_index": {
+        "desc": ""
+    },
+	"image_number": {
+        "desc": ""
+    },
+	"image_single": {
+        "desc": ""
+    },
+	"image_speed": {
+        "desc": ""
+    },
+	"image_xscale": {
+        "desc": ""
+    },
+	"image_yscale": {
+        "desc": ""
+    },
+	"mask_index": {
+        "desc": ""
+    },
+	"object_index": {
+        "desc": ""
+    },
+	"path_endaction": {
+        "desc": ""
+    },
+	"path_index": {
+        "desc": ""
+    },
+	"path_orientation": {
+        "desc": ""
+    },
+	"path_position": {
+        "desc": ""
+    },
+	"path_positionprevious": {
+        "desc": ""
+    },
+	"path_scale": {
+        "desc": ""
+    },
+	"path_speed": {
+        "desc": ""
+    },
+	"persistent": {
+        "desc": ""
+    },
+	"phy_active": {
+        "desc": ""
+    },
+	"phy_angular_damping": {
+        "desc": ""
+    },
+	"phy_angular_velocity": {
+        "desc": ""
+    },
+	"phy_bullet": {
+        "desc": ""
+    },
+	"phy_collision_points": {
+        "desc": ""
+    },
+	"phy_collision_x": {
+        "desc": ""
+    },
+	"phy_collision_y": {
+        "desc": ""
+    },
+	"phy_col_normal_x": {
+        "desc": ""
+    },
+	"phy_col_normal_y": {
+        "desc": ""
+    },
+	"phy_com_x": {
+        "desc": ""
+    },
+	"phy_com_y": {
+        "desc": ""
+    },
+	"phy_dynamic": {
+        "desc": ""
+    },
+	"phy_fixed_rotation": {
+        "desc": ""
+    },
+	"phy_inertia": {
+        "desc": ""
+    },
+	"phy_kinematic": {
+        "desc": ""
+    },
+	"phy_linear_damping": {
+        "desc": ""
+    },
+	"phy_linear_velocity_x": {
+        "desc": ""
+    },
+	"phy_linear_velocity_y": {
+        "desc": ""
+    },
+	"phy_mass": {
+        "desc": ""
+    },
+	"phy_position_x": {
+        "desc": ""
+    },
+	"phy_position_xprevious": {
+        "desc": ""
+    },
+	"phy_position_y": {
+        "desc": ""
+    },
+	"phy_position_yprevious": {
+        "desc": ""
+    },
+	"phy_rotation": {
+        "desc": ""
+    },
+	"phy_sleeping": {
+        "desc": ""
+    },
+	"phy_speed": {
+        "desc": ""
+    },
+	"phy_speed_x": {
+        "desc": ""
+    },
+	"phy_speed_y": {
+        "desc": ""
+    },
+	"solid": {
+        "desc": ""
+    },
+	"speed": {
+        "desc": ""
+    },
+	"sprite_height": {
+        "desc": ""
+    },
+	"sprite_index": {
+        "desc": ""
+    },
+	"sprite_width": {
+        "desc": ""
+    },
+	"sprite_xoffset": {
+        "desc": ""
+    },
+	"sprite_yoffset": {
+        "desc": ""
+    },
+	"timeline_index": {
+        "desc": ""
+    },
+	"timeline_loop": {
+        "desc": ""
+    },
+	"timeline_position": {
+        "desc": ""
+    },
+	"timeline_running": {
+        "desc": ""
+    },
+	"timeline_speed": {
+        "desc": ""
+    },
+	"visible": {
+        "desc": ""
+    },
+	"vspeed": {
+        "desc": ""
+    },
+	"x": {
+        "desc": ""
+    },
+	"xprevious": {
+        "desc": ""
+    },
+	"xstart": {
+        "desc": ""
+    },
+	"y": {
+        "desc": ""
+    },
+	"yprevious": {
+        "desc": ""
+    },
+	"ystart": {
+        "desc": ""
+    },
+	"view_enabled": {
+        "desc": ""
+    },
+	"view_current": {
+        "desc": ""
+    },
+	"background_alpha": {
+        "desc": ""
+    },
+	"background_blend": {
+        "desc": ""
+    },
+	"background_color": {
+        "desc": ""
+    },
+	"background_foreground": {
+        "desc": ""
+    },
+	"background_height": {
+        "desc": ""
+    },
+	"background_hspeed": {
+        "desc": ""
+    },
+	"background_htiled": {
+        "desc": ""
+    },
+	"background_index": {
+        "desc": ""
+    },
+	"background_showcolor": {
+        "desc": ""
+    },
+	"background_visible": {
+        "desc": ""
+    },
+	"background_vspeed": {
+        "desc": ""
+    },
+	"background_vtiled": {
+        "desc": ""
+    },
+	"background_width": {
+        "desc": ""
+    },
+	"background_x": {
+        "desc": ""
+    },
+	"background_xscale": {
+        "desc": ""
+    },
+	"background_y": {
+        "desc": ""
+    },
+	"background_yscale": {
+        "desc": ""
+    },
+
+    "secure_mode": {
+        "desc": ""
+    },
+    "gamemaker_pro": {
+        "desc": ""
+    },
+    "gamemaker_registered": {
+        "desc": ""
+    },
+    "gamemaker_version": {
+        "desc": ""
+    },
+
+    "view_angle": {
+        "desc": ""
+    },
+    "view_hborder": {
+        "desc": ""
+    },
+    "view_hport": {
+        "desc": ""
+    },
+    "view_hspeed": {
+        "desc": ""
+    },
+    "view_hview": {
+        "desc": ""
+    },
+    "view_object": {
+        "desc": ""
+    },
+    "view_vborder": {
+        "desc": ""
+    },
+    "view_visible": {
+        "desc": ""
+    },
+    "view_vspeed": {
+        "desc": ""
+    },
+    "view_wport": {
+        "desc": ""
+    },
+    "view_wview": {
+        "desc": ""
+    },
+    "view_xport": {
+        "desc": ""
+    },
+    "view_xview": {
+        "desc": ""
+    },
+    "view_yport": {
+        "desc": ""
+    },
+    "view_yview": {
+        "desc": ""
+    },
+
+    "layer": {
+       "desc": ""
+    },
+    "view_camera": {
+       "desc": ""
+    },
+    "event_data": {
+       "desc": ""
+    }
+}

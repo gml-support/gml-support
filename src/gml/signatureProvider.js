@@ -1,9 +1,7 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
-const localizationset = vscode_1.workspace.getConfiguration('gmlsupport').get('localization');
-const gmlGlobals = require("./i18n/" + localizationset + "/gmlGlobals");
-const gmlThirdparty = require("./i18n/" + localizationset + "/gmlThirdparty");
+const gmlGlobals = require("./gmlGlobals");
 const _NL = '\n'.charCodeAt(0);
 const _TAB = '\t'.charCodeAt(0);
 const _WSB = ' '.charCodeAt(0);
@@ -67,7 +65,7 @@ class GMLSignatureHelpProvider {
         if (!ident) {
             return null;
         }
-        const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.deprecatedfunctions[ident] || gmlGlobals.obsoletefunctions1[ident] || gmlGlobals.obsoletefunctions2[ident] || gmlGlobals.gm81functions[ident] || gmlGlobals.gms2functions[ident] || gmlGlobals.constants[ident] || gmlGlobals.gm81constants[ident] || gmlGlobals.gms2constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.obsoletevariables2[ident] || gmlGlobals.gms2variables[ident] || gmlGlobals.keywords[ident] || gmlThirdparty.thirdfunctions[ident] || gmlThirdparty.thirdconstants[ident];
+        const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.deprecatedfunctions[ident] || gmlGlobals.obsoletefunctions1[ident] || gmlGlobals.obsoletefunctions2[ident] || gmlGlobals.gm81functions[ident] || gmlGlobals.gms2functions[ident] || gmlGlobals.constants[ident] || gmlGlobals.gm81constants[ident] || gmlGlobals.gms2constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.obsoletevariables2[ident] || gmlGlobals.gms2variables[ident] || gmlGlobals.keywords[ident];
         if (!entry || !entry.signature) {
             return null;
         }

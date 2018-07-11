@@ -326,7 +326,7 @@
       },
       {
         "scopeName": "source.gml-thirdparty",
-        "path": "./syntaxes/thirdparty.json"
+        "path": "none"
       },
       {
         "scopeName": "source.gml-extra",
