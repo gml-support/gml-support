@@ -1,3 +1,7 @@
+## 1.6.1
+
+ - Fix some spelling errors for other locales.
+
 ## 1.6.0
 
  - 改进 GML 语法提示显示，现在通过 JSON 读取 GML 语法信息以支持多语言，可前往 Transifex 查看翻译进度或[帮助翻译](https://www.transifex.com/liaronce-production/gml-support)，模板将稍后上传。
