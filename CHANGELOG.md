@@ -1,3 +1,16 @@
+## 1.6.0
+
+ - 改进 GML 语法提示显示，现在通过 JSON 读取 GML 语法信息以支持多语言，可前往 Transifex 查看翻译进度或[帮助翻译](https://www.transifex.com/liaronce-production/gml-support)，模板将稍后上传。
+ - 修复部分语法高亮。
+ - 修复部分函数提示错误。
+ - 删除历史版本中遗留的过时代码。
+ - 从插件中移除第三方 GM 插件高亮、提示等支持，现已将该功能独立为一款插件，将在本插件发布更新后发布该插件，[仓库地址](https://github.com/gml-support/gml-support-thirdparty)。
+ - Improved GML syntax hint display, now read GML syntax information via JSON to support multiple languages. Now you can go to `Transifex` to view translation progress or [help translate](https://www.transifex.com/liaronce-production/gml-support), templates will be uploaded later.
+ - Fix some syntax highlighting.
+ - Fix some functions' wrong parameters.
+ - Remove old completions. (Legacy code in history).
+ - Remove third-party GameMaker plug-in highlights, prompts, and other support from the extension. This feature has been turned into an extension that will be released after the plugin is upgraded. [Repository](https://github.com/gml-support/gml-support-thirdparty)
+
 ## 1.5.0
 
  - 添加 GML 语言可用性
