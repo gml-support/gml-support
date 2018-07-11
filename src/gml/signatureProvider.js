@@ -65,7 +65,7 @@ class GMLSignatureHelpProvider {
         if (!ident) {
             return null;
         }
-        const entry = gmlGlobals.globalfunctions[ident] || gmlGlobals.deprecatedfunctions[ident] || gmlGlobals.obsoletefunctions1[ident] || gmlGlobals.obsoletefunctions2[ident] || gmlGlobals.gm81functions[ident] || gmlGlobals.gms2functions[ident] || gmlGlobals.constants[ident] || gmlGlobals.gm81constants[ident] || gmlGlobals.gms2constants[ident] || gmlGlobals.globalvariables[ident] || gmlGlobals.obsoletevariables2[ident] || gmlGlobals.gms2variables[ident] || gmlGlobals.keywords[ident];
+        const entry = gmlGlobals.globalfunctions[name] || gmlGlobals.constants[name] || gmlGlobals.globalvariables[name] || gmlGlobals.keywords[name];
         if (!entry || !entry.signature) {
             return null;
         }

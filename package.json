@@ -7,7 +7,7 @@
   "publisherName": "LiarOnce",
   "icon": "icon.png",
   "license": "SEE LICENSE IN LICENSE",
-  "homepage": "https://github.com/LiarOnce/gml-support/blob/master/README.md",
+  "homepage": "https://github.com/gml-support/gml-support/blob/master/README.md",
   "engines": {
     "vscode": "^1.8.0"
   },
@@ -32,11 +32,11 @@
        "vscode-nls": "^2.0.2"
   },
   "bugs": {
-      "url": "https://github.com/LiarOnce/gml-support/issues"
+      "url": "https://github.com/gml-support/gml-support/issues"
   },
   "repository": {
       "type": "git",
-      "url": "https://github.com/LiarOnce/gml-support.git"
+      "url": "https://github.com/gml-support/gml-support.git"
   },
   "contributes": {
     "languages": [
