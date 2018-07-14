@@ -529,7 +529,7 @@ exports.globalfunctions = {
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_velocity.emitterid },,
             { label: 'vx', documentation: i18n.audio_emitter_velocity.vx },
-            { label: 'vy', documentation: i18n.audio_emitter_velocity,vy },
+            { label: 'vy', documentation: i18n.audio_emitter_velocity.vy },
             { label: 'vz', documentation: i18n.audio_emitter_velocity.vz }
         ],
 		signature: '(emitterid, vx, vy, vz)'
@@ -794,10 +794,10 @@ exports.globalfunctions = {
         signature: '(soundid)'
     },
 	audio_pause_sync_group: {
-        description: '[Function]' + i18n.audio_pause_sync_grou.desc,
+        description: '[Function]' + i18n.audio_pause_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_pause_sync_grou.sync_group_id }
+            { label: 'sync_group_id', documentation: i18n.audio_pause_sync_group.sync_group_id }
         ],
         signature: '(sync_group_id)'
     },
@@ -1468,7 +1468,7 @@ exports.globalfunctions = {
             { label: 'x', documentation: i18n.clickable_add.x },
             { label: 'y', documentation: i18n.clickable_add.y },
             { label: 'spritetpe', documentation: i18n.clickable_add.spritetpe },
-            { label: 'URL', documentation: i18nclickable_add.URL },
+            { label: 'URL', documentation: i18n.clickable_add.URL },
             { label: 'target', documentation: i18n.clickable_add.target },
             { label: 'params', documentation: i18n.clickable_add.params }
         ],
@@ -4536,11 +4536,11 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_add: {
-        description: '[Function]' + i18n.s_priority_add.desc,
+        description: '[Function]' + i18n.ds_priority_add.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.s_priority_add.id },
-            { label: 'value', documentation: i18n.s_priority_add.value },
+            { label: 'id', documentation: i18n.ds_priority_add.id },
+            { label: 'value', documentation: i18n.ds_priority_add.value },
             { label: 'priority', documentation: i18n.ds_priority_add.priority }
         ],
         signature: '(id, value, priority)'
@@ -4963,7 +4963,7 @@ exports.globalfunctions = {
             { label: 'dll', documentation: i18n.external_define.dll },
             { label: 'name', documentation: i18n.external_define.name },
             { label: 'calltype', documentation: i18n.external_define.calltype },
-            { label: 'restype', documentation: i18n.external_defin.restype },
+            { label: 'restype', documentation: i18n.external_define.restype },
             { label: 'argnumb', documentation: i18n.external_define.argnumb },
             { label: 'arg1type', documentation: i18n.external_define.arg1type },
             { label: 'arg2type', documentation: i18n.external_define.arg2type },
@@ -10099,7 +10099,7 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.skeleton_attachment_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'name', documentation: i18nskeleton_attachment_create.skeleton_attachment_create.name },
+            { label: 'name', documentation: i18n.skeleton_attachment_create.name },
             { label: 'sprite', documentation: i18n.skeleton_attachment_create.sprite },
             { label: 'ind', documentation: i18n.skeleton_attachment_create.ind },
             { label: 'xo', documentation: i18n.skeleton_attachment_create.xo },
@@ -12512,7 +12512,7 @@ exports.globalfunctions = {
         available: datasimple.gms1d,
         parameters: [
             { label: 'template', documentation: i18n.win8_livetile_notification_secondary_begin.template },
-            { label: 'tileId', documentation: i18n.tileId.win8_livetile_notification_secondary_begin.tileId }
+            { label: 'tileId', documentation: i18n.win8_livetile_notification_secondary_begin.tileId }
         ],
         signature: '(template, tileId)'
     },
@@ -12580,7 +12580,7 @@ exports.globalfunctions = {
         available: datasimple.gms1d,
         parameters: [
             { label: 'id', documentation: i18n.win8_secondarytile_badge_notification.id },
-            { label: 'tileId', documentation: i18n.tileId.win8_secondarytile_badge_notification.tileId }
+            { label: 'tileId', documentation: i18n.win8_secondarytile_badge_notification.tileId }
         ],
         signature: '(id, tileId)'
     },
