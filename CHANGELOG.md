@@ -1,3 +1,10 @@
+## 1.6.2
+
+ - Fix `var/enum` bounding.(@jabsatz)
+ - Add `.vscodeignore`.
+ - 修复 `var/enum` 高亮错误。(@jabsatz)
+ - 添加 `.vscodeignore`。
+
 ## 1.6.1
 
  - Fix some spelling errors for other locales.
