@@ -4,7 +4,6 @@ const vscode = require("vscode");
 const hoverProvider_1 = require("./gml/hoverProvider");
 const completionProvider_1 = require("./gml/completionProvider");
 const signatureProvider_1 = require("./gml/signatureProvider");
-const fs = require("fs");
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerHoverProvider('gml-gm81', new hoverProvider_1.default()));
     context.subscriptions.push(vscode.languages.registerHoverProvider('gml-gms', new hoverProvider_1.default()));
