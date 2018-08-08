@@ -13,9 +13,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.abs.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'x', documentation: i18n.abs.x }
+            { label: 'val', documentation: i18n.abs.val }
         ],
-		signature: '(x)'
+		signature: '(val)'
 	},
 	achievement_available: {
 		description: '[Function]' + i18n.achievement_available.desc,
@@ -94,18 +94,18 @@ exports.globalfunctions = {
         available: datasimple.gms1,
         parameters: [
             { label: 'achievement_name', documentation: i18n.achievement_post.achievement_name },
-            { label: 'value', documentation: i18n.achievement_post.value }
+            { label: 'percent', documentation: i18n.achievement_post.percent }
         ],
-		signature: '(achievement_name, value)'
+		signature: '(achievement_name, percent)'
 	},
 	achievement_post_score: {
         description: '[Function]' + i18n.achievement_post_score.desc,
         available: datasimple.gms1,
         parameters: [
             { label: 'score_name', documentation: i18n.achievement_post_score.score_name },
-            { label: 'value', documentation: i18n.achievement_post_score.value }
+            { label: 'score', documentation: i18n.achievement_post_score.score }
         ],
-		signature: '(score_name, value)'
+		signature: '(score_name, score)'
 	},
 	achievement_reset: {
 		description: '[Function]' + i18n.achievement_reset.desc,
@@ -171,10 +171,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.angle_difference.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'src', documentation: i18n.angle_difference.src },
-            { label: 'dest', documentation: i18n.angle_difference.dest }
+            { label: 'ang1', documentation: i18n.angle_difference.ang1 },
+            { label: 'ang2', documentation: i18n.angle_difference.ang2 }
         ],
-		signature: '(src, dest)'
+		signature: '(ang1, ang2)'
 	},
 	ansi_char: {
         description: '[Function]' + i18n.ansi_char.desc,
@@ -192,9 +192,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.application_surface_draw_enable.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'on_off', documentation: i18n.application_surface_draw_enable.on_off }
+            { label: 'flag', documentation: i18n.application_surface_draw_enable.flag }
         ],
-		signature: '(on_off)'
+		signature: '(flag)'
 	},
 	application_surface_enable: {
         description: '[Function]' + i18n.application_surface_enable.desc,
@@ -257,9 +257,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.array_create.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'size', documentation: i18n.array_create.size }
+            { label: 'size', documentation: i18n.array_create.size },
+            { label: 'value', documentation: i18n.array_create.value }
         ],
-		signature: '(size)'
+		signature: '(size, [value])'
 	},
 	array_equals: {
         description: '[Function]' + i18n.array_equals.desc,
@@ -274,26 +275,26 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.array_height_2d.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'variable', documentation: i18n.array_height_2d.variable }
+            { label: 'array', documentation: i18n.array_height_2d.array }
         ],
-		signature: '(variable)'
+		signature: '(array)'
 	},
 	array_length_1d: {
         description: '[Function]' + i18n.array_length_1d.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'variable', documentation: i18n.array_length_1d.variable }
+            { label: 'array', documentation: i18n.array_length_1d.array }
         ],
-		signature: '(variable)'
+		signature: '(array)'
 	},
 	array_length_2d: {
         description: '[Function]' + i18n.array_length_2d.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'variable', documentation: i18n.array_length_2d.variable },
-            { label: 'index', documentation: i18n.array_length_2d.index }
+            { label: 'array', documentation: i18n.array_length_2d.array },
+            { label: 'n', documentation: i18n.array_length_2d.n }
         ],
-		signature: '(variable, index)'
+		signature: '(array, n)'
 	},
 	asset_get_index: {
         description: '[Function]' + i18n.asset_get_index.desc,
@@ -325,8 +326,8 @@ exports.globalfunctions = {
         parameters: [
             { label: 'bufferId', documentation: i18n.audio_create_buffer_sound.bufferId },
             { label: 'format', documentation: i18n.audio_create_buffer_sound.format },
+            { label: 'rate', documentation: i18n.audio_create_buffer_sound.rate },
             { label: 'offset', documentation: i18n.audio_create_buffer_sound.offset },
-            { label: 'src_index', documentation: i18n.audio_create_buffer_sound.src_index },
             { label: 'length', documentation: i18n.audio_create_buffer_sound.length },
             { label: 'channels', documentation: i18n.audio_create_buffer_sound.channels }
         ],
@@ -336,11 +337,11 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_create_play_queue.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'bufferFormat', documentation: i18n.audio_create_play_queue.bufferFormat },
+            { label: 'queueFormat', documentation: i18n.audio_create_play_queue.queueFormat },
             { label: 'sampleRate', documentation: i18n.audio_create_play_queue.sampleRate },
             { label: 'channels', documentation: i18n.audio_create_play_queue.channels }
         ],
-		signature: '(bufferFormat, sampleRate, channels)'
+		signature: '(queueFormat, sampleRate, channels)'
 	},
 	audio_create_stream: {
         description: '[Function]' + i18n.audio_create_stream.desc,
@@ -370,17 +371,17 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_destroy_stream.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'stream_sound_id', documentation: i18n.audio_destroy_stream.stream_sound_id }
+            { label: 'filename', documentation: i18n.audio_destroy_stream.filename }
         ],
-		signature: '(stream_sound_id)'
+		signature: '(filename)'
 	},
 	audio_destroy_sync_group: {
         description: '[Function]' + i18n.audio_destroy_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_destroy_sync_group.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_destroy_sync_group.group_index }
         ],
-		signature: '(sync_group_id)'
+		signature: '(group_index)'
 	},
 	audio_emitter_create: {
 		description: '[Function]' + i18n.audio_emitter_create.desc,
@@ -390,9 +391,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_emitter_exists.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'emitterid', documentation: i18n.audio_emitter_exists.emitterid }
+            { label: 'index', documentation: i18n.audio_emitter_exists.index }
         ],
-		signature: '(emitterid)'
+		signature: '(index)'
 	},
 	audio_emitter_falloff: {
         description: '[Function]' + i18n.audio_emitter_falloff.desc,
@@ -538,9 +539,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_exists.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_exists.soundid }
+            { label: 'index', documentation: i18n.audio_exists.index }
         ],
-		signature: '(soundid)'
+		signature: '(index)'
 	},
 	audio_falloff_set_model: {
         description: '[Function]' + i18n.audio_falloff_set_model.desc,

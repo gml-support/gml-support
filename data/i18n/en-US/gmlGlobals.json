@@ -1,73 +1,73 @@
 {
     "abs": {
-        "desc": "test",
-        "x": "test"
+        "desc": "This function returns the absolute value of the input argument, so if it's a positive value then it will remain the same, but if it's negative it will be multiplied by -1 to make it positive. \n\nReturns: Real",
+        "val": "The number to turn absolute."
     },
     "achievement_available": {
-        "desc": ""
+        "desc": "This function will return true if the user is currently connected to the internet and the chosen leaderboard and achievement system is available, otherwise it will return false. \n\nReturns: Boolean "
     },
     "achievement_event": {
         "desc": "",
         "stringid": ""
     },
     "achievement_get_challenges": {
-        "desc": ""
+        "desc": "This function will send a request to the server for information on all current challenges and will trigger a callback  Social Asynchronous Event which contains the [ [ async_load ] ] map populated with the relevant key/value pairs. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_challenge_list_received ] as well as a number of other key/value pairs for each challenge. The exact contents of the map are shown below: \n\n\"id\" - For this function it should be [ achievement_challenge_list_received ]\n\n\"numchallenges\" - The number of challenges (local and remote) currently available.\n\n\"ChallengeNplayerid\" - The player id for the challenge, where \"N\" is an integer, EG: \"Challenge5playerid\" is the player id for the fifth challenge in the list.\n\n\"ChallengeNissuerid\" - The id of the person that issued the challenge, where \"N\" is an integer, EG: \"Challenge2issuerid\" is the issuer id for the second challenge in the list.\n\n\"ChallengeNstate\" - The state of the challenge \"N\", which will have a value of 0 - 3 (as a string) for invalid, pending, completed or declined.\n\n\"ChallengeNmessage\" - The text message for challenge \"N\".\n\n\"ChallengeNissueddate\" - The issue date for challenge \"N\".\n\n\"ChallengeNcompleteddate\" - The completion date for challenge \"N\".\n\n\"ChallengeNtype\" - The type of challenge given. Can be one of two constants:\n\n    •achievement_type_score_challenge - A challenge based on the score value.\n\n    •achievement_type_achievement_challenge - A challenge based on an achievement.\n\n\"ChallengeNidentifier\" - The identifying string for the challenge.\n\n\"ChallengeNscore\" - The score tied in with the challenge. \n\nReturns:  N/A \n\nNOTE: This function is for iOS only. "
     },
     "achievement_get_info": {
         "desc": "",
         "userid": ""
     },
     "achievement_get_pic": {
-        "desc": "",
-        "char": ""
+        "desc": "This function will send a request to the server for the image of a player or a friend and will trigger a callback Social Asynchronous Event which contains the [ [ async_load ] ] map populated with the relevant key/value pairs. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_pic_loaded ] as well as a number of other key/value pairs. The exact contents of the map are shown below: \n\n\"id\" - For this function it should be [ achievement_pic_loaded ]\n\n\"playerid\" - The id of the player or friend that we are receiving the image of.\n\n\"spriteid\" - The sprite id for the image that can then be used to draw it on-screen using any of the draw sprite functions.\n\nReturns: N/A \n\nNOTE: This function is for iOS only. \n\nWARNING: This function creates sprites and as such, their ids should be stored in variables and then removed from memory using the sprite_delete function otherwise repeated use will give you a memory leak that will eventually slow down or crash your game. ",
+        "char": "The id of the person to get the image of (either from a friends list or a leaderboard)"
     },
     "achievement_increment": {
-        "desc": "",
-        "achievement_name": "",
-        "value": ""
+        "desc": "Google Play permit Android games to have achievements with no completion value and you can use this function to increment those achievement by a given amount. \n\nReturns: N/A ",
+        "achievement_name": "The name of the achievement. ",
+        "value": "The value to be sent."
     },
     "achievement_load_friends": {
-        "desc": ""
+        "desc": "This function will send a request to the server for information on all the logged in users friends and will trigger a callback Social Asynchronous Event which contains the [ [ async_load ] ] map populated with the relevant key/value pairs. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_friends_info ] as well as a number of other key/value pairs for each friend. The exact contents of the map are shown below: \n\n\"id\" - For this function it should be [ achievement_friends_info ]\n\n\"FriendN\" - The name of the friend, where \"N\" is an integer value corresponding to their position within the friends list.\n\n\"FriendidN\" - The unique user id of the friend, \"N\". \n\nReturns:  N/A \n\nNOTE: This function is for iOS only. "
     },
     "achievement_load_leaderboard": {
-        "desc": "test",
-        "ident": "test",
-        "minindex": "",
-        "maxindex": "",
-        "filter": ""
+        "desc": "This function will send a request to the server for information on the given leaderboard. The leaderboard must have been created previously on the developer dashboard for your game and the ID given is that which you must supply as the first argument of the function. It will trigger a callback  Social Asynchronous Event which contains the [ [ async_load ] ] map populated with the relevant key/value pairs. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_leaderboard_info ] as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n\"id\" - For this function it should be [ achievement_leaderboard_info ]\n\n\"leaderboardid\" - The unique ID for the leaderboard as defined on the provider dashboard.\n\n\"numentries\" - The number of entries in the leaderboard that you have received.\n\n\"PlayerN\" - The name of the player, where \"N\" is an integer value corresponding to their position within the leaderboard entries list.\n\n\"PlayeridN\" - The unique user id of the player, \"N\". \n\n\"RankN\" - The rank of the player \"N\" within the leaderboard.\n\n\"ScoreN\" - The score of the player \"N\". \n\nYou can specify the exact portion of the leaderboard to show by giving a minimum and maximum index value, as well as request that the results be filtered to retrieve only those scores by your friends or those posted by all players using the following filter constants: \n\n    •achievement_filter_friends_only - Get only the scores of the players friends.\n\n    •achievement_filter_all_players - Get all scores for all players.\n\nReturns:  N/A \n\nNOTE: this function does not work on the Android platform. ",
+        "ident": "The unique ID of the leaderboard as shown on the developer dashboard.",
+        "minindex": "The starting index value to get the leaderboard data from.",
+        "maxindex": "The maximum index value to get the leaderboard data from.",
+        "filter": "Whether to filter the results to those that are on your friends list or to all players (see the Description below)"
     },
     "achievement_load_progress": {
-        "desc": ""
+        "desc": "This function will send a request to the server for information on all available achievements. It will trigger a callback Social Asynchronous Event which contains the [ [ async_load ] ] map populated with the relevant key/value pairs. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_achievement_info ] as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n\"id\" - For this function it should be [ achievement_achievement_info. ]\n\n\"numentries\" - The number of achievements in the list.\n\n\"AchN\" - The name of the achievement, where \"N\" is an integer value corresponding to its place in the entries list. \n\n\"AchCompN\" - How complete the achievement \"N\" is as a percentage value from 0 to 100 (a string). \n\nReturns:  N/A \n\nNOTE: This function is for iOS only. "
     },
     "achievement_login": {
-        "desc": ""
+        "desc": "This function logs the user into appropriate leaderboard and achievement service. If the service is [ not ] available, the user is logged into a \"pretend\" game centre and all achievements and scores are stored on the device so that when the actual service is available, these details can be uploaded. The function will trigger a callback  Social Asynchronous Event which contains the [ async_load ] map populated with the relevant key/value pairs. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_our_info ] as well as a number of other key/value pairs for each challenge. The exact contents of the map are shown below: \n\n\"id\" - For this function it should be [ achievement_our_info ]\n\n\"name\" - The name of the user that is currently logged in.\n\n\"playerid\" - The unique player id for the user that is currently logged in.\n\nReturns: N/A "
     },
     "achievement_login_status": {
-        "desc": ""
+        "desc": "This function is currently only useful for Google Play on the Android platform. It will check to see if the user is already logged into Google services, in which case it will return [ true ], or not, returning [ false ]. If it returns true there is no need to call the [ achievement_login ] function. \n\nReturns: Boolean "
     },
     "achievement_logout": {
-        "desc": ""
+        "desc": "This function logs the user out of the chosen leaderboard and achievement service. This will stop all further achievements and scores from being recorded. \n\nReturns: N/A "
     },
     "achievement_post": {
-        "desc": "",
-        "achievement_name": "",
-        "value": ""
+        "desc": "You can use this function to send your achievements to the chosen leaderboard and achievement service. You send the name of the achievement (this is the name you assigned to it when you set up the account for your app) and the percentage that you have completed towards getting the achievement (0 - None, 100 - Completed). \n\nReturns: N/A ",
+        "achievement_name": "The name of the achievement.",
+        "percent": "The percentage of the achievement completed."
     },
     "achievement_post_score": {
-        "desc": "",
-        "score_name": "",
-        "value": ""
+        "desc": "You can use this function to send your score to the chosen leaderboard and achievement service. You send the name of the score table (the \"leaderboard\" name that you assigned to your game when you set up the account) and the actual score value). \n\nReturns: N/A ",
+        "score_name": "The name of the score table (or \"Leaderboard\").",
+        "score": "The score to be sent."
     },
     "achievement_reset": {
-        "desc": ""
+        "desc": "This function will reset all achievements back to their initial values for the game. This function is provided as a debug function and it is [ not ] recommended that you permit the end-user to do this in your games. "
     },
     "achievement_send_challenge": {
-        "desc": "",
-        "to": "",
-        "challengeid": "",
-        "score": "",
-        "type": "",
-        "msg": ""
+        "desc": "This function will send a challenge across the network to the chosen player. You can get the [ playerid ] using the [ achievement_load_friends ] or the [ achievement_load_leaderboard ] functions and you must also supply the challengeid which is the unique value given the challenge when you created it on your iTunes Connect or Google Play dashboard. You must also supply a score, and a short text message as well as set the challenge [ type ]. This can be one of the following constants:\n\n    •achievement_type_score_challenge - A challenge based on the score value.\n\n    •achievement_type_achievement_challenge - A challenge based on an achievement.\n\nThis function will trigger a callback Social Asynchronous Event for the player that is to receive the challenge, and in this event you will have a ds_map referenced in the variable [ async_load ]. The [ id ] key of this [ ds_map ] is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant [ achievement_challenge_received ] as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\nNOTE: that the user can also receive toast notifications for challenges received, but this will depend on the values you have chosen using the function [ achievement_show_challenge_notifications ]. \n\n\"id\" - For this function it should be achievement_leaderboard_info\n\n\"playerid\" - The player ID for the challenge.\n\n\"issuerid\" - The issuer ID for the challenge.\n\n\"state\" - The state of the challenge, which will have a value of 0 - 3 (as a string) for invalid, pending, completed or declined.\n\n\"message\" - The text message for challenge.\n\n\"completeddate\" - The completion date for challenge.\n\n\"issueddate\" - The issue date for challenge. \n\n\"type\" - The type of challenge given. Can be one of two constants:\n\n    •achievement_type_score_challenge - A challenge based on the score value.\n\n    •achievement_type_achievement_challenge - A challenge based on an achievement.\n\n\"identifier\" - The identifying string for the challenge, as set on the provider dashboard.\n\n\"score\" - The score tied in with the challenge (if applicable). \n\nReturns:  N/A ",
+        "to": "The unique ID of the player to challenge. ",
+        "challengeid": "The unique challenge ID (as found on the provider dashboard).",
+        "score": "The score to beat. ",
+        "type": "The type of challenge to be issued - one of two constants given below.",
+        "msg": "The message to attach to the challenge."
     },
     "achievement_show": {
         "desc": "",
@@ -75,213 +75,214 @@
         "val": ""
     },
     "achievement_show_achievements": {
-        "desc": ""
+        "desc": "This function will open the achievements page for the chosen platform. Please note that this is an [ asynchronous function ], ie: your game will continue to run in the background while the achievements page is being shown. As such, you should be careful where you use this and make sure to pause the game or only permit it to be shown in areas of your game where it will not interfere with the game-play. \n\nReturns: N/A "
     },
     "achievement_show_challenge_notifications": {
-        "desc": "",
-        "receive_challenge": "",
-        "local_complete": "",
-        "remote_complete": ""
+        "desc": "With this function you can show, or suppress, the various different \"toast\" pop-up notifications relating to challenges. When the arguments are set to [ true ] these messages will appear, informing the player of any local or remote challenges received as well as those challenges that have been completed, while setting them to [ false ] will suppress these notifications. \n\nReturns: N/A ",
+        "receive_challenge": "Show challenges received pop-up (true) or not (false).",
+        "local_complete": "Show completed local challenges pop-up (true) or not (false).",
+        "remote_complete": "Show completed remote challenges pop-up (true) or not (false)."
     },
     "achievement_show_leaderboards": {
-        "desc": ""
+        "desc": "This function will open the leaderboards page for the chosen platform. Please note that this is an [ asynchronous function ], ie: your game will continue to run in the background while the leaderboards page is being shown. As such, you should be careful where you use this and make sure to pause the game or only permit it to be shown in areas of your game where it will not interfere with the game-play. \n\nReturns: N/A "
     },
     "alarm_get": {
-        "desc": "",
-        "index": ""
+        "desc": "This function can be used to get the current value of the given alarm. You supply the alarm number from 0 to 11 and this function will return the value that the alarm is currently on. This is an alternative method to getting the alarm array value directly. \n\nReturns: Real ",
+        "index": "The alarm index to get, from 0 to 11."
     },
     "alarm_set": {
-        "desc": "",
-        "index": "",
-        "count": ""
+        "desc": "This function can be used to set an alarm. You supply the alarm number from 0 to 11, and then the value to set the alarm to. The value must be an integer value, and you can set it to -1 to stop the alarm. This is an alternative method to setting the alarm array directly. \n\nReturns: N/A ",
+        "index": "The alarm index to set, from 0 to 11.",
+        "count": "The value (an integer) to set the alarm to."
     },
     "angle_difference": {
-        "desc": "",
-        "src": "",
-        "dest": ""
+        "desc": "This function will return the smallest angle difference between two angles as a value between -180 and 180 degrees (where a positive angle is anti-clockwise and a negative angle clockwise). \n\nReturns: Real ",
+        "ang1": "The first angle to use.",
+        "ang2": "The second angle to use."
     },
     "ansi_char": {
-        "desc": "",
-        "val": ""
+        "desc": "This function returns a string containing the character with raw BYTE value set. This will not, and should not, be displayed, but it will save correctly to disk for use in encoding. \n\nReturns: String (Single character) ",
+        "val": "The raw byte value."
     },
     "application_get_position": {
-        "desc": ""
+        "desc": "When you have \"maintain aspect ratio\" ticked in the Global Game Settings for a target platform, GameMaker: Studio will automatically set the draw position for the application surface so that it is displayed correctly centered and scaled on the given display. However if you are manipulating this surface and wish to draw it yourself, then this function gives you an easy way to find exactly where within the display or window that the surface was being drawn so that you can then draw it there yourself, or align GUI images or post draw images to it. \n\nThe function will return an array with four keys, where key 0 and 1 are the x and y position of the top lefthand corner of the surface, and keys 2 and 3 are the x and y of the bottom righthand corner of the surface, all relative to the size of the display or window. \n\nReturns: Array "
     },
     "application_surface_draw_enable": {
-        "desc": "",
-        "on_off": ""
+        "desc": "You can use this function to enable or disable the automatic drawing of the application surface. By default this is enabled, but in many cases you will want to take over when and how the surface is drawn (when using shaders for example), in which case you would use this function to set it to false so that you can draw it yourself when and how you require. \n\nReturns: N/A ",
+        "flag": "The flag will be either [ true ] (enabled, the default value) or [ false ] (disabled)."
     },
     "application_surface_enable": {
-        "desc": "",
-        "enable": ""
+        "desc": "With this function you can enable or disable the application surface. By default the application surface is enabled and all drawing for the Draw events will be done to that and the surface drawn to the screen. However on some older devices and specific chipsets this may result in poorer performance. In those cases you can switch off drawing to the application surface and all Draw event drawing will then be done directly to the screen buffer.\n\nYou can use this function to enable or disable the application surface at any time in your game, but you should note that it requires at least one frame (step) for the changes to take effect. Switching it off will switch off all aspect ratio correction, as set in the Global Game Settings for the target platform. This means that you should have some method in place that scales the game to the required device, window or screen dimensions. If you switch it back on again, then the Global Game Settings will take effect again the next step. \n\nIt is recommended that you use this function carefully as it will impact on how everything is drawn to the screen. In general you would want to have it as an option in a menu of your game, or call it only once at the start of your game and write your code around whether you have it enabled or disabled. \n\nReturns: N/A ",
+        "enable": "Set to enable (true) or disable (false) the application surface."
     },
     "application_surface_is_enabled": {
-        "desc": ""
+        "desc": "This function will return [ true ] if the application surface is being used for drawing, or [ false ] if the screen buffer is being used. \n\nReturns: Boolean "
     },
     "arccos": {
-        "desc": "",
-        "x": ""
+        "desc": "Returns the inverse cosine of x, in that if cos(val)=n, arccos(n)=val, and the resulting number will be between pi and 0. \n\nNOTE: This will only accept a number between -1 and 1 (anything else will throw an error). \n\nReturns: Real",
+        "x": "The angle (in radians) to return the inverse cosine of."
     },
     "arcsin": {
-        "desc": "",
-        "x": ""
+        "desc": "Returns the inverse sine of x, in that if sin(x)=n, arcsin(n)=x, and the resulting number will be between -pi/2 and pi/2. \n\nNOTE: This will only accept a value between -1 and 1 (anything else will throw an error). \n\nReturns: Real",
+        "x": "The angle (in radians) to return the inverse sine of."
     },
     "arctan": {
-        "desc": "",
-        "x": ""
+        "desc": "Returns the inverse tangent of x. This will accept any number as, unlike tan, arctans asymptotes are on the y axis so it just means you'll never get returned a number greater than pi/2 or less than -pi/2. \n\nReturns: Real",
+        "x": "The angle (in radians) to return the inverse tangent of."
     },
     "arctan2": {
-        "desc": "",
-        "y": "",
-        "x": ""
+        "desc": "This function returns the inverse tangent of an angle y/x, where y = Opposite side of triangle and x = Adjacent side of triangle. Unlike arctan(x) the function arctan2(y, x) is valid for all angles and so may be used to convert a vector to an angle without risking division by zero, and it also returns a result in the correct quadrant. \n\nReturns: Real\n\nNOTE: The value returned is in radians, not degrees. ",
+        "y": "The y coordinate to calculate.",
+        "x": "The x coordinate to calculate."
     },
     "array_copy": {
-        "desc": "",
-        "dest": "",
-        "dest_index": "",
-        "src": "",
-        "src_index": "",
-        "length": ""
+        "desc": "With this function you can copy all or part of one array into another array at any position. You need to supply both the source and the destination arrays (both need to have been created previously), as well as a position within the source array to copy from and a position within the destination array to copy to. Finally you need to specify the length of the array (or the length of the part that you want) to copy. If the data being copied exceeds the length of the destination array, the array will be extended to accept the data.",
+        "dest": "The ID of the array to copy to.",
+        "dest_index": "The index within the array to copy to.",
+        "src": "The ID of the array to copy from.",
+        "src_index": "The index with the array to start copying from.",
+        "length": "The length (number of array indices) to copy."
     },
     "array_create": {
-        "desc": "",
-        "size": ""
+        "desc": "With this function you can create an array of a given size. You tell the function the length of the array to create, and it will return the \"handle\" for the array which you can then assign to a variable. Arrays created in this way will have each entry initialised to 0 unless you specify an (optional) initialisation value. If you do supply the extra value for initialising the array, then all indices within the new array will be set to that instead of 0, but note that the function will take longer to run. \n\nReturns: Array (Handle) ",
+        "size": "The size of the array to create.",
+        "value": "The value to use to initialise all array indices (optional)."
     },
     "array_equals": {
-        "desc": "",
-        "var1": "",
-        "var2": ""
+        "desc": "With this function you can check to see if two arrays are equal (equivalent or the same). You give the two arrays to check, and the function will return [ true ] if they are equal (either equivalent or the same) or [ false ] if they are not. Note that this is not the same as checking if two arrays are the same using ==, which will not check to see if the two arrays hold equivalent values, but only to see if the arrays are referencing the same initial array. \n\nReturns: Boolean ",
+        "var1": "The index of the first array.",
+        "var2": " The index of the second array. "
     },
     "array_height_2d": {
-        "desc": "",
-        "variable": ""
+        "desc": "With this function you can get the height (number of entries) of a the first dimension of a 2D array. You supply the array to check and the output from the function tells you how many initial entries it contains. You can get the number of entries for the second dimension of the array using the function [ array_length_2d ]. \n\nReturns: Real ",
+        "array": "The array to check."
     },
     "array_length_1d": {
-        "desc": "",
-        "variable": ""
+        "desc": "With this function you can get the length (number of entries) of a 1D array. For 2D arrays you should be using the [ array_height_2d ] and [ array_length_2d ] functions. \n\nWARNING!: If the array has over 32,000 entries this function will return an erroneous value and should not be used. \n\nReturns: Real ",
+        "array": "The array to check."
     },
     "array_length_2d": {
-        "desc": "",
-        "variable": "",
-        "index": ""
+        "desc": "With this function you can get the length (number of entries) of a the second dimension of an array. You supply the entry number for the first dimension and the function will return the number of second dimension entries that the array has (to find the length of the first dimension use the function [ array_height_2d ]). The function will return 0 if the variable given is not an array or 1 if the variable is a 1D array (as there is still 1 row). \n\nReturns: Real ",
+        "array": "The array to check.",
+        "n": " The entry of the array to get the length of. "
     },
     "asset_get_index": {
-        "desc": "",
-        "name": ""
+        "desc": "You can use this function to get the unique identifying index for a game asset from its name. If the asset is not found, the function will return a value of -1, otherwise it will return the unique index id for the asset being checked. This id can then be used in other functions as you would any other index value, like the [ sprite_index ] or [ the path_index ], for example. Please note that although this function can be used to reference assets from strings (see example below) you should always make sure that the asset exists before using it otherwise you may get errors that will crash your game. \n\nReturns: Real \n\nNOTE: Script names will not resolve as assets on the HTML5 target platform due to obfuscation of the final code, which may cause issues and should be taken into consideration when using the function. \n\nReturns: Real ",
+        "name": "The name of the game asset to get the index of (a string)."
     },
     "asset_get_type": {
-        "desc": "",
-        "name": ""
+        "desc": "With this function you can get the type of asset being referenced from it s name (a string). \n\nReturns: Constant ",
+        "name": "The name of the game asset to get the type of (a string)."
     },
     "audio_channel_num": {
-        "desc": "",
-        "numchannels": ""
+        "desc": "With this function you can set how many audio channels are available for playing audio in GameMaker: Studio. What this basically means is that you give the number of simultaneous sounds that can be played at any one time, and if the number exceeds the amount, those sounds with a lower priority are stopped to free up a channel for the sounds with a higher priority. You can use this function to optimise your game for devices as the lower the number of channels for audio the better the performance, but bear in mind that this may also cause noticeable cut off of certain sounds if many are played at once. \n\nReturns: N/A ",
+        "numchannels": "Number of available audio channels (default is 128)."
     },
     "audio_create_buffer_sound": {
-        "desc": "",
-        "bufferId": "",
-        "format": "",
-        "offset": "",
-        "src_index": "",
-        "length": "",
-        "channels": ""
+        "desc": "With this function you can create a new sound from the contents of a buffer. The buffer will have been created previously (see the buffer functions for details on how to do this), and have had data added or loaded into it. You then pass it to this function with the data format (only [ buffer_u8 ] or [ buffer_s16 ] are currently supported), the sample rate (which can be between 1000hz and 48000hz), and an offset into the buffer to get the data from. You also need to supply the number of samples in the buffer and the channels that the sound requires. \n\nNote that after you have created a sound, you should free the pointer index associated with it when it is no longer required using the function [ audio_free_buffer_sound() ]. If you fail to do this and then re-assign the variable or change rooms etc... the sound ID will be lost and you will have a memory leak. Also note that you cannot delete the buffer if any sound has been created from it and the sound has not been freed up first. So you would free the sound (or sounds) first, then delete the buffer. It is also worth noting that adding anything to the buffer, or changing the buffer size, after it has had a sound created from it will give unexpected results and it is not recommended - once you have started creating sounds from any buffer you should not manipulate it in any other way afterwards. \n\nReturns: Index ",
+        "bufferId": "The ID of the buffer to use.",
+        "format": "The format of the data in the buffer ([ buffer_u8 ] or [ buffer_s16 ]).",
+        "rate": "The sample rate of the data in the buffer.",
+        "offset": "The offset into the buffer to read the sample data from (in bytes).",
+        "length": "The length of the buffer (the number of the samples in the buffer).",
+        "channels": " The channels to use from one of the constants listed below. "
     },
     "audio_create_play_queue": {
-        "desc": "",
-        "bufferFormat": "",
-        "sampleRate": "",
-        "channels": ""
+        "desc": "This function prepares a buffer queue for audio. You pass data format (only buffer_u8 or buffer_s16 are currently supported), the sample rate (which can be between 1000hz and 48000hz). \n\nNote that you should free up any audio queues created with this function when no longer required to prevent memory leaks using the function [ audio_free_play_queue() ]. \n\nThis function will trigger an Audio Playback Asynchronous Event when the queue has reached the end, and in this event a special ds_map will be created in the variable [ async_load ] with the following key/value pairs: \n\n  •\"queue_id\" - the queue that has finished playing data \n\n  •\"buffer_id\" - the buffer that is no longer being played from \n\n  •\"queue_shutdown\" - this is set to 0 during normal playback and 1 when the event is received because [ audio_free_play_queue ] has been called. When this is set to 1, you don't want to queue up any further data. \n\nReturns: Index ",
+        "queueFormat": "The format of the buffer data to use ([ buffer_u8 ] or [ buffer_s16 ]).",
+        "sampleRate": "The sample rate of the data in the buffer queue.",
+        "channels": "The channels to use from one of the constants listed below."
     },
     "audio_create_stream": {
-        "desc": "",
-        "filename": ""
+        "desc": "With this function you can create a new sound index which can then be used in the regular audio functions to stream audio directly from an external OGG file source. The function requires the filename (which can be an included file, for example) and will return the new sound index for use. Note that after you no longer need the sound you should call the function [ audio_destroy_stream() ] with the sound index to remove it from memory otherwise you may get a memory leak which will slow down and eventually crash your game. \n\nReturns: Sound Index ",
+        "filename": " The file (OGG only) to stream the audio from."
     },
     "audio_create_sync_group": {
-        "desc": "",
-        "looping": ""
+        "desc": "Creates a sync group and returns a unique ID value for it which should then be used in all further audio function calls for this group. If you want the group to loop then pass in true, otherwise pass in false, but note that if you want them to loop, all the tracks added later need to be the same length. Note that when you create a sync group, you will need to free the memory and sounds associated with it when not in use using the [ audio_destroy_sync_group() ] function - for example, in the Room End or Destroy events. \n\nReturns: index ",
+        "looping": "Whether the tracks in the group should loop (true) or not (false)."
     },
     "audio_debug": {
-        "desc": "",
-        "enable": ""
+        "desc": "This function can be used to display debug information about the audio system, with true switching it on and false to switch it off.\n\nFor synchronised groups of audio, you also have the function [ audio_sync_group_debug() ]. \n\nNOTE: This function does not work on the HTML5 target platform. \n\nReturns: N/A ",
+        "enable": "Enable (set to true) or disable (false) audio debugging."
     },
     "audio_destroy_stream": {
-        "desc": "",
-        "stream_sound_id": ""
+        "desc": "If you have previously created an audio stream from a file using the function [ audio_create_stream() ] and no longer need that sound, you can call this function to delete it from memory. Any further calls to the sound index after it has been destroyed will give an error. \n\nReturns: N/A ",
+        "filename": " The file to stream the audio from. "
     },
     "audio_destroy_sync_group": {
-        "desc": "",
-        "sync_group_id": ""
+        "desc": "Audio sync groups need to be destroyed when not in use to free up the memory and sound resources associated with them using this function. It takes the group index as returned when the group was created using the [ function audio_create_sync_group() ], and frees all resources used by the group. \n\nReturns: N/A ",
+        "group_index": " The group index to be destroyed. "
     },
     "audio_emitter_create": {
-        "desc": ""
+        "desc": "This function creates a new audio emitter and returns the index for it. This index should be stored in a variable for all further functions that relate to this emitter, and then when it is no longer needed it should be removed from memory using the function [ audio_emitter_free ] to prevent memory leaks which may eventually crash your game. \n\nReturns: Real "
     },
     "audio_emitter_exists": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns whether an audio emitter exists (true) or not (false). Note that if the index you search for has not been initialised previously, this function will cause an error as it is searching for non-existent indices. \n\nReturns: Boolean ",
+        "index": "The index of the emitter to check the existence of."
     },
     "audio_emitter_falloff": {
-        "desc": "",
-        "emitterid": "",
-        "falloff_ref_dist": "",
-        "falloff_max_dist": "",
-        "falloff_factor": ""
+        "desc": "With this function you can set the fall-off distance for an emitter. This is the distance from the listener the emitter has to be before the sound will have \"fallen off\" to a volume of 0. The default value for this is 100, but beware of setting this to any value lower than 1 as that will make any sound played through this emitter inaudible to the listener, however any other value will cause the sound to fade away the further that the emitter is from the listener. \n\nHow the sound itself is heard will depend on the falloff reference (which is the distance under which the volume for the source would normally drop by half) and the roll off factor (which affects the sound past the falloff reference distance only). The default factor is normally 1, and the effect of the different falloff values will depend on the model chosen. \n\nFor a complete guide to the different falloff models and how these values are used, please see the function [ audio_falloff_set_model ]\n\nReturns: N/A ",
+        "emitterid": "The index of the emitter to change.",
+        "falloff_ref_dist": "The falloff reference relative to the listener (clamp).",
+        "falloff_max_dist": "The maximum falloff distance relative to the listener.",
+        "falloff_factor": "The falloff factor (default 1)."
     },
     "audio_emitter_free": {
-        "desc": "",
+        "desc": "With this function you can remove the given emitter from memory. This should always be done whenever the emitter is not going to be used further in the room or the game, ie: in the Destroy Event of the instance or in the Room End Event, otherwise you may end up with a memory leak that will slow down and eventually crash your game. \n\nReturns: N/A ",
         "emitterid": ""
     },
     "audio_emitter_gain": {
-        "desc": "",
-        "emitterid": "",
-        "gain": ""
+        "desc": "This function sets the maximum gain (volume) for the sound. The perceived volume for a sound can change depending on the fall-off value and the position it has relative to the listener, but by setting the gain with this function, the full volume will never exceed the specified gain value.\n\nThis function will change the volume of the sound while it is being played as well all subsequent sounds played through the given emitter. \n\nNOTE: the final volume will also be influenced by the global audio gain that has been set by the function [ audio_master_gain ]. \n\nReturns: N/A ",
+        "emitterid": "The index of the emitter to change.",
+        "gain": "The maximum gain (default 1)."
     },
     "audio_emitter_get_gain": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current gain (volume) set for the given audio emitter, a value between 0 and 1. \n\nReturns: Real ",
+        "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_get_listener_mask": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function will return the bit-mask data that defines which audio listeners an emitter should play sounds from. \n\nReturns: Real ",
+        "emitterid": "The unique ID of the emitter to get the mask of"
     },
     "audio_emitter_get_pitch": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current pitch value set for the given audio emitter. \n\nReturns: Real ",
+        "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_get_vx": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current velocity along the x axis for the given audio emitter. \n\nReturns: Real ",
+        "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_get_vy": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current velocity along the y axis for the given audio emitter. \n\nReturns: Real ",
+        "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_get_vz": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current velocity along the z axis for the given audio emitter.  \n\nReturns: Real ",
+        "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_get_x": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current x position of the given audio emitter. \n\nReturns: Real ",
+        "emitterid": " The index of the emitter to use. "
     },
     "audio_emitter_get_y": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current y position of the given audio emitter. \n\nReturns: Real ",
+        "emitterid": "This function returns the current y position of the given audio emitter. "
     },
     "audio_emitter_get_z": {
-        "desc": "",
-        "emitterid": ""
+        "desc": "This function returns the current z position of the given audio emitter. \n\nReturns: Real ",
+        "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_pitch": {
-        "desc": "",
-        "emitterid": "",
-        "pitch": ""
+        "desc": "This function can be used to change the pitch of all sounds emitted from the given emitter. It is a pitch multiplier, in that the input value multiplies the current pitch by that amount, so the default value of 1 is no pitch change, while a value of less than 1 will lower the pitch and greater than 1 will raise the pitch. It is best to use small increments for this function as any value under 0 or over 5 may not be audible anyway. \n\nNOTE: If a sound is being looped through the emitter, the change in pitch will not be detected unless the sound is stopped and looped again! \n\nReturns: N/A ",
+        "emitterid": "The index of the emitter to change.",
+        "pitch": "The pitch multiplier (default 1)."
     },
     "audio_emitter_position": {
-        "desc": "",
-        "emitterid": "",
-        "x": "",
-        "y": "",
-        "z": ""
+        "desc": "With this function you can change the position of an audio emitter within the 3D audio space. The position will affect the sound in different ways depending on where the listener is positioned within the audio space too (default position is (0, 0, 0). See [ audio_listener_position ] for more information), so for example if the emitter position is set to (100, 0, 0) and the current listener is at (200, 0, 0) the audio streamed from the emitter will appear to be on the left of the audio field.",
+        "emitterid": "The index of the emitter to change.",
+        "x": "The x position. ",
+        "y": "The y position.",
+        "z": "The z position."
     },
     "audio_emitter_set_listener_mask": {
         "desc": "",
@@ -289,15 +290,15 @@
         "mask": ""
     },
     "audio_emitter_velocity": {
-        "desc": "",
-        "emitterid": "",
-        "vx": "",
-        "vy": "",
-        "vz": ""
+        "desc": "This function can be used to give an emitter doppler effects and simulate audio motion based on the vector that is resolved from the given relative x, y and z positions (for more information on vectors, please see Maths - Vectors). If the emitter itself is not ever going to move you would normally not need to set these values, but, for example, if you are making a scrolling shooter game where the enemies come from the right and scroll to the left, you would set this to have a velocity of (hspeed, 0, 0) in the create event of the enemies (and update the emitter of each instance in the step event using [ audio_emitter_position ]) to give any sounds emitted by the enemy instances the correct doppler as they pass the player instance (which in turn would be using the function [ audio_listener_position ] to set the listener to the correct position). ",
+        "emitterid": "The index of the emitter to change.",
+        "vx": "The x vector value (default 0).",
+        "vy": "The y vector value (default 0).",
+        "vz": "The z vector value (default 0)."
     },
     "audio_exists": {
-        "desc": "",
-        "soundid": ""
+        "desc": "This function returns whether a sound exists (true) or not (false). Note that if the index you search for has not been initialised previously, this function will cause an error as it is searching for non-existent asset indices. The sound to check can either be a single instance of a sound (the index for individual sounds being played can be stored in a variable when using the [ audio_play_sound ] or [ audio_play_sound_at ] functions) or a sound asset. ",
+        "index": "The index of the sound to check the existence of."
     },
     "audio_falloff_set_model": {
         "desc": "",

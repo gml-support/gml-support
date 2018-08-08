@@ -6,25 +6,25 @@
         "desc": ""
     },
     "achievement_challenge_completed": {
-        "desc": ""
+        "desc": "A challenge has been completed."
     },
     "achievement_challenge_completed_by_remote": {
-        "desc": ""
+        "desc": "A challenge has been completed by the other player."
     },
     "achievement_challenge_launched": {
-        "desc": ""
+        "desc": "The game was launched from the OS dashboard with the given challenge."
     },
     "achievement_challenge_list_received": {
         "desc": ""
     },
     "achievement_challenge_received": {
-        "desc": ""
+        "desc": "A challenge has been received"
     },
     "achievement_filter_all_players": {
-        "desc": ""
+        "desc": "Get all scores for all players."
     },
     "achievement_filter_friends_only": {
-        "desc": ""
+        "desc": "Get only the scores of the players friends."
     },
     "achievement_friends_info": {
         "desc": ""
@@ -72,7 +72,7 @@
         "desc": ""
     },
     "all": {
-        "desc": ""
+        "desc": "All instances currently active in the room."
     },
     "ANSI_CHARSET": {
         "desc": ""
@@ -81,34 +81,34 @@
         "desc": ""
     },
     "asset_background": {
-        "desc": ""
+        "desc": "The given name refers to a background."
     },
     "asset_font": {
-        "desc": ""
+        "desc": "The given name refers to a font."
     },
     "asset_object": {
-        "desc": ""
+        "desc": "The given name refers to an object."
     },
     "asset_path": {
-        "desc": ""
+        "desc": "The given name refers to a path."
     },
     "asset_room": {
-        "desc": ""
+        "desc": "The given name refers to a room."
     },
     "asset_script": {
-        "desc": ""
+        "desc": "The given name refers to a script."
     },
     "asset_sound": {
-        "desc": ""
+        "desc": "The given name refers to a sound."
     },
     "asset_sprite": {
-        "desc": ""
+        "desc": "The given name refers to a sprite."
     },
     "asset_timeline": {
-        "desc": ""
+        "desc": "The given name refers to a time line."
     },
     "asset_unknown": {
-        "desc": ""
+        "desc": "The given name refers to an asset that either does not exist, or is not one of the above listed."
     },
     "audio_falloff_exponent_distance": {
         "desc": ""
@@ -984,7 +984,7 @@
         "desc": ""
     },
     "noone": {
-        "desc": ""
+        "desc": "No instance at all."
     },
     "OEM_CHARSET": {
         "desc": ""
@@ -1035,7 +1035,7 @@
         "desc": ""
     },
     "other": {
-        "desc": ""
+        "desc": "The other instance involved in a collision event, or the other instance from a with function."
     },
     "ov_achievements": {
         "desc": ""
@@ -1254,7 +1254,7 @@
         "desc": ""
     },
     "self": {
-        "desc": ""
+        "desc": "The instance which is executing the current block of code."
     },
     "SHIFTJIS_CHARSET": {
         "desc": ""

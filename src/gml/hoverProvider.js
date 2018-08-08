@@ -29,7 +29,7 @@ const GMLHoverProvider = ((() => {
                 const availability = "GM Language Availability: ";
                 const contents = [];
                 contents.push(new vscode_1.MarkdownString(signature));
-                contents.push(textToMarkedString(availability + entry.available + " \n " + entry.description));
+                contents.push(textToMarkedString(availability + entry.available + "\n" + entry.description));
                 return new vscode_1.Hover(contents, wordRange);
             }
             return undefined;

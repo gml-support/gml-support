@@ -1,7 +1,7 @@
 {
     "abs": {
         "desc": "test",
-        "x": "test"
+        "val": "test"
     },
     "achievement_available": {
         "desc": ""
@@ -51,12 +51,12 @@
     "achievement_post": {
         "desc": "",
         "achievement_name": "",
-        "value": ""
+        "percent": ""
     },
     "achievement_post_score": {
         "desc": "",
         "score_name": "",
-        "value": ""
+        "score": ""
     },
     "achievement_reset": {
         "desc": ""
@@ -97,8 +97,8 @@
     },
     "angle_difference": {
         "desc": "",
-        "src": "",
-        "dest": ""
+        "ang1": "",
+        "ang2": ""
     },
     "ansi_char": {
         "desc": "",
@@ -109,7 +109,7 @@
     },
     "application_surface_draw_enable": {
         "desc": "",
-        "on_off": ""
+        "flag": ""
     },
     "application_surface_enable": {
         "desc": "",
@@ -145,7 +145,8 @@
     },
     "array_create": {
         "desc": "",
-        "size": ""
+        "size": "",
+        "value": ""
     },
     "array_equals": {
         "desc": "",
@@ -154,16 +155,16 @@
     },
     "array_height_2d": {
         "desc": "",
-        "variable": ""
+        "array": ""
     },
     "array_length_1d": {
         "desc": "",
-        "variable": ""
+        "array": ""
     },
     "array_length_2d": {
         "desc": "",
-        "variable": "",
-        "index": ""
+        "array": "",
+        "n": ""
     },
     "asset_get_index": {
         "desc": "",
@@ -181,14 +182,14 @@
         "desc": "",
         "bufferId": "",
         "format": "",
+        "rate": "",
         "offset": "",
-        "src_index": "",
         "length": "",
         "channels": ""
     },
     "audio_create_play_queue": {
         "desc": "",
-        "bufferFormat": "",
+        "queueFormat": "",
         "sampleRate": "",
         "channels": ""
     },
@@ -206,18 +207,18 @@
     },
     "audio_destroy_stream": {
         "desc": "",
-        "stream_sound_id": ""
+        "filename": ""
     },
     "audio_destroy_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_emitter_create": {
         "desc": ""
     },
     "audio_emitter_exists": {
         "desc": "",
-        "emitterid": ""
+        "index": ""
     },
     "audio_emitter_falloff": {
         "desc": "",
@@ -297,7 +298,7 @@
     },
     "audio_exists": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_falloff_set_model": {
         "desc": "",
