@@ -547,25 +547,25 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_falloff_set_model.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'falloffmode', documentation: i18n.audio_falloff_set_model.falloffmode }
+            { label: 'falloffmodel', documentation: i18n.audio_falloff_set_model.falloffmodel }
         ],
-		signature: '(falloffmode)'
+		signature: '(falloffmodel)'
 	},
 	audio_free_buffer_sound: {
         description: '[Function]' + i18n.audio_free_buffer_sound.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_free_buffer_sound.soundid }
+            { label: 'index', documentation: i18n.audio_free_buffer_sound.index }
         ],
-		signature: '(soundId)'
+		signature: '(index)'
 	},
 	audio_free_play_queue: {
         description: '[Function]' + i18n.audio_free_play_queue.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'queueid', documentation: i18n.audio_free_play_queue.queueid }
+            { label: 'queueIndex', documentation: i18n.audio_free_play_queue.queueIndex }
         ],
-		signature: '(queueId)'
+		signature: '(queueIndex)'
 	},
 	audio_get_listener_count: {
 		description: '[Function]' + i18n.audio_get_listener_count.desc,
@@ -575,17 +575,13 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_get_listener_info.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'index', documentation: i18n.audio_get_listener_info.index }
+            { label: 'num', documentation: i18n.audio_get_listener_info.num }
         ],
-		signature: '(index)'
+		signature: '(num)'
 	},
 	audio_get_listener_mask: {
         description: '[Function]' + i18n.audio_get_listener_mask.desc,
-        available: datasimple.gms1,
-        parameters: [
-            { label: 'mask', documentation: i18n.audio_get_listener_mask.mask }
-        ],
-		signature: '(mask)'
+        available: datasimple.gms1
 	},
 	audio_get_master_gain: {
         description: '[Function]' + i18n.audio_get_master_gain.desc,
@@ -611,9 +607,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_get_recorder_info.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'recorder_num', documentation: i18n.audio_get_recorder_info.recorder_num }
+            { label: 'recorder_index', documentation: i18n.audio_get_recorder_info.recorder_index }
         ],
-		signature: '(recorder_num)'
+		signature: '(recorder_index)'
 	},
 	audio_get_type: {
         description: '[Function]' + i18n.audio_get_type.desc,
@@ -665,11 +661,11 @@ exports.globalfunctions = {
         ],
 		signature: '(groupId, volume, time)'
 	},
-	audio_group_stop_all: {
-        description: '[Function]' + i18n.audio_group_stop_all.desc,
+	audio_group_stop: {
+        description: '[Function]' + i18n.audio_group_stop.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'groupId', documentation: i18n.audio_group_stop_all.groupId }
+            { label: 'groupId', documentation: i18n.audio_group_stop.groupId }
         ],
 		signature: '(groupId)'
 	},

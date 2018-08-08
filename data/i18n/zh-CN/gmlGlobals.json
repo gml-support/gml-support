@@ -302,26 +302,25 @@
     },
     "audio_falloff_set_model": {
         "desc": "",
-        "falloffmode": ""
+        "falloffmodel": ""
     },
     "audio_free_buffer_sound": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_free_play_queue": {
         "desc": "",
-        "queueid": ""
+        "queueIndex": ""
     },
     "audio_get_listener_count": {
         "desc": ""
     },
     "audio_get_listener_info": {
         "desc": "",
-        "index": ""
+        "num": ""
     },
     "audio_get_listener_mask": {
-        "desc": "",
-        "mask": ""
+        "desc": ""
     },
     "audio_get_master_gain": {
         "desc": "",
@@ -336,7 +335,7 @@
     },
     "audio_get_recorder_info": {
         "desc": "",
-        "recorder_num": ""
+        "recorder_index": ""
     },
     "audio_get_type": {
         "desc": "",
@@ -364,7 +363,7 @@
         "volume": "",
         "time": ""
     },
-    "audio_group_stop_all": {
+    "audio_group_stop": {
         "desc": "",
         "groupId": ""
     },

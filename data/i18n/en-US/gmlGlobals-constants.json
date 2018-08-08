@@ -111,25 +111,25 @@
         "desc": "The given name refers to an asset that either does not exist, or is not one of the above listed."
     },
     "audio_falloff_exponent_distance": {
-        "desc": ""
+        "desc": "gain = (listener_distance / reference_distance) ^ (-falloff_factor)"
     },
     "audio_falloff_exponent_distance_clamped": {
-        "desc": ""
+        "desc": "distance = clamp(listener_distance, reference_distance, maximum_distance)\ngain = (distance / reference_distance) ^ (-falloff_factor)"
     },
     "audio_falloff_inverse_distance": {
-        "desc": ""
+        "desc": "gain = reference_distance / (reference_distance + falloff_factor * (listener_distance – reference_distance))"
     },
     "audio_falloff_inverse_distance_clamped": {
-        "desc": ""
+        "desc": "distance = clamp(listener_distance, reference_distance, maximum_distance)\ngain = reference_distance / (reference_distance + falloff_factor * (distance – reference_distance))"
     },
     "audio_falloff_linear_distance": {
-        "desc": ""
+        "desc": "distance = min(distance, maximum_distance)\ngain = (1 – falloff_factor * (distance – reference_distance) / (maximum_distance – reference_distance))"
     },
     "audio_falloff_linear_distance_clamped": {
-        "desc": ""
+        "desc": "distance = clamp(listener_distance, reference_distance, maximum_distance)\ngain = (1 – falloff_factor * (distance – reference_distance) / (maximum_distance – reference_distance))"
     },
     "audio_falloff_none": {
-        "desc": ""
+        "desc": "gain = 1"
     },
     "audio_new_system": {
         "desc": ""
