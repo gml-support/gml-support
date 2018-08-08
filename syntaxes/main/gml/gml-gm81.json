@@ -63,7 +63,7 @@
          "name": "constant.language.gml"
       },
       {
-        "begin": "\\b((global)?var)|(enum)\\b",
+        "begin": "\\b(((global)?var)|(enum))\\b",
         "beginCaptures": {
           "1": {
             "name": "storage.type.gml"
