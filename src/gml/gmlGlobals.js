@@ -1218,9 +1218,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.buffer_get_size.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buffer', documentation: i18n.buffer_get_size.buffer }
+            { label: 'index', documentation: i18n.buffer_get_size.index }
         ],
-        signature: '(buffer)'
+        signature: '(index)'
     },
 	buffer_get_surface: {
         description: '[Function]' + i18n.buffer_get_surface.desc,

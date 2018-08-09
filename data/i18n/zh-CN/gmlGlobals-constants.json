@@ -138,10 +138,10 @@
         "desc": ""
     },
     "audio_new_system": {
-        "desc": ""
+        "desc": "正在使用常规声音系统"
     },
     "audio_old_system": {
-        "desc": ""
+        "desc": "正在使用传统声音系统"
     },
     "audio_stereo": {
         "desc": ""

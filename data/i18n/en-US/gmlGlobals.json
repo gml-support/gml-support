@@ -11,14 +11,14 @@
         "stringid": ""
     },
     "achievement_get_challenges": {
-        "desc": "This function will send a request to the server for information on all current challenges and will trigger a callback  Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_challenge_list_received** as well as a number of other key/value pairs for each challenge. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_challenge_list_received**\n\n - \"numchallenges\": The number of challenges (local and remote) currently available.\n\n - \"ChallengeNplayerid\": The player id for the challenge, where \"N\" is an integer, EG: \"Challenge5playerid\" is the player id for the fifth challenge in the list.\n\n - \"ChallengeNissuerid\": The id of the person that issued the challenge, where \"N\" is an integer, EG: \"Challenge2issuerid\" is the issuer id for the second challenge in the list.\n\n - \"ChallengeNstate\": The state of the challenge \"N\", which will have a value of 0: 3 (as a string) for invalid, pending, completed or declined.\n\n - \"ChallengeNmessage\": The text message for challenge \"N\".\n\n - \"ChallengeNissueddate\": The issue date for challenge \"N\".\n\n - \"ChallengeNcompleteddate\": The completion date for challenge \"N\".\n\n - \"ChallengeNtype\": The type of challenge given. Can be one of two constants:\n\n - **achievement_type_score_challenge**: A challenge based on the score value.\n\n - **achievement_type_achievement_challenge**: A challenge based on an achievement.\n\n - \"ChallengeNidentifier\": The identifying string for the challenge.\n\n - \"ChallengeNscore\": The score tied in with the challenge. \n\n**Returns:**  N/A \n\nNOTE: This function is for iOS only. "
+        "desc": "This function will send a request to the server for information on all current challenges and will trigger a callback  Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_challenge_list_received** as well as a number of other key/value pairs for each challenge. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_challenge_list_received**\n\n - \"numchallenges\": The number of challenges (local and remote) currently available.\n\n - \"ChallengeNplayerid\": The player id for the challenge, where \"N\" is an integer, EG: \"Challenge5playerid\" is the player id for the fifth challenge in the list.\n\n - \"ChallengeNissuerid\": The id of the person that issued the challenge, where \"N\" is an integer, EG: \"Challenge2issuerid\" is the issuer id for the second challenge in the list.\n\n - \"ChallengeNstate\": The state of the challenge \"N\", which will have a value of 0: 3 (as a string) for invalid, pending, completed or declined.\n\n - \"ChallengeNmessage\": The text message for challenge \"N\".\n\n - \"ChallengeNissueddate\": The issue date for challenge \"N\".\n\n - \"ChallengeNcompleteddate\": The completion date for challenge \"N\".\n\n - \"ChallengeNtype\": The type of challenge given. Can be one of two constants:\n\n - **achievement_type_score_challenge**: A challenge based on the score value.\n\n - **achievement_type_achievement_challenge**: A challenge based on an achievement.\n\n - \"ChallengeNidentifier\": The identifying string for the challenge.\n\n - \"ChallengeNscore\": The score tied in with the challenge. \n\n**Returns:**  N/A \n\n**NOTE:** This function is for iOS only. "
     },
     "achievement_get_info": {
         "desc": "",
         "userid": ""
     },
     "achievement_get_pic": {
-        "desc": "This function will send a request to the server for the image of a player or a friend and will trigger a callback Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_pic_loaded** as well as a number of other key/value pairs. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_pic_loaded**\n\n - \"playerid\": The id of the player or friend that we are receiving the image of.\n\n - \"spriteid\": The sprite id for the image that can then be used to draw it on-screen using any of the draw sprite functions.\n\n**Returns:** N/A \n\nNOTE: This function is for iOS only. \n\nWARNING: This function creates sprites and as such, their ids should be stored in variables and then removed from memory using the sprite_delete function otherwise repeated use will give you a memory leak that will eventually slow down or crash your game. ",
+        "desc": "This function will send a request to the server for the image of a player or a friend and will trigger a callback Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_pic_loaded** as well as a number of other key/value pairs. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_pic_loaded**\n\n - \"playerid\": The id of the player or friend that we are receiving the image of.\n\n - \"spriteid\": The sprite id for the image that can then be used to draw it on-screen using any of the draw sprite functions.\n\n**Returns:** N/A \n\n**NOTE:** This function is for iOS only. \n\nWARNING: This function creates sprites and as such, their ids should be stored in variables and then removed from memory using the sprite_delete function otherwise repeated use will give you a memory leak that will eventually slow down or crash your game. ",
         "char": "The id of the person to get the image of (either from a friends list or a leaderboard)"
     },
     "achievement_increment": {
@@ -27,17 +27,17 @@
         "value": "The value to be sent."
     },
     "achievement_load_friends": {
-        "desc": "This function will send a request to the server for information on all the logged in users friends and will trigger a callback Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_friends_info** as well as a number of other key/value pairs for each friend. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_friends_info**\n\n - \"FriendN\": The name of the friend, where \"N\" is an integer value corresponding to their position within the friends list.\n\n - \"FriendidN\": The unique user id of the friend, \"N\". \n\n**Returns:**  N/A \n\nNOTE: This function is for iOS only. "
+        "desc": "This function will send a request to the server for information on all the logged in users friends and will trigger a callback Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_friends_info** as well as a number of other key/value pairs for each friend. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_friends_info**\n\n - \"FriendN\": The name of the friend, where \"N\" is an integer value corresponding to their position within the friends list.\n\n - \"FriendidN\": The unique user id of the friend, \"N\". \n\n**Returns:**  N/A \n\n**NOTE:** This function is for iOS only. "
     },
     "achievement_load_leaderboard": {
-        "desc": "This function will send a request to the server for information on the given leaderboard. The leaderboard must have been created previously on the developer dashboard for your game and the ID given is that which you must supply as the first argument of the function. It will trigger a callback  Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_leaderboard_info** as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_leaderboard_info**\n\n - \"leaderboardid\": The unique ID for the leaderboard as defined on the provider dashboard.\n\n - \"numentries\": The number of entries in the leaderboard that you have received.\n\n - \"PlayerN\": The name of the player, where \"N\" is an integer value corresponding to their position within the leaderboard entries list.\n\n - \"PlayeridN\": The unique user id of the player, \"N\". \n\n - \"RankN\": The rank of the player \"N\" within the leaderboard.\n\n - \"ScoreN\": The score of the player \"N\". \n\nYou can specify the exact portion of the leaderboard to show by giving a minimum and maximum index value, as well as request that the results be filtered to retrieve only those scores by your friends or those posted by all players using the following filter constants: \n\n - **achievement_filter_friends_only**: Get only the scores of the players friends.\n\n - **achievement_filter_all_players**: Get all scores for all players.\n\n**Returns:**  N/A \n\nNOTE: this function does not work on the Android platform. ",
+        "desc": "This function will send a request to the server for information on the given leaderboard. The leaderboard must have been created previously on the developer dashboard for your game and the ID given is that which you must supply as the first argument of the function. It will trigger a callback  Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_leaderboard_info** as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_leaderboard_info**\n\n - \"leaderboardid\": The unique ID for the leaderboard as defined on the provider dashboard.\n\n - \"numentries\": The number of entries in the leaderboard that you have received.\n\n - \"PlayerN\": The name of the player, where \"N\" is an integer value corresponding to their position within the leaderboard entries list.\n\n - \"PlayeridN\": The unique user id of the player, \"N\". \n\n - \"RankN\": The rank of the player \"N\" within the leaderboard.\n\n - \"ScoreN\": The score of the player \"N\". \n\nYou can specify the exact portion of the leaderboard to show by giving a minimum and maximum index value, as well as request that the results be filtered to retrieve only those scores by your friends or those posted by all players using the following filter constants: \n\n - **achievement_filter_friends_only**: Get only the scores of the players friends.\n\n - **achievement_filter_all_players**: Get all scores for all players.\n\n**Returns:**  N/A \n\n**NOTE:** this function does not work on the Android platform. ",
         "ident": "The unique ID of the leaderboard as shown on the developer dashboard.",
         "minindex": "The starting index value to get the leaderboard data from.",
         "maxindex": "The maximum index value to get the leaderboard data from.",
         "filter": "Whether to filter the results to those that are on your friends list or to all players (see the Description below)"
     },
     "achievement_load_progress": {
-        "desc": "This function will send a request to the server for information on all available achievements. It will trigger a callback Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_achievement_info** as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_achievement_info.**\n\n - \"numentries\": The number of achievements in the list.\n\n - \"AchN\": The name of the achievement, where \"N\" is an integer value corresponding to its place in the entries list. \n\n - \"AchCompN\": How complete the achievement \"N\" is as a percentage value from 0 to 100 (a string). \n\n**Returns:**  N/A \n\nNOTE: This function is for iOS only. "
+        "desc": "This function will send a request to the server for information on all available achievements. It will trigger a callback Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_achievement_info** as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_achievement_info.**\n\n - \"numentries\": The number of achievements in the list.\n\n - \"AchN\": The name of the achievement, where \"N\" is an integer value corresponding to its place in the entries list. \n\n - \"AchCompN\": How complete the achievement \"N\" is as a percentage value from 0 to 100 (a string). \n\n**Returns:**  N/A \n\n**NOTE:** This function is for iOS only. "
     },
     "achievement_login": {
         "desc": "This function logs the user into appropriate leaderboard and achievement service. If the service is **not** available, the user is logged into a \"pretend\" game centre and all achievements and scores are stored on the device so that when the actual service is available, these details can be uploaded. The function will trigger a callback  Social Asynchronous Event which contains the **async_load** map populated with the relevant key/value pairs. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_our_info** as well as a number of other key/value pairs for each challenge. The exact contents of the map are shown below: \n\n - \"id\": For this function it should be **achievement_our_info**\n\n - \"name\": The name of the user that is currently logged in.\n\n - \"playerid\": The unique player id for the user that is currently logged in.\n\n**Returns:** N/A "
@@ -62,7 +62,7 @@
         "desc": "This function will reset all achievements back to their initial values for the game. This function is provided as a debug function and it is **not** recommended that you permit the end-user to do this in your games. "
     },
     "achievement_send_challenge": {
-        "desc": "This function will send a challenge across the network to the chosen player. You can get the **playerid** using the **achievement_load_friends** or the **achievement_load_leaderboard** functions and you must also supply the challengeid which is the unique value given the challenge when you created it on your iTunes Connect or Google Play dashboard. You must also supply a score, and a short text message as well as set the challenge **type**. This can be one of the following constants:\n\n - **achievement_type_score_challenge**: A challenge based on the score value.\n\n - **achievement_type_achievement_challenge**: A challenge based on an achievement.\n\nThis function will trigger a callback Social Asynchronous Event for the player that is to receive the challenge, and in this event you will have a ds_map referenced in the variable **async_load**. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_challenge_received** as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\nNOTE: that the user can also receive toast notifications for challenges received, but this will depend on the values you have chosen using the function **achievement_show_challenge_notifications**. \n\n - \"id\": For this function it should be achievement_leaderboard_info\n\n - \"playerid\": The player ID for the challenge.\n\n - \"issuerid\": The issuer ID for the challenge.\n\n - \"state\": The state of the challenge, which will have a value of 0: 3 (as a string) for invalid, pending, completed or declined.\n\n - \"message\": The text message for challenge.\n\n - \"completeddate\": The completion date for challenge.\n\n - \"issueddate\": The issue date for challenge. \n\n - \"type\": The type of challenge given. Can be one of two constants:\n\n - **achievement_type_score_challenge**: A challenge based on the score value.\n\n - **achievement_type_achievement_challenge**: A challenge based on an achievement.\n\n - \"identifier\": The identifying string for the challenge, as set on the provider dashboard.\n\n - \"score\": The score tied in with the challenge (if applicable). \n\n**Returns:**  N/A ",
+        "desc": "This function will send a challenge across the network to the chosen player. You can get the **playerid** using the **achievement_load_friends** or the **achievement_load_leaderboard** functions and you must also supply the challengeid which is the unique value given the challenge when you created it on your iTunes Connect or Google Play dashboard. You must also supply a score, and a short text message as well as set the challenge **type**. This can be one of the following constants:\n\n - **achievement_type_score_challenge**: A challenge based on the score value.\n\n - **achievement_type_achievement_challenge**: A challenge based on an achievement.\n\nThis function will trigger a callback Social Asynchronous Event for the player that is to receive the challenge, and in this event you will have a ds_map referenced in the variable **async_load**. The **id** key of this *ds_map* is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and will be paired with the constant **achievement_challenge_received** as well as a number of other key/value pairs for each player. The exact contents of the map are shown below: \n\n**NOTE:** that the user can also receive toast notifications for challenges received, but this will depend on the values you have chosen using the function **achievement_show_challenge_notifications**. \n\n - \"id\": For this function it should be achievement_leaderboard_info\n\n - \"playerid\": The player ID for the challenge.\n\n - \"issuerid\": The issuer ID for the challenge.\n\n - \"state\": The state of the challenge, which will have a value of 0: 3 (as a string) for invalid, pending, completed or declined.\n\n - \"message\": The text message for challenge.\n\n - \"completeddate\": The completion date for challenge.\n\n - \"issueddate\": The issue date for challenge. \n\n - \"type\": The type of challenge given. Can be one of two constants:\n\n - **achievement_type_score_challenge**: A challenge based on the score value.\n\n - **achievement_type_achievement_challenge**: A challenge based on an achievement.\n\n - \"identifier\": The identifying string for the challenge, as set on the provider dashboard.\n\n - \"score\": The score tied in with the challenge (if applicable). \n\n**Returns:**  N/A ",
         "to": "The unique ID of the player to challenge. ",
         "challengeid": "The unique challenge ID (as found on the provider dashboard).",
         "score": "The score to beat. ",
@@ -119,11 +119,11 @@
         "desc": "This function will return *true* if the application surface is being used for drawing, or *false* if the screen buffer is being used. \n\n**Returns:** Boolean "
     },
     "arccos": {
-        "desc": "Returns the inverse cosine of x, in that if cos(val)=n, arccos(n)=val, and the resulting number will be between pi and 0. \n\nNOTE: This will only accept a number between -1 and 1 (anything else will throw an error). \n\n**Returns:** Real",
+        "desc": "Returns the inverse cosine of x, in that if cos(val)=n, arccos(n)=val, and the resulting number will be between pi and 0. \n\n**NOTE:** This will only accept a number between -1 and 1 (anything else will throw an error). \n\n**Returns:** Real",
         "x": "The angle (in radians) to return the inverse cosine of."
     },
     "arcsin": {
-        "desc": "Returns the inverse sine of x, in that if sin(x)=n, arcsin(n)=x, and the resulting number will be between -pi/2 and pi/2. \n\nNOTE: This will only accept a value between -1 and 1 (anything else will throw an error). \n\n**Returns:** Real",
+        "desc": "Returns the inverse sine of x, in that if sin(x)=n, arcsin(n)=x, and the resulting number will be between -pi/2 and pi/2. \n\n**NOTE:** This will only accept a value between -1 and 1 (anything else will throw an error). \n\n**Returns:** Real",
         "x": "The angle (in radians) to return the inverse sine of."
     },
     "arctan": {
@@ -131,7 +131,7 @@
         "x": "The angle (in radians) to return the inverse tangent of."
     },
     "arctan2": {
-        "desc": "This function returns the inverse tangent of an angle y/x, where y = Opposite side of triangle and x = Adjacent side of triangle. Unlike arctan(x) the function arctan2(y, x) is valid for all angles and so may be used to convert a vector to an angle without risking division by zero, and it also returns a result in the correct quadrant. \n\n**Returns:** Real\n\nNOTE: The value returned is in radians, not degrees. ",
+        "desc": "This function returns the inverse tangent of an angle y/x, where y = Opposite side of triangle and x = Adjacent side of triangle. Unlike arctan(x) the function arctan2(y, x) is valid for all angles and so may be used to convert a vector to an angle without risking division by zero, and it also returns a result in the correct quadrant. \n\n**Returns:** Real\n\n**NOTE:** The value returned is in radians, not degrees. ",
         "y": "The y coordinate to calculate.",
         "x": "The x coordinate to calculate."
     },
@@ -167,7 +167,7 @@
         "n": " The entry of the array to get the length of. "
     },
     "asset_get_index": {
-        "desc": "You can use this function to get the unique identifying index for a game asset from its name. If the asset is not found, the function will return a value of -1, otherwise it will return the unique index id for the asset being checked. This id can then be used in other functions as you would any other index value, like the **sprite_index** or **the path_index**, for example. Please note that although this function can be used to reference assets from strings (see example below) you should always make sure that the asset exists before using it otherwise you may get errors that will crash your game. \n\n**Returns:** Real \n\nNOTE: Script names will not resolve as assets on the HTML5 target platform due to obfuscation of the final code, which may cause issues and should be taken into consideration when using the function. \n\n**Returns:** Real ",
+        "desc": "You can use this function to get the unique identifying index for a game asset from its name. If the asset is not found, the function will return a value of -1, otherwise it will return the unique index id for the asset being checked. This id can then be used in other functions as you would any other index value, like the **sprite_index** or **the path_index**, for example. Please note that although this function can be used to reference assets from strings (see example below) you should always make sure that the asset exists before using it otherwise you may get errors that will crash your game. \n\n**Returns:** Real \n\n**NOTE:** Script names will not resolve as assets on the HTML5 target platform due to obfuscation of the final code, which may cause issues and should be taken into consideration when using the function. \n\n**Returns:** Real ",
         "name": "The name of the game asset to get the index of (a string)."
     },
     "asset_get_type": {
@@ -202,7 +202,7 @@
         "looping": "Whether the tracks in the group should loop (true) or not (false)."
     },
     "audio_debug": {
-        "desc": "This function can be used to display debug information about the audio system, with true switching it on and false to switch it off.When you are debugging audio in this way, the overlay will show the following information:![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_debug.png)\n\nFor synchronised groups of audio, you also have the function **audio_sync_group_debug()**. \n\nNOTE: This function does not work on the HTML5 target platform. \n\n**Returns:** N/A ",
+        "desc": "This function can be used to display debug information about the audio system, with true switching it on and false to switch it off.When you are debugging audio in this way, the overlay will show the following information:![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_debug.png)\n\nFor synchronised groups of audio, you also have the function **audio_sync_group_debug()**. \n\n**NOTE:** This function does not work on the HTML5 target platform. \n\n**Returns:** N/A ",
         "enable": "Enable (set to true) or disable (false) audio debugging."
     },
     "audio_destroy_stream": {
@@ -232,7 +232,7 @@
         "emitterid": ""
     },
     "audio_emitter_gain": {
-        "desc": "This function sets the maximum gain (volume) for the sound. The perceived volume for a sound can change depending on the fall-off value and the position it has relative to the listener, but by setting the gain with this function, the full volume will never exceed the specified gain value.The image below illustrates how gain affects the volume of the emitter when fall-off is greater than 0:![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_gain.png)\n\nThis function will change the volume of the sound while it is being played as well all subsequent sounds played through the given emitter. \n\nNOTE: the final volume will also be influenced by the global audio gain that has been set by the function **audio_master_gain**. \n\n**Returns:** N/A ",
+        "desc": "This function sets the maximum gain (volume) for the sound. The perceived volume for a sound can change depending on the fall-off value and the position it has relative to the listener, but by setting the gain with this function, the full volume will never exceed the specified gain value.The image below illustrates how gain affects the volume of the emitter when fall-off is greater than 0:![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_gain.png)\n\nThis function will change the volume of the sound while it is being played as well all subsequent sounds played through the given emitter. \n\n**NOTE:** the final volume will also be influenced by the global audio gain that has been set by the function **audio_master_gain**. \n\n**Returns:** N/A ",
         "emitterid": "The index of the emitter to change.",
         "gain": "The maximum gain (default 1)."
     },
@@ -273,7 +273,7 @@
         "emitterid": "The index of the emitter to use."
     },
     "audio_emitter_pitch": {
-        "desc": "This function can be used to change the pitch of all sounds emitted from the given emitter. It is a pitch multiplier, in that the input value multiplies the current pitch by that amount, so the default value of 1 is no pitch change, while a value of less than 1 will lower the pitch and greater than 1 will raise the pitch. It is best to use small increments for this function as any value under 0 or over 5 may not be audible anyway. \n\nNOTE: If a sound is being looped through the emitter, the change in pitch will not be detected unless the sound is stopped and looped again! \n\n**Returns:** N/A ",
+        "desc": "This function can be used to change the pitch of all sounds emitted from the given emitter. It is a pitch multiplier, in that the input value multiplies the current pitch by that amount, so the default value of 1 is no pitch change, while a value of less than 1 will lower the pitch and greater than 1 will raise the pitch. It is best to use small increments for this function as any value under 0 or over 5 may not be audible anyway. \n\n**NOTE:** If a sound is being looped through the emitter, the change in pitch will not be detected unless the sound is stopped and looped again! \n\n**Returns:** N/A ",
         "emitterid": "The index of the emitter to change.",
         "pitch": "The pitch multiplier (default 1)."
     },
@@ -316,7 +316,7 @@
         "desc": "Certain target platforms permit more than one listener, so it is important that you know how many the target has before changing or using different listeners. This function will return the number of listeners available.\n\n**Returns:** Real"
     },
     "audio_get_listener_info": {
-        "desc": "This function will create a ds_map and populate it with information for the given listener.\n\nNOTE: You are responsible for the destruction of the returned ds_map using the appropriate function.\n\nThe ds_map will contain the following keys:\n\n    \"name\": The name of the listener, as a string, with \"default\" being the standard listener name on most target platforms\n\n    \"mask\": The bit-mask for the listener\n\n    \"index\": The unique index value of the listener\n\nThe mask value can be used to set a sound or emitter to play from multiple listeners at once, simply using the bitwise or \"|\" to generate a mask for the sound (see the example code below), while the index is used to set the properties like position or velocity for a given listener using functions like **audio_listener_set_position()**.\n\n**Returns:** ds_map",
+        "desc": "This function will create a ds_map and populate it with information for the given listener.\n\n**NOTE:** You are responsible for the destruction of the returned ds_map using the appropriate function.\n\nThe ds_map will contain the following keys:\n\n    \"name\": The name of the listener, as a string, with \"default\" being the standard listener name on most target platforms\n\n    \"mask\": The bit-mask for the listener\n\n    \"index\": The unique index value of the listener\n\nThe mask value can be used to set a sound or emitter to play from multiple listeners at once, simply using the bitwise or \"|\" to generate a mask for the sound (see the example code below), while the index is used to set the properties like position or velocity for a given listener using functions like **audio_listener_set_position()**.\n\n**Returns:** ds_map",
         "num": "The listener number to get the data for."
     },
     "audio_get_listener_mask": {
@@ -334,7 +334,7 @@
         "desc": "This function will return the number of audio recording sources (like microphones, etc...) currently available to your game. So, if you have a return value of, for example, four, then you will have audio input on the sources 0, 1, 2 and 3, with one of these values being that which you use to start recording from using the function **audio_start_recording()**. This value can change at any time as people plug/unplug microphones or other input sources to the device. Note that you can use the function **audio_get_recorder_info** to get information on each device connected.\n\n**Returns:** Integer"
     },
     "audio_get_recorder_info": {
-        "desc": "This function will return a *ds_map* with information about the given recorder source index. You can find out how many recorder sources are available using the function **audio_get_recorder_count**, and the map returned will contain the following key/value pairs:\n\n - \"name\": a name to describe the device\n\n - \"index\": the index to be used to record\n\n - \"data_format\": the format data will be returned in (this is currently always **buffer_s16** but other formats may be supported in the future)\n\n - \"sample_rate\": the sample rate (in Hz) of the data returned (currently clamped to 16000hz but this may change in future)\n\n - \"channels\": the constant audio_mono (further constants for stereo and 3D may be supported in the future)\n\nnote that while the function creates a *ds_map* for you, it does not remove it again later and so you should be destroying the map yourself when it is no longer needed to prevent any memory leaks.\n\nNOTE: Most platforms support recording audio in some form, but that does not mean that all devices will permit it, even if the platform does, so you should always check that the audio_get_recorder_count() function returns a value greater than 0 to verify that recording devices are available before using the rest of the recording functions.\n\n**Returns:** ds_map",
+        "desc": "This function will return a *ds_map* with information about the given recorder source index. You can find out how many recorder sources are available using the function **audio_get_recorder_count**, and the map returned will contain the following key/value pairs:\n\n - \"name\": a name to describe the device\n\n - \"index\": the index to be used to record\n\n - \"data_format\": the format data will be returned in (this is currently always **buffer_s16** but other formats may be supported in the future)\n\n - \"sample_rate\": the sample rate (in Hz) of the data returned (currently clamped to 16000hz but this may change in future)\n\n - \"channels\": the constant audio_mono (further constants for stereo and 3D may be supported in the future)\n\nnote that while the function creates a *ds_map* for you, it does not remove it again later and so you should be destroying the map yourself when it is no longer needed to prevent any memory leaks.\n\n**NOTE:** Most platforms support recording audio in some form, but that does not mean that all devices will permit it, even if the platform does, so you should always check that the audio_get_recorder_count() function returns a value greater than 0 to verify that recording devices are available before using the rest of the recording functions.\n\n**Returns:** ds_map",
         "recorder_index": "The index of the recorder source to get the information from."
     },
     "audio_get_type": {
@@ -380,11 +380,11 @@
         "index": "The index of the sound to check."
     },
     "audio_listener_get_data": {
-        "desc": "This function will create a *ds_map* and populate it with the position, velocity and orientation values for the given listener. The default listener index is 0, but you can use the function **audio_get_listener_info** to get the different indices available for the target platform. If you provide an incorrect listener index then the function will return -1.\n\nNOTE: You are responsible for the destruction of the returned *ds_map* using the appropriate function.\n\nThe *ds_map* will contain the following keys:\n\n - \"x\": The x position of the listener\n\n - \"y\": The y position of the listener\n\n - \"z\": The z position of the listener\n\n - \"vx\": The x axis velocity of the listener\n\n - \"vy\": The y axis velocity of the listener\n\n - \"vz\": The z axis velocity of the listener\n\n - \"lookat_x\": The x component of the look at vector of the listener\n\n - \"lookat_y\": The y component of the look at vector of the listener\n\n - \"lookat_z\": The z component of the look at vector of the listener\n\n - \"up_x\": The x component of the up vector of the listener\n\n - \"up_y\": The y component of the up vector of the listener\n\n - \"up_z\": The z component of the up vector of the listener\n\n**Returns:** ds_map",
+        "desc": "This function will create a *ds_map* and populate it with the position, velocity and orientation values for the given listener. The default listener index is 0, but you can use the function **audio_get_listener_info** to get the different indices available for the target platform. If you provide an incorrect listener index then the function will return -1.\n\n**NOTE:** You are responsible for the destruction of the returned *ds_map* using the appropriate function.\n\nThe *ds_map* will contain the following keys:\n\n - \"x\": The x position of the listener\n\n - \"y\": The y position of the listener\n\n - \"z\": The z position of the listener\n\n - \"vx\": The x axis velocity of the listener\n\n - \"vy\": The y axis velocity of the listener\n\n - \"vz\": The z axis velocity of the listener\n\n - \"lookat_x\": The x component of the look at vector of the listener\n\n - \"lookat_y\": The y component of the look at vector of the listener\n\n - \"lookat_z\": The z component of the look at vector of the listener\n\n - \"up_x\": The x component of the up vector of the listener\n\n - \"up_y\": The y component of the up vector of the listener\n\n - \"up_z\": The z component of the up vector of the listener\n\n**Returns:** ds_map",
         "index": "The listener to get the data for (default 0)."
     },
     "audio_listener_orientation": {
-        "desc": "With this function you can change the orientation of the listener within the 3D audio space. The look at direction and up direction are based on the vectors that are resolved from the given relative x, y and z positions (for more information on vectors, please see Maths - Vectors), and default to (0, 0, 1000) for the look at direction and (0, 1, 0) for the up direction, as shown in the illustration below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_orientation_base.png)\n\nNOTE: if you have multiple listeners you should use the function **audio_listener_set_orientation**.\n\nChanging the listener orientation with this function will change how sound created by audio emitters around the game room are perceived by the player of your game. In the example below, sounds created by the emitter when the listener is at the default position would appear to be coming from below and to the right of the listener, but with the new position and orientation of the listener they will now be perceived as coming from above and to the right. ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_orientation_example.png)\n\n**Returns:** N/A",
+        "desc": "With this function you can change the orientation of the listener within the 3D audio space. The look at direction and up direction are based on the vectors that are resolved from the given relative x, y and z positions (for more information on vectors, please see Maths - Vectors), and default to (0, 0, 1000) for the look at direction and (0, 1, 0) for the up direction, as shown in the illustration below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_orientation_base.png)\n\n**NOTE:** if you have multiple listeners you should use the function **audio_listener_set_orientation**.\n\nChanging the listener orientation with this function will change how sound created by audio emitters around the game room are perceived by the player of your game. In the example below, sounds created by the emitter when the listener is at the default position would appear to be coming from below and to the right of the listener, but with the new position and orientation of the listener they will now be perceived as coming from above and to the right. ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_orientation_example.png)\n\n**Returns:** N/A",
         "lookat_x": "The x look vector (default 0).",
         "lookat_y": "The y look vector (default 0).",
         "lookat_z": "The z look vector (default 1000).",
@@ -393,7 +393,7 @@
         "up_z": "The z up vector (default 0)."
     },
     "audio_listener_position": {
-        "desc": "With this function you can change the position of the listener within the 3D audio space. The example image below shows the default position for the listener in the audio space: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_listener.png)\n\nNOTE: if you have multiple listeners you should use the function **audio_listener_set_position**.\n\nAs you can see, the default position is (0, 0, 0) but you would normally use this function to move the listener around with the player object within your game and so change the way audio created by emitters is heard by the player, for example, in the image below of a top down game, the player instance sets the listener which will cause the audio from the various emitters to \"change\" as the player moves around the level: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_game.png)\n\n**Returns:** N/A",
+        "desc": "With this function you can change the position of the listener within the 3D audio space. The example image below shows the default position for the listener in the audio space: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_listener.png)\n\n**NOTE:** if you have multiple listeners you should use the function **audio_listener_set_position**.\n\nAs you can see, the default position is (0, 0, 0) but you would normally use this function to move the listener around with the player object within your game and so change the way audio created by emitters is heard by the player, for example, in the image below of a top down game, the player instance sets the listener which will cause the audio from the various emitters to \"change\" as the player moves around the level: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_game.png)\n\n**Returns:** N/A",
         "x": "The x position of the listener (default 0).",
         "y": "The y position of the listener (default 0).",
         "z": "The z position of the listener (default 0)."
@@ -423,7 +423,7 @@
         "vz": "The z velocity of the listener (default 0)."
     },
     "audio_listener_velocity": {
-        "desc": "This function can be used to give the listener doppler effects and simulate audio motion based on the vector that is resolved from the given relative x, y and z positions (for more information on vectors, please see Maths - Vectors). If the listener itself is not ever going to move, or the movement is not a constant motion, you would normally not need to set these values, but, for example, if you are making a scrolling game where the player has a constant bottom to top movement and the enemies a constant top to bottom movement, you would set the listener and emitter velocities (for emitters you would use **audio_emitter_velocity**) to the appropriate vectors to simulate the correct doppler effect as they move past the player instance.\n\nNOTE: if you have multiple listeners you should use the function **audio_listener_set_velocity**.\n\nThe image below shows how this could be setup for the example game given above: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_listener_velocity.png)\n\n**Returns:** N/A",
+        "desc": "This function can be used to give the listener doppler effects and simulate audio motion based on the vector that is resolved from the given relative x, y and z positions (for more information on vectors, please see Maths - Vectors). If the listener itself is not ever going to move, or the movement is not a constant motion, you would normally not need to set these values, but, for example, if you are making a scrolling game where the player has a constant bottom to top movement and the enemies a constant top to bottom movement, you would set the listener and emitter velocities (for emitters you would use **audio_emitter_velocity**) to the appropriate vectors to simulate the correct doppler effect as they move past the player instance.\n\n**NOTE:** if you have multiple listeners you should use the function **audio_listener_set_velocity**.\n\nThe image below shows how this could be setup for the example game given above: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_listener_velocity.png)\n\n**Returns:** N/A",
         "vx": "The x velocity component of the listener (default 0).",
         "vy": "The y velocity component of the listener (default 0).",
         "vz": "The z velocity component of the listener (default 0)."
@@ -527,12 +527,12 @@
         "index": "The index of the sound to check."
     },
     "audio_sound_pitch": {
-        "desc": "This function can be used to change the pitch of a given sound. The sound can either be one referenced from an index for an individual sound being played which has been stored in a variable when using the **audio_play_sound** or **audio_play_sound_at** functions, or an actual sound asset from the resource tree. If it is an index of a playing sound, then only that instance will be changed, however when using a sound asset from the resource tree, all further instances being played of that sound will be changed.\n\nThe pitch argument is a pitch multiplier, in that the input value multiplies the current pitch by that amount, so the default value of 1 is no pitch change, while a value of less than 1 will lower the pitch and greater than 1 will raise the pitch. It is best to use small increments for this function as any value under 0 or over 5 may not be audible anyway. It is worth noting that the total pitch change permitted is clamped to (1/256) - 256 octaves, so any value over or under this will not be registered.\n\nNOTE: The clamped value given above is what GameMaker: Studio attempts to clamp the range to, but this value is not guaranteed on all target platforms. iOS, for example, clamps to (1/256) - 8, so you may need to experiment on each target platform and have different versions of a sound resource, each one pre-shifted, should you require higher or lower octave values.\n\n**Returns:** N/A",
+        "desc": "This function can be used to change the pitch of a given sound. The sound can either be one referenced from an index for an individual sound being played which has been stored in a variable when using the **audio_play_sound** or **audio_play_sound_at** functions, or an actual sound asset from the resource tree. If it is an index of a playing sound, then only that instance will be changed, however when using a sound asset from the resource tree, all further instances being played of that sound will be changed.\n\nThe pitch argument is a pitch multiplier, in that the input value multiplies the current pitch by that amount, so the default value of 1 is no pitch change, while a value of less than 1 will lower the pitch and greater than 1 will raise the pitch. It is best to use small increments for this function as any value under 0 or over 5 may not be audible anyway. It is worth noting that the total pitch change permitted is clamped to (1/256) - 256 octaves, so any value over or under this will not be registered.\n\n**NOTE:** The clamped value given above is what GameMaker: Studio attempts to clamp the range to, but this value is not guaranteed on all target platforms. iOS, for example, clamps to (1/256) - 8, so you may need to experiment on each target platform and have different versions of a sound resource, each one pre-shifted, should you require higher or lower octave values.\n\n**Returns:** N/A",
         "index": "The index of the sound to change.",
         "pitch": "The pitch multiplier (default 1)."
     },
     "audio_sound_set_listener_mask": {
-        "desc": "This function can be used to set the the bit-mask for a sound so that it will play only from those listeners specified. You can create a bit-mask by using the **audio_get_listener_info()** and then using the bitwise or (\"|\") to create a custom mask with those listeners that you require the sound to play from, and then apply this custom mask to the sound after you have played it. This mask will over-ride the default mask or that which you may have set using the function **audio_set_listener_mask()**.\n\nNOTE: This function can only be used on a sound after it has been set to play and requires the soundID as returned by the function used to play the sound.\n\n**Returns:** N/A",
+        "desc": "This function can be used to set the the bit-mask for a sound so that it will play only from those listeners specified. You can create a bit-mask by using the **audio_get_listener_info()** and then using the bitwise or (\"|\") to create a custom mask with those listeners that you require the sound to play from, and then apply this custom mask to the sound after you have played it. This mask will over-ride the default mask or that which you may have set using the function **audio_set_listener_mask()**.\n\n**NOTE:** This function can only be used on a sound after it has been set to play and requires the soundID as returned by the function used to play the sound.\n\n**Returns:** N/A",
         "soundID": "The unique ID of the sound to set the mask of",
         "mask": "The bitmask data to set for the sound"
     },
@@ -542,7 +542,7 @@
         "time": "The time (in seconds) to set the start point to."
     },
     "audio_start_recording": {
-        "desc": "This function will start recording audio from the recorder source indexed. You can get the number of recorder sources using the function **audio_get_recorder_count()**, and once you start recording the audio will be stored in a temporary buffer and start triggering an Audio Recording Asynchronous Event. This event is triggered every step that recording takes place and will create the special ds_map in the variable async_load with the following key/value pairs:\n - \"buffer_id\" - the ID of the temporary buffer you can use to retrieve the audio data\n - \"channel_index\" - the recording channel index (as returned by the function) this data came from\n - \"data_len\" - the length of data (in bytes) you've received\n\nNote that after the asynchronous event has been triggered, the audio in the temporary buffer will be wiped, so you should be copying it's data into a custom buffer that you have previously created.\n\nNOTE: Most platforms support recording audio in some form, but that does not mean that all devices will permit it, even if the platform does, so you should always check that the **audio_get_recorder_count()** function returns a value greater than 0 to verify that recording devices are available before using the rest of the recording functions.\n\n**Returns:** Index",
+        "desc": "This function will start recording audio from the recorder source indexed. You can get the number of recorder sources using the function **audio_get_recorder_count()**, and once you start recording the audio will be stored in a temporary buffer and start triggering an Audio Recording Asynchronous Event. This event is triggered every step that recording takes place and will create the special ds_map in the variable async_load with the following key/value pairs:\n - \"buffer_id\": the ID of the temporary buffer you can use to retrieve the audio data\n - \"channel_index\": the recording channel index (as returned by the function) this data came from\n - \"data_len\": the length of data (in bytes) you've received\n\nNote that after the asynchronous event has been triggered, the audio in the temporary buffer will be wiped, so you should be copying it's data into a custom buffer that you have previously created.\n\n**NOTE:** Most platforms support recording audio in some form, but that does not mean that all devices will permit it, even if the platform does, so you should always check that the **audio_get_recorder_count()** function returns a value greater than 0 to verify that recording devices are available before using the rest of the recording functions.\n\n**Returns:** Index",
         "recorder_index": "The index of the recorder source to use."
     },
     "audio_start_sync_group": {
@@ -553,7 +553,7 @@
         "desc": "This function will stop all sounds that are currently playing.\n\n**Returns:** N/A"
     },
     "audio_stop_recording": {
-        "desc": "This function will stop recording on the given recorder channel (the channel index is returned when you call the function **audio_start_recording**). When you stop recording, no further Audio Recording Asynchronous Events will be triggered for the given recorder channel, so you would normally use this function in the actual asynchronous event to ensure that you have captured all the data.\n\nNOTE: Most platforms support recording audio in some form, but that does not mean that all devices will permit it, even if the platform does, so you should always check that the **audio_get_recorder_count()** function returns a value greater than 0 to verify that recording devices are available before using the rest of the recording functions.\n\n**Returns:** N/A",
+        "desc": "This function will stop recording on the given recorder channel (the channel index is returned when you call the function **audio_start_recording**). When you stop recording, no further Audio Recording Asynchronous Events will be triggered for the given recorder channel, so you would normally use this function in the actual asynchronous event to ensure that you have captured all the data.\n\n**NOTE:** Most platforms support recording audio in some form, but that does not mean that all devices will permit it, even if the platform does, so you should always check that the **audio_get_recorder_count()** function returns a value greater than 0 to verify that recording devices are available before using the rest of the recording functions.\n\n**Returns:** N/A",
         "channel_index": "The index of the recorder channel to stop."
     },
     "audio_stop_sound": {
@@ -592,125 +592,125 @@
         "enable": "Turn capture on (true) or off (false)."
     },
     "buffer_async_group_begin": {
-        "desc": "",
-        "groupname": ""
+        "desc": "This function is called when you want to begin the saving out of multiple buffers to multiple files. The \"groupname\" is a string and will be used as the directory name for where the files will be saved, and should be used as part of the file path when loading the files back into the IDE later (using any of the **buffer_load** functions). This function is only for use with the **buffer_save_async()** function and you must also finish the save definition by calling **buffer_async_group_end()** function otherwise the files will not be saved out.\n\nNote that for the console platforms (like PS4 for example), the \"groupname\" will be used as the save slot description, and using this function can help you avoid having the UI show for every file that is being saved out.\n\n**Returns:** N/A",
+        "groupname": "The name of the group (as a string)."
     },
     "buffer_async_group_end": {
-        "desc": ""
+        "desc": "This function finishes the definition of a buffer save group. You must have previously called the function **buffer_async_group_begin()** to initiate the group, then call the function **buffer_save_async()** for each file that you wish to save out. Finally you call this function, which will start the saving of the files.\n\nReturns: Real"
     },
     "buffer_async_group_option": {
-        "desc": "",
-        "optionname": "",
-        "optionvalue": ""
+        "desc": "With this function you can set some platform specific options for the buffer group being saved. The options available are as follows:\n\n - \"subtitle\" or \"slottitle\": The value for this option would be a string, which will be shown to the user when managing their save data in the OS. This is only important when saving data, not when loading again.\n\n - \"showdialog\": The value for this option is a boolean true or false. If set to true, when you save or load GameMaker: Studio will show the System UI, otherwise it will do a quicksave/quickload with no UI shown. You normally only need this if you're supporting multiple save slots to allow the user to pick a slot, but if you just support one slot per user, set this to false.\n\n - \"savepadindex\": For this option you would specify the pad index of the player who is saving or loading and the system will write data to and read data from this player's save folder.\n\n - \"saveslotsize\": This option requires that you specify the actual size in bytes you want to save (so you can do a buffer_seek and buffer_tell to get that, for example). Note that it is not obligatory to supply this value as all saves are pre-assigned a minimum space, which is normally about 10MB or so.\n\n**IMPORTANT**: This function is currently only valid for the PlayStation target module. on all the other targets it will do nothing.\n\nReturns: N/A",
+        "optionname": "The option to set.",
+        "optionvalue": "The value to set (can be string or real, depending on the option)."
     },
     "buffer_base64_decode": {
-        "desc": "",
-        "string": ""
+        "desc": "With this function you can decode a base64 encoded string (created using the **buffer_base64_encode** function) into a buffer. This function will create the buffer (as a 1 byte aligned \"grow\" buffer) and return the unique index for the buffer which should be used in all further function calls.\n\nNOTE: It's important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using **buffer_delete**.\n\nReturns: Real",
+        "string": "The base64 encoded string to decode"
     },
     "buffer_base64_decode_ext": {
-        "desc": "",
-        "buffer": "",
-        "string": "",
-        "offset": ""
+        "desc": "With this function you can decode a base64 encoded string (created using the **buffer_base64_encode()** function) into a buffer. Unlike the function **buffer_base64_decode()**, this will not create a buffer for you, but rather you should already have created the buffer (see **buffer_create**), the id of which you would then use with this function. The \"offset\" is the position within the buffer to decode the given string (in bytes).\n\nReturns: N/A",
+        "buffer": "The index of the buffer to decode the string into.",
+        "string": "The base64 encoded string to decode.",
+        "offset": "The data offset value."
     },
     "buffer_base64_encode": {
-        "desc": "",
-        "buffer": "",
-        "offset": "",
-        "size": ""
+        "desc": "This function will convert the data from the given buffer into a base64 format encoded string. This is a commonly used encoding scheme that is often used for any media that needs to be stored or transferred over the internet as text, and renders the output unreadable to the human eye. To use this you need to specify an already created buffer, the offset value (which is the point within the buffer at which you wish to start encoding) as well as the size, in bytes, of the buffer memory to encode.\n\nReturns: String",
+        "buffer": "The index of the buffer to use.",
+        "offset": "The data offset value.",
+        "size": "The size of the buffer."
     },
     "buffer_copy": {
-        "desc": "",
-        "src_buffer": "",
-        "src_offset": "",
-        "size": "",
-        "dest_buffer": "",
-        "dest_offset": ""
+        "desc": "This function can be used to copy a segment (or all) of the data stored in one buffer to another. When using two buffers and copying from one to the other, both buffers must have previously been created using the **buffer_create** function (for example), and you can specify a data offset (in bytes) for the start point of the data to be copied from the source buffer relative to the start of the buffer, as well as another data offset to define the position to copy the data to in the destination buffer.\n\nNOTE: You cannot copy to the same buffer.\n\nReturns: N/A",
+        "src_buffer": "The index of the buffer to copy from.",
+        "src_offset": "The data offset to start copying from (in bytes).",
+        "size": "The size of the data to copy (in bytes).",
+        "dest_buffer": "The index of the buffer to copy to.",
+        "dest_offset": "The offset position to copy the data to (in bytes)."
     },
     "buffer_copy_from_vertex_buffer": {
-        "desc": "",
-        "vertex_buffer": "",
-        "start_vertex": "",
-        "num_vertices": "",
-        "dest_buffer": "",
-        "dest_offset": ""
+        "desc": "This function can be used to copy some (or all) of the vertex data stored in one vertex buffer into a previously created regular buffer. When copying from a vertex buffer into a regular buffer with this function, both buffers must have previously been created (using the **vertex_create_buffer()** and **buffer_create** functions, for example). You can specify the range of vertex data that you wish to copy into the buffer, where the start vertex can be anywhere between 0 and the number of vertices -1, and you can give the number of vertices from that point on to copy. You can use the function **vertex_get_number()** on the vertex buffer to get the total number of vertices stored. Finally you give the buffer index to copy the vertex data into, as well as a data offset to define the position to copy the vertex data to in the destination buffer.\n\nReturns: N/A",
+        "vertex_buffer": "The index of the vertex buffer to copy from.",
+        "start_vertex": "The starting vertex.",
+        "num_vertices": "The total number of vertices to use.",
+        "dest_buffer": "The index of the buffer to copy to.",
+        "dest_offset": "The offset position to copy the data to (in bytes)."
     },
     "buffer_create": {
-        "desc": "",
-        "size": "",
-        "buffer_type": "",
-        "alignment": ""
+        "desc": "You use this function to allocate a portion of memory as a buffer in your game, with the function returning the unique buffer id that should be stored in a variable and used for all further function calls to the buffer. The buffer can then be used to store different types of data (specified when you write to the buffer using the **buffer_write** function)\n\nApart from the buffer type, you will also have to set the byte alignment for the buffer. This value will vary depending on the data that you wish to store in the buffer, and in most cases a value of 1 is perfectly fine. However, be aware that for some operations a specific alignment is essential, and an incorrect alignment may cause errors (for further details on alignment see Buffers). The following is a general guide to show which values are most appropriate for each data type (when in doubt, use an alignment of 1):\n\n - Strings should be aligned to 1 byte.\n\n - Signed or unsigned 8bit integers can be aligned to any value, but note that for a fast buffer (see **buffer_write**) it must be aligned to 1.\n\n - Signed or unsigned 16bit integers should be aligned to 2 bytes.\n\n - Signed or unsigned 32bit integers should be aligned to 4 bytes\n\n - Floats of up to 16bits should be aligned to 2 bytes. (Not currently supported!)\n\n - Floats of up to 32bits should be aligned to 4 bytes.\n\n - Floats of up to 64bits should be aligned to 8 bytes.\n\nNOTE: Byte alignment can be very important as the wrong choice may adversely affect performance.\n\nNOTE: It's important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using buffer_delete.\n\nReturns: Real",
+        "size": "The size (in bytes) of the buffer.",
+        "buffer_type": "The type of buffer to create (see the constants list below).",
+        "alignment": "The byte alignment for the buffer"
     },
     "buffer_create_from_vertex_buffer": {
-        "desc": "",
-        "vertex_buffer": "",
-        "type": "",
-        "alignment": ""
+        "desc": "You use this function to allocate a portion of memory as a buffer in your game filled with the data from a previously created vertex buffer. The function returns a unique buffer id that should be stored in a variable and used for all further function calls to the buffer. The function takes the id for the vertex buffer to use (as returned by the function **vertex_create_buffer()**, for example) with the following constants being used to define the buffer type\n\nApart from the buffer type, you will also have to set the byte alignment for the buffer. This value will vary depending on the data that you wish to store in the buffer, and in most cases a value of 1 is perfectly fine. However, be aware that for some operations a specific alignment is essential, and an incorrect alignment may cause errors (for further details on alignment see Buffers). The following is a general guide to show which values are most appropriate for each data type (when in doubt, use an alignment of 1):\n\n - Strings should be aligned to 1 byte.\n\n - Signed or unsigned 8bit integers can be aligned to any value, but note that for a fast buffer (see **buffer_write**) it must be aligned to 1.\n\n - Signed or unsigned 16bit integers should be aligned to 2 bytes.\n\n - Signed or unsigned 32bit integers should be aligned to 4 bytes\n\n - Floats of up to 16bits should be aligned to 2 bytes. (Not currently supported!)\n\n - Floats of up to 32bits should be aligned to 4 bytes.\n\n - Floats of up to 64bits should be aligned to 8 bytes.\n\nNOTE: Vertex buffers are 1 byte aligned, but you can create the buffer with any alignment depending on how you want to treat the data, as the vertex data is simply a raw memory copy into the buffer.\n\nNOTE: It's important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using buffer_delete. Also note that the vertex buffer used to create the new buffer is not removed from memory either and you should use the function vertex_delete_buffer() when it is no longer required.\n\nReturns: Real",
+        "vertex_buffer": "The vertex buffer index to use.",
+        "type": "The type of buffer to create (see the constants list below).",
+        "alignment": "The byte alignment for the buffer"
     },
     "buffer_create_from_vertex_buffer_ext": {
-        "desc": "",
-        "vertex_buffer": "",
-        "type": "",
-        "alignment": "",
-        "start_vertex": "",
-        "num_vertices": ""
+        "desc": "You use this function to allocate a portion of memory as a buffer in your game filled with the data from a previously created vertex buffer. The function returns a unique buffer id that should be stored in a variable and used for all further function calls to the buffer. The function takes the id for the vertex buffer to use (as returned by the function **vertex_create_buffer()**, for example) with the following constants being used to define the buffer type\n\nApart from the buffer type, you will also have to set the byte alignment for the buffer. This value will vary depending on the data that you wish to store in the buffer, and in most cases a value of 1 is perfectly fine. However, be aware that for some operations a specific alignment is essential, and an incorrect alignment may cause errors (for further details on alignment see Buffers). The following is a general guide to show which values are most appropriate for each data type (when in doubt, use an alignment of 1):\n\n - Strings should be aligned to 1 byte.\n\n - Signed or unsigned 8bit integers can be aligned to any value, but note that for a fast buffer (see **buffer_write**) it must be aligned to 1.\n\n - Signed or unsigned 16bit integers should be aligned to 2 bytes.\n\n - Signed or unsigned 32bit integers should be aligned to 4 bytes\n\n - Floats of up to 16bits should be aligned to 2 bytes. (Not currently supported!)\n\n - Floats of up to 32bits should be aligned to 4 bytes.\n\n - Floats of up to 64bits should be aligned to 8 bytes.\n\nNOTE: Vertex buffers are 1 byte aligned, but you can create the buffer with any alignment depending on how you want to treat the data, as the vertex data is simply a raw memory copy into the buffer.\n\nThe final two arguments are used to specify the range of vertex data that you wish to copy into the newly created buffer. The start vertex can be anywhere between 0 and the number of vertices -1, and then you give the number of vertices from that point to copy. You can use the function **vertex_get_number()** on the vertex buffer to get the total number of vertices stored.\n\nNOTE: It's important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using **buffer_delete**. Also note that the vertex buffer used to create the new buffer is not removed from memory either and you should use the function **vertex_delete_buffer()** when it is no longer required.\n\nReturns: Real",
+        "vertex_buffer": "The vertex buffer index to use.",
+        "type": "The type of buffer to create (see the constants list below).",
+        "alignment": "The byte alignment for the buffer",
+        "start_vertex": "The starting vertex.",
+        "num_vertices": "The total number of vertices to copy."
     },
     "buffer_delete": {
-        "desc": "",
-        "buffer": ""
+        "desc": "With this function you can delete a buffer previously have created using the function **buffer_create** from memory, releasing the resources used to create it and removing any data that it may currently contain.\n\nNOTE: It's important to always remove any dynamically created resources from memory when you no longer need them to prevent memory leaks.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to delete."
     },
     "buffer_exists": {
-        "desc": "",
-        "buffer": ""
+        "desc": "This function can be used to check a variable to see if it holds a valid buffer ID value or not. If it does the function will return true otherwise it will return false.\n\nReturns: Boolean",
+        "buffer": "The index of the buffer to check."
     },
     "buffer_fill": {
-        "desc": "",
-        "buffer": "",
-        "offset": "",
-        "type": "",
-        "value": "",
-        "size": ""
+        "desc": "This function can be used to fill a previously created buffer with a given data type and value. The data you fill the buffer with must be in agreement with the \"type\" argument of this function, meaning that you can't try to fill with a string and use the unsigned 16bit integer type, for example. The type constants are the same as those used by the **buffer_read** and **buffer_write** functions. The \"size\" is the size of the buffer (in bytes) that you wish to fill, while the offset is the offset value (also in bytes) from the start of the buffer to start the fill from.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to fill.",
+        "offset": "The data offset value (in bytes).",
+        "type": "The type of data that is to be written to the buffer",
+        "value": "The data to write.",
+        "size": "The size of the buffer (in bytes) that you wish to fill."
     },
     "buffer_get_address": {
-        "desc": "",
-        "buffer": ""
+        "desc": "With this function you can get the a pointer to the raw, aligned buffer address. This is primarily for use with extensions as you can pass this value through to them, allowing them to access the buffer data. Note that there are a few things you cannot do with the buffer when accessing from an extension:\n\n - You cannot free the memory.\n\n - You cannot resize the memory.\n\n - You cannot not write past the buffer address plus the buffer size (you can use the **buffer_get_size** function for this) or you will get an out of bounds error.\n\nReturns: pointer",
+        "buffer": "The index of the buffer to use."
     },
     "buffer_get_alignment": {
-        "desc": "",
-        "buffer": ""
+        "desc": "With this function you can get the a byte alignment for the given buffer ID.\n\nReturns: Real",
+        "buffer": "The index of the buffer to check."
     },
     "buffer_get_size": {
-        "desc": "",
-        "buffer": ""
+        "desc": "With this function you can get the size of the given buffer in bytes.\n\nReturns: Real",
+        "index": "The index of the buffer to get the size of."
     },
     "buffer_get_surface": {
-        "desc": "",
-        "buffer": "",
-        "surface": "",
-        "mode": "",
-        "offset": "",
-        "modulo": ""
+        "desc": "With this function you can write the information from a surface to a given buffer. The buffer must have been created previously and should be a 1byte aligned grow buffer of an approximate size (in bytes) of the surface you are going to write. You can choose the copy \"mode\" for the data being stored which is set by the constants listed below, as well as the offset and modulo values. Both offset and modulo are byte values, with the offset defining the start position within the buffer and modulo being the number of bytes left at the end of every line (for storing additional data). Note that the function writes each pixel of the surface to the buffer using a BGRA formatting on the Windows target, but on other targets it may be different depending on the OS or even the device.\n\n0 (Constant): Copies all data from the surface.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to use.",
+        "surface": "The index of the surface to use.",
+        "mode": "The data to get from the surface (see the list of constants below).",
+        "offset": "The data offset value.",
+        "modulo": "The offset from the end of the line to the start of the next"
     },
     "buffer_get_type": {
-        "desc": "",
-        "buffer": ""
+        "desc": "With this function you retrieve the type of buffer that is beinf referenced by a buffer ID value.\n\nReturns: Constant",
+        "buffer": "The index of the buffer to check."
     },
     "buffer_load": {
-        "desc": "",
-        "filename": ""
+        "desc": "This function will load the buffer data that was previously saved using the **buffer_save** functions into a new buffer. This new buffer is created by the function as a \"grow\" buffer with a byte alignment of 1, and the new buffer id is returned. This ID should be stored in a variable and used in all further function calls to this buffer.\n\nNOTE: It's important that you remove any dynamically created resources like this from memory when you no longer need them to prevent memory leaks, so when you are finished with the buffer that you have created you should free it up again using **buffer_delete**.\n\nReturns: Real",
+        "filename": "The name of the file to load from."
     },
     "buffer_load_async": {
-        "desc": "",
-        "bufferid": "",
-        "filename": "",
-        "offset": "",
-        "size": ""
+        "desc": "With this function you can load a file that you have created previously using the **buffer_save** function (or any of the other functions for saving buffers) into a buffer. The \"offset\" defines the start position within the buffer for loading (in bytes), and the \"size\" is the size of the buffer area to be loaded from that offset onwards (also in bytes).\n\nThe function returns a unique ID value which can then be used to check the asynchronous event *async_load* ID value, as shown in the extended example below. The *async_load* map in the event will have the following two key/value pairs:\n\n - \"id\": the ID of the async function as returned by the save function.\n\n - \"status\": will return true if the data was saved/loaded correctly, and false otherwise.\n\nReturns: Real",
+        "bufferid": "The index of the buffer to load.",
+        "filename": "The name of the file to load.",
+        "offset": "The offset within the buffer to load to (in bytes).",
+        "size": "The size of the buffer area to load (in bytes)."
     },
     "buffer_load_ext": {
-        "desc": "",
-        "bufferid": "",
-        "filename": "",
-        "offset": ""
+        "desc": "This function will load the buffer data that was previously saved using the **buffer_save** functions into an already created buffer. You give the id of the previously created buffer to load into, then the saved buffer file to load, and finally the offset from the start of the buffer (in bytes) that you wish to load the data to.\n\nReturns: N/A",
+        "bufferid": "The index of the buffer to load into.",
+        "filename": "The name of the file to load from.",
+        "offset": "The offset within the buffer to load to (in bytes)."
     },
     "buffer_load_partial": {
         "desc": "",
@@ -721,52 +721,52 @@
         "dest_offset": ""
     },
     "buffer_md5": {
-        "desc": "",
-        "buffer": "",
-        "offset": "",
-        "size": ""
+        "desc": "In cryptography, MD5 (Message-Digest algorithm 5) is a widely used cryptographic hash function with a 128-bit hash value and has been employed in a wide variety of security applications. It is also commonly used to check the integrity of data. This function will take the input data from a given buffer (or part of the buffer) and return the 32-character hexadecimal MD5 hash that is unique to that data. In this way you can generate a secure key which can be stored and used to check the integrity of the information being sent to (or received from) an external server (for example). When applying this to buffers using this function you must specify the buffer id of the buffer to use, then an offset value (in bytes) for where to begin, and then a size (again in bytes) for the region to be hashed.\n\nReturns: String",
+        "buffer": "The index of the buffer to use.",
+        "offset": "The data offset value.",
+        "size": "The size of the buffer."
     },
     "buffer_peek": {
-        "desc": "",
-        "buffer": "",
-        "offset": "",
-        "type": ""
+        "desc": "With the **buffer_read** function, you can read data from the given buffer at the current \"seek\" position, with each piece of data being read advancing this position by the bytes being read or written. However, it may be necessary for you to read a given piece of data without wanting to change the current seek position, and that's when you would use this function. You simply supply the function with a buffer id, and then an offset position (from the buffer start) within that buffer to read from, as well as the data type that you are wanting to read.\n\nNOTE: Using the incorrect data type for the data being read will result in erroneous values!\n\nReturns: Real/String",
+        "buffer": "The index of the buffer to use.",
+        "offset": "The offset position (in bytes) within the buffer to read the given data from.",
+        "type": "The type of data that is to be read from the buffer"
     },
     "buffer_poke": {
-        "desc": "",
-        "buffer": "",
-        "offset": "",
-        "type": "",
-        "value": ""
+        "desc": "With the buffer_write function, you can write data to the given buffer at the current \"seek\" position, with each piece of data advancing this position by the bytes being written or read. However, it may be necessary for you to change a given piece of data without wanting to change the current seek position, and that's when you would use this function. You simply supply the function with a buffer index, and then the offset position from the buffer start (in bytes) within that buffer to write to, as well as the data type and the value to be written.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to use.",
+        "offset": "The offset position (in bytes) within the buffer to write the given data to.",
+        "type": "The type of data that is to be written to the buffer",
+        "value": "The data to add to the buffer, in accordance with the type specified."
     },
     "buffer_read": {
-        "desc": "",
-        "buffer": "",
-        "type": ""
+        "desc": "This function can be used to read data from a previously created buffer. The return value will depend on the type of data that you are reading, which in itself is defined by the following constants\n\nNOTE: Using the incorrect data type for the data being read will result in erroneous values!\n\nReturns: Real/String",
+        "buffer": "The index of the buffer to read from.",
+        "type": "The type of data that is to be read from the buffer (see the list of constants below)."
     },
     "buffer_resize": {
-        "desc": "",
-        "buffer": "",
-        "newsize": ""
+        "desc": "With this function you can resize a given buffer to be the size (in bytes) that you specify.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to change the size of.",
+        "newsize": "The new size of the buffer (in bytes)."
     },
     "buffer_save": {
-        "desc": "",
-        "buffer": "",
-        "filename": ""
+        "desc": "With this function you can save the contents of a buffer to a file, ready to be read back into memory using the **buffer_load** function.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to save.",
+        "filename": "The name of the file to save as."
     },
     "buffer_save_async": {
-        "desc": "",
-        "buffer": "",
-        "type": "",
-        "offset": "",
-        "size": ""
+        "desc": "With this function you can save part of the contents of a buffer to a file, ready to be read back into memory using the **buffer_load** function (or any of the other functions for loading buffers). The \"offset\" defines the start position within the buffer for saving (in bytes), and the \"size\" is the size of the buffer area to be saved from that offset onwards (also in bytes). This function works asynchronously, and so the game will continue running while being saved. This function will trigger an Asynchronous Load/Save Event where you can check to ensure that the save has occurred correctly.\n\nNote that you can save out multiple buffers in one by calling this function multiple times between calls to **buffer_async_group_begin()** and **buffer_async_group_end()** (see those functions for further information on this).\n\nThe function returns a unique ID value which can then be used to check the asynchronous event *async_load* ID value, as shown in the extended example below. The *async_load* map in the event will have the following two key/value pairs:\n\n - \"id\": the ID of the async function as returned by the save function.\n\n - \"status\": will return true if the data was saved/loaded correctly, and false otherwise.\n\nReturns: Real",
+        "buffer": "The index of the buffer to save.",
+        "type": "The name of the file to save as.",
+        "offset": "The offset within the buffer to save from (in bytes).",
+        "size": "The size of the buffer area to save (in bytes)."
     },
     "buffer_save_ext": {
-        "desc": "",
-        "bufferid": "",
-        "filename": "",
-        "offset": "",
-        "size": ""
+        "desc": "With this function you can save part of the contents of a buffer to a file, ready to be read back into memory using the **buffer_load** function. The \"offset\" defines the start position within the buffer for saving (in bytes), and the \"size\" is the size of the buffer area to be saved from that offset onwards (also in bytes).\n\nReturns: N/A",
+        "bufferid": "The index of the buffer to save.",
+        "filename": "The name of the file to save as.",
+        "offset": "The offset within the buffer to save from (in bytes).",
+        "size": "The size of the buffer area to save (in bytes)."
     },
     "buffer_seek": {
         "desc": "",
