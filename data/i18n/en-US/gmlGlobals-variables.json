@@ -51,13 +51,13 @@
         "desc": ""
     },
 	"argument_count": {
-        "desc": ""
+        "desc": "This read-only variable returns the number of \"arguments\" that are passed through to a script. Normally used in conjunction with an argument array (argument[0...15]) to permit varying input arguments for a given script.\n\n**Returns:** Real"
     },
 	"argument_relative": {
         "desc": ""
     },
 	"async_load": {
-        "desc": ""
+        "desc": "This variable is global in scope and is used to hold a DS map when used in the Asynchronous Events, and -1 at all other times. The actual contents of the DS map will depend on the type of asynchronous event that it is populated in, and the function that was used to trigger the event, so refer to the individual pages for those events.\n\n**Returns:** Real"
     },
 	"browser_height": {
         "desc": ""
