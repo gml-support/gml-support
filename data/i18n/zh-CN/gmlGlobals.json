@@ -339,7 +339,7 @@
     },
     "audio_get_type": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_group_is_loaded": {
         "desc": "",
@@ -373,11 +373,11 @@
     },
     "audio_is_paused": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_is_playing": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_listener_get_data": {
         "desc": "",
@@ -437,26 +437,26 @@
     },
     "audio_pause_sound": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_pause_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_play_in_sync_group": {
         "desc": "",
-        "sync_group_id": "",
-        "soundid": ""
+        "group_index": "",
+        "sound_index": ""
     },
     "audio_play_sound": {
         "desc": "",
-        "soundid": "",
+        "sound": "",
         "priority": "",
         "loops": ""
     },
     "audio_play_sound_at": {
         "desc": "",
-        "soundid": "",
+        "index": "",
         "x": "",
         "y": "",
         "z": "",
@@ -469,7 +469,7 @@
     "audio_play_sound_on": {
         "desc": "",
         "emitterid": "",
-        "soundid": "",
+        "index": "",
         "priority": "",
         "loops": ""
     },
@@ -485,11 +485,11 @@
     },
     "audio_resume_sound": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_resume_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_set_listener_mask": {
         "desc": "",
@@ -512,7 +512,7 @@
     },
     "audio_sound_get_listener_mask": {
         "desc": "",
-        "soundid": ""
+        "soundID": ""
     },
     "audio_sound_get_pitch": {
         "desc": "",
@@ -520,11 +520,11 @@
     },
     "audio_sound_get_track_position": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_sound_length": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_sound_pitch": {
         "desc": "",
@@ -533,21 +533,21 @@
     },
     "audio_sound_set_listener_mask": {
         "desc": "",
-        "soundid": "",
+        "soundID": "",
         "mask": ""
     },
     "audio_sound_set_track_position": {
         "desc": "",
-        "soundid": "",
+        "index": "",
         "time": ""
     },
     "audio_start_recording": {
         "desc": "",
-        "recorder_num": ""
+        "recorder_index": ""
     },
     "audio_start_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_stop_all": {
         "desc": ""
@@ -558,23 +558,23 @@
     },
     "audio_stop_sound": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_stop_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_sync_group_debug": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_sync_group_get_track_pos": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_sync_group_is_playing": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_system": {
         "desc": ""
@@ -7633,7 +7633,7 @@
     },
 	"audio_play_music": {
         "desc": "",
-        "soundid": "",
+        "index": "",
         "loops": ""
     },
 	"audio_stop_music": {

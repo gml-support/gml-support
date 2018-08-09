@@ -2,12 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const gmlGlobals = require("./gmlGlobals");
-/**
-function textToMarkedString(text) {
-    return text.replace(/[\\`*_{}[\]()#+\-.!]/g, '\\$&'); // escape markdown syntax tokens: http://daringfireball.net/projects/markdown/syntax#backslash
-}
-exports.textToMarkedString = textToMarkedString;
-**/
 const GMLHoverProvider = ((() => {
     class GMLHoverProvider {
         provideHover(document, position, token) {

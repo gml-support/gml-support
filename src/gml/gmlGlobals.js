@@ -615,9 +615,9 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_get_type.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_get_type.soundid }
+            { label: 'index', documentation: i18n.audio_get_type.index }
         ],
-		signature: '(soundid)'
+		signature: '(index)'
 	},
 	audio_group_is_loaded: {
         description: '[Function]' + i18n.audio_group_is_loaded.desc,
@@ -681,17 +681,17 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_is_paused.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_is_paused.soundid }
+            { label: 'index', documentation: i18n.audio_is_paused.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_is_playing: {
         description: '[Function]' + i18n.audio_is_playing.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_is_playing.soundid }
+            { label: 'index', documentation: i18n.audio_is_playing.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_listener_get_data: {
         description: '[Function]' + i18n.audio_listener_get_data.desc,
@@ -786,42 +786,42 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_pause_sound.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_pause_sound.soundid }
+            { label: 'index', documentation: i18n.audio_pause_sound.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_pause_sync_group: {
         description: '[Function]' + i18n.audio_pause_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_pause_sync_group.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_pause_sync_group.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_play_in_sync_group: {
         description: '[Function]' + i18n.audio_play_in_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_play_in_sync_group.sync_group_id },
-            { label: 'soundid', documentation: i18n.audio_play_in_sync_group.soundid }
+            { label: 'group_index', documentation: i18n.audio_play_in_sync_group.group_index },
+            { label: 'sound_index', documentation: i18n.audio_play_in_sync_group.sound_index }
         ],
-        signature: '(sync_group_id, soundid)'
+        signature: '(group_index, sound_index)'
     },
 	audio_play_sound: {
         description: '[Function]' + i18n.audio_play_sound.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_play_sound.soundid },
+            { label: 'index', documentation: i18n.audio_play_sound.index },
             { label: 'priority', documentation: i18n.audio_play_sound.priority },
             { label: 'loops', documentation: i18n.audio_play_sound.loops }
         ],
-        signature: '(soundid, priority, loops)'
+        signature: '(index, priority, loops)'
     },
 	audio_play_sound_at: {
         description: '[Function]' + i18n.audio_play_sound_at.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_play_sound_at.soundid },
+            { label: 'index', documentation: i18n.audio_play_sound_at.index },
             { label: 'x', documentation: i18n.audio_play_sound_at.x },
             { label: 'y', documentation: i18n.audio_play_sound_at.y },
             { label: 'z', documentation: i18n.audio_play_sound_at.z },
@@ -831,18 +831,18 @@ exports.globalfunctions = {
             { label: 'loops', documentation: i18n.audio_play_sound_at.loops },
             { label: 'priority', documentation: i18n.audio_play_sound_at.priority }
         ],
-        signature: '(soundid, x, y, z, falloff_ref_dist, falloff_max_dist, falloff_factor, loops, priority)'
+        signature: '(index, x, y, z, falloff_ref_dist, falloff_max_dist, falloff_factor, loops, priority)'
     },
 	audio_play_sound_on: {
         description: '[Function]' + i18n.audio_play_sound_on.desc,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_play_sound_on.emitterid },,
-            { label: 'soundid', documentation: i18n.audio_play_sound_on.soundid },
+            { label: 'sound', documentation: i18n.audio_play_sound_on.sound },
             { label: 'priority', documentation: i18n.audio_play_sound_on.priority },
             { label: 'loops', documentation: i18n.audio_play_sound_on.loops }
         ],
-        signature: '(emitterid, soundid, loops, priority)'
+        signature: '(emitterid, sound, loops, priority)'
     },
 	audio_queue_sound: {
         description: '[Function]' + i18n.audio_queue_sound.desc,
@@ -863,17 +863,17 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_resume_sound.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_resume_sound.soundid }
+            { label: 'index', documentation: i18n.audio_resume_sound.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_resume_sync_group: {
         description: '[Function]' + i18n.audio_resume_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_resume_sync_group.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_resume_sync_group.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_set_listener_mask: {
         description: '[Function]' + i18n.audio_set_listener_mask.desc,
@@ -906,17 +906,17 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_sound_get_gain.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'index', documentation: i18n.audio_sound_get_gain.index }
+            { label: 'soundID', documentation: i18n.audio_sound_get_gain.soundID }
         ],
-        signature: '(index)'
+        signature: '(soundID)'
     },
 	audio_sound_get_listener_mask: {
         description: '[Function]' + i18n.audio_sound_get_listener_mask.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_sound_get_listener_mask.soundid }
+            { label: 'index', documentation: i18n.audio_sound_get_listener_mask.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_sound_get_pitch: {
         description: '[Function]' + i18n.audio_sound_get_pitch.desc,
@@ -930,17 +930,17 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_sound_get_track_position.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_sound_get_track_position.soundid }
+            { label: 'index', documentation: i18n.audio_sound_get_track_position.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_sound_length: {
         description: '[Function]' + i18n.audio_sound_length.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_sound_length.soundid }
+            { label: 'index', documentation: i18n.audio_sound_length.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_sound_pitch: {
         description: '[Function]' + i18n.audio_sound_pitch.desc,
@@ -955,35 +955,35 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_sound_set_listener_mask.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_sound_set_listener_mask.soundid },
+            { label: 'soundID', documentation: i18n.audio_sound_set_listener_mask.soundID },
             { label: 'mask', documentation: i18n.audio_sound_set_listener_mask.mask }
         ],
-        signature: '(soundid, mask)'
+        signature: '(soundID, mask)'
     },
 	audio_sound_set_track_position: {
         description: '[Function]' + i18n.audio_sound_set_track_position.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_sound_set_track_position.soundid },
+            { label: 'index', documentation: i18n.audio_sound_set_track_position.index },
             { label: 'time', documentation: i18n.audio_sound_set_track_position.time }
         ],
-        signature: '(soundid, time)'
+        signature: '(index, time)'
     },
 	audio_start_recording: {
         description: '[Function]' + i18n.audio_start_recording.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'recorder_num', documentation: i18n.audio_start_recording.recorder_num }
+            { label: 'recorder_index', documentation: i18n.audio_start_recording.recorder_index }
         ],
-        signature: '(recorder_num)'
+        signature: '(recorder_index)'
     },
 	audio_start_sync_group: {
         description: '[Function]' + i18n.audio_start_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_start_sync_group.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_start_sync_group.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_stop_all: {
         description: '[Function]' + i18n.audio_stop_all.desc,
@@ -1001,41 +1001,41 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.audio_stop_sound.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_stop_sound.soundid }
+            { label: 'index', documentation: i18n.audio_stop_sound.index }
         ],
-        signature: '(soundid)'
+        signature: '(index)'
     },
 	audio_stop_sync_group: {
         description: '[Function]' + i18n.audio_stop_sync_group.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_stop_sync_group.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_stop_sync_group.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_sync_group_debug: {
         description: '[Function]' + i18n.audio_sync_group_debug.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_sync_group_debug.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_sync_group_debug.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_sync_group_get_track_pos: {
         description: '[Function]' + i18n.audio_sync_group_get_track_pos.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_sync_group_get_track_pos.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_sync_group_get_track_pos.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_sync_group_is_playing: {
         description: '[Function]' + i18n.audio_sync_group_is_playing.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'sync_group_id', documentation: i18n.audio_sync_group_is_playing.sync_group_id }
+            { label: 'group_index', documentation: i18n.audio_sync_group_is_playing.group_index }
         ],
-        signature: '(sync_group_id)'
+        signature: '(group_index)'
     },
 	audio_system: {
         description: '[Function]' + i18n.audio_system.desc,
@@ -13006,10 +13006,10 @@ exports.globalfunctions = {
         description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_play_music.desc,
         available: datasimple.ob1,
         parameters: [
-            { label: 'soundid', documentation: i18n.audio_play_music.soundid },
+            { label: 'index', documentation: i18n.audio_play_music.index },
             { label: 'loops', documentation: i18n.audio_play_music.loops }
         ],
-        signature: '(soundid, loops)'
+        signature: '(index, loops)'
     },
 	audio_stop_music: {
         description: '[Function] (' + i18n_notice.obsolete_new1_2 + ')' + i18n.audio_stop_music.desc,
@@ -19596,16 +19596,19 @@ exports.constants = {
 	asset_sound: {description: '[Constant]' + i18n_constant.asset_sound.desc,available: datasimple.gms1},
 	asset_sprite: {description: '[Constant]' + i18n_constant.asset_sprite.desc,available: datasimple.gms1},
 	asset_timeline: {description: '[Constant]' + i18n_constant.asset_timeline.desc,available: datasimple.gms1},
-	asset_unknown: {description: '[Constant]' + i18n_constant.asset_unknown.desc,available: datasimple.gms1},
+    asset_unknown: {description: '[Constant]' + i18n_constant.asset_unknown.desc,available: datasimple.gms1},
+    audio_3D: {description: '[Constant]' + i18n_constant.audio_3D.desc,available: datasimple.gms1},
 	audio_falloff_exponent_distance: {description: '[Constant]' + i18n_constant.audio_falloff_exponent_distance.desc,available: datasimple.gms1},
 	audio_falloff_exponent_distance_clamped: {description: '[Constant]' + i18n_constant.audio_falloff_exponent_distance_clamped.desc,available: datasimple.gms1},
 	audio_falloff_inverse_distance: {description: '[Constant]' + i18n_constant.audio_falloff_inverse_distance.desc,available: datasimple.gms1},
 	audio_falloff_inverse_distance_clamped: {description: '[Constant]' + i18n_constant.audio_falloff_inverse_distance_clamped.desc,available: datasimple.gms1},
 	audio_falloff_linear_distance: {description: '[Constant]' + i18n_constant.audio_falloff_linear_distance.desc,available: datasimple.gms1},
 	audio_falloff_linear_distance_clamped: {description: '[Constant]' + i18n_constant.audio_falloff_linear_distance_clamped.desc,available: datasimple.gms1},
-	audio_falloff_none: {description: '[Constant]' + i18n_constant.audio_falloff_none.desc,available: datasimple.gms1},
+    audio_falloff_none: {description: '[Constant]' + i18n_constant.audio_falloff_none.desc,available: datasimple.gms1},
+    audio_mono: {description: '[Constant]' + i18n_constant.audio_mono.desc,available: datasimple.gms1},
 	audio_new_system: {description: '[Constant]' + i18n_constant.audio_new_system.desc,available: datasimple.gms1},
-	audio_old_system: {description: '[Constant]' + i18n_constant.audio_old_system.desc,available: datasimple.gms1},
+    audio_old_system: {description: '[Constant]' + i18n_constant.audio_old_system.desc,available: datasimple.gms1},
+    audio_stereo: {description: '[Constant]' + i18n_constant.audio_stereo.desc,available: datasimple.gms1},
 	BALTIC_CHARSET: {description: '[Constant]' + i18n_constant.BALTIC_CHARSET.desc,available: datasimple.all},
 	bm_add: {description: '[Constant]' + i18n_constant.bm_add.desc,available: datasimple.all},
 	bm_dest_alpha: {description: '[Constant]' + i18n_constant.bm_dest_alpha.desc,available: datasimple.all},

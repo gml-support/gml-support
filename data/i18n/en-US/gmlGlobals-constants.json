@@ -110,6 +110,9 @@
     "asset_unknown": {
         "desc": "The given name refers to an asset that either does not exist, or is not one of the above listed."
     },
+    "audio_3D": {
+        "desc": "3D (5.1) audio."
+    },
     "audio_falloff_exponent_distance": {
         "desc": "gain = (listener_distance / reference_distance) ^ (-falloff_factor)"
     },
@@ -131,11 +134,17 @@
     "audio_falloff_none": {
         "desc": "gain = 1"
     },
+    "audio_mono": {
+        "desc": "Mono (single channel) audio."
+    },
     "audio_new_system": {
-        "desc": ""
+        "desc": "the normal sound system is in use"
     },
     "audio_old_system": {
-        "desc": ""
+        "desc": "the legacy sound system is in use"
+    },
+    "audio_stereo": {
+        "desc": "Stereo (dual channel) audio."
     },
     "BALTIC_CHARSET": {
         "desc": ""
