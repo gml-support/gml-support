@@ -300,31 +300,31 @@
         "desc": ""
     },
     "cr_appstart": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_appstart.png)"
     },
     "cr_arrow": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_arrow.png)"
     },
     "cr_beam": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_beam.png)"
     },
     "cr_cross": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_cross.png)"
     },
     "cr_default": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_default.png)"
     },
     "cr_drag": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_drag.png)"
     },
     "cr_handpoint": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_hand.png)"
     },
     "cr_help": {
         "desc": ""
     },
     "cr_hourglass": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_hourglass.png)"
     },
     "cr_hsplit": {
         "desc": ""
@@ -342,85 +342,85 @@
         "desc": ""
     },
     "cr_size_all": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizeall.png)"
     },
     "cr_size_nesw": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizenesw.png)"
     },
     "cr_size_ns": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizens.png)"
     },
     "cr_size_nwse": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizenwse.png)"
     },
     "cr_size_we": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizewe.png)"
     },
     "cr_sqlwait": {
         "desc": ""
     },
     "cr_uparrow": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_up.png)"
     },
     "cr_vsplit": {
         "desc": ""
     },
     "c_aqua": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_aqua.png)\n\nValue: 16776960"
     },
     "c_black": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_black.png)\n\nValue: 0"
     },
     "c_blue": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_blue.png)\n\nValue: 16711680"
     },
     "c_dkgray": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_dkgray.png)\n\nValue: 4210752"
     },
     "c_fuchsia": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_fuchsia.png)\n\nValue: 16711935"
     },
     "c_gray": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_gray.png)\n\nValue: 8421504"
     },
     "c_green": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_green.png)\n\nValue: 32768"
     },
     "c_lime": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_lime.png)\n\nValue: 65280"
     },
     "c_ltgray": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_ltgray.png)\n\n Value: 12632256"
     },
     "c_maroon": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_maroon.png)\n\nValue: 128"
     },
     "c_navy": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_navy.png)\n\nValue: 8388608"
     },
     "c_olive": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_olive.png)\n\nValue: 32896"
     },
     "c_orange": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_orange.png)\n\nValue: 4235519"
     },
     "c_purple": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_purple.png)\n\nValue: 8388736"
     },
     "c_red": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_red.png)\n\nValue: 255"
     },
     "c_silver": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_silver.png)\n\nValue: 12632256"
     },
     "c_teal": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_teal.png)\n\nValue: 8421376"
     },
     "c_white": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_white.png)\n\nValue: 16777215"
     },
     "c_yellow": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_yellow.png)\n\nValue: 65535"
     },
     "DEFAULT_CHARSET": {
         "desc": ""

@@ -899,103 +899,103 @@
         "desc": "This function will return true if the platform compiles outside of the virtual machine, such as for the YYC and JS platforms.\n\nReturns: Boolean"
     },
     "collision_circle": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "radius": "",
-        "obj": "",
-        "prec": "",
-        "notme": ""
+        "desc": "Collision circle creates a circular zone of the radius given by the user around the points x1,y1 and then checks that zone for a collision with any instance of the object specified by the argument \"obj\". This check can be either precise or not, but for precise collisions to be enabled, the object or instance that you are checking for must also have precise collisions enabled for their sprite. If not, the default check is based on bounding boxes. The following image illustrates how this works: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/movement%20and%20collisions/collisions/collision_circle_illustration.png)\n\nHere, the instance in the middle is using a collision circle to check for ball objects. Now, the blue ones do not have a precise bounding box and as you can see, even if the sprite is not actually touching the circle, the collision can still happen (even if you set the precise option in the function to true) as the bounding box of that sprite over-laps the circular area defined by collision_circle. On the other hand, the green balls will only be considered in collision if the actual sprite over-laps with the defined circle. Remember, for precise collisions to be considered both the object sprite and the collision function must have precise marked as on. It should also be noted that the return value of the function can be the id of any one of the instances considered to be in collision.\n\nReturns: Instance id or **noone**",
+        "x1": "The x coordinate of the center of the circle to check.",
+        "y1": "The y coordinate of the center of the circle to check.",
+        "radius": "The radius (distance in pixels from its center to its edge).",
+        "obj": "The object to check for instance collisions.",
+        "prec": "Whether the check is based on pixel-perfect collisions (true = slow) or its bounding box in general (false = fast).",
+        "notme": "Whether the calling instance, if relevant, should be excluded (true) or not (false)."
     },
     "collision_ellipse": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "obj": "",
-        "prec": "",
-        "notme": ""
+        "desc": "Collision_ellipse uses the first four arguments (x1,y1,x2,y2) to define the width and height of an ellipse within the current room and then checks to see if any object that is defined by the \"obj\" argument is in collision with that area. This collision can be checked as precise or not, and you may also choose to check for the instance running the code itself or not. Consider this image: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/movement%20and%20collisions/collisions/collision_ellipse_illustration.png)\n\nHere, the instance in the middle is using a collision ellipse to check for ball objects. Now, the blue ones do not have a precise bounding box and as you can see, even if the sprite is not actually touching the ellipse, the collision can still happen (even if you set the precise option in the function to true) as the bounding box of that sprite over-laps the elliptical area defined by collision_circle. On the other hand, the green balls will only be considered in collision if the actual sprite over-laps the defined ellipse. Remember, for precise collisions to be considered both the object sprite and the collision function must have precise marked as on. It should also be noted that the return value of the function can be the id of any one of the instances considered to be in collision.n\nReturns: Instance id or **noone**",
+        "x1": "The x coordinate of the left side of the ellipse to check.",
+        "y1": "The y coordinate of the top side of the ellipse to check.",
+        "x2": "The x coordinate of the right side of the ellipse to check.",
+        "y2": "The y coordinate of the bottom side of the ellipse to check.",
+        "obj": "The object to check for instance collisions.",
+        "prec": "Whether the check is based on pixel-perfect collisions (true = slow) or its bounding box in general (false = fast).",
+        "notme": "relevant, should be excluded (true) or not (false)."
     },
     "collision_line": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "obj": "",
-        "prec": "",
-        "notme": ""
+        "desc": "Collision line checks along a line from point x1,y1 to point x2,y2 for a collision with any instance of the object specified by the argument \"obj\". this check can be either precise or not, but for precise collisions to be enabled, the object or instance that you are checking for must also have precise collisions enabled for their sprite. If not, the default check is based on bounding boxes. The following image illustrates how this works: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/movement%20and%20collisions/collisions/collision_line_illustration.png)\n\nRemember, for precise collisions to be considered both the object sprite and the collision function must have precise marked as on. It should also be noted that the return value of the function can be the id of any one of the instances considered to be in collision along the line, so if three instance overlap the defined line, any one of their ids could be the return value of the function.\n\nReturns: Instance id or **noone**",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line.",
+        "obj": "The object to check for instance collisions.",
+        "prec": "Whether the check is based on pixel-perfect collisions (true = slow) or its bounding box in general (false = fast).",
+        "notme": "Whether the calling instance, if relevant, should be excluded (true) or not (false)."
     },
     "collision_point": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "obj": "",
-        "prec": "",
-        "notme": ""
+        "desc": "Collision point checks the point specified by the arguments x1,y1 for a collision with any instance of the object specified by the argument \"obj\". this check can be either precise or not, but for precise collisions to be enabled, the object or instance that you are checking for must also have precise collisions enabled for their sprite. If not, the default check is based on bounding boxes. The following image illustrates how this works: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/movement%20and%20collisions/collisions/collision_point_illustration.png)\n\nRemember, for precise collisions to be considered both the object sprite and the collision function must have precise marked as on. It should also be noted that the return value of the function can be the id of any one of the instances considered to be in collision, so if three instance overlap at that point, any one of their ids could be the return value of the function.\n\nReturns: Instance id or **noone**",
+        "x": "The x coordinate of the point to check.",
+        "y": "The y coordinate of the point to check.",
+        "obj": "The object to check for instance collisions.",
+        "prec": "Whether the check is based on pixel-perfect collisions (true = slow) or its bounding box in general (false = fast).",
+        "notme": "Whether the calling instance, if relevant, should be excluded (true) or not (false)."
     },
     "collision_rectangle": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "obj": "",
-        "prec": "",
-        "notme": ""
+        "desc": "Collision_rectangle uses the first four arguments (x1,y1,x2,y2) to define an area within the current room and then checks to see if any object that is defined by the \"obj\" argument is in collision with that area. This collision can be checked as precise or not, and you may also choose to check for the instance running the code itself or not. Consider this image: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/movement%20and%20collisions/collisions/collision_rectangle_illustration.png)\n\nHere, the instance in the middle is using a collision rectangle to check for ball objects. Now, the blue ones do not have a precise bounding box and as you can see, even if the sprite is not actually touching the rectangle, the collision will still happen (even if you set the precise option in the function to true) as the bounding box of that sprite over-laps the collision_rectangle. On the other hand, the green balls will only be considered in collision if the actual sprite over-laps the rectangle. Remember, for precise collisions to be considered both the object sprite and the collision function must have precise marked as on. It should also be noted that the return value of the function can be the id of any one of the instances considered to be in collision.\n\nReturns: Instance id or **noone**",
+        "x1": "The x coordinate of the left side of the rectangle to check.",
+        "y1": "The y coordinate of the top side of the rectangle to check.",
+        "x2": "The x coordinate of the right side of the rectangle to check.",
+        "y2": "The y coordinate of the bottom side of the rectangle to check.",
+        "obj": "The object to check for instance collisions.",
+        "prec": "Whether the check is based on pixel-perfect collisions (true = slow) or its bounding box in general (false = fast).",
+        "notme": "Whether the calling instance, if relevant, should be excluded (true) or not (false)."
     },
     "color_get_blue": {
-        "desc": "",
-        "col": ""
+        "desc": "This function returns the amount of blue used to make the given color, with the value being between 0 and 255, where 0 is no blue and 255 is all blue. The following image illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/color%20and%20blending/get_blue.png)\n\nReturns: Real",
+        "col": "The color to check"
     },
     "color_get_green": {
-        "desc": "",
-        "col": ""
+        "desc": "This function returns the amount of green used to make the given color, with the value being between 0 and 255, where 0 is no green and 255 is all green. The following image illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/color%20and%20blending/get_green.png)\n\nReturns: Real",
+        "col": "The color to check"
     },
     "color_get_hue": {
-        "desc": "",
-        "col": ""
+        "desc": "This function will return the hue of the given color. This is the \"pure\" color tone which is part of the hue, saturation and value (luminosity) method for defining a color. The following image illustrates how this value corresponds to the HSV scale of color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/color%20and%20blending/get_hue.png)\n\nReturns: Real",
+        "col": "The color to check"
     },
     "color_get_red": {
-        "desc": "",
-        "col": ""
+        "desc": "This function returns the amount of red used to make the given color, with the value being between 0 and 255, where 0 is no red and 255 is all red. The following image illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/color%20and%20blending/get_red.png)\n\nReturns: Real",
+        "col": "The color to check"
     },
     "color_get_saturation": {
-        "desc": "",
-        "col": ""
+        "desc": "This function will return the saturation of the given color. This is the amount of the color tone that is mixed into the final color and is part of the hue, saturation and value (luminosity) method for defining a color. The following image illustrates how this value corresponds to the HSV scale of color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/color%20and%20blending/get_sat.png)\n\nReturns: Real",
+        "col": "The color to check"
     },
     "color_get_value": {
-        "desc": "",
-        "col": ""
+        "desc": "This function will return the value (luminosity) of the given color. This is the amount of the \"light\" that is mixed into the final color and is part of the hue, saturation and value method for defining a color. The following image illustrates how this value corresponds to the HSV scale of color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/color%20and%20blending/get_val.png)\n\nReturns: Real",
+        "col": "The color to check"
     },
     "colour_get_blue": {
-        "desc": "",
-        "col": ""
+        "desc": "This function returns the amount of blue used to make the given colour, with the value being between 0 and 255, where 0 is no blue and 255 is all blue. The following image illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/get_blue.png)\n\nReturns: Real",
+        "col": "The colour to check"
     },
     "colour_get_green": {
-        "desc": "",
-        "col": ""
+        "desc": "This function returns the amount of green used to make the given colour, with the value being between 0 and 255, where 0 is no green and 255 is all green. The following image illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/get_green.png)\n\nReturns: Real",
+        "col": "The colour to check"
     },
     "colour_get_hue": {
-        "desc": "",
-        "col": ""
+        "desc": "This function will return the hue of the given colour. This is the \"pure\" colour tone which is part of the hue, saturation and value (luminosity) method for defining a colour. The following image illustrates how this value corresponds to the HSV scale of colour: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/get_hue.png)\n\nReturns: Real",
+        "col": "The colour to check"
     },
     "colour_get_red": {
-        "desc": "",
-        "col": ""
+        "desc": "This function returns the amount of red used to make the given colour, with the value being between 0 and 255, where 0 is no red and 255 is all red. The following image illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/get_red.png)\n\nReturns: Real",
+        "col": "The colour to check"
     },
     "colour_get_saturation": {
-        "desc": "",
-        "col": ""
+        "desc": "This function will return the saturation of the given colour. This is the amount of the colour tone that is mixed into the final colour and is part of the hue, saturation and value (luminosity) method for defining a colour. The following image illustrates how this value corresponds to the HSV scale of colour: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/get_sat.png)\n\nReturns: Real",
+        "col": "The colour to check"
     },
     "colour_get_value": {
-        "desc": "",
-        "col": ""
+        "desc": "This function will return the value (luminosity) of the given colour. This is the amount of the \"light\" that is mixed into the final colour and is part of the hue, saturation and value method for defining a colour. The following image illustrates how this value corresponds to the HSV scale of colour: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/get_val.png)\n\nReturns: Real",
+        "col": "The colour to check"
     },
     "cos": {
-        "desc": "",
-        "radian_angle": ""
+        "desc": "In a right angled triangle cos(val) = Adjacent / Hypotenuse where val is one of the three angles. This function will always return a number between 1 and -1.\n\nReturns: Real",
+        "radian_angle": "The angle (in radians) to return the cosine of."
     },
     "darccos": {
         "desc": "",
