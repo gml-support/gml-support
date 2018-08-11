@@ -229,7 +229,7 @@
     },
     "audio_emitter_free": {
         "desc": "With this function you can remove the given emitter from memory. This should always be done whenever the emitter is not going to be used further in the room or the game, ie: in the Destroy Event of the instance or in the Room End Event, otherwise you may end up with a memory leak that will slow down and eventually crash your game. \n\n**Returns:** N/A ",
-        "emitterid": ""
+        "emitterid": "The index of the emitter to free."
     },
     "audio_emitter_gain": {
         "desc": "This function sets the maximum gain (volume) for the sound. The perceived volume for a sound can change depending on the fall-off value and the position it has relative to the listener, but by setting the gain with this function, the full volume will never exceed the specified gain value.The image below illustrates how gain affects the volume of the emitter when fall-off is greater than 0:![](https://docs.yoyogames.com/source/dadiospice/002_reference/game%20assets/sounds/audio_gain.png)\n\nThis function will change the volume of the sound while it is being played as well all subsequent sounds played through the given emitter. \n\n**NOTE:** the final volume will also be influenced by the global audio gain that has been set by the function **audio_master_gain**. \n\n**Returns:** N/A ",
@@ -446,7 +446,7 @@
     "audio_play_in_sync_group": {
         "desc": "With this function you can assign a sound to a previously create sync group. The group index is the value returned when you created the group using the function **audio_create_sync_group()**, and the sound index is the index of any compressed sound (*.ogg or *.mp3) from the resource tree. This function only adds the sound to the group, but it does not play the sound. The function returns a unique ID value for the sound that has been added (distinct to the sound index) which can then be used as usual in all the other audio functions.\n\n**Returns:** Index",
         "group_index": "The group index to assign the sound to.",
-        "sound_index": ""
+        "sound_index": "The sound index to be assigned to the group."
     },
     "audio_play_sound": {
         "desc": "With this function you can play any sound resource in your game. You provide the sound index and assign it a priority, which is then used to determine how sounds are dealt with when the number of sounds playing is over the limit set by the function **audio_channel_num**. Lower priority sounds will be stopped in favour of higher priority sounds, and the priority value can be any real number (the actual value is arbitrary, and can be from 0 to 1 or 0 to 100, as GameMaker: Studio will prioritize them the same). The final argument is for making the sound loop and setting it to true will make the sound loop until it is stopped and setting it to false will play the sound once only.\n\nThis function will also return a unique index number for the sound being played which can then be stored in a variable so that you can then pause it or stop it with the appropriate functions. This means that if you have multiple instances of the same sound playing at any one time you can target just one instance of that sound to deal with using the audio functions.\n\n**Returns:** Index",
@@ -520,7 +520,7 @@
     },
     "audio_sound_get_track_position": {
         "desc": "This function will get the position (in seconds) within the sound file for the sound to play from. The sound can only be a single instance of a sound (the index for individual sounds being played can be stored in a variable when using the **audio_play_sound** or **audio_play_sound_at** functions).\n\n**Returns:** Real",
-        "index": ""
+        "index": "The index of the sound to get the play position of."
     },
     "audio_sound_length": {
         "desc": "This function will return the length of the given sound in seconds. The sound can either be a referenced from index for an individual sound being played which has been stored in a variable when using the **audio_play_sound** or **audio_play_sound_at** functions, or an actual sound asset from the resource tree.",
@@ -803,98 +803,100 @@
         "value": "The data to write."
     },
     "ceil": {
-        "desc": "",
-        "x": ""
+        "desc": "This function takes any real number and rounds it up to the nearest integer. Care should be taken with this function as one common mistake is to use it round up a random value and expect it always to be greater than 1, ie: \n\n```int = ceil(random(5));```\n\nNow, you would expect this code to always give an integer between 1 and 5, but this may not always be the case as there is a very small possibility that the random function will return 0, and rounding up 0 still gives you 0. This is a remote possibility but should be taken into account when using this function.\n\nReturns: Integer",
+        "x": "The number to change."
     },
     "choose": {
-        "desc": "",
-        "x1": "",
-        "x2": "",
-        "x3": "",
-        "more": ""
+        "desc": "Sometimes you want to specify something other than numbers for a random selection, or the numbers you want are not in any real order or within any set range. In these cases you would use choose() to generate a random result. For example, say you want to create an object with a random sprite at the start, then you could use this function to set the sprite index to one of a set of sprites. Note that you can have as many as you require (more arguments will mean that the function will be slower to parse).\n\nNOTE: This function will return the same value every time the game is run afresh due to the fact that GameMaker: Studio generates the same initial random seed every time to make debugging code a far easier task. To avoid this behaviour use **randomize** at the start of your game.\n\nReturns: One of the given arguments.",
+        "x1": "An input value that can be string, integer, variable or constant.",
+        "x2": "An input value that can be string, integer, variable or constant.",
+        "x3": "An input value that can be string, integer, variable or constant.",
+        "more": "..."
     },
     "chr": {
-        "desc": "",
-        "val": ""
+        "desc": "This function returns a string containing the character which relates to the input Unicode code for displaying. This character depends on the current drawing font's character set codepage and if no font is set, it will use the default code page for the machine.\n\nReturns: String",
+        "val": "The Unicode code to get the string from."
     },
     "clamp": {
-        "desc": "",
-        "val": "",
-        "min": "",
-        "max": ""
+        "desc": "With this function you can maintain an input value between a specified range.\n\nReturns: Real",
+        "val": "The value to clamp.",
+        "min": "The minimum value to clamp between.",
+        "max": "The maximum value to clamp between."
     },
     "clickable_add": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "spritetpe": "",
-        "URL": "",
-        "target": "",
-        "params": ""
+        "desc": "With this function you can create a custom, clickable, icon that acts as a \"button\" outside of the game canvas, but within the browser window itself. The function will return an id value which must be stored in a variable to be used in all further button functions that reference the new icon. This function is very useful to prevent the browser creating a pop-up window when clicking on the button as it is all done through GameMaker: Studio itself.\n\nYou must first set the position, which is relative to the (0,0) of the browser window (top left corner) and then give the texture page entry for the sprite you wish the button icon to have (see: **sprite_get_tpe**). You can then specify either a URL to open or a script (from the resource tree of GameMaker: Studio) to be opened or run. The \"target\" parameter that you specify is the same as the standard JavaScript \"name\" value when you use the open() method (be aware that all but '_self' may result in the browser blocking, or asking the user if they wish to allow it) and the \"params\" argument is the same as the JavaScript \"specs\" parameter for controlling what properties the new window/tab should display (not all browsers may support all features). If you are using the icon to run an internal script, these last two arguments can be left as empty strings \"\".\n\nIt is also worth noting that if the URL argument you pass in is the name of a script (ie: it doesn't start with \"http://\") AND the script is called gmcallback_* then you can get direct feeds into an html5 event. GameMaker: Studio function names are not obfuscated if they begin with *gmcallback_*.\n\nReturns: Real",
+        "x": "The x position within the window.",
+        "y": "The y position within the window.",
+        "spritetpe": "The texture page entry for the sprite to be used (use **sprite_get_tpe**).",
+        "URL": "The URL (website address) to link to, or the script to be run.",
+        "target": "This is the target area to open the URL in (see description).",
+        "params": "The various parameters for the icon (see description)."
     },
     "clickable_add_ext": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "spritetpe": "",
-        "URL": "",
-        "target": "",
-        "params": "",
-        "scale": "",
-        "alpha": ""
+        "desc": "With this function you can create a custom, clickable, icon that acts as a \"button\" outside of the game canvas, but within the browser window itself. The function will return an id value which must be stored in a variable to be used in all further button functions that reference the new icon. This function is very useful to prevent the browser creating a pop-up window when clicking on the button as it is all done through GameMaker: Studio itself.\n\nThis function works exactly the same as the **clickable_add** function, where you must set the position relative to the (0,0) of the browser window, give the texture page entry for the sprite you wish the button icon to have (see: **sprite_get_tpe**), specify either a URL to open or a script (from the resource tree of GameMaker: Studio) to be opened or run then set the target and parameters to use. However this function also has two additional options that permit you to set the icon alpha from 0 (fully transparent) to 1 (fully opaque) and the scale of the icon, which is a multiplier value applied to the sprite used. So a value of 1 is the default scale, while (for example) 0.5 would be half scale and 2 would be double.\n\nIt is also worth noting that if the URL argument you pass in is the name of a script (ie: it doesn't start with \"http://\") AND the script is called gmcallback_* then you can get direct feeds into an html5 event. GameMaker: Studio function names are not obfuscated if they begin with *gmcallback_*.\n\nReturns: Real",
+        "x": "The x position within the window.",
+        "y": "The y position within the window.",
+        "spritetpe": "The texture page entry for the sprite to be used (use **sprite_get_tpe**).",
+        "URL": "The URL (website address) to link to, or the script to be run.",
+        "target": "This is the target area to open the URL in (see description).",
+        "params": "The various parameters for the icon (see description).",
+        "scale": "The scale of the icon (default 1).",
+        "alpha": "The image alpha of the icon (default 1)."
     },
     "clickable_change": {
-        "desc": "",
-        "buttonid": "",
-        "spritetpe": "",
-        "x": "",
-        "y": ""
+        "desc": "With this function you can change the sprite and position of a clickable icon previously created with **clickable_add**. Please note that the position is based on the window, not the canvas, (0,0) position and that the sprite must be referenced directly from the texture page (see: **sprite_get_tpe**).\n\nReturns: N/A",
+        "index": "The index of the clickable icon to change.",
+        "spritetpe": "The texture page entry for the sprite to be used (use **sprite_get_tpe**).",
+        "x": "The new x position within the window.",
+        "y": "The new y position within the window."
     },
     "clickable_change_ext": {
-        "desc": "",
-        "buttonid": "",
-        "spritetpe": "",
-        "x": "",
-        "y": "",
-        "scale": "",
-        "alpha": ""
+        "desc": "With this function you can change the sprite and position of a clickable icon previously created with **clickable_add**. Bear in mind that the position is based on the window, not the canvas, (0,0) position and that the sprite must be referenced directly from the texture page (see: **sprite_get_tpe**). This function also permits you to change the scale of the sprite used (as a multiplier so that 1 is the default, 0.5 would be half and 2 would be double) and the alpha value from 0 (fully transparent) to 1 (fully opaque) for the final icon on the screen.\n\nReturns: N/A",
+        "index": "The index of the clickable icon to change.",
+        "spritetpe": "The texture page entry for the sprite to be used (use **sprite_get_tpe**).",
+        "x": "The new x position within the window.",
+        "y": "The new y position within the window.",
+        "scale": "The scale of the icon (default 1).",
+        "alpha": "The image alpha of the icon (default 1)."
     },
     "clickable_delete": {
-        "desc": "",
-        "buttonid": ""
+        "desc": "This function must be used to remove a clickable icon previously created with **clickable_add** from the game window.\n\nReturns: N/A",
+        "index": "Index of the clickable icon to remove."
     },
     "clickable_exists": {
-        "desc": "",
-        "index": ""
+        "desc": "This function returns whether a clickable DOM icon has been created with the specified index exists or not. Please note, that the value used for checking must have been initialised previously or else you will get an error causing GameMaker: Studio to close.\n\nReturns: Boolean",
+        "index": "The index of the clickable to check."
     },
     "clickable_set_style": {
-        "desc": "",
-        "buttonid": "",
-        "map": ""
+        "desc": "This function lets you set the CSS style properties for the given button via the key/value pairs in the provided ds_map. You need to have previously created the both the button element (**using clickable_add()**) and the ds_map previously and supply the stored indices as arguments.\n\nReturns: N/A",
+        "index": "The index of the clickable icon to style.",
+        "map": "The index of the ds_map to set the style from."
     },
     "clipboard_get_text": {
-        "desc": ""
+        "desc": "This function will return a string of the text contained on the clipboard. if no text is stored it will return an empty string \"\".\n\nNOTE: This function is only valid for the **Windows** target.\n\nReturns: String"
     },
     "clipboard_has_text": {
-        "desc": ""
+        "desc": "This function will return true if the clipboard contains text or false if it does not.\n\nNOTE: This function is only valid for the **Windows** target.\n\nReturns: Boolean"
     },
     "clipboard_set_text": {
-        "desc": "",
-        "str": ""
+        "desc": "This function will set the clipboard to hold the defined string. You can set it to an empty string \"\" to effectively clear the clipboard of text.\n\nNOTE: This function is only valid for the **Windows** target.\n\nReturns: N/A",
+        "str": "The text (as a string) to set the clipboard to hold."
     },
     "cloud_file_save": {
-        "desc": "",
-        "filename": ""
+        "desc": "This function will commit a file to the chosen cloud service for storage. The function will return a unique id value that should then be used in the appropriate asynchronous event to identify the ds_map that is returned as a \"call back\" from the cloud service. The file should contain all the information that you need to save for your game as you can only store one single \"data blob\" to the cloud, and running this function again will overwrite any previously stored values (as will using the **cloud_string_save** function). The description should be a short string of information that describes the save, eg: \"Level2, Stage2\".\n\nFor further information on the returned asynchronous data, please see the function **cloud_synchronise**.\n\nReturns: Real",
+        "filename": "The file to be uploaded (as a string).",
+        "description": "A brief description of the data being stored."
     },
     "cloud_string_save": {
-        "desc": "",
-        "data": ""
+        "desc": "This function will commit a string to the chosen cloud service for storage. The function will return a unique id value that should then be used in the appropriate asynchronous event to identify the ds_map that is returned as a \"call back\" from the cloud service. The string should contain all the information that you need to save for your game as you can only store one single \"data blob\" to the cloud, and running this function again will overwrite any previously stored values (as will using the **cloud_file_save** function). The description should be a short string of information that describes the save, eg: \"Level2, Stage2\".\n\nFor further information on the returned asynchronous data, please see the function **cloud_synchronise**.\n\nReturns: Real",
+        "data": "The data string to be uploaded.",
+        "description": "A brief description of the data being stored."
     },
     "cloud_synchronise": {
-        "desc": ""
+        "desc": "This function would normally be called at the start of a new game and is used to retrieve the current status of the cloud service at game start up. The function returns a unique id value which would then be used in the Asynchronous Cloud Event to retrieve the relevant information from the ds_map that is created.\n\nThis function will send off to the cloud for data, which will then trigger the appropriate asynchronous event. In this event, you can check the returned *async_load* **ds_map** for the following values:\n\n - \"status\": This holds the status code, where a negative value denotes an error, a description of which will be contained in the “errorString”. A value of 0 (or a positive value) indicates a success(see below for exact values), and the “resultString” will contain the returned data or a success message.\n\n - \"id\": The id which was returned from the called function. If you fire off a series of cloud_ requests then you need to know which one you are getting the reply to, and so you would use this value to compare to the value you stored when you originally sent the request to find the right one.\n\n - \"description\": The description of the last uploaded file.\n\n - \"resultString\": This holds a string which is the data blob returned from the cloud.\n\n - \"errorString\": returns an Error String for any error.\n\nThe exact meaning of the returned \"status\" map entry is explained in the following table: ![](https://gmlsupport.liaronce.win/images-in-intellisense/1.png)\n\nReturns: Real"
     },
     "code_is_compiled": {
-        "desc": ""
+        "desc": "This function will return true if the platform compiles outside of the virtual machine, such as for the YYC and JS platforms.\n\nReturns: Boolean"
     },
     "collision_circle": {
         "desc": "",

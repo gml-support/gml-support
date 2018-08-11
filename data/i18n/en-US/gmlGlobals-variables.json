@@ -60,10 +60,10 @@
         "desc": "This variable is global in scope and is used to hold a DS map when used in the Asynchronous Events, and -1 at all other times. The actual contents of the DS map will depend on the type of asynchronous event that it is populated in, and the function that was used to trigger the event, so refer to the individual pages for those events.\n\n**Returns:** Real"
     },
 	"browser_height": {
-        "desc": ""
+        "desc": "This variable holds the height (in pixels) of the browser the game is being run in. If no browser is present then the window size is returned. the following image illustrates how this variable relates to the rest of the positioning functions available through the Window Functions.\n\nReturns: Real"
     },
 	"browser_width": {
-        "desc": ""
+        "desc": "This variable holds the width (in pixels) of the browser the game is being run in. If no browser is present then the window size is returned. the following image illustrates how this variable relates to the rest of the positioning functions available through the Window Functions.\n\nReturns: Real"
     },
 	"caption_health": {
         "desc": ""

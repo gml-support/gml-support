@@ -195,61 +195,61 @@
         "desc": "Blend factor (Red, Green, Blue, Alpha): (0, 0, 0, 0)"
     },
     "browser_chrome": {
-        "desc": ""
+        "desc": "Google Chrome"
     },
     "browser_firefox": {
-        "desc": ""
+        "desc": "Mozilla Firefox"
     },
     "browser_ie": {
-        "desc": ""
+        "desc": "Internet Explorer"
     },
     "browser_ie_mobile": {
-        "desc": ""
+        "desc": "Internet Explorer Mobile"
     },
     "browser_not_a_browser": {
-        "desc": ""
+        "desc": "Game is not being played in a browser"
     },
     "browser_opera": {
-        "desc": ""
+        "desc": "Opera"
     },
     "browser_safari": {
-        "desc": ""
+        "desc": "Safari"
     },
     "browser_safari_mobile": {
-        "desc": ""
+        "desc": "Safari Mobile"
     },
     "browser_tizen": {
-        "desc": ""
+        "desc": "Tizen"
     },
     "browser_unknown": {
-        "desc": ""
+        "desc": "Unknown browser"
     },
     "browser_windows_store": {
-        "desc": ""
+        "desc": "Windows UWP App"
     },
     "buffer_bool": {
-        "desc": ""
+        "desc": "A boolean value. Can only be either 1 or 0 (true or false)"
     },
     "buffer_f16": {
-        "desc": ""
+        "desc": "A 16bit float. This can be a positive or negative value within the range of +/- 65504. (Not currently supported!)"
     },
     "buffer_f32": {
-        "desc": ""
+        "desc": "A 32bit float. This can be a positive or negative value within the range of +/-16777216."
     },
     "buffer_f64": {
-        "desc": ""
+        "desc": "A 64bit float. This can be a positive or negative value from -(252) to 252 - 1."
     },
     "buffer_fast": {
-        "desc": ""
+        "desc": "Special \"stripped\" buffer that is extremely fast to read/write to. Can only be used with buffer_u8 data types, and must be 1 byte aligned."
     },
     "buffer_fixed": {
-        "desc": ""
+        "desc": "A buffer of fixed size."
     },
     "buffer_generalerror": {
         "desc": ""
     },
     "buffer_grow": {
-        "desc": ""
+        "desc": "A buffer that will \"grow\" dynamically as data is added"
     },
     "buffer_invalidtype": {
         "desc": ""
@@ -261,40 +261,40 @@
         "desc": ""
     },
     "buffer_s16": {
-        "desc": ""
+        "desc": "A signed, 16bit integer. This can be a positive or negative value from -32,768 to 32,767 (0 is classed as positive)."
     },
     "buffer_s32": {
-        "desc": ""
+        "desc": "A signed, 32bit integer. This can be a positive or negative value from -2,147,483,648 to 2,147,483,647 (0 is classed as positive)."
     },
     "buffer_s8": {
-        "desc": ""
+        "desc": "A signed, 8bit integer. This can be a positive or negative value from -128 to 127 (0 is classed as positive)."
     },
     "buffer_seek_end": {
-        "desc": ""
+        "desc": "The end of the buffer"
     },
     "buffer_seek_relative": {
-        "desc": ""
+        "desc": "A position relative to the current read/write position"
     },
     "buffer_seek_start": {
-        "desc": ""
+        "desc": "The start of the buffer"
     },
     "buffer_string": {
-        "desc": ""
+        "desc": "A string of any size."
     },
     "buffer_u16": {
-        "desc": ""
+        "desc": "An unsigned, 16bit integer. This is a positive value from 0 - 65,535."
     },
     "buffer_u32": {
-        "desc": ""
+        "desc": "An unsigned, 32bit integer. This is a positive value from 0 to 4,294,967,295."
     },
     "buffer_u8": {
-        "desc": ""
+        "desc": "An unsigned, 8bit integer. This is a positive value from 0 to 255."
     },
     "buffer_vbuffer": {
         "desc": ""
     },
     "buffer_wrap": {
-        "desc": ""
+        "desc": "A buffer where the data will \"wrap\". When the data being added reaches the limit of the buffer size, the overwrite will be placed back at the start of the buffer, and further writing will continue from that point."
     },
     "CHINESEBIG5_CHARSET": {
         "desc": ""

@@ -1490,33 +1490,33 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.clickable_change.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n.clickable_change.buttonid },
+            { label: 'index', documentation: i18n.clickable_change.index },
             { label: 'spritetpe', documentation: i18n.clickable_change.spritetpe },
             { label: 'x', documentation: i18n.clickable_change.x },
             { label: 'y', documentation: i18n.clickable_change.y }
         ],
-        signature: '(buttonid, spritetpe, x, y)'
+        signature: '(index, spritetpe, x, y)'
     },
 	clickable_change_ext: {
         description: '[Function]' + i18n.clickable_change_ext.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n.clickable_change_ext.buttonid },
+            { label: 'index', documentation: i18n.clickable_change_ext.index },
             { label: 'spritetpe', documentation: i18n.clickable_change_ext.spritetpe },
             { label: 'x', documentation: i18n.clickable_change_ext.x },
             { label: 'y', documentation: i18n.clickable_change_ext.y },
             { label: 'scale', documentation: i18n.clickable_change_ext.scale },
             { label: 'alpha', documentation: i18n.clickable_change_ext.alpha }
         ],
-        signature: '(buttonid, spritetpe, x, y, scale, alpha)'
+        signature: '(index, spritetpe, x, y, scale, alpha)'
     },
 	clickable_delete: {
         description: '[Function]' + i18n.clickable_delete.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n.clickable_delete.buttonid }
+            { label: 'index', documentation: i18n.clickable_delete.index }
         ],
-        signature: '(buttonid)'
+        signature: '(index)'
     },
 	clickable_exists: {
         description: '[Function]' + i18n.clickable_exists.desc,
@@ -1530,10 +1530,10 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.clickable_set_style.desc,
         available: datasimple.gms1,
         parameters: [
-            { label: 'buttonid', documentation: i18n.clickable_set_style.buttonid },
+            { label: 'index', documentation: i18n.clickable_set_style.index },
             { label: 'map', documentation: i18n.clickable_set_style.map }
         ],
-        signature: '(buttonid, map)'
+        signature: '(index, map)'
     },
 	clipboard_get_text: {
         description: '[Function]' + i18n.clipboard_get_text.desc,
