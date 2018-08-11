@@ -769,38 +769,38 @@
         "size": "The size of the buffer area to save (in bytes)."
     },
     "buffer_seek": {
-        "desc": "",
-        "bufferid": "",
-        "base": "",
-        "offset": ""
+        "desc": "This function can be used to move through a buffer, finding the start, the end, or a position relative to that which was last used when reading or writing data. The \"offset\" value is the offset (in bytes) to add to the given seek position, for example, if the base is relative and the offset is 4, then the buffer position will move along 4 bytes from its current position. Please note the following:\n\n - You can use negative values for the offset to seek back through the buffer as well as positive values.\n\n - If the buffer is of the \"wrap\" type and you offset past the end of the buffer, the seek position will also wrap.\n\n - If the buffer is not of the \"wrap\" type, the seek will clamp to the beginning or end of the buffer, even when the offset would take the seek outside of the buffer limits.\n\nReturns: N/A",
+        "bufferid": "The index of the buffer to use.",
+        "base": "The base position to seek.",
+        "offset": "The data offset value."
     },
     "buffer_set_surface": {
-        "desc": "",
-        "buffer": "",
-        "surface": "",
-        "mode": "",
-        "offset": "",
-        "modulo": ""
+        "desc": "With this function you can write the information from a buffer to a given surface. Both the buffer and the surface must have been created previously. You can choose the copy \"mode\" for the data being stored which is set by the constants listed below, as well as the offset and modulo values. Both offset and modulo are byte values, with the offset defining the start position within the buffer and modulo being the number of bytes that were left at the end of every line (for storing additional data) when the buffer was written to.\n\nNOTE: This function is currently only available for the Windows and Playstation 4 target platforms.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to use.",
+        "surface": "The index of the surface to use.",
+        "mode": "The data to get from the buffer (see the list of constants below).",
+        "offset": "The data offset value.",
+        "modulo": "The offset from the end of the line to the start of the next"
     },
     "buffer_sha1": {
-        "desc": "",
-        "bufferid": "",
-        "offset": "",
-        "size": ""
+        "desc": "In cryptography, SHA-1 is a cryptographic hash function designed by the United States National Security Agency and is employed in several widely used applications and protocols like the popular Git where it is used to check for file changes. This function will take input data from a buffer and returns a 160 bit message digest in ASCII format. In this way you can generate a secure key which can be stored and used to check the integrity of the information being sent to (or received from) an external server (for example). When applying this to buffers using this function you must specify the buffer id of the buffer to use, then an offset value (in bytes) for where to begin, and then a size (again in bytes) for the region to be hashed.\n\nReturns: String",
+        "bufferid": "The index of the buffer to use.",
+        "offset": "The data offset value.",
+        "size": "The size of the buffer."
     },
     "buffer_sizeof": {
-        "desc": "",
-        "type": ""
+        "desc": "This function will return the size (in bytes) of any of the given data constants.",
+        "type": "The type of data that is to be checked."
     },
     "buffer_tell": {
-        "desc": "",
-        "buffer": ""
+        "desc": "When you read or write data to a buffer using the **buffer_read** or **buffer_write** the current \"seek\" position is advanced by the bytes written or read, and with this function you can get the current \"seek\" position for use in other buffer functions. For example, if your buffer alignment is set to 4 bytes and you write a single piece of data which is 1 byte in size then do a buffer_tell, you'll get an return value of 1. However, if you write another piece of data, also 1 byte in size, then do a **buffer_tell**, you'll get a return value of 5 as the alignment has \"padded\" the data to that position.\n\nReturns: Real",
+        "buffer": "The index of the buffer to use."
     },
     "buffer_write": {
-        "desc": "",
-        "buffer": "",
-        "type": "",
-        "value": ""
+        "desc": "This function can be used to write data to a previously created buffer. The data you write must be in agreement with the \"type\" argument of this function, meaning that you can't try to write a string as an unsigned 16bit integer, for example.\n\nReturns: N/A",
+        "buffer": "The index of the buffer to write to.",
+        "type": "The type of data that is to be written to the buffer",
+        "value": "The data to write."
     },
     "ceil": {
         "desc": "",

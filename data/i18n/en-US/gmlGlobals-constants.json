@@ -150,49 +150,49 @@
         "desc": ""
     },
     "bm_add": {
-        "desc": ""
+        "desc": "Additive blending. Luminosity values of light areas are added.\n\nExtended Modes: (bm_src_alpha, bm_one)"
     },
     "bm_dest_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (Ad, Ad, Ad, Ad)"
     },
     "bm_dest_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (Rd, Gd, Bd, Ad)"
     },
     "bm_inv_dest_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-Ad, 1-Ad, 1-Ad, 1-Ad)"
     },
     "bm_inv_dest_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-Rd, 1-Gd, 1-Bd, 1-Ad)"
     },
     "bm_inv_src_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-As, 1-As, 1-As, 1-As)"
     },
     "bm_inv_src_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-Rs, 1-Gs, 1-Bs, 1-As)"
     },
     "bm_max": {
-        "desc": ""
+        "desc": "Max blending. Similar to additive blending.\n\nExtended Modes: (bm_src_alpha, bm_inv_src_color)"
     },
     "bm_normal": {
-        "desc": ""
+        "desc": "Normal blending (the default blend mode).\n\nExtended Modes: (bm_src_alpha, bm_inv_src_alpha)"
     },
     "bm_one": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1, 1, 1, 1)"
     },
     "bm_src_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (As, As, As, As)"
     },
     "bm_src_alpha_sat": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (f, f, f, 1) where f = min(As, 1-Ad)"
     },
     "bm_src_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (Rs, Gs, Bs, As)"
     },
     "bm_subtract": {
-        "desc": ""
+        "desc": "Subtractive blending. Luminosity values of light areas are subtracted.\n\nExtended Modes: (bm_zero, bm_inv_src_color)"
     },
     "bm_zero": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (0, 0, 0, 0)"
     },
     "browser_chrome": {
         "desc": ""
