@@ -998,309 +998,309 @@
         "radian_angle": "The angle (in radians) to return the cosine of."
     },
     "darccos": {
-        "desc": "",
-        "x": ""
+        "desc": "Returns the inverse cosine of x, in that if dcos(val)=n, darccos(n)=val, and the resulting number will be between 180 and 0.\n\nNOTE: This will only accept a number between -1 and 1 (anything else will throw an error).\n\nReturns: Real",
+        "x": "The angle (in degrees) to return the inverse cosine of."
     },
     "darcsin": {
-        "desc": "",
-        "x": ""
+        "desc": "Returns the inverse sine of x, in that if dsin(x)=n, darcsin(n)=x, and the resulting number will be between -90 and 90.\n\nNOTE: This will only accept a number between -1 and 1 (anything else will throw an error).\n\nReturns: Real",
+        "x": "The angle (in degrees) to return the inverse sine of."
     },
     "darctan": {
-        "desc": "",
-        "x": ""
+        "desc": "Returns the inverse tangent of x. This will accept any number as, unlike dtan, darctans asymptotes are on the y axis so it just means you'll never get returned a number greater than 90 or less than -90.\n\nReturns: Real",
+        "x": "The angle (in degrees) to return the inverse tangent of."
     },
     "darctan2": {
-        "desc": "",
-        "y": "",
-        "x": ""
+        "desc": "This function returns the inverse tangent of an angle y/x, where y = Opposite side of triangle and x = Adjacent side of triangle. Unlike darctan(x) the function darctan2(y, x) is valid for all angles and so may be used to convert a vector to an angle without risking division by zero, and it also returns a result in the correct quadrant.\n\nNOTE: The value returned is in degrees, not radians.\n\nReturns: Real",
+        "y": "The y coordinate to calculate.",
+        "x": "The x coordinate to calculate."
     },
     "date_compare_date": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can check two dates to see which one is the earlier or later than the other. The function returns -1 if date1 is earlier, 0 if both dates are the same, and 1 if date1 is later.\n\nReturns: Real",
+        "date1": "The first date.",
+        "date2": "The date to compare it to."
     },
     "date_compare_datetime": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can check two dates and times to see which one is the earlier or later than the other. The function returns -1 if date1 is earlier, 1 if date1 is later and 0 if they are the same, although since this takes time into account as well, a 0 for matching is very rare (it literally has to be the same second of the same day of the same month of the same year to return a 0).\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "date_compare_time": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can check two dates and times to see which one has the time component earlier or later than the other. The function returns -1 if datetime1 is earlier, 1 if datetime1 is later and 0 if they are the same, and it ignores the date, so literally just which of the times is further through its given day.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare the first one to."
     },
     "date_create_datetime": {
-        "desc": "",
-        "year": "",
-        "month": "",
-        "day": "",
-        "hour": "",
-        "minute": "",
-        "second": ""
+        "desc": "This function will create a datetime value from the component given as the arguments.\n\nReturns: Real",
+        "year": "The year to set.",
+        "month": "The month to set.",
+        "day": "The day to set.",
+        "hour": "The hour to set.",
+        "minute": "The minute to set.",
+        "second": "The second to set."
     },
     "date_current_datetime": {
-        "desc": ""
+        "desc": "Returns the date-time value of the current moment. The time returned is based on the default time zone for the system (ie: local time). You can change the base time zone to use with the function **date_set_timezone()**\n\nReturns: Real"
     },
     "date_datetime_string": {
-        "desc": "",
-        "date": ""
+        "desc": "With this function you can create a string containing the given datetime, formatted for the system or device that is running the game when the function is called.\n\nReturns: Real",
+        "date": "The date to use."
     },
     "date_date_of": {
-        "desc": "",
-        "date": ""
+        "desc": "Returns the date value of the given datetime.\n\nReturns: Real",
+        "date": "The datetime to extract the date from."
     },
     "date_date_string": {
-        "desc": "",
-        "date": ""
+        "desc": "With this function you can create a string containing the given date, formatted as day/month/year.\n\nReturns: Real",
+        "date": "The date to use."
     },
     "date_days_in_month": {
-        "desc": "",
-        "date": ""
+        "desc": "With this function you can get the number of days that the given month has, either 28, 29, 30 or 31.\n\nReturns: Real",
+        "date": "The date to use."
     },
     "date_days_in_year": {
-        "desc": "",
-        "date": ""
+        "desc": "With this function you can get the number of days that the given year has, returning 365 for a normal year, and 366 for a leap year.\n\nReturns: Real",
+        "date": "The date to use."
     },
     "date_day_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of days between two dates. This value is always positive, and incomplete days will be returned as a fraction.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "date_get_day": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the day (from 1 to 31) of the given datetime.\n\nReturns: Real",
+        "date": "The date to check."
     },
     "date_get_day_of_year": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the day (from 1 to 366) within the year of the given datetime.\n\nReturns: Real",
+        "date": "The date to check."
     },
     "date_get_hour": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the hour of the given datetime value.\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_get_hour_of_year": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the hour of the given datetime value within the year (from the total number of hours for the year, taking into account leap years).\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_get_minute": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the minute of the given datetime value.\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_get_minute_of_year": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the minute of the given datetime value within the year (from the total number of minutes for the year, taking into account leap years).\n\nReturns: Real",
+        "date": "The date to check."
     },
     "date_get_month": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the month of the given datetime value.\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_get_second": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the second of the given datetime value.\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_get_second_of_year": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the second of the given datetime value within the year (from the total number of seconds for the year, taking into account leap years).\n\nReturns: Real",
+        "date": "The date to check."
     },
     "date_get_timezone": {
-        "desc": ""
+        "desc": "Gets the base time zone being used for all the rest of the date and time functions. This time zone can either be local (as set by the system) or UTC, and the function will return one of the following constants: ![](https://gmlsupport.liaronce.win/images-in-intellisense/2.png)\n\nReturns: Constant"
     },
     "date_get_week": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the week of the given datetime value within the year.\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_get_weekday": {
-        "desc": "",
-        "date": ""
+        "desc": "This function returns the week day value of the given datetime. This will be a value from 0 to 6.\n\nReturns: Real",
+        "date": "The date to check."
     },
     "date_get_year": {
-        "desc": "",
-        "date": ""
+        "desc": "his function returns the year of the given datetime.\n\nReturns: Real",
+        "date": "The datetime to check."
     },
     "date_hour_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of hours between two dates. This value is always positive, and incomplete hours will be returned as a fraction.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare the first one to."
     },
     "date_inc_day": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of days, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to.",
+        "amount": "The number of days (must be an integer) to add."
     },
     "date_inc_hour": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of hours, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to.",
+        "amount": "The number of hours (must be an integer) to add."
     },
     "date_inc_minute": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of minutes, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to.",
+        "amount": "The number of minutes (must be an integer) to add."
     },
     "date_inc_month": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of months, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to.",
+        "amount": "The number of months (must be an integer) to add."
     },
     "date_inc_second": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of seconds, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to.",
+        "amount": "The number of seconds (must be an integer) to add."
     },
     "date_inc_week": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of weeks, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to.",
+        "amount": "The number of weeks (must be an integer) to add."
     },
     "date_inc_year": {
-        "desc": "",
-        "date": "",
-        "amount": ""
+        "desc": "With this function you can increment a given datetime value by a specific number of years, and it will return the new datetime value.\n\nReturns: Real",
+        "date": "The datetime to add to",
+        "amount": "The number of years (must be an integer) to add."
     },
     "date_is_today": {
-        "desc": "",
-        "date": ""
+        "desc": "This function will return true if the given datetime value is the day it is being checked on (ie: today), or false otherwise. This can be a handy function for things like Easter Eggs in your games, or for unlocking seasonal content. Note that this function will be affected by the time zone set (default is local time) which you can change using the **date_set_timezone()** function.\n\nReturns: Boolean",
+        "date": "The datetime to use."
     },
     "date_leap_year": {
-        "desc": "",
-        "date": ""
+        "desc": "This function will return true if the year component of the given datetime value is a leap year or false otherwise. This can be a handy function for things like Easter Eggs in your games, or for unlocking special content.\n\nReturns: Boolean",
+        "date": "The datetime to use."
     },
     "date_minute_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of minutes between two dates. This value is always positive, and incomplete minutes will be returned as a fraction.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "date_month_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of months between two dates. This value is always positive, and incomplete months will be returned as a fraction.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "date_second_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of seconds between two dates. The return value is always positive and will be a whole number.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "date_set_timezone": {
-        "desc": "",
-        "timezone": ""
+        "desc": "Sets the base time zone to use for all the rest of the date and time functions. This time zone can either be local (as set by the system) or UTC, and you would use one of the following constants to define which is being used (by default this is local time): ![](https://gmlsupport.liaronce.win/images-in-intellisense/3.png)\n\nReturns: N/A",
+        "timezone": "The time zone to use for the base time."
     },
     "date_time_of": {
-        "desc": "",
-        "date": ""
+        "desc": "Returns the time value of the given datetime. The time returned ignores Daylight Saving Time (and so is Universal Time) and would normally be used in conjunction with another date/time handling function.\n\nReturns: Real",
+        "date": "The datetime to extract the time from."
     },
     "date_time_string": {
-        "desc": "",
-        "date": ""
+        "desc": "With this function you can create a string containing the given time, formatted for the system or device that is running the game when the function is called.\n\nReturns: String",
+        "date": "The datetime to use."
     },
     "date_valid_datetime": {
-        "desc": "",
-        "year": "",
-        "month": "",
-        "day": "",
-        "hour": "",
-        "minute": "",
-        "second": ""
+        "desc": "With this function you can check a datetime value to see if it is valid (returns true) or not (returns false). Note that this function will only consider a valid datetime as being after 1/1/1970 and anything before that will return false, so the earliest you can check would be:\n```date_valid_datetime(1970, 01, 01, 0, 0, 0);```\n\nReturns: Boolean",
+        "year": "The year to check.",
+        "month": "The month to check.",
+        "day": "The day to check.",
+        "hour": "The hour to check.",
+        "minute": "The minute to check.",
+        "second": "The second to check."
     },
     "date_week_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of weeks between two dates. This value is always positive, and incomplete weeks will be returned as a fraction.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "date_year_span": {
-        "desc": "",
-        "date1": "",
-        "date2": ""
+        "desc": "With this function you can get the number of years between two dates. This value is always positive, and incomplete years will be returned as a fraction.\n\nReturns: Real",
+        "date1": "The first datetime.",
+        "date2": "The datetime to compare it to."
     },
     "dcos": {
-        "desc": "",
-        "degree_angle": ""
+        "desc": "In a right angled triangle cos(val) = Adjacent / Hypotenuse where val is one of the three angles. This function will always return a number between 1 and -1.\n\nReturns: Real",
+        "degree_angle": "The angle (in degrees) to return the cosine of."
     },
     "debug_event": {
         "desc": "",
         "str": ""
     },
     "degtorad": {
-        "desc": "",
-        "x": ""
+        "desc": "In GM all the trigonometric functions work in radians, but most people work in degrees and this means that to convert your degrees into radians you need to use this function. For example, degtorad(180) returns 3.14159265 radians. This function translates degrees into radians using the formula:\n```angle_radians = angle_degrees * pi / 180```\n\nReturns: Real",
+        "x": "The degrees to convert."
     },
     "device_get_tilt_x": {
-        "desc": ""
+        "desc": "This function returns a value between -1 and 1 depending upon the angle of \"tilt\" of the device. The actual correlation between degrees of tilt and the value returned depends on the device and OS that it uses, but generally a value of 1 or -1 is the same as +/-90°. The image below shows how each if the available functions relates to the device: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/mouse,%20keyboard%20and%20other%20controls/device%20input/tilt_image.png)\n\nReturns: Real"
     },
     "device_get_tilt_y": {
-        "desc": ""
+        "desc": "This function returns a value between -1 and 1 depending upon the angle of \"tilt\" of the device. The actual correlation between degrees of tilt and the value returned depends on the device and OS that it uses, but generally a value of 1 or -1 is the same as +/-90°. The image below shows how each if the available functions relates to the device: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/mouse,%20keyboard%20and%20other%20controls/device%20input/tilt_image.png)\n\nReturns: Real"
     },
     "device_get_tilt_z": {
-        "desc": ""
+        "desc": "This function returns a value between -1 and 1 depending upon the angle of \"tilt\" of the device. The actual correlation between degrees of tilt and the value returned depends on the device and OS that it uses, but generally a value of 1 or -1 is the same as +/-90°. The image below shows how each if the available functions relates to the device: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/mouse,%20keyboard%20and%20other%20controls/device%20input/tilt_image.png)\n\nReturns: Real"
     },
     "device_is_keypad_open": {
-        "desc": ""
+        "desc": "This does a check of the device for a keypad and if one is available it returns true otherwise it returns false. Please note that this function is mainly for use with Android devices.\n\nFor those users with a Sony Xperia Play, there is a set button/key map setup within GameMaker: Studio, so you can use the keyboard constants **vk_up, vk_down, vk_left, vk_right** for the joypad keys and Triangle is *ord('T')*, Square is *ord('S')*, Circle is **vk_alt + vk_backspace** while the back button is simply *vk_backspace*, Cross is **vk_space**, Select is **vk_return** and Start is **vk_rshift**, the L Trigger is *ord('L')* and R Trigger is *ord('R')*.\n\nReturns: Boolean"
     },
     "device_mouse_check_button": {
-        "desc": "",
-        "device": "",
-        "button": ""
+        "desc": "This function returns true (1) or false (0) depending on whether the device that you specify is being used or not. Now, the device refers to the mouse number, which can be from 0 to 4 and this event is triggered when the touch screen of a mobile device is touched, so in this way you can test for up to 5 different screen touches (or mouse devices). This function constantly updates every step, and the standard constants of *mb_left* and *mb_right* can be used to check for either button.\n\nReturns: Boolean",
+        "device": "The device (from 0 - 4) that is being checked.",
+        "button": "The button of the device that is being checked."
     },
     "device_mouse_check_button_pressed": {
-        "desc": "",
-        "device": "",
-        "button": ""
+        "desc": "This function returns true (1) or false (0) depending on whether the device that you specify has been pressed or not. Now, the device refers to the mouse number, which can be from 0 to 4 and this event is triggered when the touch screen of a mobile device is touched, so in this way you can test for up to 5 different screen touches. This function is only triggered once by the actual pressing action, and the standard constants of mb_left and mb_right can be used to check for either button.\n\nReturns: Boolean",
+        "device": "The device (from 0 - 4) that is being checked.",
+        "button": "The button of the device that is being checked."
     },
     "device_mouse_check_button_released": {
-        "desc": "",
-        "device": "",
-        "button": ""
+        "desc": "This function returns true (1) or false (0) depending on whether the device that you specify has been released or not. Now, the device refers to the mouse number, which can be from 0 to 4 and this event is triggered when the touch screen of a mobile device is touched, so in this way you can test for up to 5 different screen touches. This function is only triggered once by the actual releasing action, and the standard constants of mb_left and mb_right can be used to check for either button.\n\nReturns: Boolean",
+        "device": "The device (from 0 - 4) that is being checked.",
+        "button": "The button of the device that is being checked."
     },
     "device_mouse_dbclick_enable": {
-        "desc": "",
-        "enable": ""
+        "desc": "This function can be used to set the device to detect a double tap of the mb_left (left mouse button) as an mb_right (right mouse button) tap or not. By default this is set to true, meaning that every time the user taps the device screen twice quickly and consecutively, the return value is the same as if the right mouse button had been clicked. When this is on, the first tap will be detected as mb_left, and the second as mb_right, so make sure that any code you use takes this into account.\n\nReturns: Boolean",
+        "enable": "Set double-click detection on (true) or off (false)."
     },
     "device_mouse_raw_x": {
-        "desc": "",
-        "device": ""
+        "desc": "This function returns raw x position of the device. What this means is that it returns the actual device definition of the x position that is being touched, not the GameMaker: Studio one, and as such will ignore things like view position and scaling.\n\nNote: This function is very much device dependant and you should experiment first with the desired target module and device to see what exactly is returned.\n\nReturns: Real",
+        "device": "The device (from 0 - 4) that is being checked."
     },
     "device_mouse_raw_y": {
-        "desc": "",
-        "device": ""
+        "desc": "This function returns raw y position of the device. What this means is that it returns the actual device definition of the y position that is being touched, not the GameMaker: Studio one, and as such will ignore things like view position and scaling.\n\nNote: This function is very much device dependant and you should experiment first with the desired target module and device to see what exactly is returned.\n\nReturns: Real",
+        "device": "The device (from 0 - 4) that is being checked."
     },
     "device_mouse_x": {
-        "desc": "",
-        "device": ""
+        "desc": "This function returns x position of the device. If you are running this on a the HTML5 or PC and Mac modules then this value is updated constantly, as long as the device (usually a mouse) is plugged in, however for mobile devices, this will only be updated while the screen is being touched.\n\nReturns: Real",
+        "device": "The device (from 0 - 4) that is being checked."
     },
     "device_mouse_x_to_gui": {
-        "desc": "",
-        "device": ""
+        "desc": "This function returns x position of the device in relation to the GUI layer. Since the GUI layer can be set to be a different size independently of the screen resolution and the room size, it can sometimes be complicated to get the exact point on the GUI layer that a user has touched the screen. With this function you can get that position based on the actual GUI size, making GUI buttons and HUD elements easier to create. If you are running this on a the HTML5 or PC and Mac modules then this value is updated constantly, as long as the device (usually a mouse) is plugged in, however for mobile devices, this will only be updated while the screen is being touched.\n\nReturns: Real",
+        "device": "The device (from 0 - 4) that is being checked."
     },
     "device_mouse_y": {
-        "desc": "",
-        "device": ""
+        "desc": "This function returns y position of the device. If you are running this on a the HTML5 or PC and Mac modules then this value is updated constantly, as long as the device (usually a mouse) is plugged in, however for mobile devices, this will only be updated while the screen is being touched.\n\nReturns: Real",
+        "device": "The device (from 0 - 4) that is being checked."
     },
     "device_mouse_y_to_gui": {
-        "desc": "",
-        "device": ""
+        "desc": "This function returns y position of the device in relation to the GUI layer. Since the GUI layer can be set to be a different size independently of the screen resolution and the room size, it can sometimes be complicated to get the exact point on the GUI layer that a user has touched the screen. With this function you can get that position based on the actual GUI size, making GUI buttons and HUD elements easier to create. If you are running this on a the HTML5 or PC and Mac modules then this value is updated constantly, as long as the device (usually a mouse) is plugged in, however for mobile devices, this will only be updated while the screen is being touched.\n\nReturns: Real",
+        "device": "The device (from 0 - 4) that is being checked."
     },
     "directory_create": {
-        "desc": "",
-        "dname": ""
+        "desc": "This function will creates a directory with the given name in the sandboxed local save area.\n\nWARNING! This function may not work as you expect due to GameMaker: Studio being sandboxed! Please see the section on File System Limits for more information.\n\nReturns: N/A",
+        "dname": "The name of the directory to create."
     },
     "directory_destroy": {
-        "desc": "",
-        "dname": ""
+        "desc": "This function will remove a directory with the given name in the sandboxed local save area.\n\nWARNING! This function may not work as you expect due to GameMaker: Studio being sandboxed! Please see the section on File System Limits for more information.\n\nReturns: N/A",
+        "dname": "The name of the directory to remove."
     },
     "directory_exists": {
-        "desc": "",
-        "dname": ""
+        "desc": "This function will return true if the indicated directory exists or false if it does not. The specified name must include the full path, not a relative path and you cannot access any directories from out-with the game bundle as all games are sandboxed.\n\nWARNING! This function may not work as you expect due to GameMaker: Studio being sandboxed! Please see the section on File System Limits for more information.\n\nReturns: Boolean.",
+        "dname": "The name of the directory to look for."
     },
     "display_get_dpi_x": {
-        "desc": ""
+        "desc": "Dots per inch (DPI) is a measure of spatial printing or video dot density, in particular the number of individual dots that can be placed in a line within the span of 1 inch (2.54 cm). When working on mobile devices (in particular Android devices) this is an important factor to take into consideration as what may be appropriate for one display resolution, may not be appropriate for another. For example, you may have two displays with the same resolution of 400 x 800, but display 1 has a dpi of 60 and display 2 has a dpi of 30. In this case, any text or image displayed on display 2 will appear much larger, even though the actual resolution is the same.\n\nThis function will get the dpi of the device display along the x axis (this value is also dependant on the orientation of the device). Please note that Mac and iOS do not return specific dpi settings but appear to return the same values as the OS, which are not correct (but will have to do) as Apple do not give the correct values.\n\nReturns: Real"
     },
     "display_get_dpi_y": {
-        "desc": ""
+        "desc": "Dots per inch (DPI) is a measure of spatial printing or video dot density, in particular the number of individual dots that can be placed in a line within the span of 1 inch (2.54 cm). When working on mobile devices (in particular Android devices) this is an important factor to take into consideration as what may be appropriate for one display resolution, may not be appropriate for another. For example, you may have two displays with the same resolution of 400 x 800, but display 1 has a dpi of 60 and display 2 has a dpi of 30. In this case, any text or image displayed on display 2 will appear much larger, even though the actual resolution is the same.\n\nThis function will get the dpi of the device display along the y axis (this value is also dependant on the orientation of the device). Please note that Mac and iOS do not return specific dpi settings but appear to return the same values as the OS, which are not correct (but will have to do) as Apple do not give the correct values.\n\nReturns: Real"
     },
     "display_get_gui_height": {
-        "desc": ""
+        "desc": "With this function you can get the height (in pixels) of the GUI as used in the Draw Gui Event.\n\nReturns: Real"
     },
     "display_get_gui_width": {
-        "desc": ""
+        "desc": "With this function you can get the width (in pixels) of the GUI as used in the Draw Gui Event.\n\nReturns: Real"
     },
     "display_get_colordepth": {
         "desc": ""
