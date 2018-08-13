@@ -803,7 +803,7 @@
         "value": "The data to write."
     },
     "ceil": {
-        "desc": "This function takes any real number and rounds it up to the nearest integer. Care should be taken with this function as one common mistake is to use it round up a random value and expect it always to be greater than 1, ie: \n\n```int = ceil(random(5));```\n\nNow, you would expect this code to always give an integer between 1 and 5, but this may not always be the case as there is a very small possibility that the random function will return 0, and rounding up 0 still gives you 0. This is a remote possibility but should be taken into account when using this function.\n\nReturns: Integer",
+        "desc": "This function takes any real number and rounds it up to the nearest integer. Care should be taken with this function as one common mistake is to use it round up a random value and expect it always to be greater than 1, ie: \n\n\n```int = ceil(random(5));```\n\nNow, you would expect this code to always give an integer between 1 and 5, but this may not always be the case as there is a very small possibility that the random function will return 0, and rounding up 0 still gives you 0. This is a remote possibility but should be taken into account when using this function.\n\nReturns: Integer",
         "x": "The number to change."
     },
     "choose": {
@@ -1193,7 +1193,7 @@
         "date": "The datetime to use."
     },
     "date_valid_datetime": {
-        "desc": "With this function you can check a datetime value to see if it is valid (returns true) or not (returns false). Note that this function will only consider a valid datetime as being after 1/1/1970 and anything before that will return false, so the earliest you can check would be:\n```date_valid_datetime(1970, 01, 01, 0, 0, 0);```\n\nReturns: Boolean",
+        "desc": "With this function you can check a datetime value to see if it is valid (returns true) or not (returns false). Note that this function will only consider a valid datetime as being after 1/1/1970 and anything before that will return false, so the earliest you can check would be:\n\n```date_valid_datetime(1970, 01, 01, 0, 0, 0);```\n\nReturns: Boolean",
         "year": "The year to check.",
         "month": "The month to check.",
         "day": "The day to check.",
@@ -1220,7 +1220,7 @@
         "str": ""
     },
     "degtorad": {
-        "desc": "In GM all the trigonometric functions work in radians, but most people work in degrees and this means that to convert your degrees into radians you need to use this function. For example, degtorad(180) returns 3.14159265 radians. This function translates degrees into radians using the formula:\n```angle_radians = angle_degrees * pi / 180```\n\nReturns: Real",
+        "desc": "In GM all the trigonometric functions work in radians, but most people work in degrees and this means that to convert your degrees into radians you need to use this function. For example, degtorad(180) returns 3.14159265 radians. This function translates degrees into radians using the formula:\n\n```angle_radians = angle_degrees * pi / 180```\n\nReturns: Real",
         "x": "The degrees to convert."
     },
     "device_get_tilt_x": {
@@ -1309,7 +1309,7 @@
         "desc": "This function will return the height of the display (in pixels). Note that on the HTML5 target, this value is the height of the browser window, rather than the physical display size.\n\nReturns: Real"
     },
     "display_get_orientation": {
-        "desc": "This function will return one of two constant GameMaker: Studio has to tell you whether the device running the game is being held in landscape or portrait mode: ![](https://gmlsupport.liaronce.win/images-in-intellisense/4.png)\n\nPlease note that this function may not correctly detect the orientation of the device when used in the HTML5 target module. However this is easily mimicked by the use of the following script: \n\n```return (browser_width < browser_height);```\n\nIt will return true for portrait and false for landscape.\n\nReturns: Constant"
+        "desc": "This function will return one of two constant GameMaker: Studio has to tell you whether the device running the game is being held in landscape or portrait mode: ![](https://gmlsupport.liaronce.win/images-in-intellisense/4.png)\n\nPlease note that this function may not correctly detect the orientation of the device when used in the HTML5 target module. However this is easily mimicked by the use of the following script: \n\n\n```return (browser_width < browser_height);```\n\nIt will return true for portrait and false for landscape.\n\nReturns: Constant"
     },
     "display_get_width": {
         "desc": "This function will return the width of the display (in pixels). Note that on the HTML5 target, this value is the width of the browser window, rather than the physical display size.\n\nReturns: Real"
@@ -1321,20 +1321,20 @@
         "desc": "This function will return the mouse y position within the screen. It should be noted that this function only works properly when used on the Windows target. It can be used for HTML5 too, but will only return a value relative to the 0,0 of the canvas itself, and will not return any value while the mouse is outside of the canvas. For other devices it will return 0, and you should use the **device_mouse_raw_x** and **device_mouse_raw_y** functions instead.\n\nReturns: Real"
     },
     "display_set_gui_maximise": {
-        "desc": "This function can be used to maximise the GUI layer and set it to be scaled and offset in relation to the screen dimensions, rather than the default application surface position and dimensions. By default, the GUI layer is 1:1 with the application surface resolution and drawn at the (0,0) position of the surface too. However this is not always what you want and so you can use this function to set it to be drawn relative to the absolute (0,0) position of the display or game window.\n\nWhat arguments you provide to this function will depend on the effect you wish it to have on the GUI layer. Simply calling the function with no arguments will set the GUI layer to be drawn at the (0,0) position of the screen or game window, with the width and height being scaled to fit the whole area.\n```display_set_gui_maximise();```\n\nHowever, you can set the scaling factor for the GUI layer, and the width and height will be scaled by that amount. Remember that the GUI layer is always made to fit the size of the display or game window, or the application surface, so setting this value to anything other than 1 basically scales the pixel count along the width and height. If your display is 1024x768 and you set the scaling factor to scale by 0.5, then your GUI layer will be half the size of the display, effectively doubling the pixel size.\n```display_set_gui_maximise(0.5, 0.5);```\n\nSetting the values in this way will also set the draw position to the (0,0) of the display or game window, so you can provide offset values to \"move\" the (0,0) position:\n```var pos = application_get_position();\ndisplay_set_gui_maximise(0.5, 0.5, pos[0], pos[1]);```\n\nFinally, you can reset the GUI layer using this function by setting the scaling factors to -1. This will set the GUI layer to have a 1:1 scale again and set the draw position to the (0,0) position of the application surface rather than the display or window.\n```display_set_gui_maximise(-1, -1);```\n\nReturns: N/A",
+        "desc": "This function can be used to maximise the GUI layer and set it to be scaled and offset in relation to the screen dimensions, rather than the default application surface position and dimensions. By default, the GUI layer is 1:1 with the application surface resolution and drawn at the (0,0) position of the surface too. However this is not always what you want and so you can use this function to set it to be drawn relative to the absolute (0,0) position of the display or game window.\n\nWhat arguments you provide to this function will depend on the effect you wish it to have on the GUI layer. Simply calling the function with no arguments will set the GUI layer to be drawn at the (0,0) position of the screen or game window, with the width and height being scaled to fit the whole area.\n\n```display_set_gui_maximise();```\n\nHowever, you can set the scaling factor for the GUI layer, and the width and height will be scaled by that amount. Remember that the GUI layer is always made to fit the size of the display or game window, or the application surface, so setting this value to anything other than 1 basically scales the pixel count along the width and height. If your display is 1024x768 and you set the scaling factor to scale by 0.5, then your GUI layer will be half the size of the display, effectively doubling the pixel size.\n\n```display_set_gui_maximise(0.5, 0.5);```\n\nSetting the values in this way will also set the draw position to the (0,0) of the display or game window, so you can provide offset values to \"move\" the (0,0) position:\n\n```var pos = application_get_position();\ndisplay_set_gui_maximise(0.5, 0.5, pos[0], pos[1]);```\n\nFinally, you can reset the GUI layer using this function by setting the scaling factors to -1. This will set the GUI layer to have a 1:1 scale again and set the draw position to the (0,0) position of the application surface rather than the display or window.\n\n```display_set_gui_maximise(-1, -1);```\n\nReturns: N/A",
         "xscale": "<Optional> The horizontal scaling factor (use -1 to reset to default).",
         "yscale": "<Optional> The vertical scaling factor (use -1 to reset to default).",
         "xoffset": "<Optional> The x offset position for drawing.",
         "yoffset": "<Optional> The y offset position for drawing."
     },
     "display_set_gui_size": {
-        "desc": "",
-        "width": "",
-        "height": ""
+        "desc": "This function will only affect things drawn in the Draw GUI Event and can be used to set a specific width and height for all GUI components in that event, and no matter what size of display or window is used to display the GUI, it will be scaled to fit correctly. Where the GUI is positioned (ie: the (0,0) position) will depend on whether you have used the function **display_set_gui_maximise()** or not. If you do not use this function (the default setting) then the GUI layer will be positioned with its (0,0) point at the same position as that for the application surface (the area where your game is being drawn) and the width and height will be stretched to fit the this surface, such that setting a GUI width of 256px with this function when the application surface is 512px would stretch those 256 pixels to fit, effectively making the pixels twice as large. This is ideal for those games that have aspect ratio correction set in the global Game Settings.\n\nIf you have used the **display_set_gui_maximise()** function then the (0,0) position for the GUI layer will default to the top left corner of the game window, or display (when in fullscreen or on devices), with the scaling factor set by that function, and the width and height set by this one. You can reset the GUI layer at any time to the default configuration by calling this function using -1 as both the width and height - this will set the (0, 0) position to the application surface and the width and height will be reset to 1:1 with the surface too.\n\nReturns: N/A",
+        "width": "The width of the GUI (-1 equals 1:1 with the display or application_surface).",
+        "height": "The height of the GUI (-1 equals 1:1 with the display or application_surface)."
     },
     "display_set_ui_visibility": {
-        "desc": "",
-        "flags": ""
+        "desc": "This function can be used to show or hide the system UI on Android only. The function requires you to supply one or more system flags as an integer value. When using more than a single flag, these need to be merged using the bitwise \"or\", as shown in the example below. You can find a list of Android system flags [here](https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_FULLSCREEN).\n\nReturns: N/A",
+        "flags": "The Android SYSTEM flags to use (as an integer value)."
     },
     "display_mouse_set": {
         "desc": "With this function you can change or set the position of the mouse within the game display which can be useful for FPS games, for example. The function will only work while the game is in focus and using alt + tab will unlock the mouse.\n\nReturns: N/A",
@@ -1342,95 +1342,95 @@
         "y": "The y coordinate in the display."
     },
     "display_reset": {
-        "desc": "",
-        "aa_level": "",
-        "vsync": ""
+        "desc": "This function Resets the display settings to the ones that were set when the game was started, but also allows you to change the current level of full screen anti-aliasing being used and whether to use vertical synchronisation. The available anti-aliasing levels are 0,2,4 and 8, with the default startup value being set to 0, and the default v-sync setting is false (off). Switching v-sync on may give a smoother gaming experience but it will also need more processing power and so its impact must be considered careful before use, and the same goes for the anti-aliasing where the higher the number the more processing that is required.\n\nSince not all target devices are the same, some may not support 8x or 4x anti-aliasing for example, and so there is a **read only** variable available for getting the different levels of AA that the device running the game can display:\n\n  **display_aa**\n\nThis variable will return a value based on the setting of bits for the different levels. So for only 2xAA, this will report 2, for 2x and 4x availability it will report 6. For 8 and 4 it will report 12. For all 3 levels (2,4 and 8) it will report 14.\n\nReturns: Real",
+        "aa_level": "The level of anti-aliasing filtering (0, 2, 4 or 8).",
+        "vsync": "Toggle vertical synchronisation to on (true) or off (false)."
     },
     "distance_to_object": {
-        "desc": "",
-        "obj": ""
+        "desc": "This function calculates the distance from the edge of the bounding box of the calling instance to the nearest edge of the nearest instance of the object specified. The object can be an object index or a specific instance id as well as the keyword other, and the distance is returned in pixels. Note that if either of the objects have no sprite or no mask defined, the results will be incorrect.\n\nReturns: Real",
+        "obj": "The object to check for."
     },
     "distance_to_point": {
-        "desc": "",
-        "x": "",
-        "y": ""
+        "desc": "This function calculates the distance from the edge of the bounding box of the calling instance to the specified x/y position in the room, with the return value being in pixels. Note that if the calling object have no sprite or no mask defined, the results will be incorrect.\n\nReturns: Real",
+        "x": "The x position to check.",
+        "y": "The y position to check."
     },
     "dot_product": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "The dot product is a value expressing the angular relationship between two vectors and is found by taking two vectors, multiplying them together and then adding the results. The name \"dot product\" is derived from the centered dot \"·\" that is often used to designate this operation (the alternative name \"scalar product\" emphasizes the scalar rather than vector nature of the result).\n\nThe actual mathematical formula can be written like this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image.png)\n\nSo, in 2D the dot product of vectors a[x1,y1] and b[x2,2] is x1x2 + y1y2, meaning that the dot_product in GameMaker: Studio is calculated as: \n\n```a · b = (x1*x2)+(y1*y2);```\nThe curious thing about the dot product is the relationship it has to the angle formed by the input vectors which can be expressed as: \n\n```a · b = (length of a) * (length of b) * cos(angle)```\nThat is to say, the dot product of two vectors will be equal to the cosine of the angle between those vectors, multiplied by the lengths of each of them. Here is an image to illustrate: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image_2.png)\n\nThere are a few things that we can now state from any two vectors in relation to the result of their dot product:\n\n - If a and b are perpendicular (at 90 degrees to each other), the result of the dot product will be zero, because cos(ang) will be zero\n\n - If the angle between a and b are less than 90 degrees, the dot product will be positive (greater than zero), as cos(ang) will be positive\n\n - If the angle between a and b are greater than 90 degrees, the dot product will be negative (less than zero), as cos(ang) will be negative\n\nSo what does this mean for those of us that make games? Well, this mathematical relationship can be used in quite a few circumstances, but the best way to see it is to build an actual scenario and see for yourself what is going on. One of the simplest ways to do this is to generate a simple \"line of sight\" check for an enemy in, say, a platform game so that the enemy will \"see\" the player if they are within 90ï¿½ of either side of their vector normal.\n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image_1.png)\n\nBasically, we have to get the vector normal from the enemy (ie: comprised of a direction and sight distance) and then we need to get the vector of the player to the enemy. We will then get the dot_product of these vectors, and if the result is positive the player has been seen, and if it is negative he hasn't. The actual code to get this working is supplied in the example below.\n\nReturns: Real",
+        "x1": "The x coordinate of the first vector.",
+        "y1": "The y coordinate of the first vector.",
+        "x2": "The x coordinate of the second vector.",
+        "y2": "The y coordinate of the second vector."
     },
     "dot_product_3d": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "z1": "",
-        "x2": "",
-        "y2": "",
-        "z2": ""
+        "desc": "The dot product is a value expressing the angular relationship between two vectors and is found by taking two vectors, multiplying them together and then adding the results. The name \"dot product\" is derived from the centered dot \"·\" that is often used to designate this operation (the alternative name \"scalar product\" emphasizes the scalar rather than vector nature of the result).\n\nThe actual mathematical formula can be written like this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image.png)\n\nIn 2D, the dot product of vectors a[x1,y1] and b[x2,y2] is x1x2 + y1y2, so in 3D, the dot product of vectors a[x1,y1,z1] and b[x1,y1,z1] is x1x2 + y1y2 + z1z2. So, the dot_product_3d in GameMaker: Studio is calculated as: \n\n```a · b = (x1*x2) + (y1*y2) + (z1*z2);```\n\nThe curious thing about the dot product is the relationship it has to the angle formed by the input vectors which can be expressed as: ```a · b = (length of a) * (length of b) * cos(angle)```\n\nThat is to say, the dot product of two vectors will be equal to the cosine of the angle between those vectors, multiplied by the lengths of each of them. Here is an image to illustrate: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image_2.png)\n\nThere are a few things that we can now state from any two vectors in relation to the result of their dot product: \n\n - If a and b are perpendicular (at 90 degrees to each other), the result of the dot product will be zero, because cos(ang) will be zero\n\n - If the angle between a and b are less than 90 degrees, the dot product will be positive (greater than zero), as cos(ang) will be positive\n\n - If the angle between a and b are greater than 90 degrees, the dot product will be negative (less than zero), as cos(ang) will be negative\n\n - So what does this mean for those of us that make games? Well, this mathematical relationship can be used in quite a few circumstances, but the best way to see it is to build an actual scenario and see for yourself what is going on. One of the simplest ways to do this is to generate a simple \"height\" check for an enemy in, say, a platform game so that the enemy will \"see\" the player if they are above the plane formed by the enemy normal vector and the 3d floor.\n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_3d_image.png)\n\nBasically, we are getting the vector normal from the enemy perpendicular to the floor and then we are getting the vector of the player to the enemy. We will then get the dot_product of these vectors, and if the result is positive the player is \"above\" the enemy floor plane and if it is negative he is below. The actual code to get this working is supplied in the example below.\n\nReturns: Real",
+        "x1": "The x coordinate of the first vector.",
+        "y1": "The y coordinate of the first vector.",
+        "z1": "The z coordinate of the first vector.",
+        "x2": "The x coordinate of the second vector.",
+        "y2": "The y coordinate of the second vector.",
+        "z2": "The z coordinate of the second vector."
     },
     "dot_product_3d_normalised": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "z1": "",
-        "x2": "",
-        "y2": "",
-        "z2": ""
+        "desc": "The dot product is a value expressing the angular relationship between two vectors and is found by taking two vectors, multiplying them together and then adding the results. The name \"dot product\" is derived from the centered dot \"·\" that is often used to designate this operation (the alternative name \"scalar product\" emphasizes the scalar rather than vector nature of the result).\n\nThe actual mathematical formula can be written like this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image.png)\n\nIn 2D, the dot product of vectors a[x1,y1] and b[x2,y2] is x1x2 + y1y2, so in 3D, the dot product of vectors a[x1,y1,z1] and b[x1,y1,z1] is x1x2 + y1y2 + z1z2. So, the dot_product_3d in GameMaker: Studio is calculated as: \n\n```a · b = (x1*x2) + (y1*y2) + (z1*z2);```\n\nWhat about the normalised dot product? The normalised dot product has been corrected in such a way as to bring the return value into the range of -1 and 1 (see Normalised Vectors for more detailed information), which is exceptionally useful in many circumstances, particularly when dealing with lighting and other 3D functions.\n\nReturns: Real",
+        "x1": "The x coordinate of the first vector.",
+        "y1": "The y coordinate of the first vector.",
+        "z1": "The z coordinate of the first vector.",
+        "x2": "The x coordinate of the second vector.",
+        "y2": "The y coordinate of the second vector.",
+        "z2": "The z coordinate of the second vector."
     },
     "dot_product_normalised": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "The dot product is a value expressing the angular relationship between two vectors and is found by taking two vectors, multiplying them together and then adding the results. The name \"dot product\" is derived from the centered dot \"·\" that is often used to designate this operation (the alternative name \"scalar product\" emphasizes the scalar rather than vector nature of the result).\n\nThe actual mathematical formula can be written like this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/maths/vector%20functions/dot_product_image.png)\n\nSo, in 2D the dot product of vectors a[x1,y1] and b[x2,2] is x1x2 + y1y2, meaning that the dot_product in GameMaker: Studio is calculated as: \n\n```a · b = (x1*x2)+(y1*y2);```\n\nWhat about the normalised dot product? The normalised dot product has been corrected in such a way as to bring the return value into the range of -1 and 1 (see Normalised Vectors for more detailed information), which is exceptionally useful in many circumstances, particularly when dealing with lighting and other 3D functions.\n\nReturns: Real",
+        "x1": "The x coordinate of the first vector.",
+        "y1": "The y coordinate of the first vector.",
+        "x2": "The x coordinate of the second vector.",
+        "y2": "The y coordinate of the second vector."
     },
     "draw_arrow": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "size": ""
+        "desc": "This function will draw an arrow from point (x1,y1) to point (x2,y2). The stem of the arrow is drawn along these points with the actual arrow head being drawn at the end, where the size of the arrowhead is defined by the argument \"size\" and is calculated as being part of the stem so that the end point is always aligned with the position defined by x2,y2. The width of the arrow head is calculated automatically in proportion to the length.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line (where the arrowhead ends).",
+        "y2": "The y coordinate of the end of the line (where the arrowhead ends).",
+        "size": "The length of the arrow in pixels."
     },
     "draw_button": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "up": ""
+        "desc": "This function will draw a very simple, rectangular \"button\" using the currently selected draw colour and alpha where the up argument defines how the bevelled edge effect looks, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/drawing%20basic%20forms/draw_button.png)\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the button",
+        "y1": "The y coordinate of the top of the button",
+        "x2": "The x coordinate of the right of the button",
+        "y2": "The y coordinate of the bottom of the button",
+        "up": "Whether the button is up (true) or down (false)"
     },
     "draw_circle": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "r": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a circle or a filled circle. You can define how precise the drawing is with the function **draw_set_circle_precision**.",
+        "x": "The x coordinate of the center of the circle.",
+        "y": "The y coordinate of the center of the circle.",
+        "r": "The circle's radius (length from its center to its edge)",
+        "outline": "Whether the circle is drawn filled (false) or as a one pixel wide outline (true)."
     },
     "draw_circle_color": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "r": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a circle or a filled circle, and if it is filled you can define the interior and exterior fill colors. If these colors are not the same, you will get a gradient effect from one to the other and the color settings will over-ride the base color set with the function **draw_set_color**. You can define how precise the drawing is with the function **draw_set_circle_precision**.\n\nReturns: N/A",
+        "x": "The x coordinate of the center of the circle.",
+        "y": "The y coordinate of the center of the circle.",
+        "r": "The radius (distance from center to edge) of the circle in pixels.",
+        "col1": "The color at the center of the circle.",
+        "col2": "The color at the edge of the circle.",
+        "outline": "Whether the circle is an outline (true) or not (false). If true, col1 is irrelevant."
     },
     "draw_circle_colour": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "r": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a circle or a filled circle, and if it is filled you can define the interior and exterior fill colours. If these colours are not the same, you will get a gradient effect from one to the other and the colour settings will over-ride the base colour set with the function draw_set_colour. You can define how precise the drawing is with the function draw_set_circle_precision.\n\nReturns: N/A",
+        "x": "The x coordinate of the center of the circle.",
+        "y": "The y coordinate of the center of the circle.",
+        "r": "The radius (distance from center to edge) of the circle in pixels.",
+        "col1": "The colour at the center of the circle.",
+        "col2": "The colour at the edge of the circle.",
+        "outline": "Whether the circle is an outline (true) or not (false). If true, col1 is irrelevant."
     },
     "draw_clear": {
-        "desc": "",
-        "col": ""
+        "desc": "This function can be used to clear the entire screen (with no alpha blend) to the given colour, and is only for use in the draw event of an instance (it will not show if used in any other event). It can also be useful for clearing surfaces when they are newly created.\n\nReturns: N/A",
+        "col": "The colour with which the screen will be cleared"
     },
     "draw_clear_alpha": {
         "desc": "",
@@ -1438,185 +1438,185 @@
         "alpha": ""
     },
     "draw_ellipse": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of an ellipse or a filled ellipse by defining a rectangular area that will then have the ellipse created to fit. You can define how precise the drawing is with the function **draw_set_circle_precision**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the ellipse.",
+        "y1": "The y coordinate of the top of the ellipse.",
+        "x2": "The x coordinate of the right of the ellipse.",
+        "y2": "The y coordinate of the bottom of the ellipse.",
+        "outline": "Whether the ellipse is drawn filled (false) or as a one pixel wide outline (true)."
     },
     "draw_ellipse_color": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of an ellipse or a filled ellipse by defining a rectangular area that will then have the ellipse created to fit. If it is filled you can define the interior and exterior fill colors. If these colors are not the same, you will get a gradient effect from one to the other (the color settings will over-ride the base color set with the function draw_set_color). You can define how precise the drawing is with the function draw_set_circle_precision.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the ellipse.",
+        "y1": "The y coordinate of the top of the ellipse.",
+        "x2": "The x coordinate of the right of the ellipse.",
+        "y2": "The y coordinate of the bottom of the ellipse.",
+        "col1": "The color of the center.",
+        "col2": "The color of the edge.",
+        "outline": "Whether the ellipse is an outline (true) or filled in (false)."
     },
     "draw_ellipse_colour": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": "",
+        "desc": "With this function you can draw either an outline of an ellipse or a filled ellipse by defining a rectangular area that will then have the ellipse created to fit. If it is filled you can define the interior and exterior fill colours. If these colours are not the same, you will get a gradient effect from one to the other (the colour settings will over-ride the base colour set with the function draw_set_colour). You can define how precise the drawing is with the function draw_set_circle_precision.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the ellipse.",
+        "y1": "The y coordinate of the top of the ellipse.",
+        "x2": "The x coordinate of the right of the ellipse.",
+        "y2": "The y coordinate of the bottom of the ellipse.",
+        "col1": "The colour of the center.",
+        "col2": "The colour of the edge.",
         "outline": ""
     },
     "draw_enable_alphablend": {
-        "desc": "",
-        "enable": ""
+        "desc": "This function can be used to toggle alphablending on an off. Basically, if you have this set to false, all images being drawn will be drawn 100% opaque, meaning that any transparent, or semi transparent, areas of a sprite or background will be visible. It is encouraged that you have alpha blending off whenever possible (especially when developing for mobile devices) as this greatly increases the draw speed.\n\nReturns: N/A",
+        "enable": "This can be either true (switched on) or false (switched off)"
     },
     "draw_enable_drawevent": {
-        "desc": "",
-        "enable": ""
+        "desc": "With this function you can choose to enable (true) or disable (false) the draw event for all instances in the game, thus giving you control over how and when things are draw, useful if you wish to implement a \"frame skip\" technique. Note that this doesn't just prevent instances drawing to the screen, it suppresses the draw event completely meaning that care should be taken since any game logic that is present in that event will not be run either.\n\nReturns: N/A",
+        "enable": "Enable (true) or disable (false) the draw event for all instances."
     },
     "draw_enable_swf_aa": {
-        "desc": "",
-        "enable": ""
+        "desc": "With this function you can enable or disable anti-aliasing (AA) for SWF format vector sprites. AA simply smooths the edges of vector images to give them a nicer look. The amount of AA used will depend on the value set using the function **draw_set_swf_aa_level()**. By default this is disabled.\n\nReturns: N/A",
+        "enable": "Enable (true) or disable (false) AA for all SWF sprites."
     },
     "draw_flush": {
         "desc": ""
     },
     "draw_getpixel": {
-        "desc": "",
-        "x": "",
-        "y": ""
+        "desc": "With this function you can get the colour value of any pixel that is being drawn to the current render target. This means that the results will depend on the event in which the function is called, and also on the target surface being used. Note that this will not return any alpha values, for that you should use **draw_getpixel_ext**.\n\nNOTE: This function is incredibly slow and so should only be used when absolutely necessary.\n\nReturns: Real",
+        "x": "The x coordinate of the pixel to check",
+        "y": "The y coordinate of the pixel to check"
     },
     "draw_getpixel_ext": {
-        "desc": "",
-        "x": "",
-        "y": ""
+        "desc": "With this function you can get the full **abgr 32bit** value of any pixel that is being drawn to the current render target. This means that the results will depend on the event in which the function is called, and also on the target surface being used.\n\nNOTE: This function is slow and so should only be used when absolutely necessary.\n\nReturns: Real",
+        "x": "The x coordinate of the pixel to check",
+        "y": "The y coordinate of the pixel to check"
     },
     "draw_get_alpha": {
-        "desc": ""
+        "desc": "This function returns the current value of the draw alpha, which will range between 0 (fully transparent) and 1 (fully opaque). The draw alpha affects the transparency of all draw functions, and can be set with the **draw_set_alpha** function.\n\nReturns: Real"
     },
     "draw_get_alpha_test": {
-        "desc": ""
+        "desc": "With this function you can check to see whether alpha testing is enabled (returns true) or not (returns false). For more information on alpha testing, see the function **draw_set_alpha_test**.\n\nReturns: Boolean"
     },
     "draw_get_alpha_test_ref_value": {
-        "desc": ""
+        "desc": "You can use this function to find the current value for the alpha test reference (default is 0, but you can use **draw_set_alpha_test_ref_value** to set this value to something other than this).\n\nReturns: Real"
     },
     "draw_get_color": {
-        "desc": ""
+        "desc": "This function returns the current draw color which is used for drawing forms, text, primitives and un-textured 3D models. This can be set with the draw_set_color function.\n\nReturns: Real"
     },
     "draw_get_colour": {
-        "desc": ""
+        "desc": "This function returns the current draw colour which is used for drawing forms, text, primitives and un-textured 3D models. This can be set with the draw_set_colour function.\n\nReturns: Real"
     },
     "draw_get_swf_aa_level": {
-        "desc": ""
+        "desc": "This function can be used to get the anti-aliasing (AA) level for SWF format vector sprites. The return value will between 0 and 1 and shows how \"smooth\" the edges of these sprites will be drawn. You can set the AA level using the function **draw_set_swf_aa_level()**.\n\nReturns: Real"
     },
     "draw_healthbar": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "amount": "",
-        "backcol": "",
-        "mincol": "",
-        "maxcol": "",
-        "direction": "",
-        "showback": "",
-        "showborder": ""
+        "desc": "With this function you can draw a coloured bar to show a constant value. Although the function uses the word \"healthbar\" you can use this to display anything you wish as long as the amount to be displayed is a percentage value between 0 and 100 (a percentage of any value can be calculated with the formula (**CURRENT_Value / MAXIMUM_value) * 100**), so, for example, you can use this to display power, health, mana, time or anything else that would benefit from a bar display.\n\nYou can set various different things that change the visual aspect of the bar and these are illustrated in the image below (note that the colours used here are *c_green* for the maximum value and *c_red* for the minimum value, but you can use the colours that you wish): ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/drawing%20basic%20forms/draw_healthbar.png)\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the healthbar",
+        "y1": "The y coordinate of the top of the healthbar",
+        "x2": "The x coordinate of the right of the healthbar",
+        "y2": "The y coordinate of the bottom of the healthbar",
+        "amount": "The variable which defines total health (between 0 and 100)",
+        "backcol": "The colour of the background for the bar",
+        "mincol": "The colour of the bar when at no health (0)",
+        "maxcol": "The colour of the bar when at full health (100)",
+        "direction": "Where the bar is 'anchored' (0 = left, 1 = right, 2 = top, 3 = bottom)",
+        "showback": "Whether the bar's background is drawn (true) or not (false). If false, the backcol argument is disregarded.",
+        "showborder": "Whether the bar's elements have a 1px wide black border (true) or not (false)."
     },
     "draw_highscore": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "This simple function will draw the current list of internally stored high scores using the currently set font, colour and alpha values within the specified rectangle. You provide the coordinates for the upper left corner and lower right corner of the rectangular area to draw the text, and GameMaker: Studio will take care of the rest, with spacing and position being done automatically.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the highscore rectangle.",
+        "y1": "The y coordinate of the top of the highscore rectangle.",
+        "x2": "The x coordinate of the right of the highscore rectangle.",
+        "y2": "The y coordinate of the bottom of the highscore rectangle."
     },
     "draw_line": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "With this function you can draw a 1 pixel wide line between any two points in the game room.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line."
     },
     "draw_line_color": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": ""
+        "desc": "With this function you can draw a 1 pixel wide line with the color blended between color 1 at the first point and color 2 at the second point. The color settings will over-ride the base color set with the function draw_set_color.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line.",
+        "col1": "The color of the start of the line.",
+        "col2": "The color of the end of the line."
     },
     "draw_line_colour": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": ""
+        "desc": "With this function you can draw a 1 pixel wide line with the colour blended between colour 1 at the first point and colour 2 at the second point. The colour settings will over-ride the base colour set with the function draw_set_colour.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line.",
+        "col1": "The colour of the start of the line.",
+        "col2": "The colour of the end of the line."
     },
     "draw_line_width": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "w": ""
+        "desc": "With this function you can draw a line of a specified width between any two points in the game room.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line.",
+        "w": "The width of the line in pixels."
     },
     "draw_line_width_color": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "w": "",
-        "col1": "",
-        "col2": ""
+        "desc": "With this function you can draw a line of a specific width with the color blended between color 1 at the first point and color 2 at the second point. The color settings will over-ride the base color set with the function **draw_set_color**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line.",
+        "w": "The width in pixels of the line.",
+        "col1": "The color of the start of the line.",
+        "col2": "The color of the end of the line."
     },
     "draw_line_width_colour": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "w": "",
-        "col1": "",
-        "col2": ""
+        "desc": "With this function you can draw a line of a specific width with the colour blended between colour 1 at the first point and colour 2 at the second point. The colour settings will over-ride the base colour set with the function **draw_set_colour**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the start of the line.",
+        "y1": "The y coordinate of the start of the line.",
+        "x2": "The x coordinate of the end of the line.",
+        "y2": "The y coordinate of the end of the line.",
+        "w": "The width in pixels of the line.",
+        "col1": "The colour of the start of the line.",
+        "col2": "The colour of the end of the line."
     },
     "draw_path": {
-        "desc": "",
-        "path": "",
-        "x1": "",
-        "y1": "",
-        "absolute": ""
+        "desc": "With this function you can get GameMaker: Studio to draw a path to the screen. The path will be drawn as a simple line, and can be either relative to the calling instance or at the absolute position it was created at in the path editor or through code. This function is extremely useful when debugging dynamic paths (for example, those created for instances with the **mp_grid_path** function).\n\nReturns: N/A",
+        "path": "The path to draw",
+        "x1": "The x coordinate of where the path is drawn",
+        "y1": "The y coordinate of where the path is drawn",
+        "absolute": "Whether the path is drawn at the absolute position (true) or the relative position (false)"
     },
     "draw_point": {
-        "desc": "",
-        "x": "",
-        "y": ""
+        "desc": "With this function you can draw a single pixel anywhere on the screen.\n\nReturns: N/A",
+        "x": "The x coordinate of the point to be drawn.",
+        "y": "The y coordinate of the point to be drawn."
     },
     "draw_point_color": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "col": ""
+        "desc": "With this function you can draw a single pixel anywhere on the screen with a color that you define. The color settings will over-ride the base color set with the function **draw_set_color**.\n\nReturns: N/A",
+        "x": "The x coordinate of the point.",
+        "y": "The y coordinate of the point.",
+        "col": "The color of the point."
     },
     "draw_point_colour": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "col": ""
+        "desc": "With this function you can draw a single pixel anywhere on the screen with a colour that you define. The colour settings will over-ride the base colour set with the function **draw_set_colour**.\n\nReturns: N/A",
+        "x": "The x coordinate of the point.",
+        "y": "The y coordinate of the point.",
+        "col": "The colour of the point."
     },
     "draw_primitive_begin": {
-        "desc": "",
-        "kind": ""
+        "desc": "This function must be called before you can define any primitives. There are 6 types of primitives you can define with the following constants:\n\n - **pr_pointlist**\n\n - **pr_linelist**\n\n - **pr_linestrip**\n\n - **pr_trianglelist**\n\n - **pr_trianglestrip**\n\n - **pr_trianglefan** (This is not available on the HTML5 target platform and may not work correctly on some devices for other platforms)\n\nThe following image illustrates basically how these should look and also the order in which you should define the vertexes: ![](https://docs.yoyogames.com/source/dadiospice/images/primitive_types.png)\n\nReturns: N/A",
+        "kind": "The kind of primitive you are going to draw."
     },
     "draw_primitive_begin_texture": {
-        "desc": "",
-        "kind": "",
-        "texid": ""
+        "desc": "This function must be called before you define the vertices of a textured primitive. You must give the kind of primitive to use (see **draw_primitive_begin** for more information) and the id of a texture to use, which can be a sprite or background image asset. This asset id can be gotten from the functions **sprite_get_texture** and **background_get_texture** (use -1 for no texture).\n\nNOTE: For a texture to repeat it must be a power of two in size, ie: 32x32, 128x128, etc...\n\nReturns: N/A",
+        "kind": "The kind of primitive you are going to draw.",
+        "texid": "The texture to use with the primitive."
     },
     "draw_primitive_end": {
-        "desc": ""
+        "desc": "This function must be called when you have finished defining the points of your primitive. If you do not call this function, nothing will be drawn as this effectively tells GameMaker: Studio that you have finished and that it can now draw the defined primitive.\n\nReturns: N/A"
     },
     "draw_rectangle": {
         "desc": "",
