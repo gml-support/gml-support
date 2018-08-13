@@ -3116,8 +3116,7 @@ exports.globalfunctions = {
             { label: 'xscale', documentation: i18n.draw_skeleton_time.xscale },
             { label: 'yscale', documentation: i18n.draw_skeleton_time.yscale },
             { label: 'rot', documentation: i18n.draw_skeleton_time.rot },
-            { label: 'colour', documentation: i18n.draw_skeleton_time.colour },
-            { label: 'alpha', documentation: i18n.draw_skeleton_time.alpha }
+            { label: 'colour', documentation: i18n.draw_skeleton_time.colour }
         ],
         signature: '(sprite, animname, skinname, time, x, y, xscale, yscale, rot, colour, alpha)'
     },
@@ -19707,6 +19706,8 @@ exports.constants = {
 	device_ios_ipad_retina: {description: '[Constant]' + i18n_constant.device_ios_ipad_retina.desc,available: datasimple.gms1},
 	device_ios_iphone: {description: '[Constant]' + i18n_constant.device_ios_iphone.desc,available: datasimple.gms1},
 	device_ios_iphone5: {description: '[Constant]' + i18n_constant.device_ios_iphone5.desc,available: datasimple.gms1},
+    device_ios_iphone6: {description: '[Constant]' + i18n_constant.device_ios_iphone6.desc,available: datasimple.gms1},
+    device_ios_iphone6plus: {description: '[Constant]' + i18n_constant.device_ios_iphone6plus.desc,available: datasimple.gms1},
 	device_ios_iphone_retina: {description: '[Constant]' + i18n_constant.device_ios_iphone_retina.desc,available: datasimple.gms1},
 	device_ios_unknown: {description: '[Constant]' + i18n_constant.device_ios_unknown.desc,available: datasimple.gms1},
 	device_tablet: {description: '[Constant]' + i18n_constant.device_tablet.desc,available: datasimple.gms1},

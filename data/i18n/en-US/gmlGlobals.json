@@ -1619,190 +1619,190 @@
         "desc": "This function must be called when you have finished defining the points of your primitive. If you do not call this function, nothing will be drawn as this effectively tells GameMaker: Studio that you have finished and that it can now draw the defined primitive.\n\nReturns: N/A"
     },
     "draw_rectangle": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rectangle or a filled rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner.\n\nReturns: N/A",
+        "x1": "The x coordinate of the top left corner of the rectangle.",
+        "y1": "The y coordinate of the top left corner of the rectangle.",
+        "x2": "The x coordinate of the bottom right corner of the rectangle.",
+        "y2": "The y coordinate of the bottom right corner of the rectangle.",
+        "outline": "Whether the rectangle is drawn filled (false) or as a one pixel wide outline (true)."
     },
     "draw_rectangle_color": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": "",
-        "col3": "",
-        "col4": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rectangle or a filled rectangle by defining an area where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. If it is filled you can define the individual colors for each corner point and if these colors are not the same, you will get a gradient effect from one to the other (the color settings will over-ride the base color set with the function **draw_set_color**).\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the rectangle.",
+        "y1": "The y coordinate of the top of the rectangle.",
+        "x2": "The x coordinate of the right of the rectangle.",
+        "y2": "The y coordinate of the bottom of the rectangle.",
+        "col1": "The color of the top left corner.",
+        "col2": "The color of the top right corner.",
+        "col3": "The color of the bottom right corner.",
+        "col4": "The color of the bottom left corner.",
+        "outline": "Whether the rectangle is an outline (true) or filled in (false)."
     },
     "draw_rectangle_colour": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": "",
-        "col3": "",
-        "col4": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rectangle or a filled rectangle by defining an area where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. If it is filled you can define the individual colours for each corner point and if these colours are not the same, you will get a gradient effect from one to the other (the colour settings will over-ride the base colour set with the function **draw_set_colour**).\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the rectangle.",
+        "y1": "The y coordinate of the top of the rectangle.",
+        "x2": "The x coordinate of the right of the rectangle.",
+        "y2": "The y coordinate of the bottom of the rectangle.",
+        "col1": "The colour of the top left corner.",
+        "col2": "The colour of the top right corner.",
+        "col3": "The colour of the bottom right corner.",
+        "col4": "The colour of the bottom left corner.",
+        "outline": "Whether the rectangle is an outline (true) or filled in (false)."
     },
     "draw_roundrect": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rounded rectangle or a filled rounded rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. You can define how precise the drawing of the corners is with the function **draw_set_circle_precision**, but this function uses a fixed radius for them (should you need to change the corner radius, use the function **draw_roundrect_ext()**).\n\nReturns: N/A",
+        "x1": "The x coordinate of the top left corner of the rounded rectangle (as if it were a normal rectangle).",
+        "y1": "The y coordinate of the top left corner of the rounded rectangle (as if it were a normal rectangle).",
+        "x2": "The x coordinate of the bottom right corner of the rounded rectangle (as if it were a normal rectangle).",
+        "y2": "The y coordinate of the bottom right corner of the rounded rectangle (as if it were a normal rectangle).",
+        "outline": "Whether the rounded rectangle is drawn filled (false) or as a one pixel wide outline (true)."
     },
     "draw_roundrect_color": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rounded rectangle or a filled rounded rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. If it is filled you can define the individual colors for the centre and the edges, and if these colors are not the same, you will get a gradient effect from one to the other (the color settings will over-ride the base color set with the function **draw_set_color**).You can define how precise the drawing of the corners is with the function **draw_set_circle_precision**, but the corners are always drawn with a fixed radius. Should you need to change the corner radius you should use the function **draw_roundrect_color_ext()**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the rounded rectangle.",
+        "y1": "The y coordinate of the top of the rounded rectangle.",
+        "x2": "The x coordinate of the right of the rounded rectangle.",
+        "y2": "The y coordinate of the bottom of the rounded rectangle.",
+        "col1": "The center color.",
+        "col2": "The outside edge color.",
+        "outline": "Whether the rectangle is an outline (true) or filled in (false)."
     },
     "draw_roundrect_color_ext": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "radiusx": "",
-        "radiusy": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rounded rectangle or a filled rounded rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. If the rectangle is filled, then the color arguments will be used to generate a color gradient from the centre to the edges, where color 1 is the centre color and color 2 the edge color. You must also supply radius values for the x and y axis (in pixels) and the corners will be rounded by these amounts. You can define how precise the drawing of the corners is with the function **draw_set_circle_precision**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the rounded rectangle.",
+        "y1": "The y coordinate of the top of the rounded rectangle.",
+        "x2": "The x coordinate of the right of the rounded rectangle.",
+        "y2": "The y coordinate of the bottom of the rounded rectangle.",
+        "radiusx": "The radius of the curve along the x axis from the rectangle corners.",
+        "radiusy": "The radius of the curve along the y axis from the rectangle corners.",
+        "col1": "The center color.",
+        "col2": "The outside edge color.",
+        "outline": "Whether the rectangle is an outline (true) or filled in (false)."
     },
     "draw_roundrect_colour": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rounded rectangle or a filled rounded rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. If it is filled you can define the individual colours for the centre and the edges, and if these colours are not the same, you will get a gradient effect from one to the other (the colour settings will over-ride the base colour set with the function **draw_set_colour**).You can define how precise the drawing of the corners is with the function **draw_set_circle_precision**, but the corners are always drawn with a fixed radius. Should you need to change the corner radius you should use the function **draw_roundrect_colour_ext()**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the rounded rectangle.",
+        "y1": "The y coordinate of the top of the rounded rectangle.",
+        "x2": "The x coordinate of the right of the rounded rectangle.",
+        "y2": "The y coordinate of the bottom of the rounded rectangle.",
+        "col1": "The center colour.",
+        "col2": "The outside edge colour.",
+        "outline": "Whether the rectangle is an outline (true) or filled in (false)."
     },
     "draw_roundrect_colour_ext": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "radiusx": "",
-        "radiusy": "",
-        "col1": "",
-        "col2": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rounded rectangle or a filled rounded rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. If the rectangle is filled, then the colour arguments will be used to generate a colour gradient from the centre to the edges, where colour 1 is the centre colour and colour 2 the edge colour. You must also supply radius values for the x and y axis (in pixels) and the corners will be rounded by these amounts. You can define how precise the drawing of the corners is with the function **draw_set_circle_precision**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the left of the rounded rectangle.",
+        "y1": "The y coordinate of the top of the rounded rectangle.",
+        "x2": "The x coordinate of the right of the rounded rectangle.",
+        "y2": "The y coordinate of the bottom of the rounded rectangle.",
+        "radiusx": "The radius of the curve along the x axis from the rectangle corners.",
+        "radiusy": "The radius of the curve along the y axis from the rectangle corners.",
+        "col1": "The center colour.",
+        "col2": "The outside edge colour.",
+        "outline": "Whether the rectangle is an outline (true) or filled in (false)."
     },
     "draw_roundrect_ext": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "radiusx": "",
-        "radiusy": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a rounded rectangle or a filled rounded rectangle where the (x1,y1) position is the top left corner and the (x2,y2) position is the bottom right corner. You must also supply radius values for the x and y axis (in pixels) and the corners will be rounded by these amounts. You can define how precise the drawing of the corners is with the function **draw_set_circle_precision**.\n\nReturns: N/A",
+        "x1": "The x coordinate of the top left corner of the rounded rectangle (as if it were a normal rectangle).",
+        "y1": "The y coordinate of the top left corner of the rounded rectangle (as if it were a normal rectangle).",
+        "x2": "The x coordinate of the bottom right corner of the rounded rectangle (as if it were a normal rectangle).",
+        "y2": "The y coordinate of the bottom right corner of the rounded rectangle (as if it were a normal rectangle).",
+        "radiusx": "The radius of the curve along the x axis from the rectangle corners.",
+        "radiusy": "The radius of the curve along the y axis from the rectangle corners.",
+        "outline": "Whether the rounded rectangle is drawn filled (false) or as a one pixel wide outline (true)."
     },
     "draw_self": {
-        "desc": ""
+        "desc": "This function draws the sprite assigned to the instance exactly as it would be drawn if the draw event held no code or actions, and will reflect and changes that have been made to the sprite variables in other events.\n\n  NOTE: If the instance has no sprite assigned to it, this function will throw an error!\n\nReturns: N/A"
     },
     "draw_set_alpha": {
-        "desc": "",
-        "alpha": ""
+        "desc": "With this function you can set the base draw alpha for the game. This value can be set from 0 to 1 with 0 being fully transparent and 1 being fully opaque (the default value), and will affect all further drawing, including backgrounds, sprites, fonts, primitives and 3D. If any of those assets are drawn with their own alpha value changed, this will be added to the base alpha value set by this function, so a base alpha of 0.5 and a sprite being drawn with an alpha of 0.5 will actually draw the sprite with an alpha of 0.25.\n\nReturns: N/A",
+        "alpha": "The alpha to set (between 0 and 1)"
     },
     "draw_set_alpha_test": {
-        "desc": "",
-        "enable": ""
+        "desc": "This function will enable or disable alpha testing for your game (by default this is disabled). By switching alpha testing on you can then use the companion function **draw_set_alpha_test_ref_value** to set the \"cut-off\" value at which all alpha values will be set to 0. The image below shows the difference that can be seen when alpha testing is switched on or off: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/alpha_test_on_off.png)\n\nNOTE: This function may negatively affect performance on iOS and Android devices.\n\nReturns: N/A",
+        "enable": "Set to true or false to enable or disable alpha testing."
     },
     "draw_set_alpha_test_ref_value": {
-        "desc": "",
-        "value": ""
+        "desc": "This function will set the reference value for the alpha testing (when it has been enabled using the **draw_set_alpha_test**). This is the \"cut-off\" threshold at which pixels with alpha will not be drawn.\n\nBasically, if you have this value set to 0 and you have texture interpolation turned on, you can still get visual errors at the edges of overlapping objects. This is because you can have almost completely transparent areas that block things drawn behind them, but if you set this reference value to, for example, 254 (i.e. one below maximum), this guarantees that only 100% opaque pixels are going to be drawn. You can also turn texture interpolation off, which would normally allow you to use the default values with no problems and no need to use this function at all, however a lot depends on the source artwork.\n\nNOTE: This is an advanced drawing feature, so if you are not sure whether you need it or not, or don't know exactly what it does, you are probably better off not using it as it can seriously corrupt how your game is drawn.\n\nReturns: N/A",
+        "value": "Sets the reference value for alpha testing from 0 to 255 (default value is 0)"
     },
     "draw_set_blend_mode": {
-        "desc": "",
-        "mode": ""
+        "desc": "When GameMaker: Studio goes to draw a pixel there is a source colour (the colour of the pixel we're going to draw) and a destination colour(the colour that's already in the pixel we're drawing to), so when determining the new colour of the pixel, the source and destination colours are calculated according to the chosen blend mode. Each component of the colours is stored as a floating point value between 0 and 1, and the new colour is calculated by multiply each component of the source colour by some factor and by multiplying each component of destination colour by some other factor and then adding the results together component by component.\n\nThis function permits you to set the blend mode in four basic ways using the following constants: ![](https://gmlsupport.liaronce.win/images-in-intellisense/5.png)\n\nAs you can see these modes are really composites of extended blend modes and those can be found on the page describing **draw_set_blend_mode_ext**.\n\nReturns: N/A",
+        "mode": "The blend mode constant to set to (see the table below)."
     },
     "draw_set_blend_mode_ext": {
-        "desc": "",
-        "src": "",
-        "dest": ""
+        "desc": "When GameMaker: Studio goes to draw a pixel there is a source colour (the colour of the pixel we're going to draw) and a destination colour(the colour that's already in the pixel we're drawing to), so when determining the new colour of the pixel, the source and destination colours are calculated according to the chosen blend mode. Each component of the colours is stored as a floating point value between 0 and 1, and the new colour is calculated by multiply each component of the source colour by some factor and by multiplying each component of destination colour by some other factor and then adding the results together component by component.\n\nThis function permits you to set the different component parts that should be factored together to create a custom blend mode. The source and destination both have a red, green, blue and alpha component, and in the following chart the source's RGBA are considered (Rs, Gs, Bs, As) while the destination's are (Rd, Gd, Bd, Ad). The eleven constants that are available for use can be either source or destination (or both) when used in this function.\n\n![](https://gmlsupport.liaronce.win/images-in-intellisense/6.png)\n\nIt can be quite difficult to visualise how these different blend modes work, so below you can find a simple chart that shows the basic interaction of a single sprite being drawn with different combinations of blend modes over a single background. Please note that the actual results of the blend mode you use will very much depend on the colour in the sprite, the alpha value of the sprite and the colour and alpha of the background.\n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/blendmode_chart.png)\n\nWARNING!: Not all blend modes are available on all platforms. Android, iOS, and HTML5 without WebGL enabled, will not be able to display the following modes correctly:\n\n - bm_src_colour\n\n - bm_inv_src_colour\n\n - bm_dest_colour\n\n - bm_inv_dest_colour\n\n - bm_src_alpha_sat\n\nReturns: N/A",
+        "src": "Source (see constants above).",
+        "dest": "Destination (see constants above)"
     },
     "draw_set_circle_precision": {
-        "desc": "",
-        "precision": ""
+        "desc": "To optimise performance when drawing circles, GameMaker: Studio basically draws a polygon shape with enough sides to make it appear circular. However, depending on how big or small you need your circles to be, you may find that changing this value can help increase the performance of your game, or make the circles look better. The precision value that you can input into this function is the number of sides the circle polygon has, and this number can be anything between 4 and 64, but must be a number divisible by 4, with a default value of 24.\n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/drawing%20basic%20forms/draw_set_circle_precision.png)\n\nReturns: N/A",
+        "precision": "The precision of all circles drawn after this function is called."
     },
     "draw_set_color": {
-        "desc": "",
-        "col": ""
+        "desc": "With this function you can set the base draw color for the game. This value will affect all further drawing where appropriate, including fonts, forms, primitives and 3D. If any of those assets are drawn with their own color value changed, this value will be ignored.\n\nReturns: N/A",
+        "col": "The color to set for drawing."
     },
     "draw_set_color_write_enable": {
-        "desc": "",
-        "red": "",
-        "green": "",
-        "blue": "",
-        "alpha": ""
+        "desc": "With this function you can switch on or off the color channels and the alpha channel for all further drawing. You can use this function to create alpha-channel only surfaces (switch off the RGB writing before using the surface), or to create special effects while drawing to the screen. The default value for each of the components is true.\n\nReturns: N/A",
+        "red": "The color to set for drawing.",
+        "green": "The color to set for drawing.",
+        "blue": "The color to set for drawing.",
+        "alpha": "The color to set for drawing."
     },
     "draw_set_colour": {
-        "desc": "",
-        "col": ""
+        "desc": "With this function you can set the base draw colour for the game. This value will affect all further drawing where appropriate, including fonts, forms, primitives and 3D. If any of those assets are drawn with their own colour value changed, this value will be ignored.\n\nReturns: N/A",
+        "col": "The colour to set for drawing."
     },
     "draw_set_colour_write_enable": {
-        "desc": "",
-        "red": "",
-        "green": "",
-        "blue": "",
-        "alpha": ""
+        "desc": "With this function you can switch on or off the colour channels and the alpha channel for all further drawing. You can use this function to create alpha-channel only surfaces (switch off the RGB writing before using the surface), or to create special effects while drawing to the screen. The default value for each of the components is true.\n\nReturns: N/A",
+        "red": "The colour to set for drawing.",
+        "green": "The colour to set for drawing.",
+        "blue": "The colour to set for drawing.",
+        "alpha": "The colour to set for drawing."
     },
     "draw_set_font": {
-        "desc": "",
-        "font": ""
+        "desc": "This function will set the font to be used for all further text drawing. This font must have been added into the font assets of the game or have been created using either the **font_add** or **font_add_sprite**. You may also set this to -1 to default to drawing text using a 12point Arial font.\n\nReturns: N/A",
+        "font": "The name of the font to use."
     },
     "draw_set_halign": {
-        "desc": "",
-        "halign": ""
+        "desc": "This function is used to align text along the horizontal axis and changing the horizontal alignment will change the position and direction in which all further text is drawn with the default value being **fa_left**. The following constants are accepted: ![](https://gmlsupport.liaronce.win/images-in-intellisense/7.png)\n\nReturns: N/A",
+        "halign": "Horizontal alignment."
     },
     "draw_set_swf_aa_level": {
-        "desc": "",
-        "aa_level": ""
+        "desc": "This function can be used to set the anti-aliasing (AA) level for SWF format vector sprites. This can be a real value from 0 to 1 and will \"smooth\" the edges of these sprites. Note that to see this effect, you must first have enabled AA using the function **draw_enable_swf_aa()**.\n\nReturns: N/A",
+        "aa_level": "The anti-aliasing value to use from 0 to 1."
     },
     "draw_set_valign": {
-        "desc": "",
-        "valign": ""
+        "desc": "This function is used to align text along the vertical axis and changing the vertical alignment will change the position and direction in which all further text is drawn, with the default value being fa_top. The following constants are accepted: ![](https://gmlsupport.liaronce.win/images-in-intellisense/8.png)\n\nReturns: N/A",
+        "valign": "Vertical alignment."
     },
     "draw_skeleton": {
-        "desc": "",
-        "sprite": "",
-        "animname": "",
-        "skinname": "",
-        "frame": "",
-        "x": "",
-        "y": "",
-        "xscale": "",
-        "yscale": "",
-        "rot": "",
-        "colour": "",
-        "alpha": ""
+        "desc": "This function is only for use with sprites that have been created using a skeletal animation program like Spine. While you can draw these sprites using the normal draw functions (like **draw_self()**), there are times when you may want to draw a single frame or show a change of skin texture without actually changing the sprite properties. In these cases you can draw the sprite with this function, where you give the sprite index and then the name of the animation to get the frame from (a string, as set within the program used to make the sprite). Next you give the name of the skin to use (again, as set when the sprite was made), and a frame value. The frame value is for telling GameMaker: Studio what part of the animation to show and is a value between 0 and the **image_number**. The rest of the arguments are the same as those used for normal sprite drawing and will change the scale, angle, blend colour and alpha of the final animation frame being drawn.\n\nWARNING! Because of the way skeletal animations are interpolated between various \"key\" frames, there is an additional overhead associated with this call and therefore it is recommended that you avoid drawing skeleton based sprites using this method unless absolutely necessary.\n\nReturns: N/A",
+        "sprite": "The index of the sprite to draw.",
+        "animname": "The name of the animation to get the frame from (a string).",
+        "skinname": "The name of the skin to use (a string).",
+        "frame": "The animation frame to draw (from 0 to image_number - 1).",
+        "x": "The x coordinate of where to draw the sprite.",
+        "y": "The y coordinate of where to draw the sprite.",
+        "xscale": "The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...",
+        "yscale": "The vertical scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...",
+        "rot": "The rotation of the sprite. 0=normal, 90=turned 90 degrees counter-clockwise etc.",
+        "colour": "The colour with which to blend the sprite.",
+        "alpha": "The alpha of the sprite (from 0 to 1 where 0 is transparent and 1 opaque)."
     },
     "draw_skeleton_collision": {
-        "desc": "",
-        "sprite": "",
-        "animname": "",
-        "frame": "",
-        "x": "",
-        "y": "",
-        "xscale": "",
-        "yscale": "",
-        "rot": "",
-        "colour": ""
+        "desc": "This function will draw the collision masks associated with the given skeletal animation. You supply the base sprite, the animation set to use and the frame to get the information from, and you can also set the transform properties to suit.\n\nReturns: N/A",
+        "sprite": "The index of the sprite to draw.",
+        "animname": "The name of the animation to get the frame from (a string).",
+        "frame": "The animation frame to draw (from 0 to image_number - 1).",
+        "x": "The x coordinate of where to draw the sprite.",
+        "y": "The y coordinate of where to draw the sprite.",
+        "xscale": "The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...",
+        "yscale": "The vertical scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...",
+        "rot": "The rotation of the sprite. 0=normal, 90=turned 90 degrees counter-clockwise etc.",
+        "colour": "The colour with which to blend the sprite."
     },
     "draw_skeleton_instance": {
         "desc": "",
@@ -1819,17 +1819,17 @@
         "alpha": ""
     },
     "draw_skeleton_time": {
-        "desc": "",
-        "sprite": "",
-        "animname": "",
-        "skinname": "",
-        "time": "",
-        "x": "",
-        "y": "",
-        "xscale": "",
-        "yscale": "",
-        "rot": "",
-        "colour": "",
+        "desc": "This function will draw the given animation using the given skin at a specific time in the animation. The time value should be between 0 (the beginning) and the end duration of the animation, which you can find using the function **skeleton_animation_get_duration()**. You can set the time value to values higher than the total duration of the animation and the animation will loop back to the beginning, but you run the risk of losing floating point accuracy as the accumulated time gets larger.\n\nReturns: N/A",
+        "sprite": "The index of the sprite to draw.",
+        "animname": "The name of the animation to get the frame from (a string).",
+        "skinname": "The name of the skin to use for drawing (a string).",
+        "time": "The time-frame to draw the animation at (from 0 to the end duration, in seconds).",
+        "x": "The x coordinate of where to draw the sprite.",
+        "y": "The y coordinate of where to draw the sprite.",
+        "xscale": "The horizontal scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...",
+        "yscale": "The vertical scaling of the sprite, as a multiplier: 1 = normal scaling, 0.5 is half etc...",
+        "rot": "The rotation of the sprite. 0=normal, 90=turned 90 degrees counter-clockwise etc.",
+        "colour": "The colour with which to blend the sprite.",
         "alpha": ""
     },
     "draw_sprite": {

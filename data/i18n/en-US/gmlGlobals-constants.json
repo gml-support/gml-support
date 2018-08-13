@@ -426,46 +426,52 @@
         "desc": ""
     },
     "device_emulator": {
-        "desc": ""
+        "desc": "The device is actually an emulator (Windows Phone or Android)"
     },
     "device_ios_ipad": {
-        "desc": ""
+        "desc": "iPad"
     },
     "device_ios_ipad_retina": {
-        "desc": ""
+        "desc": "Newer iPad with Retina display size of 2048 x 1536"
     },
     "device_ios_iphone": {
-        "desc": ""
+        "desc": "Older iPhone/iPod Touch (480 x 320 screen) or Android phone"
     },
     "device_ios_iphone5": {
-        "desc": ""
+        "desc": "iPhone5 with display size 640 x 1136)"
+    },
+    "device_ios_iphone6": {
+        "desc": "iPhone6 with display size 1334 x 750"
+    },
+    "device_ios_iphone6plus": {
+        "desc": "Larger iPhone 6 with display 1920 x 1080"
     },
     "device_ios_iphone_retina": {
-        "desc": ""
+        "desc": "Newer iPhone/iPod Touch with Retina display of 960 x 640"
     },
     "device_ios_unknown": {
-        "desc": ""
+        "desc": "Unknown or not iOS"
     },
     "device_tablet": {
-        "desc": ""
+        "desc": "Android tablet"
     },
     "display_landscape": {
-        "desc": ""
+        "desc": "The device is being held horizontally ie: The longest edge is from left to right, and the menu button is on the right."
     },
     "display_landscape_flipped": {
-        "desc": ""
+        "desc": "As above, only now the menu button is on the left."
     },
     "display_portrait": {
-        "desc": ""
+        "desc": "The device is being held vertically ie: The longest edge is from top to bottom, and the menu button is at the bottom."
     },
     "display_portrait_flipped": {
-        "desc": ""
+        "desc": "As above, only now the menu button is at the top."
     },
     "dll_cdecl": {
-        "desc": ""
+        "desc": "This is the default C, C++ call"
     },
     "dll_stdcall": {
-        "desc": ""
+        "desc": "This is the standard WinAPI call (Windows dll only)"
     },
     "ds_type_grid": {
         "desc": ""

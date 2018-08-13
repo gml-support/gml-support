@@ -102,10 +102,10 @@
         "desc": "Setting this variable will instruct GameMaker: Studio to use the designated sprite as a cursor (basically setting it to the current mouse x/y position every step). The default value is -1 which is no sprite for the cursor, but you can assign any sprite index from the game assets or that has been imported from an external resource. Please note that there is no way to control the animation speed or image_index, so if the sprite has sub-images, these will be cycled at the same speed as the room speed. To remove the cursor sprite, you can set this variable to -1 again.\n\nIt is also worth noting that this variable does not replace the game window cursor, and that it will still be drawn as normal. To avoid this you can use the function **window_set_cursor** and set it to the constant *cr_none* which will make the standard cursor invisible.\n\nReturns: Real"
     },
 	"debug_mode": {
-        "desc": ""
+        "desc": "This read only variable returns true when the game is being played in debug mode and false when being played as normal.\n\nReturns: Boolean"
     },
 	"delta_time": {
-        "desc": ""
+        "desc": "The purpose of delta timing is to eliminate the effects of the lag or slowness of computers that try to handle complex graphics or a lot of code. It is a value that can be added on to the speed of objects so that they will eventually move at the same speed, regardless of lag. This is achieved in GameMaker: Studio by using the read only variable delta_time every step as it measures the time that has passed between one step and the next in microseconds (1microsecond is 1,000,000th of a second). Therefore the variable delta_time can be used to calculate how much faster (for example) a game character has to move to make up for a lag spike in the game.\n\nReturns: Real"
     },
 	"display_aa": {
         "desc": ""
