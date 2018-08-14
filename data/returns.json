@@ -1,0 +1,15 @@
+{
+    "r": "Real",
+    "s": "String",
+    "ssc": "String (Single character)",
+    "b": "Boolean",
+    "na": "N/A",
+    "a": "Array",
+    "ah": "Array (Handle)",
+    "c": "Constant",
+    "i": "Index",
+    "int": "Integer",
+    "sound": "Sound Index",
+    "ds": "ds_map",
+    "p": "Pointer"
+}
