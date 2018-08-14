@@ -1,5 +1,6 @@
 {
     "r": "Real",
+    "rs": "Real/String",
     "s": "String",
     "ssc": "String (Single character)",
     "b": "Boolean",
@@ -11,5 +12,7 @@
     "int": "Integer",
     "sound": "Sound Index",
     "ds": "ds_map",
-    "p": "Pointer"
+    "p": "Pointer",
+    "one": "One of the given arguments.",
+    "inst": "Instance id or noone"
 }
