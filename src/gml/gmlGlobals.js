@@ -43,7 +43,7 @@ exports.globalfunctions = {
 		signature: '(userid)'
 	},
 	achievement_get_pic: {
-        description: '[Function]' + i18n.achievement_get_pic.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_get_pic.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'char', documentation: i18n.achievement_get_pic.char }
@@ -51,7 +51,7 @@ exports.globalfunctions = {
 		signature: '(char)'
 	},
 	achievement_increment: {
-        description: '[Function]' + i18n.achievement_increment.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_increment.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'achievement_name', documentation: i18n.achievement_increment.achievement_name },
@@ -60,11 +60,11 @@ exports.globalfunctions = {
 		signature: '(achievement_name, value)'
 	},
 	achievement_load_friends: {
-		description: '[Function]' + i18n.achievement_load_friends.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_load_friends.desc + returns.na,
         available: datasimple.gms1
 	},
 	achievement_load_leaderboard: {
-        description: '[Function]' + i18n.achievement_load_leaderboard.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_load_leaderboard.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'ident', documentation: i18n.achievement_load_leaderboard.ident },
@@ -75,23 +75,23 @@ exports.globalfunctions = {
 		signature: '(ident, minindex, maxindex, filter)'
 	},
 	achievement_load_progress: {
-		description: '[Function]' + i18n.achievement_load_progress.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_load_progress.desc + returns.na,
         available: datasimple.gms1
 	},
 	achievement_login: {
-		description: '[Function]' + i18n.achievement_login.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_login.desc + returns.na,
         available: datasimple.gms1
 	},
 	achievement_login_status: {
-		description: '[Function]' + i18n.achievement_login_status.desc + "\n\n**Returns:** " + returns.b,
+		description: '[Function]' + i18n.achievement_login_status.desc + returns.b,
         available: datasimple.gms1
 	},
 	achievement_logout: {
-		description: '[Function]' + i18n.achievement_logout.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_logout.desc + returns.na,
         available: datasimple.gms1
 	},
 	achievement_post: {
-        description: '[Function]' + i18n.achievement_post.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_post.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'achievement_name', documentation: i18n.achievement_post.achievement_name },
@@ -100,7 +100,7 @@ exports.globalfunctions = {
 		signature: '(achievement_name, percent)'
 	},
 	achievement_post_score: {
-        description: '[Function]' + i18n.achievement_post_score.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_post_score.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'score_name', documentation: i18n.achievement_post_score.score_name },
@@ -109,11 +109,11 @@ exports.globalfunctions = {
 		signature: '(score_name, score)'
 	},
 	achievement_reset: {
-		description: '[Function]' + i18n.achievement_reset.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_reset.desc + returns.na,
         available: datasimple.gms1
 	},
 	achievement_send_challenge: {
-        description: '[Function]' + i18n.achievement_send_challenge.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_send_challenge.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'to', documentation: i18n.achievement_send_challenge.to },
@@ -125,7 +125,7 @@ exports.globalfunctions = {
 		signature: '(to, challengeid, score, type, msg)'
 	},
 	achievement_show: {
-        description: '[Function]' + i18n.achievement_show.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_show.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: i18n.achievement_show.type },
@@ -134,11 +134,11 @@ exports.globalfunctions = {
 		signature: '(type, val)'
 	},
 	achievement_show_achievements: {
-		description: '[Function]' + i18n.achievement_show_achievements.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_show_achievements.desc + returns.na,
         available: datasimple.gms1
 	},
 	achievement_show_challenge_notifications: {
-        description: '[Function]' + i18n.achievement_show_challenge_notifications.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.achievement_show_challenge_notifications.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'receive_challenge', documentation: i18n.achievement_show_challenge_notifications.receive_challenge },
@@ -148,11 +148,11 @@ exports.globalfunctions = {
 		signature: '(receive_challenge, local_complete, remote_complete)'
 	},
 	achievement_show_leaderboards: {
-		description: '[Function]' + i18n.achievement_show_leaderboards.desc + "\n\n**Returns:** " + returns.na,
+		description: '[Function]' + i18n.achievement_show_leaderboards.desc + returns.na,
         available: datasimple.gms1
 	},
 	alarm_get: {
-        description: '[Function]' + i18n.alarm_get.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.alarm_get.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.alarm_get.index }
@@ -160,7 +160,7 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	alarm_set: {
-        description: '[Function]' + i18n.alarm_set.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.alarm_set.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.alarm_set.index },
@@ -169,7 +169,7 @@ exports.globalfunctions = {
 		signature: '(index, count)'
 	},
 	angle_difference: {
-        description: '[Function]' + i18n.angle_difference.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.angle_difference.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'ang1', documentation: i18n.angle_difference.ang1 },
@@ -178,7 +178,7 @@ exports.globalfunctions = {
 		signature: '(ang1, ang2)'
 	},
 	ansi_char: {
-        description: '[Function]' + i18n.ansi_char.desc + "\n\n**Returns:** " + returns.ssc,
+        description: '[Function]' + i18n.ansi_char.desc + returns.ssc,
         available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: i18n.ansi_char.val }
@@ -186,11 +186,11 @@ exports.globalfunctions = {
 		signature: '(val)'
 	},
 	application_get_position: {
-		description: '[Function]' + i18n.application_get_position.desc + "\n\n**Returns:** " + returns.a,
+		description: '[Function]' + i18n.application_get_position.desc + returns.a,
         available: datasimple.gms1
 	},
 	application_surface_draw_enable: {
-        description: '[Function]' + i18n.application_surface_draw_enable.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.application_surface_draw_enable.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'flag', documentation: i18n.application_surface_draw_enable.flag }
@@ -198,7 +198,7 @@ exports.globalfunctions = {
 		signature: '(flag)'
 	},
 	application_surface_enable: {
-        description: '[Function]' + i18n.application_surface_enable.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.application_surface_enable.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.application_surface_enable.enable }
@@ -206,11 +206,11 @@ exports.globalfunctions = {
 		signature: '(enable)'
 	},
 	application_surface_is_enabled: {
-		description: '[Function]' + i18n.application_surface_is_enabled.desc + "\n\n**Returns:** " + returns.b,
+		description: '[Function]' + i18n.application_surface_is_enabled.desc + returns.b,
         available: datasimple.gms1
 	},
 	arccos: {
-        description: '[Function]' + i18n.arccos.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.arccos.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.arccos.x }
@@ -218,7 +218,7 @@ exports.globalfunctions = {
 		signature: '(x)'
 	},
 	arcsin: {
-        description: '[Function]' + i18n.arcsin.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.arcsin.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.arcsin.x }
@@ -226,7 +226,7 @@ exports.globalfunctions = {
 		signature: '(x)'
 	},
 	arctan: {
-        description: '[Function]' + i18n.arctan.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.arctan.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.arctan.x }
@@ -234,7 +234,7 @@ exports.globalfunctions = {
 		signature: '(x)'
 	},
 	arctan2: {
-        description: '[Function]' + i18n.arctan2.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.arctan2.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'y', documentation: i18n.arctan2.y },
@@ -243,7 +243,7 @@ exports.globalfunctions = {
 		signature: '(y, x)'
 	},
 	array_copy: {
-        description: '[Function]' + i18n.array_copy.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.array_copy.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'dest', documentation: i18n.array_copy.dest },
@@ -255,7 +255,7 @@ exports.globalfunctions = {
 		signature: '(dest, dest_index, src, src_index, length)'
 	},
 	array_create: {
-        description: '[Function]' + i18n.array_create.desc + "\n\n**Returns:** " + returns.ah,
+        description: '[Function]' + i18n.array_create.desc + returns.ah,
         available: datasimple.gms1,
         parameters: [
             { label: 'size', documentation: i18n.array_create.size },
@@ -264,7 +264,7 @@ exports.globalfunctions = {
 		signature: '(size, [value])'
 	},
 	array_equals: {
-        description: '[Function]' + i18n.array_equals.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.array_equals.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'var1', documentation: i18n.array_equals.var1 },
@@ -273,7 +273,7 @@ exports.globalfunctions = {
 		signature: '(var1, var2)'
 	},
 	array_height_2d: {
-        description: '[Function]' + i18n.array_height_2d.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.array_height_2d.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'array', documentation: i18n.array_height_2d.array }
@@ -281,7 +281,7 @@ exports.globalfunctions = {
 		signature: '(array)'
 	},
 	array_length_1d: {
-        description: '[Function]' + i18n.array_length_1d.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.array_length_1d.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'array', documentation: i18n.array_length_1d.array }
@@ -289,7 +289,7 @@ exports.globalfunctions = {
 		signature: '(array)'
 	},
 	array_length_2d: {
-        description: '[Function]' + i18n.array_length_2d.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.array_length_2d.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'array', documentation: i18n.array_length_2d.array },
@@ -298,7 +298,7 @@ exports.globalfunctions = {
 		signature: '(array, n)'
 	},
 	asset_get_index: {
-        description: '[Function]' + i18n.asset_get_index.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.asset_get_index.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'name', documentation: i18n.asset_get_index.name }
@@ -306,7 +306,7 @@ exports.globalfunctions = {
 		signature: '(name)'
 	},
 	asset_get_type: {
-        description: '[Function]' + i18n.asset_get_type.desc + "\n\n**Returns:** " + returns.c,
+        description: '[Function]' + i18n.asset_get_type.desc + returns.c,
         available: datasimple.gms1,
         parameters: [
             { label: 'name', documentation: i18n.asset_get_type.name }
@@ -314,7 +314,7 @@ exports.globalfunctions = {
 		signature: '(name)'
 	},
 	audio_channel_num: {
-        description: '[Function]' + i18n.audio_channel_num.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_channel_num.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'numchannels', documentation: i18n.audio_channel_num.numchannels }
@@ -322,7 +322,7 @@ exports.globalfunctions = {
 		signature: '(numchannels)'
 	},
 	audio_create_buffer_sound: {
-        description: '[Function]' + i18n.audio_create_buffer_sound.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_create_buffer_sound.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'bufferId', documentation: i18n.audio_create_buffer_sound.bufferId },
@@ -335,7 +335,7 @@ exports.globalfunctions = {
 		signature: '(bufferId, format, rate, offset, length, channels)'
 	},
 	audio_create_play_queue: {
-        description: '[Function]' + i18n.audio_create_play_queue.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_create_play_queue.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'queueFormat', documentation: i18n.audio_create_play_queue.queueFormat },
@@ -345,7 +345,7 @@ exports.globalfunctions = {
 		signature: '(queueFormat, sampleRate, channels)'
 	},
 	audio_create_stream: {
-        description: '[Function]' + i18n.audio_create_stream.desc + "\n\n**Returns:** " + returns.sound,
+        description: '[Function]' + i18n.audio_create_stream.desc + returns.sound,
         available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: i18n.audio_create_stream.filename }
@@ -353,7 +353,7 @@ exports.globalfunctions = {
 		signature: '(filename)'
 	},
 	audio_create_sync_group: {
-        description: '[Function]' + i18n.audio_create_stream.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_create_stream.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'looping', documentation: i18n.audio_create_stream.looping }
@@ -361,7 +361,7 @@ exports.globalfunctions = {
 		signature: '(looping)'
 	},
 	audio_debug: {
-        description: '[Function]' + i18n.audio_debug.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_debug.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.audio_debug.enable }
@@ -369,7 +369,7 @@ exports.globalfunctions = {
 		signature: '(enable)'
 	},
 	audio_destroy_stream: {
-        description: '[Function]' + i18n.audio_destroy_stream.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_destroy_stream.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: i18n.audio_destroy_stream.filename }
@@ -377,7 +377,7 @@ exports.globalfunctions = {
 		signature: '(filename)'
 	},
 	audio_destroy_sync_group: {
-        description: '[Function]' + i18n.audio_destroy_sync_group.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_destroy_sync_group.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_destroy_sync_group.group_index }
@@ -385,11 +385,11 @@ exports.globalfunctions = {
 		signature: '(group_index)'
 	},
 	audio_emitter_create: {
-		description: '[Function]' + i18n.audio_emitter_create.desc + "\n\n**Returns:** " + returns.r,
+		description: '[Function]' + i18n.audio_emitter_create.desc + returns.r,
         available: datasimple.gms1
 	},
 	audio_emitter_exists: {
-        description: '[Function]' + i18n.audio_emitter_exists.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.audio_emitter_exists.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_emitter_exists.index }
@@ -397,7 +397,7 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	audio_emitter_falloff: {
-        description: '[Function]' + i18n.audio_emitter_falloff.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_falloff.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_falloff.emitterid },
@@ -408,7 +408,7 @@ exports.globalfunctions = {
 		signature: '(emitterid, falloff_ref_dist, falloff_max_dist, falloff_factor)'
 	},
 	audio_emitter_free: {
-        description: '[Function]' + i18n.audio_emitter_free.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_free.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_free.emitterid }
@@ -416,7 +416,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_gain: {
-        description: '[Function]' + i18n.audio_emitter_gain.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_gain.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_gain.emitterid },
@@ -425,7 +425,7 @@ exports.globalfunctions = {
 		signature: '(emitterid, gain)'
 	},
 	audio_emitter_get_gain: {
-        description: '[Function]' + i18n.audio_emitter_get_gain.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_gain.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_gain.emitterid },
@@ -433,7 +433,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_listener_mask: {
-        description: '[Function]' + i18n.audio_emitter_get_listener_mask.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_listener_mask.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_listener_mask.emitterid },
@@ -441,7 +441,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_pitch: {
-        description: '[Function]' + i18n.audio_emitter_get_pitch.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_pitch.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_pitch.emitterid },
@@ -449,7 +449,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_vx: {
-        description: '[Function]' + i18n.audio_emitter_get_vx.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_vx.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_vx.emitterid },
@@ -457,7 +457,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_vy: {
-        description: '[Function]' + i18n.audio_emitter_get_vy.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_vy.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_vy.emitterid },
@@ -465,7 +465,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_vz: {
-        description: '[Function]' + i18n.audio_emitter_get_vz.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_vz.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_vz.emitterid },
@@ -473,7 +473,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_x: {
-        description: '[Function]' + i18n.audio_emitter_get_x.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_x.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_x.emitterid },
@@ -481,7 +481,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_y: {
-        description: '[Function]' + i18n.audio_emitter_get_y.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_y.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_y.emitterid },
@@ -489,7 +489,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_get_z: {
-        description: '[Function]' + i18n.audio_emitter_get_z.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_emitter_get_z.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_get_z.emitterid },
@@ -497,7 +497,7 @@ exports.globalfunctions = {
 		signature: '(emitterid)'
 	},
 	audio_emitter_pitch: {
-        description: '[Function]' + i18n.audio_emitter_pitch.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_pitch.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_pitch.emitterid },,
@@ -506,7 +506,7 @@ exports.globalfunctions = {
 		signature: '(emitterid, pitch)'
 	},
 	audio_emitter_position: {
-        description: '[Function]' + i18n.audio_emitter_position.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_position.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_position.emitterid },,
@@ -517,7 +517,7 @@ exports.globalfunctions = {
 		signature: '(emitterid, x, y, z)'
 	},
 	audio_emitter_set_listener_mask: {
-        description: '[Function]' + i18n.audio_emitter_set_listener_mask.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_set_listener_mask.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_set_listener_mask.emitterid },,
@@ -526,7 +526,7 @@ exports.globalfunctions = {
 		signature: '(emitterid, mask)'
 	},
 	audio_emitter_velocity: {
-        description: '[Function]' + i18n.audio_emitter_velocity.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_emitter_velocity.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_emitter_velocity.emitterid },,
@@ -537,7 +537,7 @@ exports.globalfunctions = {
 		signature: '(emitterid, vx, vy, vz)'
 	},
 	audio_exists: {
-        description: '[Function]' + i18n.audio_exists.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.audio_exists.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_exists.index }
@@ -545,7 +545,7 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	audio_falloff_set_model: {
-        description: '[Function]' + i18n.audio_falloff_set_model.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_falloff_set_model.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'falloffmodel', documentation: i18n.audio_falloff_set_model.falloffmodel }
@@ -553,7 +553,7 @@ exports.globalfunctions = {
 		signature: '(falloffmodel)'
 	},
 	audio_free_buffer_sound: {
-        description: '[Function]' + i18n.audio_free_buffer_sound.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_free_buffer_sound.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_free_buffer_sound.index }
@@ -561,7 +561,7 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	audio_free_play_queue: {
-        description: '[Function]' + i18n.audio_free_play_queue.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_free_play_queue.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'queueIndex', documentation: i18n.audio_free_play_queue.queueIndex }
@@ -569,11 +569,11 @@ exports.globalfunctions = {
 		signature: '(queueIndex)'
 	},
 	audio_get_listener_count: {
-		description: '[Function]' + i18n.audio_get_listener_count.desc + "\n\n**Returns:** " + returns.r,
+		description: '[Function]' + i18n.audio_get_listener_count.desc + returns.r,
         available: datasimple.gms1
 	},
 	audio_get_listener_info: {
-        description: '[Function]' + i18n.audio_get_listener_info.desc + "\n\n**Returns:** " + returns.ds,
+        description: '[Function]' + i18n.audio_get_listener_info.desc + returns.ds,
         available: datasimple.gms1,
         parameters: [
             { label: 'num', documentation: i18n.audio_get_listener_info.num }
@@ -581,7 +581,7 @@ exports.globalfunctions = {
 		signature: '(num)'
 	},
 	audio_get_listener_mask: {
-        description: '[Function]' + i18n.audio_get_listener_mask.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_get_listener_mask.desc + returns.r,
         available: datasimple.gms1
 	},
 	audio_get_master_gain: {
@@ -593,7 +593,7 @@ exports.globalfunctions = {
 		signature: '(listenerIndex)'
 	},
 	audio_get_name: {
-        description: '[Function]' + i18n.audio_get_name.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.audio_get_name.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_get_name.index }
@@ -601,11 +601,11 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	audio_get_recorder_count: {
-		description: '[Function]' + i18n.audio_get_recorder_count.desc + "\n\n**Returns:** " + returns.int,
+		description: '[Function]' + i18n.audio_get_recorder_count.desc + returns.int,
         available: datasimple.gms1
 	},
 	audio_get_recorder_info: {
-        description: '[Function]' + i18n.audio_get_recorder_info.desc + "\n\n**Returns:** " + returns.ds,
+        description: '[Function]' + i18n.audio_get_recorder_info.desc + returns.ds,
         available: datasimple.gms1,
         parameters: [
             { label: 'recorder_index', documentation: i18n.audio_get_recorder_info.recorder_index }
@@ -613,7 +613,7 @@ exports.globalfunctions = {
 		signature: '(recorder_index)'
 	},
 	audio_get_type: {
-        description: '[Function]' + i18n.audio_get_type.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_get_type.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_get_type.index }
@@ -621,7 +621,7 @@ exports.globalfunctions = {
 		signature: '(index)'
 	},
 	audio_group_is_loaded: {
-        description: '[Function]' + i18n.audio_group_is_loaded.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.audio_group_is_loaded.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_is_loaded.groupId }
@@ -629,7 +629,7 @@ exports.globalfunctions = {
 		signature: '(groupId)'
 	},
 	audio_group_load: {
-        description: '[Function]' + i18n.audio_group_load.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.audio_group_load.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_load.groupId }
@@ -637,7 +637,7 @@ exports.globalfunctions = {
 		signature: '(groupId)'
 	},
 	audio_group_load_progress: {
-        description: '[Function]' + i18n.audio_group_load_progress.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_group_load_progress.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_load_progress.groupId }
@@ -645,7 +645,7 @@ exports.globalfunctions = {
 		signature: '(groupId)'
 	},
 	audio_group_name: {
-        description: '[Function]' + i18n.audio_group_name.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.audio_group_name.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_name.groupId }
@@ -653,7 +653,7 @@ exports.globalfunctions = {
 		signature: '(groupId)'
 	},
 	audio_group_set_gain: {
-        description: '[Function]' + i18n.audio_group_set_gain.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_group_set_gain.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_set_gain.groupId },
@@ -663,7 +663,7 @@ exports.globalfunctions = {
 		signature: '(groupId, volume, time)'
 	},
 	audio_group_stop: {
-        description: '[Function]' + i18n.audio_group_stop.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_group_stop.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_stop.groupId }
@@ -671,7 +671,7 @@ exports.globalfunctions = {
 		signature: '(groupId)'
 	},
 	audio_group_unload: {
-        description: '[Function]' + i18n.audio_group_unload.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_group_unload.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupId', documentation: i18n.audio_group_unload.groupId }
@@ -679,7 +679,7 @@ exports.globalfunctions = {
 		signature: '(groupId)'
 	},
 	audio_is_paused: {
-        description: '[Function]' + i18n.audio_is_paused.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.audio_is_paused.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_is_paused.index }
@@ -687,7 +687,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_is_playing: {
-        description: '[Function]' + i18n.audio_is_playing.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.audio_is_playing.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_is_playing.index }
@@ -695,7 +695,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_listener_get_data: {
-        description: '[Function]' + i18n.audio_listener_get_data.desc + "\n\n**Returns:** " + returns.ds,
+        description: '[Function]' + i18n.audio_listener_get_data.desc + returns.ds,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_listener_get_data.index }
@@ -703,7 +703,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_listener_orientation: {
-        description: '[Function]' + i18n.audio_listener_orientation.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_listener_orientation.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'lookat_x', documentation: i18n.audio_listener_orientation.lookat_x },
@@ -716,7 +716,7 @@ exports.globalfunctions = {
         signature: '(lookat_x, lookat_y, lookat_z, up_x, up_y, up_z)'
     },
 	audio_listener_position: {
-        description: '[Function]' + i18n.audio_listener_position.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_listener_position.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: i18n.audio_listener_position.x },
@@ -726,7 +726,7 @@ exports.globalfunctions = {
         signature: '(x, y, z)'
     },
 	audio_listener_set_orientation: {
-        description: '[Function]' + i18n.audio_listener_set_orientation.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_listener_set_orientation.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_listener_set_orientation.index },
@@ -740,7 +740,7 @@ exports.globalfunctions = {
         signature: '(index, lookat_x, lookat_y, lookat_z, up_x, up_y, up_z)'
     },
 	audio_listener_set_position: {
-        description: '[Function]' + i18n.audio_listener_set_position.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_listener_set_position.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_listener_set_position.index },
@@ -751,7 +751,7 @@ exports.globalfunctions = {
         signature: '(index, x, y, z)'
     },
 	audio_listener_set_velocity: {
-        description: '[Function]' + i18n.audio_listener_set_velocity.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_listener_set_velocity.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_listener_set_velocity.index },
@@ -762,7 +762,7 @@ exports.globalfunctions = {
         signature: '(index, vx, vy, vz)'
     },
 	audio_listener_velocity: {
-        description: '[Function]' + i18n.audio_listener_velocity.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_listener_velocity.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'vx', documentation: i18n.audio_listener_velocity.vx },
@@ -772,7 +772,7 @@ exports.globalfunctions = {
         signature: '(vx, vy, vz)'
     },
 	audio_master_gain: {
-        description: '[Function]' + i18n.audio_master_gain.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_master_gain.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'gain', documentation: i18n.audio_master_gain.gain }
@@ -780,11 +780,11 @@ exports.globalfunctions = {
         signature: '(gain)'
     },
 	audio_pause_all: {
-        description: '[Function]' + i18n.audio_pause_all.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_pause_all.desc + returns.na,
         available: datasimple.gms1
     },
 	audio_pause_sound: {
-        description: '[Function]' + i18n.audio_pause_sound.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_pause_sound.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_pause_sound.index }
@@ -792,7 +792,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_pause_sync_group: {
-        description: '[Function]' + i18n.audio_pause_sync_group.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_pause_sync_group.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_pause_sync_group.group_index }
@@ -800,7 +800,7 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_play_in_sync_group: {
-        description: '[Function]' + i18n.audio_play_in_sync_group.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_play_in_sync_group.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_play_in_sync_group.group_index },
@@ -809,7 +809,7 @@ exports.globalfunctions = {
         signature: '(group_index, sound_index)'
     },
 	audio_play_sound: {
-        description: '[Function]' + i18n.audio_play_sound.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_play_sound.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_play_sound.index },
@@ -819,7 +819,7 @@ exports.globalfunctions = {
         signature: '(index, priority, loops)'
     },
 	audio_play_sound_at: {
-        description: '[Function]' + i18n.audio_play_sound_at.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_play_sound_at.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_play_sound_at.index },
@@ -835,7 +835,7 @@ exports.globalfunctions = {
         signature: '(index, x, y, z, falloff_ref_dist, falloff_max_dist, falloff_factor, loops, priority)'
     },
 	audio_play_sound_on: {
-        description: '[Function]' + i18n.audio_play_sound_on.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_play_sound_on.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'emitterid', documentation: i18n.audio_play_sound_on.emitterid },,
@@ -846,7 +846,7 @@ exports.globalfunctions = {
         signature: '(emitterid, sound, loops, priority)'
     },
 	audio_queue_sound: {
-        description: '[Function]' + i18n.audio_queue_sound.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_queue_sound.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'queueid', documentation: i18n.audio_queue_sound.queueid },
@@ -857,11 +857,11 @@ exports.globalfunctions = {
         signature: '(queueId, buffer_id, offset, length)'
     },
 	audio_resume_all: {
-        description: '[Function]' + i18n.audio_resume_all.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_resume_all.desc + returns.na,
         available: datasimple.gms1
     },
 	audio_resume_sound: {
-        description: '[Function]' + i18n.audio_resume_sound.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_resume_sound.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_resume_sound.index }
@@ -869,7 +869,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_resume_sync_group: {
-        description: '[Function]' + i18n.audio_resume_sync_group.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_resume_sync_group.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_resume_sync_group.group_index }
@@ -877,7 +877,7 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_set_listener_mask: {
-        description: '[Function]' + i18n.audio_set_listener_mask.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_set_listener_mask.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'mask', documentation: i18n.audio_set_listener_mask.mask }
@@ -885,7 +885,7 @@ exports.globalfunctions = {
         signature: '(mask)'
     },
 	audio_set_master_gain: {
-        description: '[Function]' + i18n.audio_set_master_gain.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_set_master_gain.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'listenerIndex', documentation: i18n.audio_set_master_gain.listenerIndex },
@@ -894,7 +894,7 @@ exports.globalfunctions = {
         signature: '(listenerIndex, gain)'
     },
 	audio_sound_gain: {
-        description: '[Function]' + i18n.audio_sound_gain.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sound_gain.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_gain.index },
@@ -904,7 +904,7 @@ exports.globalfunctions = {
         signature: '(index, volume, time)'
     },
 	audio_sound_get_gain: {
-        description: '[Function]' + i18n.audio_sound_get_gain.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sound_get_gain.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'soundID', documentation: i18n.audio_sound_get_gain.soundID }
@@ -912,7 +912,7 @@ exports.globalfunctions = {
         signature: '(soundID)'
     },
 	audio_sound_get_listener_mask: {
-        description: '[Function]' + i18n.audio_sound_get_listener_mask.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_sound_get_listener_mask.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_get_listener_mask.index }
@@ -920,7 +920,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_sound_get_pitch: {
-        description: '[Function]' + i18n.audio_sound_get_pitch.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_sound_get_pitch.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_get_pitch.index }
@@ -928,7 +928,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_sound_get_track_position: {
-        description: '[Function]' + i18n.audio_sound_get_track_position.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_sound_get_track_position.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_get_track_position.index }
@@ -936,7 +936,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_sound_length: {
-        description: '[Function]' + i18n.audio_sound_length.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_sound_length.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_length.index }
@@ -944,7 +944,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_sound_pitch: {
-        description: '[Function]' + i18n.audio_sound_pitch.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sound_pitch.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_pitch.index },
@@ -953,7 +953,7 @@ exports.globalfunctions = {
         signature: '(index, pitch)'
     },
 	audio_sound_set_listener_mask: {
-        description: '[Function]' + i18n.audio_sound_set_listener_mask.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sound_set_listener_mask.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'soundID', documentation: i18n.audio_sound_set_listener_mask.soundID },
@@ -962,7 +962,7 @@ exports.globalfunctions = {
         signature: '(soundID, mask)'
     },
 	audio_sound_set_track_position: {
-        description: '[Function]' + i18n.audio_sound_set_track_position.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sound_set_track_position.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_sound_set_track_position.index },
@@ -971,7 +971,7 @@ exports.globalfunctions = {
         signature: '(index, time)'
     },
 	audio_start_recording: {
-        description: '[Function]' + i18n.audio_start_recording.desc + "\n\n**Returns:** " + returns.i,
+        description: '[Function]' + i18n.audio_start_recording.desc + returns.i,
         available: datasimple.gms1,
         parameters: [
             { label: 'recorder_index', documentation: i18n.audio_start_recording.recorder_index }
@@ -979,7 +979,7 @@ exports.globalfunctions = {
         signature: '(recorder_index)'
     },
 	audio_start_sync_group: {
-        description: '[Function]' + i18n.audio_start_sync_group.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_start_sync_group.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_start_sync_group.group_index }
@@ -987,11 +987,11 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_stop_all: {
-        description: '[Function]' + i18n.audio_stop_all.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_stop_all.desc + returns.na,
         available: datasimple.gms1
     },
 	audio_stop_recording: {
-        description: '[Function]' + i18n.audio_stop_recording.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_stop_recording.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'channel_index', documentation: i18n.audio_stop_recording.channel_index }
@@ -999,7 +999,7 @@ exports.globalfunctions = {
         signature: '(channel_index)'
     },
 	audio_stop_sound: {
-        description: '[Function]' + i18n.audio_stop_sound.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_stop_sound.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.audio_stop_sound.index }
@@ -1007,7 +1007,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	audio_stop_sync_group: {
-        description: '[Function]' + i18n.audio_stop_sync_group.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_stop_sync_group.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_stop_sync_group.group_index }
@@ -1015,7 +1015,7 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_sync_group_debug: {
-        description: '[Function]' + i18n.audio_sync_group_debug.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sync_group_debug.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_sync_group_debug.group_index }
@@ -1023,7 +1023,7 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_sync_group_get_track_pos: {
-        description: '[Function]' + i18n.audio_sync_group_get_track_pos.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.audio_sync_group_get_track_pos.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_sync_group_get_track_pos.group_index }
@@ -1031,7 +1031,7 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_sync_group_is_playing: {
-        description: '[Function]' + i18n.audio_sync_group_is_playing.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.audio_sync_group_is_playing.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'group_index', documentation: i18n.audio_sync_group_is_playing.group_index }
@@ -1039,11 +1039,11 @@ exports.globalfunctions = {
         signature: '(group_index)'
     },
 	audio_system: {
-        description: '[Function]' + i18n.audio_system.desc + "\n\n**Returns:** " + returns.c,
+        description: '[Function]' + i18n.audio_system.desc + returns.c,
         available: datasimple.gms1
     },
 	base64_decode: {
-        description: '[Function]' + i18n.base64_decode.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.base64_decode.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: i18n.base64_decode.string }
@@ -1051,7 +1051,7 @@ exports.globalfunctions = {
         signature: '(string)'
     },
 	base64_encode: {
-        description: '[Function]' + i18n.base64_encode.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.base64_encode.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: i18n.base64_encode.string }
@@ -1059,7 +1059,7 @@ exports.globalfunctions = {
         signature: '(string)'
     },
 	browser_input_capture: {
-        description: '[Function]' + i18n.browser_input_capture.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.browser_input_capture.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.browser_input_capture.enable }
@@ -1067,7 +1067,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	buffer_async_group_begin: {
-        description: '[Function]' + i18n.buffer_async_group_begin.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_async_group_begin.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'groupname', documentation: i18n.buffer_async_group_begin.groupname }
@@ -1075,11 +1075,11 @@ exports.globalfunctions = {
         signature: '(groupname)'
     },
 	buffer_async_group_end: {
-        description: '[Function]' + i18n.buffer_async_group_end.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_async_group_end.desc + returns.r,
         available: datasimple.gms1
     },
 	buffer_async_group_option: {
-        description: '[Function]' + i18n.buffer_async_group_option.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_async_group_option.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'optionname', documentation: i18n.buffer_async_group_option.optionname },
@@ -1088,7 +1088,7 @@ exports.globalfunctions = {
         signature: '(optionname, optionvalue)'
     },
 	buffer_base64_decode: {
-        description: '[Function]' + i18n.buffer_base64_decode.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_base64_decode.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'string', documentation: i18n.buffer_base64_decode.string }
@@ -1096,7 +1096,7 @@ exports.globalfunctions = {
         signature: '(string)'
     },
 	buffer_base64_decode_ext: {
-        description: '[Function]' + i18n.buffer_base64_decode_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_base64_decode_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_base64_decode_ext.buffer },
@@ -1106,7 +1106,7 @@ exports.globalfunctions = {
         signature: '(buffer, string, offset)'
     },
 	buffer_base64_encode: {
-        description: '[Function]' + i18n.buffer_base64_encode.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.buffer_base64_encode.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_base64_encode.buffer },
@@ -1116,7 +1116,7 @@ exports.globalfunctions = {
         signature: '(buffer, offset, size)'
     },
 	buffer_copy: {
-        description: '[Function]' + i18n.buffer_copy.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_copy.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'src_buffer', documentation: i18n.buffer_copy.src_buffer },
@@ -1128,7 +1128,7 @@ exports.globalfunctions = {
         signature: '(src_buffer, src_offset, size, dest_buffer, dest_offset)'
     },
 	buffer_copy_from_vertex_buffer: {
-        description: '[Function]' + i18n.buffer_copy_from_vertex_buffer.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_copy_from_vertex_buffer.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'vertex_buffer', documentation: i18n.buffer_copy_from_vertex_buffer.vertex_buffer },
@@ -1140,7 +1140,7 @@ exports.globalfunctions = {
         signature: '(vertex_buffer, start_vertex, num_vertices, dest_buffer, dest_offset)'
     },
 	buffer_create: {
-        description: '[Function]' + i18n.buffer_create.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_create.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'size', documentation: i18n.buffer_create.size },
@@ -1150,7 +1150,7 @@ exports.globalfunctions = {
         signature: '(size, buffer_type, alignment)'
     },
 	buffer_create_from_vertex_buffer: {
-        description: '[Function]' + i18n.buffer_create_from_vertex_buffer.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_create_from_vertex_buffer.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'vertex_buffer', documentation: i18n.buffer_create_from_vertex_buffer.vertex_buffer },
@@ -1160,7 +1160,7 @@ exports.globalfunctions = {
         signature: '(vertex_buffer, type, alignment)'
     },
 	buffer_create_from_vertex_buffer_ext: {
-        description: '[Function]' + i18n.buffer_create_from_vertex_buffer_ext.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_create_from_vertex_buffer_ext.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'vertex_buffer', documentation: i18n.buffer_create_from_vertex_buffer_ext.vertex_buffer },
@@ -1172,7 +1172,7 @@ exports.globalfunctions = {
         signature: '(vertex_buffer, type, alignment, start_vertex, num_vertices)'
     },
 	buffer_delete: {
-        description: '[Function]' + i18n.buffer_delete.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_delete.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_delete.buffer }
@@ -1180,7 +1180,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	buffer_exists: {
-        description: '[Function]' + i18n.buffer_exists.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.buffer_exists.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_exists.buffer }
@@ -1188,7 +1188,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	buffer_fill: {
-        description: '[Function]' + i18n.buffer_fill.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_fill.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_fill.buffer },
@@ -1200,7 +1200,7 @@ exports.globalfunctions = {
         signature: '(buffer, offset, type, value, size)'
     },
 	buffer_get_address: {
-        description: '[Function]' + i18n.buffer_get_address.desc + "\n\n**Returns:** " + returns.p,
+        description: '[Function]' + i18n.buffer_get_address.desc + returns.p,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_get_address.buffer }
@@ -1208,7 +1208,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	buffer_get_alignment: {
-        description: '[Function]' + i18n.buffer_get_alignment.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_get_alignment.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_get_alignment.buffer }
@@ -1216,7 +1216,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	buffer_get_size: {
-        description: '[Function]' + i18n.buffer_get_size.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_get_size.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.buffer_get_size.index }
@@ -1224,7 +1224,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	buffer_get_surface: {
-        description: '[Function]' + i18n.buffer_get_surface.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_get_surface.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_get_surface.buffer },
@@ -1236,7 +1236,7 @@ exports.globalfunctions = {
         signature: '(buffer, surface, mode, offset, modulo)'
     },
 	buffer_get_type: {
-        description: '[Function]' + i18n.buffer_get_type.desc + "\n\n**Returns:** " + returns.c,
+        description: '[Function]' + i18n.buffer_get_type.desc + returns.c,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_get_type.buffer }
@@ -1244,7 +1244,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	buffer_load: {
-        description: '[Function]' + i18n.buffer_load.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_load.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: i18n.buffer_load.filename }
@@ -1252,7 +1252,7 @@ exports.globalfunctions = {
         signature: '(filename)'
     },
 	buffer_load_async: {
-        description: '[Function]' + i18n.buffer_load_async.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_load_async.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: i18n.buffer_load_async.bufferid },
@@ -1263,7 +1263,7 @@ exports.globalfunctions = {
         signature: '(bufferid, filename, offset, size)'
     },
 	buffer_load_ext: {
-        description: '[Function]' + i18n.buffer_load_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_load_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: i18n.buffer_load_ext.bufferid },
@@ -1285,7 +1285,7 @@ exports.globalfunctions = {
         signature: '(buffer, filename, src_offset, src_len, dest_offset)'
     },
 	buffer_md5: {
-        description: '[Function]' + i18n.buffer_md5.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.buffer_md5.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_md5.buffer },
@@ -1295,7 +1295,7 @@ exports.globalfunctions = {
         signature: '(buffer, offset, size)'
     },
 	buffer_peek: {
-        description: '[Function]' + i18n.buffer_peek.desc + "\n\n**Returns:** " + returns.rs,
+        description: '[Function]' + i18n.buffer_peek.desc + returns.rs,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_peek.buffer },
@@ -1305,7 +1305,7 @@ exports.globalfunctions = {
         signature: '(buffer, offset, type)'
     },
 	buffer_poke: {
-        description: '[Function]' + i18n.buffer_poke.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_poke.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_poke.buffer },
@@ -1316,7 +1316,7 @@ exports.globalfunctions = {
         signature: '(buffer, offset, type, value)'
     },
 	buffer_read: {
-        description: '[Function]' + i18n.buffer_read.desc + "\n\n**Returns:** " + returns.rs,
+        description: '[Function]' + i18n.buffer_read.desc + returns.rs,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_read.buffer },
@@ -1325,7 +1325,7 @@ exports.globalfunctions = {
         signature: '(buffer, type)'
     },
 	buffer_resize: {
-        description: '[Function]' + i18n.buffer_resize.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_resize.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_resize.buffer },
@@ -1334,7 +1334,7 @@ exports.globalfunctions = {
         signature: '(buffer, newsize)'
     },
 	buffer_save: {
-        description: '[Function]' + i18n.buffer_save.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_save.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_save.buffer },
@@ -1343,7 +1343,7 @@ exports.globalfunctions = {
         signature: '(buffer, filename)'
     },
 	buffer_save_async: {
-        description: '[Function]' + i18n.buffer_save_async.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_save_async.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_save_async.buffer },
@@ -1354,7 +1354,7 @@ exports.globalfunctions = {
         signature: '(bufferid, filename, offset, size)'
     },
 	buffer_save_ext: {
-        description: '[Function]' + i18n.buffer_save_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_save_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: i18n.buffer_save_ext.bufferid },
@@ -1365,7 +1365,7 @@ exports.globalfunctions = {
         signature: '(buffer, filename, offset, size)'
     },
 	buffer_seek: {
-        description: '[Function]' + i18n.buffer_seek.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_seek.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: i18n.buffer_seek.bufferid },
@@ -1375,7 +1375,7 @@ exports.globalfunctions = {
         signature: '(buffer, base, offset)'
     },
 	buffer_set_surface: {
-        description: '[Function]' + i18n.buffer_set_surface.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_set_surface.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_set_surface.buffer },
@@ -1387,7 +1387,7 @@ exports.globalfunctions = {
         signature: '(buffer, surface, mode, offset, modulo)'
     },
 	buffer_sha1: {
-        description: '[Function]' + i18n.buffer_sha1.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.buffer_sha1.desc + returns.s,
         available: datasimple.gms1,
         parameters: [
             { label: 'bufferid', documentation: i18n.buffer_sha1.bufferid },
@@ -1397,7 +1397,7 @@ exports.globalfunctions = {
         signature: '(buffer, offset, size)'
     },
 	buffer_sizeof: {
-        description: '[Function]' + i18n.buffer_sizeof.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_sizeof.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'type', documentation: i18n.buffer_sizeof.type }
@@ -1405,7 +1405,7 @@ exports.globalfunctions = {
         signature: '(type)'
     },
 	buffer_tell: {
-        description: '[Function]' + i18n.buffer_tell.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.buffer_tell.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_tell.buffer }
@@ -1413,7 +1413,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	buffer_write: {
-        description: '[Function]' + i18n.buffer_write.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.buffer_write.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'buffer', documentation: i18n.buffer_write.buffer },
@@ -1423,7 +1423,7 @@ exports.globalfunctions = {
         signature: '(buffer, type, value)'
     },
 	ceil: {
-        description: '[Function]' + i18n.ceil.desc + "\n\n**Returns:** " + returns.int,
+        description: '[Function]' + i18n.ceil.desc + returns.int,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.ceil.x }
@@ -1431,7 +1431,7 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	choose: {
-        description: '[Function]' + i18n.choose.desc + "\n\n**Returns:** " + returns.one,
+        description: '[Function]' + i18n.choose.desc + returns.one,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.choose.x1 },
@@ -1442,7 +1442,7 @@ exports.globalfunctions = {
         signature: '(x1, x2, x3, ...)'
     },
 	chr: {
-        description: '[Function]' + i18n.chr.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.chr.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'val', documentation: i18n.chr.val }
@@ -1450,7 +1450,7 @@ exports.globalfunctions = {
         signature: '(val)'
     },
 	clamp: {
-        description: '[Function]' + i18n.clamp.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.clamp.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'val', documentation: i18n.clamp.val },
@@ -1460,7 +1460,7 @@ exports.globalfunctions = {
         signature: '(val, min, max)'
     },
 	clickable_add: {
-        description: '[Function]' + i18n.clickable_add.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.clickable_add.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: i18n.clickable_add.x },
@@ -1473,7 +1473,7 @@ exports.globalfunctions = {
         signature: '(x, y, spritetpe, URL, target, params)'
     },
 	clickable_add_ext: {
-        description: '[Function]' + i18n.clickable_add_ext.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.clickable_add_ext.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: i18n.clickable_add_ext.x },
@@ -1488,7 +1488,7 @@ exports.globalfunctions = {
         signature: '(x, y, spritetpe, URL, target, params, scale, alpha)'
     },
 	clickable_change: {
-        description: '[Function]' + i18n.clickable_change.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.clickable_change.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.clickable_change.index },
@@ -1499,7 +1499,7 @@ exports.globalfunctions = {
         signature: '(index, spritetpe, x, y)'
     },
 	clickable_change_ext: {
-        description: '[Function]' + i18n.clickable_change_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.clickable_change_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.clickable_change_ext.index },
@@ -1512,7 +1512,7 @@ exports.globalfunctions = {
         signature: '(index, spritetpe, x, y, scale, alpha)'
     },
 	clickable_delete: {
-        description: '[Function]' + i18n.clickable_delete.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.clickable_delete.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.clickable_delete.index }
@@ -1520,7 +1520,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	clickable_exists: {
-        description: '[Function]' + i18n.clickable_exists.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.clickable_exists.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.clickable_exists.index }
@@ -1528,7 +1528,7 @@ exports.globalfunctions = {
         signature: '(index)'
     },
 	clickable_set_style: {
-        description: '[Function]' + i18n.clickable_set_style.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.clickable_set_style.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'index', documentation: i18n.clickable_set_style.index },
@@ -1537,15 +1537,15 @@ exports.globalfunctions = {
         signature: '(index, map)'
     },
 	clipboard_get_text: {
-        description: '[Function]' + i18n.clipboard_get_text.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.clipboard_get_text.desc + returns.s,
         available: datasimple.all
     },
 	clipboard_has_text: {
-        description: '[Function]' + i18n.clipboard_has_text.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.clipboard_has_text.desc + returns.b,
         available: datasimple.all
     },
 	clipboard_set_text: {
-        description: '[Function]' + i18n.clipboard_set_text.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.clipboard_set_text.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'str', documentation: i18n.clipboard_set_text.str }
@@ -1553,33 +1553,33 @@ exports.globalfunctions = {
         signature: '(str)'
     },
 	cloud_file_save: {
-        description: '[Function]' + i18n.cloud_file_save.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.cloud_file_save.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'filename', documentation: i18n.cloud_file_save.filename },
-            { label: 'description', documentation: i18n.cloud_file_save.desc + "\n\n**Returns:** " + returns.ription }
+            { label: 'description', documentation: i18n.cloud_file_save.desc + returns.ription }
         ],
         signature: '(filename, description)'
     },
 	cloud_string_save: {
-        description: '[Function]' + i18n.cloud_string_save.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.cloud_string_save.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'data', documentation: i18n.cloud_string_save.data },
-            { label: 'description', documentation: i18n.cloud_string_save.desc + "\n\n**Returns:** " + returns.ription }
+            { label: 'description', documentation: i18n.cloud_string_save.desc + returns.ription }
         ],
         signature: '(data, description)'
     },
 	cloud_synchronise: {
-        description: '[Function]' + i18n.cloud_synchronise.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.cloud_synchronise.desc + returns.r,
         available: datasimple.gms1
     },
 	code_is_compiled: {
-        description: '[Function]' + i18n.code_is_compiled.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.code_is_compiled.desc + returns.b,
         available: datasimple.gms1
     },
 	collision_circle: {
-        description: '[Function]' + i18n.collision_circle.desc + "\n\n**Returns:** " + returns.inst,
+        description: '[Function]' + i18n.collision_circle.desc + returns.inst,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.collision_circle.x1 },
@@ -1592,7 +1592,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, radius, obj, prec, notme)'
     },
 	collision_ellipse: {
-        description: '[Function]' + i18n.collision_ellipse.desc + "\n\n**Returns:** " + returns.inst,
+        description: '[Function]' + i18n.collision_ellipse.desc + returns.inst,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.collision_ellipse.x1 },
@@ -1606,7 +1606,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_line: {
-        description: '[Function]' + i18n.collision_line.desc + "\n\n**Returns:** " + returns.inst,
+        description: '[Function]' + i18n.collision_line.desc + returns.inst,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.collision_line.x1 },
@@ -1620,7 +1620,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
 	collision_point: {
-        description: '[Function]' + i18n.collision_point.desc + "\n\n**Returns:** " + returns.inst,
+        description: '[Function]' + i18n.collision_point.desc + returns.inst,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.collision_point.x },
@@ -1632,7 +1632,7 @@ exports.globalfunctions = {
         signature: '(x, y, obj, prec, notme)'
     },
 	collision_rectangle: {
-        description: '[Function]' + i18n.collision_rectangle.desc + "\n\n**Returns:** " + returns.inst,
+        description: '[Function]' + i18n.collision_rectangle.desc + returns.inst,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.collision_rectangle.x1 },
@@ -1646,7 +1646,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, obj, prec, notme)'
     },
     color_get_blue: {
-        description: '[Function]' + i18n.color_get_blue.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.color_get_blue.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.color_get_blue.col }
@@ -1654,7 +1654,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	color_get_green: {
-        description: '[Function]' + i18n.color_get_green.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.color_get_green.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.color_get_green.col }
@@ -1662,7 +1662,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	color_get_hue: {
-        description: '[Function]' + i18n.color_get_hue.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.color_get_hue.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.color_get_hue.col }
@@ -1670,7 +1670,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	color_get_red: {
-        description: '[Function]' + i18n.color_get_red.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.color_get_red.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.color_get_red.col }
@@ -1678,7 +1678,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	color_get_saturation: {
-        description: '[Function]' + i18n.color_get_saturation.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.color_get_saturation.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.color_get_saturation.col }
@@ -1686,7 +1686,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	color_get_value: {
-        description: '[Function]' + i18n.color_get_value.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.color_get_value.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.color_get_value.col }
@@ -1694,7 +1694,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	colour_get_blue: {
-        description: '[Function]' + i18n.colour_get_blue.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.colour_get_blue.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.colour_get_blue.col }
@@ -1702,7 +1702,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	colour_get_green: {
-        description: '[Function]' + i18n.colour_get_green.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.colour_get_green.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.colour_get_green.col }
@@ -1710,7 +1710,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	colour_get_hue: {
-        description: '[Function]' + i18n.colour_get_hue.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.colour_get_hue.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.colour_get_hue.col }
@@ -1718,7 +1718,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	colour_get_red: {
-        description: '[Function]' + i18n.colour_get_red.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.colour_get_red.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.colour_get_red.col }
@@ -1726,7 +1726,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	colour_get_saturation: {
-        description: '[Function]' + i18n.colour_get_saturation.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.colour_get_saturation.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.colour_get_saturation.col }
@@ -1734,7 +1734,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	colour_get_value: {
-        description: '[Function]' + i18n.colour_get_value.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.colour_get_value.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.colour_get_value.col }
@@ -1742,7 +1742,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	cos: {
-        description: '[Function]' + i18n.cos.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.cos.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'radian_angle', documentation: i18n.cos.radian_angle }
@@ -1750,7 +1750,7 @@ exports.globalfunctions = {
         signature: '(radian_angle)'
     },
 	darccos: {
-        description: '[Function]' + i18n.darccos.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.darccos.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.darccos.x }
@@ -1758,7 +1758,7 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	darcsin: {
-        description: '[Function]' + i18n.darcsin.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.darcsin.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.darcsin.x }
@@ -1766,7 +1766,7 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	darctan: {
-        description: '[Function]' + i18n.darctan.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.darctan.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.darctan.x }
@@ -1774,7 +1774,7 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	darctan2: {
-        description: '[Function]' + i18n.darctan2.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.darctan2.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'y', documentation: i18n.darctan2.y },
@@ -1783,7 +1783,7 @@ exports.globalfunctions = {
         signature: '(y, x)'
     },
 	date_compare_date: {
-        description: '[Function]' + i18n.date_compare_date.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_compare_date.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_compare_date.date1 },
@@ -1792,7 +1792,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_compare_datetime: {
-        description: '[Function]' + i18n.date_compare_datetime.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_compare_datetime.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_compare_datetime.date1 },
@@ -1801,7 +1801,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_compare_time: {
-        description: '[Function]' + i18n.date_compare_time.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_compare_time.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_compare_time.date1 },
@@ -1810,7 +1810,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_create_datetime: {
-        description: '[Function]' + i18n.date_create_datetime.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_create_datetime.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'year', documentation: i18n.date_create_datetime.year },
@@ -1823,11 +1823,11 @@ exports.globalfunctions = {
         signature: '(year, month, day, hour, minute, second)'
     },
 	date_current_datetime: {
-        description: '[Function]' + i18n.date_current_datetime.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_current_datetime.desc + returns.r,
         available: datasimple.all
     },
 	date_datetime_string: {
-        description: '[Function]' + i18n.date_datetime_string.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.date_datetime_string.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_datetime_string.date }
@@ -1835,7 +1835,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_date_of: {
-        description: '[Function]' + i18n.date_date_of.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_date_of.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_date_of.date }
@@ -1843,7 +1843,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_date_string: {
-        description: '[Function]' + i18n.date_date_string.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.date_date_string.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_date_string.date }
@@ -1851,7 +1851,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_days_in_month: {
-        description: '[Function]' + i18n.date_days_in_month.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_days_in_month.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_days_in_month.date }
@@ -1859,7 +1859,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_days_in_year: {
-        description: '[Function]' + i18n.date_days_in_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_days_in_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_days_in_year.date }
@@ -1867,7 +1867,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_day_span: {
-        description: '[Function]' + i18n.date_day_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_day_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_day_span.date1 },
@@ -1876,7 +1876,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_get_day: {
-        description: '[Function]' + i18n.date_get_day.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_day.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_day.date }
@@ -1884,7 +1884,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_day_of_year: {
-        description: '[Function]' + i18n.date_get_day_of_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_day_of_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_day_of_year.date }
@@ -1892,7 +1892,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_hour: {
-        description: '[Function]' + i18n.date_get_hour.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_hour.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_hour.date }
@@ -1900,7 +1900,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_hour_of_year: {
-        description: '[Function]' + i18n.date_get_hour_of_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_hour_of_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_hour_of_year.date }
@@ -1908,7 +1908,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_minute: {
-        description: '[Function]' + i18n.date_get_minute.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_minute.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_minute.date }
@@ -1916,7 +1916,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_minute_of_year: {
-        description: '[Function]' + i18n.date_get_minute_of_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_minute_of_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_minute_of_year.date }
@@ -1924,7 +1924,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_month: {
-        description: '[Function]' + i18n.date_get_month.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_month.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_month.date }
@@ -1932,7 +1932,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_second: {
-        description: '[Function]' + i18n.date_get_second.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_second.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_second.date }
@@ -1940,7 +1940,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_second_of_year: {
-        description: '[Function]' + i18n.date_get_second_of_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_second_of_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_second_of_year.date }
@@ -1948,11 +1948,11 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_timezone: {
-        description: '[Function]' + i18n.date_get_timezone.desc + "\n\n**Returns:** " + returns.c,
+        description: '[Function]' + i18n.date_get_timezone.desc + returns.c,
         available: datasimple.all
     },
 	date_get_week: {
-        description: '[Function]' + i18n.date_get_week.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_week.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_week.date }
@@ -1960,7 +1960,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_weekday: {
-        description: '[Function]' + i18n.date_get_weekday.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_weekday.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_weekday.date }
@@ -1968,7 +1968,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_get_year: {
-        description: '[Function]' + i18n.date_get_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_get_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_get_year.date }
@@ -1976,7 +1976,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_hour_span: {
-        description: '[Function]' + i18n.date_hour_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_hour_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_hour_span.date1 },
@@ -1985,7 +1985,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_inc_day: {
-        description: '[Function]' + i18n.date_inc_day.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_day.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_day.date },
@@ -1994,7 +1994,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_inc_hour: {
-        description: '[Function]' + i18n.date_inc_hour.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_hour.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_hour.date },
@@ -2003,7 +2003,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_inc_minute: {
-        description: '[Function]' + i18n.date_inc_minute.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_minute.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_minute.date },
@@ -2012,7 +2012,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_inc_month: {
-        description: '[Function]' + i18n.date_inc_month.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_month.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_month.date },
@@ -2021,7 +2021,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_inc_second: {
-        description: '[Function]' + i18n.date_inc_second.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_second.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_second.date },
@@ -2030,7 +2030,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_inc_week: {
-        description: '[Function]' + i18n.date_inc_week.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_week.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_week.date },
@@ -2039,7 +2039,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_inc_year: {
-        description: '[Function]' + i18n.date_inc_year.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_inc_year.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_inc_year.date },
@@ -2048,7 +2048,7 @@ exports.globalfunctions = {
         signature: '(date, amount)'
     },
 	date_is_today: {
-        description: '[Function]' + i18n.date_is_today.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.date_is_today.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_is_today.date }
@@ -2056,7 +2056,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_leap_year: {
-        description: '[Function]' + i18n.date_leap_year.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.date_leap_year.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_leap_year.date }
@@ -2064,7 +2064,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_minute_span: {
-        description: '[Function]' + i18n.date_minute_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_minute_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_minute_span.date1 },
@@ -2073,7 +2073,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_month_span: {
-        description: '[Function]' + i18n.date_month_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_month_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_month_span.date1 },
@@ -2082,7 +2082,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_second_span: {
-        description: '[Function]' + i18n.date_second_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_second_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_second_span.date1 },
@@ -2091,7 +2091,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_set_timezone: {
-        description: '[Function]' + i18n.date_set_timezone.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.date_set_timezone.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'timezone', documentation: i18n.date_set_timezone.timezone }
@@ -2099,7 +2099,7 @@ exports.globalfunctions = {
         signature: '(timezone)'
     },
 	date_time_of: {
-        description: '[Function]' + i18n.date_time_of.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_time_of.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_time_of.date }
@@ -2107,7 +2107,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_time_string: {
-        description: '[Function]' + i18n.date_time_string.desc + "\n\n**Returns:** " + returns.s,
+        description: '[Function]' + i18n.date_time_string.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'date', documentation: i18n.date_time_string.date }
@@ -2115,7 +2115,7 @@ exports.globalfunctions = {
         signature: '(date)'
     },
 	date_valid_datetime: {
-        description: '[Function]' + i18n.date_valid_datetime.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.date_valid_datetime.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'year', documentation: i18n.date_valid_datetime.year },
@@ -2128,7 +2128,7 @@ exports.globalfunctions = {
         signature: '(year, month, day, hour, minute, second)'
     },
 	date_week_span: {
-        description: '[Function]' + i18n.date_week_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_week_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_week_span.date1 },
@@ -2137,7 +2137,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	date_year_span: {
-        description: '[Function]' + i18n.date_year_span.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.date_year_span.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'date1', documentation: i18n.date_year_span.date1 },
@@ -2146,7 +2146,7 @@ exports.globalfunctions = {
         signature: '(date1, date2)'
     },
 	dcos: {
-        description: '[Function]' + i18n.dcos.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.dcos.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'degree_angle', documentation: i18n.dcos.degree_angle }
@@ -2162,7 +2162,7 @@ exports.globalfunctions = {
         signature: '(str)'
     },
 	degtorad: {
-        description: '[Function]' + i18n.degtorad.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.degtorad.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: i18n.degtorad.x }
@@ -2170,23 +2170,23 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	device_get_tilt_x: {
-        description: '[Function]' + i18n.device_get_tilt_x.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_get_tilt_x.desc + returns.r,
         available: datasimple.gms1
     },
 	device_get_tilt_y: {
-        description: '[Function]' + i18n.device_get_tilt_y.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_get_tilt_y.desc + returns.r,
         available: datasimple.gms1
     },
 	device_get_tilt_z: {
-        description: '[Function]' + i18n.device_get_tilt_z.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_get_tilt_z.desc + returns.r,
         available: datasimple.gms1
     },
 	device_is_keypad_open: {
-        description: '[Function]' + i18n.device_is_keypad_open.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.device_is_keypad_open.desc + returns.b,
         available: datasimple.gms1
     },
 	device_mouse_check_button: {
-        description: '[Function]' + i18n.device_mouse_check_button.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.device_mouse_check_button.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_check_button.device },
@@ -2195,7 +2195,7 @@ exports.globalfunctions = {
         signature: '(device, button)'
     },
 	device_mouse_check_button_pressed: {
-        description: '[Function]' + i18n.device_mouse_check_button_pressed.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.device_mouse_check_button_pressed.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_check_button_pressed.device },
@@ -2204,7 +2204,7 @@ exports.globalfunctions = {
         signature: '(device, button)'
     },
 	device_mouse_check_button_released: {
-        description: '[Function]' + i18n.device_mouse_check_button_released.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.device_mouse_check_button_released.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_check_button_released.device },
@@ -2213,7 +2213,7 @@ exports.globalfunctions = {
         signature: '(device, button)'
     },
 	device_mouse_dbclick_enable: {
-        description: '[Function]' + i18n.device_mouse_dbclick_enable.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.device_mouse_dbclick_enable.desc + returns.b,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.device_mouse_dbclick_enable.enable }
@@ -2221,7 +2221,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	device_mouse_raw_x: {
-        description: '[Function]' + i18n.device_mouse_raw_x.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_mouse_raw_x.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_raw_x.device }
@@ -2229,7 +2229,7 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	device_mouse_raw_y: {
-        description: '[Function]' + i18n.device_mouse_raw_y.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_mouse_raw_y.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_raw_y.device }
@@ -2237,7 +2237,7 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	device_mouse_x: {
-        description: '[Function]' + i18n.device_mouse_x.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_mouse_x.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_x.device }
@@ -2245,7 +2245,7 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	device_mouse_x_to_gui: {
-        description: '[Function]' + i18n.device_mouse_x_to_gui.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_mouse_x_to_gui.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_x_to_gui.device }
@@ -2253,7 +2253,7 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	device_mouse_y: {
-        description: '[Function]' + i18n.device_mouse_y.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_mouse_y.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_y.device }
@@ -2261,7 +2261,7 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	device_mouse_y_to_gui: {
-        description: '[Function]' + i18n.device_mouse_y_to_gui.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.device_mouse_y_to_gui.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'device', documentation: i18n.device_mouse_y_to_gui.device }
@@ -2269,7 +2269,7 @@ exports.globalfunctions = {
         signature: '(device)'
     },
 	directory_create: {
-        description: '[Function]' + i18n.directory_create.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.directory_create.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'dname', documentation: i18n.directory_create.dname }
@@ -2277,7 +2277,7 @@ exports.globalfunctions = {
         signature: '(dname)'
     },
 	directory_destroy: {
-        description: '[Function]' + i18n.directory_destroy.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.directory_destroy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'dname', documentation: i18n.directory_destroy.dname }
@@ -2285,7 +2285,7 @@ exports.globalfunctions = {
         signature: '(dname)'
     },
 	directory_exists: {
-        description: '[Function]' + i18n.directory_exists.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.directory_exists.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'dname', documentation: i18n.directory_exists.dname }
@@ -2293,48 +2293,48 @@ exports.globalfunctions = {
         signature: '(dname)'
     },
 	display_get_dpi_x: {
-        description: '[Function]' + i18n.display_get_dpi_x.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_dpi_x.desc + returns.r,
         available: datasimple.gms1
     },
 	display_get_dpi_y: {
-        description: '[Function]' + i18n.display_get_dpi_y.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_dpi_y.desc + returns.r,
         available: datasimple.gms1
     },
 	display_get_gui_height: {
-        description: '[Function]' + i18n.display_get_gui_height.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_gui_height.desc + returns.r,
         available: datasimple.gms1
     },
 	display_get_gui_width: {
-        description: '[Function]' + i18n.display_get_gui_width.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_gui_width.desc + returns.r,
         available: datasimple.gms1
     },
 	
     display_get_colordepth: {
-        description: '[Function]' + i18n.display_get_colordepth.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_colordepth.desc + returns.r,
         available: datasimple.gms1
     },
 	display_get_height: {
-        description: '[Function]' + i18n.display_get_height.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_height.desc + returns.r,
         available: datasimple.gms1
     },
 	display_get_orientation: {
-        description: '[Function]' + i18n.display_get_orientation.desc + "\n\n**Returns:** " + returns.c,
+        description: '[Function]' + i18n.display_get_orientation.desc + returns.c,
         available: datasimple.gms1
     },
 	display_get_width: {
-        description: '[Function]' + i18n.display_get_width.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_get_width.desc + returns.r,
         available: datasimple.gms1
     },
 	display_mouse_get_x: {
-        description: '[Function]' + i18n.display_mouse_get_x.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_mouse_get_x.desc + returns.r,
         available: datasimple.gms1
     },
 	display_mouse_get_y: {
-        description: '[Function]' + i18n.display_mouse_get_y.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_mouse_get_y.desc + returns.r,
         available: datasimple.gms1
     },
 	display_set_gui_maximise: {
-        description: '[Function]' + i18n.display_set_gui_maximise.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.display_set_gui_maximise.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'xscale', documentation: i18n.display_set_gui_maximise.xscale },
@@ -2345,7 +2345,7 @@ exports.globalfunctions = {
         signature: '(xscale, yscale, xoffset, yoffset)'
     },
 	display_set_gui_size: {
-        description: '[Function]' + i18n.display_set_gui_size.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.display_set_gui_size.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'width', documentation: i18n.display_set_gui_size.width },
@@ -2354,7 +2354,7 @@ exports.globalfunctions = {
         signature: '(width, height)'
     },
 	display_set_ui_visibility: {
-        description: '[Function]' + i18n.display_set_ui_visibility.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.display_set_ui_visibility.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'flags', documentation: i18n.display_set_ui_visibility.flags }
@@ -2362,7 +2362,7 @@ exports.globalfunctions = {
         signature: '(flags)'
     },
 	display_mouse_set: {
-        description: '[Function]' + i18n.display_mouse_set.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.display_mouse_set.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'x', documentation: i18n.display_mouse_set.x },
@@ -2371,7 +2371,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	display_reset: {
-        description: '[Function]' + i18n.display_reset.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.display_reset.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'aa_level', documentation: i18n.display_reset.aa_level },
@@ -2380,7 +2380,7 @@ exports.globalfunctions = {
         signature: '(aa_level, vsync)'
     },
 	distance_to_object: {
-        description: '[Function]' + i18n.distance_to_object.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.distance_to_object.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: i18n.distance_to_object.obj }
@@ -2388,7 +2388,7 @@ exports.globalfunctions = {
         signature: '(obj)'
     },
 	distance_to_point: {
-        description: '[Function]' + i18n.distance_to_point.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.distance_to_point.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.distance_to_point.x },
@@ -2397,7 +2397,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	dot_product: {
-        description: '[Function]' + i18n.dot_product.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.dot_product.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.dot_product.x1 },
@@ -2408,7 +2408,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2)'
     },
 	dot_product_3d: {
-        description: '[Function]' + i18n.dot_product_3d.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.dot_product_3d.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.dot_product_3d.x1 },
@@ -2421,7 +2421,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2)'
     },
 	dot_product_3d_normalised: {
-        description: '[Function]' + i18n.dot_product_3d_normalised.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.dot_product_3d_normalised.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.dot_product_3d_normalised.x1 },
@@ -2434,7 +2434,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, z1, x2, y2, z2)'
     },
 	dot_product_normalised: {
-        description: '[Function]' + i18n.dot_product_normalised.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.dot_product_normalised.desc + returns.r,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.dot_product_normalised.x1 },
@@ -2445,7 +2445,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2)'
     },
 	draw_arrow: {
-        description: '[Function]' + i18n.draw_arrow.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_arrow.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_arrow.x1 },
@@ -2457,7 +2457,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, size)'
     },
 	draw_button: {
-        description: '[Function]' + i18n.draw_button.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_button.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_button.x1 },
@@ -2469,7 +2469,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, up)'
     },
 	draw_circle: {
-        description: '[Function]' + i18n.draw_circle.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_circle.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_circle.x },
@@ -2480,7 +2480,7 @@ exports.globalfunctions = {
         signature: '(x, y, r, outline)'
     },
 	draw_circle_color: {
-        description: '[Function]' + i18n.draw_circle_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_circle_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_circle_color.x },
@@ -2493,7 +2493,7 @@ exports.globalfunctions = {
         signature: '(x, y, r, col1, col2, outline)'
     },
 	draw_circle_colour: {
-        description: '[Function]' + i18n.draw_circle_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_circle_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_circle_colour.x },
@@ -2506,7 +2506,7 @@ exports.globalfunctions = {
         signature: '(x, y, r, col1, col2, outline)'
     },
 	draw_clear: {
-        description: '[Function]' + i18n.draw_clear.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_clear.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.draw_clear.col }
@@ -2514,7 +2514,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	draw_clear_alpha: {
-        description: '[Function]' + i18n.draw_clear_alpha.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_clear_alpha.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.draw_clear_alpha.col },
@@ -2523,7 +2523,7 @@ exports.globalfunctions = {
         signature: '(col, alpha)'
     },
 	draw_ellipse: {
-        description: '[Function]' + i18n.draw_ellipse.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_ellipse.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_ellipse.x1 },
@@ -2535,7 +2535,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_ellipse_color: {
-        description: '[Function]' + i18n.draw_ellipse_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_ellipse_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_ellipse_color.x1 },
@@ -2549,7 +2549,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_ellipse_colour: {
-        description: '[Function]' + i18n.draw_ellipse_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_ellipse_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_ellipse_colour.x1 },
@@ -2563,7 +2563,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_enable_alphablend: {
-        description: '[Function]' + i18n.draw_enable_alphablend.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_enable_alphablend.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.draw_enable_alphablend.enable }
@@ -2571,7 +2571,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	draw_enable_drawevent: {
-        description: '[Function]' + i18n.draw_enable_drawevent.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_enable_drawevent.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.draw_enable_drawevent.enable }
@@ -2579,7 +2579,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	draw_enable_swf_aa: {
-        description: '[Function]' + i18n.draw_enable_swf_aa.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_enable_swf_aa.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'enable', documentation: i18n.draw_enable_swf_aa.enable }
@@ -2591,7 +2591,7 @@ exports.globalfunctions = {
         available: datasimple.all
     },
 	draw_getpixel: {
-        description: '[Function]' + i18n.draw_getpixel.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_getpixel.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_getpixel.x },
@@ -2600,7 +2600,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	draw_getpixel_ext: {
-        description: '[Function]' + i18n.draw_getpixel_ext.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_getpixel_ext.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_getpixel_ext.x },
@@ -2609,31 +2609,31 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	draw_get_alpha: {
-        description: '[Function]' + i18n.draw_get_alpha.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_get_alpha.desc + returns.r,
         available: datasimple.all
     },
 	draw_get_alpha_test: {
-        description: '[Function]' + i18n.draw_get_alpha_test.desc + "\n\n**Returns:** " + returns.b,
+        description: '[Function]' + i18n.draw_get_alpha_test.desc + returns.b,
         available: datasimple.all
     },
 	draw_get_alpha_test_ref_value: {
-        description: '[Function]' + i18n.draw_get_alpha_test_ref_value.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_get_alpha_test_ref_value.desc + returns.r,
         available: datasimple.all
     },
 	draw_get_color: {
-        description: '[Function]' + i18n.draw_get_color.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_get_color.desc + returns.r,
         available: datasimple.all
     },
 	draw_get_colour: {
-        description: '[Function]' + i18n.draw_get_colour.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_get_colour.desc + returns.r,
         available: datasimple.all
     },
 	draw_get_swf_aa_level: {
-        description: '[Function]' + i18n.draw_get_swf_aa_level.desc + "\n\n**Returns:** " + returns.r,
+        description: '[Function]' + i18n.draw_get_swf_aa_level.desc + returns.r,
         available: datasimple.all
     },
 	draw_healthbar: {
-        description: '[Function]' + i18n.draw_healthbar.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_healthbar.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_healthbar.x1 },
@@ -2651,7 +2651,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, amount, backcol, mincol, maxcol, direction, showback, showborder)'
     },
 	draw_highscore: {
-        description: '[Function]' + i18n.draw_highscore.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_highscore.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_highscore.x1 },
@@ -2662,7 +2662,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2)'
     },
 	draw_line: {
-        description: '[Function]' + i18n.draw_line.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_line.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_line.x1 },
@@ -2673,7 +2673,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2)'
     },
 	draw_line_color: {
-        description: '[Function]' + i18n.draw_line_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_line_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_line_color.x1 },
@@ -2686,7 +2686,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2)'
     },
 	draw_line_colour: {
-        description: '[Function]' + i18n.draw_line_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_line_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_line_colour.x1 },
@@ -2699,7 +2699,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2)'
     },
 	draw_line_width: {
-        description: '[Function]' + i18n.draw_line_width.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_line_width.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_line_width.x1 },
@@ -2711,7 +2711,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, w)'
     },
 	draw_line_width_color: {
-        description: '[Function]' + i18n.draw_line_width_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_line_width_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_line_width_color.x1 },
@@ -2725,7 +2725,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, w, col1, col2)'
     },
 	draw_line_width_colour: {
-        description: '[Function]' + i18n.draw_line_width_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_line_width_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_line_width_colour.x1 },
@@ -2739,7 +2739,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, w, col1, col2)'
     },
 	draw_path: {
-        description: '[Function]' + i18n.draw_path.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_path.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'path', documentation: i18n.draw_path.path },
@@ -2750,7 +2750,7 @@ exports.globalfunctions = {
         signature: '(path, x, y, absolute)'
     },
 	draw_point: {
-        description: '[Function]' + i18n.draw_point.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_point.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_point.x },
@@ -2759,7 +2759,7 @@ exports.globalfunctions = {
         signature: '(x, y)'
     },
 	draw_point_color: {
-        description: '[Function]' + i18n.draw_point_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_point_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_point_color.x },
@@ -2769,7 +2769,7 @@ exports.globalfunctions = {
         signature: '(x, y, col1)'
     },
 	draw_point_colour: {
-        description: '[Function]' + i18n.draw_point_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_point_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_point_colour.x },
@@ -2779,7 +2779,7 @@ exports.globalfunctions = {
         signature: '(x, y, col1)'
     },
 	draw_primitive_begin: {
-        description: '[Function]' + i18n.draw_primitive_begin.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_primitive_begin.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: i18n.draw_primitive_begin.kind }
@@ -2787,7 +2787,7 @@ exports.globalfunctions = {
         signature: '(kind)'
     },
 	draw_primitive_begin_texture: {
-        description: '[Function]' + i18n.draw_primitive_begin_texture.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_primitive_begin_texture.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: i18n.draw_primitive_begin_texture.kind },
@@ -2796,11 +2796,11 @@ exports.globalfunctions = {
         signature: '(kind, texid)'
     },
 	draw_primitive_end: {
-        description: '[Function]' + i18n.draw_primitive_end.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_primitive_end.desc + returns.na,
         available: datasimple.all
     },
 	draw_rectangle: {
-        description: '[Function]' + i18n.draw_rectangle.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_rectangle.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_rectangle.x1 },
@@ -2812,7 +2812,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_rectangle_color: {
-        description: '[Function]' + i18n.draw_rectangle_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_rectangle_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_rectangle_color.x1 },
@@ -2828,7 +2828,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2, col3, col4, outline)'
     },
 	draw_rectangle_colour: {
-        description: '[Function]' + i18n.draw_rectangle_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_rectangle_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_rectangle_colour.x1 },
@@ -2844,7 +2844,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2, col3, col4, outline)'
     },
 	draw_roundrect: {
-        description: '[Function]' + i18n.draw_roundrect.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_roundrect.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_roundrect.x1 },
@@ -2856,7 +2856,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, outline)'
     },
 	draw_roundrect_color: {
-        description: '[Function]' + i18n.draw_roundrect_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_roundrect_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_roundrect_color.x1 },
@@ -2870,7 +2870,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_roundrect_color_ext: {
-        description: '[Function]' + i18n.draw_roundrect_color_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_roundrect_color_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.draw_roundrect_color_ext.x1 },
@@ -2886,7 +2886,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, radiusx, radiusy, col1, col2, outline)'
     },
 	draw_roundrect_colour: {
-        description: '[Function]' + i18n.draw_roundrect_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_roundrect_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x1', documentation: i18n.draw_roundrect_colour.x1 },
@@ -2900,7 +2900,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, col1, col2, outline)'
     },
 	draw_roundrect_colour_ext: {
-        description: '[Function]' + i18n.draw_roundrect_colour_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_roundrect_colour_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.draw_roundrect_colour_ext.x1 },
@@ -2916,7 +2916,7 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, radiusx, radiusy, col1, col2, outline)'
     },
 	draw_roundrect_ext: {
-        description: '[Function]' + i18n.draw_roundrect_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_roundrect_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'x1', documentation: i18n.draw_roundrect_ext.x1 },
@@ -2930,11 +2930,11 @@ exports.globalfunctions = {
         signature: '(x1, y1, x2, y2, radiusx, radiusy, outline)'
     },
 	draw_self: {
-        description: '[Function]' + i18n.draw_self.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_self.desc + returns.na,
         available: datasimple.all
     },
 	draw_set_alpha: {
-        description: '[Function]' + i18n.draw_set_alpha.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_alpha.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'alpha', documentation: i18n.draw_set_alpha.alpha }
@@ -2942,7 +2942,7 @@ exports.globalfunctions = {
         signature: '(alpha)'
     },
 	draw_set_alpha_test: {
-        description: '[Function]' + i18n.draw_set_alpha_test.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_alpha_test.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'enable', documentation: i18n.draw_set_alpha_test.enable }
@@ -2950,7 +2950,7 @@ exports.globalfunctions = {
         signature: '(enable)'
     },
 	draw_set_alpha_test_ref_value: {
-        description: '[Function]' + i18n.draw_set_alpha_test_ref_value.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_alpha_test_ref_value.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'value', documentation: i18n.draw_set_alpha_test_ref_value.value }
@@ -2958,7 +2958,7 @@ exports.globalfunctions = {
         signature: '(value)'
     },
 	draw_set_blend_mode: {
-        description: '[Function]' + i18n.draw_set_blend_mode.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_blend_mode.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'mode', documentation: i18n.draw_set_blend_mode.mode }
@@ -2966,7 +2966,7 @@ exports.globalfunctions = {
         signature: '(mode)'
     },
 	draw_set_blend_mode_ext: {
-        description: '[Function]' + i18n.draw_set_blend_mode_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_blend_mode_ext.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'src', documentation: i18n.draw_set_blend_mode_ext.src },
@@ -2975,7 +2975,7 @@ exports.globalfunctions = {
         signature: '(src, dest)'
     },
 	draw_set_circle_precision: {
-        description: '[Function]' + i18n.draw_set_circle_precision.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_circle_precision.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'precision', documentation: i18n.draw_set_circle_precision.precision }
@@ -2983,7 +2983,7 @@ exports.globalfunctions = {
         signature: '(precision)'
     },
 	draw_set_color: {
-        description: '[Function]' + i18n.draw_set_color.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.draw_set_color.col }
@@ -2991,7 +2991,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	draw_set_color_write_enable: {
-        description: '[Function]' + i18n.draw_set_color_write_enable.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_color_write_enable.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'red', documentation: i18n.draw_set_color_write_enable.red },
@@ -3002,7 +3002,7 @@ exports.globalfunctions = {
         signature: '(red, green, blue, alpha)'
     },
 	draw_set_colour: {
-        description: '[Function]' + i18n.draw_set_colour.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'col', documentation: i18n.draw_set_colour.col }
@@ -3010,7 +3010,7 @@ exports.globalfunctions = {
         signature: '(col)'
     },
 	draw_set_colour_write_enable: {
-        description: '[Function]' + i18n.draw_set_colour_write_enable.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_colour_write_enable.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'red', documentation: i18n.draw_set_colour_write_enable.red },
@@ -3021,7 +3021,7 @@ exports.globalfunctions = {
         signature: '(red, green, blue, alpha)'
     },
 	draw_set_font: {
-        description: '[Function]' + i18n.draw_set_font.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_font.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'font', documentation: i18n.draw_set_font.font }
@@ -3029,7 +3029,7 @@ exports.globalfunctions = {
         signature: '(font)'
     },
 	draw_set_halign: {
-        description: '[Function]' + i18n.draw_set_halign.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_halign.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'halign', documentation: i18n.draw_set_halign.halign }
@@ -3037,7 +3037,7 @@ exports.globalfunctions = {
         signature: '(halign)'
     },
 	draw_set_swf_aa_level: {
-        description: '[Function]' + i18n.draw_set_swf_aa_level.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_swf_aa_level.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'aa_level', documentation: i18n.draw_set_swf_aa_level.aa_level }
@@ -3045,7 +3045,7 @@ exports.globalfunctions = {
         signature: '(aa_level)'
     },
 	draw_set_valign: {
-        description: '[Function]' + i18n.draw_set_valign.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_set_valign.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'valign', documentation: i18n.draw_set_valign.valign }
@@ -3053,7 +3053,7 @@ exports.globalfunctions = {
         signature: '(valign)'
     },
 	draw_skeleton: {
-        description: '[Function]' + i18n.draw_skeleton.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_skeleton.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_skeleton.sprite },
@@ -3071,7 +3071,7 @@ exports.globalfunctions = {
         signature: '(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_skeleton_collision: {
-        description: '[Function]' + i18n.draw_skeleton_collision.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_skeleton_collision.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_skeleton_collision.sprite },
@@ -3087,7 +3087,7 @@ exports.globalfunctions = {
         signature: '(sprite, animname, frame, x, y, xscale, yscale, rot, colour)'
     },
 	draw_skeleton_instance: {
-        description: '[Function]' + i18n.draw_skeleton_instance.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_skeleton_instance.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'instance', documentation: i18n.draw_skeleton_instance.instance },
@@ -3105,7 +3105,7 @@ exports.globalfunctions = {
         signature: '(instance, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_skeleton_time: {
-        description: '[Function]' + i18n.draw_skeleton_time.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_skeleton_time.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_skeleton_time.sprite },
@@ -3122,7 +3122,7 @@ exports.globalfunctions = {
         signature: '(sprite, animname, skinname, time, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_sprite: {
-        description: '[Function]' + i18n.draw_sprite.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite.sprite },
@@ -3133,7 +3133,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x, y)'
     },
 	draw_sprite_ext: {
-        description: '[Function]' + i18n.draw_sprite_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_ext.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_ext.sprite },
@@ -3149,7 +3149,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_sprite_general: {
-        description: '[Function]' + i18n.draw_sprite_general.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_general.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_general.sprite },
@@ -3172,7 +3172,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
 	draw_sprite_part: {
-        description: '[Function]' + i18n.draw_sprite_part.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_part.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_part.sprite },
@@ -3187,7 +3187,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, left, top, width, height, x, y)'
     },
 	draw_sprite_part_ext: {
-        description: '[Function]' + i18n.draw_sprite_part_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_part_ext.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_part_ext.sprite },
@@ -3206,7 +3206,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_sprite_pos: {
-        description: '[Function]' + i18n.draw_sprite_pos.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_pos.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_pos.sprite },
@@ -3224,7 +3224,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x1, y1, x2, y2, x3, y3, x4, y4, alpha)'
     },
 	draw_sprite_stretched: {
-        description: '[Function]' + i18n.draw_sprite_stretched.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_stretched.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_stretched.sprite },
@@ -3237,7 +3237,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x, y, w, h)'
     },
 	draw_sprite_stretched_ext: {
-        description: '[Function]' + i18n.draw_sprite_stretched_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_stretched_ext.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_stretched_ext.sprite },
@@ -3252,7 +3252,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x, y, w, h, colour, alpha)'
     },
 	draw_sprite_tiled: {
-        description: '[Function]' + i18n.draw_sprite_tiled.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_tiled.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_tiled.sprite },
@@ -3263,7 +3263,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x, y)'
     },
 	draw_sprite_tiled_ext: {
-        description: '[Function]' + i18n.draw_sprite_tiled_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_sprite_tiled_ext.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'sprite', documentation: i18n.draw_sprite_tiled_ext.sprite },
@@ -3278,7 +3278,7 @@ exports.globalfunctions = {
         signature: '(sprite, subimg, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_surface: {
-        description: '[Function]' + i18n.draw_surface.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_surface.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface.id },
@@ -3288,7 +3288,7 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
 	draw_surface_ext: {
-        description: '[Function]' + i18n.draw_surface_ext.desc + "\n\n**Returns:** " + returns.na,
+        description: '[Function]' + i18n.draw_surface_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_ext.id },
@@ -3303,7 +3303,7 @@ exports.globalfunctions = {
         signature: '(id, x, y, xscale, yscale, rot, colour, alpha)'
     },
 	draw_surface_general: {
-        description: '[Function]' + i18n.draw_surface_general.desc,
+        description: '[Function]' + i18n.draw_surface_general.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_general.id },
@@ -3325,7 +3325,7 @@ exports.globalfunctions = {
         signature: '(id, left, top, width, height, x, y, xscale, yscale, rot, c1, c2, c3, c4, alpha)'
     },
 	draw_surface_part: {
-        description: '[Function]' + i18n.draw_surface_part.desc,
+        description: '[Function]' + i18n.draw_surface_part.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_part.id },
@@ -3339,7 +3339,7 @@ exports.globalfunctions = {
         signature: '(id, left, top, width, height, x, y)'
     },
 	draw_surface_part_ext: {
-        description: '[Function]' + i18n.draw_surface_part_ext.desc,
+        description: '[Function]' + i18n.draw_surface_part_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_part_ext.id },
@@ -3357,7 +3357,7 @@ exports.globalfunctions = {
         signature: '(id, left, top, width, height, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_surface_stretched: {
-        description: '[Function]' + i18n.draw_surface_stretched.desc,
+        description: '[Function]' + i18n.draw_surface_stretched.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_stretched.id },
@@ -3369,7 +3369,7 @@ exports.globalfunctions = {
         signature: '(id, x, y, w, h)'
     },
 	draw_surface_stretched_ext: {
-        description: '[Function]' + i18n.draw_surface_stretched_ext.desc,
+        description: '[Function]' + i18n.draw_surface_stretched_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_stretched_ext.id },
@@ -3383,7 +3383,7 @@ exports.globalfunctions = {
         signature: '(id, x, y, w, h, colour, alpha)'
     },
 	draw_surface_tiled: {
-        description: '[Function]' + i18n.draw_surface_tiled.desc,
+        description: '[Function]' + i18n.draw_surface_tiled.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_tiled.id },
@@ -3393,7 +3393,7 @@ exports.globalfunctions = {
         signature: '(id, x, y)'
     },
 	draw_surface_tiled_ext: {
-        description: '[Function]' + i18n.draw_surface_tiled_ext.desc,
+        description: '[Function]' + i18n.draw_surface_tiled_ext.desc + returns.na,
         available: datasimple.gms1,
         parameters: [
             { label: 'id', documentation: i18n.draw_surface_tiled_ext.id },
@@ -3407,7 +3407,7 @@ exports.globalfunctions = {
         signature: '(id, x, y, xscale, yscale, colour, alpha)'
     },
 	draw_text: {
-        description: '[Function]' + i18n.draw_text.desc,
+        description: '[Function]' + i18n.draw_text.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text.x },
@@ -3417,11 +3417,11 @@ exports.globalfunctions = {
         signature: '(x, y, string)'
     },
 	draw_texture_flush: {
-        description: '[Function]' + i18n.draw_texture_flush.desc,
+        description: '[Function]' + i18n.draw_texture_flush.desc + returns.na,
         available: datasimple.all
     },
 	draw_text_color: {
-        description: '[Function]' + i18n.draw_text_color.desc,
+        description: '[Function]' + i18n.draw_text_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_color.x },
@@ -3436,7 +3436,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, c1, c2, c3, c4, alpha)'
     },
 	draw_text_colour: {
-        description: '[Function]' + i18n.draw_text_colour.desc,
+        description: '[Function]' + i18n.draw_text_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_colour.x },
@@ -3451,7 +3451,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext: {
-        description: '[Function]' + i18n.draw_text_ext.desc,
+        description: '[Function]' + i18n.draw_text_ext.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_ext.x },
@@ -3463,7 +3463,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, sep, w)'
     },
 	draw_text_ext_color: {
-        description: '[Function]' + i18n.draw_text_ext_color.desc,
+        description: '[Function]' + i18n.draw_text_ext_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_ext_color.x },
@@ -3480,7 +3480,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, sep, w, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_colour: {
-        description: '[Function]' + i18n.draw_text_ext_colour.desc,
+        description: '[Function]' + i18n.draw_text_ext_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_ext_colour.x },
@@ -3497,7 +3497,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, sep, w, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_transformed: {
-        description: '[Function]' + i18n.draw_text_ext_transformed.desc,
+        description: '[Function]' + i18n.draw_text_ext_transformed.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_ext_transformed.x },
@@ -3512,7 +3512,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, sep, w, xscale, yscale, angle)'
     },
 	draw_text_ext_transformed_color: {
-        description: '[Function]' + i18n.draw_text_ext_transformed_color.desc,
+        description: '[Function]' + i18n.draw_text_ext_transformed_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_ext_transformed_color.x },
@@ -3532,7 +3532,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_ext_transformed_colour: {
-        description: '[Function]' + i18n.draw_text_ext_transformed_colour.desc,
+        description: '[Function]' + i18n.draw_text_ext_transformed_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_ext_transformed_colour.x },
@@ -3552,7 +3552,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, sep, w, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_transformed: {
-        description: '[Function]' + i18n.draw_text_transformed.desc,
+        description: '[Function]' + i18n.draw_text_transformed.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_transformed.x },
@@ -3565,7 +3565,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, xscale, yscale, angle)'
     },
 	draw_text_transformed_color: {
-        description: '[Function]' + i18n.draw_text_transformed_color.desc,
+        description: '[Function]' + i18n.draw_text_transformed_color.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_transformed_color.x },
@@ -3583,7 +3583,7 @@ exports.globalfunctions = {
         signature: '(x, y, string, xscale, yscale, angle, c1, c2, c3, c4, alpha)'
     },
 	draw_text_transformed_colour: {
-        description: '[Function]' + i18n.draw_text_transformed_colour.desc,
+        description: '[Function]' + i18n.draw_text_transformed_colour.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.draw_text_transformed_colour.x },
