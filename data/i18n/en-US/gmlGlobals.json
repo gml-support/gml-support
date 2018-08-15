@@ -2150,125 +2150,125 @@
         "alpha": "The alpha for the text."
     },
     "draw_text_transformed": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "string": "",
-        "xscale": "",
-        "yscale": "",
-        "angle": ""
+        "desc": "This function will draw text in a similar way to **draw_text** only now you can choose to scale the text along the horizontal or vertical axis (effectively stretching or shrinking it) and also have GameMaker: Studio draw it at an angle (where 0 is normal and every degree over 0 rotates the text anti-clockwise).",
+        "x": "The x coordinate of the drawn string.",
+        "y": "The y coordinate of the drawn string.",
+        "string": "The string to draw.",
+        "xscale": "The horizontal scale (default 1).",
+        "yscale": "The vertical scale(default 1).",
+        "angle": "The angle of the text."
     },
     "draw_text_transformed_color": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "string": "",
-        "xscale": "",
-        "yscale": "",
-        "angle": "",
-        "c1": "",
-        "c2": "",
-        "c3": "",
-        "c4": "",
-        "alpha": ""
+        "desc": "This function is a combination of the base **draw_text** function with the **draw_text_transformed** and **draw_text_color** functions, permitting you to scale and rotate text as well as color it with a gradient fill and change its alpha value, ignoring the base alpha and color settings for drawing.\n\nNOTE: Gradient blending is not available for the HTML5 target unless WebGL is enabled, although you can still set the blending colors and it will blend the font with the first given color. However all blending in this way creates a duplicate font which is then stored in the cache and used when required, which is far from optimal and if you use multiple color changes it will slow down your games performance. You can set the font cache size to try and limit this should it be necessary using the function **font_set_cache_size**.",
+        "x": "The x coordinate of the drawn string.",
+        "y": "The y coordinate of the drawn string.",
+        "string": "The string to draw.",
+        "xscale": "The horizontal scale.",
+        "yscale": "The vertical scale.",
+        "angle": "The angle of the text.",
+        "c1": "The color for the top left of the drawn text.",
+        "c2": "The color for the top right of the drawn text.",
+        "c3": "The color for the bottom right of the drawn text.",
+        "c4": "The color for the bottom left of the drawn text.",
+        "alpha": "The alpha for the text."
     },
     "draw_text_transformed_colour": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "string": "",
-        "xscale": "",
-        "yscale": "",
-        "angle": "",
-        "c1": "",
-        "c2": "",
-        "c3": "",
-        "c4": "",
-        "alpha": ""
+        "desc": "This function is a combination of the base **draw_text** function with the **draw_text_transformed** and **draw_text_colour** functions, permitting you to scale and rotate text as well as colour it with a gradient fill and change its alpha value, ignoring the base alpha and colour settings for drawing.\n\nNOTE: Gradient blending is not available for the HTML5 target unless WebGL is enabled, although you can still set the blending colours and it will blend the font with the first given colour. However all blending in this way creates a duplicate font which is then stored in the cache and used when required, which is far from optimal and if you use multiple colour changes it will slow down your games performance. You can set the font cache size to try and limit this should it be necessary using the function **font_set_cache_size**.",
+        "x": "The x coordinate of the drawn string.",
+        "y": "The y coordinate of the drawn string.",
+        "string": "The string to draw.",
+        "xscale": "The horizontal scale.",
+        "yscale": "The vertical scale.",
+        "angle": "The angle of the text.",
+        "c1": "The colour for the top left of the drawn text.",
+        "c2": "The colour for the top right of the drawn text.",
+        "c3": "The colour for the bottom right of the drawn text.",
+        "c4": "The colour for the bottom left of the drawn text.",
+        "alpha": "The alpha for the text."
     },
     "draw_triangle": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "x3": "",
-        "y3": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a triangle or a filled triangle.",
+        "x1": "The x coordinate of the triangle's first corner.",
+        "y1": "The y coordinate of the triangle's first corner.",
+        "x2": "The x coordinate of the triangle's second corner.",
+        "y2": "The y coordinate of the triangle's second corner.",
+        "x3": "The x coordinate of the triangle's third corner.",
+        "y3": "The y coordinate of the triangle's third corner.",
+        "outline": "Whether the triangle is drawn filled (false) or as a one pixel wide outline (true)."
     },
     "draw_triangle_color": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "x3": "",
-        "y3": "",
-        "col1": "",
-        "col2": "",
-        "col3": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a triangle or a filled triangle. If it is filled you can define the individual colors for each corner point and if these colors are not the same, you will get a gradient effect from one to the other (the color settings will over-ride the base color set with the function **draw_set_color**).",
+        "x1": "The x coordinate of the triangle's first corner.",
+        "y1": "The y coordinate of the triangle's first corner.",
+        "x2": "The x coordinate of the triangle's second corner.",
+        "y2": "The y coordinate of the triangle's second corner.",
+        "x3": "The x coordinate of the triangle's third corner.",
+        "y3": "The y coordinate of the triangle's third corner.",
+        "col1": "The color of the first corner.",
+        "col2": "The color of the second corner.",
+        "col3": "The color of the third corner.",
+        "outline": "Whether the triangle is an outline (true) or filled in (false)."
     },
     "draw_triangle_colour": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "x3": "",
-        "y3": "",
-        "col1": "",
-        "col2": "",
-        "col3": "",
-        "outline": ""
+        "desc": "With this function you can draw either an outline of a triangle or a filled triangle. If it is filled you can define the individual colours for each corner point and if these colours are not the same, you will get a gradient effect from one to the other (the colour settings will over-ride the base colour set with the function **draw_set_colour**).",
+        "x1": "The x coordinate of the triangle's first corner.",
+        "y1": "The y coordinate of the triangle's first corner.",
+        "x2": "The x coordinate of the triangle's second corner.",
+        "y2": "The y coordinate of the triangle's second corner.",
+        "x3": "The x coordinate of the triangle's third corner.",
+        "y3": "The y coordinate of the triangle's third corner.",
+        "col1": "The colour of the first corner.",
+        "col2": "The colour of the second corner.",
+        "col3": "The colour of the third corner.",
+        "outline": "Whether the triangle is an outline (true) or filled in (false)."
     },
     "draw_vertex": {
-        "desc": "",
-        "x": "",
-        "y": ""
+        "desc": "This function defines the position of a vertex for a primitive. The final look of the primitive will depend on the primitive type chosen to draw and the order with which you add the vertexes to it. See **draw_primitive_begin** for more information. To end and draw the primitive you must call **draw_primitive_end**.",
+        "x": "The x coordinate of the vertex.",
+        "y": "The y coordinate of the vertex."
     },
     "draw_vertex_color": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "col": "",
-        "alpha": ""
+        "desc": "This function defines the position of a vertex for a primitive, with its own color and alpha setting. The final look of the primitive will depend on the primitive type chosen to draw and the order with which you add the vertexes to it (see **draw_primitive_begin** for more information) and the vertexes with different colors and alphas will blend smoothly from one to the other. To end and draw the primitive you must call **draw_primitive_end**.",
+        "x": "The x coordinate of the vertex.",
+        "y": "The y coordinate of the vertex.",
+        "col": "The color to draw this vertex with.",
+        "alpha": "The alpha to draw this vertex with (0-1)."
     },
     "draw_vertex_colour": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "col": "",
-        "alpha": ""
+        "desc": "This function defines the position of a vertex for a primitive, with its own colour and alpha setting. The final look of the primitive will depend on the primitive type chosen to draw and the order with which you add the vertexes to it (see **draw_primitive_begin** for more information) and the vertexes with different colours and alphas will blend smoothly from one to the other. To end and draw the primitive you must call **draw_primitive_end**.",
+        "x": "The x coordinate of the vertex.",
+        "y": "The y coordinate of the vertex.",
+        "col": "The colour to draw this vertex with.",
+        "alpha": "The alpha to draw this vertex with (0-1)."
     },
     "draw_vertex_texture": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "xtex": "",
-        "ytex": ""
+        "desc": "This function defines the position of a textured vertex for a primitive. The final look of the primitive will depend on the primitive type chosen to draw (See **draw_primitive_begin** for more information), the order with which you add the vertexes to it and the position of the start point you set for the texture. To end and draw the primitive you must call **draw_primitive_end**.",
+        "x": "The x coordinate of the vertex.",
+        "y": "The y coordinate of the vertex.",
+        "xtex": "The width of the texture sample to use.",
+        "ytex": "The height of the texture sample to use."
     },
     "draw_vertex_texture_color": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "xtex": "",
-        "ytex": "",
-        "col": "",
-        "alpha": ""
+        "desc": "This function defines the position of a textured vertex for a primitive. The final look of the primitive will depend on the primitive type chosen to draw (See **draw_primitive_begin** for more information), the order with which you add the vertices to it, the position of the start and end points that you give for the texture sample and the color and alpha values that you have set. To maintain the texture appearance while changing only the alpha, a value of -1 (or *c_white*) may be used for the color argument. To end and draw the primitive you must call **draw_primitive_end**.\n\nNOTE: For a texture to repeat it must be a power of two in size, ie: 32x32, 128x128, etc...",
+        "x": "The x coordinate of the vertex.",
+        "y": "The y coordinate of the vertex.",
+        "xtex": "The x coordinate within the texture.",
+        "ytex": "The y coordinate within the texture.",
+        "col": "The color to blend with the texture at this vertex (-1 or c_white for no blending).",
+        "alpha": "The alpha to draw this vertex with (0-1)."
     },
     "draw_vertex_texture_colour": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "xtex": "",
-        "ytex": "",
-        "col": "",
-        "alpha": ""
+        "desc": "This function defines the position of a textured vertex for a primitive. The final look of the primitive will depend on the primitive type chosen to draw (See **draw_primitive_begin** for more information), the order with which you add the vertices to it, the position of the start and end points that you give for the texture sample and the colour and alpha values that you have set. To maintain the texture appearance while changing only the alpha, a value of -1 (or *c_white*) may be used for the colour argument. To end and draw the primitive you must call **draw_primitive_end**.\n\nNOTE: For a texture to repeat it must be a power of two in size, ie: 32x32, 128x128, etc...",
+        "x": "The x coordinate of the vertex.",
+        "y": "The y coordinate of the vertex.",
+        "xtex": "The x coordinate within the texture.",
+        "ytex": "The y coordinate within the texture.",
+        "col": "The colour to blend with the texture at this vertex (-1 or c_white for no blending).",
+        "alpha": "The alpha to draw this vertex with (0-1)."
     },
     "dsin": {
-        "desc": "",
-        "degree_angle": ""
+        "desc": "In a right angled triangle dsin(val) = Opposite / Hypotenuse where \"val\" is one of the three angles.",
+        "degree_angle": "The angle (in degrees) to return the sine of."
     },
     "ds_exists": {
         "desc": "",
@@ -2934,8 +2934,8 @@
         "id": ""
     },
     "dtan": {
-        "desc": "",
-        "degree_angle": ""
+        "desc": "In a right angled triangle dtan(val) = Opposite / Adjacent where \"val\" is one of the three angles.\n\nNOTE: A vast number of values (90, or -90 for example) will error with this function due to their returning infinity, a graph representation of this would produce asymptotes at these values.",
+        "degree_angle": "The angle (in degrees) to return the tangent of."
     },
     "effect_clear": {
         "desc": ""
