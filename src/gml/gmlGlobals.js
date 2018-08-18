@@ -3727,39 +3727,39 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.ds_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_exists.id },
+            { label: 'index', documentation: i18n.ds_exists.index },
             { label: 'type', documentation: i18n.ds_exists.type }
         ],
-        signature: '(id, type)'
+        signature: '(index, type)'
     },
 	ds_grid_add: {
         description: '[Function]' + i18n.ds_grid_add.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_add.id },
+            { label: 'index', documentation: i18n.ds_grid_add.index },
             { label: 'x', documentation: i18n.ds_grid_add.x },
             { label: 'y', documentation: i18n.ds_grid_add.y },
             { label: 'val', documentation: i18n.ds_grid_add.val }
         ],
-        signature: '(id, x, y, val)'
+        signature: '(index, x, y, val)'
     },
 	ds_grid_add_disk: {
         description: '[Function]' + i18n.ds_grid_add_disk.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_add_disk.id },
+            { label: 'index', documentation: i18n.ds_grid_add_disk.index },
             { label: 'xm', documentation: i18n.ds_grid_add_disk.xm },
             { label: 'ym', documentation: i18n.ds_grid_add_disk.ym },
             { label: 'r', documentation: i18n.ds_grid_add_disk.r },
             { label: 'val', documentation: i18n.ds_grid_add_disk.val }
         ],
-        signature: '(id, xm, ym, r, val)'
+        signature: '(index, xm, ym, r, val)'
     },
 	ds_grid_add_grid_region: {
         description: '[Function]' + i18n.ds_grid_add_grid_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_add_grid_region.id },
+            { label: 'index', documentation: i18n.ds_grid_add_grid_region.index },
             { label: 'source', documentation: i18n.ds_grid_add_grid_region.source },
             { label: 'x1', documentation: i18n.ds_grid_add_grid_region.x1 },
             { label: 'y1', documentation: i18n.ds_grid_add_grid_region.y1 },
@@ -3768,38 +3768,38 @@ exports.globalfunctions = {
             { label: 'xpos', documentation: i18n.ds_grid_add_grid_region.xpos },
             { label: 'ypos', documentation: i18n.ds_grid_add_grid_region.ypos }
         ],
-        signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
+        signature: '(index, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_add_region: {
         description: '[Function]' + i18n.ds_grid_add_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_add_region.id },
+            { label: 'index', documentation: i18n.ds_grid_add_region.index },
             { label: 'x1', documentation: i18n.ds_grid_add_region.x1 },
             { label: 'y1', documentation: i18n.ds_grid_add_region.y1 },
             { label: 'x2', documentation: i18n.ds_grid_add_region.x2 },
             { label: 'y2', documentation: i18n.ds_grid_add_region.y2 },
             { label: 'val', documentation: i18n.ds_grid_add_region.val }
         ],
-        signature: '(id, x1, y1, x2, y2, val)'
+        signature: '(index, x1, y1, x2, y2, val)'
     },
 	ds_grid_clear: {
         description: '[Function]' + i18n.ds_grid_clear.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_clear.id },
+            { label: 'index', documentation: i18n.ds_grid_clear.index },
             { label: 'val', documentation: i18n.ds_grid_clear.val }
         ],
-        signature: '(id, val)'
+        signature: '(index, val)'
     },
 	ds_grid_copy: {
         description: '[Function]' + i18n.ds_grid_copy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_copy.id },
+            { label: 'index', documentation: i18n.ds_grid_copy.index },
             { label: 'source', documentation: i18n.ds_grid_copy.source }
         ],
-        signature: '(id, source)'
+        signature: '(index, source)'
     },
 	ds_grid_create: {
         description: '[Function]' + i18n.ds_grid_create.desc,
@@ -3814,148 +3814,148 @@ exports.globalfunctions = {
         description: '[Function]' + i18n.ds_grid_destroy.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_destroy.id }
+            { label: 'index', documentation: i18n.ds_grid_destroy.index }
         ],
-        signature: '(id)'
+        signature: '(index)'
     },
 	ds_grid_get: {
         description: '[Function]' + i18n.ds_grid_get.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get.id },
+            { label: 'index', documentation: i18n.ds_grid_get.index },
             { label: 'x', documentation: i18n.ds_grid_get.x },
             { label: 'y', documentation: i18n.ds_grid_get.y }
         ],
-        signature: '(id, x, y)'
+        signature: '(index, x, y)'
     },
 	ds_grid_get_disk_max: {
         description: '[Function]' + i18n.ds_grid_get_disk_max.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_disk_max.id },
+            { label: 'index', documentation: i18n.ds_grid_get_disk_max.index },
             { label: 'xm', documentation: i18n.ds_grid_get_disk_max.xm },
             { label: 'ym', documentation: i18n.ds_grid_get_disk_max.ym },
             { label: 'r', documentation: i18n.ds_grid_get_disk_max.r }
         ],
-        signature: '(id, xm, ym, r)'
+        signature: '(index, xm, ym, r)'
     },
 	ds_grid_get_disk_mean: {
         description: '[Function]' + i18n.ds_grid_get_disk_mean.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_disk_mean.id },
+            { label: 'index', documentation: i18n.ds_grid_get_disk_mean.index },
             { label: 'xm', documentation: i18n.ds_grid_get_disk_mean.xm },
             { label: 'ym', documentation: i18n.ds_grid_get_disk_mean.ym },
             { label: 'r', documentation: i18n.ds_grid_get_disk_mean.r }
         ],
-        signature: '(id, xm, ym, r)'
+        signature: '(index, xm, ym, r)'
     },
 	ds_grid_get_disk_min: {
         description: '[Function]' + i18n.ds_grid_get_disk_min.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_disk_min.id },
+            { label: 'index', documentation: i18n.ds_grid_get_disk_min.index },
             { label: 'xm', documentation: i18n.ds_grid_get_disk_min.xm },
             { label: 'ym', documentation: i18n.ds_grid_get_disk_min.ym },
             { label: 'r', documentation: i18n.ds_grid_get_disk_min.r }
         ],
-        signature: '(id, xm, ym, r)'
+        signature: '(index, xm, ym, r)'
     },
 	ds_grid_get_disk_sum: {
         description: '[Function]' + i18n.ds_grid_get_disk_sum.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_disk_sum.id },
+            { label: 'index', documentation: i18n.ds_grid_get_disk_sum.index },
             { label: 'xm', documentation: i18n.ds_grid_get_disk_sum.xm },
             { label: 'ym', documentation: i18n.ds_grid_get_disk_sum.ym },
             { label: 'r', documentation: i18n.ds_grid_get_disk_sum.r }
         ],
-        signature: '(id, xm, ym, r)'
+        signature: '(index, xm, ym, r)'
     },
 	ds_grid_get_max: {
         description: '[Function]' + i18n.ds_grid_get_max.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_max.id },
+            { label: 'index', documentation: i18n.ds_grid_get_max.index },
             { label: 'x1', documentation: i18n.ds_grid_get_max.x1 },
             { label: 'y1', documentation: i18n.ds_grid_get_max.y1 },
             { label: 'x2', documentation: i18n.ds_grid_get_max.x2 },
             { label: 'y2', documentation: i18n.ds_grid_get_max.y2 }
         ],
-        signature: '(id, x1, y1, x2, y2)'
+        signature: '(index, x1, y1, x2, y2)'
     },
 	ds_grid_get_mean: {
         description: '[Function]' + i18n.ds_grid_get_mean.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_mean.id },
+            { label: 'index', documentation: i18n.ds_grid_get_mean.index },
             { label: 'x1', documentation: i18n.ds_grid_get_mean.x1 },
             { label: 'y1', documentation: i18n.ds_grid_get_mean.y1 },
             { label: 'x2', documentation: i18n.ds_grid_get_mean.x2 },
             { label: 'y2', documentation: i18n.ds_grid_get_mean.y2 }
         ],
-        signature: '(id, x1, y1, x2, y2)'
+        signature: '(index, x1, y1, x2, y2)'
     },
 	ds_grid_get_min: {
         description: '[Function]' + i18n.ds_grid_get_min.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_min.id },
+            { label: 'index', documentation: i18n.ds_grid_get_min.index },
             { label: 'x1', documentation: i18n.ds_grid_get_min.x1 },
             { label: 'y1', documentation: i18n.ds_grid_get_min.y1 },
             { label: 'x2', documentation: i18n.ds_grid_get_min.x2 },
             { label: 'y2', documentation: i18n.ds_grid_get_min.y2 }
         ],
-        signature: '(id, x1, y1, x2, y2)'
+        signature: '(index, x1, y1, x2, y2)'
     },
 	ds_grid_get_sum: {
         description: '[Function]' + i18n.ds_grid_get_sum.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_get_sum.id },
+            { label: 'index', documentation: i18n.ds_grid_get_sum.index },
             { label: 'x1', documentation: i18n.ds_grid_get_sum.x1 },
             { label: 'y1', documentation: i18n.ds_grid_get_sum.y1 },
             { label: 'x2', documentation: i18n.ds_grid_get_sum.x2 },
             { label: 'y2', documentation: i18n.ds_grid_get_sum.y2 }
         ],
-        signature: '(id, x1, y1, x2, y2)'
+        signature: '(index, x1, y1, x2, y2)'
     },
 	ds_grid_height: {
         description: '[Function]' + i18n.ds_grid_height.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_height.id }
+            { label: 'index', documentation: i18n.ds_grid_height.index }
         ],
-        signature: '(id)'
+        signature: '(index)'
     },
 	ds_grid_multiply: {
         description: '[Function]' + i18n.ds_grid_multiply.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_multiply.id },
+            { label: 'index', documentation: i18n.ds_grid_multiply.index },
             { label: 'x', documentation: i18n.ds_grid_multiply.x },
             { label: 'y', documentation: i18n.ds_grid_multiply.y },
             { label: 'val', documentation: i18n.ds_grid_multiply.val }
         ],
-        signature: '(id, x, y, val)'
+        signature: '(index, x, y, val)'
     },
 	ds_grid_multiply_disk: {
         description: '[Function]' + i18n.ds_grid_multiply_disk.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_multiply_disk.id },
+            { label: 'index', documentation: i18n.ds_grid_multiply_disk.index },
             { label: 'xm', documentation: i18n.ds_grid_multiply_disk.xm },
             { label: 'ym', documentation: i18n.ds_grid_multiply_disk.ym },
             { label: 'r', documentation: i18n.ds_grid_multiply_disk.r },
             { label: 'val', documentation: i18n.ds_grid_multiply_disk.val }
         ],
-        signature: '(id, xm, ym, r, val)'
+        signature: '(index, xm, ym, r, val)'
     },
 	ds_grid_multiply_grid_region: {
         description: '[Function]' + i18n.ds_grid_multiply_grid_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_multiply_grid_region.id },
+            { label: 'index', documentation: i18n.ds_grid_multiply_grid_region.index },
             { label: 'source', documentation: i18n.ds_grid_multiply_grid_region.source },
             { label: 'x1', documentation: i18n.ds_grid_multiply_grid_region.x1 },
             { label: 'y1', documentation: i18n.ds_grid_multiply_grid_region.y1 },
@@ -3964,69 +3964,69 @@ exports.globalfunctions = {
             { label: 'xpos', documentation: i18n.ds_grid_multiply_grid_region.xpos },
             { label: 'ypos', documentation: i18n.ds_grid_multiply_grid_region.ypos }
         ],
-        signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
+        signature: '(index, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_multiply_region: {
         description: '[Function]' + i18n.ds_grid_multiply_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_multiply_region.id },
+            { label: 'index', documentation: i18n.ds_grid_multiply_region.index },
             { label: 'x1', documentation: i18n.ds_grid_multiply_region.x1 },
             { label: 'y1', documentation: i18n.ds_grid_multiply_region.y1 },
             { label: 'x2', documentation: i18n.ds_grid_multiply_region.x2 },
             { label: 'y2', documentation: i18n.ds_grid_multiply_region.y2 },
             { label: 'val', documentation: i18n.ds_grid_multiply_region.val }
         ],
-        signature: '(id, x1, y1, x2, y2, val)'
+        signature: '(index, x1, y1, x2, y2, val)'
     },
 	ds_grid_read: {
         description: '[Function]' + i18n.ds_grid_read.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_read.id },
+            { label: 'index', documentation: i18n.ds_grid_read.index },
             { label: 'str', documentation: i18n.ds_grid_read.str },
-            { label: '...', documentation: i18n.ds_grid_read.more }
+            { label: 'legacy', documentation: i18n.ds_grid_read.legacy }
         ],
-        signature: '(id, str, ...)'
+        signature: '(index, str, [legacy])'
     },
 	ds_grid_resize: {
         description: '[Function]' + i18n.ds_grid_resize.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_resize.id },
+            { label: 'index', documentation: i18n.ds_grid_resize.index },
             { label: 'w', documentation: i18n.ds_grid_resize.w },
             { label: 'h', documentation: i18n.ds_grid_resize.h }
         ],
-        signature: '(id, w, h)'
+        signature: '(index, w, h)'
     },
 	ds_grid_set: {
         description: '[Function]' + i18n.ds_grid_set.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_set.id },
+            { label: 'index', documentation: i18n.ds_grid_set.index },
             { label: 'x', documentation: i18n.ds_grid_set.x },
             { label: 'y', documentation: i18n.ds_grid_set.y },
             { label: 'val', documentation: i18n.ds_grid_set.val }
         ],
-        signature: '(id, x, y, val)'
+        signature: '(index, x, y, val)'
     },
 	ds_grid_set_disk: {
         description: '[Function]' + i18n.ds_grid_set_disk.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_set_disk.id },
+            { label: 'index', documentation: i18n.ds_grid_set_disk.index },
             { label: 'xm', documentation: i18n.ds_grid_set_disk.xm },
             { label: 'ym', documentation: i18n.ds_grid_set_disk.ym },
             { label: 'r', documentation: i18n.ds_grid_set_disk.r },
             { label: 'val', documentation: i18n.ds_grid_set_disk.val }
         ],
-        signature: '(id, xm, ym, r, val)'
+        signature: '(index, xm, ym, r, val)'
     },
 	ds_grid_set_grid_region: {
         description: '[Function]' + i18n.ds_grid_set_grid_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_set_grid_region.id },
+            { label: 'index', documentation: i18n.ds_grid_set_grid_region.index },
             { label: 'source', documentation: i18n.ds_grid_set_grid_region.source },
             { label: 'x1', documentation: i18n.ds_grid_set_grid_region.x1 },
             { label: 'y1', documentation: i18n.ds_grid_set_grid_region.y1 },
@@ -4035,129 +4035,129 @@ exports.globalfunctions = {
             { label: 'xpos', documentation: i18n.ds_grid_set_grid_region.xpos },
             { label: 'ypos', documentation: i18n.ds_grid_set_grid_region.ypos }
         ],
-        signature: '(id, source, x1, y1, x2, y2, xpos, ypos)'
+        signature: '(index, source, x1, y1, x2, y2, xpos, ypos)'
     },
 	ds_grid_set_region: {
         description: '[Function]' + i18n.ds_grid_set_region.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_set_region.id },
+            { label: 'index', documentation: i18n.ds_grid_set_region.index },
             { label: 'x1', documentation: i18n.ds_grid_set_region.x1 },
             { label: 'y1', documentation: i18n.ds_grid_set_region.y1 },
             { label: 'x2', documentation: i18n.ds_grid_set_region.x2 },
             { label: 'y2', documentation: i18n.ds_grid_set_region.y2 },
             { label: 'val', documentation: i18n.ds_grid_set_region.val }
         ],
-        signature: '(id, x1, y1, x2, y2, val)'
+        signature: '(index, x1, y1, x2, y2, val)'
     },
 	ds_grid_shuffle: {
         description: '[Function]' + i18n.ds_grid_shuffle.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_shuffle.id }
+            { label: 'index', documentation: i18n.ds_grid_shuffle.index }
         ],
-        signature: '(id)'
+        signature: '(index)'
     },
 	ds_grid_sort: {
         description: '[Function]' + i18n.ds_grid_sort.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_sort.id },
+            { label: 'index', documentation: i18n.ds_grid_sort.index },
             { label: 'column', documentation: i18n.ds_grid_sort.column },
             { label: 'ascending', documentation: i18n.ds_grid_sort.ascending }
         ],
-        signature: '(id, column, ascending)'
+        signature: '(index, column, ascending)'
     },
 	ds_grid_value_disk_exists: {
         description: '[Function]' + i18n.ds_grid_value_disk_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_value_disk_exists.id },
+            { label: 'index', documentation: i18n.ds_grid_value_disk_exists.index },
             { label: 'xm', documentation: i18n.ds_grid_value_disk_exists.xm },
             { label: 'ym', documentation: i18n.ds_grid_value_disk_exists.ym },
             { label: 'r', documentation: i18n.ds_grid_value_disk_exists.r },
             { label: 'val', documentation: i18n.ds_grid_value_disk_exists.val }
         ],
-        signature: '(id, xm, ym, r, val)'
+        signature: '(index, xm, ym, r, val)'
     },
 	ds_grid_value_disk_x: {
         description: '[Function]' + i18n.ds_grid_value_disk_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_value_disk_x.id },
+            { label: 'index', documentation: i18n.ds_grid_value_disk_x.index },
             { label: 'xm', documentation: i18n.ds_grid_value_disk_x.xm },
             { label: 'ym', documentation: i18n.ds_grid_value_disk_x.ym },
             { label: 'r', documentation: i18n.ds_grid_value_disk_x.r },
             { label: 'val', documentation: i18n.ds_grid_value_disk_x.val }
         ],
-        signature: '(id, xm, ym, r, val)'
+        signature: '(index, xm, ym, r, val)'
     },
 	ds_grid_value_disk_y: {
         description: '[Function]' + i18n.ds_grid_value_disk_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_value_disk_y.id },
+            { label: 'index', documentation: i18n.ds_grid_value_disk_y.index },
             { label: 'xm', documentation: i18n.ds_grid_value_disk_y.xm },
             { label: 'ym', documentation: i18n.ds_grid_value_disk_y.ym },
             { label: 'r', documentation: i18n.ds_grid_value_disk_y.r },
             { label: 'val', documentation: i18n.ds_grid_value_disk_y.val }
         ],
-        signature: '(id, xm, ym, r, val)'
+        signature: '(index, xm, ym, r, val)'
     },
 	ds_grid_value_exists: {
         description: '[Function]' + i18n.ds_grid_value_exists.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_value_exists.id },
+            { label: 'index', documentation: i18n.ds_grid_value_exists.index },
             { label: 'x1', documentation: i18n.ds_grid_value_exists.x1 },
             { label: 'y1', documentation: i18n.ds_grid_value_exists.y1 },
             { label: 'x2', documentation: i18n.ds_grid_value_exists.x2 },
             { label: 'y2', documentation: i18n.ds_grid_value_exists.y2 },
             { label: 'val', documentation: i18n.ds_grid_value_exists.val }
         ],
-        signature: '(id, x1, y1, x2, y2, val)'
+        signature: '(index, x1, y1, x2, y2, val)'
     },
 	ds_grid_value_x: {
         description: '[Function]' + i18n.ds_grid_value_x.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_value_x.id },
+            { label: 'index', documentation: i18n.ds_grid_value_x.index },
             { label: 'x1', documentation: i18n.ds_grid_value_x.x1 },
             { label: 'y1', documentation: i18n.ds_grid_value_x.y1 },
             { label: 'x2', documentation: i18n.ds_grid_value_x.x2 },
             { label: 'y2', documentation: i18n.ds_grid_value_x.y2 },
             { label: 'val', documentation: i18n.ds_grid_value_x.val }
         ],
-        signature: '(id, x1, y1, x2, y2, val)'
+        signature: '(index, x1, y1, x2, y2, val)'
     },
 	ds_grid_value_y: {
         description: '[Function]' + i18n.ds_grid_value_y.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_value_y.id },
+            { label: 'index', documentation: i18n.ds_grid_value_y.index },
             { label: 'x1', documentation: i18n.ds_grid_value_y.x1 },
             { label: 'y1', documentation: i18n.ds_grid_value_y.y1 },
             { label: 'x2', documentation: i18n.ds_grid_value_y.x2 },
             { label: 'y2', documentation: i18n.ds_grid_value_y.y2 },
             { label: 'val', documentation: i18n.ds_grid_value_y.val }
         ],
-        signature: '(id, x1, y1, x2, y2, val)'
+        signature: '(index, x1, y1, x2, y2, val)'
     },
 	ds_grid_width: {
         description: '[Function]' + i18n.ds_grid_width.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_width.id }
+            { label: 'index', documentation: i18n.ds_grid_width.index }
         ],
-        signature: '(id)'
+        signature: '(index)'
     },
 	ds_grid_write: {
         description: '[Function]' + i18n.ds_grid_write.desc,
         available: datasimple.all,
         parameters: [
-            { label: 'id', documentation: i18n.ds_grid_write.id }
+            { label: 'index', documentation: i18n.ds_grid_write.index }
         ],
-        signature: '(id)'
+        signature: '(index)'
     },
 	ds_list_add: {
         description: '[Function]' + i18n.ds_list_add.desc,

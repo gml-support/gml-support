@@ -2271,284 +2271,284 @@
         "degree_angle": "The angle (in degrees) to return the sine of."
     },
     "ds_exists": {
-        "desc": "",
-        "id": "",
-        "type": ""
+        "desc": "With this function you can check to see if a data structure of the given type exists. You supply the \"index\" value (as held in a variable) and the ds \"type\", which can be any of the constants listed below, and the function will return true if the data structure exists and false otherwise.![](https://gmlsupport.liaronce.win/images-in-intellisense/9.png)",
+        "index": "The variable index to check for the data structure",
+        "type": "The type of data structure to check for (see the list of constants below)"
     },
     "ds_grid_add": {
-        "desc": "",
-        "id": "",
-        "x": "",
-        "y": "",
-        "val": ""
+        "desc": "This function can be used to add a given value (real or string) to the value of the given cell within the grid. The value to be added must be the same type as that held within the grid cell, ie: you cannot add a string to a real or vice-versa, and for strings this corresponds to concatenation.",
+        "index": "The index of the grid.",
+        "x": "The x position of the cell in the grid.",
+        "y": "The y position of the cell in the grid.",
+        "val": "The value to add to the cell."
     },
     "ds_grid_add_disk": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": "",
-        "val": ""
+        "desc": "This function can be used to add a given value (real or string) to all the values of the cells found within the defined disk area of a grid. The value to be added must be of the same type as that held within the grid cells, ie: you cannot add a string to a real or vice-versa, and for strings this corresponds to concatenation.",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid.",
+        "val": "The value to add to the cells within the disk."
     },
     "ds_grid_add_grid_region": {
-        "desc": "",
-        "id": "",
-        "source": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "xpos": "",
-        "ypos": ""
+        "desc": "This function can be used to add all the values of all the cells found within the source area of a grid to the values within the destination grid, as illustrated below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_add_grid_region.png)\n\nNOTE: You can also use this function on the same grid to add values from one region of the grid to those stored in another (see code example below).",
+        "index": "The index of the destination grid.",
+        "source": "The index of the source grid.",
+        "x1": "The left position of the region of cells to copy from the source grid.",
+        "y1": "The top position of the region of cells to copy from the source grid.",
+        "x2": "The right position of the region of cells to copy from the source grid.",
+        "y2": "The bottom position of the region of cells to copy from the source grid.",
+        "xpos": "The x position on the destination grid to add the source region to.",
+        "ypos": "The y position on the destination grid to add the source region to."
     },
     "ds_grid_add_region": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "val": ""
+        "desc": "This function can be used to add a given value (real or string) to all the values of the cells found within the defined area of a grid. The value to be added must be of the same type as that held within the grid cells, ie: you cannot add a string to a real or vice-versa, and for strings this corresponds to concatenation.",
+        "index": "The index of the grid.",
+        "x1": "The x position of the left of the region in the grid.",
+        "y1": "The y position of the top of the region in the grid.",
+        "x2": "The x position of the right of the region in the grid.",
+        "y2": "The y position of the bottom of the region in the grid.",
+        "val": "The value to add to the region cells."
     },
     "ds_grid_clear": {
-        "desc": "",
-        "id": "",
-        "val": ""
+        "desc": "This function can be used to clear a given ds_grid to a specific value. All cells within the grid will then contain this value, which can be a real number or a string. The image below illustrates how this works: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_clear.png)",
+        "index": "This index of the grid to clear.",
+        "val": "The new value for all grid cells."
     },
     "ds_grid_copy": {
-        "desc": "",
-        "id": "",
-        "source": ""
+        "desc": "With this function you can copy the contents of one grid into another one. Both grids must have been created previously using the **ds_grid_create** function.",
+        "index": "This index of the grid to copy to.",
+        "source": "This index of the grid to copy from."
     },
     "ds_grid_create": {
-        "desc": "",
-        "w": "",
-        "h": ""
+        "desc": "With this function you can create a new ds_grid data structure of the specified cell width and height. This function returns an id which must be used in all further functions that deal with this ds_grid.",
+        "w": "The width of the grid to be created.",
+        "h": "The height of the grid to be created."
     },
     "ds_grid_destroy": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will remove the given grid data-structure from memory, freeing up the resources it was using and removing all values that it contained. This function should always be used when you are finished using the ds_grid to prevent memory leaks that can slow down and crash your game.",
+        "index": "This index of the grid to destroy."
     },
     "ds_grid_get": {
-        "desc": "",
-        "id": "",
-        "x": "",
-        "y": ""
+        "desc": "This function can be used to get the value (either a real number or a string) from any cell within the given ds_grid. If you pass invalid grid coordinates to the function, then the value returned will be 0.",
+        "index": "The index of the grid.",
+        "x": "The x position of the cell you want to find the value of.",
+        "y": "The y position of the cell you want to find the value of."
     },
     "ds_grid_get_disk_max": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": ""
+        "desc": "This function can be used to find the maximum value for all the cells found within the defined disk area of a grid, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_disk_max.png)",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk center in the grid.",
+        "ym": "The y position of the disk center in the grid.",
+        "r": "The radius of the disk in the grid."
     },
     "ds_grid_get_disk_mean": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": ""
+        "desc": "This function can be used to find the mean value for all the cells found within the defined disk area of a grid (all cell values are added together and then divided by the total number of cells that make up the disk), as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_disk_mean.png)",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid."
     },
     "ds_grid_get_disk_min": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": ""
+        "desc": "This function can be used to find the minimum value for all the cells found within the defined disk area of a grid, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_disk_min.png)",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid."
     },
     "ds_grid_get_disk_sum": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": ""
+        "desc": "This function can be used to add all the values all the cells found within the defined disk area of a grid together, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_disk_sum.png)",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid."
     },
     "ds_grid_get_max": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "This function can be used to find the maximum value for all the cells found within the defined region of a grid, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_max.png)",
+        "index": "The index of the grid.",
+        "x1": "The left cell column of the region.",
+        "y1": "The top cell row of the region.",
+        "x2": "The right cell column of the region.",
+        "y2": "The bottom cell row of the region."
     },
     "ds_grid_get_mean": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "This function can be used to find the mean value for all the cells found within the defined region of a grid (all cell values are added together and then divided by the total number of cells that make the region), as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_mean.png)",
+        "index": "The index of the grid.",
+        "x1": "The left cell column of the region.",
+        "y1": "The top cell row of the region.",
+        "x2": "The right cell column of the region.",
+        "y2": "The bottom cell row of the region."
     },
     "ds_grid_get_min": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "This function can be used to find the minimum value for all the cells found within the defined region of a grid, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_min.png)",
+        "index": "The index of the grid.",
+        "x1": "The left cell column of the region.",
+        "y1": "The top cell row of the region.",
+        "x2": "The right cell column of the region.",
+        "y2": "The bottom cell row of the region."
     },
     "ds_grid_get_sum": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "This function can be used to add all the values all the cells found within the defined region of a grid together, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_get_sum.png)",
+        "index": "The index of the grid.",
+        "x1": "The left cell column of the region.",
+        "y1": "The top cell row of the region.",
+        "x2": "The right cell column of the region.",
+        "y2": "The bottom cell row of the region."
     },
     "ds_grid_height": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the height of the given grid. This value is the number of cells the grid has along the y-axis and is always an integer, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_height.png)",
+        "index": "This index of the grid to find the height of."
     },
     "ds_grid_multiply": {
-        "desc": "",
-        "id": "",
-        "x": "",
-        "y": "",
-        "val": ""
+        "desc": "This function will multiply the value of a the given grid cell by the specified amount.\n\nNOTE: This function will only work with real numbers, not strings.",
+        "index": "The index of the grid.",
+        "x": "The x position of the cell in the grid.",
+        "y": "The y position of the cell in the grid.",
+        "val": "The value to multiply with the cell."
     },
     "ds_grid_multiply_disk": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": "",
-        "val": ""
+        "desc": "This function will take all the values in a given disc-shaped region of the ds_grid, and multiply each one by the given amount.\n\nNOTE: This function will only work with real numbers, not strings.",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid.",
+        "val": "The value to multiply the cells within the disk with."
     },
     "ds_grid_multiply_grid_region": {
-        "desc": "",
-        "id": "",
-        "source": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "xpos": "",
-        "ypos": ""
+        "desc": "With this function you can define an area within a given ds_grid, then take those values and multiply them with those found in a separate region of either the same ds_grid, or another one (which has been previously created). The original region will remain unchanged, while the region that they have been multiplied with will now store the new values for each cell.",
+        "index": "The index of the destination grid.",
+        "source": "The index of the source grid.",
+        "x1": "The left position of the region of cells to copy from the source grid.",
+        "y1": "The top position of the region of cells to copy from the source grid.",
+        "x2": "The right position of the region of cells to copy from the source grid.",
+        "y2": "The bottom position of the region of cells to copy from the source grid.",
+        "xpos": "The x position on the destination grid to multiply the source region with.",
+        "ypos": "The y position on the destination grid to multiply the source region with."
     },
     "ds_grid_multiply_region": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "val": ""
+        "desc": "With this function you can specify a region of the grid in which to multiply each cell value by a given amount.\n\nNOTE: This function will only work with real numbers, not strings.",
+        "index": "The index of the grid.",
+        "x1": "The x position of the left of the region in the grid.",
+        "y1": "The y position of the top of the region in the grid.",
+        "x2": "The x position of the right of the region in the grid.",
+        "y2": "The y position of the bottom of the region in the grid.",
+        "val": "The value to multiply with the region cells."
     },
     "ds_grid_read": {
-        "desc": "",
-        "id": "",
-        "str": "",
-        "more": ""
+        "desc": "This function can be used to convert a string which has been created previously by the function **ds_grid_write()** back into a ds_grid. The ds_grid must have been created previously (see the example below). Note that if the data structure was created with previous versions of GameMaker you should add the optional argument \"legacy\", setting it to true as the string format has changed with this version.",
+        "index": "The index of the grid to read.",
+        "str": "The string to read into the ds_grid.",
+        "legacy": "(optional) Can be either true or false or omitted completely."
     },
     "ds_grid_resize": {
-        "desc": "",
-        "id": "",
-        "w": "",
-        "h": ""
+        "desc": "With this function you can resize the given ds_grid to have a different width and/or height. If the grid size is larger than the current grid, the new cells will have a base value of 0, and if the size is smaller then the values held in the cells that are no longer within the new size will be lost. All other cells will be left untouched.",
+        "index": "This index of the grid to resize.",
+        "w": "The new width of the grid.",
+        "h": "The new height of the grid."
     },
     "ds_grid_set": {
-        "desc": "",
-        "id": "",
-        "x": "",
-        "y": "",
-        "val": ""
+        "desc": "This function can be used to set a given cell within the given ds_grid to any value, which can be a real number or a string. The image below illustrates this: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_set.png)",
+        "index": "This index of the grid.",
+        "x": "The x position of the cell to set.",
+        "y": "The y position of the cell to set.",
+        "val": "The value with which to set the cell."
     },
     "ds_grid_set_disk": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": "",
-        "val": ""
+        "desc": "With this function you can set a circular region of a grid to a certain value. You need to supply a starting grid cell (as an x and y axis coordinate) as well as the radius of the disk to set and the value that you wish to set the disk too, as shown by the illustration below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_set_disk.png)",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid.",
+        "val": "The value to set with the cells within the disk."
     },
     "ds_grid_set_grid_region": {
-        "desc": "",
-        "id": "",
-        "source": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "xpos": "",
-        "ypos": ""
+        "desc": "This function can be used to copy the contents of a rectangular area of grid cells from one (previously defined) ds_grid to another, or it can be used to copy a region from within the same grid. The following images illustrate both ways that this function can be used: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_set_grid_region.png)",
+        "index": "The index of the destination grid.",
+        "source": "The index of the source grid.",
+        "x1": "The left position of the region of cells to copy from the source grid.",
+        "y1": "The top position of the region of cells to copy from the source grid.",
+        "x2": "The right position of the region of cells to copy from the source grid.",
+        "y2": "The bottom position of the region of cells to copy from the source grid.",
+        "xpos": "The x position on the destination grid to copy the source region to.",
+        "ypos": "The y position on the destination grid to copy the source region to."
     },
     "ds_grid_set_region": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "val": ""
+        "desc": "This function can be used to set a rectangular region of a given grid to a specified value (which can be either a real or a string) as illustrated by the image shown below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_set_region.png)",
+        "index": "The index of the grid.",
+        "x1": "The x position of the left of the region in the grid.",
+        "y1": "The y position of the top of the region in the grid.",
+        "x2": "The x position of the right of the region in the grid.",
+        "y2": "The y position of the bottom of the region in the grid.",
+        "val": "The value to set the region cells to."
     },
     "ds_grid_shuffle": {
-        "desc": "",
-        "id": ""
+        "desc": "This function can be used to randomize the positions of all values in all cells within a grid.\n\nNOTE: This function will shuffle the grid cells to the same positions every time the game is run afresh due to the fact that GameMaker: Studio generates the same initial random seed every time to make debugging code a far easier task. To avoid this behaviour use **randomize** at the start of your game. This is only true when testing and debugging the game, as the final executable package will not show this behaviour and will be random every play.",
+        "index": "The index of the grid to shuffle."
     },
     "ds_grid_sort": {
-        "desc": "",
-        "id": "",
-        "column": "",
-        "ascending": ""
+        "desc": "This function can be used to sort a ds_grid based on the values from a given column (much as you would sort files by date, size etc... in the Windows Explorer). The following image shows an example: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_sort.png)",
+        "index": "The index of the grid to sort.",
+        "column": "The column to use for sorting the rows",
+        "ascending": "Whether to sort lowest to highest (true), or highest to lowest (false)."
     },
     "ds_grid_value_disk_exists": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": "",
-        "val": ""
+        "desc": "With this function you can check to see if a specific value (real or string) is present within a circular area of a given ds_grid. If it is present the function will return true otherwise it will return false.",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid.",
+        "val": "The value to find."
     },
     "ds_grid_value_disk_x": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": "",
-        "val": ""
+        "desc": "With this function you can get the x coordinate (within the given grid disc-shaped region) of the value being searched for. Be aware that if the value being searched for does not exists, the function will return 0, so it is a good idea to check if the values exists first with **ds_grid_value_disk_exists** then run this function (along with the **ds_grid_value_disk_y** function) to get the exact position within disc being searched.",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid.",
+        "val": "The value to find."
     },
     "ds_grid_value_disk_y": {
-        "desc": "",
-        "id": "",
-        "xm": "",
-        "ym": "",
-        "r": "",
-        "val": ""
+        "desc": "With this function you can get the y coordinate (within the given grid disc-shaped region) of the value being searched for. Be aware that if the value being searched for does not exists, the function will return 0, so it is a good idea to check if the values exists first with **ds_grid_value_disk_exists** then run this function (along with the **ds_grid_value_disk_x** function) to get the exact position within disc being searched.",
+        "index": "The index of the grid.",
+        "xm": "The x position of the disk on the grid.",
+        "ym": "The y position of the disk on the grid.",
+        "r": "The radius of the disk on the grid.",
+        "val": "The value to find."
     },
     "ds_grid_value_exists": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "val": ""
+        "desc": "With this function you can check to see if a specific value (real or string) is present within a rectangular area of a given ds_grid. If it is present the function will return true otherwise it will return false.",
+        "index": "he index of the grid.",
+        "x1": "The x position of the left of the region in the grid.",
+        "y1": "The y position of the top of the region in the grid.",
+        "x2": "The x position of the right of the region in the grid.",
+        "y2": "The y position of the bottom of the region in the grid.",
+        "val": "The value to find."
     },
     "ds_grid_value_x": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "val": ""
+        "desc": "With this function you can get the x coordinate (within the given rectangular grid region) of the value being searched for. Be aware that if the value being searched for does not exists, the function will return 0, so it is a good idea to check if the values exists first with **ds_grid_value_exists** then run this function (along with the **ds_grid_value_y** function) to get the exact position within region being searched.",
+        "index": "The index of the grid.",
+        "x1": "The x position of the left of the region in the grid.",
+        "y1": "The y position of the top of the region in the grid.",
+        "x2": "The x position of the right of the region in the grid.",
+        "y2": "The y position of the bottom of the region in the grid.",
+        "val": "The value to find."
     },
     "ds_grid_value_y": {
-        "desc": "",
-        "id": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": "",
-        "val": ""
+        "desc": "With this function you can get the y coordinate (within the given rectangular grid region) of the value being searched for. Be aware that if the value being searched for does not exists, the function will return 0, so it is a good idea to check if the values exists first with **ds_grid_value_exists** then run this function (along with the **ds_grid_value_x** function) to get the exact position within region being searched.",
+        "index": "The index of the grid.",
+        "x1": "The x position of the left of the region in the grid.",
+        "y1": "The y position of the top of the region in the grid.",
+        "x2": "The x position of the right of the region in the grid.",
+        "y2": "The y position of the bottom of the region in the grid.",
+        "val": "The value to find."
     },
     "ds_grid_width": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the width of the given grid. This value is the number of cells the grid has along the x-axis and is always an integer, as shown in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/data%20structures/ds%20grids/ds_grid_width.png)",
+        "index": "This index of the grid to find the width of."
     },
     "ds_grid_write": {
-        "desc": "",
-        "id": ""
+        "desc": "This function can be used to convert the given ds_grid into a string, which can then be stored in an external file (for example). You can read the returned string from this function back into a ds_grid using the function **ds_grid_read()**.\n\nNOTE: The returned string is not a human readable string, but rather a dump of the contents of the data-structure",
+        "index": "The index of the grid to write."
     },
     "ds_list_add": {
         "desc": "",
@@ -2581,7 +2581,7 @@
         "desc": "",
         "id": ""
     },
-    "ds_list_find_index": {
+    "ds_list_find_id": {
         "desc": "",
         "id": "",
         "value": ""
