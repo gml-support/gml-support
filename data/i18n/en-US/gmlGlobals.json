@@ -808,10 +808,7 @@
     },
     "choose": {
         "desc": "Sometimes you want to specify something other than numbers for a random selection, or the numbers you want are not in any real order or within any set range. In these cases you would use choose() to generate a random result. For example, say you want to create an object with a random sprite at the start, then you could use this function to set the sprite index to one of a set of sprites. Note that you can have as many as you require (more arguments will mean that the function will be slower to parse).\n\nNOTE: This function will return the same value every time the game is run afresh due to the fact that GameMaker: Studio generates the same initial random seed every time to make debugging code a far easier task. To avoid this behaviour use **randomize** at the start of your game.",
-        "x1": "An input value that can be string, integer, variable or constant.",
-        "x2": "An input value that can be string, integer, variable or constant.",
-        "x3": "An input value that can be string, integer, variable or constant.",
-        "more": "..."
+        "valmax": "An input value that can be string, integer, variable or constant."
     },
     "chr": {
         "desc": "This function returns a string containing the character which relates to the input Unicode code for displaying. This character depends on the current drawing font's character set codepage and if no font is set, it will use the default code page for the machine.",
@@ -2551,387 +2548,387 @@
         "index": "The index of the grid to write."
     },
     "ds_list_add": {
-        "desc": "",
-        "id": "",
-        "value": "",
-        "more": ""
+        "desc": "This function can be used to add a new value (real or string) to the list, which will be added on at the end. The function can take a further 14 optional arguments (making a total of 15 possible additions), permitting you to add multiple values consecutively to the list in a single call.",
+        "id": "The id of the list to add to.",
+        "value": "The value to add to the list.",
+        "more": "Optional values to be added to the list."
     },
     "ds_list_clear": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can clear all data from the given list data-structure. This does NOT destroy the data-structure (for that you should use **ds_list_destroy**) it only wipes all data from it and returns an empty list.",
+        "id": "The id of the data structure to clear."
     },
     "ds_list_copy": {
-        "desc": "",
-        "id": "",
-        "source": ""
+        "desc": "With this function you can copy the contents of one list into another. Both lists must have been created previously and if the list being copied to already has information within it, this list will be cleared first. The end result is two independent lists which contain the same information.",
+        "id": "The id of the list being copied to.",
+        "source": "The id of the list to be copied from."
     },
     "ds_list_create": {
-        "desc": ""
+        "desc": "This function will create a new list data-structure and return the index value. This value should be stored in a variable and used in all further function calls relating to the list."
     },
     "ds_list_delete": {
-        "desc": "",
-        "id": "",
-        "pos": ""
+        "desc": "With this function you can remove the value stored at a specific position within the list.",
+        "id": "The id of the list to change.",
+        "pos": "Where in the list to delete the value."
     },
     "ds_list_destroy": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will remove the given list data-structure from memory, freeing up the resources it was using and removing all values that it contained. This function should always be used when you are finished using the ds_list to prevent memory leaks that can slow down and crash your game.",
+        "id": "The id of the data structure to remove."
     },
     "ds_list_empty": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can check the given ds_list to see if it is empty (returns true) or not (returns false).",
+        "id": "The id of the data structure to check."
     },
-    "ds_list_find_id": {
-        "desc": "",
-        "id": "",
-        "value": ""
+    "ds_list_find_index": {
+        "desc": "With this function you can check the given list for a value and the position within the list for that value will be returned. Note that if there are more than one entries in the list with the same value, the position of any one of them may be returned, and that if the value does not exist, then -1 will be returned. Note that the value can be an array, which you can check with the function **is_array**.",
+        "id": "The id of the list to use.",
+        "value": "The value to find."
     },
     "ds_list_find_value": {
-        "desc": "",
-        "id": "",
-        "pos": ""
+        "desc": "With this function you can check the given list position and the value held within the list for that position will be returned.\n\nNOTE: If you give a position that is outside of the given list size (ie: position 11 in a 10 value list) then the function will return <undefined>. You should always check this using the **is_undefined()** function.",
+        "id": "The id of the list to use.",
+        "pos": "The position to look at, where 0 corresponds to the very beginning of the list and the final position is ds_list_size(id)-1."
     },
     "ds_list_insert": {
-        "desc": "",
-        "id": "",
-        "pos": "",
-        "value": ""
+        "desc": "This function will add the given value into the list at the given position. if the list contains more values after the given position, their position will be shifted up one to make room making the list larger by one.",
+        "id": "The id of the list to add to.",
+        "pos": "The position to add the value, where 0 corresponds to the very beginning of the list and the final position is ds_list_size(id)-1.",
+        "value": "The value to add to the list."
     },
     "ds_list_mark_as_list": {
-        "desc": "",
-        "id": "",
-        "pos": ""
+        "desc": "This function will \"mark\" (or \"flag\") a given position within a previously created ds_list as holding another ds_list. This functionality is designed only for use when encoding JSON strings (which you can create using **json_encode**) and the complimentary ds map functions.\n\nNOTE: Once a ds_list has had a value within it flagged as another list or map, destroying the list will also destroy the marked lists and maps too. This means that you do not have to manually go through the list contents and destroy the marked data structures individually before destroying the \"parent\" list.",
+        "id": "The id of the list to mark.",
+        "pos": "The position within the list to mark."
     },
     "ds_list_mark_as_map": {
-        "desc": "",
-        "id": "",
-        "pos": ""
+        "desc": "This function will \"mark\" (or \"flag\") a given position within a previously created ds_list as holding a previously created ds_map. This functionality is designed only for use when encoding JSON strings (which you can create using **json_encode**) and the complimentary ds map functions.\n\nNOTE: Once a ds_list has had a value within it flagged as another list or map, destroying the list will also destroy the marked lists and maps too. This means that you do not have to manually go through the list contents and destroy the marked data structures individually before destroying the \"parent\" list.",
+        "id": "The id of the list to mark.",
+        "pos": "The position within the list to mark."
     },
     "ds_list_read": {
-        "desc": "",
-        "id": "",
-        "str": "",
-        "more": ""
+        "desc": "With this function you can recreate a saved ds_list (one that has previously been written as a string using **ds_list_write**). You must first create a new ds_list to read the string into, and if the ds_list already exists and has information stored in it, then this will be cleared before reading. This function is of vital importance when creating save/load mechanisms for your game.Note that if the data structure was created with previous versions of GameMaker you should add the optional argument \"legacy\", setting it to true as the string format has changed with this version.",
+        "id": "The id of the data structure to read into.",
+        "str": "The string to read from.",
+        "legacy": "(optional)Can be either true or false or omitted completely."
     },
     "ds_list_replace": {
-        "desc": "",
-        "id": "",
-        "pos": "",
-        "value": ""
+        "desc": "This function will replace the value at the given position for another one.",
+        "id": "The id of the list to change.",
+        "pos": "The position to replace the value, where 0 corresponds to the very beginning of the list and the final position is ds_list_size(id)-1.",
+        "value": "The new value to replace the given value with."
     },
     "ds_list_shuffle": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can shuffle a list, which will re-order all the component values into random positions from those in which they were originally added to the list.\n\nNOTE: This function will shuffle the list items to the same positions every time the game is run afresh due to the fact that GameMaker: Studio generates the same initial random seed every time to make debugging code a far easier task. To avoid this behaviour use **randomize** at the start of your game. This is only true when testing and debugging the game, as the final executable package will not show this behaviour and will be random every play.",
+        "id": "The id of the list to shuffle."
     },
     "ds_list_size": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the \"size\" of the list, ie: the number of items that have been added into it.",
+        "id": "The id of the data structure to check."
     },
     "ds_list_sort": {
-        "desc": "",
-        "id": "",
-        "ascending": ""
+        "desc": "With this function you can sort all the values within a list, either in ascending or descending order. If the list contains strings, these will be sorted alphabetically, based on the english 26 letter alphabet.",
+        "id": "The id of the list to sort.",
+        "ascending": "Whether the values should be ascending (true) or descending (false) order."
     },
     "ds_list_write": {
-        "desc": "",
-        "id": ""
+        "desc": "This function returns a string which can then be stored or transferred to another data structure using the **ds_list_read** function.\n\nNOTE: The returned string is not a human readable string, but rather a dump of the contents of the data-structure",
+        "id": "The id of the data structure to write."
     },
     "ds_map_add": {
-        "desc": "",
-        "id": "",
-        "key": "",
-        "value": ""
+        "desc": "This function should be used to add sets of key/value pairs into the specified ds_map. You can check this function to see if it was successful or not, as it may fail if there already exists the same key in the ds_map or you specify a non-existent ds_map as the id of the map to add to. Both keys and values can be made up of either integers or strings, so all of the following are acceptable:\n\n```ds_map_add(map, 5, 1);\nds_map_add(map, \"level\", 100);\nds_map_add(map, 89, \"hello world\");\nds_map_add(map, \"fish\", \"good\");```\n\nYou can also add to a map using the accessor \"?\", as shown below:```map[? 5] = 1;\nmap[? \"level\"] = 100;\nmap[? 89] = \"hello world\";\nmap[? \"fish\"] = \"good\";```\n\nNOTE: Unlike other data structures in GameMaker: Studio this key will not go to the start (nor the end) of the ds_map, but rather it will just go into the ds_map **somewhere**.",
+        "id": "The id of the map to add to.",
+        "key": "The key of the value to add.",
+        "value": "The value to add to the map."
     },
     "ds_map_add_list": {
-        "desc": "",
-        "id": "",
-        "key": "",
-        "value": ""
+        "desc": "With this function you can assign a (previously created) ds_list to a key within the given ds_map. This function is designed for creating JSON compatible maps which you would then encode using **json_encode** and should only be used in conjunction with that functionality. If a ds_map has a list added in this way, destroying the parent map will also destroy the contained lists and free their memory.",
+        "id": "The id of the map to use.",
+        "key": "The key for the added list.",
+        "value": "The id of the list to add."
     },
     "ds_map_add_map": {
-        "desc": "",
-        "id": "",
-        "key": "",
-        "value": ""
+        "desc": "With this function you can assign a (previously created) ds_map to a key within the given ds_map. This function is designed for creating JSON compatible maps which you would then encode using **json_encode** and should only be used in conjunction with that functionality. If a ds_map has another map added in this way, then destroying the parent map will also destroy the contained maps and free their memory.",
+        "id": "The id of the map to use.",
+        "key": "The key for the added map.",
+        "value": "The id of the map to add."
     },
     "ds_map_clear": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will clear the (previously created) ds_map of all key/value pairs, but it will not delete the ds_map itself from memory. For that you should use the function **ds_map_destroy**.",
+        "id": "The id of the data structure to clear."
     },
     "ds_map_copy": {
-        "desc": "",
-        "id": "",
-        "source": ""
+        "desc": "You can use this function to copy the contents of one map into another one that you have previously created using ds_map_create(). If the ds_map that is being copied to is not empty, then this function will clear it first before copying. The original ds_map remains un-changed by this process.",
+        "id": "The id of the map you are copying **to</>**",
+        "source": "The id of the map you are copying **from**"
     },
     "ds_map_create": {
-        "desc": ""
+        "desc": "This function is used to create a new, empty, ds_map and will return its id which is then used to access the data structure in all other ds_map functions."
     },
     "ds_map_delete": {
-        "desc": "",
-        "id": "",
-        "key": ""
+        "desc": "With this function you can remove any given key (and its corresponding value) from the given, previously created, ds_map.",
+        "id": "The id of the map to change.",
+        "key": "The key (along with its associated value) to delete."
     },
     "ds_map_destroy": {
-        "desc": "",
-        "id": ""
+        "desc": "Ds_maps take up space in memory, which is allocated to them when they are created. This means that you also need to free this memory when the ds_map is not needed to prevent errors, memory leaks and loss of performance when running your game. This function does just that.",
+        "id": "The id of the map to destroy."
     },
     "ds_map_empty": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will simply return false if the specified (previously created) ds_map contains any key/value pairs, or true if it does not.",
+        "id": "The id of the data structure to check."
     },
     "ds_map_exists": {
-        "desc": "",
-        "id": "",
-        "key": ""
+        "desc": "This function will return true if the specified key exists in the (previously created) ds_map, and false if it does not.",
+        "id": "The id of the data structure to check",
+        "key": "The key to check for"
     },
     "ds_map_find_first": {
-        "desc": "",
-        "id": ""
+        "desc": "This function returns the first key stored in the ds_map. **This is not the first key in the order you added them!** Ds_maps are not stored in a linear form, for that use ds_lists, so all this does is find the first key as stored by the computer. This can be useful if your have to iterate through the ds_map looking for something, but should be avoided if possible as it can be slow.",
+        "id": "The id of the map to use."
     },
     "ds_map_find_last": {
-        "desc": "",
-        "id": ""
+        "desc": "This function returns the last key stored in the ds_map. **This is not the last key in the order that you have added them!** Ds_maps are not stored in a linear form, for that use ds_lists, so all this does is find the last key as stored by the computer. This can be useful if your have to iterate through the ds_map looking for something, but should be avoided if possible as it can be slow.",
+        "id": "The id of the map to use."
     },
     "ds_map_find_next": {
-        "desc": "",
-        "id": "",
-        "key": ""
+        "desc": "This function returns the next key stored in the ds_map after the one specified in the function. This can be useful if your have to iterate through the ds_map looking for something, but should be avoided if possible as it can be slow. If no such key exists then the function will return <undefined>. You should always check this using the **is_undefined()** function.",
+        "id": "The id of the map to use.",
+        "key": "The key to find the next one to."
     },
     "ds_map_find_previous": {
-        "desc": "",
-        "id": "",
-        "key": ""
+        "desc": "This function returns the next key stored in the ds_map after the one specified in the function. This can be useful if your have to iterate through the ds_map looking for something, but should be avoided if possible as it can be slow. If no such key exists then the function will return <undefined>. You should always check this using the **is_undefined()** function.",
+        "id": "The id of the map to use.",
+        "key": "The key to find the previous one to."
     },
     "ds_map_find_value": {
-        "desc": "",
-        "id": "",
-        "key": ""
+        "desc": "With this function you can get the value from a specified key. The input values of the function are the (previously created) ds_map to use and the key to check for.\n\nNOTE: If no such key exists then the function will return <undefined>. You should always check this using the **is_undefined()** function.",
+        "id": "The id of the map to use.",
+        "key": "The key to find."
     },
     "ds_map_read": {
-        "desc": "",
-        "id": "",
-        "str": "",
-        "more": ""
+        "desc": "This function will take a string that has previously been created by the function **ds_map_write** and then read it into a previously created ds_map. If the map that the string is being read into contains any key/value pairs, these will be cleared first before the saved map is re-constructed. Note that if the data structure was created with previous versions of GameMaker you should add the optional argument \"legacy\", setting it to true as the string format has changed with this version.",
+        "id": "The id of the data structure to read the string into",
+        "str": "The string to read",
+        "legacy": "(optional)Can be either true or false or omitted completely."
     },
     "ds_map_replace": {
-        "desc": "",
-        "id": "",
-        "key": "",
-        "value": ""
+        "desc": "With this function you can change the value for the given key within the (previously created) ds_map. Please note that if the key to be replaced does not exists, it is created and the given value assigned to it.",
+        "id": "The id of the map to change.",
+        "key": "The key with the value that should be replaced by the new one",
+        "value": "The new value to replace the given value with"
     },
     "ds_map_replace_list": {
-        "desc": "",
-        "id": "",
-        "key": "",
-        "value": ""
+        "desc": "With this function you can replace a *ds_list* that has been stored in the given \"key\" with another list that has been created previously. This function is designed for creating JSON compatible maps which you would then encode using **json_encode** and should only be used in conjunction with that functionality.",
+        "id": "The id of the map to use.",
+        "key": "The key to replace.",
+        "value": "The id of the ds_list to use to replace the one previously stored in the given key."
     },
     "ds_map_replace_map": {
-        "desc": "",
-        "id": "",
-        "key": "",
-        "value": ""
+        "desc": "With this function you can replace a ds_map that has been stored in the given \"key\" with another map that has been created previously. This function is designed for creating JSON compatible maps which you would then encode using **json_encode** and should only be used in conjunction with that functionality.",
+        "id": "The id of the ds_map to use.",
+        "key": "The key to replace.",
+        "value": "The id of the ds_map to use to replace the one previously stored in the given key."
     },
     "ds_map_secure_load": {
-        "desc": "",
-        "filename": ""
+        "desc": "This function will load a previously saved ds_map from the given file. This file must have been previously created using the **ds_map_secure_save()** function, and, when loaded, the function will return the index of the ds_map that has been created from the loaded data. This ds_map index should be stored in a variable and used for all further function calls to this map.",
+        "filename": "The name of the file to load the map data from."
     },
     "ds_map_secure_load_buffer": {
-        "desc": "",
-        "buffer": ""
+        "desc": "This function will load a secure saved DS map from a buffer. You must previously have loaded the buffer into memory (using **buffer_load**) and then passing that into this function will return a DS map populated with the contents of the buffer. Note that the buffer must have been created using the function **ds_map_secure_save_buffer** for this to work correctly.",
+        "buffer": "The buffer ID of the buffer to load the map data from."
     },
     "ds_map_secure_save": {
-        "desc": "",
-        "id": "",
-        "filename": ""
+        "desc": "This function will save the contents of the given ds_map to a file. The file itself can have almost any extension (for example, *.dat, *.json, *.bin, etc...) and will be encrypted and stored to a safe location on the target platform. In this way you can store sensitive information, like in app purchase details or passwords, locally in a secure way. you can then re-load the ds_map using the function **ds_map_secure_load()**.",
+        "id": "The id of the data structure to use",
+        "filename": "The name of the file to save the map to"
     },
     "ds_map_secure_save_buffer": {
-        "desc": "",
-        "id": "",
-        "buffer": ""
+        "desc": "This function will save a previously created DS map to a buffer. You supply the DS map ID value (as returned by the function **ds_map_create**) and the ID of the buffer to write to (as returned by the function **buffer_create**).",
+        "id": "The DS map ID value.",
+        "buffer": "The buffer ID value."
     },
     "ds_map_size": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can find how many key/values pairs the (previously created) ds_map contains.",
+        "id": "The id of the data structure to check."
     },
     "ds_map_write": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will turn the ds_map data of the specified map into string format which can then be written to an *.ini or a *.txt file for easy storage. This string can then be later read back into a new ds_map using **ds_map_read()**.\n\nNOTE: The returned string is not a human readable string, but rather a dump of the contents of the data-structure",
+        "id": "The id of the data structure to use"
     },
     "ds_priority_add": {
-        "desc": "",
-        "id": "",
-        "value": "",
-        "priority": ""
+        "desc": "With this function you can add a value (either a real number or a string) to a priority queue, at the same time assigning it a priority value.",
+        "id": "The id of the priority queue to add to.",
+        "value": "The value to add to the priority queue.",
+        "priority": "The priority of the value to add."
     },
     "ds_priority_change_priority": {
-        "desc": "",
-        "id": "",
-        "value": "",
-        "priority": ""
+        "desc": "This function will take a given value and change its priority within the referenced priority queue.",
+        "id": "The id of the priority queue to change.",
+        "value": "The value to change the priority of.",
+        "priority": "The new priority of the value."
     },
     "ds_priority_clear": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can clear all data from the given priority queue data-structure. This does NOT destroy the data-structure (for that you should use **ds_priority_destroy**) it only wipes all data from it and returns an empty priority queue.",
+        "id": "The id of the data structure to clear."
     },
     "ds_priority_copy": {
-        "desc": "",
-        "id": "",
-        "source": ""
+        "desc": "This function can be used to copy the contents of one priority queue into another. Note that this does NOT remove the contents from the original priority queue, nor does it destroy the original priority queue. When using this function the priority queue being copied to must have been previously created and if it contained any items before the copy, then these will be cleared first (meaning this information will be lost).",
+        "id": "The id of the priority queue to copy to.",
+        "source": "The id of the priority queue to copy from."
     },
     "ds_priority_create": {
-        "desc": ""
+        "desc": "This function will create a new priority queue data-structure and return the index value. This value should be stored in a variable and used in all further function calls relating to the priority queue."
     },
     "ds_priority_delete_max": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the value that has the highest priority in the queue and then remove the value (and priority) from the data structure. If more than one value has the same priority, the one that was added to the priority queue first will be the one to get removed, but all other values with the same priority will still be in the queue.",
+        "id": "The id of the priority queue to use."
     },
     "ds_priority_delete_min": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the value that has the lowest priority in the queue and then remove the value (and priority) from the data structure. If more than one value has the same priority, the one that was added to the priority queue first will be the one to get removed, but all other values with the same priority will still be in the queue.",
+        "id": "The id of the priority queue to use."
     },
     "ds_priority_delete_value": {
-        "desc": "",
-        "id": "",
-        "value": ""
+        "desc": "This function will simply delete the given value, along with its priority, from the indexed priority queue.",
+        "id": "The id of the priority queue to use.",
+        "value": "The value to delete from the priority queue."
     },
     "ds_priority_destroy": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will remove the given priority queue data-structure from memory, freeing up the resources it was using and removing all values that it contained. This function should always be used when you are finished using the ds_priority queue to prevent memory leaks that can slow down and crash your game.",
+        "id": "The id of the data structure to remove."
     },
     "ds_priority_empty": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can check the given ds_priority queue to see if it is empty (returns true) or not (returns false).",
+        "id": "The id of the data structure to check."
     },
     "ds_priority_find_max": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can find the value stored in the priority queue with the highest priority, and if more than one value has the same priority, the one that was added to the priority queue first will be the one to get returned. However, unlike **ds_priority_delete_max**, this function will not remove the value from the queue.",
+        "id": "The id of the priority queue to use."
     },
     "ds_priority_find_min": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can find the value stored in the priority queue with the lowest priority, and if more than one value has the same priority, the one that was added to the priority queue first will be the one to get returned. However, unlike **ds_priority_delete_min**, this function will not remove the value from the queue.",
+        "id": "The id of the priority queue to use."
     },
     "ds_priority_find_priority": {
-        "desc": "",
-        "id": "",
-        "value": ""
+        "desc": "With this function you can retrieve the priority of any given value. If the value does not exist in the priority queue then undefined will be returned.",
+        "id": "The id of the priority queue to use.",
+        "value": "The value to find the priority of."
     },
     "ds_priority_read": {
-        "desc": "",
-        "id": "",
-        "str": "",
-        "more": ""
+        "desc": "With this function you can recreate a saved ds_priority (one that has previously been written as a string using **ds_priority_write**). You must first create a new ds_priority to read the string into, and if the ds_priority already exists and has information stored in it, then this will be cleared before reading. This function is of vital importance when creating save/load mechanisms for your game. Note that if the data structure was created with previous versions of GameMaker you should add the optional argument \"legacy\", setting it to true as the string format has changed with this version.",
+        "id": "The id of the data structure to read into.",
+        "str": "The string to read from.",
+        "legacy": "(optional)Can be either true or false or omitted completely."
     },
     "ds_priority_size": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the \"size\" of the priority queue, ie: the number of items that have been prioritized in it.",
+        "id": "The id of the data structure to check."
     },
     "ds_priority_write": {
-        "desc": "",
-        "id": ""
+        "desc": "This function returns a string which can then be stored or transferred to another data structure using the **ds_priority_read** function.\n\nNOTE: The returned string is not a human readable string, but rather a dump of the contents of the data-structure",
+        "id": "The id of the data structure to check."
     },
     "ds_queue_clear": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can clear all data from the given queue data-structure. This does NOT destroy the data-structure (for that you should use **ds_queue_destroy**) it only wipes all data from it and returns an empty queue.",
+        "id": "The id of the data structure to clear."
     },
     "ds_queue_copy": {
-        "desc": "",
-        "id": "",
-        "source": ""
+        "desc": "This function can be used to copy the contents of one queue into another. Note that this does NOT remove the contents from the original queue, nor does it destroy the original queue. When using this function the queue being copied to must have been previously created and if it contained any items before the copy, then these will be cleared first (meaning this information will be lost).",
+        "id": "The id of the NEW queue.",
+        "source": "The ORIGINAL queue to copy to id."
     },
     "ds_queue_create": {
-        "desc": ""
+        "desc": "This function will create a new queue data-structure and return the index value. This value should be stored in a variable and used in all further function calls relating to the queue."
     },
     "ds_queue_dequeue": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will dequeue the head value off of the ds_queue, removing it from the queue and returning the value to be stored in a variable.",
+        "id": "The id of the queue to dequeue from."
     },
     "ds_queue_destroy": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will remove the given queue data-structure from memory, freeing up the resources it was using and removing all values that it contained. This function should always be used when you are finished using the ds_queue to prevent memory leaks that can slow down and crash your game.",
+        "id": "The id of the data structure to remove."
     },
     "ds_queue_empty": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can check the given ds_queue to see if it is empty (returns true) or not (returns false).",
+        "id": "The id of the data structure to check."
     },
     "ds_queue_enqueue": {
-        "desc": "",
-        "id": "",
-        "value": "",
-        "more": ""
+        "desc": "This function will add a value (real or string) onto the tail of the ds_queue. The function can take a further 14 optional arguments (making a total of 15 possible additions), permitting you to add multiple values consecutively to the tail of the queue in a single call.",
+        "id": "The id of the queue to add to.",
+        "value": "The value to add to the queue.",
+        "more": "Optional values to be added to the queue."
     },
     "ds_queue_head": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will only read the first value of the queue (that which is \"at the head\"). It will not dequeue the value, meaning that it can still be read in the future by this function or the **ds_queue_dequeue**.",
+        "id": "The id of the data structure to read from."
     },
     "ds_queue_read": {
-        "desc": "",
-        "id": "",
-        "str": "",
-        "more": ""
+        "desc": "With this function you can recreate a saved ds_queue (one that has previously been written as a string using **ds_queue_write**). You must first create a new ds_queue to read the string into, and if the ds_queue already exists and has information stored in it, then this will be cleared before reading. This function is of vital importance when creating save/load mechanisms for your game. Note that if the data structure was created with previous versions of GameMaker you should add the optional argument \"legacy\", setting it to true as the string format has changed with this version.",
+        "id": "The id of the data structure to read into.",
+        "str": "The string to read from.",
+        "legacy": "(optional)Can be either true or false or omitted completely."
     },
     "ds_queue_size": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the \"size\" of the queue, ie: the number of items that have been queued onto it.",
+        "id": "The id of the data structure to check."
     },
     "ds_queue_tail": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will only read the last value of the queue (that which is \"at the tail\"). It will not dequeue the value, meaning that it can still be read in the future by this function or the **ds_queue_dequeue**.",
+        "id": "The id of the data structure to read from."
     },
     "ds_queue_write": {
-        "desc": "",
-        "id": ""
+        "desc": "This function returns a string which can then be stored or transferred to another data structure using the **ds_queue_read** function.\n\nNOTE: The returned string is not a human readable string, but rather a dump of the contents of the data-structure",
+        "id": "The id of the data structure to write."
     },
     "ds_set_precision": {
-        "desc": "",
-        "prec": ""
+        "desc": "When comparing values, for example when searching in a map or sorting a list, GameMaker: Studio must decide when two values are equal. For strings and integer values this is clear but for real numbers, due to floating point round-off errors, seemingly equal numbers can easily become unequal. For example, it's possible that **(5 / 3) * 3** will not be equal to 5! To help avoid this, a precision value is used on all real number functions, and when the difference between two numbers is smaller than this precision they are considered equal. The default a precision of 0.0000001 is used for all data structure functions unless changed by this function.\n\nNOTE: This precision is used in all data structures but not in other comparisons in GML!",
+        "prec": "The precision value (default 0.0000001)"
     },
     "ds_stack_clear": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can clear all data from the given stack data-structure. This does NOT destroy the data-structure (for that you should use **ds_stack_destroy**) it only wipes all data from it and returns an empty stack.",
+        "id": "The id of the data structure to clear."
     },
     "ds_stack_copy": {
-        "desc": "",
-        "id": "",
-        "source": ""
+        "desc": "This function can be used to copy the contents of one stack into another. Note that this does NOT remove the contents from the original stack, nor does it destroy the original stack. When using this function the stack being copied to must have been previously created and if it contained any items before the copy, then these will be cleared first (meaning this information will be lost).",
+        "id": "The id of the NEW stack.",
+        "source": "The ORIGINAL stack to copy to id."
     },
     "ds_stack_create": {
-        "desc": ""
+        "desc": "This function will create a new stack data-structure and return the index value. This value should be stored in a variable and used in all further function calls relating to the stack."
     },
     "ds_stack_destroy": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will remove the given stack data-structure from memory, freeing up the resources it was using and removing all values that it contained. This function should always be used when you are finished using the ds_stack to prevent memory leaks that can slow down and crash your game.",
+        "id": "The id of the data structure to remove."
     },
     "ds_stack_empty": {
-        "desc": "",
-        "id": ""
+        "desc": "With this function you can check the given ds_stack to see if it is empty (returns true) or not (returns false).",
+        "id": "The id of the data structure to check."
     },
     "ds_stack_pop": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will pop the top value off of the ds_stack, removing it from the stack and returning the value to be stored in a variable.",
+        "id": "The id of the data structure to pop from."
     },
     "ds_stack_push": {
-        "desc": "",
-        "id": "",
-        "value": "",
-        "more": ""
+        "desc": "This function will push (add) a value, which can be either a real or a string, onto the top of the stack. The function can take a further 14 optional arguments (making a total of 15 possible additions), permitting you to push multiple values consecutively to the stack in a single call.",
+        "id": "The id of the data structure to push onto.",
+        "value": "The value to push onto the stack.",
+        "more": "Optional values to be added to the stack."
     },
     "ds_stack_read": {
-        "desc": "",
-        "id": "",
-        "str": "",
-        "more": ""
+        "desc": "With this function you can recreate a saved ds_stack (one that has previously been written as a string using **ds_stack_write**). You must first create a new ds_stack to read the string into, and if the ds_stack already exists and has information stored in it, then this will be cleared before reading. This function is of vital importance when creating save/load mechanisms for your game. Note that if the data structure was created with previous versions of GameMaker you should add the optional argument \"legacy\", setting it to true as the string format has changed with this version.",
+        "id": "The id of the data structure to read into.",
+        "str": "The string to read from.",
+        "legacy": "(optional)Can be either true or false or omitted completely."
     },
     "ds_stack_size": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will return the \"size\" of the stack, ie: the number of items that have been pushed onto it.",
+        "id": "The id of the data structure to check."
     },
     "ds_stack_top": {
-        "desc": "",
-        "id": ""
+        "desc": "This function will only read the first value of the stack (that which is \"on top\"). It will not pop the value, meaning that it can still be read in the future by this function or the **ds_stack_pop**.",
+        "id": "The id of the data structure to read from."
     },
     "ds_stack_write": {
-        "desc": "",
-        "id": ""
+        "desc": "This function returns a string which can then be stored or transferred to another data structure using the **ds_stack_read** function.\n\nNOTE: The returned string is not a human readable string, but rather a dump of the contents of the data-structure",
+        "id": "The id of the data structure to write."
     },
     "dtan": {
         "desc": "In a right angled triangle dtan(val) = Opposite / Adjacent where \"val\" is one of the three angles.\n\nNOTE: A vast number of values (90, or -90 for example) will error with this function due to their returning infinity, a graph representation of this would produce asymptotes at these values.",
@@ -9968,10 +9965,10 @@
         "hport": ""
     },
 	"ds_list_set": {
-        "desc": "",
-        "id": "",
-        "pos": "",
-        "value": ""
+        "desc": "This function can be used to set a previously added list entry. You give the list ID (as returned when you created the list) and the position within the list to set as well as the value to set it to. Note that if the entry being set is outside the bounds of the list (ie, you set list entry 20 but the current list only contains 10 entries) then the list will be filled to the given position and each entry will be set to 0.",
+        "id": "The id of the list to add to.",
+        "pos": "The position within the list to set.",
+        "value": "The value to add to the list."
     },
 	"ds_map_set": {
         "desc": "",

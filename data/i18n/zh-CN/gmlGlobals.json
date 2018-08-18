@@ -808,10 +808,7 @@
     },
     "choose": {
         "desc": "",
-        "x1": "",
-        "x2": "",
-        "x3": "",
-        "more": ""
+        "valmax": ""
     },
     "chr": {
         "desc": "",
@@ -2270,19 +2267,19 @@
     },
     "ds_exists": {
         "desc": "",
-        "id": "",
+        "index": "",
         "type": ""
     },
     "ds_grid_add": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": "",
         "val": ""
     },
     "ds_grid_add_disk": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2290,7 +2287,7 @@
     },
     "ds_grid_add_grid_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": "",
         "x1": "",
         "y1": "",
@@ -2301,7 +2298,7 @@
     },
     "ds_grid_add_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2310,12 +2307,12 @@
     },
     "ds_grid_clear": {
         "desc": "",
-        "id": "",
+        "index": "",
         "val": ""
     },
     "ds_grid_copy": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": ""
     },
     "ds_grid_create": {
@@ -2325,45 +2322,45 @@
     },
     "ds_grid_destroy": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_get": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": ""
     },
     "ds_grid_get_disk_max": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_disk_mean": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_disk_min": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_disk_sum": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_max": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2371,7 +2368,7 @@
     },
     "ds_grid_get_mean": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2379,7 +2376,7 @@
     },
     "ds_grid_get_min": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2387,7 +2384,7 @@
     },
     "ds_grid_get_sum": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2395,18 +2392,18 @@
     },
     "ds_grid_height": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_multiply": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": "",
         "val": ""
     },
     "ds_grid_multiply_disk": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2414,7 +2411,7 @@
     },
     "ds_grid_multiply_grid_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": "",
         "x1": "",
         "y1": "",
@@ -2425,7 +2422,7 @@
     },
     "ds_grid_multiply_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2434,26 +2431,26 @@
     },
     "ds_grid_read": {
         "desc": "",
-        "id": "",
+        "index": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_grid_resize": {
         "desc": "",
-        "id": "",
+        "index": "",
         "w": "",
         "h": ""
     },
     "ds_grid_set": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": "",
         "val": ""
     },
     "ds_grid_set_disk": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2461,7 +2458,7 @@
     },
     "ds_grid_set_grid_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": "",
         "x1": "",
         "y1": "",
@@ -2472,7 +2469,7 @@
     },
     "ds_grid_set_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2481,17 +2478,17 @@
     },
     "ds_grid_shuffle": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_sort": {
         "desc": "",
-        "id": "",
+        "index": "",
         "column": "",
         "ascending": ""
     },
     "ds_grid_value_disk_exists": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2499,7 +2496,7 @@
     },
     "ds_grid_value_disk_x": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2507,7 +2504,7 @@
     },
     "ds_grid_value_disk_y": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2515,7 +2512,7 @@
     },
     "ds_grid_value_exists": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2524,7 +2521,7 @@
     },
     "ds_grid_value_x": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2533,7 +2530,7 @@
     },
     "ds_grid_value_y": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2542,11 +2539,11 @@
     },
     "ds_grid_width": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_write": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_list_add": {
         "desc": "",
@@ -2609,7 +2606,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_list_replace": {
         "desc": "",
@@ -2709,7 +2706,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_map_replace": {
         "desc": "",
@@ -2817,7 +2814,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_priority_size": {
         "desc": "",
@@ -2865,7 +2862,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_queue_size": {
         "desc": "",
@@ -2917,7 +2914,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_stack_size": {
         "desc": "",
