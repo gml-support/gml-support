@@ -4241,7 +4241,7 @@ exports.globalfunctions = {
         signature: '(id, pos, value)'
     },
 	ds_list_mark_as_list: {
-        description: '[Function]' + i18n.ds_list_mark_as_list.desc + returns.,
+        description: '[Function]' + i18n.ds_list_mark_as_list.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_mark_as_list.id },
@@ -4250,7 +4250,7 @@ exports.globalfunctions = {
         signature: '(id, pos)'
     },
 	ds_list_mark_as_map: {
-        description: '[Function]' + i18n.ds_list_mark_as_map.desc + returns.,
+        description: '[Function]' + i18n.ds_list_mark_as_map.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_mark_as_map.id },
@@ -4259,7 +4259,7 @@ exports.globalfunctions = {
         signature: '(id, pos)'
     },
 	ds_list_read: {
-        description: '[Function]' + i18n.ds_list_read.desc + returns.,
+        description: '[Function]' + i18n.ds_list_read.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_read.id },
@@ -4269,7 +4269,7 @@ exports.globalfunctions = {
         signature: '(id, str, [legacy])'
     },
 	ds_list_replace: {
-        description: '[Function]' + i18n.ds_list_replace.desc + returns.,
+        description: '[Function]' + i18n.ds_list_replace.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_replace.id },
@@ -4279,7 +4279,7 @@ exports.globalfunctions = {
         signature: '(id, pos, value)'
     },
 	ds_list_shuffle: {
-        description: '[Function]' + i18n.ds_list_shuffle.desc + returns.,
+        description: '[Function]' + i18n.ds_list_shuffle.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_shuffle.id }
@@ -4287,7 +4287,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_list_size: {
-        description: '[Function]' + i18n.ds_list_size.desc + returns.,
+        description: '[Function]' + i18n.ds_list_size.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_size.id }
@@ -4295,7 +4295,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_list_sort: {
-        description: '[Function]' + i18n.ds_list_sort.desc + returns.,
+        description: '[Function]' + i18n.ds_list_sort.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_sort.id },
@@ -4304,7 +4304,7 @@ exports.globalfunctions = {
         signature: '(id, ascending)'
     },
 	ds_list_write: {
-        description: '[Function]' + i18n.ds_list_write.desc + returns.,
+        description: '[Function]' + i18n.ds_list_write.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_list_write.id }
@@ -4312,7 +4312,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_add: {
-        description: '[Function]' + i18n.ds_map_add.desc + returns.,
+        description: '[Function]' + i18n.ds_map_add.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_add.id },
@@ -4322,7 +4322,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	ds_map_add_list: {
-        description: '[Function]' + i18n.ds_map_add_list.desc + returns.,
+        description: '[Function]' + i18n.ds_map_add_list.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_add_list.id },
@@ -4332,7 +4332,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	ds_map_add_map: {
-        description: '[Function]' + i18n.ds_map_add_map.desc + returns.,
+        description: '[Function]' + i18n.ds_map_add_map.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_add_map.id },
@@ -4342,7 +4342,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	ds_map_clear: {
-        description: '[Function]' + i18n.ds_map_clear.desc + returns.,
+        description: '[Function]' + i18n.ds_map_clear.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_clear.id }
@@ -4350,7 +4350,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_copy: {
-        description: '[Function]' + i18n.ds_map_copy.desc + returns.,
+        description: '[Function]' + i18n.ds_map_copy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_copy.id },
@@ -4359,11 +4359,11 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_map_create: {
-        description: '[Function]' + i18n.ds_map_create.desc + returns.,
+        description: '[Function]' + i18n.ds_map_create.desc + returns.map,
         available: datasimple.all
     },
 	ds_map_delete: {
-        description: '[Function]' + i18n.ds_map_delete.desc + returns.,
+        description: '[Function]' + i18n.ds_map_delete.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_delete.id },
@@ -4372,7 +4372,7 @@ exports.globalfunctions = {
         signature: '(id, key)'
     },
 	ds_map_destroy: {
-        description: '[Function]' + i18n.ds_map_destroy.desc + returns.,
+        description: '[Function]' + i18n.ds_map_destroy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_destroy.id }
@@ -4380,7 +4380,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_empty: {
-        description: '[Function]' + i18n.ds_map_empty.desc + returns.,
+        description: '[Function]' + i18n.ds_map_empty.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_empty.id }
@@ -4388,7 +4388,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_exists: {
-        description: '[Function]' + i18n.ds_map_exists.desc + returns.,
+        description: '[Function]' + i18n.ds_map_exists.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_exists.id },
@@ -4397,7 +4397,7 @@ exports.globalfunctions = {
         signature: '(id, key)'
     },
 	ds_map_find_first: {
-        description: '[Function]' + i18n.ds_map_find_first.desc + returns.,
+        description: '[Function]' + i18n.ds_map_find_first.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_find_first.id }
@@ -4405,7 +4405,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_find_last: {
-        description: '[Function]' + i18n.ds_map_find_last.desc + returns.,
+        description: '[Function]' + i18n.ds_map_find_last.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_find_last.id }
@@ -4413,7 +4413,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_find_next: {
-        description: '[Function]' + i18n.ds_map_find_next.desc + returns.,
+        description: '[Function]' + i18n.ds_map_find_next.desc + returns.rosu,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_find_next.id },
@@ -4422,7 +4422,7 @@ exports.globalfunctions = {
         signature: '(id, key)'
     },
 	ds_map_find_previous: {
-        description: '[Function]' + i18n.ds_map_find_previous.desc + returns.,
+        description: '[Function]' + i18n.ds_map_find_previous.desc + returns.rosu,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_find_previous.id },
@@ -4431,7 +4431,7 @@ exports.globalfunctions = {
         signature: '(id, key)'
     },
 	ds_map_find_value: {
-        description: '[Function]' + i18n.ds_map_find_value.desc + returns.,
+        description: '[Function]' + i18n.ds_map_find_value.desc + returns.rosu,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_find_value.id },
@@ -4440,7 +4440,7 @@ exports.globalfunctions = {
         signature: '(id, key)'
     },
 	ds_map_read: {
-        description: '[Function]' + i18n.ds_map_read.desc + returns.,
+        description: '[Function]' + i18n.ds_map_read.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_read.id },
@@ -4450,7 +4450,7 @@ exports.globalfunctions = {
         signature: '(id, str, [legacy])'
     },
 	ds_map_replace: {
-        description: '[Function]' + i18n.ds_map_replace.desc + returns.,
+        description: '[Function]' + i18n.ds_map_replace.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_replace.id },
@@ -4460,7 +4460,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	ds_map_replace_list: {
-        description: '[Function]' + i18n.ds_map_replace_list.desc + returns.,
+        description: '[Function]' + i18n.ds_map_replace_list.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_replace_list.id },
@@ -4470,7 +4470,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	ds_map_replace_map: {
-        description: '[Function]' + i18n.ds_map_replace_map.desc + returns.,
+        description: '[Function]' + i18n.ds_map_replace_map.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_replace_map.id },
@@ -4480,7 +4480,7 @@ exports.globalfunctions = {
         signature: '(id, key, value)'
     },
 	ds_map_secure_load: {
-        description: '[Function]' + i18n.ds_map_secure_load.desc + returns.,
+        description: '[Function]' + i18n.ds_map_secure_load.desc + returns.dsi,
         available: datasimple.all,
         parameters: [
             { label: 'filename', documentation: i18n.ds_map_secure_load.filename }
@@ -4488,7 +4488,7 @@ exports.globalfunctions = {
         signature: '(filename)'
     },
 	ds_map_secure_load_buffer: {
-        description: '[Function]' + i18n.ds_map_secure_load_buffer.desc + returns.,
+        description: '[Function]' + i18n.ds_map_secure_load_buffer.desc + returns.ds,
         available: datasimple.all,
         parameters: [
             { label: 'buffer', documentation: i18n.ds_map_secure_load_buffer.buffer }
@@ -4496,7 +4496,7 @@ exports.globalfunctions = {
         signature: '(buffer)'
     },
 	ds_map_secure_save: {
-        description: '[Function]' + i18n.ds_map_secure_save.desc + returns.,
+        description: '[Function]' + i18n.ds_map_secure_save.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_secure_save.id },
@@ -4505,7 +4505,7 @@ exports.globalfunctions = {
         signature: '(id, filename)'
     },
 	ds_map_secure_save_buffer: {
-        description: '[Function]' + i18n.ds_map_secure_save_buffer.desc + returns.,
+        description: '[Function]' + i18n.ds_map_secure_save_buffer.desc + returns.dsi,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_secure_save_buffer.id },
@@ -4514,7 +4514,7 @@ exports.globalfunctions = {
         signature: '(id, buffer)'
     },
 	ds_map_size: {
-        description: '[Function]' + i18n.ds_map_size.desc + returns.,
+        description: '[Function]' + i18n.ds_map_size.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_size.id }
@@ -4522,7 +4522,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_map_write: {
-        description: '[Function]' + i18n.ds_map_write.desc + returns.,
+        description: '[Function]' + i18n.ds_map_write.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_map_write.id }
@@ -4530,7 +4530,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_add: {
-        description: '[Function]' + i18n.ds_priority_add.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_add.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_add.id },
@@ -4540,7 +4540,7 @@ exports.globalfunctions = {
         signature: '(id, value, priority)'
     },
 	ds_priority_change_priority: {
-        description: '[Function]' + i18n.ds_priority_change_priority.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_change_priority.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_change_priority.id },
@@ -4550,7 +4550,7 @@ exports.globalfunctions = {
         signature: '(id, value, priority)'
     },
 	ds_priority_clear: {
-        description: '[Function]' + i18n.ds_priority_clear.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_clear.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_clear.id }
@@ -4558,7 +4558,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_copy: {
-        description: '[Function]' + i18n.ds_priority_copy.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_copy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_copy.id },
@@ -4567,11 +4567,11 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_priority_create: {
-        description: '[Function]' + i18n.ds_priority_create.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_create.desc + returns.r,
         available: datasimple.all
     },
 	ds_priority_delete_max: {
-        description: '[Function]' + i18n.ds_priority_delete_max.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_delete_max.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_delete_max.id }
@@ -4579,7 +4579,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_delete_min: {
-        description: '[Function]' + i18n.ds_priority_delete_min.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_delete_min.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_delete_min.id }
@@ -4587,7 +4587,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_delete_value: {
-        description: '[Function]' + i18n.ds_priority_delete_value.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_delete_value.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_delete_value.id },
@@ -4596,7 +4596,7 @@ exports.globalfunctions = {
         signature: '(id, value)'
     },
 	ds_priority_destroy: {
-        description: '[Function]' + i18n.ds_priority_destroy.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_destroy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_destroy.id }
@@ -4604,7 +4604,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_empty: {
-        description: '[Function]' + i18n.ds_priority_empty.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_empty.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_empty.id }
@@ -4612,7 +4612,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_find_max: {
-        description: '[Function]' + i18n.ds_priority_find_max.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_find_max.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_find_max.id }
@@ -4620,7 +4620,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_find_min: {
-        description: '[Function]' + i18n.ds_priority_find_min.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_find_min.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_find_min.id }
@@ -4628,7 +4628,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_find_priority: {
-        description: '[Function]' + i18n.ds_priority_find_priority.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_find_priority.desc + returns.rosu,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_find_priority.id },
@@ -4637,7 +4637,7 @@ exports.globalfunctions = {
         signature: '(id, value)'
     },
 	ds_priority_read: {
-        description: '[Function]' + i18n.ds_priority_read.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_read.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_read.id },
@@ -4647,7 +4647,7 @@ exports.globalfunctions = {
         signature: '(id, str, [legacy])'
     },
 	ds_priority_size: {
-        description: '[Function]' + i18n.ds_priority_size.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_size.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_size.id }
@@ -4655,7 +4655,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_priority_write: {
-        description: '[Function]' + i18n.ds_priority_write.desc + returns.,
+        description: '[Function]' + i18n.ds_priority_write.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_priority_write.id }
@@ -4663,7 +4663,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_clear: {
-        description: '[Function]' + i18n.ds_queue_clear.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_clear.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_clear.id }
@@ -4671,7 +4671,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_copy: {
-        description: '[Function]' + i18n.ds_queue_copy.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_copy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_copy.id },
@@ -4680,11 +4680,11 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_queue_create: {
-        description: '[Function]' + i18n.ds_queue_create.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_create.desc + returns.r,
         available: datasimple.all
     },
 	ds_queue_dequeue: {
-        description: '[Function]' + i18n.ds_queue_dequeue.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_dequeue.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_dequeue.id }
@@ -4692,7 +4692,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_destroy: {
-        description: '[Function]' + i18n.ds_queue_destroy.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_destroy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_destroy.id }
@@ -4700,7 +4700,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_empty: {
-        description: '[Function]' + i18n.ds_queue_empty.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_empty.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_empty.id }
@@ -4708,7 +4708,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_enqueue: {
-        description: '[Function]' + i18n.ds_queue_enqueue.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_enqueue.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_enqueue.id },
@@ -4718,7 +4718,7 @@ exports.globalfunctions = {
         signature: '(id, value, [val2, ... val15])'
     },
 	ds_queue_head: {
-        description: '[Function]' + i18n.ds_queue_head.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_head.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_head.id }
@@ -4726,7 +4726,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_read: {
-        description: '[Function]' + i18n.ds_queue_read.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_read.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_read.id },
@@ -4736,7 +4736,7 @@ exports.globalfunctions = {
         signature: '(id, str, [legacy])'
     },
 	ds_queue_size: {
-        description: '[Function]' + i18n.ds_queue_size.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_size.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_size.id }
@@ -4744,7 +4744,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_tail: {
-        description: '[Function]' + i18n.ds_queue_tail.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_tail.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_tail.id }
@@ -4752,7 +4752,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_queue_write: {
-        description: '[Function]' + i18n.ds_queue_write.desc + returns.,
+        description: '[Function]' + i18n.ds_queue_write.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_queue_write.id }
@@ -4760,7 +4760,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_set_precision: {
-        description: '[Function]' + i18n.ds_set_precision.desc + returns.,
+        description: '[Function]' + i18n.ds_set_precision.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'prec', documentation: i18n.ds_set_precision.prec }
@@ -4768,7 +4768,7 @@ exports.globalfunctions = {
         signature: '(prec)'
     },
 	ds_stack_clear: {
-        description: '[Function]' + i18n.ds_stack_clear.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_clear.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_clear.id }
@@ -4776,7 +4776,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_stack_copy: {
-        description: '[Function]' + i18n.ds_stack_copy.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_copy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_copy.id },
@@ -4785,11 +4785,11 @@ exports.globalfunctions = {
         signature: '(id, source)'
     },
 	ds_stack_create: {
-        description: '[Function]' + i18n.ds_stack_create.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_create.desc + returns.r,
         available: datasimple.all
     },
 	ds_stack_destroy: {
-        description: '[Function]' + i18n.ds_stack_destroy.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_destroy.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_destroy.id }
@@ -4797,7 +4797,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_stack_empty: {
-        description: '[Function]' + i18n.ds_stack_empty.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_empty.desc + returns.b,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_empty.id }
@@ -4805,7 +4805,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_stack_pop: {
-        description: '[Function]' + i18n.ds_stack_pop.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_pop.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_pop.id }
@@ -4813,7 +4813,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_stack_push: {
-        description: '[Function]' + i18n.ds_stack_push.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_push.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_push.id },
@@ -4823,7 +4823,7 @@ exports.globalfunctions = {
         signature: '(id, value, [val2, ... val13])'
     },
 	ds_stack_read: {
-        description: '[Function]' + i18n.ds_stack_read.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_read.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_read.id },
@@ -4833,7 +4833,7 @@ exports.globalfunctions = {
         signature: '(id, str, [legacy])'
     },
 	ds_stack_size: {
-        description: '[Function]' + i18n.ds_stack_size.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_size.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_size.id }
@@ -4841,7 +4841,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_stack_top: {
-        description: '[Function]' + i18n.ds_stack_top.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_top.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_top.id }
@@ -4849,7 +4849,7 @@ exports.globalfunctions = {
         signature: '(id)'
     },
 	ds_stack_write: {
-        description: '[Function]' + i18n.ds_stack_write.desc + returns.,
+        description: '[Function]' + i18n.ds_stack_write.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.ds_stack_write.id }

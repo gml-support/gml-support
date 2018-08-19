@@ -14,7 +14,9 @@
     "int": "\n\n**Returns:** Integer",
     "sound": "\n\n**Returns:** Sound Index",
     "ds": "\n\n**Returns:** DS Map",
+    "dsi": "\n\n**Returns:** DS_map Index",
     "p": "\n\n**Returns:** Pointer",
     "one": "\n\n**Returns:** One of the given arguments.",
-    "inst": "\n\n**Returns:** Instance id or noone"
+    "inst": "\n\n**Returns:** Instance id or noone",
+    "map": "\n\n**Returns:** Map id"
 }
