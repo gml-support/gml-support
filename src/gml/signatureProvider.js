@@ -81,7 +81,7 @@ class GMLSignatureHelpProvider {
             signature += params.slice(0, -1);
         }
         signature += ')';
-        let signatureInfo = new vscode_1.SignatureInformation(signature, entry.description);
+        let signatureInfo = new vscode_1.SignatureInformation(signature, new vscode_1.MarkdownString(entry.description));
         signatureInfo.parameters = infos;
         const ret = new vscode_1.SignatureHelp();
         ret.signatures.push(signatureInfo);

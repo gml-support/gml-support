@@ -1,0 +1,22 @@
+{
+    "r": "\n\n**Returns:** Real",
+    "rs": "\n\n**Returns:** Real/String",
+    "ros": "\n\n**Returns:** Real or String",
+    "rosu": "\n\n**Returns:** Real, String or Undefined",
+    "s": "\n\n**Returns:** String",
+    "ssc": "\n\n**Returns:** String (Single character)",
+    "b": "\n\n**Returns:** Boolean",
+    "na": "\n\n**Returns:** N/A",
+    "a": "\n\n**Returns:** Array",
+    "ah": "\n\n**Returns:** Array (Handle)",
+    "c": "\n\n**Returns:** Constant",
+    "i": "\n\n**Returns:** Index",
+    "int": "\n\n**Returns:** Integer",
+    "sound": "\n\n**Returns:** Sound Index",
+    "ds": "\n\n**Returns:** DS Map",
+    "dsi": "\n\n**Returns:** DS_map Index",
+    "p": "\n\n**Returns:** Pointer",
+    "one": "\n\n**Returns:** One of the given arguments.",
+    "inst": "\n\n**Returns:** Instance id or noone",
+    "map": "\n\n**Returns:** Map id"
+}

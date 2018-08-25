@@ -1,7 +1,7 @@
 {
     "abs": {
-        "desc": "test",
-        "x": "test"
+        "desc": "这个函数返回输入参数的绝对值，所以如果输入的是正值那么它将维持原值，但如果是负值它将乘以 -1 来变成正值。",
+        "val": "待转换为绝对值的值。"
     },
     "achievement_available": {
         "desc": ""
@@ -51,12 +51,12 @@
     "achievement_post": {
         "desc": "",
         "achievement_name": "",
-        "value": ""
+        "percent": ""
     },
     "achievement_post_score": {
         "desc": "",
         "score_name": "",
-        "value": ""
+        "score": ""
     },
     "achievement_reset": {
         "desc": ""
@@ -97,43 +97,43 @@
     },
     "angle_difference": {
         "desc": "",
-        "src": "",
-        "dest": ""
+        "ang1": "",
+        "ang2": ""
     },
     "ansi_char": {
         "desc": "",
         "val": ""
     },
     "application_get_position": {
-        "desc": ""
+        "desc": "当你在全局游戏设定中为一个目标平台打开“保持纵横比”，GameMaker: Studio 将自动设置应用表面层的绘制位置，让显示器正确的居中放大显示。但是如果你想自己操作表面进行绘制，这个函数可以让你 在显示器或窗口方便的找到表面层绘制的位置，然后在那里绘制，或者对齐GUI图片或者上面绘制图片。\n\n这个函数将返回包含四个键值的数组，键0和键1是表面左上角x/y的位置，键2和键3是表面右下x/y的位置，所有的这些值响应显示器及窗口发生变化。"
     },
     "application_surface_draw_enable": {
-        "desc": "",
-        "on_off": ""
+        "desc": "你可以使用这个函数决定允许或者不允许应用表面层的自动绘制。默认是允许，但是也有许多需要接管何时及怎样进行表面绘制的情况 (比如使用着色器的时候)，这里你可以用这个函数设置为假，自主决定绘制的时间和方式。",
+        "flag": "识可以为 真 (允许，默认值) 或 假 (不允许)。"
     },
     "application_surface_enable": {
-        "desc": "",
-        "enable": ""
+        "desc": "可以用这个函数启用或禁用应用表面层。默认是启用应用表面层，所有绘制事件中的绘制将会在应用表面层中结束，然后将这个表面层绘制到屏幕上。然而在一些旧设备或特定的芯片组上，这可能会导致很差的性能。那种情况你可以关闭绘制到应用表面层这个过程，绘制事件中的绘制将直接在屏幕缓存区中完成。\n\n你可以游戏中的任何时间使用这个函数启用或禁用应用表面层，但应该注意更改生效至少需要一帧（一步）。关闭后，长宽比校正也会关闭，这一项在全局游戏设置相关的目标平台中设置。这意味着，你需要额外的方法设置缩放到设备、窗口或屏幕相应的尺寸上。如果你切换回来，全局游戏设定下一步会再次生效。\n\n建议小心的使用这个函数，它会影响一切事物绘制到屏幕的过程。基本上，你可能只是想把它作为游戏菜单中的一个选项，或者在游戏开始时调用一次，并围绕着启用或禁用来写这些代码。\n\n返回： N/A",
+        "enable": "设置为启用 (真)禁用 (假) 应用表面层。"
     },
     "application_surface_is_enabled": {
-        "desc": ""
+        "desc": "如果使用应用表面层，这个函数将返回 真 ， 或者如果使用屏幕缓存区返回 假。"
     },
     "arccos": {
-        "desc": "",
-        "x": ""
+        "desc": "返回x的反余弦值，换句话说如果 cos(val)=n 则 arccos(n)=val ，并且结果将会是π到0之间的数。\n\n注意: 这将只接受在-1到1之间的数①（其他东西的话会抛出一个错误）\n\n①：arccos 定义域为[-1,1]",
+        "x": "待转换为反余弦值的角（弧度制）"
     },
     "arcsin": {
-        "desc": "",
-        "x": ""
+        "desc": "返回x的反正弦，换句话说，如果 sin(x)=n，那么 arcsin(n)=x，并且结果将是一个 -π/2 到 π/2 的数。\n\n注意: 这只接受在-1到1之间的值①。（其它东西的话会抛出错误）\n\n①：arcsin 的定义域为 [-1,1]。",
+        "x": "待转换为反正弦值的角（弧度制）"
     },
     "arctan": {
-        "desc": "",
-        "x": ""
+        "desc": "返回x的反正切值。这将会接受任意实数，和正切（tan）函数不同，反正切函数在y轴上有渐近线因此也就意味着你将永远也得不到一个大于 π/2 或者小于-π/2的数。",
+        "x": "待转换为反正切值的角（弧度制）。"
     },
     "arctan2": {
-        "desc": "",
-        "y": "",
-        "x": ""
+        "desc": "这个函数返回一个角 y/x 的反正切值，其中y是三角形的对边而x是三角形的邻边。不像 arctan(x) 函数那样，arctan2(y,x) 对于任意角度都是合法的，并且可以用于将一个矢量转换为一个角度而无虞除以0的问题，并且他也会返回正确的象限位置。\n\n注意: 这个返回值是弧度制，而非角度制。",
+        "y": "待计算的y坐标。",
+        "x": "待计算的x坐标。"
     },
     "array_copy": {
         "desc": "",
@@ -145,7 +145,8 @@
     },
     "array_create": {
         "desc": "",
-        "size": ""
+        "size": "",
+        "value": ""
     },
     "array_equals": {
         "desc": "",
@@ -154,16 +155,16 @@
     },
     "array_height_2d": {
         "desc": "",
-        "variable": ""
+        "array": ""
     },
     "array_length_1d": {
         "desc": "",
-        "variable": ""
+        "array": ""
     },
     "array_length_2d": {
         "desc": "",
-        "variable": "",
-        "index": ""
+        "array": "",
+        "n": ""
     },
     "asset_get_index": {
         "desc": "",
@@ -174,21 +175,21 @@
         "name": ""
     },
     "audio_channel_num": {
-        "desc": "",
-        "numchannels": ""
+        "desc": "用这个函数你可以设定在 Gamemaker:Studio 中有多少可以用来播放声音的声道数。也就是你可以同时播放声音的数目， 并且如果超过了设定量，低优先级的声音将会被停止播放，以腾出声道给高优先级的音乐。你可以用此函数来优化你的游戏，以更少的的声音通道换取更高的性能，但要记住这也会在大量的声音同时播放时，造成一些声音被阉割掉。",
+        "numchannels": "可用声道数 （默认为 128）."
     },
     "audio_create_buffer_sound": {
         "desc": "",
         "bufferId": "",
         "format": "",
+        "rate": "",
         "offset": "",
-        "src_index": "",
         "length": "",
         "channels": ""
     },
     "audio_create_play_queue": {
         "desc": "",
-        "bufferFormat": "",
+        "queueFormat": "",
         "sampleRate": "",
         "channels": ""
     },
@@ -206,18 +207,18 @@
     },
     "audio_destroy_stream": {
         "desc": "",
-        "stream_sound_id": ""
+        "filename": ""
     },
     "audio_destroy_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_emitter_create": {
         "desc": ""
     },
     "audio_emitter_exists": {
         "desc": "",
-        "emitterid": ""
+        "index": ""
     },
     "audio_emitter_falloff": {
         "desc": "",
@@ -296,50 +297,49 @@
         "vz": ""
     },
     "audio_exists": {
-        "desc": "",
-        "soundid": ""
+        "desc": "这个函数返回一个声音是否存在（true or false）。请注意，如果您调用索引以前没有初始化，这个函数会导致错误,因为它调用了不存在的资源索引.要检查的声音可以是单个的声音实例(使用 **audio_play_sound** 或 **audio_play_sound_at** 函数时,存储在一个变量的单个声音) 或者是一个声音资源。\n\n返回值:布尔",
+        "index": "用来检查是否存在的声音的索引。"
     },
     "audio_falloff_set_model": {
         "desc": "",
-        "falloffmode": ""
+        "falloffmodel": ""
     },
     "audio_free_buffer_sound": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_free_play_queue": {
         "desc": "",
-        "queueid": ""
+        "queueIndex": ""
     },
     "audio_get_listener_count": {
         "desc": ""
     },
     "audio_get_listener_info": {
         "desc": "",
-        "index": ""
+        "num": ""
     },
     "audio_get_listener_mask": {
-        "desc": "",
-        "mask": ""
+        "desc": ""
     },
     "audio_get_master_gain": {
         "desc": "",
         "listenerIndex": ""
     },
     "audio_get_name": {
-        "desc": "",
-        "index": ""
+        "desc": "该函数将以字符串形式返回一个给定的音频资源的名称。\"index\"值可以是资源自身（就像你在资源树里看到的那样），或者当您播放声音时被赋予唯一的 ID 值，例如 **audio_play_sound()** . 注意，返回的字符串与资源ID不一样，并且不能用来访问资源本身，所以应当只用于显示或错误检查。",
+        "index": "被检查的声音索引"
     },
     "audio_get_recorder_count": {
         "desc": ""
     },
     "audio_get_recorder_info": {
         "desc": "",
-        "recorder_num": ""
+        "recorder_index": ""
     },
     "audio_get_type": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_group_is_loaded": {
         "desc": "",
@@ -363,7 +363,7 @@
         "volume": "",
         "time": ""
     },
-    "audio_group_stop_all": {
+    "audio_group_stop": {
         "desc": "",
         "groupId": ""
     },
@@ -373,11 +373,11 @@
     },
     "audio_is_paused": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_is_playing": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_listener_get_data": {
         "desc": "",
@@ -433,30 +433,30 @@
         "gain": ""
     },
     "audio_pause_all": {
-        "desc": ""
+        "desc": "用这个函数你可以暂停所有正在播放的声音。"
     },
     "audio_pause_sound": {
-        "desc": "",
-        "soundid": ""
+        "desc": "用这个函数，你可以暂停当前正在播放的任何声音。可以是一个单一的声音实例 （当你使用 **audio_play_sound** 或 **audio_play_sound_at** 函数时，可以将被播放的声音索引存储在一个变量） 或是一个原声资源，但在这种情况下，给定声音的所有实例将被暂停。",
+        "index": "被暂停的声音索引"
     },
     "audio_pause_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_play_in_sync_group": {
         "desc": "",
-        "sync_group_id": "",
-        "soundid": ""
+        "group_index": "",
+        "sound_index": ""
     },
     "audio_play_sound": {
         "desc": "",
-        "soundid": "",
+        "sound": "",
         "priority": "",
         "loops": ""
     },
     "audio_play_sound_at": {
         "desc": "",
-        "soundid": "",
+        "index": "",
         "x": "",
         "y": "",
         "z": "",
@@ -469,7 +469,7 @@
     "audio_play_sound_on": {
         "desc": "",
         "emitterid": "",
-        "soundid": "",
+        "index": "",
         "priority": "",
         "loops": ""
     },
@@ -481,15 +481,15 @@
         "length": ""
     },
     "audio_resume_all": {
-        "desc": ""
+        "desc": "用这个函数你可以恢复之前所有被暂停的声音。"
     },
     "audio_resume_sound": {
-        "desc": "",
-        "soundid": ""
+        "desc": "有了这个函数，你可以恢复当前暂停的任何声音（使用函数 **audio_pause_sound** 后）。可以是一个单一的声音实例 （当你使用 **audio_play_sound** 或 **audio_play_sound_at** 函数时，可以将被播放的声音索引存储在一个变量） 或是一个原声资源，但在这种情况下，给定声音的所有实例将被重启。",
+        "index": "被恢复的声音索引"
     },
     "audio_resume_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_set_listener_mask": {
         "desc": "",
@@ -512,7 +512,7 @@
     },
     "audio_sound_get_listener_mask": {
         "desc": "",
-        "soundid": ""
+        "soundID": ""
     },
     "audio_sound_get_pitch": {
         "desc": "",
@@ -520,11 +520,11 @@
     },
     "audio_sound_get_track_position": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_sound_length": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_sound_pitch": {
         "desc": "",
@@ -533,21 +533,21 @@
     },
     "audio_sound_set_listener_mask": {
         "desc": "",
-        "soundid": "",
+        "soundID": "",
         "mask": ""
     },
     "audio_sound_set_track_position": {
         "desc": "",
-        "soundid": "",
+        "index": "",
         "time": ""
     },
     "audio_start_recording": {
         "desc": "",
-        "recorder_num": ""
+        "recorder_index": ""
     },
     "audio_start_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_stop_all": {
         "desc": ""
@@ -558,26 +558,26 @@
     },
     "audio_stop_sound": {
         "desc": "",
-        "soundid": ""
+        "index": ""
     },
     "audio_stop_sync_group": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_sync_group_debug": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_sync_group_get_track_pos": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_sync_group_is_playing": {
         "desc": "",
-        "sync_group_id": ""
+        "group_index": ""
     },
     "audio_system": {
-        "desc": ""
+        "desc": "这个函数返回当前的声音系统是否是传统的还是常规的。\n\n如果你使用的是 HTML5 的目标模块，那么这个函数非常重要。一些浏览器无法与新声音系统兼容，因此 Gamemaker:Studio 将会自动换回传统声音引擎。"
     },
     "base64_decode": {
         "desc": "",
@@ -588,8 +588,8 @@
         "string": ""
     },
     "browser_input_capture": {
-        "desc": "",
-        "enable": ""
+        "desc": "如果参数为 false，用户的所有输入被浏览器捕获，否则被游戏捕获。 \n\n举个例子：在 Chrome 浏览器中，用户输入按键 “ctrl+j” 可打开 chrome 的 “下载内容” ， 如果我们调用 browser_input_capture(true), chrome 将不会打开“下载内容”（屏蔽浏览器快捷键），用户的所有输入被我们的游戏捕获。 \n\n这个函数只能用于HTML5平台",
+        "enable": "开启（true）或关闭（false）"
     },
     "buffer_async_group_begin": {
         "desc": "",
@@ -681,7 +681,7 @@
     },
     "buffer_get_size": {
         "desc": "",
-        "buffer": ""
+        "index": ""
     },
     "buffer_get_surface": {
         "desc": "",
@@ -803,74 +803,71 @@
         "value": ""
     },
     "ceil": {
-        "desc": "",
-        "x": ""
+        "desc": "这个函数能够取得任意的实数并且将其向上取整到最近的整数。你应该小心这个函数的一个常见错误就是使用它来向上取整一个随机数并期望得到的数总是大于1的，比如：\n\n```int = ceil(random(5));```\n\n现在你将会期待这个代码总是给出一个在1到5之间的整数，但是这可能并不产生这种情况因为有非常小的概率这个随机函数会返回0，并且对0向上取整你还是会得到0. 这是微乎其微的可能性但是应该在使用这个函数时算在考虑范畴之内。",
+        "x": "待转换的数。"
     },
     "choose": {
-        "desc": "",
-        "x1": "",
-        "x2": "",
-        "x3": "",
-        "more": ""
+        "desc": "有时候你希望指定某些不是数字内容的随即选项，或者这些数字你希望不是以任何一种真实的顺序或者在任意被设定的范围之内。 在这些情况中你将使用 choose() 来生成一个随机结果。 比如，说你想要创建的物体在开始的时候带有一个随机的精灵，那么你就可以使用这个函数来把精灵索引设置为16个精灵中的一个。\n\n注意:这个函数每次重新运行游戏都将返回同一套结果因为 GameMaker: Studio 每次都生成同一套初始随机数种子来让调试更方便。为了避免这种行为在你游戏开始的时候使用函数 **randomize**.",
+        "valmax": "一个可以是字符串、整数、变量或者常量的输入值"
     },
     "chr": {
         "desc": "",
         "val": ""
     },
     "clamp": {
-        "desc": "",
-        "val": "",
-        "min": "",
-        "max": ""
+        "desc": "使用这个函数你能够把一个输入值维持在一个指定范围之间。",
+        "val": "待限定的值",
+        "min": "待限定区间的最小值",
+        "max": "待限定区间的最大值"
     },
     "clickable_add": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "spritetpe": "",
-        "URL": "",
-        "target": "",
-        "params": ""
+        "desc": "调用这个函数，你能够创建一个可自定义属性，可触发点击事件的 图标，并返回这个元素的 id，以备后面操作的正常进行。 这个图标就像一个按钮，可以让浏览器创建一个弹出窗口。\n\n如果，你调用的脚本，那么后面的两个参数可以留空字符串 (\"\")。 \n\n可用的窗口打开方式 (targets)：![](https://gmlsupport.liaronce.win/images-in-intellisense/zh-CN/1.png)\n\n可用的窗口参数：![](https://gmlsupport.liaronce.win/images-in-intellisense/zh-CN/2.png)\n\n如果你想访问 URL，那么前缀必须是 **http://** ，如果你想调用脚本，那么 GMS 脚本名的前缀必须是 **gmcallback_** ",
+        "x": "相对当前浏览器显示窗口的坐标 x 值.",
+        "y": "相对当前浏览器显示窗口的坐标 y 值.",
+        "spritetpe": "精灵图像的材质页映射坐标 (调用 **sprite_get_tpe** 获取).",
+        "URL": "URL 地址或者 \"GML 脚本名 +()\"(脚本资源名以 gmcallback_ 为前缀, 类似于'javascript:'伪协议).",
+        "target": "指定在何处打开链接 (具体说明看下文).",
+        "params": "可用的一些属性 (具体说明看下文)."
     },
     "clickable_add_ext": {
-        "desc": "",
-        "x": "",
-        "y": "",
-        "spritetpe": "",
-        "URL": "",
-        "target": "",
-        "params": "",
-        "scale": "",
-        "alpha": ""
+        "desc": "这个函数与 **clickable_add** 很相似. \n\n调用这个函数，你能够创建一个可自定义属性，可触发点击事件的 图标，并返回这个元素的 id，以备后面操作的正常进行. \n\n这个图标就像一个按钮，可以让浏览器创建一个窗口.\n\n如果你想访问 URL，那么前缀必须是 **http://** ，如果你想调用脚本，那么 GMS 脚本名的前缀必须是 **gmcallback_**。\n\n当你调用脚本时，参数 \"target\" 和 \"params\" 可以留空字符串 (\"\").",
+        "x": "相对当前浏览器显示窗口的坐标 x 值.",
+        "y": "相对当前浏览器显示窗口的坐标 y 值.",
+        "spritetpe": "精灵图像的材质页映射坐标 (调用 **sprite_get_tpe** 获取).",
+        "URL": "URL 地址或者 \"GML 脚本名 +()\"(脚本资源名以 gmcallback_为前缀).",
+        "target": "指定在何处打开链接 (具体说明看下文).",
+        "params": "指定打开窗口的属性 (具体说明看下文).",
+        "scale": "图标的缩放（默认为 1）.",
+        "alpha": "图标的透明度（默认为 1）."
     },
     "clickable_change": {
-        "desc": "",
-        "buttonid": "",
-        "spritetpe": "",
-        "x": "",
-        "y": ""
+        "desc": "使用这个函数，你可以改变已经创建图标（**clickable_add**）的属性，包括显示精灵以及坐标. 请注意，坐标相对当前浏览器的显示窗口，并非画布 , 而精灵图像的材质页映射坐标 ，可调用 **sprite_get_tpe** 获取.",
+        "buttonid": "图标的 id.",
+        "spritetpe": "精灵图像的材质页映射坐标 (调用 **sprite_get_tpe** 获取).",
+        "x": "相对当前浏览器显示窗口的坐标 x 值.",
+        "y": "相对当前浏览器显示窗口的坐标 y 值."
     },
     "clickable_change_ext": {
-        "desc": "",
-        "buttonid": "",
-        "spritetpe": "",
-        "x": "",
-        "y": "",
-        "scale": "",
-        "alpha": ""
+        "desc": "使用这个函数，能够改变图标的精灵和位置. 请注意，坐标相对当前浏览器的显示窗口，并非画布 。而精灵图像的材质页映射坐标 ，可调用 **sprite_get_tpe** 获取. \n\n这个函数也允许你改变精灵的缩放（1 表示默认，0.5 将缩小 1 倍，而 2 将放大 2 倍）以及透明度（0 表示完全透明，1 表示不透明） ",
+        "buttonid": "图标 id.",
+        "spritetpe": "精灵图像的材质页映射坐标 (调用 **sprite_get_tpe** 获取).",
+        "x": "相对当前浏览器显示窗口的坐标 x 值.",
+        "y": "相对当前浏览器显示窗口的坐标 y 值.",
+        "scale": "图标的缩放（默认为 1）.",
+        "alpha": "图标的透明度（默认为 1）."
     },
     "clickable_delete": {
-        "desc": "",
-        "buttonid": ""
+        "desc": "这个函数用于移除先前使用函数 **clickable_add** 创建的图标.",
+        "buttonid": "将移除的图标的 id."
     },
     "clickable_exists": {
-        "desc": "",
-        "index": ""
+        "desc": "这个函数将返回指定的图标存在或者不存在 请注意，所检测的图标，必须先前是被创建的，否则会造成 GameMaker:Studio 发生异常.",
+        "index": "要检测的图标的 id."
     },
     "clickable_set_style": {
-        "desc": "",
-        "buttonid": "",
-        "map": ""
+        "desc": "这个函数，能够读取以键值对的形式存储的 CSS style 属性，来设置图标的风格.\n\n在这之前，你必须创建好图标（调用函数 **clickable_add()**）以及 ds_map 提供的 css style 信息.",
+        "buttonid": "图标的 id.",
+        "map": "存储图标风格的 ds_map 的 id ."
     },
     "clipboard_get_text": {
         "desc": ""
@@ -883,18 +880,20 @@
         "str": ""
     },
     "cloud_file_save": {
-        "desc": "",
-        "filename": ""
+        "desc": "这个函数将提交一个文件到所选云服务用于存储。该函数将返回惟一的 id 值，那么应该使用适当的异步事件识别 ds_map 返回作为云服务的 “回调（call back）”。该文件应该包含你所需要保存的游戏的 全部 信息，你只能上传一个二进制数据（ \"data blob\" ）到服务器上, 并且再次运行这个函数将覆盖之前存储的值 (如同使用 **cloud_string_save** 一样). 描述文字应该尽量的短，用于描述保存操作, 例如 \"Level2, Stage2\".想要进一步了解异步函数返回的数据，请查阅函数 **cloud_synchronise**.",
+        "filename": "将被上传的文件 (同 i 符串)。",
+        "description": "所存储数据的简要说明。"
     },
     "cloud_string_save": {
-        "desc": "",
-        "data": ""
+        "desc": "该函数将提交一个字符串到所选的云服务用于存储。该函数将返回惟一的 id 值，那么应该使用适当的异步事件识别 ds_map 返回作为云服务的 “回调（call back）”。该字符串应该包含你所需要保存的游戏的 全部 信息 你只能上传一个二进制数据（ \"data blob\" ）到服务器上, 并且再次运行这个函数将覆盖之前存储的值 (如同使用 **cloud_file_save** 一样)。描述文字应该尽量的短，用于描述保存操作, 例如： \"Level2, Stage2\".想要进一步了解异步函数返回的数据，请查阅函数 **cloud_synchronise**.",
+        "data": "将要被上传的字符串。",
+        "description": "所存储数据的简要说明。"
     },
     "cloud_synchronise": {
-        "desc": ""
+        "desc": "这个函数通常在新的游戏的开始被调用，用于检索云端服务器上存储的游戏的启动。这个函数将返回一个唯一 id ，这个值被用于 异步云事件（Asynchronous Cloud Event） 中从已创建的 ds_map 来检索关联信息。\n\n这个函数用于向云端发送数据, 并触发相应的异步事件。此时，你可以检查返回的 *async_load* ds_map 为下列值：\n\n - \"status\": 这是状态码，其中负值表示错误，错误详情包含在 “errorstring” 中。 0 （或者大于 0 的值） 代表成功 (见下文) 的返回, “resultString” 中包含返回的消息数据。\n\n - \"id\": 返回被调用的函数的 id，如果你发送了一系列的 cloud_ 请求，你需要知道被回应的是哪一个，所以你要用这个值来和发送时存储的值进行比较来找到你需要的请求。\n\n - \"description\": 上传的最后一个文件的描述。\n\n - \"resultString\": 从云端返回的二进制数据。\n\n - \"errorString\": 返回的错误消息。\n\n - 返回值 \"status\" 的详细映射关系如下如下： ![](https://gmlsupport.liaronce.win/images-in-intellisense/zh-CN/3.png)"
     },
     "code_is_compiled": {
-        "desc": ""
+        "desc": "如果这个平台在虚拟机外部编译了代码，这个函数就会返回 true，比如对于 YYC 和 JS 平台。"
     },
     "collision_circle": {
         "desc": "",
@@ -992,25 +991,25 @@
         "col": ""
     },
     "cos": {
-        "desc": "",
-        "radian_angle": ""
+        "desc": "在一个直角三角形中，cos(val) = 邻边 / 斜边，其中 val 是三个角中的一个。这个函数将总会返回一个 - 1 到 1 之间的数。",
+        "radian_angle": "待转换为余弦值的角（弧度制）。"
     },
     "darccos": {
-        "desc": "",
-        "x": ""
+        "desc": "返回 x 的反余弦值，其中如果 dcos(val)=n 那么 darccos(n)=val，并且返回的值总是在 180 到 0 之间。\n\n注意: 这只接受在 - 1 到 1 之间的值①。（其它东西的话会抛出错误）\n\n①：darccos 的定义域为 [-1,1]。 ",
+        "x": "待转换为反余弦值的角（角度制）。"
     },
     "darcsin": {
-        "desc": "",
-        "x": ""
+        "desc": "返回 x 的反正弦值，其中如果 dsin(x)=n，那么 darcsin(n)=x，并且返回值总是一个 - 90 到 90 之间的值\n\nNOTE 注意: 这只接受在 - 1 到 1 之间的值①。（其它东西的话会抛出错误） \n\n①：darcsin 的定义域为 [-1,1]。 ",
+        "x": "待转换为反正弦值的角（角度制）。"
     },
     "darctan": {
-        "desc": "",
-        "x": ""
+        "desc": "返回 x 的反正切值。这将接受任何数字, 不像 dtan，darctans 的渐近线在 y 轴上所以这也就意味着泥浆永远也得不到一个大于 90 或者小于 - 90 的返回值。 ",
+        "x": "待转换为反正切值的角（角度制）。"
     },
     "darctan2": {
-        "desc": "",
-        "y": "",
-        "x": ""
+        "desc": "这个函数返回角 y/x 的反正切值， 其中 y = 三角形的对边且 x = 三角形的邻边。 不像 darctan(x) 这个函数 darctan2(y,x) 对于任意角度都是合法的 并且因此可能被用于将向量转换为角度而不用担心被 0 除的错误， 并且他也返回一个在正确象限内的结果。\n\n注意: 被返回的值是角度制的，而非弧度制。",
+        "y": "待计算的 y 坐标",
+        "x": "待计算的 x 坐标"
     },
     "date_compare_date": {
         "desc": "",
@@ -1218,8 +1217,8 @@
         "str": ""
     },
     "degtorad": {
-        "desc": "",
-        "x": ""
+        "desc": "在 GM 中所有三角函数都以弧度制进行运算， 但大多数人都以角度制运算并且这意味着要把你的角度转换为弧度你需要使用这个函数。 举个例子, degtorad(180) 返回 3.14159265 弧度。 这个函数利用这条公式将角度制翻译为弧度制：\n\n`弧度 = 角度 × π / 180`",
+        "x": "待转换的角度。"
     },
     "device_get_tilt_x": {
         "desc": ""
@@ -1289,60 +1288,60 @@
         "dname": ""
     },
     "display_get_dpi_x": {
-        "desc": ""
+        "desc": "每英寸打印的点数（DPI）是空间印刷或者视频点密度的量度，特别是指放置在一英寸（2.54 cm）直线跨度内的独立点的数目。在移动设备上运行时（尤其是安卓设备），这是一个重要的考量，适合这个显示器的分辨率时，可能不适合另外一个。比如，你可能有两个显示器，它们有相同的分辨率 400 x 800，但是显示器 1 是 60dpi，而显示器 2 是 30dpi。这种情况下，显示器 2 上的任何文字或图像将会更大，即使实际上分辨率是一样的。\n\n这个函数将获取设置显示器 x 轴的 dpi（这个值也依赖设备的方向）。请注意 Mac 和 iOS 不会返回特定的 dpi 设置，而是作为操作系统返回同一个值，这并不正确（但必须这样），因为苹果没有给出正确的值。"
     },
     "display_get_dpi_y": {
-        "desc": ""
+        "desc": "每英寸打印的点数（DPI）是空间印刷或者视频点密度的量度，特别是指放置在一英寸（2.54 cm）直线跨度内的独立点的数目。在移动设备上运行时（尤其是安卓设备），这是一个重要的考量，适合这个显示器的分辨率时，可能不适合另外一个。比如，你可能有两个显示器，它们有相同的分辨率 400 x 800，但是显示器 1 是 60dpi，而显示器 2 是 30dpi。这种情况下，显示器 2 上的任何文字或图像将会更大，即使实际上分辨率是一样的。\n\n这个函数将获取设置显示器 y 轴的 dpi（这个值也依赖设备的方向）。请注意 Mac 和 iOS 不会返回特定的 dpi 设置，而是作为操作系统返回同一个值，这并不正确（但必须这样），因为苹果没有给出正确的值。"
     },
     "display_get_gui_height": {
-        "desc": ""
+        "desc": "用这个函数获取 Draw Gui Event 中已使用（绘制内容）的像素高度。"
     },
     "display_get_gui_width": {
-        "desc": ""
+        "desc": "用这个函数获取 Draw Gui Event 中已使用（绘制内容）的像素高度。"
     },
     "display_get_colordepth": {
         "desc": ""
     },
     "display_get_height": {
-        "desc": ""
+        "desc": "这个函数将返回显示器的高度（像素为单位）。需要注意的是 HTML5 平台，这个值是 浏览器窗口的高度，而不是显示器的物理尺寸。"
     },
     "display_get_orientation": {
-        "desc": ""
+        "desc": "这个函数返回 GameMaker: Studio常量中的一个，告诉你运行游戏的设备是在横向模式还是纵向模式。![](https://gmlsupport.liaronce.win/images-in-intellisense/zh-CN/4.png)\n\n请注意，使用 HTML5 目标模块时，这个函数可能不会正确的检测到设备的朝向。然而使用起来很方便，仿照下面的脚本：\n\n```return (browser_width < browser_height);```\n\n纵向返回 *真* 横向返回 *假*。"
     },
     "display_get_width": {
-        "desc": ""
+        "desc": "这个函数将返回显示器的宽度（以像素为单位）。需要注意的是 HTML5 平台，这个值返回的是 浏览器窗口的宽度，而不是显示器的物理尺寸。"
     },
     "display_mouse_get_x": {
-        "desc": ""
+        "desc": "这个函数返回 屏幕上鼠标指针的 x 坐标。应该注意的是，这个函数只在 windows 平台有效。当然 HTML5 也可以一用，但只是返回相对于画布 (0,0) 的一个值，鼠标在画布外面时不会返回任何值。其它设备会返回 0，这时你应该使用 **device_mouse_raw_x** 和 **device_mouse_raw_y 函数替代它。**"
     },
     "display_mouse_get_y": {
-        "desc": ""
+        "desc": "这个函数返回 屏幕鼠标位置的 x 坐标。应该注意的是，这个函数只在 windows 平台有效。当然 HTML5 也可以一用，但只是返回相对于画布 (0,0) 的一个值，鼠标在画布外面时不会返回任何值。其它设备会返回 0，这时你应该使用 **device_mouse_raw_x** 和 **device_mouse_raw_y** 函数替代它。"
     },
     "display_set_gui_maximise": {
-        "desc": "",
-        "xscale": "",
-        "yscale": "",
-        "xoffset": "",
-        "yoffset": ""
+        "desc": "这个函数最大化 GUI 层，相对于屏幕尺寸进行缩放和偏移设置，而不是相对于默认的应用表面层的位置和尺寸。默认情况下，GUI 层与应用表面层分辨率比例是 1:1，绘制位置也是在表面层的 (0,0)。然而你不想总是这种情况，所以可以设置为相对于屏幕和窗口的绝对位置 (0,0)。\n\n函数提供什么参数，决定于想要在 GUI 层表达什么样的效果。简单的无参数调用这个函数，GUI 层将被绘制在屏幕或窗口的 (0,0) 位置，宽度和高度将被拉伸适应整个区域。\n\n```display_set_gui_maximise();```\n\n然而，也可以为 GUI 层设置 缩放因数 ，缩放的宽度取决于这个值的大小。记住，GUI 层一向是主动适应显示器或游戏窗口的大小，或者应用表面层，所以设置这个为除 1 之外的任何其它值，基本是根据它们的宽高缩放像素值。如果显示器是 1024x768 ，设置缩放因数为 0.5，GUI 层将是显示器大小的一半，有效的增加了一倍的像素。\n\n```display_set_gui_maximise(0.5, 0.5);```\n\n用这种方式设置的值也包括在显示器或游戏窗口中 GUI 绘制的位置，可以通过提供一对偏移值去 “移动或改变” 这个 (0,0) 位置。\n\n```var pos = application_get_position();\n\ndisplay_set_gui_maximise(0.5, 0.5, pos[0], pos[1]);```\n\n最后，你可以尝试将将缩放因数设置为 - 1，重置 GUI 层。这个操作会再次设置以 1:1 的比例，(0,0) 的位置，相对于应用表面层作出改变，而不是显示器或窗口。\n\n```display_set_gui_maximise(-1, -1);```",
+        "xscale": "<可选> 水平缩放因数（使用 - 1 重置为默认）",
+        "yscale": "<可选> 垂直缩放因数（使用 - 1 重置为默认）。",
+        "xoffset": "<可选> 偏移 x 位置进行绘制",
+        "yoffset": "<可选> 偏移 y 位置进行绘制"
     },
     "display_set_gui_size": {
-        "desc": "",
-        "width": "",
-        "height": ""
+        "desc": "此函数只会影响 Draw GUI Event 中的绘制的内容，并可以用来给那个事件中所有 GUI 组件设定特定的宽度和高度， 不管显示器或窗口之前是怎样显示 GUI，都会缩放到适当的效果。GUI 放置的位置 (比如 (0,0) 位置) 取决于你是否使用这个函数 **display_set_gui_maximise()** 。如果你没有使用这个函数 (默认设置)， GUI 层将被放置在同应用表面（游戏绘制的区域）一样的 (0,0) 位置，宽度和高度将被拉伸以适合这个表面层，使用这个函数这样设置时宽度为 256px 的 GUI，当应用表面层是 512px 时，将会拉伸 256 像素为表面层的大小，使得像素放大两倍。这是已经在全局游戏设置中开启长宽比校正的理想选择。\n\n如果你已经使用 *display_set_gui_maximise()* 函数，然后 GUI 层的 (0,0)位置将默认为游戏窗口或显示器的左上角（全屏或者在移动设备上），用那个函数设置缩放因数，这个函数设置宽度和高度。通过调用这个函数，设置宽和高为 - 1，你可以在任何时间重置 GUI 层为默认设置。这个操作将设置 GUI 层至应用表面左上角的 (0,0) 坐标，宽和高重置应用表面相同的大小。",
+        "width": "GUI 的宽度 (-1 表示 与显示器或应用表面 1:1 的比例).",
+        "height": "GUI 的高度 (-1 表面 与显示器或应用表面 1:1 的比例)."
     },
     "display_set_ui_visibility": {
         "desc": "",
         "flags": ""
     },
     "display_mouse_set": {
-        "desc": "",
-        "x": "",
-        "y": ""
+        "desc": "有了这个函数，你便可以更改或设置游戏屏幕上的鼠标位置，对于 FPS 游戏来说，这可能会比较好用。这个函数只有焦点在游戏中时有用，所以使用 alt + tab 时 将会解锁鼠标。",
+        "x": "显示器上的 x 坐标。",
+        "y": "显示器上的 y 坐标。"
     },
     "display_reset": {
-        "desc": "",
-        "aa_level": "",
-        "vsync": ""
+        "desc": "这个函数将游戏开始时显示器的一些设置重置为某些值，也允许更改全屏抗锯齿的等级以及是否使用垂直同步。可用的抗锯齿等级包括 0、2、4 和 8，默认起动时设置为 0，默认的 v-sync（垂直同步）设置为关闭 (假)。开启 v-sync （垂直同步）画面上可以得到更平滑的游戏体验，但是也需要更多的计算资源，因些使用前仔细考虑它的影响，同理，抗锯齿等级越高，需要的处理资源也更多。\n\n目标设备各有不同，比如一些可能不支持 8x 或者 4x 抗锯齿， 所以也有一个 只读用来获取设备运行游戏时可以显示的 AA（抗锯齿）等级。\n\n**display_aa**\n\n这个变量基于不同等级设置的比特值返回一个值。所以只支持 2xAA（2 倍的 AA）会输出 2，对于 2x 和 4x（2 倍或 4 倍） 的可用性将输出 6。对于 8 和 4 的支持它会输出 12。支持所有三个等级时 （2、4 和 8）将出输出 14。",
+        "aa_level": "抗锯齿滤镜的等级 (0, 2, 4 or 8)。",
+        "vsync": "切换垂直同步为开启（真）或关闭（假）"
     },
     "distance_to_object": {
         "desc": "",
@@ -1354,11 +1353,11 @@
         "y": ""
     },
     "dot_product": {
-        "desc": "",
-        "x1": "",
-        "y1": "",
-        "x2": "",
-        "y2": ""
+        "desc": "点积是一个表达两个向量间角度关系并用两个向量相乘①然后相加的结果。“点积” 这个名字源自于经常被用于指明这种运算的中心圆点符号 “·”（又称为 “标量积”（数量积），强调了其结果本质是一个标量而不是向量）。\n\n实质上的数学公式可以被写成像这样：![](https://deciia.coding.me/5pice/source/dadiospice/002_Reference/Maths/Vector%20Functions/dot_product_image.png)\n\n①：此处的 “相乘” 表示两个向量的分量各自相乘，即 x1y1 和 x2y2\n\n所以在 2 维中向量 a(x1,y1) 和 b(x2,y2) 的点积是 x1y1+x2y2，意味着在GameMaker: Studio中点积被计算为：\n\n```a · b = (x1*x2)+(y1*y2);```\n\n关于点积最令人好奇的事情就是它与由输入的向量形成的角度的关系，其被表达为：\n\n```a · b = |a| × |b| × cos<a,b>\n\n//<a,b> 表示向量 a 与向量 b 的夹角```\n\n这就是说，两个向量的点积将等于那些向量的夹角的余弦，乘以它们各自的模。这里有一张插图：![](https://deciia.coding.me/5pice/source/dadiospice/002_Reference/Maths/Vector%20Functions/dot_product_image_2.png)有一些事情我们能够从任意两个向量有关的点积中阐明：\n\n - 如果 a 和 b 是相互垂直的（对彼此成 90° 角），这个点积的结果将是 0，因为 cos<a,b> 会是 0.\n\n - 如果 a 和 b 的夹角小于 90°，这个点积就会是正的（大于 0），因为 cos<a,b> 将是正数。\n\n - 如果 a 和 b 的夹角大于 90°，这个点积就会是负的（小于 0），因为 cos<a,b> 将是负数。\n\n那么这对于我们这些做游戏的人意味着什么呢？好吧，这个数学关系可以被用于相当多的场合中，但最好观察它的方式就是去建立一个真正的情形并由你自己来观察发生了什么。做到这一点的最简单方式之一就是去生成一个单独的用于检测敌人是否在内的 “视野线”，比方说，一个这样的平台游戏，敌人将会 “观测” 玩家是否在它们的法向量两边 90° 范围内。![](https://deciia.coding.me/5pice/source/dadiospice/002_Reference/Maths/Vector%20Functions/dot_product_image_1.png)\n\n根本上说，我们需要获取到敌人的法向量（换言之：包含了方向和视野距离）并且接下来我们需要去获得玩家到敌人的向量我们然后将得到这些向量的点积，并且如果结果为正则玩家已经被发现，而如果是负的则没有。",
+        "x1": "第一个向量的 x 坐标。",
+        "y1": "第一个向量的 y 坐标。",
+        "x2": "第二个向量的 x 坐标。",
+        "y2": "第二个向量的 y 坐标。"
     },
     "dot_product_3d": {
         "desc": "",
@@ -2270,19 +2269,19 @@
     },
     "ds_exists": {
         "desc": "",
-        "id": "",
+        "index": "",
         "type": ""
     },
     "ds_grid_add": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": "",
         "val": ""
     },
     "ds_grid_add_disk": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2290,7 +2289,7 @@
     },
     "ds_grid_add_grid_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": "",
         "x1": "",
         "y1": "",
@@ -2301,7 +2300,7 @@
     },
     "ds_grid_add_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2310,12 +2309,12 @@
     },
     "ds_grid_clear": {
         "desc": "",
-        "id": "",
+        "index": "",
         "val": ""
     },
     "ds_grid_copy": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": ""
     },
     "ds_grid_create": {
@@ -2325,45 +2324,45 @@
     },
     "ds_grid_destroy": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_get": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": ""
     },
     "ds_grid_get_disk_max": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_disk_mean": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_disk_min": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_disk_sum": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": ""
     },
     "ds_grid_get_max": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2371,7 +2370,7 @@
     },
     "ds_grid_get_mean": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2379,7 +2378,7 @@
     },
     "ds_grid_get_min": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2387,7 +2386,7 @@
     },
     "ds_grid_get_sum": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2395,18 +2394,18 @@
     },
     "ds_grid_height": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_multiply": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": "",
         "val": ""
     },
     "ds_grid_multiply_disk": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2414,7 +2413,7 @@
     },
     "ds_grid_multiply_grid_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": "",
         "x1": "",
         "y1": "",
@@ -2425,7 +2424,7 @@
     },
     "ds_grid_multiply_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2434,26 +2433,26 @@
     },
     "ds_grid_read": {
         "desc": "",
-        "id": "",
+        "index": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_grid_resize": {
         "desc": "",
-        "id": "",
+        "index": "",
         "w": "",
         "h": ""
     },
     "ds_grid_set": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x": "",
         "y": "",
         "val": ""
     },
     "ds_grid_set_disk": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2461,7 +2460,7 @@
     },
     "ds_grid_set_grid_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "source": "",
         "x1": "",
         "y1": "",
@@ -2472,7 +2471,7 @@
     },
     "ds_grid_set_region": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2481,17 +2480,17 @@
     },
     "ds_grid_shuffle": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_sort": {
         "desc": "",
-        "id": "",
+        "index": "",
         "column": "",
         "ascending": ""
     },
     "ds_grid_value_disk_exists": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2499,7 +2498,7 @@
     },
     "ds_grid_value_disk_x": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2507,7 +2506,7 @@
     },
     "ds_grid_value_disk_y": {
         "desc": "",
-        "id": "",
+        "index": "",
         "xm": "",
         "ym": "",
         "r": "",
@@ -2515,7 +2514,7 @@
     },
     "ds_grid_value_exists": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2524,7 +2523,7 @@
     },
     "ds_grid_value_x": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2533,7 +2532,7 @@
     },
     "ds_grid_value_y": {
         "desc": "",
-        "id": "",
+        "index": "",
         "x1": "",
         "y1": "",
         "x2": "",
@@ -2542,11 +2541,11 @@
     },
     "ds_grid_width": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_grid_write": {
         "desc": "",
-        "id": ""
+        "index": ""
     },
     "ds_list_add": {
         "desc": "",
@@ -2609,7 +2608,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_list_replace": {
         "desc": "",
@@ -2709,7 +2708,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_map_replace": {
         "desc": "",
@@ -2817,7 +2816,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_priority_size": {
         "desc": "",
@@ -2865,7 +2864,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_queue_size": {
         "desc": "",
@@ -2917,7 +2916,7 @@
         "desc": "",
         "id": "",
         "str": "",
-        "more": ""
+        "legacy": ""
     },
     "ds_stack_size": {
         "desc": "",
@@ -7633,7 +7632,7 @@
     },
 	"audio_play_music": {
         "desc": "",
-        "soundid": "",
+        "index": "",
         "loops": ""
     },
 	"audio_stop_music": {

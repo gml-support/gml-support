@@ -6,25 +6,25 @@
         "desc": ""
     },
     "achievement_challenge_completed": {
-        "desc": ""
+        "desc": "A challenge has been completed."
     },
     "achievement_challenge_completed_by_remote": {
-        "desc": ""
+        "desc": "A challenge has been completed by the other player."
     },
     "achievement_challenge_launched": {
-        "desc": ""
+        "desc": "The game was launched from the OS dashboard with the given challenge."
     },
     "achievement_challenge_list_received": {
         "desc": ""
     },
     "achievement_challenge_received": {
-        "desc": ""
+        "desc": "A challenge has been received"
     },
     "achievement_filter_all_players": {
-        "desc": ""
+        "desc": "Get all scores for all players."
     },
     "achievement_filter_friends_only": {
-        "desc": ""
+        "desc": "Get only the scores of the players friends."
     },
     "achievement_friends_info": {
         "desc": ""
@@ -72,7 +72,7 @@
         "desc": ""
     },
     "all": {
-        "desc": ""
+        "desc": "All instances currently active in the room."
     },
     "ANSI_CHARSET": {
         "desc": ""
@@ -81,166 +81,175 @@
         "desc": ""
     },
     "asset_background": {
-        "desc": ""
+        "desc": "The given name refers to a background."
     },
     "asset_font": {
-        "desc": ""
+        "desc": "The given name refers to a font."
     },
     "asset_object": {
-        "desc": ""
+        "desc": "The given name refers to an object."
     },
     "asset_path": {
-        "desc": ""
+        "desc": "The given name refers to a path."
     },
     "asset_room": {
-        "desc": ""
+        "desc": "The given name refers to a room."
     },
     "asset_script": {
-        "desc": ""
+        "desc": "The given name refers to a script."
     },
     "asset_sound": {
-        "desc": ""
+        "desc": "The given name refers to a sound."
     },
     "asset_sprite": {
-        "desc": ""
+        "desc": "The given name refers to a sprite."
     },
     "asset_timeline": {
-        "desc": ""
+        "desc": "The given name refers to a time line."
     },
     "asset_unknown": {
-        "desc": ""
+        "desc": "The given name refers to an asset that either does not exist, or is not one of the above listed."
+    },
+    "audio_3D": {
+        "desc": "3D (5.1) audio."
     },
     "audio_falloff_exponent_distance": {
-        "desc": ""
+        "desc": "gain = (listener_distance / reference_distance) ^ (-falloff_factor)"
     },
     "audio_falloff_exponent_distance_clamped": {
-        "desc": ""
+        "desc": "distance = clamp(listener_distance, reference_distance, maximum_distance)\ngain = (distance / reference_distance) ^ (-falloff_factor)"
     },
     "audio_falloff_inverse_distance": {
-        "desc": ""
+        "desc": "gain = reference_distance / (reference_distance + falloff_factor * (listener_distance – reference_distance))"
     },
     "audio_falloff_inverse_distance_clamped": {
-        "desc": ""
+        "desc": "distance = clamp(listener_distance, reference_distance, maximum_distance)\ngain = reference_distance / (reference_distance + falloff_factor * (distance – reference_distance))"
     },
     "audio_falloff_linear_distance": {
-        "desc": ""
+        "desc": "distance = min(distance, maximum_distance)\ngain = (1 – falloff_factor * (distance – reference_distance) / (maximum_distance – reference_distance))"
     },
     "audio_falloff_linear_distance_clamped": {
-        "desc": ""
+        "desc": "distance = clamp(listener_distance, reference_distance, maximum_distance)\ngain = (1 – falloff_factor * (distance – reference_distance) / (maximum_distance – reference_distance))"
     },
     "audio_falloff_none": {
-        "desc": ""
+        "desc": "gain = 1"
+    },
+    "audio_mono": {
+        "desc": "Mono (single channel) audio."
     },
     "audio_new_system": {
-        "desc": ""
+        "desc": "the normal sound system is in use"
     },
     "audio_old_system": {
-        "desc": ""
+        "desc": "the legacy sound system is in use"
+    },
+    "audio_stereo": {
+        "desc": "Stereo (dual channel) audio."
     },
     "BALTIC_CHARSET": {
         "desc": ""
     },
     "bm_add": {
-        "desc": ""
+        "desc": "Additive blending. Luminosity values of light areas are added.\n\nExtended Modes: (bm_src_alpha, bm_one)"
     },
     "bm_dest_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (Ad, Ad, Ad, Ad)"
     },
     "bm_dest_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (Rd, Gd, Bd, Ad)"
     },
     "bm_inv_dest_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-Ad, 1-Ad, 1-Ad, 1-Ad)"
     },
     "bm_inv_dest_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-Rd, 1-Gd, 1-Bd, 1-Ad)"
     },
     "bm_inv_src_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-As, 1-As, 1-As, 1-As)"
     },
     "bm_inv_src_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1-Rs, 1-Gs, 1-Bs, 1-As)"
     },
     "bm_max": {
-        "desc": ""
+        "desc": "Max blending. Similar to additive blending.\n\nExtended Modes: (bm_src_alpha, bm_inv_src_color)"
     },
     "bm_normal": {
-        "desc": ""
+        "desc": "Normal blending (the default blend mode).\n\nExtended Modes: (bm_src_alpha, bm_inv_src_alpha)"
     },
     "bm_one": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (1, 1, 1, 1)"
     },
     "bm_src_alpha": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (As, As, As, As)"
     },
     "bm_src_alpha_sat": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (f, f, f, 1) where f = min(As, 1-Ad)"
     },
     "bm_src_color": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (Rs, Gs, Bs, As)"
     },
     "bm_subtract": {
-        "desc": ""
+        "desc": "Subtractive blending. Luminosity values of light areas are subtracted.\n\nExtended Modes: (bm_zero, bm_inv_src_color)"
     },
     "bm_zero": {
-        "desc": ""
+        "desc": "Blend factor (Red, Green, Blue, Alpha): (0, 0, 0, 0)"
     },
     "browser_chrome": {
-        "desc": ""
+        "desc": "Google Chrome"
     },
     "browser_firefox": {
-        "desc": ""
+        "desc": "Mozilla Firefox"
     },
     "browser_ie": {
-        "desc": ""
+        "desc": "Internet Explorer"
     },
     "browser_ie_mobile": {
-        "desc": ""
+        "desc": "Internet Explorer Mobile"
     },
     "browser_not_a_browser": {
-        "desc": ""
+        "desc": "Game is not being played in a browser"
     },
     "browser_opera": {
-        "desc": ""
+        "desc": "Opera"
     },
     "browser_safari": {
-        "desc": ""
+        "desc": "Safari"
     },
     "browser_safari_mobile": {
-        "desc": ""
+        "desc": "Safari Mobile"
     },
     "browser_tizen": {
-        "desc": ""
+        "desc": "Tizen"
     },
     "browser_unknown": {
-        "desc": ""
+        "desc": "Unknown browser"
     },
     "browser_windows_store": {
-        "desc": ""
+        "desc": "Windows UWP App"
     },
     "buffer_bool": {
-        "desc": ""
+        "desc": "A boolean value. Can only be either 1 or 0 (true or false)"
     },
     "buffer_f16": {
-        "desc": ""
+        "desc": "A 16bit float. This can be a positive or negative value within the range of +/- 65504. (Not currently supported!)"
     },
     "buffer_f32": {
-        "desc": ""
+        "desc": "A 32bit float. This can be a positive or negative value within the range of +/-16777216."
     },
     "buffer_f64": {
-        "desc": ""
+        "desc": "A 64bit float. This can be a positive or negative value from -(252) to 252 - 1."
     },
     "buffer_fast": {
-        "desc": ""
+        "desc": "Special \"stripped\" buffer that is extremely fast to read/write to. Can only be used with buffer_u8 data types, and must be 1 byte aligned."
     },
     "buffer_fixed": {
-        "desc": ""
+        "desc": "A buffer of fixed size."
     },
     "buffer_generalerror": {
         "desc": ""
     },
     "buffer_grow": {
-        "desc": ""
+        "desc": "A buffer that will \"grow\" dynamically as data is added"
     },
     "buffer_invalidtype": {
         "desc": ""
@@ -252,70 +261,70 @@
         "desc": ""
     },
     "buffer_s16": {
-        "desc": ""
+        "desc": "A signed, 16bit integer. This can be a positive or negative value from -32,768 to 32,767 (0 is classed as positive)."
     },
     "buffer_s32": {
-        "desc": ""
+        "desc": "A signed, 32bit integer. This can be a positive or negative value from -2,147,483,648 to 2,147,483,647 (0 is classed as positive)."
     },
     "buffer_s8": {
-        "desc": ""
+        "desc": "A signed, 8bit integer. This can be a positive or negative value from -128 to 127 (0 is classed as positive)."
     },
     "buffer_seek_end": {
-        "desc": ""
+        "desc": "The end of the buffer"
     },
     "buffer_seek_relative": {
-        "desc": ""
+        "desc": "A position relative to the current read/write position"
     },
     "buffer_seek_start": {
-        "desc": ""
+        "desc": "The start of the buffer"
     },
     "buffer_string": {
-        "desc": ""
+        "desc": "A string of any size."
     },
     "buffer_u16": {
-        "desc": ""
+        "desc": "An unsigned, 16bit integer. This is a positive value from 0 - 65,535."
     },
     "buffer_u32": {
-        "desc": ""
+        "desc": "An unsigned, 32bit integer. This is a positive value from 0 to 4,294,967,295."
     },
     "buffer_u8": {
-        "desc": ""
+        "desc": "An unsigned, 8bit integer. This is a positive value from 0 to 255."
     },
     "buffer_vbuffer": {
         "desc": ""
     },
     "buffer_wrap": {
-        "desc": ""
+        "desc": "A buffer where the data will \"wrap\". When the data being added reaches the limit of the buffer size, the overwrite will be placed back at the start of the buffer, and further writing will continue from that point."
     },
     "CHINESEBIG5_CHARSET": {
         "desc": ""
     },
     "cr_appstart": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_appstart.png)"
     },
     "cr_arrow": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_arrow.png)"
     },
     "cr_beam": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_beam.png)"
     },
     "cr_cross": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_cross.png)"
     },
     "cr_default": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_default.png)"
     },
     "cr_drag": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_drag.png)"
     },
     "cr_handpoint": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_hand.png)"
     },
     "cr_help": {
         "desc": ""
     },
     "cr_hourglass": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_hourglass.png)"
     },
     "cr_hsplit": {
         "desc": ""
@@ -333,130 +342,136 @@
         "desc": ""
     },
     "cr_size_all": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizeall.png)"
     },
     "cr_size_nesw": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizenesw.png)"
     },
     "cr_size_ns": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizens.png)"
     },
     "cr_size_nwse": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizenwse.png)"
     },
     "cr_size_we": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_sizewe.png)"
     },
     "cr_sqlwait": {
         "desc": ""
     },
     "cr_uparrow": {
-        "desc": ""
+        "desc": "![](https://docs.yoyogames.com/source/dadiospice/002_reference/windows%20and%20views/the%20game%20window/cr_up.png)"
     },
     "cr_vsplit": {
         "desc": ""
     },
     "c_aqua": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_aqua.png)\n\nValue: 16776960"
     },
     "c_black": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_black.png)\n\nValue: 0"
     },
     "c_blue": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_blue.png)\n\nValue: 16711680"
     },
     "c_dkgray": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_dkgray.png)\n\nValue: 4210752"
     },
     "c_fuchsia": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_fuchsia.png)\n\nValue: 16711935"
     },
     "c_gray": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_gray.png)\n\nValue: 8421504"
     },
     "c_green": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_green.png)\n\nValue: 32768"
     },
     "c_lime": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_lime.png)\n\nValue: 65280"
     },
     "c_ltgray": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_ltgray.png)\n\n Value: 12632256"
     },
     "c_maroon": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_maroon.png)\n\nValue: 128"
     },
     "c_navy": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_navy.png)\n\nValue: 8388608"
     },
     "c_olive": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_olive.png)\n\nValue: 32896"
     },
     "c_orange": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_orange.png)\n\nValue: 4235519"
     },
     "c_purple": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_purple.png)\n\nValue: 8388736"
     },
     "c_red": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_red.png)\n\nValue: 255"
     },
     "c_silver": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_silver.png)\n\nValue: 12632256"
     },
     "c_teal": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_teal.png)\n\nValue: 8421376"
     },
     "c_white": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_white.png)\n\nValue: 16777215"
     },
     "c_yellow": {
-        "desc": ""
+        "desc": "Color: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/c_yellow.png)\n\nValue: 65535"
     },
     "DEFAULT_CHARSET": {
         "desc": ""
     },
     "device_emulator": {
-        "desc": ""
+        "desc": "The device is actually an emulator (Windows Phone or Android)"
     },
     "device_ios_ipad": {
-        "desc": ""
+        "desc": "iPad"
     },
     "device_ios_ipad_retina": {
-        "desc": ""
+        "desc": "Newer iPad with Retina display size of 2048 x 1536"
     },
     "device_ios_iphone": {
-        "desc": ""
+        "desc": "Older iPhone/iPod Touch (480 x 320 screen) or Android phone"
     },
     "device_ios_iphone5": {
-        "desc": ""
+        "desc": "iPhone5 with display size 640 x 1136)"
+    },
+    "device_ios_iphone6": {
+        "desc": "iPhone6 with display size 1334 x 750"
+    },
+    "device_ios_iphone6plus": {
+        "desc": "Larger iPhone 6 with display 1920 x 1080"
     },
     "device_ios_iphone_retina": {
-        "desc": ""
+        "desc": "Newer iPhone/iPod Touch with Retina display of 960 x 640"
     },
     "device_ios_unknown": {
-        "desc": ""
+        "desc": "Unknown or not iOS"
     },
     "device_tablet": {
-        "desc": ""
+        "desc": "Android tablet"
     },
     "display_landscape": {
-        "desc": ""
+        "desc": "The device is being held horizontally ie: The longest edge is from left to right, and the menu button is on the right."
     },
     "display_landscape_flipped": {
-        "desc": ""
+        "desc": "As above, only now the menu button is on the left."
     },
     "display_portrait": {
-        "desc": ""
+        "desc": "The device is being held vertically ie: The longest edge is from top to bottom, and the menu button is at the bottom."
     },
     "display_portrait_flipped": {
-        "desc": ""
+        "desc": "As above, only now the menu button is at the top."
     },
     "dll_cdecl": {
-        "desc": ""
+        "desc": "This is the default C, C++ call"
     },
     "dll_stdcall": {
-        "desc": ""
+        "desc": "This is the standard WinAPI call (Windows dll only)"
     },
     "ds_type_grid": {
         "desc": ""
@@ -984,7 +999,7 @@
         "desc": ""
     },
     "noone": {
-        "desc": ""
+        "desc": "No instance at all."
     },
     "OEM_CHARSET": {
         "desc": ""
@@ -1035,7 +1050,7 @@
         "desc": ""
     },
     "other": {
-        "desc": ""
+        "desc": "The other instance involved in a collision event, or the other instance from a with function."
     },
     "ov_achievements": {
         "desc": ""
@@ -1254,7 +1269,7 @@
         "desc": ""
     },
     "self": {
-        "desc": ""
+        "desc": "The instance which is executing the current block of code."
     },
     "SHIFTJIS_CHARSET": {
         "desc": ""

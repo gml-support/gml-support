@@ -110,6 +110,9 @@
     "asset_unknown": {
         "desc": ""
     },
+    "audio_3D": {
+        "desc": ""
+    },
     "audio_falloff_exponent_distance": {
         "desc": ""
     },
@@ -131,10 +134,16 @@
     "audio_falloff_none": {
         "desc": ""
     },
-    "audio_new_system": {
+    "audio_mono": {
         "desc": ""
     },
+    "audio_new_system": {
+        "desc": "正在使用常规声音系统"
+    },
     "audio_old_system": {
+        "desc": "正在使用传统声音系统"
+    },
+    "audio_stereo": {
         "desc": ""
     },
     "BALTIC_CHARSET": {

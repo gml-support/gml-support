@@ -24,7 +24,7 @@ class GMLCompletionItemProvider {
             if (entry) {
                 if (entry.description) {
                     let availability = "GM Language Availability: ";
-                    proposal.documentation = availability + entry.available + " \n " + entry.description;
+                    proposal.documentation = new vscode_1.MarkdownString(availability + entry.available + "\n\n" + entry.description);
                 }
 
                 if (entry.signature) {
