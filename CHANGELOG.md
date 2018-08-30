@@ -1,8 +1,20 @@
+## 1.7.0
+
+作者高三了，要去准备高考了，滚去复习前发布最后一个更新，在毕业前将不会积极更新插件，如果发现 BUG 请在 GitHub 发布 issue，整理后将会统一修复（如果我有空闲时间的话）。
+
+ - (Beta)添加部分语法提示帮助内容（可以不用翻文档啦。虽然目前的情况你还是要翻文档）
+ - 加入文档选择器（使插件符合 VSCode 规范）
+
+I am going to prepare for the college entrance examination, this is the last update before the start of the school curriculum, and I will not actively update the extension. if you find a bug, please report an issue, I will fix (If I have free time).
+
+ - (Beta)Add some grammar hints help.
+ - Add Document selector.(Make the extension conform to the Visual Studio Code specification)
+
 ## 1.6.2
 
- - Fix `var/enum` bounding.(@jabsatz)
+ - Fix `var/enum` bounding.#12 (@jabsatz)
  - Add `.vscodeignore`.
- - 修复 `var/enum` 高亮错误。(@jabsatz)
+ - 修复 `var/enum` 高亮错误。#12 (@jabsatz)
  - 添加 `.vscodeignore`。
 
 ## 1.6.1

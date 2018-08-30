@@ -2,6 +2,10 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
 [![Rating](https://vsmarketplacebadge.apphb.com/rating/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
 
+作者高三了，要去准备高考了，在毕业前将不会积极更新插件，如果发现 BUG 请在 GitHub 发布 issue，整理后将会统一修复。
+
+I am going to prepare for the college entrance examination, I will not actively update the extension. if you find a bug, please report an issue, I will fix (If I have free time).
+
 # GML Support
 
 <div align="center"><img src="https://gmlsupport.liaronce.win/assets/icon.png" alt="" /></div>

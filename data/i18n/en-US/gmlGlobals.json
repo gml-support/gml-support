@@ -2935,71 +2935,67 @@
         "degree_angle": "The angle (in degrees) to return the tangent of."
     },
     "effect_clear": {
-        "desc": ""
+        "desc": "This will clear all particles that are currently visible in the room which have been made using either **effect_create_above** or **effect_create_below**."
     },
 	"effect_create_above": {
-        "desc": "",
-        "kind": "",
-        "x": "",
-        "y": "",
-        "size": "",
-        "colour": ""
+        "desc": "With this function you can create a simple effect above all instances of your room (it is actually created at a depth of -100000). If the effect is anything other **ef_rain** or **ef_snow** then you can define an x/y position to create the effect, and the size can be a value of 0, 1, or 2, where 0 is small, 1 is medium and 2 is large.\n\nIt is worth noting that these effects can have their drawing toggled on and off, as well as have their drawing paused, by using the functions **part_system_automatic_draw** and **part_system_automatic_update** with the appropriate value for the particle system index (where 0 is for effects below and 1 is for effects above).",
+        "kind": "The kind of effect",
+        "x": "The x positioning of the effect if relevant.",
+        "y": "The y positioning of the effect if relevant.",
+        "size": "The size of the effect.",
+        "colour": "The colour of the effect."
     },
 	"effect_create_below": {
-        "desc": "",
-        "kind": "",
-        "x": "",
-        "y": "",
-        "size": "",
-        "colour": ""
+        "desc": "With this function you can create a simple effect beneath all instances of your room (it is actually created at a depth of 100000). If the effect is anything other **ef_rain** or **ef_snow** then you can define an x/y position to create the effect, and the size can be a value of 0, 1, or 2, where 0 is small, 1 is medium and 2 is large.\n\nIt is worth noting that these effects can have their drawing toggled on and off, as well as have their drawing paused, by using the functions **part_system_automatic_draw** and **part_system_automatic_update** with the appropriate value for the particle system index (where 0 is for effects below and 1 is for effects above).",
+        "kind": "The kind of effect",
+        "x": "The x positioning of the effect if relevant.",
+        "y": "The y positioning of the effect if relevant.",
+        "size": "The size of the effect.",
+        "colour": "The colour of the effect."
     },
 	"environment_get_variable": {
-        "desc": "",
-        "name": ""
+        "desc": "This function returns the value (a string) of the environment variable with the given name (also a string).\n\nNOTE: This is a Windows only function.",
+        "name": "The name (a string) of the environment variable to check."
     },
 	"event_inherited": {
-        "desc": ""
+        "desc": "This function will call the current event of the parent object of the instance. Normally, when an instance has a parent object, it automatically inherits all the same events as the parent, but if (for example) your parent object has a create event and you add one to your child object, all instances of the child object will run the new create event that you have added and not that which is in the parent object. Should you need to use both the parent object event and the child object event of the same type, you should use this function as it will run the parent object event before continuing with the rest of the code or actions that the child event contains"
     },
 	"event_perform": {
-        "desc": "",
-        "type": "",
-        "numb": ""
+        "desc": "This function will perform the specified event, with the designated argument, for the instance running the code. There are many options here which allow complete simulation of all possible events, but note that this literally just performs all the code in the event and the game will not modify anything to make it trigger itself manually, for example if you choose to perform a keyboard press event, the event will be triggered but relevant key will not be recognised as having been pressed. Or if you perform an alarm event, the alarm counter will not be set to -1 but rather continue to count down.",
+        "type": "The type of event to perform.",
+        "numb": "The specific event constant or value, if one is necessary (otherwise, just use 0)."
     },
 	"event_perform_object": {
-        "desc": "",
-        "obj": "",
-        "type": "",
-        "numb": ""
+        "desc": "This functions works the same as *event_perform()* except that this time you can specify events from another object. There are many options here which allow complete simulation of all possible events, but note that this literally just performs all the code in the event and the game will not modify anything to make it trigger itself manually, for example if you choose to perform a keyboard press event, the event will be triggered but the relevant key will not be recognised as having been pressed. Or if you perform an alarm event, the alarm counter will not be set to -1 but rather continue to count down. You can find a complete list of the available constants this function requires from the the page for the function event_perform.\n\nNOTE: Actions in the event called with this function are applied to the current instance, and not to instances of the given object.",
+        "obj": "The object that should have its event triggered.",
+        "type": "The type of event to perform. See below.",
+        "numb": "The specific event, if one is necessary (otherwise, just use 0)."
     },
 	"event_user": {
-        "desc": "",
-        "numb": ""
+        "desc": "With this function you tell the instance to run the actions or code that has been placed within one of the 16 user defined events. These events can only be called in this way, or using the **event_perform** function.",
+        "numb": "The number of event to call, between 0 and 15."
     },
 	"exp": {
-        "desc": "",
-        "x": ""
+        "desc": "This is the function power(e,n), where e is approximately 2.718281828 (also known as Euler's Number), and n is the number of times it should be multiplied by itself. This basically says \"how much growth do I get after n units of time (and 100% continuous growth)?\". So exp(3) would return 20.08, which means that after 3 time units we have 20.08 times the amount we started with.",
+        "x": "The power of e."
     },
 	"external_call": {
-        "desc": "",
-        "id": "",
-        "arg1": "",
-        "arg2": "",
-        "more": ""
+        "desc": "If you have created an external function call to a *dll* or *dylib* using **external_define**, you can use this function to then call it. You supply the name of the previously defined function as well as each of the arguments it requires (each argument must be of the correct type, either real or string) and the function returns the result of the external call.",
+        "id": "The name of the function that you want to call",
+        "argmore": "The different arguments that you want to pass through to the external function"
     },
 	"external_define": {
-        "desc": "",
-        "dll": "",
-        "name": "",
-        "calltype": "",
-        "restype": "",
-        "argnumb": "",
-        "arg1type": "",
-        "arg2type": "",
-        "more": ""
+        "desc": "This function can be used to define an external function call to a specific dll (for Windows) or dylib (for Mac). This file can be either an included file or part of an extension. You supply the name (and path) of the file, then the name of the function that you wish to define. Next you need to define the calling convention to be used (see the constants list below) as well as the type of result to be expected (also a constant, as listed below). Finally you must give the number arguments that the function can take (from 0 to 15) and for each of the arguments you must specify its type too. Please note that for functions with 4 or more arguments, all of them must be of type ty_real.\n\nNOTE: This is only for dll or dylib that have been added as \"Included Files\" to the GameMaker: Studio IDE. It will not work with those files added as extensions, since those require that you define the functions in the extension package itself.\n\n![](https://gmlsupport.liaronce.win/images-in-intellisense/10.p-ng)",
+        "dll": "The name of the dll file (string)",
+        "name": "The name of the function (string)",
+        "calltype": "The calling convention used",
+        "restype": "The type of the result to expect",
+        "argnumb": "The number of arguments (0 - 10)",
+        "argtypemore": "The different types of arguments being used"
     },
 	"external_free": {
-        "desc": "",
-        "dllname": ""
+        "desc": "This function frees the memory associated with the *dll* or *dylib* with the given name. This should be done whenever the file in question is no longer needed in the game, normally (for example) in an end of game event.",
+        "id": "The name of the dll or dylib that you want to free"
     },
 	"facebook_accesstoken": {
         "desc": ""

@@ -2264,8 +2264,8 @@
         "alpha": ""
     },
     "dsin": {
-        "desc": "",
-        "degree_angle": ""
+        "desc": "在直角三角形中 dsin(val) = 对边 / 斜边 其中 val 是三个内角之一。",
+        "degree_angle": "待转换为正弦值的角（角度制）。"
     },
     "ds_exists": {
         "desc": "",
@@ -2982,9 +2982,7 @@
 	"external_call": {
         "desc": "",
         "id": "",
-        "arg1": "",
-        "arg2": "",
-        "more": ""
+        "argmore": ""
     },
 	"external_define": {
         "desc": "",
@@ -2993,13 +2991,11 @@
         "calltype": "",
         "restype": "",
         "argnumb": "",
-        "arg1type": "",
-        "arg2type": "",
-        "more": ""
+        "argtypemore": ""
     },
 	"external_free": {
         "desc": "",
-        "dllname": ""
+        "id": ""
     },
 	"facebook_accesstoken": {
         "desc": ""

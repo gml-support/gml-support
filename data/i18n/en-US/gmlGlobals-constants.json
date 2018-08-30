@@ -474,112 +474,112 @@
         "desc": "This is the standard WinAPI call (Windows dll only)"
     },
     "ds_type_grid": {
-        "desc": ""
+        "desc": "A grid data structure"
     },
     "ds_type_list": {
-        "desc": ""
+        "desc": "A list data structure"
     },
     "ds_type_map": {
-        "desc": ""
+        "desc": "A map data structure"
     },
     "ds_type_priority": {
-        "desc": ""
+        "desc": "A priority data structure"
     },
     "ds_type_queue": {
-        "desc": ""
+        "desc": "A queue data structure"
     },
     "ds_type_stack": {
-        "desc": ""
+        "desc": "A stack data structure"
     },
     "EASTEUROPE_CHARSET": {
         "desc": ""
     },
     "ef_cloud": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a cloud effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_cloud.png)"
     },
     "ef_ellipse": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create an ellipse effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_ellipse.png)"
     },
     "ef_explosion": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create an explosion effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_explosion.png)"
     },
     "ef_firework": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a firework effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_firework.png)"
     },
     "ef_flare": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a flare effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_flare.png)"
     },
     "ef_rain": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a rain effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_rain.png)\n\nNOTE: This effect needs no x/y position as it is always drawn at the 0,0 room position to cover the full screen and the size value relates to the number of particles created, not the size of individual particles."
     },
     "ef_ring": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a ring effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_ring.png)"
     },
     "ef_smoke": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a smoke effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_smoke.png)"
     },
     "ef_smokeup": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a rising smoke effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_smokeup.png)"
     },
     "ef_snow": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a snow effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_snow.png)\n\nNOTE: This effect needs no x/y position as it is always drawn at the 0,0 room position to cover the full screen and the size value relates to the number of particles created, not the size of individual particles."
     },
     "ef_spark": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a spark effect as illustrated in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_spark.png)"
     },
     "ef_star": {
-        "desc": ""
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a star effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_star.png)"
     },
     "ev_alarm": {
-        "desc": ""
+        "desc": "Alarm event"
     },
     "ev_animation_end": {
-        "desc": ""
+        "desc": "If the object's sprite has reached the end of its animation"
     },
     "ev_boundary": {
-        "desc": ""
+        "desc": "Whether the instance is intersecting the boundary"
     },
     "ev_close_button": {
-        "desc": ""
+        "desc": "If the window's Close button has been pushed"
     },
     "ev_collision": {
-        "desc": ""
+        "desc": "Collision with an object"
     },
     "ev_create": {
-        "desc": ""
+        "desc": "Create event."
     },
     "ev_destroy": {
-        "desc": ""
+        "desc": "Destroy event"
     },
     "ev_draw": {
-        "desc": ""
+        "desc": "Draw event. \n\nNOTE: This event cannot be forced outside of a draw event and the constants and the constants are only for identifying the event when performed in these cases."
     },
     "ev_end_of_path": {
-        "desc": ""
+        "desc": "If the object has reached the end of a path it is following"
     },
     "ev_game_end": {
-        "desc": ""
+        "desc": "Only triggered at the end of the game"
     },
     "ev_game_start": {
-        "desc": ""
+        "desc": "Only triggered at the start of the game"
     },
     "ev_global_left_button": {
-        "desc": ""
+        "desc": "Left button held down anywhere"
     },
     "ev_global_left_press": {
-        "desc": ""
+        "desc": "Left button just pressed anywhere"
     },
     "ev_global_left_release": {
-        "desc": ""
+        "desc": "Left button just released anywhere"
     },
     "ev_global_middle_button": {
-        "desc": ""
+        "desc": "Middle button (or clickable wheel) held down anywhere"
     },
     "ev_global_middle_press": {
-        "desc": ""
+        "desc": "Middle button (or clickable wheel) just pressed anywhere"
     },
     "ev_global_middle_release": {
-        "desc": ""
+        "desc": "Middle button just released anywhere"
     },
     "ev_global_press": {
         "desc": ""
@@ -588,16 +588,22 @@
         "desc": ""
     },
     "ev_global_right_button": {
-        "desc": ""
+        "desc": "Right button held down anywhere"
     },
     "ev_global_right_press": {
-        "desc": ""
+        "desc": "Right button just pressed anywhere"
     },
     "ev_global_right_release": {
-        "desc": ""
+        "desc": "Right button just released anywhere"
     },
     "ev_gui": {
-        "desc": ""
+        "desc": "The draw gui event."
+    },
+    "ev_gui_begin": {
+        "desc": "The draw gui begin event."
+    },
+    "ev_gui_end": {
+        "desc": "The draw gui end event."
     },
     "ev_joystick1_button1": {
         "desc": ""
@@ -672,139 +678,139 @@
         "desc": ""
     },
     "ev_keyboard": {
-        "desc": ""
+        "desc": "Keyboard"
     },
     "ev_keypress": {
-        "desc": ""
+        "desc": "Keyboard Pressed"
     },
     "ev_keyrelease": {
-        "desc": ""
+        "desc": "Keyboard Released"
     },
     "ev_left_button": {
-        "desc": ""
+        "desc": "Left button held down on object"
     },
     "ev_left_press": {
-        "desc": ""
+        "desc": "Left button just pressed on object"
     },
     "ev_left_release": {
-        "desc": ""
+        "desc": "Left button just released on object"
     },
     "ev_middle_button": {
-        "desc": ""
+        "desc": "Middle button (or clickable wheel) held down on object"
     },
     "ev_middle_press": {
-        "desc": ""
+        "desc": "Middle button (or clickable wheel) just pressed on object"
     },
     "ev_middle_release": {
-        "desc": ""
+        "desc": "Middle button just released on object"
     },
     "ev_mouse": {
-        "desc": ""
+        "desc": "Mouse event"
     },
     "ev_mouse_enter": {
-        "desc": ""
+        "desc": "Mouse just entered object's bounding box"
     },
     "ev_mouse_leave": {
-        "desc": ""
+        "desc": "Mouse just left object's bounding box"
     },
     "ev_mouse_wheel_down": {
-        "desc": ""
+        "desc": "Mouse wheel scrolled downwards"
     },
     "ev_mouse_wheel_up": {
-        "desc": ""
+        "desc": "Mouse wheel scrolled upwards"
     },
     "ev_no_button": {
-        "desc": ""
+        "desc": "No buttons held down"
     },
     "ev_no_more_health": {
-        "desc": ""
+        "desc": "If all health is depleted (if health==0)"
     },
     "ev_no_more_lives": {
-        "desc": ""
+        "desc": "If all lives are depleted (if lives==0)"
     },
     "ev_other": {
-        "desc": ""
+        "desc": "One of the actions listed under 'Other'"
     },
     "ev_outside": {
-        "desc": ""
+        "desc": "Whether the instance is outside of the room"
     },
     "ev_right_button": {
-        "desc": ""
+        "desc": "Right button held down on object"
     },
     "ev_right_press": {
-        "desc": ""
+        "desc": "Right button just pressed on object"
     },
     "ev_right_release": {
-        "desc": ""
+        "desc": "Right button just released on object"
     },
     "ev_room_end": {
-        "desc": ""
+        "desc": "Only triggered at the end of a room"
     },
     "ev_room_start": {
-        "desc": ""
+        "desc": "Only triggered at the start of a room"
     },
     "ev_step": {
-        "desc": ""
+        "desc": "Step event"
     },
     "ev_step_begin": {
-        "desc": ""
+        "desc": "Begin Step"
     },
     "ev_step_end": {
-        "desc": ""
+        "desc": "End Step"
     },
     "ev_step_normal": {
-        "desc": ""
+        "desc": "Step"
     },
     "ev_trigger": {
         "desc": ""
     },
     "ev_user0": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user1": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user10": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user11": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user12": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user13": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user14": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user15": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user2": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user3": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user4": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user5": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user6": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user7": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user8": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "ev_user9": {
-        "desc": ""
+        "desc": "One of the 16 available user events."
     },
     "false": {
         "desc": ""

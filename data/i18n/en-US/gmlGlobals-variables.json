@@ -117,16 +117,16 @@
         "desc": ""
     },
 	"event_action": {
-        "desc": ""
+        "desc": "This read-only variable returned the index of the action currently being executed, starting at 0 on previous versions of GameMaker. However, this is now an obsolete function in GameMaker: Studio. It has been left in for legacy support only, and will always return 0 as all actions are concatenated together to improve execution speed."
     },
 	"event_number": {
-        "desc": ""
+        "desc": "This read-only variable returns the number of the event currently being called, where the number is actually referring to the \"sub event\" of the event, ie: for the step event the event number could be any one of the constants ev_step_normal, ev_step_begin, or ev_step_end. For a full list of constants that are available for the specific sub-events see **event_perform**, and if you should need to know the main event itself, you should be checking the **event_type**."
     },
 	"event_object": {
-        "desc": ""
+        "desc": "This read-only variable returns object index of the instance which is running the event being checked."
     },
 	"event_type": {
-        "desc": ""
+        "desc": "This read-only variable returns the type of event currently being executed, which can be one of the following constants:\n\n - ev_create\n\n - ev_destroy\n\n - ev_step\n\n - ev_alarm\n\n - ev_keyboard\n\n - ev_keypress\n\n - ev_keyrelease\n\n - ev_mouse\n\n - ev_collision\n\n - ev_other\n\n - ev_draw\n\nFor a full list of the constants that are related to the different events see **event_perform**, and if you should need the event number (ie: the sub event), you should be checking the **event_number**."
     },
 	"fps": {
         "desc": ""
