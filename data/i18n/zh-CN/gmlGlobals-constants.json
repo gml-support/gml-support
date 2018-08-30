@@ -593,6 +593,12 @@
     "ev_gui": {
         "desc": ""
     },
+    "ev_gui_begin": {
+        "desc": ""
+    },
+    "ev_gui_end": {
+        "desc": ""
+    },
     "ev_joystick1_button1": {
         "desc": ""
     },

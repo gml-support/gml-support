@@ -4865,11 +4865,11 @@ exports.globalfunctions = {
         signature: '(degree_angle)'
     },
 	effect_clear: {
-        description: i18n.effect_clear.desc,
+        description: i18n.effect_clear.desc + returns.na,
         available: datasimple.all
     },
 	effect_create_above: {
-        description: i18n.effect_create_above.desc,
+        description: i18n.effect_create_above.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: i18n.effect_create_above.kind },
@@ -4881,7 +4881,7 @@ exports.globalfunctions = {
         signature: '(kind, x, y, size, colour)'
     },
 	effect_create_below: {
-        description: i18n.effect_create_below.desc,
+        description: i18n.effect_create_below.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'kind', documentation: i18n.effect_create_below.kind },
@@ -4893,7 +4893,7 @@ exports.globalfunctions = {
         signature: '(kind, x, y, size, colour)'
     },
 	environment_get_variable: {
-        description: i18n.environment_get_variable.desc,
+        description: i18n.environment_get_variable.desc + returns.s,
         available: datasimple.all,
         parameters: [
             { label: 'name', documentation: i18n.environment_get_variable.name }
@@ -4901,11 +4901,11 @@ exports.globalfunctions = {
         signature: '(name)'
     },
 	event_inherited: {
-        description: i18n.event_inherited.desc,
+        description: i18n.event_inherited.desc + returns.na,
         available: datasimple.all
     },
 	event_perform: {
-        description: i18n.event_perform.desc,
+        description: i18n.event_perform.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'type', documentation: i18n.event_perform.type },
@@ -4914,7 +4914,7 @@ exports.globalfunctions = {
         signature: '(type, numb)'
     },
 	event_perform_object: {
-        description: i18n.event_perform_object.desc,
+        description: i18n.event_perform_object.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'obj', documentation: i18n.event_perform_object.obj },
@@ -4924,7 +4924,7 @@ exports.globalfunctions = {
         signature: '(obj, type, numb)'
     },
 	event_user: {
-        description: i18n.event_user.desc,
+        description: i18n.event_user.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'numb', documentation: i18n.event_user.numb }
@@ -4932,7 +4932,7 @@ exports.globalfunctions = {
         signature: '(numb)'
     },
 	exp: {
-        description: i18n.exp.desc,
+        description: i18n.exp.desc + returns.r,
         available: datasimple.all,
         parameters: [
             { label: 'x', documentation: i18n.exp.x }
@@ -4940,18 +4940,16 @@ exports.globalfunctions = {
         signature: '(x)'
     },
 	external_call: {
-        description: i18n.external_call.desc,
+        description: i18n.external_call.desc + returns.ros,
         available: datasimple.all,
         parameters: [
             { label: 'id', documentation: i18n.external_call.id },
-            { label: 'arg1', documentation: i18n.external_call.arg1 },
-            { label: 'arg2', documentation: i18n.external_call.arg2 },
-            { label: '...', documentation: i18n.external_call.more }
+            { label: 'args[0...10]', documentation: i18n.external_call.argmore }
         ],
-        signature: '(id, arg1, arg2, ...)'
+        signature: '(id, args[0...10])'
     },
 	external_define: {
-        description: i18n.external_define.desc,
+        description: i18n.external_define.desc + returns.na,
         available: datasimple.all,
         parameters: [
             { label: 'dll', documentation: i18n.external_define.dll },
@@ -4959,19 +4957,17 @@ exports.globalfunctions = {
             { label: 'calltype', documentation: i18n.external_define.calltype },
             { label: 'restype', documentation: i18n.external_define.restype },
             { label: 'argnumb', documentation: i18n.external_define.argnumb },
-            { label: 'arg1type', documentation: i18n.external_define.arg1type },
-            { label: 'arg2type', documentation: i18n.external_define.arg2type },
-            { label: '...', documentation: i18n.external_define.more }
+            { label: 'argtype[0 ... 10]', documentation: i18n.external_define.argtypemore }
         ],
-        signature: '(dll, name, calltype, restype, argnumb, arg1type, arg2type, ...)'
+        signature: '(dll, name, calltype, restype, argnumb, argtype[0 ... 10])'
     },
 	external_free: {
-        description: i18n.external_free.desc,
+        description: i18n.external_free.desc + returns.na,
         available: datasimple.all,
         parameters: [
-            { label: 'dllname', documentation: i18n.external_free.dllname }
+            { label: 'id', documentation: i18n.external_free.id }
         ],
-        signature: '(dllname)'
+        signature: '(id)'
     },
 	facebook_accesstoken: {
         description: i18n.facebook_accesstoken.desc,
@@ -19367,30 +19363,30 @@ exports.globalvariables = {
 	argument9: {description: i18n_variable.argument9.desc,available: datasimple.all},
 	argument_count: {description: i18n_variable.argument_count.desc,available: datasimple.all},
 	argument_relative: {description: i18n_variable.argument_relative.desc,available: datasimple.all},
-	async_load: {description: i18n_variable.async_load.desc,available: datasimple.all},
-	browser_height: {description: i18n_variable.browser_height.desc,available: datasimple.all},
-	browser_width: {description: i18n_variable.browser_width.desc,available: datasimple.all},
+	async_load: {description: i18n_variable.async_load.desc + returns.r,available: datasimple.all},
+	browser_height: {description: i18n_variable.browser_height.desc + returns.r,available: datasimple.all},
+	browser_width: {description: i18n_variable.browser_width.desc + returns.r,available: datasimple.all},
 	caption_health: {description: i18n_variable.caption_health.desc,available: datasimple.all},
 	caption_lives: {description: i18n_variable.caption_lives.desc,available: datasimple.all},
 	caption_score: {description: i18n_variable.caption_score.desc,available: datasimple.all},
-	current_day: {description: i18n_variable.current_day.desc,available: datasimple.all},
-	current_hour: {description: i18n_variable.current_hour.desc,available: datasimple.all},
-	current_minute: {description: i18n_variable.current_minute.desc,available: datasimple.all},
-    current_month: {description: i18n_variable.current_month.desc,available: datasimple.all},
-    current_second: {description: i18n_variable.current_second.desc,available: datasimple.all},
-    current_time: {description: i18n_variable.current_time.desc,available: datasimple.all},
-    current_weekday: {description: i18n_variable.current_weekday.desc,available: datasimple.all},
-    current_year: {description: i18n_variable.current_year.desc,available: datasimple.all},
-    cursor_sprite: {description: i18n_variable.cursor_sprite.desc,available: datasimple.all},
-    debug_mode: {description: i18n_variable.debug_mode.desc,available: datasimple.all},
-    delta_time: {description: i18n_variable.delta_time.desc,available: datasimple.all},
+	current_day: {description: i18n_variable.current_day.desc + returns.r,available: datasimple.all},
+	current_hour: {description: i18n_variable.current_hour.desc + returns.r,available: datasimple.all},
+	current_minute: {description: i18n_variable.current_minute.desc + returns.r,available: datasimple.all},
+    current_month: {description: i18n_variable.current_month.desc + returns.r,available: datasimple.all},
+    current_second: {description: i18n_variable.current_second.desc + returns.r,available: datasimple.all},
+    current_time: {description: i18n_variable.current_time.desc + returns.r,available: datasimple.all},
+    current_weekday: {description: i18n_variable.current_weekday.desc + returns.r,available: datasimple.all},
+    current_year: {description: i18n_variable.current_year.desc + returns.r,available: datasimple.all},
+    cursor_sprite: {description: i18n_variable.cursor_sprite.desc + returns.r,available: datasimple.all},
+    debug_mode: {description: i18n_variable.debug_mode.desc + returns.b,available: datasimple.all},
+    delta_time: {description: i18n_variable.delta_time.desc + returns.r,available: datasimple.all},
     display_aa: {description: i18n_variable.display_aa.desc,available: datasimple.all},
     error_last: {description: i18n_variable.error_last.desc,available: datasimple.all},
     error_occurred: {description: i18n_variable.error_occurred.desc,available: datasimple.all},
-    event_action: {description: i18n_variable.event_action.desc,available: datasimple.all},
-    event_number: {description: i18n_variable.event_number.desc,available: datasimple.all},
-    event_object: {description: i18n_variable.event_object.desc,available: datasimple.all},
-    event_type: {description: i18n_variable.event_type.desc,available: datasimple.all},
+    event_action: {description: i18n_variable.event_action.desc + returns.r,available: datasimple.all},
+    event_number: {description: i18n_variable.event_number.desc + returns.r,available: datasimple.all},
+    event_object: {description: i18n_variable.event_object.desc + returns.r,available: datasimple.all},
+    event_type: {description: i18n_variable.event_type.desc + returns.r,available: datasimple.all},
     fps: {description: i18n_variable.fps.desc,available: datasimple.all},
     fps_real: {description: i18n_variable.fps_real.desc,available: datasimple.all},
     game_id: {description: i18n_variable.game_id.desc,available: datasimple.all},
@@ -19723,18 +19719,18 @@ exports.constants = {
 	ds_type_queue: {description: i18n_constant.ds_type_queue.desc,available: datasimple.gms1},
 	ds_type_stack: {description: i18n_constant.ds_type_stack.desc,available: datasimple.gms1},
 	EASTEUROPE_CHARSET: {description: i18n_constant.EASTEUROPE_CHARSET.desc,available: datasimple.all},
-	ef_cloud: {description: i18n_constant.ef_cloud.desc,available: datasimple.all},
-	ef_ellipse: {description: i18n_constant.ef_ellipse.desc,available: datasimple.all},
-	ef_explosion: {description: i18n_constant.ef_explosion.desc,available: datasimple.all},
-	ef_firework: {description: i18n_constant.ef_firework.desc,available: datasimple.all},
-	ef_flare: {description: i18n_constant.ef_flare.desc,available: datasimple.all},
-	ef_rain: {description: i18n_constant.ef_rain.desc,available: datasimple.all},
-	ef_ring: {description: i18n_constant.ef_ring.desc,available: datasimple.all},
-	ef_smoke: {description: i18n_constant.ef_smoke.desc,available: datasimple.all},
-	ef_smokeup: {description: i18n_constant.ef_smokeup.desc,available: datasimple.all},
-	ef_snow: {description: i18n_constant.ef_snow.desc,available: datasimple.all},
-	ef_spark: {description: i18n_constant.ef_spark.desc,available: datasimple.all},
-	ef_star: {description: i18n_constant.ef_star.desc,available: datasimple.all},
+	ef_cloud: {description: i18n_constant.ef_cloud.desc + returns.na,available: datasimple.all},
+	ef_ellipse: {description: i18n_constant.ef_ellipse.desc + returns.na,available: datasimple.all},
+	ef_explosion: {description: i18n_constant.ef_explosion.desc + returns.na,available: datasimple.all},
+	ef_firework: {description: i18n_constant.ef_firework.desc + returns.na,available: datasimple.all},
+	ef_flare: {description: i18n_constant.ef_flare.desc + returns.na,available: datasimple.all},
+	ef_rain: {description: i18n_constant.ef_rain.desc + returns.na,available: datasimple.all},
+	ef_ring: {description: i18n_constant.ef_ring.desc + returns.na,available: datasimple.all},
+	ef_smoke: {description: i18n_constant.ef_smoke.desc + returns.na,available: datasimple.all},
+	ef_smokeup: {description: i18n_constant.ef_smokeup.desc + returns.na,available: datasimple.all},
+	ef_snow: {description: i18n_constant.ef_snow.desc + returns.na,available: datasimple.all},
+	ef_spark: {description: i18n_constant.ef_spark.desc + returns.na,available: datasimple.all},
+	ef_star: {description: i18n_constant.ef_star.desc + returns.na,available: datasimple.all},
 	ev_alarm: {description: i18n_constant.ev_alarm.desc,available: datasimple.all},
 	ev_animation_end: {description: i18n_constant.ev_animation_end.desc,available: datasimple.all},
 	ev_boundary: {description: i18n_constant.ev_boundary.desc,available: datasimple.all},
@@ -19757,7 +19753,9 @@ exports.constants = {
 	ev_global_right_button: {description: i18n_constant.ev_global_right_button.desc,available: datasimple.all},
 	ev_global_right_press: {description: i18n_constant.ev_global_right_press.desc,available: datasimple.all},
 	ev_global_right_release: {description: i18n_constant.ev_global_right_release.desc,available: datasimple.all},
-	ev_gui: {description: i18n_constant.ev_gui.desc,available: datasimple.all},
+    ev_gui: {description: i18n_constant.ev_gui.desc,available: datasimple.gms1},
+    ev_gui_begin: {description: i18n_constant.ev_gui_begin.desc,available: datasimple.gms1},
+    ev_gui_end: {description: i18n_constant.ev_gui_end.desc,available: datasimple.gms1},
 	ev_joystick1_button1: {description: i18n_constant.ev_joystick1_button1.desc,available: datasimple.all},
 	ev_joystick1_button2: {description: i18n_constant.ev_joystick1_button2.desc,available: datasimple.all},
 	ev_joystick1_button3: {description: i18n_constant.ev_joystick1_button3.desc,available: datasimple.all},
