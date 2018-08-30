@@ -510,7 +510,7 @@
         "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a flare effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_flare.png)"
     },
     "ef_rain": {
-        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a rain effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_rain.png)\n\nNOTE: This effect needs no x/y position as it is always drawn at the 0,0 room position to cover the full screen and the size value relates to the number of particles created, not the size of individual particles."
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a rain effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_rain.png)\n\n**NOTE:** This effect needs no x/y position as it is always drawn at the 0,0 room position to cover the full screen and the size value relates to the number of particles created, not the size of individual particles."
     },
     "ef_ring": {
         "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a ring effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_ring.png)"
@@ -522,7 +522,7 @@
         "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a rising smoke effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_smokeup.png)"
     },
     "ef_snow": {
-        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a snow effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_snow.png)\n\nNOTE: This effect needs no x/y position as it is always drawn at the 0,0 room position to cover the full screen and the size value relates to the number of particles created, not the size of individual particles."
+        "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a snow effect as illustrated in the image below: \n\n![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_snow.png)\n\n**NOTE:** This effect needs no x/y position as it is always drawn at the 0,0 room position to cover the full screen and the size value relates to the number of particles created, not the size of individual particles."
     },
     "ef_spark": {
         "desc": "This constant is for use in the functions **effect_create_above** and **effect_create_below**, and will create a spark effect as illustrated in the image below: ![](https://docs.yoyogames.com/source/dadiospice/002_reference/particles/simple%20effects/ef_spark.png)"
@@ -552,7 +552,7 @@
         "desc": "Destroy event"
     },
     "ev_draw": {
-        "desc": "Draw event. \n\nNOTE: This event cannot be forced outside of a draw event and the constants and the constants are only for identifying the event when performed in these cases."
+        "desc": "Draw event. \n\n**NOTE:** This event cannot be forced outside of a draw event and the constants and the constants are only for identifying the event when performed in these cases."
     },
     "ev_end_of_path": {
         "desc": "If the object has reached the end of a path it is following"
