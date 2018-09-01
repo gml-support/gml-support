@@ -15,28 +15,30 @@
     "onLanguage:gml-gm81",
     "onLanguage:gml-gms",
     "onLanguage:gml-gms2"
-	],
-	"main": "./src/extension",
+  ],
+  "main": "./src/extension",
   "author": {
     "email": "qq1062787843@hotmail.com",
     "name": "Mark Shi",
     "url": "https://me.liaronce.win"
   },
   "categories": [
-    "Programming Languages","Snippets"
+    "Programming Languages",
+    "Snippets"
   ],
   "extensionDependencies": [
     "robertohuertasm.vscode-icons"
   ],
   "dependencies": {
-       "vscode-nls": "^2.0.2"
+    "cheerio": "^1.0.0-rc.2",
+    "vscode-nls": "^2.0.2"
   },
   "bugs": {
-      "url": "https://github.com/gml-support/gml-support/issues"
+    "url": "https://github.com/gml-support/gml-support/issues"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/gml-support/gml-support.git"
+    "type": "git",
+    "url": "https://github.com/gml-support/gml-support.git"
   },
   "contributes": {
     "languages": [
@@ -218,30 +220,30 @@
       }
     ],
     "configuration": {
-        "title": "GML Support Settings",
-        "type": "object",
-        "properties": {
-            "gmlsupport.localization": {
-                "type": "string",
-                "default": "%gmlsupport.localization.option%",
-                "description": "%gmlsupport.localization.description%"
-            },
-            "gml-gm81.suggest.basic": {
-              "type": "boolean",
-              "default": true,
-              "description": "%gml-gm81.suggest.basic%"
-            },
-            "gml-gms.suggest.basic": {
-              "type": "boolean",
-              "default": true,
-              "description": "%gml-gms.suggest.basic%"
-            },
-            "gml-gms2.suggest.basic": {
-              "type": "boolean",
-              "default": true,
-              "description": "%gml-gms2.suggest.basic%"
-            }
+      "title": "GML Support Settings",
+      "type": "object",
+      "properties": {
+        "gmlsupport.localization": {
+          "type": "string",
+          "default": "%gmlsupport.localization.option%",
+          "description": "%gmlsupport.localization.description%"
+        },
+        "gml-gm81.suggest.basic": {
+          "type": "boolean",
+          "default": true,
+          "description": "%gml-gm81.suggest.basic%"
+        },
+        "gml-gms.suggest.basic": {
+          "type": "boolean",
+          "default": true,
+          "description": "%gml-gms.suggest.basic%"
+        },
+        "gml-gms2.suggest.basic": {
+          "type": "boolean",
+          "default": true,
+          "description": "%gml-gms2.suggest.basic%"
         }
+      }
     },
     "grammars": [
       {
@@ -298,7 +300,7 @@
         "language": "gmx-sound",
         "scopeName": "text.gmx",
         "path": "./syntaxes/main/gmx/gmx.json"
-      },    
+      },
       {
         "language": "gmx-object",
         "scopeName": "text.gmxwithgml",
