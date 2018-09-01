@@ -12,6 +12,7 @@
     "vscode": "^1.8.0"
   },
   "activationEvents": [
+    "onDebug",
     "onLanguage:gml-gm81",
     "onLanguage:gml-gms",
     "onLanguage:gml-gms2"
@@ -24,13 +25,17 @@
   },
   "categories": [
     "Programming Languages",
-    "Snippets"
+    "Snippets",
+    "Debuggers"
   ],
   "extensionDependencies": [
     "robertohuertasm.vscode-icons"
   ],
   "dependencies": {
+    "await-notify": "^1.0.1",
     "cheerio": "^1.0.0-rc.2",
+    "gamemaker-rubber": "^2.0.3",
+    "vscode-debugadapter": "^1.31.0",
     "vscode-nls": "^2.0.2"
   },
   "bugs": {
@@ -41,6 +46,52 @@
     "url": "https://github.com/gml-support/gml-support.git"
   },
   "contributes": {
+    "breakpoints": [
+      {
+        "language": "gml-gms2"
+      }
+    ],
+    "debuggers": [
+      {
+        "type": "rubber",
+        "label": "GameMaker Studio 2 Game Debug",
+        "program": "./src/debug/debugAdapter.js",
+        "runtime": "node",
+        "configurationAttributes": {
+          "launch": {
+            "required": [],
+            "properties": {
+              "stopOnEntry": {
+                "type": "boolean",
+                "description": "Automatically stop after launch.",
+                "default": true
+              }
+            }
+          }
+        },
+        "initialConfigurations": [
+          {
+            "type": "rubber",
+            "request": "launch",
+            "name": "Launch Game(GMS 2)",
+            "program": "${workspaceRoot}",
+            "stopOnEntry": true
+          }
+        ],
+        "configurationSnippets": [
+          {
+            "label": "GameMaker Studio 2 Game Debug Launch",
+            "description": "A new configuration for launching a GM Game debug program",
+            "body": {
+              "type": "rubber",
+              "request": "launch",
+              "name": "${1:Launch Program}",
+              "program": "${workspaceRoot}"
+            }
+          }
+        ]
+      }
+    ],
     "languages": [
       {
         "id": "gml-gm81",

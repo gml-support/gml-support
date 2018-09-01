@@ -77,7 +77,7 @@ class GMLSignatureHelpProvider {
             let params = '';
             entry.parameters.forEach(p => {
                 params += p.label + ',';
-                p.documentation = documentationImporter.DocumentationImporter.createManual.thisFunction.documentation;
+                //p.documentation = documentationImporter.DocumentationImporter.createManual.thisFunction.documentation;
                 infos.push({ label: p.label, documentation: p.documentation });
             });
             signature += params.slice(0, -1);
