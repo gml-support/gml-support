@@ -61,6 +61,11 @@
           "launch": {
             "required": [],
             "properties": {
+              "preLaunchTask": {
+                "type": "string",
+                "description": "Build game before launch.",
+                "default": "Build Game"
+              },
               "stopOnEntry": {
                 "type": "boolean",
                 "description": "Automatically stop after launch.",
@@ -74,7 +79,7 @@
             "type": "rubber",
             "request": "launch",
             "name": "Launch Game(GMS 2)",
-            "program": "${workspaceRoot}",
+            "preLaunchTask": "Build Game",
             "stopOnEntry": true
           }
         ],
