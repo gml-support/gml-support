@@ -2,7 +2,7 @@
   "name": "gml-support",
   "displayName": "GML Support",
   "description": "GameMaker Language Support in Visual Studio Code.",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "publisher": "liaronce",
   "publisherName": "LiarOnce",
   "icon": "icon.png",
@@ -29,13 +29,9 @@
     "Debuggers"
   ],
   "extensionDependencies": [
-    "robertohuertasm.vscode-icons"
+    "vscode-icons-team.vscode-icons"
   ],
   "dependencies": {
-    "await-notify": "^1.0.1",
-    "cheerio": "^1.0.0-rc.2",
-    "gamemaker-rubber": "^2.0.3",
-    "vscode-debugadapter": "^1.31.0",
     "vscode-nls": "^2.0.2"
   },
   "bugs": {
@@ -55,7 +51,7 @@
       {
         "type": "rubber",
         "label": "GameMaker Studio 2 Game Debug",
-        "program": "./src/debug/debugAdapter.js",
+        "program": "./out/debugMain.js",
         "runtime": "node",
         "configurationAttributes": {
           "launch": {
@@ -65,6 +61,11 @@
                 "type": "string",
                 "description": "Build game before launch.",
                 "default": "Build Game"
+              },
+              "program": {
+                "type": "string",
+                "description": "Run game.",
+                "default": "${workspaceRoot}\\out"
               },
               "stopOnEntry": {
                 "type": "boolean",
