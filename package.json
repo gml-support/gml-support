@@ -9,7 +9,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/gml-support/gml-support/blob/master/README.md",
   "engines": {
-    "vscode": "^1.28.0"
+    "vscode": "^1.8.0"
   },
   "activationEvents": [
     "onDebug",
@@ -21,7 +21,7 @@
   "author": {
     "email": "qq1062787843@hotmail.com",
     "name": "Mark Shi",
-    "url": "https://me.liaronce.com"
+    "url": "https://me.liaronce.win"
   },
   "categories": [
     "Programming Languages",
@@ -32,13 +32,7 @@
     "vscode-icons-team.vscode-icons"
   ],
   "dependencies": {
-    "gml-tools-langserver": "^0.9.6",
-    "mkdirp": "^0.5.1",
-    "path": "^0.12.7",
-    "vscode": "^1.1.35",
-    "vscode-languageclient": "^5.2.1",
-    "vscode-nls": "^2.0.2",
-    "yyp-typings": "^2.3.3"
+    "vscode-nls": "^2.0.2"
   },
   "bugs": {
     "url": "https://github.com/gml-support/gml-support/issues"
@@ -48,6 +42,62 @@
     "url": "https://github.com/gml-support/gml-support.git"
   },
   "contributes": {
+    "breakpoints": [
+      {
+        "language": "gml-gms2"
+      }
+    ],
+    "debuggers": [
+      {
+        "type": "rubber",
+        "label": "GameMaker Studio 2 Game Debug",
+        "program": "./out/debugMain.js",
+        "runtime": "node",
+        "configurationAttributes": {
+          "launch": {
+            "required": [],
+            "properties": {
+              "preLaunchTask": {
+                "type": "string",
+                "description": "Build game before launch.",
+                "default": "Build Game"
+              },
+              "program": {
+                "type": "string",
+                "description": "Run game.",
+                "default": "${workspaceRoot}\\out"
+              },
+              "stopOnEntry": {
+                "type": "boolean",
+                "description": "Automatically stop after launch.",
+                "default": true
+              }
+            }
+          }
+        },
+        "initialConfigurations": [
+          {
+            "type": "rubber",
+            "request": "launch",
+            "name": "Launch Game(GMS 2)",
+            "preLaunchTask": "Build Game",
+            "stopOnEntry": true
+          }
+        ],
+        "configurationSnippets": [
+          {
+            "label": "GameMaker Studio 2 Game Debug Launch",
+            "description": "A new configuration for launching a GM Game debug program",
+            "body": {
+              "type": "rubber",
+              "request": "launch",
+              "name": "${1:Launch Program}",
+              "program": "${workspaceRoot}"
+            }
+          }
+        ]
+      }
+    ],
     "languages": [
       {
         "id": "gml-gm81",
@@ -201,7 +251,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./gml-configuration-gms2.json"
+        "configuration": "./gml-configuration.json"
       },
       {
         "id": "yy-config",
@@ -212,7 +262,7 @@
         "extensions": [
           ".yy"
         ],
-        "configuration": "./gml-configuration-gms2.json"
+        "configuration": "./gml-configuration.json"
       },
       {
         "id": "yy-project",
@@ -223,7 +273,7 @@
         "extensions": [
           ".yyp"
         ],
-        "configuration": "./gml-configuration-gms2.json"
+        "configuration": "./gml-configuration.json"
       }
     ],
     "configuration": {
@@ -234,30 +284,6 @@
           "type": "string",
           "default": "%gmlsupport.localization.option%",
           "description": "%gmlsupport.localization.description%"
-        },
-        "gmlsupport.preferredSpellings": {
-          "type": "string",
-          "enum": [
-            "American",
-            "British",
-            "No Preference"
-          ],
-          "default": "American",
-          "enumDescriptions": [
-            "%gmlsupport.preferredSpellings.American%",
-            "%gmlsupport.preferredSpellings.British%",
-            "%gmlsupport.preferredSpellings.NoPreference%"
-          ]
-        },
-        "gml-tools.numberOfDocumentationSentences": {
-          "type": "number",
-          "default": 1,
-          "description": "Decides how many sentences of the GMS2 Manual Documentation will appear in hover, function, or autocomplete tooltips. Set to -1 for all stored information."
-        },
-        "gmlsupport.manualURL": {
-          "type": "string",
-          "default": "%gmlsupport.manualURL.URLset%",
-          "description": "%gmlsupport.manualURL.description%"
         },
         "gml-gm81.suggest.basic": {
           "type": "boolean",

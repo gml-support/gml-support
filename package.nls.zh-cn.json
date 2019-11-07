@@ -1,12 +1,7 @@
 {
     "gmlsupport.localization.option": "zh-CN",
     "gmlsupport.localization.description": "GML Support 本地化选项",
-    "gmlsupport.preferredSpellings.American": "Use American spelling, such as 'color' instead of 'colour' and 'randomize' instead of 'randomise' in auto-completion. This is the default setting.",
-    "gmlsupport.preferredSpellings.British": "Use British spelling, such as 'colour' instead of 'color' and 'randomise' instead of 'randomize' in auto-completion.",
-    "gmlsupport.preferredSpellings.NoPreference": "Will allow for both spellings in auto-complete. This is option is not recommended, as typing 'merge_', for example, will show 'merge_color' and 'merge_colour'.",
     "gml-gm81.suggest.basic": "GML (GameMaker 8.1) 语法提示选项。",
     "gml-gms.suggest.basic": "GML (GameMaker Studio) 语法提示选项。",
-    "gml-gms2.suggest.basic": "GML (GameMaker Studio 2) 语法提示选项。",
-    "gmlsupport.manualURL.URLset": "https://gamemakerchina.github.io/GMS2_manual_en2ch",
-    "gmlsupport.manualURL.description": "GM:S / GMS2 文档地址"
+    "gml-gms2.suggest.basic": "GML (GameMaker Studio 2) 语法提示选项。"
 }

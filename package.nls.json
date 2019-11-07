@@ -1,9 +1,6 @@
 {
     "gmlsupport.localization.option": "en-US",
     "gmlsupport.localization.description": "GML Support Localization Setting",
-    "gmlsupport.preferredSpellings.American": "Use American spelling, such as 'color' instead of 'colour' and 'randomize' instead of 'randomise' in auto-completion. This is the default setting.",
-    "gmlsupport.preferredSpellings.British": "Use British spelling, such as 'colour' instead of 'color' and 'randomise' instead of 'randomize' in auto-completion.",
-    "gmlsupport.preferredSpellings.NoPreference": "Will allow for both spellings in auto-complete. This is option is not recommended, as typing 'merge_', for example, will show 'merge_color' and 'merge_colour'.",
     "gml-gm81.suggest.basic": "GML (GameMaker 8.1) suggestions option.",
     "gml-gms.suggest.basic": "GML (GameMaker Studio) suggestions option.",
     "gml-gms2.suggest.basic": "GML (GameMaker Studio 2) suggestions option."

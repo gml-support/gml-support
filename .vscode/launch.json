@@ -2,28 +2,12 @@
 {
     "version": "0.1.0",
     "configurations": [
-        
         {
             "name": "Launch Extension",
             "type": "extensionHost",
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": ["--extensionDevelopmentPath=${workspaceRoot}" ]
-        },
-        {
-            "type": "node",
-            "request": "attach",
-            "name": "Attach to Server",
-            "address": "localhost",
-            "protocol": "inspector",
-            "port": 15685,
-            "outFiles": ["${workspaceRoot}/node_modules/gml-tools-langserver/out/**/*.js"]
-        }
-    ],
-    "compounds": [
-        {
-            "name": "Client/Server",
-            "configurations": ["Launch Extension", "Attach to Server"]
         }
     ]
 }
