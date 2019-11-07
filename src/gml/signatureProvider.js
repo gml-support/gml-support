@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode_1 = require("vscode");
 const gmlGlobals = require("./gmlGlobals");
+const documentationImporter = require("./documentationImporter");
 const _NL = '\n'.charCodeAt(0);
 const _TAB = '\t'.charCodeAt(0);
 const _WSB = ' '.charCodeAt(0);
@@ -76,6 +77,7 @@ class GMLSignatureHelpProvider {
             let params = '';
             entry.parameters.forEach(p => {
                 params += p.label + ',';
+                //p.documentation = documentationImporter.DocumentationImporter.createManual.thisFunction.documentation;
                 infos.push({ label: p.label, documentation: p.documentation });
             });
             signature += params.slice(0, -1);
