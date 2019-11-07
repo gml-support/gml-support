@@ -440,6 +440,12 @@
     "device_ios_iphone5": {
         "desc": ""
     },
+    "device_ios_iphone6": {
+        "desc": ""
+    },
+    "device_ios_iphone6plus": {
+        "desc": ""
+    },
     "device_ios_iphone_retina": {
         "desc": ""
     },

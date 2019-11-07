@@ -108,7 +108,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gml-gms",
@@ -119,7 +119,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-config",
@@ -130,7 +130,7 @@
         "extensions": [
           ".config.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-project",
@@ -141,7 +141,7 @@
         "extensions": [
           ".project.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-object",
@@ -152,7 +152,7 @@
         "extensions": [
           ".object.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-extension",
@@ -163,7 +163,7 @@
         "extensions": [
           ".extension.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-sprite",
@@ -174,7 +174,7 @@
         "extensions": [
           ".sprite.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-background",
@@ -185,7 +185,7 @@
         "extensions": [
           ".background.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-font",
@@ -196,7 +196,7 @@
         "extensions": [
           ".font.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-path",
@@ -207,7 +207,7 @@
         "extensions": [
           ".path.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-sound",
@@ -218,7 +218,7 @@
         "extensions": [
           ".sound.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-room",
@@ -229,7 +229,7 @@
         "extensions": [
           ".room.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gmx-timeline",
@@ -240,7 +240,7 @@
         "extensions": [
           ".timeline.gmx"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration.json"
       },
       {
         "id": "gml-gms2",
@@ -251,7 +251,7 @@
         "extensions": [
           ".gml"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration-gms2.json"
       },
       {
         "id": "yy-config",
@@ -262,7 +262,7 @@
         "extensions": [
           ".yy"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration-gms2.json"
       },
       {
         "id": "yy-project",
@@ -273,7 +273,7 @@
         "extensions": [
           ".yyp"
         ],
-        "configuration": "./gml-configuration.json"
+        "configuration": "./data/gml-configuration-gms2.json"
       }
     ],
     "configuration": {
