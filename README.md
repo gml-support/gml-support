@@ -10,7 +10,7 @@ GameMaker Language Support in Visual Studio Code.
 Visual Studio Code version should be higher than 1.8.0.
 
 GitHub: [https://github.com/LiarOnce/gml-support](https://github.com/LiarOnce/gml-support)   
-Offical Website: [https://gmlsupport.liaronce.win](https://gmlsupport.liaronce.win)
+Offical Website: [https://gmlsupport.liaronce.com](https://gmlsupport.liaronce.com)
 
 Report an issue: [https://github.com/LiarOnce/gml-support/issues](https://github.com/LiarOnce/gml-support/issues)
 
