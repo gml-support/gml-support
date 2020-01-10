@@ -4,7 +4,7 @@
 
 # GML Support
 
-<div align="center"><img src="https://gmlsupport.liaronce.win/assets/icon.png" alt="" /></div>
+<div align="center"><img src="https://gmlsupport.liaronce.com/assets/icon.png" alt="" /></div>
 
 GameMaker Language Support in Visual Studio Code.  
 Visual Studio Code version should be higher than 1.8.0.
@@ -19,7 +19,7 @@ Visual Studio Code版本需高于1.8.0。
 
 ## Contributing
 
-[https://gmlsupport.liaronce.win/#/Contribute](https://gmlsupport.liaronce.win/#/Contribute)
+[https://gmlsupport.liaronce.com/#/Contribute](https://gmlsupport.liaronce.com/#/Contribute)
 
 ## Other
 
@@ -29,4 +29,4 @@ Telegram Channel: [https://t.me/gmlsupport](https://t.me/gmlsupport)
 
 ## Thanks
 
-[https://gmlsupport.liaronce.win/#/?id=credits](https://gmlsupport.liaronce.win/#/?id=credits)
+[https://gmlsupport.liaronce.com/#/?id=credits](https://gmlsupport.liaronce.com/#/?id=credits)
