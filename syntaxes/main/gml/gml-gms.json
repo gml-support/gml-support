@@ -69,7 +69,7 @@
             "name": "storage.type.gml"
           }
         },
-        "end": ".*$",
+        "end": "(?=\\S)",
         "endCaptures": {
            "0": {
              "name": "variable.other.gml"
