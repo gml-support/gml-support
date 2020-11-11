@@ -1,3 +1,8 @@
+## 1.7.3
+
+ - 修复一处代码高亮错误
+ - Fix a syntax highlighting error 
+
 ## 1.7.2
 
  - 添加注释自动补全
