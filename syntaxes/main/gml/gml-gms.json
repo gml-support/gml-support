@@ -26,7 +26,7 @@
          "name": "string.quoted.double.gml"
       },
       {
-         "match": "(?i)\\b(argument_relitive|argument_count|argument9|argument8|argument7|argument6|argument5|argument4|argument3|argument2|argument15|argument14|argument13|argument12|argument11|argument10|argument1|argument0|argument)\\b",
+         "match": "(?i)\\b(argument_(relitive|count)|argument(9|8|7|6|5|4|3|2|15|14|13|12|11|10|1|0)|argument)\\b",
          "name": "variable.parameter.gml"
       },
       {
