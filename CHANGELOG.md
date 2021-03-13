@@ -1,3 +1,10 @@
+## 1.7.4
+
+ - GMS2: 重新整理了高亮文件
+ - GM8.1: 针对支持 codestr 的函数加入语法高亮支持（如 `object_event_add`）（仅支持旧版 GM）
+ - GMS2: Reorganized highlighted files
+ - GM8.1: Added syntax highlighting support for functions that support `codestr` (e.g. `object_event_add`) (Only Legacy GM)
+
 ## 1.7.3
 
  - 修复一处代码高亮错误
