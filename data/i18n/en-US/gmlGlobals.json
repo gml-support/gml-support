@@ -2998,42 +2998,42 @@
         "id": "The name of the dll or dylib that you want to free"
     },
 	"facebook_accesstoken": {
-        "desc": ""
+        "desc": "This function returns the access token from Facebook. An access token is a random string that provides temporary, secure access to the Facebook APIs, and this function will return the access token that Facebook gives you when you log in to verify that it's a valid log in."
     },
 	"facebook_check_permission": {
-        "desc": "",
+        "desc": "Check to see if the user has specific publishing or read actions from the Facebook API. With this function you can check the Facebook API to see if the user has granted a specific permission, either read or publish. The function will return true if they have the permission or false if they do not or there is an error. Note that the user must be logged in for the check to function.",
         "permission": ""
     },
 	"facebook_dialog": {
-        "desc": "",
+        "desc": "With this function you can open a Facebook dialog for the user to interact with. A Facebook dialog is the way in which Facebook asks the user to give comments and information and they not need any additional permissions because they require user interaction. For example, it can be used to send friend request or to post a comment to a wall. The 'graph_path' argument is where you define the part of the graph you wish to access, and the exact path can be defined using the terms outlined in the Facebook Dialogues Overview.",
         "graph_path": "",
         "ds_map_params": "",
         "ds_map_response": ""
     },
 	"facebook_graph_request": {
-        "desc": "",
+        "desc": "This function is used to interact with the Facebook social graph. With this function you can get the user to interact with the Facebook Social Graph. The 'graph_path' argument is where you define the part of the graph you wish to access, like the current user friends list, or another apps comments or even an event. The exact path can be defined using the terms outlined in the Publishing section of the Facebook Graph Api pages. You then define the http method to use which is usually POST or GET but Facebook also accepts the DELETE method.",
         "graph_path": "",
         "httpMethod": "",
         "ds_map_params": "",
         "ds_map_response": ""
     },
 	"facebook_init": {
-        "desc": ""
+        "desc": "This code initialises Facebook. Before using any of the Facebook functions you must call this function to initialize the Facebook API and tell GameMaker: Studio that you are going to be using the Facebook specific functions. This should be done only once in the game and can be done at any time, but it is recommended that you call this function right at the start before anything else. Note too, that even if you use facebook_logout at some point in your game you will not need to use this function again to log in."
     },
 	"facebook_launch_offerwall": {
-        "desc": "",
+        "desc": "This function returns the status of the facebook connection. This implementation enables your app to open a Facebook dialog containing an interactive list of advertiser offers. NOTE: this function will only work with the HTML5 target module.",
         "product_url": ""
     },
 	"facebook_login": {
-        "desc": "",
+        "desc": "Logs the user into their Facebook account. With this function GameMaker: Studio will connect to Facebook and ask the user to log into their account. You may also supply additional permission requests in the form of a ds_list that this function then converts into a json array to communicate them to Facebook. There are a wide variety of permissions you may request and they are documented on the Facebook developers pages found here. If you do not wish to ask for any special or extended permissions then you will still need to send a ds_list, but this time it will be empty.",
         "ds_list_of_permissions": "",
         "ios_login_type": ""
     },
 	"facebook_logout": {
-        "desc": ""
+        "desc": "This function logs the user out of Facebook. With this function you can log the user out of Facebook. Note, this does not mean that Facebook is disconnected from the game and there is no need to call facebook_init again if you wish the user to log back in again. It is also worth noting that certain graph and dialogue functions may work, only that they will prompt the user to log in again beforehand."
     },
 	"facebook_post_message": {
-        "desc": "",
+        "desc": "Posts a message to the player's Facebook feed. This function will posts a message direct to the user feed (ie, a “/me/feed” post to the facebook graph API ) . You give the name and the caption as well as a message and image to include, then the url to link to. The last two arguments, 'actionname' and 'actionurl' are optional and can either be left as empty strings ('') or they can be set to one of the permitted Facebook actions, like commenting or liking, in which case you should also supply an appropriate URL (for more information see Facebook Developers Api Post).",
         "title": "",
         "caption": "",
         "message": "",
@@ -3051,7 +3051,7 @@
         "ds_list_permissions": ""
     },
 	"facebook_send_invite": {
-        "desc": "",
+        "desc": "Send an invite message to friends. With this function you can get your game to display a facebook “apprequests” dialog, which will allow your player to select friends from a list and send them a game invite message. The function requires that you supply a previously created ds_map which will then be populated with the relevant user details. This map should be polled every step after calling this function as the response could come through at any time, and when it does the map will should have a key 'to' which will return a ds_list containing all the Facebook user IDs of those people invited (se extended example below for further details).",
         "title": "",
         "message": "",
         "picture_url": "",
@@ -3059,13 +3059,13 @@
         "ds_map_response": ""
     },
 	"facebook_status": {
-        "desc": ""
+        "desc": "This function returns the status of the facebook connection. With this function you can poll Facebook for the current status of the connection. One of the following strings is returned (note that they are always returned in capital letters):"
     },
 	"facebook_user_id": {
-        "desc": ""
+        "desc": "This function returns the unique Facebook user id. With this function you can poll Facebook for the user id of the currently logged in user. This will be returned as a string, with a format similar to '07778915123' which can then be used with the other Facebook functions. NOTE: The user must be logged in to get the ID."
     },
 	"filename_change_ext": {
-        "desc": "",
+        "desc": "Returns the extension part of the file. This function returns the extension part of the indicated file name, including the leading dot.",
         "fname": "",
         "newext": ""
     },
