@@ -1,6 +1,4 @@
-[![Version](https://vsmarketplacebadge.apphb.com/version/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
-[![Rating](https://vsmarketplacebadge.apphb.com/rating/liaronce.gml-support.svg)](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support)
+**The project has stopped maintenance, please use [Stitch for VSCode](https://marketplace.visualstudio.com/items?itemName=bscotch.bscotch-stitch-vscode) instead.**
 
 # GML Support
 
